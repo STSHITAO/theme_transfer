@@ -31,3 +31,8 @@ agent-sprite-forge-main/
 Thumbs.db
 .idea/
 .vscode/
+.env
+*.env
+__pycache__/
+*.pyc
+.venv/
