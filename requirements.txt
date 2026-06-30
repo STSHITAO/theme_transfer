@@ -1,0 +1,4 @@
+dashscope
+python-dotenv
+pillow
+requests
