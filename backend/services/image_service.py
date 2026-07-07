@@ -1,4 +1,5 @@
 from pathlib import Path
+import math
 
 from PIL import Image
 
@@ -41,6 +42,40 @@ def compose_target_layout(target_background, target_foreground, case_id, root_di
     root = Path(root_dir) if root_dir else Path.cwd()
     output_path = root / "data" / "cases" / case_id / "target_layout.png"
     return compose_layout(target_background, target_foreground, output_path, size=size)
+
+
+def prepare_target_layout(target_image_path, case_id, root_dir=None, size=DEFAULT_SIZE, output_path=None):
+    root = Path(root_dir) if root_dir else Path.cwd()
+    output_path = Path(output_path) if output_path else root / "data" / "cases" / case_id / "target_layout.png"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    target = _open_rgba(target_image_path, size)
+    target.save(output_path, format="PNG")
+    return str(output_path)
+
+
+def compose_contact_sheet(image_paths, output_path, tile_size=(512, 512), columns=None):
+    if not image_paths:
+        raise ValueError("No images available for contact sheet.")
+
+    output = Path(output_path)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    count = len(image_paths)
+    column_count = columns or math.ceil(math.sqrt(count))
+    row_count = math.ceil(count / column_count)
+    sheet = Image.new(
+        "RGBA",
+        (column_count * tile_size[0], row_count * tile_size[1]),
+        (255, 255, 255, 0),
+    )
+
+    for index, image_path in enumerate(image_paths):
+        tile = _open_rgba(image_path, tile_size)
+        x = (index % column_count) * tile_size[0]
+        y = (index // column_count) * tile_size[1]
+        sheet.alpha_composite(tile, (x, y))
+
+    sheet.save(output, format="PNG")
+    return str(output)
 
 
 def _open_rgba(path, size):

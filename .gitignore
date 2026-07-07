@@ -21,6 +21,7 @@ env/
 # Generated workflow artifacts
 data/cases/
 data/outputs/
+data/packages/
 
 # Local assistant / external helper assets
 .agents/

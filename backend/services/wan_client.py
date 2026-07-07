@@ -11,13 +11,24 @@ from dotenv import load_dotenv
 from PIL import Image
 
 
-def generate_candidates(prompt, style_ref_paths, target_layout, case_id, root_dir=None, n=4, size="2K"):
+def generate_candidates(
+    prompt,
+    style_ref_paths,
+    target_layout,
+    case_id,
+    root_dir=None,
+    n=3,
+    size="2K",
+    case_dir=None,
+    output_dir=None,
+):
     root = Path(root_dir) if root_dir else Path.cwd()
     load_dotenv(root / ".env")
-    case_dir = root / "data" / "cases" / case_id
-    output_dir = root / "data" / "outputs" / case_id / "candidates"
+    case_dir = Path(case_dir) if case_dir else root / "data" / "cases" / case_id
+    output_dir = Path(output_dir) if output_dir else root / "data" / "outputs" / case_id / "candidates"
     case_dir.mkdir(parents=True, exist_ok=True)
     output_dir.mkdir(parents=True, exist_ok=True)
+    _clear_candidate_outputs(output_dir)
 
     if _mock_mode():
         response = {
@@ -55,6 +66,12 @@ def _create_mock_candidates(target_layout, output_dir, n):
     return candidate_paths
 
 
+def _clear_candidate_outputs(output_dir):
+    for path in output_dir.glob("candidate_*.png"):
+        if path.is_file():
+            path.unlink()
+
+
 def _call_wan(prompt, style_ref_paths, target_layout, n, size):
     base_url = os.getenv("ALI_IMAGE_BASE_URL")
     model = os.getenv("ALI_IMAGE_MODEL")
@@ -74,14 +91,20 @@ def _call_wan(prompt, style_ref_paths, target_layout, n, size):
             *[{"image": _image_data_url(path)} for path in [*style_ref_paths, target_layout]],
         ],
     )
-    return ImageGeneration.call(
-        model=model,
-        api_key=api_key,
-        messages=[message],
-        n=n,
-        size=size,
-        watermark=False,
-    )
+    last_error = None
+    for _ in range(2):
+        try:
+            return ImageGeneration.call(
+                model=model,
+                api_key=api_key,
+                messages=[message],
+                n=n,
+                size=size,
+                watermark=False,
+            )
+        except requests.exceptions.RequestException as exc:
+            last_error = exc
+    raise last_error
 
 
 def _save_response(response, case_dir):

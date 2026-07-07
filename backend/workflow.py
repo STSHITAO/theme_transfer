@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from backend.services.image_service import (
     compose_reference_layouts,
     compose_target_layout,
+    prepare_target_layout,
 )
 from backend.services.path_service import resolve_case_paths
 from backend.services.prompt_service import build_generation_prompt
@@ -15,7 +16,7 @@ from backend.services.storage_service import save_metadata, save_theme_analysis
 from backend.services.wan_client import generate_candidates
 
 
-def run_workflow(theme_id, target_app, case_id, root_dir=None):
+def run_workflow(theme_id, target_app, case_id, root_dir=None, candidate_count=3):
     root = Path(root_dir) if root_dir else Path.cwd()
     load_dotenv(root / ".env")
 
@@ -25,16 +26,26 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None):
         case_id,
         root_dir=root,
     )
-    target_layout = compose_target_layout(
-        resolved["target_background"],
-        resolved["target_foreground"],
-        case_id,
-        root_dir=root,
-    )
-    target_inputs = {
-        "target_background": resolved["target_background"],
-        "target_foreground": resolved["target_foreground"],
-    }
+    if "target_background" in resolved and "target_foreground" in resolved:
+        target_layout = compose_target_layout(
+            resolved["target_background"],
+            resolved["target_foreground"],
+            case_id,
+            root_dir=root,
+        )
+        target_inputs = {
+            "target_background": resolved["target_background"],
+            "target_foreground": resolved["target_foreground"],
+        }
+        target_generation_image = resolved["target_foreground"]
+    else:
+        target_layout = prepare_target_layout(
+            resolved["target_image"],
+            case_id,
+            root_dir=root,
+        )
+        target_inputs = resolved["target_image"]
+        target_generation_image = resolved["target_image"]
 
     theme_analysis = analyze_theme(reference_examples, target_inputs, root_dir=root)
     theme_analysis_path = save_theme_analysis(theme_analysis, case_id, root_dir=root)
@@ -45,14 +56,15 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None):
     generation = generate_candidates(
         prompt_text,
         style_refs,
-        resolved["target_foreground"],
+        target_generation_image,
         case_id,
         root_dir=root,
+        n=candidate_count,
     )
 
     qc_report = score_candidates(
         style_refs,
-        resolved["target_foreground"],
+        target_generation_image,
         generation["candidate_paths"],
         root_dir=root,
     )
@@ -80,8 +92,15 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None):
                     }
                     for example in reference_examples
                 ],
-                "target_background": resolved["target_background"],
-                "target_foreground": resolved["target_foreground"],
+                "target_image": resolved["target_image"],
+                **(
+                    {
+                        "target_background": resolved["target_background"],
+                        "target_foreground": resolved["target_foreground"],
+                    }
+                    if "target_background" in resolved and "target_foreground" in resolved
+                    else {}
+                ),
             },
             "intermediate_files": {
                 "reference_layouts": [example["reference_layout_path"] for example in reference_examples],

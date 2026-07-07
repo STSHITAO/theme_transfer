@@ -10,7 +10,15 @@ from PIL import Image
 
 from backend.services.prompt_service import build_generation_prompt
 from backend.services.qc_service import select_best_candidate
-from backend.services.qwen_client import _call_qwen, _image_data_url as qwen_image_data_url, analyze_theme, score_candidates
+from backend.services.qwen_client import (
+    _call_qwen,
+    _image_data_url as qwen_image_data_url,
+    analyze_theme,
+    analyze_theme_package,
+    analyze_target_identity,
+    build_transfer_plan,
+    score_candidates,
+)
 from backend.services.wan_client import _call_wan
 from backend.services.storage_service import save_json, save_metadata
 from backend.services.wan_client import generate_candidates
@@ -123,19 +131,50 @@ class MockServiceTests(unittest.TestCase):
                 clear=False,
             ):
                 with patch("dashscope.aigc.image_generation.ImageGeneration.call", return_value=response) as call:
-                    _call_wan("生成提示", [str(style_ref)], str(target), n=4, size="2K")
+                    _call_wan("生成提示", [str(style_ref)], str(target), n=3, size="2K")
 
         kwargs = call.call_args.kwargs
         self.assertEqual(kwargs["api_key"], "image-key")
         self.assertEqual(kwargs["model"], "wan2.7-image-pro")
         self.assertNotIn("prompt", kwargs)
         self.assertNotIn("images", kwargs)
-        self.assertEqual(kwargs["n"], 4)
+        self.assertEqual(kwargs["n"], 3)
         self.assertFalse(kwargs["watermark"])
         message = kwargs["messages"][0]
         self.assertEqual(message.role, "user")
         self.assertEqual(message.content[0]["text"], "生成提示")
         self.assertIn("image", message.content[1])
+
+    def test_real_wan_call_retries_once_for_transient_network_error(self):
+        response = {
+            "status_code": 200,
+            "output": {"choices": []},
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            style_ref = root / "style_ref.jpg"
+            target = root / "target.png"
+            make_image(style_ref)
+            make_image(target)
+
+            with patch.dict(
+                os.environ,
+                {
+                    "ALI_IMAGE_BASE_URL": "https://example.test/api/v1",
+                    "ALI_IMAGE_MODEL": "wan2.7-image-pro",
+                    "ALI_IMAGE_API_KEY": "image-key",
+                },
+                clear=False,
+            ):
+                with patch(
+                    "dashscope.aigc.image_generation.ImageGeneration.call",
+                    side_effect=[requests.exceptions.ProxyError("temporary"), response],
+                ) as call:
+                    result = _call_wan("生成提示", [str(style_ref)], str(target), n=3, size="2K")
+
+        self.assertEqual(result, response)
+        self.assertEqual(call.call_count, 2)
 
     def test_mock_qwen_analysis_returns_required_fields(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -241,6 +280,98 @@ class MockServiceTests(unittest.TestCase):
             self.assertTrue(any("style_ref" in text for text in text_blocks))
             self.assertFalse(any("sheet" in text.lower() for text in text_blocks))
 
+    def test_qwen_package_analysis_does_not_include_target_images(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_theme_analysis.md").write_text("分析", encoding="utf-8")
+            paths = {
+                "background_path": root / "background.png",
+                "foreground_path": root / "foreground.png",
+                "style_ref_path": root / "style_ref.jpg",
+            }
+            for path in paths.values():
+                make_image(path)
+
+            qwen_json = json.dumps(
+                {
+                    "theme_style_analysis": "style",
+                    "common_background_transform": "bg",
+                    "common_foreground_transform": "fg",
+                    "color_palette": [],
+                    "line_style": "line",
+                    "texture_material": "texture",
+                    "lighting_shadow": "light",
+                    "icon_composition_rules": "rules",
+                    "target_preservation": "preserve",
+                    "generation_prompt": "prompt",
+                    "negative_prompt": "negative",
+                    "qc_focus": "qc",
+                    "used_reference_examples": ["wechat"],
+                }
+            )
+
+            with patch.dict(os.environ, {"MOCK_MODE": "false"}, clear=False):
+                with patch("backend.services.qwen_client._call_qwen", return_value=qwen_json) as call:
+                    analyze_theme_package(
+                        [
+                            {
+                                "app_name": "wechat",
+                                "background_path": str(paths["background_path"]),
+                                "foreground_path": str(paths["foreground_path"]),
+                                "style_ref_path": str(paths["style_ref_path"]),
+                            }
+                        ],
+                        root_dir=root,
+                    )
+
+            content = call.call_args.args[0]
+            text_blocks = [item["text"] for item in content if "text" in item]
+            image_blocks = [item for item in content if "image" in item]
+            self.assertEqual(len(image_blocks), 3)
+            self.assertTrue(any("批量整包" in text for text in text_blocks))
+            self.assertFalse(any("target_" in text for text in text_blocks))
+
+    def test_mock_target_identity_analysis_returns_identity_fields(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_target_identity.md").write_text("目标身份分析", encoding="utf-8")
+            target = root / "wps.png"
+            make_image(target)
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                result = analyze_target_identity("wps", str(target), root_dir=root)
+
+            self.assertEqual(result["app"], "wps")
+            self.assertIn("identity_anchors", result)
+            self.assertIn("must_preserve", result)
+            self.assertIn("can_restyle", result)
+            self.assertIn("must_not_replace_with", result)
+
+    def test_mock_transfer_plan_uses_theme_rules_and_identity(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_transfer_plan.md").write_text("迁移计划", encoding="utf-8")
+            theme_rules = {"theme_style_analysis": "soft theme"}
+            target_identity = {
+                "app": "wps",
+                "identity_anchors": ["W structure"],
+                "must_preserve": ["W structure"],
+                "can_restyle": ["texture"],
+                "must_not_replace_with": ["generic plush ball"],
+            }
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                result = build_transfer_plan(theme_rules, target_identity, root_dir=root)
+
+            self.assertEqual(result["app"], "wps")
+            self.assertIn("preserve", result)
+            self.assertIn("must_preserve", result)
+            self.assertIn("restyle", result)
+            self.assertIn("forbid", result)
+
     def test_prompt_service_saves_final_prompt(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -267,13 +398,15 @@ class MockServiceTests(unittest.TestCase):
             self.assertIn("统一柔和主题", text)
             self.assertIn("保留小红书身份", text)
 
-    def test_mock_wan_generation_creates_four_candidates_and_response(self):
+    def test_mock_wan_generation_creates_three_candidates_and_response(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             target_layout = root / "target_layout.png"
             style_ref = root / "style_ref.jpg"
+            stale_candidate = root / "data/outputs/case_001_theme_001_to_xiaohongshu/candidates/candidate_04.png"
             make_image(target_layout)
             make_image(style_ref)
+            make_image(stale_candidate)
 
             with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
                 result = generate_candidates(
@@ -284,9 +417,10 @@ class MockServiceTests(unittest.TestCase):
                     root_dir=root,
                 )
 
-            self.assertEqual(len(result["candidate_paths"]), 4)
+            self.assertEqual(len(result["candidate_paths"]), 3)
             for candidate in result["candidate_paths"]:
                 self.assertTrue(Path(candidate).exists())
+            self.assertFalse(stale_candidate.exists())
             self.assertTrue(Path(result["wan_response_path"]).exists())
 
     def test_qc_selects_highest_score_and_falls_back_to_first_candidate(self):

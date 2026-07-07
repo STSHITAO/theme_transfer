@@ -27,8 +27,7 @@ class WorkflowTests(unittest.TestCase):
                 make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_background.png")
                 make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_foreground.png")
                 make_jpg(root / f"data/styles/theme_001/{app_name}/{app_name}_style_ref.jpg")
-            make_png(root / "data/targets/xiaohongshu/background.png")
-            make_png(root / "data/targets/xiaohongshu/foreground.png")
+            make_png(root / "data/targets/xiaohongshu/xiaohongshu.png")
             (root / "prompts").mkdir()
             (root / "prompts/qwen_theme_analysis.md").write_text("分析", encoding="utf-8")
             (root / "prompts/qwen_qc.md").write_text("质检", encoding="utf-8")
@@ -52,7 +51,7 @@ class WorkflowTests(unittest.TestCase):
                 "metadata_path",
             ]:
                 self.assertTrue(Path(result[key]).exists(), key)
-            self.assertEqual(len(result["candidate_paths"]), 4)
+            self.assertEqual(len(result["candidate_paths"]), 3)
             self.assertEqual(len(result["reference_layout_paths"]), 2)
             self.assertNotIn("target_sheet_path", result)
             self.assertNotIn("reference_sheet_paths", result)
