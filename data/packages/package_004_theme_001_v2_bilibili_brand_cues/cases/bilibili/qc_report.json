@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美融合了主题风格（毛绒电视、白色小动物）与Bilibili的核心识别元素（粉色背景、标志性文字Logo）。文字清晰可读，保留了品牌色，既可爱又能一眼认出是B站。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "优秀候选。风格统一，识别度也很高。相比candidate_01，它的背景色使用了肉粉色而非Bilibili标志性的亮粉色，导致品牌色的传达稍弱，但整体依然非常协调。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 70,
+      "failure_reason": "核心文字识别度低",
+      "recommendation": "不推荐。虽然风格可爱且符合主题，但为了融合背景，将白色的'bilibili'文字处理得透明度极高且与背景同色，导致文字几乎不可见。对于以文字为主要识别特征的App，这是严重的识别性丢失。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,24 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "美团的核心视觉资产是汉字“美”及其特定的字体结构。根据主题规则，需要将抽象的几何文字转化为具象的“萌系生物”。策略选择将“美”字的笔画结构直接重构为一只白色毛绒小兽的身体形态（类似参考案例中支付宝的处理方式），保留字体的骨架以确保老用户能瞬间识别，同时通过材质替换和拟人化表情赋予其生命力，符合整包“萌宠拟态”的设计语言。",
+  "must_preserve": [
+    "“美”字的核心笔画结构（特别是顶部的两点/羊角状结构和底部的“大”字支撑感）",
+    "文字的居中构图比例",
+    "整体轮廓的方正中带圆润的特征"
+  ],
+  "can_recompose": [
+    "将黑色宋体/黑体笔画替换为白色蓬松的毛发质感",
+    "在笔画末端添加圆润的手绘描边",
+    "在主体上部添加简单的豆豆眼和微笑嘴巴",
+    "背景色由品牌黄替换为低饱和度马卡龙色（如淡奶油黄或浅薄荷绿）"
+  ],
+  "forbid": [
+    "直接放置黑色的“美团”文字（未进行生物化改造）",
+    "使用高饱和度的亮黄色作为背景",
+    "将“美”字完全改为无关的动物形象导致无法辨认文字结构",
+    "边缘锐利、缺乏手绘感的矢量图形"
+  ],
+  "generation_direction": "Create a cute, fluffy white creature shaped exactly like the Chinese character '美' (Mei). The creature should have a soft, cotton-like texture with a thick hand-drawn black outline. Add simple kawaii dot eyes and a small smile on the upper part of the character structure. Place it on a solid pastel cream or light mint green background. Ensure the strokes of the character form the body and limbs of the mascot."
+}

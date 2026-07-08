@@ -1,0 +1,40 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "圆角矩形电视机外轮廓结构",
+    "顶部双天线/耳朵的相对位置与形态",
+    "屏幕区域的中心构图地位"
+  ],
+  "must_preserve": [
+    "标志性的圆角矩形电视机外轮廓",
+    "顶部的两根天线结构（需转化为圆润的生物特征，如圆耳或呆毛）",
+    "屏幕区域的中心位置（用于承载表情）"
+  ],
+  "recompose_allowed": [
+    "去除内部'bilibili'文字，仅保留图形主体",
+    "将光滑质感替换为蓬松毛绒/棉花质感",
+    "添加豆豆眼和微笑嘴巴赋予生命感",
+    "天线末端圆润化处理"
+  ],
+  "restyle": [
+    "主体材质：白色蓬松毛绒质感，边缘有细微毛发溢出",
+    "线条风格：粗黑/深灰色手绘描边，线条流畅圆润，模拟马克笔触感",
+    "光影处理：均匀柔和光照，无强烈高光，底部轻微接触阴影"
+  ],
+  "decorate": [
+    "背景：低饱和度马卡龙色系（推荐淡薰衣草紫、淡天蓝或暖米色），纯色填充，无纹理",
+    "表情：极简Kawaii风格，黑色豆豆眼，小嘴微笑"
+  ],
+  "forbid": [
+    "禁止保留原有的亮粉色背景和白色文字组合",
+    "禁止使用锐利的直角或硬朗的几何线条",
+    "禁止生成写实的电视机照片或带有复杂按键细节",
+    "禁止天线过于细长尖锐",
+    "禁止直接照搬参考图中的白色小狗形象，必须基于电视轮廓生成"
+  ],
+  "color_strategy": "主体统一为白色或极浅色毛绒，背景严格采用低饱和度马卡龙 pastel 色系（避开原品牌高饱和粉），描边使用深灰/黑色。",
+  "identity_priority": "优先确保'小电视'轮廓及天线特征的辨识度，其次满足主题的毛绒拟态风格。",
+  "generation_brief": "A fluffy white chibi creature shaped like a rounded retro TV set, two small round antenna-ears on top, simple kawaii face with dot eyes and small smile in the center screen area, soft cotton fur texture, thick hand-drawn black outline, lying on a pastel lavender background, matte paper texture, cute healing vibe, 2d flat illustration."
+}

@@ -1,0 +1,147 @@
+{
+  "status_code": 200,
+  "request_id": "daac9623-c7f7-9324-9c33-138c279dee8a",
+  "code": "",
+  "message": "",
+  "output": {
+    "text": null,
+    "finish_reason": null,
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/c2/20260630/727717a8/972f4706-446d-4131-bf9a-df7b493db31a_0.png?Expires=1782915846&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=rMwGb2eLBaQo2Z4qe4vbSSjq9og%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/a6/20260630/727717a8/864467a5-1fc4-4c0c-9d89-7abbdffa492f_0.png?Expires=1782915846&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=dg0%2FSSupePp8HWYlnOIHn22Jno4%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/99/20260630/727717a8/49d7a5de-b4f4-4ec9-810c-6815154ccb90_0.png?Expires=1782915846&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=naeTEy2csVr5p3vKJebT7tv1FQU%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/93/20260630/727717a8/c2aa9785-ae48-46c9-b06c-96125fdf805d_0.png?Expires=1782915846&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=%2BkGk0UIpIngjNUcrIkrscUwyRW4%3D"
+            }
+          ]
+        }
+      }
+    ],
+    "audio": null,
+    "finished": true,
+    "debug_info": [
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 1472140069,
+        "is_refiner": false,
+        "inference_cost": 6.778243680018932,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格重绘模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的主题风格参考图。\n- 最后一张图是目标 App 的原始图标合成图。\n\n任务：\n请将最后一张目标图标重绘为同一主题包风格，使生成结果看起来像这套主题图标包中的新图标。\n\n必须保留：\n- 目标 App 的主体身份。\n- 目标 App 的核心符号。\n- 目标原始图标的主要轮廓。\n- 目标原始图标的背景结构。\n- 目标原始图标的整体构图。\n\n需要学习参考主题图的：\n- 颜色体系。\n- 线条和边缘处理。\n- 材质和纹理。\n- 阴影和高光。\n- 卡通化程度。\n- 可爱化程度。\n- 整体主题质感。\n\n不要生成：\n- 文字。\n- 水印。\n- 额外 logo。\n- 额外物体。\n- 乱码。\n- 与目标 App 身份冲突的元素。\n\n\n【主题包】\ntheme_id: theme_001\n\n【输入图片说明】\n图 1 到图 N 是同一个主题包 theme_001 中的参考主题图。\n最后一张图是目标 App 的原始图标合成图。\n\n【任务】\n请将最后一张目标图标重绘成 theme_001 的统一主题风格。\n必须保留目标 App 的主体身份、核心符号、轮廓、背景结构和整体构图。\n不要文字、水印、额外 logo、额外物体、乱码。\n\n【Qwen 主题分析】\ntheme_001 是一种‘软萌治愈系’手绘插画风格。其核心特征是将原本扁平、几何化或具象的App图标转化为圆润、有机的手绘线条画。背景统一替换为低饱和度的莫兰迪色系（如淡蓝、淡绿、米白）圆角矩形卡片。前景主体被重构为粗线条描边的白色或浅色轮廓，内部填充极简，并强制添加一只白色的、云朵状或棉花糖状的Q版小生物（拥有简单的点状眼睛和微笑嘴巴）作为视觉焦点，通常趴在主体上方或与主体互动。整体氛围轻松、可爱、童趣，具有明显的手绘涂鸦质感。\n\n【生成提示】\ncute hand-drawn icon style, soft pastel colors, thick sketchy outlines, a white fluffy cloud-like creature with a cute face resting on top of the main subject, minimalist design, matte texture, rounded corners background, doodle art style, kawaii aesthetic, simple shapes, no text, clean composition --ar 1:1\n\n【目标保留要求】\n针对目标图（小红书世界杯直播）：1. **必须保留**：‘小红书’三个汉字的字形结构（需转化为手绘体）、下方的弧形碗状结构、以及中间的足球元素。2. **必须移除**：所有的写实光影、复杂的蓝色渐变背景、‘世界杯直播’的具体文字内容（除非能完美转化为手绘装饰符号，否则建议移除文字以保持图标纯净度，或者将文字简化为波浪线装饰）、红色的细线条装饰。3. **转化重点**：将‘小红书’字体变得圆润像面包一样；将足球转化为简笔画风格的球体；在字体或足球上趴着那只标志性的白色小生物。\n\n【负向提示】\nrealistic, 3d render, glossy, shiny, neon, complex gradients, sharp edges, photorealistic, detailed textures, watermark, signature, extra limbs, distorted face, messy lines, dark colors, heavy shadows, text, letters, chinese characters\n",
+        "actual_prompt": "{\n  \"common\": \"整体构图保持不变：上方大字标题区域、中间弧形碗状结构、碗内足球元素；圆角矩形卡片背景的整体轮廓与比例\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标从写实渐变蓝白配色的现代扁平设计，重绘为theme_001统一的软萌治愈系手绘插画风格：背景替换为低饱和度莫兰迪米白色或淡粉色圆角矩形卡片；所有线条改为粗细不均的手绘涂鸦质感描边；整体色调转为柔和暖调，去除所有写实光影与高光；材质呈现哑光纸面质感；氛围轻松可爱，具有明显手绘童趣感\",\n    \"物体更改\": \"将上方'小红书'三个汉字转化为圆润面包体手绘字体，笔画边缘呈有机曲线而非几何硬边；将下方弧形碗状结构转化为手绘线稿风格的简笔弧线，去除蓝色渐变填充，改为白色或浅灰色轮廓线加极简内部留白；将碗内的足球转化为简笔画风格球体，保留六边形拼接纹路但以手绘线条表现，去除写实光影\",\n    \"物体删除\": \"移除所有文字内容（包括'小红书'汉字及'世界杯直播'字样）；移除红色装饰细线；移除蓝色渐变背景；移除写实高光与阴影效果\",\n    \"物体增加\": \"在'小红书'手绘字体顶部趴着一只白色云朵状Q版小生物，拥有简单点状眼睛和微笑嘴巴，身体呈蓬松棉花糖形态，与字体自然接触贴合，作为视觉焦点\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 1472140070,
+        "is_refiner": false,
+        "inference_cost": 6.742961391999984,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格重绘模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的主题风格参考图。\n- 最后一张图是目标 App 的原始图标合成图。\n\n任务：\n请将最后一张目标图标重绘为同一主题包风格，使生成结果看起来像这套主题图标包中的新图标。\n\n必须保留：\n- 目标 App 的主体身份。\n- 目标 App 的核心符号。\n- 目标原始图标的主要轮廓。\n- 目标原始图标的背景结构。\n- 目标原始图标的整体构图。\n\n需要学习参考主题图的：\n- 颜色体系。\n- 线条和边缘处理。\n- 材质和纹理。\n- 阴影和高光。\n- 卡通化程度。\n- 可爱化程度。\n- 整体主题质感。\n\n不要生成：\n- 文字。\n- 水印。\n- 额外 logo。\n- 额外物体。\n- 乱码。\n- 与目标 App 身份冲突的元素。\n\n\n【主题包】\ntheme_id: theme_001\n\n【输入图片说明】\n图 1 到图 N 是同一个主题包 theme_001 中的参考主题图。\n最后一张图是目标 App 的原始图标合成图。\n\n【任务】\n请将最后一张目标图标重绘成 theme_001 的统一主题风格。\n必须保留目标 App 的主体身份、核心符号、轮廓、背景结构和整体构图。\n不要文字、水印、额外 logo、额外物体、乱码。\n\n【Qwen 主题分析】\ntheme_001 是一种‘软萌治愈系’手绘插画风格。其核心特征是将原本扁平、几何化或具象的App图标转化为圆润、有机的手绘线条画。背景统一替换为低饱和度的莫兰迪色系（如淡蓝、淡绿、米白）圆角矩形卡片。前景主体被重构为粗线条描边的白色或浅色轮廓，内部填充极简，并强制添加一只白色的、云朵状或棉花糖状的Q版小生物（拥有简单的点状眼睛和微笑嘴巴）作为视觉焦点，通常趴在主体上方或与主体互动。整体氛围轻松、可爱、童趣，具有明显的手绘涂鸦质感。\n\n【生成提示】\ncute hand-drawn icon style, soft pastel colors, thick sketchy outlines, a white fluffy cloud-like creature with a cute face resting on top of the main subject, minimalist design, matte texture, rounded corners background, doodle art style, kawaii aesthetic, simple shapes, no text, clean composition --ar 1:1\n\n【目标保留要求】\n针对目标图（小红书世界杯直播）：1. **必须保留**：‘小红书’三个汉字的字形结构（需转化为手绘体）、下方的弧形碗状结构、以及中间的足球元素。2. **必须移除**：所有的写实光影、复杂的蓝色渐变背景、‘世界杯直播’的具体文字内容（除非能完美转化为手绘装饰符号，否则建议移除文字以保持图标纯净度，或者将文字简化为波浪线装饰）、红色的细线条装饰。3. **转化重点**：将‘小红书’字体变得圆润像面包一样；将足球转化为简笔画风格的球体；在字体或足球上趴着那只标志性的白色小生物。\n\n【负向提示】\nrealistic, 3d render, glossy, shiny, neon, complex gradients, sharp edges, photorealistic, detailed textures, watermark, signature, extra limbs, distorted face, messy lines, dark colors, heavy shadows, text, letters, chinese characters\n",
+        "actual_prompt": "{\n  \"common\": \"整体构图保持不变：上方大字标题区域、中间弧形碗状结构、碗内足球元素；圆角矩形卡片背景的整体轮廓与比例\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标从写实渐变蓝白配色的现代扁平设计，重绘为theme_001统一的软萌治愈系手绘插画风格：背景替换为低饱和度莫兰迪米白色或淡粉色圆角矩形卡片；所有线条改为粗细不均的手绘涂鸦质感描边；整体色调转为柔和暖调，去除所有写实光影与高光；材质呈现哑光纸面质感；氛围轻松可爱，具有明显手绘童趣感\",\n    \"物体更改\": \"将上方'小红书'三个汉字转化为圆润面包体手绘字体，笔画边缘呈有机曲线而非几何硬边；将下方弧形碗状结构转化为手绘线稿风格的简笔弧线，去除蓝色渐变填充，改为白色或浅灰色轮廓线加极简内部留白；将碗内的足球转化为简笔画风格球体，保留六边形拼接纹路但以手绘线条表现，去除写实光影\",\n    \"物体删除\": \"移除所有文字内容（包括'小红书'汉字及'世界杯直播'字样）；移除红色装饰细线；移除蓝色渐变背景；移除写实高光与阴影效果\",\n    \"物体增加\": \"在'小红书'手绘字体顶部趴着一只白色云朵状Q版小生物，拥有简单点状眼睛和微笑嘴巴，身体呈蓬松棉花糖形态，与字体自然接触贴合，作为视觉焦点\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 1472140071,
+        "is_refiner": false,
+        "inference_cost": 6.60064154399879,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格重绘模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的主题风格参考图。\n- 最后一张图是目标 App 的原始图标合成图。\n\n任务：\n请将最后一张目标图标重绘为同一主题包风格，使生成结果看起来像这套主题图标包中的新图标。\n\n必须保留：\n- 目标 App 的主体身份。\n- 目标 App 的核心符号。\n- 目标原始图标的主要轮廓。\n- 目标原始图标的背景结构。\n- 目标原始图标的整体构图。\n\n需要学习参考主题图的：\n- 颜色体系。\n- 线条和边缘处理。\n- 材质和纹理。\n- 阴影和高光。\n- 卡通化程度。\n- 可爱化程度。\n- 整体主题质感。\n\n不要生成：\n- 文字。\n- 水印。\n- 额外 logo。\n- 额外物体。\n- 乱码。\n- 与目标 App 身份冲突的元素。\n\n\n【主题包】\ntheme_id: theme_001\n\n【输入图片说明】\n图 1 到图 N 是同一个主题包 theme_001 中的参考主题图。\n最后一张图是目标 App 的原始图标合成图。\n\n【任务】\n请将最后一张目标图标重绘成 theme_001 的统一主题风格。\n必须保留目标 App 的主体身份、核心符号、轮廓、背景结构和整体构图。\n不要文字、水印、额外 logo、额外物体、乱码。\n\n【Qwen 主题分析】\ntheme_001 是一种‘软萌治愈系’手绘插画风格。其核心特征是将原本扁平、几何化或具象的App图标转化为圆润、有机的手绘线条画。背景统一替换为低饱和度的莫兰迪色系（如淡蓝、淡绿、米白）圆角矩形卡片。前景主体被重构为粗线条描边的白色或浅色轮廓，内部填充极简，并强制添加一只白色的、云朵状或棉花糖状的Q版小生物（拥有简单的点状眼睛和微笑嘴巴）作为视觉焦点，通常趴在主体上方或与主体互动。整体氛围轻松、可爱、童趣，具有明显的手绘涂鸦质感。\n\n【生成提示】\ncute hand-drawn icon style, soft pastel colors, thick sketchy outlines, a white fluffy cloud-like creature with a cute face resting on top of the main subject, minimalist design, matte texture, rounded corners background, doodle art style, kawaii aesthetic, simple shapes, no text, clean composition --ar 1:1\n\n【目标保留要求】\n针对目标图（小红书世界杯直播）：1. **必须保留**：‘小红书’三个汉字的字形结构（需转化为手绘体）、下方的弧形碗状结构、以及中间的足球元素。2. **必须移除**：所有的写实光影、复杂的蓝色渐变背景、‘世界杯直播’的具体文字内容（除非能完美转化为手绘装饰符号，否则建议移除文字以保持图标纯净度，或者将文字简化为波浪线装饰）、红色的细线条装饰。3. **转化重点**：将‘小红书’字体变得圆润像面包一样；将足球转化为简笔画风格的球体；在字体或足球上趴着那只标志性的白色小生物。\n\n【负向提示】\nrealistic, 3d render, glossy, shiny, neon, complex gradients, sharp edges, photorealistic, detailed textures, watermark, signature, extra limbs, distorted face, messy lines, dark colors, heavy shadows, text, letters, chinese characters\n",
+        "actual_prompt": "{\n  \"common\": \"整体构图保持不变：上方大字标题区域、中间弧形碗状结构、碗内足球元素；圆角矩形卡片背景的整体轮廓与比例\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标从写实渐变蓝白配色的现代扁平设计，重绘为theme_001统一的软萌治愈系手绘插画风格：背景替换为低饱和度莫兰迪米白色或淡粉色圆角矩形卡片；所有线条改为粗细不均的手绘涂鸦质感描边；整体色调转为柔和暖调，去除所有写实光影与高光；材质呈现哑光纸面质感；氛围轻松可爱，具有明显手绘童趣感\",\n    \"物体更改\": \"将上方'小红书'三个汉字转化为圆润面包体手绘字体，笔画边缘呈有机曲线而非几何硬边；将下方弧形碗状结构转化为手绘线稿风格的简笔弧线，去除蓝色渐变填充，改为白色或浅灰色轮廓线加极简内部留白；将碗内的足球转化为简笔画风格球体，保留六边形拼接纹路但以手绘线条表现，去除写实光影\",\n    \"物体删除\": \"移除所有文字内容（包括'小红书'汉字及'世界杯直播'字样）；移除红色装饰细线；移除蓝色渐变背景；移除写实高光与阴影效果\",\n    \"物体增加\": \"在'小红书'手绘字体顶部趴着一只白色云朵状Q版小生物，拥有简单点状眼睛和微笑嘴巴，身体呈蓬松棉花糖形态，与字体自然接触贴合，作为视觉焦点\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 1472140072,
+        "is_refiner": false,
+        "inference_cost": 6.722368982002081,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格重绘模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的主题风格参考图。\n- 最后一张图是目标 App 的原始图标合成图。\n\n任务：\n请将最后一张目标图标重绘为同一主题包风格，使生成结果看起来像这套主题图标包中的新图标。\n\n必须保留：\n- 目标 App 的主体身份。\n- 目标 App 的核心符号。\n- 目标原始图标的主要轮廓。\n- 目标原始图标的背景结构。\n- 目标原始图标的整体构图。\n\n需要学习参考主题图的：\n- 颜色体系。\n- 线条和边缘处理。\n- 材质和纹理。\n- 阴影和高光。\n- 卡通化程度。\n- 可爱化程度。\n- 整体主题质感。\n\n不要生成：\n- 文字。\n- 水印。\n- 额外 logo。\n- 额外物体。\n- 乱码。\n- 与目标 App 身份冲突的元素。\n\n\n【主题包】\ntheme_id: theme_001\n\n【输入图片说明】\n图 1 到图 N 是同一个主题包 theme_001 中的参考主题图。\n最后一张图是目标 App 的原始图标合成图。\n\n【任务】\n请将最后一张目标图标重绘成 theme_001 的统一主题风格。\n必须保留目标 App 的主体身份、核心符号、轮廓、背景结构和整体构图。\n不要文字、水印、额外 logo、额外物体、乱码。\n\n【Qwen 主题分析】\ntheme_001 是一种‘软萌治愈系’手绘插画风格。其核心特征是将原本扁平、几何化或具象的App图标转化为圆润、有机的手绘线条画。背景统一替换为低饱和度的莫兰迪色系（如淡蓝、淡绿、米白）圆角矩形卡片。前景主体被重构为粗线条描边的白色或浅色轮廓，内部填充极简，并强制添加一只白色的、云朵状或棉花糖状的Q版小生物（拥有简单的点状眼睛和微笑嘴巴）作为视觉焦点，通常趴在主体上方或与主体互动。整体氛围轻松、可爱、童趣，具有明显的手绘涂鸦质感。\n\n【生成提示】\ncute hand-drawn icon style, soft pastel colors, thick sketchy outlines, a white fluffy cloud-like creature with a cute face resting on top of the main subject, minimalist design, matte texture, rounded corners background, doodle art style, kawaii aesthetic, simple shapes, no text, clean composition --ar 1:1\n\n【目标保留要求】\n针对目标图（小红书世界杯直播）：1. **必须保留**：‘小红书’三个汉字的字形结构（需转化为手绘体）、下方的弧形碗状结构、以及中间的足球元素。2. **必须移除**：所有的写实光影、复杂的蓝色渐变背景、‘世界杯直播’的具体文字内容（除非能完美转化为手绘装饰符号，否则建议移除文字以保持图标纯净度，或者将文字简化为波浪线装饰）、红色的细线条装饰。3. **转化重点**：将‘小红书’字体变得圆润像面包一样；将足球转化为简笔画风格的球体；在字体或足球上趴着那只标志性的白色小生物。\n\n【负向提示】\nrealistic, 3d render, glossy, shiny, neon, complex gradients, sharp edges, photorealistic, detailed textures, watermark, signature, extra limbs, distorted face, messy lines, dark colors, heavy shadows, text, letters, chinese characters\n",
+        "actual_prompt": "{\n  \"common\": \"整体构图保持不变：上方大字标题区域、中间弧形碗状结构、碗内足球元素；圆角矩形卡片背景的整体轮廓与比例\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标从写实渐变蓝白配色的现代扁平设计，重绘为theme_001统一的软萌治愈系手绘插画风格：背景替换为低饱和度莫兰迪米白色或淡粉色圆角矩形卡片；所有线条改为粗细不均的手绘涂鸦质感描边；整体色调转为柔和暖调，去除所有写实光影与高光；材质呈现哑光纸面质感；氛围轻松可爱，具有明显手绘童趣感\",\n    \"物体更改\": \"将上方'小红书'三个汉字转化为圆润面包体手绘字体，笔画边缘呈有机曲线而非几何硬边；将下方弧形碗状结构转化为手绘线稿风格的简笔弧线，去除蓝色渐变填充，改为白色或浅灰色轮廓线加极简内部留白；将碗内的足球转化为简笔画风格球体，保留六边形拼接纹路但以手绘线条表现，去除写实光影\",\n    \"物体删除\": \"移除所有文字内容（包括'小红书'汉字及'世界杯直播'字样）；移除红色装饰细线；移除蓝色渐变背景；移除写实高光与阴影效果\",\n    \"物体增加\": \"在'小红书'手绘字体顶部趴着一只白色云朵状Q版小生物，拥有简单点状眼睛和微笑嘴巴，身体呈蓬松棉花糖形态，与字体自然接触贴合，作为视觉焦点\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 80764,
+    "output_tokens": 8,
+    "characters": 0,
+    "image_count": 4,
+    "total_tokens": 80772,
+    "size": "2048*2048"
+  },
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "13058",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "date": "Tue, 30 Jun 2026 14:24:07 GMT",
+    "server": "istio-envoy",
+    "x-request-id": "daac9623-c7f7-9324-9c33-138c279dee8a",
+    "req-cost-time": "20206",
+    "req-arrive-time": "1782829427871",
+    "resp-start-time": "1782829448077",
+    "transfer-encoding": "chunked"
+  }
+}

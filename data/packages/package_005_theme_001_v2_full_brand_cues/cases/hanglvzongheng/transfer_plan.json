@@ -1,0 +1,45 @@
+{
+  "app": "hanglvzongheng",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "中央白色的双竖条几何骨架（象征建筑或'H'）",
+    "环绕主体的横向弧线（象征航旅轨迹或全球化）",
+    "图形的正负形切割关系",
+    "整体图形的中心对称布局"
+  ],
+  "must_preserve": [
+    "核心的‘U’形（或盾牌形）主体结构拓扑",
+    "主体右侧/下方的环绕弧线",
+    "主体与弧线的相对位置关系（弧线穿过或环绕主体）",
+    "品牌识别线索：整体构图骨架"
+  ],
+  "recompose_allowed": [
+    "将原本平直的底部和尖锐的转角改为圆弧或波浪边缘（模拟毛绒质感）",
+    "将原本的纯几何色块填充改为带有手绘笔触的白色填充",
+    "在主体内部添加极简的五官（如豆豆眼）赋予生命感",
+    "背景色替换为低饱和度的莫兰迪绿或米白色"
+  ],
+  "restyle": [
+    "应用统一的粗黑色手绘描边（Doodle outline）",
+    "主体转化为白色毛绒团状生物形态，消除锐利直角",
+    "背景转换为低饱和度莫兰迪色系（淡绿或米白），增加轻微纸张纹理",
+    "采用平涂上色法，去除所有3D光影、渐变和高光"
+  ],
+  "decorate": [
+    "在主体上添加简单的黑色豆豆眼和微笑嘴",
+    "主体边缘呈现不规则锯齿或波浪线以模拟蓬松感",
+    "线条边缘保留轻微的手绘抖动感"
+  ],
+  "forbid": [
+    "禁止保留原图标的高饱和度草绿色背景",
+    "禁止保留原本锐利的直角和硬朗的切边",
+    "禁止将核心结构完全改变为具体物体（如飞机、行李箱、地球仪）",
+    "禁止使用3D光影、金属光泽或复杂渐变",
+    "禁止丢失环绕的弧线元素",
+    "禁止主题IP元素与Logo主体割裂"
+  ],
+  "color_strategy": "背景使用低饱和度莫兰迪绿或米白；主体填充纯白；描边深灰或黑色；点缀极少量粉色腮红",
+  "identity_priority": "严格保留‘H’形/双柱结构与环绕弧线的拓扑关系，在此基础上进行萌化重构",
+  "generation_brief": "Cute hand-drawn doodle style app icon for Hanglv Zongheng. Center subject is a white, fluffy, round cartoon character shaped like a stylized 'U' or double-pillar structure with a horizontal arc wrapping around it. The sharp geometric edges are softened into organic, wavy outlines. Simple cute facial features (dot eyes, small smile) on the white body. Thick black hand-drawn outlines with slight jitter. Background is solid low-saturation pastel green or cream with subtle paper texture. Flat colors, no shadows, no gradients, kawaii aesthetic."
+}

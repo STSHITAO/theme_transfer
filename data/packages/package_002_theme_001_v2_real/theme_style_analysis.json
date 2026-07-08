@@ -1,0 +1,26 @@
+{
+  "theme_style_analysis": "这是一种'萌宠拟态'风格的主题。核心特征是将原本抽象或几何化的App图标主体，转化为具有生命感的Q版毛绒生物（如小狗、团子）。背景统一处理为低饱和度的马卡龙色系（粉彩），整体视觉语言强调圆润、柔软、可爱和治愈感。",
+  "common_background_transform": "背景从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）转变为统一的低饱和度、高明度的马卡龙色系（如淡蓝、米白、薄荷绿）。背景保持纯色填充，无复杂纹理，边缘圆角化，营造柔和的底色氛围。",
+  "common_foreground_transform": "前景主体经历彻底的'生物化'重绘。原有的几何线条被替换为毛茸茸的边缘质感；主体被赋予简单的五官（豆豆眼、小嘴）和肢体；保留原图标的核心轮廓结构（如'支'字的笔画走势、音符的形状、气泡的重叠关系），但将其具象化为趴卧或站立的卡通动物形象。",
+  "color_palette": [
+    "马卡龙 pastel 色系",
+    "低饱和度莫兰迪色",
+    "奶油白",
+    "淡天蓝",
+    "薄荷绿",
+    "暖米色"
+  ],
+  "line_style": "主体轮廓采用深灰色或黑色的细手绘线条描边，线条流畅且带有轻微的手抖感（非绝对直线），增强手绘插画感。内部细节线条极简。",
+  "texture_material": "主体表面呈现明显的'毛绒'或'棉花'质感，边缘有细微的毛发溢出效果，看起来蓬松柔软。背景则为平滑的哑光纸质或磨砂质感。",
+  "lighting_shadow": "光照均匀柔和，无强烈高光。主体下方有轻微的接触阴影，使其看起来像是趴在背景上，增加立体感和层级感。",
+  "icon_composition_rules": "主体居中或略微偏下放置，占据画面约60%-70%的面积。保留原图标的构图逻辑（例如微信的双气泡重叠结构被保留为两只宠物的前后遮挡关系）。",
+  "target_preservation": "必须严格保留目标App图标的核心识别特征（如形状轮廓、关键符号、颜色暗示或结构布局）。严禁直接照搬参考图中的'白色小狗'形象，而是根据目标图标的形状生成对应的新生物形态。",
+  "generation_prompt": "Cute chibi mascot icon design, fluffy white creature shaped like the target app logo structure, soft fur texture, hand-drawn black outline, simple kawaii face with dot eyes, lying down pose, macaron color background, pastel tones, soft lighting, vector illustration style, minimalist and healing vibe, high quality, 2d flat art.",
+  "negative_prompt": "realistic photo, 3d render, glossy plastic texture, neon colors, dark background, complex details, text, watermark, human face, sharp edges, geometric hard lines, copying alipay dog exactly, copying wechat bubbles exactly, copying tiktok note exactly.",
+  "qc_focus": "检查主体是否保留了原App的关键轮廓特征；检查是否成功转化为毛绒生物质感而非普通矢量图；检查背景颜色是否为低饱和度马卡龙色；检查是否有 inappropriate 的细节（如恐怖谷效应的眼睛）。",
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

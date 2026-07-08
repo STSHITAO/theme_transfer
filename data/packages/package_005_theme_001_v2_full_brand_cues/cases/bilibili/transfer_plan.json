@@ -1,0 +1,49 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "小电视的整体外轮廓（圆角矩形带天线结构）",
+    "天线的相对位置与数量（两根）",
+    "品牌标志性的粉色系背景",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "must_preserve": [
+    "小电视的整体外轮廓（圆角矩形带天线结构）",
+    "天线的相对位置与数量（两根）",
+    "品牌标志性的粉色系背景",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "recompose_allowed": [
+    "将原本的白色线条描边转化为黑色的粗手绘轮廓线",
+    "将屏幕区域转化为白色毛绒生物的‘脸部’",
+    "添加简单的豆豆眼和微笑嘴以符合主题IP特征",
+    "背景质感由光滑矢量改为哑光纸张纹理"
+  ],
+  "restyle": [
+    "高饱和度亮粉色调整为低饱和度莫兰迪粉/肉粉色",
+    "去除锐利几何感，边缘圆润化",
+    "整体呈现哑光粘土或纸质手绘质感",
+    "无高光，采用平涂上色"
+  ],
+  "decorate": [
+    "主体内部添加极简黑色豆豆眼和微笑嘴巴",
+    "主体边缘模拟毛绒或云朵的蓬松锯齿感",
+    "背景添加轻微纸张纹理或噪点"
+  ],
+  "forbid": [
+    "保留原图标的高饱和度亮粉色",
+    "保留原本的白色细线条风格",
+    "出现复杂的屏幕反光或玻璃质感",
+    "移除天线导致无法识别为电视",
+    "3D渲染、金属光泽、霓虹光效",
+    "写实材质、复杂光影"
+  ],
+  "color_strategy": "背景使用低饱和度莫兰迪粉/肉粉色，主体填充纯白或极浅暖白，描边使用深灰或黑色手绘线条，点缀极少量粉色腮红。",
+  "identity_priority": "严格保留小电视拓扑结构（含天线）及品牌粉色基调，在此基础上进行萌化重构。",
+  "generation_brief": "Cute hand-drawn doodle style app icon for Bilibili. A fluffy, white, round cartoon character shaped like a TV set with two antennas on top. The character has simple dot eyes and a small smile. Thick black hand-drawn outlines. Background is a soft, low-saturation pastel pink (Morandi pink) with subtle paper texture. Flat colors, no shading, kawaii aesthetic, clean composition."
+}

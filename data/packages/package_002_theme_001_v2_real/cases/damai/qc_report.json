@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美保留了原Logo的放射状花瓣结构和底部三角形特征，识别度极高。同时成功融入了参考图中的软萌、描边、低饱和度配色风格，且画面干净无瑕疵。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 80,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "可用。结构还原准确，但相比图1和图3，缺乏明显的“描边”和“手绘质感”细节，风格化程度略弱，显得比较平淡。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 25,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "良好。风格非常统一，增加了可爱的表情。但右侧花瓣颜色变为米色/肤色，改变了原Logo彩虹色的核心视觉特征，略微降低了身份识别的准确性。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_002_theme_001_v2_real\\cases\\damai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

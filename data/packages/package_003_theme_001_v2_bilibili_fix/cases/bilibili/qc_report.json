@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "保留了完整的品牌文字和标志性的小电视轮廓，背景色符合品牌特征。虽然添加的毛绒小狗主体较大，稍微遮挡了文字，但整体识别度依然很高，且风格与参考图一致。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美融合了主题风格（毛绒质感描边）与B站的核心识别元素（文字、电视框）。小狗巧妙地融入字母结构中，既可爱又没有破坏文字的完整性，构图平衡感最好。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 85,
+      "composition_score": 75,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "",
+      "recommendation": "风格化做得很好，电视框变成了毛绒质感。但是内部的小狗元素过小，导致画面重心略显空旷，且作为主题化图标，互动感不如前两张强。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_003_theme_001_v2_bilibili_fix\\cases\\bilibili\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

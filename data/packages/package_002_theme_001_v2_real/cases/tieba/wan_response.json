@@ -1,0 +1,120 @@
+{
+  "status_code": 200,
+  "request_id": "65102c9a-b417-9ac3-995c-a8687a0a6e22",
+  "code": "",
+  "message": "",
+  "output": {
+    "text": null,
+    "finish_reason": null,
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/b9/20260708/727717a8/b671d6af-7367-48c3-977b-013bc73e70ad_0.png?Expires=1783602419&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=3uc94lbfmfkHhWbJjWFkt3oV46s%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/22/20260708/727717a8/30dd42c5-c374-4fc2-95cc-90118e10a4d6_0.png?Expires=1783602419&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=rE33PXohZZsvodA9xN7HWKkf4XA%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/7c/20260708/727717a8/f0d57ae9-e3d9-49aa-96f0-f63f85296a1e_0.png?Expires=1783602419&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=%2BJ5H824YPNlYyFQT0E1cfP52A7U%3D"
+            }
+          ]
+        }
+      }
+    ],
+    "audio": null,
+    "finished": true,
+    "debug_info": [
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 290853584,
+        "is_refiner": false,
+        "inference_cost": 6.777948062000007,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n这是一种'萌宠拟态'风格的主题。核心特征是将原本抽象或几何化的App图标主体，转化为具有生命感的Q版毛绒生物（如小狗、团子）。背景统一处理为低饱和度的马卡龙色系（粉彩），整体视觉语言强调圆润、柔软、可爱和治愈感。\n\n【背景重绘规则】\n背景从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）转变为统一的低饱和度、高明度的马卡龙色系（如淡蓝、米白、薄荷绿）。背景保持纯色填充，无复杂纹理，边缘圆角化，营造柔和的底色氛围。\n\n【主体重绘规则】\n前景主体经历彻底的'生物化'重绘。原有的几何线条被替换为毛茸茸的边缘质感；主体被赋予简单的五官（豆豆眼、小嘴）和肢体；保留原图标的核心轮廓结构（如'支'字的笔画走势、音符的形状、气泡的重叠关系），但将其具象化为趴卧或站立的卡通动物形象。\n\n【颜色规则】\n['马卡龙 pastel 色系', '低饱和度莫兰迪色', '奶油白', '淡天蓝', '薄荷绿', '暖米色']\n\n【线条规则】\n主体轮廓采用深灰色或黑色的细手绘线条描边，线条流畅且带有轻微的手抖感（非绝对直线），增强手绘插画感。内部细节线条极简。\n\n【材质纹理规则】\n主体表面呈现明显的'毛绒'或'棉花'质感，边缘有细微的毛发溢出效果，看起来蓬松柔软。背景则为平滑的哑光纸质或磨砂质感。\n\n【光照阴影规则】\n光照均匀柔和，无强烈高光。主体下方有轻微的接触阴影，使其看起来像是趴在背景上，增加立体感和层级感。\n\n【构图规则】\n主体居中或略微偏下放置，占据画面约60%-70%的面积。保留原图标的构图逻辑（例如微信的双气泡重叠结构被保留为两只宠物的前后遮挡关系）。\n\n【负向约束】\nrealistic photo, 3d render, glossy plastic texture, neon colors, dark background, complex details, text, watermark, human face, sharp edges, geometric hard lines, copying alipay dog exactly, copying wechat bubbles exactly, copying tiktok note exactly.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度马卡龙/粉彩色系（Pastel）。背景色采用柔和的浅蓝、浅绿、米白等色调，前景主体统一为白色或极浅色，辅以低饱和度的彩色描边（如淡红、淡蓝）作为点缀。\",\n  \"line_style\": \"粗线条手绘轮廓（Doodle/Hand-drawn outline）。所有图形边缘均带有明显的黑色或深灰色粗描边，线条圆润流畅，模拟马克笔或签字笔的手绘质感，消除锐角。\",\n  \"material\": \"扁平化矢量插画风格（Flat Vector Illustration）。无复杂光影、渐变或拟物纹理，表面呈现哑光纸质或简单的纯色填充效果。\",\n  \"background\": \"统一的大圆角矩形（Squircle）容器。背景为纯色填充，无图案干扰，色彩明度较高，营造清新氛围。\",\n  \"composition\": \"中心构图与填充式构图结合。主体图形占据画面核心位置，比例较大，视觉重心稳定。\",\n  \"motif_rules\": \"萌系生物化改造（Kawaii Anthropomorphism）。将抽象的几何Logo或文字转化为具象的、有生命的“团子”状生物或卡通角色，强调圆润、柔软、可爱的视觉特征。\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: tieba\n\n【transfer_plan】\n{\n  \"app\": \"tieba\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"汉字“贴”的整体字形轮廓和空间结构\",\n    \"原图标中包裹文字的圆角矩形/气泡容器暗示\",\n    \"左右结构的布局比例\"\n  ],\n  \"must_preserve\": [\n    \"必须保留汉字“贴”作为视觉主体，不可替换为其他文字或纯图形\",\n    \"必须保留对话气泡的几何特征（圆角矩形加底部三角）\",\n    \"必须保留冷色调（蓝/紫）作为主色基调以维持品牌联想\",\n    \"文字与气泡边框的比例关系需保持稳定\"\n  ],\n  \"recompose_allowed\": [\n    \"将硬朗的书法/黑体笔画重构为柔软的毛绒肢体\",\n    \"去除原有的深蓝/紫红品牌色，改为白色主体+马卡龙背景\",\n    \"添加豆豆眼、小嘴巴等表情细节\",\n    \"边缘增加手绘粗描边和毛发溢出效果\"\n  ],\n  \"restyle\": [\n    \"主体材质转化为白色蓬松毛绒/棉花质感\",\n    \"线条风格转为粗黑/深灰手绘描边，消除锐角\",\n    \"背景调整为低饱和度马卡龙色系（如淡天蓝或薄荷绿）\",\n    \"光照处理为均匀柔和，无强烈高光\"\n  ],\n  \"decorate\": [\n    \"在“贴”字结构上添加简单的豆豆眼和小嘴\",\n    \"主体下方添加轻微接触阴影以增加立体感\",\n    \"边缘呈现细微的毛发溢出效果\"\n  ],\n  \"forbid\": [\n    \"直接放置原始的蓝色“贴”字Logo\",\n    \"将“贴”字完全替换为无关的动物（如直接放一只狗而看不出是“贴”字）\",\n    \"保留高饱和度的霓虹配色\",\n    \"笔画边缘锐利、无圆润化处理\",\n    \"禁止将主体替换为通用的聊天气泡图标（无“贴”字）\",\n    \"禁止移除气泡底部的尖角结构使其变成普通圆角矩形\",\n    \"禁止使用暖色调（如红、黄、橙）作为主色\"\n  ],\n  \"color_strategy\": \"主体采用白色或极浅色毛绒质感，辅以低饱和度冷色调（淡蓝/淡紫）点缀以呼应品牌色；背景统一为低饱和度马卡龙色系（如淡天蓝、薄荷绿），严禁使用高饱和度品牌原色或深色背景。\",\n  \"identity_priority\": \"严格保留汉字“贴”的字形骨架结构，确保用户能通过字形联想到百度贴吧，同时通过毛绒生物化改造符合主题风格。\",\n  \"generation_brief\": \"Cute chibi mascot icon design, a fluffy white creature shaped exactly like the Chinese character '贴' (Tie), preserving the character's stroke structure as soft fur limbs. Simple kawaii face with dot eyes. Thick hand-drawn black outline. Pastel macaron background (light mint or pale blue). Soft lighting, vector illustration style, minimalist and healing vibe. No sharp edges, no original blue logo colors.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 tieba 的原始图标，是唯一的目标身份来源。\n必须保留 tieba 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 tieba 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"大圆角矩形容器；对话气泡底部三角结构；整体构图居中\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标风格从高饱和度品牌色拟物风转变为低饱和度马卡龙粉彩扁平插画风；背景由深蓝紫色调改为淡天蓝色或薄荷绿纯色填充，明度提高，无渐变；整体光照均匀柔和，无强烈高光，呈现哑光纸质质感\",\n    \"物体更改\": \"汉字'贴'主体从硬朗黑体笔画重构为白色蓬松毛绒质感的Q版生物形态，保留'贴'字的笔画走势与空间骨架作为肢体轮廓，边缘增加手绘粗描边（黑色/深灰色），笔画末端呈现轻微毛发溢出效果；在主体上添加豆豆眼和小嘴巴表情细节；主体下方添加轻微接触阴影以增加立体感\",\n    \"物体删除\": \"移除原图中的红色外圈装饰色环；移除原有高饱和度品牌配色（深蓝、紫红）\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 290853585,
+        "is_refiner": false,
+        "inference_cost": 6.694545255000037,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n这是一种'萌宠拟态'风格的主题。核心特征是将原本抽象或几何化的App图标主体，转化为具有生命感的Q版毛绒生物（如小狗、团子）。背景统一处理为低饱和度的马卡龙色系（粉彩），整体视觉语言强调圆润、柔软、可爱和治愈感。\n\n【背景重绘规则】\n背景从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）转变为统一的低饱和度、高明度的马卡龙色系（如淡蓝、米白、薄荷绿）。背景保持纯色填充，无复杂纹理，边缘圆角化，营造柔和的底色氛围。\n\n【主体重绘规则】\n前景主体经历彻底的'生物化'重绘。原有的几何线条被替换为毛茸茸的边缘质感；主体被赋予简单的五官（豆豆眼、小嘴）和肢体；保留原图标的核心轮廓结构（如'支'字的笔画走势、音符的形状、气泡的重叠关系），但将其具象化为趴卧或站立的卡通动物形象。\n\n【颜色规则】\n['马卡龙 pastel 色系', '低饱和度莫兰迪色', '奶油白', '淡天蓝', '薄荷绿', '暖米色']\n\n【线条规则】\n主体轮廓采用深灰色或黑色的细手绘线条描边，线条流畅且带有轻微的手抖感（非绝对直线），增强手绘插画感。内部细节线条极简。\n\n【材质纹理规则】\n主体表面呈现明显的'毛绒'或'棉花'质感，边缘有细微的毛发溢出效果，看起来蓬松柔软。背景则为平滑的哑光纸质或磨砂质感。\n\n【光照阴影规则】\n光照均匀柔和，无强烈高光。主体下方有轻微的接触阴影，使其看起来像是趴在背景上，增加立体感和层级感。\n\n【构图规则】\n主体居中或略微偏下放置，占据画面约60%-70%的面积。保留原图标的构图逻辑（例如微信的双气泡重叠结构被保留为两只宠物的前后遮挡关系）。\n\n【负向约束】\nrealistic photo, 3d render, glossy plastic texture, neon colors, dark background, complex details, text, watermark, human face, sharp edges, geometric hard lines, copying alipay dog exactly, copying wechat bubbles exactly, copying tiktok note exactly.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度马卡龙/粉彩色系（Pastel）。背景色采用柔和的浅蓝、浅绿、米白等色调，前景主体统一为白色或极浅色，辅以低饱和度的彩色描边（如淡红、淡蓝）作为点缀。\",\n  \"line_style\": \"粗线条手绘轮廓（Doodle/Hand-drawn outline）。所有图形边缘均带有明显的黑色或深灰色粗描边，线条圆润流畅，模拟马克笔或签字笔的手绘质感，消除锐角。\",\n  \"material\": \"扁平化矢量插画风格（Flat Vector Illustration）。无复杂光影、渐变或拟物纹理，表面呈现哑光纸质或简单的纯色填充效果。\",\n  \"background\": \"统一的大圆角矩形（Squircle）容器。背景为纯色填充，无图案干扰，色彩明度较高，营造清新氛围。\",\n  \"composition\": \"中心构图与填充式构图结合。主体图形占据画面核心位置，比例较大，视觉重心稳定。\",\n  \"motif_rules\": \"萌系生物化改造（Kawaii Anthropomorphism）。将抽象的几何Logo或文字转化为具象的、有生命的“团子”状生物或卡通角色，强调圆润、柔软、可爱的视觉特征。\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: tieba\n\n【transfer_plan】\n{\n  \"app\": \"tieba\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"汉字“贴”的整体字形轮廓和空间结构\",\n    \"原图标中包裹文字的圆角矩形/气泡容器暗示\",\n    \"左右结构的布局比例\"\n  ],\n  \"must_preserve\": [\n    \"必须保留汉字“贴”作为视觉主体，不可替换为其他文字或纯图形\",\n    \"必须保留对话气泡的几何特征（圆角矩形加底部三角）\",\n    \"必须保留冷色调（蓝/紫）作为主色基调以维持品牌联想\",\n    \"文字与气泡边框的比例关系需保持稳定\"\n  ],\n  \"recompose_allowed\": [\n    \"将硬朗的书法/黑体笔画重构为柔软的毛绒肢体\",\n    \"去除原有的深蓝/紫红品牌色，改为白色主体+马卡龙背景\",\n    \"添加豆豆眼、小嘴巴等表情细节\",\n    \"边缘增加手绘粗描边和毛发溢出效果\"\n  ],\n  \"restyle\": [\n    \"主体材质转化为白色蓬松毛绒/棉花质感\",\n    \"线条风格转为粗黑/深灰手绘描边，消除锐角\",\n    \"背景调整为低饱和度马卡龙色系（如淡天蓝或薄荷绿）\",\n    \"光照处理为均匀柔和，无强烈高光\"\n  ],\n  \"decorate\": [\n    \"在“贴”字结构上添加简单的豆豆眼和小嘴\",\n    \"主体下方添加轻微接触阴影以增加立体感\",\n    \"边缘呈现细微的毛发溢出效果\"\n  ],\n  \"forbid\": [\n    \"直接放置原始的蓝色“贴”字Logo\",\n    \"将“贴”字完全替换为无关的动物（如直接放一只狗而看不出是“贴”字）\",\n    \"保留高饱和度的霓虹配色\",\n    \"笔画边缘锐利、无圆润化处理\",\n    \"禁止将主体替换为通用的聊天气泡图标（无“贴”字）\",\n    \"禁止移除气泡底部的尖角结构使其变成普通圆角矩形\",\n    \"禁止使用暖色调（如红、黄、橙）作为主色\"\n  ],\n  \"color_strategy\": \"主体采用白色或极浅色毛绒质感，辅以低饱和度冷色调（淡蓝/淡紫）点缀以呼应品牌色；背景统一为低饱和度马卡龙色系（如淡天蓝、薄荷绿），严禁使用高饱和度品牌原色或深色背景。\",\n  \"identity_priority\": \"严格保留汉字“贴”的字形骨架结构，确保用户能通过字形联想到百度贴吧，同时通过毛绒生物化改造符合主题风格。\",\n  \"generation_brief\": \"Cute chibi mascot icon design, a fluffy white creature shaped exactly like the Chinese character '贴' (Tie), preserving the character's stroke structure as soft fur limbs. Simple kawaii face with dot eyes. Thick hand-drawn black outline. Pastel macaron background (light mint or pale blue). Soft lighting, vector illustration style, minimalist and healing vibe. No sharp edges, no original blue logo colors.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 tieba 的原始图标，是唯一的目标身份来源。\n必须保留 tieba 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 tieba 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"大圆角矩形容器；对话气泡底部三角结构；整体构图居中\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标风格从高饱和度品牌色拟物风转变为低饱和度马卡龙粉彩扁平插画风；背景由深蓝紫色调改为淡天蓝色或薄荷绿纯色填充，明度提高，无渐变；整体光照均匀柔和，无强烈高光，呈现哑光纸质质感\",\n    \"物体更改\": \"汉字'贴'主体从硬朗黑体笔画重构为白色蓬松毛绒质感的Q版生物形态，保留'贴'字的笔画走势与空间骨架作为肢体轮廓，边缘增加手绘粗描边（黑色/深灰色），笔画末端呈现轻微毛发溢出效果；在主体上添加豆豆眼和小嘴巴表情细节；主体下方添加轻微接触阴影以增加立体感\",\n    \"物体删除\": \"移除原图中的红色外圈装饰色环；移除原有高饱和度品牌配色（深蓝、紫红）\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 290853586,
+        "is_refiner": false,
+        "inference_cost": 6.653001778002363,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n这是一种'萌宠拟态'风格的主题。核心特征是将原本抽象或几何化的App图标主体，转化为具有生命感的Q版毛绒生物（如小狗、团子）。背景统一处理为低饱和度的马卡龙色系（粉彩），整体视觉语言强调圆润、柔软、可爱和治愈感。\n\n【背景重绘规则】\n背景从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）转变为统一的低饱和度、高明度的马卡龙色系（如淡蓝、米白、薄荷绿）。背景保持纯色填充，无复杂纹理，边缘圆角化，营造柔和的底色氛围。\n\n【主体重绘规则】\n前景主体经历彻底的'生物化'重绘。原有的几何线条被替换为毛茸茸的边缘质感；主体被赋予简单的五官（豆豆眼、小嘴）和肢体；保留原图标的核心轮廓结构（如'支'字的笔画走势、音符的形状、气泡的重叠关系），但将其具象化为趴卧或站立的卡通动物形象。\n\n【颜色规则】\n['马卡龙 pastel 色系', '低饱和度莫兰迪色', '奶油白', '淡天蓝', '薄荷绿', '暖米色']\n\n【线条规则】\n主体轮廓采用深灰色或黑色的细手绘线条描边，线条流畅且带有轻微的手抖感（非绝对直线），增强手绘插画感。内部细节线条极简。\n\n【材质纹理规则】\n主体表面呈现明显的'毛绒'或'棉花'质感，边缘有细微的毛发溢出效果，看起来蓬松柔软。背景则为平滑的哑光纸质或磨砂质感。\n\n【光照阴影规则】\n光照均匀柔和，无强烈高光。主体下方有轻微的接触阴影，使其看起来像是趴在背景上，增加立体感和层级感。\n\n【构图规则】\n主体居中或略微偏下放置，占据画面约60%-70%的面积。保留原图标的构图逻辑（例如微信的双气泡重叠结构被保留为两只宠物的前后遮挡关系）。\n\n【负向约束】\nrealistic photo, 3d render, glossy plastic texture, neon colors, dark background, complex details, text, watermark, human face, sharp edges, geometric hard lines, copying alipay dog exactly, copying wechat bubbles exactly, copying tiktok note exactly.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度马卡龙/粉彩色系（Pastel）。背景色采用柔和的浅蓝、浅绿、米白等色调，前景主体统一为白色或极浅色，辅以低饱和度的彩色描边（如淡红、淡蓝）作为点缀。\",\n  \"line_style\": \"粗线条手绘轮廓（Doodle/Hand-drawn outline）。所有图形边缘均带有明显的黑色或深灰色粗描边，线条圆润流畅，模拟马克笔或签字笔的手绘质感，消除锐角。\",\n  \"material\": \"扁平化矢量插画风格（Flat Vector Illustration）。无复杂光影、渐变或拟物纹理，表面呈现哑光纸质或简单的纯色填充效果。\",\n  \"background\": \"统一的大圆角矩形（Squircle）容器。背景为纯色填充，无图案干扰，色彩明度较高，营造清新氛围。\",\n  \"composition\": \"中心构图与填充式构图结合。主体图形占据画面核心位置，比例较大，视觉重心稳定。\",\n  \"motif_rules\": \"萌系生物化改造（Kawaii Anthropomorphism）。将抽象的几何Logo或文字转化为具象的、有生命的“团子”状生物或卡通角色，强调圆润、柔软、可爱的视觉特征。\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: tieba\n\n【transfer_plan】\n{\n  \"app\": \"tieba\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"汉字“贴”的整体字形轮廓和空间结构\",\n    \"原图标中包裹文字的圆角矩形/气泡容器暗示\",\n    \"左右结构的布局比例\"\n  ],\n  \"must_preserve\": [\n    \"必须保留汉字“贴”作为视觉主体，不可替换为其他文字或纯图形\",\n    \"必须保留对话气泡的几何特征（圆角矩形加底部三角）\",\n    \"必须保留冷色调（蓝/紫）作为主色基调以维持品牌联想\",\n    \"文字与气泡边框的比例关系需保持稳定\"\n  ],\n  \"recompose_allowed\": [\n    \"将硬朗的书法/黑体笔画重构为柔软的毛绒肢体\",\n    \"去除原有的深蓝/紫红品牌色，改为白色主体+马卡龙背景\",\n    \"添加豆豆眼、小嘴巴等表情细节\",\n    \"边缘增加手绘粗描边和毛发溢出效果\"\n  ],\n  \"restyle\": [\n    \"主体材质转化为白色蓬松毛绒/棉花质感\",\n    \"线条风格转为粗黑/深灰手绘描边，消除锐角\",\n    \"背景调整为低饱和度马卡龙色系（如淡天蓝或薄荷绿）\",\n    \"光照处理为均匀柔和，无强烈高光\"\n  ],\n  \"decorate\": [\n    \"在“贴”字结构上添加简单的豆豆眼和小嘴\",\n    \"主体下方添加轻微接触阴影以增加立体感\",\n    \"边缘呈现细微的毛发溢出效果\"\n  ],\n  \"forbid\": [\n    \"直接放置原始的蓝色“贴”字Logo\",\n    \"将“贴”字完全替换为无关的动物（如直接放一只狗而看不出是“贴”字）\",\n    \"保留高饱和度的霓虹配色\",\n    \"笔画边缘锐利、无圆润化处理\",\n    \"禁止将主体替换为通用的聊天气泡图标（无“贴”字）\",\n    \"禁止移除气泡底部的尖角结构使其变成普通圆角矩形\",\n    \"禁止使用暖色调（如红、黄、橙）作为主色\"\n  ],\n  \"color_strategy\": \"主体采用白色或极浅色毛绒质感，辅以低饱和度冷色调（淡蓝/淡紫）点缀以呼应品牌色；背景统一为低饱和度马卡龙色系（如淡天蓝、薄荷绿），严禁使用高饱和度品牌原色或深色背景。\",\n  \"identity_priority\": \"严格保留汉字“贴”的字形骨架结构，确保用户能通过字形联想到百度贴吧，同时通过毛绒生物化改造符合主题风格。\",\n  \"generation_brief\": \"Cute chibi mascot icon design, a fluffy white creature shaped exactly like the Chinese character '贴' (Tie), preserving the character's stroke structure as soft fur limbs. Simple kawaii face with dot eyes. Thick hand-drawn black outline. Pastel macaron background (light mint or pale blue). Soft lighting, vector illustration style, minimalist and healing vibe. No sharp edges, no original blue logo colors.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 tieba 的原始图标，是唯一的目标身份来源。\n必须保留 tieba 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 tieba 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"大圆角矩形容器；对话气泡底部三角结构；整体构图居中\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体图标风格从高饱和度品牌色拟物风转变为低饱和度马卡龙粉彩扁平插画风；背景由深蓝紫色调改为淡天蓝色或薄荷绿纯色填充，明度提高，无渐变；整体光照均匀柔和，无强烈高光，呈现哑光纸质质感\",\n    \"物体更改\": \"汉字'贴'主体从硬朗黑体笔画重构为白色蓬松毛绒质感的Q版生物形态，保留'贴'字的笔画走势与空间骨架作为肢体轮廓，边缘增加手绘粗描边（黑色/深灰色），笔画末端呈现轻微毛发溢出效果；在主体上添加豆豆眼和小嘴巴表情细节；主体下方添加轻微接触阴影以增加立体感\",\n    \"物体删除\": \"移除原图中的红色外圈装饰色环；移除原有高饱和度品牌配色（深蓝、紫红）\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 60162,
+    "output_tokens": 6,
+    "characters": 0,
+    "image_count": 3,
+    "total_tokens": 60168,
+    "size": "2048*2048"
+  },
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "13770",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "date": "Wed, 08 Jul 2026 13:07:00 GMT",
+    "server": "istio-envoy",
+    "x-request-id": "65102c9a-b417-9ac3-995c-a8687a0a6e22",
+    "req-cost-time": "19086",
+    "req-arrive-time": "1783516001883",
+    "resp-start-time": "1783516020970",
+    "transfer-encoding": "chunked"
+  }
+}

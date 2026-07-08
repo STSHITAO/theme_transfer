@@ -1,0 +1,44 @@
+{
+  "app": "Damai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "放射状/扇形的整体拓扑结构（核心识别特征）",
+    "底部绿色三角形的相对位置（作为花托或底座的概念保留）",
+    "花瓣/叶片之间的分离关系（不能融合成一个整圆）"
+  ],
+  "must_preserve": [
+    "放射状/扇形的整体拓扑结构",
+    "底部绿色三角形底座的视觉存在与位置",
+    "多元素分离的放射排列逻辑"
+  ],
+  "recompose_allowed": [
+    "原有的彩虹渐变色系替换为主题白色主体",
+    "花瓣的锐利几何边缘转化为圆润的生物形态或云朵状",
+    "底部的三角形柔化为类似叶子或底座的有机形状",
+    "中心汇聚点的精确几何圆心允许因手绘感而略微自然偏移"
+  ],
+  "restyle": [
+    "应用低饱和度莫兰迪色系背景（淡米色或浅灰蓝）",
+    "主体填充纯白或极浅暖白",
+    "添加统一的粗黑色手绘描边（马克笔质感）",
+    "消除原有高光、渐变和3D立体感，转为平涂风格",
+    "背景增加轻微纸张纹理或噪点"
+  ],
+  "decorate": [
+    "在白色团块主体上添加极简豆豆眼或微笑嘴",
+    "边缘模拟毛绒或云朵的蓬松锯齿感",
+    "保持主体占比60%-70%，构图饱满"
+  ],
+  "forbid": [
+    "保留原有的高饱和度彩虹配色",
+    "将放射状结构改为其他无关图形（如直接画一张票）",
+    "使用平滑的矢量线条，必须保持马克笔手绘的抖动感",
+    "添加复杂的光影、立体感或玻璃质感",
+    "忽略底部元素，只画上半部分的花瓣",
+    "生成写实、3D渲染或金属光泽效果"
+  ],
+  "color_strategy": "背景使用低饱和度莫兰迪色（淡米色/浅灰蓝），主体统一为白色填充配黑色粗描边，底部底座保留柔和的绿色调以维持品牌锚点。",
+  "identity_priority": "严格保留放射状扇形骨架与底部支撑结构，牺牲色彩丰富度以换取主题风格的统一性。",
+  "generation_brief": "Cute hand-drawn doodle style app icon for Damai. Central subject is a fan-shaped cluster of white, fluffy, round blobs (representing petals) arranged radially, each with thick black sketchy outlines and simple cute faces. Below the fan, a soft green, rounded triangular base acts as a stem/support. Background is solid pastel cream or light grey-blue with subtle paper texture. Flat colors, no gradients, no 3D, kawaii aesthetic, thick marker-style lines."
+}

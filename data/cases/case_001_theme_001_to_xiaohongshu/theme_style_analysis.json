@@ -1,0 +1,25 @@
+{
+  "theme_style_analysis": "theme_001 是一种‘软萌治愈系’手绘插画风格。其核心特征是将原本扁平、几何化或具象的App图标转化为圆润、有机的手绘线条画。背景统一替换为低饱和度的莫兰迪色系（如淡蓝、淡绿、米白）圆角矩形卡片。前景主体被重构为粗线条描边的白色或浅色轮廓，内部填充极简，并强制添加一只白色的、云朵状或棉花糖状的Q版小生物（拥有简单的点状眼睛和微笑嘴巴）作为视觉焦点，通常趴在主体上方或与主体互动。整体氛围轻松、可爱、童趣，具有明显的手绘涂鸦质感。",
+  "common_background_transform": "原始背景被完全移除，替换为统一的圆角正方形容器（Squircle）。背景颜色采用柔和的 pastel 色调（例如支付宝对应天蓝色，微信对应薄荷绿，抖音对应极浅的米白色），表面呈现哑光纸质或轻微噪点纹理，无复杂光影渐变，保持平整干净以突出前景。",
+  "common_foreground_transform": "1. **轮廓重绘**：将原始Logo的锐利边缘转化为圆润、粗细不均的手绘黑色或深灰色描边线条。2. **主体拟态**：保留原始Logo的核心识别结构（如‘支’字、音符、气泡），但将其处理为类似充气气球或云朵的白色实体。3. **吉祥物植入**：在主体结构的顶部、凹陷处或旁边，添加一只白色的、毛茸茸的小动物/云朵角色，该角色具有极简的五官（两点眼、一线嘴），增加互动感。4. **去细节化**：去除原始Logo中的渐变色、立体高光、复杂纹理，仅保留双色（线稿+填色）或三色以内的扁平手绘效果。",
+  "color_palette": [
+    "#AEC6CF (Pastel Blue)",
+    "#77DD77 (Pastel Green)",
+    "#FDFD96 (Pastel Yellow/Cream)",
+    "#FFFFFF (Pure White for subjects)",
+    "#4A4A4A (Dark Grey for outlines)"
+  ],
+  "line_style": "使用类似马克笔或签字笔的手绘线条，线条闭合但不完全规整，带有自然的抖动感。描边颜色为深灰色或黑色，线条宽度中等偏粗，转角处全部圆角化处理，杜绝尖角。",
+  "texture_material": "前景主体呈现类似棉花、奶油或软陶的哑光质感，无明显反光。背景呈现细腻的磨砂纸或画布纹理。整体视觉效果柔软、无攻击性。",
+  "lighting_shadow": "采用平光照明，无强烈光源方向。仅在主体与背景接触的边缘，或主体内部层叠处添加极淡的软阴影（Ambient Occlusion），以区分层级，不追求立体写实感。",
+  "icon_composition_rules": "主体居中放大，占据画布约 60%-70% 的面积。吉祥物元素通常位于主体的上方 1/3 处或视觉重心点。构图饱满但四周留有呼吸感，避免元素切边。",
+  "target_preservation": "针对目标图（小红书世界杯直播）：1. **必须保留**：‘小红书’三个汉字的字形结构（需转化为手绘体）、下方的弧形碗状结构、以及中间的足球元素。2. **必须移除**：所有的写实光影、复杂的蓝色渐变背景、‘世界杯直播’的具体文字内容（除非能完美转化为手绘装饰符号，否则建议移除文字以保持图标纯净度，或者将文字简化为波浪线装饰）、红色的细线条装饰。3. **转化重点**：将‘小红书’字体变得圆润像面包一样；将足球转化为简笔画风格的球体；在字体或足球上趴着那只标志性的白色小生物。",
+  "generation_prompt": "cute hand-drawn icon style, soft pastel colors, thick sketchy outlines, a white fluffy cloud-like creature with a cute face resting on top of the main subject, minimalist design, matte texture, rounded corners background, doodle art style, kawaii aesthetic, simple shapes, no text, clean composition --ar 1:1",
+  "negative_prompt": "realistic, 3d render, glossy, shiny, neon, complex gradients, sharp edges, photorealistic, detailed textures, watermark, signature, extra limbs, distorted face, messy lines, dark colors, heavy shadows, text, letters, chinese characters",
+  "qc_focus": "1. 检查是否成功生成了那只标志性的白色小生物（这是该主题的灵魂）。2. 检查线条是否具有手绘的自然感，而非计算机生成的完美矢量线。3. 检查背景颜色是否为统一的低饱和度纯色。4. 确认‘小红书’的字形是否可识别但已风格化。5. 确认没有残留原始的写实足球纹理或复杂的UI文字。",
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

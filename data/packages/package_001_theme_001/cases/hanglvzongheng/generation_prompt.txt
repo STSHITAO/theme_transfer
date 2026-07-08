@@ -1,0 +1,146 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+【批量主题包基础规则】
+theme_id: theme_001
+
+这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。
+
+【统一主题分析】
+mock: 从多个参考 App 中归纳统一的柔和、干净、主题化图标绘制规律。
+
+【背景重绘规则】
+mock: 保持背景结构，统一色彩和质感。
+
+【主体重绘规则】
+mock: 保留主体轮廓，应用统一线条和材质。
+
+【颜色规则】
+['mock red', 'mock cream', 'mock dark accent']
+
+【线条规则】
+mock: 圆润清晰的边缘线。
+
+【材质纹理规则】
+mock: 轻微纸感和柔和渐变。
+
+【光照阴影规则】
+mock: 统一左上光源和轻阴影。
+
+【构图规则】
+mock: 保持中心主体和原始背景层级。
+
+【负向约束】
+文字、水印、额外 logo、额外物体、乱码、过度变形
+
+【V2 theme_board】
+{
+  "palette": "mock shared palette from style_ref images",
+  "line_style": "mock shared line language",
+  "material": "mock shared surface material",
+  "background": "mock shared icon background treatment",
+  "composition": "mock shared centered icon composition"
+}
+
+【V2 主题化设计原则】
+所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。
+
+整包一致性要求：
+- 所有输出必须像同一套主题图标包。
+- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。
+- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。
+- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。
+
+
+【当前目标 App】
+target_app: hanglvzongheng
+
+【transfer_plan】
+{
+  "app": "hanglvzongheng",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "recognizable app name or symbol cue",
+    "core function cue"
+  ],
+  "must_preserve": [
+    "recognizable app name or symbol cue",
+    "core function cue"
+  ],
+  "recompose_allowed": [
+    "layout",
+    "surface treatment",
+    "supporting symbols"
+  ],
+  "restyle": [
+    "apply the shared theme outline, texture, lighting, and background rules",
+    "soften edges without changing the target logo skeleton"
+  ],
+  "decorate": [
+    "add small theme decoration only if it does not cover identity anchors"
+  ],
+  "forbid": [
+    "generic decoration without app recognition",
+    "copying reference app identity",
+    "redefining the shared theme"
+  ],
+  "generation_brief": "Create a themed icon for 航旅纵横. Follow the shared theme_board and preserve enough app recognition."
+}
+
+【身份优先级】
+请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。
+如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。
+禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。
+
+【目标保留要求】
+最后一张输入图是 hanglvzongheng 的原始图标，是唯一的目标身份来源。
+必须保留 hanglvzongheng 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+只允许把整包共用的主题规则迁移到 hanglvzongheng 上，不允许重新定义本 App 的独立风格。
+
+【输出要求】
+只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。

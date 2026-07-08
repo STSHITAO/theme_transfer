@@ -13,9 +13,11 @@ from backend.services.qc_service import select_best_candidate
 from backend.services.qwen_client import (
     _call_qwen,
     _image_data_url as qwen_image_data_url,
+    analyze_theme_design,
     analyze_theme,
     analyze_theme_package,
     analyze_target_identity,
+    build_identity_strategy,
     build_transfer_plan,
     score_candidates,
 )
@@ -372,6 +374,174 @@ class MockServiceTests(unittest.TestCase):
             self.assertIn("restyle", result)
             self.assertIn("forbid", result)
 
+    def test_mock_theme_design_analysis_returns_theme_board(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_theme_design_analysis.md").write_text("主题设计分析", encoding="utf-8")
+            paths = {
+                "background_path": root / "background.png",
+                "foreground_path": root / "foreground.png",
+                "style_ref_path": root / "style_ref.jpg",
+            }
+            for path in paths.values():
+                make_image(path)
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                result = analyze_theme_design(
+                    [
+                        {
+                            "app_name": "alipay",
+                            "background_path": str(paths["background_path"]),
+                            "foreground_path": str(paths["foreground_path"]),
+                            "style_ref_path": str(paths["style_ref_path"]),
+                        }
+                    ],
+                    {
+                        "theme_id": "theme_001",
+                        "examples": {
+                            "alipay": {
+                                "app": "alipay",
+                                "display_name": "Alipay",
+                                "category": "payment",
+                                "core_function": "payment and transfer",
+                            }
+                        },
+                    },
+                    root_dir=root,
+                )
+
+            self.assertIn("theme_board", result)
+            self.assertIn("reference_transformation_patterns", result)
+            self.assertIn("identity_handling_policy", result)
+
+    def test_mock_identity_strategy_uses_target_profile_and_theme_board(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_identity_strategy.md").write_text("身份表达策略", encoding="utf-8")
+            target = root / "xiaohongshu.png"
+            make_image(target)
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                result = build_identity_strategy(
+                    {"theme_board": {"line_style": "shared line"}},
+                    {"theme_style_analysis": "theme rules"},
+                    {
+                        "app": "xiaohongshu",
+                        "display_name": "Xiaohongshu",
+                        "category": "content community",
+                        "core_function": "publish and browse note content",
+                    },
+                    str(target),
+                    root_dir=root,
+                )
+
+            self.assertEqual(result["app"], "xiaohongshu")
+            self.assertIn(result["identity_constraint_level"], ["strict", "balanced", "flexible"])
+            self.assertIn("strategy_type", result)
+            self.assertIn("design_rationale", result)
+            self.assertIn("generation_direction", result)
+
+    def test_identity_strategy_preserves_brand_identity_cues(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_identity_strategy.md").write_text("身份表达策略", encoding="utf-8")
+            target = root / "bilibili.png"
+            make_image(target)
+            qwen_json = json.dumps(
+                {
+                    "app": "bilibili",
+                    "strategy_type": "logo_simplify",
+                    "identity_constraint_level": "strict",
+                    "design_rationale": "model tried to over-recompose",
+                    "must_preserve": ["tv outline"],
+                    "can_recompose": ["bilibili wordmark", "remove internal bilibili text"],
+                    "forbid": ["keep bilibili wordmark", "directly preserve original bilibili text"],
+                    "generation_direction": "make a fluffy tv creature",
+                }
+            )
+            target_profile = {
+                "app": "bilibili",
+                "display_name": "Bilibili",
+                "category": "video community",
+                "core_function": "watch and publish videos",
+                "brand_identity_cues": [
+                    "bilibili wordmark",
+                    "pink rounded square background",
+                    "small TV outline",
+                ],
+            }
+
+            with patch.dict(os.environ, {"MOCK_MODE": "false"}, clear=False):
+                with patch("backend.services.qwen_client._call_qwen", return_value=qwen_json):
+                    result = build_identity_strategy(
+                        {"theme_board": {"line_style": "shared line"}},
+                        {"theme_style_analysis": "theme rules"},
+                        target_profile,
+                        str(target),
+                        root_dir=root,
+                    )
+
+            self.assertIn("bilibili wordmark", result["must_preserve"])
+            self.assertIn("pink rounded square background", result["must_preserve"])
+            self.assertNotIn("bilibili wordmark", result["can_recompose"])
+            self.assertFalse(any("bilibili" in item.lower() for item in result["can_recompose"]))
+            self.assertFalse(any("bilibili wordmark" in item for item in result["forbid"]))
+            self.assertFalse(any("bilibili" in item.lower() and "text" in item.lower() for item in result["forbid"]))
+
+    def test_transfer_plan_preserves_brand_identity_cues(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_transfer_plan.md").write_text("迁移计划", encoding="utf-8")
+            target_identity = {"app": "bilibili", "must_preserve": ["tv outline"], "must_not_replace_with": []}
+            target_profile = {
+                "app": "bilibili",
+                "brand_identity_cues": ["bilibili wordmark", "pink rounded square background"],
+            }
+            identity_strategy = {
+                "app": "bilibili",
+                "strategy_type": "logo_simplify",
+                "identity_constraint_level": "strict",
+                "must_preserve": ["tv outline"],
+                "can_recompose": ["bilibili wordmark", "remove internal bilibili text"],
+                "forbid": ["keep pink rounded square background", "directly preserve original bilibili text"],
+                "generation_direction": "make a fluffy tv creature",
+            }
+            qwen_json = json.dumps(
+                {
+                    "app": "bilibili",
+                    "strategy_type": "logo_simplify",
+                    "identity_constraint_level": "strict",
+                    "preserve": ["tv outline"],
+                    "must_preserve": ["tv outline"],
+                    "recompose_allowed": ["bilibili wordmark", "remove internal bilibili text"],
+                    "restyle": ["shared style"],
+                    "decorate": [],
+                    "forbid": ["keep pink rounded square background", "directly preserve original bilibili text"],
+                    "generation_brief": "make a fluffy tv creature",
+                }
+            )
+
+            with patch.dict(os.environ, {"MOCK_MODE": "false"}, clear=False):
+                with patch("backend.services.qwen_client._call_qwen", return_value=qwen_json):
+                    result = build_transfer_plan(
+                        {"theme_style_analysis": "theme rules"},
+                        target_identity,
+                        root_dir=root,
+                        target_profile=target_profile,
+                        identity_strategy=identity_strategy,
+                    )
+
+            self.assertIn("bilibili wordmark", result["must_preserve"])
+            self.assertIn("pink rounded square background", result["must_preserve"])
+            self.assertNotIn("bilibili wordmark", result["recompose_allowed"])
+            self.assertFalse(any("bilibili" in item.lower() for item in result["recompose_allowed"]))
+            self.assertFalse(any("pink rounded square background" in item for item in result["forbid"]))
+            self.assertFalse(any("bilibili" in item.lower() and "text" in item.lower() for item in result["forbid"]))
+
     def test_prompt_service_saves_final_prompt(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -525,6 +695,10 @@ class MockServiceTests(unittest.TestCase):
 
             self.assertEqual(result["best_candidate"], str(candidate))
             self.assertEqual(result["candidates"][0]["overall_score"], 85)
+            self.assertIn("target_recognition_score", result["candidates"][0])
+            self.assertIn("semantic_fit_score", result["candidates"][0])
+            self.assertIn("identity_constraint_score", result["candidates"][0])
+            self.assertIn("over_recompose_risk", result["candidates"][0])
 
 
 if __name__ == "__main__":

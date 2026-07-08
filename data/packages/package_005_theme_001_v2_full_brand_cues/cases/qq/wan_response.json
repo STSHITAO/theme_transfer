@@ -1,0 +1,120 @@
+{
+  "status_code": 200,
+  "request_id": "5cc28c52-6c89-9e5e-bd55-a6d543c3ee21",
+  "code": "",
+  "message": "",
+  "output": {
+    "text": null,
+    "finish_reason": null,
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/22/20260708/727717a8/0001d569-ec2e-403c-a818-cb7643550327_0.png?Expires=1783604040&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=MNMYEcBaPlihPFLtuKv7SVyweBQ%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/82/20260708/727717a8/175c9026-ef7c-4867-892d-e9215c9d260a_0.png?Expires=1783604039&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=OtYOIEPs%2B04XasczOZKdm7uuJss%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/da/20260708/727717a8/4e3556ec-121f-42e0-aedf-bd5364a484b0_0.png?Expires=1783604040&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=85eXC6HNykYyGsJ%2FohJtGZFnhBw%3D"
+            }
+          ]
+        }
+      }
+    ],
+    "audio": null,
+    "finished": true,
+    "debug_info": [
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 796275443,
+        "is_refiner": false,
+        "inference_cost": 6.728388532000054,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n治愈系手绘简笔画风格（Doodle/Hand-drawn Style）。核心特征是将原本扁平、几何化或具象的App图标主体，转化为线条圆润、造型Q萌的手绘涂鸦形象。整体视觉语言统一为低饱和度的莫兰迪色系背景，配合白色或浅色的粗线条描边主体，营造出柔软、亲切、童趣的氛围。\n\n【背景重绘规则】\n背景颜色发生显著变化，从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）统一转变为低饱和度、高明度的柔和 pastel 色调（如淡蓝、米白、淡绿）。背景质感由原本的纯色平面转变为带有轻微纸张纹理或噪点的哑光质感，边缘保持标准的圆角矩形，但视觉上更温润。\n\n【主体重绘规则】\n主体符号 undergoes '拟人化'与'生物化'重构。原本的几何图形（如音符、气泡）或文字（如'支'）被重绘为具有生命感的卡通角色（通常表现为毛茸茸的小动物或团子状生物）。关键规则是：保留原主体的核心轮廓结构（如音符的弯曲度、气泡的重叠关系），但将直线变为曲线，锐角变为圆角，并添加简单的五官（豆豆眼、微笑嘴）和毛绒边缘细节。所有主体均改为白色填充搭配黑色或深灰色粗描边。\n\n【颜色规则】\n['背景：低饱和度马卡龙色/莫兰迪色（淡蓝 #AEC6CF, 米白 #F5F5DC, 淡绿 #B0E0E6）', '主体填充：纯白或极浅的暖白', '主体描边：深灰或黑色（模拟马克笔或签字笔痕迹）', '点缀色：极少量的粉色或淡黄用于腮红或装饰']\n\n【线条规则】\n模仿手绘的不规则粗线条。线条边缘不完全平滑，带有轻微的抖动感或笔触粗细变化。描边宽度较宽，不仅勾勒轮廓，还作为主要的视觉分割线。内部细节（如眼睛、嘴巴）使用极简的单线条绘制。\n\n【材质纹理规则】\n整体呈现2D平面插画质感，但在主体边缘通过不规则的锯齿或波浪线模拟'毛绒'或'云朵'的蓬松感。背景具有细腻的磨砂纸或水彩纸纹理，消除数字生成的光滑感。\n\n【光照阴影规则】\n无复杂的光影渲染。采用平涂（Flat Color）上色法。仅在主体与背景接触的边缘，或主体内部结构重叠处，使用极淡的阴影色块来暗示层级，不使用高光和反射光。\n\n【构图规则】\n主体在画面中占比极大，通常占据画布中心 60%-70% 的区域。构图饱满，主体元素之间紧密贴合或重叠。如果是多元素组合（如微信的双气泡），保持原有的相对位置关系，但通过形变使其融合得更自然。\n\n【负向约束】\nphotorealistic, 3d render, glossy, metallic, neon lights, complex gradients, sharp edges, realistic textures, dark background, saturated colors, text, watermark, logo, extra limbs, distorted structure, messy lines.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度莫兰迪色系（如灰蓝、薄荷绿、米白），配合高对比度的白色主体与深色描边\",\n  \"line_style\": \"粗线条黑色手绘轮廓线（Doodle outline），线条圆润流畅，具有马克笔或签字笔的手写质感\",\n  \"material\": \"哑光纸质或粘土质感，无光泽，强调扁平化中的手工温度\",\n  \"background\": \"统一使用低饱和度的纯色块填充圆角矩形，去除了原图标可能存在的渐变或复杂纹理\",\n  \"composition\": \"中心构图，主体图形放大填满画面，边缘留有少量呼吸感\",\n  \"motif_rules\": \"将原有几何或具象Logo转化为‘软萌’生物形态（如将气泡变为团状生物），并强制添加统一的黑色粗描边以统合视觉风格\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: qq\n\n【transfer_plan】\n{\n  \"app\": \"QQ\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"企鹅整体剪影轮廓（圆头、椭圆身体）\",\n    \"红色围巾的环绕位置与形态\",\n    \"左眼睁开、右眼眨眼的特定神态\",\n    \"黄色嘴巴和脚掌的相对位置\",\n    \"黑白分明的身体色块分布逻辑\"\n  ],\n  \"must_preserve\": [\n    \"企鹅的整体剪影结构\",\n    \"红色围巾的特征性结构\",\n    \"标志性的眨眼表情\",\n    \"嘴巴和脚掌的相对位置关系\"\n  ],\n  \"recompose_allowed\": [\n    \"将纯黑羽毛转化为白色毛绒主体配合黑色粗描边\",\n    \"将高饱和红色围巾柔化为哑光质感或低饱和暗红\",\n    \"将光滑边缘重绘为不规则手绘抖动感线条\",\n    \"降低黄色嘴脚的饱和度以融入莫兰迪色系\"\n  ],\n  \"restyle\": [\n    \"应用粗黑色手绘轮廓线（Doodle outline）\",\n    \"主体填充改为纯白或极浅暖白，模拟毛绒/云朵质感\",\n    \"背景替换为低饱和度莫兰迪色（淡蓝/米白/淡绿）并添加纸质纹理\",\n    \"去除所有3D光影、渐变和高光，采用平涂上色\"\n  ],\n  \"decorate\": [\n    \"在主体边缘添加轻微的锯齿或波浪线模拟蓬松感\",\n    \"添加极简的豆豆眼和微笑嘴细节\",\n    \"保留极少量的粉色作为腮红点缀（可选）\"\n  ],\n  \"forbid\": [\n    \"直接保留原本的纯黑填色块\",\n    \"绘制写实的企鹅羽毛纹理\",\n    \"丢失眨眼表情\",\n    \"围巾画得过于规整像工业制品\",\n    \"使用高饱和度品牌原色\",\n    \"出现复杂光影、金属光泽或3D渲染效果\",\n    \"将企鹅替换为其他动物或抽象几何图形\"\n  ],\n  \"color_strategy\": \"背景使用低饱和度莫兰迪色（如#AEC6CF淡蓝），主体主体为白色填充，描边为深灰/黑色，围巾为柔化后的哑光红色，嘴脚为低饱和黄色。\",\n  \"identity_priority\": \"严格保留企鹅剪影、眨眼神态及围巾结构，优先确保品牌识别度，其次服从主题手绘萌化风格。\",\n  \"generation_brief\": \"Cute hand-drawn doodle style QQ icon. A fluffy, round white penguin character with thick black sketchy outlines. The penguin is winking (left eye open, right eye closed) and wearing a soft, matte red scarf. Yellow beak and feet are low-saturation. Solid pastel blue background with subtle paper texture. Flat colors, no shading, kawaii aesthetic, vector art style.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 qq 的原始图标，是唯一的目标身份来源。\n必须保留 qq 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 qq 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形图标容器；企鹅整体剪影轮廓（圆头、椭圆身体）；红色围巾环绕颈部的结构与形态；左眼睁开、右眼眨眼的神态；黄色嘴巴和脚掌的位置关系；黑白分明的身体色块分布逻辑\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体风格从高饱和度品牌扁平插画转变为治愈系手绘简笔画风格：背景由原图白色替换为低饱和度莫兰迪淡蓝（#AEC6CF），添加细腻磨砂纸纹理质感，消除光滑感；主体填充改为纯白或极浅暖白，模拟毛绒云朵质感；所有线条改为粗黑色手绘抖动感轮廓线（Doodle outline），边缘不规则带轻微波浪感；去除所有3D光影、渐变和高光，采用平涂上色法；在主体边缘添加轻微锯齿或波浪线模拟蓬松毛绒感；整体色调统一为低饱和度莫兰迪色系，营造柔软亲切童趣氛围\",\n    \"物体更改\": \"企鹅羽毛区域从纯黑填色改为白色填充配合黑色粗描边，保留黑白分明的色块分布逻辑但以手绘方式呈现；红色围巾从高饱和工业红柔化为哑光质感低饱和暗红；黄色嘴巴和脚掌饱和度降低至融入莫兰迪色系；在企鹅面部添加极简豆豆眼和微笑嘴细节以强化萌化气质\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 796275444,
+        "is_refiner": false,
+        "inference_cost": 6.747353996150196,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n治愈系手绘简笔画风格（Doodle/Hand-drawn Style）。核心特征是将原本扁平、几何化或具象的App图标主体，转化为线条圆润、造型Q萌的手绘涂鸦形象。整体视觉语言统一为低饱和度的莫兰迪色系背景，配合白色或浅色的粗线条描边主体，营造出柔软、亲切、童趣的氛围。\n\n【背景重绘规则】\n背景颜色发生显著变化，从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）统一转变为低饱和度、高明度的柔和 pastel 色调（如淡蓝、米白、淡绿）。背景质感由原本的纯色平面转变为带有轻微纸张纹理或噪点的哑光质感，边缘保持标准的圆角矩形，但视觉上更温润。\n\n【主体重绘规则】\n主体符号 undergoes '拟人化'与'生物化'重构。原本的几何图形（如音符、气泡）或文字（如'支'）被重绘为具有生命感的卡通角色（通常表现为毛茸茸的小动物或团子状生物）。关键规则是：保留原主体的核心轮廓结构（如音符的弯曲度、气泡的重叠关系），但将直线变为曲线，锐角变为圆角，并添加简单的五官（豆豆眼、微笑嘴）和毛绒边缘细节。所有主体均改为白色填充搭配黑色或深灰色粗描边。\n\n【颜色规则】\n['背景：低饱和度马卡龙色/莫兰迪色（淡蓝 #AEC6CF, 米白 #F5F5DC, 淡绿 #B0E0E6）', '主体填充：纯白或极浅的暖白', '主体描边：深灰或黑色（模拟马克笔或签字笔痕迹）', '点缀色：极少量的粉色或淡黄用于腮红或装饰']\n\n【线条规则】\n模仿手绘的不规则粗线条。线条边缘不完全平滑，带有轻微的抖动感或笔触粗细变化。描边宽度较宽，不仅勾勒轮廓，还作为主要的视觉分割线。内部细节（如眼睛、嘴巴）使用极简的单线条绘制。\n\n【材质纹理规则】\n整体呈现2D平面插画质感，但在主体边缘通过不规则的锯齿或波浪线模拟'毛绒'或'云朵'的蓬松感。背景具有细腻的磨砂纸或水彩纸纹理，消除数字生成的光滑感。\n\n【光照阴影规则】\n无复杂的光影渲染。采用平涂（Flat Color）上色法。仅在主体与背景接触的边缘，或主体内部结构重叠处，使用极淡的阴影色块来暗示层级，不使用高光和反射光。\n\n【构图规则】\n主体在画面中占比极大，通常占据画布中心 60%-70% 的区域。构图饱满，主体元素之间紧密贴合或重叠。如果是多元素组合（如微信的双气泡），保持原有的相对位置关系，但通过形变使其融合得更自然。\n\n【负向约束】\nphotorealistic, 3d render, glossy, metallic, neon lights, complex gradients, sharp edges, realistic textures, dark background, saturated colors, text, watermark, logo, extra limbs, distorted structure, messy lines.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度莫兰迪色系（如灰蓝、薄荷绿、米白），配合高对比度的白色主体与深色描边\",\n  \"line_style\": \"粗线条黑色手绘轮廓线（Doodle outline），线条圆润流畅，具有马克笔或签字笔的手写质感\",\n  \"material\": \"哑光纸质或粘土质感，无光泽，强调扁平化中的手工温度\",\n  \"background\": \"统一使用低饱和度的纯色块填充圆角矩形，去除了原图标可能存在的渐变或复杂纹理\",\n  \"composition\": \"中心构图，主体图形放大填满画面，边缘留有少量呼吸感\",\n  \"motif_rules\": \"将原有几何或具象Logo转化为‘软萌’生物形态（如将气泡变为团状生物），并强制添加统一的黑色粗描边以统合视觉风格\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: qq\n\n【transfer_plan】\n{\n  \"app\": \"QQ\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"企鹅整体剪影轮廓（圆头、椭圆身体）\",\n    \"红色围巾的环绕位置与形态\",\n    \"左眼睁开、右眼眨眼的特定神态\",\n    \"黄色嘴巴和脚掌的相对位置\",\n    \"黑白分明的身体色块分布逻辑\"\n  ],\n  \"must_preserve\": [\n    \"企鹅的整体剪影结构\",\n    \"红色围巾的特征性结构\",\n    \"标志性的眨眼表情\",\n    \"嘴巴和脚掌的相对位置关系\"\n  ],\n  \"recompose_allowed\": [\n    \"将纯黑羽毛转化为白色毛绒主体配合黑色粗描边\",\n    \"将高饱和红色围巾柔化为哑光质感或低饱和暗红\",\n    \"将光滑边缘重绘为不规则手绘抖动感线条\",\n    \"降低黄色嘴脚的饱和度以融入莫兰迪色系\"\n  ],\n  \"restyle\": [\n    \"应用粗黑色手绘轮廓线（Doodle outline）\",\n    \"主体填充改为纯白或极浅暖白，模拟毛绒/云朵质感\",\n    \"背景替换为低饱和度莫兰迪色（淡蓝/米白/淡绿）并添加纸质纹理\",\n    \"去除所有3D光影、渐变和高光，采用平涂上色\"\n  ],\n  \"decorate\": [\n    \"在主体边缘添加轻微的锯齿或波浪线模拟蓬松感\",\n    \"添加极简的豆豆眼和微笑嘴细节\",\n    \"保留极少量的粉色作为腮红点缀（可选）\"\n  ],\n  \"forbid\": [\n    \"直接保留原本的纯黑填色块\",\n    \"绘制写实的企鹅羽毛纹理\",\n    \"丢失眨眼表情\",\n    \"围巾画得过于规整像工业制品\",\n    \"使用高饱和度品牌原色\",\n    \"出现复杂光影、金属光泽或3D渲染效果\",\n    \"将企鹅替换为其他动物或抽象几何图形\"\n  ],\n  \"color_strategy\": \"背景使用低饱和度莫兰迪色（如#AEC6CF淡蓝），主体主体为白色填充，描边为深灰/黑色，围巾为柔化后的哑光红色，嘴脚为低饱和黄色。\",\n  \"identity_priority\": \"严格保留企鹅剪影、眨眼神态及围巾结构，优先确保品牌识别度，其次服从主题手绘萌化风格。\",\n  \"generation_brief\": \"Cute hand-drawn doodle style QQ icon. A fluffy, round white penguin character with thick black sketchy outlines. The penguin is winking (left eye open, right eye closed) and wearing a soft, matte red scarf. Yellow beak and feet are low-saturation. Solid pastel blue background with subtle paper texture. Flat colors, no shading, kawaii aesthetic, vector art style.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 qq 的原始图标，是唯一的目标身份来源。\n必须保留 qq 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 qq 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形图标容器；企鹅整体剪影轮廓（圆头、椭圆身体）；红色围巾环绕颈部的结构与形态；左眼睁开、右眼眨眼的神态；黄色嘴巴和脚掌的位置关系；黑白分明的身体色块分布逻辑\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体风格从高饱和度品牌扁平插画转变为治愈系手绘简笔画风格：背景由原图白色替换为低饱和度莫兰迪淡蓝（#AEC6CF），添加细腻磨砂纸纹理质感，消除光滑感；主体填充改为纯白或极浅暖白，模拟毛绒云朵质感；所有线条改为粗黑色手绘抖动感轮廓线（Doodle outline），边缘不规则带轻微波浪感；去除所有3D光影、渐变和高光，采用平涂上色法；在主体边缘添加轻微锯齿或波浪线模拟蓬松毛绒感；整体色调统一为低饱和度莫兰迪色系，营造柔软亲切童趣氛围\",\n    \"物体更改\": \"企鹅羽毛区域从纯黑填色改为白色填充配合黑色粗描边，保留黑白分明的色块分布逻辑但以手绘方式呈现；红色围巾从高饱和工业红柔化为哑光质感低饱和暗红；黄色嘴巴和脚掌饱和度降低至融入莫兰迪色系；在企鹅面部添加极简豆豆眼和微笑嘴细节以强化萌化气质\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 796275445,
+        "is_refiner": false,
+        "inference_cost": 6.8046599160006735,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n【批量主题包基础规则】\ntheme_id: theme_001\n\n这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。\n\n【统一主题分析】\n治愈系手绘简笔画风格（Doodle/Hand-drawn Style）。核心特征是将原本扁平、几何化或具象的App图标主体，转化为线条圆润、造型Q萌的手绘涂鸦形象。整体视觉语言统一为低饱和度的莫兰迪色系背景，配合白色或浅色的粗线条描边主体，营造出柔软、亲切、童趣的氛围。\n\n【背景重绘规则】\n背景颜色发生显著变化，从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）统一转变为低饱和度、高明度的柔和 pastel 色调（如淡蓝、米白、淡绿）。背景质感由原本的纯色平面转变为带有轻微纸张纹理或噪点的哑光质感，边缘保持标准的圆角矩形，但视觉上更温润。\n\n【主体重绘规则】\n主体符号 undergoes '拟人化'与'生物化'重构。原本的几何图形（如音符、气泡）或文字（如'支'）被重绘为具有生命感的卡通角色（通常表现为毛茸茸的小动物或团子状生物）。关键规则是：保留原主体的核心轮廓结构（如音符的弯曲度、气泡的重叠关系），但将直线变为曲线，锐角变为圆角，并添加简单的五官（豆豆眼、微笑嘴）和毛绒边缘细节。所有主体均改为白色填充搭配黑色或深灰色粗描边。\n\n【颜色规则】\n['背景：低饱和度马卡龙色/莫兰迪色（淡蓝 #AEC6CF, 米白 #F5F5DC, 淡绿 #B0E0E6）', '主体填充：纯白或极浅的暖白', '主体描边：深灰或黑色（模拟马克笔或签字笔痕迹）', '点缀色：极少量的粉色或淡黄用于腮红或装饰']\n\n【线条规则】\n模仿手绘的不规则粗线条。线条边缘不完全平滑，带有轻微的抖动感或笔触粗细变化。描边宽度较宽，不仅勾勒轮廓，还作为主要的视觉分割线。内部细节（如眼睛、嘴巴）使用极简的单线条绘制。\n\n【材质纹理规则】\n整体呈现2D平面插画质感，但在主体边缘通过不规则的锯齿或波浪线模拟'毛绒'或'云朵'的蓬松感。背景具有细腻的磨砂纸或水彩纸纹理，消除数字生成的光滑感。\n\n【光照阴影规则】\n无复杂的光影渲染。采用平涂（Flat Color）上色法。仅在主体与背景接触的边缘，或主体内部结构重叠处，使用极淡的阴影色块来暗示层级，不使用高光和反射光。\n\n【构图规则】\n主体在画面中占比极大，通常占据画布中心 60%-70% 的区域。构图饱满，主体元素之间紧密贴合或重叠。如果是多元素组合（如微信的双气泡），保持原有的相对位置关系，但通过形变使其融合得更自然。\n\n【负向约束】\nphotorealistic, 3d render, glossy, metallic, neon lights, complex gradients, sharp edges, realistic textures, dark background, saturated colors, text, watermark, logo, extra limbs, distorted structure, messy lines.\n\n【V2 theme_board】\n{\n  \"palette\": \"低饱和度莫兰迪色系（如灰蓝、薄荷绿、米白），配合高对比度的白色主体与深色描边\",\n  \"line_style\": \"粗线条黑色手绘轮廓线（Doodle outline），线条圆润流畅，具有马克笔或签字笔的手写质感\",\n  \"material\": \"哑光纸质或粘土质感，无光泽，强调扁平化中的手工温度\",\n  \"background\": \"统一使用低饱和度的纯色块填充圆角矩形，去除了原图标可能存在的渐变或复杂纹理\",\n  \"composition\": \"中心构图，主体图形放大填满画面，边缘留有少量呼吸感\",\n  \"motif_rules\": \"将原有几何或具象Logo转化为‘软萌’生物形态（如将气泡变为团状生物），并强制添加统一的黑色粗描边以统合视觉风格\"\n}\n\n【V2 主题化设计原则】\n所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。\n\n整包一致性要求：\n- 所有输出必须像同一套主题图标包。\n- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。\n- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。\n- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。\n\n\n【当前目标 App】\ntarget_app: qq\n\n【transfer_plan】\n{\n  \"app\": \"QQ\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"strict\",\n  \"preserve\": [\n    \"企鹅整体剪影轮廓（圆头、椭圆身体）\",\n    \"红色围巾的环绕位置与形态\",\n    \"左眼睁开、右眼眨眼的特定神态\",\n    \"黄色嘴巴和脚掌的相对位置\",\n    \"黑白分明的身体色块分布逻辑\"\n  ],\n  \"must_preserve\": [\n    \"企鹅的整体剪影结构\",\n    \"红色围巾的特征性结构\",\n    \"标志性的眨眼表情\",\n    \"嘴巴和脚掌的相对位置关系\"\n  ],\n  \"recompose_allowed\": [\n    \"将纯黑羽毛转化为白色毛绒主体配合黑色粗描边\",\n    \"将高饱和红色围巾柔化为哑光质感或低饱和暗红\",\n    \"将光滑边缘重绘为不规则手绘抖动感线条\",\n    \"降低黄色嘴脚的饱和度以融入莫兰迪色系\"\n  ],\n  \"restyle\": [\n    \"应用粗黑色手绘轮廓线（Doodle outline）\",\n    \"主体填充改为纯白或极浅暖白，模拟毛绒/云朵质感\",\n    \"背景替换为低饱和度莫兰迪色（淡蓝/米白/淡绿）并添加纸质纹理\",\n    \"去除所有3D光影、渐变和高光，采用平涂上色\"\n  ],\n  \"decorate\": [\n    \"在主体边缘添加轻微的锯齿或波浪线模拟蓬松感\",\n    \"添加极简的豆豆眼和微笑嘴细节\",\n    \"保留极少量的粉色作为腮红点缀（可选）\"\n  ],\n  \"forbid\": [\n    \"直接保留原本的纯黑填色块\",\n    \"绘制写实的企鹅羽毛纹理\",\n    \"丢失眨眼表情\",\n    \"围巾画得过于规整像工业制品\",\n    \"使用高饱和度品牌原色\",\n    \"出现复杂光影、金属光泽或3D渲染效果\",\n    \"将企鹅替换为其他动物或抽象几何图形\"\n  ],\n  \"color_strategy\": \"背景使用低饱和度莫兰迪色（如#AEC6CF淡蓝），主体主体为白色填充，描边为深灰/黑色，围巾为柔化后的哑光红色，嘴脚为低饱和黄色。\",\n  \"identity_priority\": \"严格保留企鹅剪影、眨眼神态及围巾结构，优先确保品牌识别度，其次服从主题手绘萌化风格。\",\n  \"generation_brief\": \"Cute hand-drawn doodle style QQ icon. A fluffy, round white penguin character with thick black sketchy outlines. The penguin is winking (left eye open, right eye closed) and wearing a soft, matte red scarf. Yellow beak and feet are low-saturation. Solid pastel blue background with subtle paper texture. Flat colors, no shading, kawaii aesthetic, vector art style.\"\n}\n\n【身份优先级】\n请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。\n如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。\n禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。\n\n【目标保留要求】\n最后一张输入图是 qq 的原始图标，是唯一的目标身份来源。\n必须保留 qq 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n只允许把整包共用的主题规则迁移到 qq 上，不允许重新定义本 App 的独立风格。\n\n【输出要求】\n只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。\n",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形图标容器；企鹅整体剪影轮廓（圆头、椭圆身体）；红色围巾环绕颈部的结构与形态；左眼睁开、右眼眨眼的神态；黄色嘴巴和脚掌的位置关系；黑白分明的身体色块分布逻辑\",\n  \"diff\": {\n    \"风格/质量增强\": \"将整体风格从高饱和度品牌扁平插画转变为治愈系手绘简笔画风格：背景由原图白色替换为低饱和度莫兰迪淡蓝（#AEC6CF），添加细腻磨砂纸纹理质感，消除光滑感；主体填充改为纯白或极浅暖白，模拟毛绒云朵质感；所有线条改为粗黑色手绘抖动感轮廓线（Doodle outline），边缘不规则带轻微波浪感；去除所有3D光影、渐变和高光，采用平涂上色法；在主体边缘添加轻微锯齿或波浪线模拟蓬松毛绒感；整体色调统一为低饱和度莫兰迪色系，营造柔软亲切童趣氛围\",\n    \"物体更改\": \"企鹅羽毛区域从纯黑填色改为白色填充配合黑色粗描边，保留黑白分明的色块分布逻辑但以手绘方式呈现；红色围巾从高饱和工业红柔化为哑光质感低饱和暗红；黄色嘴巴和脚掌饱和度降低至融入莫兰迪色系；在企鹅面部添加极简豆豆眼和微笑嘴细节以强化萌化气质\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 60426,
+    "output_tokens": 6,
+    "characters": 0,
+    "image_count": 3,
+    "total_tokens": 60432,
+    "size": "2048*2048"
+  },
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "13431",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "date": "Wed, 08 Jul 2026 13:34:01 GMT",
+    "server": "istio-envoy",
+    "x-request-id": "5cc28c52-6c89-9e5e-bd55-a6d543c3ee21",
+    "req-cost-time": "22447",
+    "req-arrive-time": "1783517619325",
+    "resp-start-time": "1783517641773",
+    "transfer-encoding": "chunked"
+  }
+}

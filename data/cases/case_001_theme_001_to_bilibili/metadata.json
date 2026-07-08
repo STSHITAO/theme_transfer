@@ -1,0 +1,60 @@
+{
+  "theme_id": "theme_001",
+  "target_app": "bilibili",
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ],
+  "input_files": {
+    "reference_examples": [
+      {
+        "app_name": "alipay",
+        "background_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_background.png",
+        "foreground_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_foreground.png",
+        "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg"
+      },
+      {
+        "app_name": "douyin",
+        "background_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_background.png",
+        "foreground_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_foreground.png",
+        "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg"
+      },
+      {
+        "app_name": "wechat",
+        "background_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_background.png",
+        "foreground_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_foreground.png",
+        "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg"
+      }
+    ],
+    "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png"
+  },
+  "intermediate_files": {
+    "reference_layouts": [
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\reference_layouts\\alipay_layout.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\reference_layouts\\douyin_layout.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\reference_layouts\\wechat_layout.png"
+    ],
+    "target_layout": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\target_layout.png",
+    "theme_style_analysis": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\theme_style_analysis.json",
+    "wan_response": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\wan_response.json"
+  },
+  "output_files": {
+    "candidates": [
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\outputs\\case_001_theme_001_to_bilibili\\candidates\\candidate_01.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\outputs\\case_001_theme_001_to_bilibili\\candidates\\candidate_02.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\outputs\\case_001_theme_001_to_bilibili\\candidates\\candidate_03.png"
+    ],
+    "best_output": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\outputs\\case_001_theme_001_to_bilibili\\best_output.png",
+    "qc_report": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\qc_report.json",
+    "metadata": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\metadata.json"
+  },
+  "model_config": {
+    "plan_model": "qwen3.7-plus",
+    "image_model": "wan2.7-image-pro"
+  },
+  "prompt_file": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\cases\\case_001_theme_001_to_bilibili\\generation_prompt.txt",
+  "mock_mode": true,
+  "case_id": "case_001_theme_001_to_bilibili",
+  "created_at": "2026-07-07T13:39:50.124116+00:00"
+}

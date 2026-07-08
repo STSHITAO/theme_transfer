@@ -1,0 +1,50 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "target_identity_score": 95,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 98,
+      "overall_score": 95,
+      "failure_reason": "",
+      "recommendation": "完美契合主题风格。保留了目标布局的所有核心元素（文字、足球、底部弧形结构），并将复杂的3D渲染成功转化为可爱的线条插画风格。云朵角色的加入非常自然，背景色调柔和统一，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "target_identity_score": 85,
+      "background_score": 85,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "风格一致，但构图发生了较大变化。底部的弧形结构被画成了一个类似碗或容器的封闭形状，改变了原图的空间感。虽然画风可爱，但对原图结构的还原度不如 candidate_01。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 85,
+      "target_identity_score": 90,
+      "background_score": 80,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "风格基本符合，但细节处理稍显粗糙。底部的弧形结构线条过于简单，缺乏厚度感，看起来像是一个扁平的月牙，丢失了原图中类似“舞台”或“托盘”的立体暗示。云朵角色较小，视觉重心略偏。"
+    },
+    {
+      "file": "candidate_04.png",
+      "style_score": 92,
+      "target_identity_score": 90,
+      "background_score": 90,
+      "composition_score": 92,
+      "artifact_score": 98,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "非常优秀的候选图。风格清新，线条干净。与 candidate_01 非常接近，但 candidate_01 中云朵与文字的互动感（趴在文字上）更强，且底部结构的描绘更贴合原图的几何特征（candidate_04 的底部略显单薄）。作为备选也非常合适。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\outputs\\case_001_theme_001_to_xiaohongshu\\candidates\\candidate_01.png",
+  "warning": ""
+}

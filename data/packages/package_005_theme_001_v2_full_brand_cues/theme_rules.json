@@ -1,0 +1,24 @@
+{
+  "theme_style_analysis": "治愈系手绘简笔画风格（Doodle/Hand-drawn Style）。核心特征是将原本扁平、几何化或具象的App图标主体，转化为线条圆润、造型Q萌的手绘涂鸦形象。整体视觉语言统一为低饱和度的莫兰迪色系背景，配合白色或浅色的粗线条描边主体，营造出柔软、亲切、童趣的氛围。",
+  "common_background_transform": "背景颜色发生显著变化，从原始的高饱和度品牌色（如支付宝蓝、抖音黑、微信绿）统一转变为低饱和度、高明度的柔和 pastel 色调（如淡蓝、米白、淡绿）。背景质感由原本的纯色平面转变为带有轻微纸张纹理或噪点的哑光质感，边缘保持标准的圆角矩形，但视觉上更温润。",
+  "common_foreground_transform": "主体符号 undergoes '拟人化'与'生物化'重构。原本的几何图形（如音符、气泡）或文字（如'支'）被重绘为具有生命感的卡通角色（通常表现为毛茸茸的小动物或团子状生物）。关键规则是：保留原主体的核心轮廓结构（如音符的弯曲度、气泡的重叠关系），但将直线变为曲线，锐角变为圆角，并添加简单的五官（豆豆眼、微笑嘴）和毛绒边缘细节。所有主体均改为白色填充搭配黑色或深灰色粗描边。",
+  "color_palette": [
+    "背景：低饱和度马卡龙色/莫兰迪色（淡蓝 #AEC6CF, 米白 #F5F5DC, 淡绿 #B0E0E6）",
+    "主体填充：纯白或极浅的暖白",
+    "主体描边：深灰或黑色（模拟马克笔或签字笔痕迹）",
+    "点缀色：极少量的粉色或淡黄用于腮红或装饰"
+  ],
+  "line_style": "模仿手绘的不规则粗线条。线条边缘不完全平滑，带有轻微的抖动感或笔触粗细变化。描边宽度较宽，不仅勾勒轮廓，还作为主要的视觉分割线。内部细节（如眼睛、嘴巴）使用极简的单线条绘制。",
+  "texture_material": "整体呈现2D平面插画质感，但在主体边缘通过不规则的锯齿或波浪线模拟'毛绒'或'云朵'的蓬松感。背景具有细腻的磨砂纸或水彩纸纹理，消除数字生成的光滑感。",
+  "lighting_shadow": "无复杂的光影渲染。采用平涂（Flat Color）上色法。仅在主体与背景接触的边缘，或主体内部结构重叠处，使用极淡的阴影色块来暗示层级，不使用高光和反射光。",
+  "icon_composition_rules": "主体在画面中占比极大，通常占据画布中心 60%-70% 的区域。构图饱满，主体元素之间紧密贴合或重叠。如果是多元素组合（如微信的双气泡），保持原有的相对位置关系，但通过形变使其融合得更自然。",
+  "target_preservation": "必须严格保留目标 App 图标的核心识别特征（如形状拓扑结构、元素数量、相对位置）。例如，如果目标是三个圆圈组成的图标，重绘后必须是三个毛绒球体，而不能变成一个整体。严禁改变图标的骨架结构。",
+  "generation_prompt": "Cute hand-drawn doodle style app icon, minimalist vector illustration. The main subject is transformed into a fluffy, round, white cartoon character with simple cute facial features (dot eyes, small smile), thick black hand-drawn outlines. Soft pastel solid color background (light blue, cream, or mint green) with subtle paper texture. No complex shading, flat colors, kawaii aesthetic, clean composition, high quality vector art.",
+  "negative_prompt": "photorealistic, 3d render, glossy, metallic, neon lights, complex gradients, sharp edges, realistic textures, dark background, saturated colors, text, watermark, logo, extra limbs, distorted structure, messy lines.",
+  "qc_focus": "1. 检查主体是否保留了原图标的核心结构（如音符还是音符，不能变成无关物体）。2. 检查线条是否为统一的手绘粗描边风格。3. 检查背景颜色是否已转换为低饱和度柔和色调。4. 检查是否出现了不必要的复杂光影或写实材质。5. 确认主体是否具有统一的'萌系'表情特征。",
+  "used_reference_examples": [
+    "Alipay",
+    "Douyin",
+    "WeChat"
+  ]
+}

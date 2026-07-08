@@ -1,0 +1,24 @@
+{
+  "theme_id": "theme_001",
+  "description": "应用图标主题风格参考包",
+  "examples": {
+    "alipay": {
+      "app": "alipay",
+      "display_name": "支付宝",
+      "category": "支付 / 金融服务",
+      "core_function": "提供支付、收款、转账、账单、生活缴费等服务"
+    },
+    "douyin": {
+      "app": "douyin",
+      "display_name": "抖音",
+      "category": "短视频 / 内容社区",
+      "core_function": "观看和发布短视频、直播、娱乐内容"
+    },
+    "wechat": {
+      "app": "wechat",
+      "display_name": "微信",
+      "category": "社交 / 通讯",
+      "core_function": "提供聊天、社交、语音视频通话、支付和小程序等服务"
+    }
+  }
+}

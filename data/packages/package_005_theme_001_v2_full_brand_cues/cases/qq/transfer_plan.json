@@ -1,0 +1,47 @@
+{
+  "app": "QQ",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "企鹅整体剪影轮廓（圆头、椭圆身体）",
+    "红色围巾的环绕位置与形态",
+    "左眼睁开、右眼眨眼的特定神态",
+    "黄色嘴巴和脚掌的相对位置",
+    "黑白分明的身体色块分布逻辑"
+  ],
+  "must_preserve": [
+    "企鹅的整体剪影结构",
+    "红色围巾的特征性结构",
+    "标志性的眨眼表情",
+    "嘴巴和脚掌的相对位置关系"
+  ],
+  "recompose_allowed": [
+    "将纯黑羽毛转化为白色毛绒主体配合黑色粗描边",
+    "将高饱和红色围巾柔化为哑光质感或低饱和暗红",
+    "将光滑边缘重绘为不规则手绘抖动感线条",
+    "降低黄色嘴脚的饱和度以融入莫兰迪色系"
+  ],
+  "restyle": [
+    "应用粗黑色手绘轮廓线（Doodle outline）",
+    "主体填充改为纯白或极浅暖白，模拟毛绒/云朵质感",
+    "背景替换为低饱和度莫兰迪色（淡蓝/米白/淡绿）并添加纸质纹理",
+    "去除所有3D光影、渐变和高光，采用平涂上色"
+  ],
+  "decorate": [
+    "在主体边缘添加轻微的锯齿或波浪线模拟蓬松感",
+    "添加极简的豆豆眼和微笑嘴细节",
+    "保留极少量的粉色作为腮红点缀（可选）"
+  ],
+  "forbid": [
+    "直接保留原本的纯黑填色块",
+    "绘制写实的企鹅羽毛纹理",
+    "丢失眨眼表情",
+    "围巾画得过于规整像工业制品",
+    "使用高饱和度品牌原色",
+    "出现复杂光影、金属光泽或3D渲染效果",
+    "将企鹅替换为其他动物或抽象几何图形"
+  ],
+  "color_strategy": "背景使用低饱和度莫兰迪色（如#AEC6CF淡蓝），主体主体为白色填充，描边为深灰/黑色，围巾为柔化后的哑光红色，嘴脚为低饱和黄色。",
+  "identity_priority": "严格保留企鹅剪影、眨眼神态及围巾结构，优先确保品牌识别度，其次服从主题手绘萌化风格。",
+  "generation_brief": "Cute hand-drawn doodle style QQ icon. A fluffy, round white penguin character with thick black sketchy outlines. The penguin is winking (left eye open, right eye closed) and wearing a soft, matte red scarf. Yellow beak and feet are low-saturation. Solid pastel blue background with subtle paper texture. Flat colors, no shading, kawaii aesthetic, vector art style."
+}

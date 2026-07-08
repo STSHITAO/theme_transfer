@@ -1,0 +1,10 @@
+{
+  "mock": true,
+  "message": "MOCK_MODE=true，未调用 Wan API。",
+  "input_images": [
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\target_layout.png"
+  ]
+}

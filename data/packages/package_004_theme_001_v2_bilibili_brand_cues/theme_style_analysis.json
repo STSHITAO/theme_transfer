@@ -1,0 +1,30 @@
+{
+  "theme_style_analysis": "治愈系软萌卡通风格（Healing Soft Cartoon）。核心特征是将原本抽象或几何化的App图标主体，转化为具有生命感的‘毛绒团子’或‘Q版生物’形象。整体视觉语言强调圆润、柔软、低饱和度马卡龙色系以及手绘涂鸦感，营造温馨、可爱的氛围。",
+  "common_background_transform": "背景颜色进行‘粉彩化/马卡龙化’处理，显著降低原色的饱和度和亮度（如深蓝变浅蓝，深绿变薄荷绿，黑色变米白），呈现柔和的哑光质感。保留原有的圆角矩形轮廓，但边缘更加柔和，无强烈光影立体感。",
+  "common_foreground_transform": "主体符号被重构为‘毛绒生物’形态。原本的线条或几何块面被替换为蓬松的白色或浅色毛发团块；在主体的关键位置（如顶部、转角或怀抱处）添加统一的‘小白狗/小团子’装饰角色；为主体添加极简的豆豆眼和微笑嘴，赋予其表情；所有边缘均处理为不规则的手绘波浪线，模拟毛茸茸的触感。",
+  "color_palette": [
+    "低饱和度马卡龙色（背景）",
+    "暖调米白色（主体毛发）",
+    "深炭灰色（描边与五官）",
+    "柔和 pastel 色调"
+  ],
+  "line_style": "深灰色细线条手绘描边，线条具有自然的抖动感（非完美几何直线），用于勾勒主体轮廓和内部结构，增强插画感。",
+  "texture_material": "主体表现为蓬松柔软的短毛绒材质，背景表现为平滑细腻的纸质或哑光塑料质感。",
+  "lighting_shadow": "全局柔光照明，无明显强光源方向。主体下方有极淡的接触阴影以区分层级，整体画面扁平但通过描边和色彩差异体现微弱的前后关系。",
+  "icon_composition_rules": "主体充满画面但保留呼吸感，装饰性的小生物通常依附于主体结构的上方或侧方，形成互动构图。重心稳定，留白均匀。",
+  "target_preservation": "必须严格保留目标App原始图标的核心识别结构（如字母形状、物体轮廓、相对位置关系），在此基础上进行‘毛绒化’和‘拟人化’改造，严禁改变主体的基本拓扑结构导致无法识别。",
+  "generation_prompt": "cute soft cartoon icon style, healing vibe, macaron color palette, fluffy texture, hand-drawn doodle outline, dark grey sketchy lines, rounded shapes, kawaii mascot character integrated into the logo structure, simple dot eyes and smile, matte background, high quality vector illustration, minimalist cute design",
+  "negative_prompt": "realistic photo, 3d render, glossy plastic, neon colors, sharp geometric edges, complex details, text, watermark, human faces, scary, dark shadows, original app logo colors (unless adapted to pastel)",
+  "qc_focus": [
+    "检查主体是否保留了原App的可识别轮廓",
+    "检查是否添加了标志性的毛绒/团子装饰元素",
+    "检查背景色是否为低饱和度的马卡龙色系",
+    "检查线条是否具有手绘抖动感而非机械直线",
+    "检查是否有不当的文字或水印残留"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

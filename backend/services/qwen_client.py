@@ -38,12 +38,34 @@ REQUIRED_TARGET_IDENTITY_FIELDS = [
 
 REQUIRED_TRANSFER_PLAN_FIELDS = [
     "app",
+    "strategy_type",
+    "identity_constraint_level",
     "preserve",
     "must_preserve",
+    "recompose_allowed",
     "restyle",
     "decorate",
     "forbid",
     "generation_brief",
+]
+
+REQUIRED_THEME_DESIGN_FIELDS = [
+    "theme_board",
+    "reference_transformation_patterns",
+    "shared_design_rules",
+    "identity_handling_policy",
+    "common_forbidden_failures",
+]
+
+REQUIRED_IDENTITY_STRATEGY_FIELDS = [
+    "app",
+    "strategy_type",
+    "identity_constraint_level",
+    "design_rationale",
+    "must_preserve",
+    "can_recompose",
+    "forbid",
+    "generation_direction",
 ]
 
 
@@ -108,6 +130,45 @@ def analyze_theme_package(reference_examples, root_dir=None):
     return _parse_analysis_json(text, reference_examples)
 
 
+def analyze_theme_design(reference_examples, theme_profile, root_dir=None):
+    root = Path(root_dir) if root_dir else Path.cwd()
+    _load_env(root)
+    (root / "prompts" / "qwen_theme_design_analysis.md").read_text(encoding="utf-8")
+
+    if _mock_mode():
+        return _mock_theme_design(reference_examples, theme_profile)
+
+    prompt = (root / "prompts" / "qwen_theme_design_analysis.md").read_text(encoding="utf-8")
+    content = [
+        {
+            "text": (
+                f"{prompt}\n\n"
+                "【theme_profile】\n"
+                f"{json.dumps(theme_profile, ensure_ascii=False, indent=2)}"
+            )
+        }
+    ]
+    examples = theme_profile.get("examples", {}) if isinstance(theme_profile, dict) else {}
+    for index, example in enumerate(reference_examples, start=1):
+        app_name = example["app_name"]
+        app_profile = examples.get(app_name, {})
+        content.append(
+            {
+                "text": (
+                    f"参考样例 {index}: {app_name}\n"
+                    f"{json.dumps(app_profile, ensure_ascii=False, indent=2)}\n"
+                    "接下来的三张图依次是 background、foreground、style_ref，用于分析主题化设计方式。"
+                )
+            }
+        )
+        content.append({"image": _image_data_url(example["background_path"])})
+        content.append({"image": _image_data_url(example["foreground_path"])})
+        content.append({"image": _image_data_url(example["style_ref_path"])})
+
+    text = _call_qwen(content)
+    return _parse_theme_design_json(text, reference_examples, theme_profile)
+
+
 def analyze_target_identity(target_app, target_image, root_dir=None):
     root = Path(root_dir) if root_dir else Path.cwd()
     _load_env(root)
@@ -125,13 +186,47 @@ def analyze_target_identity(target_app, target_image, root_dir=None):
     return _parse_target_identity_json(text, target_app)
 
 
-def build_transfer_plan(theme_rules, target_identity, root_dir=None):
+def build_identity_strategy(theme_design_analysis, theme_rules, target_profile, target_image, root_dir=None):
+    root = Path(root_dir) if root_dir else Path.cwd()
+    _load_env(root)
+    (root / "prompts" / "qwen_identity_strategy.md").read_text(encoding="utf-8")
+
+    if _mock_mode():
+        return _mock_identity_strategy(theme_design_analysis, target_profile)
+
+    prompt = (root / "prompts" / "qwen_identity_strategy.md").read_text(encoding="utf-8")
+    content = [
+        {
+            "text": (
+                f"{prompt}\n\n"
+                "【theme_design_analysis】\n"
+                f"{json.dumps(theme_design_analysis, ensure_ascii=False, indent=2)}\n\n"
+                "【theme_rules】\n"
+                f"{json.dumps(theme_rules, ensure_ascii=False, indent=2)}\n\n"
+                "【target_profile】\n"
+                f"{json.dumps(target_profile, ensure_ascii=False, indent=2)}"
+            )
+        },
+        {"image": _image_data_url(target_image)},
+    ]
+    text = _call_qwen(content)
+    return _parse_identity_strategy_json(text, target_profile)
+
+
+def build_transfer_plan(
+    theme_rules,
+    target_identity,
+    root_dir=None,
+    theme_design_analysis=None,
+    target_profile=None,
+    identity_strategy=None,
+):
     root = Path(root_dir) if root_dir else Path.cwd()
     _load_env(root)
     (root / "prompts" / "qwen_transfer_plan.md").read_text(encoding="utf-8")
 
     if _mock_mode():
-        return _mock_transfer_plan(theme_rules, target_identity)
+        return _mock_transfer_plan(theme_rules, target_identity, identity_strategy=identity_strategy)
 
     prompt = (root / "prompts" / "qwen_transfer_plan.md").read_text(encoding="utf-8")
     content = [
@@ -141,12 +236,23 @@ def build_transfer_plan(theme_rules, target_identity, root_dir=None):
                 "【theme_rules】\n"
                 f"{json.dumps(theme_rules, ensure_ascii=False, indent=2)}\n\n"
                 "【target_identity】\n"
-                f"{json.dumps(target_identity, ensure_ascii=False, indent=2)}"
+                f"{json.dumps(target_identity, ensure_ascii=False, indent=2)}\n\n"
+                "【theme_design_analysis】\n"
+                f"{json.dumps(theme_design_analysis or {}, ensure_ascii=False, indent=2)}\n\n"
+                "【target_profile】\n"
+                f"{json.dumps(target_profile or {}, ensure_ascii=False, indent=2)}\n\n"
+                "【identity_strategy】\n"
+                f"{json.dumps(identity_strategy or {}, ensure_ascii=False, indent=2)}"
             )
         }
     ]
     text = _call_qwen(content)
-    return _parse_transfer_plan_json(text, target_identity)
+    return _parse_transfer_plan_json(
+        text,
+        target_identity,
+        identity_strategy=identity_strategy,
+        target_profile=target_profile,
+    )
 
 
 def score_candidates(theme_style_refs, target_layout, candidate_paths, root_dir=None):
@@ -160,7 +266,12 @@ def score_candidates(theme_style_refs, target_layout, candidate_paths, root_dir=
                 {
                     "file": path,
                     "style_score": 85,
+                    "style_match_score": 85,
                     "target_identity_score": 85,
+                    "target_recognition_score": 85,
+                    "semantic_fit_score": 85,
+                    "identity_constraint_score": 85,
+                    "over_recompose_risk": 10,
                     "background_score": 85,
                     "composition_score": 85,
                     "artifact_score": 85,
@@ -259,23 +370,79 @@ def _mock_target_identity(target_app):
     }
 
 
-def _mock_transfer_plan(theme_rules, target_identity):
+def _mock_theme_design(reference_examples, theme_profile):
+    used = [example["app_name"] for example in reference_examples]
+    return {
+        "theme_board": {
+            "palette": "mock shared palette from style_ref images",
+            "line_style": "mock shared line language",
+            "material": "mock shared surface material",
+            "background": "mock shared icon background treatment",
+            "composition": "mock shared centered icon composition",
+        },
+        "reference_transformation_patterns": [
+            {
+                "app": app_name,
+                "source_semantics": (theme_profile.get("examples", {}).get(app_name, {}).get("core_function", "")),
+                "observed_transformation": "mock: infer how source semantics are represented in the transferred style_ref.",
+                "preserved_identity": "mock: retain at least one recognizable brand or function cue.",
+                "redesigned_parts": "mock: allow structure to be simplified or recomposed when theme language requires it.",
+            }
+            for app_name in used
+        ],
+        "shared_design_rules": ["use one shared theme_board for every target app"],
+        "identity_handling_policy": "mock: choose identity expression dynamically from target image and neutral app semantics.",
+        "common_forbidden_failures": [
+            "do not turn every app into a generic decoration",
+            "do not redefine theme style per app",
+        ],
+    }
+
+
+def _mock_identity_strategy(theme_design_analysis, target_profile):
+    app = target_profile.get("app", "")
+    return {
+        "app": app,
+        "strategy_type": "semantic_recompose" if app in {"xiaohongshu", "damai", "tieba"} else "logo_simplify",
+        "identity_constraint_level": "balanced",
+        "design_rationale": "mock: choose an app expression from the target image, neutral app profile, and shared theme_board.",
+        "must_preserve": ["recognizable app name or symbol cue", "core function cue"],
+        "can_recompose": ["layout", "surface treatment", "supporting symbols"],
+        "forbid": ["generic decoration without app recognition", "copying reference app identity", "redefining the shared theme"],
+        "generation_direction": (
+            f"Create a themed icon for {target_profile.get('display_name', app)}. "
+            "Follow the shared theme_board and preserve enough app recognition."
+        ),
+    }
+
+
+def _mock_transfer_plan(theme_rules, target_identity, identity_strategy=None):
     app = target_identity.get("app", "")
     preserve = target_identity.get("must_preserve", [])
     forbid = target_identity.get("must_not_replace_with", [])
+    strategy = identity_strategy or {}
+    if strategy:
+        preserve = strategy.get("must_preserve", preserve)
+        forbid = strategy.get("forbid", forbid)
     return {
         "app": app,
+        "strategy_type": strategy.get("strategy_type", "logo_simplify"),
+        "identity_constraint_level": strategy.get("identity_constraint_level", "balanced"),
         "preserve": preserve,
         "must_preserve": preserve,
+        "recompose_allowed": strategy.get("can_recompose", []),
         "restyle": [
             "apply the shared theme outline, texture, lighting, and background rules",
             "soften edges without changing the target logo skeleton",
         ],
         "decorate": ["add small theme decoration only if it does not cover identity anchors"],
         "forbid": forbid,
-        "generation_brief": (
-            f"Transform {app} into the shared theme while preserving its core structure and recognisable colors. "
-            "Do not replace the subject with a generic mascot."
+        "generation_brief": strategy.get(
+            "generation_direction",
+            (
+                f"Transform {app} into the shared theme while preserving its core structure and recognisable colors. "
+                "Do not replace the subject with a generic mascot."
+            ),
         ),
     }
 
@@ -332,6 +499,16 @@ def _parse_qc_json(text, candidate_paths):
     parsed = _parse_json(text)
     if isinstance(parsed, dict):
         parsed.setdefault("candidates", [])
+        for index, item in enumerate(parsed["candidates"]):
+            if index < len(candidate_paths):
+                item.setdefault("file", candidate_paths[index])
+            item.setdefault("style_match_score", item.get("style_score", 0))
+            item.setdefault("target_recognition_score", item.get("target_identity_score", 0))
+            item.setdefault("semantic_fit_score", 0)
+            item.setdefault("identity_constraint_score", item.get("target_identity_score", 0))
+            item.setdefault("over_recompose_risk", 0)
+            item.setdefault("artifact_score", 0)
+            item.setdefault("overall_score", 0)
         parsed.setdefault("best_candidate", candidate_paths[0] if candidate_paths else "")
         parsed.setdefault("warning", "")
         return parsed
@@ -358,18 +535,119 @@ def _parse_target_identity_json(text, target_app):
     return parsed
 
 
-def _parse_transfer_plan_json(text, target_identity):
+def _parse_theme_design_json(text, reference_examples, theme_profile):
     parsed = _parse_json(text)
     if not isinstance(parsed, dict):
         parsed = {
             "raw_response": text,
-            **_mock_transfer_plan({}, target_identity),
-            "warning": "Qwen returned invalid JSON; fallback transfer plan was used.",
+            **_mock_theme_design(reference_examples, theme_profile),
+            "warning": "Qwen returned invalid JSON; fallback theme design analysis was used.",
         }
-    fallback = _mock_transfer_plan({}, target_identity)
-    for key in REQUIRED_TRANSFER_PLAN_FIELDS:
+    fallback = _mock_theme_design(reference_examples, theme_profile)
+    for key in REQUIRED_THEME_DESIGN_FIELDS:
         parsed.setdefault(key, fallback[key])
     return parsed
+
+
+def _parse_identity_strategy_json(text, target_profile):
+    parsed = _parse_json(text)
+    if not isinstance(parsed, dict):
+        parsed = {
+            "raw_response": text,
+            **_mock_identity_strategy({}, target_profile),
+            "warning": "Qwen returned invalid JSON; fallback identity strategy was used.",
+        }
+    fallback = _mock_identity_strategy({}, target_profile)
+    for key in REQUIRED_IDENTITY_STRATEGY_FIELDS:
+        parsed.setdefault(key, fallback[key])
+    if parsed.get("identity_constraint_level") not in ["strict", "balanced", "flexible"]:
+        parsed["identity_constraint_level"] = "balanced"
+    _protect_brand_identity_cues(parsed, target_profile, preserve_keys=["must_preserve"], recompose_keys=["can_recompose"])
+    return parsed
+
+
+def _parse_transfer_plan_json(text, target_identity, identity_strategy=None, target_profile=None):
+    parsed = _parse_json(text)
+    if not isinstance(parsed, dict):
+        parsed = {
+            "raw_response": text,
+            **_mock_transfer_plan({}, target_identity, identity_strategy=identity_strategy),
+            "warning": "Qwen returned invalid JSON; fallback transfer plan was used.",
+        }
+    fallback = _mock_transfer_plan({}, target_identity, identity_strategy=identity_strategy)
+    for key in REQUIRED_TRANSFER_PLAN_FIELDS:
+        parsed.setdefault(key, fallback[key])
+    _protect_brand_identity_cues(
+        parsed,
+        target_profile or {},
+        preserve_keys=["preserve", "must_preserve"],
+        recompose_keys=["recompose_allowed"],
+    )
+    return parsed
+
+
+def _protect_brand_identity_cues(data, target_profile, preserve_keys, recompose_keys):
+    cues = []
+    if isinstance(target_profile, dict):
+        value = target_profile.get("brand_identity_cues", [])
+        if isinstance(value, list):
+            cues = [str(item) for item in value if str(item).strip()]
+    if not cues:
+        return data
+
+    for key in preserve_keys:
+        existing = data.get(key, [])
+        if not isinstance(existing, list):
+            existing = []
+        data[key] = _dedupe_list([*existing, *cues])
+
+    for key in recompose_keys:
+        data[key] = _remove_conflicting_items(data.get(key, []), cues)
+    data["forbid"] = _remove_conflicting_items(data.get("forbid", []), cues)
+    return data
+
+
+def _remove_conflicting_items(items, cues):
+    if not isinstance(items, list):
+        return []
+    cue_terms = _brand_cue_terms(cues)
+    cleaned = []
+    for item in items:
+        item_text = str(item)
+        lower = item_text.lower()
+        if any(term in lower for term in cue_terms):
+            continue
+        cleaned.append(item)
+    return cleaned
+
+
+def _brand_cue_terms(cues):
+    terms = set()
+    for cue in cues:
+        lower = str(cue).lower()
+        if lower:
+            terms.add(lower)
+        if "bilibili" in lower:
+            terms.add("bilibili")
+        if "文字" in lower or "wordmark" in lower or "text" in lower:
+            terms.update(["wordmark", "bilibili text", "bilibili 文字"])
+        if "小电视" in lower:
+            terms.add("小电视")
+        if "粉色圆角方形底" in lower:
+            terms.add("pink rounded square background")
+            terms.add("粉色圆角方形底")
+    return [term for term in terms if term]
+
+
+def _dedupe_list(items):
+    result = []
+    seen = set()
+    for item in items:
+        key = str(item)
+        if key not in seen:
+            result.append(item)
+            seen.add(key)
+    return result
 
 
 def _parse_package_qc_json(text, app_names):

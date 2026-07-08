@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美融合了主题风格（线条小狗/简笔画风）与目标App的核心视觉特征。保留了原Logo标志性的绿色背景、白色主体以及那个独特的环绕弧线（Swoosh），同时将原本的抽象几何图形合理重构为两只可爱的小狗，既符合“航旅纵横”可能隐含的出行/伴侣语义，又极具辨识度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "风格非常统一，画面也很干净可爱。但是对原Logo的重构程度较高，丢失了原Logo中明显的左右对称结构和具体的几何特征，导致如果不看颜色很难联想到是“航旅纵横”。作为通用图标很好，但作为特定App的主题化图标，识别度不如candidate_01。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 95,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 30,
+      "failure_reason": "严重错误：完全丢失了目标App的身份特征。该图标生成了抖音（Douyin/TikTok）的音符Logo形状，这属于严重的幻觉或参考图污染（可能是受到了其他任务中抖音参考图的干扰）。对于“航旅纵横”这个目标来说，这是完全错误的生成结果。",
+      "recommendation": "不可用。生成了错误的App图标（抖音），与目标App（航旅纵横）毫无关系。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\cases\\hanglvzongheng\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

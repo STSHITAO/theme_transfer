@@ -25,10 +25,55 @@ def make_project_fixture(root: Path) -> None:
         make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_background.png")
         make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_foreground.png")
         make_jpg(root / f"data/styles/theme_001/{app_name}/{app_name}_style_ref.jpg")
+    (root / "data/styles/theme_001/theme.json").write_text(
+        json.dumps(
+            {
+                "theme_id": "theme_001",
+                "description": "application icon theme reference pack",
+                "examples": {
+                    "alipay": {
+                        "app": "alipay",
+                        "display_name": "Alipay",
+                        "category": "payment",
+                        "core_function": "payment and money transfer",
+                    },
+                    "douyin": {
+                        "app": "douyin",
+                        "display_name": "Douyin",
+                        "category": "video community",
+                        "core_function": "watch and publish short videos",
+                    },
+                    "wechat": {
+                        "app": "wechat",
+                        "display_name": "WeChat",
+                        "category": "messaging",
+                        "core_function": "chat and social communication",
+                    },
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
 
     make_png(root / "data/targets/bilibili/bilibili.png", color=(20, 80, 200, 255))
     make_jpg(root / "data/targets/qq/qq.jpg", color=(20, 200, 80))
     make_png(root / "data/targets/xiaohongshu/xiaohongshu.png", color=(200, 40, 80, 255))
+    for app_name, display_name, category, core_function in [
+        ("bilibili", "Bilibili", "video community", "watch and publish videos"),
+        ("qq", "QQ", "messaging", "chat and group communication"),
+        ("xiaohongshu", "Xiaohongshu", "content community", "publish and browse image, video, and note content"),
+    ]:
+        (root / f"data/targets/{app_name}/target.json").write_text(
+            json.dumps(
+                {
+                    "app": app_name,
+                    "display_name": display_name,
+                    "category": category,
+                    "core_function": core_function,
+                }
+            ),
+            encoding="utf-8",
+        )
 
     prompts = root / "prompts"
     prompts.mkdir(parents=True)
@@ -38,6 +83,8 @@ def make_project_fixture(root: Path) -> None:
     (prompts / "qwen_package_qc.md").write_text("整包质检", encoding="utf-8")
     (prompts / "qwen_target_identity.md").write_text("目标身份分析", encoding="utf-8")
     (prompts / "qwen_transfer_plan.md").write_text("迁移计划", encoding="utf-8")
+    (prompts / "qwen_theme_design_analysis.md").write_text("主题设计分析", encoding="utf-8")
+    (prompts / "qwen_identity_strategy.md").write_text("身份表达策略", encoding="utf-8")
 
 
 class PackageWorkflowTests(unittest.TestCase):
@@ -68,6 +115,7 @@ class PackageWorkflowTests(unittest.TestCase):
             package_dir = Path(result["package_dir"])
             self.assertTrue((package_dir / "theme_rules.json").exists())
             self.assertTrue((package_dir / "theme_style_analysis.json").exists())
+            self.assertTrue((package_dir / "theme_design_analysis.json").exists())
             self.assertTrue((package_dir / "generation_base_prompt.txt").exists())
             self.assertTrue((package_dir / "target_apps.json").exists())
             self.assertTrue((package_dir / "contact_sheet.png").exists())
@@ -77,11 +125,17 @@ class PackageWorkflowTests(unittest.TestCase):
             target_apps = json.loads((package_dir / "target_apps.json").read_text(encoding="utf-8"))
             self.assertEqual(target_apps, ["bilibili", "qq", "xiaohongshu"])
             self.assertEqual(result["target_apps"], target_apps)
+            self.assertIn("theme_design_analysis_path", result)
+
+            theme_design = json.loads((package_dir / "theme_design_analysis.json").read_text(encoding="utf-8"))
+            self.assertIn("theme_board", theme_design)
+            self.assertIn("identity_handling_policy", theme_design)
 
             for app_name in target_apps:
                 case_dir = package_dir / "cases" / app_name
                 self.assertTrue((case_dir / "target_layout.png").exists(), app_name)
                 self.assertTrue((case_dir / "target_identity.json").exists(), app_name)
+                self.assertTrue((case_dir / "identity_strategy.json").exists(), app_name)
                 self.assertTrue((case_dir / "transfer_plan.json").exists(), app_name)
                 self.assertTrue((case_dir / "generation_prompt.txt").exists(), app_name)
                 self.assertTrue((case_dir / "qc_report.json").exists(), app_name)
@@ -90,8 +144,14 @@ class PackageWorkflowTests(unittest.TestCase):
                 self.assertTrue((package_dir / "final" / f"{app_name}.png").exists(), app_name)
 
                 transfer_plan = json.loads((case_dir / "transfer_plan.json").read_text(encoding="utf-8"))
+                identity_strategy = json.loads((case_dir / "identity_strategy.json").read_text(encoding="utf-8"))
                 generation_prompt = (case_dir / "generation_prompt.txt").read_text(encoding="utf-8")
                 self.assertEqual(transfer_plan["app"], app_name)
+                self.assertEqual(identity_strategy["app"], app_name)
+                self.assertIn(identity_strategy["identity_constraint_level"], ["strict", "balanced", "flexible"])
+                self.assertIn("generation_direction", identity_strategy)
+                self.assertIn("strategy_type", transfer_plan)
+                self.assertIn("identity_constraint_level", transfer_plan)
                 self.assertIn("must_preserve", transfer_plan)
                 self.assertIn("forbid", transfer_plan)
                 self.assertIn("transfer_plan", generation_prompt)
@@ -109,6 +169,7 @@ class PackageWorkflowTests(unittest.TestCase):
             self.assertTrue(metadata["mock_mode"])
             self.assertEqual(metadata["target_apps"], target_apps)
             self.assertEqual(len(metadata["final_outputs"]), len(target_apps))
+            self.assertIn("theme_design_analysis", metadata)
 
     def test_best_selection_prefers_identity_safe_candidate_over_high_overall_low_identity(self):
         candidate_paths = [

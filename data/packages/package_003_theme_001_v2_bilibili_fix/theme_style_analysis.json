@@ -1,0 +1,24 @@
+{
+  "theme_style_analysis": "这是一个典型的“萌宠拟态”或“线条小狗/简笔画宠物”风格的主题包。核心特征是将原本抽象、几何化或文字化的App图标，转化为具有生命感的白色毛绒小动物形象。这些动物通常拥有蓬松的轮廓、极简的面部表情（点状眼、短线嘴），并完美贴合原图标的结构布局。背景统一处理为低饱和度的马卡龙色系（如淡蓝、淡绿、米白），营造柔和、治愈的视觉氛围。",
+  "common_background_transform": "背景从原本的高饱和度品牌色（如支付宝蓝、微信绿）或深色（抖音黑），统一转换为低饱和度、高明度的 pastel（粉彩/马卡龙）色调。背景保持纯色填充，无复杂纹理，边缘保持标准的圆角矩形，但色彩倾向变得非常温润、不刺眼。",
+  "common_foreground_transform": "前景主体经历彻底的“生物化”重构。原本的几何图形（如音符、气泡）或文字（如“支”）被替换为一只或两只白色的、毛茸茸的小狗/小熊形象。关键规则是：动物的姿态和组合方式必须严格对应原图标的拓扑结构（例如微信的两个气泡变成两只头挨着头的小狗，抖音的音符变成一只身体弯曲成音符状的小狗）。主体材质表现为白色短绒毛，边缘有黑色细描边，内部保留极少量的阴影以体现体积感。",
+  "color_palette": [
+    "背景色：低饱和度马卡龙色系（淡天蓝、薄荷绿、奶油米白、淡粉色）",
+    "主体色：纯白色（#FFFFFF）作为毛发基底",
+    "描边色：深灰色或黑色细线（用于勾勒轮廓和五官）",
+    "点缀色：极淡的粉色（用于脸颊红晕）"
+  ],
+  "line_style": "主体采用类似手绘插画的黑色细描边，线条流畅圆润，无尖锐折角。描边粗细均匀，模仿马克笔或针管笔的质感。背景无描边或仅有极细微的内阴影以区分层级。",
+  "texture_material": "主体呈现明显的“毛绒”或“棉花”质感，表面并非平滑矢量，而是通过边缘的微小起伏和内部的轻微噪点/阴影来表现柔软度。背景为哑光平滑质感，类似优质卡纸。",
+  "lighting_shadow": "整体光照柔和均匀，模拟漫反射环境光。主体下方有轻微的接触阴影，使其看起来像是趴在背景上，而不是悬浮。主体内部（如耳朵下、肢体交叠处）有淡淡的灰色阴影以增强立体感，但不过分强调光源方向。",
+  "icon_composition_rules": "构图重心完全跟随原图标。如果是单体图标，动物居中填充；如果是双体图标（如微信），动物呈互动姿态排列。主体占比极大，几乎填满背景圆角矩形的有效区域，留白极少。",
+  "target_preservation": "必须严格保留目标App图标的**核心拓扑结构**和**元素数量**。例如，如果原图标是两个分离的物体，重绘后必须是两只互动的动物；如果原图标有特定的朝向或弯曲度，动物的体态必须模仿这种动态。严禁改变原图标的识别性布局。",
+  "generation_prompt": "cute minimalist line art style icon, a fluffy white little dog character mimicking the shape of the original app logo, soft pastel macaron background color, simple black outline, kawaii aesthetic, vector illustration, clean composition, rounded corners, high quality, soft lighting, fluffy texture.",
+  "negative_prompt": "realistic photo, complex details, text, watermark, logo, sharp edges, neon colors, dark background, 3d render, glossy plastic texture, human face, messy lines, extra limbs, wrong structure.",
+  "qc_focus": "1. 检查主体动物的姿态是否准确还原了原图标的结构（如音符的弯钩、气泡的位置）。2. 检查背景颜色是否为统一的低饱和度马卡龙色系，而非原品牌色。3. 检查主体是否为白色毛绒质感且带有黑色描边。4. 确保没有残留原图标的文字或复杂几何线条。",
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

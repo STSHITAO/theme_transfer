@@ -1,0 +1,23 @@
+{
+  "theme_style_analysis": "mock: 从多个参考 App 中归纳统一的柔和、干净、主题化图标绘制规律。",
+  "common_background_transform": "mock: 保持背景结构，统一色彩和质感。",
+  "common_foreground_transform": "mock: 保留主体轮廓，应用统一线条和材质。",
+  "color_palette": [
+    "mock red",
+    "mock cream",
+    "mock dark accent"
+  ],
+  "line_style": "mock: 圆润清晰的边缘线。",
+  "texture_material": "mock: 轻微纸感和柔和渐变。",
+  "lighting_shadow": "mock: 统一左上光源和轻阴影。",
+  "icon_composition_rules": "mock: 保持中心主体和原始背景层级。",
+  "target_preservation": "mock: 保留小红书主体身份、核心符号、轮廓和整体构图。",
+  "generation_prompt": "mock: 将目标图标重绘为 theme001 同款主题包风格。",
+  "negative_prompt": "文字、水印、额外 logo、额外物体、乱码、过度变形",
+  "qc_focus": "mock: 检查主题一致性、目标身份、构图稳定性和伪影。",
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

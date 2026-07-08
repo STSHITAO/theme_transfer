@@ -1,0 +1,25 @@
+{
+  "app": "qq",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "design_rationale": "QQ的企鹅形象本身就是具象的生物角色，与主题要求的'萌系生物化'天然契合。策略核心在于'质感重构'：将原本光滑、矢量化的扁平企鹅，转化为符合主题设定的'毛绒团子'生物。必须严格保留企鹅的经典体态（黑身白肚、黄嘴黄脚）和标志性红围巾，这是用户识别的核心锚点。通过添加豆豆眼表情和粗手绘描边，使其融入整包的治愈系风格，消除原Logo的科技锐利感。",
+  "must_preserve": [
+    "企鹅的整体轮廓剪影（头部圆润、身体椭圆）",
+    "经典的配色布局：黑色头部/背部、白色腹部、黄色嘴巴和脚掌",
+    "标志性的红色围巾（需处理为柔软的织物或毛绒质感）",
+    "眨眼的俏皮表情（可优化为更简单的豆豆眼风格）"
+  ],
+  "can_recompose": [
+    "将原本平滑的边缘改为带有毛流感的粗糙边缘",
+    "将纯黑/纯白的色块替换为带有噪点或纸张纹理的哑光质感",
+    "加重外部轮廓线，使用深灰色手绘线条勾勒",
+    "调整肢体比例，使其看起来更像趴卧的软体玩偶"
+  ],
+  "forbid": [
+    "禁止去除红围巾（会导致身份丢失）",
+    "禁止使用高光泽度的塑料或3D渲染质感",
+    "禁止改变企鹅的黑白配色逻辑",
+    "禁止线条过细或过于规整机械"
+  ],
+  "generation_direction": "A fluffy, round penguin mascot icon lying down, wearing a soft red scarf. Black head and back, white belly, yellow beak and feet. Hand-drawn thick dark grey outline, doodle style. Simple kawaii face with dot eyes (winking). Matte paper texture, no gloss. Pastel light blue background. Soft lighting, cute and healing vibe."
+}

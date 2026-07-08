@@ -1,0 +1,21 @@
+{
+  "app": "wps",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "design_rationale": "mock: choose an app expression from the target image, neutral app profile, and shared theme_board.",
+  "must_preserve": [
+    "recognizable app name or symbol cue",
+    "core function cue"
+  ],
+  "can_recompose": [
+    "layout",
+    "surface treatment",
+    "supporting symbols"
+  ],
+  "forbid": [
+    "generic decoration without app recognition",
+    "copying reference app identity",
+    "redefining the shared theme"
+  ],
+  "generation_direction": "Create a themed icon for WPS Office. Follow the shared theme_board and preserve enough app recognition."
+}

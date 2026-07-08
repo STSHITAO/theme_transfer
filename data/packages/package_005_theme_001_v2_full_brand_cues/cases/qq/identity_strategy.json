@@ -1,0 +1,25 @@
+{
+  "app": "qq",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "QQ的企鹅形象具有极高的国民认知度，其‘黑白配色+红围巾’是核心品牌资产。根据主题规则，需将原本矢量感强的企鹅转化为‘毛绒团子’生物形态。策略上保留企鹅的整体轮廓拓扑（头身比例、围巾位置），但必须执行‘材质萌化’：将黑色羽毛转化为白色毛绒主体配合黑色粗描边，将几何化的围巾转化为手绘笔触，以符合主题的Doodle风格和低饱和度要求。",
+  "must_preserve": [
+    "企鹅的整体剪影轮廓（圆头、胖身体、短翅膀）",
+    "脖子上系围巾的特征性结构",
+    "标志性的眨眼表情（左眼睁开，右眼闭合）",
+    "嘴巴和脚掌的相对位置关系"
+  ],
+  "can_recompose": [
+    "原图标的纯黑填充色（需改为白色主体+黑色描边）",
+    "围巾的高饱和红色（需柔化为哑光质感或暗红色）",
+    "原本光滑的边缘线条（需重绘为不规则的手绘抖动感线条）",
+    "脚掌和嘴巴的黄色（需降低饱和度或融入整体色调）"
+  ],
+  "forbid": [
+    "直接保留原本的纯黑填色块，导致图标在浅色背景中过重",
+    "绘制写实的企鹅羽毛纹理，破坏扁平手绘感",
+    "丢失眨眼表情，导致角色失去灵魂",
+    "围巾画得过于规整像工业制品，缺乏手工温度"
+  ],
+  "generation_direction": "Draw a cute, fluffy white penguin character in a hand-drawn doodle style with thick black outlines. The penguin is winking (one eye open, one closed) and wearing a soft, matte red scarf around its neck. Use a solid pastel blue or mint green background. The body should look like a soft marshmallow or cloud, not realistic feathers. Ensure the outline is rough and sketchy."
+}

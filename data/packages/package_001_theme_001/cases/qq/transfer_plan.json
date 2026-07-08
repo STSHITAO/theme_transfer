@@ -1,0 +1,31 @@
+{
+  "app": "qq",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "recognizable app name or symbol cue",
+    "core function cue"
+  ],
+  "must_preserve": [
+    "recognizable app name or symbol cue",
+    "core function cue"
+  ],
+  "recompose_allowed": [
+    "layout",
+    "surface treatment",
+    "supporting symbols"
+  ],
+  "restyle": [
+    "apply the shared theme outline, texture, lighting, and background rules",
+    "soften edges without changing the target logo skeleton"
+  ],
+  "decorate": [
+    "add small theme decoration only if it does not cover identity anchors"
+  ],
+  "forbid": [
+    "generic decoration without app recognition",
+    "copying reference app identity",
+    "redefining the shared theme"
+  ],
+  "generation_brief": "Create a themed icon for QQ. Follow the shared theme_board and preserve enough app recognition."
+}

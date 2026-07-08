@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "风格非常统一，采用了参考图中的手绘线条和毛绒元素。保留了B站核心视觉符号“小电视”的轮廓（天线、圆角矩形），但完全丢失了品牌文字“bilibili”。作为图标可识别为视频类应用，但在严格的品牌识别上有所欠缺，属于合理的主题化重构，但识别度不如候选图3。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 50,
+      "failure_reason": "过度重构，丢失关键品牌特征",
+      "recommendation": "虽然画风可爱且符合主题，但这更像是一个通用的电视机图标或装饰画，完全丢失了B站特有的“小电视”面部特征（如颜文字眼）和品牌文字。无法与普通电视应用区分，不推荐作为B站图标。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "最佳选择。完美平衡了主题风格与品牌识别。既采用了参考图的手绘粗糙线条风格和粉色调背景，又完整保留了“bilibili”文字和小电视轮廓。将毛绒元素巧妙融合在文字后方，既增加了趣味性，又没有遮挡关键识别信息。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\cases\\bilibili\\candidates\\candidate_03.png",
+  "warning": "",
+  "needs_retry": false
+}

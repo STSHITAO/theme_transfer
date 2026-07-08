@@ -1,5 +1,82 @@
 # theme_transfer
 
+## TPQS 整包量化评价
+
+TPQS 是独立的后处理评价模块，入口在 `evaluation/evaluate_package.py`，不调用 Qwen 或 Wan，也不修改生成结果。它读取：
+
+```text
+data/styles/<theme_id>/*/*_style_ref.*
+data/packages/<package_id>/final/*.png
+data/targets/<app>/<app>.png|jpg|jpeg|webp
+```
+
+默认配置固定在 `evaluation/evaluate_package.py`：
+
+```python
+THEME_ID = "theme_001"
+PACKAGE_ID = "package_001_theme_001"
+EVAL_ID = "eval_001_package_001_theme_001"
+```
+
+正式 TPQS 默认使用 DINOv3：
+
+```powershell
+conda activate SEG
+python evaluation/evaluate_package.py
+```
+
+默认环境变量为：
+
+```env
+TPQS_EMBEDDING_BACKEND=dinov3
+TPQS_MODEL_ID=facebook/dinov3-vitb16-pretrain-lvd1689m
+TPQS_DEVICE=cpu
+TPQS_POOLING=cls
+TPQS_IMAGE_SIZE=224
+TPQS_BATCH_SIZE=1
+```
+
+DINOv3 权重会下载到项目本地，不使用系统默认 Hugging Face 缓存：
+
+```text
+models/huggingface/hub/
+models/torch/
+```
+
+快速离线测试可以使用统计特征 backend，这个结果只用于开发验证，报告里会标记 `is_official_tpqs=false`：
+
+```powershell
+$env:TPQS_EMBEDDING_BACKEND='stats'
+python evaluation/evaluate_package.py
+```
+
+评价输出写入：
+
+```text
+data/evaluations/<eval_id>/
+  tpqs_report.json
+  metrics.csv
+  embedding_pca.png
+  pairwise_distances.json
+  inputs_manifest.json
+```
+
+TPQS 主要指标包括：
+
+- `theme_transfer_score`：生成图是否比原 target 更接近主题参考。
+- `package_consistency_score`：整包图标之间的距离分布是否更接近主题参考包。
+- `theme_membership_score`：单个 App 是否偏离整包主题。
+- `identity_separability_score`：生成图是否仍能和对应原 App 区分匹配。
+- `visual_statistics_score`：颜色、亮度、饱和度、对比度、边缘密度等视觉统计是否向主题参考靠拢。
+- `tpqs_total_score`：上述指标的几何平均分。
+
+测试不会下载 DINOv3，也不会调用真实 API：
+
+```powershell
+$env:TPQS_EMBEDDING_BACKEND='stats'
+python -m unittest tests.test_tpqs_evaluation -v
+```
+
 图标主题风格迁移 MVP。项目从一个主题包里的多个参考 App 中学习共同的视觉迁移规则，再把这些规则迁移到目标 App 的原始图标上，生成候选图并用 Qwen 做质检选择。
 
 当前工作流使用：
@@ -25,7 +102,9 @@ backend/
 
 data/
   styles/<theme_id>/<app>/ # 主题包参考样例
+  styles/<theme_id>/theme.json # 参考 App 的轻量语义描述
   targets/<target_app>/    # 目标 App 原始图
+  targets/<target_app>/target.json # 目标 App 的轻量语义描述
   cases/                   # 运行中间产物，默认不提交
   outputs/                 # 生成结果，默认不提交
 
@@ -34,6 +113,8 @@ prompts/
   wan_generation.md        # Wan 生成 prompt 模板
   qwen_qc.md               # Qwen 质检 prompt
   qwen_target_identity.md  # 目标 App 身份锚点分析 prompt
+  qwen_theme_design_analysis.md # V2 主题设计语言分析 prompt
+  qwen_identity_strategy.md # V2 目标 App 表达策略 prompt
   qwen_transfer_plan.md    # 单图迁移计划 prompt
   qwen_package_qc.md       # 整包一致性质检 prompt
 
@@ -73,6 +154,24 @@ data/targets/tieba/<任意唯一图片名>.jpg
 - 旧版 `background.png + foreground.png` 仍然兼容，但新结构推荐只放一张目标图。
 
 `theme_id` 按字面路径解析，例如 `theme_001` 对应 `data/styles/theme_001`；不会把 `theme001` 自动映射成 `theme_001`。
+
+V2 允许为主题包和目标 App 增加轻量语义 JSON。它们只描述“是什么、做什么”，不手写设计方案：
+
+```text
+data/styles/theme_001/theme.json
+data/targets/xiaohongshu/target.json
+```
+
+示例：
+
+```json
+{
+  "app": "xiaohongshu",
+  "display_name": "小红书",
+  "category": "内容社区 / 生活记录",
+  "core_function": "发布和浏览图文、视频笔记，记录和分享生活经验、商品体验、旅行、美妆、穿搭等内容"
+}
+```
 
 ## 环境变量
 
@@ -184,6 +283,7 @@ data/packages/package_001_theme_001/
 data/packages/package_001_theme_001/
   theme_rules.json
   theme_style_analysis.json
+  theme_design_analysis.json
   generation_base_prompt.txt
   target_apps.json
   contact_sheet.png
@@ -194,6 +294,7 @@ data/packages/package_001_theme_001/
     bilibili/
       target_layout.png
       target_identity.json
+      identity_strategy.json
       transfer_plan.json
       generation_prompt.txt
       candidates/
@@ -240,6 +341,31 @@ python backend/run_package.py
 
 这样做的目标是避免整包风格一致但 App 主体丢失，例如 WPS、小红书这类图标被改成无法识别的通用主题形状。
 
+### V2 语义辅助策略层
+
+V2 第一阶段不做自动 retry，重点是把“原 logo 换皮”升级为“理解 App 功能语义后的主题化表达”。
+
+新增流程：
+
+1. 读取 `theme.json`，了解参考 App 的名称、分类和核心功能。
+2. Qwen 结合参考样例的 `background / foreground / style_ref` 输出 `theme_design_analysis.json`。
+3. `theme_design_analysis.json` 中包含整包共用的 `theme_board`，用于约束所有目标 App 的颜色、线条、材质、背景和构图语言。
+4. 读取每个目标 App 的 `target.json`。
+5. Qwen 根据目标图、`target.json`、`theme_design_analysis.json` 和 `theme_rules.json` 输出 `identity_strategy.json`。
+6. `identity_strategy.json` 动态决定目标 App 使用 `logo_preserve`、`logo_simplify`、`semantic_recompose` 或 `symbolic_scene`，并给出 `identity_constraint_level`。
+7. `transfer_plan.json` 只保留 Wan 可执行内容，不把长篇设计推理直接塞进生成 prompt。
+
+V2 QC 指标包含：
+
+- `style_match_score`
+- `target_recognition_score`
+- `semantic_fit_score`
+- `identity_constraint_score`
+- `over_recompose_risk`
+- `artifact_score`
+
+候选选择会优先过滤目标识别度低、身份约束不达标、重构过度风险高或画面伪影明显的结果。
+
 ## 测试
 
 ```bash
@@ -255,6 +381,7 @@ python -m unittest discover -v
 - mock Qwen / Wan 流程。
 - 3 候选图生成和 QC 选择。
 - V1 身份分析、迁移计划和身份优先候选选择。
+- V2 主题设计分析、身份表达策略和语义辅助 QC 字段。
 - 真实 API 客户端调用参数和错误处理。
 
 ## 注意事项

@@ -1,0 +1,26 @@
+{
+  "app": "bilibili",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "design_rationale": "Bilibili的核心识别符是‘小电视’轮廓和标志性的粉色。根据theme_rules，必须将几何图形转化为毛绒生物。因此策略是将原本扁平的电视机图标重构为一只‘长得像电视机的白色毛绒小怪兽/小狗’。保留电视机的天线、圆角屏幕框作为生物的头部特征，但材质完全替换为白色绒毛，以符合主题的‘万物皆可毛绒化’规则。背景色必须从原本的亮粉色调整为低饱和度的马卡龙粉，以融入整包色调。",
+  "must_preserve": [
+    "小电视的整体外轮廓（包括顶部的两根天线）",
+    "品牌标志性的粉色系（需调整为低饱和度 pastel 粉）",
+    "屏幕区域的圆角矩形比例",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "can_recompose": [
+    "内部的 'bilibili' 文字（必须移除，替换为生物五官）",
+    "原本平滑的矢量边缘（改为手绘粗描边和毛绒质感）",
+    "高饱和度的亮粉色背景（改为柔和的淡粉色/肉粉色）"
+  ],
+  "forbid": [
+    "直接保留原图标中的文字 'bilibili'",
+    "使用原本的高饱和度亮粉色作为背景",
+    "生成没有天线的普通圆形生物（丢失电视特征）",
+    "出现玻璃质感或高光反射"
+  ],
+  "generation_direction": "Generate a cute, fluffy white creature shaped exactly like the Bilibili TV icon (rounded square body with two antennae on top). The creature should have a simple kawaii face (dot eyes) inside the screen area. Use a soft pastel pink macaron background. Apply a thick, hand-drawn black outline around the white fluffy body. No text, no glossy effects, matte paper texture."
+}

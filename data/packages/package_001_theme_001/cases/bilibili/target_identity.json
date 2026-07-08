@@ -1,0 +1,25 @@
+{
+  "app": "bilibili",
+  "identity_anchors": [
+    "bilibili original silhouette",
+    "primary brand color tendency"
+  ],
+  "must_preserve": [
+    "core logo geometry",
+    "recognizable subject structure",
+    "key brand color tendency"
+  ],
+  "can_restyle": [
+    "outline",
+    "surface material",
+    "shadow",
+    "background finish",
+    "small theme decoration"
+  ],
+  "must_not_replace_with": [
+    "generic plush ball",
+    "unrelated animal",
+    "unrecognizable cute blob"
+  ],
+  "color_preservation": "Preserve or softly adapt the target app's key recognisable colors when they are part of identity."
+}

@@ -2,3 +2,9 @@ dashscope
 python-dotenv
 pillow
 requests
+numpy
+torch
+torchvision
+transformers
+huggingface_hub
+matplotlib

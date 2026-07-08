@@ -22,6 +22,9 @@ env/
 data/cases/
 data/outputs/
 data/packages/
+data/evaluations/
+data/evaluations/_cache/
+models/
 
 # Local assistant / external helper assets
 .agents/

@@ -1,0 +1,24 @@
+{
+  "app": "tieba",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "百度贴吧的图标核心资产是汉字“贴”与气泡容器的结合。为了符合主题的“萌系生物化”规则，不能直接保留生硬的汉字笔画，也不能完全抛弃文字结构导致无法识别。因此选择“logo_simplify”策略：将“贴”字的笔画结构作为骨架，把原本方正的笔画转化为圆润、毛茸茸的白色团子状生物肢体。既保留了“贴”字的字形神韵（特别是右边的“贝”字部分可以处理成生物的脚或尾巴），又赋予了其生命感，完美契合主题的Kawaii Anthropomorphism要求。",
+  "must_preserve": [
+    "汉字“贴”的整体字形轮廓和空间结构",
+    "原图标中包裹文字的圆角矩形/气泡容器暗示",
+    "左右结构的布局比例"
+  ],
+  "can_recompose": [
+    "将硬朗的书法/黑体笔画重构为柔软的毛绒肢体",
+    "去除原有的深蓝/紫红品牌色，改为白色主体+马卡龙背景",
+    "添加豆豆眼、小嘴巴等表情细节",
+    "边缘增加手绘粗描边和毛发溢出效果"
+  ],
+  "forbid": [
+    "直接放置原始的蓝色“贴”字Logo",
+    "将“贴”字完全替换为无关的动物（如直接放一只狗而看不出是“贴”字）",
+    "保留高饱和度的霓虹配色",
+    "笔画边缘锐利、无圆润化处理"
+  ],
+  "generation_direction": "Generate a cute, fluffy white creature shaped exactly like the Chinese character '贴' (Tie). The character's strokes should look like soft fur limbs. Place it inside a rounded squircle container暗示. Use a pastel macaron background (e.g., light mint or pale pink). Add a thick hand-drawn black outline and simple kawaii dot eyes on the creature. Ensure the structure of the character is strictly preserved but materialized as a plush toy."
+}

@@ -44,7 +44,7 @@ theme_id: {theme_id}
     return str(output_path)
 
 
-def build_generation_base_prompt(analysis, theme_id, output_path, root_dir=None):
+def build_generation_base_prompt(analysis, theme_id, output_path, root_dir=None, theme_design_analysis=None):
     root = Path(root_dir) if root_dir else Path.cwd()
     template = (root / "prompts" / "wan_generation.md").read_text(encoding="utf-8")
     output = Path(output_path)
@@ -83,6 +83,12 @@ theme_id: {theme_id}
 
 【负向约束】
 {analysis.get("negative_prompt", "")}
+
+【V2 theme_board】
+{json.dumps((theme_design_analysis or {}).get("theme_board", {}), ensure_ascii=False, indent=2)}
+
+【V2 主题化设计原则】
+所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。
 
 整包一致性要求：
 - 所有输出必须像同一套主题图标包。

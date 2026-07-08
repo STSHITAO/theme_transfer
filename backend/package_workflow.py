@@ -8,8 +8,16 @@ from dotenv import load_dotenv
 from backend.services.image_service import compose_contact_sheet, prepare_target_layout
 from backend.services.package_qc_service import run_package_qc
 from backend.services.path_service import resolve_target_inputs, resolve_theme_examples
+from backend.services.profile_service import load_target_profile, load_theme_profile
 from backend.services.prompt_service import build_generation_base_prompt, build_package_target_prompt
-from backend.services.qwen_client import analyze_target_identity, analyze_theme_package, build_transfer_plan, score_candidates
+from backend.services.qwen_client import (
+    analyze_target_identity,
+    analyze_theme_design,
+    analyze_theme_package,
+    build_identity_strategy,
+    build_transfer_plan,
+    score_candidates,
+)
 from backend.services.storage_service import save_json
 from backend.services.wan_client import generate_candidates
 
@@ -39,6 +47,7 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
     package_dir.mkdir(parents=True, exist_ok=True)
 
     reference_examples = resolve_theme_examples(theme_id, root_dir=root)
+    theme_profile = load_theme_profile(theme_id, root_dir=root)
     style_refs = [example["style_ref_path"] for example in reference_examples]
     target_apps = scan_target_apps(root_dir=root)
     save_json(target_apps, package_dir / "target_apps.json")
@@ -46,11 +55,14 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
     theme_analysis = analyze_theme_package(reference_examples, root_dir=root)
     theme_analysis_path = save_json(theme_analysis, package_dir / "theme_style_analysis.json")
     theme_rules_path = save_json(theme_analysis, package_dir / "theme_rules.json")
+    theme_design_analysis = analyze_theme_design(reference_examples, theme_profile, root_dir=root)
+    theme_design_analysis_path = save_json(theme_design_analysis, package_dir / "theme_design_analysis.json")
     generation_base_prompt_path = build_generation_base_prompt(
         theme_analysis,
         theme_id,
         package_dir / "generation_base_prompt.txt",
         root_dir=root,
+        theme_design_analysis=theme_design_analysis,
     )
     generation_base_prompt = Path(generation_base_prompt_path).read_text(encoding="utf-8")
 
@@ -63,6 +75,7 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
             package_dir,
             generation_base_prompt,
             theme_analysis,
+            theme_design_analysis,
             style_refs,
             root,
             candidate_count,
@@ -89,6 +102,7 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
         reference_examples,
         theme_analysis_path,
         theme_rules_path,
+        theme_design_analysis_path,
         generation_base_prompt_path,
         final_outputs,
         contact_sheet_path,
@@ -103,6 +117,7 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
         "target_apps": target_apps,
         "theme_style_analysis_path": theme_analysis_path,
         "theme_rules_path": theme_rules_path,
+        "theme_design_analysis_path": theme_design_analysis_path,
         "generation_base_prompt_path": generation_base_prompt_path,
         "final_outputs": final_outputs,
         "contact_sheet_path": contact_sheet_path,
@@ -112,8 +127,19 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
     }
 
 
-def _run_package_case(target_app, package_id, package_dir, generation_base_prompt, theme_rules, style_refs, root, candidate_count):
+def _run_package_case(
+    target_app,
+    package_id,
+    package_dir,
+    generation_base_prompt,
+    theme_rules,
+    theme_design_analysis,
+    style_refs,
+    root,
+    candidate_count,
+):
     target_inputs = resolve_target_inputs(target_app, root_dir=root)
+    target_profile = load_target_profile(target_app, root_dir=root)
     target_image = target_inputs["target_image"]
     case_dir = package_dir / "cases" / target_app
     candidates_dir = case_dir / "candidates"
@@ -128,7 +154,22 @@ def _run_package_case(target_app, package_id, package_dir, generation_base_promp
     )
     target_identity = analyze_target_identity(target_app, target_image, root_dir=root)
     target_identity_path = save_json(target_identity, case_dir / "target_identity.json")
-    transfer_plan = build_transfer_plan(theme_rules, target_identity, root_dir=root)
+    identity_strategy = build_identity_strategy(
+        theme_design_analysis,
+        theme_rules,
+        target_profile,
+        target_image,
+        root_dir=root,
+    )
+    identity_strategy_path = save_json(identity_strategy, case_dir / "identity_strategy.json")
+    transfer_plan = build_transfer_plan(
+        theme_rules,
+        target_identity,
+        root_dir=root,
+        theme_design_analysis=theme_design_analysis,
+        target_profile=target_profile,
+        identity_strategy=identity_strategy,
+    )
     transfer_plan_path = save_json(transfer_plan, case_dir / "transfer_plan.json")
     generation_prompt_path = build_package_target_prompt(
         generation_base_prompt,
@@ -163,6 +204,8 @@ def _run_package_case(target_app, package_id, package_dir, generation_base_promp
         "target_image": target_image,
         "target_layout_path": target_layout,
         "target_identity_path": target_identity_path,
+        "target_profile": target_profile,
+        "identity_strategy_path": identity_strategy_path,
         "transfer_plan_path": transfer_plan_path,
         "generation_prompt_path": generation_prompt_path,
         "candidate_paths": generation["candidate_paths"],
@@ -189,7 +232,7 @@ def _select_and_save_best_candidate(qc_report, candidate_paths, case_dir):
     return output_path
 
 
-def _best_scored_candidate(qc_report, candidate_paths, identity_threshold=75):
+def _best_scored_candidate(qc_report, candidate_paths, identity_threshold=75, artifact_threshold=60, over_recompose_risk_limit=70):
     candidate_by_name = {Path(path).name: path for path in candidate_paths}
     candidate_by_path = {path: path for path in candidate_paths}
     best = None
@@ -207,11 +250,23 @@ def _best_scored_candidate(qc_report, candidate_paths, identity_threshold=75):
         if fallback_score is None or score > fallback_score:
             fallback_score = score
             fallback = path
+        identity_value = item.get("target_recognition_score", item.get("target_identity_score"))
+        constraint_value = item.get("identity_constraint_score", identity_value)
+        artifact_value = item.get("artifact_score", 100)
+        risk_value = item.get("over_recompose_risk", 0)
         try:
-            identity_score = float(item.get("target_identity_score"))
+            identity_score = float(identity_value)
+            constraint_score = float(constraint_value)
+            artifact_score = float(artifact_value)
+            over_recompose_risk = float(risk_value)
         except (TypeError, ValueError):
             identity_score = 0
-        if identity_score < identity_threshold:
+            constraint_score = 0
+            artifact_score = 0
+            over_recompose_risk = 100
+        if identity_score < identity_threshold or constraint_score < identity_threshold:
+            continue
+        if artifact_score < artifact_threshold or over_recompose_risk > over_recompose_risk_limit:
             continue
         if best_score is None or score > best_score:
             best_score = score
@@ -236,6 +291,7 @@ def _save_package_metadata(
     reference_examples,
     theme_analysis_path,
     theme_rules_path,
+    theme_design_analysis_path,
     generation_base_prompt_path,
     final_outputs,
     contact_sheet_path,
@@ -249,6 +305,7 @@ def _save_package_metadata(
         "used_reference_examples": [example["app_name"] for example in reference_examples],
         "theme_style_analysis": theme_analysis_path,
         "theme_rules": theme_rules_path,
+        "theme_design_analysis": theme_design_analysis_path,
         "generation_base_prompt": generation_base_prompt_path,
         "cases": cases,
         "final_outputs": final_outputs,

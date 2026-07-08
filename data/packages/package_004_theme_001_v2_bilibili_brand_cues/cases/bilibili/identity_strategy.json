@@ -1,0 +1,27 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "Bilibili 的‘小电视’轮廓具有极高的国民辨识度，且其圆润的圆角矩形本身与主题的‘ Squircle ’背景高度契合。策略上选择保留电视机的整体外轮廓和天线特征，但将内部复杂的文字 Logo 简化或替换为拟人化的面部表情，使其从一个‘带有文字的图标’变成一个‘有生命的电视角色’。这符合主题中‘万物皆可毛绒化与表情化’的核心规则，同时严格遵守了品牌识别线索中关于轮廓和底色的要求（需做粉彩化处理）。",
+  "must_preserve": [
+    "小电视的整体圆角矩形轮廓",
+    "顶部的两根天线结构（需处理为圆润短粗状）",
+    "屏幕区域的主体地位",
+    "品牌标志性的粉色基调（必须转化为低饱和度马卡龙粉/浅桃色）",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "can_recompose": [
+    "天线的几何形状（改为手绘抖动感线条）",
+    "屏幕边缘的厚度（改为毛绒质感的边缘）",
+    "原图的高饱和亮粉色（必须降低饱和度以匹配主题板）"
+  ],
+  "forbid": [
+    "保留原始的高饱和度荧光粉色背景",
+    "使用锐利、完美的几何直线绘制天线或边框",
+    "添加玻璃质感、高光反射或立体阴影",
+    "将电视机变形为其他非电视类的物体（如变成手机或播放器）"
+  ],
+  "generation_direction": "Draw a cute, fluffy pastel pink TV set icon. The shape is a rounded square with two short, stubby antennas on top. The body is filled with soft macaron pink. The screen area features a simple, happy kawaii face (dot eyes, small smile) instead of text. Apply a thick, sketchy dark grey hand-drawn outline around the TV and antennas. Texture should be matte paper or clay, no gloss. Background is a solid light cream or very pale blue squircle."
+}

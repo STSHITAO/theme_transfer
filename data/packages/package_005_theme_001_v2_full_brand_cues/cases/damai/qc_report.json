@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 80,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "高度推荐。该候选图完美保留了大麦Logo的核心结构（放射状花瓣+底部三角形），同时成功应用了参考图中的手绘描边、低饱和度色彩和简约风格。识别度极高且风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 30,
+      "background_score": 85,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 76,
+      "failure_reason": "",
+      "recommendation": "一般推荐。虽然风格符合，但右下角的花瓣被替换成了绿色三角形/叶片形状，破坏了原Logo的对称性和完整性，导致识别度下降，属于不必要的过度重构。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 70,
+      "style_match_score": 70,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 60,
+      "background_score": 80,
+      "composition_score": 75,
+      "artifact_score": 100,
+      "overall_score": 62,
+      "failure_reason": "添加了多余的笑脸元素",
+      "recommendation": "不推荐。虽然在每个花瓣上添加笑脸增加了趣味性，但这属于过度装饰（Over-recompose），不仅偏离了参考图中相对干净的线条风格，还干扰了对原始图形轮廓的识别，降低了品牌严肃性。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\cases\\damai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

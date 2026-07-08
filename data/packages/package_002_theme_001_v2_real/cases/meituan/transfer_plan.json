@@ -1,0 +1,40 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "汉字“美”的核心骨架结构（顶部两点/羊角形态，底部大字形支撑）",
+    "文字居中的构图比例",
+    "整体轮廓的方正圆润感"
+  ],
+  "must_preserve": [
+    "必须保留“美”字的笔画走势和空间结构，确保老用户能通过字形联想到原Logo",
+    "严禁将“美”字替换为拼音、英文或完全无关的动物形象",
+    "严禁直接放置黑色原始字体，必须进行生物化材质重构"
+  ],
+  "recompose_allowed": [
+    "将黑色笔画转化为白色蓬松毛绒质感的生物躯体",
+    "在“美”字上部添加豆豆眼和微笑嘴巴",
+    "笔画末端处理为圆润的手绘描边效果",
+    "背景色调整为低饱和度马卡龙色系（如淡奶油黄、浅薄荷绿）"
+  ],
+  "restyle": [
+    "材质：从平面矢量转为棉花/毛绒质感",
+    "线条：增加粗黑/深灰手绘描边，消除锐角",
+    "色彩：去品牌高饱和黄，改用 pastel 柔和色调"
+  ],
+  "decorate": [
+    "主体下方添加轻微接触阴影以增强趴卧立体感",
+    "边缘添加细微毛发溢出效果"
+  ],
+  "forbid": [
+    "直接使用高饱和度亮黄色背景",
+    "保留原始黑色宋体/黑体文字而不做形态改变",
+    "边缘锐利、无手绘感的几何图形",
+    "恐怖谷效应的五官细节",
+    "将“美”字完全解构为无法识别的抽象图形"
+  ],
+  "color_strategy": "Background: Pastel Macaron (Cream Yellow or Light Mint Green). Subject: White fluffy texture with dark grey/black hand-drawn outline.",
+  "identity_priority": "Structure of Chinese character 'Mei' > Fluffy Mascot Aesthetic > Pastel Background",
+  "generation_brief": "A cute, fluffy white mascot creature shaped exactly like the Chinese character '美'. The character strokes form the soft, cotton-like body and limbs. Add simple kawaii dot eyes and a small smile on the upper part. Thick hand-drawn black outline. Solid pastel cream or light mint green background. Soft lighting, vector illustration style, healing vibe."
+}

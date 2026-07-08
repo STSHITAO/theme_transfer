@@ -1,0 +1,18 @@
+{
+  "package_consistency_score": 8,
+  "style_consistency_score": 8,
+  "target_identity_score": 8,
+  "problematic_apps": [],
+  "accepted_apps": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan",
+    "qq",
+    "tieba",
+    "wps",
+    "xiaohongshu"
+  ],
+  "retry_apps": [],
+  "overall_comment": "MOCK_MODE=true，整包风格一致性 QC 使用本地 mock 报告。"
+}

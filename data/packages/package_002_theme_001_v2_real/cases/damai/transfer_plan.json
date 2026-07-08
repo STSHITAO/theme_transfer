@@ -1,0 +1,41 @@
+{
+  "app": "damai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "放射状花瓣/麦芒的扇形骨架结构",
+    "底部中央绿色三角形基座的位置与形态",
+    "整体圆角矩形内的居中布局",
+    "上部放射结构与下部基座的连接关系"
+  ],
+  "must_preserve": [
+    "12-14根放射状线条的相对分布逻辑",
+    "底部绿色三角形作为视觉重心的支撑作用",
+    "核心轮廓的辨识度，确保不被误认为太阳或风扇"
+  ],
+  "recompose_allowed": [
+    "将矢量色块转化为白色/极浅色的毛绒棉花质感",
+    "将尖锐的花瓣末端圆润化处理",
+    "在中心或底部三角处添加简单的豆豆眼表情",
+    "将高饱和彩虹色简化为单色主体+低饱和描边"
+  ],
+  "restyle": [
+    "应用粗黑色手绘描边（Doodle style）",
+    "主体表面呈现蓬松柔软的毛绒/棉花纹理",
+    "消除所有锐角和硬边缘，保持线条流畅圆润"
+  ],
+  "decorate": [
+    "背景使用低饱和度马卡龙色系（如淡黄、淡粉、米白）纯色填充",
+    "主体下方添加轻微接触阴影以增强立体感"
+  ],
+  "forbid": [
+    "保留原Logo的高饱和度彩虹渐变色",
+    "直接放置原始矢量图形不做质感处理",
+    "出现锐利直角、几何硬线条或复杂光影",
+    "将放射结构过度简化导致像通用加载图标",
+    "使用深色背景或霓虹配色"
+  ],
+  "color_strategy": "主体统一为白色或极浅色毛绒质感，底部基座保留低饱和度绿色暗示，背景使用柔和马卡龙色系，严禁使用原品牌高饱和渐变。",
+  "identity_priority": "严格保留‘上部放射花瓣+下部绿色三角’的结构组合，确保用户能一眼识别为大麦App，同时完全融入萌宠拟态主题风格。",
+  "generation_brief": "Cute chibi mascot icon of Damai app. Shape: radial flower petals on top, small green triangle base at bottom. Material: soft white fluffy cotton texture, no gradients. Style: thick hand-drawn black outline, round edges, simple kawaii dot eyes in center. Background: solid pastel macaron color (pale yellow or light pink). Vibe: healing, soft, minimalist vector illustration."
+}
