@@ -1,0 +1,9 @@
+app,theme_membership_score,identity_rank,identity_top1_match,nearest_target_app,generated_to_theme_distance,is_style_outlier
+bilibili,64.9557,1,True,bilibili,0.580325,True
+damai,21.2699,1,True,damai,0.793935,True
+hanglvzongheng,13.4634,1,True,hanglvzongheng,0.832106,True
+meituan,22.1588,1,True,meituan,0.789588,True
+qq,0.3514,1,True,qq,0.89622,True
+tieba,7.2743,1,True,tieba,0.862369,True
+wps,5.4272,1,True,wps,0.871401,True
+xiaohongshu,64.2239,1,True,xiaohongshu,0.583903,True

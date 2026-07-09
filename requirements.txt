@@ -8,3 +8,4 @@ torchvision
 transformers
 huggingface_hub
 matplotlib
+modelscope

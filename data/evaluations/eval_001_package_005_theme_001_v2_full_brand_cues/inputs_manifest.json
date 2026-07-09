@@ -1,0 +1,41 @@
+{
+  "theme_id": "theme_001",
+  "package_id": "package_005_theme_001_v2_full_brand_cues",
+  "theme_refs": [
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg"
+  ],
+  "generated_icons": [
+    {
+      "app": "bilibili",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\final\\bilibili.png"
+    },
+    {
+      "app": "damai",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\final\\damai.png"
+    },
+    {
+      "app": "hanglvzongheng",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\final\\hanglvzongheng.png"
+    },
+    {
+      "app": "meituan",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\final\\meituan.png"
+    }
+  ],
+  "target_originals": {
+    "bilibili": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png",
+    "damai": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\damai\\damai.jpg",
+    "hanglvzongheng": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\hanglvzongheng\\hanglvzongheng.jpg",
+    "meituan": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\meituan\\meituan.jpg"
+  },
+  "app_names": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan"
+  ],
+  "missing_apps": [],
+  "skipped_apps": []
+}

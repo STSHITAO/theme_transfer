@@ -18,11 +18,14 @@ DEFAULT_MODEL_ID = "facebook/dinov3-vitb16-pretrain-lvd1689m"
 @dataclass(frozen=True)
 class TpqsConfig:
     embedding_backend: str = "dinov3"
+    model_source: str = "modelscope"
     model_id: str = DEFAULT_MODEL_ID
     device: str = "cpu"
     pooling: str = "cls"
     image_size: int = 224
     batch_size: int = 1
+    style_feature_backend: str = "color_edge_composition"
+    use_openclip: bool = False
 
     @property
     def is_official_tpqs(self) -> bool:
@@ -33,11 +36,14 @@ class TpqsConfig:
         source = env if env is not None else os.environ
         return cls(
             embedding_backend=source.get("TPQS_EMBEDDING_BACKEND", "dinov3").lower(),
+            model_source=source.get("TPQS_MODEL_SOURCE", "modelscope").lower(),
             model_id=source.get("TPQS_MODEL_ID", DEFAULT_MODEL_ID),
             device=source.get("TPQS_DEVICE", "cpu"),
             pooling=source.get("TPQS_POOLING", "cls").lower(),
             image_size=int(source.get("TPQS_IMAGE_SIZE", "224")),
             batch_size=int(source.get("TPQS_BATCH_SIZE", "1")),
+            style_feature_backend=source.get("TPQS_STYLE_FEATURE_BACKEND", "color_edge_composition").lower(),
+            use_openclip=source.get("TPQS_USE_OPENCLIP", "false").lower() == "true",
         )
 
 
@@ -45,6 +51,7 @@ class TpqsConfig:
 class ModelCacheDirs:
     hf_home: Path
     hf_hub_cache: Path
+    modelscope_cache: Path
     torch_home: Path
 
 
@@ -52,14 +59,21 @@ def prepare_model_cache_dirs(root_dir: Path | None = None) -> ModelCacheDirs:
     root = Path(root_dir) if root_dir else Path(__file__).resolve().parents[2]
     hf_home = root / "models" / "huggingface"
     hf_hub_cache = hf_home / "hub"
+    modelscope_cache = root / "models" / "modelscope"
     torch_home = root / "models" / "torch"
-    for path in [hf_home, hf_hub_cache, torch_home]:
+    for path in [hf_home, hf_hub_cache, modelscope_cache, torch_home]:
         path.mkdir(parents=True, exist_ok=True)
 
     os.environ["HF_HOME"] = str(hf_home)
     os.environ["HF_HUB_CACHE"] = str(hf_hub_cache)
+    os.environ["MODELSCOPE_CACHE"] = str(modelscope_cache)
     os.environ["TORCH_HOME"] = str(torch_home)
-    return ModelCacheDirs(hf_home=hf_home, hf_hub_cache=hf_hub_cache, torch_home=torch_home)
+    return ModelCacheDirs(
+        hf_home=hf_home,
+        hf_hub_cache=hf_hub_cache,
+        modelscope_cache=modelscope_cache,
+        torch_home=torch_home,
+    )
 
 
 def embed_images(paths: list[Path], config: TpqsConfig, root_dir: Path | None = None) -> dict[str, np.ndarray]:
@@ -87,18 +101,9 @@ def _embed_dinov3(paths: list[Path], config: TpqsConfig, root: Path, cache_dir: 
     if device.startswith("cuda") and not torch.cuda.is_available():
         device = "cpu"
 
-    try:
-        processor = AutoImageProcessor.from_pretrained(config.model_id, cache_dir=str(cache_dirs.hf_hub_cache))
-        model = AutoModel.from_pretrained(config.model_id, cache_dir=str(cache_dirs.hf_hub_cache))
-    except Exception as exc:
-        if "gated repo" in str(exc).lower() or "401" in str(exc):
-            raise RuntimeError(
-                "Cannot download DINOv3 because the Hugging Face repo is gated. "
-                "Grant access to the model and authenticate in the SEG environment "
-                "with HF_TOKEN or `huggingface-cli login`. "
-                f"Model: {config.model_id}. Cache directory: {cache_dirs.hf_hub_cache}"
-            ) from None
-        raise
+    model_path = _resolve_dinov3_model_path(config, cache_dirs)
+    processor = AutoImageProcessor.from_pretrained(model_path)
+    model = AutoModel.from_pretrained(model_path)
     model.to(device)
     model.eval()
 
@@ -147,6 +152,7 @@ def _embedding_cache_path(path: Path, config: TpqsConfig, cache_dir: Path) -> Pa
         "mtime": stat.st_mtime,
         "size": stat.st_size,
         "backend": config.embedding_backend,
+        "model_source": config.model_source,
         "model_id": config.model_id,
         "image_size": config.image_size,
         "pooling": config.pooling,
@@ -158,6 +164,37 @@ def _embedding_cache_path(path: Path, config: TpqsConfig, cache_dir: Path) -> Pa
 def _load_rgb(path: Path) -> Image.Image:
     with Image.open(path) as image:
         return image.convert("RGB")
+
+
+def _resolve_dinov3_model_path(config: TpqsConfig, cache_dirs: ModelCacheDirs) -> str:
+    if config.model_source == "modelscope":
+        try:
+            from modelscope.hub.snapshot_download import snapshot_download
+        except ImportError as exc:
+            raise RuntimeError(
+                "TPQS_MODEL_SOURCE=modelscope requires the `modelscope` package. "
+                "Install it in the SEG environment with `pip install modelscope`."
+            ) from exc
+        return snapshot_download(config.model_id, cache_dir=str(cache_dirs.modelscope_cache))
+
+    if config.model_source == "huggingface":
+        try:
+            from transformers import AutoConfig
+
+            AutoConfig.from_pretrained(config.model_id, cache_dir=str(cache_dirs.hf_hub_cache))
+        except Exception as exc:
+            message = str(exc).lower()
+            if "gated repo" in message or "401" in message or "403" in message:
+                raise RuntimeError(
+                    "Cannot download DINOv3 because the Hugging Face repo is gated. "
+                    "Grant access to the model and authenticate in the SEG environment "
+                    "with HF_TOKEN or `hf auth login`. "
+                    f"Model: {config.model_id}. Cache directory: {cache_dirs.hf_hub_cache}"
+                ) from None
+            raise
+        return config.model_id
+
+    raise ValueError(f"Unsupported TPQS model source: {config.model_source}")
 
 
 def _l2_normalize_vector(vector: np.ndarray) -> np.ndarray:

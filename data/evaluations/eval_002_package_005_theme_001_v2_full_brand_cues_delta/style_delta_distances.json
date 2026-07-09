@@ -1,0 +1,39 @@
+{
+  "reference_delta_pairwise": [
+    0.4711496829986572,
+    0.2630799114704132,
+    0.48461079597473145
+  ],
+  "generated_delta_pairwise": [
+    0.6589967608451843,
+    0.5692118406295776,
+    0.5576921105384827,
+    0.6139612197875977,
+    0.5824177861213684,
+    0.5139182806015015
+  ],
+  "generated_delta_to_reference_delta_centroid": [
+    0.7488435506820679,
+    1.1068956851959229,
+    1.008353352546692,
+    0.9220855236053467
+  ],
+  "no_change_delta_to_reference_delta_centroid": [
+    0.6707303524017334,
+    0.6707303524017334,
+    0.6707303524017334,
+    0.6707303524017334
+  ],
+  "reference_delta_leave_one_out_distance": 0.35497674345970154,
+  "app_names": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan"
+  ],
+  "theme_example_names": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ]
+}

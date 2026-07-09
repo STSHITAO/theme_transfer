@@ -1,0 +1,5 @@
+app,style_delta_transfer_score,d_to_reference_delta_centroid,theme_membership_score,d_to_theme_style_centroid,is_style_outlier,matched_target_app,identity_match_correct,generated_to_own_target_similarity,max_target_similarity,visual_quality_distance_to_theme,semantic_fit_score
+bilibili,0.0,0.748844,0.1325,0.117783,True,bilibili,True,0.541962,0.541962,,
+damai,0.0,1.106896,0.0,0.188409,True,damai,True,0.255524,0.255524,,
+hanglvzongheng,0.0,1.008353,11.6885,0.106569,True,bilibili,False,0.0956,0.19447,,
+meituan,0.0,0.922086,0.0,0.17449,True,bilibili,False,0.327979,0.482029,,

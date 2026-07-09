@@ -1,5 +1,47 @@
 # theme_transfer
 
+## TPQS 整包量化评价（当前口径）
+
+TPQS 是独立的后处理评价模块，入口在 `evaluation/evaluate_package.py`，不调用 Qwen 或 Wan，也不修改生成结果。当前评价语义是：
+
+```text
+data/styles/<theme_id>/<ref_app>/*_background.*   # 参考 App 原始系统预置图标背景层
+data/styles/<theme_id>/<ref_app>/*_foreground.*   # 参考 App 原始系统预置图标前景层
+data/styles/<theme_id>/<ref_app>/*_style_ref.*    # 参考 App 被设计师绘制后的主题风格图
+data/targets/<app>/<app>.png|jpg|jpeg|webp        # 待迁移 App 原始系统预置图标
+data/packages/<package_id>/final/*.png            # 生成后的主题图标
+```
+
+也就是说，TPQS 会把 `background + foreground` 合成为 `reference_raw`，再评价 `reference_raw -> style_ref` 与 `target -> generated` 这两种风格变化是否一致。
+
+主要输出：
+
+```text
+data/evaluations/<eval_id>/
+  tpqs_report.json
+  metrics.csv
+  style_pairwise_distances.json
+  style_delta_distances.json
+  dino_pairwise_distances.json
+  inputs_manifest.json
+```
+
+主要指标：
+
+- `style_delta_transfer_score` / `style_transfer_score`：生成图相对 target 的风格变化是否接近参考包中的 `reference_raw -> style_ref` 变化。
+- `package_internal_style_consistency_score`：生成包内部风格是否统一，只看生成包自身。
+- `reference_style_distribution_match_score`：生成包风格差异分布是否比原 target 更接近真实主题参考包。
+- `theme_membership_score`：单个 App 是否偏离整包终态主题风格。
+- `identity_separability_score`：DINOv3 判断生成图是否仍能和对应原 App 区分匹配。
+- `visual_quality_score`：颜色、亮度、饱和度、对比度、边缘密度等低层视觉统计是否向主题参考靠拢。
+
+默认模型来源是 ModelScope，DINOv3 权重会下载到项目本地 `models/modelscope/`。测试不会下载 DINOv3，也不会调用真实 API：
+
+```powershell
+$env:TPQS_EMBEDDING_BACKEND='stats'
+python -m unittest tests.test_tpqs_evaluation -v
+```
+
 ## TPQS 整包量化评价
 
 TPQS 是独立的后处理评价模块，入口在 `evaluation/evaluate_package.py`，不调用 Qwen 或 Wan，也不修改生成结果。它读取：
@@ -18,7 +60,7 @@ PACKAGE_ID = "package_001_theme_001"
 EVAL_ID = "eval_001_package_001_theme_001"
 ```
 
-正式 TPQS 默认使用 DINOv3：
+正式 TPQS 默认使用 Style Features + DINOv3：
 
 ```powershell
 conda activate SEG
@@ -29,18 +71,31 @@ python evaluation/evaluate_package.py
 
 ```env
 TPQS_EMBEDDING_BACKEND=dinov3
+TPQS_MODEL_SOURCE=modelscope
 TPQS_MODEL_ID=facebook/dinov3-vitb16-pretrain-lvd1689m
+TPQS_STYLE_FEATURE_BACKEND=color_edge_composition
 TPQS_DEVICE=cpu
 TPQS_POOLING=cls
 TPQS_IMAGE_SIZE=224
 TPQS_BATCH_SIZE=1
+TPQS_USE_OPENCLIP=false
 ```
+
+DINOv3 只用于 App 身份可分辨度、结构异常和主体塌缩风险，不再单独决定整包风格好坏。风格类指标主要使用 Style Features，包括颜色直方图、HSV/RGB 统计、边缘/描边、构图、复杂度等。
 
 DINOv3 权重会下载到项目本地，不使用系统默认 Hugging Face 缓存：
 
 ```text
 models/huggingface/hub/
+models/modelscope/
 models/torch/
+```
+
+默认模型来源是 ModelScope。需要切回 Hugging Face 时可设置：
+
+```powershell
+$env:TPQS_MODEL_SOURCE='huggingface'
+python evaluation/evaluate_package.py
 ```
 
 快速离线测试可以使用统计特征 backend，这个结果只用于开发验证，报告里会标记 `is_official_tpqs=false`：
@@ -56,19 +111,22 @@ python evaluation/evaluate_package.py
 data/evaluations/<eval_id>/
   tpqs_report.json
   metrics.csv
-  embedding_pca.png
-  pairwise_distances.json
+  style_pairwise_distances.json
+  dino_pairwise_distances.json
   inputs_manifest.json
 ```
 
 TPQS 主要指标包括：
 
-- `theme_transfer_score`：生成图是否比原 target 更接近主题参考。
-- `package_consistency_score`：整包图标之间的距离分布是否更接近主题参考包。
-- `theme_membership_score`：单个 App 是否偏离整包主题。
-- `identity_separability_score`：生成图是否仍能和对应原 App 区分匹配。
-- `visual_statistics_score`：颜色、亮度、饱和度、对比度、边缘密度等视觉统计是否向主题参考靠拢。
-- `tpqs_total_score`：上述指标的几何平均分。
+- `style_transfer_score`：生成图是否比原 target 更接近主题参考风格。
+- `package_internal_style_consistency_score`：生成包内部风格是否统一，只看生成包自身。
+- `reference_style_distribution_match_score`：生成包风格差异分布是否比原 target 更接近真实主题参考包。
+- `theme_membership_score`：单个 App 是否偏离整包主题风格。
+- `identity_separability_score`：DINOv3 判断生成图是否仍能和对应原 App 区分匹配。
+- `visual_quality_score`：颜色、亮度、饱和度、对比度、边缘密度等低层视觉统计是否向主题参考靠拢。
+- `tpqs` / `tpqs_total_score`：上述指标的几何平均分。
+
+当前版本不输出 PCA 图，避免把可视化调试产物混入主评价结果。
 
 测试不会下载 DINOv3，也不会调用真实 API：
 
