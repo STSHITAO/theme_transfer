@@ -1,0 +1,35 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The Chinese characters '美团' (Meituan) and the signature yellow color tone.",
+  "brand_cues_to_preserve": [
+    "The specific font structure of '美团'",
+    "The brand's yellow color identity (adapted to pastel)",
+    "The rounded square container shape"
+  ],
+  "semantic_cues_to_preserve": [
+    "Text-based logo recognition",
+    "Service platform accessibility (implied by soft, friendly appearance)"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "Meituan's icon is purely typographic. To fit the 'Healing Hand-drawn' theme without losing instant recognition, the text must be preserved but physically transformed from sharp vector type into a soft, balloon-like or clay-like object. The strict constraint ensures users still recognize the app immediately despite the style shift. The吉祥物 (mascot) will interact with the text to break the static nature of a wordmark.",
+  "must_preserve": [
+    "The legibility of the characters '美团'",
+    "The relative arrangement of the two characters",
+    "Interaction with the white mascot"
+  ],
+  "can_recompose": [
+    "Transforming sharp serif/sans-serif strokes into rounded, hand-drawn thick lines",
+    "Changing solid yellow fill to a softer, creamy pastel yellow",
+    "Adding a black sketchy outline around the characters",
+    "Positioning the mascot (e.g., hugging the '团' character or sitting on top of '美')"
+  ],
+  "forbid": [
+    "Using the original sharp, geometric font",
+    "Using high-saturation standard Meituan yellow (must be pastel/cream)",
+    "Omitting the white mascot",
+    "Making the text too thin or delicate (must look chubby/soft)"
+  ],
+  "generation_direction": "A hand-drawn cartoon icon on a creamy yellow background. The subject is the Chinese text '美团' rendered as soft, puffy, 3D-like bubble letters in pastel yellow with a sketchy black outline. A cute white fluffy puppy is hugging the right side of the character '团' or resting its chin on the top stroke. Matte texture, healing style, no sharp edges."
+}

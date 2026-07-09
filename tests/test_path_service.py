@@ -11,11 +11,10 @@ def touch(path: Path) -> None:
 
 
 class PathServiceTests(unittest.TestCase):
-    def test_resolves_theme_001_with_prefixed_names(self):
+    def test_resolves_theme_001_with_original_and_style_ref_pair(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
-            touch(root / "data/styles/theme_001/wechat/wechat_background.png")
-            touch(root / "data/styles/theme_001/wechat/wechat_foreground.png")
+            touch(root / "data/styles/theme_001/wechat/wechat.jpg")
             touch(root / "data/styles/theme_001/wechat/wechat_style_ref.jpg")
             touch(root / "data/targets/xiaohongshu/xiaohongshu.png")
 
@@ -27,17 +26,18 @@ class PathServiceTests(unittest.TestCase):
             self.assertEqual(len(result["reference_examples"]), 1)
             example = result["reference_examples"][0]
             self.assertEqual(example["app_name"], "wechat")
-            self.assertTrue(example["background_path"].endswith("wechat_background.png"))
-            self.assertTrue(example["foreground_path"].endswith("wechat_foreground.png"))
+            self.assertTrue(example["original_path"].endswith("wechat.jpg"))
+            self.assertTrue(example["reference_raw_path"].endswith("wechat.jpg"))
             self.assertTrue(example["style_ref_path"].endswith("wechat_style_ref.jpg"))
+            self.assertNotIn("background_path", example)
+            self.assertNotIn("foreground_path", example)
 
-    def test_supports_simplified_reference_names_and_limits_to_five(self):
+    def test_supports_original_reference_names_and_limits_to_five(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             for index in range(6):
                 app_name = f"app{index}"
-                touch(root / f"data/styles/theme_001/{app_name}/background.png")
-                touch(root / f"data/styles/theme_001/{app_name}/foreground.png")
+                touch(root / f"data/styles/theme_001/{app_name}/original.png")
                 touch(root / f"data/styles/theme_001/{app_name}/style_ref.jpg")
             touch(root / "data/targets/xiaohongshu/target.jpg")
 
@@ -49,12 +49,24 @@ class PathServiceTests(unittest.TestCase):
                 ["app0", "app1", "app2", "app3", "app4"],
             )
 
-    def test_raises_clear_error_when_target_is_missing(self):
+    def test_rejects_legacy_background_foreground_reference_pair(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             touch(root / "data/styles/theme_001/wechat/background.png")
             touch(root / "data/styles/theme_001/wechat/foreground.png")
             touch(root / "data/styles/theme_001/wechat/style_ref.jpg")
+            touch(root / "data/targets/xiaohongshu/xiaohongshu.png")
+
+            with self.assertRaises(ValueError) as context:
+                resolve_case_paths("theme_001", "xiaohongshu", root_dir=root)
+
+            self.assertIn("No valid reference examples", str(context.exception))
+
+    def test_raises_clear_error_when_target_is_missing(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            touch(root / "data/styles/theme_001/wechat/wechat.png")
+            touch(root / "data/styles/theme_001/wechat/wechat_style_ref.jpg")
 
             with self.assertRaises(FileNotFoundError) as context:
                 resolve_case_paths("theme_001", "xiaohongshu", root_dir=root)
@@ -64,9 +76,8 @@ class PathServiceTests(unittest.TestCase):
     def test_raises_clear_error_when_target_directory_has_multiple_unresolved_images(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
-            touch(root / "data/styles/theme_001/wechat/background.png")
-            touch(root / "data/styles/theme_001/wechat/foreground.png")
-            touch(root / "data/styles/theme_001/wechat/style_ref.jpg")
+            touch(root / "data/styles/theme_001/wechat/wechat.png")
+            touch(root / "data/styles/theme_001/wechat/wechat_style_ref.jpg")
             touch(root / "data/targets/xiaohongshu/a.png")
             touch(root / "data/targets/xiaohongshu/b.jpg")
 
@@ -75,20 +86,18 @@ class PathServiceTests(unittest.TestCase):
 
             self.assertIn("Missing target image", str(context.exception))
 
-    def test_supports_legacy_target_background_and_foreground(self):
+    def test_rejects_legacy_target_background_and_foreground_when_target_image_is_ambiguous(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
-            touch(root / "data/styles/theme_001/wechat/background.png")
-            touch(root / "data/styles/theme_001/wechat/foreground.png")
-            touch(root / "data/styles/theme_001/wechat/style_ref.jpg")
+            touch(root / "data/styles/theme_001/wechat/wechat.png")
+            touch(root / "data/styles/theme_001/wechat/wechat_style_ref.jpg")
             touch(root / "data/targets/xiaohongshu/background.png")
             touch(root / "data/targets/xiaohongshu/foreground.png")
 
-            result = resolve_case_paths("theme_001", "xiaohongshu", root_dir=root)
+            with self.assertRaises(FileNotFoundError) as context:
+                resolve_case_paths("theme_001", "xiaohongshu", root_dir=root)
 
-            self.assertTrue(result["target_background"].endswith("background.png"))
-            self.assertTrue(result["target_foreground"].endswith("foreground.png"))
-            self.assertTrue(result["target_image"].endswith("foreground.png"))
+            self.assertIn("Missing target image", str(context.exception))
 
     def test_raises_clear_error_when_no_valid_reference_examples_exist(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -104,11 +113,9 @@ class PathServiceTests(unittest.TestCase):
     def test_does_not_map_theme001_to_theme_001(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
-            touch(root / "data/styles/theme_001/wechat/wechat_background.png")
-            touch(root / "data/styles/theme_001/wechat/wechat_foreground.png")
+            touch(root / "data/styles/theme_001/wechat/wechat.png")
             touch(root / "data/styles/theme_001/wechat/wechat_style_ref.jpg")
-            touch(root / "data/targets/xiaohongshu/background.png")
-            touch(root / "data/targets/xiaohongshu/foreground.png")
+            touch(root / "data/targets/xiaohongshu/xiaohongshu.png")
 
             with self.assertRaises(FileNotFoundError) as context:
                 resolve_case_paths("theme001", "xiaohongshu", root_dir=root)

@@ -1,0 +1,39 @@
+{
+  "app": "hanglvzongheng",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "环绕地球的轨道弧线（象征全球航线与连接）及抽象的'H'形机身结构",
+  "brand_cues_to_preserve": [
+    "标志性的白色轨道弧线",
+    "类似飞机/H字母的中心对称结构",
+    "航空出行的语义关联"
+  ],
+  "semantic_cues_to_preserve": [
+    "飞行/航行概念",
+    "地球/全球覆盖感",
+    "动态轨迹"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "航旅纵横的原Logo是一个较为抽象的几何图形（H与轨道的结合），直接保留原样会显得过于严肃且难以融入‘治愈系手绘’风格。根据theme_rules，需要将静态符号转化为动态互动场景。因此策略选择将抽象的‘轨道’具象化为一个柔和的球体或云朵状地球，让吉祥物与这个‘地球’产生互动（如抱着或坐在上面），既保留了‘纵横全球’的品牌语义，又完美契合主题的萌宠陪伴感。颜色需从原本的高饱和品牌绿转换为低饱和度的薄荷绿或淡青色。",
+  "must_preserve": [
+    "中心主体的球体/地球轮廓",
+    "环绕球体的弧形线条（代表航线）",
+    "白色的简笔画小狗/小熊吉祥物",
+    "米白色/淡黄色圆角矩形底板",
+    "黑色手绘细描边"
+  ],
+  "can_recompose": [
+    "原本的绿色背景（必须替换为米白底板）",
+    "硬朗的几何切角（需圆润化、玩具化）",
+    "吉祥物的具体姿态（可调整为拥抱地球或坐在地球上）",
+    "具体的色彩值（转为Pastel色系）"
+  ],
+  "forbid": [
+    "禁止使用原本的深绿色背景",
+    "禁止保留锐利的直角和完美的几何直线",
+    "禁止省略吉祥物元素",
+    "禁止出现写实风格的飞机或复杂的地图纹理",
+    "禁止主体填满画布，必须留有呼吸感"
+  ],
+  "generation_direction": "A cute hand-drawn cartoon icon on a creamy yellow rounded background. Center subject is a simplified, soft pastel green globe or sphere with a distinct white orbit ring circling it (representing flight paths). A fluffy white puppy character is hugging the globe or sitting on top of the orbit ring playfully. Black sketchy outlines, matte texture, healing style, simple shapes, no complex details."
+}

@@ -4,40 +4,33 @@ from pathlib import Path
 
 def build_generation_prompt(analysis, theme_id, case_id, root_dir=None):
     root = Path(root_dir) if root_dir else Path.cwd()
-    template_path = root / "prompts" / "wan_generation.md"
-    template = template_path.read_text(encoding="utf-8")
+    template = (root / "prompts" / "wan_generation.md").read_text(encoding="utf-8")
     output_path = root / "data" / "cases" / case_id / "generation_prompt.txt"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     prompt = f"""{template}
 
-【主题包】
+[Theme Package]
 theme_id: {theme_id}
 
-【输入图片说明】
-图 1 到图 N 是同一个主题包 {theme_id} 中的纯主题风格参考图 style_ref。
-最后一张图是目标 App 的原始目标图。
+[Input Images]
+Images 1..N are style_ref references from the same theme package.
+The final image is the target App original icon and is the only source of target identity.
 
-【任务】
-请学习参考图中共同的主体重绘规则、背景重绘规则、前景与背景关系、视觉语言和主题装饰规律。
-请将这些统一主题规律迁移到最后一张目标图。
-必须保留目标 App 的主体身份、核心符号、轮廓、背景结构和整体构图。
-目标身份只能来自最后一张目标图。
-严禁复制参考 App 的主体符号、logo、轮廓或身份。
-严禁把 douyin/TikTok、wechat、alipay 等参考 App 主体迁移到目标图。
-最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
-不要文字、水印、额外 logo、额外物体、乱码。
+[Theme Fidelity Goal]
+Generate an icon that looks like a missing member of {theme_id}, not a newly invented theme.
+Strictly follow the reference package color, stroke, background, composition, material, and detail rules.
 
-【Qwen 主题分析】
+[Qwen Theme Analysis]
 {analysis.get("theme_style_analysis", "")}
 
-【生成提示】
+[Generation Direction]
 {analysis.get("generation_prompt", "")}
 
-【目标保留要求】
+[Target Preservation]
 {analysis.get("target_preservation", "")}
 
-【负向提示】
+[Negative Constraints]
 {analysis.get("negative_prompt", "")}
 """
     output_path.write_text(prompt, encoding="utf-8")
@@ -49,52 +42,63 @@ def build_generation_base_prompt(analysis, theme_id, output_path, root_dir=None,
     template = (root / "prompts" / "wan_generation.md").read_text(encoding="utf-8")
     output = Path(output_path)
     output.parent.mkdir(parents=True, exist_ok=True)
+    theme_design = theme_design_analysis or {}
 
     prompt = f"""{template}
 
-【批量主题包基础规则】
+[Package Base Prompt]
 theme_id: {theme_id}
 
-这是一份整包共用的基础 Wan prompt。所有 target App 必须复用同一份主题规则，不允许为单个 App 重新定义风格。
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
 
-【统一主题分析】
+[Theme Fidelity Goal]
+The result must look like a missing App icon from {theme_id}.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with {theme_id}.
+
+[Theme Style Analysis]
 {analysis.get("theme_style_analysis", "")}
 
-【背景重绘规则】
-{analysis.get("common_background_transform", "")}
+[Reference Raw To Style Transform]
+{analysis.get("common_original_to_style_transform", "")}
 
-【主体重绘规则】
-{analysis.get("common_foreground_transform", "")}
+[Color Transform Rule]
+{theme_design.get("color_transform_rule", analysis.get("color_palette", ""))}
 
-【颜色规则】
-{analysis.get("color_palette", "")}
+[Background Transform Rule]
+{theme_design.get("background_transform_rule", analysis.get("common_background_transform", ""))}
 
-【线条规则】
-{analysis.get("line_style", "")}
+[Stroke Transform Rule]
+{theme_design.get("stroke_transform_rule", analysis.get("line_style", ""))}
 
-【材质纹理规则】
-{analysis.get("texture_material", "")}
+[Composition Transform Rule]
+{theme_design.get("composition_transform_rule", analysis.get("icon_composition_rules", ""))}
 
-【光照阴影规则】
-{analysis.get("lighting_shadow", "")}
+[Subject Scale Rule]
+{theme_design.get("subject_scale_rule", "")}
 
-【构图规则】
-{analysis.get("icon_composition_rules", "")}
+[Detail Complexity Rule]
+{theme_design.get("detail_complexity_rule", "")}
 
-【负向约束】
-{analysis.get("negative_prompt", "")}
+[Theme Fidelity Constraints]
+{json.dumps(theme_design.get("theme_fidelity_constraints", []), ensure_ascii=False, indent=2)}
 
-【V2 theme_board】
-{json.dumps((theme_design_analysis or {}).get("theme_board", {}), ensure_ascii=False, indent=2)}
+[Forbidden Style Drift]
+{json.dumps(theme_design.get("forbidden_style_drift", []), ensure_ascii=False, indent=2)}
 
-【V2 主题化设计原则】
-所有 target App 必须共享同一个 theme_board。identity_strategy 只能决定目标 App 如何表达，不能重新定义主题风格。
+[Theme Board]
+{json.dumps(theme_design.get("theme_board", {}), ensure_ascii=False, indent=2)}
 
-整包一致性要求：
-- 所有输出必须像同一套主题图标包。
-- 所有输出必须共享同一套颜色、线条、材质、阴影、背景和构图语言。
-- 每个目标 App 只能保留自己的主体身份，不能复制参考 App 的 logo、文字、轮廓或身份。
-- 不要生成对照板、分栏图、说明文字、水印、额外 logo 或额外主体。
+[Global Wan Constraints]
+- Output must look like a missing member of {theme_id}.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match {theme_id}'s hue range, saturation, brightness, and background handling.
+- Stroke must match {theme_id}'s line weight, roundedness, edge density, and edge complexity.
+- Composition must match {theme_id}'s subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
 """
     output.write_text(prompt, encoding="utf-8")
     return str(output)
@@ -103,27 +107,34 @@ theme_id: {theme_id}
 def build_package_target_prompt(base_prompt, target_app, output_path, transfer_plan=None):
     output = Path(output_path)
     output.parent.mkdir(parents=True, exist_ok=True)
-    transfer_plan_text = json.dumps(transfer_plan or {}, ensure_ascii=False, indent=2)
+    plan = transfer_plan or {}
     prompt = f"""{base_prompt}
 
-【当前目标 App】
+[Current Target App]
 target_app: {target_app}
 
-【transfer_plan】
-{transfer_plan_text}
+[transfer_plan]
+{json.dumps(plan, ensure_ascii=False, indent=2)}
 
-【身份优先级】
-请严格执行 transfer_plan。目标 App 的主体结构、关键符号、识别色和整体构图优先级高于风格化程度。
-如果风格迁移会导致目标 App 无法识别，请降低风格化强度，而不是替换主体。
-禁止把目标主体改成通用毛绒球、无关动物、无身份锚点的可爱团子。
+[Executable Theme Fidelity Instructions]
+Color application: {plan.get("color_application", "")}
+Stroke application: {plan.get("stroke_application", "")}
+Composition application: {plan.get("composition_application", "")}
+Identity application: {plan.get("identity_application", "")}
 
-【目标保留要求】
-最后一张输入图是 {target_app} 的原始图标，是唯一的目标身份来源。
-必须保留 {target_app} 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
-只允许把整包共用的主题规则迁移到 {target_app} 上，不允许重新定义本 App 的独立风格。
+Fidelity constraints:
+{json.dumps(plan.get("fidelity_constraints", []), ensure_ascii=False, indent=2)}
 
-【输出要求】
-只输出一个完整主题图标。不要输出文字说明、对照板、分栏布局、输入拼贴、水印或额外 logo。
+Negative constraints:
+{json.dumps(plan.get("negative_constraints", []), ensure_ascii=False, indent=2)}
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching {target_app}'s output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like {target_app} as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.
 """
     output.write_text(prompt, encoding="utf-8")
     return str(output)

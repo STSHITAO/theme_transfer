@@ -25,7 +25,6 @@ class TpqsConfig:
     image_size: int = 224
     batch_size: int = 1
     style_feature_backend: str = "color_edge_composition"
-    use_openclip: bool = False
 
     @property
     def is_official_tpqs(self) -> bool:
@@ -43,7 +42,6 @@ class TpqsConfig:
             image_size=int(source.get("TPQS_IMAGE_SIZE", "224")),
             batch_size=int(source.get("TPQS_BATCH_SIZE", "1")),
             style_feature_backend=source.get("TPQS_STYLE_FEATURE_BACKEND", "color_edge_composition").lower(),
-            use_openclip=source.get("TPQS_USE_OPENCLIP", "false").lower() == "true",
         )
 
 

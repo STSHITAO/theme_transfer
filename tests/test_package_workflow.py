@@ -22,8 +22,7 @@ def make_jpg(path: Path, color=(120, 30, 40)) -> None:
 
 def make_project_fixture(root: Path) -> None:
     for app_name in ["alipay", "douyin", "wechat"]:
-        make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_background.png")
-        make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_foreground.png")
+        make_png(root / f"data/styles/theme_001/{app_name}/{app_name}.png")
         make_jpg(root / f"data/styles/theme_001/{app_name}/{app_name}_style_ref.jpg")
     (root / "data/styles/theme_001/theme.json").write_text(
         json.dumps(
@@ -130,6 +129,10 @@ class PackageWorkflowTests(unittest.TestCase):
             theme_design = json.loads((package_dir / "theme_design_analysis.json").read_text(encoding="utf-8"))
             self.assertIn("theme_board", theme_design)
             self.assertIn("identity_handling_policy", theme_design)
+            self.assertIn("color_transform_rule", theme_design)
+            self.assertIn("stroke_transform_rule", theme_design)
+            self.assertIn("composition_transform_rule", theme_design)
+            self.assertIn("theme_fidelity_constraints", theme_design)
 
             for app_name in target_apps:
                 case_dir = package_dir / "cases" / app_name
@@ -150,11 +153,22 @@ class PackageWorkflowTests(unittest.TestCase):
                 self.assertEqual(identity_strategy["app"], app_name)
                 self.assertIn(identity_strategy["identity_constraint_level"], ["strict", "balanced", "flexible"])
                 self.assertIn("generation_direction", identity_strategy)
+                self.assertIn("identity_anchor", identity_strategy)
+                self.assertIn("brand_cues_to_preserve", identity_strategy)
+                self.assertIn("semantic_cues_to_preserve", identity_strategy)
+                self.assertIn("style_fidelity_priority", identity_strategy)
                 self.assertIn("strategy_type", transfer_plan)
                 self.assertIn("identity_constraint_level", transfer_plan)
                 self.assertIn("must_preserve", transfer_plan)
                 self.assertIn("forbid", transfer_plan)
+                self.assertIn("color_application", transfer_plan)
+                self.assertIn("stroke_application", transfer_plan)
+                self.assertIn("composition_application", transfer_plan)
+                self.assertIn("identity_application", transfer_plan)
+                self.assertIn("fidelity_constraints", transfer_plan)
+                self.assertIn("negative_constraints", transfer_plan)
                 self.assertIn("transfer_plan", generation_prompt)
+                self.assertIn("theme fidelity", generation_prompt.lower())
 
             with Image.open(package_dir / "contact_sheet.png") as sheet:
                 self.assertEqual(sheet.mode, "RGBA")

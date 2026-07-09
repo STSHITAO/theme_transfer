@@ -1,0 +1,41 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "小电视轮廓与天线结构",
+  "brand_cues_to_preserve": [
+    "标志性的粉色系（需调整为低饱和度淡粉）",
+    "电视机外框轮廓",
+    "顶部的两根天线"
+  ],
+  "semantic_cues_to_preserve": [
+    "屏幕区域（作为吉祥物的互动载体）",
+    "整体方正带圆角的电视形态"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "哔哩哔哩的原始图标是典型的文字标（Wordmark），直接保留文字会破坏主题的手绘插画感且难以阅读。因此选择‘Logo简化’策略，将识别重心从文字转移到更具象的‘小电视’图形上。通过提取电视机的轮廓、天线和屏幕区域，将其转化为一个具体的卡通物体，既保留了B站的核心品牌资产，又完美适配主题的‘治愈系手绘’和‘吉祥物互动’规则。",
+  "must_preserve": [
+    "电视机的基本外形（圆角矩形机身）",
+    "顶部的双天线特征",
+    "品牌的粉色倾向（必须转换为马卡龙淡粉色）",
+    "黑色手绘风格描边",
+    "统一的白色萌宠吉祥物",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "can_recompose": [
+    "去除原本的'bilibili'文字",
+    "将原本实心的粉色背景改为米白/奶油黄底板",
+    "电视屏幕内部可以留白或作为吉祥物的活动空间",
+    "线条由矢量直线变为抖动感手绘线"
+  ],
+  "forbid": [
+    "禁止直接使用原始的高饱和度亮粉色背景",
+    "禁止在图标内绘制复杂的'bilibili'文字",
+    "禁止省略顶部的天线（否则像普通平板而非电视）",
+    "禁止缺少吉祥物元素",
+    "禁止使用锐利的直角边缘"
+  ],
+  "generation_direction": "Draw a cute, hand-drawn cartoon icon on a creamy yellow rounded square background. The main subject is a simplified, pastel pink TV set outline with two antennas on top, drawn with sketchy black lines. A small fluffy white puppy is sitting inside the TV screen area or hugging the TV frame. Soft matte texture, healing style, no text, low saturation colors."
+}

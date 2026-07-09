@@ -24,8 +24,7 @@ class WorkflowTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             for app_name in ["wechat", "alipay"]:
-                make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_background.png")
-                make_png(root / f"data/styles/theme_001/{app_name}/{app_name}_foreground.png")
+                make_png(root / f"data/styles/theme_001/{app_name}/{app_name}.png")
                 make_jpg(root / f"data/styles/theme_001/{app_name}/{app_name}_style_ref.jpg")
             make_png(root / "data/targets/xiaohongshu/xiaohongshu.png")
             (root / "prompts").mkdir()

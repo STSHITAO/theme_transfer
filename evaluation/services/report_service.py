@@ -32,6 +32,8 @@ def write_tpqs_outputs(
         "theme_membership_score",
         "d_to_theme_style_centroid",
         "is_style_outlier",
+        "generated_internal_distance",
+        "generated_internal_outlier",
         "matched_target_app",
         "identity_match_correct",
         "generated_to_own_target_similarity",

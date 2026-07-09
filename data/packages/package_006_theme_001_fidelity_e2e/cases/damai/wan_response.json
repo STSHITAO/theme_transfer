@@ -1,0 +1,120 @@
+{
+  "status_code": 200,
+  "request_id": "3b80c34b-7941-949e-ad03-8616aa8213bf",
+  "code": "",
+  "message": "",
+  "output": {
+    "text": null,
+    "finish_reason": null,
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/6f/20260709/727717a8/f50738a3-b2f5-4c7f-8122-55ac72fd7e9c_0.png?Expires=1783667795&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=X61fSavlJqKNI01BwxJyv4xAejA%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/49/20260709/727717a8/eef2a09f-b3cf-4ef2-9541-2dc4af2decf8_0.png?Expires=1783667795&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=clfnRXYAeNPW1BG3DMeUDhfKVMM%3D"
+            }
+          ]
+        }
+      },
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://dashscope-7c2c.oss-accelerate.aliyuncs.com/1d/58/20260709/727717a8/9c6bf100-49ee-4950-a58c-cdcebf984f2d_0.png?Expires=1783667795&OSSAccessKeyId=LTAI5tPxpiCM2hjmWrFXrym1&Signature=XH6vXzW7oklZ%2FtkTNEKNTbF1j98%3D"
+            }
+          ]
+        }
+      }
+    ],
+    "audio": null,
+    "finished": true,
+    "debug_info": [
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 433018165,
+        "is_refiner": false,
+        "inference_cost": 6.724266359000467,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n[Package Base Prompt]\ntheme_id: theme_001\n\nThis base prompt is shared by every target App in the package.\nAll outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.\n\n[Theme Fidelity Goal]\nThe result must look like a missing App icon from theme_001.\nDo not create a new theme style.\nDo not generate only an internally consistent icon set that is inconsistent with theme_001.\n\n[Theme Style Analysis]\n治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。\n\n[Reference Raw To Style Transform]\n从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。\n\n[Color Transform Rule]\n从 Original 的高对比度、品牌标准色（如支付宝蓝、抖音黑）转换为 Theme 的低饱和度 pastel 色调。去除原有的复杂渐变和发光效果，改为平涂色块。保留品牌的识别色相（如电话仍保留绿色倾向，但变为淡黄绿或配合黄色听筒），但大幅降低明度对比，融入整体的暖调氛围。\n\n[Background Transform Rule]\n彻底替换原有背景。无论 Original 是纯色、渐变还是图片，Style_ref 均统一替换为米白色/淡黄色的圆角矩形底板。主体图形不再作为背景的一部分，而是作为独立的插画元素浮于底板之上。\n\n[Stroke Transform Rule]\n从 Original 的无描边或隐形边缘，转变为明显的黑色细实线描边。线条粗细均匀，端点和拐角处理圆润，模拟手绘草图的质感，增强了图标的卡通属性和轮廓识别度。\n\n[Composition Transform Rule]\n主体图形进行简化和拟物化/卡通化处理。Original 中抽象的 Logo（如抖音音符、支付宝汉字）被转化为更具象的物体或保留核心轮廓但增加厚度感。吉祥物元素的加入打破了原有的平衡，增加了画面的趣味性和动态感，视觉重心略微上移或偏向吉祥物所在位置。\n\n[Subject Scale Rule]\n主体图形相对于画布适中偏大，但四周留白明显（约占宽度的 15%-20%）。不允许主体填满整个底板，必须留出空间给描边和呼吸感。吉祥物尺寸较小，约为主体尺寸的 1/5 到 1/4。\n\n[Detail Complexity Rule]\n极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。\n\n[Theme Fidelity Constraints]\n[\n  \"必须使用统一的米白/淡黄圆角矩形底板。\",\n  \"必须包含黑色的手绘风格细描边。\",\n  \"必须在画面中融入白色的简笔画萌宠吉祥物（如趴在物体上、抱着物体等）。\",\n  \"色彩必须调整为低饱和度的奶油/马卡龙色系，禁止使用原本的高饱和品牌色。\",\n  \"保持扁平化，禁止添加立体阴影或复杂光泽。\"\n]\n\n[Forbidden Style Drift]\n[\n  \"禁止保留 Original 的原始背景色（如抖音的黑底、微信的绿底）。\",\n  \"禁止使用写实风格或复杂的 3D 渲染效果。\",\n  \"禁止省略吉祥物元素，这是该主题包的核心识别特征。\",\n  \"禁止使用锐利的直角或完美的几何线条，需保持手绘的圆润感。\"\n]\n\n[Theme Board]\n{\n  \"palette\": \"低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。\",\n  \"line_style\": \"手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。\",\n  \"material\": \"扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。\",\n  \"background\": \"统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。\",\n  \"composition\": \"中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。\",\n  \"motif_rules\": \"必须包含标志性的白色萌宠吉祥物。吉祥物通常以探头、趴卧、拥抱或互动的姿态出现，作为连接不同 App 图标的统一视觉符号（Visual Motif）。\"\n}\n\n[Global Wan Constraints]\n- Output must look like a missing member of theme_001.\n- Do not invent a new color palette, stroke style, composition system, or background treatment.\n- Color must match theme_001's hue range, saturation, brightness, and background handling.\n- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.\n- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.\n- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.\n- Do not copy any reference App identity, logo, wordmark, or subject.\n- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.\n\n\n[Current Target App]\ntarget_app: damai\n\n[transfer_plan]\n{\n  \"app\": \"damai\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"balanced\",\n  \"preserve\": [\n    \"放射状花瓣/麦穗的半圆形阵列结构\",\n    \"底部中心的绿色三角形基座\",\n    \"中心负空间汇聚点\",\n    \"多色分层的视觉逻辑\"\n  ],\n  \"must_preserve\": [\n    \"米黄色/奶油色圆角矩形底板\",\n    \"黑色手绘风格细描边（带抖动感和圆润转角）\",\n    \"统一的白色软萌小动物吉祥物（小狗或小绵羊）\",\n    \"吉祥物与主体的物理互动（如趴在花瓣上或抱住三角底座）\",\n    \"哑光、扁平、无光泽的材质质感\"\n  ],\n  \"recompose_allowed\": [\n    \"将高饱和彩虹渐变拆解为独立的低饱和度马卡龙色块（粉彩）\",\n    \"花瓣边缘由锐利几何线转化为柔和、不规则的手绘曲线\",\n    \"调整花瓣数量至7-9瓣以保持简洁且可识别\",\n    \"吉祥物的具体姿态和位置（建议位于顶部花瓣或底部三角旁）\"\n  ],\n  \"restyle\": [\n    \"色彩：从霓虹/高饱和转为 pastel 色系（淡粉、淡蓝、淡黄、薄荷绿）\",\n    \"线条：从矢量完美直线转为马克笔/铅笔手绘质感\",\n    \"形态：从扁平矢量图形转为具有轻微厚度感的卡通剪纸/粘土风格\"\n  ],\n  \"decorate\": [\n    \"在主体周围增加少量手绘风格的装饰性短线或点缀，增强童趣\",\n    \"确保吉祥物毛发呈现蓬松、柔软的视觉效果\"\n  ],\n  \"forbid\": [\n    \"禁止保留原始的高饱和度品牌渐变色\",\n    \"禁止使用完美的几何直线或锐利直角\",\n  ",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形底板；黑色手绘风格细描边（带轻微抖动感和圆润转角）；哑光扁平无光泽材质；整体构图居中\",\n  \"diff\": {\n    \"物体更改\": \"将大麦App图标中的放射状花瓣阵列从高饱和霓虹渐变色改为低饱和度马卡龙色系（淡粉、淡蓝、淡黄、薄荷绿、橙黄等），每片花瓣为独立纯色块，去除原有渐变与发光效果；底部绿色三角基座保留但降低饱和度至柔和草绿色；中心负空间汇聚点保持不变；花瓣数量简化为7-9瓣，边缘由锐利几何线转化为柔和不规则手绘曲线\",\n    \"物体增加\": \"在主体顶部花瓣上方或底部三角旁增加一只白色软萌小动物吉祥物（小狗或小绵羊造型），以探头趴卧或轻抱姿态与主体产生物理接触，毛发蓬松柔软，线条与整体手绘风格一致\",\n    \"风格/质量增强\": \"整体色调统一为温暖奶油米白背景与低饱和马卡龙色系的治愈系手绘卡通氛围；光影取消所有高光与阴影，呈现哑光纸质填色质感；画面呼吸感充足，主体与底板边缘留有明显间距\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 433018166,
+        "is_refiner": false,
+        "inference_cost": 6.67553057600071,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n[Package Base Prompt]\ntheme_id: theme_001\n\nThis base prompt is shared by every target App in the package.\nAll outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.\n\n[Theme Fidelity Goal]\nThe result must look like a missing App icon from theme_001.\nDo not create a new theme style.\nDo not generate only an internally consistent icon set that is inconsistent with theme_001.\n\n[Theme Style Analysis]\n治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。\n\n[Reference Raw To Style Transform]\n从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。\n\n[Color Transform Rule]\n从 Original 的高对比度、品牌标准色（如支付宝蓝、抖音黑）转换为 Theme 的低饱和度 pastel 色调。去除原有的复杂渐变和发光效果，改为平涂色块。保留品牌的识别色相（如电话仍保留绿色倾向，但变为淡黄绿或配合黄色听筒），但大幅降低明度对比，融入整体的暖调氛围。\n\n[Background Transform Rule]\n彻底替换原有背景。无论 Original 是纯色、渐变还是图片，Style_ref 均统一替换为米白色/淡黄色的圆角矩形底板。主体图形不再作为背景的一部分，而是作为独立的插画元素浮于底板之上。\n\n[Stroke Transform Rule]\n从 Original 的无描边或隐形边缘，转变为明显的黑色细实线描边。线条粗细均匀，端点和拐角处理圆润，模拟手绘草图的质感，增强了图标的卡通属性和轮廓识别度。\n\n[Composition Transform Rule]\n主体图形进行简化和拟物化/卡通化处理。Original 中抽象的 Logo（如抖音音符、支付宝汉字）被转化为更具象的物体或保留核心轮廓但增加厚度感。吉祥物元素的加入打破了原有的平衡，增加了画面的趣味性和动态感，视觉重心略微上移或偏向吉祥物所在位置。\n\n[Subject Scale Rule]\n主体图形相对于画布适中偏大，但四周留白明显（约占宽度的 15%-20%）。不允许主体填满整个底板，必须留出空间给描边和呼吸感。吉祥物尺寸较小，约为主体尺寸的 1/5 到 1/4。\n\n[Detail Complexity Rule]\n极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。\n\n[Theme Fidelity Constraints]\n[\n  \"必须使用统一的米白/淡黄圆角矩形底板。\",\n  \"必须包含黑色的手绘风格细描边。\",\n  \"必须在画面中融入白色的简笔画萌宠吉祥物（如趴在物体上、抱着物体等）。\",\n  \"色彩必须调整为低饱和度的奶油/马卡龙色系，禁止使用原本的高饱和品牌色。\",\n  \"保持扁平化，禁止添加立体阴影或复杂光泽。\"\n]\n\n[Forbidden Style Drift]\n[\n  \"禁止保留 Original 的原始背景色（如抖音的黑底、微信的绿底）。\",\n  \"禁止使用写实风格或复杂的 3D 渲染效果。\",\n  \"禁止省略吉祥物元素，这是该主题包的核心识别特征。\",\n  \"禁止使用锐利的直角或完美的几何线条，需保持手绘的圆润感。\"\n]\n\n[Theme Board]\n{\n  \"palette\": \"低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。\",\n  \"line_style\": \"手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。\",\n  \"material\": \"扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。\",\n  \"background\": \"统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。\",\n  \"composition\": \"中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。\",\n  \"motif_rules\": \"必须包含标志性的白色萌宠吉祥物。吉祥物通常以探头、趴卧、拥抱或互动的姿态出现，作为连接不同 App 图标的统一视觉符号（Visual Motif）。\"\n}\n\n[Global Wan Constraints]\n- Output must look like a missing member of theme_001.\n- Do not invent a new color palette, stroke style, composition system, or background treatment.\n- Color must match theme_001's hue range, saturation, brightness, and background handling.\n- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.\n- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.\n- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.\n- Do not copy any reference App identity, logo, wordmark, or subject.\n- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.\n\n\n[Current Target App]\ntarget_app: damai\n\n[transfer_plan]\n{\n  \"app\": \"damai\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"balanced\",\n  \"preserve\": [\n    \"放射状花瓣/麦穗的半圆形阵列结构\",\n    \"底部中心的绿色三角形基座\",\n    \"中心负空间汇聚点\",\n    \"多色分层的视觉逻辑\"\n  ],\n  \"must_preserve\": [\n    \"米黄色/奶油色圆角矩形底板\",\n    \"黑色手绘风格细描边（带抖动感和圆润转角）\",\n    \"统一的白色软萌小动物吉祥物（小狗或小绵羊）\",\n    \"吉祥物与主体的物理互动（如趴在花瓣上或抱住三角底座）\",\n    \"哑光、扁平、无光泽的材质质感\"\n  ],\n  \"recompose_allowed\": [\n    \"将高饱和彩虹渐变拆解为独立的低饱和度马卡龙色块（粉彩）\",\n    \"花瓣边缘由锐利几何线转化为柔和、不规则的手绘曲线\",\n    \"调整花瓣数量至7-9瓣以保持简洁且可识别\",\n    \"吉祥物的具体姿态和位置（建议位于顶部花瓣或底部三角旁）\"\n  ],\n  \"restyle\": [\n    \"色彩：从霓虹/高饱和转为 pastel 色系（淡粉、淡蓝、淡黄、薄荷绿）\",\n    \"线条：从矢量完美直线转为马克笔/铅笔手绘质感\",\n    \"形态：从扁平矢量图形转为具有轻微厚度感的卡通剪纸/粘土风格\"\n  ],\n  \"decorate\": [\n    \"在主体周围增加少量手绘风格的装饰性短线或点缀，增强童趣\",\n    \"确保吉祥物毛发呈现蓬松、柔软的视觉效果\"\n  ],\n  \"forbid\": [\n    \"禁止保留原始的高饱和度品牌渐变色\",\n    \"禁止使用完美的几何直线或锐利直角\",\n  ",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形底板；黑色手绘风格细描边（带轻微抖动感和圆润转角）；哑光扁平无光泽材质；整体构图居中\",\n  \"diff\": {\n    \"物体更改\": \"将大麦App图标中的放射状花瓣阵列从高饱和霓虹渐变色改为低饱和度马卡龙色系（淡粉、淡蓝、淡黄、薄荷绿、橙黄等），每片花瓣为独立纯色块，去除原有渐变与发光效果；底部绿色三角基座保留但降低饱和度至柔和草绿色；中心负空间汇聚点保持不变；花瓣数量简化为7-9瓣，边缘由锐利几何线转化为柔和不规则手绘曲线\",\n    \"物体增加\": \"在主体顶部花瓣上方或底部三角旁增加一只白色软萌小动物吉祥物（小狗或小绵羊造型），以探头趴卧或轻抱姿态与主体产生物理接触，毛发蓬松柔软，线条与整体手绘风格一致\",\n    \"风格/质量增强\": \"整体色调统一为温暖奶油米白背景与低饱和马卡龙色系的治愈系手绘卡通氛围；光影取消所有高光与阴影，呈现哑光纸质填色质感；画面呼吸感充足，主体与底板边缘留有明显间距\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      },
+      {
+        "actual_negative_prompt": "Turn the input image into a very garbage quality: limb deformity, overexposed, underexposed, severe blur, excessive skin smoothing, obvious color cast, compression artifacts, distortion, typographical errors, pseudo-text gibberish, content logic errors, oversaturated, out of focus, heavy noise, low resolution",
+        "output_H": 2048,
+        "output_W": 2048,
+        "output_image_num": 1,
+        "actual_seed": 433018167,
+        "is_refiner": false,
+        "inference_cost": 6.8313569077290595,
+        "predicted_image_count": 0,
+        "ori_prompt": "你是图标主题风格迁移模型。\n\n输入图片说明：\n- 前几张图是同一主题包中的纯主题风格参考图 style_ref。\n- 最后一张图是目标 App 的原始目标图。\n\n任务：\n请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。\n\n你应该学习“规则类型”，而不是复制某个参考 App 的身份：\n\n1. 主体重绘规则：\n   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。\n\n2. 背景重绘规则：\n   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。\n\n3. 前景与背景关系：\n   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。\n\n4. 视觉语言：\n   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。\n\n5. 主题装饰规则：\n   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。\n\n6. 目标保留：\n   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。\n\n正例：\n- 学习参考图的主题化方式，并应用到目标 App 主体上。\n- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。\n- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。\n\n反例：\n- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。\n- 把某个具体风格元素写死为所有 theme 都必须使用。\n- 生成对照板、分栏图片、说明标签、输入图片拼贴。\n- 生成与目标 App 身份冲突的额外主体。\n\n不要生成：\n- 说明文字、标签文字、水印、乱码。\n- 额外 logo 或参考 App logo。\n- 额外主体物体。\n- 与目标 App 身份冲突的元素。\n\n\n[Package Base Prompt]\ntheme_id: theme_001\n\nThis base prompt is shared by every target App in the package.\nAll outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.\n\n[Theme Fidelity Goal]\nThe result must look like a missing App icon from theme_001.\nDo not create a new theme style.\nDo not generate only an internally consistent icon set that is inconsistent with theme_001.\n\n[Theme Style Analysis]\n治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。\n\n[Reference Raw To Style Transform]\n从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。\n\n[Color Transform Rule]\n从 Original 的高对比度、品牌标准色（如支付宝蓝、抖音黑）转换为 Theme 的低饱和度 pastel 色调。去除原有的复杂渐变和发光效果，改为平涂色块。保留品牌的识别色相（如电话仍保留绿色倾向，但变为淡黄绿或配合黄色听筒），但大幅降低明度对比，融入整体的暖调氛围。\n\n[Background Transform Rule]\n彻底替换原有背景。无论 Original 是纯色、渐变还是图片，Style_ref 均统一替换为米白色/淡黄色的圆角矩形底板。主体图形不再作为背景的一部分，而是作为独立的插画元素浮于底板之上。\n\n[Stroke Transform Rule]\n从 Original 的无描边或隐形边缘，转变为明显的黑色细实线描边。线条粗细均匀，端点和拐角处理圆润，模拟手绘草图的质感，增强了图标的卡通属性和轮廓识别度。\n\n[Composition Transform Rule]\n主体图形进行简化和拟物化/卡通化处理。Original 中抽象的 Logo（如抖音音符、支付宝汉字）被转化为更具象的物体或保留核心轮廓但增加厚度感。吉祥物元素的加入打破了原有的平衡，增加了画面的趣味性和动态感，视觉重心略微上移或偏向吉祥物所在位置。\n\n[Subject Scale Rule]\n主体图形相对于画布适中偏大，但四周留白明显（约占宽度的 15%-20%）。不允许主体填满整个底板，必须留出空间给描边和呼吸感。吉祥物尺寸较小，约为主体尺寸的 1/5 到 1/4。\n\n[Detail Complexity Rule]\n极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。\n\n[Theme Fidelity Constraints]\n[\n  \"必须使用统一的米白/淡黄圆角矩形底板。\",\n  \"必须包含黑色的手绘风格细描边。\",\n  \"必须在画面中融入白色的简笔画萌宠吉祥物（如趴在物体上、抱着物体等）。\",\n  \"色彩必须调整为低饱和度的奶油/马卡龙色系，禁止使用原本的高饱和品牌色。\",\n  \"保持扁平化，禁止添加立体阴影或复杂光泽。\"\n]\n\n[Forbidden Style Drift]\n[\n  \"禁止保留 Original 的原始背景色（如抖音的黑底、微信的绿底）。\",\n  \"禁止使用写实风格或复杂的 3D 渲染效果。\",\n  \"禁止省略吉祥物元素，这是该主题包的核心识别特征。\",\n  \"禁止使用锐利的直角或完美的几何线条，需保持手绘的圆润感。\"\n]\n\n[Theme Board]\n{\n  \"palette\": \"低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。\",\n  \"line_style\": \"手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。\",\n  \"material\": \"扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。\",\n  \"background\": \"统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。\",\n  \"composition\": \"中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。\",\n  \"motif_rules\": \"必须包含标志性的白色萌宠吉祥物。吉祥物通常以探头、趴卧、拥抱或互动的姿态出现，作为连接不同 App 图标的统一视觉符号（Visual Motif）。\"\n}\n\n[Global Wan Constraints]\n- Output must look like a missing member of theme_001.\n- Do not invent a new color palette, stroke style, composition system, or background treatment.\n- Color must match theme_001's hue range, saturation, brightness, and background handling.\n- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.\n- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.\n- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.\n- Do not copy any reference App identity, logo, wordmark, or subject.\n- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.\n\n\n[Current Target App]\ntarget_app: damai\n\n[transfer_plan]\n{\n  \"app\": \"damai\",\n  \"strategy_type\": \"logo_simplify\",\n  \"identity_constraint_level\": \"balanced\",\n  \"preserve\": [\n    \"放射状花瓣/麦穗的半圆形阵列结构\",\n    \"底部中心的绿色三角形基座\",\n    \"中心负空间汇聚点\",\n    \"多色分层的视觉逻辑\"\n  ],\n  \"must_preserve\": [\n    \"米黄色/奶油色圆角矩形底板\",\n    \"黑色手绘风格细描边（带抖动感和圆润转角）\",\n    \"统一的白色软萌小动物吉祥物（小狗或小绵羊）\",\n    \"吉祥物与主体的物理互动（如趴在花瓣上或抱住三角底座）\",\n    \"哑光、扁平、无光泽的材质质感\"\n  ],\n  \"recompose_allowed\": [\n    \"将高饱和彩虹渐变拆解为独立的低饱和度马卡龙色块（粉彩）\",\n    \"花瓣边缘由锐利几何线转化为柔和、不规则的手绘曲线\",\n    \"调整花瓣数量至7-9瓣以保持简洁且可识别\",\n    \"吉祥物的具体姿态和位置（建议位于顶部花瓣或底部三角旁）\"\n  ],\n  \"restyle\": [\n    \"色彩：从霓虹/高饱和转为 pastel 色系（淡粉、淡蓝、淡黄、薄荷绿）\",\n    \"线条：从矢量完美直线转为马克笔/铅笔手绘质感\",\n    \"形态：从扁平矢量图形转为具有轻微厚度感的卡通剪纸/粘土风格\"\n  ],\n  \"decorate\": [\n    \"在主体周围增加少量手绘风格的装饰性短线或点缀，增强童趣\",\n    \"确保吉祥物毛发呈现蓬松、柔软的视觉效果\"\n  ],\n  \"forbid\": [\n    \"禁止保留原始的高饱和度品牌渐变色\",\n    \"禁止使用完美的几何直线或锐利直角\",\n  ",
+        "actual_prompt": "{\n  \"common\": \"圆角矩形底板；黑色手绘风格细描边（带轻微抖动感和圆润转角）；哑光扁平无光泽材质；整体构图居中\",\n  \"diff\": {\n    \"物体更改\": \"将大麦App图标中的放射状花瓣阵列从高饱和霓虹渐变色改为低饱和度马卡龙色系（淡粉、淡蓝、淡黄、薄荷绿、橙黄等），每片花瓣为独立纯色块，去除原有渐变与发光效果；底部绿色三角基座保留但降低饱和度至柔和草绿色；中心负空间汇聚点保持不变；花瓣数量简化为7-9瓣，边缘由锐利几何线转化为柔和不规则手绘曲线\",\n    \"物体增加\": \"在主体顶部花瓣上方或底部三角旁增加一只白色软萌小动物吉祥物（小狗或小绵羊造型），以探头趴卧或轻抱姿态与主体产生物理接触，毛发蓬松柔软，线条与整体手绘风格一致\",\n    \"风格/质量增强\": \"整体色调统一为温暖奶油米白背景与低饱和马卡龙色系的治愈系手绘卡通氛围；光影取消所有高光与阴影，呈现哑光纸质填色质感；画面呼吸感充足，主体与底板边缘留有明显间距\"\n  }\n}",
+        "service_type": "i2i",
+        "enable_sequential": false,
+        "pe_model_name": "qwen3-vl-30b-a3b-wan"
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 60360,
+    "output_tokens": 6,
+    "characters": 0,
+    "image_count": 3,
+    "total_tokens": 60366,
+    "size": "2048*2048"
+  },
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "13171",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "date": "Thu, 09 Jul 2026 07:16:36 GMT",
+    "server": "istio-envoy",
+    "x-request-id": "3b80c34b-7941-949e-ad03-8616aa8213bf",
+    "req-cost-time": "14928",
+    "req-arrive-time": "1783581382358",
+    "resp-start-time": "1783581397287",
+    "transfer-encoding": "chunked"
+  }
+}

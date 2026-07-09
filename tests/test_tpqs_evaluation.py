@@ -13,8 +13,9 @@ from evaluation.services.embedding_service import (
     prepare_model_cache_dirs,
 )
 from evaluation.services.eval_path_service import resolve_eval_inputs
-from evaluation.services.style_feature_service import extract_style_features
+from evaluation.services.style_feature_service import extract_style_feature_groups, extract_style_features
 from evaluation.services.tpqs_service import _package_consistency_score, _style_delta_transfer_score
+from evaluation.services.tpqs_feedback_service import build_tpqs_feedback_retry_prompt
 from evaluation.tpqs_workflow import run_tpqs
 
 
@@ -30,12 +31,8 @@ def make_eval_fixture(root: Path) -> None:
         ("wechat", (220, 80, 100)),
     ]:
         make_image(
-            root / f"data/styles/theme_001/{app_name}/{app_name}_background.png",
+            root / f"data/styles/theme_001/{app_name}/{app_name}.jpg",
             color=(35, 120, 210),
-        )
-        make_image(
-            root / f"data/styles/theme_001/{app_name}/{app_name}_foreground.png",
-            color=(70, 170, 240),
         )
         make_image(
             root / f"data/styles/theme_001/{app_name}/{app_name}_style_ref.jpg",
@@ -69,8 +66,8 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertEqual([item.app for item in resolved.generated_icons], ["bilibili", "qq", "wps"])
             self.assertEqual(len(resolved.theme_refs), 3)
             self.assertEqual([item.app for item in resolved.theme_examples], ["alipay", "douyin", "wechat"])
-            self.assertTrue(resolved.theme_examples[0].background_path.name.endswith("_background.png"))
-            self.assertTrue(resolved.theme_examples[0].foreground_path.name.endswith("_foreground.png"))
+            self.assertTrue(resolved.theme_examples[0].original_path.name.endswith("alipay.jpg"))
+            self.assertEqual(resolved.theme_examples[0].reference_raw_path, resolved.theme_examples[0].original_path)
             self.assertTrue(resolved.theme_examples[0].style_ref_path.name.endswith("_style_ref.jpg"))
             self.assertEqual(set(resolved.target_originals), {"bilibili", "qq", "wps"})
             self.assertEqual(resolved.missing_apps, [])
@@ -102,6 +99,7 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertTrue((eval_dir / "style_delta_distances.json").exists())
             self.assertTrue((eval_dir / "dino_pairwise_distances.json").exists())
             self.assertTrue((eval_dir / "inputs_manifest.json").exists())
+            self.assertTrue((eval_dir / "tpqs_feedback_retry_prompt.md").exists())
 
             report = json.loads((eval_dir / "tpqs_report.json").read_text(encoding="utf-8"))
             manifest = json.loads((eval_dir / "inputs_manifest.json").read_text(encoding="utf-8"))
@@ -109,26 +107,61 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertEqual(report["embedding_backend"], "stats")
             self.assertEqual(report["model_source"], "modelscope")
             self.assertEqual(report["style_feature_backend"], "color_edge_composition")
-            self.assertFalse(report["semantic_fit_enabled"])
+            self.assertNotIn("semantic_fit_enabled", report)
+            self.assertNotIn("semantic_design_transfer_score", report)
+            self.assertNotIn("semantic_fit_score", report)
+            self.assertNotIn("semantic_design_diagnostics", report["tpqs_summary"])
             self.assertEqual(len(manifest["theme_transfer_examples"]), 3)
+            self.assertIn("original_path", manifest["theme_transfer_examples"][0])
             self.assertIn("reference_raw_path", manifest["theme_transfer_examples"][0])
+            self.assertNotIn("background_path", manifest["theme_transfer_examples"][0])
+            self.assertNotIn("foreground_path", manifest["theme_transfer_examples"][0])
             self.assertIn("style_delta_transfer", report["details"])
             self.assertIn(report["decision"], [
                 "style_transfer_failed",
+                "metric_conflict_needs_review",
                 "identity_collapse_risk",
                 "local_retry_recommended",
                 "closed_loop_pass",
                 "needs_review_or_retry",
             ])
+            self.assertIn("tpqs_summary", report)
+            for section in [
+                "style_transfer_diagnostics",
+                "package_unity_diagnostics",
+                "identity_diagnostics",
+                "visual_quality_diagnostics",
+            ]:
+                self.assertIn(section, report["tpqs_summary"])
+            self.assertIn("diagnosis_summary", report)
+            for key in [
+                "main_conclusion",
+                "strong_points",
+                "weak_points",
+                "metric_reliability_warning",
+            ]:
+                self.assertIn(key, report["diagnosis_summary"])
+            self.assertIn("color_delta_score", report)
+            self.assertIn("edge_delta_score", report)
+            self.assertIn("composition_delta_score", report)
+            self.assertIn("complexity_delta_score", report)
+            self.assertIn("visual_stats_transfer_score", report)
+            self.assertIn("visual_artifact_quality_score", report)
             for key in [
                 "tpqs",
                 "style_transfer_score",
                 "style_delta_transfer_score",
+                "color_delta_score",
+                "edge_delta_score",
+                "composition_delta_score",
+                "complexity_delta_score",
                 "package_internal_style_consistency_score",
                 "reference_style_distribution_match_score",
                 "theme_membership_score",
                 "identity_separability_score",
                 "visual_quality_score",
+                "visual_stats_transfer_score",
+                "visual_artifact_quality_score",
             ]:
                 self.assertGreaterEqual(report[key], 0)
                 self.assertLessEqual(report[key], 100)
@@ -137,11 +170,38 @@ class TpqsEvaluationTests(unittest.TestCase):
             metrics_header = metrics_text.splitlines()[0].split(",")
             self.assertIn("style_delta_transfer_score", metrics_header)
             self.assertIn("d_to_reference_delta_centroid", metrics_header)
+            self.assertIn("generated_internal_outlier", metrics_header)
             self.assertIn("theme_membership_score", metrics_header)
+            retry_prompt = (eval_dir / "tpqs_feedback_retry_prompt.md").read_text(encoding="utf-8")
+            self.assertIn("theme_001", retry_prompt)
+            self.assertIn("theme fidelity", retry_prompt.lower())
 
             delta_distances = json.loads((eval_dir / "style_delta_distances.json").read_text(encoding="utf-8"))
             self.assertIn("reference_delta_pairwise", delta_distances)
             self.assertIn("generated_delta_to_reference_delta_centroid", delta_distances)
+            self.assertIn("group_scores", delta_distances)
+            self.assertEqual(
+                set(delta_distances["group_scores"]),
+                {"color", "edge", "composition", "complexity"},
+            )
+
+    def test_tpqs_feedback_retry_prompt_explains_low_delta_scores(self):
+        report = {
+            "theme_id": "theme_001",
+            "color_delta_score": 12,
+            "edge_delta_score": 18,
+            "composition_delta_score": 22,
+            "identity_match_correct": False,
+        }
+
+        prompt = build_tpqs_feedback_retry_prompt(report)
+
+        self.assertIn("theme_001", prompt)
+        self.assertIn("color", prompt.lower())
+        self.assertIn("stroke", prompt.lower())
+        self.assertIn("composition", prompt.lower())
+        self.assertIn("identity", prompt.lower())
+        self.assertIn("do not call Wan automatically", prompt)
 
     def test_missing_target_original_raises_clear_error(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -181,7 +241,7 @@ class TpqsEvaluationTests(unittest.TestCase):
         self.assertEqual(config.image_size, 224)
         self.assertEqual(config.batch_size, 1)
         self.assertEqual(config.style_feature_backend, "color_edge_composition")
-        self.assertFalse(config.use_openclip)
+        self.assertFalse(hasattr(config, "use_openclip"))
 
     def test_config_allows_huggingface_source_override(self):
         config = TpqsConfig.from_env({"TPQS_MODEL_SOURCE": "huggingface"})
@@ -224,7 +284,30 @@ class TpqsEvaluationTests(unittest.TestCase):
         self.assertGreater(score["score"], 70.0)
         self.assertLess(score["D_G_delta"], score["D_no_change_delta"])
         self.assertTrue(score["is_style_delta_transfer_effective"])
+        self.assertEqual(
+            set(score["group_scores"]),
+            {"color", "edge", "composition", "complexity"},
+        )
         self.assertEqual([row["app"] for row in score["per_app"]], ["a", "b"])
+
+    def test_metric_conflict_decision_when_package_unity_is_good_but_delta_fails(self):
+        delta_transfer = {
+            "score": 0.0,
+            "is_style_delta_transfer_effective": False,
+        }
+        reference_match = {"is_package_style_consistency_improved": False}
+        membership = {"generated_internal_outlier_apps": [], "has_generated_internal_outliers": False}
+        identity = {"identity_above_random": True}
+        visual = {"is_visual_stats_improved": False, "artifact_quality_score": 80.0}
+        internal_consistency = {"score": 82.0}
+
+        from evaluation.services.tpqs_service import _decision, _failed_reasons
+
+        decision = _decision(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
+        reasons = _failed_reasons(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
+
+        self.assertEqual(decision, "metric_conflict_needs_review")
+        self.assertIn("style_transfer_metric_conflicts_with_package_unity", reasons)
 
     def test_style_features_are_normalized_and_cached_without_model_download(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -234,10 +317,14 @@ class TpqsEvaluationTests(unittest.TestCase):
 
             config = TpqsConfig.from_env({})
             features = extract_style_features([image_path], config, root_dir=root)
+            grouped = extract_style_feature_groups([image_path], config, root_dir=root)
             second = extract_style_features([image_path], config, root_dir=root)
 
             vector = features[str(image_path)]
             self.assertAlmostEqual(float(np.linalg.norm(vector)), 1.0, places=5)
+            self.assertEqual(set(grouped[str(image_path)]), {"color", "edge", "composition", "complexity"})
+            for group_vector in grouped[str(image_path)].values():
+                self.assertGreater(len(group_vector), 0)
             self.assertTrue(np.allclose(vector, second[str(image_path)]))
             cache_files = list((root / "data/evaluations/_cache/style_features").glob("*.npy"))
             self.assertEqual(len(cache_files), 1)

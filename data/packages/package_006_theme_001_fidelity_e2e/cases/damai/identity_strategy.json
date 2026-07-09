@@ -1,0 +1,36 @@
+{
+  "app": "damai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "放射状的花瓣/麦穗轮廓及底部的绿色三角形基座",
+  "brand_cues_to_preserve": [
+    "半圆形的放射状排列结构",
+    "底部中心的绿色三角形（代表麦穗/舞台）",
+    "多色渐变的品牌印象（需转化为粉彩分色）"
+  ],
+  "semantic_cues_to_preserve": [
+    "演出、绽放、汇聚的视觉语义",
+    "票务入口的仪式感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "大麦的Logo本身具有极强的图形识别度（类花朵/麦穗），适合直接进行风格化迁移。策略上保留其核心的放射状结构和底部绿色三角，但必须打破原有的矢量完美感，将其转化为类似剪纸或手绘插画的柔和形态。颜色需从原本的高饱和彩虹色拆解为独立的低饱和度色块（粉彩花瓣），并强制引入白色萌宠吉祥物趴在花瓣顶端或抱住底部三角，以符合主题的‘治愈系’和‘互动性’要求。",
+  "must_preserve": [
+    "放射状的多瓣结构（约7-9瓣）",
+    "底部的绿色三角形支撑",
+    "黑色手绘描边轮廓",
+    "米黄色圆角矩形底板",
+    "白色简笔画小动物吉祥物"
+  ],
+  "can_recompose": [
+    "花瓣的具体形状（可变得更圆润、像云朵或软糖）",
+    "颜色的具体分配（改为马卡龙色系，不必严格对应原色位置）",
+    "吉祥物的具体姿态（建议趴在最高处的花瓣上俯瞰，或坐在底部三角旁）"
+  ],
+  "forbid": [
+    "禁止保留原本的高饱和度霓虹渐变色",
+    "禁止使用完美的几何直线绘制花瓣边缘",
+    "禁止省略底部的绿色三角形（这是大麦Logo的关键特征）",
+    "禁止没有吉祥物互动的孤立图形"
+  ],
+  "generation_direction": "A hand-drawn cartoon icon of the Damai app logo on a creamy yellow background. The main subject is a stylized, soft flower-like shape made of pastel-colored petals (pink, light blue,淡 yellow) radiating from a center, with a distinct green triangle base at the bottom. A cute white fluffy puppy is sitting on top of the highest petal or hugging the green base. Black sketchy outlines, matte texture, healing style, simple and rounded shapes."
+}

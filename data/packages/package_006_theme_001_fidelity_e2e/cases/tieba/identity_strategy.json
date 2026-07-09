@@ -1,0 +1,37 @@
+{
+  "app": "tieba",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "汉字“贴”的字形结构与气泡对话框轮廓",
+  "brand_cues_to_preserve": [
+    "核心汉字'贴'",
+    "圆角矩形对话气泡的外轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "社区交流/讨论的语义（通过气泡形态表达）",
+    "文字内容的载体感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "贴吧的原生Logo是一个包含汉字的对话气泡，这与主题要求的'圆润、卡通、互动'非常契合。策略上选择保留'贴'字作为视觉核心，但必须将其从原本的扁平矢量风格转化为具有厚度感的卡通字体（类似气球或软糖质感）。原Logo的蓝紫渐变色需替换为低饱和度的淡蓝色或淡紫色平涂色块。吉祥物（白色小狗）应设计为趴在气泡顶部或与'贴'字互动的姿态，以打破原有图标的严肃感，符合治愈系主题。",
+  "must_preserve": [
+    "汉字'贴'的可识别结构",
+    "整体呈对话气泡状的圆角外框",
+    "统一的米白/淡黄圆角底板",
+    "黑色手绘细描边",
+    "白色萌宠吉祥物元素"
+  ],
+  "can_recompose": [
+    "将原本锐利的字体笔画变得圆润肥厚",
+    "将原本的高饱和蓝紫渐变改为 pastel 纯色块",
+    "调整'贴'字在气泡内的排版，使其更具插画感而非排版感",
+    "吉祥物的具体互动姿势（如探头、拥抱气泡）"
+  ],
+  "forbid": [
+    "禁止保留原图的蓝红强对比渐变色",
+    "禁止使用标准的黑体或宋体字形，必须是手写/卡通体",
+    "禁止省略吉祥物",
+    "禁止出现尖锐的直角边缘",
+    "禁止背景留白或使用非暖色调背景"
+  ],
+  "generation_direction": "A hand-drawn cartoon icon on a creamy yellow rounded background. The main subject is a cute, bubbly speech bubble containing the simplified Chinese character '贴' (Tie) in soft pastel blue. The character and bubble have thick, sketchy black outlines and look like soft toys or balloons. A small, fluffy white puppy mascot is playfully hugging the top of the speech bubble or peeking over it. Matte texture, healing style, no gradients, warm atmosphere."
+}

@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 92,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格（线条小狗/简笔画风格），保留了美团核心的黄色背景和黑色文字标识，识别度极高，构图生动可爱。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 95,
+      "failure_reason": "",
+      "recommendation": "同样优秀，风格统一，保留了核心文字和颜色，小狗趴在顶部的构图也很合理，与 candidate_01 难分伯仲，略微逊色于01的互动感。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 85,
+      "composition_score": 88,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "风格一致，识别度高。相比前两张，构图略显简单，小狗的位置和大小使得画面重心稍偏，但依然是高质量的候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\meituan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

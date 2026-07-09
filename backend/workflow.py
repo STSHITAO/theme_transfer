@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 
 from backend.services.image_service import (
     compose_reference_layouts,
-    compose_target_layout,
     prepare_target_layout,
 )
 from backend.services.path_service import resolve_case_paths
@@ -26,26 +25,13 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None, candidate_count=3
         case_id,
         root_dir=root,
     )
-    if "target_background" in resolved and "target_foreground" in resolved:
-        target_layout = compose_target_layout(
-            resolved["target_background"],
-            resolved["target_foreground"],
-            case_id,
-            root_dir=root,
-        )
-        target_inputs = {
-            "target_background": resolved["target_background"],
-            "target_foreground": resolved["target_foreground"],
-        }
-        target_generation_image = resolved["target_foreground"]
-    else:
-        target_layout = prepare_target_layout(
-            resolved["target_image"],
-            case_id,
-            root_dir=root,
-        )
-        target_inputs = resolved["target_image"]
-        target_generation_image = resolved["target_image"]
+    target_layout = prepare_target_layout(
+        resolved["target_image"],
+        case_id,
+        root_dir=root,
+    )
+    target_inputs = resolved["target_image"]
+    target_generation_image = resolved["target_image"]
 
     theme_analysis = analyze_theme(reference_examples, target_inputs, root_dir=root)
     theme_analysis_path = save_theme_analysis(theme_analysis, case_id, root_dir=root)
@@ -83,24 +69,8 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None, candidate_count=3
             "target_app": target_app,
             "used_reference_examples": used_reference_examples,
             "input_files": {
-                "reference_examples": [
-                    {
-                        "app_name": example["app_name"],
-                        "background_path": example["background_path"],
-                        "foreground_path": example["foreground_path"],
-                        "style_ref_path": example["style_ref_path"],
-                    }
-                    for example in reference_examples
-                ],
+                "reference_examples": [_metadata_reference_example(example) for example in reference_examples],
                 "target_image": resolved["target_image"],
-                **(
-                    {
-                        "target_background": resolved["target_background"],
-                        "target_foreground": resolved["target_foreground"],
-                    }
-                    if "target_background" in resolved and "target_foreground" in resolved
-                    else {}
-                ),
             },
             "intermediate_files": {
                 "reference_layouts": [example["reference_layout_path"] for example in reference_examples],
@@ -139,3 +109,14 @@ def run_workflow(theme_id, target_app, case_id, root_dir=None, candidate_count=3
         "qc_report_path": selection["qc_report_path"],
         "metadata_path": metadata_path,
     }
+
+
+def _metadata_reference_example(example):
+    item = {
+        "app_name": example["app_name"],
+        "style_ref_path": example["style_ref_path"],
+    }
+    if "original_path" in example:
+        item["original_path"] = example["original_path"]
+        item["reference_raw_path"] = example.get("reference_raw_path", example["original_path"])
+    return item

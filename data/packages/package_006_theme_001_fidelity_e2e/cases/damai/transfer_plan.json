@@ -1,0 +1,60 @@
+{
+  "app": "damai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "放射状花瓣/麦穗的半圆形阵列结构",
+    "底部中心的绿色三角形基座",
+    "中心负空间汇聚点",
+    "多色分层的视觉逻辑"
+  ],
+  "must_preserve": [
+    "米黄色/奶油色圆角矩形底板",
+    "黑色手绘风格细描边（带抖动感和圆润转角）",
+    "统一的白色软萌小动物吉祥物（小狗或小绵羊）",
+    "吉祥物与主体的物理互动（如趴在花瓣上或抱住三角底座）",
+    "哑光、扁平、无光泽的材质质感"
+  ],
+  "recompose_allowed": [
+    "将高饱和彩虹渐变拆解为独立的低饱和度马卡龙色块（粉彩）",
+    "花瓣边缘由锐利几何线转化为柔和、不规则的手绘曲线",
+    "调整花瓣数量至7-9瓣以保持简洁且可识别",
+    "吉祥物的具体姿态和位置（建议位于顶部花瓣或底部三角旁）"
+  ],
+  "restyle": [
+    "色彩：从霓虹/高饱和转为 pastel 色系（淡粉、淡蓝、淡黄、薄荷绿）",
+    "线条：从矢量完美直线转为马克笔/铅笔手绘质感",
+    "形态：从扁平矢量图形转为具有轻微厚度感的卡通剪纸/粘土风格"
+  ],
+  "decorate": [
+    "在主体周围增加少量手绘风格的装饰性短线或点缀，增强童趣",
+    "确保吉祥物毛发呈现蓬松、柔软的视觉效果"
+  ],
+  "forbid": [
+    "禁止保留原始的高饱和度品牌渐变色",
+    "禁止使用完美的几何直线或锐利直角",
+    "禁止省略底部绿色三角形基座",
+    "禁止省略白色吉祥物或使其与主体无互动",
+    "禁止3D渲染、金属光泽、玻璃质感或复杂阴影",
+    "禁止背景使用非暖色调（如黑、蓝、灰）"
+  ],
+  "generation_brief": "Healing hand-drawn cartoon app icon for Damai. Creamy yellow rounded square background. Main subject: a simplified, soft flower-like shape with pastel-colored petals (pink, light blue, pale yellow) radiating upwards, anchored by a distinct soft green triangle at the bottom. A cute fluffy white puppy is playfully sitting on the top petal or hugging the green base. Black sketchy outlines with natural jitter, matte texture, no gradients, no gloss. Pastel colors, high quality illustration, sticker art style.",
+  "color_application": "Apply pastel transformation: map original rainbow spectrum to low-saturation macaron colors (e.g., red->pale pink, blue->sky blue, green->mint). The bottom triangle must remain a soft, recognizable green but desaturated to match the theme. Background is strictly creamy yellow.",
+  "stroke_application": "Apply black hand-drawn outline rule: use uneven, slightly jittery black lines to define the petals, triangle, and mascot. Avoid perfect vector circles; ensure corners are rounded and lines feel like marker sketches.",
+  "composition_application": "Center the stylized flower/triangle structure. Place the white mascot interacting physically with the structure (e.g., perched on top or leaning against the base) to break symmetry and add life. Ensure ample padding around the edges within the creamy yellow container.",
+  "identity_application": "Preserve the 'radiating petals + green base' structural skeleton of Damai. Simplify the complex gradient into distinct pastel color blocks for each petal layer. Maintain the visual hierarchy where the triangle supports the radiating shape, ensuring immediate recognition despite the stylistic shift.",
+  "fidelity_constraints": [
+    "Must include the unified white animal mascot interacting with the logo.",
+    "Must use the specific creamy yellow background.",
+    "Must use black sketchy hand-drawn outlines.",
+    "Must maintain matte, flat, non-glossy texture.",
+    "Colors must be low-saturation pastels."
+  ],
+  "negative_constraints": [
+    "No realistic 3D rendering or glossy materials.",
+    "No original high-saturation brand colors or complex gradients.",
+    "No perfect geometric lines or sharp angles.",
+    "No missing mascot or isolated logo without interaction.",
+    "No dark or cold background colors."
+  ]
+}

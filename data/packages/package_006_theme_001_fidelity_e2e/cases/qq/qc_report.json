@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美保留了QQ企鹅的核心识别特征（ wink表情、红围巾、配色），同时融入了主题特有的白色小狗元素和柔和线条风格，识别度最高且风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格融合很好，但将企鹅标志性的“眨眼”表情改为了“双眼睁开”，导致品牌IP特征的辨识度略有下降，不如候选图1准确。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "",
+      "recommendation": "虽然画风可爱，但企鹅的眼睛被简化为黑点，失去了原有的神态特征，对于强IP属性的应用来说，这种过度简化降低了身份识别度。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\qq\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

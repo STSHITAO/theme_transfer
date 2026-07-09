@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美融合了主题风格（小狗、柔和色调、描边）与目标App的核心识别特征（“贴”字、气泡轮廓、底部胶囊条）。保留了原Logo的关键结构，同时进行了合理的萌化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "风格统一，识别度尚可。去掉了原Logo的彩色光晕和底部装饰条，仅保留了文字和气泡框，虽然符合极简风格，但相比图1丢失了部分品牌特征（如底部的胶囊形状），因此分数略低。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 92,
+      "style_match_score": 92,
+      "target_identity_score": 88,
+      "target_recognition_score": 88,
+      "semantic_fit_score": 92,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 88,
+      "artifact_score": 100,
+      "overall_score": 89,
+      "failure_reason": "",
+      "recommendation": "优秀的备选。保留了气泡轮廓和文字，色彩处理也很干净。相比图1缺少了底部的胶囊装饰元素，使得与原Logo的对应关系稍弱一点，但整体质量依然很高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\tieba\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

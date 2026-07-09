@@ -47,51 +47,57 @@ def _find_theme_dir(root, theme_id):
 
 def _resolve_reference_example(app_dir):
     app_name = app_dir.name
-    background = _first_existing(
-        app_dir / f"{app_name}_background.png",
-        app_dir / "background.png",
-    )
-    foreground = _first_existing(
-        app_dir / f"{app_name}_foreground.png",
-        app_dir / "foreground.png",
-    )
-    style_ref = _first_existing(
-        app_dir / f"{app_name}_style_ref.jpg",
-        app_dir / f"{app_name}_style_ref.png",
-        app_dir / f"{app_name}_transferred_ref.jpg",
-        app_dir / f"{app_name}_transferred_ref.png",
-        app_dir / "style_ref.jpg",
-        app_dir / "style_ref.png",
-        app_dir / "transferred_ref.jpg",
-        app_dir / "transferred_ref.png",
-        app_dir / "reference.jpg",
-        app_dir / "reference.png",
-    )
-
-    if not background or not foreground or not style_ref:
+    style_ref = _find_style_ref(app_dir, app_name)
+    original = _find_original_image(app_dir, app_name)
+    if not original or not style_ref:
         return None
 
     return {
         "app_name": app_name,
-        "background_path": str(background),
-        "foreground_path": str(foreground),
+        "original_path": str(original),
+        "reference_raw_path": str(original),
         "style_ref_path": str(style_ref),
     }
+
+
+def _find_style_ref(app_dir, app_name):
+    return _first_existing(
+        *[app_dir / f"{app_name}_style_ref{suffix}" for suffix in IMAGE_SUFFIXES],
+        *[app_dir / f"{app_name}_transferred_ref{suffix}" for suffix in IMAGE_SUFFIXES],
+        *[app_dir / f"style_ref{suffix}" for suffix in IMAGE_SUFFIXES],
+        *[app_dir / f"transferred_ref{suffix}" for suffix in IMAGE_SUFFIXES],
+        *[app_dir / f"reference{suffix}" for suffix in IMAGE_SUFFIXES],
+    )
+
+
+def _find_original_image(app_dir, app_name):
+    preferred_names = [app_name, "original", "raw", "input", "image"]
+    for stem in preferred_names:
+        target = _first_existing(*[app_dir / f"{stem}{suffix}" for suffix in IMAGE_SUFFIXES])
+        if target:
+            return target
+
+    images = sorted(
+        item
+        for item in app_dir.iterdir()
+        if item.is_file()
+        and item.suffix.lower() in IMAGE_SUFFIXES
+        and not _is_reference_output_name(item.stem.lower())
+    )
+    if len(images) == 1:
+        return images[0]
+    return None
+
+
+def _is_reference_output_name(stem):
+    excluded_tokens = ["style_ref", "transferred_ref", "reference", "background", "foreground"]
+    return any(token in stem for token in excluded_tokens)
 
 
 def _resolve_target_inputs(root, target_app):
     target_dir = root / "data" / "targets" / target_app
     if not target_dir.exists() or not target_dir.is_dir():
         raise FileNotFoundError(f"Missing target directory: {target_dir}")
-
-    legacy_background = target_dir / "background.png"
-    legacy_foreground = target_dir / "foreground.png"
-    if legacy_background.exists() and legacy_foreground.exists():
-        return {
-            "target_background": str(legacy_background),
-            "target_foreground": str(legacy_foreground),
-            "target_image": str(legacy_foreground),
-        }
 
     target_image = _find_single_target_image(target_dir, target_app)
     if not target_image:

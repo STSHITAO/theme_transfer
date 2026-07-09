@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美契合主题风格。保留了WPS核心的红色'W'图形结构，识别度极高。线条描边处理符合参考图（如支付宝、抖音）的卡通化特征，色彩饱和度适中，背景干净，是最佳选择。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 80,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格基本符合，但外框采用了较粗的深褐色手绘线条，这与参考图中大多数图标（如支付宝、抖音、相机）的清爽边缘或细线风格略有出入，显得略微杂乱。主体识别度依然很好。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "质量很高，与candidate_01非常接近。区别在于背景更偏向纯白/极淡色，而candidate_01有淡淡的暖黄色调，后者与参考图的整体暖色调氛围融合得更好一点，但此图也是优秀的备选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\wps\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

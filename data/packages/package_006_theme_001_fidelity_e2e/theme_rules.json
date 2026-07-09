@@ -1,0 +1,28 @@
+{
+  "theme_style_analysis": "治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。",
+  "common_original_to_style_transform": "从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。",
+  "common_background_transform": "背景统一替换为低饱和度的暖色调纯色块（主要是淡黄色/奶油色），去除原有的系统渐变或复杂纹理。底板通常呈现为圆角矩形，边缘带有轻微的手绘抖动感或非完美几何感，模拟纸张或贴纸的质感，留白充足以突出主体。",
+  "common_foreground_transform": "主体符号保留核心识别轮廓，但材质变为哑光、柔软的卡通质感。颜色通常调整为 pastel（粉彩）色系。主体与吉祥物的比例协调，吉祥物通常占据图标面积的1/4到1/3，位置灵活（顶部、侧面或怀抱中），打破了原有图标的对称性，增加了生动感。",
+  "color_palette": [
+    "奶油黄/淡黄色 (背景主色)",
+    "柔和天蓝 (主体常用色)",
+    "淡粉色 (辅助色/阴影色)",
+    "纯白 (吉祥物主体色)",
+    "深灰/黑色 (手绘轮廓线)"
+  ],
+  "line_style": "黑色细线条手绘描边（Hand-drawn outline）。线条并非完美的矢量直线，而是带有自然的抖动、断连或粗细变化，模仿马克笔或铅笔在纸上的触感。闭合区域不完全封闭，显得轻松随意。",
+  "texture_material": "无光泽的哑光质感（Matte），类似儿童绘本插画或粘土动画的表面。没有强烈的反光、金属感或玻璃质感。色彩填充均匀但边缘柔和，给人一种柔软、温暖的触觉联想。",
+  "lighting_shadow": "极简平光或微弱的顶光。几乎没有复杂的环境光遮蔽或投影。仅在物体交叠处（如动物趴在符号上）使用简单的深色线条或色块表示遮挡关系，保持画面的干净和平面感。",
+  "icon_composition_rules": "非对称平衡构图。主体符号通常居中或略微偏移，吉祥物作为视觉重心的一侧补充。强调‘陪伴感’，即吉祥物必须与主体有明确的层级关系（前/后/上/下），而不是孤立存在。整体布局饱满但不拥挤，四周留有呼吸感。",
+  "target_preservation": "必须保留目标 App 的核心功能符号（如相机的镜头、电话的听筒、音乐的音符等）的可识别轮廓。在此基础上，按照主题规则进行‘软化’处理，并强制加入统一的白色小动物角色与其进行符合逻辑的互动。",
+  "generation_prompt": "A cute hand-drawn cartoon app icon, healing style, creamy yellow background. The main subject is a simplified, soft-colored version of the target app symbol. A small, fluffy white animal character (like a sheep or puppy) is interacting playfully with the symbol (hugging it, sitting on top, or holding it). Black sketchy outlines, matte texture, pastel colors, simple composition, high quality illustration, sticker art style.",
+  "negative_prompt": "realistic, 3d render, glossy, metallic, neon, dark background, complex gradients, sharp vector lines, perfect geometry, text, watermark, multiple animals, scary, aggressive, original system icon style.",
+  "qc_focus": "1. 检查是否包含了统一的白色小动物角色且互动自然；2. 检查线条是否具有手绘的不规则感而非机械直线；3. 检查背景是否为统一的暖色调；4. 检查主体符号是否保留了原App的可识别性；5. 检查整体风格是否可爱、治愈，无尖锐或阴暗元素。",
+  "used_reference_examples": [
+    "alipay",
+    "baidu",
+    "camera",
+    "douyin",
+    "phone"
+  ]
+}

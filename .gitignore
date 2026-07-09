@@ -19,10 +19,6 @@ venv/
 env/
 
 # Generated workflow artifacts
-data/cases/
-data/outputs/
-data/packages/
-data/evaluations/
 data/evaluations/_cache/
 models/
 

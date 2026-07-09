@@ -1,24 +1,53 @@
 {
   "theme_id": "theme_001",
-  "description": "应用图标主题风格参考包",
+  "description": "应用图标主题风格参考包。每个参考样例由原始图标 original 和主题化后的风格参考图 style_ref 组成，用于分析 original -> style_ref 的共同设计变化。",
+  "input_schema": "reference_original_to_style_ref",
+  "reference_pair_schema": {
+    "original": "参考 App 的原始系统图标或未主题化图标，是该参考 App 的身份和功能语义来源。",
+    "style_ref": "同一参考 App 已完成主题绘制后的风格图，用于学习当前主题包的设计语言。"
+  },
   "examples": {
     "alipay": {
       "app": "alipay",
       "display_name": "支付宝",
       "category": "支付 / 金融服务",
-      "core_function": "提供支付、收款、转账、账单、生活缴费等服务"
+      "core_function": "提供支付、收款、转账、账单、生活缴费等金融和生活服务入口。"
+    },
+    "baidu": {
+      "app": "baidu",
+      "display_name": "百度",
+      "category": "搜索 / 信息服务",
+      "core_function": "提供网页搜索、信息检索、知识查询和内容入口服务。"
+    },
+    "camera": {
+      "app": "camera",
+      "display_name": "相机",
+      "category": "系统工具 / 拍摄",
+      "core_function": "拍摄照片和视频，记录影像内容。"
     },
     "douyin": {
       "app": "douyin",
       "display_name": "抖音",
       "category": "短视频 / 内容社区",
-      "core_function": "观看和发布短视频、直播、娱乐内容"
+      "core_function": "观看、发布和分享短视频、直播及娱乐内容。"
+    },
+    "phone": {
+      "app": "phone",
+      "display_name": "电话",
+      "category": "系统工具 / 通讯",
+      "core_function": "拨打和接听电话，管理通话记录，并作为联系人通信入口。"
+    },
+    "wangyiyun": {
+      "app": "wangyiyun",
+      "display_name": "网易云音乐",
+      "category": "音乐 / 音频娱乐",
+      "core_function": "播放音乐、发现歌单、收听音频内容，并参与音乐社区互动。"
     },
     "wechat": {
       "app": "wechat",
       "display_name": "微信",
       "category": "社交 / 通讯",
-      "core_function": "提供聊天、社交、语音视频通话、支付和小程序等服务"
+      "core_function": "提供聊天、社交、语音视频通话、支付和小程序等综合服务。"
     }
   }
 }

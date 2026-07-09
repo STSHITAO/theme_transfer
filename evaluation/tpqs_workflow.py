@@ -5,7 +5,8 @@ from pathlib import Path
 from evaluation.services.embedding_service import TpqsConfig, embed_images
 from evaluation.services.eval_path_service import resolve_eval_inputs, write_inputs_manifest
 from evaluation.services.report_service import write_tpqs_outputs
-from evaluation.services.style_feature_service import extract_style_features
+from evaluation.services.style_feature_service import extract_style_feature_groups, extract_style_features
+from evaluation.services.tpqs_feedback_service import write_tpqs_feedback_retry_prompt
 from evaluation.services.tpqs_service import compute_tpqs_metrics
 
 
@@ -26,8 +27,15 @@ def run_tpqs(
     tpqs_config = config or TpqsConfig.from_env()
     image_paths = _all_image_paths(resolved)
     style_features = extract_style_features(image_paths, tpqs_config, root_dir=root)
+    style_feature_groups = extract_style_feature_groups(image_paths, tpqs_config, root_dir=root)
     dino_embeddings = embed_images(image_paths, tpqs_config, root_dir=root)
-    metrics = compute_tpqs_metrics(resolved, style_features, dino_embeddings, tpqs_config)
+    metrics = compute_tpqs_metrics(
+        resolved,
+        style_features,
+        dino_embeddings,
+        tpqs_config,
+        style_feature_groups,
+    )
     metrics.report["eval_id"] = eval_id
     output_paths = write_tpqs_outputs(
         eval_dir,
@@ -37,12 +45,14 @@ def run_tpqs(
         metrics.style_delta,
         metrics.dino_pairwise,
     )
+    retry_prompt_path = write_tpqs_feedback_retry_prompt(metrics.report, eval_dir)
 
     return {
         "eval_id": eval_id,
         "eval_dir": str(eval_dir),
         "manifest_path": str(manifest_path),
         **output_paths,
+        "tpqs_feedback_retry_prompt_path": str(retry_prompt_path),
         "report": metrics.report,
     }
 

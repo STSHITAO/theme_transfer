@@ -47,10 +47,24 @@ REQUIRED_TRANSFER_PLAN_FIELDS = [
     "decorate",
     "forbid",
     "generation_brief",
+    "color_application",
+    "stroke_application",
+    "composition_application",
+    "identity_application",
+    "fidelity_constraints",
+    "negative_constraints",
 ]
 
 REQUIRED_THEME_DESIGN_FIELDS = [
     "theme_board",
+    "color_transform_rule",
+    "background_transform_rule",
+    "stroke_transform_rule",
+    "composition_transform_rule",
+    "subject_scale_rule",
+    "detail_complexity_rule",
+    "theme_fidelity_constraints",
+    "forbidden_style_drift",
     "reference_transformation_patterns",
     "shared_design_rules",
     "identity_handling_policy",
@@ -66,7 +80,12 @@ REQUIRED_IDENTITY_STRATEGY_FIELDS = [
     "can_recompose",
     "forbid",
     "generation_direction",
+    "identity_anchor",
+    "brand_cues_to_preserve",
+    "semantic_cues_to_preserve",
+    "style_fidelity_priority",
 ]
+
 
 
 def analyze_theme(reference_examples, target_inputs, root_dir=None):
@@ -80,21 +99,10 @@ def analyze_theme(reference_examples, target_inputs, root_dir=None):
     prompt = (root / "prompts" / "qwen_theme_analysis.md").read_text(encoding="utf-8")
     content = [{"text": prompt}]
     for index, example in enumerate(reference_examples, start=1):
-        content.append({"text": f"参考样例 {index}: {example['app_name']} background。只用于分析背景层变化。"})
-        content.append({"image": _image_data_url(example["background_path"])})
-        content.append({"text": f"参考样例 {index}: {example['app_name']} foreground。只用于分析主体层变化。"})
-        content.append({"image": _image_data_url(example["foreground_path"])})
-        content.append({"text": f"参考样例 {index}: {example['app_name']} style_ref。用于和 background/foreground 比较提取主题风格，严禁复制该参考 App 主体。"})
-        content.append({"image": _image_data_url(example["style_ref_path"])})
+        _append_original_style_ref_example(content, index, example)
 
-    if isinstance(target_inputs, dict):
-        content.append({"text": "目标 App target_background。目标身份只能来自目标图，不能来自任何参考 App。"})
-        content.append({"image": _image_data_url(target_inputs["target_background"])})
-        content.append({"text": "目标 App target_foreground。生成时必须保留这个目标主体身份和核心轮廓。"})
-        content.append({"image": _image_data_url(target_inputs["target_foreground"])})
-    else:
-        content.append({"text": "目标 App 原始图。目标身份只能来自这张图。"})
-        content.append({"image": _image_data_url(target_inputs)})
+    content.append({"text": "Target App original icon. The target identity must come only from this image."})
+    content.append({"image": _image_data_url(target_inputs)})
 
     text = _call_qwen(content)
     return _parse_analysis_json(text, reference_examples)
@@ -113,18 +121,13 @@ def analyze_theme_package(reference_examples, root_dir=None):
         {
             "text": (
                 f"{prompt}\n\n"
-                "本次是批量整包主题分析。不要绑定任何单一目标 App，"
-                "只总结所有参考样例共同的主题迁移规则，供整包所有目标 App 复用。"
+                "This is a package-level theme analysis. Do not bind rules to any single target App. "
+                "Summarize only the shared transfer rules across all reference examples for reuse by the whole package."
             )
         }
     ]
     for index, example in enumerate(reference_examples, start=1):
-        content.append({"text": f"参考样例 {index}: {example['app_name']} background。只用于分析背景层变化。"})
-        content.append({"image": _image_data_url(example["background_path"])})
-        content.append({"text": f"参考样例 {index}: {example['app_name']} foreground。只用于分析主体层变化。"})
-        content.append({"image": _image_data_url(example["foreground_path"])})
-        content.append({"text": f"参考样例 {index}: {example['app_name']} style_ref。用于比较提取整包主题风格，严禁复制该参考 App 主体。"})
-        content.append({"image": _image_data_url(example["style_ref_path"])})
+        _append_original_style_ref_example(content, index, example)
 
     text = _call_qwen(content)
     return _parse_analysis_json(text, reference_examples)
@@ -143,7 +146,7 @@ def analyze_theme_design(reference_examples, theme_profile, root_dir=None):
         {
             "text": (
                 f"{prompt}\n\n"
-                "【theme_profile】\n"
+                "[theme_profile]\n"
                 f"{json.dumps(theme_profile, ensure_ascii=False, indent=2)}"
             )
         }
@@ -155,19 +158,34 @@ def analyze_theme_design(reference_examples, theme_profile, root_dir=None):
         content.append(
             {
                 "text": (
-                    f"参考样例 {index}: {app_name}\n"
+                    f"Reference example {index}: {app_name}\n"
                     f"{json.dumps(app_profile, ensure_ascii=False, indent=2)}\n"
-                    "接下来的三张图依次是 background、foreground、style_ref，用于分析主题化设计方式。"
+                    "The next two images are original and style_ref, used to analyze the theme redesign method."
                 )
             }
         )
-        content.append({"image": _image_data_url(example["background_path"])})
-        content.append({"image": _image_data_url(example["foreground_path"])})
+        content.append({"image": _image_data_url(example["original_path"])})
         content.append({"image": _image_data_url(example["style_ref_path"])})
 
     text = _call_qwen(content)
     return _parse_theme_design_json(text, reference_examples, theme_profile)
 
+def _append_original_style_ref_example(content, index, example):
+    app_name = example["app_name"]
+    content.append({
+        "text": (
+            f"Reference example {index}: {app_name} original. "
+            "This is the reference App original icon, used with style_ref to infer transferable theme redesign rules."
+        )
+    })
+    content.append({"image": _image_data_url(example["original_path"])})
+    content.append({
+        "text": (
+            f"Reference example {index}: {app_name} style_ref. "
+            "This is the themed result for the same reference App. Learn only transferable design language, not the App identity."
+        )
+    })
+    content.append({"image": _image_data_url(example["style_ref_path"])})
 
 def analyze_target_identity(target_app, target_image, root_dir=None):
     root = Path(root_dir) if root_dir else Path.cwd()
@@ -380,6 +398,21 @@ def _mock_theme_design(reference_examples, theme_profile):
             "background": "mock shared icon background treatment",
             "composition": "mock shared centered icon composition",
         },
+        "color_transform_rule": "mock: move each original icon toward the shared theme_001 palette and saturation range.",
+        "background_transform_rule": "mock: convert original backgrounds into the shared theme_001 base shape and finish.",
+        "stroke_transform_rule": "mock: match theme_001 stroke weight, rounded edges, and edge density.",
+        "composition_transform_rule": "mock: match theme_001 subject centering, whitespace, and background ratio.",
+        "subject_scale_rule": "mock: keep subject scale within the theme_001 reference range.",
+        "detail_complexity_rule": "mock: reduce or add detail until complexity matches theme_001 references.",
+        "theme_fidelity_constraints": [
+            "outputs must look like missing members of theme_001",
+            "do not invent a new internally consistent theme",
+        ],
+        "forbidden_style_drift": [
+            "new palette outside theme_001",
+            "stroke style that does not match theme_001",
+            "composition that ignores theme_001 subject scale and whitespace",
+        ],
         "reference_transformation_patterns": [
             {
                 "app": app_name,
@@ -413,6 +446,10 @@ def _mock_identity_strategy(theme_design_analysis, target_profile):
             f"Create a themed icon for {target_profile.get('display_name', app)}. "
             "Follow the shared theme_board and preserve enough app recognition."
         ),
+        "identity_anchor": "mock: primary target image silhouette and app function cue",
+        "brand_cues_to_preserve": target_profile.get("brand_identity_cues", []),
+        "semantic_cues_to_preserve": [target_profile.get("core_function", "")] if target_profile.get("core_function") else [],
+        "style_fidelity_priority": "theme_fidelity_first",
     }
 
 
@@ -444,6 +481,18 @@ def _mock_transfer_plan(theme_rules, target_identity, identity_strategy=None):
                 "Do not replace the subject with a generic mascot."
             ),
         ),
+        "color_application": "Apply the theme_001 color transform rule to the target icon without inventing a new palette.",
+        "stroke_application": "Apply the theme_001 stroke weight, rounded edge, and edge-density rules.",
+        "composition_application": "Match theme_001 subject scale, centering, whitespace, and background ratio.",
+        "identity_application": "Preserve identity anchors while expressing them through the shared theme_001 design language.",
+        "fidelity_constraints": [
+            "result must look like a missing member of theme_001",
+            "theme_001 color, stroke, and composition rules override per-app style drift",
+        ],
+        "negative_constraints": [
+            "do not create a new theme style",
+            "do not make only internally consistent icons that are inconsistent with theme_001",
+        ],
     }
 
 
@@ -610,7 +659,7 @@ def _protect_brand_identity_cues(data, target_profile, preserve_keys, recompose_
 def _remove_conflicting_items(items, cues):
     if not isinstance(items, list):
         return []
-    cue_terms = _brand_cue_terms(cues)
+    cue_terms = _identity_cue_terms(cues)
     cleaned = []
     for item in items:
         item_text = str(item)
@@ -621,22 +670,8 @@ def _remove_conflicting_items(items, cues):
     return cleaned
 
 
-def _brand_cue_terms(cues):
-    terms = set()
-    for cue in cues:
-        lower = str(cue).lower()
-        if lower:
-            terms.add(lower)
-        if "bilibili" in lower:
-            terms.add("bilibili")
-        if "文字" in lower or "wordmark" in lower or "text" in lower:
-            terms.update(["wordmark", "bilibili text", "bilibili 文字"])
-        if "小电视" in lower:
-            terms.add("小电视")
-        if "粉色圆角方形底" in lower:
-            terms.add("pink rounded square background")
-            terms.add("粉色圆角方形底")
-    return [term for term in terms if term]
+def _identity_cue_terms(cues):
+    return [str(cue).strip().lower() for cue in cues if str(cue).strip()]
 
 
 def _dedupe_list(items):

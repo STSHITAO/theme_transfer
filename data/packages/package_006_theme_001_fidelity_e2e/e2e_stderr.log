@@ -1,0 +1,107 @@
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "D:\Annaconda\Lib\site-packages\conda\exception_handler.py", line 18, in __call__
+        return func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+      File "D:\Annaconda\Lib\site-packages\conda\cli\main.py", line 61, in main_subshell
+        exit_code = do_call(args, parser)
+                    ^^^^^^^^^^^^^^^^^^^^^
+      File "D:\Annaconda\Lib\site-packages\conda\cli\conda_argparse.py", line 205, in do_call
+        result = getattr(module, func_name)(args, parser)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "D:\Annaconda\Lib\site-packages\conda\cli\main_run.py", line 118, in execute
+        print(response.stdout, file=sys.stdout)
+    UnicodeEncodeError: 'gbk' codec can't encode character '\ufffd' in position 3091: illegal multibyte sequence
+
+`$ D:\Annaconda\Scripts\conda-script.py run -n SEG python -c from backend.package_workflow import run_package_workflow; import json; result=run_package_workflow('theme_001','package_006_theme_001_fidelity_e2e'); print(json.dumps(result, ensure_ascii=False, indent=2))`
+
+  environment variables:
+                 CIO_TEST=<not set>
+    CONDA_ALLOW_SOFTLINKS=false
+                CONDA_EXE=D:\Annaconda\condabin\..\Scripts\conda.exe
+               CONDA_EXES="D:\Annaconda\condabin\..\Scripts\conda.exe"
+               CONDA_ROOT=D:\Annaconda
+           CURL_CA_BUNDLE=<not set>
+                 HOMEPATH=\Users\admin
+               LD_PRELOAD=<not set>
+          MOZ_PLUGIN_PATH=C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\plugins\
+                     PATH=C:\Users\admin\.codex\tmp\arg0\codex-arg0hMHtOC;C:\WINDOWS\system32;C:
+                          \WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShel
+                          l\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program
+                          Files\Bandizip\;C:\Program Files (x86)\Windows Kits\10\Windows
+                          Performance Toolkit\;C:\Program Files\NVIDIA Corporation\NVIDIA
+                          App\NvDLISR;C:\Program Files (x86)\NVIDIA
+                          Corporation\PhysX\Common;C:\Program
+                          Files\Git\cmd;D:\texlive\2025\bin\windows;C:\Program Files\MySQL\MySQL
+                          Server 8.0\bin\;C:\Program Files\GitHub CLI\;C:\Program
+                          Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\Annaconda
+                          ;D:\Annaconda\Library\mingw-
+                          w64\bin;D:\Annaconda\Library\usr\bin;D:\Annaconda\Library\bin;D:\Annac
+                          onda\Scripts;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Pro
+                          gram Files\JetBrains\PyCharm Community Edition
+                          2024.3.3\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS
+                          Code\bin;C:\Users\admin\AppData\Roaming\Programs\Zero Install;C:\Users
+                          \admin\AppData\Local\Microsoft\WindowsApps;D:\texlive\2025\bin\windows
+                          ;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;C:\Use
+                          rs\admin\AppData\Roaming\npm;c:\Users\admin\.vscode\extensions\openai.
+                          chatgpt-26.623.101652-win32-x64\bin\windows-x86_64
+             PSMODULEPATH=C:\Users\admin\Documents\WindowsPowerShell\Modules;C:\Program Files\Wi
+                          ndowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Mod
+                          ules
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+   VSCODE_CODE_CACHE_PATH=C:\Users\admin\AppData\Roaming\Code\CachedData\4fe60c8b1cdac1c4c174f2f
+                          b180d0d758272d713
+
+     active environment : None
+       user config file : C:\Users\admin\.condarc
+ populated config files : D:\Annaconda\.condarc
+                          C:\Users\admin\.condarc
+          conda version : 24.9.2
+    conda-build version : 24.9.0
+         python version : 3.12.7.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=24.9.2=0
+                          __cuda=13.1=0
+                          __win=0=0
+       base environment : D:\Annaconda  (writable)
+      conda av data dir : D:\Annaconda\etc\conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/win-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/win-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/msys2/win-64
+                          https://repo.anaconda.com/pkgs/msys2/noarch
+          package cache : D:\Annaconda\pkgs
+                          C:\Users\admin\.conda\pkgs
+                          C:\Users\admin\AppData\Local\conda\conda\pkgs
+       envs directories : D:\Annaconda\envs
+                          C:\Users\admin\.conda\envs
+                          C:\Users\admin\AppData\Local\conda\conda\envs
+               platform : win-64
+             user-agent : conda/24.9.2 requests/2.32.3 CPython/3.12.7 Windows/11 Windows/10.0.26200 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.8
+          administrator : False
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+
+No report sent. To permanently opt-out, use
+
+    $ conda config --set report_errors false
+

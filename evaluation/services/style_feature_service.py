@@ -10,6 +10,9 @@ from PIL import Image
 from evaluation.services.visual_stats_service import image_statistics
 
 
+STYLE_FEATURE_GROUPS = ("color", "edge", "composition", "complexity")
+
+
 def extract_style_features(paths: list[Path], config, root_dir: Path | None = None) -> dict[str, np.ndarray]:
     root = Path(root_dir) if root_dir else Path(__file__).resolve().parents[2]
     cache_dir = root / "data" / "evaluations" / "_cache" / "style_features"
@@ -26,6 +29,42 @@ def extract_style_features(paths: list[Path], config, root_dir: Path | None = No
         np.save(cache_path, vector)
         features[str(path)] = vector
     return features
+
+
+def extract_style_feature_groups(paths: list[Path], config, root_dir: Path | None = None) -> dict[str, dict[str, np.ndarray]]:
+    root = Path(root_dir) if root_dir else Path(__file__).resolve().parents[2]
+    cache_dir = root / "data" / "evaluations" / "_cache" / "style_feature_groups"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    grouped_features: dict[str, dict[str, np.ndarray]] = {}
+    for path in paths:
+        cache_path = _style_group_cache_path(path, config, cache_dir)
+        if cache_path.exists():
+            loaded = np.load(cache_path)
+            grouped_features[str(path)] = {name: loaded[name] for name in STYLE_FEATURE_GROUPS}
+            continue
+        vector = _extract_single_style_vector(path, image_size=config.image_size).astype(np.float32)
+        groups = _split_style_vector(vector)
+        np.savez(cache_path, **groups)
+        grouped_features[str(path)] = groups
+    return grouped_features
+
+
+def _split_style_vector(vector: np.ndarray) -> dict[str, np.ndarray]:
+    if len(vector) < 80:
+        normalized = _l2_normalize(vector.astype(np.float32))
+        return {name: normalized for name in STYLE_FEATURE_GROUPS}
+
+    color_indices = np.r_[0:8, 10:59]
+    edge_indices = np.r_[8:10, 59:71]
+    composition_indices = np.r_[71:77]
+    complexity_indices = np.r_[8:10, 77:80]
+    return {
+        "color": _l2_normalize(vector[color_indices].astype(np.float32)),
+        "edge": _l2_normalize(vector[edge_indices].astype(np.float32)),
+        "composition": _l2_normalize(vector[composition_indices].astype(np.float32)),
+        "complexity": _l2_normalize(vector[complexity_indices].astype(np.float32)),
+    }
 
 
 def _extract_single_style_vector(path: Path, image_size: int) -> np.ndarray:
@@ -108,6 +147,21 @@ def _style_cache_path(path: Path, config, cache_dir: Path) -> Path:
     }
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
     return cache_dir / f"{digest}.npy"
+
+
+def _style_group_cache_path(path: Path, config, cache_dir: Path) -> Path:
+    stat = path.stat()
+    payload = {
+        "abs_path": str(path.resolve()),
+        "mtime": stat.st_mtime,
+        "size": stat.st_size,
+        "backend": config.style_feature_backend,
+        "image_size": config.image_size,
+        "version": 1,
+        "groups": STYLE_FEATURE_GROUPS,
+    }
+    digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
+    return cache_dir / f"{digest}.npz"
 
 
 def _l2_normalize(vector: np.ndarray) -> np.ndarray:

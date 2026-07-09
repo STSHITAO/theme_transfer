@@ -4,8 +4,6 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image
-
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 
@@ -19,8 +17,7 @@ class GeneratedIcon:
 @dataclass(frozen=True)
 class ThemeTransferExample:
     app: str
-    background_path: Path
-    foreground_path: Path
+    original_path: Path
     style_ref_path: Path
     reference_raw_path: Path
 
@@ -93,13 +90,7 @@ def write_inputs_manifest(resolved: ResolvedEvalInputs, output_dir: Path) -> Pat
         "theme_id": resolved.theme_id,
         "package_id": resolved.package_id,
         "theme_transfer_examples": [
-            {
-                "app": item.app,
-                "background_path": str(item.background_path),
-                "foreground_path": str(item.foreground_path),
-                "style_ref_path": str(item.style_ref_path),
-                "reference_raw_path": str(item.reference_raw_path),
-            }
+            _theme_example_manifest_item(item)
             for item in resolved.theme_examples
         ],
         "theme_refs": [str(path) for path in resolved.theme_refs],
@@ -114,23 +105,29 @@ def write_inputs_manifest(resolved: ResolvedEvalInputs, output_dir: Path) -> Pat
     return path
 
 
+def _theme_example_manifest_item(item: ThemeTransferExample) -> dict[str, str]:
+    return {
+        "app": item.app,
+        "original_path": str(item.original_path),
+        "style_ref_path": str(item.style_ref_path),
+        "reference_raw_path": str(item.reference_raw_path),
+    }
+
+
 def _find_theme_transfer_examples(theme_dir: Path, root: Path, theme_id: str) -> list[ThemeTransferExample]:
     examples = []
     for app_dir in sorted(path for path in theme_dir.iterdir() if path.is_dir()):
         app = app_dir.name
-        background_path = _find_named_image(app_dir, app, "background")
-        foreground_path = _find_named_image(app_dir, app, "foreground")
         style_ref_path = _find_named_image(app_dir, app, "style_ref")
-        if not background_path or not foreground_path or not style_ref_path:
+        original_path = _find_original_image(app_dir, app)
+        if not original_path or not style_ref_path:
             continue
-        raw_path = _compose_reference_raw(root, theme_id, app, background_path, foreground_path)
         examples.append(
             ThemeTransferExample(
                 app=app,
-                background_path=background_path,
-                foreground_path=foreground_path,
+                original_path=original_path,
                 style_ref_path=style_ref_path,
-                reference_raw_path=raw_path,
+                reference_raw_path=original_path,
             )
         )
     return examples
@@ -153,20 +150,28 @@ def _find_named_image(app_dir: Path, app: str, role: str) -> Path | None:
     return matches[0] if matches else None
 
 
-def _compose_reference_raw(root: Path, theme_id: str, app: str, background_path: Path, foreground_path: Path) -> Path:
-    output = root / "data" / "evaluations" / "_cache" / "reference_raw" / theme_id / f"{app}_reference_raw.png"
-    output.parent.mkdir(parents=True, exist_ok=True)
-    if output.exists() and output.stat().st_mtime >= max(background_path.stat().st_mtime, foreground_path.stat().st_mtime):
-        return output
+def _find_original_image(app_dir: Path, app: str) -> Path | None:
+    for stem in [app, "original", "raw", "input", "image"]:
+        for extension in [".png", ".jpg", ".jpeg", ".webp"]:
+            candidate = app_dir / f"{stem}{extension}"
+            if candidate.exists():
+                return candidate
 
-    with Image.open(background_path) as background_image:
-        background = background_image.convert("RGBA")
-    with Image.open(foreground_path) as foreground_image:
-        foreground = foreground_image.convert("RGBA")
-    if foreground.size != background.size:
-        foreground = foreground.resize(background.size, Image.Resampling.LANCZOS)
-    Image.alpha_composite(background, foreground).save(output, format="PNG")
-    return output
+    matches = sorted(
+        path
+        for path in app_dir.iterdir()
+        if path.is_file()
+        and path.suffix.lower() in IMAGE_EXTENSIONS
+        and not _is_reference_output_name(path.stem.lower())
+    )
+    return matches[0] if len(matches) == 1 else None
+
+
+def _is_reference_output_name(stem: str) -> bool:
+    return any(
+        token in stem
+        for token in ["style_ref", "transferred_ref", "reference", "background", "foreground"]
+    )
 
 
 def _find_target_original(root: Path, app: str) -> Path | None:
