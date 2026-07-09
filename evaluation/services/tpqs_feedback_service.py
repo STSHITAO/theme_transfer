@@ -9,13 +9,13 @@ DEFAULT_LOW_SCORE_THRESHOLD = 45.0
 def build_tpqs_feedback_retry_prompt(report: dict, threshold: float = DEFAULT_LOW_SCORE_THRESHOLD) -> str:
     theme_id = report.get("theme_id") or report.get("theme") or "theme_001"
     lines = [
-        f"# TPQS Feedback Retry Prompt",
+        f"# ITTE Generation Feedback Prompt",
         "",
         f"Theme: {theme_id}",
         "",
         "Goal: improve theme fidelity. The next generation should look like a missing App icon from the reference theme package, not a newly invented theme.",
         "",
-        "Important: do not call Wan automatically from this prompt. This file is a first-stage diagnostic retry prompt for human review or a later manual retry step.",
+        "Important: do not call Wan automatically from this prompt. This file is diagnostic generation feedback for human review or a later manual retry step; it is not an automatic retry mechanism.",
         "",
         "Global constraints:",
         f"- Match {theme_id}'s color, stroke, background, composition, subject scale, and detail complexity rules.",
@@ -78,8 +78,11 @@ def build_tpqs_feedback_retry_prompt(report: dict, threshold: float = DEFAULT_LO
 
 def write_tpqs_feedback_retry_prompt(report: dict, output_dir: Path) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
+    feedback = build_tpqs_feedback_retry_prompt(report)
+    new_path = output_dir / "generation_feedback_prompt.md"
+    new_path.write_text(feedback, encoding="utf-8")
     path = output_dir / "tpqs_feedback_retry_prompt.md"
-    path.write_text(build_tpqs_feedback_retry_prompt(report), encoding="utf-8")
+    path.write_text(feedback, encoding="utf-8")
     return path
 
 

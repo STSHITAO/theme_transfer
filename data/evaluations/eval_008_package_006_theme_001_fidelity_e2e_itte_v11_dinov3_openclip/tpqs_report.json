@@ -1,0 +1,1515 @@
+{
+  "eval_id": "eval_008_package_006_theme_001_fidelity_e2e_itte_v11_dinov3_openclip",
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.1",
+  "theme_id": "theme_001",
+  "package_id": "package_006_theme_001_fidelity_e2e",
+  "itte_score": 72.177295864,
+  "tpqs": 72.177295864,
+  "tpqs_primary_score": 72.177295864,
+  "tpqs_total_score": 72.177295864,
+  "strict_delta_tpqs_score": 4.9459228515625,
+  "legacy_tpqs_strict_delta_score": 4.9459228515625,
+  "style_transfer_score": 73.0119634976,
+  "legacy_style_delta_transfer_score": 0.0,
+  "style_delta_transfer_score": 0.0,
+  "color_delta_score": 0.0,
+  "edge_delta_score": 0.0,
+  "composition_delta_score": 0.0,
+  "complexity_delta_score": 0.0,
+  "final_style_membership_score": 87.25374213069689,
+  "theme_style_image_transfer_score": 87.25374213069689,
+  "style_cue_profile_match_score": 51.15873437306092,
+  "theme_prompt_image_alignment_score": 19.680596888065338,
+  "style_attribute_transfer_score": 59.424266431191114,
+  "package_internal_style_consistency_score": 90.22159367799759,
+  "reference_style_distribution_match_score": 64.5679829090275,
+  "package_consistency_score": 90.22159367799759,
+  "theme_membership_score": 82.68762712874873,
+  "identity_separability_score": 28.571428571428573,
+  "visual_quality_score": 96.25,
+  "visual_stats_transfer_score": 54.65507440687482,
+  "visual_artifact_quality_score": 96.25,
+  "visual_statistics_score": 54.65507440687482,
+  "embedding_backend": "dinov3",
+  "model_source": "modelscope",
+  "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "style_feature_backend": "color_edge_composition",
+  "is_official_tpqs": true,
+  "decision": "style_transfer_success_with_identity_risk",
+  "failed_reasons": [
+    "qwen_qc_problematic_apps",
+    "app_identity_coherence_weak",
+    "dino_identity_structure_risk"
+  ],
+  "warnings": {
+    "style_transfer_warnings": [],
+    "package_coherence_warnings": [
+      "qwen_qc_problematic_apps"
+    ],
+    "identity_warnings": [
+      "app_identity_coherence_weak",
+      "dino_identity_structure_risk"
+    ],
+    "quality_warnings": [],
+    "strict_delta_warnings": [
+      "strict_delta_diagnostic_weak"
+    ],
+    "low_confidence_warnings": [
+      "openclip_text_anchor_low_confidence"
+    ]
+  },
+  "diagnosis_summary": {
+    "main_conclusion": "Style transfer is effective, but App identity coherence has risk.",
+    "strong_points": [
+      "Style Transfer Effectiveness Score indicates generated icons moved from target originals toward the theme_refs/style_ref final style.",
+      "Package Coherence Score indicates the generated package is internally consistent.",
+      "Qwen package QC judges App semantic identity as recognizable.",
+      "Visual Quality Score has no severe artifact warning."
+    ],
+    "weak_points": [
+      "DINOv3 structure identity risk apps: damai, hanglvzongheng, meituan, tieba, wps. This is a structure-level risk signal, not direct semantic identity failure.",
+      "Strict Delta Diagnostics are weak, meaning low-level target->generated statistics did not replicate the reference_raw->style_ref delta path.",
+      "Low-confidence signals: openclip_text_anchor_low_confidence"
+    ],
+    "failed_reasons": [
+      "qwen_qc_problematic_apps",
+      "app_identity_coherence_weak",
+      "dino_identity_structure_risk"
+    ],
+    "metric_warning": [
+      "ITTE is Icon Theme Transfer Evaluation, not the old single TPQS score.",
+      "Style Transfer Effectiveness Score is the core score; it measures whether generated icons move from target_originals toward theme_refs/style_ref final style.",
+      "Package Coherence Score only measures whether generated icons are internally unified; package coherence is not proof of successful transfer to the specified theme.",
+      "Strict Delta Diagnostics only measure whether low-level target->generated statistics replicate the reference_raw->style_ref path; they do not drive the main decision.",
+      "DINOv3 is used only as an identity structure risk signal.",
+      "OpenCLIP theme text fit is only included when theme_style_text_fit_reliable=true."
+    ]
+  },
+  "tpqs_summary": {
+    "style_transfer_diagnostics": {
+      "score": 0.0,
+      "group_scores": {
+        "color": 0.0,
+        "edge": 0.0,
+        "composition": 0.0,
+        "complexity": 0.0
+      },
+      "is_effective": false,
+      "interpretation": "Evaluates whether target->generated follows the reference_raw->style_ref transfer direction."
+    },
+    "package_unity_diagnostics": {
+      "score": 90.22159367799759,
+      "generated_pairwise_mean_distance": 0.07131064683198929,
+      "is_package_consistent": true,
+      "generated_internal_outlier_apps": []
+    },
+    "identity_diagnostics": {
+      "score": 28.571428571428573,
+      "top1_accuracy": 0.375,
+      "random_baseline": 0.125,
+      "identity_above_random": true
+    },
+    "visual_quality_diagnostics": {
+      "visual_stats_transfer_score": 54.65507440687482,
+      "visual_artifact_quality_score": 96.25,
+      "artifact_warnings": [
+        "subject_area_too_large"
+      ],
+      "is_artifact_quality_ok": true
+    }
+  },
+  "style_transfer_effectiveness": {
+    "itte_style_transfer_version": "v1.1",
+    "score": 73.0119634976,
+    "style_cue_profile_match_score": 51.15873437306092,
+    "theme_style_image_transfer_score": 87.25374213069689,
+    "style_attribute_transfer_score": 59.424266431191114,
+    "theme_prompt_image_alignment_score": 19.680596888065338,
+    "theme_style_text_fit_score": 19.680596888065338,
+    "theme_style_text_fit_reliable": false,
+    "included_components": [
+      "style_cue_profile_match_score",
+      "theme_style_image_transfer_score",
+      "style_attribute_transfer_score"
+    ],
+    "component_weights": {
+      "style_cue_profile_match_score": 0.2,
+      "theme_style_image_transfer_score": 0.45,
+      "style_attribute_transfer_score": 0.15
+    }
+  },
+  "style_cue_profile_match": {
+    "score": 51.15873437306092,
+    "D_GR_style_cue_profile": 0.6242212057113647,
+    "D_TR_style_cue_profile": 0.9709203243255615,
+    "D_RR_style_cue_profile": 0.29322740861347746,
+    "per_app": [
+      {
+        "app": "bilibili",
+        "style_cue_profile_match_score": 13.332577906914636,
+        "d_to_style_cue_profile": 0.3661555051803589,
+        "target_d_to_style_cue_profile": 0.45650944113731384
+      },
+      {
+        "app": "damai",
+        "style_cue_profile_match_score": 100.0,
+        "d_to_style_cue_profile": 0.26311230659484863,
+        "target_d_to_style_cue_profile": 1.711840271949768
+      },
+      {
+        "app": "hanglvzongheng",
+        "style_cue_profile_match_score": 0.0,
+        "d_to_style_cue_profile": 0.7784290313720703,
+        "target_d_to_style_cue_profile": 0.5859008431434631
+      },
+      {
+        "app": "meituan",
+        "style_cue_profile_match_score": 100.0,
+        "d_to_style_cue_profile": 0.4156070947647095,
+        "target_d_to_style_cue_profile": 1.4693701267242432
+      },
+      {
+        "app": "qq",
+        "style_cue_profile_match_score": 46.13689160997084,
+        "d_to_style_cue_profile": 0.43872538208961487,
+        "target_d_to_style_cue_profile": 0.7513918280601501
+      },
+      {
+        "app": "tieba",
+        "style_cue_profile_match_score": 0.0,
+        "d_to_style_cue_profile": 2.0663959980010986,
+        "target_d_to_style_cue_profile": 1.0471014976501465
+      },
+      {
+        "app": "wps",
+        "style_cue_profile_match_score": 100.0,
+        "d_to_style_cue_profile": 0.35417988896369934,
+        "target_d_to_style_cue_profile": 1.1592934131622314
+      },
+      {
+        "app": "xiaohongshu",
+        "style_cue_profile_match_score": 40.547998436409294,
+        "d_to_style_cue_profile": 0.31116434931755066,
+        "target_d_to_style_cue_profile": 0.5859552621841431
+      }
+    ],
+    "feature_names": [
+      "mean_r",
+      "mean_g",
+      "mean_b",
+      "mean_saturation",
+      "std_saturation",
+      "mean_value",
+      "background_r",
+      "background_g",
+      "background_b",
+      "background_saturation",
+      "background_value",
+      "border_std",
+      "foreground_ratio",
+      "foreground_center_x",
+      "foreground_center_y",
+      "foreground_bbox_w",
+      "foreground_bbox_h",
+      "foreground_margin",
+      "edge_density",
+      "edge_strength",
+      "dark_edge_ratio",
+      "black_pixel_ratio",
+      "gray_entropy",
+      "quantized_color_count",
+      "texture_energy",
+      "pastel_softness"
+    ]
+  },
+  "style_attribute_transfer_scores": {
+    "color": {
+      "score": 92.54289644961617,
+      "reliable": true,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.08262139757244856,
+      "reason": "theme_consistency=0.92; target_theme_separability=0.15; raw_theme_salience=0.52; importance=medium",
+      "D_TR_attr": 0.11064499616622925,
+      "D_GR_attr": 0.04839032143354416,
+      "D_RR_attr": 0.04337384179234505
+    },
+    "background": {
+      "score": 0.0,
+      "reliable": true,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.05394570727511647,
+      "reason": "theme_consistency=0.99; target_theme_separability=0.09; raw_theme_salience=0.16; importance=medium",
+      "D_TR_attr": 0.04759827256202698,
+      "D_GR_attr": 0.05028665065765381,
+      "D_RR_attr": 0.006644248962402344
+    },
+    "stroke": {
+      "score": 80.00328351934715,
+      "reliable": true,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.04429049275498459,
+      "reason": "theme_consistency=0.93; target_theme_separability=0.08; raw_theme_salience=0.20; importance=medium",
+      "D_TR_attr": 0.07278180122375488,
+      "D_GR_attr": 0.04428093880414963,
+      "D_RR_attr": 0.03715718537569046
+    },
+    "texture_material": {
+      "score": 33.838444096349825,
+      "reliable": false,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.017230401582243735,
+      "reason": "theme_consistency=0.99; target_theme_separability=0.03; raw_theme_salience=0.07; importance=medium; excluded from style_attribute_transfer_score due to low reliability",
+      "D_TR_attr": 0.019469022750854492,
+      "D_GR_attr": 0.015044711530208588,
+      "D_RR_attr": 0.006394215859472752
+    },
+    "composition": {
+      "score": 40.76592880863147,
+      "reliable": true,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.023693333889763395,
+      "reason": "theme_consistency=0.98; target_theme_separability=0.04; raw_theme_salience=0.10; importance=medium",
+      "D_TR_attr": 0.030104175209999084,
+      "D_GR_attr": 0.022699318826198578,
+      "D_RR_attr": 0.011939848773181438
+    },
+    "complexity": {
+      "score": 26.332288637089878,
+      "reliable": false,
+      "importance": "medium",
+      "weight": 0.6,
+      "reliability_score": 0.009797926689588798,
+      "reason": "theme_consistency=0.99; target_theme_separability=0.02; raw_theme_salience=0.06; importance=medium; excluded from style_attribute_transfer_score due to low reliability",
+      "D_TR_attr": 0.013291627168655396,
+      "D_GR_attr": 0.011335760354995728,
+      "D_RR_attr": 0.005863990169018507
+    }
+  },
+  "package_coherence": {
+    "score": 86.37252807617188,
+    "package_unity_score": 90.22159367799759,
+    "theme_membership_score": 82.68762712874873,
+    "generated_internal_outlier_apps": []
+  },
+  "app_identity_coherence": {
+    "score": 45.04201939880685,
+    "qwen_identity_score": 95.0,
+    "identity_recognition_prior_score": 95.0,
+    "target_structure_retention_score": 38.69121361812743,
+    "identity_separability_score": 28.571428571428573,
+    "over_recomposition_penalty": 44.76274873395436,
+    "target_structure_warning_apps": [
+      "damai",
+      "hanglvzongheng",
+      "meituan",
+      "qq",
+      "tieba",
+      "wps"
+    ],
+    "target_structure_per_app": [
+      {
+        "app": "bilibili",
+        "target_structure_retention_score": 100.0,
+        "generated_to_own_target_distance": 0.3444317579269409,
+        "generated_to_other_targets_mean_distance": 0.8529176712036133,
+        "nearest_target_app": "bilibili",
+        "nearest_target_distance": 0.3444317579269409,
+        "structure_match_correct": true
+      },
+      {
+        "app": "damai",
+        "target_structure_retention_score": 20.328729030242446,
+        "generated_to_own_target_distance": 0.7215338945388794,
+        "generated_to_other_targets_mean_distance": 0.82176673412323,
+        "nearest_target_app": "bilibili",
+        "nearest_target_distance": 0.6356679201126099,
+        "structure_match_correct": false
+      },
+      {
+        "app": "hanglvzongheng",
+        "target_structure_retention_score": 0.0,
+        "generated_to_own_target_distance": 0.8911185264587402,
+        "generated_to_other_targets_mean_distance": 0.8814414739608765,
+        "nearest_target_app": "bilibili",
+        "nearest_target_distance": 0.7678501009941101,
+        "structure_match_correct": false
+      },
+      {
+        "app": "meituan",
+        "target_structure_retention_score": 19.997297740450893,
+        "generated_to_own_target_distance": 0.6817077398300171,
+        "generated_to_other_targets_mean_distance": 0.7746536135673523,
+        "nearest_target_app": "xiaohongshu",
+        "nearest_target_distance": 0.5725073218345642,
+        "structure_match_correct": false
+      },
+      {
+        "app": "qq",
+        "target_structure_retention_score": 58.835243381573065,
+        "generated_to_own_target_distance": 0.6510347127914429,
+        "generated_to_other_targets_mean_distance": 0.8854706883430481,
+        "nearest_target_app": "qq",
+        "nearest_target_distance": 0.6510347127914429,
+        "structure_match_correct": true
+      },
+      {
+        "app": "tieba",
+        "target_structure_retention_score": 0.0,
+        "generated_to_own_target_distance": 0.8095785975456238,
+        "generated_to_other_targets_mean_distance": 0.7631228566169739,
+        "nearest_target_app": "bilibili",
+        "nearest_target_distance": 0.525942325592041,
+        "structure_match_correct": false
+      },
+      {
+        "app": "wps",
+        "target_structure_retention_score": 20.989214487928635,
+        "generated_to_own_target_distance": 0.7420618534088135,
+        "generated_to_other_targets_mean_distance": 0.8489781618118286,
+        "nearest_target_app": "bilibili",
+        "nearest_target_distance": 0.6072539687156677,
+        "structure_match_correct": false
+      },
+      {
+        "app": "xiaohongshu",
+        "target_structure_retention_score": 89.37922430482438,
+        "generated_to_own_target_distance": 0.4699884057044983,
+        "generated_to_other_targets_mean_distance": 0.7862052917480469,
+        "nearest_target_app": "xiaohongshu",
+        "nearest_target_distance": 0.4699884057044983,
+        "structure_match_correct": true
+      }
+    ],
+    "dino_identity_structure_risk_score": 71.42857142857143,
+    "dino_identity_warning_apps": [
+      "damai",
+      "hanglvzongheng",
+      "meituan",
+      "tieba",
+      "wps"
+    ]
+  },
+  "visual_quality": {
+    "score": 96.25,
+    "visual_artifact_quality_score": 96.25,
+    "artifact_warnings": [
+      "subject_area_too_large"
+    ]
+  },
+  "strict_delta_diagnostics": {
+    "strict_delta_transfer_score": 0.0,
+    "color_delta_score": 0.0,
+    "edge_delta_score": 0.0,
+    "composition_delta_score": 0.0,
+    "complexity_delta_score": 0.0,
+    "visual_stats_transfer_score": 54.65507440687482,
+    "interpretation": "Only evaluates whether target->generated follows reference_raw->style_ref low-level statistical direction."
+  },
+  "diagnostics": {
+    "strict_delta_diagnostics": {
+      "strict_delta_transfer_score": 0.0,
+      "color_delta_score": 0.0,
+      "edge_delta_score": 0.0,
+      "composition_delta_score": 0.0,
+      "complexity_delta_score": 0.0,
+      "visual_stats_transfer_score": 54.65507440687482,
+      "interpretation": "Only evaluates whether target->generated follows reference_raw->style_ref low-level statistical direction."
+    },
+    "generation_qwen_qc_prior": {
+      "package_consistency_score": 85,
+      "style_consistency_score": 90,
+      "target_identity_score": 95,
+      "problematic_apps": [
+        "tieba",
+        "qq"
+      ],
+      "problematic_app_details": [
+        {
+          "app": "tieba",
+          "issue": "背景处理严重不一致。整包其他图标均为浅色/米色暖调背景，唯独该图标使用了纯黑色背景，破坏了整套图标的视觉统一性。此外，底部多出了一个胶囊形状的元素，构图与其他图标不符。",
+          "retry_suggestion": "请将背景颜色调整为与其他图标一致的米色/浅暖色调，去除底部多余的胶囊元素，保持构图简洁统一。"
+        },
+        {
+          "app": "qq",
+          "issue": "背景颜色过白（接近纯白），与整包其他图标使用的暖米色/奶油色背景存在色差，显得突兀。",
+          "retry_suggestion": "请调整背景颜色，使其与整包统一的暖米色调保持一致。"
+        }
+      ]
+    },
+    "text_policy_diagnostics": {
+      "enabled": false,
+      "reason": "Text policy is diagnostic-only and does not affect ITTE v1.1 score."
+    }
+  },
+  "auxiliary_scores": {
+    "vgg_gram_style_fit": {
+      "score": null,
+      "enabled": false,
+      "reliable": false,
+      "used_in_itte_score": false,
+      "reason": "VGG Gram auxiliary signal is disabled."
+    }
+  },
+  "primary_scores": {
+    "theme_style_image_fit_score": 87.25374213069689,
+    "theme_style_text_fit_score": 19.680596888065338,
+    "style_cue_profile_match_score": 51.15873437306092,
+    "theme_prompt_image_alignment_score": 19.680596888065338,
+    "package_unity_score": 90.22159367799759,
+    "theme_membership_score": 82.68762712874873,
+    "visual_artifact_quality_score": 96.25
+  },
+  "diagnostic_scores": {
+    "style_delta_transfer_score": 0.0,
+    "color_delta_score": 0.0,
+    "edge_delta_score": 0.0,
+    "composition_delta_score": 0.0,
+    "complexity_delta_score": 0.0,
+    "visual_stats_transfer_score": 54.65507440687482
+  },
+  "risk_scores": {
+    "dino_identity_structure_risk_score": 71.42857142857143,
+    "dino_identity_top1_accuracy": 0.375,
+    "dino_identity_random_baseline": 0.125,
+    "dino_identity_warning_apps": [
+      "damai",
+      "hanglvzongheng",
+      "meituan",
+      "tieba",
+      "wps"
+    ]
+  },
+  "qwen_qc_scores": {
+    "package_consistency_score": 85,
+    "style_consistency_score": 90,
+    "target_identity_score": 95,
+    "problematic_apps": [
+      "tieba",
+      "qq"
+    ],
+    "problematic_app_details": [
+      {
+        "app": "tieba",
+        "issue": "背景处理严重不一致。整包其他图标均为浅色/米色暖调背景，唯独该图标使用了纯黑色背景，破坏了整套图标的视觉统一性。此外，底部多出了一个胶囊形状的元素，构图与其他图标不符。",
+        "retry_suggestion": "请将背景颜色调整为与其他图标一致的米色/浅暖色调，去除底部多余的胶囊元素，保持构图简洁统一。"
+      },
+      {
+        "app": "qq",
+        "issue": "背景颜色过白（接近纯白），与整包其他图标使用的暖米色/奶油色背景存在色差，显得突兀。",
+        "retry_suggestion": "请调整背景颜色，使其与整包统一的暖米色调保持一致。"
+      }
+    ]
+  },
+  "outlier_apps": [],
+  "identity_top1_accuracy": 0.375,
+  "identity_random_baseline": 0.125,
+  "flags": {
+    "is_style_transfer_effective": false,
+    "is_style_delta_transfer_effective": false,
+    "is_package_style_consistency_improved": true,
+    "is_package_consistent": true,
+    "has_style_outliers": false,
+    "has_generated_internal_outliers": false,
+    "identity_above_random": true,
+    "is_visual_stats_improved": true,
+    "is_visual_artifact_quality_ok": true
+  },
+  "feature_backends": {
+    "style_features": "color_edge_composition",
+    "dino_backend": "dinov3",
+    "dino_model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "dino_model_source": "modelscope",
+    "openclip_enabled": true,
+    "openclip_model": "ViT-B-32",
+    "openclip_pretrained": "laion2b_s34b_b79k",
+    "device": "cpu",
+    "pooling": "cls",
+    "image_size": 224,
+    "batch_size": 1
+  },
+  "details": {
+    "style_transfer": {
+      "score": 0.0,
+      "D_G_delta": 0.31756991147994995,
+      "D_no_change_delta": 0.2522337827831507,
+      "D_R_delta": 0.33021586627832483,
+      "is_style_delta_transfer_effective": false,
+      "group_scores": {
+        "color": {
+          "score": 0.0,
+          "D_G_delta": 0.4758283495903015,
+          "D_no_change_delta": 0.41916200518608093,
+          "D_R_delta": 0.6283419217382159,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.48536428809165955,
+            0.436763733625412,
+            0.5817117691040039,
+            0.49629440903663635,
+            0.46307241916656494,
+            0.36442455649375916,
+            0.39596524834632874,
+            0.5830304026603699
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093
+          ],
+          "per_app_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            100.0,
+            0.0
+          ]
+        },
+        "edge": {
+          "score": 0.0,
+          "D_G_delta": 0.3796842098236084,
+          "D_no_change_delta": 0.2728610336780548,
+          "D_R_delta": 0.31542917447430746,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.6041642427444458,
+            0.3085058331489563,
+            0.4601149559020996,
+            0.23851409554481506,
+            0.4786779284477234,
+            0.3912258446216583,
+            0.2369656264781952,
+            0.3193051218986511
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548
+          ],
+          "per_app_scores": [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ]
+        },
+        "composition": {
+          "score": 0.0,
+          "D_G_delta": 0.22417642176151276,
+          "D_no_change_delta": 0.19206954538822174,
+          "D_R_delta": 0.23189054003783635,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.24027462303638458,
+            0.17793218791484833,
+            0.4343034625053406,
+            0.2414400279521942,
+            0.1534598469734192,
+            0.2609872817993164,
+            0.13730458915233612,
+            0.14770936965942383
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174
+          ],
+          "per_app_scores": [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            100.0,
+            100.0
+          ]
+        },
+        "complexity": {
+          "score": 0.0,
+          "D_G_delta": 0.19059059023857117,
+          "D_no_change_delta": 0.12484254688024521,
+          "D_R_delta": 0.14520182886293956,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.14385026693344116,
+            0.10392942279577255,
+            0.06222202628850937,
+            0.1871088147163391,
+            0.23583273589611053,
+            0.32265573740005493,
+            0.23154103755950928,
+            0.23758457601070404
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521
+          ],
+          "per_app_scores": [
+            0.0,
+            100.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reference_delta_pairwise": [
+        0.9280933141708374,
+        0.9260017275810242,
+        1.1161386966705322,
+        0.9992786049842834,
+        0.7759018540382385,
+        0.8266732692718506,
+        0.994590699672699,
+        1.3811291456222534,
+        1.087741494178772,
+        0.7545332312583923,
+        1.0735772848129272,
+        1.1812909841537476,
+        0.6054462790489197,
+        1.1080119609832764,
+        0.9990037083625793,
+        1.2512967586517334,
+        1.0736961364746094,
+        1.1021445989608765,
+        1.1353367567062378,
+        1.003442645072937,
+        0.8022509813308716
+      ],
+      "generated_delta_pairwise": [
+        0.9186697602272034,
+        1.0576622486114502,
+        0.9786509871482849,
+        0.8689367771148682,
+        0.7474534511566162,
+        0.811593234539032,
+        0.7908475995063782,
+        0.7740398645401001,
+        0.5672490000724792,
+        0.5981417298316956,
+        0.7488791942596436,
+        0.5529762506484985,
+        0.9311856031417847,
+        0.9438247084617615,
+        0.8913647532463074,
+        0.7562358975410461,
+        0.82718425989151,
+        1.093254804611206,
+        0.546521782875061,
+        0.7152522206306458,
+        0.6495015025138855,
+        1.0362485647201538,
+        0.6960168480873108,
+        0.5643832683563232,
+        1.0573225021362305,
+        0.6147646903991699,
+        0.8875134587287903,
+        0.9349232912063599
+      ],
+      "generated_delta_to_reference_delta_centroid": [
+        0.36841335892677307,
+        0.25678279995918274,
+        0.3845880627632141,
+        0.2908393442630768,
+        0.3327607214450836,
+        0.3348233699798584,
+        0.25044411420822144,
+        0.3219073712825775
+      ],
+      "no_change_delta_to_reference_delta_centroid": [
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249
+      ],
+      "per_app": [
+        {
+          "app": "bilibili",
+          "d_to_reference_delta_centroid": 0.36841335892677307,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 0.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "damai",
+          "d_to_reference_delta_centroid": 0.25678279995918274,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 100.0
+          },
+          "style_delta_transfer_score": 50.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "hanglvzongheng",
+          "d_to_reference_delta_centroid": 0.3845880627632141,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 100.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "meituan",
+          "d_to_reference_delta_centroid": 0.2908393442630768,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 100.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "qq",
+          "d_to_reference_delta_centroid": 0.3327607214450836,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "tieba",
+          "d_to_reference_delta_centroid": 0.3348233699798584,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 100.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "wps",
+          "d_to_reference_delta_centroid": 0.25044411420822144,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 100.0,
+            "edge": 100.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 75.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "xiaohongshu",
+          "d_to_reference_delta_centroid": 0.3219073712825775,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": false
+        }
+      ]
+    },
+    "style_delta_transfer": {
+      "score": 0.0,
+      "D_G_delta": 0.31756991147994995,
+      "D_no_change_delta": 0.2522337827831507,
+      "D_R_delta": 0.33021586627832483,
+      "is_style_delta_transfer_effective": false,
+      "group_scores": {
+        "color": {
+          "score": 0.0,
+          "D_G_delta": 0.4758283495903015,
+          "D_no_change_delta": 0.41916200518608093,
+          "D_R_delta": 0.6283419217382159,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.48536428809165955,
+            0.436763733625412,
+            0.5817117691040039,
+            0.49629440903663635,
+            0.46307241916656494,
+            0.36442455649375916,
+            0.39596524834632874,
+            0.5830304026603699
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093,
+            0.41916200518608093
+          ],
+          "per_app_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            100.0,
+            0.0
+          ]
+        },
+        "edge": {
+          "score": 0.0,
+          "D_G_delta": 0.3796842098236084,
+          "D_no_change_delta": 0.2728610336780548,
+          "D_R_delta": 0.31542917447430746,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.6041642427444458,
+            0.3085058331489563,
+            0.4601149559020996,
+            0.23851409554481506,
+            0.4786779284477234,
+            0.3912258446216583,
+            0.2369656264781952,
+            0.3193051218986511
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548,
+            0.2728610336780548
+          ],
+          "per_app_scores": [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ]
+        },
+        "composition": {
+          "score": 0.0,
+          "D_G_delta": 0.22417642176151276,
+          "D_no_change_delta": 0.19206954538822174,
+          "D_R_delta": 0.23189054003783635,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.24027462303638458,
+            0.17793218791484833,
+            0.4343034625053406,
+            0.2414400279521942,
+            0.1534598469734192,
+            0.2609872817993164,
+            0.13730458915233612,
+            0.14770936965942383
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174,
+            0.19206954538822174
+          ],
+          "per_app_scores": [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            100.0,
+            100.0
+          ]
+        },
+        "complexity": {
+          "score": 0.0,
+          "D_G_delta": 0.19059059023857117,
+          "D_no_change_delta": 0.12484254688024521,
+          "D_R_delta": 0.14520182886293956,
+          "is_effective": false,
+          "generated_delta_to_reference_delta_centroid": [
+            0.14385026693344116,
+            0.10392942279577255,
+            0.06222202628850937,
+            0.1871088147163391,
+            0.23583273589611053,
+            0.32265573740005493,
+            0.23154103755950928,
+            0.23758457601070404
+          ],
+          "no_change_delta_to_reference_delta_centroid": [
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521,
+            0.12484254688024521
+          ],
+          "per_app_scores": [
+            0.0,
+            100.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reference_delta_pairwise": [
+        0.9280933141708374,
+        0.9260017275810242,
+        1.1161386966705322,
+        0.9992786049842834,
+        0.7759018540382385,
+        0.8266732692718506,
+        0.994590699672699,
+        1.3811291456222534,
+        1.087741494178772,
+        0.7545332312583923,
+        1.0735772848129272,
+        1.1812909841537476,
+        0.6054462790489197,
+        1.1080119609832764,
+        0.9990037083625793,
+        1.2512967586517334,
+        1.0736961364746094,
+        1.1021445989608765,
+        1.1353367567062378,
+        1.003442645072937,
+        0.8022509813308716
+      ],
+      "generated_delta_pairwise": [
+        0.9186697602272034,
+        1.0576622486114502,
+        0.9786509871482849,
+        0.8689367771148682,
+        0.7474534511566162,
+        0.811593234539032,
+        0.7908475995063782,
+        0.7740398645401001,
+        0.5672490000724792,
+        0.5981417298316956,
+        0.7488791942596436,
+        0.5529762506484985,
+        0.9311856031417847,
+        0.9438247084617615,
+        0.8913647532463074,
+        0.7562358975410461,
+        0.82718425989151,
+        1.093254804611206,
+        0.546521782875061,
+        0.7152522206306458,
+        0.6495015025138855,
+        1.0362485647201538,
+        0.6960168480873108,
+        0.5643832683563232,
+        1.0573225021362305,
+        0.6147646903991699,
+        0.8875134587287903,
+        0.9349232912063599
+      ],
+      "generated_delta_to_reference_delta_centroid": [
+        0.36841335892677307,
+        0.25678279995918274,
+        0.3845880627632141,
+        0.2908393442630768,
+        0.3327607214450836,
+        0.3348233699798584,
+        0.25044411420822144,
+        0.3219073712825775
+      ],
+      "no_change_delta_to_reference_delta_centroid": [
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249,
+        0.2522337734699249
+      ],
+      "per_app": [
+        {
+          "app": "bilibili",
+          "d_to_reference_delta_centroid": 0.36841335892677307,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 0.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "damai",
+          "d_to_reference_delta_centroid": 0.25678279995918274,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 100.0
+          },
+          "style_delta_transfer_score": 50.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "hanglvzongheng",
+          "d_to_reference_delta_centroid": 0.3845880627632141,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 100.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "meituan",
+          "d_to_reference_delta_centroid": 0.2908393442630768,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 100.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "qq",
+          "d_to_reference_delta_centroid": 0.3327607214450836,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "tieba",
+          "d_to_reference_delta_centroid": 0.3348233699798584,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 100.0,
+            "edge": 0.0,
+            "composition": 0.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": true
+        },
+        {
+          "app": "wps",
+          "d_to_reference_delta_centroid": 0.25044411420822144,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 100.0,
+            "edge": 100.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 75.0,
+          "is_delta_outlier": false
+        },
+        {
+          "app": "xiaohongshu",
+          "d_to_reference_delta_centroid": 0.3219073712825775,
+          "no_change_d_to_reference_delta_centroid": 0.2522337734699249,
+          "group_delta_scores": {
+            "color": 0.0,
+            "edge": 0.0,
+            "composition": 100.0,
+            "complexity": 0.0
+          },
+          "style_delta_transfer_score": 25.0,
+          "is_delta_outlier": false
+        }
+      ]
+    },
+    "final_style_membership": {
+      "score": 87.25374213069689,
+      "D_TR_style": 0.10092268884181976,
+      "D_GR_style": 0.04340219497680664,
+      "D_RR_style": 0.03499944880604744,
+      "is_style_transfer_effective": true
+    },
+    "style_cue_profile_match": {
+      "score": 51.15873437306092,
+      "D_GR_style_cue_profile": 0.6242212057113647,
+      "D_TR_style_cue_profile": 0.9709203243255615,
+      "D_RR_style_cue_profile": 0.29322740861347746,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "style_cue_profile_match_score": 13.332577906914636,
+          "d_to_style_cue_profile": 0.3661555051803589,
+          "target_d_to_style_cue_profile": 0.45650944113731384
+        },
+        {
+          "app": "damai",
+          "style_cue_profile_match_score": 100.0,
+          "d_to_style_cue_profile": 0.26311230659484863,
+          "target_d_to_style_cue_profile": 1.711840271949768
+        },
+        {
+          "app": "hanglvzongheng",
+          "style_cue_profile_match_score": 0.0,
+          "d_to_style_cue_profile": 0.7784290313720703,
+          "target_d_to_style_cue_profile": 0.5859008431434631
+        },
+        {
+          "app": "meituan",
+          "style_cue_profile_match_score": 100.0,
+          "d_to_style_cue_profile": 0.4156070947647095,
+          "target_d_to_style_cue_profile": 1.4693701267242432
+        },
+        {
+          "app": "qq",
+          "style_cue_profile_match_score": 46.13689160997084,
+          "d_to_style_cue_profile": 0.43872538208961487,
+          "target_d_to_style_cue_profile": 0.7513918280601501
+        },
+        {
+          "app": "tieba",
+          "style_cue_profile_match_score": 0.0,
+          "d_to_style_cue_profile": 2.0663959980010986,
+          "target_d_to_style_cue_profile": 1.0471014976501465
+        },
+        {
+          "app": "wps",
+          "style_cue_profile_match_score": 100.0,
+          "d_to_style_cue_profile": 0.35417988896369934,
+          "target_d_to_style_cue_profile": 1.1592934131622314
+        },
+        {
+          "app": "xiaohongshu",
+          "style_cue_profile_match_score": 40.547998436409294,
+          "d_to_style_cue_profile": 0.31116434931755066,
+          "target_d_to_style_cue_profile": 0.5859552621841431
+        }
+      ],
+      "feature_names": [
+        "mean_r",
+        "mean_g",
+        "mean_b",
+        "mean_saturation",
+        "std_saturation",
+        "mean_value",
+        "background_r",
+        "background_g",
+        "background_b",
+        "background_saturation",
+        "background_value",
+        "border_std",
+        "foreground_ratio",
+        "foreground_center_x",
+        "foreground_center_y",
+        "foreground_bbox_w",
+        "foreground_bbox_h",
+        "foreground_margin",
+        "edge_density",
+        "edge_strength",
+        "dark_edge_ratio",
+        "black_pixel_ratio",
+        "gray_entropy",
+        "quantized_color_count",
+        "texture_energy",
+        "pastel_softness"
+      ]
+    },
+    "package_internal_style_consistency": {
+      "score": 90.22159367799759,
+      "generated_pairwise_mean_distance": 0.07131064683198929,
+      "generated_pairwise_std_distance": 0.027952466160058975,
+      "generated_pairwise_max_distance": 0.13272541761398315,
+      "mean_distance_soft_limit": 0.85,
+      "std_distance_soft_limit": 0.25,
+      "max_distance_soft_limit": 1.1,
+      "is_package_consistent": true
+    },
+    "reference_style_distribution_match": {
+      "score": 64.5679829090275,
+      "C_GR_style": 0.013090824639355694,
+      "C_TR_style": 0.036946314983267,
+      "is_package_style_consistency_improved": true
+    },
+    "theme_style_text_fit": {
+      "openclip_enabled": true,
+      "score": 19.680596888065338,
+      "style_eval_text": "低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。; 手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。; 扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。; 统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。; 中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。; 极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。",
+      "style_eval_text_short": "低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。; 手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。; 扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。; 统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。; 中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。; 极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。",
+      "style_eval_text_full": "Theme Style Analysis: 治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。; Reference Raw To Style Transform: 从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。; Color Transform Rule: 从 Original 的高对比度、品牌标准色（如支付宝蓝、抖音黑）转换为 Theme 的低饱和度 pastel 色调。去除原有的复杂渐变和发光效果，改为平涂色块。保留品牌的识别色相（如电话仍保留绿色倾向，但变为淡黄绿或配合黄色听筒），但大幅降低明度对比，融入整体的暖调氛围。; Background Transform Rule: 彻底替换原有背景。无论 Original 是纯色、渐变还是图片，Style_ref 均统一替换为米白色/淡黄色的圆角矩形底板。主体图形不再作为背景的一部分，而是作为独立的插画元素浮于底板之上。; Stroke Transform Rule: 从 Original 的无描边或隐形边缘，转变为明显的黑色细实线描边。线条粗细均匀，端点和拐角处理圆润，模拟手绘草图的质感，增强了图标的卡通属性和轮廓识别度。; Composition Transform Rule: 主体图形进行简化和拟物化/卡通化处理。Original 中抽象的 Logo（如抖音音符、支付宝汉字）被转化为更具象的物体或保留核心轮廓但增加厚度感。吉祥物元素的加入打破了原有的平衡，增加了画面的趣味性和动态感，视觉重心略微上移或偏向吉祥物所在位置。; Subject Scale Rule: 主体图形相对于画布适中偏大，但四周留白明显（约占宽度的 15%-20%）。不允许主体填满整个底板，必须留出空间给描边和呼吸感。吉祥物尺寸较小，约为主体尺寸的 1/5 到 1/4。; Detail Complexity Rule: 极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。; Theme Fidelity Constraints: [ \"必须使用统一的米白/淡黄圆角矩形底板。\", \"必须包含黑色的手绘风格细描边。\", \"必须在画面中融入白色的简笔画萌宠吉祥物（如趴在物体上、抱着物体等）。\", \"色彩必须调整为低饱和度的奶油/马卡龙色系，禁止使用原本的高饱和品牌色。\", \"保持扁平化，禁止添加立体阴影或复杂光泽。\" ]; Theme Board: { \"palette\": \"低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。\", \"line_style\": \"手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。\", \"material\": \"扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。\", \"background\": \"统一的圆角矩形底板，填充",
+      "S_R": 0.19130707851478032,
+      "S_T": 0.20936510525643826,
+      "S_G": 0.22510958276689053,
+      "anchor_gap": -0.018058026741657934,
+      "generated_lift": 0.01574447751045227,
+      "score_margin": 0.08,
+      "text_anchor_reliable": false,
+      "theme_style_text_fit_reliable": false,
+      "scoring_method": "relative_lift_with_margin",
+      "reason": ""
+    },
+    "theme_membership": {
+      "score": 82.68762712874873,
+      "reference_mean_style_distance": 0.03499944880604744,
+      "reference_max_style_distance": 0.04146909713745117,
+      "legacy_theme_reference_outlier_apps": [
+        "damai",
+        "hanglvzongheng",
+        "qq",
+        "tieba"
+      ],
+      "generated_internal_mean_distance": 0.03170087933540344,
+      "generated_internal_std_distance": 0.009902089834213257,
+      "generated_internal_outlier_threshold": 0.11170087933540344,
+      "generated_internal_outlier_apps": [],
+      "has_style_outliers": false,
+      "has_generated_internal_outliers": false
+    },
+    "identity_separability": {
+      "score": 28.571428571428573,
+      "top1_accuracy": 0.375,
+      "random_baseline": 0.125,
+      "identity_above_random": true
+    },
+    "visual_statistics": {
+      "score": 54.65507440687482,
+      "visual_stats_transfer_score": 54.65507440687482,
+      "artifact_quality_score": 96.25,
+      "visual_artifact_quality_score": 96.25,
+      "generated_to_theme_distance": 0.3319738805294037,
+      "target_to_theme_distance": 0.7321081161499023,
+      "is_visual_stats_improved": true,
+      "is_artifact_quality_ok": true,
+      "artifact_warnings": [
+        "subject_area_too_large"
+      ],
+      "artifact_details": [
+        {
+          "brightness": 0.8756574392318726,
+          "saturation": 0.12789437174797058,
+          "contrast": 0.16206812858581543,
+          "edge_density": 0.11890146683673469,
+          "colorfulness": 0.2865505814552307,
+          "foreground_ratio": 0.5416135204081632
+        },
+        {
+          "brightness": 0.8912903070449829,
+          "saturation": 0.12099777907133102,
+          "contrast": 0.1404583901166916,
+          "edge_density": 0.10770089285714286,
+          "colorfulness": 0.25259336829185486,
+          "foreground_ratio": 0.3860610650510204
+        },
+        {
+          "brightness": 0.8746557235717773,
+          "saturation": 0.1334342360496521,
+          "contrast": 0.09421920776367188,
+          "edge_density": 0.06224091198979592,
+          "colorfulness": 0.1730383336544037,
+          "foreground_ratio": 0.9567920918367347
+        },
+        {
+          "brightness": 0.8546218872070312,
+          "saturation": 0.1443413496017456,
+          "contrast": 0.20114733278751373,
+          "edge_density": 0.09424824617346939,
+          "colorfulness": 0.35574203729629517,
+          "foreground_ratio": 0.28708944515306123
+        },
+        {
+          "brightness": 0.8891238570213318,
+          "saturation": 0.05722523853182793,
+          "contrast": 0.22702060639858246,
+          "edge_density": 0.08912627551020408,
+          "colorfulness": 0.3974948525428772,
+          "foreground_ratio": 0.1779735331632653
+        },
+        {
+          "brightness": 0.8222804665565491,
+          "saturation": 0.12490754574537277,
+          "contrast": 0.21396203339099884,
+          "edge_density": 0.12109375,
+          "colorfulness": 0.37689539790153503,
+          "foreground_ratio": 0.9658003826530612
+        },
+        {
+          "brightness": 0.87920743227005,
+          "saturation": 0.18332608044147491,
+          "contrast": 0.13884615898132324,
+          "edge_density": 0.06098533163265306,
+          "colorfulness": 0.26177331805229187,
+          "foreground_ratio": 0.5328045280612245
+        },
+        {
+          "brightness": 0.8083152174949646,
+          "saturation": 0.20995445549488068,
+          "contrast": 0.16047132015228271,
+          "edge_density": 0.07469706632653061,
+          "colorfulness": 0.30184346437454224,
+          "foreground_ratio": 0.3170639349489796
+        }
+      ]
+    },
+    "visual_quality": {
+      "score": 54.65507440687482,
+      "visual_stats_transfer_score": 54.65507440687482,
+      "artifact_quality_score": 96.25,
+      "visual_artifact_quality_score": 96.25,
+      "generated_to_theme_distance": 0.3319738805294037,
+      "target_to_theme_distance": 0.7321081161499023,
+      "is_visual_stats_improved": true,
+      "is_artifact_quality_ok": true,
+      "artifact_warnings": [
+        "subject_area_too_large"
+      ],
+      "artifact_details": [
+        {
+          "brightness": 0.8756574392318726,
+          "saturation": 0.12789437174797058,
+          "contrast": 0.16206812858581543,
+          "edge_density": 0.11890146683673469,
+          "colorfulness": 0.2865505814552307,
+          "foreground_ratio": 0.5416135204081632
+        },
+        {
+          "brightness": 0.8912903070449829,
+          "saturation": 0.12099777907133102,
+          "contrast": 0.1404583901166916,
+          "edge_density": 0.10770089285714286,
+          "colorfulness": 0.25259336829185486,
+          "foreground_ratio": 0.3860610650510204
+        },
+        {
+          "brightness": 0.8746557235717773,
+          "saturation": 0.1334342360496521,
+          "contrast": 0.09421920776367188,
+          "edge_density": 0.06224091198979592,
+          "colorfulness": 0.1730383336544037,
+          "foreground_ratio": 0.9567920918367347
+        },
+        {
+          "brightness": 0.8546218872070312,
+          "saturation": 0.1443413496017456,
+          "contrast": 0.20114733278751373,
+          "edge_density": 0.09424824617346939,
+          "colorfulness": 0.35574203729629517,
+          "foreground_ratio": 0.28708944515306123
+        },
+        {
+          "brightness": 0.8891238570213318,
+          "saturation": 0.05722523853182793,
+          "contrast": 0.22702060639858246,
+          "edge_density": 0.08912627551020408,
+          "colorfulness": 0.3974948525428772,
+          "foreground_ratio": 0.1779735331632653
+        },
+        {
+          "brightness": 0.8222804665565491,
+          "saturation": 0.12490754574537277,
+          "contrast": 0.21396203339099884,
+          "edge_density": 0.12109375,
+          "colorfulness": 0.37689539790153503,
+          "foreground_ratio": 0.9658003826530612
+        },
+        {
+          "brightness": 0.87920743227005,
+          "saturation": 0.18332608044147491,
+          "contrast": 0.13884615898132324,
+          "edge_density": 0.06098533163265306,
+          "colorfulness": 0.26177331805229187,
+          "foreground_ratio": 0.5328045280612245
+        },
+        {
+          "brightness": 0.8083152174949646,
+          "saturation": 0.20995445549488068,
+          "contrast": 0.16047132015228271,
+          "edge_density": 0.07469706632653061,
+          "colorfulness": 0.30184346437454224,
+          "foreground_ratio": 0.3170639349489796
+        }
+      ]
+    }
+  }
+}

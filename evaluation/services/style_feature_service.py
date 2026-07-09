@@ -10,7 +10,15 @@ from PIL import Image
 from evaluation.services.visual_stats_service import image_statistics
 
 
-STYLE_FEATURE_GROUPS = ("color", "edge", "composition", "complexity")
+STYLE_ATTRIBUTE_GROUPS = (
+    "color",
+    "background",
+    "stroke",
+    "texture_material",
+    "composition",
+    "complexity",
+)
+STYLE_FEATURE_GROUPS = (*STYLE_ATTRIBUTE_GROUPS, "edge")
 
 
 def extract_style_features(paths: list[Path], config, root_dir: Path | None = None) -> dict[str, np.ndarray]:
@@ -43,28 +51,115 @@ def extract_style_feature_groups(paths: list[Path], config, root_dir: Path | Non
             loaded = np.load(cache_path)
             grouped_features[str(path)] = {name: loaded[name] for name in STYLE_FEATURE_GROUPS}
             continue
-        vector = _extract_single_style_vector(path, image_size=config.image_size).astype(np.float32)
-        groups = _split_style_vector(vector)
+        groups = _extract_single_attribute_groups(path, image_size=config.image_size)
         np.savez(cache_path, **groups)
         grouped_features[str(path)] = groups
     return grouped_features
 
 
 def _split_style_vector(vector: np.ndarray) -> dict[str, np.ndarray]:
+    groups = _split_lightweight_vector(vector)
+    groups["edge"] = groups["stroke"]
+    return groups
+
+
+def _split_lightweight_vector(vector: np.ndarray) -> dict[str, np.ndarray]:
     if len(vector) < 80:
         normalized = _l2_normalize(vector.astype(np.float32))
-        return {name: normalized for name in STYLE_FEATURE_GROUPS}
+        return {name: normalized for name in STYLE_ATTRIBUTE_GROUPS}
 
-    color_indices = np.r_[0:8, 10:59]
-    edge_indices = np.r_[8:10, 59:71]
+    color_indices = np.r_[0:8, 10:59, 78:79]
+    background_indices = np.r_[0:3, 6:8, 10:11, 71:77]
+    stroke_indices = np.r_[8:10, 59:71, 79:80]
+    texture_indices = np.r_[8:10, 77:80]
     composition_indices = np.r_[71:77]
     complexity_indices = np.r_[8:10, 77:80]
     return {
         "color": _l2_normalize(vector[color_indices].astype(np.float32)),
-        "edge": _l2_normalize(vector[edge_indices].astype(np.float32)),
+        "background": _l2_normalize(vector[background_indices].astype(np.float32)),
+        "stroke": _l2_normalize(vector[stroke_indices].astype(np.float32)),
+        "texture_material": _l2_normalize(vector[texture_indices].astype(np.float32)),
         "composition": _l2_normalize(vector[composition_indices].astype(np.float32)),
         "complexity": _l2_normalize(vector[complexity_indices].astype(np.float32)),
     }
+
+
+def _extract_single_attribute_groups(path: Path, image_size: int) -> dict[str, np.ndarray]:
+    base_vector = _extract_single_style_vector(path, image_size=image_size).astype(np.float32)
+    groups = _split_lightweight_vector(base_vector)
+
+    with Image.open(path) as image:
+        rgb = image.convert("RGB").resize((image_size, image_size))
+    arr = np.asarray(rgb, dtype=np.float32) / 255.0
+    gray = arr.mean(axis=2)
+    gx = np.zeros_like(gray)
+    gy = np.zeros_like(gray)
+    gx[:, 1:] = gray[:, 1:] - gray[:, :-1]
+    gy[1:, :] = gray[1:, :] - gray[:-1, :]
+    magnitude = np.sqrt(gx * gx + gy * gy)
+
+    corner_samples = np.vstack(
+        [
+            arr[:8, :8].reshape(-1, 3),
+            arr[:8, -8:].reshape(-1, 3),
+            arr[-8:, :8].reshape(-1, 3),
+            arr[-8:, -8:].reshape(-1, 3),
+        ]
+    )
+    background_color = np.median(corner_samples, axis=0)
+    foreground_mask = np.linalg.norm(arr - background_color, axis=2) > 0.12
+    border_width = max(2, image_size // 16)
+    border = np.vstack(
+        [
+            arr[:border_width, :, :].reshape(-1, 3),
+            arr[-border_width:, :, :].reshape(-1, 3),
+            arr[:, :border_width, :].reshape(-1, 3),
+            arr[:, -border_width:, :].reshape(-1, 3),
+        ]
+    )
+    bg_contrast = float(np.linalg.norm(arr[foreground_mask].mean(axis=0) - background_color)) if foreground_mask.any() else 0.0
+    background_extra = np.asarray(
+        [
+            *background_color.tolist(),
+            *border.mean(axis=0).tolist(),
+            float(border.std()),
+            bg_contrast,
+        ],
+        dtype=np.float32,
+    )
+    stroke_extra = np.asarray(
+        [
+            float(magnitude.mean()),
+            float(magnitude.std()),
+            float(np.quantile(magnitude, 0.9)),
+            float(magnitude[foreground_mask].mean()) if foreground_mask.any() else 0.0,
+        ],
+        dtype=np.float32,
+    )
+    center = gray[1:-1, 1:-1]
+    laplacian = (
+        gray[:-2, 1:-1]
+        + gray[2:, 1:-1]
+        + gray[1:-1, :-2]
+        + gray[1:-1, 2:]
+        - 4.0 * center
+    )
+    texture_extra = np.asarray(
+        [
+            float(gray.std()),
+            float(magnitude.mean()),
+            float(magnitude.std()),
+            float(laplacian.var()) if laplacian.size else 0.0,
+        ],
+        dtype=np.float32,
+    )
+    groups["background"] = _l2_normalize(np.concatenate([groups["background"], background_extra]).astype(np.float32))
+    groups["stroke"] = _l2_normalize(np.concatenate([groups["stroke"], stroke_extra]).astype(np.float32))
+    groups["texture_material"] = _l2_normalize(
+        np.concatenate([groups["texture_material"], texture_extra]).astype(np.float32)
+    )
+    groups["edge"] = groups["stroke"]
+    return groups
 
 
 def _extract_single_style_vector(path: Path, image_size: int) -> np.ndarray:
@@ -143,7 +238,7 @@ def _style_cache_path(path: Path, config, cache_dir: Path) -> Path:
         "size": stat.st_size,
         "backend": config.style_feature_backend,
         "image_size": config.image_size,
-        "version": 1,
+        "version": 2,
     }
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
     return cache_dir / f"{digest}.npy"
@@ -157,7 +252,7 @@ def _style_group_cache_path(path: Path, config, cache_dir: Path) -> Path:
         "size": stat.st_size,
         "backend": config.style_feature_backend,
         "image_size": config.image_size,
-        "version": 1,
+        "version": 2,
         "groups": STYLE_FEATURE_GROUPS,
     }
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()

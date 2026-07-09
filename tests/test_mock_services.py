@@ -554,6 +554,61 @@ class MockServiceTests(unittest.TestCase):
             self.assertFalse(any("signature badge" in item.lower() for item in result["forbid"]))
             self.assertTrue(any("original label" in item.lower() for item in result["forbid"]))
 
+    def test_text_identity_cue_preserves_shape_without_requiring_readable_text(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_transfer_plan.md").write_text("transfer plan", encoding="utf-8")
+            target_identity = {"app": "bilibili", "must_preserve": ["tv face outline"], "must_not_replace_with": []}
+            target_profile = {
+                "app": "bilibili",
+                "brand_identity_cues": ["pink rounded square", "tv face outline", "bilibili 文字标识"],
+            }
+            identity_strategy = {
+                "app": "bilibili",
+                "strategy_type": "logo_simplify",
+                "identity_constraint_level": "strict",
+                "must_preserve": ["tv face outline"],
+                "can_recompose": ["bilibili 文字标识"],
+                "forbid": ["禁止出现清晰英文文字"],
+                "generation_direction": "make a themed bilibili icon",
+            }
+            qwen_json = json.dumps(
+                {
+                    "app": "bilibili",
+                    "strategy_type": "logo_simplify",
+                    "identity_constraint_level": "strict",
+                    "preserve": ["tv face outline"],
+                    "must_preserve": ["tv face outline"],
+                    "recompose_allowed": ["bilibili 文字标识"],
+                    "restyle": ["shared style"],
+                    "decorate": [],
+                    "forbid": ["禁止出现清晰英文文字", "禁止生成乱码"],
+                    "generation_brief": "make a themed bilibili icon",
+                },
+                ensure_ascii=False,
+            )
+
+            with patch.dict(os.environ, {"MOCK_MODE": "false"}, clear=False):
+                with patch("backend.services.qwen_client._call_qwen", return_value=qwen_json):
+                    result = build_transfer_plan(
+                        {"theme_style_analysis": "theme rules"},
+                        target_identity,
+                        root_dir=root,
+                        target_profile=target_profile,
+                        identity_strategy=identity_strategy,
+                    )
+
+            self.assertIn("pink rounded square", result["must_preserve"])
+            self.assertIn("tv face outline", result["must_preserve"])
+            self.assertNotIn("bilibili 文字标识", result["must_preserve"])
+            self.assertFalse(any(item == "bilibili 文字标识" for item in result["preserve"]))
+            self.assertTrue(any("letterform silhouette" in item.lower() for item in result["must_preserve"]))
+            self.assertFalse(any("bilibili 文字标识" in item for item in result["recompose_allowed"]))
+            self.assertIn("禁止出现清晰英文文字", result["forbid"])
+            self.assertIn("禁止生成乱码", result["forbid"])
+            self.assertEqual(result["text_policy"]["mode"], "preserve_identity_shape_without_readable_text")
+
     def test_identity_cue_cleanup_does_not_expand_app_specific_terms(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)

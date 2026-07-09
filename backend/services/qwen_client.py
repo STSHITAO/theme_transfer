@@ -644,16 +644,75 @@ def _protect_brand_identity_cues(data, target_profile, preserve_keys, recompose_
     if not cues:
         return data
 
+    preserve_cues, text_cues = _identity_preserve_cues(cues)
     for key in preserve_keys:
         existing = data.get(key, [])
         if not isinstance(existing, list):
             existing = []
-        data[key] = _dedupe_list([*existing, *cues])
+        data[key] = _dedupe_list([*existing, *preserve_cues])
 
     for key in recompose_keys:
         data[key] = _remove_conflicting_items(data.get(key, []), cues)
     data["forbid"] = _remove_conflicting_items(data.get("forbid", []), cues)
+    if text_cues:
+        data["text_policy"] = _merge_text_identity_policy(data.get("text_policy"), text_cues)
     return data
+
+
+def _identity_preserve_cues(cues):
+    preserve_cues = []
+    text_cues = []
+    for cue in cues:
+        cue_text = str(cue).strip()
+        if not cue_text:
+            continue
+        if _is_text_identity_cue(cue_text):
+            text_cues.append(cue_text)
+            preserve_cues.append(
+                f"Preserve the identity layout and letterform silhouette of {cue_text} as non-readable shapes; do not require readable text."
+            )
+        else:
+            preserve_cues.append(cue_text)
+    return preserve_cues, text_cues
+
+
+def _is_text_identity_cue(cue):
+    lower = str(cue).strip().lower()
+    text_terms = [
+        "wordmark",
+        "logotype",
+        "text mark",
+        "text logo",
+        "letterform",
+        "typography",
+        "typeface",
+        "文字",
+        "文本",
+        "字标",
+        "字形",
+        "字母",
+        "英文",
+        "中文",
+        "汉字",
+        "字体",
+    ]
+    return any(term in lower for term in text_terms)
+
+
+def _merge_text_identity_policy(existing_policy, text_cues):
+    policy = existing_policy if isinstance(existing_policy, dict) else {}
+    existing_cues = policy.get("source_cues", [])
+    if not isinstance(existing_cues, list):
+        existing_cues = []
+    policy.update(
+        {
+            "mode": "preserve_identity_shape_without_readable_text",
+            "source_cues": _dedupe_list([*existing_cues, *text_cues]),
+            "positive_rule": "Keep brand identity from overall layout, icon contour, and letterform silhouette only.",
+            "negative_rule": "Do not generate clear readable text, OCR-like letters, or gibberish characters.",
+        }
+    )
+    return policy
 
 
 def _remove_conflicting_items(items, cues):

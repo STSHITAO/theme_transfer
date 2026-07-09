@@ -54,6 +54,7 @@ def run_tpqs(
         "manifest_path": str(manifest_path),
         **output_paths,
         "tpqs_feedback_retry_prompt_path": str(retry_prompt_path),
+        "generation_feedback_prompt_path": str(eval_dir / "generation_feedback_prompt.md"),
         "report": metrics.report,
     }
 

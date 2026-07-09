@@ -112,9 +112,11 @@ ALI_IMAGE_API_KEY=sk-...
 - `MOCK_MODE=true`：不调用真实 API，用于快速验证流程。
 - `MOCK_MODE=false`：真实调用 Qwen 和 Wan，会消耗 API 额度。
 
-## TPQS 评价模块
+## ITTE 评价模块
 
-TPQS 是独立 evaluation 模块，不调用 Qwen / Wan，也不修改生成结果。它是业务诊断面板，不是绝对审美裁判。
+ITTE = Icon Theme Transfer Evaluation。
+
+ITTE 是独立 evaluation 模块，不调用 Qwen / Wan，也不修改生成结果。它评价的不是单张图是否好看，而是图标主题包风格迁移是否成功。
 
 运行：
 
@@ -133,40 +135,48 @@ data/evaluations/<eval_id>/
   style_delta_distances.json
   dino_pairwise_distances.json
   inputs_manifest.json
+  generation_feedback_prompt.md
   tpqs_feedback_retry_prompt.md
 ```
 
-新版 TPQS 是“终态主题包可用性评价器”，主分不再等同于严格 delta transfer。
+ITTE v1.1 报告会继续保留 `tpqs` / `tpqs_primary_score` 作为兼容字段，但它们等于新的 `itte_score`。v1.1 不引入 VLM，不做随机裁判；评估阶段只使用确定性图像特征、DINO/stats embedding、可选 OpenCLIP 文图相似度和生成阶段已有的 QC prior。核心结构包括：
 
-主指标位于 `primary_scores`，并决定 `tpqs` / `tpqs_primary_score`：
+1. `Style Transfer Effectiveness Score`
 
-- `theme_style_image_fit_score`：生成图最终是否接近当前主题 `style_ref` 的图像风格分布。
-- `theme_style_text_fit_score`：可选 OpenCLIP 指标，比较生成图和 Qwen 从 `theme_design_analysis.json` 提取出的主题风格文本；默认关闭。
-- `package_unity_score`：生成包内部是否像同一套主题包。
-- `theme_membership_score`：生成图是否像当前主题包成员；这是 soft score，不作为硬失败条件。
-- `visual_artifact_quality_score`：清晰度、过暗/过亮、主体面积、边缘复杂度等基础图像质量风险。
+   判断 `generated_icons` 是否从 `target_originals` 的原始风格，靠近 `theme_refs/style_ref` 的终态主题风格。这是 ITTE 最核心指标。v1.1 使用加权可靠组件：
 
-诊断指标位于 `diagnostic_scores`，只解释严格统计迁移路径，不再拉低主 TPQS：
+   - `style_cue_profile_match_score`：确定性高层风格 profile，自动从 style refs 学习背景色、pastel 程度、粗黑描边、主体比例、边缘密度、简洁度等可测 cue。
+   - `theme_style_image_transfer_score`：整体图像风格是否更接近 `style_ref`。
+   - `style_attribute_transfer_score`：属性级风格迁移分，覆盖 `color`、`background`、`stroke`、`texture_material`、`composition`、`complexity`。
+   - `theme_prompt_image_alignment_score`：复用现有 OpenCLIP `theme_style_text_fit_score`，只比较主题风格提示词和生成图之间的文图对齐；仅当 `theme_style_text_fit_reliable=true` 时参与主分。
+
+2. `Package Coherence Score`
+
+   判断生成出来的一整包图标是否内部统一。它会参考 `package_unity_score`、`theme_membership_score` 和 `generated_internal_outlier_apps`。整包一致不等于风格迁移成功：一套图标可能内部很统一，但仍然不是指定 `theme_id` 的风格。
+
+3. `App Identity Coherence Score`
+
+   判断主题化后 App 身份是否仍然可识别。v1.1 不再让 Qwen package QC 直接覆盖身份分，而是把它作为 `generation_qwen_qc_prior`。主身份分由 `target_structure_retention_score`、`identity_recognition_prior_score`、`identity_separability_score` 和 `over_recomposition_penalty` 共同决定。这样可以惩罚“生成图很像主题，但原 App logo 结构被语义重画过头”的情况。
+
+4. `Visual Quality Score`
+
+   判断是否存在模糊、过暗、过亮、主体面积异常、边缘复杂度异常等基础 artifact 问题。`visual_stats_transfer_score` 不属于这个分数。
+
+5. `Strict Delta Diagnostics`
+
+   判断 `target->generated` 的低层统计变化方向是否复刻 `reference_raw->style_ref`。它只解释严格低层迁移路径，不作为 ITTE 主判定，也不会因为分数低直接导致风格迁移失败。
+
+`style_transfer_score` 现在等于 `style_transfer_effectiveness.score`。旧的低层 delta 分保留为：
 
 - `style_delta_transfer_score`
+- `legacy_style_delta_transfer_score`
 - `color_delta_score`
 - `edge_delta_score`
 - `composition_delta_score`
 - `complexity_delta_score`
 - `visual_stats_transfer_score`
 
-风险指标位于 `risk_scores`：
-
-- `dino_identity_structure_risk_score`
-- `dino_identity_top1_accuracy`
-- `dino_identity_random_baseline`
-- `dino_identity_warning_apps`
-
-DINOv3 只作为身份结构风险雷达，不单独判断主题风格好坏。若 `data/packages/<package_id>/package_qc_report.json` 已存在，evaluation 会读取其中的 Qwen package QC 分数写入 `qwen_qc_scores`，但不会重新调用 Qwen。
-
-当 `style_delta_transfer_score` 较低但主指标较好时，报告会输出 `package_usable_but_strict_delta_weak`，表示结果可能可用，只是严格低层统计迁移路径没有对齐。
-
-TPQS 还会生成 `tpqs_feedback_retry_prompt.md`。第一阶段它只作为诊断型 retry prompt，不会自动调用 Wan：
+ITTE 还会生成 `generation_feedback_prompt.md`，并保留旧兼容文件 `tpqs_feedback_retry_prompt.md`。它只作为诊断型生成反馈，不是自动 retry 机制，也不会自动调用 Wan：
 
 - `color_delta_score` 低：强化 `theme_001` 色彩系统，避免引入不属于参考主题的新颜色。
 - `edge_delta_score` 低：强化描边粗细、线条密度、边缘圆润程度与参考主题对齐。
@@ -181,6 +191,15 @@ python evaluation/evaluate_package.py
 ```
 
 OpenCLIP 模型缓存会放在项目本地 `models/openclip/` 和 `models/huggingface/` 下。默认 `TPQS_USE_OPENCLIP=false`，不会下载或加载 OpenCLIP。
+
+可选 VGG Gram 辅助分：
+
+```powershell
+$env:TPQS_STYLE_FEATURE_BACKEND='vgg_gram_attribute'
+python evaluation/evaluate_package.py
+```
+
+VGG Gram 在 ITTE 中只作为 `auxiliary_scores.vgg_gram_style_fit` 的材质/纹理辅助信号。默认不启用，不参与 `itte_score`，也不影响 `decision`。如果运行环境没有可用的 torchvision 或模型权重，evaluation 应回退到轻量属性特征，不应影响主评价流程。
 
 DINOv3 默认从 ModelScope 下载到项目本地：
 
@@ -209,7 +228,7 @@ python -m unittest discover -v
 - 当前 `original + style_ref` 参考样例解析。
 - 单目标和批量 mock workflow。
 - Qwen / Wan 客户端参数和错误处理。
-- TPQS 输入解析、报告生成和指标逻辑。
+- ITTE 输入解析、报告生成、属性级风格迁移分、decision 和兼容字段逻辑。
 
 ## 注意事项
 

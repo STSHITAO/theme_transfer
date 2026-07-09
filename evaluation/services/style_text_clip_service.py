@@ -36,6 +36,37 @@ STYLE_TEXT_FIELDS = [
     "palette",
 ]
 
+STYLE_TEXT_SHORT_FIELDS = [
+    "style_eval_text_short",
+    "theme_visual_language",
+    "color_rule",
+    "background_style_rule",
+    "stroke_rule",
+    "composition_rule",
+    "subject_scale_rule",
+    "detail_complexity_rule",
+]
+
+STYLE_TEXT_SHORT_THEME_BOARD_FIELDS = [
+    "palette",
+    "line_style",
+    "material",
+    "background",
+    "composition",
+]
+
+NEGATIVE_STYLE_TEXT_TOKENS = [
+    "禁止",
+    "不允许",
+    "不要",
+    "avoid",
+    "forbidden",
+    "negative",
+    "failure",
+    "fail",
+    "do not",
+]
+
 OPENCLIP_TEXT_FIT_MARGIN = 0.08
 OPENCLIP_RELIABLE_ANCHOR_GAP = 0.05
 
@@ -123,14 +154,50 @@ def build_style_eval_text(theme_design_analysis: dict | None, qwen_instruction_t
     return _dedupe_text(text)[:1600]
 
 
+def build_style_eval_text_short(theme_design_analysis: dict | None, qwen_instruction_text: str | None = None) -> str:
+    if not theme_design_analysis:
+        theme_design_analysis = {}
+    direct = str(theme_design_analysis.get("style_eval_text_short", "")).strip()
+    if direct and not _is_negative_style_fragment(direct):
+        return direct[:500]
+    legacy_direct = str(theme_design_analysis.get("style_eval_text", "")).strip()
+
+    fragments = []
+    theme_board = theme_design_analysis.get("theme_board", {})
+    if isinstance(theme_board, dict):
+        for field in STYLE_TEXT_SHORT_THEME_BOARD_FIELDS:
+            value = theme_board.get(field)
+            if isinstance(value, str) and value.strip():
+                fragments.append(value.strip())
+
+    for field in STYLE_TEXT_SHORT_FIELDS:
+        if field == "style_eval_text_short":
+            continue
+        value = theme_design_analysis.get(field)
+        if isinstance(value, str) and value.strip():
+            fragments.append(value.strip())
+
+    if not fragments:
+        if legacy_direct and not _is_negative_style_fragment(legacy_direct):
+            fragments.append(legacy_direct)
+        fragments.extend(_extract_qwen_style_sections(qwen_instruction_text or ""))
+
+    positive = [fragment for fragment in fragments if not _is_negative_style_fragment(fragment)]
+    return _dedupe_text("; ".join(positive))[:500]
+
+
 def disabled_theme_style_text_fit() -> dict:
     return {
         "openclip_enabled": False,
         "score": None,
         "style_eval_text": "",
+        "style_eval_text_short": "",
+        "style_eval_text_full": "",
         "S_R": None,
         "S_T": None,
         "S_G": None,
+        "theme_style_text_fit_reliable": False,
+        "text_anchor_reliable": False,
         "reason": "TPQS_USE_OPENCLIP is false.",
     }
 
@@ -143,15 +210,19 @@ def compute_theme_style_text_fit(
     backend,
     qwen_instruction_text: str | None = None,
 ) -> dict:
-    style_eval_text = build_style_eval_text(theme_design_analysis, qwen_instruction_text)
+    style_eval_text = build_style_eval_text_short(theme_design_analysis, qwen_instruction_text)
+    style_eval_text_full = build_style_eval_text(theme_design_analysis, qwen_instruction_text)
     if not style_eval_text:
         return {
             "openclip_enabled": True,
             "score": None,
             "style_eval_text": "",
+            "style_eval_text_short": "",
+            "style_eval_text_full": style_eval_text_full,
             "S_R": None,
             "S_T": None,
             "S_G": None,
+            "theme_style_text_fit_reliable": False,
             "reason": "theme_design_analysis has no usable style text fields.",
         }
 
@@ -166,6 +237,8 @@ def compute_theme_style_text_fit(
         "openclip_enabled": True,
         "score": score,
         "style_eval_text": style_eval_text,
+        "style_eval_text_short": style_eval_text,
+        "style_eval_text_full": style_eval_text_full,
         "S_R": s_r,
         "S_T": s_t,
         "S_G": s_g,
@@ -173,6 +246,7 @@ def compute_theme_style_text_fit(
         "generated_lift": generated_lift,
         "score_margin": OPENCLIP_TEXT_FIT_MARGIN,
         "text_anchor_reliable": anchor_gap >= OPENCLIP_RELIABLE_ANCHOR_GAP,
+        "theme_style_text_fit_reliable": anchor_gap >= OPENCLIP_RELIABLE_ANCHOR_GAP,
         "scoring_method": "relative_lift_with_margin",
         "reason": "",
     }
@@ -216,6 +290,11 @@ def _dedupe_text(text: str) -> str:
         seen.add(key)
         fragments.append(fragment)
     return "; ".join(fragments)
+
+
+def _is_negative_style_fragment(fragment: str) -> bool:
+    lower = fragment.lower()
+    return any(token in lower for token in NEGATIVE_STYLE_TEXT_TOKENS)
 
 
 def _prepare_openclip_cache(root_dir: Path) -> None:
