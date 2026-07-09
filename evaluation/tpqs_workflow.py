@@ -35,6 +35,7 @@ def run_tpqs(
         dino_embeddings,
         tpqs_config,
         style_feature_groups,
+        root_dir=root,
     )
     metrics.report["eval_id"] = eval_id
     output_paths = write_tpqs_outputs(

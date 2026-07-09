@@ -1,0 +1,113 @@
+{
+  "theme_id": "theme_001",
+  "package_id": "package_006_theme_001_fidelity_e2e",
+  "theme_transfer_examples": [
+    {
+      "app": "alipay",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay.jpg"
+    },
+    {
+      "app": "baidu",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu.jpg"
+    },
+    {
+      "app": "camera",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera.jpg"
+    },
+    {
+      "app": "douyin",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin.jpg"
+    },
+    {
+      "app": "phone",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone.jpg"
+    },
+    {
+      "app": "wangyiyun",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun.jpg"
+    },
+    {
+      "app": "wechat",
+      "original_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat.jpg",
+      "style_ref_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg",
+      "reference_raw_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat.jpg"
+    }
+  ],
+  "theme_refs": [
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun_style_ref.jpg",
+    "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg"
+  ],
+  "generated_icons": [
+    {
+      "app": "bilibili",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\bilibili.png"
+    },
+    {
+      "app": "damai",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\damai.png"
+    },
+    {
+      "app": "hanglvzongheng",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\hanglvzongheng.png"
+    },
+    {
+      "app": "meituan",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\meituan.png"
+    },
+    {
+      "app": "qq",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\qq.png"
+    },
+    {
+      "app": "tieba",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\tieba.png"
+    },
+    {
+      "app": "wps",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\wps.png"
+    },
+    {
+      "app": "xiaohongshu",
+      "path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\xiaohongshu.png"
+    }
+  ],
+  "target_originals": {
+    "bilibili": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png",
+    "damai": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\damai\\damai.jpg",
+    "hanglvzongheng": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\hanglvzongheng\\hanglvzongheng.jpg",
+    "meituan": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\meituan\\meituan.jpg",
+    "qq": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\qq\\qq.jpg",
+    "tieba": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\tieba\\405f68281d6d577866154c984322804c.jpg",
+    "wps": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\wps\\wps.jpg",
+    "xiaohongshu": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\xiaohongshu\\xiaohongshu.png"
+  },
+  "app_names": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan",
+    "qq",
+    "tieba",
+    "wps",
+    "xiaohongshu"
+  ],
+  "missing_apps": [],
+  "skipped_apps": []
+}

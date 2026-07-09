@@ -1,11 +1,17 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
 
 from evaluation.services.eval_path_service import ResolvedEvalInputs
+from evaluation.services.style_text_clip_service import (
+    OpenClipBackend,
+    compute_theme_style_text_fit,
+    disabled_theme_style_text_fit,
+)
 from evaluation.services.visual_stats_service import visual_statistics_score
 
 
@@ -24,6 +30,7 @@ def compute_tpqs_metrics(
     dino_embeddings: dict[str, np.ndarray],
     config,
     style_feature_groups: dict[str, dict[str, np.ndarray]] | None = None,
+    root_dir: Path | None = None,
 ) -> TpqsMetrics:
     theme_paths = resolved.theme_refs
     reference_raw_paths = [item.reference_raw_path for item in resolved.theme_examples]
@@ -73,8 +80,22 @@ def compute_tpqs_metrics(
     )
     identity = _identity_separability_score(dino_gt, resolved.generated_icons)
     visual = visual_statistics_score(theme_paths, generated_paths, target_paths, config.image_size)
+    package_dir = _package_dir_from_resolved(resolved)
+    root = Path(root_dir) if root_dir else package_dir.parents[2]
+    qwen_qc = _load_qwen_qc_scores(package_dir)
+    theme_design_analysis = _load_theme_design_analysis(package_dir)
+    qwen_instruction_text = _load_qwen_instruction_text(package_dir)
+    theme_style_text_fit = _theme_style_text_fit_score(
+        config,
+        root,
+        theme_paths,
+        generated_paths,
+        target_paths,
+        theme_design_analysis,
+        qwen_instruction_text,
+    )
 
-    scores = [
+    strict_scores = [
         delta_transfer["score"],
         internal_consistency["score"],
         reference_match["score"],
@@ -83,14 +104,34 @@ def compute_tpqs_metrics(
         visual["score"],
         visual["artifact_quality_score"],
     ]
-    total = _geometric_mean(scores)
-
-    decision = _decision(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
-    failed_reasons = _failed_reasons(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
+    strict_delta_tpqs_score = _geometric_mean(strict_scores)
+    primary_scores = {
+        "theme_style_image_fit_score": final_style_membership["score"],
+        "theme_style_text_fit_score": theme_style_text_fit["score"],
+        "package_unity_score": internal_consistency["score"],
+        "theme_membership_score": membership["score"],
+        "visual_artifact_quality_score": visual["artifact_quality_score"],
+    }
+    total = _tpqs_primary_score(primary_scores)
+    diagnostic_scores = {
+        "style_delta_transfer_score": delta_transfer["score"],
+        "color_delta_score": delta_transfer["group_scores"]["color"]["score"],
+        "edge_delta_score": delta_transfer["group_scores"]["edge"]["score"],
+        "composition_delta_score": delta_transfer["group_scores"]["composition"]["score"],
+        "complexity_delta_score": delta_transfer["group_scores"]["complexity"]["score"],
+        "visual_stats_transfer_score": visual["score"],
+    }
+    risk_scores = _risk_scores(identity)
+    decision = _decision_v2(primary_scores, diagnostic_scores, risk_scores, qwen_qc)
+    failed_reasons = _failed_reasons_v2(primary_scores, diagnostic_scores, risk_scores, qwen_qc)
     tpqs_summary = _tpqs_summary(delta_transfer, internal_consistency, membership, identity, visual)
     diagnosis_summary = _diagnosis_summary(
         decision,
         failed_reasons,
+        primary_scores,
+        diagnostic_scores,
+        risk_scores,
+        qwen_qc,
         delta_transfer,
         internal_consistency,
         membership,
@@ -102,7 +143,9 @@ def compute_tpqs_metrics(
         "theme_id": resolved.theme_id,
         "package_id": resolved.package_id,
         "tpqs": total,
+        "tpqs_primary_score": total,
         "tpqs_total_score": total,
+        "strict_delta_tpqs_score": strict_delta_tpqs_score,
         "style_transfer_score": delta_transfer["score"],
         "style_delta_transfer_score": delta_transfer["score"],
         "color_delta_score": delta_transfer["group_scores"]["color"]["score"],
@@ -128,6 +171,10 @@ def compute_tpqs_metrics(
         "failed_reasons": failed_reasons,
         "diagnosis_summary": diagnosis_summary,
         "tpqs_summary": tpqs_summary,
+        "primary_scores": primary_scores,
+        "diagnostic_scores": diagnostic_scores,
+        "risk_scores": risk_scores,
+        "qwen_qc_scores": qwen_qc,
         "outlier_apps": membership["generated_internal_outlier_apps"],
         "identity_top1_accuracy": identity["top1_accuracy"],
         "identity_random_baseline": identity["random_baseline"],
@@ -147,6 +194,9 @@ def compute_tpqs_metrics(
             "dino_backend": config.embedding_backend,
             "dino_model_id": config.model_id,
             "dino_model_source": config.model_source,
+            "openclip_enabled": bool(config.use_openclip),
+            "openclip_model": config.openclip_model,
+            "openclip_pretrained": config.openclip_pretrained,
             "device": config.device,
             "pooling": config.pooling,
             "image_size": config.image_size,
@@ -158,6 +208,7 @@ def compute_tpqs_metrics(
             "final_style_membership": final_style_membership,
             "package_internal_style_consistency": internal_consistency,
             "reference_style_distribution_match": reference_match,
+            "theme_style_text_fit": theme_style_text_fit,
             "theme_membership": {
                 key: value for key, value in membership.items() if key != "per_app"
             },
@@ -172,12 +223,19 @@ def compute_tpqs_metrics(
     per_app_rows = []
     identity_rows = {row["app"]: row for row in identity["per_app"]}
     delta_rows = {row["app"]: row for row in delta_transfer["per_app"]}
+    qwen_problematic_apps = set(qwen_qc.get("problematic_apps") or [])
+    strict_delta_warning = delta_transfer["score"] < 40.0
     for row in membership["per_app"]:
         identity_row = identity_rows[row["app"]]
         delta_row = delta_rows[row["app"]]
         per_app_rows.append(
             {
                 "app": row["app"],
+                "theme_style_image_fit_score": round(final_style_membership["score"], 4),
+                "theme_style_text_fit_score": "" if theme_style_text_fit["score"] is None else round(theme_style_text_fit["score"], 4),
+                "package_unity_score": round(internal_consistency["score"], 4),
+                "visual_artifact_quality_score": round(visual["artifact_quality_score"], 4),
+                "dino_identity_structure_risk_score": round(risk_scores["dino_identity_structure_risk_score"], 4),
                 "style_delta_transfer_score": round(delta_row["style_delta_transfer_score"], 4),
                 "d_to_reference_delta_centroid": round(delta_row["d_to_reference_delta_centroid"], 6),
                 "theme_membership_score": round(row["theme_membership_score"], 4),
@@ -189,6 +247,9 @@ def compute_tpqs_metrics(
                 "identity_match_correct": identity_row["identity_match_correct"],
                 "generated_to_own_target_similarity": round(identity_row["generated_to_own_target_similarity"], 6),
                 "max_target_similarity": round(identity_row["max_target_similarity"], 6),
+                "strict_delta_warning": strict_delta_warning,
+                "membership_warning": row["generated_internal_outlier"],
+                "qwen_problematic_app": row["app"] in qwen_problematic_apps,
                 "visual_quality_distance_to_theme": "",
                 "semantic_fit_score": "",
             }
@@ -526,59 +587,67 @@ def _geometric_mean(scores: list[float]) -> float:
     return float(np.exp(np.mean(np.log(clipped))))
 
 
-def _decision(
-    theme_transfer: dict,
-    reference_match: dict,
-    membership: dict,
-    identity: dict,
-    visual: dict,
-    internal_consistency: dict | None = None,
-) -> str:
-    internal_score = 0.0 if internal_consistency is None else float(internal_consistency["score"])
-    if internal_score >= 70.0 and not _is_transfer_effective(theme_transfer):
-        return "metric_conflict_needs_review"
-    if not _is_transfer_effective(theme_transfer):
-        return "style_transfer_failed"
-    if not identity["identity_above_random"]:
-        return "identity_collapse_risk"
-    if membership["has_generated_internal_outliers"]:
-        return "local_retry_recommended"
-    if reference_match["is_package_style_consistency_improved"] and visual.get("is_artifact_quality_ok", True):
-        return "closed_loop_pass"
-    return "needs_review_or_retry"
+def _tpqs_primary_score(primary_scores: dict) -> float:
+    valid_scores = [
+        float(value)
+        for value in primary_scores.values()
+        if value is not None
+    ]
+    return _geometric_mean(valid_scores)
 
 
-def _failed_reasons(
-    theme_transfer: dict,
-    reference_match: dict,
-    membership: dict,
-    identity: dict,
-    visual: dict,
-    internal_consistency: dict | None = None,
-) -> list[str]:
+def _risk_scores(identity: dict) -> dict:
+    warning_apps = [
+        row["app"]
+        for row in identity["per_app"]
+        if not row["identity_match_correct"]
+    ]
+    return {
+        "dino_identity_structure_risk_score": max(0.0, 100.0 - float(identity["score"])),
+        "dino_identity_top1_accuracy": identity["top1_accuracy"],
+        "dino_identity_random_baseline": identity["random_baseline"],
+        "dino_identity_warning_apps": warning_apps,
+    }
+
+
+def _decision_v2(primary_scores: dict, diagnostic_scores: dict, risk_scores: dict, qwen_qc_scores: dict) -> str:
+    primary_score = _tpqs_primary_score(primary_scores)
+    if primary_scores["visual_artifact_quality_score"] < 50.0:
+        return "visual_artifact_problem"
+    if primary_scores["package_unity_score"] < 55.0:
+        return "package_unity_weak"
+    text_score = primary_scores.get("theme_style_text_fit_score")
+    image_fit_low = primary_scores["theme_style_image_fit_score"] < 45.0
+    text_fit_low = text_score is not None and text_score < 45.0
+    if image_fit_low and (text_score is None or text_fit_low):
+        return "theme_style_fit_weak"
+    if primary_score >= 70.0:
+        if risk_scores["dino_identity_warning_apps"]:
+            return "package_usable_with_identity_structure_risk"
+        if diagnostic_scores["style_delta_transfer_score"] < 35.0:
+            return "package_usable_but_strict_delta_weak"
+        return "package_usable"
+    return "needs_review"
+
+
+def _failed_reasons_v2(primary_scores: dict, diagnostic_scores: dict, risk_scores: dict, qwen_qc_scores: dict) -> list[str]:
     reasons = []
-    internal_score = 0.0 if internal_consistency is None else float(internal_consistency["score"])
-    if internal_score >= 70.0 and not _is_transfer_effective(theme_transfer):
-        reasons.append("style_transfer_metric_conflicts_with_package_unity")
-    elif not _is_transfer_effective(theme_transfer):
-        reasons.append("style_transfer_not_effective")
-    if not reference_match["is_package_style_consistency_improved"]:
-        reasons.append("package_style_distribution_not_improved")
-    if membership["has_generated_internal_outliers"]:
-        reasons.append("generated_internal_outliers_detected")
-    if not identity["identity_above_random"]:
-        reasons.append("identity_not_above_random")
-    if not visual["is_visual_stats_improved"]:
-        reasons.append("visual_stats_transfer_not_improved")
-    if not visual.get("is_artifact_quality_ok", True):
-        reasons.append("visual_artifact_quality_risk")
+    if diagnostic_scores["style_delta_transfer_score"] < 35.0:
+        reasons.append("strict_delta_diagnostic_weak")
+    if primary_scores["package_unity_score"] < 55.0:
+        reasons.append("package_unity_weak")
+    if primary_scores["theme_style_image_fit_score"] < 45.0:
+        reasons.append("theme_style_image_fit_weak")
+    text_score = primary_scores.get("theme_style_text_fit_score")
+    if text_score is not None and text_score < 45.0:
+        reasons.append("theme_style_text_fit_weak")
+    if primary_scores["visual_artifact_quality_score"] < 50.0:
+        reasons.append("visual_artifact_problem")
+    if risk_scores["dino_identity_warning_apps"]:
+        reasons.append("dino_identity_structure_risk")
+    if qwen_qc_scores.get("problematic_apps"):
+        reasons.append("qwen_qc_problematic_apps")
     return reasons
-
-
-def _is_transfer_effective(theme_transfer: dict) -> bool:
-    if "is_style_delta_transfer_effective" in theme_transfer:
-        return bool(theme_transfer["is_style_delta_transfer_effective"])
-    return bool(theme_transfer["is_style_transfer_effective"])
 
 
 def _tpqs_summary(
@@ -717,6 +786,168 @@ def _diagnosis_summary(
             "When theme_refs are limited, membership/outlier results need cautious interpretation."
         ),
     }
+
+
+def _diagnosis_summary(
+    decision: str,
+    failed_reasons: list[str],
+    primary_scores: dict,
+    diagnostic_scores: dict,
+    risk_scores: dict,
+    qwen_qc_scores: dict,
+    delta_transfer: dict,
+    internal_consistency: dict,
+    membership: dict,
+    identity: dict,
+    visual: dict,
+) -> dict:
+    strong_points = []
+    weak_points = []
+    if primary_scores["package_unity_score"] >= 70.0:
+        strong_points.append("生成包内部统一性较好。")
+    else:
+        weak_points.append("生成包内部统一性不足。")
+    if primary_scores["theme_style_image_fit_score"] >= 70.0:
+        strong_points.append("生成图最终风格接近 theme_refs 终态风格。")
+    else:
+        weak_points.append("生成图最终风格与 theme_refs 终态风格贴合度较弱。")
+    text_score = primary_scores.get("theme_style_text_fit_score")
+    if text_score is not None:
+        if text_score >= 70.0:
+            strong_points.append("OpenCLIP 判断生成图与 Qwen 提取的主题风格文本较匹配。")
+        else:
+            weak_points.append("OpenCLIP 主题风格文本贴合度较弱。")
+    if primary_scores["visual_artifact_quality_score"] >= 70.0:
+        strong_points.append("图像基础 artifact 质量较好。")
+    else:
+        weak_points.append("存在清晰度、亮度、边缘复杂度或主体面积方面的 artifact 风险。")
+    if risk_scores["dino_identity_warning_apps"]:
+        weak_points.append("DINOv3 结构身份风险 App：" + ", ".join(risk_scores["dino_identity_warning_apps"]))
+    else:
+        strong_points.append("DINOv3 未发现明显结构身份风险。")
+    if diagnostic_scores["style_delta_transfer_score"] < 35.0:
+        weak_points.append("严格 style delta transfer 分数较低。")
+    if diagnostic_scores["visual_stats_transfer_score"] < 35.0:
+        weak_points.append("视觉统计迁移路径未对齐。")
+    if membership["generated_internal_outlier_apps"]:
+        weak_points.append("生成包内部局部离群 App：" + ", ".join(membership["generated_internal_outlier_apps"]))
+    if qwen_qc_scores.get("problematic_apps"):
+        weak_points.append("Qwen package QC 标记 problematic_apps：" + ", ".join(qwen_qc_scores["problematic_apps"]))
+    if _qwen_qc_is_positive(qwen_qc_scores):
+        strong_points.append("Qwen package QC 对整包一致性、风格一致性和目标身份给出较高评价。")
+
+    if decision == "package_usable_but_strict_delta_weak":
+        main_conclusion = (
+            "生成包在终态主题贴合度、整包统一性和图像质量上表现较好，"
+            "但严格低层统计迁移路径与 reference_raw -> style_ref 不一致。"
+        )
+    elif decision == "package_usable":
+        main_conclusion = "生成包主 TPQS 指标整体可用。"
+    elif decision == "package_usable_with_identity_structure_risk":
+        main_conclusion = "生成包主 TPQS 指标整体可用，但 DINOv3 提示部分 App 存在身份结构风险。"
+    elif decision == "visual_artifact_problem":
+        main_conclusion = "生成包存在明显基础图像质量风险。"
+    elif decision == "package_unity_weak":
+        main_conclusion = "生成包内部统一性较弱。"
+    elif decision == "theme_style_fit_weak":
+        main_conclusion = "生成包与当前主题终态风格贴合度较弱。"
+    else:
+        main_conclusion = "当前结果需要人工复核。"
+
+    return {
+        "main_conclusion": main_conclusion,
+        "strong_points": strong_points,
+        "weak_points": weak_points,
+        "failed_reasons": failed_reasons,
+        "metric_warning": [
+            "style_delta_transfer_score 是严格低层统计迁移路径诊断项，不再作为主 TPQS 的硬失败条件。",
+            "DINOv3 用于身份结构风险，不单独判断主题风格好坏。",
+            "OpenCLIP theme_style_text_fit_score 比较的是 generated icon 与 Qwen 提取的主题风格文本，而不是主要比较 App 功能语义。",
+            "TPQS 是业务诊断面板，不是绝对审美裁判；theme_refs 数量较少时 membership/outlier 需要谨慎解释。",
+        ],
+    }
+
+
+def _qwen_qc_is_positive(qwen_qc_scores: dict) -> bool:
+    values = [
+        qwen_qc_scores.get("package_consistency_score"),
+        qwen_qc_scores.get("style_consistency_score"),
+        qwen_qc_scores.get("target_identity_score"),
+    ]
+    numeric = [float(value) for value in values if value is not None]
+    return bool(numeric) and min(numeric) >= 70.0
+
+
+def _package_dir_from_resolved(resolved: ResolvedEvalInputs) -> Path:
+    first_icon = resolved.generated_icons[0].path
+    return first_icon.parent.parent
+
+
+def _load_json(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _load_theme_design_analysis(package_dir: Path) -> dict:
+    return _load_json(package_dir / "theme_design_analysis.json")
+
+
+def _load_qwen_instruction_text(package_dir: Path) -> str:
+    path = package_dir / "generation_base_prompt.txt"
+    if not path.exists():
+        return ""
+    return path.read_text(encoding="utf-8")
+
+
+def _load_qwen_qc_scores(package_dir: Path) -> dict:
+    report = _load_json(package_dir / "package_qc_report.json")
+    problematic_raw = report.get("problematic_apps") or []
+    problematic_names = _problematic_app_names(problematic_raw)
+    return {
+        "package_consistency_score": report.get("package_consistency_score"),
+        "style_consistency_score": report.get("style_consistency_score"),
+        "target_identity_score": report.get("target_identity_score"),
+        "problematic_apps": problematic_names,
+        "problematic_app_details": problematic_raw,
+    }
+
+
+def _problematic_app_names(items) -> list[str]:
+    names = []
+    for item in items:
+        if isinstance(item, str):
+            names.append(item)
+        elif isinstance(item, dict) and item.get("app"):
+            names.append(str(item["app"]))
+    return names
+
+
+def _theme_style_text_fit_score(
+    config,
+    root: Path,
+    theme_paths: list[Path],
+    generated_paths: list[Path],
+    target_paths: list[Path],
+    theme_design_analysis: dict,
+    qwen_instruction_text: str,
+) -> dict:
+    if not getattr(config, "use_openclip", False):
+        return disabled_theme_style_text_fit()
+    backend = OpenClipBackend(
+        model_name=config.openclip_model,
+        pretrained=config.openclip_pretrained,
+        device=config.device,
+        root_dir=root,
+    )
+    return compute_theme_style_text_fit(
+        theme_ref_paths=theme_paths,
+        generated_paths=generated_paths,
+        target_paths=target_paths,
+        theme_design_analysis=theme_design_analysis,
+        qwen_instruction_text=qwen_instruction_text,
+        backend=backend,
+    )
 
 
 def _fallback_style_feature_groups(style_features: dict[str, np.ndarray]) -> dict[str, dict[str, np.ndarray]]:

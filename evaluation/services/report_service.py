@@ -27,6 +27,11 @@ def write_tpqs_outputs(
 
     fieldnames = [
         "app",
+        "theme_style_image_fit_score",
+        "theme_style_text_fit_score",
+        "package_unity_score",
+        "visual_artifact_quality_score",
+        "dino_identity_structure_risk_score",
         "style_delta_transfer_score",
         "d_to_reference_delta_centroid",
         "theme_membership_score",
@@ -38,6 +43,9 @@ def write_tpqs_outputs(
         "identity_match_correct",
         "generated_to_own_target_similarity",
         "max_target_similarity",
+        "strict_delta_warning",
+        "membership_warning",
+        "qwen_problematic_app",
         "visual_quality_distance_to_theme",
         "semantic_fit_score",
     ]

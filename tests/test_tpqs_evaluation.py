@@ -14,7 +14,12 @@ from evaluation.services.embedding_service import (
 )
 from evaluation.services.eval_path_service import resolve_eval_inputs
 from evaluation.services.style_feature_service import extract_style_feature_groups, extract_style_features
-from evaluation.services.tpqs_service import _package_consistency_score, _style_delta_transfer_score
+from evaluation.services.tpqs_service import (
+    _load_qwen_qc_scores,
+    _package_consistency_score,
+    _style_delta_transfer_score,
+    _tpqs_primary_score,
+)
 from evaluation.services.tpqs_feedback_service import build_tpqs_feedback_retry_prompt
 from evaluation.tpqs_workflow import run_tpqs
 
@@ -53,6 +58,32 @@ def make_eval_fixture(root: Path) -> None:
         make_image(root / f"data/packages/package_001_theme_001/final/{app_name}.png", color=color)
     for app_name, color in target_colors.items():
         make_image(root / f"data/targets/{app_name}/{app_name}.png", color=color)
+    package_dir = root / "data/packages/package_001_theme_001"
+    package_dir.mkdir(parents=True, exist_ok=True)
+    (package_dir / "package_qc_report.json").write_text(
+        json.dumps(
+            {
+                "package_consistency_score": 85,
+                "style_consistency_score": 90,
+                "target_identity_score": 88,
+                "problematic_apps": ["qq"],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    (package_dir / "theme_design_analysis.json").write_text(
+        json.dumps(
+            {
+                "theme_visual_language": "soft rounded sticker icon pack",
+                "color_rule": "warm pastel palette",
+                "stroke_rule": "thick rounded outline",
+                "composition_rule": "centered subject with generous padding",
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
 
 
 class TpqsEvaluationTests(unittest.TestCase):
@@ -107,10 +138,16 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertEqual(report["embedding_backend"], "stats")
             self.assertEqual(report["model_source"], "modelscope")
             self.assertEqual(report["style_feature_backend"], "color_edge_composition")
-            self.assertNotIn("semantic_fit_enabled", report)
-            self.assertNotIn("semantic_design_transfer_score", report)
-            self.assertNotIn("semantic_fit_score", report)
-            self.assertNotIn("semantic_design_diagnostics", report["tpqs_summary"])
+            self.assertEqual(report["tpqs"], report["tpqs_primary_score"])
+            self.assertIn("strict_delta_tpqs_score", report)
+            self.assertIn("primary_scores", report)
+            self.assertIn("diagnostic_scores", report)
+            self.assertIn("risk_scores", report)
+            self.assertIn("qwen_qc_scores", report)
+            self.assertIsNone(report["primary_scores"]["theme_style_text_fit_score"])
+            self.assertFalse(report["details"]["theme_style_text_fit"]["openclip_enabled"])
+            self.assertEqual(report["qwen_qc_scores"]["package_consistency_score"], 85)
+            self.assertEqual(report["qwen_qc_scores"]["problematic_apps"], ["qq"])
             self.assertEqual(len(manifest["theme_transfer_examples"]), 3)
             self.assertIn("original_path", manifest["theme_transfer_examples"][0])
             self.assertIn("reference_raw_path", manifest["theme_transfer_examples"][0])
@@ -118,12 +155,13 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertNotIn("foreground_path", manifest["theme_transfer_examples"][0])
             self.assertIn("style_delta_transfer", report["details"])
             self.assertIn(report["decision"], [
-                "style_transfer_failed",
-                "metric_conflict_needs_review",
-                "identity_collapse_risk",
-                "local_retry_recommended",
-                "closed_loop_pass",
-                "needs_review_or_retry",
+                "package_usable",
+                "package_usable_but_strict_delta_weak",
+                "package_usable_with_identity_structure_risk",
+                "visual_artifact_problem",
+                "package_unity_weak",
+                "theme_style_fit_weak",
+                "needs_review",
             ])
             self.assertIn("tpqs_summary", report)
             for section in [
@@ -138,9 +176,13 @@ class TpqsEvaluationTests(unittest.TestCase):
                 "main_conclusion",
                 "strong_points",
                 "weak_points",
-                "metric_reliability_warning",
+                "metric_warning",
             ]:
                 self.assertIn(key, report["diagnosis_summary"])
+            self.assertIn(
+                "style_delta_transfer_score",
+                " ".join(report["diagnosis_summary"]["metric_warning"]),
+            )
             self.assertIn("color_delta_score", report)
             self.assertIn("edge_delta_score", report)
             self.assertIn("composition_delta_score", report)
@@ -149,6 +191,8 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertIn("visual_artifact_quality_score", report)
             for key in [
                 "tpqs",
+                "tpqs_primary_score",
+                "strict_delta_tpqs_score",
                 "style_transfer_score",
                 "style_delta_transfer_score",
                 "color_delta_score",
@@ -165,6 +209,20 @@ class TpqsEvaluationTests(unittest.TestCase):
             ]:
                 self.assertGreaterEqual(report[key], 0)
                 self.assertLessEqual(report[key], 100)
+            for key in [
+                "theme_style_image_fit_score",
+                "package_unity_score",
+                "theme_membership_score",
+                "visual_artifact_quality_score",
+            ]:
+                self.assertIn(key, report["primary_scores"])
+                self.assertGreaterEqual(report["primary_scores"][key], 0)
+                self.assertLessEqual(report["primary_scores"][key], 100)
+            self.assertEqual(report["diagnostic_scores"]["style_delta_transfer_score"], report["style_delta_transfer_score"])
+            self.assertEqual(
+                report["risk_scores"]["dino_identity_top1_accuracy"],
+                report["identity_top1_accuracy"],
+            )
 
             metrics_text = (eval_dir / "metrics.csv").read_text(encoding="utf-8")
             metrics_header = metrics_text.splitlines()[0].split(",")
@@ -172,6 +230,14 @@ class TpqsEvaluationTests(unittest.TestCase):
             self.assertIn("d_to_reference_delta_centroid", metrics_header)
             self.assertIn("generated_internal_outlier", metrics_header)
             self.assertIn("theme_membership_score", metrics_header)
+            self.assertIn("theme_style_image_fit_score", metrics_header)
+            self.assertIn("theme_style_text_fit_score", metrics_header)
+            self.assertIn("package_unity_score", metrics_header)
+            self.assertIn("visual_artifact_quality_score", metrics_header)
+            self.assertIn("dino_identity_structure_risk_score", metrics_header)
+            self.assertIn("strict_delta_warning", metrics_header)
+            self.assertIn("membership_warning", metrics_header)
+            self.assertIn("qwen_problematic_app", metrics_header)
             retry_prompt = (eval_dir / "tpqs_feedback_retry_prompt.md").read_text(encoding="utf-8")
             self.assertIn("theme_001", retry_prompt)
             self.assertIn("theme fidelity", retry_prompt.lower())
@@ -214,6 +280,30 @@ class TpqsEvaluationTests(unittest.TestCase):
 
             self.assertIn("Missing target original for generated apps: qq", str(ctx.exception))
 
+    def test_qwen_qc_problematic_app_objects_are_normalized_to_names(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            package_dir = Path(temp_dir)
+            (package_dir / "package_qc_report.json").write_text(
+                json.dumps(
+                    {
+                        "package_consistency_score": 85,
+                        "style_consistency_score": 90,
+                        "target_identity_score": 95,
+                        "problematic_apps": [
+                            {"app": "tieba", "issue": "background mismatch"},
+                            {"app": "qq", "issue": "too white"},
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            scores = _load_qwen_qc_scores(package_dir)
+
+            self.assertEqual(scores["problematic_apps"], ["tieba", "qq"])
+            self.assertEqual(scores["problematic_app_details"][0]["issue"], "background mismatch")
+
     def test_dinov3_cache_dirs_are_project_local(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -241,7 +331,9 @@ class TpqsEvaluationTests(unittest.TestCase):
         self.assertEqual(config.image_size, 224)
         self.assertEqual(config.batch_size, 1)
         self.assertEqual(config.style_feature_backend, "color_edge_composition")
-        self.assertFalse(hasattr(config, "use_openclip"))
+        self.assertFalse(config.use_openclip)
+        self.assertEqual(config.openclip_model, "ViT-B-32")
+        self.assertEqual(config.openclip_pretrained, "laion2b_s34b_b79k")
 
     def test_config_allows_huggingface_source_override(self):
         config = TpqsConfig.from_env({"TPQS_MODEL_SOURCE": "huggingface"})
@@ -290,24 +382,98 @@ class TpqsEvaluationTests(unittest.TestCase):
         )
         self.assertEqual([row["app"] for row in score["per_app"]], ["a", "b"])
 
-    def test_metric_conflict_decision_when_package_unity_is_good_but_delta_fails(self):
-        delta_transfer = {
-            "score": 0.0,
-            "is_style_delta_transfer_effective": False,
+    def test_primary_tpqs_does_not_collapse_when_strict_delta_is_zero(self):
+        primary_scores = {
+            "theme_style_image_fit_score": 88.0,
+            "theme_style_text_fit_score": None,
+            "package_unity_score": 90.0,
+            "theme_membership_score": 82.0,
+            "visual_artifact_quality_score": 96.0,
         }
-        reference_match = {"is_package_style_consistency_improved": False}
-        membership = {"generated_internal_outlier_apps": [], "has_generated_internal_outliers": False}
-        identity = {"identity_above_random": True}
-        visual = {"is_visual_stats_improved": False, "artifact_quality_score": 80.0}
-        internal_consistency = {"score": 82.0}
 
-        from evaluation.services.tpqs_service import _decision, _failed_reasons
+        score = _tpqs_primary_score(primary_scores)
 
-        decision = _decision(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
-        reasons = _failed_reasons(delta_transfer, reference_match, membership, identity, visual, internal_consistency)
+        self.assertGreater(score, 80.0)
 
-        self.assertEqual(decision, "metric_conflict_needs_review")
-        self.assertIn("style_transfer_metric_conflicts_with_package_unity", reasons)
+    def test_theme_style_text_fit_uses_style_text_not_app_function_words(self):
+        from evaluation.services.style_text_clip_service import (
+            FakeOpenClipBackend,
+            build_style_eval_text,
+            compute_theme_style_text_fit,
+        )
+
+        theme_design = {
+            "theme_visual_language": "soft sticker icon pack",
+            "color_rule": "warm pastel colors",
+            "color_transform_rule": "convert saturated brand colors to warm pastel colors",
+            "background_transform_rule": "use a cream rounded square background",
+            "stroke_rule": "rounded thick outline",
+            "stroke_transform_rule": "use hand drawn black outline",
+            "composition_rule": "centered compact subject",
+        }
+        qwen_instruction_text = """
+[Theme Style Analysis]
+Healing hand-drawn cartoon app icon pack.
+[Color Transform Rule]
+Use low saturation pastel colors.
+[Background Transform Rule]
+Use a cream rounded square background.
+[Global Wan Constraints]
+Output must look like a missing member of theme_001.
+"""
+        backend = FakeOpenClipBackend(
+            image_scores={
+                "theme.png": 0.82,
+                "target.png": 0.20,
+                "generated.png": 0.75,
+            }
+        )
+
+        result = compute_theme_style_text_fit(
+            theme_ref_paths=[Path("theme.png")],
+            generated_paths=[Path("generated.png")],
+            target_paths=[Path("target.png")],
+            theme_design_analysis=theme_design,
+            qwen_instruction_text=qwen_instruction_text,
+            backend=backend,
+        )
+
+        self.assertTrue(result["openclip_enabled"])
+        self.assertIn("Healing hand-drawn cartoon", result["style_eval_text"])
+        self.assertIn("cream rounded square background", result["style_eval_text"])
+        self.assertIn("warm pastel", result["style_eval_text"])
+        self.assertNotIn("ticket", result["style_eval_text"].lower())
+        self.assertNotIn("social", result["style_eval_text"].lower())
+        self.assertEqual(build_style_eval_text({"style_eval_text": "minimal warm icon"}), "minimal warm icon")
+        self.assertGreater(result["score"], 70.0)
+        self.assertLess(result["score"], 100.0)
+
+    def test_openclip_text_fit_uses_margin_to_avoid_tiny_denominator_100_score(self):
+        from evaluation.services.style_text_clip_service import (
+            FakeOpenClipBackend,
+            compute_theme_style_text_fit,
+        )
+
+        backend = FakeOpenClipBackend(
+            image_scores={
+                "theme.png": 0.202,
+                "target.png": 0.186,
+                "generated.png": 0.213,
+            }
+        )
+
+        result = compute_theme_style_text_fit(
+            theme_ref_paths=[Path("theme.png")],
+            generated_paths=[Path("generated.png")],
+            target_paths=[Path("target.png")],
+            theme_design_analysis={"style_eval_text": "healing hand drawn pastel icon pack"},
+            backend=backend,
+        )
+
+        self.assertGreater(result["score"], 0.0)
+        self.assertLess(result["score"], 40.0)
+        self.assertEqual(result["scoring_method"], "relative_lift_with_margin")
+        self.assertFalse(result["text_anchor_reliable"])
 
     def test_style_features_are_normalized_and_cached_without_model_download(self):
         with tempfile.TemporaryDirectory() as temp_dir:

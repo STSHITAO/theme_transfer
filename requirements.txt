@@ -9,3 +9,4 @@ transformers
 huggingface_hub
 matplotlib
 modelscope
+open_clip_torch
