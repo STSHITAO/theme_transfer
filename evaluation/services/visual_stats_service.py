@@ -3,12 +3,12 @@ from __future__ import annotations
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
+
+from evaluation.services.image_view_service import load_image_view
 
 
 def image_statistics(path: Path, image_size: int = 224) -> tuple[np.ndarray, dict]:
-    with Image.open(path) as image:
-        rgb = image.convert("RGB").resize((image_size, image_size))
+    rgb = load_image_view(path, "appearance", image_size)
     arr = np.asarray(rgb, dtype=np.float32) / 255.0
     gray = arr.mean(axis=2)
     hsv = np.asarray(rgb.convert("HSV"), dtype=np.float32) / 255.0

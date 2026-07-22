@@ -20,7 +20,12 @@ env/
 
 # Generated workflow artifacts
 data/evaluations/_cache/
-models/
+
+# Model cache noise. Reproducible weights and metadata are committed via Git LFS.
+models/**/*.partial
+models/**/.locks/
+models/**/logs/
+models/**/.agent_harnesses.json
 
 # Local assistant / external helper assets
 .agents/

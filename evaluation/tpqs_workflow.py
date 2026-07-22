@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from evaluation.services.embedding_service import TpqsConfig, embed_images
+from evaluation.services.dino_dense_service import extract_dense_features
+from evaluation.services.embedding_service import TpqsConfig
 from evaluation.services.eval_path_service import resolve_eval_inputs, write_inputs_manifest
+from evaluation.services.itte_v12_service import compute_itte_v12_metrics
 from evaluation.services.report_service import write_tpqs_outputs
 from evaluation.services.style_feature_service import extract_style_feature_groups, extract_style_features
-from evaluation.services.tpqs_feedback_service import write_tpqs_feedback_retry_prompt
-from evaluation.services.tpqs_service import compute_tpqs_metrics
 
 
 def run_tpqs(
@@ -28,14 +28,16 @@ def run_tpqs(
     image_paths = _all_image_paths(resolved)
     style_features = extract_style_features(image_paths, tpqs_config, root_dir=root)
     style_feature_groups = extract_style_feature_groups(image_paths, tpqs_config, root_dir=root)
-    dino_embeddings = embed_images(image_paths, tpqs_config, root_dir=root)
-    metrics = compute_tpqs_metrics(
+    dense_structure_features = extract_dense_features(image_paths, tpqs_config, root_dir=root, view="structure")
+    dense_appearance_features = extract_dense_features(image_paths, tpqs_config, root_dir=root, view="appearance")
+    metrics = compute_itte_v12_metrics(
         resolved,
         style_features,
-        dino_embeddings,
-        tpqs_config,
         style_feature_groups,
-        root_dir=root,
+        dense_structure_features,
+        dense_appearance_features,
+        tpqs_config,
+        root,
     )
     metrics.report["eval_id"] = eval_id
     output_paths = write_tpqs_outputs(
@@ -46,15 +48,11 @@ def run_tpqs(
         metrics.style_delta,
         metrics.dino_pairwise,
     )
-    retry_prompt_path = write_tpqs_feedback_retry_prompt(metrics.report, eval_dir)
-
     return {
         "eval_id": eval_id,
         "eval_dir": str(eval_dir),
         "manifest_path": str(manifest_path),
         **output_paths,
-        "tpqs_feedback_retry_prompt_path": str(retry_prompt_path),
-        "generation_feedback_prompt_path": str(eval_dir / "generation_feedback_prompt.md"),
         "report": metrics.report,
     }
 
@@ -68,7 +66,12 @@ def _all_image_paths(resolved) -> list[Path]:
 
 
 def _remove_stale_outputs(eval_dir: Path) -> None:
-    for name in ["embedding_pca.png", "pairwise_distances.json"]:
+    for name in [
+        "embedding_pca.png",
+        "pairwise_distances.json",
+        "tpqs_feedback_retry_prompt.md",
+        "generation_feedback_prompt.md",
+    ]:
         path = eval_dir / name
         if path.exists():
             path.unlink()

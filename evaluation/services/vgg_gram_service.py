@@ -4,7 +4,8 @@ import os
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
+
+from evaluation.services.image_view_service import load_image_view
 
 
 def compute_vgg_gram_style_fit(
@@ -20,7 +21,7 @@ def compute_vgg_gram_style_fit(
             "enabled": False,
             "reliable": False,
             "used_in_itte_score": False,
-            "reason": "VGG Gram auxiliary signal is disabled.",
+            "reason": "VGG Gram main style signal is disabled.",
         }
 
     try:
@@ -31,7 +32,7 @@ def compute_vgg_gram_style_fit(
             "enabled": True,
             "reliable": False,
             "used_in_itte_score": False,
-            "reason": f"VGG Gram auxiliary signal unavailable; fallback to lightweight ITTE attributes. {type(exc).__name__}: {exc}",
+            "reason": f"VGG Gram style signal unavailable; remaining reliable style components are renormalized. {type(exc).__name__}: {exc}",
         }
 
     theme = _stack([vectors[str(path)] for path in theme_paths])
@@ -42,15 +43,33 @@ def compute_vgg_gram_style_fit(
     d_gr = float(np.mean([_cosine_distance(item, centroid) for item in generated]))
     d_tr = float(np.mean([_cosine_distance(item, centroid) for item in targets]))
     score = max(0.0, min(100.0, (d_tr - d_gr) / max(d_tr - d_rr, 1e-8) * 100.0))
+    per_app = []
+    for index, (generated_item, target_item) in enumerate(zip(generated, targets)):
+        generated_distance = _cosine_distance(generated_item, centroid)
+        target_distance = _cosine_distance(target_item, centroid)
+        item_score = max(
+            0.0,
+            min(100.0, (target_distance - generated_distance) / max(target_distance - d_rr, 1e-8) * 100.0),
+        )
+        per_app.append(
+            {
+                "index": index,
+                "score": item_score,
+                "generated_to_theme_distance": generated_distance,
+                "target_to_theme_distance": target_distance,
+            }
+        )
     return {
         "score": score,
         "enabled": True,
         "reliable": d_tr > d_rr,
-        "used_in_itte_score": False,
+        "used_in_itte_score": d_tr > d_rr,
         "D_TR_vgg_gram": d_tr,
         "D_GR_vgg_gram": d_gr,
         "D_RR_vgg_gram": d_rr,
-        "reason": "VGG Gram is an auxiliary texture/material style signal; it is not used in itte_score or decision.",
+        "per_app": per_app,
+        "layers": ["relu1_2", "relu2_2", "relu3_3", "relu4_3"],
+        "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2.",
     }
 
 
@@ -62,7 +81,7 @@ def _extract_vgg_vectors(paths: list[Path], root_dir: Path) -> dict[str, np.ndar
     from torchvision import models, transforms
 
     weights = models.VGG16_Weights.DEFAULT
-    model = models.vgg16(weights=weights).features[:16].eval()
+    model = models.vgg16(weights=weights).features[:23].eval()
     preprocess = transforms.Compose(
         [
             transforms.Resize((224, 224)),
@@ -73,11 +92,16 @@ def _extract_vgg_vectors(paths: list[Path], root_dir: Path) -> dict[str, np.ndar
     vectors = {}
     with torch.no_grad():
         for path in paths:
-            with Image.open(path) as image:
-                tensor = preprocess(image.convert("RGB")).unsqueeze(0)
-            features = model(tensor)
-            gram = _gram_matrix(features).cpu().numpy().reshape(-1).astype(np.float32)
-            vectors[str(path)] = _l2_normalize(gram)
+            image = load_image_view(path, "appearance", 224)
+            tensor = preprocess(image).unsqueeze(0)
+            grams = []
+            features = tensor
+            for index, layer in enumerate(model):
+                features = layer(features)
+                if index in {3, 8, 15, 22}:
+                    gram = _gram_matrix(features).cpu().numpy().reshape(-1).astype(np.float32)
+                    grams.append(_l2_normalize(gram))
+            vectors[str(path)] = _l2_normalize(np.concatenate(grams).astype(np.float32))
     return vectors
 
 

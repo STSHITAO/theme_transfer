@@ -14,60 +14,34 @@ def write_tpqs_outputs(
     dino_pairwise: dict,
 ) -> dict:
     eval_dir.mkdir(parents=True, exist_ok=True)
+    itte_report_path = eval_dir / "itte_report.json"
     report_path = eval_dir / "tpqs_report.json"
     metrics_path = eval_dir / "metrics.csv"
     style_pairwise_path = eval_dir / "style_pairwise_distances.json"
     style_delta_path = eval_dir / "style_delta_distances.json"
     dino_pairwise_path = eval_dir / "dino_pairwise_distances.json"
 
-    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    serialized_report = json.dumps(report, ensure_ascii=False, indent=2)
+    itte_report_path.write_text(serialized_report, encoding="utf-8")
+    report_path.write_text(serialized_report, encoding="utf-8")
     style_pairwise_path.write_text(json.dumps(style_pairwise, ensure_ascii=False, indent=2), encoding="utf-8")
     style_delta_path.write_text(json.dumps(style_delta, ensure_ascii=False, indent=2), encoding="utf-8")
     dino_pairwise_path.write_text(json.dumps(dino_pairwise, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    fieldnames = [
+    preferred = [
         "app",
         "itte_score",
-        "style_transfer_score",
-        "theme_style_image_transfer_score",
-        "style_cue_profile_match_score",
-        "theme_prompt_image_alignment_score",
-        "style_attribute_transfer_score",
-        "color_transfer_score",
-        "background_transfer_score",
-        "stroke_transfer_score",
-        "texture_material_transfer_score",
-        "composition_transfer_score",
-        "complexity_transfer_score",
-        "package_coherence_score",
-        "package_unity_score",
-        "app_identity_coherence_score",
-        "target_structure_retention_score",
-        "over_recomposition_penalty",
-        "qwen_identity_score",
-        "dino_identity_structure_risk_score",
+        "style_fidelity_score",
+        "identity_preservation_score",
+        "package_membership_score",
         "visual_quality_score",
-        "visual_artifact_quality_score",
-        "strict_delta_transfer_score",
-        "theme_style_image_fit_score",
-        "theme_style_text_fit_score",
-        "style_delta_transfer_score",
-        "d_to_reference_delta_centroid",
-        "theme_membership_score",
-        "d_to_theme_style_centroid",
-        "is_style_outlier",
-        "generated_internal_distance",
-        "generated_internal_outlier",
-        "matched_target_app",
-        "identity_match_correct",
-        "generated_to_own_target_similarity",
-        "max_target_similarity",
-        "strict_delta_warning",
-        "membership_warning",
-        "qwen_problematic_app",
-        "visual_quality_distance_to_theme",
-        "semantic_fit_score",
+        "is_package_outlier",
+        "quality_warnings",
+        "identity_components",
     ]
+    discovered = {key for row in per_app_rows for key in row}
+    fieldnames = [name for name in preferred if name in discovered]
+    fieldnames.extend(sorted(discovered - set(fieldnames)))
     with metrics_path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
@@ -75,6 +49,7 @@ def write_tpqs_outputs(
             writer.writerow(row)
 
     return {
+        "itte_report_path": str(itte_report_path),
         "report_path": str(report_path),
         "metrics_path": str(metrics_path),
         "style_pairwise_path": str(style_pairwise_path),

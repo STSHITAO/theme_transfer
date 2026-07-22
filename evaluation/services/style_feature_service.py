@@ -5,8 +5,8 @@ import json
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
 
+from evaluation.services.image_view_service import load_image_view
 from evaluation.services.visual_stats_service import image_statistics
 
 
@@ -88,8 +88,7 @@ def _extract_single_attribute_groups(path: Path, image_size: int) -> dict[str, n
     base_vector = _extract_single_style_vector(path, image_size=image_size).astype(np.float32)
     groups = _split_lightweight_vector(base_vector)
 
-    with Image.open(path) as image:
-        rgb = image.convert("RGB").resize((image_size, image_size))
+    rgb = load_image_view(path, "appearance", image_size)
     arr = np.asarray(rgb, dtype=np.float32) / 255.0
     gray = arr.mean(axis=2)
     gx = np.zeros_like(gray)
@@ -164,8 +163,7 @@ def _extract_single_attribute_groups(path: Path, image_size: int) -> dict[str, n
 
 def _extract_single_style_vector(path: Path, image_size: int) -> np.ndarray:
     base_vector, _ = image_statistics(path, image_size=image_size)
-    with Image.open(path) as image:
-        rgb = image.convert("RGB").resize((image_size, image_size))
+    rgb = load_image_view(path, "appearance", image_size)
     arr = np.asarray(rgb, dtype=np.float32) / 255.0
     gray = arr.mean(axis=2)
 
@@ -238,7 +236,7 @@ def _style_cache_path(path: Path, config, cache_dir: Path) -> Path:
         "size": stat.st_size,
         "backend": config.style_feature_backend,
         "image_size": config.image_size,
-        "version": 2,
+        "version": 5,
     }
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
     return cache_dir / f"{digest}.npy"
@@ -252,7 +250,7 @@ def _style_group_cache_path(path: Path, config, cache_dir: Path) -> Path:
         "size": stat.st_size,
         "backend": config.style_feature_backend,
         "image_size": config.image_size,
-        "version": 2,
+        "version": 5,
         "groups": STYLE_FEATURE_GROUPS,
     }
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()

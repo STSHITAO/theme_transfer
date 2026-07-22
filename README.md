@@ -13,22 +13,23 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-如果需要 GPU 加速，建议先按本机 CUDA 版本安装匹配的 PyTorch / TorchVision，再运行 `python -m pip install -r requirements.txt` 安装剩余依赖。CPU 也可以跑 DINOv3 / OpenCLIP 评估，只是更慢。
+如果需要 GPU 加速，建议先按本机 CUDA 版本安装匹配的 PyTorch / TorchVision，再运行 `python -m pip install -r requirements.txt` 安装剩余依赖。CPU 也可以运行 ITTE v1.2，但 DINOv3、VGG、DISTS 和 LPIPS 会明显更慢。
 
 快速验证：
 
 ```powershell
-python -m unittest discover -v
+python -m pytest -q
 ```
 
-官方 ITTE 评估（DINOv3 + OpenCLIP）：
+官方 ITTE v1.2 评估：
 
 ```powershell
-$env:TPQS_USE_OPENCLIP='true'
+$env:TPQS_DEVICE='cuda'
+$env:TPQS_BATCH_SIZE='4'
 python evaluation/evaluate_package.py
 ```
 
-DINOv3 默认使用 `TPQS_EMBEDDING_BACKEND=dinov3`，模型会下载到项目本地 `models/` 目录。OpenCLIP 由 `TPQS_USE_OPENCLIP` 控制；关闭时评估仍会输出同样的报告结构，只是文图对齐分会记录为不可用。
+DINOv3、VGG16、DISTS 和 LPIPS 构成 v1.2 的确定性纯图像评估链路。OpenCLIP、Prompt 文图分和生成阶段 Qwen QC 不参与任何主分、阈值或最终决策。
 
 图标主题包风格迁移 MVP。项目目标不是简单给原 logo 换皮，而是从参考主题包中学习统一设计语言，再把目标 App 的身份和功能语义主题化重设计成一整套风格一致的图标包。
 
@@ -144,14 +145,72 @@ ALI_IMAGE_API_KEY=sk-...
 
 ## ITTE 评价模块
 
-ITTE = Icon Theme Transfer Evaluation。
+ITTE = Icon Theme Transfer Evaluation。ITTE v1.2 是独立的纯图像评估模块。它不会调用 Qwen、Wan 或其他 VLM，也不会修改生成结果。完整设计、边界和论文映射见：
 
-ITTE 是独立 evaluation 模块，不调用 Qwen / Wan，也不修改生成结果。它评价的不是单张图是否好看，而是图标主题包风格迁移是否成功。
+[`docs/superpowers/specs/2026-07-22-itte-v12-image-only-evaluation-design.md`](docs/superpowers/specs/2026-07-22-itte-v12-image-only-evaluation-design.md)
 
-运行：
+### 评价边界
+
+ITTE 只回答：生成图是否完成了可观测的主题视觉迁移、是否保留目标图像结构、整包是否一致、是否存在技术缺陷。
+
+以下内容不进入主分：
+
+- 设计师创作意图、文化叙事和主观审美。
+- App 商业语义、法务和版权判断。
+- OCR、文字拼写和“保留文字/禁止文字”规则。
+- Prompt 文图对齐、OpenCLIP 分数。
+- 生成阶段 Qwen QC 分数。Qwen 报告仅可出现在 `diagnostics.generation_qwen_qc`，并明确记录 `generation_qwen_qc_used_in_score=false`。
+
+### 四维主分
+
+校准前的工程先验公式为：
+
+```text
+ITTE = 35% Style Fidelity
+     + 30% Identity Preservation
+     + 20% Package Coherence
+     + 15% Visual Quality
+```
+
+1. `Style Fidelity`
+
+   - 40% VGG16 多层 Gram：采用 Gatys 风格表征思想。
+   - 20% DISTS texture：采用 DISTS 纹理分量。
+   - 25% 可解释视觉属性：颜色、背景、描边、材质、构图和复杂度。
+   - 15% DINOv3 repeated motif：使用 dense patch 发现参考包反复出现的视觉局部。
+
+2. `Identity Preservation`
+
+   - 50% DINOv3 双向 dense patch 对应与空间一致性。
+   - 30% DISTS structure。
+   - 20% LPIPS content。
+   - 所有身份距离都以参考包 `original -> style_ref` 的正常变形强度和冻结干扰基线归一化。
+
+3. `Package Coherence`
+
+   同时测量生成包内部 P90/MAD 离散度、到参考主题中心的距离和包内离群项。整包内部统一但远离参考主题，不能得到高分。
+
+4. `Visual Quality`
+
+   使用确定性规则检查黑边、异常透明、裁切、模糊、曝光、主体面积和边缘异常。它评价技术缺陷，不评价“是否好看”。
+
+具体权重、`35/45/60/70/80` 等阈值均是待评测集校准的工程先验，不是论文给出的通用常数。
+
+### 三视图预处理
+
+- `Appearance View`：统一色彩和 Alpha 合成，用于风格与包级比较。
+- `Structure View`：自动去除启动器截图背景、底部 App 名称和主题背景，用于 DINOv3/DISTS/LPIPS 身份比较。
+- `Artifact View`：保留原始像素、Alpha 和边界，用于质量缺陷检测。
+
+同一输入、权重、依赖和配置应得到完全一致的输出。报告记录输入 SHA256、模型 ID、代码 commit 和评分配置哈希。
+
+### 运行与输出
+
+在 `evaluation/evaluate_package.py` 设置 `THEME_ID`、`PACKAGE_ID` 和 `EVAL_ID`，然后运行：
 
 ```powershell
-conda activate theme-transfer
+$env:TPQS_DEVICE='cuda'       # 没有 GPU 时使用 cpu
+$env:TPQS_BATCH_SIZE='4'
 python evaluation/evaluate_package.py
 ```
 
@@ -159,98 +218,68 @@ python evaluation/evaluate_package.py
 
 ```text
 data/evaluations/<eval_id>/
-  tpqs_report.json
+  itte_report.json
+  tpqs_report.json                 # 兼容别名，内容与 itte_report.json 相同
   metrics.csv
   style_pairwise_distances.json
   style_delta_distances.json
   dino_pairwise_distances.json
   inputs_manifest.json
-  generation_feedback_prompt.md
-  tpqs_feedback_retry_prompt.md
 ```
 
-ITTE v1.1 报告会继续保留 `tpqs` / `tpqs_primary_score` 作为兼容字段，但它们等于新的 `itte_score`。v1.1 不引入 VLM，不做随机裁判；评估阶段只使用确定性图像特征、DINO/stats embedding、可选 OpenCLIP 文图相似度和生成阶段已有的 QC prior。核心结构包括：
+v1.2 不再生成 `generation_feedback_prompt.md` 或 `tpqs_feedback_retry_prompt.md`，因为评估模块没有自动 retry 机制。
 
-1. `Style Transfer Effectiveness Score`
-
-   判断 `generated_icons` 是否从 `target_originals` 的原始风格，靠近 `theme_refs/style_ref` 的终态主题风格。这是 ITTE 最核心指标。v1.1 使用加权可靠组件：
-
-   - `style_cue_profile_match_score`：确定性高层风格 profile，自动从 style refs 学习背景色、pastel 程度、粗黑描边、主体比例、边缘密度、简洁度等可测 cue。
-   - `theme_style_image_transfer_score`：整体图像风格是否更接近 `style_ref`。
-   - `style_attribute_transfer_score`：属性级风格迁移分，覆盖 `color`、`background`、`stroke`、`texture_material`、`composition`、`complexity`。
-   - `theme_prompt_image_alignment_score`：复用现有 OpenCLIP `theme_style_text_fit_score`，只比较主题风格提示词和生成图之间的文图对齐；仅当 `theme_style_text_fit_reliable=true` 时参与主分。
-
-2. `Package Coherence Score`
-
-   判断生成出来的一整包图标是否内部统一。它会参考 `package_unity_score`、`theme_membership_score` 和 `generated_internal_outlier_apps`。整包一致不等于风格迁移成功：一套图标可能内部很统一，但仍然不是指定 `theme_id` 的风格。
-
-3. `App Identity Coherence Score`
-
-   判断主题化后 App 身份是否仍然可识别。v1.1 不再让 Qwen package QC 直接覆盖身份分，而是把它作为 `generation_qwen_qc_prior`。主身份分由 `target_structure_retention_score`、`identity_recognition_prior_score`、`identity_separability_score` 和 `over_recomposition_penalty` 共同决定。这样可以惩罚“生成图很像主题，但原 App logo 结构被语义重画过头”的情况。
-
-4. `Visual Quality Score`
-
-   判断是否存在模糊、过暗、过亮、主体面积异常、边缘复杂度异常等基础 artifact 问题。`visual_stats_transfer_score` 不属于这个分数。
-
-5. `Strict Delta Diagnostics`
-
-   判断 `target->generated` 的低层统计变化方向是否复刻 `reference_raw->style_ref`。它只解释严格低层迁移路径，不作为 ITTE 主判定，也不会因为分数低直接导致风格迁移失败。
-
-`style_transfer_score` 现在等于 `style_transfer_effectiveness.score`。旧的低层 delta 分保留为：
-
-- `style_delta_transfer_score`
-- `legacy_style_delta_transfer_score`
-- `color_delta_score`
-- `edge_delta_score`
-- `composition_delta_score`
-- `complexity_delta_score`
-- `visual_stats_transfer_score`
-
-ITTE 还会生成 `generation_feedback_prompt.md`，并保留旧兼容文件 `tpqs_feedback_retry_prompt.md`。它只作为诊断型生成反馈，不是自动 retry 机制，也不会自动调用 Wan：
-
-- `color_delta_score` 低：强化 `theme_001` 色彩系统，避免引入不属于参考主题的新颜色。
-- `edge_delta_score` 低：强化描边粗细、线条密度、边缘圆润程度与参考主题对齐。
-- `composition_delta_score` 低：强化主体大小、居中程度、留白比例和背景占比。
-- `identity_match_correct=false`：强化当前 App 的 identity anchor、brand cues 和 semantic cues。
-
-启用 OpenCLIP：
-
-```powershell
-$env:TPQS_USE_OPENCLIP='true'
-python evaluation/evaluate_package.py
-```
-
-OpenCLIP 模型缓存会放在项目本地 `models/openclip/` 和 `models/huggingface/` 下。默认 `TPQS_USE_OPENCLIP=false`，不会下载或加载 OpenCLIP。
-
-可选 VGG Gram 辅助分：
-
-```powershell
-$env:TPQS_STYLE_FEATURE_BACKEND='vgg_gram_attribute'
-python evaluation/evaluate_package.py
-```
-
-VGG Gram 在 ITTE 中只作为 `auxiliary_scores.vgg_gram_style_fit` 的材质/纹理辅助信号。默认不启用，不参与 `itte_score`，也不影响 `decision`。如果运行环境没有可用的 torchvision 或模型权重，evaluation 应回退到轻量属性特征，不应影响主评价流程。
-
-DINOv3 默认从 ModelScope 下载到项目本地：
+### 环境变量
 
 ```text
-models/modelscope/
-models/huggingface/
-models/torch/
+TPQS_EMBEDDING_BACKEND=dinov3      # 官方；stats 仅用于离线轻量测试
+TPQS_MODEL_SOURCE=modelscope       # 或 huggingface
+TPQS_MODEL_ID=facebook/dinov3-vitb16-pretrain-lvd1689m
+TPQS_DEVICE=cpu                    # 或 cuda
+TPQS_BATCH_SIZE=1
+TPQS_IMAGE_SIZE=224
+ITTE_USE_PERCEPTUAL=true           # DISTS + LPIPS
+ITTE_USE_VGG_GRAM=true
 ```
 
-离线开发可使用 stats backend：
+轻量测试模式不会下载或加载深度模型：
 
 ```powershell
 $env:TPQS_EMBEDDING_BACKEND='stats'
+$env:ITTE_USE_PERCEPTUAL='false'
+$env:ITTE_USE_VGG_GRAM='false'
 python evaluation/evaluate_package.py
 ```
+
+该模式会降低 `evaluation_confidence`，不能代替正式 DINOv3 评估。
+
+### 模型目录
+
+模型统一放在项目内：
+
+```text
+models/modelscope/    # DINOv3
+models/torch/         # VGG16
+models/huggingface/   # 历史 OpenCLIP 缓存；不参与 v1.2 主分
+```
+
+仓库使用 Git LFS 管理大权重。克隆后运行 `git lfs pull`；如果 LFS 权重不可用，ModelScope/TorchVision 也会按配置下载到上述目录。
+
+### 最新实测
+
+`package_006_theme_001_fidelity_e2e` 的最终 v1.2 报告位于：
+
+```text
+data/evaluations/eval_012_package_006_theme_001_fidelity_e2e_itte_v12_final/
+```
+
+本次结果：总分 `74.39`，风格 `59.63`，身份 `74.05`，整包一致性 `86.65`，视觉质量 `93.13`，置信度 `medium`。最终决策为 `failed_hard_gate`，主要原因是航旅纵横视觉身份结构丢失、贴吧存在大面积黑色边角，以及包级身份 P10 低于临时门槛。该结论表示整包整体风格接近且一致，但仍有个别 App 阻止整包正式通过。
 
 ## 测试
 
 ```powershell
 conda activate theme-transfer
-python -m unittest discover -v
+python -m pytest -q
 ```
 
 测试覆盖：
@@ -258,10 +287,11 @@ python -m unittest discover -v
 - 当前 `original + style_ref` 参考样例解析。
 - 单目标和批量 mock workflow。
 - Qwen / Wan 客户端参数和错误处理。
-- ITTE 输入解析、报告生成、属性级风格迁移分、decision 和兼容字段逻辑。
+- ITTE v1.2 输入解析、三视图预处理、dense identity、组件重归一化、硬门槛和报告输出。
 
 ## 注意事项
 
 - 不要提交 `.env`。
-- `data/cases/`、`data/outputs/`、`data/packages/`、`data/evaluations/` 是运行结果目录，是否提交取决于你的实验记录需求。
+- 本仓库提交了用于复现实验的最新评估结果；新的临时运行结果应按实验记录策略选择是否提交。
+- `models/` 包含公开模型缓存，但大文件必须通过 Git LFS 提交。
 - prompt 必须保持规则型，不能把某个主题的具体元素写死；具体风格应由 Qwen 根据当前参考图动态提取。
