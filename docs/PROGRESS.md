@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 
 ## Completed
 
@@ -21,16 +21,16 @@ Last updated: 2026-08-04
 - Corrected dark-background quality false positives while retaining actual empty/exposure hard failures.
 - Completed the matched v1.3 five-fold rerun: designer-positive acceptance 95%, designer/control separation 45.01 versus 40.12 in v1.2.
 - Verified cache-miss CPU inference for DINOv3, VGG16, DISTS and LPIPS; full suite passes (57 tests).
+- Delivered the validated ITTE v1.3 project and Benchmark evidence to `STSHITAO/theme_transfer` on the `main` branch; required model weights remain versioned with Git LFS.
 
 ## In progress
 
-- Prepare a clean Git repository boundary and GitHub delivery.
+- No active implementation task.
 
 ## Pending
 
-- Confirm the GitHub repository name, visibility and authenticated account, then initialize and push.
 - Future optional validation: add independently sourced generated failures or human ratings only when such data becomes available; do not synthesize subjective labels merely to tune weights.
 
 ## Deployment status
 
-No hosted service is deployed. The project currently runs locally through Python CLI entry points. No GitHub destination has yet been configured in this working copy.
+No hosted service is deployed. The project runs locally through Python CLI entry points and its source is synchronized to `https://github.com/STSHITAO/theme_transfer` on `main`.
