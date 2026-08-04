@@ -1,0 +1,950 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.2-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_001",
+  "package_id": "benchmark_theme_001_original_control",
+  "itte_score": 42.09375000000001,
+  "tpqs": 42.09375000000001,
+  "tpqs_primary_score": 42.09375000000001,
+  "style_fidelity_score": 0.0,
+  "identity_preservation_score": 100.0,
+  "package_coherence_score": 0.0,
+  "visual_quality_score": 80.625,
+  "style_fidelity": {
+    "score": 0.0,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 0.0,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.5693033337593079,
+      "D_GR_vgg_gram": 0.5693033337593079,
+      "D_RR_vgg_gram": 0.15497495979070663,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.6228232979774475,
+          "target_to_theme_distance": 0.6228232979774475
+        },
+        {
+          "index": 1,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.48184823989868164,
+          "target_to_theme_distance": 0.48184823989868164
+        },
+        {
+          "index": 2,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.6042548418045044,
+          "target_to_theme_distance": 0.6042548418045044
+        },
+        {
+          "index": 3,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.5682869553565979,
+          "target_to_theme_distance": 0.5682869553565979
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 12,
+        "misses": 0,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+    },
+    "dists_texture": {
+      "score": 0.0,
+      "reliable": true,
+      "D_RR": 0.31102392077445984,
+      "D_TR": 0.42115855403244495,
+      "D_GR": 0.42115855403244495
+    },
+    "visual_attributes": {
+      "score": 0.0,
+      "reliable": true,
+      "reliable_group_count": 5,
+      "groups": {
+        "color": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.03069809079170227,
+          "D_OR": 0.2875622734427452,
+          "D_TR": 0.3048730492591858,
+          "D_GR": 0.3048730492591858,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 0.0
+            },
+            {
+              "app": "king_camp",
+              "score": 0.0
+            },
+            {
+              "app": "meituan",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            }
+          ]
+        },
+        "background": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.0017406940460205078,
+          "D_OR": 0.1901971399784088,
+          "D_TR": 0.09395410120487213,
+          "D_GR": 0.09395410120487213,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 0.0
+            },
+            {
+              "app": "king_camp",
+              "score": 0.0
+            },
+            {
+              "app": "meituan",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            }
+          ]
+        },
+        "stroke": {
+          "score": null,
+          "reliable": false,
+          "D_RR": 0.12332630157470703,
+          "D_OR": 0.10540176182985306,
+          "D_TR": 0.15392190217971802,
+          "D_GR": 0.15392190217971802,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": null
+            },
+            {
+              "app": "king_camp",
+              "score": null
+            },
+            {
+              "app": "meituan",
+              "score": null
+            },
+            {
+              "app": "netease_music",
+              "score": null
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.004388332366943359,
+          "D_OR": 0.03544187545776367,
+          "D_TR": 0.04888951778411865,
+          "D_GR": 0.04888951778411865,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 0.0
+            },
+            {
+              "app": "king_camp",
+              "score": 0.0
+            },
+            {
+              "app": "meituan",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            }
+          ]
+        },
+        "composition": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.006192654371261597,
+          "D_OR": 0.019609741866588593,
+          "D_TR": 0.0228157639503479,
+          "D_GR": 0.0228157639503479,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 0.0
+            },
+            {
+              "app": "king_camp",
+              "score": 0.0
+            },
+            {
+              "app": "meituan",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            }
+          ]
+        },
+        "complexity": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.0035992860794067383,
+          "D_OR": 0.031752899289131165,
+          "D_TR": 0.046672508120536804,
+          "D_GR": 0.046672508120536804,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 0.0
+            },
+            {
+              "app": "king_camp",
+              "score": 0.0
+            },
+            {
+              "app": "meituan",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 0.0
+        },
+        {
+          "app": "king_camp",
+          "score": 0.0
+        },
+        {
+          "app": "meituan",
+          "score": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 0.0
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 0.0,
+      "reliable": true,
+      "prototype_count": 31,
+      "reference_coverage": 0.6167445480823517,
+      "target_coverage": 0.3931746482849121,
+      "generated_coverage": 0.3931746482849121,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 0.0,
+          "target_coverage": 0.40673545002937317,
+          "generated_coverage": 0.40673545002937317
+        },
+        {
+          "app": "king_camp",
+          "score": 0.0,
+          "target_coverage": 0.433906614780426,
+          "generated_coverage": 0.433906614780426
+        },
+        {
+          "app": "meituan",
+          "score": 0.0,
+          "target_coverage": 0.3041554093360901,
+          "generated_coverage": 0.3041554093360901
+        },
+        {
+          "app": "netease_music",
+          "score": 0.0,
+          "target_coverage": 0.42790111899375916,
+          "generated_coverage": 0.42790111899375916
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.5
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.3
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.2
+      }
+    },
+    "dino_dense": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "reliable": true,
+      "positive_reference_similarity": 0.5546565428376198,
+      "distractor_similarity": 0.5413445793092251,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0
+        },
+        {
+          "app": "king_camp",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "bilibili",
+          "king_camp",
+          "meituan",
+          "netease_music"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            1.0,
+            0.5157234445214272,
+            0.566965714097023,
+            0.6057376265525818
+          ],
+          [
+            0.515723466873169,
+            1.0,
+            0.44342710077762604,
+            0.670290619134903
+          ],
+          [
+            0.5669656693935394,
+            0.44342710077762604,
+            1.0,
+            0.43489936739206314
+          ],
+          [
+            0.6057376265525818,
+            0.670290619134903,
+            0.43489934504032135,
+            1.0
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.4078959971666336,
+          0.6222447454929352,
+          0.5695656538009644,
+          0.6520213931798935,
+          0.5397474318742752,
+          0.5049670785665512,
+          0.4506938308477402,
+          0.5827372074127197
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.8501343727111816,
+      "distractor_distance": 1.108229506498568,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.00014448165893554688
+        },
+        {
+          "app": "king_camp",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "distance": 0.0
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.7596291899681091,
+      "distractor_distance": 0.8073669672012329,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "king_camp",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "distance": 0.0
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "king_camp",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "netease_music",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 0.0,
+    "package_unity_score": 10.677599887878383,
+    "theme_membership_score": 0.0,
+    "generated_p90_distance": 0.2619970142841339,
+    "reference_p90_distance": 0.08067355304956436,
+    "reference_mad": 0.027018576860427856,
+    "outlier_apps": [
+      "meituan"
+    ],
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 0.0,
+        "distance_to_reference": 0.17406827211380005,
+        "internal_distance": 0.05763661861419678,
+        "is_outlier": false
+      },
+      {
+        "app": "king_camp",
+        "score": 0.0,
+        "distance_to_reference": 0.1761176586151123,
+        "internal_distance": 0.0745815634727478,
+        "is_outlier": false
+      },
+      {
+        "app": "meituan",
+        "score": 0.0,
+        "distance_to_reference": 0.3086663484573364,
+        "internal_distance": 0.12222129106521606,
+        "is_outlier": true
+      },
+      {
+        "app": "netease_music",
+        "score": 0.0,
+        "distance_to_reference": 0.12989473342895508,
+        "internal_distance": 0.054019272327423096,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 80.625,
+    "p10_score": 59.25,
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 92.5,
+        "warnings": [
+          "saturation_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.6714709401130676,
+          "contrast": 0.12878775596618652,
+          "saturation": 0.5839789509773254,
+          "sharpness": 0.001574153546243906,
+          "edge_density": 0.02687041613520408,
+          "foreground_ratio": 0.6243871572066326,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.7273198341836735,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -9.136868904584182,
+          "contrast": -1.3880599495358432,
+          "saturation": 30.516267629004087,
+          "sharpness": 3.9422637763658095,
+          "edge_density": 0.2572812087186263,
+          "foreground_ratio": 1.5880530335535914,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 50.403287815126056,
+          "border_edge_ratio": -1.0342333333333331,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "king_camp",
+        "score": 92.5,
+        "warnings": [
+          "saturation_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.5956841707229614,
+          "contrast": 0.25000396370887756,
+          "saturation": 0.5557555556297302,
+          "sharpness": 0.005061842501163483,
+          "edge_density": 0.03473274075255102,
+          "foreground_ratio": 0.5113052056760204,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.4435985331632653,
+          "border_edge_ratio": 0.0029097576530612247,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -12.416388764397265,
+          "contrast": 6.496020504296709,
+          "saturation": 28.658022607511132,
+          "sharpness": 18.360933999293955,
+          "edge_density": 0.9602937582562748,
+          "foreground_ratio": 0.7122584170027753,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 30.23063655462185,
+          "border_edge_ratio": 2.248333333333334,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 92.5,
+        "warnings": [
+          "saturation_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.5702316761016846,
+          "contrast": 0.23626619577407837,
+          "saturation": 0.8606023192405701,
+          "sharpness": 0.006066335830837488,
+          "edge_density": 0.03638193558673469,
+          "foreground_ratio": 0.1680634167729592,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -13.517794224268473,
+          "contrast": 5.602495870330682,
+          "saturation": 48.72931359930705,
+          "sharpness": 22.513671886447227,
+          "edge_density": 1.1077571003963012,
+          "foreground_ratio": -1.9460730570096394,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -1.3093235294117649,
+          "border_edge_ratio": -1.0342333333333331,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "netease_music",
+        "score": 45.0,
+        "warnings": [
+          "large_black_border",
+          "contrast_outside_reference_envelope",
+          "saturation_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.31048110127449036,
+          "contrast": 0.30368971824645996,
+          "saturation": 0.47237473726272583,
+          "sharpness": 0.005699444562196732,
+          "edge_density": 0.02635722257653061,
+          "foreground_ratio": 0.6221500318877551,
+          "border_dark_ratio": 1.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.01162906568877551
+        },
+        "robust_z": {
+          "brightness": -24.757977380233108,
+          "contrast": 9.98782094815713,
+          "saturation": 23.16818027244651,
+          "sharpness": 20.996884042525295,
+          "edge_density": 0.21139382430647294,
+          "foreground_ratio": 1.5707269944792475,
+          "border_dark_ratio": 6745.0,
+          "border_foreground_contact": -1.3093235294117649,
+          "border_edge_ratio": -1.0342333333333331,
+          "semi_transparent_ratio": 78.43804807079081
+        }
+      }
+    ],
+    "hard_failures": [
+      {
+        "app": "netease_music",
+        "reasons": [
+          "large_black_border"
+        ]
+      }
+    ],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.8826158046722412,
+        "mad": 0.015587091445922852
+      },
+      "contrast": {
+        "median": 0.15012890845537186,
+        "mad": 0.010370306670665741
+      },
+      "saturation": {
+        "median": 0.12049180269241333,
+        "mad": 0.010244440287351608
+      },
+      "sharpness": {
+        "median": 0.0006205711688380688,
+        "mad": 0.00016315278480760753
+      },
+      "edge_density": {
+        "median": 0.023993044483418366,
+        "mad": 0.00754344706632653
+      },
+      "foreground_ratio": {
+        "median": 0.4193389269770408,
+        "mad": 0.08709093989158162
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.018415178571428572,
+        "mad": 0.009486607142857142
+      },
+      "border_edge_ratio": {
+        "median": 0.0009167729591836734,
+        "mad": 0.0005978954081632653
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [
+    {
+      "type": "visual_quality",
+      "app": "netease_music",
+      "reasons": [
+        "large_black_border"
+      ]
+    },
+    {
+      "type": "severe_package_outliers",
+      "apps": [
+        "meituan"
+      ]
+    }
+  ],
+  "evaluation_confidence": "high",
+  "decision": "failed_hard_gate",
+  "per_app": [
+    {
+      "app": "bilibili",
+      "itte_score": 42.09375000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": false,
+      "quality_warnings": "saturation_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "king_camp",
+      "itte_score": 42.09375000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": false,
+      "quality_warnings": "saturation_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "meituan",
+      "itte_score": 42.09375000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": true,
+      "quality_warnings": "saturation_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "netease_music",
+      "itte_score": 42.09375000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 45.0,
+      "is_package_outlier": false,
+      "quality_warnings": "large_black_border|contrast_outside_reference_envelope|saturation_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.31102392077445984,
+        "D_TR": 0.42115855403244495,
+        "D_GR": 0.42115855403244495
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.8501343727111816,
+        "distractor_distance": 1.108229506498568,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.00014448165893554688
+          },
+          {
+            "app": "king_camp",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0,
+            "distance": 0.0
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.7596291899681091,
+        "distractor_distance": 0.8073669672012329,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0,
+            "distance": 0.0
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 60,
+          "misses": 0
+        },
+        "dists_identity": {
+          "hits": 15,
+          "misses": 3
+        },
+        "lpips_identity": {
+          "hits": 15,
+          "misses": 3
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_assistant.png": "40972de8ba3e77f2edea0675f14b1febc818a7a94b413f9af83bbb1b4e623e7b",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douban.png": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_music.png": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\peace_elite.png": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\genshin.png": "887b7fc3531c88bec71b087031a585e0a59d00bc17ca36fa27e7b7095911f251",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_mail.png": "81d1acbd24aa8ef5f5d29a61f83ad6e15cd1b82d05012f5d198011500dac48b5",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\lol_assistant.png": "c0737325b8b7e63ff823bce4e406569cc20d50d0ba618168c2e94b3c4a6c356f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\kuaishou.png": "158eef081db5edcc19a268254fa74df160c8abaeb8f526c36f4f7560c5607885",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\douban.png": "9e80ab1bea76e2f90b0364954f57fafb0bdddc353d39a44d2daac53d02550203",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\qq_music.png": "3073353ef4b84a6b8e6c185f634505b27d9d63f0cf2c865642052f991f3d05e8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\wechat.png": "86f07b7a95f2af8347a2e8d80b1e0fec08a26e8d45625e681a98b5ca5fdcb33e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\peace_elite.png": "1e4aca2d76ca8b0efc74ca06796821f590d6974dfaf94794b6edeafc17565122",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\genshin.png": "130a4a05f8fcc4d7422e404150d9ed70a7d826b14b81a7a6ca4a07d834db4cbc",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\qq_mail.png": "9593b3f858753c8bfd2b33cdd10e3cb8e0491e7c60f269211c1c3dc686b66030",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\king_camp.png": "0070eca367b8ddfb31734846b5d24638a4eb126cc31895d2b31d401584d96d66",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\meituan.png": "f28a505e8f16d4139bbdd970a69831afc0a2e67109f445b0dfa58137dd2fe539",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\netease_music.png": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d5aaa72998c12469f158789cbf072caaaee0ac8dfa3499e9c4f42fa46403bb13",
+    "scoring_config": {
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 0.5,
+        "dists_structure": 0.3,
+        "lpips_content": 0.2
+      }
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true
+  }
+}

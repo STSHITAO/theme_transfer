@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_003",
+  "scenario": "original_control",
+  "reference_apps": [
+    "douyu",
+    "kugou",
+    "wechat_reading",
+    "toutiao",
+    "weishi",
+    "king_camp",
+    "xingtu",
+    "xiaohongshu"
+  ],
+  "query_apps": [
+    "lofter",
+    "toutiao_lite",
+    "tencent_comics",
+    "xigua_video"
+  ],
+  "identity_disjoint": true
+}

@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_004",
+  "scenario": "original_control",
+  "reference_apps": [
+    "zhihu",
+    "xiaohongshu",
+    "xingtu",
+    "iqiyi_lite",
+    "douyin_huoshan",
+    "wecom",
+    "eleme",
+    "wechat"
+  ],
+  "query_apps": [
+    "honor_of_kings",
+    "golden_spatula",
+    "douyin",
+    "quark"
+  ],
+  "identity_disjoint": true
+}

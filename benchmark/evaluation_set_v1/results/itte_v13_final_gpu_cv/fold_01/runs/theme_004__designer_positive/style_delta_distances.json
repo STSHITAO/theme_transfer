@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 81.46055888840722,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 95.67902869571684,
+        "reliable": true,
+        "D_RR": 0.02219066023826599,
+        "D_OR": 0.2500743642449379,
+        "D_TR": 0.23138117790222168,
+        "D_GR": 0.025429189205169678,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 83.86819925434858
+          },
+          {
+            "app": "golden_spatula",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 98.84791552851875
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "background": {
+        "score": 74.94476101183976,
+        "reliable": true,
+        "D_RR": 0.015061289072036743,
+        "D_OR": 0.18531915545463562,
+        "D_TR": 0.14821673929691315,
+        "D_GR": 0.012307494878768921,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 99.77904404735904
+          },
+          {
+            "app": "golden_spatula",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 50.0,
+        "reliable": true,
+        "D_RR": 0.04316741228103638,
+        "D_OR": 0.08168914914131165,
+        "D_TR": 0.05476370453834534,
+        "D_GR": 0.03629358112812042,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "golden_spatula",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 82.70723662083415,
+        "reliable": true,
+        "D_RR": 0.019266396760940552,
+        "D_OR": 0.03292669355869293,
+        "D_TR": 0.03845997154712677,
+        "D_GR": 0.015234649181365967,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "golden_spatula",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 30.828946483336612
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 94.90468463741678,
+        "reliable": true,
+        "D_RR": 0.001614600419998169,
+        "D_OR": 0.035935498774051666,
+        "D_TR": 0.03181818127632141,
+        "D_GR": 0.003822311758995056,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 82.93478701295498
+          },
+          {
+            "app": "golden_spatula",
+            "score": 96.68395153671214
+          },
+          {
+            "app": "douyin",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 90.52764236463585,
+        "reliable": true,
+        "D_RR": 0.01791471242904663,
+        "D_OR": 0.030432723462581635,
+        "D_TR": 0.04014669358730316,
+        "D_GR": 0.013665497303009033,
+        "per_app": [
+          {
+            "app": "honor_of_kings",
+            "score": 94.76724493305781
+          },
+          {
+            "app": "golden_spatula",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 67.3433245254856
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "honor_of_kings",
+        "score": 76.89154587462006
+      },
+      {
+        "app": "golden_spatula",
+        "score": 99.44732525611869
+      },
+      {
+        "app": "douyin",
+        "score": 82.83669775622349
+      },
+      {
+        "app": "quark",
+        "score": 66.66666666666667
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 100.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.37655895948410034,
+    "D_GR_vgg_gram": 0.12410864233970642,
+    "D_RR_vgg_gram": 0.20174087584018707,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.14087390899658203,
+        "target_to_theme_distance": 0.4224650263786316
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10713374614715576,
+        "target_to_theme_distance": 0.3872283697128296
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.15142232179641724,
+        "target_to_theme_distance": 0.31389474868774414
+      },
+      {
+        "index": 3,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09700459241867065,
+        "target_to_theme_distance": 0.38264769315719604
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 16,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 100.0,
+    "reliable": true,
+    "D_RR": 0.2989690601825714,
+    "D_TR": 0.4000502284616232,
+    "D_GR": 0.2839226443320513
+  },
+  "dino_motif": {
+    "score": 80.26268752703146,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7120347023010254,
+    "target_coverage": 0.36484895646572113,
+    "generated_coverage": 0.643509566783905,
+    "per_app": [
+      {
+        "app": "honor_of_kings",
+        "score": 92.57029872809211,
+        "target_coverage": 0.3476046323776245,
+        "generated_coverage": 0.6849586367607117
+      },
+      {
+        "app": "golden_spatula",
+        "score": 63.39813172045462,
+        "target_coverage": 0.46687230467796326,
+        "generated_coverage": 0.6223006844520569
+      },
+      {
+        "app": "douyin",
+        "score": 64.27746051487682,
+        "target_coverage": 0.3004605174064636,
+        "generated_coverage": 0.5650099515914917
+      },
+      {
+        "app": "quark",
+        "score": 97.20719015162787,
+        "target_coverage": 0.34445837140083313,
+        "generated_coverage": 0.7017689943313599
+      }
+    ]
+  }
+}

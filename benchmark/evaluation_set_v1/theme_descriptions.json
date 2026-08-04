@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "evaluation_set_v1",
+  "description_scope": "benchmark_real_themes_only",
+  "scoring_role": "metadata_only",
+  "creation_method": "Human-reviewed descriptions derived from all benchmark contact sheets and explicit asset mappings.",
+  "warning": "These theme IDs are local to benchmark/evaluation_set_v1. They are not equivalent to data/styles/theme_001 or old generation-package descriptions.",
+  "themes": {
+    "theme_001": {
+      "short_name": "冰晶玻璃拟物",
+      "description": "统一的浅蓝至青白色冰晶/磨砂玻璃拟物图标。主体通常被重塑为半透明或乳白色三维雕塑，保留应用的关键轮廓、汉字或符号，背景高明度、留白明显，并带柔和接触阴影。",
+      "palette": ["浅冰蓝", "青白", "半透明白"],
+      "line_and_shape": "圆润、厚实、三维体块；少量刻蚀或浮雕式细节。",
+      "material": "冰、磨砂玻璃、半透明树脂感。",
+      "background": "白色或极浅冷色背景，高明度。",
+      "composition": "主体居中，占比中高，单一视觉对象。",
+      "motif": "把品牌符号转化为冰雕或玻璃雕塑。"
+    },
+    "theme_002": {
+      "short_name": "黑底复古几何",
+      "description": "统一的黑色圆角方形容器，使用红、橙、黄、蓝等有限色块对品牌符号进行扁平几何化重绘。画面高对比、边缘清楚，带复古海报或徽章感。",
+      "palette": ["黑色", "砖红", "橙黄", "深蓝", "米白"],
+      "line_and_shape": "扁平几何块面、简化轮廓、少量粗线条。",
+      "material": "哑光平面印刷感，无写实材质。",
+      "background": "统一黑色圆角方形。",
+      "composition": "主体居中，符号紧凑，整体像徽章。",
+      "motif": "以有限色几何符号重述应用身份。"
+    },
+    "theme_003": {
+      "short_name": "青白设计稿贴纸",
+      "description": "统一的白色或极浅灰设计稿背景，带细网格、裁切线或辅助线；主体以青绿色描边、白色填充和灰色偏移阴影呈现，整体像矢量设计过程中的贴纸或图标工程稿。",
+      "palette": ["白色", "浅灰", "青绿色"],
+      "line_and_shape": "中粗青色轮廓、圆角、白色内填充、灰色偏移阴影。",
+      "material": "平面贴纸与矢量设计稿质感。",
+      "background": "白底，常见浅灰网格、参考线或裁切标记。",
+      "composition": "主体居中，外围保留较宽设计画板留白。",
+      "motif": "把品牌符号简化为带工程辅助线的青白贴纸。"
+    },
+    "theme_004": {
+      "short_name": "绿植萌宠手绘",
+      "description": "统一的白底手绘插画风格，以绿色枝叶、芽苗或植物化萌宠重新表达品牌符号。主体通常有黑色不规则描边、浅绿填色，并常带简短的英文或中文手写标签。",
+      "palette": ["白色", "叶绿色", "浅黄绿", "黑色"],
+      "line_and_shape": "不规则手绘黑线、圆润卡通形体、植物枝叶装饰。",
+      "material": "纸面手绘、彩铅或淡彩插画感。",
+      "background": "统一白底，阴影很弱或没有阴影。",
+      "composition": "植物化主体居中，下方偶有手写应用名。",
+      "motif": "将应用身份与叶片、芽苗、蔬果或萌宠形象结合。"
+    }
+  }
+}

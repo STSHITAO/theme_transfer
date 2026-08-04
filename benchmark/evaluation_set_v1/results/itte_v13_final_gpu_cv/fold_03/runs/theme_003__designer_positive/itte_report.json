@@ -1,0 +1,1016 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.3-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_003",
+  "package_id": "benchmark_theme_003_designer_positive",
+  "itte_score": 88.04746416187673,
+  "tpqs": 88.04746416187673,
+  "tpqs_primary_score": 88.04746416187673,
+  "style_fidelity_score": 95.58496418582882,
+  "identity_preservation_score": 75.0,
+  "package_coherence_score": 85.46363348418316,
+  "visual_quality_score": 100.0,
+  "style_fidelity": {
+    "score": 95.58496418582882,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 98.07782344946698,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 99.44251401413393,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 91.54573238083417,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 90.52599272004457,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 98.07782344946698,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.42537862062454224,
+      "D_GR_vgg_gram": 0.08184035122394562,
+      "D_RR_vgg_gram": 0.07510752230882645,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.06197082996368408,
+          "target_to_theme_distance": 0.38784921169281006
+        },
+        {
+          "index": 1,
+          "score": 95.3312977767517,
+          "generated_to_theme_distance": 0.08739310503005981,
+          "target_to_theme_distance": 0.33825522661209106
+        },
+        {
+          "index": 2,
+          "score": 97.64183770538212,
+          "generated_to_theme_distance": 0.08457154035568237,
+          "target_to_theme_distance": 0.4764377474784851
+        },
+        {
+          "index": 3,
+          "score": 95.67824260385807,
+          "generated_to_theme_distance": 0.0934259295463562,
+          "target_to_theme_distance": 0.4989722967147827
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 16,
+        "misses": 0,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+    },
+    "dists_texture": {
+      "score": 99.44251401413393,
+      "reliable": true,
+      "D_RR": 0.2135966420173645,
+      "D_TR": 0.40800455026328564,
+      "D_GR": 0.21468043886125088
+    },
+    "visual_attributes": {
+      "score": 91.54573238083417,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 98.73781018567391,
+          "reliable": true,
+          "D_RR": 0.0006607174873352051,
+          "D_OR": 0.3394193574786186,
+          "D_TR": 0.23010362684726715,
+          "D_GR": 0.002463787794113159,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 100.0
+            },
+            {
+              "app": "lofter",
+              "score": 96.66620874497006
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq_music",
+              "score": 98.2850319977256
+            }
+          ]
+        },
+        "background": {
+          "score": 99.64766024081362,
+          "reliable": true,
+          "D_RR": 5.3435564041137695e-05,
+          "D_OR": 0.3038157969713211,
+          "D_TR": 0.08876371383666992,
+          "D_GR": 0.00017386674880981445,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 100.0
+            },
+            {
+              "app": "lofter",
+              "score": 98.81309243735868
+            },
+            {
+              "app": "meituan",
+              "score": 99.9834824381719
+            },
+            {
+              "app": "qq_music",
+              "score": 99.79406608772388
+            }
+          ]
+        },
+        "stroke": {
+          "score": 58.280383620125534,
+          "reliable": true,
+          "D_RR": 0.03233185410499573,
+          "D_OR": 0.10652201622724533,
+          "D_TR": 0.14071768522262573,
+          "D_GR": 0.07076697051525116,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 31.956136849112788
+            },
+            {
+              "app": "lofter",
+              "score": 39.76311751521176
+            },
+            {
+              "app": "meituan",
+              "score": 67.07783938603558
+            },
+            {
+              "app": "qq_music",
+              "score": 94.32444073014203
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 99.2808253397435,
+          "reliable": true,
+          "D_RR": 0.0003508329391479492,
+          "D_OR": 0.10261836647987366,
+          "D_TR": 0.09114214777946472,
+          "D_GR": 0.000706791877746582,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 100.0
+            },
+            {
+              "app": "lofter",
+              "score": 99.28305375816969
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq_music",
+              "score": 97.84024760080432
+            }
+          ]
+        },
+        "composition": {
+          "score": 94.02133515511737,
+          "reliable": true,
+          "D_RR": 0.00035178661346435547,
+          "D_OR": 0.04295619577169418,
+          "D_TR": 0.03737378120422363,
+          "D_GR": 0.0009739696979522705,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 100.0
+            },
+            {
+              "app": "lofter",
+              "score": 77.09491716536411
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq_music",
+              "score": 98.99042345510536
+            }
+          ]
+        },
+        "complexity": {
+          "score": 99.30637974353108,
+          "reliable": true,
+          "D_RR": 0.00035303831100463867,
+          "D_OR": 0.0982128158211708,
+          "D_TR": 0.08834287524223328,
+          "D_GR": 0.0006505101919174194,
+          "per_app": [
+            {
+              "app": "lol_mobile",
+              "score": 100.0
+            },
+            {
+              "app": "lofter",
+              "score": 99.39340636233871
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq_music",
+              "score": 97.83211261178559
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "lol_mobile",
+          "score": 88.6593561415188
+        },
+        {
+          "app": "lofter",
+          "score": 85.1689659972355
+        },
+        {
+          "app": "meituan",
+          "score": 94.51022030403458
+        },
+        {
+          "app": "qq_music",
+          "score": 97.84438708054779
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 90.52599272004457,
+      "reliable": true,
+      "prototype_count": 32,
+      "reference_coverage": 0.783201277256012,
+      "target_coverage": 0.4887377917766571,
+      "generated_coverage": 0.7553037852048874,
+      "per_app": [
+        {
+          "app": "lol_mobile",
+          "score": 91.19808926107133,
+          "target_coverage": 0.49174433946609497,
+          "generated_coverage": 0.7575474977493286
+        },
+        {
+          "app": "lofter",
+          "score": 86.6856667156808,
+          "target_coverage": 0.5233675241470337,
+          "generated_coverage": 0.7486061453819275
+        },
+        {
+          "app": "meituan",
+          "score": 97.41396037848045,
+          "target_coverage": 0.4403899312019348,
+          "generated_coverage": 0.774336040019989
+        },
+        {
+          "app": "qq_music",
+          "score": 85.0306486601281,
+          "target_coverage": 0.49944937229156494,
+          "generated_coverage": 0.7407254576683044
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 75.0,
+    "p10_score": 30.000000000000004,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 75.0,
+        "reliable": true,
+        "weight": 1.0
+      },
+      "dists_structure": {
+        "score": 75.0,
+        "reliable": true,
+        "weight": 0.0
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.0
+      }
+    },
+    "dino_dense": {
+      "score": 75.0,
+      "p10_score": 30.000000000000004,
+      "reliable": true,
+      "positive_reference_similarity": 0.6188973039388657,
+      "distractor_similarity": 0.5041988715529442,
+      "calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "per_app": [
+        {
+          "app": "lol_mobile",
+          "score": 0.0,
+          "raw_correspondence": 0.4130829870700836,
+          "appearance_similarity": 0.3759230971336365,
+          "spatial_consistency": 0.524562656879425,
+          "retrieval_rank": 12,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "lofter",
+          "score": 100.0,
+          "raw_correspondence": 0.6667281836271286,
+          "appearance_similarity": 0.6903831362724304,
+          "spatial_consistency": 0.5957633256912231,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "raw_correspondence": 0.795107364654541,
+          "appearance_similarity": 0.847204327583313,
+          "spatial_consistency": 0.6388164758682251,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "qq_music",
+          "score": 100.0,
+          "raw_correspondence": 0.7393641769886017,
+          "appearance_similarity": 0.7568954825401306,
+          "spatial_consistency": 0.6867702603340149,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "lol_mobile",
+          "lofter",
+          "meituan",
+          "qq_music"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.4130829870700836,
+            0.5419881939888,
+            0.4527752697467804,
+            0.5436419099569321
+          ],
+          [
+            0.40477631986141205,
+            0.6667281836271286,
+            0.4411500617861748,
+            0.578338012099266
+          ],
+          [
+            0.5390599817037582,
+            0.47234317660331726,
+            0.795107364654541,
+            0.43585504591464996
+          ],
+          [
+            0.40019600093364716,
+            0.6705389618873596,
+            0.378438264131546,
+            0.7393641769886017
+          ]
+        ],
+        "identity_gallery_paths": [
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\minecraft.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\moji_weather.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_speed.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\dianping.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\zhihu.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xianyu.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\jianying.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weishi.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lofter.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\meituan.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_music.png"
+        ],
+        "generated_to_identity_gallery_similarity": [
+          [
+            0.4625895768404007,
+            0.4602309316396713,
+            0.41573362052440643,
+            0.5808936357498169,
+            0.4613460823893547,
+            0.4276897609233856,
+            0.594009131193161,
+            0.49148379266262054,
+            0.4130829870700836,
+            0.5419881939888,
+            0.4527752697467804,
+            0.5436419099569321
+          ],
+          [
+            0.4618771970272064,
+            0.5129256397485733,
+            0.40367191284894943,
+            0.5625313967466354,
+            0.4537319242954254,
+            0.4520488902926445,
+            0.5788672119379044,
+            0.4919378012418747,
+            0.40477631986141205,
+            0.6667281836271286,
+            0.4411500617861748,
+            0.578338012099266
+          ],
+          [
+            0.5186886638402939,
+            0.5471911281347275,
+            0.5025857836008072,
+            0.4735518544912338,
+            0.7260081470012665,
+            0.5583868399262428,
+            0.5573561787605286,
+            0.5432083606719971,
+            0.5390599817037582,
+            0.47234317660331726,
+            0.795107364654541,
+            0.43585504591464996
+          ],
+          [
+            0.4087452292442322,
+            0.46724042296409607,
+            0.408790186047554,
+            0.5847512781620026,
+            0.465789794921875,
+            0.45541173219680786,
+            0.5432081818580627,
+            0.47833599150180817,
+            0.40019600093364716,
+            0.6705389618873596,
+            0.378438264131546,
+            0.7393641769886017
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.6441427767276764,
+          0.49291273951530457,
+          0.4857127219438553,
+          0.7207460701465607,
+          0.6964270770549774,
+          0.5936518311500549,
+          0.7809311896562576,
+          0.5918809920549393
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 75.0,
+      "p10_score": 30.000000000000004,
+      "positive_reference_distance": 0.8091916441917419,
+      "distractor_distance": 0.8297645449638367,
+      "per_app": [
+        {
+          "app": "lol_mobile",
+          "score": 0.0,
+          "distance": 0.9237343072891235
+        },
+        {
+          "app": "lofter",
+          "score": 100.0,
+          "distance": 0.7873304486274719
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "distance": 0.7257218360900879
+        },
+        {
+          "app": "qq_music",
+          "score": 100.0,
+          "distance": 0.7597882151603699
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.803266167640686,
+      "distractor_distance": 1.0989705659260665,
+      "per_app": [
+        {
+          "app": "lol_mobile",
+          "score": 100.0,
+          "distance": 0.7760788798332214
+        },
+        {
+          "app": "lofter",
+          "score": 100.0,
+          "distance": 0.635352373123169
+        },
+        {
+          "app": "meituan",
+          "score": 100.0,
+          "distance": 0.6962661743164062
+        },
+        {
+          "app": "qq_music",
+          "score": 100.0,
+          "distance": 0.785639762878418
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 0.0,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 0.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "lofter",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "qq_music",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 85.46363348418316,
+    "package_unity_score": 74.54502636697141,
+    "theme_membership_score": 97.98148856185776,
+    "generated_p90_distance": 0.012494444847106934,
+    "reference_p90_distance": 0.0036814389750361443,
+    "reference_mad": 0.0006240606307983398,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 99.90049070450851,
+        "distance_to_reference": 0.0014628767967224121,
+        "internal_distance": 0.00047773122787475586,
+        "is_outlier": false
+      },
+      {
+        "app": "lofter",
+        "score": 93.80130717061216,
+        "distance_to_reference": 0.0069179534912109375,
+        "internal_distance": 0.004444301128387451,
+        "is_outlier": false
+      },
+      {
+        "app": "meituan",
+        "score": 99.83419590122422,
+        "distance_to_reference": 0.0017789006233215332,
+        "internal_distance": 0.00315016508102417,
+        "is_outlier": false
+      },
+      {
+        "app": "qq_music",
+        "score": 98.38996047108613,
+        "distance_to_reference": 0.0034946799278259277,
+        "internal_distance": 0.0034172534942626953,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9429161548614502,
+          "contrast": 0.1053229570388794,
+          "saturation": 0.04523559659719467,
+          "sharpness": 0.0024848920293152332,
+          "edge_density": 0.0548469387755102,
+          "foreground_ratio": 0.2348034917091837,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13129783163265307,
+          "border_edge_ratio": 0.0011957908163265306,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.046733869587540645,
+          "contrast": 0.12578612325337407,
+          "saturation": -0.1422316345727758,
+          "sharpness": 0.3760567223640203,
+          "edge_density": -0.09541169255928095,
+          "foreground_ratio": -0.3581780264496423,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -0.6928537414965977,
+          "border_edge_ratio": 0.5377072704081638,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "lofter",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9580519795417786,
+          "contrast": 0.09038897603750229,
+          "saturation": 0.0302216038107872,
+          "sharpness": 0.0021036146208643913,
+          "edge_density": 0.04582868303571429,
+          "foreground_ratio": 0.18102778220663265,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13584183673469388,
+          "border_edge_ratio": 0.0010762117346938774,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 3.1323965428718124,
+          "contrast": -3.9796367412814844,
+          "saturation": -3.0275552200667084,
+          "sharpness": -0.9911591976139962,
+          "edge_density": -1.0936496320523295,
+          "foreground_ratio": -3.3204887080366237,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.3533095238095282,
+          "border_edge_ratio": -0.2688536352040819,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9395889639854431,
+          "contrast": 0.10624848306179047,
+          "saturation": 0.04811139032244682,
+          "sharpness": 0.0021633415017277002,
+          "edge_density": 0.060247927295918366,
+          "foreground_ratio": 0.25363221460459184,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13129783163265307,
+          "border_edge_ratio": 0.0011957908163265306,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -0.6315634092075988,
+          "contrast": 0.38021765733867574,
+          "saturation": 0.4104258483852222,
+          "sharpness": -0.7769856311844114,
+          "edge_density": 0.5024280457890423,
+          "foreground_ratio": 0.6790286876907446,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -0.6928537414965977,
+          "border_edge_ratio": 0.5377072704081638,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "qq_music",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9330265522003174,
+          "contrast": 0.11357861757278442,
+          "saturation": 0.05903662368655205,
+          "sharpness": 0.0023751556873321533,
+          "edge_density": 0.050283003826530615,
+          "foreground_ratio": 0.2661680883290816,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13121811224489796,
+          "border_edge_ratio": 0.0012356505102040817,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -1.969408523018997,
+          "contrast": 2.395306722925115,
+          "saturation": 2.5099894988364473,
+          "sharpness": -0.017444886789837077,
+          "edge_density": -0.6005973017170887,
+          "foreground_ratio": 1.3695849440488315,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -0.7112074829931987,
+          "border_edge_ratio": 0.8065609056122458,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.942686915397644,
+        "mad": 0.0033085644245147705
+      },
+      "contrast": {
+        "median": 0.10486539453268051,
+        "mad": 0.002453576773405075
+      },
+      "saturation": {
+        "median": 0.045975709334015846,
+        "mad": 0.003509810194373131
+      },
+      "sharpness": {
+        "median": 0.002380020567215979,
+        "mad": 0.0001880987547338009
+      },
+      "edge_density": {
+        "median": 0.05570890465561225,
+        "mad": 0.006093550701530618
+      },
+      "foreground_ratio": {
+        "median": 0.24130560427295916,
+        "mad": 0.012244399713010196
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.13430723852040816,
+        "mad": 0.002929687499999986
+      },
+      "border_edge_ratio": {
+        "median": 0.0011160714285714285,
+        "mad": 0.0001
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [],
+  "evaluation_confidence": "high",
+  "decision": "style_transfer_success_strong",
+  "per_app": [
+    {
+      "app": "lol_mobile",
+      "itte_score": 88.04746416187673,
+      "style_fidelity_score": 89.92872270129507,
+      "identity_preservation_score": 0.0,
+      "package_membership_score": 99.90049070450851,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 0.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "lofter",
+      "itte_score": 88.04746416187673,
+      "style_fidelity_score": 85.92731635645815,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 93.80130717061216,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "meituan",
+      "itte_score": 88.04746416187673,
+      "style_fidelity_score": 95.96209034125752,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 99.83419590122422,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "qq_music",
+      "itte_score": 88.04746416187673,
+      "style_fidelity_score": 91.43751787033794,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 98.38996047108613,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 99.44251401413393,
+        "reliable": true,
+        "D_RR": 0.2135966420173645,
+        "D_TR": 0.40800455026328564,
+        "D_GR": 0.21468043886125088
+      },
+      "dists_structure": {
+        "score": 75.0,
+        "p10_score": 30.000000000000004,
+        "positive_reference_distance": 0.8091916441917419,
+        "distractor_distance": 0.8297645449638367,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0,
+            "distance": 0.9237343072891235
+          },
+          {
+            "app": "lofter",
+            "score": 100.0,
+            "distance": 0.7873304486274719
+          },
+          {
+            "app": "meituan",
+            "score": 100.0,
+            "distance": 0.7257218360900879
+          },
+          {
+            "app": "qq_music",
+            "score": 100.0,
+            "distance": 0.7597882151603699
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.803266167640686,
+        "distractor_distance": 1.0989705659260665,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0,
+            "distance": 0.7760788798332214
+          },
+          {
+            "app": "lofter",
+            "score": 100.0,
+            "distance": 0.635352373123169
+          },
+          {
+            "app": "meituan",
+            "score": 100.0,
+            "distance": 0.6962661743164062
+          },
+          {
+            "app": "qq_music",
+            "score": 100.0,
+            "distance": 0.785639762878418
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 92,
+          "misses": 0
+        },
+        "dists_identity": {
+          "hits": 18,
+          "misses": 0
+        },
+        "lpips_identity": {
+          "hits": 18,
+          "misses": 0
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    },
+    "identity_metric_validation": {
+      "dino_dense_used_in_primary_identity_score": true,
+      "dists_structure_used_in_primary_identity_score": false,
+      "lpips_content_used_in_primary_identity_score": false,
+      "basis": "Verified-label retrieval on 158 real original/designer pairs."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\minecraft.png": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\moji_weather.png": "97fd650bf3fd9c98f1c34d4ea008e599256d57a608dab0cb018f8db1fda7573f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_speed.png": "b2b6b1f1481b06237f612ea250ad35e4b5b18e4eddd3b3f6eabf192a90f44296",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\dianping.png": "c3b40e8ed77d339370977b1c471a7401fac80c9138457a3d8eaf776066761cbd",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\zhihu.png": "74757199f145559fba99e9d98aabfa083d20e7f3f6f3d2466c15126f10eafb46",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xianyu.png": "d9f4022b3c32e344f67607421bc9a297f86dcb123b06a325d00ea5509698f608",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\jianying.png": "e7f60a98d42a26dc6d3f2c6c00f4da56d4a47d3288c765e89039928f38318a68",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weishi.png": "a6fb072d49d6100df6893f89492a2edf0f5ee7646d74b717a339af9af4d2b59c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\minecraft.png": "ef192ea34ef1a428f56a32fff6f50fcb976bca69bb7a42be610e5105c83828ca",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\moji_weather.png": "aa638976227792116c64f1bd09ecc5b49755284d906a0456e46105ae32248e63",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\qq_speed.png": "a09549c96a7cebb92c1732e836d9015d7697ce4c68e63b2bc29b3d32b45c4670",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\dianping.png": "7cf2c0a02120c783d9d0243ce77618fd64f2a1e90a046be7468ea156c854c6f0",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\zhihu.png": "780dd6a8addcbf0dfd4c61a8798543d62ea27d5eefe7582d32239e0970ba6626",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\xianyu.png": "48eed90c5f7f012c4622781736684e26193dec88d6e8f2d28d6ff1aa407d044d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\jianying.png": "f350194547c2adb12294fcd24f7d326b88451287803477a3dd295e610c9e4f25",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\weishi.png": "d6b3fb70a5693c646d5306e1719952d52631d8e9db63065df8086d8b2df82c72",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lofter.png": "b537f2bb1a76100aae78347286db312a748c21b7181a7cab74ce6086514829a4",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\meituan.png": "f28a505e8f16d4139bbdd970a69831afc0a2e67109f445b0dfa58137dd2fe539",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_music.png": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\lol_mobile.png": "43a01b18c426eab99d182de56c402ee6518e0511415873eeb37c5fdd27a91564",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\lofter.png": "e5e0db2515d44882edb1da3975ba3a72a1c3cbd3c356369444409c28e9c52460",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\meituan.png": "eee8e7cf71278d79e5364b97cba757c0d79b759e2395adb03f58cb8a6863bb3f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\qq_music.png": "0086a589f439ed18dd872bfa5c9730089374e1b89db646a99452e74fc6da6802"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d2f78ef47f8657b5ce1ca80f00207f1667b41e9edc9d5e080103b4fa9bedffa5",
+    "scoring_config": {
+      "itte_version": "v1.3-image-only",
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 1.0,
+        "dists_structure": 0.0,
+        "lpips_content": 0.0
+      },
+      "identity_calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "quality_rules_version": "reference-normalized-artifacts-v2-dark-border-diagnostic"
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true,
+    "compute_itte_v12_metrics_is_legacy_entrypoint_name": true
+  }
+}

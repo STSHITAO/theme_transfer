@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 94.70780590884321,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 97.08567252900733,
+        "reliable": true,
+        "D_RR": 0.0014876127243041992,
+        "D_OR": 0.3009342849254608,
+        "D_TR": 0.1364203244447708,
+        "D_GR": 0.0045072585344314575,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 96.80053702951174
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 100.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 100.0
+          },
+          {
+            "app": "xigua_video",
+            "score": 91.54215308651756
+          }
+        ]
+      },
+      "background": {
+        "score": 99.59603323895848,
+        "reliable": true,
+        "D_RR": 0.00014778971672058105,
+        "D_OR": 0.21864986419677734,
+        "D_TR": 0.067551389336586,
+        "D_GR": 0.0002911984920501709,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 98.85650981835363
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 100.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 99.95714754727558
+          },
+          {
+            "app": "xigua_video",
+            "score": 99.57047559020478
+          }
+        ]
+      },
+      "stroke": {
+        "score": 82.28823638413125,
+        "reliable": true,
+        "D_RR": 0.020857423543930054,
+        "D_OR": 0.13184072077274323,
+        "D_TR": 0.11858437955379486,
+        "D_GR": 0.038098230957984924,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 41.58106912261152
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 93.63863253700602
+          },
+          {
+            "app": "tencent_comics",
+            "score": 93.9332438769075
+          },
+          {
+            "app": "xigua_video",
+            "score": 100.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 99.85093680973206,
+        "reliable": true,
+        "D_RR": 0.0008276998996734619,
+        "D_OR": 0.05714717507362366,
+        "D_TR": 0.09619864821434021,
+        "D_GR": 0.0008181333541870117,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 100.0
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 99.7107172081619
+          },
+          {
+            "app": "tencent_comics",
+            "score": 100.0
+          },
+          {
+            "app": "xigua_video",
+            "score": 99.69303003076637
+          }
+        ]
+      },
+      "composition": {
+        "score": 89.57143092758932,
+        "reliable": true,
+        "D_RR": 0.0008759498596191406,
+        "D_OR": 0.03350941836833954,
+        "D_TR": 0.022998735308647156,
+        "D_GR": 0.0016878992319107056,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 71.56638179023605
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 100.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 100.0
+          },
+          {
+            "app": "xigua_video",
+            "score": 86.71934192012122
+          }
+        ]
+      },
+      "complexity": {
+        "score": 99.8545255636408,
+        "reliable": true,
+        "D_RR": 0.0008184611797332764,
+        "D_OR": 0.052805133163928986,
+        "D_TR": 0.08971664309501648,
+        "D_GR": 0.0007466524839401245,
+        "per_app": [
+          {
+            "app": "lofter",
+            "score": 100.0
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 99.71018563855071
+          },
+          {
+            "app": "tencent_comics",
+            "score": 100.0
+          },
+          {
+            "app": "xigua_video",
+            "score": 99.70791661601253
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "lofter",
+        "score": 84.80074962678549
+      },
+      {
+        "app": "toutiao_lite",
+        "score": 98.84325589728644
+      },
+      {
+        "app": "tencent_comics",
+        "score": 98.9817319040305
+      },
+      {
+        "app": "xigua_video",
+        "score": 96.2054862072704
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 100.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.4565928280353546,
+    "D_GR_vgg_gram": 0.06686943769454956,
+    "D_RR_vgg_gram": 0.07262969017028809,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 95.21691082232658,
+        "generated_to_theme_distance": 0.08441931009292603,
+        "target_to_theme_distance": 0.31911516189575195
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.05537766218185425,
+        "target_to_theme_distance": 0.48798859119415283
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.0645405650138855,
+        "target_to_theme_distance": 0.453737735748291
+      },
+      {
+        "index": 3,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.06314021348953247,
+        "target_to_theme_distance": 0.5655298233032227
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 7,
+      "misses": 9,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 100.0,
+    "reliable": true,
+    "D_RR": 0.2149190902709961,
+    "D_TR": 0.3939422257244587,
+    "D_GR": 0.21270337514579296
+  },
+  "dino_motif": {
+    "score": 87.39006384673465,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7680603861808777,
+    "target_coverage": 0.4986891597509384,
+    "generated_coverage": 0.7340928465127945,
+    "per_app": [
+      {
+        "app": "lofter",
+        "score": 78.15785541919864,
+        "target_coverage": 0.5123389959335327,
+        "generated_coverage": 0.7122053503990173
+      },
+      {
+        "app": "toutiao_lite",
+        "score": 78.97347251951928,
+        "target_coverage": 0.5312054753303528,
+        "generated_coverage": 0.7182580232620239
+      },
+      {
+        "app": "tencent_comics",
+        "score": 91.12331828858481,
+        "target_coverage": 0.4417513608932495,
+        "generated_coverage": 0.7390949726104736
+      },
+      {
+        "app": "xigua_video",
+        "score": 99.51765335255928,
+        "target_coverage": 0.5094608068466187,
+        "generated_coverage": 0.7668130397796631
+      }
+    ]
+  }
+}

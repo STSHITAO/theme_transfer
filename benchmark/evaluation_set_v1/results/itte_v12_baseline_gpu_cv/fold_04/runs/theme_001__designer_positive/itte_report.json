@@ -1,0 +1,931 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.2-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_001",
+  "package_id": "benchmark_theme_001_designer_positive",
+  "itte_score": 82.01460531842358,
+  "tpqs": 82.01460531842358,
+  "tpqs_primary_score": 82.01460531842358,
+  "style_fidelity_score": 87.27801757748801,
+  "identity_preservation_score": 55.249975741826034,
+  "package_coherence_score": 99.46153221877474,
+  "visual_quality_score": 100.0,
+  "style_fidelity": {
+    "score": 87.27801757748801,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 95.01654568904424,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 96.7016255917449,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 77.03887347411326,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 71.14237209995346,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 95.01654568904424,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.5019914209842682,
+      "D_GR_vgg_gram": 0.15432938933372498,
+      "D_RR_vgg_gram": 0.13609511405229568,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.10840404033660889,
+          "target_to_theme_distance": 0.4273163676261902
+        },
+        {
+          "index": 1,
+          "score": 93.72444050258146,
+          "generated_to_theme_distance": 0.1637783646583557,
+          "target_to_theme_distance": 0.5772231221199036
+        },
+        {
+          "index": 2,
+          "score": 84.07397002230985,
+          "generated_to_theme_distance": 0.1954495906829834,
+          "target_to_theme_distance": 0.5087835788726807
+        },
+        {
+          "index": 3,
+          "score": 96.20958239656686,
+          "generated_to_theme_distance": 0.1496855616569519,
+          "target_to_theme_distance": 0.49464261531829834
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 13,
+        "misses": 3,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+    },
+    "dists_texture": {
+      "score": 96.7016255917449,
+      "reliable": true,
+      "D_RR": 0.2887457013130188,
+      "D_TR": 0.4234266523271799,
+      "D_GR": 0.2931879833340645
+    },
+    "visual_attributes": {
+      "score": 77.03887347411326,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 98.91904542063016,
+          "reliable": true,
+          "D_RR": 0.01698240637779236,
+          "D_OR": 0.2549835592508316,
+          "D_TR": 0.3113565146923065,
+          "D_GR": 0.013410747051239014,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 100.0
+            },
+            {
+              "app": "douban",
+              "score": 100.0
+            },
+            {
+              "app": "minecraft",
+              "score": 95.67618168252062
+            },
+            {
+              "app": "douyu",
+              "score": 100.0
+            }
+          ]
+        },
+        "background": {
+          "score": 98.46986136811938,
+          "reliable": true,
+          "D_RR": 0.0028330087661743164,
+          "D_OR": 0.1870257556438446,
+          "D_TR": 0.17004230618476868,
+          "D_GR": 0.0031532645225524902,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 100.0
+            },
+            {
+              "app": "douban",
+              "score": 100.0
+            },
+            {
+              "app": "minecraft",
+              "score": 93.87944547247753
+            },
+            {
+              "app": "douyu",
+              "score": 100.0
+            }
+          ]
+        },
+        "stroke": {
+          "score": 10.228432133055804,
+          "reliable": true,
+          "D_RR": 0.06395384669303894,
+          "D_OR": 0.09106612950563431,
+          "D_TR": 0.10173538327217102,
+          "D_GR": 0.10625192523002625,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 2.079408210622498
+            },
+            {
+              "app": "douban",
+              "score": 38.83432032160072
+            },
+            {
+              "app": "minecraft",
+              "score": 0.0
+            },
+            {
+              "app": "douyu",
+              "score": 0.0
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 100.0,
+          "reliable": true,
+          "D_RR": 0.005031615495681763,
+          "D_OR": 0.05588660389184952,
+          "D_TR": 0.020682603120803833,
+          "D_GR": 0.0027057230472564697,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 100.0
+            },
+            {
+              "app": "douban",
+              "score": 100.0
+            },
+            {
+              "app": "minecraft",
+              "score": 100.0
+            },
+            {
+              "app": "douyu",
+              "score": 100.0
+            }
+          ]
+        },
+        "composition": {
+          "score": 54.615901922874244,
+          "reliable": true,
+          "D_RR": 0.0026614367961883545,
+          "D_OR": 0.017083443701267242,
+          "D_TR": 0.022545889019966125,
+          "D_GR": 0.0048791468143463135,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 10.617727242502827
+            },
+            {
+              "app": "douban",
+              "score": 100.0
+            },
+            {
+              "app": "minecraft",
+              "score": 62.512206309566274
+            },
+            {
+              "app": "douyu",
+              "score": 45.333674139427885
+            }
+          ]
+        },
+        "complexity": {
+          "score": 100.0,
+          "reliable": true,
+          "D_RR": 0.004713565111160278,
+          "D_OR": 0.053408026695251465,
+          "D_TR": 0.017902150750160217,
+          "D_GR": 0.0025759637355804443,
+          "per_app": [
+            {
+              "app": "qq_music",
+              "score": 100.0
+            },
+            {
+              "app": "douban",
+              "score": 100.0
+            },
+            {
+              "app": "minecraft",
+              "score": 100.0
+            },
+            {
+              "app": "douyu",
+              "score": 100.0
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "qq_music",
+          "score": 68.78285590885422
+        },
+        {
+          "app": "douban",
+          "score": 89.80572005360011
+        },
+        {
+          "app": "minecraft",
+          "score": 75.34463891076074
+        },
+        {
+          "app": "douyu",
+          "score": 74.22227902323799
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 71.14237209995346,
+      "reliable": true,
+      "prototype_count": 32,
+      "reference_coverage": 0.6726954281330109,
+      "target_coverage": 0.4262752830982208,
+      "generated_coverage": 0.6015844196081161,
+      "per_app": [
+        {
+          "app": "qq_music",
+          "score": 83.98074797285476,
+          "target_coverage": 0.4721910357475281,
+          "generated_coverage": 0.6405761241912842
+        },
+        {
+          "app": "douban",
+          "score": 92.56211202533228,
+          "target_coverage": 0.4021669626235962,
+          "generated_coverage": 0.652573823928833
+        },
+        {
+          "app": "minecraft",
+          "score": 32.348868424039914,
+          "target_coverage": 0.3936192989349365,
+          "generated_coverage": 0.48389726877212524
+        },
+        {
+          "app": "douyu",
+          "score": 81.57461770686488,
+          "target_coverage": 0.4371238350868225,
+          "generated_coverage": 0.6292904615402222
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 55.249975741826034,
+    "p10_score": 25.584910193312155,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 31.878652355245972,
+        "reliable": true,
+        "weight": 0.5
+      },
+      "dists_structure": {
+        "score": 91.09981459923253,
+        "reliable": true,
+        "weight": 0.3
+      },
+      "lpips_content": {
+        "score": 59.90352592216643,
+        "reliable": true,
+        "weight": 0.2
+      }
+    },
+    "dino_dense": {
+      "score": 31.878652355245972,
+      "p10_score": 0.0,
+      "reliable": true,
+      "positive_reference_similarity": 0.6535692363977432,
+      "distractor_similarity": 0.5355434864759445,
+      "per_app": [
+        {
+          "app": "qq_music",
+          "score": 98.6885546426307,
+          "raw_correspondence": 0.6520213931798935,
+          "appearance_similarity": 0.6275171041488647,
+          "spatial_consistency": 0.7255342602729797
+        },
+        {
+          "app": "douban",
+          "score": 28.826054778353182,
+          "raw_correspondence": 0.5695656538009644,
+          "appearance_similarity": 0.551018238067627,
+          "spatial_consistency": 0.6252079010009766
+        },
+        {
+          "app": "minecraft",
+          "score": 0.0,
+          "raw_correspondence": 0.4529677778482437,
+          "appearance_similarity": 0.44043582677841187,
+          "spatial_consistency": 0.49056363105773926
+        },
+        {
+          "app": "douyu",
+          "score": 0.0,
+          "raw_correspondence": 0.4340989887714386,
+          "appearance_similarity": 0.3730975389480591,
+          "spatial_consistency": 0.6171033382415771
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "qq_music",
+          "douban",
+          "minecraft",
+          "douyu"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.6520213931798935,
+            0.4532090276479721,
+            0.4071236625313759,
+            0.5010840147733688
+          ],
+          [
+            0.4775964394211769,
+            0.5695656538009644,
+            0.46393854916095734,
+            0.42669151723384857
+          ],
+          [
+            0.44124940037727356,
+            0.4688982665538788,
+            0.4529677778482437,
+            0.40669870376586914
+          ],
+          [
+            0.4462180733680725,
+            0.5323965474963188,
+            0.5342898517847061,
+            0.4340989887714386
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.6581622511148453,
+          0.6222447454929352,
+          0.6859801709651947,
+          0.6509727984666824,
+          0.5674556195735931,
+          0.6879403442144394,
+          0.6127392053604126,
+          0.656165674328804
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 91.09981459923253,
+      "p10_score": 75.07948087785108,
+      "positive_reference_distance": 0.8267776966094971,
+      "distractor_distance": 0.8440578281879425,
+      "per_app": [
+        {
+          "app": "qq_music",
+          "score": 100.0,
+          "distance": 0.7856273651123047
+        },
+        {
+          "app": "douban",
+          "score": 100.0,
+          "distance": 0.7269012331962585
+        },
+        {
+          "app": "minecraft",
+          "score": 100.0,
+          "distance": 0.7991583347320557
+        },
+        {
+          "app": "douyu",
+          "score": 64.39925839693011,
+          "distance": 0.8329295516014099
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 59.90352592216643,
+      "p10_score": 15.305329649784152,
+      "positive_reference_distance": 0.7943958044052124,
+      "distractor_distance": 0.9052593410015106,
+      "per_app": [
+        {
+          "app": "qq_music",
+          "score": 100.0,
+          "distance": 0.7553702592849731
+        },
+        {
+          "app": "douban",
+          "score": 100.0,
+          "distance": 0.7638881206512451
+        },
+        {
+          "app": "minecraft",
+          "score": 31.06135733070463,
+          "distance": 0.8708236217498779
+        },
+        {
+          "app": "douyu",
+          "score": 8.552746357961087,
+          "distance": 0.8957774639129639
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "qq_music",
+        "score": 99.34427732131536,
+        "components": {
+          "dino_dense": 98.6885546426307,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "douban",
+        "score": 64.41302738917659,
+        "components": {
+          "dino_dense": 28.826054778353182,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "minecraft",
+        "score": 36.212271466140926,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 100.0,
+          "lpips_content": 31.06135733070463
+        }
+      },
+      {
+        "app": "douyu",
+        "score": 21.03032679067125,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 64.39925839693011,
+          "lpips_content": 8.552746357961087
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 99.46153221877474,
+    "package_unity_score": 100.0,
+    "theme_membership_score": 98.92596391306364,
+    "generated_p90_distance": 0.050528526306152344,
+    "reference_p90_distance": 0.058747850358486176,
+    "reference_mad": 0.008234530687332153,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "qq_music",
+        "score": 100.0,
+        "distance_to_reference": 0.008536875247955322,
+        "internal_distance": 0.00878608226776123,
+        "is_outlier": false
+      },
+      {
+        "app": "douban",
+        "score": 100.0,
+        "distance_to_reference": 0.007403671741485596,
+        "internal_distance": 0.003642261028289795,
+        "is_outlier": false
+      },
+      {
+        "app": "minecraft",
+        "score": 95.70385565225459,
+        "distance_to_reference": 0.022709369659423828,
+        "internal_distance": 0.020229876041412354,
+        "is_outlier": false
+      },
+      {
+        "app": "douyu",
+        "score": 100.0,
+        "distance_to_reference": 0.010725617408752441,
+        "internal_distance": 0.009852290153503418,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "per_app": [
+      {
+        "app": "qq_music",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8873810172080994,
+          "contrast": 0.14231978356838226,
+          "saturation": 0.12669995427131653,
+          "sharpness": 0.0003512393741402775,
+          "edge_density": 0.012132294323979591,
+          "foreground_ratio": 0.4142468510841837,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.026068239795918366,
+          "border_edge_ratio": 0.0014349489795918368,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.15818954897967177,
+          "contrast": -0.35851713327601825,
+          "saturation": -0.5384288778242693,
+          "sharpness": -1.0817970238067922,
+          "edge_density": -1.0729329608938545,
+          "foreground_ratio": -0.38572254237288095,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.17703152492668628,
+          "border_edge_ratio": -0.43136627906976743,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "douban",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8904817700386047,
+          "contrast": 0.13719742000102997,
+          "saturation": 0.12055087834596634,
+          "sharpness": 0.0012004507007077336,
+          "edge_density": 0.0458984375,
+          "foreground_ratio": 0.4235989317602041,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.03579400510204082,
+          "border_edge_ratio": 0.00011957908163265306,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.32998481258078416,
+          "contrast": -0.5728601565533308,
+          "saturation": -0.8696188101375925,
+          "sharpness": 1.068523462846287,
+          "edge_density": 1.6151508379888269,
+          "foreground_ratio": -0.09961259887005673,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.6596649560117305,
+          "border_edge_ratio": -0.6901860465116278,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "minecraft",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8350889086723328,
+          "contrast": 0.1688583493232727,
+          "saturation": 0.1352836936712265,
+          "sharpness": 0.0013928719563409686,
+          "edge_density": 0.040183553890306124,
+          "foreground_ratio": 0.5390475526147959,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.009207589285714286,
+          "border_edge_ratio": 0.0003985969387755102,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -2.739021890055227,
+          "contrast": 0.7519773372067226,
+          "saturation": -0.0761076924358339,
+          "sharpness": 1.5557606853267236,
+          "edge_density": 1.160195530726257,
+          "foreground_ratio": 3.4323285310734426,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -0.6596649560117303,
+          "border_edge_ratio": -0.6352848837209302,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "douyu",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8560284972190857,
+          "contrast": 0.17320971190929413,
+          "saturation": 0.11384844034910202,
+          "sharpness": 0.0007801020401529968,
+          "edge_density": 0.035011758609693876,
+          "foreground_ratio": 0.44918885522959184,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.12699298469387754,
+          "border_edge_ratio": 0.01403061224489796,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -1.5788771346598252,
+          "contrast": 0.9340581676280807,
+          "saturation": -1.2306128868840627,
+          "sharpness": 0.004142538981827892,
+          "edge_density": 0.7484748603351954,
+          "foreground_ratio": 0.6832646892655364,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 5.185342375366569,
+          "border_edge_ratio": 2.047029069767442,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.8845258355140686,
+        "mad": 0.012174129486083984
+      },
+      "contrast": {
+        "median": 0.1508876159787178,
+        "mad": 0.016119182109832764
+      },
+      "saturation": {
+        "median": 0.13669675588607788,
+        "mad": 0.012523181736469269
+      },
+      "sharpness": {
+        "median": 0.0007784660556353629,
+        "mad": 0.00026637566043064
+      },
+      "edge_density": {
+        "median": 0.02560985331632653,
+        "mad": 0.00847267617984694
+      },
+      "foreground_ratio": {
+        "median": 0.42685497050382654,
+        "mad": 0.02204739317602042
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.02250079719387755,
+        "mad": 0.013592155612244895
+      },
+      "border_edge_ratio": {
+        "median": 0.003627232142857143,
+        "mad": 0.003427933673469388
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [
+    {
+      "type": "identity_below_35",
+      "app": "douyu",
+      "score": 21.03032679067125
+    },
+    {
+      "type": "identity_p10_below_45",
+      "score": 25.584910193312155
+    }
+  ],
+  "evaluation_confidence": "high",
+  "decision": "failed_hard_gate",
+  "per_app": [
+    {
+      "app": "qq_music",
+      "itte_score": 82.01460531842358,
+      "style_fidelity_score": 76.38180194085449,
+      "identity_preservation_score": 99.34427732131536,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 98.6885546426307, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "douban",
+      "itte_score": 82.01460531842358,
+      "style_fidelity_score": 91.1839160394662,
+      "identity_preservation_score": 64.41302738917659,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 28.826054778353182, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "minecraft",
+      "itte_score": 82.01460531842358,
+      "style_fidelity_score": 53.84675366740032,
+      "identity_preservation_score": 36.212271466140926,
+      "package_membership_score": 95.70385565225459,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 100.0, \"lpips_content\": 31.06135733070463}"
+    },
+    {
+      "app": "douyu",
+      "itte_score": 82.01460531842358,
+      "style_fidelity_score": 77.89844836505144,
+      "identity_preservation_score": 21.03032679067125,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 64.39925839693011, \"lpips_content\": 8.552746357961087}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 96.7016255917449,
+        "reliable": true,
+        "D_RR": 0.2887457013130188,
+        "D_TR": 0.4234266523271799,
+        "D_GR": 0.2931879833340645
+      },
+      "dists_structure": {
+        "score": 91.09981459923253,
+        "p10_score": 75.07948087785108,
+        "positive_reference_distance": 0.8267776966094971,
+        "distractor_distance": 0.8440578281879425,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 100.0,
+            "distance": 0.7856273651123047
+          },
+          {
+            "app": "douban",
+            "score": 100.0,
+            "distance": 0.7269012331962585
+          },
+          {
+            "app": "minecraft",
+            "score": 100.0,
+            "distance": 0.7991583347320557
+          },
+          {
+            "app": "douyu",
+            "score": 64.39925839693011,
+            "distance": 0.8329295516014099
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 59.90352592216643,
+        "p10_score": 15.305329649784152,
+        "positive_reference_distance": 0.7943958044052124,
+        "distractor_distance": 0.9052593410015106,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 100.0,
+            "distance": 0.7553702592849731
+          },
+          {
+            "app": "douban",
+            "score": 100.0,
+            "distance": 0.7638881206512451
+          },
+          {
+            "app": "minecraft",
+            "score": 31.06135733070463,
+            "distance": 0.8708236217498779
+          },
+          {
+            "app": "douyu",
+            "score": 8.552746357961087,
+            "distance": 0.8957774639129639
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 29,
+          "misses": 63
+        },
+        "dists_identity": {
+          "hits": 10,
+          "misses": 8
+        },
+        "lpips_identity": {
+          "hits": 10,
+          "misses": 8
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyin_huoshan.png": "47bff73352bf685c7e8b824ffc70e38da9d3e6be7eb65ed9ef3cf797ba1b5b1c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\quark.png": "7737b957a1a9d8337e405fa4fb0e78f224e2442528485e745dddeb6ab5f8e544",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\pinduoduo.png": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\youku.png": "bc6f70a2e27b9ab18010a533227bf13811e7d47b85b7868666417ce173d83ea7",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\alipay.png": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\douyin_huoshan.png": "5dbc563994fc2bbdce5e0d174c83bcdb658ceb226928bc9bb73c4e177a3d7fee",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\kuaishou.png": "158eef081db5edcc19a268254fa74df160c8abaeb8f526c36f4f7560c5607885",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\quark.png": "a8fbae7612ecafd18c5b8fdeeba34f33e36d37e4df0d0959ff74fbdba05e9d3e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\pinduoduo.png": "46d3a4e971842579de94ea394680d0d93664ca2b3be65b15f28c863e5040fe31",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\youku.png": "ea8abe3b1e282c55ca8a036879d1f1f9444409485a0d1b49d5d71354dfcae1be",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\bilibili.png": "cbb7bddae66cdd557cab30bcf7e59fc35c5e66e7e5685dc2835f89706a3a232a",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\alipay.png": "73d519d5e96eb125700bc0d0374f7297367c33d8533c4526348fc1821e81ea78",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\weibo.png": "cd9136720f9e5e79f567f199d46fb38e1c8a0d242f42218810cf779fa12eb255",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq_music.png": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douban.png": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\minecraft.png": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyu.png": "f1564930eb3400addce492075332dca63a3540ba968465ed57dbf289cb7a3565",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\qq_music.png": "3073353ef4b84a6b8e6c185f634505b27d9d63f0cf2c865642052f991f3d05e8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\douban.png": "9e80ab1bea76e2f90b0364954f57fafb0bdddc353d39a44d2daac53d02550203",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\minecraft.png": "f320cec740990253c0da315332ed9364961de3a8d83aefcb712c0f1ba8ee446e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_001\\douyu.png": "2a14730a0185c9fa935f561657c1beb8ddbb72a19c650063ff841edd8a0ae1ec"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d5aaa72998c12469f158789cbf072caaaee0ac8dfa3499e9c4f42fa46403bb13",
+    "scoring_config": {
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 0.5,
+        "dists_structure": 0.3,
+        "lpips_content": 0.2
+      }
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true
+  }
+}

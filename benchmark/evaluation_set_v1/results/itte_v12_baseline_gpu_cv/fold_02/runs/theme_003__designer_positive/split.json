@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_003",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "bilibili",
+    "douban",
+    "xingtu",
+    "jianying",
+    "genshin",
+    "lofter",
+    "quark",
+    "zepp_life"
+  ],
+  "query_apps": [
+    "minecraft",
+    "iqiyi",
+    "moji_weather",
+    "tencent_comics"
+  ],
+  "identity_disjoint": true
+}

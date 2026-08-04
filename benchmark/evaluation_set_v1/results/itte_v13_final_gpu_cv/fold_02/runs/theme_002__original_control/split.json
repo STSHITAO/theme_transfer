@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_002",
+  "scenario": "original_control",
+  "reference_apps": [
+    "lol_mobile",
+    "weibo",
+    "honor_of_kings",
+    "peace_elite",
+    "kuaishou",
+    "netease_music",
+    "bilibili",
+    "qq"
+  ],
+  "query_apps": [
+    "douyin",
+    "xiaohongshu",
+    "wechat",
+    "taobao"
+  ],
+  "identity_disjoint": true
+}

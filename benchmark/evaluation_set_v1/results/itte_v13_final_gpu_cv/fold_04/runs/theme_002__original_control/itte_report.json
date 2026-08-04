@@ -1,0 +1,1022 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.3-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_002",
+  "package_id": "benchmark_theme_002_original_control",
+  "itte_score": 43.31250000000001,
+  "tpqs": 43.31250000000001,
+  "tpqs_primary_score": 43.31250000000001,
+  "style_fidelity_score": 0.0,
+  "identity_preservation_score": 100.0,
+  "package_coherence_score": 0.0,
+  "visual_quality_score": 88.75,
+  "style_fidelity": {
+    "score": 0.0,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 0.0,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 0.0,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.3859054148197174,
+      "D_GR_vgg_gram": 0.3859054148197174,
+      "D_RR_vgg_gram": 0.12011208385229111,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.2516469955444336,
+          "target_to_theme_distance": 0.2516469955444336
+        },
+        {
+          "index": 1,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.573855996131897,
+          "target_to_theme_distance": 0.573855996131897
+        },
+        {
+          "index": 2,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.3169766068458557,
+          "target_to_theme_distance": 0.3169766068458557
+        },
+        {
+          "index": 3,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.40114206075668335,
+          "target_to_theme_distance": 0.40114206075668335
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 12,
+        "misses": 0,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+    },
+    "dists_texture": {
+      "score": 0.0,
+      "reliable": true,
+      "D_RR": 0.28825217485427856,
+      "D_TR": 0.37890323996543884,
+      "D_GR": 0.37890323996543884
+    },
+    "visual_attributes": {
+      "score": 0.0,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.03465065360069275,
+          "D_OR": 0.3904704079031944,
+          "D_TR": 0.49527934193611145,
+          "D_GR": 0.49527934193611145,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        },
+        "background": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.1063796877861023,
+          "D_OR": 0.24133162945508957,
+          "D_TR": 0.213893324136734,
+          "D_GR": 0.213893324136734,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        },
+        "stroke": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.05045357346534729,
+          "D_OR": 0.1037878766655922,
+          "D_TR": 0.12843210995197296,
+          "D_GR": 0.12843210995197296,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.003851562738418579,
+          "D_OR": 0.028876543045043945,
+          "D_TR": 0.03461219370365143,
+          "D_GR": 0.03461219370365143,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        },
+        "composition": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.01158595085144043,
+          "D_OR": 0.0292351096868515,
+          "D_TR": 0.022314921021461487,
+          "D_GR": 0.022314921021461487,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        },
+        "complexity": {
+          "score": 0.0,
+          "reliable": true,
+          "D_RR": 0.0016137361526489258,
+          "D_OR": 0.02829170972108841,
+          "D_TR": 0.03369140625,
+          "D_GR": 0.03369140625,
+          "per_app": [
+            {
+              "app": "douyin",
+              "score": 0.0
+            },
+            {
+              "app": "wechat",
+              "score": 0.0
+            },
+            {
+              "app": "netease_music",
+              "score": 0.0
+            },
+            {
+              "app": "bilibili",
+              "score": 0.0
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "douyin",
+          "score": 0.0
+        },
+        {
+          "app": "wechat",
+          "score": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 0.0
+        },
+        {
+          "app": "bilibili",
+          "score": 0.0
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 0.0,
+      "reliable": true,
+      "prototype_count": 27,
+      "reference_coverage": 0.7223741412162781,
+      "target_coverage": 0.5303530767560005,
+      "generated_coverage": 0.5303530767560005,
+      "per_app": [
+        {
+          "app": "douyin",
+          "score": 0.0,
+          "target_coverage": 0.4837474524974823,
+          "generated_coverage": 0.4837474524974823
+        },
+        {
+          "app": "wechat",
+          "score": 0.0,
+          "target_coverage": 0.5057488083839417,
+          "generated_coverage": 0.5057488083839417
+        },
+        {
+          "app": "netease_music",
+          "score": 0.0,
+          "target_coverage": 0.5996806621551514,
+          "generated_coverage": 0.5996806621551514
+        },
+        {
+          "app": "bilibili",
+          "score": 0.0,
+          "target_coverage": 0.5322353839874268,
+          "generated_coverage": 0.5322353839874268
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 1.0
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.0
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.0
+      }
+    },
+    "dino_dense": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "reliable": true,
+      "positive_reference_similarity": 0.5894550643861294,
+      "distractor_similarity": 0.49214033782482147,
+      "calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "per_app": [
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "wechat",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "raw_correspondence": 1.0,
+          "appearance_similarity": 1.0,
+          "spatial_consistency": 1.0,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "douyin",
+          "wechat",
+          "netease_music",
+          "bilibili"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            1.0,
+            0.5304563641548157,
+            0.695091649889946,
+            0.5020943656563759
+          ],
+          [
+            0.5304563418030739,
+            1.0,
+            0.6071428656578064,
+            0.6131733357906342
+          ],
+          [
+            0.695091649889946,
+            0.6071428656578064,
+            1.0,
+            0.6057376265525818
+          ],
+          [
+            0.5020943656563759,
+            0.6131733357906342,
+            0.6057376265525818,
+            1.0
+          ]
+        ],
+        "identity_gallery_paths": [
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\peace_elite.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\taobao.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xiaohongshu.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\honor_of_kings.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyin.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\netease_music.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png"
+        ],
+        "generated_to_identity_gallery_similarity": [
+          [
+            0.31590036675333977,
+            0.5150049328804016,
+            0.5613274574279785,
+            0.38128234446048737,
+            0.4706418141722679,
+            0.3955438435077667,
+            0.3735141232609749,
+            0.5408429652452469,
+            1.0,
+            0.5304563641548157,
+            0.695091649889946,
+            0.5020943656563759
+          ],
+          [
+            0.3920842781662941,
+            0.5821063816547394,
+            0.631691962480545,
+            0.4615052714943886,
+            0.5395813584327698,
+            0.5190042778849602,
+            0.44519882649183273,
+            0.6351892352104187,
+            0.5304563418030739,
+            1.0,
+            0.6071428656578064,
+            0.6131733357906342
+          ],
+          [
+            0.36029015481472015,
+            0.5959990620613098,
+            0.623889297246933,
+            0.4076320603489876,
+            0.525128997862339,
+            0.49419867992401123,
+            0.42179587483406067,
+            0.611421138048172,
+            0.695091649889946,
+            0.6071428656578064,
+            1.0,
+            0.6057376265525818
+          ],
+          [
+            0.37815061211586,
+            0.6409540176391602,
+            0.5865122675895691,
+            0.4452788457274437,
+            0.6176395416259766,
+            0.448614165186882,
+            0.42737428843975067,
+            0.583583727478981,
+            0.5020943656563759,
+            0.6131733357906342,
+            0.6057376265525818,
+            1.0
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.3816574215888977,
+          0.6297410652041435,
+          0.7798174470663071,
+          0.4264628291130066,
+          0.5491690635681152,
+          0.64164799451828,
+          0.43521061539649963,
+          0.6629608571529388
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.8699418306350708,
+      "distractor_distance": 1.1171292291661161,
+      "per_app": [
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "distance": 5.960464477539063e-08
+        },
+        {
+          "app": "wechat",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.00014448165893554688
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.7683379054069519,
+      "distractor_distance": 0.9561032581470394,
+      "per_app": [
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "wechat",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "netease_music",
+          "score": 100.0,
+          "distance": 0.0
+        },
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.0
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "wechat",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "netease_music",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "bilibili",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 0.0,
+    "package_unity_score": 3.0567499603673816,
+    "theme_membership_score": 0.0,
+    "generated_p90_distance": 0.34524792432785034,
+    "reference_p90_distance": 0.09028427302837372,
+    "reference_mad": 0.024367064237594604,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 0.0,
+        "distance_to_reference": 0.28680580854415894,
+        "internal_distance": 0.15757286548614502,
+        "is_outlier": false
+      },
+      {
+        "app": "wechat",
+        "score": 0.0,
+        "distance_to_reference": 0.31452906131744385,
+        "internal_distance": 0.12304627895355225,
+        "is_outlier": false
+      },
+      {
+        "app": "netease_music",
+        "score": 0.0,
+        "distance_to_reference": 0.2092658281326294,
+        "internal_distance": 0.052080392837524414,
+        "is_outlier": false
+      },
+      {
+        "app": "bilibili",
+        "score": 0.0,
+        "distance_to_reference": 0.3189864754676819,
+        "internal_distance": 0.09177523851394653,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 88.75,
+    "p10_score": 85.0,
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 92.5,
+        "warnings": [
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.2383456975221634,
+          "contrast": 0.32484281063079834,
+          "saturation": 0.4948703646659851,
+          "sharpness": 0.002666888991370797,
+          "edge_density": 0.0269351881377551,
+          "foreground_ratio": 0.25353256536989793,
+          "border_dark_ratio": 1.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 2.830739979085385,
+          "contrast": 2.160085886284502,
+          "saturation": 7.74285560205538,
+          "sharpness": -3.5655708019233767,
+          "edge_density": -1.8606718869365932,
+          "foreground_ratio": -2568.5923571423264,
+          "border_dark_ratio": 116.53749253731567,
+          "border_foreground_contact": -2377.3876666661035,
+          "border_edge_ratio": -281.6235882353004,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "wechat",
+        "score": 85.0,
+        "warnings": [
+          "saturation_outside_reference_envelope",
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.5723839402198792,
+          "contrast": 0.25833767652511597,
+          "saturation": 0.7139373421669006,
+          "sharpness": 0.0019917876925319433,
+          "edge_density": 0.018948301977040817,
+          "foreground_ratio": 0.27690031090561223,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 12.20339902468718,
+          "contrast": 0.7107172955039172,
+          "saturation": 14.022897497496007,
+          "sharpness": -4.568776967337065,
+          "edge_density": -2.6866638655462185,
+          "foreground_ratio": -2486.4259935059795,
+          "border_dark_ratio": -388.59253731344046,
+          "border_foreground_contact": -2377.3876666661035,
+          "border_edge_ratio": -281.6235882353004,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "netease_music",
+        "score": 92.5,
+        "warnings": [
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.31048110127449036,
+          "contrast": 0.30368971824645996,
+          "saturation": 0.47237473726272583,
+          "sharpness": 0.005699444562196732,
+          "edge_density": 0.02635722257653061,
+          "foreground_ratio": 0.6221500318877551,
+          "border_dark_ratio": 1.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.01162906568877551
+        },
+        "robust_z": {
+          "brightness": 4.854761357677102,
+          "contrast": 1.699089481841187,
+          "saturation": 7.097968434814026,
+          "sharpness": 0.9408320902719072,
+          "edge_density": -1.9204442322383504,
+          "foreground_ratio": -1272.4486298698669,
+          "border_dark_ratio": 116.53749253731567,
+          "border_foreground_contact": -2377.3876666661035,
+          "border_edge_ratio": -281.6235882353004,
+          "semi_transparent_ratio": 78.43804807079081
+        }
+      },
+      {
+        "app": "bilibili",
+        "score": 85.0,
+        "warnings": [
+          "saturation_outside_reference_envelope",
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.6714709401130676,
+          "contrast": 0.12878775596618652,
+          "saturation": 0.5839789509773254,
+          "sharpness": 0.001574153546243906,
+          "edge_density": 0.02687041613520408,
+          "foreground_ratio": 0.6243871572066326,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.7273198341836735,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 14.983645556791176,
+          "contrast": -2.1126073744058758,
+          "saturation": 10.297351316848202,
+          "sharpness": -5.189384794879476,
+          "edge_density": -1.8673705118411001,
+          "foreground_ratio": -1264.5823831166217,
+          "border_dark_ratio": -388.59253731344046,
+          "border_foreground_contact": -326.1207499999225,
+          "border_edge_ratio": -281.6235882353004,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.13745912909507751,
+        "mad": 0.02403894066810608
+      },
+      "contrast": {
+        "median": 0.22572599351406097,
+        "mad": 0.030949831008911133
+      },
+      "saturation": {
+        "median": 0.224775992333889,
+        "mad": 0.02352861315011978
+      },
+      "sharpness": {
+        "median": 0.00506631750613451,
+        "mad": 0.000453900545835495
+      },
+      "edge_density": {
+        "median": 0.04492685746173469,
+        "mad": 0.006522042410714284
+      },
+      "foreground_ratio": {
+        "median": 0.9840287189094388,
+        "mad": 0.00019182477678575394
+      },
+      "border_dark_ratio": {
+        "median": 0.7692920918367347,
+        "mad": 0.0013352997448979331
+      },
+      "border_foreground_contact": {
+        "median": 0.8429528061224489,
+        "mad": 0.00023915816326536277
+      },
+      "border_edge_ratio": {
+        "median": 0.14146205357142855,
+        "mad": 0.000338807397959176
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [],
+  "evaluation_confidence": "high",
+  "decision": "style_transfer_weak",
+  "per_app": [
+    {
+      "app": "douyin",
+      "itte_score": 43.31250000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": false,
+      "quality_warnings": "foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "wechat",
+      "itte_score": 43.31250000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 85.0,
+      "is_package_outlier": false,
+      "quality_warnings": "saturation_outside_reference_envelope|foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "netease_music",
+      "itte_score": 43.31250000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": false,
+      "quality_warnings": "foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "bilibili",
+      "itte_score": 43.31250000000001,
+      "style_fidelity_score": 0.0,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 85.0,
+      "is_package_outlier": false,
+      "quality_warnings": "saturation_outside_reference_envelope|foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.28825217485427856,
+        "D_TR": 0.37890323996543884,
+        "D_GR": 0.37890323996543884
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.8699418306350708,
+        "distractor_distance": 1.1171292291661161,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 100.0,
+            "distance": 5.960464477539063e-08
+          },
+          {
+            "app": "wechat",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.00014448165893554688
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.7683379054069519,
+        "distractor_distance": 0.9561032581470394,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0,
+            "distance": 0.0
+          },
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.0
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 60,
+          "misses": 0
+        },
+        "dists_identity": {
+          "hits": 18,
+          "misses": 0
+        },
+        "lpips_identity": {
+          "hits": 18,
+          "misses": 0
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    },
+    "identity_metric_validation": {
+      "dino_dense_used_in_primary_identity_score": true,
+      "dists_structure_used_in_primary_identity_score": false,
+      "lpips_content_used_in_primary_identity_score": false,
+      "basis": "Verified-label retrieval on 158 real original/designer pairs."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\peace_elite.png": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\taobao.png": "fac02adef4d50fe2f466015ecc20f2ab81c7d6b9506eec63608c1e3cb0e5d944",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xiaohongshu.png": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq.png": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\honor_of_kings.png": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\peace_elite.png": "01a169c04bf94b9e885fb09a8de8d0b9e7651f1cef4298afe3c0c3c8d75796ae",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\taobao.png": "7bed92285201ec692854a696281559bdd97d56978c86b91a9fbb23ae43bfa35e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\weibo.png": "ef072b009cfe602b64bd6b80bdd0cd1f95ec877dff43018e534a594f64997fa1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\lol_mobile.png": "54eff98fb671408b636f11125c1a074032f81ffa14397b1e2079da51d9420f43",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\xiaohongshu.png": "2f4d382259447f5c106ee0827f61b0db20b1e04c8ef02c94a091c12f845c57a3",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\qq.png": "d193fd1499ecc7f9b8e9c9450fd3dc15b048cf8fee3e01f273209c3545106187",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\honor_of_kings.png": "d1735e901df6024ae5559e7724a9ab06af0664cf6e3e4a33fa34591ba1811023",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\kuaishou.png": "934f5a2ae0b749306499039abd4d24da84b3eb044c72672b0ffa69b98cfdfef1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyin.png": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\netease_music.png": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d2f78ef47f8657b5ce1ca80f00207f1667b41e9edc9d5e080103b4fa9bedffa5",
+    "scoring_config": {
+      "itte_version": "v1.3-image-only",
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 1.0,
+        "dists_structure": 0.0,
+        "lpips_content": 0.0
+      },
+      "identity_calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "quality_rules_version": "reference-normalized-artifacts-v2-dark-border-diagnostic"
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true,
+    "compute_itte_v12_metrics_is_legacy_entrypoint_name": true
+  }
+}

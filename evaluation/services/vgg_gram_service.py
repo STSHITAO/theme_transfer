@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import hashlib
+import json
 import os
 from pathlib import Path
+from uuid import uuid4
 
 import numpy as np
 
@@ -14,6 +17,8 @@ def compute_vgg_gram_style_fit(
     target_paths: list[Path],
     root_dir: Path,
     enabled: bool,
+    device: str = "cpu",
+    image_size: int = 224,
 ) -> dict:
     if not enabled:
         return {
@@ -25,7 +30,12 @@ def compute_vgg_gram_style_fit(
         }
 
     try:
-        vectors = _extract_vgg_vectors([*theme_paths, *generated_paths, *target_paths], root_dir)
+        vectors, cache_info = _extract_vgg_vectors(
+            [*theme_paths, *generated_paths, *target_paths],
+            root_dir,
+            device=device,
+            image_size=image_size,
+        )
     except Exception as exc:
         return {
             "score": None,
@@ -69,31 +79,61 @@ def compute_vgg_gram_style_fit(
         "D_RR_vgg_gram": d_rr,
         "per_app": per_app,
         "layers": ["relu1_2", "relu2_2", "relu3_3", "relu4_3"],
-        "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2.",
+        "device": cache_info["device"],
+        "cache": cache_info,
+        "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3.",
     }
 
 
-def _extract_vgg_vectors(paths: list[Path], root_dir: Path) -> dict[str, np.ndarray]:
+def _extract_vgg_vectors(
+    paths: list[Path],
+    root_dir: Path,
+    device: str = "cpu",
+    image_size: int = 224,
+) -> tuple[dict[str, np.ndarray], dict]:
     os.environ["TORCH_HOME"] = str(root_dir / "models" / "torch")
     (root_dir / "models" / "torch").mkdir(parents=True, exist_ok=True)
+
+    unique_paths = list(dict.fromkeys(paths))
+    cache_dir = root_dir / "data" / "evaluations" / "_cache" / "vgg_gram"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    vectors: dict[str, np.ndarray] = {}
+    missing: list[tuple[Path, Path]] = []
+    for path in unique_paths:
+        cache_path = _vgg_cache_path(path, cache_dir, image_size)
+        cached = _load_cached_vector(cache_path)
+        if cached is None:
+            missing.append((path, cache_path))
+        else:
+            vectors[str(path)] = cached
 
     import torch
     from torchvision import models, transforms
 
-    weights = models.VGG16_Weights.DEFAULT
-    model = models.vgg16(weights=weights).features[:23].eval()
+    actual_device = device
+    if actual_device.startswith("cuda") and not torch.cuda.is_available():
+        actual_device = "cpu"
+    if not missing:
+        return vectors, {
+            "directory": str(cache_dir),
+            "hits": len(unique_paths),
+            "misses": 0,
+            "device": actual_device,
+        }
+
+    weights = models.VGG16_Weights.IMAGENET1K_V1
+    model = models.vgg16(weights=weights).features[:23].to(actual_device).eval()
     preprocess = transforms.Compose(
         [
-            transforms.Resize((224, 224)),
+            transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),
             transforms.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
         ]
     )
-    vectors = {}
     with torch.no_grad():
-        for path in paths:
-            image = load_image_view(path, "appearance", 224)
-            tensor = preprocess(image).unsqueeze(0)
+        for path, cache_path in missing:
+            image = load_image_view(path, "appearance", image_size)
+            tensor = preprocess(image).unsqueeze(0).to(actual_device)
             grams = []
             features = tensor
             for index, layer in enumerate(model):
@@ -101,8 +141,53 @@ def _extract_vgg_vectors(paths: list[Path], root_dir: Path) -> dict[str, np.ndar
                 if index in {3, 8, 15, 22}:
                     gram = _gram_matrix(features).cpu().numpy().reshape(-1).astype(np.float32)
                     grams.append(_l2_normalize(gram))
-            vectors[str(path)] = _l2_normalize(np.concatenate(grams).astype(np.float32))
-    return vectors
+            vector = _l2_normalize(np.concatenate(grams).astype(np.float32))
+            vectors[str(path)] = vector
+            _save_cached_vector(cache_path, vector)
+    return vectors, {
+        "directory": str(cache_dir),
+        "hits": len(unique_paths) - len(missing),
+        "misses": len(missing),
+        "device": actual_device,
+    }
+
+
+def _vgg_cache_path(path: Path, cache_dir: Path, image_size: int) -> Path:
+    stat = path.stat()
+    payload = {
+        "path": str(path.resolve()),
+        "size": stat.st_size,
+        "mtime_ns": stat.st_mtime_ns,
+        "view": "appearance-v1",
+        "image_size": image_size,
+        "model": "torchvision-vgg16-imagenet1k-v1",
+        "layers": [3, 8, 15, 22],
+        "format": 1,
+    }
+    digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
+    return cache_dir / f"{digest}.npy"
+
+
+def _load_cached_vector(path: Path) -> np.ndarray | None:
+    if not path.exists():
+        return None
+    try:
+        vector = np.load(path, allow_pickle=False).astype(np.float32, copy=False)
+        if vector.ndim != 1 or not np.all(np.isfinite(vector)):
+            return None
+        return vector
+    except Exception:
+        return None
+
+
+def _save_cached_vector(path: Path, vector: np.ndarray) -> None:
+    temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
+    try:
+        with temporary.open("wb") as handle:
+            np.save(handle, vector, allow_pickle=False)
+        os.replace(temporary, path)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def _gram_matrix(tensor):

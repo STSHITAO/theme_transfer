@@ -1,0 +1,232 @@
+﻿theme_id,app_name,app_slug,themed_icon_path,source_screenshot,crop_box,source_type,appstore_page,original_icon_status,notes
+theme_001,哔哩哔哩,bilibili,themed_icons/bilibili.png,26fa945a1d58919432eec99593d11de8.jpg,"45,439,583,979",appstore,https://apps.apple.com/cn/app/id736536022,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,斗鱼,douyu,themed_icons/douyu.png,26fa945a1d58919432eec99593d11de8.jpg,"636,439,1175,979",appstore,https://apps.apple.com/cn/app/id863882795,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,夸克,quark,themed_icons/quark.png,26fa945a1d58919432eec99593d11de8.jpg,"45,1163,584,1701",appstore,https://apps.apple.com/cn/app/id1160172628,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,钱包,mi_wallet,themed_icons/mi_wallet.png,26fa945a1d58919432eec99593d11de8.jpg,"636,1162,1175,1701",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,豆瓣,douban,themed_icons/douban.png,26fa945a1d58919432eec99593d11de8.jpg,"45,1885,587,2425",appstore,https://apps.apple.com/cn/app/id907002334,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,下载管理,download_manager,themed_icons/download_manager.png,26fa945a1d58919432eec99593d11de8.jpg,"636,1886,1176,2425",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,美团,meituan,themed_icons/meituan.png,6e724d2733633fa9333502b1001dd06e.jpg,"45,386,584,924",appstore,https://apps.apple.com/cn/app/id423084029,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,京东,jd,themed_icons/jd.png,6e724d2733633fa9333502b1001dd06e.jpg,"637,386,1176,924",appstore,https://apps.apple.com/cn/app/id414245413,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,短信,sms,themed_icons/sms.png,6e724d2733633fa9333502b1001dd06e.jpg,"45,1108,584,1647",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,原神,genshin,themed_icons/genshin.png,6e724d2733633fa9333502b1001dd06e.jpg,"637,1108,1175,1648",appstore,https://apps.apple.com/cn/app/id1467190251,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,王者营地,king_camp,themed_icons/king_camp.png,6e724d2733633fa9333502b1001dd06e.jpg,"45,1831,583,2370",appstore,https://apps.apple.com/cn/app/id1102305688,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,小米天气,mi_weather,themed_icons/mi_weather.png,6e724d2733633fa9333502b1001dd06e.jpg,"637,1831,1176,2370",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,支付宝,alipay,themed_icons/alipay.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"45,487,583,1026",appstore,https://apps.apple.com/cn/app/id333206289,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,QQ音乐,qq_music,themed_icons/qq_music.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"637,487,1176,1027",appstore,https://apps.apple.com/cn/app/id414603431,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,英雄联盟手游,lol_mobile,themed_icons/lol_mobile.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"44,1211,583,1750",appstore,https://apps.apple.com/cn/app/id1455054000,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,优酷,youku,themed_icons/youku.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"636,1210,1175,1750",appstore,https://apps.apple.com/cn/app/id336141475,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,抖音,douyin,themed_icons/douyin.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"45,1933,584,2473",appstore,https://apps.apple.com/cn/app/id1142110895,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,微信,wechat,themed_icons/wechat.png,6fe7d01575a481f7d74e7d27c20a56a9.jpg,"637,1934,1175,2473",appstore,https://apps.apple.com/cn/app/id414478124,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,网易云音乐,netease_music,themed_icons/netease_music.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"45,347,584,887",appstore,https://apps.apple.com/cn/app/id944848654,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,电话,phone,themed_icons/phone.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"636,347,1176,886",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,微博,weibo,themed_icons/weibo.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"45,1070,583,1610",appstore,https://apps.apple.com/cn/app/id350962117,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,拼多多,pinduoduo,themed_icons/pinduoduo.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"637,1070,1175,1610",appstore,https://apps.apple.com/cn/app/id1044283059,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,QQ邮箱,qq_mail,themed_icons/qq_mail.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"45,1793,583,2332",appstore,https://apps.apple.com/cn/app/id473225145,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,抖音火山版,douyin_huoshan,themed_icons/douyin_huoshan.png,8751e1545ff689e44c0b2a2b1913d8ff.jpg,"637,1793,1176,2332",appstore,https://apps.apple.com/cn/app/id1086047750,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,我的世界,minecraft,themed_icons/minecraft.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"45,342,583,881",appstore,https://apps.apple.com/cn/app/id1243986797,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,和平精英,peace_elite,themed_icons/peace_elite.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"637,342,1175,882",appstore,https://apps.apple.com/cn/app/id1321803705,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,快手,kuaishou,themed_icons/kuaishou.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"44,1065,583,1605",appstore,https://apps.apple.com/cn/app/id440948110,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,相机,camera,themed_icons/camera.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"636,1066,1176,1605",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配第三方原图
+theme_001,手机天猫,tmall,themed_icons/tmall.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"45,1789,584,2327",appstore,https://apps.apple.com/cn/app/id518966501,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_001,掌上英雄联盟,lol_assistant,themed_icons/lol_assistant.png,b2b71ef71365a8de433525fc56c87f6a.jpg,"636,1789,1175,2327",appstore,https://apps.apple.com/cn/app/id475666808,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,网易云音乐,netease_music,themed_icons/netease_music.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"36,490,592,1046",appstore,https://apps.apple.com/cn/app/id944848654,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,快手,kuaishou,themed_icons/kuaishou.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"628,490,1184,1046",appstore,https://apps.apple.com/cn/app/id440948110,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,微信,wechat,themed_icons/wechat.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"36,1213,592,1769",appstore,https://apps.apple.com/cn/app/id414478124,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,小米相册,mi_gallery,themed_icons/mi_gallery.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"628,1213,1184,1769",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,小米天气,mi_weather,themed_icons/mi_weather.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"36,1936,592,2492",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,英雄联盟手游,lol_mobile,themed_icons/lol_mobile.png,b8431bd75a9ef3bf96bafcaf5e0924d5.jpg,"628,1936,1184,2492",appstore,https://apps.apple.com/cn/app/id1455054000,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,王者荣耀,honor_of_kings,themed_icons/honor_of_kings.png,c56d81703ff5e929933760db4b4208f9.jpg,"36,322,592,878",appstore,https://apps.apple.com/cn/app/id989673964,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,日历,calendar,themed_icons/calendar.png,c56d81703ff5e929933760db4b4208f9.jpg,"628,322,1184,878",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,和平精英,peace_elite,themed_icons/peace_elite.png,c56d81703ff5e929933760db4b4208f9.jpg,"36,1045,592,1601",appstore,https://apps.apple.com/cn/app/id1321803705,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,淘宝,taobao,themed_icons/taobao.png,c56d81703ff5e929933760db4b4208f9.jpg,"628,1045,1184,1601",appstore,https://apps.apple.com/cn/app/id387682726,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,抖音,douyin,themed_icons/douyin.png,c56d81703ff5e929933760db4b4208f9.jpg,"36,1768,592,2324",appstore,https://apps.apple.com/cn/app/id1142110895,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,QQ,qq,themed_icons/qq.png,c56d81703ff5e929933760db4b4208f9.jpg,"628,1768,1184,2324",appstore,https://apps.apple.com/cn/app/id444934666,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,短信,sms,themed_icons/sms.png,d2573a37849be292e11a5f1db2b47993.jpg,"36,334,592,890",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,微博,weibo,themed_icons/weibo.png,d2573a37849be292e11a5f1db2b47993.jpg,"628,334,1184,890",appstore,https://apps.apple.com/cn/app/id350962117,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,哔哩哔哩,bilibili,themed_icons/bilibili.png,d2573a37849be292e11a5f1db2b47993.jpg,"36,1057,592,1613",appstore,https://apps.apple.com/cn/app/id736536022,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,主题壁纸,themes,themed_icons/themes.png,d2573a37849be292e11a5f1db2b47993.jpg,"628,1057,1184,1613",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,相机,camera,themed_icons/camera.png,d2573a37849be292e11a5f1db2b47993.jpg,"36,1780,592,2336",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,电话,phone,themed_icons/phone.png,d2573a37849be292e11a5f1db2b47993.jpg,"628,1780,1184,2336",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_002,小红书,xiaohongshu,themed_icons/xiaohongshu.png,e3e706cd8886ed04f59f1d96ec0780a3.jpg,"36,331,592,887",appstore,https://apps.apple.com/cn/app/id741292507,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_002,设置,settings,themed_icons/settings.png,e3e706cd8886ed04f59f1d96ec0780a3.jpg,"628,331,1184,887",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,Soul,soul,themed_icons/soul.png,00311e0f9bb3d52b112c251cbd4ac715.jpg,"37,733,591,1287",appstore,https://apps.apple.com/cn/app/id1032287195,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,快影,kuaiying,themed_icons/kuaiying.png,00311e0f9bb3d52b112c251cbd4ac715.jpg,"629,733,1183,1287",appstore,https://apps.apple.com/cn/app/id1195860596,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,QQ浏览器,qq_browser,themed_icons/qq_browser.png,00311e0f9bb3d52b112c251cbd4ac715.jpg,"37,1456,591,2010",appstore,https://apps.apple.com/cn/app/id370139302,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,网易云音乐,netease_music,themed_icons/netease_music.png,00311e0f9bb3d52b112c251cbd4ac715.jpg,"629,1456,1183,2010",appstore,https://apps.apple.com/cn/app/id944848654,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,企业微信,wecom,themed_icons/wecom.png,1a63ec94b79f978d952733b9c19320fa.jpg,"37,461,591,1015",appstore,https://apps.apple.com/cn/app/id1087897068,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,QQ飞车手游,qq_speed,themed_icons/qq_speed.png,1a63ec94b79f978d952733b9c19320fa.jpg,"629,461,1183,1015",appstore,https://apps.apple.com/cn/app/id1235504705,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,芒果TV,mango_tv,themed_icons/mango_tv.png,1a63ec94b79f978d952733b9c19320fa.jpg,"37,1184,591,1738",appstore,https://apps.apple.com/cn/app/id629774477,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,联系人,contacts,themed_icons/contacts.png,1a63ec94b79f978d952733b9c19320fa.jpg,"629,1184,1183,1738",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,爱奇艺极速版,iqiyi_lite,themed_icons/iqiyi_lite.png,1a63ec94b79f978d952733b9c19320fa.jpg,"37,1907,591,2461",appstore,https://apps.apple.com/cn/app/id1540397127,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,抖音火山版,douyin_huoshan,themed_icons/douyin_huoshan.png,1a63ec94b79f978d952733b9c19320fa.jpg,"629,1907,1183,2461",appstore,https://apps.apple.com/cn/app/id1086047750,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,短信,sms,themed_icons/sms.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"37,400,591,954",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,腾讯视频,tencent_video,themed_icons/tencent_video.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"629,400,1183,954",appstore,https://apps.apple.com/cn/app/id458318329,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,网易有道词典,youdao_dict,themed_icons/youdao_dict.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"37,1123,591,1677",appstore,https://apps.apple.com/cn/app/id353115739,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,虎牙直播,huya,themed_icons/huya.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"629,1123,1183,1677",appstore,https://apps.apple.com/cn/app/id871095743,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,哔哩哔哩,bilibili,themed_icons/bilibili.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"37,1846,591,2400",appstore,https://apps.apple.com/cn/app/id736536022,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,指南针,compass,themed_icons/compass.png,2e35f3c40fdd31d914796041cc84bcf3.jpg,"629,1846,1183,2400",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,腾讯地图,tencent_maps,themed_icons/tencent_maps.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"37,312,591,866",appstore,https://apps.apple.com/cn/app/id481623196,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,抖音,douyin,themed_icons/douyin.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"629,312,1183,866",appstore,https://apps.apple.com/cn/app/id1142110895,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,美团,meituan,themed_icons/meituan.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"37,1019,591,1573",appstore,https://apps.apple.com/cn/app/id423084029,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,王者荣耀,honor_of_kings,themed_icons/honor_of_kings.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"629,1019,1183,1573",appstore,https://apps.apple.com/cn/app/id989673964,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,万能遥控,mi_remote,themed_icons/mi_remote.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"37,1742,591,2296",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,腾讯会议,tencent_meeting,themed_icons/tencent_meeting.png,32dfa7d409eab4c19dc7c6d03767cf68.jpg,"629,1742,1183,2296",appstore,https://apps.apple.com/cn/app/id1484048379,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,派派,paipai,themed_icons/paipai.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"37,513,591,1067",appstore,https://apps.apple.com/cn/app/id793626080,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,酷狗音乐,kugou,themed_icons/kugou.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"629,513,1183,1067",appstore,https://apps.apple.com/cn/app/id472208016,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,Zepp Life,zepp_life,themed_icons/zepp_life.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"37,1236,591,1790",appstore,https://apps.apple.com/cn/app/id938688461,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,迷你世界,mini_world,themed_icons/mini_world.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"629,1236,1183,1790",appstore,https://apps.apple.com/cn/app/id1170455562,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,主题壁纸,themes,themed_icons/themes.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"37,1959,591,2513",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,钉钉,dingtalk,themed_icons/dingtalk.png,391838ddbe822bbe1d748cc07ac1cc1a.jpg,"629,1959,1183,2513",appstore,https://apps.apple.com/cn/app/id930368978,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,豆瓣,douban,themed_icons/douban.png,4c2a3e1fc447695cabe7123b056bd41a.jpg,"37,491,591,1045",appstore,https://apps.apple.com/cn/app/id907002334,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米视频,mi_video,themed_icons/mi_video.png,4c2a3e1fc447695cabe7123b056bd41a.jpg,"629,491,1183,1045",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,录音机,recorder,themed_icons/recorder.png,4c2a3e1fc447695cabe7123b056bd41a.jpg,"37,1214,591,1768",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,日历,calendar,themed_icons/calendar.png,4c2a3e1fc447695cabe7123b056bd41a.jpg,"629,1214,1183,1768",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,LOFTER,lofter,themed_icons/lofter.png,4c2a3e1fc447695cabe7123b056bd41a.jpg,"37,1937,591,2491",appstore,https://apps.apple.com/cn/app/id494514224,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,服务与反馈,service_feedback,themed_icons/service_feedback.png,7277bb1b57205aef4ee944fd54790fed.jpg,"37,471,591,1025",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,小爱视觉,xiaoai_vision,themed_icons/xiaoai_vision.png,7277bb1b57205aef4ee944fd54790fed.jpg,"629,471,1183,1025",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,唯品会,vipshop,themed_icons/vipshop.png,7277bb1b57205aef4ee944fd54790fed.jpg,"37,1194,591,1748",appstore,https://apps.apple.com/cn/app/id417200582,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,米游社,miyoushe,themed_icons/miyoushe.png,7277bb1b57205aef4ee944fd54790fed.jpg,"629,1194,1183,1748",appstore,https://apps.apple.com/cn/app/id1470182559,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,酷我音乐,kuwo,themed_icons/kuwo.png,7277bb1b57205aef4ee944fd54790fed.jpg,"37,1917,591,2471",appstore,https://apps.apple.com/cn/app/id588673713,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小爱同学,xiaoai,themed_icons/xiaoai.png,7277bb1b57205aef4ee944fd54790fed.jpg,"629,1917,1183,2471",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,携程旅行,ctrip,themed_icons/ctrip.png,77b168b65714a55a6a004637e33dcef9.jpg,"37,312,591,866",appstore,https://apps.apple.com/cn/app/id379395415,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,游戏中心,game_center,themed_icons/game_center.png,77b168b65714a55a6a004637e33dcef9.jpg,"629,312,1183,866",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,百度地图,baidu_maps,themed_icons/baidu_maps.png,77b168b65714a55a6a004637e33dcef9.jpg,"37,1030,591,1584",appstore,https://apps.apple.com/cn/app/id452186370,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,闲鱼,xianyu,themed_icons/xianyu.png,77b168b65714a55a6a004637e33dcef9.jpg,"629,1030,1183,1584",appstore,https://apps.apple.com/cn/app/id510909506,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,手机天猫,tmall,themed_icons/tmall.png,77b168b65714a55a6a004637e33dcef9.jpg,"37,1753,591,2307",appstore,https://apps.apple.com/cn/app/id518966501,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,下载管理,download_manager,themed_icons/download_manager.png,77b168b65714a55a6a004637e33dcef9.jpg,"629,1753,1183,2307",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,快看,kuaikan,themed_icons/kuaikan.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"37,461,591,1015",appstore,https://apps.apple.com/cn/app/id906936224,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米社区,mi_community,themed_icons/mi_community.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"629,461,1183,1015",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,QQ阅读,qq_reading,themed_icons/qq_reading.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"37,1184,591,1738",appstore,https://apps.apple.com/cn/app/id487608658,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米浏览器,mi_browser,themed_icons/mi_browser.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"629,1184,1183,1738",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,电话,phone,themed_icons/phone.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"37,1907,591,2461",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,微信读书,wechat_reading,themed_icons/wechat_reading.png,84adf87c7dffb4d6997b80f7d52fc3a9.jpg,"629,1907,1183,2461",appstore,https://apps.apple.com/cn/app/id952059546,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,微视,weishi,themed_icons/weishi.png,971b706f89253c6b168ad780336bcba8.jpg,"37,483,591,1037",appstore,https://apps.apple.com/cn/app/id691828408,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,英雄联盟手游,lol_mobile,themed_icons/lol_mobile.png,971b706f89253c6b168ad780336bcba8.jpg,"629,483,1183,1037",appstore,https://apps.apple.com/cn/app/id1455054000,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,百度贴吧,baidu_tieba,themed_icons/baidu_tieba.png,971b706f89253c6b168ad780336bcba8.jpg,"37,1206,591,1760",appstore,https://apps.apple.com/cn/app/id477927812,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,腾讯动漫,tencent_comics,themed_icons/tencent_comics.png,971b706f89253c6b168ad780336bcba8.jpg,"629,1206,1183,1760",appstore,https://apps.apple.com/cn/app/id569387346,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,阴阳师,onmyoji,themed_icons/onmyoji.png,971b706f89253c6b168ad780336bcba8.jpg,"37,1929,591,2483",appstore,https://apps.apple.com/cn/app/id895670960,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,原神,genshin,themed_icons/genshin.png,971b706f89253c6b168ad780336bcba8.jpg,"629,1929,1183,2483",appstore,https://apps.apple.com/cn/app/id1467190251,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,音乐,music,themed_icons/music.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"37,340,591,894",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,钱包,mi_wallet,themed_icons/mi_wallet.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"629,340,1183,894",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,和平营地,peace_camp,themed_icons/peace_camp.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"37,1063,591,1617",appstore,https://apps.apple.com/cn/app/id1336435685,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,Keep,keep,themed_icons/keep.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"629,1063,1183,1617",appstore,https://apps.apple.com/cn/app/id952694580,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,火影忍者,naruto_mobile,themed_icons/naruto_mobile.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"37,1786,591,2340",appstore,https://apps.apple.com/cn/app/id955396648,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,开心消消乐,anipop,themed_icons/anipop.png,9cbe99a90d7221ef87ce7edf01750329.jpg,"629,1786,1183,2340",appstore,https://apps.apple.com/cn/app/id791532221,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米笔记,mi_notes,themed_icons/mi_notes.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"37,343,591,897",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,拼多多,pinduoduo,themed_icons/pinduoduo.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"629,343,1183,897",appstore,https://apps.apple.com/cn/app/id1044283059,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,起点读书,qidian,themed_icons/qidian.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"37,1066,591,1620",appstore,https://apps.apple.com/cn/app/id534174796,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,米家,mi_home,themed_icons/mi_home.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"629,1066,1183,1620",appstore,https://apps.apple.com/cn/app/id957323480,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,QQ,qq,themed_icons/qq.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"37,1789,591,2343",appstore,https://apps.apple.com/cn/app/id444934666,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,电子邮件,email,themed_icons/email.png,a8c25c62911c2280ab06c4a48cad1de1.jpg,"629,1789,1183,2343",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,金铲铲之战,golden_spatula,themed_icons/golden_spatula.png,ab24a30f92331add477ec43197148c46.jpg,"37,312,591,866",appstore,https://apps.apple.com/cn/app/id1478101301,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,今日头条,toutiao,themed_icons/toutiao.png,ab24a30f92331add477ec43197148c46.jpg,"629,312,1183,866",appstore,https://apps.apple.com/cn/app/id529092160,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,全民K歌,karaoke,themed_icons/karaoke.png,ab24a30f92331add477ec43197148c46.jpg,"37,1033,591,1587",appstore,https://apps.apple.com/cn/app/id910513149,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,腾讯新闻,tencent_news,themed_icons/tencent_news.png,ab24a30f92331add477ec43197148c46.jpg,"629,1033,1183,1587",appstore,https://apps.apple.com/cn/app/id399363156,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,WPS Office,wps_office,themed_icons/wps_office.png,ab24a30f92331add477ec43197148c46.jpg,"37,1756,591,2310",appstore,https://apps.apple.com/cn/app/id599852710,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,哈啰,hello_bike,themed_icons/hello_bike.png,ab24a30f92331add477ec43197148c46.jpg,"629,1756,1183,2310",appstore,https://apps.apple.com/cn/app/id1165227346,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,喜马拉雅,ximalaya,themed_icons/ximalaya.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"37,320,591,874",appstore,https://apps.apple.com/cn/app/id876336838,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,掌上英雄联盟,lol_assistant,themed_icons/lol_assistant.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"629,320,1183,874",appstore,https://apps.apple.com/cn/app/id475666808,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,计算器,calculator,themed_icons/calculator.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"37,1043,591,1597",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,微信,wechat,themed_icons/wechat.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"629,1043,1183,1597",appstore,https://apps.apple.com/cn/app/id414478124,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,穿越火线,crossfire_mobile,themed_icons/crossfire_mobile.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"37,1766,591,2320",appstore,https://apps.apple.com/cn/app/id1042545880,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,高德地图,amap,themed_icons/amap.png,b4bbf5c2e289747ee03f8404c16accf7.jpg,"629,1766,1183,2320",appstore,https://apps.apple.com/cn/app/id461703208,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,美颜相机,beautycam,themed_icons/beautycam.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"37,335,591,889",appstore,https://apps.apple.com/cn/app/id592331499,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,我的世界,minecraft,themed_icons/minecraft.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"629,335,1183,889",appstore,https://apps.apple.com/cn/app/id1243986797,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,夸克,quark,themed_icons/quark.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"37,1058,591,1612",appstore,https://apps.apple.com/cn/app/id1160172628,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,墨迹天气,moji_weather,themed_icons/moji_weather.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"629,1058,1183,1612",appstore,https://apps.apple.com/cn/app/id434209233,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,番茄免费小说,fanqie_novel,themed_icons/fanqie_novel.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"37,1781,591,2335",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,小米有品,mi_you_pin,themed_icons/mi_you_pin.png,bb4f777416c556f11e7a443d8754ea9c.jpg,"629,1781,1183,2335",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,轻颜相机,ulike,themed_icons/ulike.png,c23504be36f69af564b192e47296a149.jpg,"37,335,591,889",appstore,https://apps.apple.com/cn/app/id1322169769,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米运动健康,mi_fitness,themed_icons/mi_fitness.png,c23504be36f69af564b192e47296a149.jpg,"629,335,1183,889",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,知乎,zhihu,themed_icons/zhihu.png,c23504be36f69af564b192e47296a149.jpg,"37,1058,591,1612",appstore,https://apps.apple.com/cn/app/id432274380,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,斗鱼,douyu,themed_icons/douyu.png,c23504be36f69af564b192e47296a149.jpg,"629,1058,1183,1612",appstore,https://apps.apple.com/cn/app/id863882795,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,京东,jd,themed_icons/jd.png,c23504be36f69af564b192e47296a149.jpg,"37,1781,591,2335",appstore,https://apps.apple.com/cn/app/id414245413,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,王者营地,king_camp,themed_icons/king_camp.png,c23504be36f69af564b192e47296a149.jpg,"629,1781,1183,2335",appstore,https://apps.apple.com/cn/app/id1102305688,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,QQ音乐,qq_music,themed_icons/qq_music.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"37,527,591,1081",appstore,https://apps.apple.com/cn/app/id414603431,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,西瓜视频,xigua_video,themed_icons/xigua_video.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"629,527,1183,1081",appstore,https://apps.apple.com/cn/app/id1134496215,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,相机,camera,themed_icons/camera.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"37,1250,591,1804",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,支付宝,alipay,themed_icons/alipay.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"629,1250,1183,1804",appstore,https://apps.apple.com/cn/app/id333206289,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,剪映,jianying,themed_icons/jianying.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"37,1973,591,2527",appstore,https://apps.apple.com/cn/app/id1458072671,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,哔哩哔哩漫画,bilibili_comics,themed_icons/bilibili_comics.png,c5a2e997abd27095e385ca92bf2581c9.jpg,"629,1973,1183,2527",appstore,https://apps.apple.com/cn/app/id1426252715,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,晋江小说阅读,jjwxc,themed_icons/jjwxc.png,c72c44f849431ec1eea99572d0cb16c9.jpg,"37,327,591,881",appstore,https://apps.apple.com/cn/app/id847276463,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,快手极速版,kuaishou_lite,themed_icons/kuaishou_lite.png,c72c44f849431ec1eea99572d0cb16c9.jpg,"629,327,1183,881",appstore,https://apps.apple.com/cn/app/id1467269885,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,小米相册,mi_gallery,themed_icons/mi_gallery.png,c72c44f849431ec1eea99572d0cb16c9.jpg,"37,1050,591,1604",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,美团外卖,meituan_waimai,themed_icons/meituan_waimai.png,c72c44f849431ec1eea99572d0cb16c9.jpg,"629,1050,1183,1604",appstore,https://apps.apple.com/cn/app/id737310995,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,设置,settings,themed_icons/settings.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"37,326,591,880",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,小红书,xiaohongshu,themed_icons/xiaohongshu.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"629,326,1183,880",appstore,https://apps.apple.com/cn/app/id741292507,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,微博,weibo,themed_icons/weibo.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"37,1049,591,1603",appstore,https://apps.apple.com/cn/app/id350962117,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,部落冲突,clash_of_clans,themed_icons/clash_of_clans.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"629,1049,1183,1603",appstore,https://apps.apple.com/cn/app/id529479190,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,大众点评,dianping,themed_icons/dianping.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"37,1772,591,2326",appstore,https://apps.apple.com/cn/app/id351091731,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,时钟,clock,themed_icons/clock.png,c9210c17bc1ed995f1dc0c6ef82b6d3b.jpg,"629,1772,1183,2326",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,小米天气,mi_weather,themed_icons/mi_weather.png,cc1ca92051337069dad5a652217c4880.jpg,"37,322,591,876",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,小米商城,mi_store,themed_icons/mi_store.png,cc1ca92051337069dad5a652217c4880.jpg,"629,322,1183,876",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,得物,dewu,themed_icons/dewu.png,cc1ca92051337069dad5a652217c4880.jpg,"37,1045,591,1599",appstore,https://apps.apple.com/cn/app/id1012871328,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,书旗小说,shuqinovel,themed_icons/shuqinovel.png,cc1ca92051337069dad5a652217c4880.jpg,"629,1045,1183,1599",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,七猫免费小说,qimao,themed_icons/qimao.png,cc1ca92051337069dad5a652217c4880.jpg,"37,1768,591,2322",appstore,https://apps.apple.com/cn/app/id1387717110,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,醒图,xingtu,themed_icons/xingtu.png,cc1ca92051337069dad5a652217c4880.jpg,"629,1768,1183,2322",appstore,https://apps.apple.com/cn/app/id1500526240,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,和平精英,peace_elite,themed_icons/peace_elite.png,f001693cc5159f51cac1a67aca420108.jpg,"37,410,591,964",appstore,https://apps.apple.com/cn/app/id1321803705,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,皮皮虾,pipixia,themed_icons/pipixia.png,f001693cc5159f51cac1a67aca420108.jpg,"629,410,1183,964",appstore,https://apps.apple.com/cn/app/id1393912674,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,今日头条极速版,toutiao_lite,themed_icons/toutiao_lite.png,f001693cc5159f51cac1a67aca420108.jpg,"37,1133,591,1687",appstore,https://apps.apple.com/cn/app/id1410120498,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,番茄畅听,fanqie_audio,themed_icons/fanqie_audio.png,f001693cc5159f51cac1a67aca420108.jpg,"629,1133,1183,1687",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,小米换机,mi_mover,themed_icons/mi_mover.png,f001693cc5159f51cac1a67aca420108.jpg,"37,1856,591,2410",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_003,暗区突围,arena_breakout,themed_icons/arena_breakout.png,f001693cc5159f51cac1a67aca420108.jpg,"629,1856,1183,2410",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,美图秀秀,meitu,themed_icons/meitu.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"37,364,591,918",appstore,https://apps.apple.com/cn/app/id416048305,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,百度网盘,baidu_netdisk,themed_icons/baidu_netdisk.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"629,364,1183,918",appstore,https://apps.apple.com/cn/app/id547166701,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_003,影视大全,yingshi_daquan,themed_icons/yingshi_daquan.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"37,1087,591,1641",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,使命召唤手游,cod_mobile,themed_icons/cod_mobile.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"629,1087,1183,1641",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,好看视频,haokan_video,themed_icons/haokan_video.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"37,1810,591,2364",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_003,爱奇艺,iqiyi,themed_icons/iqiyi.png,fb191d8bcec5042664f2c29f246b79b7.jpg,"629,1810,1183,2364",appstore,https://apps.apple.com/cn/app/id393765873,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,网易云音乐,netease_music,themed_icons/netease_music.png,2443ec4738577077e4d38ac4476d4e32.jpg,"37,367,591,921",appstore,https://apps.apple.com/cn/app/id944848654,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,小红书,xiaohongshu,themed_icons/xiaohongshu.png,2443ec4738577077e4d38ac4476d4e32.jpg,"629,367,1183,921",appstore,https://apps.apple.com/cn/app/id741292507,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,爱奇艺极速版,iqiyi_lite,themed_icons/iqiyi_lite.png,2443ec4738577077e4d38ac4476d4e32.jpg,"37,1090,591,1644",appstore,https://apps.apple.com/cn/app/id1540397127,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,抖音,douyin,themed_icons/douyin.png,2443ec4738577077e4d38ac4476d4e32.jpg,"629,1090,1183,1644",appstore,https://apps.apple.com/cn/app/id1142110895,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,QQ音乐,qq_music,themed_icons/qq_music.png,2443ec4738577077e4d38ac4476d4e32.jpg,"37,1813,591,2367",appstore,https://apps.apple.com/cn/app/id414603431,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,短信,sms,themed_icons/sms.png,2443ec4738577077e4d38ac4476d4e32.jpg,"629,1813,1183,2367",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,七猫免费小说,qimao,themed_icons/qimao.png,2d124277ef1d00341e3ca585469b06f8.jpg,"37,477,591,1031",appstore,https://apps.apple.com/cn/app/id1387717110,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,全球上网,global_internet,themed_icons/global_internet.png,2d124277ef1d00341e3ca585469b06f8.jpg,"629,477,1183,1031",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,哔哩哔哩,bilibili,themed_icons/bilibili.png,2d124277ef1d00341e3ca585469b06f8.jpg,"37,1200,591,1754",appstore,https://apps.apple.com/cn/app/id736536022,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,大众点评,dianping,themed_icons/dianping.png,2d124277ef1d00341e3ca585469b06f8.jpg,"629,1200,1183,1754",appstore,https://apps.apple.com/cn/app/id351091731,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,开心消消乐,anipop,themed_icons/anipop.png,2d124277ef1d00341e3ca585469b06f8.jpg,"37,1923,591,2477",appstore,https://apps.apple.com/cn/app/id791532221,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,QQ,qq,themed_icons/qq.png,2d124277ef1d00341e3ca585469b06f8.jpg,"629,1923,1183,2477",appstore,https://apps.apple.com/cn/app/id444934666,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,音乐,music,themed_icons/music.png,966148b22aa37ffca26c444dbcea83ff.jpg,"37,390,591,944",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,相机,camera,themed_icons/camera.png,966148b22aa37ffca26c444dbcea83ff.jpg,"629,390,1183,944",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,影视大全,yingshi_daquan,themed_icons/yingshi_daquan.png,966148b22aa37ffca26c444dbcea83ff.jpg,"37,1113,591,1667",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_004,斗鱼,douyu,themed_icons/douyu.png,966148b22aa37ffca26c444dbcea83ff.jpg,"629,1113,1183,1667",appstore,https://apps.apple.com/cn/app/id863882795,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,和平精英,peace_elite,themed_icons/peace_elite.png,966148b22aa37ffca26c444dbcea83ff.jpg,"37,1836,591,2390",appstore,https://apps.apple.com/cn/app/id1321803705,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,京东,jd,themed_icons/jd.png,966148b22aa37ffca26c444dbcea83ff.jpg,"629,1836,1183,2390",appstore,https://apps.apple.com/cn/app/id414245413,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,美团外卖,meituan_waimai,themed_icons/meituan_waimai.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"37,491,591,1045",appstore,https://apps.apple.com/cn/app/id737310995,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,设置,settings,themed_icons/settings.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"629,491,1183,1045",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,皮皮虾,pipixia,themed_icons/pipixia.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"37,1214,591,1768",appstore,https://apps.apple.com/cn/app/id1393912674,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,企业微信,wecom,themed_icons/wecom.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"629,1214,1183,1768",appstore,https://apps.apple.com/cn/app/id1087897068,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,饿了么,eleme,themed_icons/eleme.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"37,1937,591,2491",appstore,https://apps.apple.com/cn/app/id507161324,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,腾讯新闻,tencent_news,themed_icons/tencent_news.png,bbba29d809ae0b3839a6e0a5e5a0f12e.jpg,"629,1937,1183,2491",appstore,https://apps.apple.com/cn/app/id399363156,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,游戏中心,game_center,themed_icons/game_center.png,d24abad2ef9c95d7347d58ca06840074.jpg,"37,475,591,1029",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,文件管理,file_manager,themed_icons/file_manager.png,d24abad2ef9c95d7347d58ca06840074.jpg,"629,475,1183,1029",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,王者荣耀,honor_of_kings,themed_icons/honor_of_kings.png,d24abad2ef9c95d7347d58ca06840074.jpg,"37,1198,591,1752",appstore,https://apps.apple.com/cn/app/id989673964,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,醒图,xingtu,themed_icons/xingtu.png,d24abad2ef9c95d7347d58ca06840074.jpg,"629,1198,1183,1752",appstore,https://apps.apple.com/cn/app/id1500526240,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,拼多多,pinduoduo,themed_icons/pinduoduo.png,d24abad2ef9c95d7347d58ca06840074.jpg,"37,1921,591,2475",appstore,https://apps.apple.com/cn/app/id1044283059,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,部落冲突,clash_of_clans,themed_icons/clash_of_clans.png,d24abad2ef9c95d7347d58ca06840074.jpg,"629,1921,1183,2475",appstore,https://apps.apple.com/cn/app/id529479190,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,支付宝,alipay,themed_icons/alipay.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"37,335,591,889",appstore,https://apps.apple.com/cn/app/id333206289,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,快手极速版,kuaishou_lite,themed_icons/kuaishou_lite.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"629,335,1183,889",appstore,https://apps.apple.com/cn/app/id1467269885,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,抖音极速版,douyin_lite,themed_icons/douyin_lite.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"37,1058,591,1612",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_004,日历,calendar,themed_icons/calendar.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"629,1058,1183,1612",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,小米浏览器,mi_browser,themed_icons/mi_browser.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"37,1781,591,2335",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,携程旅行,ctrip,themed_icons/ctrip.png,d5987cfaf6bf812edbf8cdd3f8e558a5.jpg,"629,1781,1183,2335",appstore,https://apps.apple.com/cn/app/id379395415,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,小米社区,mi_community,themed_icons/mi_community.png,ecd48b5d4b4d809965d32750cce83759.jpg,"37,467,591,1021",appstore_unconfirmed,,APP_STORE_PAGE_NOT_CONFIRMED,未确认到准确的中国区 App Store 页面；未使用其他来源
+theme_004,金铲铲之战,golden_spatula,themed_icons/golden_spatula.png,ecd48b5d4b4d809965d32750cce83759.jpg,"629,467,1183,1021",appstore,https://apps.apple.com/cn/app/id1478101301,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,快手,kuaishou,themed_icons/kuaishou.png,ecd48b5d4b4d809965d32750cce83759.jpg,"37,1190,591,1744",appstore,https://apps.apple.com/cn/app/id440948110,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,知乎,zhihu,themed_icons/zhihu.png,ecd48b5d4b4d809965d32750cce83759.jpg,"629,1190,1183,1744",appstore,https://apps.apple.com/cn/app/id432274380,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,电话,phone,themed_icons/phone.png,ecd48b5d4b4d809965d32750cce83759.jpg,"37,1913,591,2467",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,微信读书,wechat_reading,themed_icons/wechat_reading.png,ecd48b5d4b4d809965d32750cce83759.jpg,"629,1913,1183,2467",appstore,https://apps.apple.com/cn/app/id952059546,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,最右,zuiyou,themed_icons/zuiyou.png,ee5ddd609afca6801bc1e816868ec853.jpg,"37,452,591,1006",appstore,https://apps.apple.com/cn/app/id942443986,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,西瓜视频,xigua_video,themed_icons/xigua_video.png,ee5ddd609afca6801bc1e816868ec853.jpg,"629,452,1183,1006",appstore,https://apps.apple.com/cn/app/id1134496215,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,小米天气,mi_weather,themed_icons/mi_weather.png,ee5ddd609afca6801bc1e816868ec853.jpg,"37,1175,591,1729",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,派派,paipai,themed_icons/paipai.png,ee5ddd609afca6801bc1e816868ec853.jpg,"629,1175,1183,1729",appstore,https://apps.apple.com/cn/app/id793626080,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,微信,wechat,themed_icons/wechat.png,ee5ddd609afca6801bc1e816868ec853.jpg,"37,1898,591,2452",appstore,https://apps.apple.com/cn/app/id414478124,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,QQ浏览器,qq_browser,themed_icons/qq_browser.png,ee5ddd609afca6801bc1e816868ec853.jpg,"629,1898,1183,2452",appstore,https://apps.apple.com/cn/app/id370139302,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,抖音火山版,douyin_huoshan,themed_icons/douyin_huoshan.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"37,464,591,1018",appstore,https://apps.apple.com/cn/app/id1086047750,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,网易有道词典,youdao_dict,themed_icons/youdao_dict.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"629,464,1183,1018",appstore,https://apps.apple.com/cn/app/id353115739,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,酷狗音乐,kugou,themed_icons/kugou.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"37,1187,591,1741",appstore,https://apps.apple.com/cn/app/id472208016,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,米家,mi_home,themed_icons/mi_home.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"629,1187,1183,1741",appstore,https://apps.apple.com/cn/app/id957323480,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格
+theme_004,时钟,clock,themed_icons/clock.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"37,1910,591,2464",system_app,,NO_APP_STORE_PAGE_SYSTEM_APP,小米/系统应用；按 App Store-only 规则不匹配其他来源
+theme_004,夸克,quark,themed_icons/quark.png,fba6ce2aa7121a774c5435ad4d3b58f0.jpg,"629,1910,1183,2464",appstore,https://apps.apple.com/cn/app/id1160172628,APP_STORE_PAGE_CONFIRMED,主题图标裁切不含下方文字与价格

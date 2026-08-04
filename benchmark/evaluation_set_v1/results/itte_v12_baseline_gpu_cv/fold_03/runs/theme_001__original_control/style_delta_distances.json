@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 5,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.03069809079170227,
+        "D_OR": 0.2875622734427452,
+        "D_TR": 0.3048730492591858,
+        "D_GR": 0.3048730492591858,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0017406940460205078,
+        "D_OR": 0.1901971399784088,
+        "D_TR": 0.09395410120487213,
+        "D_GR": 0.09395410120487213,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": null,
+        "reliable": false,
+        "D_RR": 0.12332630157470703,
+        "D_OR": 0.10540176182985306,
+        "D_TR": 0.15392190217971802,
+        "D_GR": 0.15392190217971802,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": null
+          },
+          {
+            "app": "king_camp",
+            "score": null
+          },
+          {
+            "app": "meituan",
+            "score": null
+          },
+          {
+            "app": "netease_music",
+            "score": null
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.004388332366943359,
+        "D_OR": 0.03544187545776367,
+        "D_TR": 0.04888951778411865,
+        "D_GR": 0.04888951778411865,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.006192654371261597,
+        "D_OR": 0.019609741866588593,
+        "D_TR": 0.0228157639503479,
+        "D_GR": 0.0228157639503479,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0035992860794067383,
+        "D_OR": 0.031752899289131165,
+        "D_TR": 0.046672508120536804,
+        "D_GR": 0.046672508120536804,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 0.0
+          },
+          {
+            "app": "king_camp",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 0.0
+      },
+      {
+        "app": "king_camp",
+        "score": 0.0
+      },
+      {
+        "app": "meituan",
+        "score": 0.0
+      },
+      {
+        "app": "netease_music",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.5693033337593079,
+    "D_GR_vgg_gram": 0.5693033337593079,
+    "D_RR_vgg_gram": 0.15497495979070663,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.6228232979774475,
+        "target_to_theme_distance": 0.6228232979774475
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.48184823989868164,
+        "target_to_theme_distance": 0.48184823989868164
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.6042548418045044,
+        "target_to_theme_distance": 0.6042548418045044
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5682869553565979,
+        "target_to_theme_distance": 0.5682869553565979
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.31102392077445984,
+    "D_TR": 0.42115855403244495,
+    "D_GR": 0.42115855403244495
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 31,
+    "reference_coverage": 0.6167445480823517,
+    "target_coverage": 0.3931746482849121,
+    "generated_coverage": 0.3931746482849121,
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 0.0,
+        "target_coverage": 0.40673545002937317,
+        "generated_coverage": 0.40673545002937317
+      },
+      {
+        "app": "king_camp",
+        "score": 0.0,
+        "target_coverage": 0.433906614780426,
+        "generated_coverage": 0.433906614780426
+      },
+      {
+        "app": "meituan",
+        "score": 0.0,
+        "target_coverage": 0.3041554093360901,
+        "generated_coverage": 0.3041554093360901
+      },
+      {
+        "app": "netease_music",
+        "score": 0.0,
+        "target_coverage": 0.42790111899375916,
+        "generated_coverage": 0.42790111899375916
+      }
+    ]
+  }
+}

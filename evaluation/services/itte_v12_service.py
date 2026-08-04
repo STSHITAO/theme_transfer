@@ -16,6 +16,9 @@ from evaluation.services.vgg_gram_service import compute_vgg_gram_style_fit
 
 
 STYLE_GROUPS = ("color", "background", "stroke", "texture_material", "composition", "complexity")
+ITTE_VERSION = "v1.3-image-only"
+IDENTITY_CALIBRATION = "dino-dense-same-run-gallery-percentile-v1"
+QUALITY_RULES_VERSION = "reference-normalized-artifacts-v2-dark-border-diagnostic"
 STYLE_COMPONENT_WEIGHTS = {
     "vgg_gram": 0.40,
     "dists_texture": 0.20,
@@ -23,9 +26,9 @@ STYLE_COMPONENT_WEIGHTS = {
     "dino_motif": 0.15,
 }
 IDENTITY_COMPONENT_WEIGHTS = {
-    "dino_dense": 0.50,
-    "dists_structure": 0.30,
-    "lpips_content": 0.20,
+    "dino_dense": 1.00,
+    "dists_structure": 0.00,
+    "lpips_content": 0.00,
 }
 
 
@@ -67,6 +70,8 @@ def compute_itte_v12_metrics(
         target_paths,
         root_dir,
         enabled=bool(config.use_vgg_gram),
+        device=config.device,
+        image_size=config.image_size,
     )
     perceptual = compute_perceptual_scores(
         reference_raw_paths,
@@ -78,6 +83,7 @@ def compute_itte_v12_metrics(
         config.device,
         enabled=bool(config.use_perceptual),
         image_size=config.image_size,
+        batch_size=config.batch_size,
     )
     motif = _motif_style_score(
         reference_raw_paths,
@@ -117,16 +123,18 @@ def compute_itte_v12_metrics(
         dense_structure_features,
     )
     identity_components = {
-        "dino_dense": _component(dense_identity["score"], dense_identity["reliable"], 0.50),
+        "dino_dense": _component(
+            dense_identity["score"], dense_identity["reliable"], IDENTITY_COMPONENT_WEIGHTS["dino_dense"]
+        ),
         "dists_structure": _component(
             perceptual["dists_structure"].get("score"),
             bool(perceptual["dists_structure"].get("reliable")),
-            0.30,
+            IDENTITY_COMPONENT_WEIGHTS["dists_structure"],
         ),
         "lpips_content": _component(
             perceptual["lpips_content"].get("score"),
             bool(perceptual["lpips_content"].get("reliable")),
-            0.20,
+            IDENTITY_COMPONENT_WEIGHTS["lpips_content"],
         ),
     }
     identity_score, identity_available_weight = _weighted_available(identity_components)
@@ -174,7 +182,7 @@ def compute_itte_v12_metrics(
     report = {
         "eval_id": None,
         "evaluation_framework": "ITTE",
-        "itte_version": "v1.2-image-only",
+        "itte_version": ITTE_VERSION,
         "evaluation_scope": "observable_image_transfer_only",
         "theme_id": resolved.theme_id,
         "package_id": resolved.package_id,
@@ -199,17 +207,24 @@ def compute_itte_v12_metrics(
             "openclip_used_in_score": False,
             "text_policy": "out_of_scope",
             "perceptual_backend": perceptual,
+            "identity_metric_validation": {
+                "dino_dense_used_in_primary_identity_score": True,
+                "dists_structure_used_in_primary_identity_score": False,
+                "lpips_content_used_in_primary_identity_score": False,
+                "basis": "Verified-label retrieval on 158 real original/designer pairs.",
+            },
         },
         "provenance": provenance,
         "compatibility": {
             "tpqs_fields_are_aliases": True,
             "legacy_v11_scores_removed_from_main_decision": True,
+            "compute_itte_v12_metrics_is_legacy_entrypoint_name": True,
         },
     }
     per_app_rows = report["per_app"]
     style_pairwise = _style_pairwise_payload(theme_paths, target_paths, generated_paths, app_names, style_features)
     style_delta = {
-        "framework": "ITTE v1.2 image-only",
+        "framework": "ITTE v1.3 image-only",
         "attribute_transfer": attributes,
         "vgg_gram": vgg,
         "dists_texture": perceptual["dists_texture"],
@@ -326,25 +341,38 @@ def _motif_style_score(raw_paths, theme_paths, target_paths, generated_paths, ap
 
 def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths, app_names, dense):
     positive = [dense_correspondence(dense[str(raw)], dense[str(theme)])["score"] for raw, theme in zip(raw_paths, theme_paths)]
+    gallery_paths = list(dict.fromkeys([*raw_paths, *target_paths]))
     distractor = [
-        dense_correspondence(dense[str(target_paths[left])], dense[str(target_paths[right])])["score"]
-        for left in range(len(target_paths))
-        for right in range(left + 1, len(target_paths))
+        dense_correspondence(dense[str(gallery_paths[left])], dense[str(gallery_paths[right])])["score"]
+        for left in range(len(gallery_paths))
+        for right in range(left + 1, len(gallery_paths))
     ]
     positive_baseline = float(np.median(positive)) if positive else 1.0
     distractor_baseline = float(np.median(distractor)) if distractor else positive_baseline - 0.20
-    if positive_baseline <= distractor_baseline + 1e-6:
-        positive_baseline = distractor_baseline + max(float(np.std(positive)) * 3.0, 0.08)
 
     per_app = []
     generated_to_target = []
+    generated_to_gallery = []
     for app, generated_path, target_path in zip(app_names, generated_paths, target_paths):
         row = []
         for candidate_target in target_paths:
             row.append(dense_correspondence(dense[str(generated_path)], dense[str(candidate_target)])["score"])
         generated_to_target.append(row)
         own = dense_correspondence(dense[str(generated_path)], dense[str(target_path)])
-        score = float(np.clip((own["score"] - distractor_baseline) / max(positive_baseline - distractor_baseline, 1e-8), 0.0, 1.0) * 100.0)
+        gallery_scores = [
+            dense_correspondence(dense[str(generated_path)], dense[str(candidate)])["score"]
+            for candidate in gallery_paths
+        ]
+        generated_to_gallery.append(gallery_scores)
+        distractor_scores = [
+            score
+            for candidate, score in zip(gallery_paths, gallery_scores)
+            if str(candidate) != str(target_path)
+        ]
+        wins = sum(own["score"] > value + 1e-8 for value in distractor_scores)
+        ties = sum(abs(own["score"] - value) <= 1e-8 for value in distractor_scores)
+        score = float((wins + ties) / max(len(distractor_scores), 1) * 100.0)
+        rank = int(1 + sum(value > own["score"] for value in distractor_scores))
         per_app.append(
             {
                 "app": app,
@@ -352,6 +380,9 @@ def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths,
                 "raw_correspondence": own["score"],
                 "appearance_similarity": own["appearance_similarity"],
                 "spatial_consistency": own["spatial_consistency"],
+                "retrieval_rank": rank,
+                "gallery_size": len(gallery_paths),
+                "distractor_count": len(distractor_scores),
             }
         )
     scores = [item["score"] for item in per_app]
@@ -361,10 +392,13 @@ def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths,
         "reliable": bool(positive and distractor),
         "positive_reference_similarity": positive_baseline,
         "distractor_similarity": distractor_baseline,
+        "calibration": IDENTITY_CALIBRATION,
         "per_app": per_app,
         "pairwise": {
             "app_names": app_names,
             "generated_to_target_dense_similarity": generated_to_target,
+            "identity_gallery_paths": [str(path) for path in gallery_paths],
+            "generated_to_identity_gallery_similarity": generated_to_gallery,
             "reference_pair_identity_similarity": positive,
         },
     }
@@ -460,11 +494,6 @@ def _per_app_report(app_names, style, identity, package, quality, total):
 
 def _hard_failures(identity, package, quality, style_available_weight):
     failures = []
-    for item in identity["per_app"]:
-        if item["score"] < 35.0:
-            failures.append({"type": "identity_below_35", "app": item["app"], "score": item["score"]})
-    if identity["p10_score"] < 45.0:
-        failures.append({"type": "identity_p10_below_45", "score": identity["p10_score"]})
     failures.extend({"type": "visual_quality", **item} for item in quality["hard_failures"])
     if package["outlier_apps"]:
         failures.append({"type": "severe_package_outliers", "apps": package["outlier_apps"]})
@@ -614,6 +643,7 @@ def _provenance(root, paths, config):
     except Exception:
         commit = "unknown"
     config_payload = {
+        "itte_version": ITTE_VERSION,
         "embedding_backend": config.embedding_backend,
         "model_source": config.model_source,
         "model_id": config.model_id,
@@ -622,6 +652,8 @@ def _provenance(root, paths, config):
         "use_vgg_gram": config.use_vgg_gram,
         "style_weights": STYLE_COMPONENT_WEIGHTS,
         "identity_weights": IDENTITY_COMPONENT_WEIGHTS,
+        "identity_calibration": IDENTITY_CALIBRATION,
+        "quality_rules_version": QUALITY_RULES_VERSION,
     }
     return {
         "input_sha256": hashes,

@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.013113528490066528,
+        "D_OR": 0.18454736471176147,
+        "D_TR": 0.3452792912721634,
+        "D_GR": 0.3452792912721634,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.004247874021530151,
+        "D_OR": 0.07792023569345474,
+        "D_TR": 0.2600196450948715,
+        "D_GR": 0.2600196450948715,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.07137945294380188,
+        "D_OR": 0.09474314749240875,
+        "D_TR": 0.08090454339981079,
+        "D_GR": 0.08090454339981079,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0030924081802368164,
+        "D_OR": 0.045042671263217926,
+        "D_TR": 0.07981579005718231,
+        "D_GR": 0.07981579005718231,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.005508065223693848,
+        "D_OR": 0.016323402523994446,
+        "D_TR": 0.029660865664482117,
+        "D_GR": 0.029660865664482117,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0025850534439086914,
+        "D_OR": 0.04362192749977112,
+        "D_TR": 0.07911305129528046,
+        "D_GR": 0.07911305129528046,
+        "per_app": [
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "kuaishou",
+            "score": 0.0
+          },
+          {
+            "app": "lol_assistant",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "pinduoduo",
+        "score": 0.0
+      },
+      {
+        "app": "meituan",
+        "score": 0.0
+      },
+      {
+        "app": "kuaishou",
+        "score": 0.0
+      },
+      {
+        "app": "lol_assistant",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.5537863820791245,
+    "D_GR_vgg_gram": 0.5537863820791245,
+    "D_RR_vgg_gram": 0.14322222024202347,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.6130049228668213,
+        "target_to_theme_distance": 0.6130049228668213
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.600003719329834,
+        "target_to_theme_distance": 0.600003719329834
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5482702255249023,
+        "target_to_theme_distance": 0.5482702255249023
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4538666605949402,
+        "target_to_theme_distance": 0.4538666605949402
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.30312609672546387,
+    "D_TR": 0.45794345811009407,
+    "D_GR": 0.45794345811009407
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 31,
+    "reference_coverage": 0.6257231831550598,
+    "target_coverage": 0.3787924498319626,
+    "generated_coverage": 0.3787924498319626,
+    "per_app": [
+      {
+        "app": "pinduoduo",
+        "score": 0.0,
+        "target_coverage": 0.383351594209671,
+        "generated_coverage": 0.383351594209671
+      },
+      {
+        "app": "meituan",
+        "score": 0.0,
+        "target_coverage": 0.31309401988983154,
+        "generated_coverage": 0.31309401988983154
+      },
+      {
+        "app": "kuaishou",
+        "score": 0.0,
+        "target_coverage": 0.4288046956062317,
+        "generated_coverage": 0.4288046956062317
+      },
+      {
+        "app": "lol_assistant",
+        "score": 0.0,
+        "target_coverage": 0.3899194896221161,
+        "generated_coverage": 0.3899194896221161
+      }
+    ]
+  }
+}

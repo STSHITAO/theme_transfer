@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_003",
+  "scenario": "original_control",
+  "reference_apps": [
+    "lol_assistant",
+    "xingtu",
+    "meituan_waimai",
+    "minecraft",
+    "baidu_netdisk",
+    "xigua_video",
+    "meitu",
+    "zhihu"
+  ],
+  "query_apps": [
+    "golden_spatula",
+    "keep",
+    "dianping",
+    "bilibili_comics"
+  ],
+  "identity_disjoint": true
+}

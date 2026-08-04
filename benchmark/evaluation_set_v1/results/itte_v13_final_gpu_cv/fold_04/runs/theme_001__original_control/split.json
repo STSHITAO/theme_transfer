@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_001",
+  "scenario": "original_control",
+  "reference_apps": [
+    "douyin_huoshan",
+    "kuaishou",
+    "quark",
+    "pinduoduo",
+    "youku",
+    "bilibili",
+    "alipay",
+    "weibo"
+  ],
+  "query_apps": [
+    "qq_music",
+    "douban",
+    "minecraft",
+    "douyu"
+  ],
+  "identity_disjoint": true
+}

@@ -1,0 +1,1016 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.3-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_002",
+  "package_id": "benchmark_theme_002_designer_positive",
+  "itte_score": 80.23801719076258,
+  "tpqs": 80.23801719076258,
+  "tpqs_primary_score": 80.23801719076258,
+  "style_fidelity_score": 86.94438362573928,
+  "identity_preservation_score": 68.18181818181819,
+  "package_coherence_score": 71.76468733604183,
+  "visual_quality_score": 100.0,
+  "style_fidelity": {
+    "score": 86.94438362573928,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 93.20509960192976,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 64.84297031501268,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 80.61747417733433,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 100.0,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.2892093062400818,
+      "D_GR_vgg_gram": 0.11585386097431183,
+      "D_RR_vgg_gram": 0.14088255912065506,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.12345397472381592,
+          "target_to_theme_distance": 0.20916056632995605
+        },
+        {
+          "index": 1,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.09479206800460815,
+          "target_to_theme_distance": 0.3706128001213074
+        },
+        {
+          "index": 2,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.10134142637252808,
+          "target_to_theme_distance": 0.3441787362098694
+        },
+        {
+          "index": 3,
+          "score": 96.79855041655279,
+          "generated_to_theme_distance": 0.14382797479629517,
+          "target_to_theme_distance": 0.23288512229919434
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 16,
+        "misses": 0,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+    },
+    "dists_texture": {
+      "score": 93.20509960192976,
+      "reliable": true,
+      "D_RR": 0.28984177112579346,
+      "D_TR": 0.38697935827076435,
+      "D_GR": 0.2964421734213829
+    },
+    "visual_attributes": {
+      "score": 64.84297031501268,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 88.96857560794481,
+          "reliable": true,
+          "D_RR": 0.0370008647441864,
+          "D_OR": 0.40154994279146194,
+          "D_TR": 0.3758491724729538,
+          "D_GR": 0.057186439633369446,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 65.48734907516454
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 98.61667326509766
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 100.0
+            },
+            {
+              "app": "douyin",
+              "score": 91.77028009151708
+            }
+          ]
+        },
+        "background": {
+          "score": 47.689998666026455,
+          "reliable": true,
+          "D_RR": 0.03810077905654907,
+          "D_OR": 0.2958754301071167,
+          "D_TR": 0.24103039503097534,
+          "D_GR": 0.11013810336589813,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 100.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 36.70370503968107
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 47.21390917000893
+            },
+            {
+              "app": "douyin",
+              "score": 6.842380454415819
+            }
+          ]
+        },
+        "stroke": {
+          "score": 62.54768900930377,
+          "reliable": true,
+          "D_RR": 0.040046364068984985,
+          "D_OR": 0.12086457014083862,
+          "D_TR": 0.108843594789505,
+          "D_GR": 0.09283618628978729,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 100.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 73.06485640323356
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 77.1258996339815
+            },
+            {
+              "app": "douyin",
+              "score": 0.0
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 70.07265488021869,
+          "reliable": true,
+          "D_RR": 0.004434674978256226,
+          "D_OR": 0.028595909476280212,
+          "D_TR": 0.03231531381607056,
+          "D_GR": 0.00913161039352417,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 0.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 100.0
+            },
+            {
+              "app": "douyin",
+              "score": 80.29061952087474
+            }
+          ]
+        },
+        "composition": {
+          "score": 46.31645399337917,
+          "reliable": true,
+          "D_RR": 0.0043891072273254395,
+          "D_OR": 0.014463894069194794,
+          "D_TR": 0.04079616069793701,
+          "D_GR": 0.017100214958190918,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 100.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 85.2658159735167
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 0.0
+            },
+            {
+              "app": "douyin",
+              "score": 0.0
+            }
+          ]
+        },
+        "complexity": {
+          "score": 73.46244973320316,
+          "reliable": true,
+          "D_RR": 0.002897113561630249,
+          "D_OR": 0.028623826801776886,
+          "D_TR": 0.030111148953437805,
+          "D_GR": 0.006487414240837097,
+          "per_app": [
+            {
+              "app": "qq",
+              "score": 0.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            },
+            {
+              "app": "honor_of_kings",
+              "score": 100.0
+            },
+            {
+              "app": "douyin",
+              "score": 93.84979893281262
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "qq",
+          "score": 60.914558179194096
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 82.27517511358816
+        },
+        {
+          "app": "honor_of_kings",
+          "score": 70.72330146733174
+        },
+        {
+          "app": "douyin",
+          "score": 45.458846499936705
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 80.61747417733433,
+      "reliable": true,
+      "prototype_count": 30,
+      "reference_coverage": 0.7047457098960876,
+      "target_coverage": 0.4835062175989151,
+      "generated_coverage": 0.6618639081716537,
+      "per_app": [
+        {
+          "app": "qq",
+          "score": 30.944708237915652,
+          "target_coverage": 0.5357462167739868,
+          "generated_coverage": 0.5880426168441772
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 100.0,
+          "target_coverage": 0.449285089969635,
+          "generated_coverage": 0.7233253121376038
+        },
+        {
+          "app": "honor_of_kings",
+          "score": 98.9278889130352,
+          "target_coverage": 0.43869858980178833,
+          "generated_coverage": 0.7018933892250061
+        },
+        {
+          "app": "douyin",
+          "score": 63.7175991971412,
+          "target_coverage": 0.5102949738502502,
+          "generated_coverage": 0.6341943144798279
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 68.18181818181819,
+    "p10_score": 29.090909090909093,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 68.18181818181819,
+        "reliable": true,
+        "weight": 1.0
+      },
+      "dists_structure": {
+        "score": 39.990821709356865,
+        "reliable": true,
+        "weight": 0.0
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.0
+      }
+    },
+    "dino_dense": {
+      "score": 68.18181818181819,
+      "p10_score": 29.090909090909093,
+      "reliable": true,
+      "positive_reference_similarity": 0.5928106792271137,
+      "distractor_similarity": 0.49214033782482147,
+      "calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "per_app": [
+        {
+          "app": "qq",
+          "score": 100.0,
+          "raw_correspondence": 0.64164799451828,
+          "appearance_similarity": 0.6577339172363281,
+          "spatial_consistency": 0.5933902263641357,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 54.54545454545454,
+          "raw_correspondence": 0.5491690635681152,
+          "appearance_similarity": 0.5030725598335266,
+          "spatial_consistency": 0.6874585747718811,
+          "retrieval_rank": 6,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "honor_of_kings",
+          "score": 18.181818181818183,
+          "raw_correspondence": 0.43521061539649963,
+          "appearance_similarity": 0.3843679428100586,
+          "spatial_consistency": 0.5877386331558228,
+          "retrieval_rank": 10,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "raw_correspondence": 0.5954174846410751,
+          "appearance_similarity": 0.5796234607696533,
+          "spatial_consistency": 0.6427995562553406,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "qq",
+          "xiaohongshu",
+          "honor_of_kings",
+          "douyin"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.64164799451828,
+            0.3679957687854767,
+            0.4016282334923744,
+            0.3859007731080055
+          ],
+          [
+            0.47296662628650665,
+            0.5491690635681152,
+            0.44907791167497635,
+            0.5598482042551041
+          ],
+          [
+            0.4729539453983307,
+            0.48671287298202515,
+            0.43521061539649963,
+            0.6314470022916794
+          ],
+          [
+            0.47305289655923843,
+            0.4780561774969101,
+            0.3730042204260826,
+            0.5954174846410751
+          ]
+        ],
+        "identity_gallery_paths": [
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\taobao.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\peace_elite.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\netease_music.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xiaohongshu.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\honor_of_kings.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyin.png"
+        ],
+        "generated_to_identity_gallery_similarity": [
+          [
+            0.38922227919101715,
+            0.5213940739631653,
+            0.4639790654182434,
+            0.4322440177202225,
+            0.3780091255903244,
+            0.3979797065258026,
+            0.48415666818618774,
+            0.3806314393877983,
+            0.64164799451828,
+            0.3679957687854767,
+            0.4016282334923744,
+            0.3859007731080055
+          ],
+          [
+            0.5707416087388992,
+            0.5806735455989838,
+            0.545775443315506,
+            0.43188338726758957,
+            0.39784474670886993,
+            0.5853062123060226,
+            0.5337619781494141,
+            0.5645586550235748,
+            0.47296662628650665,
+            0.5491690635681152,
+            0.44907791167497635,
+            0.5598482042551041
+          ],
+          [
+            0.5482938885688782,
+            0.5939969271421432,
+            0.5942479968070984,
+            0.40633876621723175,
+            0.3760377913713455,
+            0.715372622013092,
+            0.6336121559143066,
+            0.5240155532956123,
+            0.4729539453983307,
+            0.48671287298202515,
+            0.43521061539649963,
+            0.6314470022916794
+          ],
+          [
+            0.47744034230709076,
+            0.5165392458438873,
+            0.5103671476244926,
+            0.36327116191387177,
+            0.38771528005599976,
+            0.5160190314054489,
+            0.5120396167039871,
+            0.47299735248088837,
+            0.47305289655923843,
+            0.4780561774969101,
+            0.3730042204260826,
+            0.5954174846410751
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.6297410652041435,
+          0.5558802932500839,
+          0.6629608571529388,
+          0.4264628291130066,
+          0.3816574215888977,
+          0.6473747342824936,
+          0.7798174470663071,
+          0.544382855296135
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 39.990821709356865,
+      "p10_score": 4.83140172568296,
+      "positive_reference_distance": 0.7892814874649048,
+      "distractor_distance": 0.8908490538597107,
+      "per_app": [
+        {
+          "app": "qq",
+          "score": 0.0,
+          "distance": 1.0353156328201294
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 43.85861441848428,
+          "distance": 0.8463029265403748
+        },
+        {
+          "app": "honor_of_kings",
+          "score": 16.104672418943196,
+          "distance": 0.8744919300079346
+        },
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "distance": 0.7661218047142029
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.7825680375099182,
+      "distractor_distance": 0.9023931021294855,
+      "per_app": [
+        {
+          "app": "qq",
+          "score": 100.0,
+          "distance": 0.6878870725631714
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 100.0,
+          "distance": 0.6244817972183228
+        },
+        {
+          "app": "honor_of_kings",
+          "score": 100.0,
+          "distance": 0.7558445930480957
+        },
+        {
+          "app": "douyin",
+          "score": 100.0,
+          "distance": 0.588727593421936
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 0.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 54.54545454545454,
+        "components": {
+          "dino_dense": 54.54545454545454,
+          "dists_structure": 43.85861441848428,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 18.181818181818183,
+        "components": {
+          "dino_dense": 18.181818181818183,
+          "dists_structure": 16.104672418943196,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "douyin",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 71.76468733604183,
+    "package_unity_score": 58.644788797336545,
+    "theme_membership_score": 87.81974415898566,
+    "generated_p90_distance": 0.11178767681121826,
+    "reference_p90_distance": 0.07643502950668335,
+    "reference_mad": 0.0220814049243927,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 80.49552551408988,
+        "distance_to_reference": 0.032503366470336914,
+        "internal_distance": 0.048323988914489746,
+        "is_outlier": false
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 96.818878294712,
+        "distance_to_reference": 0.03224426507949829,
+        "internal_distance": 0.01738518476486206,
+        "is_outlier": false
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 91.87415171566852,
+        "distance_to_reference": 0.02838653326034546,
+        "internal_distance": 0.014506936073303223,
+        "is_outlier": false
+      },
+      {
+        "app": "douyin",
+        "score": 82.09042111147218,
+        "distance_to_reference": 0.06261587142944336,
+        "internal_distance": 0.04359543323516846,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.21908925473690033,
+          "contrast": 0.3331253230571747,
+          "saturation": 0.166897252202034,
+          "sharpness": 0.0052985320799052715,
+          "edge_density": 0.04513612085459184,
+          "foreground_ratio": 0.9840611049107143,
+          "border_dark_ratio": 0.7706473214285714,
+          "border_foreground_contact": 0.8429528061224489,
+          "border_edge_ratio": 0.14114317602040816,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 2.3737348146686528,
+          "contrast": 1.488358777973872,
+          "saturation": -1.3836960847533994,
+          "sharpness": -0.3133755889689579,
+          "edge_density": -0.1299249137702307,
+          "foreground_ratio": -0.2639347826081132,
+          "border_dark_ratio": 0.6949393939393612,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": -0.6348235294117451,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.1492779552936554,
+          "contrast": 0.22512207925319672,
+          "saturation": 0.24994716048240662,
+          "sharpness": 0.004751069005578756,
+          "edge_density": 0.04471759406887755,
+          "foreground_ratio": 0.9842155612244898,
+          "border_dark_ratio": 0.7706074617346939,
+          "border_foreground_contact": 0.8429528061224489,
+          "border_edge_ratio": 0.14110331632653061,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.34600044661441726,
+          "contrast": -0.5462881669608082,
+          "saturation": 0.9349446625286689,
+          "sharpness": -1.0872701288802662,
+          "edge_density": -0.15999018307243296,
+          "foreground_ratio": 0.6451739130435067,
+          "border_dark_ratio": 0.6744999999999716,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": -0.7141764705881996,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.11556447297334671,
+          "contrast": 0.2182106077671051,
+          "saturation": 0.2158142328262329,
+          "sharpness": 0.004372216295450926,
+          "edge_density": 0.035036670918367346,
+          "foreground_ratio": 0.9842255261479592,
+          "border_dark_ratio": 0.7706473214285714,
+          "border_foreground_contact": 0.8431122448979592,
+          "border_edge_ratio": 0.14110331632653061,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -0.6332391222358313,
+          "contrast": -0.6764917038999598,
+          "saturation": -0.01800036205167964,
+          "sharpness": -1.622816830654102,
+          "edge_density": -0.8554284956221807,
+          "foreground_ratio": 0.7038260869564933,
+          "border_dark_ratio": 0.6949393939393612,
+          "border_foreground_contact": 0.449666666666771,
+          "border_edge_ratio": -0.7141764705881996,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "douyin",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.08108007907867432,
+          "contrast": 0.17968453466892242,
+          "saturation": 0.1709839403629303,
+          "sharpness": 0.004014197271317244,
+          "edge_density": 0.02140963807397959,
+          "foreground_ratio": 0.9842155612244898,
+          "border_dark_ratio": 0.7706074617346939,
+          "border_foreground_contact": 0.8429528061224489,
+          "border_edge_ratio": 0.14114317602040816,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -1.6348705374853716,
+          "contrast": -1.4022750615907444,
+          "saturation": -1.2696012966014325,
+          "sharpness": -2.128913005820399,
+          "edge_density": -1.8343393473069773,
+          "foreground_ratio": 0.6451739130435067,
+          "border_dark_ratio": 0.6744999999999716,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": -0.6348235294117451,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.13736577332019806,
+        "mad": 0.02322183921933174
+      },
+      "contrast": {
+        "median": 0.2541201785206795,
+        "mad": 0.03580384701490402
+      },
+      "saturation": {
+        "median": 0.2164589762687683,
+        "mad": 0.02415948361158371
+      },
+      "sharpness": {
+        "median": 0.005520218051970005,
+        "mad": 0.0004771500825881958
+      },
+      "edge_density": {
+        "median": 0.04694475446428571,
+        "mad": 0.009389449139030615
+      },
+      "foreground_ratio": {
+        "median": 0.9841059470663265,
+        "mad": 0.00011459661989804415
+      },
+      "border_dark_ratio": {
+        "median": 0.7692920918367347,
+        "mad": 0.0013153698979591621
+      },
+      "border_foreground_contact": {
+        "median": 0.8429528061224489,
+        "mad": 0.00023915816326536277
+      },
+      "border_edge_ratio": {
+        "median": 0.14146205357142855,
+        "mad": 0.000338807397959176
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [],
+  "evaluation_confidence": "high",
+  "decision": "style_transfer_success_strong",
+  "per_app": [
+    {
+      "app": "qq",
+      "itte_score": 80.23801719076258,
+      "style_fidelity_score": 45.929633208554876,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 80.49552551408988,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 0.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "xiaohongshu",
+      "itte_score": 80.23801719076258,
+      "style_fidelity_score": 91.13758755679407,
+      "identity_preservation_score": 54.54545454545454,
+      "package_membership_score": 96.818878294712,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 54.54545454545454, \"dists_structure\": 43.85861441848428, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "honor_of_kings",
+      "itte_score": 80.23801719076258,
+      "style_fidelity_score": 84.82559519018346,
+      "identity_preservation_score": 18.181818181818183,
+      "package_membership_score": 91.87415171566852,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 18.181818181818183, \"dists_structure\": 16.104672418943196, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "douyin",
+      "itte_score": 80.23801719076258,
+      "style_fidelity_score": 54.58822284853895,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 82.09042111147218,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 93.20509960192976,
+        "reliable": true,
+        "D_RR": 0.28984177112579346,
+        "D_TR": 0.38697935827076435,
+        "D_GR": 0.2964421734213829
+      },
+      "dists_structure": {
+        "score": 39.990821709356865,
+        "p10_score": 4.83140172568296,
+        "positive_reference_distance": 0.7892814874649048,
+        "distractor_distance": 0.8908490538597107,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0,
+            "distance": 1.0353156328201294
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 43.85861441848428,
+            "distance": 0.8463029265403748
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 16.104672418943196,
+            "distance": 0.8744919300079346
+          },
+          {
+            "app": "douyin",
+            "score": 100.0,
+            "distance": 0.7661218047142029
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.7825680375099182,
+        "distractor_distance": 0.9023931021294855,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 100.0,
+            "distance": 0.6878870725631714
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0,
+            "distance": 0.6244817972183228
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0,
+            "distance": 0.7558445930480957
+          },
+          {
+            "app": "douyin",
+            "score": 100.0,
+            "distance": 0.588727593421936
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 92,
+          "misses": 0
+        },
+        "dists_identity": {
+          "hits": 18,
+          "misses": 0
+        },
+        "lpips_identity": {
+          "hits": 18,
+          "misses": 0
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    },
+    "identity_metric_validation": {
+      "dino_dense_used_in_primary_identity_score": true,
+      "dists_structure_used_in_primary_identity_score": false,
+      "lpips_content_used_in_primary_identity_score": false,
+      "basis": "Verified-label retrieval on 158 real original/designer pairs."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\taobao.png": "fac02adef4d50fe2f466015ecc20f2ab81c7d6b9506eec63608c1e3cb0e5d944",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaishou.png": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\lol_mobile.png": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\peace_elite.png": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\netease_music.png": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\taobao.png": "7bed92285201ec692854a696281559bdd97d56978c86b91a9fbb23ae43bfa35e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\wechat.png": "a2e7e064c9aa1844530b910edeb42d40033ec7256acb4b918a6ccfbbc2d76497",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\kuaishou.png": "934f5a2ae0b749306499039abd4d24da84b3eb044c72672b0ffa69b98cfdfef1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\lol_mobile.png": "54eff98fb671408b636f11125c1a074032f81ffa14397b1e2079da51d9420f43",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\peace_elite.png": "01a169c04bf94b9e885fb09a8de8d0b9e7651f1cef4298afe3c0c3c8d75796ae",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\netease_music.png": "e7832363746e36f36734197cd77265ec2da3f44f1f116e3e888465672121586e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\weibo.png": "ef072b009cfe602b64bd6b80bdd0cd1f95ec877dff43018e534a594f64997fa1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\bilibili.png": "05f8cf94c29d14fb2285f7c2976e539898da5f87bb434b19079f432b7fd6a540",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq.png": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\xiaohongshu.png": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\honor_of_kings.png": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douyin.png": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\qq.png": "d193fd1499ecc7f9b8e9c9450fd3dc15b048cf8fee3e01f273209c3545106187",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\xiaohongshu.png": "2f4d382259447f5c106ee0827f61b0db20b1e04c8ef02c94a091c12f845c57a3",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\honor_of_kings.png": "d1735e901df6024ae5559e7724a9ab06af0664cf6e3e4a33fa34591ba1811023",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_002\\douyin.png": "2120b6b26a981ee3aa87f47fc584ae7b22dd122d7e04b24e7c9a7d8bc319c62c"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d2f78ef47f8657b5ce1ca80f00207f1667b41e9edc9d5e080103b4fa9bedffa5",
+    "scoring_config": {
+      "itte_version": "v1.3-image-only",
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 1.0,
+        "dists_structure": 0.0,
+        "lpips_content": 0.0
+      },
+      "identity_calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "quality_rules_version": "reference-normalized-artifacts-v2-dark-border-diagnostic"
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true,
+    "compute_itte_v12_metrics_is_legacy_entrypoint_name": true
+  }
+}

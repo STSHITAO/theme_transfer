@@ -122,7 +122,7 @@ class TpqsEvaluationTests(unittest.TestCase):
 
             report = result["report"]
             self.assertEqual(report["evaluation_framework"], "ITTE")
-            self.assertEqual(report["itte_version"], "v1.2-image-only")
+            self.assertEqual(report["itte_version"], "v1.3-image-only")
             self.assertEqual(report["evaluation_scope"], "observable_image_transfer_only")
             self.assertEqual(report["itte_score"], report["tpqs"])
             self.assertFalse(report["diagnostics"]["generation_qwen_qc_used_in_score"])

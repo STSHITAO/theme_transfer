@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 79.25649184313517,
+    "reliable": true,
+    "reliable_group_count": 5,
+    "groups": {
+      "color": {
+        "score": 98.55423962667516,
+        "reliable": true,
+        "D_RR": 0.05029711127281189,
+        "D_OR": 0.3845636919140816,
+        "D_TR": 0.4143170714378357,
+        "D_GR": 0.040917813777923584,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 94.21695850670065
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 100.0
+          }
+        ]
+      },
+      "background": {
+        "score": 67.25112759235148,
+        "reliable": true,
+        "D_RR": 0.07665476202964783,
+        "D_OR": 0.27843788266181946,
+        "D_TR": 0.18362455070018768,
+        "D_GR": 0.08039654791355133,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 69.00451036940592
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 100.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 75.0,
+        "reliable": true,
+        "D_RR": 0.0486292839050293,
+        "D_OR": 0.12579140812158585,
+        "D_TR": 0.09752804040908813,
+        "D_GR": 0.0810982882976532,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 100.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 76.19560054690353,
+        "reliable": true,
+        "D_RR": 0.004626721143722534,
+        "D_OR": 0.031784072518348694,
+        "D_TR": 0.02839614450931549,
+        "D_GR": 0.008978694677352905,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 73.64105767635259
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 67.50232776485295
+          },
+          {
+            "app": "peace_elite",
+            "score": 63.639016746408586
+          }
+        ]
+      },
+      "composition": {
+        "score": null,
+        "reliable": false,
+        "D_RR": 0.007723808288574219,
+        "D_OR": 0.015629969537258148,
+        "D_TR": 0.04355566203594208,
+        "D_GR": 0.017788708209991455,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": null
+          },
+          {
+            "app": "xiaohongshu",
+            "score": null
+          },
+          {
+            "app": "netease_music",
+            "score": null
+          },
+          {
+            "app": "peace_elite",
+            "score": null
+          }
+        ]
+      },
+      "complexity": {
+        "score": 79.28149144974566,
+        "reliable": true,
+        "D_RR": 0.0020100772380828857,
+        "D_OR": 0.030724607408046722,
+        "D_TR": 0.028360992670059204,
+        "D_GR": 0.006706207990646362,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 88.8142418161716
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 66.20492622741561
+          },
+          {
+            "app": "peace_elite",
+            "score": 62.10679775539539
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 51.33445159984497
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 93.80090207388119
+      },
+      {
+        "app": "netease_music",
+        "score": 86.74145079845371
+      },
+      {
+        "app": "peace_elite",
+        "score": 85.14916290036079
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 99.5433361006782,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.3436114192008972,
+    "D_GR_vgg_gram": 0.12965600192546844,
+    "D_RR_vgg_gram": 0.1286744624376297,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 92.48747970881442,
+        "generated_to_theme_distance": 0.13709676265716553,
+        "target_to_theme_distance": 0.2407846450805664
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.08356660604476929,
+        "target_to_theme_distance": 0.41064417362213135
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.11924231052398682,
+        "target_to_theme_distance": 0.30883127450942993
+      },
+      {
+        "index": 3,
+        "score": 82.4721832774566,
+        "generated_to_theme_distance": 0.17871832847595215,
+        "target_to_theme_distance": 0.4141855835914612
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 16,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 80.95236568060807,
+    "reliable": true,
+    "D_RR": 0.27729469537734985,
+    "D_TR": 0.3917109165340662,
+    "D_GR": 0.29908827878534794
+  },
+  "dino_motif": {
+    "score": 71.46757368952514,
+    "reliable": true,
+    "prototype_count": 30,
+    "reference_coverage": 0.7181329429149628,
+    "target_coverage": 0.48436201363801956,
+    "generated_coverage": 0.6514324247837067,
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 69.18333421637291,
+        "target_coverage": 0.5083222985267639,
+        "generated_coverage": 0.6534762978553772
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "target_coverage": 0.41652002930641174,
+        "generated_coverage": 0.7652392983436584
+      },
+      {
+        "app": "netease_music",
+        "score": 3.038627308058685,
+        "target_coverage": 0.6104783415794373,
+        "generated_coverage": 0.6137495636940002
+      },
+      {
+        "app": "peace_elite",
+        "score": 54.15637475082254,
+        "target_coverage": 0.40212738513946533,
+        "generated_coverage": 0.5732645392417908
+      }
+    ]
+  }
+}

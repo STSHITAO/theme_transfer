@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 91.65215157370494,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 100.0,
+        "reliable": true,
+        "D_RR": 0.012644976377487183,
+        "D_OR": 0.2410399317741394,
+        "D_TR": 0.2465808093547821,
+        "D_GR": 0.005812540650367737,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "ctrip",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "background": {
+        "score": 99.43093276860135,
+        "reliable": true,
+        "D_RR": 0.003084629774093628,
+        "D_OR": 0.17322950810194016,
+        "D_TR": 0.10771146416664124,
+        "D_GR": 0.0032247453927993774,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 99.20779088397573
+          },
+          {
+            "app": "ctrip",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 98.51594019042967
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 76.89881425901277,
+        "reliable": true,
+        "D_RR": 0.014246463775634766,
+        "D_OR": 0.08625337481498718,
+        "D_TR": 0.0490511953830719,
+        "D_GR": 0.020070567727088928,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 83.43628479789177
+          },
+          {
+            "app": "ctrip",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 25.996280478637807
+          },
+          {
+            "app": "quark",
+            "score": 98.16269175952146
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 89.05673874636906,
+        "reliable": true,
+        "D_RR": 0.005626767873764038,
+        "D_OR": 0.03631068766117096,
+        "D_TR": 0.029226943850517273,
+        "D_GR": 0.008044540882110596,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 59.753309976728765
+          },
+          {
+            "app": "ctrip",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 96.47364500874747
+          }
+        ]
+      },
+      "composition": {
+        "score": 96.137548141719,
+        "reliable": true,
+        "D_RR": 0.0007719695568084717,
+        "D_OR": 0.02967466413974762,
+        "D_TR": 0.03182113170623779,
+        "D_GR": 0.0016349703073501587,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 95.14931571222061
+          },
+          {
+            "app": "ctrip",
+            "score": 91.52147065960213
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 97.87940619505322
+          },
+          {
+            "app": "quark",
+            "score": 100.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 88.38887552652751,
+        "reliable": true,
+        "D_RR": 0.0054635703563690186,
+        "D_OR": 0.03447866439819336,
+        "D_TR": 0.02778834104537964,
+        "D_GR": 0.007729440927505493,
+        "per_app": [
+          {
+            "app": "mi_home",
+            "score": 54.60994772228906
+          },
+          {
+            "app": "ctrip",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi_lite",
+            "score": 100.0
+          },
+          {
+            "app": "quark",
+            "score": 98.94555438382098
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "mi_home",
+        "score": 82.02610818218433
+      },
+      {
+        "app": "ctrip",
+        "score": 98.58691177660035
+      },
+      {
+        "app": "iqiyi_lite",
+        "score": 87.06527114402012
+      },
+      {
+        "app": "quark",
+        "score": 98.93031519201499
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 100.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.40685029327869415,
+    "D_GR_vgg_gram": 0.10228107869625092,
+    "D_RR_vgg_gram": 0.140894316136837,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 99.14480900936915,
+        "generated_to_theme_distance": 0.143748939037323,
+        "target_to_theme_distance": 0.47469377517700195
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.07015562057495117,
+        "target_to_theme_distance": 0.37014245986938477
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.11511474847793579,
+        "target_to_theme_distance": 0.40226805210113525
+      },
+      {
+        "index": 3,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.0801050066947937,
+        "target_to_theme_distance": 0.38029688596725464
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 11,
+      "misses": 5,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 100.0,
+    "reliable": true,
+    "D_RR": 0.26453322172164917,
+    "D_TR": 0.3786077778786421,
+    "D_GR": 0.24902837723493576
+  },
+  "dino_motif": {
+    "score": 93.36415997277857,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7308403253555298,
+    "target_coverage": 0.3477441519498825,
+    "generated_coverage": 0.7054186761379242,
+    "per_app": [
+      {
+        "app": "mi_home",
+        "score": 87.86927949323844,
+        "target_coverage": 0.282176673412323,
+        "generated_coverage": 0.6764141917228699
+      },
+      {
+        "app": "ctrip",
+        "score": 83.63870713100752,
+        "target_coverage": 0.46022164821624756,
+        "generated_coverage": 0.6865636110305786
+      },
+      {
+        "app": "iqiyi_lite",
+        "score": 97.52975256649222,
+        "target_coverage": 0.3123466372489929,
+        "generated_coverage": 0.720502495765686
+      },
+      {
+        "app": "quark",
+        "score": 100.0,
+        "target_coverage": 0.33623164892196655,
+        "generated_coverage": 0.7381944060325623
+      }
+    ]
+  }
+}

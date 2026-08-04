@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_003",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "kuwo",
+    "douban",
+    "minecraft",
+    "meitu",
+    "kuaikan",
+    "weibo",
+    "iqiyi",
+    "kuaiying"
+  ],
+  "query_apps": [
+    "tencent_maps",
+    "miyoushe",
+    "tencent_news",
+    "crossfire_mobile"
+  ],
+  "identity_disjoint": true
+}

@@ -20,12 +20,39 @@ env/
 
 # Generated workflow artifacts
 data/evaluations/_cache/
+data/evaluations/
+data/packages/
 
-# Model cache noise. Reproducible weights and metadata are committed via Git LFS.
+# Model weights are versioned through Git LFS; ignore only incomplete/local cache state.
 models/**/*.partial
+models/**/*.incomplete
+models/**/*.lfs-pointer
+models/**/.lock/
 models/**/.locks/
 models/**/logs/
 models/**/.agent_harnesses.json
+
+# Legacy Benchmark sources retained locally; evaluation_set_v1 is canonical.
+benchmark/intersection_v1/
+benchmark/original_icons/
+benchmark/theme_001_processed/
+benchmark/theme_002_processed/
+benchmark/theme_003_processed/
+benchmark/theme_004_processed/
+benchmark/_evaluation_metadata_backup/
+
+# Keep only reproducible/final Benchmark evidence in version control.
+benchmark/evaluation_set_v1/results/*
+!benchmark/evaluation_set_v1/results/device_smoke_cpu/
+!benchmark/evaluation_set_v1/results/device_smoke_cpu/**
+!benchmark/evaluation_set_v1/results/identity_retrieval_dinov3/
+!benchmark/evaluation_set_v1/results/identity_retrieval_dinov3/**
+!benchmark/evaluation_set_v1/results/identity_retrieval_perceptual/
+!benchmark/evaluation_set_v1/results/identity_retrieval_perceptual/**
+!benchmark/evaluation_set_v1/results/itte_v12_baseline_gpu_cv/
+!benchmark/evaluation_set_v1/results/itte_v12_baseline_gpu_cv/**
+!benchmark/evaluation_set_v1/results/itte_v13_final_gpu_cv/
+!benchmark/evaluation_set_v1/results/itte_v13_final_gpu_cv/**
 
 # Local assistant / external helper assets
 .agents/
@@ -36,8 +63,3 @@ agent-sprite-forge-main/
 Thumbs.db
 .idea/
 .vscode/
-.env
-*.env
-__pycache__/
-*.pyc
-.venv/

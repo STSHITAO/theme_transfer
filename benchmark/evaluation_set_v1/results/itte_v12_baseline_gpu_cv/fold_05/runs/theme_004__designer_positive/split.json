@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_004",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "qq",
+    "zhihu",
+    "paipai",
+    "bilibili",
+    "jd",
+    "wechat",
+    "honor_of_kings",
+    "wechat_reading"
+  ],
+  "query_apps": [
+    "qimao",
+    "alipay",
+    "wecom",
+    "pinduoduo"
+  ],
+  "identity_disjoint": true
+}

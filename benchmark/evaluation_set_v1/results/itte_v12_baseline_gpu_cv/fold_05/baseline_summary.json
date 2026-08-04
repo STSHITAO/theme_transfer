@@ -1,0 +1,849 @@
+{
+  "created_at": "2026-08-04T16:03:23.457175+00:00",
+  "purpose": "Evaluate unchanged ITTE v1.2 on real designer positives and the natural no-transfer original control.",
+  "dataset_fingerprint": "a9982485db04a7f88e76236e227a1a65cb37f5b1a4f02057c3d919d49355e826",
+  "config": {
+    "embedding_backend": "dinov3",
+    "model_source": "modelscope",
+    "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "device": "cuda:0",
+    "pooling": "cls",
+    "image_size": 224,
+    "batch_size": 2,
+    "style_feature_backend": "color_edge_composition",
+    "use_perceptual": true,
+    "use_vgg_gram": true
+  },
+  "sampling": {
+    "themes": [
+      "theme_001",
+      "theme_002",
+      "theme_003",
+      "theme_004"
+    ],
+    "scenarios": [
+      "designer_positive",
+      "original_control"
+    ],
+    "references_per_theme": 8,
+    "queries_per_theme": 4,
+    "seed": 20260808,
+    "reference_query_identity_disjoint": true
+  },
+  "runs": [
+    {
+      "run_id": "theme_001__designer_positive",
+      "split": {
+        "theme_id": "theme_001",
+        "scenario": "designer_positive",
+        "reference_apps": [
+          "douyin",
+          "netease_music",
+          "kuaishou",
+          "jd",
+          "king_camp",
+          "quark",
+          "douban",
+          "minecraft"
+        ],
+        "query_apps": [
+          "lol_mobile",
+          "weibo",
+          "meituan",
+          "peace_elite"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 65.52060026595707,
+        "style_fidelity_score": 77.78834689615918,
+        "identity_preservation_score": 57.254907881756864,
+        "package_coherence_score": 30.5910324388714,
+        "visual_quality_score": 100.0,
+        "identity_p10": 21.07891452668876,
+        "decision": "failed_hard_gate",
+        "confidence": "high",
+        "hard_failure_count": 3,
+        "hard_failures": [
+          {
+            "type": "identity_below_35",
+            "app": "lol_mobile",
+            "score": 20.0
+          },
+          {
+            "type": "identity_below_35",
+            "app": "peace_elite",
+            "score": 23.596381755629203
+          },
+          {
+            "type": "identity_p10_below_45",
+            "score": 21.07891452668876
+          }
+        ],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 84.77170651487648,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 82.08275557528756,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 70.06414879885132,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 66.313839836255,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 58.473194856428904,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 50.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 65.09155226771207,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_001__original_control",
+      "split": {
+        "theme_id": "theme_001",
+        "scenario": "original_control",
+        "reference_apps": [
+          "douyin",
+          "netease_music",
+          "kuaishou",
+          "jd",
+          "king_camp",
+          "quark",
+          "douban",
+          "minecraft"
+        ],
+        "query_apps": [
+          "lol_mobile",
+          "weibo",
+          "meituan",
+          "peace_elite"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 42.75000000000001,
+        "style_fidelity_score": 0.0,
+        "identity_preservation_score": 100.0,
+        "package_coherence_score": 0.0,
+        "visual_quality_score": 85.0,
+        "identity_p10": 100.0,
+        "decision": "failed_hard_gate",
+        "confidence": "high",
+        "hard_failure_count": 1,
+        "hard_failures": [
+          {
+            "type": "severe_package_outliers",
+            "apps": [
+              "meituan"
+            ]
+          }
+        ],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": [
+          "meituan"
+        ]
+      }
+    },
+    {
+      "run_id": "theme_002__designer_positive",
+      "split": {
+        "theme_id": "theme_002",
+        "scenario": "designer_positive",
+        "reference_apps": [
+          "bilibili",
+          "wechat",
+          "lol_mobile",
+          "kuaishou",
+          "honor_of_kings",
+          "qq",
+          "weibo",
+          "taobao"
+        ],
+        "query_apps": [
+          "douyin",
+          "xiaohongshu",
+          "netease_music",
+          "peace_elite"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 84.92611595930336,
+        "style_fidelity_score": 86.54206659060546,
+        "identity_preservation_score": 66.83398745762773,
+        "package_coherence_score": 97.9309820765156,
+        "visual_quality_score": 100.0,
+        "identity_p10": 24.251961935469417,
+        "decision": "failed_hard_gate",
+        "confidence": "high",
+        "hard_failure_count": 2,
+        "hard_failures": [
+          {
+            "type": "identity_below_35",
+            "app": "peace_elite",
+            "score": 10.127942465790328
+          },
+          {
+            "type": "identity_p10_below_45",
+            "score": 24.251961935469417
+          }
+        ],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 99.5433361006782,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 80.95236568060807,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 79.25649184313517,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 71.46757368952514,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 68.6040036823603,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 50.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 87.65992808223791,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_002__original_control",
+      "split": {
+        "theme_id": "theme_002",
+        "scenario": "original_control",
+        "reference_apps": [
+          "bilibili",
+          "wechat",
+          "lol_mobile",
+          "kuaishou",
+          "honor_of_kings",
+          "qq",
+          "weibo",
+          "taobao"
+        ],
+        "query_apps": [
+          "douyin",
+          "xiaohongshu",
+          "netease_music",
+          "peace_elite"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 43.03125000000001,
+        "style_fidelity_score": 0.0,
+        "identity_preservation_score": 100.0,
+        "package_coherence_score": 0.0,
+        "visual_quality_score": 86.875,
+        "identity_p10": 100.0,
+        "decision": "style_transfer_weak",
+        "confidence": "high",
+        "hard_failure_count": 0,
+        "hard_failures": [],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_003__designer_positive",
+      "split": {
+        "theme_id": "theme_003",
+        "scenario": "designer_positive",
+        "reference_apps": [
+          "douyu",
+          "kugou",
+          "wechat_reading",
+          "toutiao",
+          "weishi",
+          "king_camp",
+          "xingtu",
+          "xiaohongshu"
+        ],
+        "query_apps": [
+          "lofter",
+          "toutiao_lite",
+          "tencent_comics",
+          "xigua_video"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 85.23754155131994,
+        "style_fidelity_score": 96.785461054221,
+        "identity_preservation_score": 66.56424209228511,
+        "package_coherence_score": 81.9667877732852,
+        "visual_quality_score": 100.0,
+        "identity_p10": 22.000961239707323,
+        "decision": "failed_hard_gate",
+        "confidence": "high",
+        "hard_failure_count": 2,
+        "hard_failures": [
+          {
+            "type": "identity_below_35",
+            "app": "tencent_comics",
+            "score": 0.0
+          },
+          {
+            "type": "identity_p10_below_45",
+            "score": 22.000961239707323
+          }
+        ],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 94.70780590884321,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 87.39006384673465,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 68.40408745069442,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 59.08291097324569,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 73.18662537482099,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_003__original_control",
+      "split": {
+        "theme_id": "theme_003",
+        "scenario": "original_control",
+        "reference_apps": [
+          "douyu",
+          "kugou",
+          "wechat_reading",
+          "toutiao",
+          "weishi",
+          "king_camp",
+          "xingtu",
+          "xiaohongshu"
+        ],
+        "query_apps": [
+          "lofter",
+          "toutiao_lite",
+          "tencent_comics",
+          "xigua_video"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 41.90625000000001,
+        "style_fidelity_score": 0.0,
+        "identity_preservation_score": 100.0,
+        "package_coherence_score": 0.0,
+        "visual_quality_score": 79.375,
+        "identity_p10": 100.0,
+        "decision": "style_transfer_weak",
+        "confidence": "high",
+        "hard_failure_count": 0,
+        "hard_failures": [],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_004__designer_positive",
+      "split": {
+        "theme_id": "theme_004",
+        "scenario": "designer_positive",
+        "reference_apps": [
+          "qq",
+          "zhihu",
+          "paipai",
+          "bilibili",
+          "jd",
+          "wechat",
+          "honor_of_kings",
+          "wechat_reading"
+        ],
+        "query_apps": [
+          "qimao",
+          "alipay",
+          "wecom",
+          "pinduoduo"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 86.3376058574254,
+        "style_fidelity_score": 92.23369003528158,
+        "identity_preservation_score": 64.62421216611112,
+        "package_coherence_score": 98.34275347621748,
+        "visual_quality_score": 100.0,
+        "identity_p10": 36.0,
+        "decision": "failed_hard_gate",
+        "confidence": "high",
+        "hard_failure_count": 2,
+        "hard_failures": [
+          {
+            "type": "identity_below_35",
+            "app": "pinduoduo",
+            "score": 30.0
+          },
+          {
+            "type": "identity_p10_below_45",
+            "score": 36.0
+          }
+        ],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 98.45758317881592,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 86.69440865139195,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 74.51369733938151,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 50.0,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 48.12106083055561,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    },
+    {
+      "run_id": "theme_004__original_control",
+      "split": {
+        "theme_id": "theme_004",
+        "scenario": "original_control",
+        "reference_apps": [
+          "qq",
+          "zhihu",
+          "paipai",
+          "bilibili",
+          "jd",
+          "wechat",
+          "honor_of_kings",
+          "wechat_reading"
+        ],
+        "query_apps": [
+          "qimao",
+          "alipay",
+          "wecom",
+          "pinduoduo"
+        ],
+        "identity_disjoint": true
+      },
+      "summary": {
+        "itte_score": 44.15625000000001,
+        "style_fidelity_score": 0.0,
+        "identity_preservation_score": 100.0,
+        "package_coherence_score": 0.0,
+        "visual_quality_score": 94.375,
+        "identity_p10": 100.0,
+        "decision": "style_transfer_weak",
+        "confidence": "high",
+        "hard_failure_count": 0,
+        "hard_failures": [],
+        "style_available_weight": 1.0,
+        "identity_available_weight": 1.0,
+        "style_components": {
+          "vgg_gram": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.4
+          },
+          "dists_texture": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.2
+          },
+          "visual_attributes": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.25
+          },
+          "dino_motif": {
+            "score": 0.0,
+            "reliable": true,
+            "weight": 0.15
+          }
+        },
+        "identity_components": {
+          "dino_dense": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.5
+          },
+          "dists_structure": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.3
+          },
+          "lpips_content": {
+            "score": 100.0,
+            "reliable": true,
+            "weight": 0.2
+          }
+        },
+        "quality_hard_failure_count": 0,
+        "package_outlier_apps": []
+      }
+    }
+  ],
+  "aggregate": {
+    "by_scenario": {
+      "designer_positive": {
+        "run_count": 4,
+        "macro_means": {
+          "itte_score": 80.50546590850145,
+          "style_fidelity_score": 88.33739114406681,
+          "identity_preservation_score": 63.8193373994452,
+          "package_coherence_score": 77.20788894122242,
+          "visual_quality_score": 100.0,
+          "identity_p10": 25.832959425466374
+        },
+        "by_theme": {
+          "theme_001": {
+            "itte_score": 65.52060026595707,
+            "style_fidelity_score": 77.78834689615918,
+            "identity_preservation_score": 57.254907881756864,
+            "package_coherence_score": 30.5910324388714,
+            "visual_quality_score": 100.0,
+            "identity_p10": 21.07891452668876
+          },
+          "theme_002": {
+            "itte_score": 84.92611595930336,
+            "style_fidelity_score": 86.54206659060546,
+            "identity_preservation_score": 66.83398745762773,
+            "package_coherence_score": 97.9309820765156,
+            "visual_quality_score": 100.0,
+            "identity_p10": 24.251961935469417
+          },
+          "theme_003": {
+            "itte_score": 85.23754155131994,
+            "style_fidelity_score": 96.785461054221,
+            "identity_preservation_score": 66.56424209228511,
+            "package_coherence_score": 81.9667877732852,
+            "visual_quality_score": 100.0,
+            "identity_p10": 22.000961239707323
+          },
+          "theme_004": {
+            "itte_score": 86.3376058574254,
+            "style_fidelity_score": 92.23369003528158,
+            "identity_preservation_score": 64.62421216611112,
+            "package_coherence_score": 98.34275347621748,
+            "visual_quality_score": 100.0,
+            "identity_p10": 36.0
+          }
+        },
+        "hard_failure_count": 9
+      },
+      "original_control": {
+        "run_count": 4,
+        "macro_means": {
+          "itte_score": 42.96093750000001,
+          "style_fidelity_score": 0.0,
+          "identity_preservation_score": 100.0,
+          "package_coherence_score": 0.0,
+          "visual_quality_score": 86.40625,
+          "identity_p10": 100.0
+        },
+        "by_theme": {
+          "theme_001": {
+            "itte_score": 42.75000000000001,
+            "style_fidelity_score": 0.0,
+            "identity_preservation_score": 100.0,
+            "package_coherence_score": 0.0,
+            "visual_quality_score": 85.0,
+            "identity_p10": 100.0
+          },
+          "theme_002": {
+            "itte_score": 43.03125000000001,
+            "style_fidelity_score": 0.0,
+            "identity_preservation_score": 100.0,
+            "package_coherence_score": 0.0,
+            "visual_quality_score": 86.875,
+            "identity_p10": 100.0
+          },
+          "theme_003": {
+            "itte_score": 41.90625000000001,
+            "style_fidelity_score": 0.0,
+            "identity_preservation_score": 100.0,
+            "package_coherence_score": 0.0,
+            "visual_quality_score": 79.375,
+            "identity_p10": 100.0
+          },
+          "theme_004": {
+            "itte_score": 44.15625000000001,
+            "style_fidelity_score": 0.0,
+            "identity_preservation_score": 100.0,
+            "package_coherence_score": 0.0,
+            "visual_quality_score": 94.375,
+            "identity_p10": 100.0
+          }
+        },
+        "hard_failure_count": 1
+      }
+    },
+    "designer_minus_original_control": {
+      "itte_score": {
+        "designer_positive": 80.50546590850145,
+        "original_control": 42.96093750000001,
+        "delta": 37.54452840850144
+      },
+      "style_fidelity_score": {
+        "designer_positive": 88.33739114406681,
+        "original_control": 0.0,
+        "delta": 88.33739114406681
+      },
+      "identity_preservation_score": {
+        "designer_positive": 63.8193373994452,
+        "original_control": 100.0,
+        "delta": -36.1806626005548
+      },
+      "package_coherence_score": {
+        "designer_positive": 77.20788894122242,
+        "original_control": 0.0,
+        "delta": 77.20788894122242
+      },
+      "visual_quality_score": {
+        "designer_positive": 100.0,
+        "original_control": 86.40625,
+        "delta": 13.59375
+      },
+      "identity_p10": {
+        "designer_positive": 25.832959425466374,
+        "original_control": 100.0,
+        "delta": -74.16704057453363
+      }
+    }
+  }
+}

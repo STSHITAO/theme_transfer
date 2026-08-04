@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_004",
+  "scenario": "original_control",
+  "reference_apps": [
+    "wechat",
+    "ctrip",
+    "qimao",
+    "douyin_huoshan",
+    "tencent_news",
+    "honor_of_kings",
+    "qq_browser",
+    "xiaohongshu"
+  ],
+  "query_apps": [
+    "xingtu",
+    "kuaishou",
+    "alipay",
+    "qq_music"
+  ],
+  "identity_disjoint": true
+}

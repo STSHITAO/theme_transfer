@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_004",
+  "scenario": "original_control",
+  "reference_apps": [
+    "bilibili",
+    "wecom",
+    "xiaohongshu",
+    "kuaishou",
+    "wechat",
+    "douyin_huoshan",
+    "eleme",
+    "qimao"
+  ],
+  "query_apps": [
+    "mi_home",
+    "ctrip",
+    "iqiyi_lite",
+    "quark"
+  ],
+  "identity_disjoint": true
+}

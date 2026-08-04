@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import hashlib
+import json
 import os
 from pathlib import Path
+from uuid import uuid4
 
 import numpy as np
 
@@ -18,6 +21,7 @@ def compute_perceptual_scores(
     device: str,
     enabled: bool,
     image_size: int = 224,
+    batch_size: int = 1,
 ) -> dict:
     if not enabled:
         return _unavailable("Perceptual backends disabled by ITTE_USE_PERCEPTUAL=false.")
@@ -36,42 +40,51 @@ def compute_perceptual_scores(
     if actual_device.startswith("cuda") and not torch.cuda.is_available():
         actual_device = "cpu"
 
-    unique_paths = list(dict.fromkeys([*reference_raw_paths, *theme_paths, *target_paths, *generated_paths]))
-    appearance_tensors = {
-        str(path): _load_tensor(path, image_size, torch, "appearance")
-        for path in unique_paths
-    }
-    structure_tensors = {
-        str(path): _load_tensor(path, image_size, torch, "structure")
-        for path in unique_paths
-    }
+    batch_size = max(int(batch_size), 1)
     try:
-        dists_model = DISTS(load_weights=True).to(actual_device).eval()
+        cache_dir = root_dir / "data" / "evaluations" / "_cache" / "perceptual_pairs"
+        cache_dir.mkdir(parents=True, exist_ok=True)
         style_pairs = _style_pairs(theme_paths, target_paths, generated_paths)
-        dists_style_distances = _compute_dists_pair_components(
-            dists_model,
-            style_pairs,
-            appearance_tensors,
-            actual_device,
-            torch,
-        )
         identity_pairs = _identity_pairs(reference_raw_paths, theme_paths, target_paths, generated_paths)
-        dists_identity_distances = _compute_dists_pair_components(
-            dists_model,
-            identity_pairs,
-            structure_tensors,
-            actual_device,
-            torch,
+        dists_style_distances, dists_style_misses = _read_cached_pair_map(
+            style_pairs, cache_dir, "dists-0.1", "appearance", image_size, {"texture", "structure"}
+        )
+        dists_identity_distances, dists_identity_misses = _read_cached_pair_map(
+            identity_pairs, cache_dir, "dists-0.1", "structure", image_size, {"texture", "structure"}
+        )
+        lpips_distances, lpips_misses = _read_cached_pair_map(
+            identity_pairs, cache_dir, "lpips-vgg-0.1", "structure", image_size, {"distance"}
         )
 
-        lpips_model = lpips.LPIPS(net="vgg", verbose=False).to(actual_device).eval()
-        lpips_distances = _compute_lpips_pairs(
-            lpips_model,
-            identity_pairs,
-            structure_tensors,
-            actual_device,
-            torch,
+        unique_paths = list(dict.fromkeys([*reference_raw_paths, *theme_paths, *target_paths, *generated_paths]))
+        needs_appearance = bool(dists_style_misses)
+        needs_structure = bool(dists_identity_misses or lpips_misses)
+        appearance_tensors = (
+            {str(path): _load_tensor(path, image_size, torch, "appearance") for path in unique_paths}
+            if needs_appearance else {}
         )
+        structure_tensors = (
+            {str(path): _load_tensor(path, image_size, torch, "structure") for path in unique_paths}
+            if needs_structure else {}
+        )
+        if needs_appearance or dists_identity_misses:
+            dists_model = DISTS(load_weights=True).to(actual_device).eval()
+            if needs_appearance:
+                dists_style_distances = _compute_dists_pair_components(
+                    dists_model, style_pairs, appearance_tensors, actual_device, torch,
+                    batch_size=batch_size, cache_dir=cache_dir, image_size=image_size, view="appearance",
+                )
+            if dists_identity_misses:
+                dists_identity_distances = _compute_dists_pair_components(
+                    dists_model, identity_pairs, structure_tensors, actual_device, torch,
+                    batch_size=batch_size, cache_dir=cache_dir, image_size=image_size, view="structure",
+                )
+        if lpips_misses:
+            lpips_model = lpips.LPIPS(net="vgg", verbose=False).to(actual_device).eval()
+            lpips_distances = _compute_lpips_pairs(
+                lpips_model, identity_pairs, structure_tensors, actual_device, torch,
+                batch_size=batch_size, cache_dir=cache_dir, image_size=image_size, view="structure",
+            )
     except Exception as exc:
         return _unavailable(f"Perceptual model execution failed: {type(exc).__name__}: {exc}")
 
@@ -109,6 +122,12 @@ def compute_perceptual_scores(
         "models": {
             "dists": "DISTS-pytorch-0.1",
             "lpips": "LPIPS-vgg-0.1",
+        },
+        "cache": {
+            "directory": str(cache_dir),
+            "dists_style": {"hits": len(style_pairs) - dists_style_misses, "misses": dists_style_misses},
+            "dists_identity": {"hits": len(identity_pairs) - dists_identity_misses, "misses": dists_identity_misses},
+            "lpips_identity": {"hits": len(identity_pairs) - lpips_misses, "misses": lpips_misses},
         },
         "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks.",
     }
@@ -204,14 +223,33 @@ def _identity_component_score(
     }
 
 
-def _compute_dists_pair_components(model, pairs, tensors, device, torch, batch_size: int = 8):
+def _compute_dists_pair_components(
+    model,
+    pairs,
+    tensors,
+    device,
+    torch,
+    batch_size: int = 1,
+    cache_dir: Path | None = None,
+    image_size: int = 224,
+    view: str = "appearance",
+):
     output: dict[tuple[str, str], dict[str, float]] = {}
+    missing = []
+    for pair in pairs:
+        cache_path = _perceptual_cache_path(cache_dir, "dists-0.1", view, image_size, pair) if cache_dir else None
+        cached = _load_cached_distances(cache_path, {"texture", "structure"}) if cache_path else None
+        if cached is None:
+            missing.append((pair, cache_path))
+        else:
+            output[_pair_key(*pair)] = cached
     alpha_sum = model.alpha.sum().detach()
     beta_sum = model.beta.sum().detach()
     alpha = torch.split(model.alpha / torch.clamp(alpha_sum, min=1e-8), model.chns, dim=1)
     beta = torch.split(model.beta / torch.clamp(beta_sum, min=1e-8), model.chns, dim=1)
-    for start in range(0, len(pairs), batch_size):
-        batch = pairs[start : start + batch_size]
+    for start in range(0, len(missing), batch_size):
+        batch_entries = missing[start : start + batch_size]
+        batch = [item[0] for item in batch_entries]
         left = torch.cat([tensors[str(item[0])] for item in batch]).to(device)
         right = torch.cat([tensors[str(item[1])] for item in batch]).to(device)
         with torch.inference_mode():
@@ -234,25 +272,121 @@ def _compute_dists_pair_components(model, pairs, tensors, device, torch, batch_s
                 structure_similarity += (beta[index] * covariance_similarity).sum((1, 2, 3))
         texture = (1.0 - texture_similarity).detach().cpu().numpy()
         structure = (1.0 - structure_similarity).detach().cpu().numpy()
-        for pair, texture_value, structure_value in zip(batch, texture, structure):
-            output[_pair_key(*pair)] = {
+        for (pair, cache_path), texture_value, structure_value in zip(batch_entries, texture, structure):
+            values = {
                 "texture": float(np.clip(texture_value, 0.0, 2.0)),
                 "structure": float(np.clip(structure_value, 0.0, 2.0)),
             }
+            output[_pair_key(*pair)] = values
+            if cache_path:
+                _save_cached_distances(cache_path, values)
     return output
 
 
-def _compute_lpips_pairs(model, pairs, tensors, device, torch, batch_size: int = 12):
+def _compute_lpips_pairs(
+    model,
+    pairs,
+    tensors,
+    device,
+    torch,
+    batch_size: int = 1,
+    cache_dir: Path | None = None,
+    image_size: int = 224,
+    view: str = "structure",
+):
     output: dict[tuple[str, str], dict[str, float]] = {}
-    for start in range(0, len(pairs), batch_size):
-        batch = pairs[start : start + batch_size]
+    missing = []
+    for pair in pairs:
+        cache_path = _perceptual_cache_path(cache_dir, "lpips-vgg-0.1", view, image_size, pair) if cache_dir else None
+        cached = _load_cached_distances(cache_path, {"distance"}) if cache_path else None
+        if cached is None:
+            missing.append((pair, cache_path))
+        else:
+            output[_pair_key(*pair)] = cached
+    for start in range(0, len(missing), batch_size):
+        batch_entries = missing[start : start + batch_size]
+        batch = [item[0] for item in batch_entries]
         left = torch.cat([tensors[str(item[0])] for item in batch]).to(device)
         right = torch.cat([tensors[str(item[1])] for item in batch]).to(device)
         with torch.inference_mode():
             values = model(left, right, normalize=True).reshape(-1).detach().cpu().numpy()
-        for pair, value in zip(batch, values):
-            output[_pair_key(*pair)] = {"distance": float(max(value, 0.0))}
+        for (pair, cache_path), value in zip(batch_entries, values):
+            distances = {"distance": float(max(value, 0.0))}
+            output[_pair_key(*pair)] = distances
+            if cache_path:
+                _save_cached_distances(cache_path, distances)
     return output
+
+
+def _perceptual_cache_path(
+    cache_dir: Path,
+    model: str,
+    view: str,
+    image_size: int,
+    pair: tuple[Path, Path],
+) -> Path:
+    left, right = _canonical_pair(*pair)
+    inputs = []
+    for path in (left, right):
+        stat = path.stat()
+        inputs.append({
+            "path": str(path.resolve()),
+            "size": stat.st_size,
+            "mtime_ns": stat.st_mtime_ns,
+        })
+    payload = {
+        "model": model,
+        "view": f"{view}-v1",
+        "image_size": image_size,
+        "inputs": inputs,
+        "format": 1,
+    }
+    digest = hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
+    return cache_dir / f"{digest}.json"
+
+
+def _read_cached_pair_map(
+    pairs: list[tuple[Path, Path]],
+    cache_dir: Path,
+    model: str,
+    view: str,
+    image_size: int,
+    required: set[str],
+) -> tuple[dict[tuple[str, str], dict[str, float]], int]:
+    output = {}
+    misses = 0
+    for pair in pairs:
+        cache_path = _perceptual_cache_path(cache_dir, model, view, image_size, pair)
+        cached = _load_cached_distances(cache_path, required)
+        if cached is None:
+            misses += 1
+        else:
+            output[_pair_key(*pair)] = cached
+    return output, misses
+
+
+def _load_cached_distances(path: Path, required: set[str]) -> dict[str, float] | None:
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if set(payload) != required:
+            return None
+        values = {key: float(value) for key, value in payload.items()}
+        if not all(np.isfinite(value) for value in values.values()):
+            return None
+        return values
+    except Exception:
+        return None
+
+
+def _save_cached_distances(path: Path, values: dict[str, float]) -> None:
+    temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
+    try:
+        temporary.write_text(json.dumps(values, sort_keys=True), encoding="utf-8")
+        os.replace(temporary, path)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def _load_tensor(path: Path, image_size: int, torch, view: str):

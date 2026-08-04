@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "evaluation_set_v1",
+  "primary_scoring": {
+    "uses_images": true,
+    "uses_text_descriptions": false,
+    "reason": "ITTE v1.2 is an image-only evaluation. Theme descriptions are explanatory metadata and must not influence the primary score."
+  },
+  "generation_tracks": {
+    "image_only": {
+      "allowed_inputs": ["target original", "same-theme reference images"],
+      "text_descriptions_allowed": false,
+      "primary_track": true
+    },
+    "image_plus_theme_description": {
+      "allowed_inputs": ["target original", "same-theme reference images", "theme-level description"],
+      "text_descriptions_allowed": true,
+      "primary_track": false
+    }
+  },
+  "anti_leakage_rules": [
+    "When generating or evaluating one pair, exclude that app's real themed counterpart from the reference bank.",
+    "Split by canonical_app_id, never by individual image.",
+    "Do not expose the gold themed image, its crop record, or a per-image description to the generator.",
+    "Report each theme separately and report macro average because theme sizes are imbalanced.",
+    "Keep image-only and text-assisted results in separate tables."
+  ],
+  "weight_calibration": {
+    "benchmark_labels_alone_are_sufficient": false,
+    "available_supervision": [
+      "real theme label",
+      "real App identity label",
+      "same-App cross-theme label"
+    ],
+    "calibratable_from_current_data": [
+      "style component weights for correct-theme ranking",
+      "identity component weights for correct-App retrieval",
+      "package component parameters for coherent-versus-mixed real-theme discrimination"
+    ],
+    "not_identifiable_from_current_data": [
+      "visual quality weight",
+      "unique trade-off among style, identity, package and quality",
+      "human acceptability thresholds"
+    ],
+    "grouping_key": "canonical_app_id",
+    "rule": "Tune only dimension-internal weights against objective labels, using grouped cross-validation and per-theme macro metrics. Keep top-level weights explicitly provisional."
+  },
+  "recommended_uses": {
+    "style": "Rank the query or generated icon against four balanced theme reference banks; report per-theme Top-1, MRR and margin.",
+    "identity": "Retrieve the correct target from the fixed 91-original gallery; report Top-1, Top-5, MRR and margin.",
+    "paired_generation": "For each pair_manifest row, generate from the original and compare against the held-out real themed counterpart.",
+    "package": "Use package_pair_manifest for same-app cross-theme replacements and controlled mixture tests.",
+    "quality": "With clean positive images only, report clean-set false-alarm rate and score distribution. Do not tune the quality weight from this dataset."
+  }
+}

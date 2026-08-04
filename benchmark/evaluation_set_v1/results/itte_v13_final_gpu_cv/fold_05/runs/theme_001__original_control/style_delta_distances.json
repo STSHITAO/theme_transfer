@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.015285640954971313,
+        "D_OR": 0.3198702558875084,
+        "D_TR": 0.25343048572540283,
+        "D_GR": 0.25343048572540283,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.001131594181060791,
+        "D_OR": 0.2182202786207199,
+        "D_TR": 0.12922556698322296,
+        "D_GR": 0.12922556698322296,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.05624419450759888,
+        "D_OR": 0.09288542717695236,
+        "D_TR": 0.11270606517791748,
+        "D_GR": 0.11270606517791748,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0014081001281738281,
+        "D_OR": 0.06631055474281311,
+        "D_TR": 0.07180890440940857,
+        "D_GR": 0.07180890440940857,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0029346346855163574,
+        "D_OR": 0.019908294081687927,
+        "D_TR": 0.026540324091911316,
+        "D_GR": 0.026540324091911316,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.001270979642868042,
+        "D_OR": 0.06151004135608673,
+        "D_TR": 0.067606121301651,
+        "D_GR": 0.067606121301651,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 0.0
+          },
+          {
+            "app": "peace_elite",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 0.0
+      },
+      {
+        "app": "weibo",
+        "score": 0.0
+      },
+      {
+        "app": "meituan",
+        "score": 0.0
+      },
+      {
+        "app": "peace_elite",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.47854530811309814,
+    "D_GR_vgg_gram": 0.47854530811309814,
+    "D_RR_vgg_gram": 0.12820333242416382,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.39044618606567383,
+        "target_to_theme_distance": 0.39044618606567383
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5037617683410645,
+        "target_to_theme_distance": 0.5037617683410645
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5910528898239136,
+        "target_to_theme_distance": 0.5910528898239136
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4289203882217407,
+        "target_to_theme_distance": 0.4289203882217407
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.2849428355693817,
+    "D_TR": 0.4285187255591154,
+    "D_GR": 0.4285187255591154
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.6834871768951416,
+    "target_coverage": 0.3728819862008095,
+    "generated_coverage": 0.3728819862008095,
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 0.0,
+        "target_coverage": 0.377047598361969,
+        "generated_coverage": 0.377047598361969
+      },
+      {
+        "app": "weibo",
+        "score": 0.0,
+        "target_coverage": 0.4028705358505249,
+        "generated_coverage": 0.4028705358505249
+      },
+      {
+        "app": "meituan",
+        "score": 0.0,
+        "target_coverage": 0.34080377221107483,
+        "generated_coverage": 0.34080377221107483
+      },
+      {
+        "app": "peace_elite",
+        "score": 0.0,
+        "target_coverage": 0.3708060383796692,
+        "generated_coverage": 0.3708060383796692
+      }
+    ]
+  }
+}

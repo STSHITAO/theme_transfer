@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_001",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "douyin",
+    "netease_music",
+    "kuaishou",
+    "jd",
+    "king_camp",
+    "quark",
+    "douban",
+    "minecraft"
+  ],
+  "query_apps": [
+    "lol_mobile",
+    "weibo",
+    "meituan",
+    "peace_elite"
+  ],
+  "identity_disjoint": true
+}

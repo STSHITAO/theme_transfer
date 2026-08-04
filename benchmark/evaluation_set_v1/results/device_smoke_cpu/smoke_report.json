@@ -1,0 +1,43 @@
+{
+  "requested_device": "cpu",
+  "image_size": 160,
+  "dino_dense": {
+    "ok": true,
+    "score": 0.6619965881109238,
+    "appearance_similarity": 0.6715731024742126,
+    "spatial_consistency": 0.6332670450210571
+  },
+  "vgg_gram": {
+    "ok": true,
+    "device": "cpu",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 0,
+      "misses": 4,
+      "device": "cpu"
+    }
+  },
+  "perceptual": {
+    "ok": true,
+    "device": "cpu",
+    "models": {
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+      "dists_style": {
+        "hits": 0,
+        "misses": 5
+      },
+      "dists_identity": {
+        "hits": 0,
+        "misses": 3
+      },
+      "lpips_identity": {
+        "hits": 0,
+        "misses": 3
+      }
+    }
+  }
+}

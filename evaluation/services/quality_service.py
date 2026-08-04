@@ -49,8 +49,7 @@ def compute_visual_quality(
             score -= 20.0
             warnings.append("possible_crop")
         if metrics["border_dark_ratio"] > 0.12 and envelopes["border_dark_ratio"][0] < 0.05:
-            score -= 40.0
-            warnings.append("large_black_border")
+            warnings.append("dark_border_unlike_references")
         if metrics["semi_transparent_ratio"] > 0.35 and envelopes["semi_transparent_ratio"][0] < 0.08:
             score -= 35.0
             warnings.append("abnormal_transparency")
@@ -74,9 +73,10 @@ def compute_visual_quality(
             for warning in warnings
             if warning in {
                 "severe_crop_or_subject_touches_border",
-                "large_black_border",
                 "abnormal_transparency",
                 "severe_blur_or_empty_image",
+                "subject_area_too_small",
+                "extreme_exposure",
             }
         ]
         if severe:

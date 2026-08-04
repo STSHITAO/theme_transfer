@@ -1,0 +1,137 @@
+﻿canonical_app_id,app_slug,app_name,appstore_id,bundle_id,has_original,available_themes,pair_count,identity_basis,identity_confidence,status,notes
+appstore:1012871328,dewu,得物,1012871328,com.siwuai.duapp,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1032287195,soul,Soul,1032287195,com.soulapp.cn,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1042545880,crossfire_mobile,穿越火线,1042545880,com.tencent.tmgp.cf,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1044283059,pinduoduo,拼多多,1044283059,com.xunmeng.pinduoduo,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1086047750,douyin_huoshan,抖音火山版,1086047750,com.ss.iphone.ugc.Live,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1087897068,wecom,企业微信,1087897068,com.tencent.ww,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1102305688,king_camp,王者营地,1102305688,com.tencent.smobagamehelper,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1134496215,xigua_video,西瓜视频,1134496215,com.ss.iphone.article.Video,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1142110895,douyin,抖音,1142110895,com.ss.iphone.ugc.Aweme,true,theme_001|theme_002|theme_003|theme_004,4,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1160172628,quark,夸克,1160172628,com.quark.browser,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1165227346,hello_bike,哈啰,1165227346,com.jingyao.EasyBike,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1170455562,mini_world,迷你世界,1170455562,com.minitech.miniworld,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1195860596,kuaiying,快影,1195860596,com.kwai.videoeditor,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1235504705,qq_speed,QQ飞车手游,1235504705,com.tencent.tmgp.speedmobile,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1243986797,minecraft,我的世界,1243986797,com.netease.mc,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1321803705,peace_elite,和平精英,1321803705,com.tencent.tmgp.pubgmhd,true,theme_001|theme_002|theme_003|theme_004,4,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1322169769,ulike,轻颜相机,1322169769,,false,theme_003,0,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1336435685,peace_camp,和平营地,1336435685,com.tencent.gamehelper.pg,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1387717110,qimao,七猫免费小说,1387717110,com.yueyou.cyreader,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1393912674,pipixia,皮皮虾,1393912674,,false,theme_003|theme_004,0,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1410120498,toutiao_lite,今日头条极速版,1410120498,com.ss.iphone.article.lite,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1426252715,bilibili_comics,哔哩哔哩漫画,1426252715,com.bilibili.bilicomic,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1455054000,lol_mobile,英雄联盟手游,1455054000,com.tencent.lolm,true,theme_001|theme_002|theme_003,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1458072671,jianying,剪映,1458072671,com.lemon.lv,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1467190251,genshin,原神,1467190251,com.miHoYo.Yuanshen,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1467269885,kuaishou_lite,快手极速版,1467269885,,false,theme_003|theme_004,0,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1470182559,miyoushe,米游社,1470182559,com.miHoYo.mhybbs,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1478101301,golden_spatula,金铲铲之战,1478101301,com.tencent.jkchess,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1484048379,tencent_meeting,腾讯会议,1484048379,com.tencent.meeting,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1500526240,xingtu,醒图,1500526240,com.xt.retouch,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:1540397127,iqiyi_lite,爱奇艺极速版,1540397127,com.qiyi.video.lite,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:333206289,alipay,支付宝,333206289,com.alipay.iphoneclient,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:336141475,youku,优酷,336141475,com.youku.YouKu,true,theme_001,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:350962117,weibo,微博,350962117,com.sina.weibo,true,theme_001|theme_002|theme_003,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:351091731,dianping,大众点评,351091731,com.dianping.dpscope,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:353115739,youdao_dict,网易有道词典,353115739,youdaoPro,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:370139302,qq_browser,QQ浏览器,370139302,com.tencent.mttlite,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:379395415,ctrip,携程旅行,379395415,ctrip.com,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:387682726,taobao,淘宝,387682726,com.taobao.taobao4iphone,true,theme_002,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:393765873,iqiyi,爱奇艺,393765873,com.qiyi.iphone,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:399363156,tencent_news,腾讯新闻,399363156,com.tencent.info,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:414245413,jd,京东,414245413,com.360buy.jdmobile,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:414478124,wechat,微信,414478124,com.tencent.xin,true,theme_001|theme_002|theme_003|theme_004,4,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:414603431,qq_music,QQ音乐,414603431,com.tencent.QQMusic,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:416048305,meitu,美图秀秀,416048305,com.meitu.mtxx,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:417200582,vipshop,唯品会,417200582,com.vipshop.iphone,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:423084029,meituan,美团,423084029,com.meituan.imeituan,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:432274380,zhihu,知乎,432274380,com.zhihu.ios,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:434209233,moji_weather,墨迹天气,434209233,com.moji.MojiWeather,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:440948110,kuaishou,快手,440948110,com.jiangjia.gif,true,theme_001|theme_002|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:444934666,qq,QQ,444934666,com.tencent.mqq,true,theme_002|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:452186370,baidu_maps,百度地图,452186370,com.baidu.map,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:458318329,tencent_video,腾讯视频,458318329,com.tencent.live4iphone,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:461703208,amap,高德地图,461703208,com.autonavi.amap,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:472208016,kugou,酷狗音乐,472208016,com.kugou.kugou1002,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:473225145,qq_mail,QQ邮箱,473225145,com.tencent.qqmail,true,theme_001,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:475666808,lol_assistant,掌上英雄联盟,475666808,com.tencent.ied.app.lolbible,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:477927812,baidu_tieba,百度贴吧,477927812,com.baidu.tieba,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:481623196,tencent_maps,腾讯地图,481623196,com.tencent.sosomap,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:487608658,qq_reading,QQ阅读,487608658,com.tencent.qqreaderiphone,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:494514224,lofter,LOFTER,494514224,com.netease.lofter,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:507161324,eleme,饿了么,507161324,me.ele.ios.eleme,true,theme_004,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:510909506,xianyu,闲鱼,510909506,com.taobao.fleamarket,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:518966501,tmall,手机天猫,518966501,com.taobao.tmall,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:529092160,toutiao,今日头条,529092160,com.ss.iphone.article.News,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:529479190,clash_of_clans,部落冲突,529479190,com.supercell.magic,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:534174796,qidian,起点读书,534174796,m.qidian.QDReaderAppStore,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:547166701,baidu_netdisk,百度网盘,547166701,com.baidu.netdisk,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:569387346,tencent_comics,腾讯动漫,569387346,com.tencent.ied.app.comic,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:588673713,kuwo,酷我音乐,588673713,com.yeelion.kwplayer,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:592331499,beautycam,美颜相机,592331499,com.meitu.myxj,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:599852710,wps_office,WPS Office,599852710,com.kingsoft.www.office.wpsoffice,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:629774477,mango_tv,芒果TV,629774477,com.hunantv.imgotv,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:691828408,weishi,微视,691828408,com.tencent.microvision,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:736536022,bilibili,哔哩哔哩,736536022,tv.danmaku.bilianime,true,theme_001|theme_002|theme_003|theme_004,4,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:737310995,meituan_waimai,美团外卖,737310995,com.meituan.itakeaway,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:741292507,xiaohongshu,小红书,741292507,com.xingin.discover,true,theme_002|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:791532221,anipop,开心消消乐,791532221,com.happyelements.1OSAnimal,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:793626080,paipai,派派,793626080,cn.17PaiPai.PP,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:847276463,jjwxc,晋江小说阅读,847276463,,false,theme_003,0,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:863882795,douyu,斗鱼,863882795,tv.douyu.live,true,theme_001|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:871095743,huya,虎牙直播,871095743,com.yy.kiwi,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:876336838,ximalaya,喜马拉雅,876336838,com.gemd.iting,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:895670960,onmyoji,阴阳师,895670960,com.netease.onmyoji,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:906936224,kuaikan,快看,906936224,com.kuaikan.comic,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:907002334,douban,豆瓣,907002334,com.douban.frodo,true,theme_001|theme_003,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:910513149,karaoke,全民K歌,910513149,com.tencent.QQKSong,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:930368978,dingtalk,钉钉,930368978,com.laiwang.DingTalk,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:938688461,zepp_life,Zepp Life,938688461,HM.wristband,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:942443986,zuiyou,最右,942443986,,false,theme_004,0,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:944848654,netease_music,网易云音乐,944848654,com.netease.163music,true,theme_001|theme_002|theme_003|theme_004,4,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:952059546,wechat_reading,微信读书,952059546,com.tencent.weread,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:952694580,keep,Keep,952694580,com.gotokeep.keep,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:955396648,naruto_mobile,火影忍者,955396648,com.tencent.KiHan,true,theme_003,1,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:957323480,mi_home,米家,957323480,com.xiaomi.mihome,true,theme_003|theme_004,2,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+appstore:989673964,honor_of_kings,王者荣耀,989673964,com.tencent.smoba,true,theme_002|theme_003|theme_004,3,APP_STORE_ID,high,CONFIRMED,Explicit App Store ID agrees across available mapping records.
+slug:arena_breakout,arena_breakout,暗区突围,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:calculator,calculator,计算器,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:calendar,calendar,日历,,,false,theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:camera,camera,相机,,,false,theme_001|theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:clock,clock,时钟,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:cod_mobile,cod_mobile,使命召唤手游,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:compass,compass,指南针,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:contacts,contacts,联系人,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:douyin_lite,douyin_lite,抖音极速版,,,false,theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:download_manager,download_manager,下载管理,,,false,theme_001|theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:email,email,电子邮件,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:fanqie_audio,fanqie_audio,番茄畅听,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:fanqie_novel,fanqie_novel,番茄免费小说,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:file_manager,file_manager,文件管理,,,false,theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:game_center,game_center,游戏中心,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:global_internet,global_internet,全球上网,,,false,theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:haokan_video,haokan_video,好看视频,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_browser,mi_browser,小米浏览器,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_community,mi_community,小米社区,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_fitness,mi_fitness,小米运动健康,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_gallery,mi_gallery,小米相册,,,false,theme_002|theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_mover,mi_mover,小米换机,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_notes,mi_notes,小米笔记,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_remote,mi_remote,万能遥控,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_store,mi_store,小米商城,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_video,mi_video,小米视频,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_wallet,mi_wallet,钱包,,,false,theme_001|theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_weather,mi_weather,小米天气,,,false,theme_001|theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:mi_you_pin,mi_you_pin,小米有品,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:music,music,音乐,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:phone,phone,电话,,,false,theme_001|theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:recorder,recorder,录音机,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:service_feedback,service_feedback,服务与反馈,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:settings,settings,设置,,,false,theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:shuqinovel,shuqinovel,书旗小说,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:sms,sms,短信,,,false,theme_001|theme_002|theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:themes,themes,主题壁纸,,,false,theme_002|theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:xiaoai,xiaoai,小爱同学,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:xiaoai_vision,xiaoai_vision,小爱视觉,,,false,theme_003,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.
+slug:yingshi_daquan,yingshi_daquan,影视大全,,,false,theme_003|theme_004,0,EXPLICIT_MAPPING_SLUG,medium,CONFIRMED,No fuzzy matching used; identity comes from the explicit mapping slug.

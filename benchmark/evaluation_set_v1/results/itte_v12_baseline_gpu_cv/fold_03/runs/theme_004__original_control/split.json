@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_004",
+  "scenario": "original_control",
+  "reference_apps": [
+    "iqiyi_lite",
+    "douyu",
+    "netease_music",
+    "wechat_reading",
+    "pinduoduo",
+    "alipay",
+    "xigua_video",
+    "wecom"
+  ],
+  "query_apps": [
+    "golden_spatula",
+    "zhihu",
+    "wechat",
+    "eleme"
+  ],
+  "identity_disjoint": true
+}

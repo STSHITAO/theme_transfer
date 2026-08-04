@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_001",
+  "scenario": "original_control",
+  "reference_apps": [
+    "youku",
+    "weibo",
+    "lol_mobile",
+    "genshin",
+    "tmall",
+    "quark",
+    "qq_music",
+    "bilibili"
+  ],
+  "query_apps": [
+    "pinduoduo",
+    "meituan",
+    "kuaishou",
+    "lol_assistant"
+  ],
+  "identity_disjoint": true
+}

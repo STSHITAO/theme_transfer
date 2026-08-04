@@ -185,6 +185,46 @@ class PackageWorkflowTests(unittest.TestCase):
             self.assertEqual(len(metadata["final_outputs"]), len(target_apps))
             self.assertIn("theme_design_analysis", metadata)
 
+    def test_rerun_replaces_final_directory_without_stale_apps(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_project_fixture(root)
+            final_dir = root / "data/packages/package_001_theme_001/final"
+            make_png(final_dir / "removed_app.png")
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                run_package_workflow(
+                    "theme_001",
+                    "package_001_theme_001",
+                    root_dir=root,
+                )
+
+            self.assertEqual(
+                {path.name for path in final_dir.iterdir()},
+                {"bilibili.png", "qq.png", "xiaohongshu.png"},
+            )
+
+    def test_failed_rerun_preserves_previous_final_directory(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_project_fixture(root)
+            final_dir = root / "data/packages/package_001_theme_001/final"
+            previous_output = final_dir / "previous.png"
+            make_png(previous_output, color=(1, 2, 3, 255))
+            previous_bytes = previous_output.read_bytes()
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                with patch("backend.package_workflow.run_package_qc", side_effect=RuntimeError("QC failed")):
+                    with self.assertRaisesRegex(RuntimeError, "QC failed"):
+                        run_package_workflow(
+                            "theme_001",
+                            "package_001_theme_001",
+                            root_dir=root,
+                        )
+
+            self.assertEqual([path.name for path in final_dir.iterdir()], ["previous.png"])
+            self.assertEqual(previous_output.read_bytes(), previous_bytes)
+
     def test_best_selection_prefers_identity_safe_candidate_over_high_overall_low_identity(self):
         candidate_paths = [
             r"C:\tmp\candidate_01.png",

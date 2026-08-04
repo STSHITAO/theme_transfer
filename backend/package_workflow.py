@@ -1,5 +1,6 @@
 import os
 import shutil
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -66,7 +67,7 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
     )
     generation_base_prompt = Path(generation_base_prompt_path).read_text(encoding="utf-8")
 
-    final_outputs = {}
+    selected_outputs = {}
     cases = {}
     for target_app in target_apps:
         case_result = _run_package_case(
@@ -81,19 +82,22 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
             candidate_count,
         )
         cases[target_app] = case_result
-        final_outputs[target_app] = case_result["final_output_path"]
+        selected_outputs[target_app] = case_result["best_output_path"]
 
     contact_sheet_path = compose_contact_sheet(
-        [final_outputs[app_name] for app_name in target_apps],
+        [selected_outputs[app_name] for app_name in target_apps],
         package_dir / "contact_sheet.png",
     )
     package_qc = run_package_qc(
         style_refs,
         contact_sheet_path,
-        final_outputs,
+        selected_outputs,
         package_dir,
         root_dir=root,
     )
+    final_outputs = _publish_final_outputs(package_dir, selected_outputs)
+    for target_app, final_output_path in final_outputs.items():
+        cases[target_app]["final_output_path"] = final_output_path
     metadata_path = _save_package_metadata(
         package_dir,
         package_id,
@@ -195,9 +199,6 @@ def _run_package_case(
         root_dir=root,
     )
     best_output_path = _select_and_save_best_candidate(qc_report, generation["candidate_paths"], case_dir)
-    final_output_path = package_dir / "final" / f"{target_app}.png"
-    final_output_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(best_output_path, final_output_path)
 
     return {
         "target_app": target_app,
@@ -212,7 +213,44 @@ def _run_package_case(
         "wan_response_path": generation["wan_response_path"],
         "best_output_path": str(best_output_path),
         "qc_report_path": str(case_dir / "qc_report.json"),
-        "final_output_path": str(final_output_path),
+    }
+
+
+def _publish_final_outputs(package_dir, selected_outputs):
+    package_dir = Path(package_dir)
+    final_dir = package_dir / "final"
+    if final_dir.exists() and not final_dir.is_dir():
+        raise NotADirectoryError(f"Package final output path is not a directory: {final_dir}")
+
+    staging_dir = Path(tempfile.mkdtemp(prefix=".final_staging_", dir=package_dir))
+    backup_dir = Path(tempfile.mkdtemp(prefix=".final_backup_", dir=package_dir))
+    backup_dir.rmdir()
+    moved_existing_final = False
+
+    try:
+        for app_name, source_path in selected_outputs.items():
+            shutil.copyfile(source_path, staging_dir / f"{app_name}.png")
+
+        if final_dir.exists():
+            final_dir.rename(backup_dir)
+            moved_existing_final = True
+
+        try:
+            staging_dir.rename(final_dir)
+        except Exception:
+            if moved_existing_final and backup_dir.exists() and not final_dir.exists():
+                backup_dir.rename(final_dir)
+            raise
+    except Exception:
+        if staging_dir.exists():
+            shutil.rmtree(staging_dir, ignore_errors=True)
+        raise
+
+    if backup_dir.exists():
+        shutil.rmtree(backup_dir, ignore_errors=True)
+    return {
+        app_name: str(final_dir / f"{app_name}.png")
+        for app_name in selected_outputs
     }
 
 

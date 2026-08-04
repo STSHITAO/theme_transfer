@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.013465851545333862,
+        "D_OR": 0.18863439559936523,
+        "D_TR": 0.2651687413454056,
+        "D_GR": 0.2651687413454056,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0017542839050292969,
+        "D_OR": 0.10627824813127518,
+        "D_TR": 0.17021550238132477,
+        "D_GR": 0.17021550238132477,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0294073224067688,
+        "D_OR": 0.07829789072275162,
+        "D_TR": 0.058656007051467896,
+        "D_GR": 0.058656007051467896,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.007942348718643188,
+        "D_OR": 0.038669832050800323,
+        "D_TR": 0.04486803710460663,
+        "D_GR": 0.04486803710460663,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.001940220594406128,
+        "D_OR": 0.02226746827363968,
+        "D_TR": 0.041907116770744324,
+        "D_GR": 0.041907116770744324,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.005848228931427002,
+        "D_OR": 0.03773482143878937,
+        "D_TR": 0.04543870687484741,
+        "D_GR": 0.04543870687484741,
+        "per_app": [
+          {
+            "app": "golden_spatula",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "eleme",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "golden_spatula",
+        "score": 0.0
+      },
+      {
+        "app": "zhihu",
+        "score": 0.0
+      },
+      {
+        "app": "wechat",
+        "score": 0.0
+      },
+      {
+        "app": "eleme",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.4434129595756531,
+    "D_GR_vgg_gram": 0.4434129595756531,
+    "D_RR_vgg_gram": 0.13607989251613617,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4503062963485718,
+        "target_to_theme_distance": 0.4503062963485718
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.47779619693756104,
+        "target_to_theme_distance": 0.47779619693756104
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.39820849895477295,
+        "target_to_theme_distance": 0.39820849895477295
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.44734084606170654,
+        "target_to_theme_distance": 0.44734084606170654
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.2623133063316345,
+    "D_TR": 0.3902752995491028,
+    "D_GR": 0.3902752995491028
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7239392399787903,
+    "target_coverage": 0.39660560339689255,
+    "generated_coverage": 0.39660560339689255,
+    "per_app": [
+      {
+        "app": "golden_spatula",
+        "score": 0.0,
+        "target_coverage": 0.4834829568862915,
+        "generated_coverage": 0.4834829568862915
+      },
+      {
+        "app": "zhihu",
+        "score": 0.0,
+        "target_coverage": 0.2876702547073364,
+        "generated_coverage": 0.2876702547073364
+      },
+      {
+        "app": "wechat",
+        "score": 0.0,
+        "target_coverage": 0.4647109806537628,
+        "generated_coverage": 0.4647109806537628
+      },
+      {
+        "app": "eleme",
+        "score": 0.0,
+        "target_coverage": 0.35055822134017944,
+        "generated_coverage": 0.35055822134017944
+      }
+    ]
+  }
+}

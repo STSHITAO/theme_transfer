@@ -14,7 +14,7 @@ matplotlib>=3.8
 # https://pytorch.org/get-started/locally/ first, then run this file.
 torch>=2.4,<3
 torchvision>=0.19,<1
-transformers>=5.0
+transformers>=4.57,<6
 huggingface_hub>=0.24
 modelscope>=1.20
 lpips==0.1.4

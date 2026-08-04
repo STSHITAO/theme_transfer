@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0006461143493652344,
+        "D_OR": 0.35034581273794174,
+        "D_TR": 0.12478753924369812,
+        "D_GR": 0.12478753924369812,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 6.824731826782227e-05,
+        "D_OR": 0.2355695739388466,
+        "D_TR": 0.081902414560318,
+        "D_GR": 0.081902414560318,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.01720544695854187,
+        "D_OR": 0.08602410554885864,
+        "D_TR": 0.15003788471221924,
+        "D_GR": 0.15003788471221924,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0004082620143890381,
+        "D_OR": 0.04686988890171051,
+        "D_TR": 0.040659502148628235,
+        "D_GR": 0.040659502148628235,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.00036725401878356934,
+        "D_OR": 0.03480667620897293,
+        "D_TR": 0.01896362006664276,
+        "D_GR": 0.01896362006664276,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0003921389579772949,
+        "D_OR": 0.04352901875972748,
+        "D_TR": 0.03763912618160248,
+        "D_GR": 0.03763912618160248,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 0.0
+          },
+          {
+            "app": "miyoushe",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_news",
+            "score": 0.0
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "tencent_maps",
+        "score": 0.0
+      },
+      {
+        "app": "miyoushe",
+        "score": 0.0
+      },
+      {
+        "app": "tencent_news",
+        "score": 0.0
+      },
+      {
+        "app": "crossfire_mobile",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.3921615034341812,
+    "D_GR_vgg_gram": 0.3921615034341812,
+    "D_RR_vgg_gram": 0.07520776242017746,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.44179731607437134,
+        "target_to_theme_distance": 0.44179731607437134
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.31711918115615845,
+        "target_to_theme_distance": 0.31711918115615845
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.3724247217178345,
+        "target_to_theme_distance": 0.3724247217178345
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4373047947883606,
+        "target_to_theme_distance": 0.4373047947883606
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.21761438250541687,
+    "D_TR": 0.38772378861904144,
+    "D_GR": 0.38772378861904144
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7560727298259735,
+    "target_coverage": 0.4758026897907257,
+    "generated_coverage": 0.4758026897907257,
+    "per_app": [
+      {
+        "app": "tencent_maps",
+        "score": 0.0,
+        "target_coverage": 0.4838416576385498,
+        "generated_coverage": 0.4838416576385498
+      },
+      {
+        "app": "miyoushe",
+        "score": 0.0,
+        "target_coverage": 0.46175533533096313,
+        "generated_coverage": 0.46175533533096313
+      },
+      {
+        "app": "tencent_news",
+        "score": 0.0,
+        "target_coverage": 0.48912328481674194,
+        "generated_coverage": 0.48912328481674194
+      },
+      {
+        "app": "crossfire_mobile",
+        "score": 0.0,
+        "target_coverage": 0.46849048137664795,
+        "generated_coverage": 0.46849048137664795
+      }
+    ]
+  }
+}

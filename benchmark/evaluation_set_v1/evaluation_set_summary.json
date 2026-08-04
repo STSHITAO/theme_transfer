@@ -1,0 +1,57 @@
+﻿{
+    "created_at":  "2026-08-04T14:40:49.138966+00:00",
+    "identity_gallery_count":  91,
+    "theme_asset_count":  231,
+    "theme_asset_counts":  {
+                               "theme_001":  30,
+                               "theme_002":  20,
+                               "theme_003":  127,
+                               "theme_004":  54
+                           },
+    "pair_record_count":  158,
+    "pair_counts_by_theme":  {
+                                 "theme_001":  24,
+                                 "theme_002":  12,
+                                 "theme_003":  86,
+                                 "theme_004":  36
+                             },
+    "pair_union_unique_app_count":  91,
+    "excluded_pair_record_count":  73,
+    "package_pair_record_count":  137,
+    "package_pair_counts":  {
+                                "theme_001__theme_002":  12,
+                                "theme_001__theme_003":  27,
+                                "theme_001__theme_004":  17,
+                                "theme_002__theme_003":  18,
+                                "theme_002__theme_004":  15,
+                                "theme_003__theme_004":  48
+                            },
+    "catalog_app_count":  136,
+    "ambiguous_identity_count":  0,
+    "invalid_theme_record_count":  0,
+    "recommended_primary_metrics":  {
+                                        "style":  [
+                                                      "top1",
+                                                      "mrr",
+                                                      "margin",
+                                                      "per_theme_macro",
+                                                      "micro"
+                                                  ],
+                                        "identity":  [
+                                                         "top1",
+                                                         "top5",
+                                                         "mrr",
+                                                         "margin"
+                                                     ],
+                                        "package":  [
+                                                        "score_drop",
+                                                        "mix_ratio_monotonicity",
+                                                        "outlier_f1"
+                                                    ],
+                                        "quality":  [
+                                                        "clean_degraded_gap",
+                                                        "severity_monotonicity",
+                                                        "detection_rate"
+                                                    ]
+                                    }
+}

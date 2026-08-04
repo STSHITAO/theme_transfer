@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 5,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.041575342416763306,
+        "D_OR": 0.3678716793656349,
+        "D_TR": 0.491181880235672,
+        "D_GR": 0.491181880235672,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "taobao",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0756382942199707,
+        "D_OR": 0.2923937141895294,
+        "D_TR": 0.18060703575611115,
+        "D_GR": 0.18060703575611115,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "taobao",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.040867358446121216,
+        "D_OR": 0.12553691118955612,
+        "D_TR": 0.08937378227710724,
+        "D_GR": 0.08937378227710724,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "taobao",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.007270336151123047,
+        "D_OR": 0.03607550263404846,
+        "D_TR": 0.02154947817325592,
+        "D_GR": 0.02154947817325592,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "taobao",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": null,
+        "reliable": false,
+        "D_RR": 0.011963039636611938,
+        "D_OR": 0.009679168462753296,
+        "D_TR": 0.052530959248542786,
+        "D_GR": 0.052530959248542786,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": null
+          },
+          {
+            "app": "xiaohongshu",
+            "score": null
+          },
+          {
+            "app": "wechat",
+            "score": null
+          },
+          {
+            "app": "taobao",
+            "score": null
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.004386961460113525,
+        "D_OR": 0.03564601391553879,
+        "D_TR": 0.02048332989215851,
+        "D_GR": 0.02048332989215851,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "taobao",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 0.0
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 0.0
+      },
+      {
+        "app": "wechat",
+        "score": 0.0
+      },
+      {
+        "app": "taobao",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.3993872404098511,
+    "D_GR_vgg_gram": 0.3993872404098511,
+    "D_RR_vgg_gram": 0.13386017829179764,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.2465420961380005,
+        "target_to_theme_distance": 0.2465420961380005
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.41375792026519775,
+        "target_to_theme_distance": 0.41375792026519775
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5640208125114441,
+        "target_to_theme_distance": 0.5640208125114441
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.37322813272476196,
+        "target_to_theme_distance": 0.37322813272476196
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.29680803418159485,
+    "D_TR": 0.3782994095236063,
+    "D_GR": 0.3782994095236063
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 29,
+    "reference_coverage": 0.6730952262878418,
+    "target_coverage": 0.49473467469215393,
+    "generated_coverage": 0.49473467469215393,
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 0.0,
+        "target_coverage": 0.49067842960357666,
+        "generated_coverage": 0.49067842960357666
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 0.0,
+        "target_coverage": 0.43180298805236816,
+        "generated_coverage": 0.43180298805236816
+      },
+      {
+        "app": "wechat",
+        "score": 0.0,
+        "target_coverage": 0.539878785610199,
+        "generated_coverage": 0.539878785610199
+      },
+      {
+        "app": "taobao",
+        "score": 0.0,
+        "target_coverage": 0.5165784955024719,
+        "generated_coverage": 0.5165784955024719
+      }
+    ]
+  }
+}

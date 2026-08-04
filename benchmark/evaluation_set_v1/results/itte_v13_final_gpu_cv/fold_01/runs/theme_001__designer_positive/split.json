@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_001",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "qq_music",
+    "bilibili",
+    "jd",
+    "lol_assistant",
+    "douyu",
+    "peace_elite",
+    "wechat",
+    "king_camp"
+  ],
+  "query_apps": [
+    "pinduoduo",
+    "quark",
+    "douban",
+    "alipay"
+  ],
+  "identity_disjoint": true
+}

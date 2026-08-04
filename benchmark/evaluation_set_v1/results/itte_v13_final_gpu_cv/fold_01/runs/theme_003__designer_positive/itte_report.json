@@ -1,0 +1,1016 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.3-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_003",
+  "package_id": "benchmark_theme_003_designer_positive",
+  "itte_score": 91.64392915346478,
+  "tpqs": 91.64392915346478,
+  "tpqs_primary_score": 91.64392915346478,
+  "style_fidelity_score": 97.67652192442476,
+  "identity_preservation_score": 75.0,
+  "package_coherence_score": 99.78573239958055,
+  "visual_quality_score": 100.0,
+  "style_fidelity": {
+    "score": 97.67652192442476,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 95.26570520041217,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 92.40063749547814,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 100.0,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.3921615034341812,
+      "D_GR_vgg_gram": 0.06765943765640259,
+      "D_RR_vgg_gram": 0.07520776242017746,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.05765092372894287,
+          "target_to_theme_distance": 0.44179731607437134
+        },
+        {
+          "index": 1,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.07475388050079346,
+          "target_to_theme_distance": 0.31711918115615845
+        },
+        {
+          "index": 2,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.06279152631759644,
+          "target_to_theme_distance": 0.3724247217178345
+        },
+        {
+          "index": 3,
+          "score": 99.93547098230219,
+          "generated_to_theme_distance": 0.07544142007827759,
+          "target_to_theme_distance": 0.4373047947883606
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 16,
+        "misses": 0,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+    },
+    "dists_texture": {
+      "score": 100.0,
+      "reliable": true,
+      "D_RR": 0.21761438250541687,
+      "D_TR": 0.38772378861904144,
+      "D_GR": 0.21205080673098564
+    },
+    "visual_attributes": {
+      "score": 95.26570520041217,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 99.86394820204268,
+          "reliable": true,
+          "D_RR": 0.0006461143493652344,
+          "D_OR": 0.35034581273794174,
+          "D_TR": 0.12478753924369812,
+          "D_GR": 0.0007268637418746948,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 100.0
+            },
+            {
+              "app": "miyoushe",
+              "score": 99.59401109262683
+            },
+            {
+              "app": "tencent_news",
+              "score": 100.0
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 99.86178171554387
+            }
+          ]
+        },
+        "background": {
+          "score": 99.78712327431683,
+          "reliable": true,
+          "D_RR": 6.824731826782227e-05,
+          "D_OR": 0.2355695739388466,
+          "D_TR": 0.081902414560318,
+          "D_GR": 0.00011214613914489746,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 99.42556589307422
+            },
+            {
+              "app": "miyoushe",
+              "score": 99.75861445741256
+            },
+            {
+              "app": "tencent_news",
+              "score": 100.0
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 99.96431274678052
+            }
+          ]
+        },
+        "stroke": {
+          "score": 78.9936835464705,
+          "reliable": true,
+          "D_RR": 0.01720544695854187,
+          "D_OR": 0.08602410554885864,
+          "D_TR": 0.15003788471221924,
+          "D_GR": 0.036546602845191956,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 96.91889593798811
+            },
+            {
+              "app": "miyoushe",
+              "score": 51.984034487259315
+            },
+            {
+              "app": "tencent_news",
+              "score": 69.19455478763918
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 97.8772489729954
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 98.11576280415201,
+          "reliable": true,
+          "D_RR": 0.0004082620143890381,
+          "D_OR": 0.04686988890171051,
+          "D_TR": 0.040659502148628235,
+          "D_GR": 0.0007071644067764282,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 99.66150976811029
+            },
+            {
+              "app": "miyoushe",
+              "score": 94.88117526085728
+            },
+            {
+              "app": "tencent_news",
+              "score": 100.0
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 97.92036618764044
+            }
+          ]
+        },
+        "composition": {
+          "score": 96.87570910731908,
+          "reliable": true,
+          "D_RR": 0.00036725401878356934,
+          "D_OR": 0.03480667620897293,
+          "D_TR": 0.01896362006664276,
+          "D_GR": 0.0004501640796661377,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 88.9407683228234
+            },
+            {
+              "app": "miyoushe",
+              "score": 98.56206810645291
+            },
+            {
+              "app": "tencent_news",
+              "score": 100.0
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 100.0
+            }
+          ]
+        },
+        "complexity": {
+          "score": 97.95800426817193,
+          "reliable": true,
+          "D_RR": 0.0003921389579772949,
+          "D_OR": 0.04352901875972748,
+          "D_TR": 0.03763912618160248,
+          "D_GR": 0.0006960183382034302,
+          "per_app": [
+            {
+              "app": "tencent_maps",
+              "score": 99.68368853950753
+            },
+            {
+              "app": "miyoushe",
+              "score": 94.79289745263453
+            },
+            {
+              "app": "tencent_news",
+              "score": 100.0
+            },
+            {
+              "app": "crossfire_mobile",
+              "score": 97.35543108054567
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "tencent_maps",
+          "score": 97.43840474358393
+        },
+        {
+          "app": "miyoushe",
+          "score": 89.92880014287391
+        },
+        {
+          "app": "tencent_news",
+          "score": 94.8657591312732
+        },
+        {
+          "app": "crossfire_mobile",
+          "score": 98.82985678391765
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 92.40063749547814,
+      "reliable": true,
+      "prototype_count": 32,
+      "reference_coverage": 0.7560727298259735,
+      "target_coverage": 0.4758026897907257,
+      "generated_coverage": 0.7347739934921265,
+      "per_app": [
+        {
+          "app": "tencent_maps",
+          "score": 97.4491707809868,
+          "target_coverage": 0.4838416576385498,
+          "generated_coverage": 0.7491285800933838
+        },
+        {
+          "app": "miyoushe",
+          "score": 94.80221712933819,
+          "target_coverage": 0.46175533533096313,
+          "generated_coverage": 0.7407747507095337
+        },
+        {
+          "app": "tencent_news",
+          "score": 94.96628294771091,
+          "target_coverage": 0.48912328481674194,
+          "generated_coverage": 0.7426352500915527
+        },
+        {
+          "app": "crossfire_mobile",
+          "score": 82.78219986840986,
+          "target_coverage": 0.46849048137664795,
+          "generated_coverage": 0.7065573930740356
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 75.0,
+    "p10_score": 37.27272727272728,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 75.0,
+        "reliable": true,
+        "weight": 1.0
+      },
+      "dists_structure": {
+        "score": 75.0,
+        "reliable": true,
+        "weight": 0.0
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.0
+      }
+    },
+    "dino_dense": {
+      "score": 75.0,
+      "p10_score": 37.27272727272728,
+      "reliable": true,
+      "positive_reference_similarity": 0.6671089977025986,
+      "distractor_similarity": 0.5205518007278442,
+      "calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "per_app": [
+        {
+          "app": "tencent_maps",
+          "score": 81.81818181818183,
+          "raw_correspondence": 0.6043977737426758,
+          "appearance_similarity": 0.6011443138122559,
+          "spatial_consistency": 0.6141581535339355,
+          "retrieval_rank": 3,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "miyoushe",
+          "score": 100.0,
+          "raw_correspondence": 0.6338561028242111,
+          "appearance_similarity": 0.6437696218490601,
+          "spatial_consistency": 0.6041155457496643,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "tencent_news",
+          "score": 100.0,
+          "raw_correspondence": 0.6961003392934799,
+          "appearance_similarity": 0.7106252908706665,
+          "spatial_consistency": 0.6525254845619202,
+          "retrieval_rank": 1,
+          "gallery_size": 12,
+          "distractor_count": 11
+        },
+        {
+          "app": "crossfire_mobile",
+          "score": 18.181818181818183,
+          "raw_correspondence": 0.47395406663417816,
+          "appearance_similarity": 0.48045653104782104,
+          "spatial_consistency": 0.4544466733932495,
+          "retrieval_rank": 10,
+          "gallery_size": 12,
+          "distractor_count": 11
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "tencent_maps",
+          "miyoushe",
+          "tencent_news",
+          "crossfire_mobile"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.6043977737426758,
+            0.4616282433271408,
+            0.5502032190561295,
+            0.42991866916418076
+          ],
+          [
+            0.4921058639883995,
+            0.6338561028242111,
+            0.5190041735768318,
+            0.44995809346437454
+          ],
+          [
+            0.5350402295589447,
+            0.44943198561668396,
+            0.6961003392934799,
+            0.425245076417923
+          ],
+          [
+            0.5485024005174637,
+            0.4223167300224304,
+            0.4773891270160675,
+            0.47395406663417816
+          ]
+        ],
+        "identity_gallery_paths": [
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuwo.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douban.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\minecraft.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\meitu.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaikan.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\iqiyi.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaiying.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\tencent_maps.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\miyoushe.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\tencent_news.png",
+          "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\crossfire_mobile.png"
+        ],
+        "generated_to_identity_gallery_similarity": [
+          [
+            0.647685170173645,
+            0.5766662359237671,
+            0.46832334995269775,
+            0.6024381220340729,
+            0.47339873760938644,
+            0.539983868598938,
+            0.4692237973213196,
+            0.6431900262832642,
+            0.6043977737426758,
+            0.4616282433271408,
+            0.5502032190561295,
+            0.42991866916418076
+          ],
+          [
+            0.612028107047081,
+            0.5372506529092789,
+            0.5115221440792084,
+            0.5281921178102493,
+            0.5669667422771454,
+            0.5126019194722176,
+            0.5364125370979309,
+            0.559996023774147,
+            0.4921058639883995,
+            0.6338561028242111,
+            0.5190041735768318,
+            0.44995809346437454
+          ],
+          [
+            0.6670282632112503,
+            0.5031760931015015,
+            0.4392672926187515,
+            0.6404941082000732,
+            0.5030795782804489,
+            0.560339942574501,
+            0.46749502420425415,
+            0.5207706317305565,
+            0.5350402295589447,
+            0.44943198561668396,
+            0.6961003392934799,
+            0.425245076417923
+          ],
+          [
+            0.5617417693138123,
+            0.5457533448934555,
+            0.4810287430882454,
+            0.5863436013460159,
+            0.47586333006620407,
+            0.5179041028022766,
+            0.45148272067308426,
+            0.49964652955532074,
+            0.5485024005174637,
+            0.4223167300224304,
+            0.4773891270160675,
+            0.47395406663417816
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.7006542980670929,
+          0.7236555069684982,
+          0.6441427767276764,
+          0.6678378880023956,
+          0.6663801074028015,
+          0.7269218862056732,
+          0.5056036338210106,
+          0.6585994511842728
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 75.0,
+      "p10_score": 30.000000000000004,
+      "positive_reference_distance": 0.8024390935897827,
+      "distractor_distance": 0.8442298471927643,
+      "per_app": [
+        {
+          "app": "tencent_maps",
+          "score": 100.0,
+          "distance": 0.7818418145179749
+        },
+        {
+          "app": "miyoushe",
+          "score": 100.0,
+          "distance": 0.7624944448471069
+        },
+        {
+          "app": "tencent_news",
+          "score": 100.0,
+          "distance": 0.7930426597595215
+        },
+        {
+          "app": "crossfire_mobile",
+          "score": 0.0,
+          "distance": 0.8838465809822083
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.8264933228492737,
+      "distractor_distance": 1.071256123640722,
+      "per_app": [
+        {
+          "app": "tencent_maps",
+          "score": 100.0,
+          "distance": 0.6368108987808228
+        },
+        {
+          "app": "miyoushe",
+          "score": 100.0,
+          "distance": 0.6185569763183594
+        },
+        {
+          "app": "tencent_news",
+          "score": 100.0,
+          "distance": 0.6136375069618225
+        },
+        {
+          "app": "crossfire_mobile",
+          "score": 100.0,
+          "distance": 0.7777924537658691
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "tencent_maps",
+        "score": 81.81818181818183,
+        "components": {
+          "dino_dense": 81.81818181818183,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "miyoushe",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "tencent_news",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "crossfire_mobile",
+        "score": 18.181818181818183,
+        "components": {
+          "dino_dense": 18.181818181818183,
+          "dists_structure": 0.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 99.78573239958055,
+    "package_unity_score": 100.0,
+    "theme_membership_score": 99.571923905207,
+    "generated_p90_distance": 0.002547740936279297,
+    "reference_p90_distance": 0.0028353927191346884,
+    "reference_mad": 0.0005184412002563477,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "tencent_maps",
+        "score": 99.97872546696254,
+        "distance_to_reference": 0.0011168122291564941,
+        "internal_distance": 0.00045245885848999023,
+        "is_outlier": false
+      },
+      {
+        "app": "miyoushe",
+        "score": 98.32920705718823,
+        "distance_to_reference": 0.0021730661392211914,
+        "internal_distance": 0.0010377764701843262,
+        "is_outlier": false
+      },
+      {
+        "app": "tencent_news",
+        "score": 100.0,
+        "distance_to_reference": 0.0009301304817199707,
+        "internal_distance": 0.0004080533981323242,
+        "is_outlier": false
+      },
+      {
+        "app": "crossfire_mobile",
+        "score": 99.97976309667726,
+        "distance_to_reference": 0.001145780086517334,
+        "internal_distance": 0.0008695125579833984,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "per_app": [
+      {
+        "app": "tencent_maps",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9429466724395752,
+          "contrast": 0.10602755099534988,
+          "saturation": 0.040279570966959,
+          "sharpness": 0.0032579731196165085,
+          "edge_density": 0.06763193558673469,
+          "foreground_ratio": 0.23165955835459184,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.08258928571428571,
+          "border_edge_ratio": 0.015146683673469387,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.07554298886670414,
+          "contrast": 0.19136167964457632,
+          "saturation": -1.087130181951593,
+          "sharpness": 4.691576903558827,
+          "edge_density": 1.6310913978494608,
+          "foreground_ratio": -0.47469092465753454,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -275.8705000000307,
+          "border_edge_ratio": 94.36762595663265,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "miyoushe",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9474982619285583,
+          "contrast": 0.10021291673183441,
+          "saturation": 0.0367402657866478,
+          "sharpness": 0.002707949373871088,
+          "edge_density": 0.05591318558673469,
+          "foreground_ratio": 0.2244250239158163,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13145727040816327,
+          "border_edge_ratio": 0.0011160714285714285,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.7411737808621035,
+          "contrast": -0.9178055494391456,
+          "saturation": -1.710755557956015,
+          "sharpness": 1.2211881702748617,
+          "edge_density": -0.16452150537634488,
+          "foreground_ratio": -0.8100929794520562,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -0.22483333333330724,
+          "border_edge_ratio": -0.2688536352040819,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "tencent_news",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9437957406044006,
+          "contrast": 0.10488918423652649,
+          "saturation": 0.04657786339521408,
+          "sharpness": 0.002260162029415369,
+          "edge_density": 0.04892279177295918,
+          "foreground_ratio": 0.23115632971938777,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.1314971301020408,
+          "border_edge_ratio": 0.0011160714285714285,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.19971190093111313,
+          "contrast": -0.02578681952891821,
+          "saturation": 0.022628593755626078,
+          "sharpness": -1.604137403624167,
+          "edge_density": -1.235629032258065,
+          "foreground_ratio": -0.4980212328767125,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": -0.2688536352040819,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "crossfire_mobile",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9488509893417358,
+          "contrast": 0.09990101307630539,
+          "saturation": 0.041006579995155334,
+          "sharpness": 0.0020813646260648966,
+          "edge_density": 0.04388054049744898,
+          "foreground_ratio": 0.21235750159438777,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.1314971301020408,
+          "border_edge_ratio": 0.0010762117346938774,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.9389985235298298,
+          "contrast": -0.9773025526324384,
+          "saturation": -0.9590312316012071,
+          "sharpness": -2.7322641416561395,
+          "edge_density": -2.008231182795699,
+          "foreground_ratio": -1.3695583904109592,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": -0.5377072704081638,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.9424301087856293,
+        "mad": 0.004612237215042114
+      },
+      "contrast": {
+        "median": 0.10502436757087708,
+        "mad": 0.003535959869623184
+      },
+      "saturation": {
+        "median": 0.046449437737464905,
+        "mad": 0.003828037530183792
+      },
+      "sharpness": {
+        "median": 0.0025144026149064302,
+        "mad": 0.0001069018617272377
+      },
+      "edge_density": {
+        "median": 0.05698690609056123,
+        "mad": 0.004402004942602043
+      },
+      "foreground_ratio": {
+        "median": 0.24189851721938777,
+        "mad": 0.014548788265306117
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.1314971301020408,
+        "mad": 0.00011957908163263975
+      },
+      "border_edge_ratio": {
+        "median": 0.0011559311224489796,
+        "mad": 0.0001
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [],
+  "evaluation_confidence": "high",
+  "decision": "style_transfer_success_strong",
+  "per_app": [
+    {
+      "app": "tencent_maps",
+      "itte_score": 91.64392915346478,
+      "style_fidelity_score": 97.44378776228537,
+      "identity_preservation_score": 81.81818181818183,
+      "package_membership_score": 99.97872546696254,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 81.81818181818183, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "miyoushe",
+      "itte_score": 91.64392915346478,
+      "style_fidelity_score": 92.36550863610606,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 98.32920705718823,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "tencent_news",
+      "itte_score": 91.64392915346478,
+      "style_fidelity_score": 94.91602103949205,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "crossfire_mobile",
+      "itte_score": 91.64392915346478,
+      "style_fidelity_score": 90.80602832616376,
+      "identity_preservation_score": 18.181818181818183,
+      "package_membership_score": 99.97976309667726,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 18.181818181818183, \"dists_structure\": 0.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 100.0,
+        "reliable": true,
+        "D_RR": 0.21761438250541687,
+        "D_TR": 0.38772378861904144,
+        "D_GR": 0.21205080673098564
+      },
+      "dists_structure": {
+        "score": 75.0,
+        "p10_score": 30.000000000000004,
+        "positive_reference_distance": 0.8024390935897827,
+        "distractor_distance": 0.8442298471927643,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 100.0,
+            "distance": 0.7818418145179749
+          },
+          {
+            "app": "miyoushe",
+            "score": 100.0,
+            "distance": 0.7624944448471069
+          },
+          {
+            "app": "tencent_news",
+            "score": 100.0,
+            "distance": 0.7930426597595215
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 0.0,
+            "distance": 0.8838465809822083
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.8264933228492737,
+        "distractor_distance": 1.071256123640722,
+        "per_app": [
+          {
+            "app": "tencent_maps",
+            "score": 100.0,
+            "distance": 0.6368108987808228
+          },
+          {
+            "app": "miyoushe",
+            "score": 100.0,
+            "distance": 0.6185569763183594
+          },
+          {
+            "app": "tencent_news",
+            "score": 100.0,
+            "distance": 0.6136375069618225
+          },
+          {
+            "app": "crossfire_mobile",
+            "score": 100.0,
+            "distance": 0.7777924537658691
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 92,
+          "misses": 0
+        },
+        "dists_identity": {
+          "hits": 18,
+          "misses": 0
+        },
+        "lpips_identity": {
+          "hits": 18,
+          "misses": 0
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    },
+    "identity_metric_validation": {
+      "dino_dense_used_in_primary_identity_score": true,
+      "dists_structure_used_in_primary_identity_score": false,
+      "lpips_content_used_in_primary_identity_score": false,
+      "basis": "Verified-label retrieval on 158 real original/designer pairs."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuwo.png": "363d3f99f98c8d41339c7a15d71a42f58e3bb0ccd38d67d9b889935c3805d319",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\douban.png": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\minecraft.png": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\meitu.png": "c61c4423d86ac1aaddbef063ee4460ae25e8bb64ae6ed257a8ee44318873e627",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaikan.png": "79b5769e9f70b8e9ab292e558bb197516835868125891d80b80f7d1bd8153c5e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\weibo.png": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\iqiyi.png": "5e47d4535ef3079dca57bd1d3b29556b8f08a6b4f89533df798bd7d2f9daf0cf",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\kuaiying.png": "77097ae01f18002fffd196af22ceebcfa0872d72db09756b1e68e3479247b40c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\kuwo.png": "e125c7cd42d49b7426fe734f40560b2c416c4101828577177259a4755397554d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\douban.png": "7982408c83036674b8ca1538b63991647f9bf20d1dc9775231bb363a9b09b3a3",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\minecraft.png": "ef192ea34ef1a428f56a32fff6f50fcb976bca69bb7a42be610e5105c83828ca",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\meitu.png": "5778a9904ff3b5ead7ef0b32981006b1cd5cea64efac3fde76dd1ca4a24e3fce",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\kuaikan.png": "9c7cc5712228418a3026a01a938a204ff64f6a6b1087449ae9cedf359411d62d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\weibo.png": "5839a34a9f41ee9b80a60ab7c9fc389677bb6f14b03e87c440ec5e9bc29fbd3b",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\iqiyi.png": "6e5f982dc55244538937a5431df0f13e78f208cc9516fb8e24d045a62fc99a30",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\kuaiying.png": "d94bfc9c808d02b707d335f8927c9264c09eff4e5aba013252921e3c0214be8b",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\tencent_maps.png": "45e1c192d80e3a3d15a10644ed3e28a7990d5f65024da225bb9deeebd064f097",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\miyoushe.png": "e26b810652c5729158ac66b308739e0f1ec6a9efe7bf135c503f7d886e56e2ee",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\tencent_news.png": "7cd9218791264ec31edfd8e7a64700f334b56498bde6ee5522b08d2b54c4a0cf",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\crossfire_mobile.png": "4eec2e230b93d9c787033be8832c13fd11bc97825ac9e91c991e8997cd4fc3d2",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\tencent_maps.png": "de4d17c6e5dbd05c88cd477e66e638e2882aee8ccd78a102eb49cbb7a299d32b",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\miyoushe.png": "5c5267ce9e6878e55ff50650a442854a475cf1b25b4c3bfa2d1ae6a139ed0c1c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\tencent_news.png": "ad66d95eb6883a72e6a929e0e37d1723607b5512c61eb8e6f0eb7295dba6a163",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_003\\crossfire_mobile.png": "6353f1d266e917e21ff791e5415205afec1a257cc0c5c9f5a3f80b74f31095bf"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d2f78ef47f8657b5ce1ca80f00207f1667b41e9edc9d5e080103b4fa9bedffa5",
+    "scoring_config": {
+      "itte_version": "v1.3-image-only",
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 1.0,
+        "dists_structure": 0.0,
+        "lpips_content": 0.0
+      },
+      "identity_calibration": "dino-dense-same-run-gallery-percentile-v1",
+      "quality_rules_version": "reference-normalized-artifacts-v2-dark-border-diagnostic"
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true,
+    "compute_itte_v12_metrics_is_legacy_entrypoint_name": true
+  }
+}

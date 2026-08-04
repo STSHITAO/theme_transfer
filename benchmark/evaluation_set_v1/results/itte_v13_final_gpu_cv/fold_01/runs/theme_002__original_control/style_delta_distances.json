@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0370008647441864,
+        "D_OR": 0.40154994279146194,
+        "D_TR": 0.3758491724729538,
+        "D_GR": 0.3758491724729538,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.03810077905654907,
+        "D_OR": 0.2958754301071167,
+        "D_TR": 0.24103039503097534,
+        "D_GR": 0.24103039503097534,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.040046364068984985,
+        "D_OR": 0.12086457014083862,
+        "D_TR": 0.108843594789505,
+        "D_GR": 0.108843594789505,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.004434674978256226,
+        "D_OR": 0.028595909476280212,
+        "D_TR": 0.03231531381607056,
+        "D_GR": 0.03231531381607056,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0043891072273254395,
+        "D_OR": 0.014463894069194794,
+        "D_TR": 0.04079616069793701,
+        "D_GR": 0.04079616069793701,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.002897113561630249,
+        "D_OR": 0.028623826801776886,
+        "D_TR": 0.030111148953437805,
+        "D_GR": 0.030111148953437805,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 0.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 0.0
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 0.0
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 0.0
+      },
+      {
+        "app": "douyin",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.2892093062400818,
+    "D_GR_vgg_gram": 0.2892093062400818,
+    "D_RR_vgg_gram": 0.14088255912065506,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.20916056632995605,
+        "target_to_theme_distance": 0.20916056632995605
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.3706128001213074,
+        "target_to_theme_distance": 0.3706128001213074
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.3441787362098694,
+        "target_to_theme_distance": 0.3441787362098694
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.23288512229919434,
+        "target_to_theme_distance": 0.23288512229919434
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.28984177112579346,
+    "D_TR": 0.38697935827076435,
+    "D_GR": 0.38697935827076435
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 30,
+    "reference_coverage": 0.7047457098960876,
+    "target_coverage": 0.4835062175989151,
+    "generated_coverage": 0.4835062175989151,
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 0.0,
+        "target_coverage": 0.5357462167739868,
+        "generated_coverage": 0.5357462167739868
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 0.0,
+        "target_coverage": 0.449285089969635,
+        "generated_coverage": 0.449285089969635
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 0.0,
+        "target_coverage": 0.43869858980178833,
+        "generated_coverage": 0.43869858980178833
+      },
+      {
+        "app": "douyin",
+        "score": 0.0,
+        "target_coverage": 0.5102949738502502,
+        "generated_coverage": 0.5102949738502502
+      }
+    ]
+  }
+}

@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw
 
 from evaluation.services.dino_dense_service import DenseImageFeature, dense_correspondence
 from evaluation.services.image_view_service import load_image_view
-from evaluation.services.itte_v12_service import _decision, _dense_identity_score, _weighted_available
+from evaluation.services.itte_v12_service import _decision, _dense_identity_score, _hard_failures, _weighted_available
 from evaluation.services.quality_service import compute_visual_quality
 
 
@@ -71,6 +71,17 @@ class ItteV12Tests(unittest.TestCase):
         self.assertEqual(result["score"], 100.0)
         self.assertEqual(result["per_app"][0]["score"], 100.0)
         self.assertLessEqual(result["per_app"][0]["raw_correspondence"], 1.0)
+        self.assertEqual(result["per_app"][0]["retrieval_rank"], 1)
+
+    def test_unvalidated_identity_thresholds_are_not_hard_failures(self):
+        failures = _hard_failures(
+            identity={"p10_score": 0.0, "per_app": [{"app": "a", "score": 0.0}]},
+            package={"outlier_apps": []},
+            quality={"hard_failures": []},
+            style_available_weight=1.0,
+        )
+
+        self.assertEqual(failures, [])
 
     def test_structure_view_removes_launcher_label_region(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -117,6 +128,22 @@ class ItteV12Tests(unittest.TestCase):
 
             self.assertTrue(result["hard_failures"])
             self.assertLess(result["per_app"][0]["score"], 70.0)
+
+    def test_dark_background_is_not_mistaken_for_black_padding(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            reference = root / "reference.png"
+            generated = root / "generated.png"
+            Image.new("RGB", (128, 128), "white").save(reference)
+            generated_image = Image.new("RGB", (128, 128), "black")
+            draw = ImageDraw.Draw(generated_image)
+            draw.ellipse((32, 32, 96, 96), fill=(120, 255, 20))
+            generated_image.save(generated)
+
+            result = compute_visual_quality([reference] * 5, [generated], ["dark_theme"])
+
+            self.assertFalse(result["hard_failures"])
+            self.assertIn("dark_border_unlike_references", result["per_app"][0]["warnings"])
 
 
 if __name__ == "__main__":

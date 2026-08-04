@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 64.84297031501268,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 88.96857560794481,
+        "reliable": true,
+        "D_RR": 0.0370008647441864,
+        "D_OR": 0.40154994279146194,
+        "D_TR": 0.3758491724729538,
+        "D_GR": 0.057186439633369446,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 65.48734907516454
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 98.61667326509766
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 91.77028009151708
+          }
+        ]
+      },
+      "background": {
+        "score": 47.689998666026455,
+        "reliable": true,
+        "D_RR": 0.03810077905654907,
+        "D_OR": 0.2958754301071167,
+        "D_TR": 0.24103039503097534,
+        "D_GR": 0.11013810336589813,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 36.70370503968107
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 47.21390917000893
+          },
+          {
+            "app": "douyin",
+            "score": 6.842380454415819
+          }
+        ]
+      },
+      "stroke": {
+        "score": 62.54768900930377,
+        "reliable": true,
+        "D_RR": 0.040046364068984985,
+        "D_OR": 0.12086457014083862,
+        "D_TR": 0.108843594789505,
+        "D_GR": 0.09283618628978729,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 73.06485640323356
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 77.1258996339815
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 70.07265488021869,
+        "reliable": true,
+        "D_RR": 0.004434674978256226,
+        "D_OR": 0.028595909476280212,
+        "D_TR": 0.03231531381607056,
+        "D_GR": 0.00913161039352417,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 80.29061952087474
+          }
+        ]
+      },
+      "composition": {
+        "score": 46.31645399337917,
+        "reliable": true,
+        "D_RR": 0.0043891072273254395,
+        "D_OR": 0.014463894069194794,
+        "D_TR": 0.04079616069793701,
+        "D_GR": 0.017100214958190918,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 85.2658159735167
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 73.46244973320316,
+        "reliable": true,
+        "D_RR": 0.002897113561630249,
+        "D_OR": 0.028623826801776886,
+        "D_TR": 0.030111148953437805,
+        "D_GR": 0.006487414240837097,
+        "per_app": [
+          {
+            "app": "qq",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 93.84979893281262
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 60.914558179194096
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 82.27517511358816
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 70.72330146733174
+      },
+      {
+        "app": "douyin",
+        "score": 45.458846499936705
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 100.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.2892093062400818,
+    "D_GR_vgg_gram": 0.11585386097431183,
+    "D_RR_vgg_gram": 0.14088255912065506,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.12345397472381592,
+        "target_to_theme_distance": 0.20916056632995605
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09479206800460815,
+        "target_to_theme_distance": 0.3706128001213074
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10134142637252808,
+        "target_to_theme_distance": 0.3441787362098694
+      },
+      {
+        "index": 3,
+        "score": 96.79855041655279,
+        "generated_to_theme_distance": 0.14382797479629517,
+        "target_to_theme_distance": 0.23288512229919434
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 16,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 93.20509960192976,
+    "reliable": true,
+    "D_RR": 0.28984177112579346,
+    "D_TR": 0.38697935827076435,
+    "D_GR": 0.2964421734213829
+  },
+  "dino_motif": {
+    "score": 80.61747417733433,
+    "reliable": true,
+    "prototype_count": 30,
+    "reference_coverage": 0.7047457098960876,
+    "target_coverage": 0.4835062175989151,
+    "generated_coverage": 0.6618639081716537,
+    "per_app": [
+      {
+        "app": "qq",
+        "score": 30.944708237915652,
+        "target_coverage": 0.5357462167739868,
+        "generated_coverage": 0.5880426168441772
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "target_coverage": 0.449285089969635,
+        "generated_coverage": 0.7233253121376038
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 98.9278889130352,
+        "target_coverage": 0.43869858980178833,
+        "generated_coverage": 0.7018933892250061
+      },
+      {
+        "app": "douyin",
+        "score": 63.7175991971412,
+        "target_coverage": 0.5102949738502502,
+        "generated_coverage": 0.6341943144798279
+      }
+    ]
+  }
+}

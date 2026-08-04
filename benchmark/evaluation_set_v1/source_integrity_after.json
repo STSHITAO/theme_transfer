@@ -1,0 +1,2496 @@
+{
+  "algorithm": "sha256",
+  "created_at": "2026-08-04T14:40:51.489916+00:00",
+  "source_roots": [
+    "benchmark/original_icons",
+    "benchmark/theme_001_processed",
+    "benchmark/theme_002_processed",
+    "benchmark/theme_003_processed",
+    "benchmark/theme_004_processed"
+  ],
+  "file_count": 496,
+  "aggregate_sha256": "e702da50a253c65769c2d4904134d975785aa504e5a5361194fac2faa00dc15d",
+  "files": [
+    {
+      "path": "benchmark/original_icons/alipay.png",
+      "size_bytes": 86302,
+      "sha256": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d"
+    },
+    {
+      "path": "benchmark/original_icons/amap.png",
+      "size_bytes": 120735,
+      "sha256": "5a201d1d2325b9ef055129834b319ab01169045b5f73baa238fec050af302ec7"
+    },
+    {
+      "path": "benchmark/original_icons/anipop.png",
+      "size_bytes": 326185,
+      "sha256": "5df8d862c2eb4a4864cf6d40bbdbc4f1548b39bf07c10d6d3360f3abdfdf0d4b"
+    },
+    {
+      "path": "benchmark/original_icons/baidu_maps.png",
+      "size_bytes": 100779,
+      "sha256": "f84a8b6d18204a381b0fd951f94bf19f6b52892c363cf8e7ab40d08ff46ad90c"
+    },
+    {
+      "path": "benchmark/original_icons/baidu_netdisk.png",
+      "size_bytes": 143423,
+      "sha256": "e80cc1534f7ea4690ef6f3b3a3e14bc516d55df29b457b5effef20ceb2e7a1e1"
+    },
+    {
+      "path": "benchmark/original_icons/baidu_tieba.png",
+      "size_bytes": 103488,
+      "sha256": "831fc2333c303127e48f9f9d89d543379a0fc6653f54ea047fa90ec9b17e2822"
+    },
+    {
+      "path": "benchmark/original_icons/beautycam.png",
+      "size_bytes": 114226,
+      "sha256": "4884b4ab97fa2b4b343c69e8927eca30625f59d964bb3f5b08502e51f85bcd4d"
+    },
+    {
+      "path": "benchmark/original_icons/bilibili.png",
+      "size_bytes": 102161,
+      "sha256": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    {
+      "path": "benchmark/original_icons/bilibili_comics.png",
+      "size_bytes": 252303,
+      "sha256": "5325467ff29291323bf054bdc5ba8c592da9b93b69ff0a6b0c957ccd3add04bf"
+    },
+    {
+      "path": "benchmark/original_icons/clash_of_clans.png",
+      "size_bytes": 324853,
+      "sha256": "c599ba01266b7d59abb6c9abbbfe0ea12cb341f8ec604053f90d35895673ca7b"
+    },
+    {
+      "path": "benchmark/original_icons/crossfire_mobile.png",
+      "size_bytes": 407015,
+      "sha256": "4eec2e230b93d9c787033be8832c13fd11bc97825ac9e91c991e8997cd4fc3d2"
+    },
+    {
+      "path": "benchmark/original_icons/ctrip.png",
+      "size_bytes": 93299,
+      "sha256": "818374007f835d3e55e98771ca9d4e7d0397e1824452a00afb73cb021dd70118"
+    },
+    {
+      "path": "benchmark/original_icons/dewu.png",
+      "size_bytes": 78286,
+      "sha256": "cc9df2aa3c6843371d1bf7832e2449d29dd1b1cefafa5efb43680b5cd8236799"
+    },
+    {
+      "path": "benchmark/original_icons/dianping.png",
+      "size_bytes": 77106,
+      "sha256": "c3b40e8ed77d339370977b1c471a7401fac80c9138457a3d8eaf776066761cbd"
+    },
+    {
+      "path": "benchmark/original_icons/dingtalk.png",
+      "size_bytes": 60184,
+      "sha256": "54446d35881fe7101a7a6607826dbfadd8eaac55bf48fd74da373cd06cc5052f"
+    },
+    {
+      "path": "benchmark/original_icons/douban.png",
+      "size_bytes": 32369,
+      "sha256": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8"
+    },
+    {
+      "path": "benchmark/original_icons/douyin.png",
+      "size_bytes": 78732,
+      "sha256": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8"
+    },
+    {
+      "path": "benchmark/original_icons/douyin_huoshan.png",
+      "size_bytes": 116530,
+      "sha256": "47bff73352bf685c7e8b824ffc70e38da9d3e6be7eb65ed9ef3cf797ba1b5b1c"
+    },
+    {
+      "path": "benchmark/original_icons/douyu.png",
+      "size_bytes": 159143,
+      "sha256": "f1564930eb3400addce492075332dca63a3540ba968465ed57dbf289cb7a3565"
+    },
+    {
+      "path": "benchmark/original_icons/eleme.png",
+      "size_bytes": 185810,
+      "sha256": "bc7e0b5ac709d2195b799c7a6a2dfcc168bb56284360e93a9248b1ce8a5790b4"
+    },
+    {
+      "path": "benchmark/original_icons/genshin.png",
+      "size_bytes": 296595,
+      "sha256": "887b7fc3531c88bec71b087031a585e0a59d00bc17ca36fa27e7b7095911f251"
+    },
+    {
+      "path": "benchmark/original_icons/golden_spatula.png",
+      "size_bytes": 457536,
+      "sha256": "cf4fb67ee72b01e216fd626dc967e4a14ce257486e7da26aee3b219689efa2d8"
+    },
+    {
+      "path": "benchmark/original_icons/hello_bike.png",
+      "size_bytes": 154964,
+      "sha256": "57da2cc9cc6bc3ad84529fe668500e4bcefabaca42a66401c74b521170365858"
+    },
+    {
+      "path": "benchmark/original_icons/honor_of_kings.png",
+      "size_bytes": 354392,
+      "sha256": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1"
+    },
+    {
+      "path": "benchmark/original_icons/huya.png",
+      "size_bytes": 104923,
+      "sha256": "d9167b1171148825f882492f768b7d1a670a0148dfb8d12598c82a6d4faa9742"
+    },
+    {
+      "path": "benchmark/original_icons/iqiyi.png",
+      "size_bytes": 175065,
+      "sha256": "5e47d4535ef3079dca57bd1d3b29556b8f08a6b4f89533df798bd7d2f9daf0cf"
+    },
+    {
+      "path": "benchmark/original_icons/iqiyi_lite.png",
+      "size_bytes": 221726,
+      "sha256": "827511e40ab58e60cc724a6b490d5c6e9ff5ce1b8ca751261ca548d87b6359b3"
+    },
+    {
+      "path": "benchmark/original_icons/jd.png",
+      "size_bytes": 226549,
+      "sha256": "87f3c6a8a87ebd0ae0708c2cc7ff0380119ef8ef73f35417e82a76836e58490a"
+    },
+    {
+      "path": "benchmark/original_icons/jianying.png",
+      "size_bytes": 24639,
+      "sha256": "e7f60a98d42a26dc6d3f2c6c00f4da56d4a47d3288c765e89039928f38318a68"
+    },
+    {
+      "path": "benchmark/original_icons/karaoke.png",
+      "size_bytes": 133683,
+      "sha256": "02f856935e2c17aec0dbebaa36bfb0d88633dd040a8f9e75c094e1bebfe8a823"
+    },
+    {
+      "path": "benchmark/original_icons/keep.png",
+      "size_bytes": 54197,
+      "sha256": "b68beed347c4c566a45778ca60f7dc849d071bf5b0537b5f4caf2173d5494a5e"
+    },
+    {
+      "path": "benchmark/original_icons/king_camp.png",
+      "size_bytes": 153678,
+      "sha256": "0070eca367b8ddfb31734846b5d24638a4eb126cc31895d2b31d401584d96d66"
+    },
+    {
+      "path": "benchmark/original_icons/kuaikan.png",
+      "size_bytes": 161982,
+      "sha256": "79b5769e9f70b8e9ab292e558bb197516835868125891d80b80f7d1bd8153c5e"
+    },
+    {
+      "path": "benchmark/original_icons/kuaishou.png",
+      "size_bytes": 94638,
+      "sha256": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2"
+    },
+    {
+      "path": "benchmark/original_icons/kuaiying.png",
+      "size_bytes": 57627,
+      "sha256": "77097ae01f18002fffd196af22ceebcfa0872d72db09756b1e68e3479247b40c"
+    },
+    {
+      "path": "benchmark/original_icons/kugou.png",
+      "size_bytes": 113033,
+      "sha256": "51834ab613181525af9e9bfc54ad78a494a8c76c93a2b3ca714eaa8df5ee2aa7"
+    },
+    {
+      "path": "benchmark/original_icons/kuwo.png",
+      "size_bytes": 135048,
+      "sha256": "363d3f99f98c8d41339c7a15d71a42f58e3bb0ccd38d67d9b889935c3805d319"
+    },
+    {
+      "path": "benchmark/original_icons/lofter.png",
+      "size_bytes": 86031,
+      "sha256": "b537f2bb1a76100aae78347286db312a748c21b7181a7cab74ce6086514829a4"
+    },
+    {
+      "path": "benchmark/original_icons/lol_assistant.png",
+      "size_bytes": 237934,
+      "sha256": "40972de8ba3e77f2edea0675f14b1febc818a7a94b413f9af83bbb1b4e623e7b"
+    },
+    {
+      "path": "benchmark/original_icons/lol_mobile.png",
+      "size_bytes": 455063,
+      "sha256": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a"
+    },
+    {
+      "path": "benchmark/original_icons/mango_tv.png",
+      "size_bytes": 131844,
+      "sha256": "600082d472582af37383dc9b5665ce42e2af9eba52e02f6feb18bfedc3bee9d8"
+    },
+    {
+      "path": "benchmark/original_icons/meitu.png",
+      "size_bytes": 111462,
+      "sha256": "c61c4423d86ac1aaddbef063ee4460ae25e8bb64ae6ed257a8ee44318873e627"
+    },
+    {
+      "path": "benchmark/original_icons/meituan.png",
+      "size_bytes": 54258,
+      "sha256": "f28a505e8f16d4139bbdd970a69831afc0a2e67109f445b0dfa58137dd2fe539"
+    },
+    {
+      "path": "benchmark/original_icons/meituan_waimai.png",
+      "size_bytes": 225602,
+      "sha256": "fe12b7960865fd56fc54d589d3531b556a1d8dc2da4b4c62b7ec3c4e546fdc85"
+    },
+    {
+      "path": "benchmark/original_icons/mi_home.png",
+      "size_bytes": 61390,
+      "sha256": "e50f9f61da2da86ee8d647e72328e91e1bfcb32be6d312f9e18b9ebb43ff54b2"
+    },
+    {
+      "path": "benchmark/original_icons/minecraft.png",
+      "size_bytes": 181021,
+      "sha256": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6"
+    },
+    {
+      "path": "benchmark/original_icons/mini_world.png",
+      "size_bytes": 438207,
+      "sha256": "15791f11598263d2a66d4840a633905b2c02a308081746f667c1ea9e82692eb1"
+    },
+    {
+      "path": "benchmark/original_icons/miyoushe.png",
+      "size_bytes": 142547,
+      "sha256": "e26b810652c5729158ac66b308739e0f1ec6a9efe7bf135c503f7d886e56e2ee"
+    },
+    {
+      "path": "benchmark/original_icons/moji_weather.png",
+      "size_bytes": 34352,
+      "sha256": "97fd650bf3fd9c98f1c34d4ea008e599256d57a608dab0cb018f8db1fda7573f"
+    },
+    {
+      "path": "benchmark/original_icons/naruto_mobile.png",
+      "size_bytes": 356220,
+      "sha256": "1189c0466127128b54c299635eb51e37cd44da51b1735153077277d2741f8c23"
+    },
+    {
+      "path": "benchmark/original_icons/netease_music.png",
+      "size_bytes": 65836,
+      "sha256": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    {
+      "path": "benchmark/original_icons/onmyoji.png",
+      "size_bytes": 479047,
+      "sha256": "7714606d441c08fd2b30c29fd97966f20a81b09227d0a251b7196a25bc410bf1"
+    },
+    {
+      "path": "benchmark/original_icons/paipai.png",
+      "size_bytes": 94004,
+      "sha256": "ce97aa59eb7e538bc1ee426869f6c3d9979be1f44b8de8713e6ec5c55b41782c"
+    },
+    {
+      "path": "benchmark/original_icons/peace_camp.png",
+      "size_bytes": 234580,
+      "sha256": "2e5e2da00cdc9b4dca23b14d6637de20bbc34ca3154b7fafb240467c247b8506"
+    },
+    {
+      "path": "benchmark/original_icons/peace_elite.png",
+      "size_bytes": 454728,
+      "sha256": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f"
+    },
+    {
+      "path": "benchmark/original_icons/pinduoduo.png",
+      "size_bytes": 187586,
+      "sha256": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70"
+    },
+    {
+      "path": "benchmark/original_icons/qidian.png",
+      "size_bytes": 56845,
+      "sha256": "e385208a507d8f0ba8af7b273a25d85c408958b3cf99c9c74fead1d0bf1ba603"
+    },
+    {
+      "path": "benchmark/original_icons/qimao.png",
+      "size_bytes": 76041,
+      "sha256": "1f044c4a83dfcdad04b482123d1cb0f39166833ced98aea4b686cc1f4330f6e4"
+    },
+    {
+      "path": "benchmark/original_icons/qq.png",
+      "size_bytes": 125461,
+      "sha256": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18"
+    },
+    {
+      "path": "benchmark/original_icons/qq_browser.png",
+      "size_bytes": 72399,
+      "sha256": "c4985d4d7455b39fd64e54a17108e34dbaa60a1078f4d71b396f29df5b39d06b"
+    },
+    {
+      "path": "benchmark/original_icons/qq_mail.png",
+      "size_bytes": 108211,
+      "sha256": "81d1acbd24aa8ef5f5d29a61f83ad6e15cd1b82d05012f5d198011500dac48b5"
+    },
+    {
+      "path": "benchmark/original_icons/qq_music.png",
+      "size_bytes": 149962,
+      "sha256": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d"
+    },
+    {
+      "path": "benchmark/original_icons/qq_reading.png",
+      "size_bytes": 425558,
+      "sha256": "c7d5e65967caf56878b42db5ed84715cc6eafaf7250570108bb9a37637e9bf5c"
+    },
+    {
+      "path": "benchmark/original_icons/qq_speed.png",
+      "size_bytes": 407461,
+      "sha256": "b2b6b1f1481b06237f612ea250ad35e4b5b18e4eddd3b3f6eabf192a90f44296"
+    },
+    {
+      "path": "benchmark/original_icons/quark.png",
+      "size_bytes": 85413,
+      "sha256": "7737b957a1a9d8337e405fa4fb0e78f224e2442528485e745dddeb6ab5f8e544"
+    },
+    {
+      "path": "benchmark/original_icons/soul.png",
+      "size_bytes": 222092,
+      "sha256": "ebaceb0ec469ad8d0c4194d94209fdf9dbc4ebadaff5f793cb0750da2df1c40f"
+    },
+    {
+      "path": "benchmark/original_icons/taobao.png",
+      "size_bytes": 117173,
+      "sha256": "fac02adef4d50fe2f466015ecc20f2ab81c7d6b9506eec63608c1e3cb0e5d944"
+    },
+    {
+      "path": "benchmark/original_icons/tencent_comics.png",
+      "size_bytes": 312545,
+      "sha256": "283191441a8e62580234930c50465714c4a2e739e1fa4ec8510b95cc15ad86b3"
+    },
+    {
+      "path": "benchmark/original_icons/tencent_maps.png",
+      "size_bytes": 110551,
+      "sha256": "45e1c192d80e3a3d15a10644ed3e28a7990d5f65024da225bb9deeebd064f097"
+    },
+    {
+      "path": "benchmark/original_icons/tencent_meeting.png",
+      "size_bytes": 92970,
+      "sha256": "1926122b7729ab1170ea6f79aa2ff07d4490ed1af3c64d1df70196cc652d89de"
+    },
+    {
+      "path": "benchmark/original_icons/tencent_news.png",
+      "size_bytes": 90524,
+      "sha256": "7cd9218791264ec31edfd8e7a64700f334b56498bde6ee5522b08d2b54c4a0cf"
+    },
+    {
+      "path": "benchmark/original_icons/tencent_video.png",
+      "size_bytes": 136914,
+      "sha256": "652d0a850ccdde1ce33a27228b48d7255fd6e0bf14b0571786f7183ba8145ed4"
+    },
+    {
+      "path": "benchmark/original_icons/tmall.png",
+      "size_bytes": 91234,
+      "sha256": "4216c23bcfd500d1a680ef072f9d903798397a3252b79692ccbba03e1341d02f"
+    },
+    {
+      "path": "benchmark/original_icons/toutiao.png",
+      "size_bytes": 101134,
+      "sha256": "61752f617cff729500d8bd2fb614c2ad6205a6154896110f39654ae46dd36711"
+    },
+    {
+      "path": "benchmark/original_icons/toutiao_lite.png",
+      "size_bytes": 114246,
+      "sha256": "a94adb4e4d9d0ea5e6bb122f26d07775af58a43099f07b34b1ab34a2bb1a5eaa"
+    },
+    {
+      "path": "benchmark/original_icons/vipshop.png",
+      "size_bytes": 118531,
+      "sha256": "d36847793703793e5c7c348f4e1cfcff501fc332f969e40cb9be7f6859203988"
+    },
+    {
+      "path": "benchmark/original_icons/wechat.png",
+      "size_bytes": 68105,
+      "sha256": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e"
+    },
+    {
+      "path": "benchmark/original_icons/wechat_reading.png",
+      "size_bytes": 40898,
+      "sha256": "c5d8ddd914f7c79239e8ccf84f6fccde4c2b25cca7d8409676fbf67519bb2cf6"
+    },
+    {
+      "path": "benchmark/original_icons/wecom.png",
+      "size_bytes": 96729,
+      "sha256": "73b656d2fc56437676bff732783cdcf80a5ec64fe3cabb7ec647d715cc6ba7bc"
+    },
+    {
+      "path": "benchmark/original_icons/weibo.png",
+      "size_bytes": 104088,
+      "sha256": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5"
+    },
+    {
+      "path": "benchmark/original_icons/weishi.png",
+      "size_bytes": 258059,
+      "sha256": "a6fb072d49d6100df6893f89492a2edf0f5ee7646d74b717a339af9af4d2b59c"
+    },
+    {
+      "path": "benchmark/original_icons/wps_office.png",
+      "size_bytes": 78191,
+      "sha256": "706085970b7e2ff41f1cdddc9a3bf0f6ac61191ba2948b131c338466ab647359"
+    },
+    {
+      "path": "benchmark/original_icons/xianyu.png",
+      "size_bytes": 156490,
+      "sha256": "d9f4022b3c32e344f67607421bc9a297f86dcb123b06a325d00ea5509698f608"
+    },
+    {
+      "path": "benchmark/original_icons/xiaohongshu.png",
+      "size_bytes": 54484,
+      "sha256": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc"
+    },
+    {
+      "path": "benchmark/original_icons/xigua_video.png",
+      "size_bytes": 60239,
+      "sha256": "3e819a5774d1c5bb0acf5a9663e42ac565291bb6f3c7b8e384c90666dca9b8c4"
+    },
+    {
+      "path": "benchmark/original_icons/ximalaya.png",
+      "size_bytes": 32280,
+      "sha256": "ccec7dc9362afaa553ae04ac32902b69e604d264113414e3e39f88fa80836f5b"
+    },
+    {
+      "path": "benchmark/original_icons/xingtu.png",
+      "size_bytes": 81509,
+      "sha256": "b3f928781c4f2ce478952f30ac87871a3466ef88369de2b7b1fa6189c4873904"
+    },
+    {
+      "path": "benchmark/original_icons/youdao_dict.png",
+      "size_bytes": 170718,
+      "sha256": "ce774c8774ed733e691cbdb7e19386760a8d603a430157633e8167999adfab9d"
+    },
+    {
+      "path": "benchmark/original_icons/youku.png",
+      "size_bytes": 60825,
+      "sha256": "bc6f70a2e27b9ab18010a533227bf13811e7d47b85b7868666417ce173d83ea7"
+    },
+    {
+      "path": "benchmark/original_icons/zepp_life.png",
+      "size_bytes": 79650,
+      "sha256": "09e497846570d75d0088d0f89b98657bf5e05a992805350fe30e9575da5cb0e1"
+    },
+    {
+      "path": "benchmark/original_icons/zhihu.png",
+      "size_bytes": 93813,
+      "sha256": "74757199f145559fba99e9d98aabfa083d20e7f3f6f3d2466c15126f10eafb46"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/alipay.png",
+      "size_bytes": 86302,
+      "sha256": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/bilibili.png",
+      "size_bytes": 102161,
+      "sha256": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/douban.png",
+      "size_bytes": 32369,
+      "sha256": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/douyin.png",
+      "size_bytes": 78732,
+      "sha256": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/douyin_huoshan.png",
+      "size_bytes": 116530,
+      "sha256": "47bff73352bf685c7e8b824ffc70e38da9d3e6be7eb65ed9ef3cf797ba1b5b1c"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/douyu.png",
+      "size_bytes": 159143,
+      "sha256": "f1564930eb3400addce492075332dca63a3540ba968465ed57dbf289cb7a3565"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/genshin.png",
+      "size_bytes": 296595,
+      "sha256": "887b7fc3531c88bec71b087031a585e0a59d00bc17ca36fa27e7b7095911f251"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/jd.png",
+      "size_bytes": 226549,
+      "sha256": "87f3c6a8a87ebd0ae0708c2cc7ff0380119ef8ef73f35417e82a76836e58490a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/king_camp.png",
+      "size_bytes": 153678,
+      "sha256": "0070eca367b8ddfb31734846b5d24638a4eb126cc31895d2b31d401584d96d66"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/kuaishou.png",
+      "size_bytes": 94638,
+      "sha256": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/lol_assistant.png",
+      "size_bytes": 237934,
+      "sha256": "40972de8ba3e77f2edea0675f14b1febc818a7a94b413f9af83bbb1b4e623e7b"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/lol_mobile.png",
+      "size_bytes": 455063,
+      "sha256": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/meituan.png",
+      "size_bytes": 54258,
+      "sha256": "f28a505e8f16d4139bbdd970a69831afc0a2e67109f445b0dfa58137dd2fe539"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/minecraft.png",
+      "size_bytes": 181021,
+      "sha256": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/netease_music.png",
+      "size_bytes": 65836,
+      "sha256": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/peace_elite.png",
+      "size_bytes": 454728,
+      "sha256": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/pinduoduo.png",
+      "size_bytes": 187586,
+      "sha256": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/qq_mail.png",
+      "size_bytes": 108211,
+      "sha256": "81d1acbd24aa8ef5f5d29a61f83ad6e15cd1b82d05012f5d198011500dac48b5"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/qq_music.png",
+      "size_bytes": 149962,
+      "sha256": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/quark.png",
+      "size_bytes": 85413,
+      "sha256": "7737b957a1a9d8337e405fa4fb0e78f224e2442528485e745dddeb6ab5f8e544"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/tmall.png",
+      "size_bytes": 91234,
+      "sha256": "4216c23bcfd500d1a680ef072f9d903798397a3252b79692ccbba03e1341d02f"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/wechat.png",
+      "size_bytes": 68105,
+      "sha256": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/weibo.png",
+      "size_bytes": 104088,
+      "sha256": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5"
+    },
+    {
+      "path": "benchmark/theme_001_processed/original_icons/youku.png",
+      "size_bytes": 60825,
+      "sha256": "bc6f70a2e27b9ab18010a533227bf13811e7d47b85b7868666417ce173d83ea7"
+    },
+    {
+      "path": "benchmark/theme_001_processed/summary.json",
+      "size_bytes": 298,
+      "sha256": "638728b8bde06047b59575cf3182443173c514e9a9b3485cf9b374dd21410d2a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/theme_001_mapping.csv",
+      "size_bytes": 7105,
+      "sha256": "655b798935a1eefeb8c66c0959984c26d1befc5c7639a8042b9b5ee1f956469a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/theme_001_mapping_with_originals.csv",
+      "size_bytes": 15495,
+      "sha256": "e17a54619c3c67432fd8b5eca062ca1e843fd5e332666d2123b1418c64fe29e8"
+    },
+    {
+      "path": "benchmark/theme_001_processed/theme_001_themed_contact.jpg",
+      "size_bytes": 328052,
+      "sha256": "e053d1cc68325f5ddff561b2d558ed3e63ac5dc1c260d188ef1c5719684983d1"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/alipay.png",
+      "size_bytes": 139604,
+      "sha256": "73d519d5e96eb125700bc0d0374f7297367c33d8533c4526348fc1821e81ea78"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/bilibili.png",
+      "size_bytes": 164877,
+      "sha256": "cbb7bddae66cdd557cab30bcf7e59fc35c5e66e7e5685dc2835f89706a3a232a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/camera.png",
+      "size_bytes": 155546,
+      "sha256": "b3de2f2bfdc8c4c0c20f78b0086e377fbfe020753eb061338db01d44c15800c1"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/douban.png",
+      "size_bytes": 142097,
+      "sha256": "9e80ab1bea76e2f90b0364954f57fafb0bdddc353d39a44d2daac53d02550203"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/douyin.png",
+      "size_bytes": 147014,
+      "sha256": "4726d28f915251772ebbe0f742fa6e4f38f4a4c4151fa726971df26d2c2f5905"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/douyin_huoshan.png",
+      "size_bytes": 151427,
+      "sha256": "5dbc563994fc2bbdce5e0d174c83bcdb658ceb226928bc9bb73c4e177a3d7fee"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/douyu.png",
+      "size_bytes": 152060,
+      "sha256": "2a14730a0185c9fa935f561657c1beb8ddbb72a19c650063ff841edd8a0ae1ec"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/download_manager.png",
+      "size_bytes": 141304,
+      "sha256": "e6f53f641a3a56675821b76488ecfa6b00a9893cec4421a13b4dd9c107ed8f91"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/genshin.png",
+      "size_bytes": 147712,
+      "sha256": "130a4a05f8fcc4d7422e404150d9ed70a7d826b14b81a7a6ca4a07d834db4cbc"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/jd.png",
+      "size_bytes": 160644,
+      "sha256": "802981eddc5b5cfd668c302e65f2e8ad238b01bbccf7ee449fd166f955353b61"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/king_camp.png",
+      "size_bytes": 209309,
+      "sha256": "e533e51255fbb2ee3a591a00cb4eba2337a8e2212150f86eed5ef2b1e851fa51"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/kuaishou.png",
+      "size_bytes": 151331,
+      "sha256": "158eef081db5edcc19a268254fa74df160c8abaeb8f526c36f4f7560c5607885"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/lol_assistant.png",
+      "size_bytes": 114086,
+      "sha256": "c0737325b8b7e63ff823bce4e406569cc20d50d0ba618168c2e94b3c4a6c356f"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/lol_mobile.png",
+      "size_bytes": 100308,
+      "sha256": "0fff2e45fec5b5f0cfc7159d64e7831c30eefd389577e21484c134559a633d1e"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/meituan.png",
+      "size_bytes": 111125,
+      "sha256": "f6f088a93463dbe10282e193c43e604b10e98b482b4f08176a26469155e2f0ee"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/mi_wallet.png",
+      "size_bytes": 199329,
+      "sha256": "bdea78bbd48d15dc43adebad1845b6bfa181f404def01dbdb81953ce52eb8174"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/mi_weather.png",
+      "size_bytes": 182565,
+      "sha256": "d84c35228e25835d6e392d90c5e395d4bded36144f6f7c30e4f05c3a88751bc1"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/minecraft.png",
+      "size_bytes": 193690,
+      "sha256": "f320cec740990253c0da315332ed9364961de3a8d83aefcb712c0f1ba8ee446e"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/netease_music.png",
+      "size_bytes": 145395,
+      "sha256": "6a0d47123553f37178b48a9b7330cea02820854e5fbe73e68358ec63122a064f"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/peace_elite.png",
+      "size_bytes": 190420,
+      "sha256": "1e4aca2d76ca8b0efc74ca06796821f590d6974dfaf94794b6edeafc17565122"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/phone.png",
+      "size_bytes": 118145,
+      "sha256": "50bc53214fd1364592c9c9de3063ed1f1ab1531e405ba2422f10f478d3b058ee"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/pinduoduo.png",
+      "size_bytes": 173552,
+      "sha256": "46d3a4e971842579de94ea394680d0d93664ca2b3be65b15f28c863e5040fe31"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/qq_mail.png",
+      "size_bytes": 139349,
+      "sha256": "9593b3f858753c8bfd2b33cdd10e3cb8e0491e7c60f269211c1c3dc686b66030"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/qq_music.png",
+      "size_bytes": 156998,
+      "sha256": "3073353ef4b84a6b8e6c185f634505b27d9d63f0cf2c865642052f991f3d05e8"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/quark.png",
+      "size_bytes": 122697,
+      "sha256": "a8fbae7612ecafd18c5b8fdeeba34f33e36d37e4df0d0959ff74fbdba05e9d3e"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/sms.png",
+      "size_bytes": 120354,
+      "sha256": "b39709652904c1b099fceade49ca0a679a2cc1afefc586c0af05f0b8ff338ffc"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/tmall.png",
+      "size_bytes": 169717,
+      "sha256": "82d70769cd21988d109fdcd91ca7e727a2c140df5d0756532ff0410ffc2e0d6a"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/wechat.png",
+      "size_bytes": 145213,
+      "sha256": "86f07b7a95f2af8347a2e8d80b1e0fec08a26e8d45625e681a98b5ca5fdcb33e"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/weibo.png",
+      "size_bytes": 206260,
+      "sha256": "cd9136720f9e5e79f567f199d46fb38e1c8a0d242f42218810cf779fa12eb255"
+    },
+    {
+      "path": "benchmark/theme_001_processed/themed_icons/youku.png",
+      "size_bytes": 124952,
+      "sha256": "ea8abe3b1e282c55ca8a036879d1f1f9444409485a0d1b49d5d71354dfcae1be"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/bilibili.png",
+      "size_bytes": 102161,
+      "sha256": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/douyin.png",
+      "size_bytes": 78732,
+      "sha256": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/honor_of_kings.png",
+      "size_bytes": 354392,
+      "sha256": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/kuaishou.png",
+      "size_bytes": 94638,
+      "sha256": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/lol_mobile.png",
+      "size_bytes": 455063,
+      "sha256": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/netease_music.png",
+      "size_bytes": 65836,
+      "sha256": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/peace_elite.png",
+      "size_bytes": 454728,
+      "sha256": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/qq.png",
+      "size_bytes": 125461,
+      "sha256": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/taobao.png",
+      "size_bytes": 117173,
+      "sha256": "fac02adef4d50fe2f466015ecc20f2ab81c7d6b9506eec63608c1e3cb0e5d944"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/wechat.png",
+      "size_bytes": 68105,
+      "sha256": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/weibo.png",
+      "size_bytes": 104088,
+      "sha256": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5"
+    },
+    {
+      "path": "benchmark/theme_002_processed/original_icons/xiaohongshu.png",
+      "size_bytes": 54484,
+      "sha256": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc"
+    },
+    {
+      "path": "benchmark/theme_002_processed/summary.json",
+      "size_bytes": 400,
+      "sha256": "f038714ef647142c39d3b6231851f17cdc282a9a74eef0f4950b167b2999b5d7"
+    },
+    {
+      "path": "benchmark/theme_002_processed/theme_002_mapping.csv",
+      "size_bytes": 4709,
+      "sha256": "086c9537932b088d6951bed326a93c6b5253c0076dad53ce66e65fb4afe3ad48"
+    },
+    {
+      "path": "benchmark/theme_002_processed/theme_002_mapping_with_originals.csv",
+      "size_bytes": 9012,
+      "sha256": "bd33b54e2581ca3de977e24824966fdf4ab3a3538ce650b7b04475023dd23627"
+    },
+    {
+      "path": "benchmark/theme_002_processed/theme_002_themed_contact.jpg",
+      "size_bytes": 131170,
+      "sha256": "566109abc47f0794ade68626990d9f3b594db04ce2ab2355a9816abaef47c271"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/bilibili.png",
+      "size_bytes": 105865,
+      "sha256": "05f8cf94c29d14fb2285f7c2976e539898da5f87bb434b19079f432b7fd6a540"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/calendar.png",
+      "size_bytes": 66269,
+      "sha256": "bb9b98e6f86a4dc3d99ddf43fbe151e245307a9177d17520308364c22bbf6510"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/camera.png",
+      "size_bytes": 67617,
+      "sha256": "a0ce0c15d568690ec04f7be64fb97a8b6f433d369295839a68c0f857713fde5a"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/douyin.png",
+      "size_bytes": 45769,
+      "sha256": "2120b6b26a981ee3aa87f47fc584ae7b22dd122d7e04b24e7c9a7d8bc319c62c"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/honor_of_kings.png",
+      "size_bytes": 85182,
+      "sha256": "d1735e901df6024ae5559e7724a9ab06af0664cf6e3e4a33fa34591ba1811023"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/kuaishou.png",
+      "size_bytes": 48199,
+      "sha256": "934f5a2ae0b749306499039abd4d24da84b3eb044c72672b0ffa69b98cfdfef1"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/lol_mobile.png",
+      "size_bytes": 93906,
+      "sha256": "54eff98fb671408b636f11125c1a074032f81ffa14397b1e2079da51d9420f43"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/mi_gallery.png",
+      "size_bytes": 84183,
+      "sha256": "25cb2d8f208afd8eb823bf4b4c5d023a4474b1aedc8dcb28cdd2c09ebbdbf503"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/mi_weather.png",
+      "size_bytes": 60982,
+      "sha256": "4ae3e15ad578507443ccb66aad2d5b1331374ca0e44f4235873822af01010a90"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/netease_music.png",
+      "size_bytes": 89591,
+      "sha256": "e7832363746e36f36734197cd77265ec2da3f44f1f116e3e888465672121586e"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/peace_elite.png",
+      "size_bytes": 107517,
+      "sha256": "01a169c04bf94b9e885fb09a8de8d0b9e7651f1cef4298afe3c0c3c8d75796ae"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/phone.png",
+      "size_bytes": 63217,
+      "sha256": "97da59120312ffc667055e8579dba0d141108c8a6ece8a433edaa463bfbc0885"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/qq.png",
+      "size_bytes": 82368,
+      "sha256": "d193fd1499ecc7f9b8e9c9450fd3dc15b048cf8fee3e01f273209c3545106187"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/settings.png",
+      "size_bytes": 102367,
+      "sha256": "f6413e9020cc8d421932fa987bb1e3446a0c09571d2183db2bce8895b234e274"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/sms.png",
+      "size_bytes": 59484,
+      "sha256": "a928edd3a74ba0eba88100cd39c7c97ef57bd8e6f127c56b8006d16f80d59f30"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/taobao.png",
+      "size_bytes": 112591,
+      "sha256": "7bed92285201ec692854a696281559bdd97d56978c86b91a9fbb23ae43bfa35e"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/themes.png",
+      "size_bytes": 65652,
+      "sha256": "ab86fe346da556cd5f6b3cad2dd57514ba689e1b4bdd7f763f0c45023181eec9"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/wechat.png",
+      "size_bytes": 83750,
+      "sha256": "a2e7e064c9aa1844530b910edeb42d40033ec7256acb4b918a6ccfbbc2d76497"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/weibo.png",
+      "size_bytes": 85156,
+      "sha256": "ef072b009cfe602b64bd6b80bdd0cd1f95ec877dff43018e534a594f64997fa1"
+    },
+    {
+      "path": "benchmark/theme_002_processed/themed_icons/xiaohongshu.png",
+      "size_bytes": 80345,
+      "sha256": "2f4d382259447f5c106ee0827f61b0db20b1e04c8ef02c94a091c12f845c57a3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/alipay.png",
+      "size_bytes": 86302,
+      "sha256": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/amap.png",
+      "size_bytes": 120735,
+      "sha256": "5a201d1d2325b9ef055129834b319ab01169045b5f73baa238fec050af302ec7"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/anipop.png",
+      "size_bytes": 326185,
+      "sha256": "5df8d862c2eb4a4864cf6d40bbdbc4f1548b39bf07c10d6d3360f3abdfdf0d4b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/baidu_maps.png",
+      "size_bytes": 100779,
+      "sha256": "f84a8b6d18204a381b0fd951f94bf19f6b52892c363cf8e7ab40d08ff46ad90c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/baidu_netdisk.png",
+      "size_bytes": 143423,
+      "sha256": "e80cc1534f7ea4690ef6f3b3a3e14bc516d55df29b457b5effef20ceb2e7a1e1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/baidu_tieba.png",
+      "size_bytes": 103488,
+      "sha256": "831fc2333c303127e48f9f9d89d543379a0fc6653f54ea047fa90ec9b17e2822"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/beautycam.png",
+      "size_bytes": 114226,
+      "sha256": "4884b4ab97fa2b4b343c69e8927eca30625f59d964bb3f5b08502e51f85bcd4d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/bilibili.png",
+      "size_bytes": 102161,
+      "sha256": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/bilibili_comics.png",
+      "size_bytes": 252303,
+      "sha256": "5325467ff29291323bf054bdc5ba8c592da9b93b69ff0a6b0c957ccd3add04bf"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/clash_of_clans.png",
+      "size_bytes": 324853,
+      "sha256": "c599ba01266b7d59abb6c9abbbfe0ea12cb341f8ec604053f90d35895673ca7b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/crossfire_mobile.png",
+      "size_bytes": 407015,
+      "sha256": "4eec2e230b93d9c787033be8832c13fd11bc97825ac9e91c991e8997cd4fc3d2"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/ctrip.png",
+      "size_bytes": 93299,
+      "sha256": "818374007f835d3e55e98771ca9d4e7d0397e1824452a00afb73cb021dd70118"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/dewu.png",
+      "size_bytes": 78286,
+      "sha256": "cc9df2aa3c6843371d1bf7832e2449d29dd1b1cefafa5efb43680b5cd8236799"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/dianping.png",
+      "size_bytes": 77106,
+      "sha256": "c3b40e8ed77d339370977b1c471a7401fac80c9138457a3d8eaf776066761cbd"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/dingtalk.png",
+      "size_bytes": 60184,
+      "sha256": "54446d35881fe7101a7a6607826dbfadd8eaac55bf48fd74da373cd06cc5052f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/douban.png",
+      "size_bytes": 32369,
+      "sha256": "211aba2d2e96cf1b8d938078fef63a165fe11d4269341950d5383686d07e41c8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/douyin.png",
+      "size_bytes": 78732,
+      "sha256": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/douyin_huoshan.png",
+      "size_bytes": 116530,
+      "sha256": "47bff73352bf685c7e8b824ffc70e38da9d3e6be7eb65ed9ef3cf797ba1b5b1c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/douyu.png",
+      "size_bytes": 159143,
+      "sha256": "f1564930eb3400addce492075332dca63a3540ba968465ed57dbf289cb7a3565"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/genshin.png",
+      "size_bytes": 296595,
+      "sha256": "887b7fc3531c88bec71b087031a585e0a59d00bc17ca36fa27e7b7095911f251"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/golden_spatula.png",
+      "size_bytes": 457536,
+      "sha256": "cf4fb67ee72b01e216fd626dc967e4a14ce257486e7da26aee3b219689efa2d8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/hello_bike.png",
+      "size_bytes": 154964,
+      "sha256": "57da2cc9cc6bc3ad84529fe668500e4bcefabaca42a66401c74b521170365858"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/honor_of_kings.png",
+      "size_bytes": 354392,
+      "sha256": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/huya.png",
+      "size_bytes": 104923,
+      "sha256": "d9167b1171148825f882492f768b7d1a670a0148dfb8d12598c82a6d4faa9742"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/iqiyi.png",
+      "size_bytes": 175065,
+      "sha256": "5e47d4535ef3079dca57bd1d3b29556b8f08a6b4f89533df798bd7d2f9daf0cf"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/iqiyi_lite.png",
+      "size_bytes": 221726,
+      "sha256": "827511e40ab58e60cc724a6b490d5c6e9ff5ce1b8ca751261ca548d87b6359b3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/jd.png",
+      "size_bytes": 226549,
+      "sha256": "87f3c6a8a87ebd0ae0708c2cc7ff0380119ef8ef73f35417e82a76836e58490a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/jianying.png",
+      "size_bytes": 24639,
+      "sha256": "e7f60a98d42a26dc6d3f2c6c00f4da56d4a47d3288c765e89039928f38318a68"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/karaoke.png",
+      "size_bytes": 133683,
+      "sha256": "02f856935e2c17aec0dbebaa36bfb0d88633dd040a8f9e75c094e1bebfe8a823"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/keep.png",
+      "size_bytes": 54197,
+      "sha256": "b68beed347c4c566a45778ca60f7dc849d071bf5b0537b5f4caf2173d5494a5e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/king_camp.png",
+      "size_bytes": 153678,
+      "sha256": "0070eca367b8ddfb31734846b5d24638a4eb126cc31895d2b31d401584d96d66"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/kuaikan.png",
+      "size_bytes": 161982,
+      "sha256": "79b5769e9f70b8e9ab292e558bb197516835868125891d80b80f7d1bd8153c5e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/kuaiying.png",
+      "size_bytes": 57627,
+      "sha256": "77097ae01f18002fffd196af22ceebcfa0872d72db09756b1e68e3479247b40c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/kugou.png",
+      "size_bytes": 113033,
+      "sha256": "51834ab613181525af9e9bfc54ad78a494a8c76c93a2b3ca714eaa8df5ee2aa7"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/kuwo.png",
+      "size_bytes": 135048,
+      "sha256": "363d3f99f98c8d41339c7a15d71a42f58e3bb0ccd38d67d9b889935c3805d319"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/lofter.png",
+      "size_bytes": 86031,
+      "sha256": "b537f2bb1a76100aae78347286db312a748c21b7181a7cab74ce6086514829a4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/lol_assistant.png",
+      "size_bytes": 237934,
+      "sha256": "40972de8ba3e77f2edea0675f14b1febc818a7a94b413f9af83bbb1b4e623e7b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/lol_mobile.png",
+      "size_bytes": 455063,
+      "sha256": "f0006b709722ff1d32f64cbad37e518abe1be12e82966a19b743189ebf7de11a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/mango_tv.png",
+      "size_bytes": 131844,
+      "sha256": "600082d472582af37383dc9b5665ce42e2af9eba52e02f6feb18bfedc3bee9d8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/meitu.png",
+      "size_bytes": 111462,
+      "sha256": "c61c4423d86ac1aaddbef063ee4460ae25e8bb64ae6ed257a8ee44318873e627"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/meituan.png",
+      "size_bytes": 54258,
+      "sha256": "f28a505e8f16d4139bbdd970a69831afc0a2e67109f445b0dfa58137dd2fe539"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/meituan_waimai.png",
+      "size_bytes": 225602,
+      "sha256": "fe12b7960865fd56fc54d589d3531b556a1d8dc2da4b4c62b7ec3c4e546fdc85"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/mi_home.png",
+      "size_bytes": 61390,
+      "sha256": "e50f9f61da2da86ee8d647e72328e91e1bfcb32be6d312f9e18b9ebb43ff54b2"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/minecraft.png",
+      "size_bytes": 181021,
+      "sha256": "915742d01dca868704a88564a0af80b7928c29692f82c033087dbea7179e5dc6"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/mini_world.png",
+      "size_bytes": 438207,
+      "sha256": "15791f11598263d2a66d4840a633905b2c02a308081746f667c1ea9e82692eb1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/miyoushe.png",
+      "size_bytes": 142547,
+      "sha256": "e26b810652c5729158ac66b308739e0f1ec6a9efe7bf135c503f7d886e56e2ee"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/moji_weather.png",
+      "size_bytes": 34352,
+      "sha256": "97fd650bf3fd9c98f1c34d4ea008e599256d57a608dab0cb018f8db1fda7573f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/naruto_mobile.png",
+      "size_bytes": 356220,
+      "sha256": "1189c0466127128b54c299635eb51e37cd44da51b1735153077277d2741f8c23"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/netease_music.png",
+      "size_bytes": 65836,
+      "sha256": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/onmyoji.png",
+      "size_bytes": 479047,
+      "sha256": "7714606d441c08fd2b30c29fd97966f20a81b09227d0a251b7196a25bc410bf1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/paipai.png",
+      "size_bytes": 94004,
+      "sha256": "ce97aa59eb7e538bc1ee426869f6c3d9979be1f44b8de8713e6ec5c55b41782c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/peace_camp.png",
+      "size_bytes": 234580,
+      "sha256": "2e5e2da00cdc9b4dca23b14d6637de20bbc34ca3154b7fafb240467c247b8506"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/peace_elite.png",
+      "size_bytes": 454728,
+      "sha256": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/pinduoduo.png",
+      "size_bytes": 187586,
+      "sha256": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qidian.png",
+      "size_bytes": 56845,
+      "sha256": "e385208a507d8f0ba8af7b273a25d85c408958b3cf99c9c74fead1d0bf1ba603"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qimao.png",
+      "size_bytes": 76041,
+      "sha256": "1f044c4a83dfcdad04b482123d1cb0f39166833ced98aea4b686cc1f4330f6e4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qq.png",
+      "size_bytes": 125461,
+      "sha256": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qq_browser.png",
+      "size_bytes": 72399,
+      "sha256": "c4985d4d7455b39fd64e54a17108e34dbaa60a1078f4d71b396f29df5b39d06b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qq_music.png",
+      "size_bytes": 149962,
+      "sha256": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qq_reading.png",
+      "size_bytes": 425558,
+      "sha256": "c7d5e65967caf56878b42db5ed84715cc6eafaf7250570108bb9a37637e9bf5c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/qq_speed.png",
+      "size_bytes": 407461,
+      "sha256": "b2b6b1f1481b06237f612ea250ad35e4b5b18e4eddd3b3f6eabf192a90f44296"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/quark.png",
+      "size_bytes": 85413,
+      "sha256": "7737b957a1a9d8337e405fa4fb0e78f224e2442528485e745dddeb6ab5f8e544"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/soul.png",
+      "size_bytes": 222092,
+      "sha256": "ebaceb0ec469ad8d0c4194d94209fdf9dbc4ebadaff5f793cb0750da2df1c40f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tencent_comics.png",
+      "size_bytes": 312545,
+      "sha256": "283191441a8e62580234930c50465714c4a2e739e1fa4ec8510b95cc15ad86b3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tencent_maps.png",
+      "size_bytes": 110551,
+      "sha256": "45e1c192d80e3a3d15a10644ed3e28a7990d5f65024da225bb9deeebd064f097"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tencent_meeting.png",
+      "size_bytes": 92970,
+      "sha256": "1926122b7729ab1170ea6f79aa2ff07d4490ed1af3c64d1df70196cc652d89de"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tencent_news.png",
+      "size_bytes": 90524,
+      "sha256": "7cd9218791264ec31edfd8e7a64700f334b56498bde6ee5522b08d2b54c4a0cf"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tencent_video.png",
+      "size_bytes": 136914,
+      "sha256": "652d0a850ccdde1ce33a27228b48d7255fd6e0bf14b0571786f7183ba8145ed4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/tmall.png",
+      "size_bytes": 91234,
+      "sha256": "4216c23bcfd500d1a680ef072f9d903798397a3252b79692ccbba03e1341d02f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/toutiao.png",
+      "size_bytes": 101134,
+      "sha256": "61752f617cff729500d8bd2fb614c2ad6205a6154896110f39654ae46dd36711"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/toutiao_lite.png",
+      "size_bytes": 114246,
+      "sha256": "a94adb4e4d9d0ea5e6bb122f26d07775af58a43099f07b34b1ab34a2bb1a5eaa"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/vipshop.png",
+      "size_bytes": 118531,
+      "sha256": "d36847793703793e5c7c348f4e1cfcff501fc332f969e40cb9be7f6859203988"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/wechat.png",
+      "size_bytes": 68105,
+      "sha256": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/wechat_reading.png",
+      "size_bytes": 40898,
+      "sha256": "c5d8ddd914f7c79239e8ccf84f6fccde4c2b25cca7d8409676fbf67519bb2cf6"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/wecom.png",
+      "size_bytes": 96729,
+      "sha256": "73b656d2fc56437676bff732783cdcf80a5ec64fe3cabb7ec647d715cc6ba7bc"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/weibo.png",
+      "size_bytes": 104088,
+      "sha256": "b693993ad5891eda3438b16b781bc22b8ff1feb67bce85c887b088e10f47aaf5"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/weishi.png",
+      "size_bytes": 258059,
+      "sha256": "a6fb072d49d6100df6893f89492a2edf0f5ee7646d74b717a339af9af4d2b59c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/wps_office.png",
+      "size_bytes": 78191,
+      "sha256": "706085970b7e2ff41f1cdddc9a3bf0f6ac61191ba2948b131c338466ab647359"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/xianyu.png",
+      "size_bytes": 156490,
+      "sha256": "d9f4022b3c32e344f67607421bc9a297f86dcb123b06a325d00ea5509698f608"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/xiaohongshu.png",
+      "size_bytes": 54484,
+      "sha256": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/xigua_video.png",
+      "size_bytes": 60239,
+      "sha256": "3e819a5774d1c5bb0acf5a9663e42ac565291bb6f3c7b8e384c90666dca9b8c4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/ximalaya.png",
+      "size_bytes": 32280,
+      "sha256": "ccec7dc9362afaa553ae04ac32902b69e604d264113414e3e39f88fa80836f5b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/xingtu.png",
+      "size_bytes": 81509,
+      "sha256": "b3f928781c4f2ce478952f30ac87871a3466ef88369de2b7b1fa6189c4873904"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/youdao_dict.png",
+      "size_bytes": 170718,
+      "sha256": "ce774c8774ed733e691cbdb7e19386760a8d603a430157633e8167999adfab9d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/zepp_life.png",
+      "size_bytes": 79650,
+      "sha256": "09e497846570d75d0088d0f89b98657bf5e05a992805350fe30e9575da5cb0e1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/original_icons/zhihu.png",
+      "size_bytes": 93813,
+      "sha256": "74757199f145559fba99e9d98aabfa083d20e7f3f6f3d2466c15126f10eafb46"
+    },
+    {
+      "path": "benchmark/theme_003_processed/summary.json",
+      "size_bytes": 979,
+      "sha256": "be2a839fe6d8846fff61d5fd61002215d7b86c96a03530529f4e5ff6398c8480"
+    },
+    {
+      "path": "benchmark/theme_003_processed/theme_003_mapping.csv",
+      "size_bytes": 30017,
+      "sha256": "1323f47df09165aab62cca4af3b5f9166a3b3e6f3e9b46e3a07612517fa7b3c9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/theme_003_mapping_with_originals.csv",
+      "size_bytes": 60738,
+      "sha256": "75e5cb6902808c7762c9217218b3b645172decf10f570b99b77470073b09aa7e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/theme_003_themed_contact.jpg",
+      "size_bytes": 812308,
+      "sha256": "9cecc3139deedd3921839d02fb90bff671b2b41c21ab4c1b5baa8d2194474cd9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/alipay.png",
+      "size_bytes": 142939,
+      "sha256": "5e292f12d15d045bb09ad6ce81a6b576da00459ef24a96ff8465c0c3c8bade35"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/amap.png",
+      "size_bytes": 136088,
+      "sha256": "9214941dde2509e8931d97b59cd488d9198f548d6fecddb76b109c4ff6b5618c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/anipop.png",
+      "size_bytes": 131885,
+      "sha256": "dc56f8814e20c67c1db52904d8af282bc133878681f137274518357b68339be4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/arena_breakout.png",
+      "size_bytes": 162907,
+      "sha256": "a9a08a83e6b38922dc2e2c96296fa8daac4e4be6686cf3335adf1d2cdcb402fd"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/baidu_maps.png",
+      "size_bytes": 130713,
+      "sha256": "50f98360f42aa2f6bc547f9edfe40e02ad23cc1b011ba980a4f7f0f6c20568f6"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/baidu_netdisk.png",
+      "size_bytes": 145671,
+      "sha256": "ffc3475963e57b922256558726573265737824091aa625e137bb94aff08dca9c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/baidu_tieba.png",
+      "size_bytes": 136891,
+      "sha256": "d5c2f23b8d6d0c2bc05331d14838c1d0617bae90e0375276e4f8be69163b8939"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/beautycam.png",
+      "size_bytes": 148007,
+      "sha256": "f87e151b4475165c38eea99f5c9e1d42fa59c17ba8c23acdd1997b19173224fb"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/bilibili.png",
+      "size_bytes": 137470,
+      "sha256": "070b6f507967d393aff29d5bc6d7c2b978a3e9e0d6d8b9ff8e45a3bc9c64118e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/bilibili_comics.png",
+      "size_bytes": 164324,
+      "sha256": "845203f897463ec30fed46e88ddde0da14554f77f909630b4f6a2aa1aa3292fb"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/calculator.png",
+      "size_bytes": 135916,
+      "sha256": "78abcdec7091e66ebfc7085e53459483eb4e56ed0d45cfa296e7c8c34dc4e521"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/calendar.png",
+      "size_bytes": 138737,
+      "sha256": "cf025c334a51bcce3fa3476063e0d2a06a75096c4b3aca062dcc3344467afc10"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/camera.png",
+      "size_bytes": 119470,
+      "sha256": "ed48f99d0245f6b78c2b73c0a2469682b009f16124ddbc94d6783be09e9d64d0"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/clash_of_clans.png",
+      "size_bytes": 150511,
+      "sha256": "1980160cd4960f4ce10a46a7fa43963e668749bd581f6c7de07be79190357abd"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/clock.png",
+      "size_bytes": 158129,
+      "sha256": "7a6e17c7b2bbd43ac29a5ca0fed4ca527970f87729a7eccf2c3582e3f0199a4d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/cod_mobile.png",
+      "size_bytes": 119112,
+      "sha256": "7f45d3531e76fd1afc055d31a70d6c01e3eefdea21b96748b4cb8275c9c45cc7"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/compass.png",
+      "size_bytes": 159186,
+      "sha256": "eba08f4e1d0da914671a9620457e42e5c016e474ee0d23fb42e2f1274e0400da"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/contacts.png",
+      "size_bytes": 122681,
+      "sha256": "6ce0c163cfdd9ad51a7deea8721f7d55fe700d2ca71b4ab901dc5f192d7d3404"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/crossfire_mobile.png",
+      "size_bytes": 134668,
+      "sha256": "6353f1d266e917e21ff791e5415205afec1a257cc0c5c9f5a3f80b74f31095bf"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/ctrip.png",
+      "size_bytes": 144517,
+      "sha256": "a7cfa4660bfd2164f7a99d7d0742ee4b3d1ae1e10fe8793c39b0ad62ea88f9c0"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/dewu.png",
+      "size_bytes": 132817,
+      "sha256": "d7901a5cb1c3a12eb6025f944ec401961e62d251138bcc66efa66ef94e290a10"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/dianping.png",
+      "size_bytes": 142194,
+      "sha256": "7cf2c0a02120c783d9d0243ce77618fd64f2a1e90a046be7468ea156c854c6f0"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/dingtalk.png",
+      "size_bytes": 138009,
+      "sha256": "da17da40490d63bbff2af0660e78a5543beae649f6b9662b7ff667f301a6cc16"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/douban.png",
+      "size_bytes": 130114,
+      "sha256": "7982408c83036674b8ca1538b63991647f9bf20d1dc9775231bb363a9b09b3a3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/douyin.png",
+      "size_bytes": 127715,
+      "sha256": "36d55987a79ab8768aebc97219520a6e440df3f73e533a255efe152f315369ef"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/douyin_huoshan.png",
+      "size_bytes": 134884,
+      "sha256": "0644387e0eef4114cdc4dd7a6444e2bd73346dc91701fb15fd6779d2f5cc8a23"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/douyu.png",
+      "size_bytes": 153207,
+      "sha256": "6e68a6caf0d41a5c3c1f87b0f9dd31cd15dd771999c033c608123effacceb435"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/download_manager.png",
+      "size_bytes": 126025,
+      "sha256": "99a3d6006f8d66cbd4aa8087c8a2c256a52c48ad8adf6562b7237c1f101b6e80"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/email.png",
+      "size_bytes": 144399,
+      "sha256": "661b614b03c007250ca239e12c52a04cfe157a3801a4f96f244ae21570620b8a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/fanqie_audio.png",
+      "size_bytes": 135946,
+      "sha256": "210206aebfce402c7f74b622a2b53b7da059248742984b78cff97d17536e700a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/fanqie_novel.png",
+      "size_bytes": 127412,
+      "sha256": "e44e1946d016c9be9fd9aef68a309f7313e9294829b8cc8929506976349ca2db"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/game_center.png",
+      "size_bytes": 146497,
+      "sha256": "050eaa563aea06fdc617c0d61f26d7556fc699a25b6819c949e1fa866071f3e4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/genshin.png",
+      "size_bytes": 158777,
+      "sha256": "b0bf77676174400bca13c1a385ee45aca2e190d4b74297d8e11993d5e74a03c5"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/golden_spatula.png",
+      "size_bytes": 142690,
+      "sha256": "7136e79e30307f631c14be1f12f791c628860e72e6967be74ce7a71e4cdcc8e1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/haokan_video.png",
+      "size_bytes": 124851,
+      "sha256": "2759f9227c87e7171ccb51bc7f5a2301bd9449c73a905cf251ad2acd3840e93a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/hello_bike.png",
+      "size_bytes": 155393,
+      "sha256": "a6fd5ac7a0a7a61f62ab5452fc31c16bbaf9db96e747ff9a5b0f6ca6bacc7e9d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/honor_of_kings.png",
+      "size_bytes": 150483,
+      "sha256": "979acea1fe2584f13a43e0f04645d651833ab4727a96c4b65c2f2fcd4e3ec771"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/huya.png",
+      "size_bytes": 149286,
+      "sha256": "b3a3fd4af6dcf825e611ceea8d2a86a2ebd6a1f486c087e377562bc6bb06f36a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/iqiyi.png",
+      "size_bytes": 144815,
+      "sha256": "6e5f982dc55244538937a5431df0f13e78f208cc9516fb8e24d045a62fc99a30"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/iqiyi_lite.png",
+      "size_bytes": 134343,
+      "sha256": "123e39b042b9bf5d46df13c9d91e4cc2ff7afb71e3e22266113f5c8e245acb15"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/jd.png",
+      "size_bytes": 131025,
+      "sha256": "a17d9620d5ab562714b582d137e0f7a1f8bf1c5a68bc43d890515739ccdd6cab"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/jianying.png",
+      "size_bytes": 138736,
+      "sha256": "f350194547c2adb12294fcd24f7d326b88451287803477a3dd295e610c9e4f25"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/jjwxc.png",
+      "size_bytes": 135678,
+      "sha256": "6402cb99083985ddb219afaa003ef648d49ca4fea79258d6f12d8036845a2ff8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/karaoke.png",
+      "size_bytes": 139348,
+      "sha256": "6d91547b6a6c314629141ae031641ad9dd3dc1785c4a04a66bb643240d69258f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/keep.png",
+      "size_bytes": 142055,
+      "sha256": "d8f34922dbab6258b5a482629cd93de52b5b8fb6aa6646c98915288eb17bee53"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/king_camp.png",
+      "size_bytes": 156643,
+      "sha256": "4226aaea4ab8348f8f3da05c3f43bad94c18a16e0a3750c4195de8dea7dddf7c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/kuaikan.png",
+      "size_bytes": 140617,
+      "sha256": "9c7cc5712228418a3026a01a938a204ff64f6a6b1087449ae9cedf359411d62d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/kuaishou_lite.png",
+      "size_bytes": 149290,
+      "sha256": "531738256fff983341698769d644e85c36bc3ba3b36d9138f895f018581014d9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/kuaiying.png",
+      "size_bytes": 127550,
+      "sha256": "d94bfc9c808d02b707d335f8927c9264c09eff4e5aba013252921e3c0214be8b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/kugou.png",
+      "size_bytes": 156628,
+      "sha256": "c5dbb8606e418120956d9830e8ad9a532d9932e8f0c187c14c0426755645a04a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/kuwo.png",
+      "size_bytes": 152087,
+      "sha256": "e125c7cd42d49b7426fe734f40560b2c416c4101828577177259a4755397554d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/lofter.png",
+      "size_bytes": 126249,
+      "sha256": "e5e0db2515d44882edb1da3975ba3a72a1c3cbd3c356369444409c28e9c52460"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/lol_assistant.png",
+      "size_bytes": 156042,
+      "sha256": "104d64823e0e5a691e34891761e9ae8687bdb0a22bc3098afb54c0050317b1e7"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/lol_mobile.png",
+      "size_bytes": 137787,
+      "sha256": "43a01b18c426eab99d182de56c402ee6518e0511415873eeb37c5fdd27a91564"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mango_tv.png",
+      "size_bytes": 142058,
+      "sha256": "2fe3b4497c5e9d7cb1fc78d1e93b3234085b08fe28c39e6af3c6bae93b70571e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/meitu.png",
+      "size_bytes": 165217,
+      "sha256": "5778a9904ff3b5ead7ef0b32981006b1cd5cea64efac3fde76dd1ca4a24e3fce"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/meituan.png",
+      "size_bytes": 132933,
+      "sha256": "eee8e7cf71278d79e5364b97cba757c0d79b759e2395adb03f58cb8a6863bb3f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/meituan_waimai.png",
+      "size_bytes": 130117,
+      "sha256": "27afc589ec6ba94270bf20f06a41ba078b72764d60c7173ba5dd05f22514ae1d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_browser.png",
+      "size_bytes": 132261,
+      "sha256": "c21b2795df7d435dffb40460418e7fba05cc606b28d83655d66c7ac4ae95009f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_community.png",
+      "size_bytes": 125758,
+      "sha256": "166494e7a1547dbaadfe219bc43e5ec5039acd96d944a87182c7c1bb034c8663"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_fitness.png",
+      "size_bytes": 152292,
+      "sha256": "21fc1124d5b0a5f91897038213eb6a3ec910d7f12b7be202ab5933c24cba5501"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_gallery.png",
+      "size_bytes": 113708,
+      "sha256": "b058624e01bdc532f7193974e1e49d60358e4240b72caf25ea0b626bc3ea40f3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_home.png",
+      "size_bytes": 135462,
+      "sha256": "f9dddde7a01fa4ddbb659621b2bd3324867d8310eece2f5a3b79ab9854441175"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_mover.png",
+      "size_bytes": 154317,
+      "sha256": "ca9de216bb9b7656f8d2f2a5f8d023e98cc695bcc01b5ff2c7ea7c5729986038"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_notes.png",
+      "size_bytes": 124490,
+      "sha256": "b992ae3d4da1460cb7ec7e8557ed608d07dc04ff76c0a60076a2b2c828a9d0da"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_remote.png",
+      "size_bytes": 122542,
+      "sha256": "65c64a7fc2db22f6415efd7882ee82d772397d1e724f7b06e1b0939bc62aa7e7"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_store.png",
+      "size_bytes": 129474,
+      "sha256": "36699b5e8750d89a4fde057f36ff0d2b464a65cebb0e30f79ed95949fe93e5ec"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_video.png",
+      "size_bytes": 125302,
+      "sha256": "3cfa9347c2f47a5954d011541a003ef91af8de3a0f0da2ecbf7e6e06bffc24e5"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_wallet.png",
+      "size_bytes": 136321,
+      "sha256": "7f63201a3365d64c85e8d5f44eba89d9cb01be9cfc5e0aca49622e813092baa1"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_weather.png",
+      "size_bytes": 130497,
+      "sha256": "c577f023346bdaf6d77b3cd7070fb1287474e6d47cbd26fa51b15d438fd7b20b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mi_you_pin.png",
+      "size_bytes": 119273,
+      "sha256": "adc91184c6134911407b166065928917fa7a951263a27a34974162eb19c8fc0b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/minecraft.png",
+      "size_bytes": 156287,
+      "sha256": "ef192ea34ef1a428f56a32fff6f50fcb976bca69bb7a42be610e5105c83828ca"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/mini_world.png",
+      "size_bytes": 151477,
+      "sha256": "b4ca79a6c5d6e8cf65f66228e3148a08549631095d3b8199fda4e8c0a4bc8873"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/miyoushe.png",
+      "size_bytes": 153657,
+      "sha256": "5c5267ce9e6878e55ff50650a442854a475cf1b25b4c3bfa2d1ae6a139ed0c1c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/moji_weather.png",
+      "size_bytes": 156848,
+      "sha256": "aa638976227792116c64f1bd09ecc5b49755284d906a0456e46105ae32248e63"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/music.png",
+      "size_bytes": 132526,
+      "sha256": "86dcf5df4c56b608d80d40f072f40377a4d519175a00b6b4ffb8c636e4b8ed8c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/naruto_mobile.png",
+      "size_bytes": 142155,
+      "sha256": "02ebf59b7e775e0742ed0d0dd065286e3236768f47f6c91518d68196af84fca8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/netease_music.png",
+      "size_bytes": 147479,
+      "sha256": "14bc3182730fb77835d6f4da08b15f0ba7cd18d25a3d9cb3a0579f722c6f2b9e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/onmyoji.png",
+      "size_bytes": 162688,
+      "sha256": "de77f7e3d4b29cba5b79e5783a8e79dcfa68ef9ddc2df931958564c4c30bacdb"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/paipai.png",
+      "size_bytes": 138474,
+      "sha256": "f2dfd006fd884ad70d040a328c319d737ad07290422a3e861003adf70ebcc7f8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/peace_camp.png",
+      "size_bytes": 149487,
+      "sha256": "d4b62fea77715079458fa0d59f1fad5b3bb788bd1ea9964a67abca01309f314f"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/peace_elite.png",
+      "size_bytes": 138404,
+      "sha256": "5b15dd7ec1cb897de2263445d3a47c54d3b66689722faf4e12af09e1d9e4f466"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/phone.png",
+      "size_bytes": 139218,
+      "sha256": "c59e16b9ece5902373817fa14a3d4770fdf4eb0f3728c0b0a03f450e20fe89bd"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/pinduoduo.png",
+      "size_bytes": 144558,
+      "sha256": "a6f3e8480c944a42bc2ea11729d35ccbc561e2644403f70c8084ae70447a8173"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/pipixia.png",
+      "size_bytes": 164034,
+      "sha256": "fa90dded9b3f3504eb56bc0b908c772c3d85f166c474e2acaf5c8c2bb61431c4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qidian.png",
+      "size_bytes": 142749,
+      "sha256": "dd0c7c3d45ea08fd3e33d0eea50195b0a09c335e58dd4007eb32dfb3c7b15fd8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qimao.png",
+      "size_bytes": 138617,
+      "sha256": "8228109cbe96d14905a7dbea20d880dcefb6c271ab1e4d409b28c60f1ca0e52a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qq.png",
+      "size_bytes": 116261,
+      "sha256": "0f5df94c9ee59694bbf27956909bb1e1df3c2590f377fc73c8884d4d5638ddfb"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qq_browser.png",
+      "size_bytes": 138203,
+      "sha256": "1bdbe4e5d0e4ada18d43a60eb13eeb86e156dd75891f69c7ed3c57e3f0a69dc8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qq_music.png",
+      "size_bytes": 141106,
+      "sha256": "0086a589f439ed18dd872bfa5c9730089374e1b89db646a99452e74fc6da6802"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qq_reading.png",
+      "size_bytes": 149446,
+      "sha256": "04632c06e79e16d32f3facd8a9db5e4abb5662b9378a22b089681b382a07b4f9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/qq_speed.png",
+      "size_bytes": 170521,
+      "sha256": "a09549c96a7cebb92c1732e836d9015d7697ce4c68e63b2bc29b3d32b45c4670"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/quark.png",
+      "size_bytes": 138038,
+      "sha256": "e924e2d1a62cc5b20373c2e31ca9cfc4869312b95e20a5e759175448c61109d3"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/recorder.png",
+      "size_bytes": 147015,
+      "sha256": "1ca1bee25dd46665657ec05f6c63e3dff7ff7e553ea97450848f4022efa846c8"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/service_feedback.png",
+      "size_bytes": 121408,
+      "sha256": "c2e55e51186c210e3f74b3da6ce5af9b915106d99b5a2857539ee5fdad0cc9bb"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/settings.png",
+      "size_bytes": 132341,
+      "sha256": "f32a64f2fe5255a09168472c16d4c960982cd040ee7915d24adc8955f3328fc9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/shuqinovel.png",
+      "size_bytes": 139046,
+      "sha256": "9d1bc2866d3db6ffd1f83eb29095ac043b1af47743481a5d3b5564a3fc3725c4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/sms.png",
+      "size_bytes": 135415,
+      "sha256": "8434bfe9d61c289aa332dbb0f3317a8ae24b51fda88f9bccccb50b8d8d2e1540"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/soul.png",
+      "size_bytes": 132714,
+      "sha256": "63268a1036b080a189a17a626421a90c921ecae2864af92f96628e95d224dd4c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tencent_comics.png",
+      "size_bytes": 143376,
+      "sha256": "b7546c3e111c02cf564b884c5ef5feb05523bde9a3082f9a8d448d077eb285c9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tencent_maps.png",
+      "size_bytes": 143174,
+      "sha256": "de4d17c6e5dbd05c88cd477e66e638e2882aee8ccd78a102eb49cbb7a299d32b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tencent_meeting.png",
+      "size_bytes": 133682,
+      "sha256": "4bb2b28daa0c3d2a1e146696d0cbd82d10af9ab4683b5f96823e0bdf7379aa19"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tencent_news.png",
+      "size_bytes": 143891,
+      "sha256": "ad66d95eb6883a72e6a929e0e37d1723607b5512c61eb8e6f0eb7295dba6a163"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tencent_video.png",
+      "size_bytes": 142731,
+      "sha256": "1449bb3521451b99076880162f7ae50efe2d2169965f9fa19c0de216c5739b4c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/themes.png",
+      "size_bytes": 122503,
+      "sha256": "903cb5c8a2f80af1a63333fe509441cb5162794fccf4731bfa5855c4b39cf0a4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/tmall.png",
+      "size_bytes": 129474,
+      "sha256": "af2600384abed0baef0a1a624e9ad7c833513ad58c838464b67c8c20c6cb72a5"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/toutiao.png",
+      "size_bytes": 141092,
+      "sha256": "3fb508f3ba287fc610b83ee4ca4c893db73bdac4adb30f02f4bacd91ec5d56dd"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/toutiao_lite.png",
+      "size_bytes": 142537,
+      "sha256": "251f9a38a685314e4cec326d63376ceef1ee7146306e58f380240aa00452b7dc"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/ulike.png",
+      "size_bytes": 121074,
+      "sha256": "7dab2c045b160eb9220f5c7d53f20b87ca98f3250f555999e706bf436dd26c81"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/vipshop.png",
+      "size_bytes": 134401,
+      "sha256": "e7346bb11b98207ab058098739a54e366ddf05d191bd0905718434809fd32206"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/wechat.png",
+      "size_bytes": 137026,
+      "sha256": "0baf58c74ca1dab14de89c967ddbf17e659c1356c1f3a169eaa036698c92b082"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/wechat_reading.png",
+      "size_bytes": 122649,
+      "sha256": "6707679f62784e4a47042531d8ed51d4d376a8e5e69e1ba1ec00386f88d5b075"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/wecom.png",
+      "size_bytes": 154945,
+      "sha256": "2a3489a595ac352cbb4c0cb7457e2809bc57fadf62571723924d87e80d06ab1e"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/weibo.png",
+      "size_bytes": 145572,
+      "sha256": "5839a34a9f41ee9b80a60ab7c9fc389677bb6f14b03e87c440ec5e9bc29fbd3b"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/weishi.png",
+      "size_bytes": 149129,
+      "sha256": "d6b3fb70a5693c646d5306e1719952d52631d8e9db63065df8086d8b2df82c72"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/wps_office.png",
+      "size_bytes": 141897,
+      "sha256": "89a4ed74f3fd7b170fe0b8da0777ab92081059233956c01df6ccbd14a5387bb4"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xianyu.png",
+      "size_bytes": 127643,
+      "sha256": "48eed90c5f7f012c4622781736684e26193dec88d6e8f2d28d6ff1aa407d044d"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xiaoai.png",
+      "size_bytes": 159583,
+      "sha256": "330e82feb1e38364bbfd9771ec1ee8c6bb19638cfa3ae9573877c908c748d319"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xiaoai_vision.png",
+      "size_bytes": 134522,
+      "sha256": "1c7151784c09d305560e99e49caa759960d362df737799be136108ffa840fc80"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xiaohongshu.png",
+      "size_bytes": 130181,
+      "sha256": "0ded5918afa89b009eeab4cecf7a4c413750419c77576146a46d91ee7b4e5dc9"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xigua_video.png",
+      "size_bytes": 129659,
+      "sha256": "f58b303140e3058c57583273888835484f435d1d29ba7e4489b24dac26bc60a0"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/ximalaya.png",
+      "size_bytes": 129417,
+      "sha256": "b82a4526bd44ddd9c504d8ad762b2b6e8271f9f9b1b4f07c390f6bd83044da8c"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/xingtu.png",
+      "size_bytes": 120933,
+      "sha256": "eb92cd8e5f79a6e9119ce01b89950f4fa915a45ae44124ebb4007954b880857a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/yingshi_daquan.png",
+      "size_bytes": 132471,
+      "sha256": "d0d9b798e1f723471e167aac358542cf8e123af282d8ba1b14706bc6245dface"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/youdao_dict.png",
+      "size_bytes": 155262,
+      "sha256": "34037b91c03d0b1c23e3c6c18e4097fcbc184c60bfa474eaead7966019b29bd2"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/zepp_life.png",
+      "size_bytes": 128676,
+      "sha256": "c1479bc20b8182eac1ea244ab9a87f0c8cfab64285d993c91e1851f015a3c43a"
+    },
+    {
+      "path": "benchmark/theme_003_processed/themed_icons/zhihu.png",
+      "size_bytes": 137782,
+      "sha256": "780dd6a8addcbf0dfd4c61a8798543d62ea27d5eefe7582d32239e0970ba6626"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/alipay.png",
+      "size_bytes": 86302,
+      "sha256": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/anipop.png",
+      "size_bytes": 326185,
+      "sha256": "5df8d862c2eb4a4864cf6d40bbdbc4f1548b39bf07c10d6d3360f3abdfdf0d4b"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/bilibili.png",
+      "size_bytes": 102161,
+      "sha256": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/clash_of_clans.png",
+      "size_bytes": 324853,
+      "sha256": "c599ba01266b7d59abb6c9abbbfe0ea12cb341f8ec604053f90d35895673ca7b"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/ctrip.png",
+      "size_bytes": 93299,
+      "sha256": "818374007f835d3e55e98771ca9d4e7d0397e1824452a00afb73cb021dd70118"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/dianping.png",
+      "size_bytes": 77106,
+      "sha256": "c3b40e8ed77d339370977b1c471a7401fac80c9138457a3d8eaf776066761cbd"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/douyin.png",
+      "size_bytes": 78732,
+      "sha256": "8f06c768edcbdf1d8dcf1687921abf90facfd65dd5545b75aad53eda795d6cd8"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/douyin_huoshan.png",
+      "size_bytes": 116530,
+      "sha256": "47bff73352bf685c7e8b824ffc70e38da9d3e6be7eb65ed9ef3cf797ba1b5b1c"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/douyu.png",
+      "size_bytes": 159143,
+      "sha256": "f1564930eb3400addce492075332dca63a3540ba968465ed57dbf289cb7a3565"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/eleme.png",
+      "size_bytes": 185810,
+      "sha256": "bc7e0b5ac709d2195b799c7a6a2dfcc168bb56284360e93a9248b1ce8a5790b4"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/golden_spatula.png",
+      "size_bytes": 457536,
+      "sha256": "cf4fb67ee72b01e216fd626dc967e4a14ce257486e7da26aee3b219689efa2d8"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/honor_of_kings.png",
+      "size_bytes": 354392,
+      "sha256": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/iqiyi_lite.png",
+      "size_bytes": 221726,
+      "sha256": "827511e40ab58e60cc724a6b490d5c6e9ff5ce1b8ca751261ca548d87b6359b3"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/jd.png",
+      "size_bytes": 226549,
+      "sha256": "87f3c6a8a87ebd0ae0708c2cc7ff0380119ef8ef73f35417e82a76836e58490a"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/kuaishou.png",
+      "size_bytes": 94638,
+      "sha256": "4a5b75e5c85e0c4e5aaa854c131c989239f35cf1fb682f97f8fb9f0a659082b2"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/kugou.png",
+      "size_bytes": 113033,
+      "sha256": "51834ab613181525af9e9bfc54ad78a494a8c76c93a2b3ca714eaa8df5ee2aa7"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/meituan_waimai.png",
+      "size_bytes": 225602,
+      "sha256": "fe12b7960865fd56fc54d589d3531b556a1d8dc2da4b4c62b7ec3c4e546fdc85"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/mi_home.png",
+      "size_bytes": 61390,
+      "sha256": "e50f9f61da2da86ee8d647e72328e91e1bfcb32be6d312f9e18b9ebb43ff54b2"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/netease_music.png",
+      "size_bytes": 65836,
+      "sha256": "ad0b352b64af6383fdba8e5b8a1eee9339beb52bd3c2a7706807c57cc7f48d82"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/paipai.png",
+      "size_bytes": 94004,
+      "sha256": "ce97aa59eb7e538bc1ee426869f6c3d9979be1f44b8de8713e6ec5c55b41782c"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/peace_elite.png",
+      "size_bytes": 454728,
+      "sha256": "13fa374b0125bb876673ec1854311e7b2f0fb2599aeaed72468e730051cf859f"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/pinduoduo.png",
+      "size_bytes": 187586,
+      "sha256": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/qimao.png",
+      "size_bytes": 76041,
+      "sha256": "1f044c4a83dfcdad04b482123d1cb0f39166833ced98aea4b686cc1f4330f6e4"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/qq.png",
+      "size_bytes": 125461,
+      "sha256": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/qq_browser.png",
+      "size_bytes": 72399,
+      "sha256": "c4985d4d7455b39fd64e54a17108e34dbaa60a1078f4d71b396f29df5b39d06b"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/qq_music.png",
+      "size_bytes": 149962,
+      "sha256": "209a97ad0cd4b1ba9762e6ddf982799eeceaf0cb4d598b1e42ab8582c350118d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/quark.png",
+      "size_bytes": 85413,
+      "sha256": "7737b957a1a9d8337e405fa4fb0e78f224e2442528485e745dddeb6ab5f8e544"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/tencent_news.png",
+      "size_bytes": 90524,
+      "sha256": "7cd9218791264ec31edfd8e7a64700f334b56498bde6ee5522b08d2b54c4a0cf"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/wechat.png",
+      "size_bytes": 68105,
+      "sha256": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/wechat_reading.png",
+      "size_bytes": 40898,
+      "sha256": "c5d8ddd914f7c79239e8ccf84f6fccde4c2b25cca7d8409676fbf67519bb2cf6"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/wecom.png",
+      "size_bytes": 96729,
+      "sha256": "73b656d2fc56437676bff732783cdcf80a5ec64fe3cabb7ec647d715cc6ba7bc"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/xiaohongshu.png",
+      "size_bytes": 54484,
+      "sha256": "c907b093f6a951edaf4ff13104a31420e53df97e28ae9f82eb377cd1e6b006bc"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/xigua_video.png",
+      "size_bytes": 60239,
+      "sha256": "3e819a5774d1c5bb0acf5a9663e42ac565291bb6f3c7b8e384c90666dca9b8c4"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/xingtu.png",
+      "size_bytes": 81509,
+      "sha256": "b3f928781c4f2ce478952f30ac87871a3466ef88369de2b7b1fa6189c4873904"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/youdao_dict.png",
+      "size_bytes": 170718,
+      "sha256": "ce774c8774ed733e691cbdb7e19386760a8d603a430157633e8167999adfab9d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/original_icons/zhihu.png",
+      "size_bytes": 93813,
+      "sha256": "74757199f145559fba99e9d98aabfa083d20e7f3f6f3d2466c15126f10eafb46"
+    },
+    {
+      "path": "benchmark/theme_004_processed/summary.json",
+      "size_bytes": 537,
+      "sha256": "0d2bef132debdf53a99ea823679c13e960744251b39fb7dc9f60b29e6dca016b"
+    },
+    {
+      "path": "benchmark/theme_004_processed/theme_004_mapping.csv",
+      "size_bytes": 12789,
+      "sha256": "c4f8defa894b3e0330a2d332b64271450778f3c2382126998e025bbd8db092c6"
+    },
+    {
+      "path": "benchmark/theme_004_processed/theme_004_mapping_with_originals.csv",
+      "size_bytes": 25591,
+      "sha256": "55307adcab9780c2fe50aa720bb346f6cb25e216948db4b875c22047e85de25a"
+    },
+    {
+      "path": "benchmark/theme_004_processed/theme_004_themed_contact.jpg",
+      "size_bytes": 403482,
+      "sha256": "4a05ebf6097dbaad24705c05f209e5647ad929d7889092423f31a70cfe4d98b4"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/alipay.png",
+      "size_bytes": 108471,
+      "sha256": "7221c13d0f84dd0f29ae09e4e9e8ace939ecbcb11675301c82aa9f4ccc1dfc13"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/anipop.png",
+      "size_bytes": 102502,
+      "sha256": "28e11f773e1ebc2b58d25eef37cdeb09c16075027e5287135ce40fc4ee652c6d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/bilibili.png",
+      "size_bytes": 92505,
+      "sha256": "d51ab1a8fa8dbf17c09e6286537e5a34b535c874d9f8ed9357457e092e22ed07"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/calendar.png",
+      "size_bytes": 120395,
+      "sha256": "3f5edee2411a30892ef0fd2a6448149e32f68e093d7f1ba172534bdcf0475dc9"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/camera.png",
+      "size_bytes": 115812,
+      "sha256": "f185e368d05cf1f56a0988d81f39573c85befb850f713db4fa9f386314e681a4"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/clash_of_clans.png",
+      "size_bytes": 149410,
+      "sha256": "e39cb138206698afb0f3951fc63e4abaf4b961fb5f462049fdbd9fac89760d02"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/clock.png",
+      "size_bytes": 106974,
+      "sha256": "5efe79da3087a50ecc0952699996cb101b1f7aaba1d58c940386923314f9d452"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/ctrip.png",
+      "size_bytes": 111829,
+      "sha256": "d68b83936f52c8e38b4641c4b77d3bac2d829b2202a3a43cf9acb918f42b2094"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/dianping.png",
+      "size_bytes": 121068,
+      "sha256": "ebc1a87f97d327d48254524f61bb0f73b3adc4677ff9db7fff30b9f690a23698"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/douyin.png",
+      "size_bytes": 111414,
+      "sha256": "f1f78f9180c9e6255fb46637a2f8770628e33c65879be8ba53d0c511b497915a"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/douyin_huoshan.png",
+      "size_bytes": 127238,
+      "sha256": "d612f078deddaeb597acb348b2434bfc782a6cf729da932d89045721a332d7d7"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/douyin_lite.png",
+      "size_bytes": 141595,
+      "sha256": "f625d8438d5504fc42b646de4748afd1f4112053fd600eee89777a4e6ca27815"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/douyu.png",
+      "size_bytes": 134459,
+      "sha256": "f7ac1bd7a3777c5f9683a1fbfb1e6a632681fda49c11f83a8eeeac97c46839d5"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/eleme.png",
+      "size_bytes": 129095,
+      "sha256": "55a60298c09f259f3f84f0060853cc695e2256b4a63a8f9d77bcbd53d7b2bd2a"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/file_manager.png",
+      "size_bytes": 107961,
+      "sha256": "3980202b432beb259f05c2e190d1cf89bda8d3bbe8eb3e27e79e1bed54da0310"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/game_center.png",
+      "size_bytes": 121420,
+      "sha256": "2ad4ea074d8d536ee4816fbf6711dc4ca4d70c3bd7f927a9fc6f92c6610e36ba"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/global_internet.png",
+      "size_bytes": 113117,
+      "sha256": "18ec76674f9a33a14126e4ac246e8e00478ca7bd4c155ae920ddc5ab0b7c8cf0"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/golden_spatula.png",
+      "size_bytes": 156964,
+      "sha256": "92a34f14996f03bb4af8d14856bb1f0f12013f673bfd3ca66eb75441b7482b22"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/honor_of_kings.png",
+      "size_bytes": 170075,
+      "sha256": "e15ec8eeb046b775a129590eb953008071502497eff3515cf178d254ecf6b627"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/iqiyi_lite.png",
+      "size_bytes": 101560,
+      "sha256": "7e835ce982348f054cfbd82678975fe6ad31fa01d50165253f5579aec906a691"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/jd.png",
+      "size_bytes": 102502,
+      "sha256": "0c3d9a242412a3d4c18e96cdae776a957f0ec58b0f4e64c3227e1b2c847520ef"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/kuaishou.png",
+      "size_bytes": 108654,
+      "sha256": "6801cd3b1f40337956f4d16c8fc5a541007bdb441c28e34b79b2208eded34fb5"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/kuaishou_lite.png",
+      "size_bytes": 90132,
+      "sha256": "75b8db4a178d91d38559884a6075ef88277a8842db866d143c132fbb074289f8"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/kugou.png",
+      "size_bytes": 94023,
+      "sha256": "bbfd6ceb947d838f5b934f9226610958259d8c26a2cd00b9536104e7dff04028"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/meituan_waimai.png",
+      "size_bytes": 120067,
+      "sha256": "6a99ef9b6324909d372997e36d43806edaf37f2f6dab48b7ea450f7ca6cd6a34"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/mi_browser.png",
+      "size_bytes": 141937,
+      "sha256": "12d6552b07adfa6b33096f6fce960d812907f581a36c21b4b4f1374aa1dcedb5"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/mi_community.png",
+      "size_bytes": 126338,
+      "sha256": "afe96c9ea8ae43d58687ec382b760e9f0258c77eb2de7ba2d121b93e56c3a959"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/mi_home.png",
+      "size_bytes": 83187,
+      "sha256": "c5e5c10bb1140fa735640a95681e4cdca41ee48973e19648ce03cec3335a7a7c"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/mi_weather.png",
+      "size_bytes": 94184,
+      "sha256": "07cb25308e9572f33787b8b5d99de7a8981a5a6c22bc35d85792f642a5cd0751"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/music.png",
+      "size_bytes": 160917,
+      "sha256": "955e112cab4650b6952cbd086a53e7bf53ad1736d27a97ecd7697086297650d2"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/netease_music.png",
+      "size_bytes": 142832,
+      "sha256": "7a4c5ff2c0c3ea6334e075326c57e8e4bed0d62b592bad21e03a08d8006c488f"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/paipai.png",
+      "size_bytes": 98853,
+      "sha256": "59574f98d7782526f0f21754a00b0e764697d2b1b3817d6de8f6a17794dae952"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/peace_elite.png",
+      "size_bytes": 161800,
+      "sha256": "a7b28acd79c47ff38fc3c54015baad84199fe857bbbc105b0708de195739abe3"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/phone.png",
+      "size_bytes": 153516,
+      "sha256": "a3228bdc81297a3dcaf2e27dabbf5ce18652ef4b78fd8d826a147016758b3975"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/pinduoduo.png",
+      "size_bytes": 131981,
+      "sha256": "b4ba58244de8f647ef6cd0039621ac239a8d16636d35a8f8e1e6617a0ed68072"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/pipixia.png",
+      "size_bytes": 104409,
+      "sha256": "e7d380a47d4205ea3230cb85dbfb044407b84bad3116a166d578e9cac7b2d0e1"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/qimao.png",
+      "size_bytes": 89967,
+      "sha256": "b2e90107463154d86caba15435e124668278870c14bbd412cf6311d405f0850d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/qq.png",
+      "size_bytes": 133387,
+      "sha256": "e86d1c9fafe25c2c78ff6e76456eecc5481bd780273379f8ca3d8031e716d979"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/qq_browser.png",
+      "size_bytes": 136793,
+      "sha256": "20f150c2934290a6f70d11a6b52a70b8124e95fef934e752f4e0d03f70820497"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/qq_music.png",
+      "size_bytes": 113498,
+      "sha256": "5cd66a3f6941dd6595c9a9805da15b9b9010d363866d7f36c45fff7147d044ff"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/quark.png",
+      "size_bytes": 101214,
+      "sha256": "38496a11496c542e307c844fd4db29b8d7561763159f8e78b2f92a754f7e9f4d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/settings.png",
+      "size_bytes": 172881,
+      "sha256": "b460bb7e1bca06e3ace4e78df2bdb1e204624e25efb7e69fa71c1b12a41a946f"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/sms.png",
+      "size_bytes": 111865,
+      "sha256": "11097941a18c1249100627a0126615d6f39f011cb97a7192db090295b0d87d1d"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/tencent_news.png",
+      "size_bytes": 134773,
+      "sha256": "8b963d51349b2cb1c68188f93ff41e80c1eff6a3ca1470d3e5622007b296e0d3"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/wechat.png",
+      "size_bytes": 93547,
+      "sha256": "a3c69fda0729e496d8f04db12486066901cc9a0dd107e9fc2e665d7df8f15499"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/wechat_reading.png",
+      "size_bytes": 73270,
+      "sha256": "88aa2636053c8016241b6e1c6faf9529c4e6fa5ed49403e39f7ebf239e4b1acf"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/wecom.png",
+      "size_bytes": 109814,
+      "sha256": "ec42a609ad853c06a1474def976c552bc2e524d71731cab0cfd052c3259d0697"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/xiaohongshu.png",
+      "size_bytes": 99857,
+      "sha256": "5554096a86549493345396173e1517c74d99f75a5f274a4241a020db00fca40f"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/xigua_video.png",
+      "size_bytes": 123559,
+      "sha256": "ee055676b0316049b1acab79635dde1a5d7bfb8ff3ea4bed9c1a326edbff2d49"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/xingtu.png",
+      "size_bytes": 126273,
+      "sha256": "0ffdfd617de05003b0f88d6d062bb036533088b2b68c6bb346a06445db7604ef"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/yingshi_daquan.png",
+      "size_bytes": 151632,
+      "sha256": "9649dca6c76a0e4f04c8f75541f803945e9fd0425434055db95715497111a46a"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/youdao_dict.png",
+      "size_bytes": 115008,
+      "sha256": "b8b0dbfd4feefc836617b7fc64b688ccef08d50cbc3c98819bdb94a4fe2057e2"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/zhihu.png",
+      "size_bytes": 111429,
+      "sha256": "28609db5c26046515a558f95d11b13b9d1d8b6643d06fe0b860a2bf2fdcb5b5c"
+    },
+    {
+      "path": "benchmark/theme_004_processed/themed_icons/zuiyou.png",
+      "size_bytes": 132427,
+      "sha256": "601e1c6fa0ad94cdc8767a94f25d4ab85f88cfb7cc63529fb055b07734a6a8af"
+    }
+  ],
+  "source_data_modified": false
+}

@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 71.37627083596196,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 96.00149368575005,
+        "reliable": true,
+        "D_RR": 0.03465065360069275,
+        "D_OR": 0.3904704079031944,
+        "D_TR": 0.49527934193611145,
+        "D_GR": 0.05115070939064026,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 96.36863788503842
+          },
+          {
+            "app": "wechat",
+            "score": 90.41383911104079
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 97.22349774692101
+          }
+        ]
+      },
+      "background": {
+        "score": 74.63625902748714,
+        "reliable": true,
+        "D_RR": 0.1063796877861023,
+        "D_OR": 0.24133162945508957,
+        "D_TR": 0.213893324136734,
+        "D_GR": 0.09641993045806885,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 98.54503610994858
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 100.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 66.80449053002019,
+        "reliable": true,
+        "D_RR": 0.05045357346534729,
+        "D_OR": 0.1037878766655922,
+        "D_TR": 0.12843210995197296,
+        "D_GR": 0.09317646920681,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 67.21796212008077
+          },
+          {
+            "app": "netease_music",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 100.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 82.14537725538607,
+        "reliable": true,
+        "D_RR": 0.003851562738418579,
+        "D_OR": 0.028876543045043945,
+        "D_TR": 0.03461219370365143,
+        "D_GR": 0.007379099726676941,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 75.52822778076515
+          },
+          {
+            "app": "wechat",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 54.08870731786608
+          },
+          {
+            "app": "bilibili",
+            "score": 98.96457392291302
+          }
+        ]
+      },
+      "composition": {
+        "score": 25.0,
+        "reliable": true,
+        "D_RR": 0.01158595085144043,
+        "D_OR": 0.0292351096868515,
+        "D_TR": 0.022314921021461487,
+        "D_GR": 0.019619032740592957,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 100.0
+          },
+          {
+            "app": "netease_music",
+            "score": 0.0
+          },
+          {
+            "app": "bilibili",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 83.67000451712835,
+        "reliable": true,
+        "D_RR": 0.0016137361526489258,
+        "D_OR": 0.02829170972108841,
+        "D_TR": 0.03369140625,
+        "D_GR": 0.005012288689613342,
+        "per_app": [
+          {
+            "app": "douyin",
+            "score": 85.19170649322649
+          },
+          {
+            "app": "wechat",
+            "score": 88.08744663230766
+          },
+          {
+            "app": "netease_music",
+            "score": 62.22619060198442
+          },
+          {
+            "app": "bilibili",
+            "score": 99.17467434099481
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 42.84809535983834
+      },
+      {
+        "app": "wechat",
+        "score": 90.71071399556297
+      },
+      {
+        "app": "netease_music",
+        "score": 69.38581631997508
+      },
+      {
+        "app": "bilibili",
+        "score": 82.56045766847147
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 90.065113485309,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.3859054148197174,
+    "D_GR_vgg_gram": 0.14651834964752197,
+    "D_RR_vgg_gram": 0.12011208385229111,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 92.80322767513465,
+        "generated_to_theme_distance": 0.1295783519744873,
+        "target_to_theme_distance": 0.2516469955444336
+      },
+      {
+        "index": 1,
+        "score": 90.25835380566888,
+        "generated_to_theme_distance": 0.16431421041488647,
+        "target_to_theme_distance": 0.573855996131897
+      },
+      {
+        "index": 2,
+        "score": 90.17973138182008,
+        "generated_to_theme_distance": 0.13944470882415771,
+        "target_to_theme_distance": 0.3169766068458557
+      },
+      {
+        "index": 3,
+        "score": 88.39125851141348,
+        "generated_to_theme_distance": 0.1527361273765564,
+        "target_to_theme_distance": 0.40114206075668335
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 16,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 95.62328737287314,
+    "reliable": true,
+    "D_RR": 0.28825217485427856,
+    "D_TR": 0.37890323996543884,
+    "D_GR": 0.2922197114676237
+  },
+  "dino_motif": {
+    "score": 41.452628565550796,
+    "reliable": true,
+    "prototype_count": 27,
+    "reference_coverage": 0.7223741412162781,
+    "target_coverage": 0.5303530767560005,
+    "generated_coverage": 0.6099508553743362,
+    "per_app": [
+      {
+        "app": "douyin",
+        "score": 55.559241227313706,
+        "target_coverage": 0.4837474524974823,
+        "generated_coverage": 0.616326630115509
+      },
+      {
+        "app": "wechat",
+        "score": 55.25697713771576,
+        "target_coverage": 0.5057488083839417,
+        "generated_coverage": 0.6254494190216064
+      },
+      {
+        "app": "netease_music",
+        "score": 0.0,
+        "target_coverage": 0.5996806621551514,
+        "generated_coverage": 0.5525293350219727
+      },
+      {
+        "app": "bilibili",
+        "score": 59.56841992740437,
+        "target_coverage": 0.5322353839874268,
+        "generated_coverage": 0.6454980373382568
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "validated_at": "2026-08-04T23:47:59.405350+00:00",
+  "status": "PASS",
+  "error_count": 0,
+  "errors": [],
+  "identity_gallery_count": 91,
+  "theme_asset_count": 231,
+  "pair_record_count": 158,
+  "package_pair_record_count": 137,
+  "four_theme_core_count": 5,
+  "asset_file_count": 322,
+  "dataset_fingerprint": "a9982485db04a7f88e76236e227a1a65cb37f5b1a4f02057c3d919d49355e826",
+  "self_contained": true
+}

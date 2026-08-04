@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0064313411712646484,
+        "D_OR": 0.24289433658123016,
+        "D_TR": 0.24375250935554504,
+        "D_GR": 0.24375250935554504,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.002037346363067627,
+        "D_OR": 0.14027971774339676,
+        "D_TR": 0.1642186939716339,
+        "D_GR": 0.1642186939716339,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.017524778842926025,
+        "D_OR": 0.11129707098007202,
+        "D_TR": 0.06699280440807343,
+        "D_GR": 0.06699280440807343,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.010125845670700073,
+        "D_OR": 0.04968930780887604,
+        "D_TR": 0.026974588632583618,
+        "D_GR": 0.026974588632583618,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0009989738464355469,
+        "D_OR": 0.039564959704875946,
+        "D_TR": 0.009495168924331665,
+        "D_GR": 0.009495168924331665,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.009990304708480835,
+        "D_OR": 0.04790681600570679,
+        "D_TR": 0.025401845574378967,
+        "D_GR": 0.025401845574378967,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0
+          },
+          {
+            "app": "alipay",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "qimao",
+        "score": 0.0
+      },
+      {
+        "app": "alipay",
+        "score": 0.0
+      },
+      {
+        "app": "wecom",
+        "score": 0.0
+      },
+      {
+        "app": "pinduoduo",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.4054687023162842,
+    "D_GR_vgg_gram": 0.4054687023162842,
+    "D_RR_vgg_gram": 0.1249823272228241,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.33810919523239136,
+        "target_to_theme_distance": 0.33810919523239136
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4967230558395386,
+        "target_to_theme_distance": 0.4967230558395386
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.26589637994766235,
+        "target_to_theme_distance": 0.26589637994766235
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5211461782455444,
+        "target_to_theme_distance": 0.5211461782455444
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.26553112268447876,
+    "D_TR": 0.3757667765021324,
+    "D_GR": 0.3757667765021324
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7524791657924652,
+    "target_coverage": 0.404996819794178,
+    "generated_coverage": 0.404996819794178,
+    "per_app": [
+      {
+        "app": "qimao",
+        "score": 0.0,
+        "target_coverage": 0.4516844153404236,
+        "generated_coverage": 0.4516844153404236
+      },
+      {
+        "app": "alipay",
+        "score": 0.0,
+        "target_coverage": 0.36641526222229004,
+        "generated_coverage": 0.36641526222229004
+      },
+      {
+        "app": "wecom",
+        "score": 0.0,
+        "target_coverage": 0.4187142848968506,
+        "generated_coverage": 0.4187142848968506
+      },
+      {
+        "app": "pinduoduo",
+        "score": 0.0,
+        "target_coverage": 0.3831733167171478,
+        "generated_coverage": 0.3831733167171478
+      }
+    ]
+  }
+}

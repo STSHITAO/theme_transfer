@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.01698240637779236,
+        "D_OR": 0.2549835592508316,
+        "D_TR": 0.3113565146923065,
+        "D_GR": 0.3113565146923065,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0028330087661743164,
+        "D_OR": 0.1870257556438446,
+        "D_TR": 0.17004230618476868,
+        "D_GR": 0.17004230618476868,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.06395384669303894,
+        "D_OR": 0.09106612950563431,
+        "D_TR": 0.10173538327217102,
+        "D_GR": 0.10173538327217102,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.005031615495681763,
+        "D_OR": 0.05588660389184952,
+        "D_TR": 0.020682603120803833,
+        "D_GR": 0.020682603120803833,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0026614367961883545,
+        "D_OR": 0.017083443701267242,
+        "D_TR": 0.022545889019966125,
+        "D_GR": 0.022545889019966125,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.004713565111160278,
+        "D_OR": 0.053408026695251465,
+        "D_TR": 0.017902150750160217,
+        "D_GR": 0.017902150750160217,
+        "per_app": [
+          {
+            "app": "qq_music",
+            "score": 0.0
+          },
+          {
+            "app": "douban",
+            "score": 0.0
+          },
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "qq_music",
+        "score": 0.0
+      },
+      {
+        "app": "douban",
+        "score": 0.0
+      },
+      {
+        "app": "minecraft",
+        "score": 0.0
+      },
+      {
+        "app": "douyu",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.5019914209842682,
+    "D_GR_vgg_gram": 0.5019914209842682,
+    "D_RR_vgg_gram": 0.13609511405229568,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4273163676261902,
+        "target_to_theme_distance": 0.4273163676261902
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5772231221199036,
+        "target_to_theme_distance": 0.5772231221199036
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5087835788726807,
+        "target_to_theme_distance": 0.5087835788726807
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.49464261531829834,
+        "target_to_theme_distance": 0.49464261531829834
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.2887457013130188,
+    "D_TR": 0.4234266523271799,
+    "D_GR": 0.4234266523271799
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.6726954281330109,
+    "target_coverage": 0.4262752830982208,
+    "generated_coverage": 0.4262752830982208,
+    "per_app": [
+      {
+        "app": "qq_music",
+        "score": 0.0,
+        "target_coverage": 0.4721910357475281,
+        "generated_coverage": 0.4721910357475281
+      },
+      {
+        "app": "douban",
+        "score": 0.0,
+        "target_coverage": 0.4021669626235962,
+        "generated_coverage": 0.4021669626235962
+      },
+      {
+        "app": "minecraft",
+        "score": 0.0,
+        "target_coverage": 0.3936192989349365,
+        "generated_coverage": 0.3936192989349365
+      },
+      {
+        "app": "douyu",
+        "score": 0.0,
+        "target_coverage": 0.4371238350868225,
+        "generated_coverage": 0.4371238350868225
+      }
+    ]
+  }
+}

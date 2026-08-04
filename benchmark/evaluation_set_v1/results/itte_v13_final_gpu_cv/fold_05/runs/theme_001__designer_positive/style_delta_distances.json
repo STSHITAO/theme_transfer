@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 70.06414879885132,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 88.12951789942747,
+        "reliable": true,
+        "D_RR": 0.015285640954971313,
+        "D_OR": 0.3198702558875084,
+        "D_TR": 0.25343048572540283,
+        "D_GR": 0.04005800187587738,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 92.24927672424992
+          },
+          {
+            "app": "weibo",
+            "score": 90.92564145305117
+          },
+          {
+            "app": "meituan",
+            "score": 97.22276257396304
+          },
+          {
+            "app": "peace_elite",
+            "score": 72.12039084644574
+          }
+        ]
+      },
+      "background": {
+        "score": 94.03758338304004,
+        "reliable": true,
+        "D_RR": 0.001131594181060791,
+        "D_OR": 0.2182202786207199,
+        "D_TR": 0.12922556698322296,
+        "D_GR": 0.007060110569000244,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 98.01612104877141
+          },
+          {
+            "app": "weibo",
+            "score": 86.0917254537252
+          },
+          {
+            "app": "meituan",
+            "score": 99.5385524257572
+          },
+          {
+            "app": "peace_elite",
+            "score": 92.50393460390637
+          }
+        ]
+      },
+      "stroke": {
+        "score": 25.04582684966152,
+        "reliable": true,
+        "D_RR": 0.05624419450759888,
+        "D_OR": 0.09288542717695236,
+        "D_TR": 0.11270606517791748,
+        "D_GR": 0.11301787197589874,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 0.0
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 53.525596118010874
+          },
+          {
+            "app": "peace_elite",
+            "score": 46.657711280635205
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 70.76991024689443,
+        "reliable": true,
+        "D_RR": 0.0014081001281738281,
+        "D_OR": 0.06631055474281311,
+        "D_TR": 0.07180890440940857,
+        "D_GR": 0.008775308728218079,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 89.39217619297327
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 98.00178006940395
+          },
+          {
+            "app": "peace_elite",
+            "score": 95.68568472520046
+          }
+        ]
+      },
+      "composition": {
+        "score": 70.66467123245472,
+        "reliable": true,
+        "D_RR": 0.0029346346855163574,
+        "D_OR": 0.019908294081687927,
+        "D_TR": 0.026540324091911316,
+        "D_GR": 0.007303327322006226,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 28.629704470825967
+          },
+          {
+            "app": "weibo",
+            "score": 100.0
+          },
+          {
+            "app": "meituan",
+            "score": 87.96604080701219
+          },
+          {
+            "app": "peace_elite",
+            "score": 66.06293965198074
+          }
+        ]
+      },
+      "complexity": {
+        "score": 71.73738318162972,
+        "reliable": true,
+        "D_RR": 0.001270979642868042,
+        "D_OR": 0.06151004135608673,
+        "D_TR": 0.067606121301651,
+        "D_GR": 0.007585987448692322,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 89.04951039200994
+          },
+          {
+            "app": "weibo",
+            "score": 0.0
+          },
+          {
+            "app": "meituan",
+            "score": 97.90002233450895
+          },
+          {
+            "app": "peace_elite",
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 66.22279813813843
+      },
+      {
+        "app": "weibo",
+        "score": 46.16956115112939
+      },
+      {
+        "app": "meituan",
+        "score": 89.02579238810937
+      },
+      {
+        "app": "peace_elite",
+        "score": 78.83844351802809
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 84.77170651487648,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.47854530811309814,
+    "D_GR_vgg_gram": 0.18155443668365479,
+    "D_RR_vgg_gram": 0.12820333242416382,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 84.75465968741086,
+        "generated_to_theme_distance": 0.16818314790725708,
+        "target_to_theme_distance": 0.39044618606567383
+      },
+      {
+        "index": 1,
+        "score": 83.02358818091282,
+        "generated_to_theme_distance": 0.1919596791267395,
+        "target_to_theme_distance": 0.5037617683410645
+      },
+      {
+        "index": 2,
+        "score": 90.70457689676172,
+        "generated_to_theme_distance": 0.17122715711593628,
+        "target_to_theme_distance": 0.5910528898239136
+      },
+      {
+        "index": 3,
+        "score": 77.83816086395075,
+        "generated_to_theme_distance": 0.19484776258468628,
+        "target_to_theme_distance": 0.4289203882217407
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 16,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 82.08275557528756,
+    "reliable": true,
+    "D_RR": 0.2849428355693817,
+    "D_TR": 0.4285187255591154,
+    "D_GR": 0.3106676787137985
+  },
+  "dino_motif": {
+    "score": 66.313839836255,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.6834871768951416,
+    "target_coverage": 0.3728819862008095,
+    "generated_coverage": 0.5788562148809433,
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 74.89373596024122,
+        "target_coverage": 0.377047598361969,
+        "generated_coverage": 0.6065516471862793
+      },
+      {
+        "app": "weibo",
+        "score": 63.924505826932474,
+        "target_coverage": 0.4028705358505249,
+        "generated_coverage": 0.5822533369064331
+      },
+      {
+        "app": "meituan",
+        "score": 83.65236929500745,
+        "target_coverage": 0.34080377221107483,
+        "generated_coverage": 0.6274665594100952
+      },
+      {
+        "app": "peace_elite",
+        "score": 41.047336033972314,
+        "target_coverage": 0.3708060383796692,
+        "generated_coverage": 0.4991533160209656
+      }
+    ]
+  }
+}

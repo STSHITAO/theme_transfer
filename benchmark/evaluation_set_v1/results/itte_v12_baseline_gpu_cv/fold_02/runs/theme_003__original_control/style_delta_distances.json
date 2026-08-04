@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 0.0,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0037989020347595215,
+        "D_OR": 0.25917133688926697,
+        "D_TR": 0.3375413566827774,
+        "D_GR": 0.3375413566827774,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      },
+      "background": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.00016945600509643555,
+        "D_OR": 0.24703677743673325,
+        "D_TR": 0.277316078543663,
+        "D_GR": 0.277316078543663,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.015463829040527344,
+        "D_OR": 0.1792694255709648,
+        "D_TR": 0.0925477147102356,
+        "D_GR": 0.0925477147102356,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0011149346828460693,
+        "D_OR": 0.09213960915803909,
+        "D_TR": 0.06738148629665375,
+        "D_GR": 0.06738148629665375,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0008364617824554443,
+        "D_OR": 0.022814534604549408,
+        "D_TR": 0.062061384320259094,
+        "D_GR": 0.062061384320259094,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 0.0,
+        "reliable": true,
+        "D_RR": 0.0010958313941955566,
+        "D_OR": 0.08532775938510895,
+        "D_TR": 0.06366156041622162,
+        "D_GR": 0.06366156041622162,
+        "per_app": [
+          {
+            "app": "minecraft",
+            "score": 0.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 0.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "minecraft",
+        "score": 0.0
+      },
+      {
+        "app": "iqiyi",
+        "score": 0.0
+      },
+      {
+        "app": "moji_weather",
+        "score": 0.0
+      },
+      {
+        "app": "tencent_comics",
+        "score": 0.0
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 0.0,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.4437829703092575,
+    "D_GR_vgg_gram": 0.4437829703092575,
+    "D_RR_vgg_gram": 0.07182664424180984,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.39183831214904785,
+        "target_to_theme_distance": 0.39183831214904785
+      },
+      {
+        "index": 1,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.3921933174133301,
+        "target_to_theme_distance": 0.3921933174133301
+      },
+      {
+        "index": 2,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.5300065279006958,
+        "target_to_theme_distance": 0.5300065279006958
+      },
+      {
+        "index": 3,
+        "score": 0.0,
+        "generated_to_theme_distance": 0.4610937237739563,
+        "target_to_theme_distance": 0.4610937237739563
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 12,
+      "misses": 0,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 0.0,
+    "reliable": true,
+    "D_RR": 0.22747117280960083,
+    "D_TR": 0.41686995327472687,
+    "D_GR": 0.41686995327472687
+  },
+  "dino_motif": {
+    "score": 0.0,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.7757495045661926,
+    "target_coverage": 0.4589829742908478,
+    "generated_coverage": 0.4589829742908478,
+    "per_app": [
+      {
+        "app": "minecraft",
+        "score": 0.0,
+        "target_coverage": 0.4860485792160034,
+        "generated_coverage": 0.4860485792160034
+      },
+      {
+        "app": "iqiyi",
+        "score": 0.0,
+        "target_coverage": 0.44744986295700073,
+        "generated_coverage": 0.44744986295700073
+      },
+      {
+        "app": "moji_weather",
+        "score": 0.0,
+        "target_coverage": 0.4674070477485657,
+        "generated_coverage": 0.4674070477485657
+      },
+      {
+        "app": "tencent_comics",
+        "score": 0.0,
+        "target_coverage": 0.4350264072418213,
+        "generated_coverage": 0.4350264072418213
+      }
+    ]
+  }
+}

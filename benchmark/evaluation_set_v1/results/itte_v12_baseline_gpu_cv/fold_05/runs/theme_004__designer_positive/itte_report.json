@@ -1,0 +1,931 @@
+{
+  "eval_id": null,
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.2-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_004",
+  "package_id": "benchmark_theme_004_designer_positive",
+  "itte_score": 86.3376058574254,
+  "tpqs": 86.3376058574254,
+  "tpqs_primary_score": 86.3376058574254,
+  "style_fidelity_score": 92.23369003528158,
+  "identity_preservation_score": 64.62421216611112,
+  "package_coherence_score": 98.34275347621748,
+  "visual_quality_score": 100.0,
+  "style_fidelity": {
+    "score": 92.23369003528158,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 98.45758317881592,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 86.69440865139195,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 74.51369733938151,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 98.45758317881592,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.4054687023162842,
+      "D_GR_vgg_gram": 0.12930859625339508,
+      "D_RR_vgg_gram": 0.1249823272228241,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.09037607908248901,
+          "target_to_theme_distance": 0.33810919523239136
+        },
+        {
+          "index": 1,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.10004520416259766,
+          "target_to_theme_distance": 0.4967230558395386
+        },
+        {
+          "index": 2,
+          "score": 39.57835928457026,
+          "generated_to_theme_distance": 0.2101249098777771,
+          "target_to_theme_distance": 0.26589637994766235
+        },
+        {
+          "index": 3,
+          "score": 100.0,
+          "generated_to_theme_distance": 0.11668819189071655,
+          "target_to_theme_distance": 0.5211461782455444
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "device": "cuda:0",
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+        "hits": 11,
+        "misses": 5,
+        "device": "cuda:0"
+      },
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+    },
+    "dists_texture": {
+      "score": 100.0,
+      "reliable": true,
+      "D_RR": 0.26553112268447876,
+      "D_TR": 0.3757667765021324,
+      "D_GR": 0.25803086161613464
+    },
+    "visual_attributes": {
+      "score": 86.69440865139195,
+      "reliable": true,
+      "reliable_group_count": 6,
+      "groups": {
+        "color": {
+          "score": 88.88873773993026,
+          "reliable": true,
+          "D_RR": 0.0064313411712646484,
+          "D_OR": 0.24289433658123016,
+          "D_TR": 0.24375250935554504,
+          "D_GR": 0.009367972612380981,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 100.0
+            },
+            {
+              "app": "alipay",
+              "score": 100.0
+            },
+            {
+              "app": "wecom",
+              "score": 59.46889875381077
+            },
+            {
+              "app": "pinduoduo",
+              "score": 96.08605220591029
+            }
+          ]
+        },
+        "background": {
+          "score": 81.91555697202323,
+          "reliable": true,
+          "D_RR": 0.002037346363067627,
+          "D_OR": 0.14027971774339676,
+          "D_TR": 0.1642186939716339,
+          "D_GR": 0.002077355980873108,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 100.0
+            },
+            {
+              "app": "alipay",
+              "score": 100.0
+            },
+            {
+              "app": "wecom",
+              "score": 27.662227888092893
+            },
+            {
+              "app": "pinduoduo",
+              "score": 100.0
+            }
+          ]
+        },
+        "stroke": {
+          "score": 89.08388127810849,
+          "reliable": true,
+          "D_RR": 0.017524778842926025,
+          "D_OR": 0.11129707098007202,
+          "D_TR": 0.06699280440807343,
+          "D_GR": 0.019859418272972107,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 100.0
+            },
+            {
+              "app": "alipay",
+              "score": 85.94810082701927
+            },
+            {
+              "app": "wecom",
+              "score": 70.3874242854147
+            },
+            {
+              "app": "pinduoduo",
+              "score": 100.0
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 84.7603199652952,
+          "reliable": true,
+          "D_RR": 0.010125845670700073,
+          "D_OR": 0.04968930780887604,
+          "D_TR": 0.026974588632583618,
+          "D_GR": 0.009811297059059143,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 100.0
+            },
+            {
+              "app": "alipay",
+              "score": 100.0
+            },
+            {
+              "app": "wecom",
+              "score": 39.0412798611808
+            },
+            {
+              "app": "pinduoduo",
+              "score": 100.0
+            }
+          ]
+        },
+        "composition": {
+          "score": 90.2230874542783,
+          "reliable": true,
+          "D_RR": 0.0009989738464355469,
+          "D_OR": 0.039564959704875946,
+          "D_TR": 0.009495168924331665,
+          "D_GR": 0.001655474305152893,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 76.22001474862275
+            },
+            {
+              "app": "alipay",
+              "score": 100.0
+            },
+            {
+              "app": "wecom",
+              "score": 100.0
+            },
+            {
+              "app": "pinduoduo",
+              "score": 84.67233506849041
+            }
+          ]
+        },
+        "complexity": {
+          "score": 85.29486849871631,
+          "reliable": true,
+          "D_RR": 0.009990304708480835,
+          "D_OR": 0.04790681600570679,
+          "D_TR": 0.025401845574378967,
+          "D_GR": 0.00862903892993927,
+          "per_app": [
+            {
+              "app": "qimao",
+              "score": 100.0
+            },
+            {
+              "app": "alipay",
+              "score": 100.0
+            },
+            {
+              "app": "wecom",
+              "score": 41.17947399486524
+            },
+            {
+              "app": "pinduoduo",
+              "score": 100.0
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "qimao",
+          "score": 96.03666912477047
+        },
+        {
+          "app": "alipay",
+          "score": 97.65801680450322
+        },
+        {
+          "app": "wecom",
+          "score": 56.28988413056073
+        },
+        {
+          "app": "pinduoduo",
+          "score": 96.79306454573344
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 74.51369733938151,
+      "reliable": true,
+      "prototype_count": 32,
+      "reference_coverage": 0.7524791657924652,
+      "target_coverage": 0.404996819794178,
+      "generated_coverage": 0.6639187633991241,
+      "per_app": [
+        {
+          "app": "qimao",
+          "score": 53.209309385507595,
+          "target_coverage": 0.4516844153404236,
+          "generated_coverage": 0.6117352247238159
+        },
+        {
+          "app": "alipay",
+          "score": 46.21377465376939,
+          "target_coverage": 0.36641526222229004,
+          "generated_coverage": 0.5448299646377563
+        },
+        {
+          "app": "wecom",
+          "score": 100.0,
+          "target_coverage": 0.4187142848968506,
+          "generated_coverage": 0.7599411010742188
+        },
+        {
+          "app": "pinduoduo",
+          "score": 96.39583216320922,
+          "target_coverage": 0.3831733167171478,
+          "generated_coverage": 0.7391687631607056
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 64.62421216611112,
+    "p10_score": 36.0,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 50.0,
+        "reliable": true,
+        "weight": 0.5
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "reliable": true,
+        "weight": 0.3
+      },
+      "lpips_content": {
+        "score": 48.12106083055561,
+        "reliable": true,
+        "weight": 0.2
+      }
+    },
+    "dino_dense": {
+      "score": 50.0,
+      "p10_score": 0.0,
+      "reliable": true,
+      "positive_reference_similarity": 0.5817930325865746,
+      "distractor_similarity": 0.5640172734856606,
+      "per_app": [
+        {
+          "app": "qimao",
+          "score": 100.0,
+          "raw_correspondence": 0.5853616744279861,
+          "appearance_similarity": 0.5639261603355408,
+          "spatial_consistency": 0.6496682167053223
+        },
+        {
+          "app": "alipay",
+          "score": 100.0,
+          "raw_correspondence": 0.6134060770273209,
+          "appearance_similarity": 0.6098994016647339,
+          "spatial_consistency": 0.6239261031150818
+        },
+        {
+          "app": "wecom",
+          "score": 0.0,
+          "raw_correspondence": 0.48949091136455536,
+          "appearance_similarity": 0.48821496963500977,
+          "spatial_consistency": 0.49331873655319214
+        },
+        {
+          "app": "pinduoduo",
+          "score": 0.0,
+          "raw_correspondence": 0.538106769323349,
+          "appearance_similarity": 0.5419880151748657,
+          "spatial_consistency": 0.5264630317687988
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "qimao",
+          "alipay",
+          "wecom",
+          "pinduoduo"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.5853616744279861,
+            0.4705028012394905,
+            0.5083646774291992,
+            0.46382179856300354
+          ],
+          [
+            0.49686944484710693,
+            0.6134060770273209,
+            0.526257798075676,
+            0.5329486131668091
+          ],
+          [
+            0.4529409855604172,
+            0.41468678414821625,
+            0.48949091136455536,
+            0.41011233627796173
+          ],
+          [
+            0.5471619069576263,
+            0.5087868273258209,
+            0.5288268029689789,
+            0.538106769323349
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.6627305150032043,
+          0.5907814055681229,
+          0.7577437460422516,
+          0.5245580896735191,
+          0.6023033261299133,
+          0.5728046596050262,
+          0.479654498398304,
+          0.43379299342632294
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 100.0,
+      "p10_score": 100.0,
+      "positive_reference_distance": 0.8445146679878235,
+      "distractor_distance": 1.057221960658018,
+      "per_app": [
+        {
+          "app": "qimao",
+          "score": 100.0,
+          "distance": 0.8234091997146606
+        },
+        {
+          "app": "alipay",
+          "score": 100.0,
+          "distance": 0.8135415315628052
+        },
+        {
+          "app": "wecom",
+          "score": 100.0,
+          "distance": 0.8240776062011719
+        },
+        {
+          "app": "pinduoduo",
+          "score": 100.0,
+          "distance": 0.8342786431312561
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 48.12106083055561,
+      "p10_score": 0.0,
+      "positive_reference_distance": 0.6915765404701233,
+      "distractor_distance": 0.7996090948581696,
+      "per_app": [
+        {
+          "app": "qimao",
+          "score": 0.0,
+          "distance": 0.8236637115478516
+        },
+        {
+          "app": "alipay",
+          "score": 92.48424332222244,
+          "distance": 0.6996960043907166
+        },
+        {
+          "app": "wecom",
+          "score": 100.0,
+          "distance": 0.5007811784744263
+        },
+        {
+          "app": "pinduoduo",
+          "score": 0.0,
+          "distance": 0.8187423944473267
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "qimao",
+        "score": 80.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 0.0
+        }
+      },
+      {
+        "app": "alipay",
+        "score": 98.49684866444449,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 92.48424332222244
+        }
+      },
+      {
+        "app": "wecom",
+        "score": 50.0,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "pinduoduo",
+        "score": 30.0,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 100.0,
+          "lpips_content": 0.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 98.34275347621748,
+    "package_unity_score": 100.0,
+    "theme_membership_score": 96.71297161284085,
+    "generated_p90_distance": 0.020932257175445557,
+    "reference_p90_distance": 0.052681971341371536,
+    "reference_mad": 0.007841616868972778,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "qimao",
+        "score": 100.0,
+        "distance_to_reference": 0.003912448883056641,
+        "internal_distance": 0.002652466297149658,
+        "is_outlier": false
+      },
+      {
+        "app": "alipay",
+        "score": 100.0,
+        "distance_to_reference": 0.004268288612365723,
+        "internal_distance": 0.0025858283042907715,
+        "is_outlier": false
+      },
+      {
+        "app": "wecom",
+        "score": 90.92623530106505,
+        "distance_to_reference": 0.008060932159423828,
+        "internal_distance": 0.004888772964477539,
+        "is_outlier": false
+      },
+      {
+        "app": "pinduoduo",
+        "score": 95.92565115029834,
+        "distance_to_reference": 0.013264477252960205,
+        "internal_distance": 0.009386062622070312,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 100.0,
+    "p10_score": 100.0,
+    "per_app": [
+      {
+        "app": "qimao",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9264271259307861,
+          "contrast": 0.19859491288661957,
+          "saturation": 0.06234847754240036,
+          "sharpness": 0.0035757014993578196,
+          "edge_density": 0.04997907366071429,
+          "foreground_ratio": 0.16237344547193877,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.1314971301020408,
+          "border_edge_ratio": 0.0011160714285714285,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 1.018765304096337,
+          "contrast": -1.100537405660015,
+          "saturation": 0.1784773994499927,
+          "sharpness": -0.813529999888404,
+          "edge_density": -1.336986005089059,
+          "foreground_ratio": -0.639048590199836,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -1.8721135752741702e-13,
+          "border_edge_ratio": -0.4032804528061229,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "alipay",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.9062517285346985,
+          "contrast": 0.21655328571796417,
+          "saturation": 0.06305002421140671,
+          "sharpness": 0.0035669917706400156,
+          "edge_density": 0.06519551179846939,
+          "foreground_ratio": 0.19643355389030612,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13121811224489796,
+          "border_edge_ratio": 0.0012356505102040817,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.27560303583664125,
+          "contrast": -0.7333260172365426,
+          "saturation": 0.19710975220187923,
+          "sharpness": -0.8167665011668194,
+          "edge_density": -0.026602417302800097,
+          "foreground_ratio": 0.20243001186239615,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": -1.881975446428705,
+          "border_edge_ratio": 0.4032804528061229,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "wecom",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.924370527267456,
+          "contrast": 0.18630801141262054,
+          "saturation": 0.08030934631824493,
+          "sharpness": 0.0032723816111683846,
+          "edge_density": 0.046287069515306124,
+          "foreground_ratio": 0.1897869499362245,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.13153698979591838,
+          "border_edge_ratio": 0.0010762117346938774,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.9430103389011225,
+          "contrast": -1.3517789959790736,
+          "saturation": 0.6554994673273512,
+          "sharpness": -0.9262424893012154,
+          "edge_density": -1.6549277989821887,
+          "foreground_ratio": 0.03822105119080231,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.2688536352040205,
+          "border_edge_ratio": -0.6721340880102048,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "pinduoduo",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8837761282920837,
+          "contrast": 0.22742263972759247,
+          "saturation": 0.11017990857362747,
+          "sharpness": 0.0038379093166440725,
+          "edge_density": 0.06865832270408163,
+          "foreground_ratio": 0.2678920200892857,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.15485491071428573,
+          "border_edge_ratio": 0.0010762117346938774,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -0.5522873758802918,
+          "contrast": -0.5110703254416085,
+          "saturation": 1.4488306560104511,
+          "sharpness": -0.7160945959449095,
+          "edge_density": 0.27160209923664036,
+          "foreground_ratio": 1.9678609818414088,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 157.54823022959175,
+          "border_edge_ratio": -0.6721340880102048,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.8987696468830109,
+        "mad": 0.018311351537704468
+      },
+      "contrast": {
+        "median": 0.2524163946509361,
+        "mad": 0.03298623859882355
+      },
+      "saturation": {
+        "median": 0.05562843382358551,
+        "mad": 0.025396321900188923
+      },
+      "sharpness": {
+        "median": 0.005764987086877227,
+        "mad": 0.001815142808482051
+      },
+      "edge_density": {
+        "median": 0.06550442442602042,
+        "mad": 0.007832429846938778
+      },
+      "foreground_ratio": {
+        "median": 0.18823989556760204,
+        "mad": 0.027301399075255098
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.13149713010204084,
+        "mad": 0.0001
+      },
+      "border_edge_ratio": {
+        "median": 0.001175860969387755,
+        "mad": 0.0001
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [
+    {
+      "type": "identity_below_35",
+      "app": "pinduoduo",
+      "score": 30.0
+    },
+    {
+      "type": "identity_p10_below_45",
+      "score": 36.0
+    }
+  ],
+  "evaluation_confidence": "high",
+  "decision": "failed_hard_gate",
+  "per_app": [
+    {
+      "app": "qimao",
+      "itte_score": 86.3376058574254,
+      "style_fidelity_score": 74.62298925513903,
+      "identity_preservation_score": 80.0,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 0.0}"
+    },
+    {
+      "app": "alipay",
+      "itte_score": 86.3376058574254,
+      "style_fidelity_score": 71.9358957291363,
+      "identity_preservation_score": 98.49684866444449,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 92.48424332222244}"
+    },
+    {
+      "app": "wecom",
+      "itte_score": 86.3376058574254,
+      "style_fidelity_score": 78.14494206528036,
+      "identity_preservation_score": 50.0,
+      "package_membership_score": 90.92623530106505,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "pinduoduo",
+      "itte_score": 86.3376058574254,
+      "style_fidelity_score": 96.59444835447133,
+      "identity_preservation_score": 30.0,
+      "package_membership_score": 95.92565115029834,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 100.0, \"lpips_content\": 0.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": false
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda:0",
+      "dists_texture": {
+        "score": 100.0,
+        "reliable": true,
+        "D_RR": 0.26553112268447876,
+        "D_TR": 0.3757667765021324,
+        "D_GR": 0.25803086161613464
+      },
+      "dists_structure": {
+        "score": 100.0,
+        "p10_score": 100.0,
+        "positive_reference_distance": 0.8445146679878235,
+        "distractor_distance": 1.057221960658018,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 100.0,
+            "distance": 0.8234091997146606
+          },
+          {
+            "app": "alipay",
+            "score": 100.0,
+            "distance": 0.8135415315628052
+          },
+          {
+            "app": "wecom",
+            "score": 100.0,
+            "distance": 0.8240776062011719
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0,
+            "distance": 0.8342786431312561
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 48.12106083055561,
+        "p10_score": 0.0,
+        "positive_reference_distance": 0.6915765404701233,
+        "distractor_distance": 0.7996090948581696,
+        "per_app": [
+          {
+            "app": "qimao",
+            "score": 0.0,
+            "distance": 0.8236637115478516
+          },
+          {
+            "app": "alipay",
+            "score": 92.48424332222244,
+            "distance": 0.6996960043907166
+          },
+          {
+            "app": "wecom",
+            "score": 100.0,
+            "distance": 0.5007811784744263
+          },
+          {
+            "app": "pinduoduo",
+            "score": 0.0,
+            "distance": 0.8187423944473267
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "cache": {
+        "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\perceptual_pairs",
+        "dists_style": {
+          "hits": 23,
+          "misses": 69
+        },
+        "dists_identity": {
+          "hits": 10,
+          "misses": 8
+        },
+        "lpips_identity": {
+          "hits": 10,
+          "misses": 8
+        }
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qq.png": "0b00fa34448c231288fed785268fe5523f7bf55d470ec67e8668eab1e8171c18",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\zhihu.png": "74757199f145559fba99e9d98aabfa083d20e7f3f6f3d2466c15126f10eafb46",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\paipai.png": "ce97aa59eb7e538bc1ee426869f6c3d9979be1f44b8de8713e6ec5c55b41782c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\bilibili.png": "f766522e95f3dc2b3d59580c3dc1e7319c3efd1fa3c30904ea3229c47b6b308d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\jd.png": "87f3c6a8a87ebd0ae0708c2cc7ff0380119ef8ef73f35417e82a76836e58490a",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat.png": "f420c2ff34874feb0f11b322cfe9d655180aaf8317afe999c9ed863332c3bd1e",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\honor_of_kings.png": "71345406d677e3e4ea209257a3b83caea23d7526e61b68a244225d5cb6d33ea1",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wechat_reading.png": "c5d8ddd914f7c79239e8ccf84f6fccde4c2b25cca7d8409676fbf67519bb2cf6",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\qq.png": "e86d1c9fafe25c2c78ff6e76456eecc5481bd780273379f8ca3d8031e716d979",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\zhihu.png": "28609db5c26046515a558f95d11b13b9d1d8b6643d06fe0b860a2bf2fdcb5b5c",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\paipai.png": "59574f98d7782526f0f21754a00b0e764697d2b1b3817d6de8f6a17794dae952",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\bilibili.png": "d51ab1a8fa8dbf17c09e6286537e5a34b535c874d9f8ed9357457e092e22ed07",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\jd.png": "0c3d9a242412a3d4c18e96cdae776a957f0ec58b0f4e64c3227e1b2c847520ef",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\wechat.png": "a3c69fda0729e496d8f04db12486066901cc9a0dd107e9fc2e665d7df8f15499",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\honor_of_kings.png": "e15ec8eeb046b775a129590eb953008071502497eff3515cf178d254ecf6b627",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\wechat_reading.png": "88aa2636053c8016241b6e1c6faf9529c4e6fa5ed49403e39f7ebf239e4b1acf",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\qimao.png": "1f044c4a83dfcdad04b482123d1cb0f39166833ced98aea4b686cc1f4330f6e4",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\alipay.png": "a9388570256f68f20766407991a729ce6fc53bc42e4f607fc9d7e25c7c67f08d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\wecom.png": "73b656d2fc56437676bff732783cdcf80a5ec64fe3cabb7ec647d715cc6ba7bc",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\originals\\pinduoduo.png": "286be938fd604881a6997220b84958256e0bb8c419c3abf7f893a97f1eb28a70",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\qimao.png": "b2e90107463154d86caba15435e124668278870c14bbd412cf6311d405f0850d",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\alipay.png": "7221c13d0f84dd0f29ae09e4e9e8ace939ecbcb11675301c82aa9f4ccc1dfc13",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\wecom.png": "ec42a609ad853c06a1474def976c552bc2e524d71731cab0cfd052c3259d0697",
+      "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\benchmark\\evaluation_set_v1\\assets\\themes\\theme_004\\pinduoduo.png": "b4ba58244de8f647ef6cd0039621ac239a8d16636d35a8f8e1e6617a0ed68072"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "unknown",
+    "scoring_config_hash": "d5aaa72998c12469f158789cbf072caaaee0ac8dfa3499e9c4f42fa46403bb13",
+    "scoring_config": {
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 0.5,
+        "dists_structure": 0.3,
+        "lpips_content": 0.2
+      }
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true
+  }
+}

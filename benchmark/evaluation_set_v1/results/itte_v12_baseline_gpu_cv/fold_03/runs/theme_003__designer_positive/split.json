@@ -1,0 +1,21 @@
+{
+  "theme_id": "theme_003",
+  "scenario": "designer_positive",
+  "reference_apps": [
+    "minecraft",
+    "moji_weather",
+    "qq_speed",
+    "dianping",
+    "zhihu",
+    "xianyu",
+    "jianying",
+    "weishi"
+  ],
+  "query_apps": [
+    "lol_mobile",
+    "lofter",
+    "meituan",
+    "qq_music"
+  ],
+  "identity_disjoint": true
+}

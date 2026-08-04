@@ -1,0 +1,274 @@
+{
+  "framework": "ITTE v1.2 image-only",
+  "attribute_transfer": {
+    "score": 91.54573238083417,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 98.73781018567391,
+        "reliable": true,
+        "D_RR": 0.0006607174873352051,
+        "D_OR": 0.3394193574786186,
+        "D_TR": 0.23010362684726715,
+        "D_GR": 0.002463787794113159,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 96.66620874497006
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "qq_music",
+            "score": 98.2850319977256
+          }
+        ]
+      },
+      "background": {
+        "score": 99.64766024081362,
+        "reliable": true,
+        "D_RR": 5.3435564041137695e-05,
+        "D_OR": 0.3038157969713211,
+        "D_TR": 0.08876371383666992,
+        "D_GR": 0.00017386674880981445,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 98.81309243735868
+          },
+          {
+            "app": "meituan",
+            "score": 99.9834824381719
+          },
+          {
+            "app": "qq_music",
+            "score": 99.79406608772388
+          }
+        ]
+      },
+      "stroke": {
+        "score": 58.280383620125534,
+        "reliable": true,
+        "D_RR": 0.03233185410499573,
+        "D_OR": 0.10652201622724533,
+        "D_TR": 0.14071768522262573,
+        "D_GR": 0.07076697051525116,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 31.956136849112788
+          },
+          {
+            "app": "lofter",
+            "score": 39.76311751521176
+          },
+          {
+            "app": "meituan",
+            "score": 67.07783938603558
+          },
+          {
+            "app": "qq_music",
+            "score": 94.32444073014203
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 99.2808253397435,
+        "reliable": true,
+        "D_RR": 0.0003508329391479492,
+        "D_OR": 0.10261836647987366,
+        "D_TR": 0.09114214777946472,
+        "D_GR": 0.000706791877746582,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 99.28305375816969
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "qq_music",
+            "score": 97.84024760080432
+          }
+        ]
+      },
+      "composition": {
+        "score": 94.02133515511737,
+        "reliable": true,
+        "D_RR": 0.00035178661346435547,
+        "D_OR": 0.04295619577169418,
+        "D_TR": 0.03737378120422363,
+        "D_GR": 0.0009739696979522705,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 77.09491716536411
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "qq_music",
+            "score": 98.99042345510536
+          }
+        ]
+      },
+      "complexity": {
+        "score": 99.30637974353108,
+        "reliable": true,
+        "D_RR": 0.00035303831100463867,
+        "D_OR": 0.0982128158211708,
+        "D_TR": 0.08834287524223328,
+        "D_GR": 0.0006505101919174194,
+        "per_app": [
+          {
+            "app": "lol_mobile",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 99.39340636233871
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "qq_music",
+            "score": 97.83211261178559
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 88.6593561415188
+      },
+      {
+        "app": "lofter",
+        "score": 85.1689659972355
+      },
+      {
+        "app": "meituan",
+        "score": 94.51022030403458
+      },
+      {
+        "app": "qq_music",
+        "score": 97.84438708054779
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 98.07782344946698,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.42537862062454224,
+    "D_GR_vgg_gram": 0.08184035122394562,
+    "D_RR_vgg_gram": 0.07510752230882645,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.06197082996368408,
+        "target_to_theme_distance": 0.38784921169281006
+      },
+      {
+        "index": 1,
+        "score": 95.3312977767517,
+        "generated_to_theme_distance": 0.08739310503005981,
+        "target_to_theme_distance": 0.33825522661209106
+      },
+      {
+        "index": 2,
+        "score": 97.64183770538212,
+        "generated_to_theme_distance": 0.08457154035568237,
+        "target_to_theme_distance": 0.4764377474784851
+      },
+      {
+        "index": 3,
+        "score": 95.67824260385807,
+        "generated_to_theme_distance": 0.0934259295463562,
+        "target_to_theme_distance": 0.4989722967147827
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 6,
+      "misses": 10,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+  },
+  "dists_texture": {
+    "score": 99.44251401413393,
+    "reliable": true,
+    "D_RR": 0.2135966420173645,
+    "D_TR": 0.40800455026328564,
+    "D_GR": 0.21468043886125088
+  },
+  "dino_motif": {
+    "score": 90.52599272004457,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.783201277256012,
+    "target_coverage": 0.4887377917766571,
+    "generated_coverage": 0.7553037852048874,
+    "per_app": [
+      {
+        "app": "lol_mobile",
+        "score": 91.19808926107133,
+        "target_coverage": 0.49174433946609497,
+        "generated_coverage": 0.7575474977493286
+      },
+      {
+        "app": "lofter",
+        "score": 86.6856667156808,
+        "target_coverage": 0.5233675241470337,
+        "generated_coverage": 0.7486061453819275
+      },
+      {
+        "app": "meituan",
+        "score": 97.41396037848045,
+        "target_coverage": 0.4403899312019348,
+        "generated_coverage": 0.774336040019989
+      },
+      {
+        "app": "qq_music",
+        "score": 85.0306486601281,
+        "target_coverage": 0.49944937229156494,
+        "generated_coverage": 0.7407254576683044
+      }
+    ]
+  }
+}

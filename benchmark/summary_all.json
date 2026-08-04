@@ -1,0 +1,119 @@
+{
+  "themes": [
+    {
+      "theme_id": "theme_001",
+      "total_icons": 30,
+      "appstore_mapped": 24,
+      "system_apps_without_appstore_page": 6,
+      "crop_size": "512x512",
+      "crop_contains_text": false,
+      "system_app_names": [
+        "钱包",
+        "下载管理",
+        "短信",
+        "小米天气",
+        "电话",
+        "相机"
+      ]
+    },
+    {
+      "theme_id": "theme_002",
+      "total_icons": 20,
+      "appstore_mapped": 12,
+      "system_apps_without_appstore_page": 8,
+      "appstore_pages_not_confirmed": 0,
+      "crop_size": "512x512",
+      "crop_contains_text": false,
+      "system_app_names": [
+        "小米相册",
+        "小米天气",
+        "日历",
+        "短信",
+        "主题壁纸",
+        "相机",
+        "电话",
+        "设置"
+      ],
+      "unconfirmed_app_names": []
+    },
+    {
+      "theme_id": "theme_003",
+      "total_icons": 127,
+      "appstore_mapped": 90,
+      "system_apps_without_appstore_page": 26,
+      "appstore_pages_not_confirmed": 11,
+      "crop_size": "512x512",
+      "crop_contains_text": false,
+      "system_app_names": [
+        "联系人",
+        "短信",
+        "指南针",
+        "万能遥控",
+        "主题壁纸",
+        "小米视频",
+        "录音机",
+        "日历",
+        "服务与反馈",
+        "小爱视觉",
+        "小爱同学",
+        "游戏中心",
+        "下载管理",
+        "小米浏览器",
+        "电话",
+        "音乐",
+        "钱包",
+        "小米笔记",
+        "电子邮件",
+        "计算器",
+        "相机",
+        "小米相册",
+        "设置",
+        "时钟",
+        "小米天气",
+        "小米换机"
+      ],
+      "unconfirmed_app_names": [
+        "小米社区",
+        "番茄免费小说",
+        "小米有品",
+        "小米运动健康",
+        "小米商城",
+        "书旗小说",
+        "番茄畅听",
+        "暗区突围",
+        "影视大全",
+        "使命召唤手游",
+        "好看视频"
+      ]
+    },
+    {
+      "theme_id": "theme_004",
+      "total_icons": 54,
+      "appstore_mapped": 39,
+      "system_apps_without_appstore_page": 12,
+      "appstore_pages_not_confirmed": 3,
+      "crop_size": "512x512",
+      "crop_contains_text": false,
+      "system_app_names": [
+        "短信",
+        "全球上网",
+        "音乐",
+        "相机",
+        "设置",
+        "游戏中心",
+        "文件管理",
+        "日历",
+        "小米浏览器",
+        "电话",
+        "小米天气",
+        "时钟"
+      ],
+      "unconfirmed_app_names": [
+        "影视大全",
+        "抖音极速版",
+        "小米社区"
+      ]
+    }
+  ],
+  "total_crops": 231
+}

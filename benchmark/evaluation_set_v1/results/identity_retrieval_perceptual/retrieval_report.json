@@ -1,0 +1,3254 @@
+{
+  "protocol": {
+    "verified_real_pairs": 158,
+    "distractors_per_query": 10,
+    "seed": 20260804,
+    "same_theme_distractors": true
+  },
+  "config": {
+    "device": "cuda:0",
+    "image_size": 224
+  },
+  "dists_structure": {
+    "overall": {
+      "query_count": 158,
+      "top1_accuracy": 0.18354430379746836,
+      "top5_accuracy": 0.5,
+      "mean_reciprocal_rank": 0.3493648053774636,
+      "sampled_pairwise_auc": 0.5430379746835444
+    },
+    "by_theme": {
+      "theme_001": {
+        "query_count": 24,
+        "top1_accuracy": 0.2916666666666667,
+        "top5_accuracy": 0.4166666666666667,
+        "mean_reciprocal_rank": 0.4042688792688793,
+        "sampled_pairwise_auc": 0.5375
+      },
+      "theme_002": {
+        "query_count": 12,
+        "top1_accuracy": 0.08333333333333333,
+        "top5_accuracy": 0.4166666666666667,
+        "mean_reciprocal_rank": 0.26713263588263586,
+        "sampled_pairwise_auc": 0.5166666666666667
+      },
+      "theme_003": {
+        "query_count": 86,
+        "top1_accuracy": 0.13953488372093023,
+        "top5_accuracy": 0.5116279069767442,
+        "mean_reciprocal_rank": 0.3270336252894392,
+        "sampled_pairwise_auc": 0.530232558139535
+      },
+      "theme_004": {
+        "query_count": 36,
+        "top1_accuracy": 0.25,
+        "top5_accuracy": 0.5555555555555556,
+        "mean_reciprocal_rank": 0.39351952060285394,
+        "sampled_pairwise_auc": 0.586111111111111
+      }
+    },
+    "queries": [
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.8460161685943604,
+        "hardest_distractor_distance": 0.7838116884231567,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 0.8914086818695068,
+        "hardest_distractor_distance": 0.7849575281143188,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1102305688",
+        "app_slug": "king_camp",
+        "matched_distance": 0.7769238948822021,
+        "hardest_distractor_distance": 0.7493644952774048,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.8766635656356812,
+        "hardest_distractor_distance": 0.7600848078727722,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.5656156539916992,
+        "hardest_distractor_distance": 0.7232159972190857,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1243986797",
+        "app_slug": "minecraft",
+        "matched_distance": 0.7991583347320557,
+        "hardest_distractor_distance": 0.7342560291290283,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.9814882874488831,
+        "hardest_distractor_distance": 0.7216792702674866,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.9199169874191284,
+        "hardest_distractor_distance": 0.6660183668136597,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1467190251",
+        "app_slug": "genshin",
+        "matched_distance": 0.846720814704895,
+        "hardest_distractor_distance": 0.7828888893127441,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.8497641086578369,
+        "hardest_distractor_distance": 0.735474705696106,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:336141475",
+        "app_slug": "youku",
+        "matched_distance": 0.7360972166061401,
+        "hardest_distractor_distance": 0.7754404544830322,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.7413371801376343,
+        "hardest_distractor_distance": 0.7843883633613586,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.9151438474655151,
+        "hardest_distractor_distance": 0.7070050835609436,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.8690136075019836,
+        "hardest_distractor_distance": 0.7145997285842896,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.7856273651123047,
+        "hardest_distractor_distance": 0.8695532083511353,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:423084029",
+        "app_slug": "meituan",
+        "matched_distance": 0.597815215587616,
+        "hardest_distractor_distance": 0.7321849465370178,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.8610410690307617,
+        "hardest_distractor_distance": 0.7861061096191406,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:473225145",
+        "app_slug": "qq_mail",
+        "matched_distance": 0.6870049238204956,
+        "hardest_distractor_distance": 0.5792661309242249,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:475666808",
+        "app_slug": "lol_assistant",
+        "matched_distance": 0.8535479307174683,
+        "hardest_distractor_distance": 0.7464486956596375,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:518966501",
+        "app_slug": "tmall",
+        "matched_distance": 0.827806830406189,
+        "hardest_distractor_distance": 0.7511281967163086,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.8075392246246338,
+        "hardest_distractor_distance": 0.8150451183319092,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.8329295516014099,
+        "hardest_distractor_distance": 0.6145504117012024,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:907002334",
+        "app_slug": "douban",
+        "matched_distance": 0.7269012331962585,
+        "hardest_distractor_distance": 0.7958505153656006,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.8226134777069092,
+        "hardest_distractor_distance": 0.7772983908653259,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.7661218047142029,
+        "hardest_distractor_distance": 0.7420446872711182,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.8693631291389465,
+        "hardest_distractor_distance": 0.7584869861602783,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.8963837027549744,
+        "hardest_distractor_distance": 0.7383233904838562,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.8705205321311951,
+        "hardest_distractor_distance": 0.7250563502311707,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:387682726",
+        "app_slug": "taobao",
+        "matched_distance": 0.734963059425354,
+        "hardest_distractor_distance": 0.735377311706543,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.7741535902023315,
+        "hardest_distractor_distance": 0.7560316920280457,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.7817151546478271,
+        "hardest_distractor_distance": 0.7121813893318176,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 1.0353156328201294,
+        "hardest_distractor_distance": 0.76521897315979,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.7672816514968872,
+        "hardest_distractor_distance": 0.7358561754226685,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.8463029265403748,
+        "hardest_distractor_distance": 0.7339166402816772,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.7968478202819824,
+        "hardest_distractor_distance": 0.6999839544296265,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.8744919300079346,
+        "hardest_distractor_distance": 0.737285852432251,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1012871328",
+        "app_slug": "dewu",
+        "matched_distance": 0.7752854824066162,
+        "hardest_distractor_distance": 0.7129123210906982,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1032287195",
+        "app_slug": "soul",
+        "matched_distance": 0.8741689920425415,
+        "hardest_distractor_distance": 0.7323318719863892,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1042545880",
+        "app_slug": "crossfire_mobile",
+        "matched_distance": 0.8838465809822083,
+        "hardest_distractor_distance": 0.7505172491073608,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.7621789574623108,
+        "hardest_distractor_distance": 0.7404015064239502,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 0.8484870195388794,
+        "hardest_distractor_distance": 0.7044678926467896,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1087897068",
+        "app_slug": "wecom",
+        "matched_distance": 0.848209023475647,
+        "hardest_distractor_distance": 0.7572543025016785,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1102305688",
+        "app_slug": "king_camp",
+        "matched_distance": 0.6969432830810547,
+        "hardest_distractor_distance": 0.7102407217025757,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1134496215",
+        "app_slug": "xigua_video",
+        "matched_distance": 0.772320032119751,
+        "hardest_distractor_distance": 0.7259182333946228,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.8681758642196655,
+        "hardest_distractor_distance": 0.7262529730796814,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.7746022939682007,
+        "hardest_distractor_distance": 0.76212477684021,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1165227346",
+        "app_slug": "hello_bike",
+        "matched_distance": 0.7989442348480225,
+        "hardest_distractor_distance": 0.7195514440536499,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1170455562",
+        "app_slug": "mini_world",
+        "matched_distance": 0.9286961555480957,
+        "hardest_distractor_distance": 0.7486938834190369,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1195860596",
+        "app_slug": "kuaiying",
+        "matched_distance": 0.8066142797470093,
+        "hardest_distractor_distance": 0.7396042943000793,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1235504705",
+        "app_slug": "qq_speed",
+        "matched_distance": 0.9663481712341309,
+        "hardest_distractor_distance": 0.7454409599304199,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1243986797",
+        "app_slug": "minecraft",
+        "matched_distance": 0.8289080858230591,
+        "hardest_distractor_distance": 0.7395178079605103,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.9716561436653137,
+        "hardest_distractor_distance": 0.7744138240814209,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1336435685",
+        "app_slug": "peace_camp",
+        "matched_distance": 0.8761478066444397,
+        "hardest_distractor_distance": 0.7593490481376648,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1387717110",
+        "app_slug": "qimao",
+        "matched_distance": 0.7683700919151306,
+        "hardest_distractor_distance": 0.7311575412750244,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1410120498",
+        "app_slug": "toutiao_lite",
+        "matched_distance": 0.7628788948059082,
+        "hardest_distractor_distance": 0.7324665784835815,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1426252715",
+        "app_slug": "bilibili_comics",
+        "matched_distance": 0.8906035423278809,
+        "hardest_distractor_distance": 0.7509301900863647,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.9237343072891235,
+        "hardest_distractor_distance": 0.7496631145477295,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1458072671",
+        "app_slug": "jianying",
+        "matched_distance": 0.7715079188346863,
+        "hardest_distractor_distance": 0.741132915019989,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1467190251",
+        "app_slug": "genshin",
+        "matched_distance": 0.8548184037208557,
+        "hardest_distractor_distance": 0.6891278028488159,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1470182559",
+        "app_slug": "miyoushe",
+        "matched_distance": 0.7624944448471069,
+        "hardest_distractor_distance": 0.7095733284950256,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1478101301",
+        "app_slug": "golden_spatula",
+        "matched_distance": 0.9317144751548767,
+        "hardest_distractor_distance": 0.7253764867782593,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1484048379",
+        "app_slug": "tencent_meeting",
+        "matched_distance": 0.8567790985107422,
+        "hardest_distractor_distance": 0.7732141017913818,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1500526240",
+        "app_slug": "xingtu",
+        "matched_distance": 0.9835805892944336,
+        "hardest_distractor_distance": 0.7240369915962219,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1540397127",
+        "app_slug": "iqiyi_lite",
+        "matched_distance": 0.8294357061386108,
+        "hardest_distractor_distance": 0.7244446277618408,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.7937788963317871,
+        "hardest_distractor_distance": 0.7121169567108154,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.7007740139961243,
+        "hardest_distractor_distance": 0.715276300907135,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:351091731",
+        "app_slug": "dianping",
+        "matched_distance": 0.7894752025604248,
+        "hardest_distractor_distance": 0.6905523538589478,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:353115739",
+        "app_slug": "youdao_dict",
+        "matched_distance": 0.747693657875061,
+        "hardest_distractor_distance": 0.6983414888381958,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:370139302",
+        "app_slug": "qq_browser",
+        "matched_distance": 0.7986544370651245,
+        "hardest_distractor_distance": 0.7331342697143555,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:379395415",
+        "app_slug": "ctrip",
+        "matched_distance": 0.847808301448822,
+        "hardest_distractor_distance": 0.7591748237609863,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:393765873",
+        "app_slug": "iqiyi",
+        "matched_distance": 0.7982639074325562,
+        "hardest_distractor_distance": 0.7079237103462219,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:399363156",
+        "app_slug": "tencent_news",
+        "matched_distance": 0.7930426597595215,
+        "hardest_distractor_distance": 0.7306551933288574,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.9099750518798828,
+        "hardest_distractor_distance": 0.7380751967430115,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.898764967918396,
+        "hardest_distractor_distance": 0.7549620270729065,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.7597882151603699,
+        "hardest_distractor_distance": 0.772815465927124,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:416048305",
+        "app_slug": "meitu",
+        "matched_distance": 0.7806264162063599,
+        "hardest_distractor_distance": 0.7369737029075623,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:417200582",
+        "app_slug": "vipshop",
+        "matched_distance": 0.7253979444503784,
+        "hardest_distractor_distance": 0.7774556279182434,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:423084029",
+        "app_slug": "meituan",
+        "matched_distance": 0.7257218360900879,
+        "hardest_distractor_distance": 0.7179611325263977,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:432274380",
+        "app_slug": "zhihu",
+        "matched_distance": 0.7774181365966797,
+        "hardest_distractor_distance": 0.7407664060592651,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:434209233",
+        "app_slug": "moji_weather",
+        "matched_distance": 0.6962340474128723,
+        "hardest_distractor_distance": 0.7507544755935669,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 0.8525486588478088,
+        "hardest_distractor_distance": 0.7040814161300659,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:452186370",
+        "app_slug": "baidu_maps",
+        "matched_distance": 0.6797537803649902,
+        "hardest_distractor_distance": 0.7130611538887024,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:458318329",
+        "app_slug": "tencent_video",
+        "matched_distance": 0.7931521534919739,
+        "hardest_distractor_distance": 0.7272931337356567,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:461703208",
+        "app_slug": "amap",
+        "matched_distance": 0.6958259344100952,
+        "hardest_distractor_distance": 0.7633925676345825,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:472208016",
+        "app_slug": "kugou",
+        "matched_distance": 0.7785319089889526,
+        "hardest_distractor_distance": 0.7181313037872314,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:475666808",
+        "app_slug": "lol_assistant",
+        "matched_distance": 0.9582962393760681,
+        "hardest_distractor_distance": 0.7978525161743164,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:477927812",
+        "app_slug": "baidu_tieba",
+        "matched_distance": 0.75383460521698,
+        "hardest_distractor_distance": 0.7672576904296875,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:481623196",
+        "app_slug": "tencent_maps",
+        "matched_distance": 0.7818418145179749,
+        "hardest_distractor_distance": 0.7856004238128662,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:487608658",
+        "app_slug": "qq_reading",
+        "matched_distance": 1.0502238273620605,
+        "hardest_distractor_distance": 0.7321664094924927,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:494514224",
+        "app_slug": "lofter",
+        "matched_distance": 0.7873304486274719,
+        "hardest_distractor_distance": 0.766726553440094,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:510909506",
+        "app_slug": "xianyu",
+        "matched_distance": 0.9060938954353333,
+        "hardest_distractor_distance": 0.768221378326416,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:518966501",
+        "app_slug": "tmall",
+        "matched_distance": 0.7744012475013733,
+        "hardest_distractor_distance": 0.7558877468109131,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:529092160",
+        "app_slug": "toutiao",
+        "matched_distance": 0.7136425971984863,
+        "hardest_distractor_distance": 0.7742905616760254,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:529479190",
+        "app_slug": "clash_of_clans",
+        "matched_distance": 0.921714186668396,
+        "hardest_distractor_distance": 0.6843957901000977,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:534174796",
+        "app_slug": "qidian",
+        "matched_distance": 0.7550896406173706,
+        "hardest_distractor_distance": 0.697980523109436,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:547166701",
+        "app_slug": "baidu_netdisk",
+        "matched_distance": 0.7126671671867371,
+        "hardest_distractor_distance": 0.7003353834152222,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:569387346",
+        "app_slug": "tencent_comics",
+        "matched_distance": 0.9278808236122131,
+        "hardest_distractor_distance": 0.8014343976974487,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:588673713",
+        "app_slug": "kuwo",
+        "matched_distance": 0.7319795489311218,
+        "hardest_distractor_distance": 0.736069917678833,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:592331499",
+        "app_slug": "beautycam",
+        "matched_distance": 0.8289877772331238,
+        "hardest_distractor_distance": 0.7263319492340088,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:599852710",
+        "app_slug": "wps_office",
+        "matched_distance": 0.7676748633384705,
+        "hardest_distractor_distance": 0.7124011516571045,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:629774477",
+        "app_slug": "mango_tv",
+        "matched_distance": 0.787103533744812,
+        "hardest_distractor_distance": 0.7694377303123474,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:691828408",
+        "app_slug": "weishi",
+        "matched_distance": 0.8802728652954102,
+        "hardest_distractor_distance": 0.7473898530006409,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.7830542325973511,
+        "hardest_distractor_distance": 0.742178201675415,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:737310995",
+        "app_slug": "meituan_waimai",
+        "matched_distance": 0.8035143613815308,
+        "hardest_distractor_distance": 0.7055818438529968,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.750364363193512,
+        "hardest_distractor_distance": 0.7838416695594788,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:791532221",
+        "app_slug": "anipop",
+        "matched_distance": 0.9703378677368164,
+        "hardest_distractor_distance": 0.7477476000785828,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:793626080",
+        "app_slug": "paipai",
+        "matched_distance": 0.8694295287132263,
+        "hardest_distractor_distance": 0.7404423356056213,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.7630398869514465,
+        "hardest_distractor_distance": 0.7245500683784485,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:871095743",
+        "app_slug": "huya",
+        "matched_distance": 0.7590410709381104,
+        "hardest_distractor_distance": 0.7542339563369751,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:876336838",
+        "app_slug": "ximalaya",
+        "matched_distance": 0.8023340106010437,
+        "hardest_distractor_distance": 0.7622858285903931,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:895670960",
+        "app_slug": "onmyoji",
+        "matched_distance": 0.9533370733261108,
+        "hardest_distractor_distance": 0.7560165524482727,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:906936224",
+        "app_slug": "kuaikan",
+        "matched_distance": 0.8513673543930054,
+        "hardest_distractor_distance": 0.7113933563232422,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:907002334",
+        "app_slug": "douban",
+        "matched_distance": 0.8158669471740723,
+        "hardest_distractor_distance": 0.7716079354286194,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:910513149",
+        "app_slug": "karaoke",
+        "matched_distance": 0.7494751811027527,
+        "hardest_distractor_distance": 0.7383260726928711,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:930368978",
+        "app_slug": "dingtalk",
+        "matched_distance": 0.8899617195129395,
+        "hardest_distractor_distance": 0.7757956981658936,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:938688461",
+        "app_slug": "zepp_life",
+        "matched_distance": 0.7301464676856995,
+        "hardest_distractor_distance": 0.7215920686721802,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.7611855268478394,
+        "hardest_distractor_distance": 0.6864241361618042,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:952059546",
+        "app_slug": "wechat_reading",
+        "matched_distance": 0.8512415885925293,
+        "hardest_distractor_distance": 0.8119254112243652,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:952694580",
+        "app_slug": "keep",
+        "matched_distance": 0.8093960285186768,
+        "hardest_distractor_distance": 0.7546334266662598,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:955396648",
+        "app_slug": "naruto_mobile",
+        "matched_distance": 0.8415564298629761,
+        "hardest_distractor_distance": 0.7556536197662354,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:957323480",
+        "app_slug": "mi_home",
+        "matched_distance": 0.7987542748451233,
+        "hardest_distractor_distance": 0.7443993091583252,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.9389920830726624,
+        "hardest_distractor_distance": 0.7281785011291504,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.8342786431312561,
+        "hardest_distractor_distance": 0.7649011015892029,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 1.0149816274642944,
+        "hardest_distractor_distance": 0.802620530128479,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1087897068",
+        "app_slug": "wecom",
+        "matched_distance": 0.8240776062011719,
+        "hardest_distractor_distance": 0.7741214632987976,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1134496215",
+        "app_slug": "xigua_video",
+        "matched_distance": 0.7245758771896362,
+        "hardest_distractor_distance": 0.7869064807891846,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.9802263379096985,
+        "hardest_distractor_distance": 0.8098484873771667,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.7066610455513,
+        "hardest_distractor_distance": 0.736415445804596,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.8811066746711731,
+        "hardest_distractor_distance": 0.6834303140640259,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1387717110",
+        "app_slug": "qimao",
+        "matched_distance": 0.8234091997146606,
+        "hardest_distractor_distance": 0.7881371974945068,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1478101301",
+        "app_slug": "golden_spatula",
+        "matched_distance": 0.9117093086242676,
+        "hardest_distractor_distance": 0.7841137051582336,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1500526240",
+        "app_slug": "xingtu",
+        "matched_distance": 0.45443224906921387,
+        "hardest_distractor_distance": 0.7296009063720703,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1540397127",
+        "app_slug": "iqiyi_lite",
+        "matched_distance": 0.7851018905639648,
+        "hardest_distractor_distance": 0.6845499277114868,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.8135415315628052,
+        "hardest_distractor_distance": 0.7525771856307983,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:351091731",
+        "app_slug": "dianping",
+        "matched_distance": 0.9006173610687256,
+        "hardest_distractor_distance": 0.7168862819671631,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:353115739",
+        "app_slug": "youdao_dict",
+        "matched_distance": 0.8221039772033691,
+        "hardest_distractor_distance": 0.8236395120620728,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:370139302",
+        "app_slug": "qq_browser",
+        "matched_distance": 0.7121300101280212,
+        "hardest_distractor_distance": 0.7460339069366455,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:379395415",
+        "app_slug": "ctrip",
+        "matched_distance": 0.8327857255935669,
+        "hardest_distractor_distance": 0.7987960577011108,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:399363156",
+        "app_slug": "tencent_news",
+        "matched_distance": 0.7455071210861206,
+        "hardest_distractor_distance": 0.7814777493476868,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.9375565052032471,
+        "hardest_distractor_distance": 0.7375290393829346,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.8951405882835388,
+        "hardest_distractor_distance": 0.766248881816864,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.7737036943435669,
+        "hardest_distractor_distance": 0.7941627502441406,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:432274380",
+        "app_slug": "zhihu",
+        "matched_distance": 0.7698156833648682,
+        "hardest_distractor_distance": 0.7616140842437744,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.7561241388320923,
+        "hardest_distractor_distance": 0.7145097255706787,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 0.7186576128005981,
+        "hardest_distractor_distance": 0.784369945526123,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:472208016",
+        "app_slug": "kugou",
+        "matched_distance": 0.8669324517250061,
+        "hardest_distractor_distance": 0.8295188546180725,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:507161324",
+        "app_slug": "eleme",
+        "matched_distance": 0.8355024456977844,
+        "hardest_distractor_distance": 0.7492115497589111,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:529479190",
+        "app_slug": "clash_of_clans",
+        "matched_distance": 0.9533675312995911,
+        "hardest_distractor_distance": 0.7429239749908447,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.7900803089141846,
+        "hardest_distractor_distance": 0.709904670715332,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:737310995",
+        "app_slug": "meituan_waimai",
+        "matched_distance": 0.8554641008377075,
+        "hardest_distractor_distance": 0.8020362257957458,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.8745052814483643,
+        "hardest_distractor_distance": 0.812289834022522,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:791532221",
+        "app_slug": "anipop",
+        "matched_distance": 0.9253025054931641,
+        "hardest_distractor_distance": 0.784595251083374,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:793626080",
+        "app_slug": "paipai",
+        "matched_distance": 0.8219599723815918,
+        "hardest_distractor_distance": 0.8109808564186096,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.7962849140167236,
+        "hardest_distractor_distance": 0.6786460876464844,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.7710551023483276,
+        "hardest_distractor_distance": 0.7834029197692871,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:952059546",
+        "app_slug": "wechat_reading",
+        "matched_distance": 0.8670693635940552,
+        "hardest_distractor_distance": 0.8281235098838806,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:957323480",
+        "app_slug": "mi_home",
+        "matched_distance": 0.8321518898010254,
+        "hardest_distractor_distance": 0.7656062245368958,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.9069323539733887,
+        "hardest_distractor_distance": 0.7737176418304443,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      }
+    ]
+  },
+  "lpips_content": {
+    "overall": {
+      "query_count": 158,
+      "top1_accuracy": 0.17088607594936708,
+      "top5_accuracy": 0.5126582278481012,
+      "mean_reciprocal_rank": 0.34776243447129523,
+      "sampled_pairwise_auc": 0.5594936708860759
+    },
+    "by_theme": {
+      "theme_001": {
+        "query_count": 24,
+        "top1_accuracy": 0.16666666666666666,
+        "top5_accuracy": 0.5416666666666666,
+        "mean_reciprocal_rank": 0.33798400673400675,
+        "sampled_pairwise_auc": 0.5499999999999999
+      },
+      "theme_002": {
+        "query_count": 12,
+        "top1_accuracy": 0.16666666666666666,
+        "top5_accuracy": 0.3333333333333333,
+        "mean_reciprocal_rank": 0.31167328042328046,
+        "sampled_pairwise_auc": 0.525
+      },
+      "theme_003": {
+        "query_count": 86,
+        "top1_accuracy": 0.16279069767441862,
+        "top5_accuracy": 0.5348837209302325,
+        "mean_reciprocal_rank": 0.3473686197523407,
+        "sampled_pairwise_auc": 0.5616279069767443
+      },
+      "theme_004": {
+        "query_count": 36,
+        "top1_accuracy": 0.19444444444444445,
+        "top5_accuracy": 0.5,
+        "mean_reciprocal_rank": 0.36725188391855057,
+        "sampled_pairwise_auc": 0.5722222222222222
+      }
+    },
+    "queries": [
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.8507921695709229,
+        "hardest_distractor_distance": 0.6442294120788574,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 0.7948778867721558,
+        "hardest_distractor_distance": 0.6993765234947205,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1102305688",
+        "app_slug": "king_camp",
+        "matched_distance": 0.9270167350769043,
+        "hardest_distractor_distance": 0.5829687714576721,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.6502425074577332,
+        "hardest_distractor_distance": 0.55233234167099,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.3609062433242798,
+        "hardest_distractor_distance": 0.5742447972297668,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1243986797",
+        "app_slug": "minecraft",
+        "matched_distance": 0.8708236217498779,
+        "hardest_distractor_distance": 0.6249873042106628,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.8460256457328796,
+        "hardest_distractor_distance": 0.6934160590171814,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.7600915431976318,
+        "hardest_distractor_distance": 0.561699628829956,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:1467190251",
+        "app_slug": "genshin",
+        "matched_distance": 0.662986695766449,
+        "hardest_distractor_distance": 0.6775017380714417,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.6447244882583618,
+        "hardest_distractor_distance": 0.5456078052520752,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:336141475",
+        "app_slug": "youku",
+        "matched_distance": 0.5902457237243652,
+        "hardest_distractor_distance": 0.6710240840911865,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.8534802794456482,
+        "hardest_distractor_distance": 0.7286014556884766,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.7659132480621338,
+        "hardest_distractor_distance": 0.6177730560302734,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.702709972858429,
+        "hardest_distractor_distance": 0.7471532225608826,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.7553702592849731,
+        "hardest_distractor_distance": 0.5758806467056274,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:423084029",
+        "app_slug": "meituan",
+        "matched_distance": 0.5776984691619873,
+        "hardest_distractor_distance": 0.5067814588546753,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.8719046115875244,
+        "hardest_distractor_distance": 0.6660611629486084,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:473225145",
+        "app_slug": "qq_mail",
+        "matched_distance": 1.0431525707244873,
+        "hardest_distractor_distance": 0.7025711536407471,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:475666808",
+        "app_slug": "lol_assistant",
+        "matched_distance": 0.7417128086090088,
+        "hardest_distractor_distance": 0.6502132415771484,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:518966501",
+        "app_slug": "tmall",
+        "matched_distance": 0.8565295934677124,
+        "hardest_distractor_distance": 0.7272607088088989,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.793913722038269,
+        "hardest_distractor_distance": 0.5856775045394897,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.8957774639129639,
+        "hardest_distractor_distance": 0.6104604005813599,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:907002334",
+        "app_slug": "douban",
+        "matched_distance": 0.7638881206512451,
+        "hardest_distractor_distance": 0.6272440552711487,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_001",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.7247861623764038,
+        "hardest_distractor_distance": 0.6188927292823792,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.588727593421936,
+        "hardest_distractor_distance": 0.6233078241348267,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.8324743509292603,
+        "hardest_distractor_distance": 0.6618214249610901,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.7783789038658142,
+        "hardest_distractor_distance": 0.5923100709915161,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.7867571711540222,
+        "hardest_distractor_distance": 0.620262622833252,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:387682726",
+        "app_slug": "taobao",
+        "matched_distance": 0.8024648427963257,
+        "hardest_distractor_distance": 0.6840838193893433,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.7772697806358337,
+        "hardest_distractor_distance": 0.622299075126648,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.7582969069480896,
+        "hardest_distractor_distance": 0.6014758348464966,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 0.6878870725631714,
+        "hardest_distractor_distance": 0.7075623273849487,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.8186027407646179,
+        "hardest_distractor_distance": 0.6962944865226746,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.6244817972183228,
+        "hardest_distractor_distance": 0.5923256278038025,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.6934269070625305,
+        "hardest_distractor_distance": 0.6325523853302002,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_002",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.7558445930480957,
+        "hardest_distractor_distance": 0.5762430429458618,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1012871328",
+        "app_slug": "dewu",
+        "matched_distance": 0.6906387209892273,
+        "hardest_distractor_distance": 0.7188794612884521,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1032287195",
+        "app_slug": "soul",
+        "matched_distance": 0.685082733631134,
+        "hardest_distractor_distance": 0.5899287462234497,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1042545880",
+        "app_slug": "crossfire_mobile",
+        "matched_distance": 0.7777924537658691,
+        "hardest_distractor_distance": 0.573895275592804,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.8115032315254211,
+        "hardest_distractor_distance": 0.6151173114776611,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 0.7825226783752441,
+        "hardest_distractor_distance": 0.6466166973114014,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1087897068",
+        "app_slug": "wecom",
+        "matched_distance": 0.5701364278793335,
+        "hardest_distractor_distance": 0.6482975482940674,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1102305688",
+        "app_slug": "king_camp",
+        "matched_distance": 0.9105201363563538,
+        "hardest_distractor_distance": 0.6596948504447937,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1134496215",
+        "app_slug": "xigua_video",
+        "matched_distance": 0.6812573671340942,
+        "hardest_distractor_distance": 0.7095230221748352,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.6807287335395813,
+        "hardest_distractor_distance": 0.6359084844589233,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.5892714262008667,
+        "hardest_distractor_distance": 0.6430663466453552,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1165227346",
+        "app_slug": "hello_bike",
+        "matched_distance": 0.6819153428077698,
+        "hardest_distractor_distance": 0.619981050491333,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1170455562",
+        "app_slug": "mini_world",
+        "matched_distance": 0.7791495323181152,
+        "hardest_distractor_distance": 0.6531537771224976,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1195860596",
+        "app_slug": "kuaiying",
+        "matched_distance": 0.6881776452064514,
+        "hardest_distractor_distance": 0.607524037361145,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1235504705",
+        "app_slug": "qq_speed",
+        "matched_distance": 0.8308568000793457,
+        "hardest_distractor_distance": 0.6552053689956665,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1243986797",
+        "app_slug": "minecraft",
+        "matched_distance": 0.819290280342102,
+        "hardest_distractor_distance": 0.6181171536445618,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.846379280090332,
+        "hardest_distractor_distance": 0.5901592969894409,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1336435685",
+        "app_slug": "peace_camp",
+        "matched_distance": 0.9076647758483887,
+        "hardest_distractor_distance": 0.6495955586433411,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1387717110",
+        "app_slug": "qimao",
+        "matched_distance": 0.90239417552948,
+        "hardest_distractor_distance": 0.6020359992980957,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1410120498",
+        "app_slug": "toutiao_lite",
+        "matched_distance": 0.6933339238166809,
+        "hardest_distractor_distance": 0.5779805183410645,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1426252715",
+        "app_slug": "bilibili_comics",
+        "matched_distance": 0.7175823450088501,
+        "hardest_distractor_distance": 0.6065136194229126,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1455054000",
+        "app_slug": "lol_mobile",
+        "matched_distance": 0.7760788798332214,
+        "hardest_distractor_distance": 0.656861424446106,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1458072671",
+        "app_slug": "jianying",
+        "matched_distance": 0.6310759782791138,
+        "hardest_distractor_distance": 0.6298927068710327,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1467190251",
+        "app_slug": "genshin",
+        "matched_distance": 0.6911031603813171,
+        "hardest_distractor_distance": 0.6365260481834412,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1470182559",
+        "app_slug": "miyoushe",
+        "matched_distance": 0.6185569763183594,
+        "hardest_distractor_distance": 0.6802314519882202,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1478101301",
+        "app_slug": "golden_spatula",
+        "matched_distance": 0.7730686068534851,
+        "hardest_distractor_distance": 0.6519554853439331,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1484048379",
+        "app_slug": "tencent_meeting",
+        "matched_distance": 0.7244942784309387,
+        "hardest_distractor_distance": 0.5797674655914307,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1500526240",
+        "app_slug": "xingtu",
+        "matched_distance": 0.6928676962852478,
+        "hardest_distractor_distance": 0.5677073001861572,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:1540397127",
+        "app_slug": "iqiyi_lite",
+        "matched_distance": 0.7997307777404785,
+        "hardest_distractor_distance": 0.6729506254196167,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.7155698537826538,
+        "hardest_distractor_distance": 0.6983705759048462,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:350962117",
+        "app_slug": "weibo",
+        "matched_distance": 0.8917498588562012,
+        "hardest_distractor_distance": 0.6183130145072937,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:351091731",
+        "app_slug": "dianping",
+        "matched_distance": 0.8487303853034973,
+        "hardest_distractor_distance": 0.6223815679550171,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:353115739",
+        "app_slug": "youdao_dict",
+        "matched_distance": 0.7599369287490845,
+        "hardest_distractor_distance": 0.6614978313446045,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:370139302",
+        "app_slug": "qq_browser",
+        "matched_distance": 0.5976070761680603,
+        "hardest_distractor_distance": 0.6734750270843506,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:379395415",
+        "app_slug": "ctrip",
+        "matched_distance": 0.6721314787864685,
+        "hardest_distractor_distance": 0.6807186603546143,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:393765873",
+        "app_slug": "iqiyi",
+        "matched_distance": 0.7848809957504272,
+        "hardest_distractor_distance": 0.6136005520820618,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:399363156",
+        "app_slug": "tencent_news",
+        "matched_distance": 0.6136375069618225,
+        "hardest_distractor_distance": 0.6243006587028503,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.7868924140930176,
+        "hardest_distractor_distance": 0.6676018834114075,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.7263321876525879,
+        "hardest_distractor_distance": 0.5968533754348755,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.785639762878418,
+        "hardest_distractor_distance": 0.5850660800933838,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:416048305",
+        "app_slug": "meitu",
+        "matched_distance": 0.7673035264015198,
+        "hardest_distractor_distance": 0.5883017182350159,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:417200582",
+        "app_slug": "vipshop",
+        "matched_distance": 0.7180572152137756,
+        "hardest_distractor_distance": 0.6272087097167969,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:423084029",
+        "app_slug": "meituan",
+        "matched_distance": 0.6962661743164062,
+        "hardest_distractor_distance": 0.6372647285461426,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:432274380",
+        "app_slug": "zhihu",
+        "matched_distance": 0.6888015270233154,
+        "hardest_distractor_distance": 0.6601300835609436,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:434209233",
+        "app_slug": "moji_weather",
+        "matched_distance": 0.6476885080337524,
+        "hardest_distractor_distance": 0.6080474257469177,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 0.6589198708534241,
+        "hardest_distractor_distance": 0.6682125926017761,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:452186370",
+        "app_slug": "baidu_maps",
+        "matched_distance": 0.5496243834495544,
+        "hardest_distractor_distance": 0.609565794467926,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:458318329",
+        "app_slug": "tencent_video",
+        "matched_distance": 0.6873635649681091,
+        "hardest_distractor_distance": 0.635712742805481,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:461703208",
+        "app_slug": "amap",
+        "matched_distance": 0.6452240943908691,
+        "hardest_distractor_distance": 0.6212018728256226,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:472208016",
+        "app_slug": "kugou",
+        "matched_distance": 0.6509883403778076,
+        "hardest_distractor_distance": 0.6415753364562988,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:475666808",
+        "app_slug": "lol_assistant",
+        "matched_distance": 0.7917284965515137,
+        "hardest_distractor_distance": 0.6525108814239502,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:477927812",
+        "app_slug": "baidu_tieba",
+        "matched_distance": 0.6350224018096924,
+        "hardest_distractor_distance": 0.5992226600646973,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:481623196",
+        "app_slug": "tencent_maps",
+        "matched_distance": 0.6368108987808228,
+        "hardest_distractor_distance": 0.6446714997291565,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:487608658",
+        "app_slug": "qq_reading",
+        "matched_distance": 0.7937795519828796,
+        "hardest_distractor_distance": 0.6079162359237671,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:494514224",
+        "app_slug": "lofter",
+        "matched_distance": 0.635352373123169,
+        "hardest_distractor_distance": 0.5678250789642334,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:510909506",
+        "app_slug": "xianyu",
+        "matched_distance": 0.9258561134338379,
+        "hardest_distractor_distance": 0.6536093950271606,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:518966501",
+        "app_slug": "tmall",
+        "matched_distance": 0.7874950170516968,
+        "hardest_distractor_distance": 0.6086863279342651,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:529092160",
+        "app_slug": "toutiao",
+        "matched_distance": 0.6832906603813171,
+        "hardest_distractor_distance": 0.6446806788444519,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:529479190",
+        "app_slug": "clash_of_clans",
+        "matched_distance": 0.9077258706092834,
+        "hardest_distractor_distance": 0.6646944284439087,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:534174796",
+        "app_slug": "qidian",
+        "matched_distance": 0.7103608250617981,
+        "hardest_distractor_distance": 0.6520085334777832,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:547166701",
+        "app_slug": "baidu_netdisk",
+        "matched_distance": 0.6148329973220825,
+        "hardest_distractor_distance": 0.638714075088501,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:569387346",
+        "app_slug": "tencent_comics",
+        "matched_distance": 0.8297561407089233,
+        "hardest_distractor_distance": 0.6286996603012085,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:588673713",
+        "app_slug": "kuwo",
+        "matched_distance": 0.9773638844490051,
+        "hardest_distractor_distance": 0.6405956149101257,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:592331499",
+        "app_slug": "beautycam",
+        "matched_distance": 0.7514432072639465,
+        "hardest_distractor_distance": 0.60075443983078,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:599852710",
+        "app_slug": "wps_office",
+        "matched_distance": 0.6316215395927429,
+        "hardest_distractor_distance": 0.7000237703323364,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:629774477",
+        "app_slug": "mango_tv",
+        "matched_distance": 0.9373198747634888,
+        "hardest_distractor_distance": 0.7144913077354431,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:691828408",
+        "app_slug": "weishi",
+        "matched_distance": 0.78724205493927,
+        "hardest_distractor_distance": 0.6391167044639587,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.7998135089874268,
+        "hardest_distractor_distance": 0.5809776782989502,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:737310995",
+        "app_slug": "meituan_waimai",
+        "matched_distance": 0.8209820985794067,
+        "hardest_distractor_distance": 0.6435398459434509,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.650354266166687,
+        "hardest_distractor_distance": 0.632395327091217,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:791532221",
+        "app_slug": "anipop",
+        "matched_distance": 0.8537073731422424,
+        "hardest_distractor_distance": 0.5830147862434387,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:793626080",
+        "app_slug": "paipai",
+        "matched_distance": 0.72052001953125,
+        "hardest_distractor_distance": 0.644434928894043,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.9071712493896484,
+        "hardest_distractor_distance": 0.6191093325614929,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:871095743",
+        "app_slug": "huya",
+        "matched_distance": 0.7050909399986267,
+        "hardest_distractor_distance": 0.6738767623901367,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:876336838",
+        "app_slug": "ximalaya",
+        "matched_distance": 0.8282288312911987,
+        "hardest_distractor_distance": 0.6287108659744263,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:895670960",
+        "app_slug": "onmyoji",
+        "matched_distance": 0.7731310725212097,
+        "hardest_distractor_distance": 0.6493901610374451,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:906936224",
+        "app_slug": "kuaikan",
+        "matched_distance": 0.8690340518951416,
+        "hardest_distractor_distance": 0.6447309255599976,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:907002334",
+        "app_slug": "douban",
+        "matched_distance": 0.8336963653564453,
+        "hardest_distractor_distance": 0.6532756090164185,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:910513149",
+        "app_slug": "karaoke",
+        "matched_distance": 0.6973180770874023,
+        "hardest_distractor_distance": 0.6351619958877563,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:930368978",
+        "app_slug": "dingtalk",
+        "matched_distance": 0.7194854021072388,
+        "hardest_distractor_distance": 0.6721238493919373,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:938688461",
+        "app_slug": "zepp_life",
+        "matched_distance": 0.8543910980224609,
+        "hardest_distractor_distance": 0.6576185822486877,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.7332317233085632,
+        "hardest_distractor_distance": 0.5749915838241577,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:952059546",
+        "app_slug": "wechat_reading",
+        "matched_distance": 0.6253644824028015,
+        "hardest_distractor_distance": 0.6375999450683594,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:952694580",
+        "app_slug": "keep",
+        "matched_distance": 0.7871333360671997,
+        "hardest_distractor_distance": 0.6282792687416077,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:955396648",
+        "app_slug": "naruto_mobile",
+        "matched_distance": 0.8258854746818542,
+        "hardest_distractor_distance": 0.5601304173469543,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:957323480",
+        "app_slug": "mi_home",
+        "matched_distance": 0.7364585399627686,
+        "hardest_distractor_distance": 0.5834108591079712,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_003",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.8653911352157593,
+        "hardest_distractor_distance": 0.6612570881843567,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1044283059",
+        "app_slug": "pinduoduo",
+        "matched_distance": 0.8187423944473267,
+        "hardest_distractor_distance": 0.6057330369949341,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1086047750",
+        "app_slug": "douyin_huoshan",
+        "matched_distance": 0.7104246616363525,
+        "hardest_distractor_distance": 0.5414382219314575,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1087897068",
+        "app_slug": "wecom",
+        "matched_distance": 0.5007811784744263,
+        "hardest_distractor_distance": 0.5540282130241394,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1134496215",
+        "app_slug": "xigua_video",
+        "matched_distance": 0.6938188672065735,
+        "hardest_distractor_distance": 0.7334923148155212,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1142110895",
+        "app_slug": "douyin",
+        "matched_distance": 0.6265002489089966,
+        "hardest_distractor_distance": 0.5097307562828064,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1160172628",
+        "app_slug": "quark",
+        "matched_distance": 0.5431711077690125,
+        "hardest_distractor_distance": 0.6908138990402222,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1321803705",
+        "app_slug": "peace_elite",
+        "matched_distance": 0.8064231872558594,
+        "hardest_distractor_distance": 0.5633029937744141,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1387717110",
+        "app_slug": "qimao",
+        "matched_distance": 0.8236637115478516,
+        "hardest_distractor_distance": 0.6688668727874756,
+        "rank": 11,
+        "candidate_count": 11,
+        "auc": 0.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1478101301",
+        "app_slug": "golden_spatula",
+        "matched_distance": 0.754060685634613,
+        "hardest_distractor_distance": 0.5809017419815063,
+        "rank": 7,
+        "candidate_count": 11,
+        "auc": 0.4
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1500526240",
+        "app_slug": "xingtu",
+        "matched_distance": 0.42097771167755127,
+        "hardest_distractor_distance": 0.700737714767456,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:1540397127",
+        "app_slug": "iqiyi_lite",
+        "matched_distance": 0.7953040599822998,
+        "hardest_distractor_distance": 0.6079233884811401,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:333206289",
+        "app_slug": "alipay",
+        "matched_distance": 0.6996960043907166,
+        "hardest_distractor_distance": 0.6356784105300903,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:351091731",
+        "app_slug": "dianping",
+        "matched_distance": 0.8096327781677246,
+        "hardest_distractor_distance": 0.5148177742958069,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:353115739",
+        "app_slug": "youdao_dict",
+        "matched_distance": 0.7655683755874634,
+        "hardest_distractor_distance": 0.5432529449462891,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:370139302",
+        "app_slug": "qq_browser",
+        "matched_distance": 0.6302773356437683,
+        "hardest_distractor_distance": 0.6448192000389099,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:379395415",
+        "app_slug": "ctrip",
+        "matched_distance": 0.6534620523452759,
+        "hardest_distractor_distance": 0.4778516888618469,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:399363156",
+        "app_slug": "tencent_news",
+        "matched_distance": 0.5444952845573425,
+        "hardest_distractor_distance": 0.6823373436927795,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414245413",
+        "app_slug": "jd",
+        "matched_distance": 0.7474476099014282,
+        "hardest_distractor_distance": 0.5095250010490417,
+        "rank": 5,
+        "candidate_count": 11,
+        "auc": 0.6
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414478124",
+        "app_slug": "wechat",
+        "matched_distance": 0.6984014511108398,
+        "hardest_distractor_distance": 0.4867587685585022,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:414603431",
+        "app_slug": "qq_music",
+        "matched_distance": 0.7216729521751404,
+        "hardest_distractor_distance": 0.6581968665122986,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:432274380",
+        "app_slug": "zhihu",
+        "matched_distance": 0.6847516298294067,
+        "hardest_distractor_distance": 0.5683781504631042,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:440948110",
+        "app_slug": "kuaishou",
+        "matched_distance": 0.8365589380264282,
+        "hardest_distractor_distance": 0.5654430985450745,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:444934666",
+        "app_slug": "qq",
+        "matched_distance": 0.5336723923683167,
+        "hardest_distractor_distance": 0.630859911441803,
+        "rank": 1,
+        "candidate_count": 11,
+        "auc": 1.0
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:472208016",
+        "app_slug": "kugou",
+        "matched_distance": 0.6172428727149963,
+        "hardest_distractor_distance": 0.4780353605747223,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:507161324",
+        "app_slug": "eleme",
+        "matched_distance": 0.8675608038902283,
+        "hardest_distractor_distance": 0.5314188003540039,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:529479190",
+        "app_slug": "clash_of_clans",
+        "matched_distance": 0.8093527555465698,
+        "hardest_distractor_distance": 0.5320817232131958,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:736536022",
+        "app_slug": "bilibili",
+        "matched_distance": 0.7577477693557739,
+        "hardest_distractor_distance": 0.598726749420166,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:737310995",
+        "app_slug": "meituan_waimai",
+        "matched_distance": 0.7437517046928406,
+        "hardest_distractor_distance": 0.6223602890968323,
+        "rank": 4,
+        "candidate_count": 11,
+        "auc": 0.7
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:741292507",
+        "app_slug": "xiaohongshu",
+        "matched_distance": 0.6144008636474609,
+        "hardest_distractor_distance": 0.5586867332458496,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:791532221",
+        "app_slug": "anipop",
+        "matched_distance": 0.841780424118042,
+        "hardest_distractor_distance": 0.5578327178955078,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:793626080",
+        "app_slug": "paipai",
+        "matched_distance": 0.6275442242622375,
+        "hardest_distractor_distance": 0.5375598669052124,
+        "rank": 3,
+        "candidate_count": 11,
+        "auc": 0.8
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:863882795",
+        "app_slug": "douyu",
+        "matched_distance": 0.8398397564888,
+        "hardest_distractor_distance": 0.5567833781242371,
+        "rank": 10,
+        "candidate_count": 11,
+        "auc": 0.1
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:944848654",
+        "app_slug": "netease_music",
+        "matched_distance": 0.6667346358299255,
+        "hardest_distractor_distance": 0.5308882594108582,
+        "rank": 6,
+        "candidate_count": 11,
+        "auc": 0.5
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:952059546",
+        "app_slug": "wechat_reading",
+        "matched_distance": 0.5671253204345703,
+        "hardest_distractor_distance": 0.5422331094741821,
+        "rank": 2,
+        "candidate_count": 11,
+        "auc": 0.9
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:957323480",
+        "app_slug": "mi_home",
+        "matched_distance": 0.7750701904296875,
+        "hardest_distractor_distance": 0.5766128301620483,
+        "rank": 8,
+        "candidate_count": 11,
+        "auc": 0.3
+      },
+      {
+        "theme": "theme_004",
+        "canonical_app_id": "appstore:989673964",
+        "app_slug": "honor_of_kings",
+        "matched_distance": 0.8862286806106567,
+        "hardest_distractor_distance": 0.6702814698219299,
+        "rank": 9,
+        "candidate_count": 11,
+        "auc": 0.2
+      }
+    ]
+  }
+}
