@@ -1,0 +1,64 @@
+{
+  "app": "douyin_huoshan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标由清晰的几何符号（音符）和具象符号（火焰）组成，符合 theme_design_analysis 中 preserve_major_structure 的判定条件。参考抖音主版的迁移案例，必须保留音符的基本S形曲线和火焰的相对位置，仅对填充方式、描边和色彩进行主题化重构，严禁改变主体轮廓或将其抽象为无关图形。",
+  "preserve": [
+    "核心音符的几何骨架（左下圆环、竖线、右上弯钩的比例与拓扑结构）",
+    "底部火焰的基本形态（向上的尖角/波浪结构）",
+    "火焰位于音符下方的空间布局及轻微遮挡关系",
+    "纯黑背景 (#000000)"
+  ],
+  "must_preserve": [
+    "标志性的八分音符几何拓扑",
+    "底部的火焰形态及其托举音符的空间关系",
+    "代表‘火山’属性的暖色调倾向（映射为红/黄）",
+    "粗黑色手绘风格描边",
+    "扁平化无光影处理"
+  ],
+  "recompose_allowed": [
+    "火焰的具体边缘形状（简化为圆润的几何色块或波浪形）",
+    "音符内部的渐变高光（替换为纯色填充或简单的装饰性元素如星星）",
+    "颜色的具体色值（强制映射为主题限定的砖红、深蓝、奶黄/米白）",
+    "线条的平滑度（转化为带有抖动感的徒手线条）"
+  ],
+  "restyle": [
+    "将原本平滑的白色音符转化为奶黄色/米白色块",
+    "将写实的橙红火焰简化为红黄相间的几何色块堆叠",
+    "添加不规则、粗细不均的黑色马克笔风格描边",
+    "模拟蜡笔或粉笔在粗糙表面的哑光质感"
+  ],
+  "decorate": [
+    "可在音符头部内部嵌入简单的主题装饰元素（如蓝色四角星）以增强趣味性",
+    "保持构图松散自由，不追求严格对称"
+  ],
+  "forbid": [
+    "保留原本的白色渐变、立体光泽或3D渲染效果",
+    "使用橙色、紫色、绿色等主题色板之外的颜色",
+    "火焰形状过于写实、尖锐或复杂",
+    "描边过细、边缘过于平滑锐利或缺失描边",
+    "背景非纯黑或包含额外装饰性光效/纹理",
+    "将音符替换为通用音乐符号或其他App标识"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon on pure black background. Central subject is a simplified musical note (creamy yellow fill) resting on top of geometric flames (brick red and orange-yellow fills). Heavy, irregular, clumsy black marker outlines around all shapes. Flat colors, no gradients, no shadows, no lighting effects. Naive art aesthetic, high contrast, crayon texture.",
+  "color_application": "Map original white note to creamy yellow/off-white; map original orange/red gradient flame to distinct blocks of brick red and warm yellow. Strictly adhere to the limited palette: Black background, Brick Red, Deep Blue (if used for accents), Creamy Yellow. No gradients allowed.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black outlines to both the note and the flame shapes. Edges should appear rough and shaky, simulating a marker or crayon stroke, avoiding clean vector lines.",
+  "composition_application": "Center the combined 'note-on-flame' structure. Ensure it occupies 50-70% of the canvas. Maintain the vertical stacking (note above flame) but simplify the internal details to geometric blocks. Keep ample black space around the subject.",
+  "identity_application": "Preserve the specific topology of the Douyin note (circle bottom, flag top) and the upward-pointing flame shape below it. The combination must remain instantly recognizable as Douyin Huoshan, despite the stylistic simplification and color shift.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must have thick, irregular hand-drawn black strokes",
+    "Colors must be flat, high-saturation primary/secondary tones from the theme palette (Red, Blue, Yellow/White)",
+    "No gradients, shadows, highlights, or 3D effects",
+    "Subject must look like a naive, hand-drawn doodle"
+  ],
+  "negative_constraints": [
+    "No realistic textures, photos, or 3D renders",
+    "No smooth vector lines or perfect symmetry",
+    "No colors outside the theme palette (e.g., green, purple, neon)",
+    "No white background or complex scenic backgrounds",
+    "Do not change the core shape of the note or remove the flame element"
+  ]
+}

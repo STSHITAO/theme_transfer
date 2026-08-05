@@ -1,0 +1,61 @@
+{
+  "app": "DingTalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "钉钉的原始图标本身就是高度抽象的几何符号（翅膀+闪电），并非写实场景或复杂人物。根据 theme_rules 中 'preserve_when' 的定义，当 Original 为清晰几何符号时，必须保留其主体轮廓和空间布局。因此，不应重构为其他物体，而应直接对现有轮廓进行主题化填充和描边处理。",
+  "preserve": [
+    "翅膀与闪电融合的单一外轮廓剪影",
+    "图形中上部的三条平行弧形分割线（代表羽毛/速度）",
+    "底部向右下延伸的锐利闪电折角",
+    "整体向右上方冲势的几何重心"
+  ],
+  "must_preserve": [
+    "翅膀的主干走向",
+    "底部的闪电折角形态",
+    "羽毛的分层结构",
+    "品牌识别线索：三道弧线切口"
+  ],
+  "recompose_allowed": [
+    "内部色块的颜色分配（映射为红/蓝/黄/白）",
+    "边缘线条的粗糙度与手绘质感",
+    "背景替换为纯黑"
+  ],
+  "restyle": [
+    "将平滑矢量边缘转化为粗犷、抖动的马克笔/蜡笔手绘线条",
+    "去除所有渐变、高光和立体阴影，改为纯色块平涂",
+    "模拟干性绘画介质（蜡笔/粉笔）的颗粒感与不均匀填充"
+  ],
+  "decorate": [
+    "添加粗重的黑色/深色不规则手绘描边",
+    "保持极简，除主体外无额外装饰元素"
+  ],
+  "forbid": [
+    "保留原始的蓝色渐变背景或科技蓝光效",
+    "使用平滑、锐利的工业级贝塞尔曲线",
+    "添加任何立体光影、投影或环境光遮蔽",
+    "改变翅膀的基本拓扑结构或将其具象化为真实鸟类",
+    "使用主题色板（红/蓝/黄/白/黑）之外的颜色",
+    "背景非纯黑 (#000000)"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of DingTalk logo on pure black background. Simplified wing-lightning shape with three feather cuts. Thick, rough marker-style outline in dark color. Flat solid fills using high-saturation retro primary colors (deep blue, brick red, warm yellow). No gradients, no shadows, no glossy effects. Naive, clumsy, cute aesthetic with crayon texture.",
+  "color_application": "Map original brand blue to theme's Deep Blue/Indigo or Brick Red for main body; use Warm Yellow/Cream for feather accents or highlights. Strictly flat, high-saturation solid blocks. No gradients.",
+  "stroke_application": "Apply thick, uneven, hand-drawn black/dark outline around the entire wing-lightning silhouette and internal feather divisions. Simulate marker pen pressure variations and rough edges.",
+  "composition_application": "Center the simplified wing-lightning symbol. Occupy 60-70% of canvas area. Ensure balanced negative space against the pure black background. Remove all original background elements.",
+  "identity_application": "Maintain the exact topological structure of the wing-lightning composite: the upward sweep, the three distinct feather arcs, and the sharp bottom-right lightning angle. Recognizability relies on this specific geometric arrangement, not color.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must have thick, rough, hand-drawn style strokes",
+    "Colors must be limited to high-saturation Red, Blue, Yellow/White palette",
+    "No gradients, shadows, or 3D rendering allowed",
+    "Subject must be flat geometric blocks with crayon/marker texture"
+  ],
+  "negative_constraints": [
+    "No realistic bird wings or animal features",
+    "No smooth vector lines or perfect symmetry",
+    "No original brand blue gradient or white background",
+    "No complex details or text",
+    "No neon glow or lighting effects"
+  ]
+}

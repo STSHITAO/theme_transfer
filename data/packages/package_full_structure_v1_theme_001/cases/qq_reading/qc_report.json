@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "完美符合‘冰雕材质’的主题化要求。虽然保留了少量红色（书签）作为点睛之笔，未完全严格执行‘去色’指令，但极大地提升了视觉美感和辨识度。企鹅的轮廓、捧书姿态、帽子细节均高度还原，且冰质感通透，底部有融水细节，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "风格统一，识别度尚可。主要问题在于书本部分呈现为不透明的实心蓝色块（类似塑料或冻硬的实体），缺乏参考图中要求的‘冰的通透感’和内部纹理，质感略逊于 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qq_reading\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

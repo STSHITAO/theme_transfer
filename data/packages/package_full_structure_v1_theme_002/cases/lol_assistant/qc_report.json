@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了‘英雄联盟’四字的清晰轮廓和右下角星形符号的位置关系；使用了粗犷的手绘描边和纯色平涂，完全去除了原图的金属质感和渐变；色彩映射准确（深蓝转靛蓝/红，金转米黄）。是极佳的主题化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "严重违反身份约束和风格要求。文字部分丢失了‘粗黑色的手绘感描边’这一核心风格特征，且字体边缘过于平滑，缺乏主题要求的‘抖动、毛糙’感。虽然保留了文字内容，但视觉风格未能成功转化为目标Theme的Doodle风格，看起来像未完成的图层叠加。",
+      "recommendation": "不推荐。文字缺乏必要的描边和手绘质感，不符合transfer_plan中关于stroke_application和restyle的严格要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\lol_assistant\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

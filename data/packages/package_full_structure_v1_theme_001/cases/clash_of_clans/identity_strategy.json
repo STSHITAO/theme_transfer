@@ -1,0 +1,40 @@
+{
+  "app": "clash_of_clans",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "野蛮人（Barbarian）的面部特写剪影，特别是标志性的黄色头盔轮廓、浓密的八字胡以及愤怒咆哮的张嘴表情。",
+  "brand_cues_to_preserve": [
+    "头盔的独特形状（顶部圆润，两侧护耳下垂）",
+    "覆盖嘴部的浓密胡须形态",
+    "愤怒且夸张的面部五官比例（大眼、宽鼻、露齿）"
+  ],
+  "semantic_cues_to_preserve": [
+    "战斗/攻击性的情绪表达（通过张嘴和眼神体现）",
+    "坚固的防御感（通过头盔的厚度体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、抖音等案例均严格保留了原图标的核心几何骨架。部落冲突的图标具有极高的辨识度，其头部轮廓本身就是品牌符号。因此，必须完整保留野蛮人的面部拓扑结构，仅将原本的卡通渲染材质替换为冰雕材质，严禁改变脸型或头盔形状。",
+  "design_rationale": "该App的核心识别度完全依赖于‘野蛮人’这一具体角色的面部特征。在‘冰封’主题下，将这个充满怒火的角色冻结成冰块能产生强烈的视觉张力（冷材质vs热情绪）。策略上选择直接将该3D头像转化为冰雕，保留其所有解剖学特征（头盔、胡子、牙齿），利用冰的通透感和内部气泡来重构原本的色彩层次，既符合主题的统一性，又确保了用户在桌面上能一眼认出这是《部落冲突》。",
+  "must_preserve": [
+    "野蛮人头盔的外轮廓线",
+    "胡子的整体走向和体积感",
+    "张开的嘴巴和露出的牙齿结构",
+    "面部的正中对称构图"
+  ],
+  "can_recompose": [
+    "原本的皮肤颜色（转为半透明冰蓝）",
+    "原本的金发/头盔颜色（转为同色系冰体，靠高光和厚度区分）",
+    "背景的紫色渐变（转为纯白）",
+    "面部的细微肤色红晕（转为冰内部的折射阴影）"
+  ],
+  "forbid": [
+    "禁止将野蛮人替换为generic的维京头盔或剑盾符号",
+    "禁止保留原本的黄色和肉色，必须统一为冰蓝色调",
+    "禁止生成不透明的蓝色塑料质感，必须有次表面散射（SSS）效果",
+    "禁止省略底部的接触阴影和水渍",
+    "禁止改变头盔和胡子的相对位置关系"
+  ],
+  "generation_direction": "Generate a centered 3D ice sculpture of the Clash of Clans Barbarian's head. The subject must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. Strictly preserve the original silhouette: the distinct helmet shape, the thick mustache, and the roaring open-mouth expression. The material should look like frozen solid ice with glossy wet highlights and caustic refraction. Place on a pure white background with a realistic melting water puddle and contact shadow at the base. No yellow or skin tones, only variations of ice blue and white."
+}

@@ -1,0 +1,41 @@
+{
+  "app": "jd",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "Joy（京东吉祥物狗）的头部轮廓与标志性笑脸",
+  "brand_cues_to_preserve": [
+    "白色的狗头主体",
+    "黑色的鼻子与眼睛特征",
+    "红色的项圈/舌头暗示",
+    "整体圆润的卡通比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "快乐/服务的表情（笑眼、张嘴）",
+    "宠物狗的物种特征（耳朵、鼻子位置）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标虽然是3D渲染且包含行李箱等复杂道具，但核心识别物是‘Joy狗头’。根据主题规则，对于具有强IP属性的吉祥物，应保留其生物特征轮廓（头部、五官布局），但必须剥离3D光影、去除次要道具（行李箱、飞机、文字块），将其转化为扁平化的几何色块组合。",
+  "design_rationale": "京东的核心资产是吉祥物 Joy。在原图中，Joy 被复杂的旅行元素包围且为3D风格。为了适配复古手绘主题，需要提取 Joy 的头部作为绝对主体，去除所有干扰视线的道具。将原本光滑的3D白狗转化为带有粗犷黑色描边、内部填充奶白色块的涂鸦形象，既保留了品牌亲和力，又符合主题的拙朴感。",
+  "must_preserve": [
+    "狗头的整体外轮廓（包括下垂的耳朵）",
+    "面部五官的相对位置（左眼、右眼、鼻子、嘴巴）",
+    "纯黑背景",
+    "粗犷的手绘风格描边"
+  ],
+  "can_recompose": [
+    "将3D高光和阴影重构为纯色块或简单的几何装饰",
+    "移除原图中的黄色行李箱、蓝色飞机和‘酒店’文字块",
+    "将原本的红色背景替换为主题规定的纯黑背景",
+    "简化毛发的细节，用不规则的边缘线表现"
+  ],
+  "forbid": [
+    "禁止保留原图的3D立体感和光泽",
+    "禁止出现原图中的红色背景底色",
+    "禁止保留行李箱、飞机等非核心识别元素",
+    "禁止使用细线条或平滑的矢量边缘",
+    "禁止使用除红蓝黄白黑以外的颜色（如原图可能的绿色点缀）"
+  ],
+  "generation_direction": "Retro hand-drawn doodle of a white dog head (JD Joy) centered on pure black background. Thick, rough black marker outlines. Flat milky-white fill for the face, simple black shapes for eyes and nose, red accent for collar/tongue. No 3D shading, no luggage, no airplane, no text. Naive, clumsy, cute aesthetic, high contrast."
+}

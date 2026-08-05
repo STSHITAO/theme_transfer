@@ -1,0 +1,60 @@
+{
+  "app": "tieba",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "汉字“贴”的基本骨架结构（左右结构，右侧“贝”部特征）",
+    "圆角矩形结合底部中心向下突出的尖角（对话气泡/图钉形态）",
+    "文字与外框的负形关系"
+  ],
+  "must_preserve": [
+    "统一的米白/淡黄色圆角矩形底板",
+    "黑色手绘风格细描边（带自然抖动）",
+    "白色萌宠吉祥物（小狗/小羊）与主体的互动",
+    "低饱和度 pastel 色系（禁止高饱和蓝紫渐变）",
+    "哑光纸质/粘土质感"
+  ],
+  "recompose_allowed": [
+    "将“贴”字笔画转化为圆润、肥厚的卡通字体（类似气球或软糖）",
+    "将原品牌蓝紫渐变色映射为单一的 pastel 蓝色或淡紫色块",
+    "吉祥物趴在气泡顶部、侧面或拥抱气泡的姿态",
+    "调整主体在底板中的位置以容纳吉祥物，保持非对称平衡"
+  ],
+  "restyle": [
+    "去除原有锐利直角，所有边缘转为手绘圆润曲线",
+    "去除复杂光影和立体感，改为扁平化填色",
+    "线条模拟马克笔触感，允许轻微断连或粗细变化"
+  ],
+  "decorate": [
+    "在气泡边缘或“贴”字周围增加少量手绘装饰线（如表示互动的动态线）",
+    "吉祥物身上的简单细节（如耳朵、尾巴）需保持极简手绘风"
+  ],
+  "forbid": [
+    "保留原有的高饱和蓝红/蓝紫渐变背景或主体色",
+    "使用标准的印刷字体（黑体/宋体），必须为手写卡通体",
+    "省略白色吉祥物元素",
+    "出现尖锐的几何直角或完美的矢量直线",
+    "背景使用非暖色调（如纯白、深灰、黑色）",
+    "将主体替换为百度熊或其他非统一吉祥物形象"
+  ],
+  "generation_brief": "A healing hand-drawn cartoon app icon on a creamy yellow rounded square background. The central subject is a soft, bubbly speech bubble with a downward-pointing tip, containing the simplified Chinese character '贴' in a cute, thick, pastel blue cartoon font. A small, fluffy white puppy mascot is playfully hugging the top of the bubble or peeking over it. Black sketchy outlines with natural jitter, matte clay-like texture, no gradients, warm and cozy atmosphere.",
+  "color_application": "Map original brand blue/purple to low-saturation pastel blue or lavender for the 'Tie' character and bubble fill. Background must be uniform creamy yellow/beige. No gradients allowed; use flat pastel blocks.",
+  "stroke_application": "Apply thin, black, hand-drawn style outlines to both the speech bubble/'Tie' character and the white mascot. Lines should have slight irregularities and rounded corners, mimicking marker pen strokes.",
+  "composition_application": "Center the speech bubble slightly offset to allow space for the white mascot interacting with it (e.g., on top or side). Maintain ample padding between the subject and the creamy yellow background edges. Ensure non-symmetrical balance.",
+  "identity_application": "Preserve the recognizability of the character '贴' and the speech bubble shape with the bottom tip, but soften all geometry into a 'toy-like' or 'balloon-like' aesthetic. The identity is conveyed through the simplified shape and character, integrated into the theme via the mascot interaction.",
+  "fidelity_constraints": [
+    "Must include the unified white animal mascot interacting with the subject.",
+    "Must use the specific creamy yellow background color.",
+    "Must apply black hand-drawn sketchy outlines.",
+    "Must maintain matte, non-glossy texture.",
+    "Colors must be within the pastel/healing palette."
+  ],
+  "negative_constraints": [
+    "No realistic 3D renders, gloss, or metallic effects.",
+    "No original high-saturation brand gradients.",
+    "No perfect geometric lines or sharp corners.",
+    "No missing mascot.",
+    "No dark or cold background colors.",
+    "No text watermarks or complex details."
+  ]
+}

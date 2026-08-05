@@ -1,0 +1,40 @@
+{
+  "app": "hello_bike",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“哈啰”二字的标准字形结构，尤其是“口”字旁的封闭几何特征。",
+  "brand_cues_to_preserve": [
+    "汉字“哈啰”的左右排列结构",
+    "文字笔画的圆润转角特征",
+    "品牌标志性的蓝色调（需映射为主题深蓝）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为核心识别符号的地位",
+    "整体构图的饱满感与亲和力"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 Bilibili 案例，当 Original 为文字 Logo 时，应保留文字的拓扑结构和空间布局，将其视为图形块面处理。哈啰的图标主体即为文字，因此必须保留‘哈啰’二字的骨架，不能替换为自行车或车轮等语义符号，否则会导致品牌识别丢失。",
+  "design_rationale": "哈啰的核心资产是品牌名称本身。在复古涂鸦主题下，应将原本平滑的矢量字体转化为具有粗犷笔触的手绘色块。利用主题限定的红蓝黄配色对文字进行重构（例如主字用深蓝，局部笔画或装饰用奶黄/砖红点缀），既保留了极高的辨识度，又完美融入了主题的拙朴趣味感。",
+  "must_preserve": [
+    "“哈啰”二字的完整字形",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感描边",
+    "文字的整体长宽比和居中位置"
+  ],
+  "can_recompose": [
+    "将原本的白色填充改为高饱和度的主题色（如深蓝或奶黄）",
+    "将平滑的字体边缘处理为不规则的抖动线条",
+    "去除底部的波浪线和 slogan 文字",
+    "在笔画末端或空隙处增加简单的几何装饰（如圆点、星星）"
+  ],
+  "forbid": [
+    "禁止保留原始的亮蓝色背景和白色文字",
+    "禁止出现自行车、车轮等具象物体替代文字",
+    "禁止使用细线条或无描边的扁平设计",
+    "禁止保留底部的‘花得少 坐得好’标语",
+    "禁止使用渐变色或立体阴影"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the Chinese characters '哈啰' centered on a pure black background. The characters should be thick, blocky, and filled with solid deep blue or creamy yellow, outlined with rough, uneven black marker strokes. No gradients, no shadows, no bike imagery. Simplify the font into naive geometric shapes while keeping the text readable."
+}

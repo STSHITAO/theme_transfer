@@ -1,6 +1,7 @@
 {
   "app": "meituan",
   "display_name": "美团",
-  "category": "本地生活 / 服务平台",
-  "core_function": "提供餐饮、外卖、酒店、出行、休闲娱乐和本地生活服务信息"
+  "category": "本地生活 / 综合服务",
+  "store_description": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。",
+  "core_function": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。"
 }

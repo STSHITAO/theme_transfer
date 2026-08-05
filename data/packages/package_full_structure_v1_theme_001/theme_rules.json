@@ -1,0 +1,28 @@
+{
+  "theme_style_analysis": "3D Ice/Crystal Material Theme. The theme transforms flat 2D vector icons into three-dimensional, translucent ice sculptures. The visual language is defined by a cold, refreshing atmosphere with a unified pale cyan/blue color palette, regardless of the original icon's color. Key features include internal refraction, surface condensation (water droplets), embedded snowflake details, and a grounded physical presence on a white background.",
+  "common_original_to_style_transform": "The transformation converts flat geometry into volumetric 3D objects with significant thickness (extrusion). Original colors are discarded in favor of a uniform 'frozen water' aesthetic (pale blue/cyan). The material becomes semi-transparent glass or ice, allowing light to pass through while maintaining structural integrity. Flat edges become rounded and smooth, mimicking the erosion of ice or polished crystal.",
+  "common_background_transform": "All themed icons utilize a clean, high-key white or very light grey background to maximize the contrast and visibility of the translucent ice material. A subtle ground shadow or contact shadow is added beneath the object to anchor it in 3D space. Small puddles or melting water effects often appear at the base to reinforce the ice concept.",
+  "common_foreground_transform": "The main subject is rendered as a solid block of ice. Surface details are critical: tiny water droplets (condensation) are scattered across the face, and stylized snowflake patterns are often embedded within the volume or etched onto the surface. Edges catch highlights (specular reflections) to define the shape against the white background. Internal refraction creates depth, making the back lines visible through the front surface.",
+  "color_palette": [
+    "Pale Cyan",
+    "Ice Blue",
+    "Translucent White",
+    "Cool Grey (Shadows)",
+    "Pure White (Background)"
+  ],
+  "line_style": "Smooth, continuous, and rounded contours. No sharp, jagged vector lines; instead, edges are soft and beveled like worn ice. Outlines are defined by light refraction and edge highlighting rather than drawn strokes.",
+  "texture_material": "Translucent crystalline ice / frozen water. The surface is glossy and wet, featuring micro-textures of condensation droplets and macro-textures of internal fractures or bubbles. The material looks cold to the touch.",
+  "lighting_shadow": "Global illumination typical of a bright, cold environment. Strong specular highlights on the upper edges and corners to show glossiness. Caustics and subsurface scattering simulate light traveling through the ice. Soft ambient occlusion shadows at the base.",
+  "icon_composition_rules": "Centralized composition with the 3D object occupying approximately 70-80% of the canvas. The object sits on a virtual ground plane. If the original icon had floating elements, they are integrated into the single ice mass or positioned closely to maintain the sculpture's unity.",
+  "target_preservation": "Must strictly preserve the target App's core silhouette, logo shape, and recognizable structural elements (e.g., if it's a letter, keep the letter shape; if it's an object, keep the object's outline). Do not alter the fundamental identity of the icon, only its material and dimension.",
+  "generation_prompt": "3D icon design, C4D render style, translucent ice material, pale cyan and white color scheme, frozen water texture, condensation droplets on surface, embedded snowflake details, glossy finish, refraction, subsurface scattering, soft studio lighting, white background, contact shadow at base, minimalist, high fidelity, cute and refreshing atmosphere.",
+  "negative_prompt": "flat vector, 2D, solid opaque colors, warm colors, fire, wood, metal, stone, dark background, complex gradients, text, watermark, blurry, low resolution, distorted shape, messy details.",
+  "qc_focus": "Check if the material looks like ice (translucent blue/white) rather than plastic or glass. Verify the presence of surface details like water droplets or snowflakes. Ensure the original icon's shape is clearly recognizable despite the 3D transformation. Check for proper grounding shadows.",
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ]
+}

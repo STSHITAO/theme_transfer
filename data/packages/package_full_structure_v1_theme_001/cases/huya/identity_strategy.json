@@ -1,0 +1,39 @@
+{
+  "app": "huya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "虎头剪影轮廓及内部播放按钮的负空间关系",
+  "brand_cues_to_preserve": [
+    "标志性的虎头外轮廓（包括双耳位置）",
+    "面部中央的播放三角形符号",
+    "嘴角的弧度与虎牙的几何位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "直播/视频播放语义（通过保留播放键表达）",
+    "猛兽/游戏竞技感（通过厚实的冰块体量感表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 theme_design_analysis 中 bilibili 和 douyin 的处理方式，虎牙图标具有极高的几何识别度。必须完整保留虎头的拓扑结构（耳朵、脸型、五官位置），仅将原本的扁平矢量图形转化为具有物理厚度的3D冰雕实体。严禁改变虎头的长宽比或简化掉虎牙细节。",
+  "design_rationale": "虎牙直播的品牌形象高度依赖于其独特的吉祥物轮廓。在当前“冰封”主题下，最佳策略是将这只黄色的老虎直接“冻结”成一块淡蓝色的冰雕。通过保留原有的剪影结构，用户能瞬间识别出App；通过材质的彻底重构（去黄变蓝、增加通透感和气泡），完美契合主题包的视觉规范。原图中的棕色条纹不需要用颜色表现，而是通过冰块的厚度变化或表面雕刻纹理来暗示。",
+  "must_preserve": [
+    "虎头的整体剪影形状",
+    "中间播放三角形的镂空或内嵌形态",
+    "底部虎牙的尖锐特征",
+    "纯白背景与底部的融化水渍投影"
+  ],
+  "can_recompose": [
+    "原本棕色的虎纹（转化为冰表面的凹凸纹理或内部裂纹）",
+    "眼睛的细节（简化为冰内部的折射光影）",
+    "整体的色彩（完全替换为浅冰蓝色）"
+  ],
+  "forbid": [
+    "保留原本的黄色或棕色填充",
+    "生成不透明的蓝色塑料质感",
+    "改变虎头的外轮廓比例",
+    "丢失中间的播放三角形符号",
+    "背景出现杂色或非白色"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Huya tiger head icon. The entire object must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. Preserve the exact silhouette of the tiger head, including ears and the central play button triangle. The surface should be glossy and wet. Place it on a pure white background with a realistic contact shadow and melting water puddle at the base. No yellow or brown colors."
+}

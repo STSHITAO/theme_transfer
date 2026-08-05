@@ -4,11 +4,22 @@ import json
 import mimetypes
 import os
 import shutil
+import time
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 from PIL import Image
+
+
+class WanApiError(RuntimeError):
+    """A structured error returned by Wan instead of a usable image payload."""
+
+    def __init__(self, message, *, status_code=None, code=None, response_path=None):
+        super().__init__(message)
+        self.status_code = status_code
+        self.code = code
+        self.response_path = response_path
 
 
 def generate_candidates(
@@ -44,7 +55,11 @@ def generate_candidates(
 
     response = _call_wan(prompt, style_ref_paths[:3], target_layout, n=n, size=size)
     response_path = _save_response(_response_to_json(response), case_dir)
-    urls = _extract_image_urls(response)
+    try:
+        urls = _extract_image_urls(response)
+    except WanApiError as exc:
+        exc.response_path = response_path
+        raise
     if not urls:
         raise RuntimeError(f"Wan API returned no image URLs. Raw response saved to {response_path}")
     return {
@@ -123,8 +138,11 @@ def _response_to_json(response):
 
 def _extract_image_urls(response):
     data = _response_to_json(response)
+    output = data.get("output") or {}
+    if not isinstance(output, dict):
+        output = {}
     urls = []
-    for choice in data.get("output", {}).get("choices", []):
+    for choice in output.get("choices", []):
         message = choice.get("message", {})
         for content in message.get("content", []):
             if content.get("type") == "image" and content.get("image"):
@@ -132,20 +150,49 @@ def _extract_image_urls(response):
     if urls:
         return urls
 
-    for item in data.get("output", {}).get("results", []):
+    for item in output.get("results", []):
         url = item.get("url") or item.get("image_url")
         if url:
             urls.append(url)
+    if urls:
+        return urls
+
+    status_code = data.get("status_code")
+    code = data.get("code")
+    message = data.get("message")
+    if status_code or code or message:
+        details = ", ".join(
+            str(value)
+            for value in (f"status_code={status_code}" if status_code else None, code, message)
+            if value
+        )
+        raise WanApiError(f"Wan API rejected the image request: {details}", status_code=status_code, code=code)
     return urls
 
 
-def _download_candidates(urls, output_dir):
+def _download_candidates(urls, output_dir, max_attempts=3):
     paths = []
     for index, url in enumerate(urls, start=1):
         output_path = output_dir / f"candidate_{index:02d}.png"
-        response = requests.get(url, timeout=60)
-        response.raise_for_status()
-        output_path.write_bytes(response.content)
+        temporary_path = output_path.with_suffix(output_path.suffix + ".part")
+        last_error = None
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = requests.get(url, timeout=60)
+                response.raise_for_status()
+                temporary_path.write_bytes(response.content)
+                temporary_path.replace(output_path)
+                last_error = None
+                break
+            except requests.exceptions.RequestException as exc:
+                last_error = exc
+                temporary_path.unlink(missing_ok=True)
+                if attempt < max_attempts:
+                    time.sleep(attempt)
+        if last_error is not None:
+            raise RuntimeError(
+                f"Wan candidate download failed after {max_attempts} attempts for candidate {index}."
+            ) from last_error
         paths.append(str(output_path))
     return paths
 

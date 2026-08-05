@@ -1,0 +1,40 @@
+{
+  "app": "mini_world",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的绿色方块头角色（卡卡）及其独特的白色波浪形发际线/头盔边缘结构",
+  "brand_cues_to_preserve": [
+    "方块状的人物头部轮廓",
+    "头部下方白色的波浪形/锯齿形边缘（类似牙齿或头发）",
+    "绿色的主色调倾向"
+  ],
+  "semantic_cues_to_preserve": [
+    "沙盒游戏的积木/方块属性",
+    "角色的正面朝向"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标主体为高度风格化的几何方块人，其‘方头+白波浪边’的拓扑结构具有极高的品牌辨识度，符合 theme_rules 中关于保留清晰几何符号的要求。因此不应重构为抽象符号，而应直接保留该轮廓，仅将原本的3D渲染质感替换为主题的手绘平涂质感。",
+  "design_rationale": "迷你世界的原始图标本身就是由简单的几何体（方块）构成的，非常契合‘复古手绘涂鸦’主题对简化和几何化的要求。策略上选择直接提取这个经典的‘方块头’形象，去除原本复杂的3D光影、星空背景和精细的面部表情，将其转化为一个粗线条、红蓝黄配色的扁平化贴纸风格图标。重点在于用粗糙的黑色描边勾勒出方块头和白色波浪边的特征，使其看起来像是一个手工剪贴画。",
+  "must_preserve": [
+    "正方形的头部外轮廓",
+    "头部下沿的白色波浪/锯齿状结构",
+    "居中构图",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "面部五官简化为简单的点或短线（甚至可省略以强调轮廓）",
+    "身体部分可简化为简单的矩形色块或省略",
+    "原本的绿色必须映射为主题色板中的颜色（如深蓝或砖红，或者如果允许保留绿色则需降低饱和度并加粗描边，但根据规则建议映射为红/蓝/黄组合，例如蓝色头+黄色波浪边）",
+    "去除所有背景元素（蘑菇、星空、光效）"
+  ],
+  "forbid": [
+    "保留原本的3D立体感和高光阴影",
+    "使用原本的鲜绿色（除非严格符合主题色板，否则建议转为靛蓝或深蓝以符合复古感）",
+    "保留复杂的面部表情细节",
+    "出现除主体以外的任何背景装饰",
+    "线条过于平滑锐利"
+  ],
+  "generation_direction": "A retro hand-drawn doodle icon of a square-headed block character. Thick, rough black marker outlines. Flat solid colors (use deep blue for the head, warm yellow for the wavy hair/edge). Pure black background. No shadows, no gradients, no 3D effects. Simplified geometric shapes, naive art style, centered composition."
+}

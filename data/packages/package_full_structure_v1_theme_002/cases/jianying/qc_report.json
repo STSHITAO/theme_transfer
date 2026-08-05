@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了剪映核心的‘X’形几何结构和摄像机轮廓，正确应用了纯黑背景、粗犷手绘描边以及红蓝黄三色块面填充。既保持了极高的品牌识别度，又完全契合复古涂鸦的主题风格。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 10,
+      "background_score": 0,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反背景约束（必须为纯黑背景），使用了白色背景导致无法融入深色主题包。虽然主体形状和配色尚可，但背景错误是致命缺陷。",
+      "recommendation": "不推荐。尽管图形本身的重构逻辑（色块分割、描边）是正确的，但错误的白色背景使其无法作为图标使用，且违反了 transfer_plan 中的强制约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\jianying\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

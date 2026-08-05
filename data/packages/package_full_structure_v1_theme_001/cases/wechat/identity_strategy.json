@@ -1,0 +1,38 @@
+{
+  "app": "wechat",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "两个重叠的气泡轮廓及其内部眼状圆点的相对位置关系",
+  "brand_cues_to_preserve": [
+    "一大一小两个气泡的层叠布局（左后右前）",
+    "气泡尾部的指向性尖角",
+    "气泡内部的两个圆形“眼睛”特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "对话/聊天的语义符号（气泡形状）",
+    "社交互动的隐喻（成对出现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和抖音（Douyin）的转换案例，该主题的核心逻辑是将平面Logo直接转化为具有厚度的3D冰雕实体。微信的双气泡结构清晰且具有高辨识度，必须完整保留其几何轮廓、重叠关系和比例，仅通过增加Z轴厚度、倒角和冰材质来重塑，严禁改变气泡的形状或将其替换为其他物体。",
+  "design_rationale": "微信作为国民级应用，其双气泡图标具有极高的视觉资产价值。在‘冰雪’主题下，最佳策略是将这两个扁平的白色气泡‘冻结’成两块通透的冰体。通过保留严格的结构轮廓来确保用户一眼识别，同时利用冰材质的折射、内部气泡纹理和边缘高光来赋予其主题所需的体积感和冷冽氛围。背景必须彻底去绿，改为纯白以衬托冰体的通透。",
+  "must_preserve": [
+    "双气泡的整体剪影轮廓",
+    "前后遮挡的空间关系（右侧小气泡在前）",
+    "内部圆点的位置和大小比例",
+    "底部的融化水迹和接触阴影"
+  ],
+  "can_recompose": [
+    "原始的绿色背景（必须移除）",
+    "平面的白色填充（转换为半透明冰体）",
+    "锐利的矢量边缘（转换为圆润的冰体倒角）"
+  ],
+  "forbid": [
+    "禁止保留任何绿色元素",
+    "禁止将气泡做成不透明的实心塑料或金属",
+    "禁止改变气泡的长宽比或重叠方式",
+    "禁止添加复杂的冰雪场景背景"
+  ],
+  "generation_direction": "Generate a 3D icon of two overlapping speech bubbles made of translucent pale blue ice. The material should look like frozen water with internal bubbles and snowflake textures. The surface is glossy with condensation droplets. Strictly preserve the original WeChat logo geometry: one larger bubble behind left, one smaller bubble in front right, both with two dot 'eyes'. Place on a pure white background with a soft contact shadow and melting water puddle at the base. No green colors."
+}

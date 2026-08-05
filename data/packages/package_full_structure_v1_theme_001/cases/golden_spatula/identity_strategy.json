@@ -1,0 +1,37 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "佩戴银色头盔、手持金色铲子的企鹅（小小英雄）主体形象",
+  "brand_cues_to_preserve": [
+    "企鹅的头部轮廓与头盔造型",
+    "右手持有的铲子（核心道具）",
+    "企鹅的面部五官布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "铲子作为'金铲铲'玩法的核心象征",
+    "头盔代表的战斗/竞技属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（小电视）和 douban（豆字）均保留了复杂的具象轮廓并直接转化为冰雕。金铲铲的企鹅形象具有极高的辨识度，且其圆润的身体结构非常适合表现冰块的体积感和次表面散射效果。因此，必须完整保留企鹅+铲子的剪影结构，仅做材质替换，不进行语义重组。",
+  "design_rationale": "该App图标本身就是一个具象的3D角色（企鹅），这与主题所需的'立体冰块物件'在形态上高度契合。策略是将原本的'毛绒/金属质感'整体冻结为'半透明冰雕'。重点在于保留企鹅的神态和铲子的形状，通过冰材质内部的雪花纹理来呼应游戏的冰雪/魔法氛围，同时利用冰的通透感消除原图过于复杂的色彩干扰。",
+  "must_preserve": [
+    "企鹅的整体剪影（包括头盔突起）",
+    "铲子的独特形状（手柄与铲头比例）",
+    "企鹅面部五官的相对位置"
+  ],
+  "can_recompose": [
+    "原本复杂的金属反光和羽毛纹理（统一简化为冰内气泡/裂纹）",
+    "原图标的暖色光源（改为冷色环境光）",
+    "右下角的橙色角标（移除或极微小化处理，避免破坏冰蓝主色调）"
+  ],
+  "forbid": [
+    "禁止生成不透明的白色雪球（必须体现冰的透光性）",
+    "禁止改变铲子的形状（如变成剑或法杖）",
+    "禁止保留原图的大面积深蓝色背景",
+    "禁止丢失企鹅的眼睛和嘴巴细节（需通过冰层折射隐约可见）"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Golden Spatula penguin mascot. The penguin wears a helmet and holds a spatula in its right hand. Material is translucent cyan ice with internal bubbles and snowflake textures. Glossy wet surface, caustic lighting. Pure white background with melting water puddles at the base. No solid colors, no orange accents."
+}

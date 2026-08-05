@@ -1,0 +1,95 @@
+{
+  "theme_id": "theme_002",
+  "description": "应用图标主题风格参考包。每个参考样例由同一 App 的原始图标和设计师主题图组成，用于分析 original -> style_ref 的共同设计变化。",
+  "input_schema": "reference_original_to_style_ref",
+  "reference_pair_schema": {
+    "original": "参考 App 的原始图标，是该 App 的身份和功能语义来源。",
+    "style_ref": "同一 App 的设计师主题图，用于学习当前主题包的设计语言。"
+  },
+  "examples": {
+    "bilibili": {
+      "app": "bilibili",
+      "display_name": "哔哩哔哩",
+      "category": "视频 / 内容社区",
+      "store_description": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。",
+      "core_function": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。"
+    },
+    "douyin": {
+      "app": "douyin",
+      "display_name": "抖音",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。",
+      "core_function": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。"
+    },
+    "honor_of_kings": {
+      "app": "honor_of_kings",
+      "display_name": "王者荣耀",
+      "category": "游戏 / MOBA竞技",
+      "store_description": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。",
+      "core_function": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。"
+    },
+    "kuaishou": {
+      "app": "kuaishou",
+      "display_name": "快手",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。",
+      "core_function": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。"
+    },
+    "lol_mobile": {
+      "app": "lol_mobile",
+      "display_name": "英雄联盟手游",
+      "category": "游戏 / MOBA竞技",
+      "store_description": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。",
+      "core_function": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。"
+    },
+    "netease_music": {
+      "app": "netease_music",
+      "display_name": "网易云音乐",
+      "category": "音乐 / 音频社区",
+      "store_description": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。",
+      "core_function": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。"
+    },
+    "peace_elite": {
+      "app": "peace_elite",
+      "display_name": "和平精英",
+      "category": "游戏 / 战术射击",
+      "store_description": "提供多人战术竞技、团队协作、射击生存和多种地图模式。",
+      "core_function": "提供多人战术竞技、团队协作、射击生存和多种地图模式。"
+    },
+    "qq": {
+      "app": "qq",
+      "display_name": "QQ",
+      "category": "社交 / 通讯",
+      "store_description": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。",
+      "core_function": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。"
+    },
+    "taobao": {
+      "app": "taobao",
+      "display_name": "淘宝",
+      "category": "电商 / 综合购物",
+      "store_description": "提供服饰、家居、数码、食品等商品搜索、购买、直播和订单服务。",
+      "core_function": "提供服饰、家居、数码、食品等商品搜索、购买、直播和订单服务。"
+    },
+    "wechat": {
+      "app": "wechat",
+      "display_name": "微信",
+      "category": "社交 / 通讯",
+      "store_description": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。",
+      "core_function": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。"
+    },
+    "weibo": {
+      "app": "weibo",
+      "display_name": "微博",
+      "category": "社交 / 公共内容",
+      "store_description": "提供热点资讯、图文与视频发布、关注互动、话题讨论和公开社交。",
+      "core_function": "提供热点资讯、图文与视频发布、关注互动、话题讨论和公开社交。"
+    },
+    "xiaohongshu": {
+      "app": "xiaohongshu",
+      "display_name": "小红书",
+      "category": "社区 / 生活方式",
+      "store_description": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。",
+      "core_function": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。"
+    }
+  }
+}

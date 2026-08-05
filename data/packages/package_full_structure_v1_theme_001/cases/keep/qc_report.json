@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。准确还原了 Keep 'K' 字的拓扑结构（包括右侧笔画的悬浮/断开特征）以及右上角四角星的位置关系。材质呈现标准的半透明冰雕质感，内部包含气泡和雪花纹理，底部有物理接触阴影和水渍，完全符合 theme style_ref 的风格指纹。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，但在细节上略逊于 candidate_01。虽然保留了 'K' 字结构和星星，但主体质感略显厚重和光滑（偏向凝胶或软糖感），缺乏参考图中那种清晰的“硬冰”折射感和内部丰富的雪花/气泡细节。底部的水渍阴影也不如 candidate_01 自然。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\keep\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "完美保留了QQ企鹅的所有核心识别特征（红围巾、眨眼、黑白配色），同时成功融入了参考图中的手绘蜡笔/粉笔质感风格，是最佳选择。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "",
+      "recommendation": "风格化很好，但企鹅变成了趴着的姿态，且身体比例变化较大，虽然可爱但识别度不如候选图1高。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 20,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "风格统一，保留了主要特征，但企鹅的坐姿和脚部细节与原版差异稍大，识别度略低于候选图1。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_002_theme_001_v2_real\\cases\\qq\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

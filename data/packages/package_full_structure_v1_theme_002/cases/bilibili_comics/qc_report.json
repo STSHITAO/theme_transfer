@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "该候选图完美契合主题风格（手绘涂鸦、黑底、限定色板）。虽然相比原图增加了“手势”这一元素，但完整保留了核心识别要素：爆炸气泡轮廓、“漫画”文字骨架、小电视头部及天线特征。构图清晰，无多余噪点，且严格遵守了纯黑背景和扁平化描边的约束，是最佳选择。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 75,
+      "artifact_score": 100,
+      "overall_score": 72,
+      "failure_reason": "构图过于拥挤，主体裁切严重，导致视觉重心失衡。虽然保留了文字和电视头，但画面边缘处理粗糙，缺乏呼吸感，不符合图标设计的整洁性要求。",
+      "recommendation": "不推荐。虽然风格一致，但构图过满（Zoomed-in），导致图标在小尺寸下识别度下降，且缺乏必要的留白，显得压抑。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\bilibili_comics\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

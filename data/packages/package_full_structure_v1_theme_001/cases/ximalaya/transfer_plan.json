@@ -1,0 +1,59 @@
+{
+  "app": "ximalaya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban' in the reference set, the core identity of Ximalaya lies entirely in its logotype. The theme requires transforming this flat 2D typographic symbol into a 3D volumetric object. The structure must remain identical to the original vector path to ensure instant recognition, with changes limited to extrusion (thickness), material (ice), and lighting.",
+  "preserve": [
+    "The exact stroke topology of the stylized Chinese character '听'",
+    "The rounded corners of the left vertical rectangle component (ear/sound wave shape)",
+    "The horizontal alignment and spacing between the left and right components",
+    "The overall aspect ratio of the logo within the canvas"
+  ],
+  "must_preserve": [
+    "The specific geometry of the '听' character (do not use a standard font)",
+    "The gap/separation between the left radical and the right component",
+    "The visual implication of 'listening' inherent in the left radical's shape"
+  ],
+  "recompose_allowed": [
+    "Internal details simplified to focus on outer silhouette and volume",
+    "Surface texture (bubbles, cracks) replaces flat color fills",
+    "Edges rounded and smoothed (beveled) to simulate melted ice"
+  ],
+  "restyle": [
+    "Convert flat white strokes into translucent pale cyan ice blocks",
+    "Apply subsurface scattering and internal refraction to the character body",
+    "Add condensation droplets and embedded snowflake patterns to the surface"
+  ],
+  "decorate": [
+    "Micro-textures of condensation droplets on the face",
+    "Embedded snowflake or ice crystal patterns within the volume",
+    "Subtle contact shadow and melting water puddle at the base"
+  ],
+  "forbid": [
+    "Using the original red background",
+    "Rendering the character in opaque white or red plastic",
+    "Altering the stroke width ratios of the original logo",
+    "Adding unrelated audio elements like headphones or microphones",
+    "Retaining any warm colors (red, orange, pink)"
+  ],
+  "generation_brief": "3D ice sculpture of the Ximalaya '听' logo, centered on pure white background. Translucent pale cyan material with internal bubbles and snowflake textures. Glossy surface with condensation droplets. Soft studio lighting, subsurface scattering, contact shadow at base. No red colors.",
+  "color_application": "Discard original brand red completely. Apply uniform pale cyan/ice blue translucent material to the entire '听' character structure. Use cool grey for shadows and pure white for highlights/background.",
+  "stroke_application": "Eliminate 2D vector strokes. Transform the character's lines into solid 3D volumes with significant thickness. Bevel all edges to appear smooth and worn like ice, defined by light refraction rather than drawn outlines.",
+  "composition_application": "Center the 3D '听' character on a clean white background. Ensure the object occupies ~70% of the canvas height. Add a subtle ground plane with contact shadow and minor water accumulation at the base to anchor the 3D form.",
+  "identity_application": "Maintain strict fidelity to the original '听' glyph's geometric skeleton. The identity is preserved through the precise 2D silhouette extruded into 3D, ensuring the 'ear' radical and 'jin' component remain instantly recognizable despite the material change.",
+  "fidelity_constraints": [
+    "Must use unified ice blue semi-transparent material, strictly no original brand colors.",
+    "Must include internal bubbles, snowflakes, or ice crack textures as core theme fingerprints.",
+    "Subject must exhibit strong 3D volumetric presence with subsurface scattering, not a flat blue silhouette.",
+    "Background must remain clean white to highlight translucency."
+  ],
+  "negative_constraints": [
+    "No flat vector styles or 2D appearances.",
+    "No opaque plastics, metals, or solid colors.",
+    "No warm color palettes (especially red).",
+    "No complex scene backgrounds or clutter.",
+    "No distortion of the '听' character's fundamental structure."
+  ]
+}

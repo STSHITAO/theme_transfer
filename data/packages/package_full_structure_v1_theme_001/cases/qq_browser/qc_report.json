@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "Best candidate. Perfectly preserves the 'Q' ring and cloud topology while applying the ice theme. The color gradient (darker blue top, lighter bottom) adds depth and matches the original logo's feel better than a flat color, while still adhering to the ice material constraints. High recognizability."
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "Good alternative. Strictly follows the 'uniform translucent cyan' instruction. However, the uniform lighting makes it slightly flatter and less distinct than candidate_01. The cloud integration is good but slightly less defined against the ring."
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qq_browser\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

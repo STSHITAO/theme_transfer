@@ -1,0 +1,57 @@
+{
+  "app": "mi_home",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（盾牌+MJ），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Douyin 的案例，当原标具备清晰拓扑结构时，应保留其骨架，仅替换填充材质、描边风格和配色，而非重构语义。",
+  "preserve": [
+    "盾牌/徽章的整体外轮廓",
+    "顶部的双尖角（猫耳特征）",
+    "中间 'M' 形的折线结构",
+    "底部 'J' 形的圆弧钩状结构",
+    "内部 M 与 J 的笔画连接关系"
+  ],
+  "must_preserve": [
+    "盾牌状的外围轮廓",
+    "顶部两个尖角（猫耳）",
+    "纯黑背景 (#000000)"
+  ],
+  "recompose_allowed": [
+    "颜色：由品牌绿映射为主题色板中的奶黄（主体）配深蓝（细节）或全砖红",
+    "边缘：由平滑锐利变为抖动、粗细不均的手绘墨迹",
+    "质感：由扁平矢量变为类似蜡笔或马克笔的哑光涂抹感"
+  ],
+  "restyle": [
+    "应用粗犷的黑色手绘描边，模拟马克笔笔触",
+    "去除所有光影、渐变和高光，改为纯色块平涂",
+    "增加边缘的粗糙感和不规则性，模拟手工绘制痕迹"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原始的绿色（必须映射到红/蓝/黄）",
+    "保留平滑的矢量边缘（必须有手绘抖动感）",
+    "添加立体阴影或高光",
+    "改变盾牌的长宽比或角度",
+    "使用写实风格或3D渲染效果"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of Mi Home shield logo on pure black background. Strictly preserve the shield outline with cat-ear tips and internal MJ structure. Fill with solid saturated Cream Yellow or Brick Red (NO GREEN). Apply thick, rough, uneven black marker strokes for outline. Flat color, crayon texture, no gradients, no shadows.",
+  "color_application": "Map original Teal/Green to theme's limited palette: use Cream/Yellow or Brick Red for the main body fill. Ensure high saturation and flat application without gradients.",
+  "stroke_application": "Replace original clean vector edges with thick, irregular, hand-drawn black outlines. Simulate marker pen pressure variations and rough edges.",
+  "composition_application": "Center the simplified shield symbol on the pure black background. Maintain the original aspect ratio but ensure it occupies 60-70% of the canvas area, leaving sufficient black breathing space.",
+  "identity_application": "Retain the exact topology of the shield, cat-ears, and MJ letterforms. Do not abstract the shape further; only change the visual style (color/stroke/texture) to match the retro doodle theme.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must apply thick, rough hand-drawn black strokes",
+    "Colors must be restricted to theme palette (Red/Blue/Yellow/Cream), strictly forbidding original Green",
+    "No gradients, shadows, or 3D effects allowed",
+    "Subject must be flat geometric blocks with crayon/marker texture"
+  ],
+  "negative_constraints": [
+    "Do not use original brand green color",
+    "Do not use smooth vector lines or perfect symmetry",
+    "Do not add realistic details, eyes, or facial features",
+    "Do not use white or colored backgrounds",
+    "Do not create a generic house or camera icon; must remain the specific MJ shield shape"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了核心几何结构（中心靶心、旋风轮廓），严格执行了纯黑背景和粗手绘描边要求，配色准确使用了红蓝黄组合，且无多余装饰干扰识别。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 90,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格基本符合，但内部添加了过多的星星装饰元素，虽然增加了童趣感，但略微破坏了原图极简的几何块面感，且相比 candidate_01，其线条的抖动感和马克笔质感稍弱，略显平滑。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\king_camp\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

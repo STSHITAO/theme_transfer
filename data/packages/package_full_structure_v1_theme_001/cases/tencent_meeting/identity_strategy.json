@@ -1,0 +1,37 @@
+{
+  "app": "tencent_meeting",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The specific geometric arrangement of the two interlocking 'M' peaks (white chevron shapes).",
+  "brand_cues_to_preserve": [
+    "The exact vector path of the double-peak 'M' logo",
+    "The overlapping intersection point between the left and right peaks",
+    "The rounded corners of the stroke ends"
+  ],
+  "semantic_cues_to_preserve": [
+    "Upward pointing peaks implying connection and signal transmission",
+    "Symmetrical balance representing stability in communication"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of Alipay and Douyin, the core logo geometry must be strictly preserved to ensure instant recognition. The transformation is purely material (flat vector to 3D ice) and dimensional (adding thickness), without altering the silhouette or spatial relationship of the peaks.",
+  "design_rationale": "Tencent Meeting's identity relies entirely on its unique abstract 'M' shape. To fit the 'Ice Theme', this shape is extruded into a solid block of ice. The overlapping area of the original logo provides a perfect opportunity to showcase the theme's subsurface scattering and refraction properties, making the intersection look like fused ice crystals.",
+  "must_preserve": [
+    "The double-peak 'M' silhouette",
+    "The precise angle of the chevrons",
+    "The relative size and position of the two intersecting parts"
+  ],
+  "can_recompose": [
+    "The flat white fill becomes translucent ice blue volume",
+    "The background gradient is removed for pure white",
+    "Internal details are replaced by frozen bubbles and snowflake textures"
+  ],
+  "forbid": [
+    "Changing the logo to a literal camera or microphone icon",
+    "Using the original dark blue brand color",
+    "Creating a flat 2D blue shape without 3D volume",
+    "Sharp, jagged edges (must be smooth and rounded like melted ice)"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Tencent Meeting logo (two interlocking white peaks forming an M). Material is translucent pale cyan ice with internal bubbles and snowflake textures. Surface is glossy with condensation droplets. Rounded edges, soft refraction. Centered on a clean white background with a subtle contact shadow and melting water puddle at the base."
+}

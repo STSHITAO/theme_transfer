@@ -1,0 +1,42 @@
+{
+  "app": "hanglvzongheng",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "核心几何骨架：类'U'形或盾牌状的垂直双柱结构",
+    "横向贯穿中部的弧形 swoosh（轨道/微笑曲线）",
+    "左右对称的构图平衡感"
+  ],
+  "must_preserve": [
+    "原Logo的'U'形主体轮廓转化为生物体态",
+    "环绕主体的弧线结构（象征轨迹）",
+    "白色主体在彩色背景上的高对比度剪影关系"
+  ],
+  "recompose_allowed": [
+    "将锐利几何角转化为圆润的生物肢体/耳朵",
+    "将平面图形转化为有体积感的毛绒团子",
+    "添加豆豆眼和简单嘴巴赋予生命感",
+    "品牌绿替换为马卡龙色系背景"
+  ],
+  "restyle": [
+    "材质：白色蓬松毛绒/棉花质感，边缘有细微毛发溢出",
+    "线条：深灰色/黑色粗手绘描边，线条流畅圆润，带轻微手抖感",
+    "背景：低饱和度马卡龙色（淡天蓝、薄荷绿或暖米色），纯色填充，大圆角矩形容器",
+    "光影：均匀柔和光照，无强烈高光，主体下方有轻微接触阴影"
+  ],
+  "decorate": [
+    "简单的Kawaii面部表情（小黑点眼睛，微小嘴巴）",
+    "主体居中或略偏下，占据画面60%-70%面积"
+  ],
+  "forbid": [
+    "直接放置原始绿色矢量Logo",
+    "高饱和度品牌绿背景",
+    "写实飞机、火箭、地球仪、地图等具象物体",
+    "锐利直角、硬边缘、几何硬线条",
+    "复杂纹理、3D渲染、玻璃/金属质感",
+    "恐怖谷效应的眼睛或过度复杂的细节"
+  ],
+  "color_strategy": "背景使用低饱和度马卡龙色（如淡天蓝 #B0E0E6 或 薄荷绿 #98FF98），主体保持纯白或极浅奶油色，描边使用深灰/黑。严禁使用原品牌高饱和绿。",
+  "identity_priority": "结构识别优先于生物形态自由发挥。必须确保用户能通过'U'形+弧线的组合联想到航旅纵横，同时符合萌宠拟态主题。",
+  "generation_brief": "A cute fluffy white chibi creature shaped like the Hanglvzongheng logo structure (U-shaped body with a curved swoosh tail/orbit wrapping around it). The creature has simple dot eyes and a tiny mouth, lying down softly. Thick hand-drawn black outline, soft fur texture, rounded edges. Background is solid pastel macaron color (light blue or mint green), large squircle container. Soft lighting, minimalist vector illustration style, healing vibe. No sharp corners, no realistic objects, no original green color."
+}

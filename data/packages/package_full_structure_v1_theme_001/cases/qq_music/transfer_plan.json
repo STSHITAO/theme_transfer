@@ -1,0 +1,61 @@
+{
+  "app": "QQ Music",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 douyin 和 bilibili 的处理方式，对于具有高识别度的几何符号（如音符、电视），必须严格保留其原始拓扑结构和轮廓。QQ音乐的音符形状非常经典，任何重构都会导致识别度下降。因此，策略是将2D扁平图形直接‘挤压’为3D实体，保持原有的前后遮挡关系（音符在圆盘前），仅改变材质和光影。",
+  "preserve": [
+    "八分音符的标准几何形状（符头、符干、符尾的比例）",
+    "音符位于圆形底板前方的层叠关系",
+    "整体构图的居中与饱满度",
+    "符尾向右上方飘扬的动态方向"
+  ],
+  "must_preserve": [
+    "八分音符的核心剪影轮廓",
+    "圆形背景容器的基本形态",
+    "音符与圆盘的相对空间位置"
+  ],
+  "recompose_allowed": [
+    "将原本的实心黄/绿颜色替换为通透的冰蓝色",
+    "将平滑的矢量边缘处理为圆润的倒角以模拟冰块磨损感",
+    "在冰块内部增加雪花或气泡纹理以丰富细节",
+    "底部增加融化的水渍或碎冰基座以增强物理落地感"
+  ],
+  "restyle": [
+    "表面材质：从扁平矢量转为半透明冰晶/凝胶，具有次表面散射效果",
+    "光影：添加顶部高光、内部折射和柔和的环境阴影",
+    "质感：增加湿润感、冷凝水珠和内部悬浮微粒（气泡/雪花）"
+  ],
+  "decorate": [
+    "内部嵌入微小的雪花纹理",
+    "表面附着随机分布的气泡",
+    "底部接触面生成少量融化水坑和碎冰屑"
+  ],
+  "forbid": [
+    "禁止保留原本的黄色和绿色填充",
+    "禁止将音符简化为抽象线条或改变其朝向",
+    "禁止生成不透明的塑料质感，必须是半透明冰晶",
+    "禁止去除底部的接触阴影，防止图标悬空",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为低多边形（Low-poly）风格"
+  ],
+  "generation_brief": "3D icon of QQ Music logo: an eighth note standing in front of a circular disc, both made of translucent light blue ice. Glossy wet crystal material with internal bubbles and snowflakes. No original colors. Pure white background. Soft contact shadow and melting water details at the base. Centered composition, high detail, C4D render style.",
+  "color_application": "强制去色。将原图标的黄底和绿符统一转换为 theme 规定的半透明浅冰蓝色（Cyan/Ice Blue）。仅通过光影亮度变化（高光白、阴影深蓝）表现体积，严禁使用原品牌色。",
+  "stroke_application": "消除所有平面描边。通过 3D 模型的物理边缘、折射光晕和柔和倒角来界定轮廓，模拟冰块打磨后的光滑边缘。",
+  "composition_application": "保持原图标‘音符在前、圆盘在后’的层叠结构。将 2D 图形挤压出 Z 轴厚度，使其成为立体物件。主体居中，底部预留空间给阴影和水渍交互细节。",
+  "identity_application": "通过严格保留八分音符的几何拓扑结构和圆形底座的空间关系来维持识别性。放弃色彩识别，完全依赖形态识别和冰材质的独特质感来表达品牌身份。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+    "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊",
+    "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+  ],
+  "negative_constraints": [
+    "禁止保留原图标的实心色彩填充（黄/绿）",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为扁平化或低多边形风格",
+    "禁止过度重构主体形状导致音符特征丢失",
+    "禁止生成 distorted geometry 或 low resolution 图像"
+  ]
+}

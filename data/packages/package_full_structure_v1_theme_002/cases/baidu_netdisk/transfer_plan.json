@@ -1,0 +1,58 @@
+{
+  "app": "baidu_netdisk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度抽象的几何符号（三个互锁圆环），符合 theme_design_analysis 中‘当 Original 是清晰几何符号时保留主体轮廓’的规则。不需要像游戏图标那样重构语义，只需将原本的渐变色块转化为红蓝黄配色的粗描边手绘色块即可。",
+  "preserve": [
+    "三个圆环相互扣连的拓扑结构",
+    "整体呈三角形/云朵状的轮廓布局",
+    "中心镂空与圆环交叠的空间关系",
+    "上一下二的品字形排列骨架"
+  ],
+  "must_preserve": [
+    "三个圆环的基本位置关系（上一下二）",
+    "圆环之间的穿插遮挡逻辑",
+    "整体的云朵/三角轮廓"
+  ],
+  "recompose_allowed": [
+    "圆环的粗细比例（加粗以适应手绘风）",
+    "具体的颜色分配（映射到主题红蓝黄板）",
+    "边缘的平滑度（变为抖动的手绘线条）"
+  ],
+  "restyle": [
+    "去除所有科技渐变和光影",
+    "应用粗糙的黑色马克笔手绘描边",
+    "填充高饱和度纯色块（砖红、深蓝、奶黄）",
+    "模拟蜡笔或粉笔的哑光颗粒质感"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原本的蓝粉渐变色",
+    "禁止使用细线条或无描边设计",
+    "禁止将三个环拆解或改变其互锁关系",
+    "禁止添加任何立体高光或阴影",
+    "禁止使用绿色、紫色等非主题色",
+    "禁止背景非纯黑"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of Baidu Netdisk. Three interlocking rings forming a cloud-like triangle shape (top one, bottom two) on pure black background. Thick, rough, uneven black marker outlines. Solid flat fills: Deep Blue, Brick Red, and Creamy Yellow. No gradients, no shadows, no gloss. Naive, clumsy, crayon texture aesthetic.",
+  "color_application": "Map original blue/cyan gradient to theme's Deep Blue and Brick Red/Creamy Yellow. Assign distinct solid colors to the three rings (e.g., top ring Blue, bottom-left Red, bottom-right Yellow) to maintain contrast and hierarchy without using gradients.",
+  "stroke_application": "Replace original smooth vector edges with thick, irregular, hand-drawn black strokes. Ensure lines have visible jitter and varying thickness to simulate marker pen pressure.",
+  "composition_application": "Center the three-ring structure. Scale to occupy 60-70% of the canvas. Maintain the triangular balance but allow for slight asymmetry in the hand-drawn execution.",
+  "identity_application": "Strictly preserve the 'three interlocking rings' topology. The identity relies on the specific way the rings overlap and form a cloud/triangle shape. Do not simplify into separate circles; the connection is key.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must have thick, rough hand-drawn black outlines",
+    "Colors must be solid blocks from the Red/Blue/Yellow palette",
+    "No gradients, shadows, or 3D effects allowed",
+    "Subject must look like a naive crayon/marker drawing"
+  ],
+  "negative_constraints": [
+    "No realistic clouds or photos",
+    "No original brand blue/pink gradients",
+    "No fine lines or clean vector aesthetics",
+    "No white or colored backgrounds",
+    "No complex details or text labels"
+  ]
+}

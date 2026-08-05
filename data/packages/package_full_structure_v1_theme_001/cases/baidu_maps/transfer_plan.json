@@ -1,0 +1,61 @@
+{
+  "app": "baidu_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（'支'字）、豆瓣（'豆'字）和抖音（音符）的案例，均是将原图标的核心平面符号直接转化为具有厚度的3D冰体。百度地图的定位销具有极高的国民认知度，且几何结构简单清晰，完全符合'几何守恒，材质重构'的原则。必须保留其标志性的水滴外形和内部镂空字母，仅做材质上的冰雕化处理，不可改变形状或重组元素。",
+  "preserve": [
+    "水滴/定位销的外轮廓剪影",
+    "内部 'du' 字母的字形结构",
+    "底部尖端的指向性特征",
+    "整体垂直居中的构图比例"
+  ],
+  "must_preserve": [
+    "定位销（水滴形）的外部轮廓曲线",
+    "内部 'd' 和 'u' 两个字母的相对位置和字形",
+    "整体垂直居中的构图比例"
+  ],
+  "recompose_allowed": [
+    "原图中的红色填充（必须转为冰蓝/半透明）",
+    "底部的彩色地图背景（必须移除，改为白色背景）",
+    "字母的边缘（需增加倒角和厚度，模拟冰块切割感）"
+  ],
+  "restyle": [
+    "将扁平的红色定位针转化为具有厚度的3D冰雕实体",
+    "表面赋予高光泽度的冰冻材质，模拟湿润感和次表面散射",
+    "内部填充随机微小气泡、冰晶颗粒或雪花纹理",
+    "边缘进行倒角处理以捕捉高光"
+  ],
+  "decorate": [
+    "在冰块内部或表面嵌入雪花、冰晶作为主题装饰纹样",
+    "底部添加融化的水迹、小水洼或碎冰屑以增强物理接触感"
+  ],
+  "forbid": [
+    "禁止保留原本的红色品牌色",
+    "禁止生成不透明的实心蓝色塑料块",
+    "禁止改变 'du' 的字体形状或将其替换为其他文字",
+    "禁止保留底部的地图路网背景",
+    "禁止丢失底部的接触阴影和水渍细节",
+    "禁止使用暖色调作为主体主色",
+    "禁止生成二维矢量风格或描边风格"
+  ],
+  "generation_brief": "3D ice sculpture of Baidu Maps location pin (teardrop shape) with 'du' letters inside. Translucent cyan-blue ice material, internal bubbles and snowflakes, glossy wet surface. Pure white background, melting water puddle and contact shadow at base. No red color, no map background.",
+  "color_application": "强制去色。将原品牌的高饱和度红色完全转换为统一的浅冰蓝色（Cyan-Ice Blue）和半透明白色。利用深蔚蓝（Deep Azure）表现冰块厚度产生的阴影，严禁出现任何红色像素。",
+  "stroke_application": "消除所有二维描边。将原图标中'du'字母与外框的线条关系转化为三维实体的负空间或内嵌结构。通过材质的折射率差异、边缘的高光反射以及内部的焦散来界定轮廓，边缘需圆润光滑。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体（冰制定位针）居中放置，占据画布约60%-70%空间。去除原底部的地图背景，替换为纯白背景，并在主体底部预留空间给投影和水渍，营造悬浮或放置在冰面上的真实感。",
+  "identity_application": "严格保留定位针的水滴状几何轮廓和内部'du'字母的拓扑结构。通过赋予其统一的冰材质和光影效果来实现主题化，确保用户能通过剪影瞬间识别出是百度地图。'du'字母需保持清晰可读，但材质化为半透明冰柱。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（特别是红色和地图绿/蓝）。",
+    "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。"
+  ]
+}

@@ -1,0 +1,9 @@
+app,theme_style_image_fit_score,theme_style_text_fit_score,package_unity_score,visual_artifact_quality_score,dino_identity_structure_risk_score,style_delta_transfer_score,d_to_reference_delta_centroid,theme_membership_score,d_to_theme_style_centroid,is_style_outlier,generated_internal_distance,generated_internal_outlier,matched_target_app,identity_match_correct,generated_to_own_target_similarity,max_target_similarity,strict_delta_warning,membership_warning,qwen_problematic_app,visual_quality_distance_to_theme,semantic_fit_score
+bilibili,87.3582,,90.2216,96.25,71.4286,0.0,0.364865,100.0,0.032777,False,0.024729,False,bilibili,True,0.655568,0.655568,True,False,False,,
+damai,87.3582,,90.2216,96.25,71.4286,50.0,0.256833,84.8352,0.045057,True,0.022046,False,bilibili,False,0.278466,0.364332,True,False,False,,
+hanglvzongheng,87.3582,,90.2216,96.25,71.4286,25.0,0.386283,37.5843,0.076275,True,0.04396,False,bilibili,False,0.108881,0.23215,True,False,False,,
+meituan,87.3582,,90.2216,96.25,71.4286,25.0,0.290096,93.0696,0.039616,False,0.024837,False,xiaohongshu,False,0.318292,0.427493,True,False,False,,
+qq,87.3582,,90.2216,96.25,71.4286,25.0,0.332488,79.5629,0.04854,True,0.041179,False,qq,True,0.348965,0.348965,True,False,True,,
+tieba,87.3582,,90.2216,96.25,71.4286,25.0,0.334788,67.1523,0.05674,True,0.041731,False,bilibili,False,0.190421,0.474058,True,False,True,,
+wps,87.3582,,90.2216,96.25,71.4286,75.0,0.248567,100.0,0.016047,False,0.017063,False,bilibili,False,0.257938,0.392746,True,False,False,,
+xiaohongshu,87.3582,,90.2216,96.25,71.4286,25.0,0.319591,100.0,0.032067,False,0.038062,False,xiaohongshu,True,0.530012,0.530012,True,False,False,,

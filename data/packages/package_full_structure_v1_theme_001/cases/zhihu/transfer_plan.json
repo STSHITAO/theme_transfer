@@ -1,0 +1,63 @@
+{
+  "app": "Zhihu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或抽象图形为主体的图标，必须严格保留其二维轮廓的准确性。知乎的核心识别度完全依赖于这两个特定设计的汉字，任何对笔画的重构都会导致无法识别。因此，策略是将平面文字直接进行3D挤出（Extrusion），赋予其冰块的厚度，而非重新设计场景。",
+  "preserve": [
+    "“知乎”二字的完整汉字字形结构",
+    "“知”字右侧“口”部下方的V型尖角切口特征",
+    "文字的居中布局与画布占比（约60-70%）",
+    "字体笔画的拓扑连接关系"
+  ],
+  "must_preserve": [
+    "“知乎”两个汉字的准确书写，严禁错别字、漏笔画或形近字替换",
+    "“知”字中隐含的对话气泡语义对应的视觉尖角特征",
+    "文字整体的稳健、理性骨架，避免过度卡通化圆润"
+  ],
+  "recompose_allowed": [
+    "将2D平面文字转换为具有显著Z轴厚度的3D实体",
+    "边缘锐利直角转换为圆润的冰蚀倒角",
+    "内部实心填充转换为半透明冰质材质",
+    "底部增加通用的冰台底座或接触阴影以支撑空间感"
+  ],
+  "restyle": [
+    "应用统一的Pale Cyan/Ice Blue半透明材质",
+    "表面添加冷凝水珠（condensation droplets）微观纹理",
+    "内部嵌入雪花（snowflake）或微小气泡（bubbles）作为装饰",
+    "通过次表面散射（SSS）和边缘高光表现冰的通透感"
+  ],
+  "decorate": [
+    "主体表面的随机冰裂纹",
+    "底部的微量融化水渍效果",
+    "柔和的环境光反射高光"
+  ],
+  "forbid": [
+    "禁止保留原始的知乎蓝（#0084FF）背景或文字颜色",
+    "禁止将文字替换为书本、灯泡、大脑等象征性图标",
+    "禁止使用不透明的塑料、金属或石材材质",
+    "禁止使用暖色调（红、橙、黄）",
+    "禁止复杂的场景背景，必须保持纯白/极浅灰背景",
+    "禁止文字出现严重的透视扭曲导致不可读"
+  ],
+  "generation_brief": "3D icon of Chinese characters '知乎' carved from translucent pale blue ice. Strictly preserve original font structure and the specific V-cut in '知'. Extruded thickness, rounded icy edges, internal bubbles and snowflake textures. Glossy wet surface with condensation droplets. Clean white background, soft contact shadow, subtle water puddle at base. C4D render style, subsurface scattering, high fidelity, cold atmosphere.",
+  "color_application": "Discard original Zhihu Blue and White. Apply uniform Pale Cyan/Ice Blue palette to the text volume. Use varying opacity and lightness within the ice material to define depth, not brand colors. Background must be Pure White.",
+  "stroke_application": "Eliminate all 2D vector strokes. Transform character outlines into volumetric 3D edges with smooth, beveled refractions. Define shape through light interaction (specular highlights) rather than drawn lines.",
+  "composition_application": "Center the 3D text object on the canvas. Maintain the original footprint but add Z-axis extrusion. Ensure the object sits on a virtual ground plane with a subtle shadow to anchor it, occupying 60-70% of the visual space.",
+  "identity_application": "Identity is preserved solely through the precise geometric silhouette of the '知乎' characters. The specific design cue of the 'speech bubble' angle in '知' must remain intact. No semantic replacement allowed; the text itself is the icon.",
+  "fidelity_constraints": [
+    "Material must appear as translucent ice/crystal, not opaque plastic.",
+    "Must include internal details like bubbles or snowflakes.",
+    "Original character shapes must be instantly recognizable.",
+    "Background must be clean white/high-key."
+  ],
+  "negative_constraints": [
+    "No flat 2D vector styles.",
+    "No original brand colors (blue background).",
+    "No warm colors.",
+    "No complex backgrounds or scenes.",
+    "No distorted or illegible text.",
+    "No solid opaque fills."
+  ]
+}

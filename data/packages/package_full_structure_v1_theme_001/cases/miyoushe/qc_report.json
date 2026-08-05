@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了'冻结为冰块'的策略。完整保留了米游社兔子的头部剪影、双耳的相对位置及倾斜角度、以及面部眼睛的简化形态。材质呈现高光泽半透明冰晶质感，内部包含气泡和雪花纹理，底部有融化的水迹，完全符合主题参考图（如Bilibili小电视）的风格逻辑。无多余描边，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 40,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "主体几何结构发生显著漂移。虽然材质风格正确，但兔子头部的轮廓变成了类似梯形或钟形的块状，失去了原Logo圆润的下颌线条；双耳变得过于细长且直立，改变了原有的倾斜角度和比例。这种过度的几何重构导致目标App的识别度大幅下降，不符合'strict'约束下对关键轮廓保留的要求。",
+      "recommendation": "不推荐。虽然风格统一，但丢失了米游社兔子的核心特征（头部形状和耳朵比例），容易被误认为是其他 generic 兔子图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\miyoushe\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

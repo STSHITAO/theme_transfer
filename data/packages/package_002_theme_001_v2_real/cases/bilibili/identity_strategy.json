@@ -1,0 +1,24 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "Bilibili的'小电视'轮廓是其最具辨识度的视觉资产，且该轮廓本身具有极强的拟人化潜力（类似头部形状）。为了符合主题的'萌宠拟态'规则，应将原本扁平的电视机图形转化为一个立体的、毛茸茸的白色生物头部。保留电视机的天线作为生物的耳朵或触角，保留屏幕区域作为面部表情区，将原本的粉色品牌色彻底替换为马卡龙色系背景，实现从'电子产品'到'治愈系生物'的风格迁移。",
+  "must_preserve": [
+    "标志性的圆角矩形电视机外轮廓",
+    "顶部的两根天线结构（需转化为生物特征，如圆耳或呆毛）",
+    "屏幕区域的中心位置（用于承载表情）"
+  ],
+  "can_recompose": [
+    "去除内部的'bilibili'文字，仅保留图形主体",
+    "将原本光滑的塑料/玻璃质感替换为蓬松的毛绒/棉花质感",
+    "将原本的亮粉色背景替换为淡蓝、淡紫或米白等低饱和度 pastel 色",
+    "添加简单的豆豆眼和微笑嘴巴，赋予其生命感"
+  ],
+  "forbid": [
+    "禁止保留原有的亮粉色背景和白色文字组合",
+    "禁止使用锐利的直角或硬朗的几何线条",
+    "禁止生成写实的电视机照片或带有复杂按键细节的图标",
+    "禁止天线过于细长尖锐，需圆润化处理以防刺破视觉柔和感"
+  ],
+  "generation_direction": "A fluffy white chibi creature shaped like a retro TV set, rounded corners, two small round antenna-ears on top, simple kawaii face with dot eyes and small smile in the screen area, soft fur texture, thick hand-drawn black outline, lying on a pastel lavender background, matte paper texture, cute and healing vibe."
+}

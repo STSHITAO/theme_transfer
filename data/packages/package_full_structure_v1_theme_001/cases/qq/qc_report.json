@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题化要求。材质处理为半透明冰晶，保留了经典的眨眼表情、围巾形态和整体剪影。颜色转换正确（身体转冰蓝，保留红色围巾作为识别点），且严格遵守了去品牌色但保留关键线索的策略。底部有融化的水渍细节，符合物理 grounding 要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "质量很高，风格匹配度好。相比 candidate_01，其腹部白色区域的处理略显突兀（像是内部悬浮的白色冰块而非通透的质感），且嘴部的黄色饱和度略高，稍微偏离了'统一冰晶材质'的极致感，但依然是非常优秀的候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qq\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

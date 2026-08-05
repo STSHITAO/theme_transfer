@@ -1,0 +1,59 @@
+{
+  "app": "karaoke",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中抖音（Douyin）和支付宝（Alipay）的处理方式，对于具有高度辨识度的抽象符号（如音符、汉字），必须直接将其立体化为冰块，而非重构场景。全民K歌的图标本质是一个融合了麦克风元素的抽象符号，其轮廓本身就是最强的识别点，因此应完整保留原图的拓扑结构，仅做材质置换。",
+  "preserve": [
+    "整体圆润的头部/气泡状外轮廓剪影",
+    "右下角突出的紫色麦克风手柄几何位置与角度",
+    "中央类似眼睛或音符的圆形镂空负空间结构",
+    "顶部突起与右侧缺口的相对拓扑关系"
+  ],
+  "must_preserve": [
+    "原图标整体的外轮廓剪影（包括顶部的突起和右侧的缺口）",
+    "右下角麦克风手柄的相对位置和角度",
+    "中间圆形的负空间（镂空）结构",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "recompose_allowed": [
+    "将原本的红紫渐变色替换为统一的浅冰蓝半透明材质",
+    "将内部平滑色彩过渡转化为冰块内部的气泡、裂纹和雪花纹理",
+    "将锐利的矢量边缘转化为圆润的冰质倒角和高光反射"
+  ],
+  "restyle": [
+    "应用高光泽度冰冻材质，模拟次表面散射（SSS）效果",
+    "移除所有二维描边，通过体积感和折射界定轮廓",
+    "在冰体内部嵌入随机的微小气泡和冰晶颗粒"
+  ],
+  "decorate": [
+    "主体底部添加融化的水迹和小水洼以增强物理接触感",
+    "边缘增加菲涅尔反射高光以突出冰的通透质感"
+  ],
+  "forbid": [
+    "禁止保留原本的红色、橙色或紫色作为主体颜色",
+    "禁止生成不透明的实心塑料块或磨砂玻璃，必须体现冰的通透感",
+    "禁止改变麦克风和音符/面部的相对位置关系",
+    "禁止添加复杂的背景场景（如舞台、灯光），保持纯白背景",
+    "禁止将鸟形/人脸简化为普通圆形或水滴形而丢失头部尖角特征"
+  ],
+  "generation_brief": "3D ice sculpture of the WeSing (Quanmin K Ge) logo. Translucent cyan-blue ice material with internal air bubbles and snowflake textures. Shape: stylized head silhouette with a microphone handle at bottom-right and a circular negative space in center. Glossy wet surface, chamfered edges. Pure white background with realistic contact shadow and melting water puddle at base. High fidelity C4D/Octane render.",
+  "color_application": "强制去色。将原图标的红橙粉渐变完全替换为主题规定的 Cyan-Ice Blue（青冰蓝）和 Translucent White（半透明白）。原深紫色麦克风部分不再保留色相，而是通过冰块的厚度变化（更深处的 Deep Azure 深蔚蓝）来暗示其位置和重量感，确保整体色调统一为冷色系。",
+  "stroke_application": "消除所有二维描边。原图标的轮廓线转化为三维冰块的物理边缘，通过倒角处理捕捉高光。内部的负空间（如眼部镂空）保持通透，但边缘需厚实化，利用光线折射形成的焦散效果来界定形状，而非绘制线条。",
+  "composition_application": "采用居中构图，主体占据画布约 60%-70% 空间。将原本平面的图形拉伸为具有 Z 轴厚度的立体冰砖。底部预留空间用于渲染接触阴影和融化水渍，确保物体稳固地'立'在白色平面上，四周留有呼吸感。",
+  "identity_application": "通过严格锁定原图标的几何剪影（特别是右下角麦克风手柄和中心镂空）来保留身份。虽然颜色被统一为冰蓝，但用户仍能通过独特的拓扑结构和负空间分布瞬间识别出是全民K歌。麦克风的语义通过其在右下角的特定几何形态得以保留，而非依赖颜色。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。"
+  ]
+}

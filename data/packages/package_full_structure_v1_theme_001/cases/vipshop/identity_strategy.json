@@ -1,0 +1,39 @@
+{
+  "app": "vipshop",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“唯品会”三个汉字的特定字体结构与排列比例",
+  "brand_cues_to_preserve": [
+    "“唯品会”三字的完整笔画形态",
+    "三字横向排列的紧凑间距与视觉重心",
+    "底部“品牌特卖”四字的辅助位置关系（若空间允许）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为核心识别符号的清晰度",
+    "电商/特卖属性的稳重感（通过字体的厚度体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，该主题对于文字类或几何类图标采取严格的轮廓保留策略。唯品会图标本质为纯文字Logo，其识别度完全依赖于“唯品会”三字的字形结构。因此，必须将这三个字直接转化为3D冰雕实体，保留原有的笔画粗细、转折角度和字间距，严禁重构为购物袋或标签等语义符号，以免丢失品牌身份。",
+  "design_rationale": "唯品会的原始图标是典型的文字标，在“冰封”主题下，最佳表达方式是将文字本身物质化。通过保留 strict 的字形结构，用户能瞬间识别出App；通过应用统一的冰蓝材质、内部气泡纹理和3D厚度，使其完美融入主题系列。底部的“品牌特卖”字样由于字号较小，在3D化后可能难以辨认，建议作为浅浮雕处理或根据空间适当弱化，重点突出主标题“唯品会”。",
+  "must_preserve": [
+    "“唯品会”三字的准确字形轮廓",
+    "文字的整体长宽比",
+    "冰蓝色半透明材质与内部雪花/气泡纹理",
+    "底部的接触阴影与水迹"
+  ],
+  "can_recompose": [
+    "原本平面的白色填充变为具有折射率的立体冰体",
+    "背景从洋红色变为纯白",
+    "底部小字“品牌特卖”可简化为微弱的底部纹理或省略，以保证主体清晰度",
+    "笔画边缘进行圆润化处理，模拟冰块打磨质感"
+  ],
+  "forbid": [
+    "禁止保留原始的洋红色（Magenta）背景或文字颜色",
+    "禁止将文字替换为购物袋、衣服或标签等具象物体",
+    "禁止生成不透明的实心蓝色块，必须体现通透感",
+    "禁止改变“唯品会”三字的相对位置和大小比例"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '唯品会'. The characters should be extruded with thickness, rendered in translucent pale cyan ice material with internal bubbles and snowflake textures. Place on a pure white background with a soft contact shadow and melting water effect at the base. Ensure the font structure matches the original logo exactly, with rounded, glossy edges."
+}

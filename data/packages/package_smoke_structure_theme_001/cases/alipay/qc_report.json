@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。严格保留了“支”字的拓扑结构和底部无限循环几何，材质为半透明冰蓝，包含内部气泡和雪花细节，底部有融冰基座，无多余文字或背景色。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "右下角笔画出现断裂/破碎效果，破坏了'支'字必须保留的连续拓扑结构（must_preserve: distinct infinity-loop geometry）。",
+      "recommendation": "风格正确，但主体结构的完整性受损。右下角的断裂虽然增加了物理真实感，但违反了strict约束下对字符几何完整性的要求，降低了识别度。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

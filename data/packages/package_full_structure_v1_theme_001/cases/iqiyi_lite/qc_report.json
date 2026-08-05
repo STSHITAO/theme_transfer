@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 10,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 90,
+      "overall_score": 10,
+      "failure_reason": "严重身份识别错误：生成了支付宝的‘支’字，而非目标App‘爱奇艺’。完全丢失了目标App的核心识别线索。",
+      "recommendation": "不推荐。虽然风格完美契合冰雕主题，但内容完全错误，属于生成幻觉或素材错乱，无法作为爱奇艺图标使用。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 10,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 90,
+      "overall_score": 10,
+      "failure_reason": "严重身份识别错误：生成了支付宝的‘支’字，而非目标App‘爱奇艺’。与candidate_01几乎一致，均未能保留‘爱奇艺’三字结构。",
+      "recommendation": "不推荐。同candidate_01，主体文字错误，无法满足‘strict’级别的约束要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\iqiyi_lite\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能正确生成目标App‘爱奇艺’的文字主体，而是错误地生成了参考图风格中的‘支’字（支付宝）。这表明模型可能过度拟合了风格参考图的语义内容，或者在生成过程中发生了严重的身份混淆。没有一张图符合transfer_plan中关于‘preserve “爱奇艺”汉字的准确笔画走势’的核心要求。建议重新生成并加强Prompt中对目标文字的约束权重。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

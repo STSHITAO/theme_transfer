@@ -1,0 +1,41 @@
+{
+  "app": "Meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "汉字“美团”的拓扑结构与笔画顺序",
+    "左右并列的横向排版布局",
+    "黄色系品牌色相（调整为低饱和度柔和黄/米黄）"
+  ],
+  "must_preserve": [
+    "必须保留“美团”二字的完整字形结构，不可替换为拼音、英文或纯图形符号",
+    "文字必须位于画面视觉中心",
+    "背景必须维持黄色系基调，严禁使用蓝、绿等非品牌色系"
+  ],
+  "recompose_allowed": [
+    "将汉字笔画重构为圆润、有机的白色团状生物形态",
+    "添加统一的黑色粗手绘描边",
+    "在字形主体上融合简单的萌系五官（豆豆眼、微笑嘴）",
+    "背景材质转换为带有轻微噪点的哑光纸质纹理"
+  ],
+  "restyle": [
+    "字体风格从标准印刷体转化为Q萌手绘涂鸦风格",
+    "消除所有锐利折角，转为圆角曲线",
+    "主体填充改为纯白或极浅暖白，以突出描边"
+  ],
+  "decorate": [
+    "模拟马克笔手绘的不规则线条边缘",
+    "主体边缘呈现轻微的毛绒或云朵蓬松感",
+    "极少量的粉色腮红点缀（可选）"
+  ],
+  "forbid": [
+    "直接放置黑色印刷体汉字",
+    "保留原图标的高饱和度亮黄色背景",
+    "使用3D渲染、高光、渐变或玻璃质感",
+    "将文字变形过度导致无法辨认为“美团”",
+    "引入袋鼠形象或其他非文字类图形替代文字"
+  ],
+  "color_strategy": "背景使用低饱和度莫兰迪黄/米黄色（Pastel Yellow/Cream），主体使用纯白填充搭配深灰/黑色粗描边，保持高对比度但视觉柔和。",
+  "identity_priority": "Strict preservation of 'Meituan' character structure and yellow hue identity, adapted into doodle style.",
+  "generation_brief": "Cute hand-drawn doodle style app icon. The Chinese characters '美团' are transformed into two fluffy, white, dough-like creatures sitting side by side, retaining their original stroke structure but with rounded, organic edges. Thick, uneven black marker-style outlines surround the white characters. Simple cute faces (dot eyes) are added to the characters. Background is a solid, low-saturation pastel yellow or cream color with subtle paper texture. Flat colors, no gradients, no gloss, kawaii aesthetic."
+}

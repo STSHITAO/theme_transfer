@@ -1,0 +1,35 @@
+{
+  "app": "Keep",
+  "identity_anchors": [
+    " stylized letter 'K' geometry",
+    "disconnected upper-right stroke",
+    "four-pointed star/sparkle element",
+    "purple gradient background"
+  ],
+  "must_preserve": [
+    "The specific geometric skeleton of the letter 'K' (vertical bar on left, two diagonal strokes on right)",
+    "The distinct gap/separation between the upper-right diagonal stroke and the central vertex",
+    "The presence and relative position (top-right) of the four-pointed star symbol",
+    "The rounded terminals (caps) of the 'K' strokes"
+  ],
+  "can_restyle": [
+    "Background color gradient (can shift hue but should remain dark/mysterious)",
+    "Material of the 'K' (can be metallic, neon, glass, etc., instead of flat white)",
+    "Style of the star (can be glowing, outlined, or integrated into the theme)",
+    "Shadow and lighting effects"
+  ],
+  "must_not_replace_with": [
+    "Generic dumbbells or barbells",
+    "Running figures or silhouettes",
+    "Hearts or pulse lines",
+    "Generic letters without the specific Keep 'K' cut",
+    "Cute mascots or animals"
+  ],
+  "color_preservation": "The brand identity relies heavily on the contrast between the bright foreground element and the deep purple background. While the exact hex code can adapt to a theme, the 'Purple + Bright Accent' relationship is crucial. Do not change the background to plain white or black unless the theme strictly demands high contrast monochrome.",
+  "structure_summary": "A minimalist, lowercase-style 'k' constructed from thick, rounded strokes. The defining feature is the floating upper-right leg that does not touch the central junction. A small four-pointed star floats in the upper right quadrant, acting as a secondary brand mark.",
+  "risk_notes": [
+    "Do not connect the upper-right stroke to the rest of the 'K', as this destroys the specific Keep logo recognition.",
+    "Do not remove the star; it distinguishes this specific version of the logo from a generic letter K.",
+    "Avoid making the 'K' too thin; it requires visual weight to be readable at small sizes."
+  ]
+}

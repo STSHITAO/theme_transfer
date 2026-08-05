@@ -1,0 +1,263 @@
+{
+  "theme_id": "theme_004",
+  "description": "应用图标主题风格参考包。每个参考样例由同一 App 的原始图标和设计师主题图组成，用于分析 original -> style_ref 的共同设计变化。",
+  "input_schema": "reference_original_to_style_ref",
+  "reference_pair_schema": {
+    "original": "参考 App 的原始图标，是该 App 的身份和功能语义来源。",
+    "style_ref": "同一 App 的设计师主题图，用于学习当前主题包的设计语言。"
+  },
+  "examples": {
+    "alipay": {
+      "app": "alipay",
+      "display_name": "支付宝",
+      "category": "金融 / 支付与生活服务",
+      "store_description": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。",
+      "core_function": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。"
+    },
+    "anipop": {
+      "app": "anipop",
+      "display_name": "开心消消乐",
+      "category": "游戏 / 休闲益智",
+      "store_description": "以三消闯关为核心，提供丰富关卡、限时活动和轻量化休闲玩法。",
+      "core_function": "以三消闯关为核心，提供丰富关卡、限时活动和轻量化休闲玩法。"
+    },
+    "bilibili": {
+      "app": "bilibili",
+      "display_name": "哔哩哔哩",
+      "category": "视频 / 内容社区",
+      "store_description": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。",
+      "core_function": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。"
+    },
+    "clash_of_clans": {
+      "app": "clash_of_clans",
+      "display_name": "部落冲突",
+      "category": "游戏 / 策略经营",
+      "store_description": "通过建设村庄、训练军队、加入部落和参与多人对战，体验策略经营与攻防玩法。",
+      "core_function": "通过建设村庄、训练军队、加入部落和参与多人对战，体验策略经营与攻防玩法。"
+    },
+    "ctrip": {
+      "app": "ctrip",
+      "display_name": "携程旅行",
+      "category": "旅行 / 预订服务",
+      "store_description": "提供酒店、机票、火车票、景点门票、度假产品和旅行攻略等一站式出行服务。",
+      "core_function": "提供酒店、机票、火车票、景点门票、度假产品和旅行攻略等一站式出行服务。"
+    },
+    "dianping": {
+      "app": "dianping",
+      "display_name": "大众点评",
+      "category": "本地生活 / 消费评价",
+      "store_description": "提供餐饮、休闲娱乐、丽人、亲子等本地商户信息、用户评价、榜单和优惠服务。",
+      "core_function": "提供餐饮、休闲娱乐、丽人、亲子等本地商户信息、用户评价、榜单和优惠服务。"
+    },
+    "douyin": {
+      "app": "douyin",
+      "display_name": "抖音",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。",
+      "core_function": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。"
+    },
+    "douyin_huoshan": {
+      "app": "douyin_huoshan",
+      "display_name": "抖音火山版",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频观看与创作、直播互动和生活化内容分享，强调轻量娱乐与社区交流。",
+      "core_function": "提供短视频观看与创作、直播互动和生活化内容分享，强调轻量娱乐与社区交流。"
+    },
+    "douyu": {
+      "app": "douyu",
+      "display_name": "斗鱼",
+      "category": "直播 / 游戏娱乐",
+      "store_description": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。",
+      "core_function": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。"
+    },
+    "eleme": {
+      "app": "eleme",
+      "display_name": "饿了么",
+      "category": "本地生活 / 外卖配送",
+      "store_description": "提供餐饮外卖、商超便利、药品和即时零售商品的在线下单与配送服务。",
+      "core_function": "提供餐饮外卖、商超便利、药品和即时零售商品的在线下单与配送服务。"
+    },
+    "golden_spatula": {
+      "app": "golden_spatula",
+      "display_name": "金铲铲之战",
+      "category": "游戏 / 自走棋策略",
+      "store_description": "通过招募英雄、组合羁绊、布置阵容和装备，在多人对局中进行自动战斗策略竞技。",
+      "core_function": "通过招募英雄、组合羁绊、布置阵容和装备，在多人对局中进行自动战斗策略竞技。"
+    },
+    "honor_of_kings": {
+      "app": "honor_of_kings",
+      "display_name": "王者荣耀",
+      "category": "游戏 / MOBA竞技",
+      "store_description": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。",
+      "core_function": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。"
+    },
+    "iqiyi_lite": {
+      "app": "iqiyi_lite",
+      "display_name": "爱奇艺极速版",
+      "category": "视频 / 轻量流媒体",
+      "store_description": "以轻量化方式提供影视、综艺、短视频等内容浏览和个性化推荐。",
+      "core_function": "以轻量化方式提供影视、综艺、短视频等内容浏览和个性化推荐。"
+    },
+    "jd": {
+      "app": "jd",
+      "display_name": "京东",
+      "category": "电商 / 综合购物",
+      "store_description": "提供数码家电、日用百货、生鲜等商品的在线购买、物流配送和售后服务。",
+      "core_function": "提供数码家电、日用百货、生鲜等商品的在线购买、物流配送和售后服务。"
+    },
+    "kuaishou": {
+      "app": "kuaishou",
+      "display_name": "快手",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。",
+      "core_function": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。"
+    },
+    "kugou": {
+      "app": "kugou",
+      "display_name": "酷狗音乐",
+      "category": "音乐 / 音频娱乐",
+      "store_description": "提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。",
+      "core_function": "提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。"
+    },
+    "meituan_waimai": {
+      "app": "meituan_waimai",
+      "display_name": "美团外卖",
+      "category": "本地生活 / 外卖配送",
+      "store_description": "提供餐饮外卖、商超、生鲜、药品等即时零售商品的在线下单和配送。",
+      "core_function": "提供餐饮外卖、商超、生鲜、药品等即时零售商品的在线下单和配送。"
+    },
+    "mi_home": {
+      "app": "mi_home",
+      "display_name": "米家",
+      "category": "生活 / 智能家居",
+      "store_description": "用于连接和管理智能家居设备，支持设备控制、自动化场景和家庭共享。",
+      "core_function": "用于连接和管理智能家居设备，支持设备控制、自动化场景和家庭共享。"
+    },
+    "netease_music": {
+      "app": "netease_music",
+      "display_name": "网易云音乐",
+      "category": "音乐 / 音频社区",
+      "store_description": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。",
+      "core_function": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。"
+    },
+    "paipai": {
+      "app": "paipai",
+      "display_name": "派派",
+      "category": "社交 / 游戏互动",
+      "store_description": "通过趣味游戏、家族互动、语音房间和社区玩法帮助用户进行社交交流。",
+      "core_function": "通过趣味游戏、家族互动、语音房间和社区玩法帮助用户进行社交交流。"
+    },
+    "peace_elite": {
+      "app": "peace_elite",
+      "display_name": "和平精英",
+      "category": "游戏 / 战术射击",
+      "store_description": "提供多人战术竞技、团队协作、射击生存和多种地图模式。",
+      "core_function": "提供多人战术竞技、团队协作、射击生存和多种地图模式。"
+    },
+    "pinduoduo": {
+      "app": "pinduoduo",
+      "display_name": "拼多多",
+      "category": "电商 / 综合购物",
+      "store_description": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。",
+      "core_function": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。"
+    },
+    "qimao": {
+      "app": "qimao",
+      "display_name": "七猫免费小说",
+      "category": "阅读 / 网络文学",
+      "store_description": "提供多题材网络小说阅读、书架管理、个性化推荐和听书服务。",
+      "core_function": "提供多题材网络小说阅读、书架管理、个性化推荐和听书服务。"
+    },
+    "qq": {
+      "app": "qq",
+      "display_name": "QQ",
+      "category": "社交 / 通讯",
+      "store_description": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。",
+      "core_function": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。"
+    },
+    "qq_browser": {
+      "app": "qq_browser",
+      "display_name": "QQ浏览器",
+      "category": "工具 / 浏览器",
+      "store_description": "提供网页浏览、搜索、资讯、文件管理、文档查看和多媒体内容访问。",
+      "core_function": "提供网页浏览、搜索、资讯、文件管理、文档查看和多媒体内容访问。"
+    },
+    "qq_music": {
+      "app": "qq_music",
+      "display_name": "QQ音乐",
+      "category": "音乐 / 音频娱乐",
+      "store_description": "提供歌曲播放、歌单、电台、数字专辑、歌词和个性化音乐推荐。",
+      "core_function": "提供歌曲播放、歌单、电台、数字专辑、歌词和个性化音乐推荐。"
+    },
+    "quark": {
+      "app": "quark",
+      "display_name": "夸克",
+      "category": "工具 / 搜索与浏览器",
+      "store_description": "提供网页浏览、智能搜索、AI问答、网盘、扫描和文档处理等工具服务。",
+      "core_function": "提供网页浏览、智能搜索、AI问答、网盘、扫描和文档处理等工具服务。"
+    },
+    "tencent_news": {
+      "app": "tencent_news",
+      "display_name": "腾讯新闻",
+      "category": "新闻 / 信息",
+      "store_description": "提供时事、财经、体育、娱乐和社会等新闻资讯及个性化内容推荐。",
+      "core_function": "提供时事、财经、体育、娱乐和社会等新闻资讯及个性化内容推荐。"
+    },
+    "wechat": {
+      "app": "wechat",
+      "display_name": "微信",
+      "category": "社交 / 通讯",
+      "store_description": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。",
+      "core_function": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。"
+    },
+    "wechat_reading": {
+      "app": "wechat_reading",
+      "display_name": "微信读书",
+      "category": "阅读 / 电子书",
+      "store_description": "提供出版书、网络文学和听书内容，支持阅读记录、书评和好友互动。",
+      "core_function": "提供出版书、网络文学和听书内容，支持阅读记录、书评和好友互动。"
+    },
+    "wecom": {
+      "app": "wecom",
+      "display_name": "企业微信",
+      "category": "办公 / 企业协作",
+      "store_description": "提供企业通讯录、即时沟通、客户联系、会议、文档和办公应用集成。",
+      "core_function": "提供企业通讯录、即时沟通、客户联系、会议、文档和办公应用集成。"
+    },
+    "xiaohongshu": {
+      "app": "xiaohongshu",
+      "display_name": "小红书",
+      "category": "社区 / 生活方式",
+      "store_description": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。",
+      "core_function": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。"
+    },
+    "xigua_video": {
+      "app": "xigua_video",
+      "display_name": "西瓜视频",
+      "category": "视频 / 综合内容",
+      "store_description": "提供影视、纪录片、知识、生活和创作者视频等中长视频内容。",
+      "core_function": "提供影视、纪录片、知识、生活和创作者视频等中长视频内容。"
+    },
+    "xingtu": {
+      "app": "xingtu",
+      "display_name": "醒图",
+      "category": "摄影 / 图片编辑",
+      "store_description": "提供人像修图、美颜、滤镜、调色、抠图、拼图和智能图片处理功能。",
+      "core_function": "提供人像修图、美颜、滤镜、调色、抠图、拼图和智能图片处理功能。"
+    },
+    "youdao_dict": {
+      "app": "youdao_dict",
+      "display_name": "网易有道词典",
+      "category": "教育 / 词典翻译",
+      "store_description": "提供中外文词典、文本与拍照翻译、发音、例句和语言学习工具。",
+      "core_function": "提供中外文词典、文本与拍照翻译、发音、例句和语言学习工具。"
+    },
+    "zhihu": {
+      "app": "zhihu",
+      "display_name": "知乎",
+      "category": "社区 / 知识内容",
+      "store_description": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。",
+      "core_function": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。"
+    }
+  }
+}

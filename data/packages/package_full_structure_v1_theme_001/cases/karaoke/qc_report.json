@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 5,
+      "target_recognition_score": 5,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 60,
+      "overall_score": 10,
+      "failure_reason": "完全错误的主体。该图像是豆瓣（Douban）图标的冰块化版本，与目标App（全民K歌/Karaoke）毫无关系。严重违反了preserve和must_preserve中的几何约束，丢失了所有识别线索。",
+      "recommendation": "不可用。这是针对错误目标生成的图片，无法代表全民K歌。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 25,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 60,
+      "overall_score": 15,
+      "failure_reason": "完全错误的主体。该图像依然是豆瓣（Douban）图标的变体（右侧多了一个类似手柄的结构），并非全民K歌的图标。虽然试图通过添加手柄来贴近'Karaoke'语义，但基础轮廓（圆角矩形屏幕）完全错误，未能保留原图标的拓扑结构。",
+      "recommendation": "不可用。主体几何形状错误，属于张冠李戴。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\karaoke\\candidates\\candidate_02.png",
+  "warning": "所有候选图均生成了错误的App图标（疑似豆瓣），未遵循transfer_plan中关于保留全民K歌（WeSing）特定轮廓（圆润头部、麦克风手柄位置）的严格指令。没有一张图符合目标身份要求。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

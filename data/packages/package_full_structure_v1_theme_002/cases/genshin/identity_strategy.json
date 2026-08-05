@@ -1,0 +1,40 @@
+{
+  "app": "genshin",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "派蒙（Paimon）的标志性四角星发饰与披风轮廓",
+  "brand_cues_to_preserve": [
+    "深蓝色星空纹理的披风/领口区域",
+    "头部右侧的四角星装饰符号",
+    "白色/米白色的主色调倾向"
+  ],
+  "semantic_cues_to_preserve": [
+    "开放世界探索的象征（星星/罗盘意象）",
+    "二次元/幻想风格的柔和感（通过圆润线条表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original 为高精度的二次元人物面部特写，包含复杂的头发丝、眼睛高光和皮肤阴影。根据 theme_rules 中关于复杂IP的处理原则（参考 lol_mobile 和 honor_of_kings），必须放弃还原人脸细节，转而提取最具识别度的符号（四角星）和色彩块面（深蓝披风+白发）进行几何化重构。",
+  "design_rationale": "原神原图标是典型的日系赛璐璐风格，与该主题的粗犷手绘涂鸦风冲突极大。若强行保留人脸会导致风格割裂或细节丢失。因此选择语义重构策略：将派蒙抽象为一个由‘白色圆块（头）’、‘深蓝梯形（披风）’和‘黄色/白色四角星（发饰）’组成的极简图腾。这既符合主题‘红蓝黄’配色中的蓝白组合，又保留了老玩家一眼可识的品牌锚点。",
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷的黑色手绘描边（模拟马克笔质感）",
+    "四角星形状的符号（作为核心视觉重心）",
+    "深蓝色与奶白色的色块搭配"
+  ],
+  "can_recompose": [
+    "面部五官（眼睛、嘴巴、鼻子全部移除或简化为极简单的点线）",
+    "头发的具体流向和层次",
+    "手部的动作（比耶手势移除）",
+    "底部的 miHoYo 文字标"
+  ],
+  "forbid": [
+    "禁止出现写实的人脸或眼睛细节",
+    "禁止使用原本的渐变色或发光特效",
+    "禁止使用细线条描边",
+    "禁止保留原本的背景光效",
+    "禁止出现除红蓝黄白黑以外的颜色（如原本的紫色眼影需转为深蓝或去除）"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of Genshin Impact's Paimon symbol on pure black background. Simplify the character into geometric blocks: a creamy white rounded shape for the head/hair, a deep blue trapezoid block for the cape at the bottom. Place a prominent, thick-lined four-pointed star (yellow or white) on the upper right. Use heavy, shaky black marker strokes for outlines. Flat colors only, no shading, no face details, no gradients. Naive art style."
+}

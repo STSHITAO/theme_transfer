@@ -1,0 +1,39 @@
+{
+  "app": "anipop",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "黄色小鸡的头部轮廓及标志性红色鸡冠",
+  "brand_cues_to_preserve": [
+    "主体为高饱和度的奶黄色块",
+    "顶部必须有红色的水滴状/火焰状鸡冠",
+    "保留圆润、饱满的生物头部外轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "消除类游戏的轻松、可爱氛围",
+    "通过简化的五官（眼睛/嘴巴）传达快乐情绪"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标中的黄色小鸡具有极高的国民辨识度，其‘圆头+红冠’的拓扑结构是该 App 的核心资产。根据 theme_rules，对于清晰的几何或生物轮廓应保留主体结构。因此，不能将其重构为抽象符号，而应将原本复杂的 3D 渲染小鸡简化为符合主题手绘风格的平面剪影，保留其基本形态特征。",
+  "design_rationale": "开心消消乐的原生图标是典型的 3D 拟物风格，包含复杂的光影和多个角色。为了适配‘复古手绘涂鸦’主题，必须剥离所有立体感、高光和细腻纹理。策略上选择保留最具代表性的‘黄色小鸡’作为单一主体，去除背景中的青蛙、河马等次要元素以及网格背景。将小鸡重构为由粗黑色线条勾勒的色块组合，颜色严格限制在主题规定的黄、红范围内，使其看起来像是一个用马克笔在黑板上画出的可爱玩具。",
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷、抖动的手绘黑色描边",
+    "黄色小鸡的主体轮廓与红色鸡冠的相对位置",
+    "无渐变、无阴影的平涂质感"
+  ],
+  "can_recompose": [
+    "将原本的 3D 立体眼球简化为简单的黑色圆点或弯月形笑脸",
+    "将原本复杂的羽毛细节简化为边缘的锯齿或波浪线",
+    "移除原图中的其他动物角色和消除网格背景",
+    "调整黄色的具体色值以匹配主题的‘奶黄/米白’体系"
+  ],
+  "forbid": [
+    "禁止保留原图的 3D 光泽和高光反射",
+    "禁止使用原图的绿色、紫色、蓝色等多色背景",
+    "禁止使用平滑的矢量线条，必须有人工绘制的粗糙感",
+    "禁止出现除黄、红、黑以外的颜色（如原本的亮橙色或青色）"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of a cute yellow chick head on a pure black background. Use thick, rough black marker strokes for the outline. Fill the chick with solid flat milky-yellow color and a solid red comb on top. Simplify the face to naive geometric shapes (e.g., simple dots for eyes, curved line for mouth). No shadows, no gradients, no 3D effects. The style should look like a clumsy crayon drawing."
+}

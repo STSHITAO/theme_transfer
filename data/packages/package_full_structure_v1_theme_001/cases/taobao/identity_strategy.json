@@ -1,0 +1,36 @@
+{
+  "app": "taobao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The '淘' character silhouette and the distinct dot above the left radical.",
+  "brand_cues_to_preserve": [
+    "The specific calligraphy style of the '淘' character (thick strokes, rounded corners)",
+    "The spatial relationship between the main character and the floating dot"
+  ],
+  "semantic_cues_to_preserve": [
+    "The character '淘' itself as the primary signifier for shopping/searching"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban' in the reference set, the core identity of Taobao lies entirely in the unique geometry of the '淘' character. The theme rules explicitly require preserving the original silhouette while extruding it into 3D. Therefore, the structure must be strictly preserved, transforming the flat orange/white graphic into a solid ice sculpture without altering the stroke topology.",
+  "design_rationale": "Taobao's icon is a typographic logo with high recognition value. To fit the 'Ice/Crystal' theme while maintaining strict brand identity, the best approach is to treat the character as a physical object carved from ice. This aligns with the 'alipay' reference where the '支' character was converted to ice. We must remove the orange background and white fill, replacing them with translucent cyan ice material, internal bubbles, and surface refraction, while keeping the exact shape of the character intact.",
+  "must_preserve": [
+    "The exact outline and stroke thickness of the '淘' character",
+    "The position and relative size of the dot (representing the person/head)",
+    "Translucent ice material with subsurface scattering",
+    "Clean white background with contact shadow"
+  ],
+  "can_recompose": [
+    "The internal texture (add snowflakes/bubbles inside the ice)",
+    "The edge highlights (specular reflections to show wetness/gloss)",
+    "The bottom base (add a slight melting puddle or ice shard cluster for grounding)"
+  ],
+  "forbid": [
+    "Retaining the original orange or yellow colors",
+    "Flattening the icon (must be 3D with depth)",
+    "Changing the font style or stroke connections",
+    "Opaque plastic or metal materials"
+  ],
+  "generation_direction": "Generate a 3D icon of the Chinese character '淘' made of translucent light blue ice. The character should look like a thick, frozen sculpture with rounded edges, internal air bubbles, and a glossy wet surface. Place it on a pure white background with a soft shadow and small melting water details at the base. No orange colors."
+}

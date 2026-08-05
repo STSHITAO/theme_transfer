@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 85,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "mock 通过"
+    },
+    {
+      "file": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 85,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "mock 通过"
+    },
+    {
+      "file": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_03.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 85,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "mock 通过"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_01.png",
+  "warning": "MOCK_MODE=true，使用本地 mock 质检结果。",
+  "needs_retry": false
+}

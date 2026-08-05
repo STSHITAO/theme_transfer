@@ -1,0 +1,63 @@
+{
+  "app": "eleme",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，该主题的核心逻辑是将平面符号直接转化为具有厚度的3D冰体。饿了么的 'e' 标志具有极高的抽象度和辨识度，必须完整保留其笔画拓扑结构和空间比例，仅做材质上的物理重构（扁平转立体），严禁改变字形或将其替换为餐具等具象物体。",
+  "preserve": [
+    "小写字母 'e' 的独特螺旋开口结构",
+    "右侧悬浮的圆形点（象征嘴巴/食物）",
+    "整体向右倾斜的动态势能",
+    "'e' 字母的整体骨架和笔画走势",
+    "右侧圆点与主体的相对位置关系",
+    "图标的整体长宽比和倾斜角度"
+  ],
+  "must_preserve": [
+    "字母 'e' 的几何轮廓及其右侧代表嘴部的圆点",
+    "进食/张嘴的隐喻（通过保留圆点实现）",
+    "即时服务的速度感（通过倾斜角度保留）"
+  ],
+  "recompose_allowed": [
+    "将原本的橙色品牌色完全替换为浅冰蓝色",
+    "将平面边缘转化为圆润的倒角和高光反射",
+    "在冰块内部添加气泡、裂纹或雪花纹理",
+    "增加 Z 轴厚度，使其成为立体的冰砖"
+  ],
+  "restyle": [
+    "应用半透明冰晶材质（SSS效果）",
+    "表面增加湿润高光和水渍细节",
+    "内部嵌入随机微小气泡和雪花纹理"
+  ],
+  "decorate": [
+    "底部增加融化的水迹和小水洼",
+    "边缘增加菲涅尔反射高光",
+    "内部增加焦散光斑效果"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色或蓝色背景",
+    "禁止生成不透明的塑料或金属质感",
+    "禁止改变 'e' 的字形结构（如封口错误或笔画断裂）",
+    "禁止去除底部的接触阴影和水渍细节",
+    "禁止使用暖色调作为主体主色",
+    "禁止生成实心、不透明的物体"
+  ],
+  "generation_brief": "3D ice sculpture of the lowercase letter 'e' with a detached dot on the right. Material is translucent cyan ice with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. Tilted slightly to the right. Pure white background with melting water puddle at the base. No orange colors.",
+  "color_application": "强制去色。将原图标中的饿了么蓝和淘宝橙完全移除，统一转换为高透光的浅冰蓝色（Cyan-Ice Blue）。仅通过光影深浅表现结构，不使用任何品牌固有色。",
+  "stroke_application": "消除所有二维描边。将 'e' 和圆点的轮廓转化为具有厚度的3D实体边缘，边缘经过倒角处理以捕捉高光，依靠材质折射界定形状。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体居中，占据画布约60%-70%空间，四周留白。底部预留空间给投影和水渍，增强物理落地感。",
+  "identity_application": "严格保留 'e' 字母的拓扑结构和右侧圆点的相对位置，保持原有的右倾角度。通过冰材质的物理重构（厚度、通透感）来呈现身份，而非改变图形形状。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（橙色/蓝色）。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变 'e' 的字形结构或去除右侧圆点。"
+  ]
+}

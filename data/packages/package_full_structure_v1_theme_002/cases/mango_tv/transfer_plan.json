@@ -1,0 +1,59 @@
+{
+  "app": "mango_tv",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（M+框），符合主题中关于‘清晰几何符号’保留主体轮廓的规则（参考 bilibili/kuaishou 案例）。无需像游戏类 App 那样进行语义重构，只需将原本的矢量平滑线条转化为粗犷的手绘笔触，并替换配色即可。",
+  "preserve": [
+    "M字母的基本笔画走向（左竖、中间V型凹陷、右竖）",
+    "外部圆角矩形的闭合或半闭合包围感",
+    "整体图形的负空间关系",
+    "纯黑背景"
+  ],
+  "must_preserve": [
+    "核心 'M' 字母的几何骨架",
+    "外部圆角矩形的外框结构",
+    "粗黑色的不规则手绘描边",
+    "无文字干扰的纯净图形主体"
+  ],
+  "recompose_allowed": [
+    "将原本的橙色填充映射为主题允许的砖红/朱红或奶黄/米白",
+    "将平滑的矢量边缘转化为带有抖动感的徒手线条",
+    "适当加粗'M'的笔画以匹配涂鸦风格",
+    "忽略原图中的节目宣传文字"
+  ],
+  "restyle": [
+    "材质转换为哑光平涂，模拟蜡笔或马克笔质感",
+    "去除所有立体光影、高光和渐变",
+    "边缘处理为圆润且不规则的钝角"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原始的亮橙色品牌色",
+    "禁止使用细线条或无描边设计",
+    "禁止添加立体阴影、高光或3D渲染效果",
+    "禁止改变'M'的基本字形导致无法识别",
+    "禁止保留底部的文字标题或装饰性元素",
+    "禁止使用绿色、紫色等非主题色板颜色"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of Mango TV on pure black background. Subject is a simplified 'M' letter inside a rough rounded square frame. Use solid brick-red or creamy yellow flat fill. Heavy, irregular black marker stroke outline. Shaky, naive crayon texture. No gradients, no shadows, no text.",
+  "color_application": "Map original orange brand color to theme-allowed 'brick red' or 'creamy yellow'. Ensure high contrast against the black outline and background. Use only solid flat colors from the limited palette (red/blue/yellow/white).",
+  "stroke_application": "Apply thick, irregular black/dark hand-drawn strokes to both the 'M' shape and the outer frame. Lines must exhibit jitter and varying thickness, simulating a rough marker pen. No clean vector lines.",
+  "composition_application": "Center the simplified 'M-in-frame' symbol. Occupy 50-70% of the canvas. Remove all peripheral text or decorative elements. Maintain clear breathing space against the pure black background.",
+  "identity_application": "Preserve the topological structure of the 'M' and its enclosing frame to ensure immediate recognition. Abstract the precise geometry into clumsy, rounded block shapes while keeping the core 'TV screen/M-letter' semantics intact.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must apply heavy, irregular hand-drawn strokes",
+    "Must use flat, high-saturation colors from the restricted palette (Red/Blue/Yellow/White)",
+    "Must remove all gradients, shadows, and realistic textures"
+  ],
+  "negative_constraints": [
+    "No realistic mango fruit images",
+    "No generic play triangle symbols",
+    "No original bright orange color",
+    "No fine vector lines or perfect symmetry",
+    "No text, watermarks, or program titles",
+    "No 3D rendering or glossy effects"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "app": "jianying",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "由两个三角形组成的抽象“X”形或沙漏形轮廓，以及右侧突出的摄像机镜头结构。",
+  "brand_cues_to_preserve": [
+    "左侧上下对称的三角形几何结构（类似沙漏或蝴蝶结）",
+    "右侧向右延伸的梯形/三角形突起（代表摄像机镜头）",
+    "整体呈现为一个风格化的摄像机侧面剪影"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频编辑工具属性",
+    "摄像机/录制设备的形态暗示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标已经是高度抽象的几何符号（摄像机剪影），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Kuaishou 的案例，当主体本身就是清晰的几何轮廓时，应保留其拓扑结构，仅对填充色、描边和质感进行主题化重构，而非重新设计形状。",
+  "design_rationale": "剪映的原始图标具有极高的辨识度，其独特的‘X’型交叉结构与摄像机镜头的结合是核心资产。在该复古手绘主题下，应将原本锐利、平滑的白色矢量图形，转化为带有粗犷黑色描边、边缘抖动的色块组合。利用主题限定的红、蓝、黄三色对图形的不同区块进行分割填充（例如上下三角形用 contrasting colors），以模拟手工剪纸或涂鸦的拼贴感，同时严格保持原有的空间布局。",
+  "must_preserve": [
+    "左侧上下两个三角形的相对位置和交叉关系",
+    "右侧镜头突起的方向和大致比例",
+    "整体的摄像机侧视轮廓",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "内部的色彩分布（原图为纯白，现需拆解为红蓝黄块面）",
+    "线条的边缘处理（由平滑变为手绘抖动）",
+    "图形的圆角弧度（可略微夸张以增加拙朴感）"
+  ],
+  "forbid": [
+    "禁止保留原始的纯白单色填充",
+    "禁止使用平滑的矢量边缘",
+    "禁止改变‘X’形交叉的基本拓扑结构",
+    "禁止添加任何阴影、高光或立体效果",
+    "禁止使用非主题色板颜色（如绿色、紫色）"
+  ],
+  "generation_direction": "Retro hand-drawn doodle style icon of a stylized video camera. The shape consists of an abstract 'X' or hourglass structure on the left merging into a lens protrusion on the right. Use thick, rough black marker outlines with uneven edges. Fill the geometric sections with solid blocks of brick red, deep blue, and creamy yellow (no gradients). Pure black background. Flat, naive art aesthetic, simplified geometric shapes, centered composition."
+}

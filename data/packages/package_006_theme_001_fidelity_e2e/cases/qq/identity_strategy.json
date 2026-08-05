@@ -1,0 +1,38 @@
+{
+  "app": "qq",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "企鹅的轮廓剪影及标志性的红色围巾",
+  "brand_cues_to_preserve": [
+    "企鹅的黑白身体结构",
+    "黄色的嘴巴和脚掌",
+    "红色的围巾（作为核心品牌色保留，但需降低饱和度）"
+  ],
+  "semantic_cues_to_preserve": [
+    "社交互动的亲和力（通过吉祥物互动体现）",
+    "即时通讯的连接感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "QQ的企鹅形象具有极高的国民辨识度，属于强IP类图标。策略上选择‘logo_simplify’，即在保留企鹅基本形态（头身比、围巾位置）的前提下，将其材质从原本的 glossy/3D 质感转化为符合主题的‘哑光手绘矢量’风格。必须严格执行主题规则，将原本的高饱和红黑配色调整为低饱和度的奶油色系（如砖红、炭灰），并强制引入白色萌宠吉祥物与企鹅进行互动（如趴在企鹅头顶或拥抱），以打破原图标的严肃感，融入治愈系氛围。",
+  "must_preserve": [
+    "企鹅的基本外形轮廓（圆润的头部和身体）",
+    "红色围巾的特征（即使变色也要保留围巾的形态）",
+    "统一的米白色圆角矩形底板",
+    "黑色手绘风格细描边",
+    "画面中必须包含一只白色的简笔画小狗/小熊吉祥物"
+  ],
+  "can_recompose": [
+    "企鹅的眼睛细节（简化为简单的点或弧线，甚至闭眼卖萌）",
+    "围巾的颜色（转为暗红或豆沙红，避免刺眼）",
+    "吉祥物的具体动作（可以是趴在企鹅头上，也可以是靠在旁边）",
+    "企鹅的身体填充色（转为深灰或深蓝灰，非纯黑）"
+  ],
+  "forbid": [
+    "禁止直接使用原版高饱和度的纯黑和正红",
+    "禁止保留原版的立体光影和玻璃质感",
+    "禁止省略白色吉祥物元素",
+    "禁止线条过于笔直僵硬，需保持手绘抖动感和圆润转角",
+    "禁止主体填满画布，需留出呼吸感"
+  ],
+  "generation_direction": "A hand-drawn cartoon icon of a cute penguin (QQ) on a creamy yellow rounded background. The penguin is simplified with soft matte textures and sketchy black outlines. It wears a muted red scarf. A small white fluffy puppy mascot is sitting on top of the penguin's head or hugging it playfully. Pastel colors, healing style, no complex gradients."
+}

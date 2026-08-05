@@ -1,0 +1,41 @@
+{
+  "app": "naruto_mobile",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "漩涡鸣人的面部特征组合（护额、 whiskers/胡须纹、眼睛）",
+  "brand_cues_to_preserve": [
+    "木叶村护额（额头金属牌及螺旋标志）",
+    "脸颊两侧的三道胡须状纹路",
+    "竖瞳/狐狸眼的眼部神态",
+    "标志性的金色刺猬头轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "热血、查克拉能量感（通过冰体内部的光效或气泡密度表达）",
+    "忍者格斗的坚毅表情"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilbili 和 Douyin 的案例表明，即使是复杂图形也必须保留原始几何轮廓。对于 Naruto 这种强角色IP，面部结构（五官比例、护额位置）是识别核心。必须将原本的2D插画脸谱直接转化为具有厚度的3D冰雕浮雕，严禁重构为手里剑或卷轴等通用道具，否则将失去IP辨识度。",
+  "design_rationale": "该App具有极高的角色辨识度，且原图标为特写人脸。根据 theme_design_analysis，应采用 logo_preserve 策略，将鸣人的头部作为一个整体的冰块雕塑来处理。原有的橙红色调必须完全替换为冰蓝色，利用冰的通透感来表现原本‘发光’的九尾查克拉模式。护额和胡须纹作为关键身份线索，需以物理凹凸或内部纹理的形式严格保留。",
+  "must_preserve": [
+    "额头护额的长方形轮廓及内部的螺旋木纹",
+    "脸颊两侧对称的三道杠纹路",
+    "面部的整体长宽比和发型外轮廓",
+    "冰蓝色的统一色调（禁止出现橙色/黄色）"
+  ],
+  "can_recompose": [
+    "原本发光的眼睛可以处理为高透光的冰晶核心",
+    "原本复杂的背景火焰/查克拉 aura 应简化为底座周围的雾气或融水",
+    "右下角的角标（X）应移除或极小化融入底座",
+    "面部阴影转为冰体内部的折射暗部"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色、黄色或红色（必须全盘冰蓝化）",
+    "禁止将脸部扁平化，必须有明显的Z轴厚度",
+    "禁止省略护额或胡须纹",
+    "禁止使用不透明的塑料材质，必须是半透明冰质",
+    "禁止生成真实的皮肤质感"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of Naruto's head. Material is translucent pale cyan ice with internal bubbles and snowflake textures. Strictly preserve the forehead protector (metal plate shape), the three whisker marks on cheeks, and the spiky hair silhouette. No orange colors; everything is frozen blue/white. Glossy surface with condensation droplets. Centered composition on a white background with a melting ice base."
+}

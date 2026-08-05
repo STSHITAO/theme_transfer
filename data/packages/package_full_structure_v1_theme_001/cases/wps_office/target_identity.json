@@ -1,0 +1,39 @@
+{
+  "app": "wps_office",
+  "identity_anchors": [
+    " stylized 'W' letterform",
+    "interlocking ribbon structure",
+    "red-to-orange gradient",
+    "triangular negative space",
+    "symmetrical V-based geometry"
+  ],
+  "must_preserve": [
+    "core 'W' shape formed by two interlocking V-like ribbons",
+    "central overlapping fold with gradient transition",
+    "positive-negative space relationship forming internal triangles",
+    "overall symmetry and balanced proportions",
+    "brand-recognizable red dominance with orange accent at fold"
+  ],
+  "can_restyle": [
+    "gradient intensity or hue shift (e.g., softer reds, muted oranges)",
+    "edge softness or bevel treatment",
+    "background transparency or subtle texture overlay",
+    "shadow depth or glow effect around the W",
+    "surface material finish (matte, glossy, metallic) as long as form remains clear"
+  ],
+  "must_not_replace_with": [
+    "generic office icons (folder, document, pen)",
+    "abstract shapes without W reference",
+    "animal mascots or cartoon characters",
+    "cloud, star, heart, or emoji-style symbols",
+    "text-only logos without graphical W structure"
+  ],
+  "color_preservation": "Primary identity color is vibrant red; orange gradient at central fold must remain visible but can be desaturated or shifted within warm spectrum. Avoid replacing red with non-brand colors like blue, green, or purple unless explicitly themed and still recognizable as WPS.",
+  "structure_summary": "The icon is a geometrically precise, symmetrical 'W' constructed from two mirrored ribbon-like V-shapes that interlock at the center with a folded overlap. The negative space forms two inverted triangles inside each arm. The structure relies on clean lines, consistent stroke width, and spatial balance — any distortion breaking this symmetry risks losing brand recognition.",
+  "risk_notes": [
+    "Over-theming may obscure the W structure if gradients become too diffuse or edges too rounded",
+    "Replacing red entirely will break instant recognition even if shape is preserved",
+    "Adding decorative elements inside negative spaces may confuse the iconic triangle voids",
+    "Asymmetry or skewed perspective will undermine the logo’s stability and professionalism"
+  ]
+}

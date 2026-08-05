@@ -1,0 +1,60 @@
+{
+  "app": "genshin",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original 为高精度的二次元人物面部特写，包含复杂的头发丝、眼睛高光和皮肤阴影。根据 theme_rules 中关于复杂IP的处理原则（参考 lol_mobile 和 honor_of_kings），必须放弃还原人脸细节，转而提取最具识别度的符号（四角星）和色彩块面（深蓝披风+白发）进行几何化重构。",
+  "preserve": [
+    "四角星形状的符号（作为核心视觉重心）",
+    "深蓝色与奶白色的色块搭配逻辑",
+    "纯黑背景 (#000000)"
+  ],
+  "must_preserve": [
+    "粗犷的黑色手绘描边（模拟马克笔质感）",
+    "四角星发饰的几何形态",
+    "头部区域的奶白色/米黄色块",
+    "下部披风区域的深蓝色块"
+  ],
+  "recompose_allowed": [
+    "将派蒙的面部五官完全移除或简化为极简的点线",
+    "将复杂的头发层次重组为单一的圆润白色几何块面",
+    "移除手部比耶动作及底部 miHoYo 文字标",
+    "将原本的紫色眼眸等细节转化为主题允许的深蓝或去除"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦风格（Retro Hand-drawn Doodle）",
+    "使用高饱和度的受限色板（奶白、深蓝、黄）",
+    "采用哑光平涂质感，拒绝任何光影渲染"
+  ],
+  "decorate": [
+    "在主体边缘添加不规则、抖动的粗黑手绘轮廓线",
+    "保持构图的松散自由感，不追求严格对称"
+  ],
+  "forbid": [
+    "禁止出现写实的人脸、眼睛细节或复杂发型",
+    "禁止使用原本的渐变色、发光特效或立体阴影",
+    "禁止使用细线条描边或平滑矢量边缘",
+    "禁止保留原本的背景光效或星空纹理",
+    "禁止出现除红蓝黄白黑以外的颜色（特别是紫色、绿色）"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of Genshin Impact's Paimon symbol on pure black background. Abstract the character into geometric blocks: a creamy white rounded shape for the head/hair, a deep blue trapezoid block for the cape at the bottom. Place a prominent, thick-lined four-pointed star (yellow or white) on the upper right. Use heavy, shaky black marker strokes for outlines. Flat colors only, no shading, no face details, no gradients. Naive art style.",
+  "color_application": "强制去色并重构。将原图标的白发映射为‘奶白/米黄’色块，将深蓝披风映射为‘深宝蓝/靛蓝’色块，将金色发饰映射为‘暖黄’色块。所有色块均为纯色填充，无渐变，无高光。",
+  "stroke_application": "将所有几何块面的边缘转换为粗重、不规则的黑色手绘描边。线条需带有明显的抖动感和厚度变化，模拟粗头马克笔的快速涂抹痕迹，转角处理为圆钝或不规则形状。",
+  "composition_application": "采用中心化符号构图。移除原图的人物特写框架，将抽象后的‘头+披风+星星’组合体居中放置，占据画布约60%面积。四周留黑，确保主体与纯黑背景的高对比度分离。",
+  "identity_application": "通过保留‘白色头部轮廓’、‘蓝色底部色块’以及最关键的‘右上方四角星’这三个核心视觉锚点来指代原神/派蒙。放弃面部特征，依靠符号联想维持品牌识别度。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内（此处主要使用蓝、白、黄）",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风、赛璐璐上色或3D渲染效果",
+    "禁止使用 original 的品牌标准色中的紫色、青色等非主题色",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效或文字",
+    "禁止出现具体的人脸五官细节"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "app": "bilibili_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "带有“漫画”二字的爆炸对话框气泡，以及底部的小电视（2233娘头部）轮廓。",
+  "brand_cues_to_preserve": [
+    "爆炸形/锯齿状边缘的对话气泡轮廓",
+    "气泡内的汉字“漫画”",
+    "底部居中或略微偏侧的小电视（TV头）造型"
+  ],
+  "semantic_cues_to_preserve": [
+    "代表阅读和内容的文字符号",
+    "代表B站品牌的吉祥物特征（天线、屏幕脸）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标由清晰的几何图形（爆炸气泡）和具象符号（小电视）组成，符合 theme_rules 中 'preserve_when' 的条件。参考 bilibili 主App的处理方式，应保留其核心拓扑结构（气泡在上，电视在下），仅对填充色、描边风格和细节复杂度进行主题化重构，而非重新设计主体。",
+  "design_rationale": "哔哩哔哩漫画的图标本身就是一个高度符号化的组合（文字气泡+品牌吉祥物）。为了保持与 bilibili 主应用图标在视觉家族上的一致性，必须保留‘小电视’这一核心资产。同时，将原本复杂的彩色插画风格转化为复古涂鸦风格：把平滑的矢量线条变为粗犷的手绘描边，把丰富的背景色替换为纯黑，把文字和电视主体简化为红蓝黄三色的色块拼接。这样既保留了极高的识别度，又完美契合主题的拙朴感。",
+  "must_preserve": [
+    "爆炸气泡的整体外轮廓（锯齿状边缘）",
+    "“漫画”两个汉字的字形结构（需转化为手绘字体）",
+    "小电视的天线位置和屏幕脸部的基本布局",
+    "纯黑背景 (#000000)"
+  ],
+  "can_recompose": [
+    "将原本精细的矢量描边改为粗细不均的黑色马克笔描边",
+    "将原本的青色/粉色背景去除，主体内部填充改为砖红、深蓝或奶黄",
+    "简化小电视面部的表情细节，仅保留最基本的眼睛和嘴巴线条",
+    "调整气泡和电视的比例，使其更紧凑地适应中心构图"
+  ],
+  "forbid": [
+    "禁止保留原图的青色、粉色等主题外颜色",
+    "禁止使用平滑的贝塞尔曲线描边",
+    "禁止添加阴影、高光或立体效果",
+    "禁止去掉“漫画”文字或将其替换为其他符号",
+    "禁止将小电视变形为无法识别的抽象几何体"
+  ],
+  "generation_direction": "Retro hand-drawn doodle icon on pure black background. A jagged comic speech bubble containing the stylized Chinese characters '漫画' in thick marker strokes. Below the bubble, a simplified retro TV head (Bilibili mascot) with two antennas. Colors restricted to brick red, deep blue, and creamy yellow flat blocks. Heavy, shaky black outlines. No gradients, no shadows, naive art style."
+}

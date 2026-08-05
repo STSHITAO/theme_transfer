@@ -1,0 +1,61 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 bilibili 和 kuaishou 的案例，当原始图标主体为清晰的物体或角色轮廓时，应保留其物理拓扑结构。金铲铲的企鹅形象具有极高的辨识度，且轮廓清晰（圆头+头盔突起+手持物），适合直接进行风格化转译，而非像 LOL 那样重构为抽象符号。需保留企鹅与铲子的空间位置关系。",
+  "preserve": [
+    "企鹅的圆润头部与身体基本比例",
+    "头盔顶部的尖角结构与护耳轮廓",
+    "右手持有的铲子形状（长柄+带孔铲头）",
+    "企鹅面部的大眼睛与嘴巴位置",
+    "纯黑背景 (#000000)"
+  ],
+  "must_preserve": [
+    "企鹅头部的圆形轮廓",
+    "头盔顶部的尖角结构",
+    "铲子的基本形状（长柄+带孔铲头）",
+    "纯黑背景"
+  ],
+  "recompose_allowed": [
+    "将3D立体光影转化为平涂色块",
+    "将复杂的眼睛细节简化为简单的黑色圆点或几何图形",
+    "将原本丰富的色彩映射为复古三原色（如头盔用深蓝或奶黄，铲子用奶黄）",
+    "边缘处理为不规则的手绘抖动线条"
+  ],
+  "restyle": [
+    "去除所有金属光泽、高光和阴影",
+    "应用粗犷、不均匀的黑色手绘描边",
+    "使用蜡笔/粉笔质感的哑光填充",
+    "将色彩限制在砖红、深宝蓝、暖黄/米白范围内"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原图的3D渲染质感和高光",
+    "禁止使用原图的复杂渐变色背景",
+    "禁止出现除红蓝黄白黑以外的颜色（如原本的紫色、浅蓝色需转换）",
+    "禁止线条过于平滑锐利，必须体现手绘感",
+    "禁止移除头盔或铲子",
+    "禁止将企鹅误画为其他鸟类"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon on pure black background. Centered simplified penguin wearing a helmet and holding a spatula. Flat colors (brick red, deep blue, creamy yellow) with thick, rough marker strokes. No gradients, no shadows, no 3D effects. Naive, cute geometric block composition.",
+  "color_application": "Map original metallic/silver helmet to Deep Blue or Creamy Yellow flat blocks; map golden spatula to Creamy/Yellow flat block; map penguin body to White/Black blocks. Strictly use high-saturation limited palette (Red/Blue/Yellow/White) on #000000 background.",
+  "stroke_application": "Apply thick, uneven, hand-drawn black outlines to all shapes (penguin, helmet, spatula). Edges must be rough and jittery, simulating marker pen traces, avoiding smooth vector curves.",
+  "composition_application": "Center the penguin figure occupying 60-70% of the canvas. Maintain the spatial relationship of helmet on head and spatula in hand. Remove all background elements except pure black.",
+  "identity_application": "Preserve the specific topology of the 'helmeted penguin' and the 'spatula' prop. Simplify details but keep the iconic silhouette recognizable. Do not abstract into generic symbols; keep the character form.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must apply thick, rough hand-drawn strokes",
+    "Must use flat colors without gradients or shadows",
+    "Must limit colors to theme palette (Red, Blue, Yellow/White)",
+    "Must retain the core silhouette of the helmeted penguin and spatula"
+  ],
+  "negative_constraints": [
+    "No realistic 3D rendering or glossy textures",
+    "No complex backgrounds or lighting effects",
+    "No fine/smooth vector lines",
+    "No colors outside the theme palette (e.g., green, purple, pink)",
+    "No removal of key identity props (helmet, spatula)"
+  ]
+}

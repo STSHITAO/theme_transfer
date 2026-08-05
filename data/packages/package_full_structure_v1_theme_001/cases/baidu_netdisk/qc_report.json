@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了'几何守恒，材质重构'的策略。三个圆环的拓扑结构、互锁关系以及整体的云朵轮廓均被严格保留。材质上成功转化为半透明冰雕风格，内部包含气泡和雪花纹理，底部有自然的水渍和阴影，完全符合主题参考图的视觉特征。去除了原图的红蓝渐变和文字，色彩统一为浅冰蓝，是极高质量的生成结果。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "同样很好地还原了冰雕风格和百度网盘的三环结构。相比 candidate_01，其圆环的厚度感略强，导致整体轮廓显得稍显臃肿，且环与环之间的穿插关系在视觉上不如 candidate_01 清晰锐利。虽然也是优秀的候选项，但在几何结构的精准还原度上略逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\baidu_netdisk\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

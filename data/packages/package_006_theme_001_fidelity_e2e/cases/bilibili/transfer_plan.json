@@ -1,0 +1,64 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "电视机圆角矩形外轮廓",
+    "顶部双天线结构",
+    "品牌粉色系（需降饱和处理）",
+    "屏幕区域作为互动空间",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "must_preserve": [
+    "小电视轮廓",
+    "顶部的两根天线",
+    "黑色手绘风格描边",
+    "统一的白色萌宠吉祥物",
+    "粉色圆角方形底",
+    "bilibili 文字标识"
+  ],
+  "recompose_allowed": [
+    "移除原始 'bilibili' 文字拼写",
+    "将实心粉色背景替换为奶油黄底板",
+    "电视屏幕内部留白或容纳吉祥物",
+    "线条转为抖动感手绘线"
+  ],
+  "restyle": [
+    "高饱和亮粉 -> 低饱和度马卡龙淡粉",
+    "矢量直线 -> 黑色手绘不规则描边",
+    "扁平色块 -> 哑光纸质/粘土质感"
+  ],
+  "decorate": [
+    "白色软萌小动物（小狗/小绵羊）趴在电视顶部或与天线互动",
+    "轻微的手绘阴影表示层级"
+  ],
+  "forbid": [
+    "保留原始高饱和度亮粉色背景",
+    "绘制复杂的 'bilibili' 英文文字",
+    "省略顶部天线（避免混淆为平板）",
+    "缺失白色吉祥物",
+    "使用锐利直角或完美几何线条",
+    "3D渲染、光泽、金属质感"
+  ],
+  "generation_brief": "Healing hand-drawn cartoon app icon, creamy yellow rounded square background. Main subject is a simplified pastel pink TV set with two antennas on top, outlined in sketchy black lines. A small fluffy white puppy is sitting inside the TV screen or hugging the antenna. Matte texture, soft pastel colors, no text, cute and cozy atmosphere.",
+  "color_application": "将B站标志性的高饱和粉色转换为低饱和度的马卡龙淡粉色（Pastel Pink），用于填充电视机主体；背景严格使用主题规定的奶油黄/米白色。",
+  "stroke_application": "使用黑色细线条勾勒电视机轮廓和吉祥物，线条需带有自然的手绘抖动感、断连或粗细变化，模拟马克笔触感，避免完美矢量直线。",
+  "composition_application": "采用非对称平衡构图，电视机居中略偏，白色吉祥物占据画面1/4至1/3面积，与电视机产生物理互动（如趴在屏幕上或抱着天线），四周留有充足呼吸感。",
+  "identity_application": "通过保留‘圆角矩形机身+双天线’的核心视觉锚点来识别B站身份，放弃难以手绘化的文字Logo，将品牌色柔化融入主题色调，确保在主题统一性下仍可辨识。",
+  "fidelity_constraints": [
+    "必须包含统一的白色萌宠吉祥物且互动自然",
+    "背景必须为统一的暖色调（奶油黄/米白）圆角矩形",
+    "线条必须具有手绘不规则感",
+    "色彩必须为低饱和度Pastel色系",
+    "保持扁平哑光质感，无复杂光影"
+  ],
+  "negative_constraints": [
+    "禁止出现 'bilibili' 英文文字",
+    "禁止使用原始高饱和粉色背景",
+    "禁止省略电视机天线",
+    "禁止写实、3D、光泽、金属效果",
+    "禁止缺少吉祥物元素"
+  ]
+}

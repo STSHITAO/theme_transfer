@@ -1,0 +1,38 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "天猫标志性的黑色猫头轮廓（含耳朵）及“天猫”二字的标准字形结构",
+  "brand_cues_to_preserve": [
+    "猫头剪影的几何外轮廓（特别是双耳的弧度和位置）",
+    "“天猫”二字的笔画特征与排版比例",
+    "猫眼与鼻子的相对空间位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "电商平台的品牌标识性",
+    "文字的可读性（尽管材质改变）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和哔哩哔哩（Bilibili）的案例，对于具有极高国民度且由清晰几何/文字构成的Logo，必须严格保留其原始矢量轮廓。天猫的猫头剪影和文字是其核心资产，不能进行语义重组。策略是将原本的平面红色背景+黑色猫头+白色文字，整体转化为一个具有厚度的、统一的冰雕实体。",
+  "design_rationale": "天猫图标包含复杂的图文组合（文字+图形）。为了符合‘冰封’主题的纯净感，不能保留原始的红色背景和黑白配色。应将整个图标视为一块被冻结的物体：猫头和文字作为浮雕或内嵌结构存在于半透明的冰蓝材质中。通过材质的统一（去色）来解决原图颜色冲突，通过保留精确轮廓来解决身份识别问题。",
+  "must_preserve": [
+    "猫头外边缘的平滑曲线",
+    "“天”字的人字形撇捺角度",
+    "“猫”字的反犬旁与苗字结构",
+    "图标整体的正方形/圆角矩形外边界感"
+  ],
+  "can_recompose": [
+    "原始的红黑配色方案（必须完全移除）",
+    "平面的2D线条（需转化为有倒角的3D实体）",
+    "内部细节纹理（替换为气泡、冰裂纹）"
+  ],
+  "forbid": [
+    "禁止出现任何红色、黑色或白色不透明区域",
+    "禁止将猫头简化为抽象符号或真猫形象",
+    "禁止文字变形导致不可读",
+    "禁止缺乏厚度的平面剪纸效果"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Tmall logo. The object is a thick, translucent pale cyan ice block shaped exactly like the original Tmall icon silhouette (cat head outline containing the Chinese characters '天猫'). The material is frozen water with internal bubbles and snowflake textures. No red or black colors; everything is unified in ice blue. The edges are rounded and glossy. White background with a subtle contact shadow and melting water puddle at the base."
+}

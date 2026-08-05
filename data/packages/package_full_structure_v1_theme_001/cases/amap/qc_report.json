@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。材质转换为半透明冰晶，内部包含气泡和雪花纹理，颜色为Cyan-Ice Blue。严格保留了纸飞机的几何剪影、折痕结构和右上方45度朝向。底部有物理接触阴影和水渍，背景洁白，无多余元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "构图未完全遵循指令，缺少底部的物理接触阴影和水渍细节，导致物体看起来像悬浮在空中而非放置在平面上。虽然主体形态正确，但缺乏参考图中强调的'落地感'和底部装饰细节。",
+      "recommendation": "主体风格正确，但构图完整性不如 candidate_01，缺少底部水渍和投影，不符合 generation_brief 中关于物理真实感的描述。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\amap\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

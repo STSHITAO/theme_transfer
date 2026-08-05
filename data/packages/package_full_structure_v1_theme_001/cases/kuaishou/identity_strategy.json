@@ -1,0 +1,41 @@
+{
+  "app": "kuaishou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "上下结构的摄像机几何轮廓（上方双圆镜头，下方机身与三角形播放键）",
+  "brand_cues_to_preserve": [
+    "标志性的白色摄像机剪影结构",
+    "上方两个圆形组成的镜头部分",
+    "下方左侧的三角形播放符号",
+    "整体图标的长宽比例和空间布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "摄像/录制设备的形态特征",
+    "视频播放（三角形）的功能暗示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Bilibili 等案例均严格保留了原图标的核心几何骨架，仅做材质替换。快手图标具有极高的图形识别度（独特的摄像机抽象造型），且结构简单清晰，非常适合直接转化为 3D 冰雕。必须完整保留其‘上圆下框’的拓扑关系，不可重构为其他物体。",
+  "design_rationale": "快手图标本身就是一个高度抽象化的符号（摄像机），这与主题要求的‘几何守恒，材质重构’完美契合。策略是将原本扁平的白色线条转化为具有厚度的透明冰砖。原有的橙色背景被移除， replaced by 纯白背景和底部的融水细节。通过冰材质的折射和内部气泡，赋予这个简单的几何图形丰富的视觉层次，同时保持用户一眼就能认出是快手。",
+  "must_preserve": [
+    "原图标中两个圆圈（镜头）的大小比例和相对位置",
+    "下方矩形机身与左侧三角形的连接关系",
+    "线条的粗细比例（转化为冰块的厚度）",
+    "整体的垂直居中构图"
+  ],
+  "can_recompose": [
+    "将原本的二维平面线条拉伸为具有 Z 轴厚度的立体模型",
+    "边缘处理由锐利变为圆润倒角（模拟冰块融化感）",
+    "内部填充随机的雪花纹理和微小气泡",
+    "表面增加湿润的高光反射和焦散效果"
+  ],
+  "forbid": [
+    "禁止改变摄像机的基本形状（如把圆圈变成方形）",
+    "禁止保留原始的橙红色背景或主体颜色",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止省略底部的接触阴影和水渍细节",
+    "禁止添加额外的装饰性元素（如真实的镜头玻璃反光），保持图标的符号化特征"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Kuaishou camera icon. The subject is a thick, translucent cyan-blue ice block shaped exactly like the original logo (two circles on top, camera body with triangle below). No orange color. Pure white background. The ice material must have internal bubbles, snowflake textures, and a glossy wet surface. Add a soft contact shadow and melting water puddle at the base. Centered composition."
+}

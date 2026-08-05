@@ -1,0 +1,223 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D Ice/Crystal Material Theme. The theme transforms flat 2D vector icons into three-dimensional objects made of translucent, light-blue ice or crystal. The style emphasizes volume, refraction, internal texture (bubbles/snowflakes), and a cold, refreshing atmosphere against a clean white background.
+
+[Reference Raw To Style Transform]
+The transformation converts flat, solid-color silhouettes into volumetric 3D sculptures. The original geometry is preserved but extruded to have thickness. The material changes from opaque digital colors to semi-transparent icy blue. Surface details like water droplets, internal air bubbles, or frost patterns are added to enhance the 'frozen' realism.
+
+[Color Transform Rule]
+强制去色处理。无论 original 是红、绿、黑还是多色渐变，style_ref 一律转换为统一的冰蓝色调。仅保留光影造成的亮度变化（高光白、阴影深蓝），不保留原品牌的识别色（除了极个别作为点缀的悬浮小图标）。
+
+[Background Transform Rule]
+从 original 的纯色块或复杂渐变背景，转变为 style_ref 的纯净白色/浅灰背景。去除所有背景装饰，将视觉焦点完全集中在冰雕主体及其底部的物理投影上。
+
+[Stroke Transform Rule]
+消除 original 的平面描边。转化为 3D 实体的物理边缘。边缘处理柔和，带有玻璃/冰块的折射光晕，而非硬边线条。
+
+[Composition Transform Rule]
+保持 original 的核心几何结构和空间布局不变。将 2D 图形“挤压”成 3D 实体。主体大小适中，底部增加基座或自然融化的形态以支撑视觉重心。
+
+[Subject Scale Rule]
+主体宽度约占画布宽度的 50%-60%。高度根据原图比例自然延伸，但整体需控制在画布垂直居中位置，底部留出约 15% 空间给阴影和水渍。
+
+[Detail Complexity Rule]
+简化 original 的内部细节（如文字笔画的复杂连接），将其概括为厚实的冰块结构。增加材质层面的细节（气泡、纹理、反光）来替代原本的图形细节。
+
+[Theme Fidelity Constraints]
+[
+  "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感。",
+  "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体。",
+  "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认。",
+  "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留原图标的实心色彩填充。",
+  "禁止使用黑色或深色背景。",
+  "禁止将主体设计为扁平化或低多边形（Low-poly）风格，必须是圆润的高模质感。",
+  "禁止过度重构主体形状（如将抖音音符变成真正的乐器），必须保持原 Logo 的抽象几何形态。"
+]
+
+[Theme Board]
+{
+  "palette": "统一使用清透的浅冰蓝色（Cyan/Ice Blue）作为主体主色，完全覆盖原图标品牌色。背景统一为纯白或极淡的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无传统描边。通过3D模型的边缘高光、折射和阴影来界定轮廓。线条边缘圆润光滑，模拟冰块融化或打磨后的质感，无锐利直角。",
+  "material": "核心材质为半透明冰晶/凝胶（Translucent Ice/Gel）。具有次表面散射（SSS）效果，内部包含随机分布的微小气泡、裂纹或雪花纹理。表面呈现湿润、高光泽的反射特性。",
+  "background": "极简留白。主体通常放置在纯白背景上，底部有接触阴影（Contact Shadow）和少量融化的水渍/碎冰细节，增强落地感和真实感。",
+  "composition": "单体居中构图。主体占据画布约 60%-70% 的空间。对于原本扁平的图形，强制赋予 Z 轴厚度，使其成为立体物件。",
+  "motif_rules": "必须包含‘寒冷’主题元素：如内部冻结的雪花、表面的冷凝水珠、底部的碎冰或水坑。若原图标有特定语义符号（如火焰），需将其作为独立小元素悬浮或置于旁边，不与冰主体融合。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: qimao
+
+[transfer_plan]
+{
+  "app": "qimao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，即使是复杂的图形或文字，也必须保留其原始拓扑结构。七猫的 Logo 本身就是高度抽象的几何图形（猫脸+7），非常适合直接进行 3D 挤出和材质替换。若重构为真实的猫或书本，将彻底丢失品牌识别度。因此，必须严格保留原图的平面轮廓，仅做 Z 轴厚度和材质属性的迁移。",
+  "preserve": [
+    "猫头与数字7结合的特定外轮廓",
+    "两只眼睛的相对位置和竖直形态",
+    "图形的左右对称性（或原有的平衡感）",
+    "猫脸轮廓与数字7的同构几何关系",
+    "双眼的垂直椭圆形状及位置",
+    "整体图形的负空间比例"
+  ],
+  "must_preserve": [
+    "猫头部的几何化矩形框架结构",
+    "双眼的相对位置与比例（占据面部主要视觉重心）",
+    "瞳孔的垂直细长形态（这是识别‘猫’而非其他动物的关键）",
+    "眼睛内部的高光点位置",
+    "头部与身体连接处的负形空间关系",
+    "左右对称的构图逻辑"
+  ],
+  "recompose_allowed": [
+    "原本的纯黑填充改为深蓝色半透明冰体或内部深邃的空腔",
+    "原本的黄色眼睛改为高亮冰晶、气泡聚集区或微弱的暖光点缀（视生成效果而定，若主题强制去色则改为高透明白光）",
+    "边缘增加圆润的倒角和融化感",
+    "底部增加接触阴影和碎冰细节"
+  ],
+  "restyle": [
+    "将扁平矢量剪影转化为具有Z轴厚度的3D实体",
+    "表面材质替换为半透明浅冰蓝色晶体",
+    "添加内部悬浮气泡、雪花纹理和次表面散射效果",
+    "边缘处理为圆润光滑的冰蚀质感，去除锐利直角"
+  ],
+  "decorate": [
+    "底部添加柔和的接触阴影（Contact Shadow）",
+    "基座周围散落少量碎冰或融化的水渍",
+    "表面添加冷凝水珠和高光反射"
+  ],
+  "forbid": [
+    "禁止生成写实的猫头（要有毛发质感）",
+    "禁止改变眼睛的形状（如变成圆眼）",
+    "禁止丢失数字7的结构特征",
+    "禁止使用原本的亮黄色作为主色调",
+    "禁止主体悬空无投影",
+    "禁止保留原图标的实心黑色或黄色填充",
+    "禁止出现不透明塑料或金属质感",
+    "禁止复杂背景纹理干扰主体"
+  ],
+  "generation_brief": "3D icon of Qimao logo (cat head merging with number 7), made of translucent light blue ice crystal. Strictly preserve the geometric silhouette and vertical oval eyes. Eyes rendered as bright glossy highlights or clear crystal spheres within the ice. Soft rounded edges, wet surface, internal bubbles/snowflakes. Centered on pure white background with soft contact shadow and scattered ice shards at base. No yellow color, no fur, high fidelity to original shape.",
+  "color_application": "Apply theme's 'Force Desaturation' rule: Convert original black body to deep translucent cyan/ice-blue volume; convert original yellow eyes to bright white/clear crystal highlights or very pale icy blue to maintain contrast without using brand yellow. Dominant palette is Translucent Cyan/Light Ice Blue.",
+  "stroke_application": "Eliminate all 2D outlines. Define forms through 3D volume, refraction, and specular highlights. Edges must be smooth, chamfered, and physically rounded like eroded ice.",
+  "composition_application": "Center the 3D ice sculpture occupying 60-70% of canvas height. Maintain the original spatial arrangement of the cat/7 shape. Add a subtle physical base or melting puddle at the bottom to anchor the object on the white background.",
+  "identity_application": "Preserve the exact topology of the 'Cat+7' silhouette. Express identity through shape recognition rather than color. The vertical pupils and eye placement are critical anchors; render them as distinct high-reflection zones within the ice structure to ensure recognizability.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal material, not opaque plastic.",
+    "Color strictly limited to ice-blue/cyan spectrum; no original brand colors (black/yellow) in fill.",
+    "Original core silhouette and structural proportions must be strictly preserved.",
+    "Must have environmental interaction (shadow/water/ice shards) at the base."
+  ],
+  "negative_constraints": [
+    "No flat vector style or 2D appearance.",
+    "No realistic fur texture or anatomical cat features.",
+    "No dark or complex backgrounds.",
+    "No distortion of the '7' or cat head geometry.",
+    "No floating objects without ground contact shadows."
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: Apply theme's 'Force Desaturation' rule: Convert original black body to deep translucent cyan/ice-blue volume; convert original yellow eyes to bright white/clear crystal highlights or very pale icy blue to maintain contrast without using brand yellow. Dominant palette is Translucent Cyan/Light Ice Blue.
+Stroke application: Eliminate all 2D outlines. Define forms through 3D volume, refraction, and specular highlights. Edges must be smooth, chamfered, and physically rounded like eroded ice.
+Composition application: Center the 3D ice sculpture occupying 60-70% of canvas height. Maintain the original spatial arrangement of the cat/7 shape. Add a subtle physical base or melting puddle at the bottom to anchor the object on the white background.
+Identity application: Preserve the exact topology of the 'Cat+7' silhouette. Express identity through shape recognition rather than color. The vertical pupils and eye placement are critical anchors; render them as distinct high-reflection zones within the ice structure to ensure recognizability.
+
+Fidelity constraints:
+[
+  "Subject must be translucent ice/crystal material, not opaque plastic.",
+  "Color strictly limited to ice-blue/cyan spectrum; no original brand colors (black/yellow) in fill.",
+  "Original core silhouette and structural proportions must be strictly preserved.",
+  "Must have environmental interaction (shadow/water/ice shards) at the base."
+]
+
+Negative constraints:
+[
+  "No flat vector style or 2D appearance.",
+  "No realistic fur texture or anatomical cat features.",
+  "No dark or complex backgrounds.",
+  "No distortion of the '7' or cat head geometry.",
+  "No floating objects without ground contact shadows."
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching qimao's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like qimao as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

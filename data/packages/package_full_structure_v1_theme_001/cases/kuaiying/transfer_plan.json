@@ -1,0 +1,74 @@
+{
+  "app": "快影 (Kuaiying)",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视）和 douyin（音符）的案例，对于具有强几何特征的硬件符号（如摄像机），必须直接将其立体化。快影的图标由清晰的几何块面组成，非常适合转化为厚实的冰砖结构，无需进行语义重组，只需将原本的扁平色块替换为具有厚度的冰体即可。",
+  "preserve": [
+    "左侧开口的圆角矩形框架结构（类 'C' 形机身）",
+    "右侧两个垂直排列的独立胶囊状/梯形元素（镜头组件）",
+    "主体图形与右侧元素的空间分离关系（负空间）",
+    "整体的横向构图比例",
+    "摄像机机身的 'C' 形开口朝向和圆角曲率",
+    "右侧两个竖条的大小比例及间距"
+  ],
+  "must_preserve": [
+    "左侧开口的圆角矩形框架结构",
+    "右侧两个垂直排列的独立胶囊状/梯形元素",
+    "主体图形与右侧元素的空间分离关系（负空间）",
+    "整体的横向构图比例",
+    "摄像机机身的 'C' 形开口朝向和圆角曲率",
+    "右侧两个竖条的大小比例及间距",
+    "图标整体的居中构图",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "recompose_allowed": [
+    "将原本的平面色块拉伸为具有明显厚度（Z轴）的实体",
+    "边缘处理为圆润的倒角以模拟冰的融化感",
+    "内部填充随机的雪花纹理和微小气泡",
+    "表面增加湿润的高光反射和焦散效果"
+  ],
+  "restyle": [
+    "红粉橙渐变替换为统一的浅冰蓝色调（Cyan-Ice Blue）",
+    "去除所有二维描边，依靠材质体积感和光影界定轮廓",
+    "背景从黑色转换为纯白或极浅冷灰色",
+    "赋予主体高光泽度、半透明的冰冻材质（SSS效果）"
+  ],
+  "decorate": [
+    "内部嵌入随机分布的微小气泡和冰晶颗粒",
+    "表面添加雪花纹理以增加材质丰富度",
+    "底部添加融化的水迹、小水洼或碎冰屑",
+    "边缘增加菲涅尔反射高光"
+  ],
+  "forbid": [
+    "禁止保留原本的粉红色/橙红色渐变",
+    "禁止将图标变成真实的写实相机照片",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止改变右侧两个竖条的数量或排列方式",
+    "禁止背景出现非白色的杂色",
+    "禁止使用暖色调作为主体主色",
+    "禁止生成实心、不透明的物体",
+    "禁止过度复杂的场景化重构"
+  ],
+  "generation_brief": "3D ice sculpture icon of Kuaiying app. Subject: A thick, translucent cyan-blue ice block shaped like a stylized camera body (C-shaped frame on left) and two separate vertical ice bars (lens elements) on the right. Maintain exact original spatial layout and aspect ratio. Material: High-quality semi-transparent ice with internal air bubbles, snowflake textures, glossy wet surface, and caustic lighting. Background: Pure white. Details: Realistic contact shadows and melting water puddles at the base. No outlines, no brand colors (red/orange), no solid plastic look.",
+  "color_application": "强制去色。将原图标的红粉橙渐变完全移除，统一应用主题规定的 Cyan-Ice Blue（主色）、Translucent White（高光）和 Deep Azure（阴影）。仅通过材质的透光率和环境光遮蔽来表现层次，严禁使用任何暖色系。",
+  "stroke_application": "消除所有二维描边。将原图标的线条轮廓转化为三维实体的物理边缘。对边缘进行倒角处理（Chamfered edges）以捕捉高光，利用冰块的厚度和折射光来界定形状，而非绘制线条。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体居中放置，占据画布约 60%-70% 空间。确保主体作为一个独立的 3D 物体稳固地‘立’在白色背景上，底部预留空间给投影和水渍，四周留有呼吸感。",
+  "identity_application": "严格保留‘C’形机身框架与右侧两个垂直条块的几何拓扑关系和相对位置。通过将这些特定的几何形状直接‘冻结’为冰块实体来维持身份识别，不进行任何语义上的替换或简化，确保剪影的可识别性。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。",
+    "必须严格保留目标App图标的核心几何轮廓和拓扑结构。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色（如黑色或渐变色）。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。",
+    "禁止将主体替换为任何具象的生物或物体（如真实相机照片）。"
+  ]
+}

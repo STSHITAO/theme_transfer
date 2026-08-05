@@ -1,0 +1,39 @@
+{
+  "app": "onmyoji",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "神乐（Kagura）的面部特征与金鱼发饰的组合轮廓",
+  "brand_cues_to_preserve": [
+    "标志性的齐刘海与长发轮廓",
+    "左上方悬浮的金鱼形状发饰/灵体",
+    "惊讶/张嘴的神态特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "和风妖怪题材的视觉暗示（通过金鱼元素体现）",
+    "角色互动的亲密感（金鱼贴近头部）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，即使是复杂图形也应保留其核心拓扑结构。Onmyoji 原图虽为复杂插画，但其‘人脸+金鱼’的组合具有极高的品牌辨识度。根据 theme_rules 中的 'target_preservation' 原则，不能将其重构为通用的神社或符咒，必须保留角色头部与金鱼的相对位置关系，仅做几何简化和材质替换。",
+  "design_rationale": "阴阳师的原生图标是复杂的二次元插画，直接3D化会导致细节丢失或变成恐怖谷效应。策略选择‘logo_simplify’，将复杂的面部五官和头发概括为圆润的冰块几何体，利用冰晶的折射来暗示眼睛的神采，而非刻画瞳孔。金鱼作为关键识别物，被处理为悬浮在主体旁的独立冰雕组件，既符合主题中‘寒冷/冻结’的设定，又保留了游戏的核心IP特征。",
+  "must_preserve": [
+    "主体必须呈现为半透明浅冰蓝色（Cyan/Ice Blue），严禁使用原图的深紫色或红色填充主体",
+    "金鱼的形态必须清晰可辨，作为独立的冰冻物件存在",
+    "底部必须有接触阴影和碎冰/水渍细节，确立物理落地感",
+    "边缘必须圆润光滑，模拟冰块打磨质感，无锐利描边"
+  ],
+  "can_recompose": [
+    "面部的具体五官（眼睛、嘴巴）简化为冰内部的纹理或凹凸结构",
+    "头发的复杂发丝简化为整体的块面结构",
+    "金鱼的鳞片细节简化为冰表面的裂纹或气泡",
+    "背景完全去除，替换为纯白环境"
+  ],
+  "forbid": [
+    "禁止保留原图的深色背景和暖色调光影",
+    "禁止生成不透明的塑料质感或金属质感",
+    "禁止将金鱼与人脸融合成一个无法区分的怪异团块",
+    "禁止出现扁平化的矢量线条风格"
+  ],
+  "generation_direction": "Create a 3D translucent ice sculpture of a stylized anime girl's head with bangs, featuring a distinct goldfish shape floating near the top left. The entire object is made of light blue crystal ice with internal bubbles and snowflakes. Smooth, rounded edges, glossy wet surface. Pure white background with soft contact shadow and scattered ice shards at the base. No original colors, only ice blue and white highlights."
+}

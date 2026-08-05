@@ -1,0 +1,64 @@
+{
+  "app": "dewu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的案例，该主题的核心逻辑是将高辨识度的平面符号（汉字/字母）直接转化为具有厚度的3D冰雕实体。得物的Logo本身就是高度几何化的汉字设计，具有极强的剪影识别度，因此必须完整保留其字形结构，仅做材质上的‘冻结’处理，严禁重构为鞋子或盒子等语义物体。",
+  "preserve": [
+    "“得物”汉字的整体骨架与笔画拓扑关系",
+    "字体的方正、硬朗几何特征",
+    "文字作为核心识别符号的功能性",
+    "“得”字右侧“寸”的横折钩处理",
+    "“物”字右侧“勿”的撇画转折角度"
+  ],
+  "must_preserve": [
+    "“得物”两个汉字的准确写法与结构比例",
+    "笔画的粗细均匀度与几何转折角度",
+    "整体的黑白负空间关系（即笔画间的空隙）"
+  ],
+  "recompose_allowed": [
+    "将原本的平面白色填充替换为半透明浅冰蓝色材质",
+    "为字体增加物理厚度（挤压成型）",
+    "在笔画末端和转角处增加圆润的倒角和高光",
+    "在冰块内部添加随机的雪花或气泡纹理",
+    "底部增加融化的水渍和接触阴影"
+  ],
+  "restyle": [
+    "应用3D冰雕拟物风格：高光泽度冰冻材质，次表面散射效果",
+    "颜色去色：原品牌青蓝色转为统一的Cyan-Ice Blue主色调",
+    "边缘处理：倒角处理以捕捉高光，模拟冰块打磨质感"
+  ],
+  "decorate": [
+    "内部嵌入微小气泡、冰晶颗粒或雪花图案",
+    "底部添加融化水迹、小水洼或碎冰屑以增强物理接触感"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构或写错字",
+    "禁止使用原本的高饱和度青色（Cyan）作为主体颜色，必须转为冰蓝",
+    "禁止保留底部的‘礼物节’波浪背景和心形元素",
+    "禁止生成不透明的实心塑料块或磨砂玻璃",
+    "禁止添加鞋子、包装盒等具象物体干扰文字主体",
+    "禁止保留原始的大面积品牌背景色",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D icon of Chinese characters '得物' as translucent ice sculpture. Exact geometric structure preserved. Material: cyan-blue ice with internal bubbles/snowflakes, glossy wet surface, chamfered edges. Pure white background. Soft contact shadow and melting water puddle at base. No other objects.",
+  "color_application": "强制去色。将原图标的黑白及品牌青蓝色完全转换为统一的浅冰蓝色调（Cyan-Ice Blue）。利用Deep Azure表现阴影与厚度，Translucent White表现高光与透光区。",
+  "stroke_application": "消除所有二维描边。将汉字笔画转化为具有厚度的三维冰砖实体。边缘进行倒角处理，通过材质的折射率差异和菲涅尔反射来界定轮廓，而非绘制线条。",
+  "composition_application": "单体居中构图。主体（汉字）占据画布约60%-70%空间。去除原图标中的背景色块和辅助图形（如心形、波浪），背景统一为纯白，底部预留空间给投影和水渍，强调垂直方向的体积感。",
+  "identity_application": "严格保留“得物”二字的几何骨架和拓扑结构。通过赋予其统一的冰材质和光影效果来实现主题化，确保用户能通过剪影瞬间识别出品牌，不因材质变化而丧失字形辨识度。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。",
+    "禁止出现扁平化设计、2D矢量感或杂乱背景。"
+  ]
+}

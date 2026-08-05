@@ -1,0 +1,59 @@
+{
+  "app": "Meitu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（M+圆环），符合 theme_rules 中关于保留清晰几何符号的要求。无需像游戏类 App 那样重构语义，只需将平滑的矢量线条转化为粗犷的手绘笔触，并严格执行去色和描边规则。",
+  "preserve": [
+    "M 字母的基本拓扑结构（双峰波浪形态）",
+    "外围圆环的闭合轮廓",
+    "主体居中的构图比例"
+  ],
+  "must_preserve": [
+    "M 字母的波浪起伏形态（模拟山峰或波形）",
+    "红白配色的品牌基因映射（转为砖红/米白）",
+    "图形化的字母 M 与圆环的空间层级关系"
+  ],
+  "recompose_allowed": [
+    "将平滑矢量边缘重组为抖动、粗细不均的手绘笔触",
+    "将完美正圆重组为手绘不规则椭圆",
+    "在 M 内部或周围添加主题规定的四角星装饰"
+  ],
+  "restyle": [
+    "将品牌亮粉色/洋红色重绘为主题限定的高饱和度砖红/朱红",
+    "将白色部分重绘为奶黄/米白色块",
+    "应用蜡笔/马克笔的干性绘画介质质感",
+    "去除所有立体光影，改为完全平面化填充"
+  ],
+  "decorate": [
+    "增加粗黑色的手绘感描边",
+    "在主体内部嵌入简单的几何装饰（如四角星）以符合 motif_rules"
+  ],
+  "forbid": [
+    "禁止保留原本的亮粉色/洋红色",
+    "禁止使用平滑的矢量曲线",
+    "禁止保留原本的红色背景（必须为纯黑 #000000）",
+    "禁止添加阴影、高光、渐变或立体效果",
+    "禁止替换为相机、人脸等具象物体"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of Meitu. Centered stylized letter 'M' with wavy peaks inside a rough circular ring. Colors: Brick red and creamy yellow flat fills on pure black background. Thick, uneven black marker outlines. Crayon texture, naive art style, no shadows, no gradients.",
+  "color_application": "Map original brand pink/red to theme's high-saturation brick red; map white elements to creamy yellow/off-white. Strictly flat colors, no gradients.",
+  "stroke_application": "Apply thick, irregular black outlines simulating hand-drawn marker strokes. Edges must be rough and jittery, not smooth vectors.",
+  "composition_application": "Center the M-in-ring structure. Subject occupies 60-70% of canvas. Pure black background (#000000) with no other elements.",
+  "identity_application": "Preserve the specific wavy topology of the 'M' and the enclosing circle. Ensure the shape is recognizable as Meitu's logo despite the crude stylistic transformation.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, uneven hand-drawn black outlines",
+    "Colors restricted to brick red, creamy yellow, and black",
+    "No lighting, shadows, or 3D effects",
+    "Flat design only"
+  ],
+  "negative_constraints": [
+    "No realistic or photorealistic details",
+    "No smooth vector lines",
+    "No original brand pink/magenta colors",
+    "No white or colored backgrounds",
+    "No complex textures or gradients"
+  ]
+}

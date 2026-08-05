@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与身份约束。材质呈现极佳的半透明冰雕质感，内部气泡与表面高光处理得当。完整保留了企鹅头盔、铲子形状及五官位置，剪影识别度极高。底部水渍细节符合物理逻辑，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "整体轮廓和身份识别良好，但材质表现略显浑浊，更像磨砂玻璃或冻硬的雪球，缺乏参考图中那种清透的'次表面散射'和湿润感。虽然结构保留完整，但在风格匹配度上略逊于 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\golden_spatula\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

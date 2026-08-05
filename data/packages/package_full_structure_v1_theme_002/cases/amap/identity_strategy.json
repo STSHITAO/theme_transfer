@@ -1,0 +1,39 @@
+{
+  "app": "amap",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "向右上方飞行的蓝色纸飞机轮廓",
+  "brand_cues_to_preserve": [
+    "纸飞机的整体三角形拓扑结构",
+    "机头指向右上方的动态趋势",
+    "机身折叠产生的几何分割线"
+  ],
+  "semantic_cues_to_preserve": [
+    "导航与出行的方向感",
+    "轻盈、快速的移动意象"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "高德地图的原始图标本身就是高度抽象的几何符号（纸飞机），符合 theme_design_analysis 中关于‘清晰几何符号需保留主体轮廓’的规则。参考 bilibili 和 douyin 的案例，此类图标应维持原有拓扑结构，仅进行材质和色彩的置换，无需重构为其他语义符号。",
+  "design_rationale": "选择 logo_preserve 策略是因为纸飞机是高德地图极具辨识度的超级符号。在复古手绘主题下，应将原本具有立体光影的3D纸飞机转化为扁平的色块拼接。利用主题限定的深蓝色作为主色调填充机身，用粗的黑色手绘线条勾勒边缘，模拟马克笔涂鸦质感。去除原有的浅绿/浅蓝背景格纹，改为纯黑底色，使蓝色的纸飞机像贴纸一样浮于画面中心。",
+  "must_preserve": [
+    "纸飞机的尖锐机头和展开的双翼轮廓",
+    "代表折痕的内部几何线条",
+    "纯黑背景 (#000000)",
+    "粗重且不规则的手绘描边"
+  ],
+  "can_recompose": [
+    "将原本的立体渐变蓝色替换为平涂的深宝蓝或靛蓝",
+    "将平滑的矢量边缘处理为抖动、粗糙的手绘线条",
+    "移除原始背景中的网格色块",
+    "简化内部折痕细节，仅保留主要结构线"
+  ],
+  "forbid": [
+    "禁止保留原始的3D高光和阴影渲染",
+    "禁止使用原始图标中的浅绿色或浅青色",
+    "禁止使用细线条或完美的几何直线",
+    "禁止添加除纸飞机以外的复杂场景元素"
+  ],
+  "generation_direction": "Retro hand-drawn doodle style icon of a blue paper airplane on pure black background. Thick, rough marker pen strokes with uneven edges. Flat solid deep blue color fill, no gradients or shadows. Simplified geometric folds. Naive art aesthetic, centered composition."
+}

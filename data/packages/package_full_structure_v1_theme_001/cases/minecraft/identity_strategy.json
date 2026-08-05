@@ -1,0 +1,38 @@
+{
+  "app": "minecraft",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "经典的像素方块人（Steve）头部及上半身轮廓，以及标志性的低多边形/体素化几何特征。",
+  "brand_cues_to_preserve": [
+    "Steve 的头部与躯干比例",
+    "方形的像素化边缘结构",
+    "人物手持红色花朵的姿态"
+  ],
+  "semantic_cues_to_preserve": [
+    "方块世界的构建感",
+    "探索与自然的意象（通过花朵表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、Bilibili等案例均保留了原图标的核心剪影和拓扑结构，仅做材质替换。Minecraft 的 Steve 形象具有极高的全球辨识度，其独特的‘方块人’几何本身就是最强的语义。因此必须严格保留其主体轮廓，将其直接转化为冰雕实体，而非重构场景。",
+  "design_rationale": "Minecraft 的核心视觉资产是‘方块人 Steve’。在冰雕主题下，将原本粗糙的泥土/皮肤质感转化为晶莹剔透的冰质方块，能形成强烈的‘冻结的像素世界’美感。根据 theme_rules，需去除原有的绿色草地背景和棕色土地，将视觉焦点完全集中在冰制的 Steve 身上。为了区分版本并增加生机，保留其手中的红花作为唯一的暖色点缀（参考火山版抖音的处理逻辑），但主体必须统一为浅冰蓝色。",
+  "must_preserve": [
+    "Steve 的方形头部和身体轮廓",
+    "手持红色花朵的动作结构",
+    "底部的物理接触阴影和水渍",
+    "冰块内部的雪花或气泡纹理"
+  ],
+  "can_recompose": [
+    "原本的像素格纹细节（可简化为冰块内部的自然裂纹或气泡，不必强行画出像素格）",
+    "面部五官（可弱化为冰内部的折射光影，不必刻画具体的眼睛嘴巴）",
+    "背景环境（完全移除，改为纯白）"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色草地或棕色土地背景",
+    "禁止生成不透明的蓝色塑料或实心石头质感",
+    "禁止改变 Steve 的长宽比例或肢体动作",
+    "禁止使用暖色调作为主体颜色（除极小的红花外）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Minecraft character 'Steve' (head and torso) holding a small red flower. The entire figure must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. No pixel grid lines on surface, just smooth icy edges. Pure white background. Soft contact shadow and melting water puddle at the base. High gloss, subsurface scattering effect."
+}

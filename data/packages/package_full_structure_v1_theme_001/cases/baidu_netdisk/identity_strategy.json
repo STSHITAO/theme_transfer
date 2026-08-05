@@ -1,0 +1,37 @@
+{
+  "app": "baidu_netdisk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "三圆环互锁的几何拓扑结构（云朵形态）",
+  "brand_cues_to_preserve": [
+    "三个圆环呈三角形排列的整体轮廓",
+    "圆环之间的互锁/穿插空间关系",
+    "顶部圆环与下方两个圆环的连接方式"
+  ],
+  "semantic_cues_to_preserve": [
+    "云朵的抽象形态（暗示云存储）",
+    "循环连接的闭环结构（暗示同步与分享）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（'支'字）、豆瓣（'豆'字）及抖音（音符）的案例均证明，该主题的核心逻辑是'几何守恒，材质重构'。百度网盘的三叶草/云朵结构具有极高的独特性和识别度，必须完整保留其三维空间拓扑关系，仅将原本的扁平渐变色块转化为具有厚度的实体冰块。",
+  "design_rationale": "选择 logo_preserve 策略是因为百度网盘的图标本身就是高度抽象且成熟的符号。根据 theme_design_analysis，对于此类强几何符号，不应进行语义替换（如变成真实的文件夹或硬盘），而应直接将其'冻结'。通过将原本轻盈的云形状转化为厚重的冰雕，利用材质的物理属性（折射、气泡）来承载设计感，同时严格遵循去色规则，将原有的蓝红渐变统一为浅冰蓝色，仅在内部纹理上做文章。",
+  "must_preserve": [
+    "三个圆环互相咬合的准确位置关系",
+    "整体外轮廓的圆润度",
+    "中心镂空区域的形状"
+  ],
+  "can_recompose": [
+    "原图标的色彩渐变（必须移除）",
+    "底部的波浪装饰和文字（必须移除）",
+    "圆环的截面形状（可从扁平变为圆柱状或方柱状冰条）"
+  ],
+  "forbid": [
+    "禁止保留原图的红色部分（需统一转为冰蓝）",
+    "禁止生成不透明的实心塑料质感",
+    "禁止改变三个环的前后遮挡关系",
+    "禁止添加除气泡/雪花以外的复杂内部装饰"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Baidu Netdisk logo (three interlocking rings forming a cloud shape). Material is translucent cyan-blue ice with internal bubbles and snowflake textures. No outlines, defined by refraction and caustics. Glossy wet surface. Centered on a pure white background with a soft contact shadow and melting water puddle at the base. Remove all original gradients and text."
+}

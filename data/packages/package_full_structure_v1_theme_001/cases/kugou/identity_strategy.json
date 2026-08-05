@@ -1,0 +1,39 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "圆圈内的'K'字几何结构",
+  "brand_cues_to_preserve": [
+    "外部圆环轮廓",
+    "内部'K'字母的笔画比例与倾斜度",
+    "'K'字与圆环的同心/居中空间关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "字母'K'作为品牌首字母的识别性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于具有强几何特征的字母或汉字图标，主题策略是直接将其'实体化'而非重构。酷狗的'K'字结构简单且辨识度极高，必须完整保留其拓扑结构，仅做材质替换和立体增厚处理。",
+  "design_rationale": "酷狗音乐的原图标由极其简洁的几何图形（圆+K）组成，符合主题包中'几何守恒，材质重构'的核心原则。不需要引入额外的音符或播放器元素（避免semantic_recompose），因为原图标本身的剪影已足够传达品牌身份。设计重点在于表现冰块的厚度感、边缘的倒角高光以及内部的通透纹理，使其看起来像一块精心雕琢的冰印鉴。",
+  "must_preserve": [
+    "原图标的正圆形外轮廓",
+    "字母'K'的标准字形结构",
+    "主体在画面中的居中构图"
+  ],
+  "can_recompose": [
+    "将原本的平面蓝色填充转换为半透明浅冰蓝色材质",
+    "增加Z轴厚度，使扁平图形变为立体冰块",
+    "在冰块内部添加随机气泡、雪花纹理或冰裂纹",
+    "边缘处理为圆润光滑的融化质感",
+    "底部增加接触阴影和少量融水细节"
+  ],
+  "forbid": [
+    "禁止改变'K'字的字体风格或笔画粗细",
+    "禁止将圆环变为椭圆或其他形状",
+    "禁止使用原图的深蓝色作为主体颜色",
+    "禁止生成不透明的实心塑料质感",
+    "禁止去除背景留白，导致物体悬浮无落地感"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Kugou logo: a thick, translucent cyan-blue ice ring containing a solid ice letter 'K'. The material should look like frozen water with internal bubbles and snowflake textures. Smooth, rounded edges with glossy highlights. Centered on a pure white background with a soft contact shadow and small melting water puddle at the base. No outlines, defined by refraction and thickness."
+}

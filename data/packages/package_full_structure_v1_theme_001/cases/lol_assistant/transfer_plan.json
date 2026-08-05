@@ -1,0 +1,63 @@
+{
+  "app": "lol_assistant",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和豆瓣的案例，该主题的核心逻辑是将平面符号直接转化为具有厚度的冰雕实体。'掌上英雄联盟'的图标核心在于文字本身和特有的角标，因此必须完整保留文字的拓扑结构和角标的几何形态，仅做材质替换和立体化拉伸，不可重组或简化为其他语义符号。",
+  "preserve": [
+    "'英雄联盟'四个汉字的字形骨架与笔画结构",
+    "右下角四叶风车/星芒符号的几何拓扑结构",
+    "LEAGUE OF LEGENDS 英文副标题的存在感与排版位置",
+    "中文主标题与英文副标题的上下层级关系",
+    "右下角符号相对于文字主体的空间位置"
+  ],
+  "must_preserve": [
+    "'英雄联盟'四个汉字的准确字形，严禁替换字体或改变笔画连接方式",
+    "右下角风车/星芒符号的四瓣放射状结构",
+    "底部接触阴影和水渍细节以确立物理存在感"
+  ],
+  "recompose_allowed": [
+    "将原深蓝色背景替换为纯白/极浅冷灰背景",
+    "将原金黄色/橙红色品牌色统一转换为半透明冰蓝色调",
+    "将字体边缘锐角处理为圆润倒角以模拟冰块质感",
+    "在主体内部嵌入随机气泡、雪花或冰裂纹纹理"
+  ],
+  "restyle": [
+    "整体材质重构为高光泽度、半透明的冰晶/凝胶质感",
+    "利用次表面散射（SSS）和菲涅尔反射表现体积感",
+    "通过光影切割而非描边来界定轮廓"
+  ],
+  "decorate": [
+    "主体内部填充微小空气气泡和冰晶颗粒",
+    "表面呈现湿润的高光反射效果",
+    "底部添加融化的水迹和小水洼"
+  ],
+  "forbid": [
+    "禁止保留原图的金黄色、深蓝色或橙红色作为主体主色",
+    "禁止生成不透明的塑料、金属或磨砂材质",
+    "禁止改变'英雄联盟'的字形结构或替换为其他文字",
+    "禁止移除右下角的风车/星芒符号",
+    "禁止使用复杂的游戏场景、角色剪影或通用游戏手柄作为背景/主体",
+    "禁止出现二维扁平化矢量风格或黑色描边"
+  ],
+  "generation_brief": "3D ice sculpture icon of 'lol_assistant'. Subject: Chinese characters '英雄联盟' centrally placed with 'LEAGUE OF LEGENDS' below, and a four-bladed windmill/star symbol in the bottom right. Material: Translucent cyan-blue ice with internal bubbles and snowflake textures. Style: Glossy wet surface, rounded chamfered edges, no outlines. Background: Pure white. Details: Realistic contact shadow and melting water puddles at the base. High fidelity Octane render.",
+  "color_application": "强制去色。将原图的深蓝底色和金/橙文字完全转换为统一的浅冰蓝色（Cyan-Ice Blue）和半透明白（Translucent White）。仅通过深浅不一的冰蓝色调表现阴影和厚度，严禁出现暖色调主体。",
+  "stroke_application": "消除所有二维描边。将原图标的线条和文字笔画转化为具有物理厚度的3D实体边缘。边缘需经过倒角处理，通过高光反射和折射来界定轮廓，而非绘制线条。",
+  "composition_application": "从平面填充式构图转变为单体居中立体构图。主体（文字+角标）作为一个整体的3D冰块物件悬浮于纯白背景中，占据画布约60-70%空间，四周留白，底部预留空间给投影和水渍。",
+  "identity_application": "通过严格保留'英雄联盟'汉字字形、右下角星芒符号的几何拓扑以及中英文排版的相对位置来维持身份识别。在不改变形状的前提下，通过赋予其统一的冰材质和光影效果来实现主题化，确保剪影可识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，具有次表面散射效果",
+    "内部必须包含随机的气泡或雪花纹理",
+    "背景必须保持洁白干净，无杂色",
+    "底部必须有物理接触阴影和融化水迹",
+    "严禁直接使用原图的高饱和度品牌色（金/蓝/橙）作为主体颜色"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如塑料、石头、金属）",
+    "禁止保留原始的大面积品牌背景色",
+    "禁止过度复杂的场景化重构（如角色、武器）",
+    "禁止使用暖色调作为主体主色",
+    "禁止字形错误或符号缺失"
+  ]
+}

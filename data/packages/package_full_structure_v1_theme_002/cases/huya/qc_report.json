@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了虎头轮廓、双耳、大眼及播放键三角形等核心拓扑结构。色彩映射正确（砖红/深蓝/奶黄），背景纯黑。线条具有明显的手绘抖动感和粗犷感，完全符合 'Retro hand-drawn doodle' 和 'shaky black marker outlines' 的风格要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 75,
+      "style_match_score": 75,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "风格执行不够彻底。虽然结构和颜色正确，但黑色描边过于平滑、均匀，缺乏 transfer_plan 中明确要求的 'shaky'（抖动）、'irregular'（不规则）和 'rough'（粗糙）的手绘马克笔质感，看起来更像标准的矢量插画而非手绘涂鸦。",
+      "recommendation": "结构识别度很好，但线条风格未达标。相比 candidate_01，它丢失了主题化重构中关键的“拙稚感”和“手绘痕迹”，不符合 strict 的风格约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\huya\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

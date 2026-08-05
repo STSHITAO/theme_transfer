@@ -1,0 +1,60 @@
+{
+  "app": "QQ",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "企鹅整体圆润剪影轮廓",
+    "红色围巾的形态与环绕位置",
+    "黄色喙与脚掌的相对位置",
+    "黑白配色的基本分布逻辑"
+  ],
+  "must_preserve": [
+    "企鹅主体识别性",
+    "围巾元素",
+    "统一的米白/淡黄圆角矩形底板",
+    "黑色手绘风格细描边",
+    "白色简笔画萌宠吉祥物（小狗/小熊）及其与主体的互动"
+  ],
+  "recompose_allowed": [
+    "将高饱和纯黑调整为深炭灰或深蓝灰",
+    "将正红调整为低饱和度的豆沙红或砖红",
+    "简化眼部细节为手绘圆点或弧线",
+    "调整吉祥物的具体互动姿态（如趴在头顶、拥抱侧面）"
+  ],
+  "restyle": [
+    "去除原有3D光影、玻璃质感和高光",
+    "转换为哑光、扁平化的手绘矢量填充风格",
+    "线条增加自然抖动感和圆润转角，模拟马克笔触感"
+  ],
+  "decorate": [
+    "在企鹅头部或身体侧方添加一只白色软萌小动物（小狗或小熊）",
+    "确保小动物与企鹅有物理接触或情感互动（非孤立存在）"
+  ],
+  "forbid": [
+    "禁止使用原版高饱和度纯黑和正红",
+    "禁止保留立体渲染、金属光泽或复杂渐变",
+    "禁止省略白色吉祥物元素",
+    "禁止线条笔直僵硬或几何完美",
+    "禁止主体填满画布，必须保留四周呼吸感",
+    "禁止使用写实风格或恐怖/攻击性表情"
+  ],
+  "generation_brief": "A cute hand-drawn cartoon app icon of a simplified QQ penguin on a creamy yellow rounded background. The penguin has a soft matte texture with sketchy black outlines, wearing a muted red scarf. A small white fluffy puppy mascot is playfully sitting on the penguin's head or hugging it. Pastel colors, healing style, no complex gradients, high quality illustration.",
+  "color_application": "将QQ原本的高对比度品牌色（纯黑、正红、亮黄）转换为低饱和度的Pastel色系。黑色转为深炭灰，红色转为柔和的豆沙红/砖红，黄色转为奶油黄或淡鹅黄，背景统一为暖调米白/淡黄。",
+  "stroke_application": "应用统一的黑色细实线描边，线条需带有手绘的自然抖动感和不规则性，拐角处理圆润，避免矢量直线的机械感，模拟针管笔或马克笔勾勒效果。",
+  "composition_application": "采用非对称平衡构图。企鹅主体居中略偏，占据画布60-70%面积，四周留出明显呼吸感。白色吉祥物作为视觉补充，打破原有对称性，增加画面动态感和陪伴感。",
+  "identity_application": "在严格保留企鹅剪影、围巾形态和黑白分布逻辑的前提下，通过材质柔化和色彩降饱和来融入主题。吉祥物的互动不仅不破坏身份，反而增强了‘社交亲和力’的语义表达。",
+  "fidelity_constraints": [
+    "必须使用统一的米白/淡黄圆角矩形底板",
+    "必须包含黑色手绘风格细描边",
+    "必须包含白色萌宠吉祥物并与主体互动",
+    "色彩必须为低饱和度奶油/马卡龙色系",
+    "保持扁平哑光质感，无立体光影"
+  ],
+  "negative_constraints": [
+    "禁止保留原始高饱和品牌色",
+    "禁止3D渲染、 glossy、金属或霓虹效果",
+    "禁止省略吉祥物",
+    "禁止锐利直角或完美几何线条",
+    "禁止背景复杂渐变或纹理"
+  ]
+}

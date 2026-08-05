@@ -1,0 +1,60 @@
+{
+  "app": "qidian",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 theme_design_analysis 中 alipay（支）和 douban（豆）的处理方式，对于以文字为核心的图标，必须严格保留其二维平面上的笔画拓扑和空间布局。仅将原本的扁平白色文字‘挤压’为具有厚度的3D冰雕实体，严禁改变字形结构或重组笔画。",
+  "preserve": [
+    "“起点”二字的完整汉字骨架与拓扑结构",
+    "“起”字走之旁的动态倾斜感与封闭结构",
+    "“点”字底部四点底（灬）的独立切分形态",
+    "文字的水平并列布局与相对比例"
+  ],
+  "must_preserve": [
+    "汉字的准确字形，禁止替换为拼音、英文或其他符号",
+    "文字的可读性与清晰度",
+    "底部接触阴影和水渍/碎冰细节以确立物理落地感"
+  ],
+  "recompose_allowed": [
+    "将2D平面笔画转化为具有Z轴厚度的3D实体",
+    "笔画边缘进行圆润化倒角处理（模拟冰蚀效果）",
+    "在冰块内部嵌入随机分布的气泡、雪花或裂纹纹理",
+    "表面添加高光反射与冷凝水珠细节"
+  ],
+  "restyle": [
+    "材质：从纯色块转变为半透明浅冰蓝色晶体",
+    "光影：应用次表面散射（SSS）与折射效果",
+    "色彩：完全去除品牌红色，统一为冰蓝/青色系"
+  ],
+  "decorate": [
+    "内部悬浮的微小雪花或气泡",
+    "表面的湿润光泽与水滴",
+    "底部的融化水渍与少量碎冰"
+  ],
+  "forbid": [
+    "禁止保留原图的红色背景或红色填充",
+    "禁止使用不透明塑料、金属或木质材质",
+    "禁止修改汉字笔画连接方式或字形结构",
+    "禁止文字悬空无投影",
+    "禁止使用深色或复杂背景"
+  ],
+  "generation_brief": "3D icon of Chinese characters '起点' sculpted from translucent light blue ice. Thick, rounded edges, glossy wet surface with internal bubbles and snowflakes. Pure white background, soft contact shadow, melting water puddle at base. No red color, no flat vector style.",
+  "color_application": "强制去色。将原品牌红底白字转换为统一的半透明浅冰蓝色（#A0D8EF approx）。利用光影亮度变化（高光白、阴影深蓝）替代原有的色彩对比，严禁在主体上使用红色。",
+  "stroke_application": "消除原有平面描边。通过3D模型的物理边缘、折射光晕和柔和倒角来界定字形轮廓。边缘需光滑圆润，模拟冰块融化质感，无锐利直角。",
+  "composition_application": "保持“起点”二字水平居中布局。将2D文字挤压出厚度，使其成为占据画布60-70%高度的立体物件。底部增加自然融化的基座或水渍以支撑视觉重心，确保物体不悬空。",
+  "identity_application": "通过严格保留“起点”二字的笔画拓扑结构和空间排列来维持身份识别。放弃色彩识别，依赖形态识别。确保字形在冰晶材质化后依然清晰可辨，不发生结构性扭曲。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，具有次表面散射效果",
+    "颜色严格限制在冰蓝/青色光谱内",
+    "必须保留原始汉字的核心轮廓识别度",
+    "底部必须有环境交互细节（阴影、水渍）"
+  ],
+  "negative_constraints": [
+    "禁止出现红色、绿色等原品牌实心色彩",
+    "禁止扁平化、2D矢量风格",
+    "禁止不透明塑料或金属质感",
+    "禁止深色或复杂背景",
+    "禁止字形结构改变导致无法识别"
+  ]
+}

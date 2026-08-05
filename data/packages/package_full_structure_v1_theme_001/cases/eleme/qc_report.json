@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了 'e' 的完整拓扑结构和右侧圆点，材质为标准的半透明冰晶，包含气泡细节，底部有融水阴影，且完全去除了品牌色。是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 85,
+      "background_score": 95,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反结构保留策略。虽然材质风格正确，但主体 'e' 的笔画发生断裂（中间横杠未连接），导致字形结构破坏，无法准确识别为饿了么 Logo。属于过度重构。",
+      "recommendation": "不推荐。尽管风格统一，但丢失了核心识别特征（完整的 'e' 字形），违反了 strict 级别的 identity_constraint。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\eleme\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

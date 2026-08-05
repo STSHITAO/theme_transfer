@@ -1,0 +1,38 @@
+{
+  "app": "genshin",
+  "identity_anchors": [
+    "Paimon (派蒙) character face",
+    "Winking expression (one eye open, one closed)",
+    "Peace sign (V-sign) hand gesture near the eye",
+    "Four-pointed star hair accessory",
+    "miHoYo text logo at the bottom"
+  ],
+  "must_preserve": [
+    "The specific facial layout: large open blue eye on left, winking eye on right",
+    "The hand gesture framing the right side of the face",
+    "The white/silver hair color and bangs structure",
+    "The 'miHoYo' logotype text at the bottom banner",
+    "The four-pointed star shape (can be stylized but must remain a 4-point star)"
+  ],
+  "can_restyle": [
+    "Line art thickness and color (can match theme)",
+    "Shading style (cel-shading vs soft gradient)",
+    "Background elements (stars, sparkles can be thematic)",
+    "The yellow flower accessory (can be swapped for thematic element if needed, but face is priority)",
+    "The dark blue collar/clothing area (can be adapted to theme colors)"
+  ],
+  "must_not_replace_with": [
+    "Generic anime girl without specific Paimon features",
+    "Abstract symbols or logos replacing the character",
+    "Other Genshin characters (e.g., Traveler, Qiqi)",
+    "Generic mascots (cats, dogs, blobs)",
+    "Landscape or scenery shots"
+  ],
+  "color_preservation": "Must retain the high-key lighting with dominant whites/creams for hair and skin. The deep blue/purple of the open eye and the specific navy blue of the collar are critical brand identifiers. The 'miHoYo' text should remain white on a dark background for legibility.",
+  "structure_summary": "Close-up portrait composition focusing on the upper face. Asymmetrical balance with the hand gesture on the right. The head is framed by white hair, with a distinct V-shape formed by the fingers near the temple. A horizontal band at the bottom anchors the composition with the company logo.",
+  "risk_notes": [
+    "Removing the 'miHoYo' text might make it look like fan art rather than the official app icon.",
+    "Changing the eye color (e.g., to red or green) breaks the character identity immediately.",
+    "Over-stylizing the face to the point where the wink and peace sign are lost will result in a generic avatar."
+  ]
+}

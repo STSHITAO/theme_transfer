@@ -1,0 +1,59 @@
+{
+  "app": "lofter",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "LOFTER 的原始图标是高度抽象的几何符号（字母 L），符合 theme_design_analysis 中关于保留清晰几何符号的规定。参考 bilibili 和 douyin 的案例，此类图标应保留主体轮廓的空间布局，仅将原本的细线条转化为粗犷的手绘色块或粗描边，严禁重构为其他物体。",
+  "preserve": [
+    "L 形主体的垂直竖线与底部横向弧线的连接关系",
+    "纯黑背景 (#000000)",
+    "粗、不规则的手绘边缘质感",
+    "无渐变、无阴影的扁平填色"
+  ],
+  "must_preserve": [
+    "大写字母 L 的基本拓扑结构",
+    "底部向右延伸并回勾的圆弧特征",
+    "线条的连贯性（非断裂笔画）",
+    "作为内容社区的开放性（通过线条的开口暗示）"
+  ],
+  "recompose_allowed": [
+    "线条的粗细比例（需显著加粗以符合手绘风）",
+    "原始的青绿色（必须映射为红/蓝/黄之一）",
+    "外部的圆形容器（必须移除）",
+    "线条末端的锐利度（需改为圆润或钝角）"
+  ],
+  "restyle": [
+    "将精致矢量线条转化为粗马克笔涂抹的厚实笔触",
+    "模拟干性绘画介质（蜡笔/粉笔）的颗粒感与不均匀填充",
+    "边缘处理为毛糙、抖动的徒手线条效果"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原始的青绿色（Teal）",
+    "保留原本的圆形背景底板",
+    "使用细线条或平滑的矢量边缘",
+    "添加任何立体高光或投影效果",
+    "将 L 形扭曲至无法识别",
+    "使用主题色板之外的颜色（如绿色、紫色、粉色）"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of a stylized letter 'L' on pure black background. Thick, clumsy marker-pen strokes with rough uneven edges. Solid deep blue or warm yellow fill (NO teal). No circle background, no gradients, no shadows. Centered composition, occupying 60% of canvas. Crayon texture, naive art aesthetic.",
+  "color_application": "强制去除原始 Teal 色。根据 theme color_transform_rule，将主体映射为主题限定色板中的‘深宝蓝/靛蓝’或‘暖黄/米黄’，确保在纯黑背景上的高对比度。坚持纯色块填充，严禁渐变。",
+  "stroke_application": "应用 theme stroke_transform_rule：移除原始精细描边，替换为粗重、带有明显抖动感和厚度变化的手绘风格轮廓。边缘呈现不规则圆润感或钝角，模拟马克笔快速涂抹痕迹，无工业锐利度。",
+  "composition_application": "应用 theme composition_transform_rule：彻底移除原始圆形底板背景，使 'L' 符号独立悬浮于纯黑背景之上。主体居中，占据画布 60%-70% 面积，保持极简构图，四周留黑均匀。",
+  "identity_application": "在严格保留 'L' 字母拓扑结构（竖直长边与底部回勾弧线）的前提下，通过加粗笔触和粗糙边缘进行主题化重绘。品牌识别线索通过独特的几何形态保留，而非依赖原始颜色或容器形状。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色 Teal",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止保留原始圆形背景容器"
+  ]
+}

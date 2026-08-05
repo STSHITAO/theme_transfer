@@ -1,0 +1,61 @@
+{
+  "app": "beautycam",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度概括的几何符号（相机+光环），符合 theme_rules 中‘当 Original 为清晰几何符号时保留主体轮廓’的规则。虽然去除了原有的3D玻璃质感和粉色背景，但必须维持‘相机框+C形环+菱形’的空间拓扑关系，以确保用户能一眼识别出这是美颜相机而非普通相机。",
+  "preserve": [
+    "相机机身的基本外轮廓（顶部双圆弧突起+圆角矩形主体）",
+    "内部C形环绕结构的拓扑关系（开口方向、大致比例）",
+    "右上角菱形/方块装饰元素的位置与相对大小",
+    "整体中心对称的布局结构"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗重的黑色手绘风格描边",
+    "相机轮廓与内部组件的空间层级关系"
+  ],
+  "recompose_allowed": [
+    "将原本的粉/紫/蓝渐变色替换为主题限定的砖红、深蓝或奶黄色块",
+    "将平滑的矢量边缘处理为抖动的马克笔笔触",
+    "简化C形环的厚度，使其变为扁平的粗线条或色块",
+    "去除所有的立体高光、阴影和玻璃质感"
+  ],
+  "restyle": [
+    "材质从3D玻璃/拟物转变为哑光平涂蜡笔/马克笔质感",
+    "色彩从高饱和粉色系映射为复古三原色（红/蓝/黄）",
+    "线条从精细平滑转变为粗犷不规则的手绘线条"
+  ],
+  "decorate": [
+    "在C形环或菱形内部可添加极少量的主题化点缀（如小星形或圆点），但需保持极简",
+    "边缘允许出现轻微的涂抹不均或颗粒感以增强手绘真实度"
+  ],
+  "forbid": [
+    "禁止保留原本的粉色背景或白色底板",
+    "禁止使用原本的粉紫色系（必须映射到红蓝黄）",
+    "禁止出现平滑的贝塞尔曲线边缘",
+    "禁止添加任何写实的光影渲染、高光或投影",
+    "禁止改变相机和光环的基本比例导致不可识别",
+    "禁止使用绿色、紫色等主题色板之外的颜色"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of a camera on pure black background. Thick, rough black marker outlines. Body is a simplified rounded rectangle with two bumps on top. Inside, a thick C-shaped block (brick red or warm yellow) and a small diamond shape (deep blue) at top-right. Flat solid colors, no gradients, no shadows, crayon texture, naive and clumsy aesthetic.",
+  "color_application": "Map original pink/purple gradient identity to theme's limited palette: use Brick Red or Warm Yellow for the main camera body/C-ring, and Deep Blue for the diamond accent. All fills must be solid, high-saturation flat colors without any gradients.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black strokes to all edges. Lines should have varying thickness and jitter, simulating a dry marker or crayon on rough paper. No smooth vector lines allowed.",
+  "composition_application": "Center the simplified camera symbol. It should occupy 60-70% of the canvas. Ensure ample black negative space around the subject. Maintain the internal spatial relationship: C-ring centered, diamond at top-right.",
+  "identity_application": "Preserve the specific 'camera with top bumps' silhouette and the internal 'C-ring + diamond' arrangement. This specific combination distinguishes it from generic camera apps. The identity is carried by the geometry, not the original color or material.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must use thick, rough, hand-drawn style strokes",
+    "Colors must be restricted to Brick Red, Deep Blue, Warm Yellow/White",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No pink, purple, or white backgrounds",
+    "No glossy, 3D, or photorealistic rendering",
+    "No thin or perfect vector lines",
+    "No complex details or text",
+    "No deviation from the core camera+C-ring+diamond structure"
+  ]
+}

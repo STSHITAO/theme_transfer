@@ -1,0 +1,62 @@
+{
+  "app": "tencent_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilibili 的处理方式表明，复杂的卡通形象应被视为整体几何结构进行‘冻结’。腾讯动漫的图标核心在于‘戴企鹅帽的人物’这一复合剪影。为了保持品牌识别度，必须严格保留人物与企鹅帽子的相对位置关系和外部轮廓，仅将原本的色块填充替换为具有体积感的冰晶材质，不可重构为其他物体。",
+  "preserve": [
+    "Q版人物头部的整体圆润外轮廓（含头发边缘）",
+    "头顶企鹅帽子的基本形态特征及与头部的连接关系",
+    "面部五官（眼、嘴）的相对布局位置",
+    "3D立体化后的厚度感与体积感"
+  ],
+  "must_preserve": [
+    "人物头部的整体外轮廓（包括头发和帽子边缘）",
+    "头顶企鹅帽子的基本形态特征",
+    "面部的五官布局位置（眼、嘴的相对坐标）",
+    "3D立体化后的厚度感"
+  ],
+  "recompose_allowed": [
+    "原本平涂的颜色（全部转为冰蓝色调）",
+    "手中的铲子等细小道具（若影响整体冰块完整性可简化或融合进主体）",
+    "底部的文字（去除，仅保留图形主体）",
+    "背景的烟花和装饰元素（去除）"
+  ],
+  "restyle": [
+    "将原图标的实心色彩填充转换为半透明浅冰蓝色材质",
+    "将平面描边转换为3D实体的物理边缘高光与折射",
+    "添加内部悬浮气泡、雪花纹理及表面冷凝水珠",
+    "增加次表面散射（SSS）效果以增强冰的通透感"
+  ],
+  "decorate": [
+    "底部增加软性接触阴影（Contact Shadow）",
+    "底部增加少量融化的水渍或碎冰细节以锚定主体",
+    "表面添加锐利的白色 specular highlights 模拟湿润光泽"
+  ],
+  "forbid": [
+    "禁止保留原本的橙色背景、肤色及品牌色",
+    "禁止生成不透明的塑料或金属质感，必须是半透明冰晶",
+    "禁止改变人物头部的长宽比或核心剪影拓扑结构",
+    "禁止出现锐利的直角边缘，所有边缘需圆润如融冰",
+    "禁止悬空，必须有落地交互细节"
+  ],
+  "generation_brief": "3D icon of Tencent Comics mascot head wearing a penguin hat, rendered as a translucent light-blue ice sculpture. Glossy wet surface with internal bubbles and snowflakes. Soft rounded edges, no outlines. Centered on pure white background with soft contact shadow and melting water details at base. High fidelity to original silhouette.",
+  "color_application": "强制去色。将原图标的所有颜色（肤色、橙色背景、黑色/黄色帽子细节）统一映射为半透明浅冰蓝色（Cyan/Ice Blue）。仅通过高光（纯白）和内部阴影（深蓝/灰）表现体积，不保留任何原品牌色填充。",
+  "stroke_application": "消除所有2D描边。通过3D模型的物理边缘、折射光晕和高光来界定轮廓。边缘处理柔和圆润，模拟冰块融化后的自然形态，无锐利线条。",
+  "composition_application": "保持原图标中心构图。移除底部文字和背景装饰，仅保留‘戴企鹅帽的人物头部’作为唯一主体。主体占据画布60-70%高度，底部留出空间给阴影和水渍，确保视觉重心稳定。",
+  "identity_application": "通过严格保留‘Q版大头+企鹅帽’的独特剪影轮廓来维持身份识别。放弃色彩识别，完全依赖形态识别。将复杂的角色细节概括为厚实的冰块结构，确保在材质化后依然能一眼认出是腾讯动漫的吉祥物。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+    "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认",
+    "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+  ],
+  "negative_constraints": [
+    "禁止保留原图标的实心色彩填充",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为扁平化或低多边形（Low-poly）风格",
+    "禁止过度重构主体形状或移除企鹅帽子元素",
+    "禁止生成 matte finish（哑光）表面，必须是 glossy（光泽）"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original 图标为写实人物肖像（戴墨镜的男性），属于高复杂度生物特征，无法直接通过描边和填色转化为复古手绘风格而不产生恐怖谷效应或丢失主题趣味性。根据 theme_rules 中关于复杂 IP（如 LOL、王者荣耀）的处理逻辑，必须舍弃人物主体，提取其品牌符号（CF Logo）和功能符号（枪/准星）进行几何化重构。",
+  "preserve": [
+    "CF 字母组合的几何骨架与拓扑结构",
+    "射击游戏的核心语义符号（准星/枪口轮廓）",
+    "红蓝对抗的色彩阵营关系"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷、不规则的手绘黑色描边",
+    "红、蓝、黄/白的高饱和度受限色板",
+    "扁平化无光影处理",
+    "CF 标识的可识别性"
+  ],
+  "recompose_allowed": [
+    "将写实人物替换为 CF Logo 与枪械/准星元素的几何组合",
+    "调整 CF Logo 的比例以适应居中构图",
+    "将金属质感转化为纯色块填充",
+    "用黄色星形/火花替代原有的橙色装饰符号作为点缀"
+  ],
+  "restyle": [
+    "所有线条转为带有抖动感的粗马克笔触",
+    "色彩映射为主题限定的砖红、靛蓝和奶黄",
+    "去除所有渐变、高光和阴影",
+    "边缘处理为圆润或不规则的钝角"
+  ],
+  "decorate": [
+    "在主体内部或周围添加简单的几何装饰（如四角星、圆点）模拟涂鸦感",
+    "利用色块并置表现结构层次"
+  ],
+  "forbid": [
+    "禁止保留任何写实的人脸特征、墨镜或发型细节",
+    "禁止使用原本的品牌标准银灰色、冷青色或渐变色",
+    "禁止出现精细平滑的矢量线条",
+    "禁止在黑色背景上添加投影、环境光或光效粒子",
+    "禁止使用绿色、紫色等主题色板之外的颜色"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of CrossFire Mobile. Centered composition featuring a simplified, geometric 'CF' logo combined with a stylized gun silhouette or crosshair. Thick, rough, uneven black marker outlines. Solid flat fills of Brick Red and Indigo Blue to represent factions, with a small Yellow star/spark accent. Pure black background. Naive art style, no shading, no gradients, no realistic details.",
+  "color_application": "Map original silver/blue/orange scheme to theme palette: Use Indigo Blue and Brick Red for the main CF/Gun shapes to signify faction conflict, and High-saturation Yellow for small accents (muzzle flash/spark). No gradients, only solid blocks.",
+  "stroke_application": "Apply thick, rough, hand-drawn black outlines to all geometric shapes. Ensure edges are irregular and shaky, simulating a dry marker or crayon on paper. No clean vector lines.",
+  "composition_application": "Discard the original portrait layout. Create a centered, balanced composition where the abstracted 'CF' + Gun/Crosshair symbol occupies 60-70% of the canvas. Ensure ample black negative space around the subject.",
+  "identity_application": "Express identity through the recognizable 'CF' letterform topology and the semantic cue of a firearm/crosshair, rather than the character portrait. Maintain the 'strict' constraint on brand recognizability via these symbols.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, rough, hand-drawn style strokes",
+    "Colors must be limited to Brick Red, Indigo Blue, and Yellow/White",
+    "Must be completely flat with no shadows, highlights, or gradients",
+    "Subject must be a simplified geometric block composition"
+  ],
+  "negative_constraints": [
+    "No realistic human faces, sunglasses, or hair",
+    "No metallic textures, gloss, or 3D rendering",
+    "No fine, smooth, or perfect vector lines",
+    "No original brand colors (silver, cyan) unless mapped to theme palette",
+    "No complex backgrounds, particles, or lighting effects"
+  ]
+}

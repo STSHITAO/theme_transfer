@@ -1,0 +1,39 @@
+{
+  "app": "peace_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "‘和平精英’四个汉字的独特字体设计，特别是‘和’字左侧偏旁中嵌入的闪电符号，以及右下角的星形/螺旋桨Logo。",
+  "brand_cues_to_preserve": [
+    "‘和平精英’四字的标准字形结构",
+    "‘和’字部首内的闪电负形/切口",
+    "右下角的抽象星形/四叶螺旋桨符号"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为信息载体的可读性",
+    "闪电符号代表的速度/竞技感",
+    "星形符号代表的营地/集结标识"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题（Alipay, Douban）明确展示了将复杂汉字直接转化为3D冰雕的能力。‘和平精英’的字体虽然笔画粗壮且有几何切角，但拓扑结构清晰，完全符合‘preserve_major_structure’的条件。必须保留文字的原始排列和笔画特征，仅做材质替换和厚度挤压，不可重构为其他图形。",
+  "design_rationale": "该App图标核心是品牌名称文字。根据theme_design_analysis，对于文字类图标（如支付宝、豆瓣），策略是保持字形不变，将其立体化为冰块。为了符合‘冰雪’主题，原本暖色调（橙/红）的文字必须完全去色，转为半透明冰蓝色。右下角的星形符号作为辅助图形，也应一同冰晶化，或者作为独立的冰制摆件放置在文字旁，以维持构图的完整性。",
+  "must_preserve": [
+    "‘和平精英’四个字的相对位置和大小比例",
+    "‘和’字中闪电形状的笔画细节",
+    "字体的硬朗几何切角风格（但在冰材质下需适度圆润化边缘）",
+    "底部必须有接触阴影和碎冰/水渍细节"
+  ],
+  "can_recompose": [
+    "原图标的橙红色渐变背景（必须移除，改为纯白）",
+    "文字表面的平面光泽（改为次表面散射和折射高光）",
+    "右下角星形符号的具体摆放角度（可微调以适应3D透视）"
+  ],
+  "forbid": [
+    "禁止保留任何橙色、红色或暖色调",
+    "禁止将文字简化为无法识别的方块",
+    "禁止使用不透明的塑料质感",
+    "禁止主体悬空无投影"
+  ],
+  "generation_direction": "Generate a 3D icon featuring the Chinese text '和平精英' sculpted from translucent light blue ice. The text should have thickness, rounded edges, and internal snowflake textures. Specifically preserve the lightning bolt shape inside the first character '和'. Place a small, ice-made star/propeller symbol (from the original bottom-right) next to or slightly overlapping the text. Set against a pure white background with soft contact shadows and scattered ice shards at the base. No warm colors."
+}

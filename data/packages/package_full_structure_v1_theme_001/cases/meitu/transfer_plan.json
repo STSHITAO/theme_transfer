@@ -1,0 +1,61 @@
+{
+  "app": "Meitu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和抖音（Douyin）的处理方式，对于具有高度抽象且独特几何符号的图标，必须直接将其立体化。美图的 'M' 形线条具有极高的辨识度，不需要语义重构，只需将原本的白色扁平线条转化为具有厚度的冰质实体，并保留外圆作为边界容器即可。",
+  "preserve": [
+    "外部完整的圆形轮廓结构",
+    "内部 stylized 'M' 字母的独特起伏曲线（左低右高，右侧尖锐上扬的笔触）",
+    "图形与外圆的相对比例关系及居中对称性",
+    "线条边缘的圆润倒角特征"
+  ],
+  "must_preserve": [
+    "原图标的正圆外框拓扑结构",
+    "内部 'M' 形的具体笔画走势和几何骨架",
+    "主体在画布中的居中构图"
+  ],
+  "recompose_allowed": [
+    "将2D平面线条增加Z轴厚度，转化为立体的冰柱/冰条结构",
+    "在冰体内部添加随机的雪花、气泡纹理以符合主题材质",
+    "在外圆底部增加融化的水渍和接触阴影以增强物理真实感"
+  ],
+  "restyle": [
+    "去除所有原始品牌色（红色背景、白色填充）",
+    "统一应用半透明浅冰蓝色（Cyan-Ice Blue）材质",
+    "赋予表面高光泽度、湿润感及次表面散射（SSS）效果",
+    "通过光影折射而非描边来界定轮廓"
+  ],
+  "decorate": [
+    "内部嵌入微小的空气气泡和冰晶颗粒",
+    "表面模拟天然冰块的细微裂纹或雪花纹理",
+    "底部添加柔和的接触阴影和焦散光斑"
+  ],
+  "forbid": [
+    "禁止保留原本的红色背景或任何暖色调主色",
+    "禁止生成不透明的蓝色塑料、磨砂玻璃或金属质感",
+    "禁止改变 'M' 的线条曲率导致识别错误（如变成标准字母M或倒V）",
+    "禁止去掉外圆只保留内部线条",
+    "禁止使用二维矢量风格或扁平化设计",
+    "禁止出现文字、水印或复杂场景背景"
+  ],
+  "generation_brief": "3D ice sculpture icon of Meitu logo. Subject is a thick, translucent cyan-blue ice ring containing a stylized 'M' shaped ice wave inside. Material is glossy clear ice with internal bubbles and snowflake textures. No red colors. Pure white background. Soft contact shadow and melting water puddle at the bottom. Centered composition, high fidelity render.",
+  "color_application": "强制去色。将原图的红色背景和白色图形完全替换为统一的浅冰蓝色调（Cyan-Ice Blue）。利用深蔚蓝（Deep Azure）表现冰块厚度处的阴影，半透明白（Translucent White）表现高光透光区，严禁出现原品牌红。",
+  "stroke_application": "消除所有二维描边。将原图的白色线条转化为具有物理厚度的三维冰实体。边缘进行倒角处理以捕捉高光，通过材质的折射率差异和内部焦散效应来界定'M'形和外圆的轮廓。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体（冰环与内部M形）居中放置，占据画布约60%-70%空间。背景清理为纯白，底部预留空间给投影和水渍，确保物体稳固'立'在平面上。",
+  "identity_application": "严格保留'M'形波浪线条和外圆环的几何拓扑结构。通过赋予其统一的冰材质和光影效果来实现主题化，确保用户能通过剪影瞬间识别出美图秀秀。不改变原图标的比例长宽比。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色（红色）。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变'M'的核心几何形态。"
+  ]
+}

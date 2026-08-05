@@ -1,0 +1,23 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "美团原图标为纯文字标（Logotype），缺乏具象图形符号。根据主题规则，需将抽象文字转化为具有生命感的‘软萌’生物形态。选择保留‘美团’二字的骨架结构作为核心识别线索，但将其笔画重构为类似面团或云朵的白色团状生物，以符合主题的Doodle手绘风格和生物化 motif_rules。",
+  "must_preserve": [
+    "‘美团’二字的汉字拓扑结构与笔画顺序",
+    "两个字左右并列的排版布局",
+    "品牌色相（需调整为低饱和度柔和黄/米黄）"
+  ],
+  "can_recompose": [
+    "汉字的锐利折角与几何边缘（需圆润化、有机化）",
+    "字体的标准印刷质感（需转化为毛绒/粘土质感）",
+    "高饱和度的亮黄色背景（需替换为莫兰迪色系）"
+  ],
+  "forbid": [
+    "直接放置黑色印刷体汉字（必须重绘为白色描边主体）",
+    "保留原图标的尖锐直角",
+    "使用高光泽或渐变效果",
+    "将文字变形过度导致无法辨认为‘美团’"
+  ],
+  "generation_direction": "Draw the Chinese characters '美团' as two fluffy, white, dough-like creatures sitting side by side. Use thick, hand-drawn black outlines with a marker texture. Transform sharp strokes into rounded, soft curves. Add simple cute faces (dot eyes) to the characters. Background must be a solid, low-saturation pastel yellow or cream color with paper texture. No gradients, no glossy effects."
+}

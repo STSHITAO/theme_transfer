@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的各项约束。首先，它严格保留了 LOFTER 原始图标中 'L' 形的拓扑结构（竖直笔画与底部向右回勾的弧线），符合 structure_identity_metric_applicable=true 时的严格要求。其次，风格上成功转化为粗犷的手绘马克笔质感，边缘抖动自然，去除了原始的工业锐利度。色彩上正确移除了禁止的青绿色，替换为高对比度的红蓝配色，且背景纯黑无杂质。构图居中，主体清晰，是高质量的主题化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 40,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "几何结构严重失真，违反 strict 约束。",
+      "recommendation": "不推荐。虽然该图在笔触质感和颜色应用上符合主题风格（手绘风、红蓝配色、黑底），但它严重违反了 identity_constraint_level='strict' 和 structure_preservation_mode='preserve_major_structure' 的要求。原始 LOFTER 图标的核心特征是底部的“回勾”弧线（类似钩子），而 candidate_02 将底部处理成了简单的向右延伸甚至略微上翘，丢失了关键的拓扑特征，导致识别度大幅下降，看起来更像是一个通用的装饰符号而非 LOFTER 图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\lofter\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,61 @@
+{
+  "app": "honor_of_kings",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、抖音等案例均严格保留了原图标的核心几何骨架。王者荣耀原图标虽有人物，但最具通用识别度的是 '5v5' 文字标。根据 theme_rules 中 '禁止过度复杂的场景化重构' 和 '几何守恒' 原则，必须剔除复杂的人物面部细节，将 '5v5' 文字和外部边框作为主体进行冰块化重构，以确保在统一风格下的可识别性。",
+  "preserve": [
+    "'5v5' 文字的笔画结构和空间布局",
+    "半透明浅冰蓝色的主色调",
+    "内部的雪花/气泡纹理",
+    "底部的接触阴影和水渍",
+    "无描边的圆润边缘处理"
+  ],
+  "must_preserve": [
+    "'5v5' 字样的特定字体形态与倾斜角度",
+    "图标外框的圆角矩形几何比例（若作为背景板存在）",
+    "右下角的交叉符号轮廓（若作为辅助元素保留）"
+  ],
+  "recompose_allowed": [
+    "原图中的人物面部（完全移除或仅作为极淡的冰底纹理）",
+    "原图的金色/红色品牌色（强制转换为冰蓝色）",
+    "背景的复杂渐变（替换为纯白）"
+  ],
+  "restyle": [
+    "将平面文字转化为具有厚度的3D冰砖结构",
+    "赋予表面高光泽度和湿润感",
+    "内部填充随机气泡和雪花结晶"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小的雪花图案",
+    "在底部添加融化的水迹和碎冰屑",
+    "边缘增加菲涅尔反射高光"
+  ],
+  "forbid": [
+    "生成写实的人脸冰雕",
+    "保留原图的红色或金色作为主色",
+    "使用不透明的塑料或金属材质",
+    "缺少底部投影导致物体悬浮",
+    "改变 '5v5' 的字体设计",
+    "使用暖色调作为主体颜色"
+  ],
+  "generation_brief": "3D ice sculpture of the text '5v5', thick translucent cyan-blue ice material, internal air bubbles and snowflake textures, glossy wet surface, caustic lighting, melting water puddles at base, pure white background, no human face, no brand colors, high fidelity render.",
+  "color_application": "强制去色。将原图的红金蓝配色完全替换为统一的 Cyan-Ice Blue（青冰蓝）和 Translucent White（半透明白）。仅通过光影深浅表现结构，严禁出现原始品牌色。",
+  "stroke_application": "消除所有二维描边。将 '5v5' 文字的笔画转化为具有倒角的3D实体边缘，依靠材质的折射和高光来界定轮廓，保持边缘圆润光滑。",
+  "composition_application": "居中构图。'5v5' 文字作为主体占据画布60%-70%空间，底部预留空间给物理接触阴影和水渍。去除原图中的人物背景和复杂装饰，保持画面极简洁净。",
+  "identity_application": "通过严格保留 '5v5' 文字的字体形态、倾斜角度和空间拓扑结构来维持身份识别。舍弃难以冰雕化且易产生歧义的人物面部，聚焦于最具符号意义的文字标识。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色（红/金）。",
+    "禁止过度复杂的场景化重构（如人物站在雪地）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变 '5v5' 的核心字形结构。"
+  ]
+}

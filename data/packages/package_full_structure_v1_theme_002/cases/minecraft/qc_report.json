@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 65,
+      "style_match_score": 65,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 60,
+      "failure_reason": "违反了严格的色彩约束（使用了绿色）和描边风格约束（线条过细且平滑）。",
+      "recommendation": "不推荐。虽然识别度很高，但严重违反了Transfer Plan中的Negative Constraints（禁止绿色、禁止细线条/无描边设计）。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了所有指令：保留了方块人头和手持红花的拓扑结构，正确应用了奶黄/砖红配色，移除了绿色背景，使用了粗重拙朴的手绘描边，且去除了像素感，完全符合Retro hand-drawn doodle风格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\minecraft\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

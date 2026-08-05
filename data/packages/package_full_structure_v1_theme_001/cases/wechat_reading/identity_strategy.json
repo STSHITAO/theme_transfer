@@ -1,0 +1,39 @@
+{
+  "app": "wechat_reading",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "底部的书本开口轮廓与右下角悬浮的气泡眼睛组合",
+  "brand_cues_to_preserve": [
+    "底部中央向下凹陷的书本展开形态（V型切口）",
+    "右下角白色气泡及其内部两个圆点（眼睛）的相对位置",
+    "气泡尾部的指向性角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "书籍作为载体的基础形态",
+    "气泡代表的社交/评论属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，该风格严格保留原始图形的几何轮廓和空间布局，仅进行材质维度的转换。微信读书的图标由明确的几何图形（书本底边+气泡）构成，符合‘清晰符号’的定义，因此必须完整保留其二维剪影结构，将其整体转化为具有厚度的3D冰雕，不可重构为真实书籍场景。",
+  "design_rationale": "微信读书的图标是一个高度抽象的复合图形（书+气泡）。为了符合‘冰封’主题且保持高识别度，最佳策略是将整个图形视为一块完整的冰体进行雕刻。底部的书形轮廓作为基座，气泡作为悬浮或嵌入其中的核心元素。这种处理方式既满足了主题对3D体积感和统一冰蓝材质的要求，又通过严格的轮廓保留确保了用户能一眼认出是微信读书而非普通微信或书籍应用。",
+  "must_preserve": [
+    "底部书本开口的V型几何特征",
+    "气泡在画面右下象限的位置比例",
+    "气泡内两点眼睛的排列",
+    "整体图形的扁平化剪影轮廓在3D化后的投影一致性"
+  ],
+  "can_recompose": [
+    "将原本的平面色块转换为具有次表面散射（SSS）效果的半透明冰体",
+    "在冰体内部增加雪花、气泡或冰裂纹理以丰富细节",
+    "边缘处理为圆润的倒角，模拟冰块融化感",
+    "增加底部的接触阴影和微量水迹以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原始的深蓝色背景，必须转为纯白背景",
+    "禁止将气泡替换为真实的对话文字或复杂场景",
+    "禁止使用不透明的塑料质感，必须体现冰的通透性",
+    "禁止改变书本底边的开口角度或气泡的相对位置"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of WeChat Reading. The object is a thick, translucent pale cyan ice block shaped exactly like the original logo: a bottom base with a V-shaped book opening and a speech bubble with two dot-eyes floating in the lower right. Material is glossy frozen water with internal bubbles and snowflake textures. No outlines, defined by refraction and highlights. Pure white background with a soft contact shadow and small water puddle at the base. High key lighting, cute and refreshing style."
+}

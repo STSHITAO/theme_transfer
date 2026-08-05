@@ -1,0 +1,40 @@
+{
+  "app": "mini_world",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的绿色方块头角色（卡卡）的面部特征与头部轮廓",
+  "brand_cues_to_preserve": [
+    "方块状的头部几何结构",
+    "角色面部的五官布局（特别是眼睛和嘴巴的位置关系）",
+    "头顶的突起结构（原为绿色呆毛/装饰）"
+  ],
+  "semantic_cues_to_preserve": [
+    "沙盒游戏的积木/方块属性",
+    "角色的拟人化表情（快乐/探索感）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视框）和 douban（豆字）的案例，均是将原本具有强识别度的平面或2.5D几何图形直接转化为3D冰雕。Mini World 的核心识别点在于其独特的'方块头'角色剪影。为了保持极高的用户辨识度，必须严格保留该角色的头部比例、面部五官拓扑结构以及头顶的特征突起，仅将材质从原本的'彩绘塑料/卡通渲染'替换为'通透冰块'，严禁改变其几何形状或将其重组为其他物体。",
+  "design_rationale": "迷你世界的图标是一个极具辨识度的IP形象（方块头小人）。在'冰封'主题下，这个角色本身就是一个完美的立体化对象。策略上选择直接将该角色'冻结'：保留其方正的头部轮廓和可爱的面部表情，但去除原本的高饱和度绿色和复杂背景，转而使用统一的浅冰蓝色调。通过表现冰块的厚度、内部的气泡和表面的光泽，让原本卡通的角色呈现出一种精致的微缩冰雕玩具质感，既符合主题的统一性，又完整保留了游戏IP的身份。",
+  "must_preserve": [
+    "方块头部的长宽比例",
+    "面部五官（眼、眉、嘴）的相对位置和形状",
+    "头顶的特征性突起结构",
+    "底部的接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "原本鲜艳的绿色皮肤（需转为冰蓝色）",
+    "原本复杂的星空/魔法背景（需转为纯白）",
+    "身体部分的细节（若过于复杂可简化或截断，聚焦于头部）",
+    "原本的非冰质纹理（如布料、皮肤质感需转为光滑冰面）"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色、紫色等高饱和品牌色作为主体色",
+    "禁止生成不透明的蓝色塑料或磨砂材质，必须是通透的冰",
+    "禁止改变方块头的几何比例（如变圆或变扁）",
+    "禁止添加原本不存在的复杂场景元素（如树木、建筑）",
+    "禁止面部表情扭曲或五官位置错误"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the Mini World character head. The subject is a cube-shaped head with a cute face (eyes, mouth) and a top protrusion, rendered entirely in translucent cyan-blue ice. Material must have internal bubbles, snowflake textures, and glossy wet surface reflections. No outlines. Pure white background with a melting water puddle and contact shadow at the base. Maintain the exact geometric proportions of the original character's head."
+}

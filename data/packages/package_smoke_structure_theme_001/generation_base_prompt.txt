@@ -1,0 +1,117 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D冰晶拟物风格（Ice Crystal Skeuomorphism）。该主题将原本扁平、矢量化的App图标转化为具有物理体积感的半透明冰块雕塑。核心特征是材质的通透感、内部的气泡与雪花纹理，以及物体置于白色背景上产生的真实投影和融化水渍细节。
+
+[Reference Raw To Style Transform]
+从2D平面图形向3D立体实体的转化。原始图标的颜色被统一替换为冰蓝色调；原本的线条或色块被赋予厚度和深度，变成实体冰块；表面增加高光、折射和内部杂质（气泡/裂纹）以模拟真实冰块的质感。
+
+[Color Transform Rule]
+完全摒弃 Original 的品牌固有色（如支付宝蓝、豆瓣绿、抖音黑红），强制转换为统一的冰蓝色调。颜色的深浅仅通过冰块的厚度和光影折射来表现，不再依赖色相区分 App。
+
+[Background Transform Rule]
+从 Original 的纯色填充或复杂渐变背景，转变为纯白/极浅灰的虚空背景。去除所有非主体的背景图形，仅在底部保留物理接触面的阴影和水渍细节。
+
+[Stroke Transform Rule]
+消除所有 2D 矢量描边。轮廓由 3D 模型的边缘倒角和高光反射形成。边缘处理圆润厚实，模拟冰块融化或打磨后的手感，避免尖锐的几何切角。
+
+[Composition Transform Rule]
+主体从 2D 平面填充变为 3D 立体悬浮或落地。增加 Z 轴深度信息。Original 中填满画布的图形，在 Style_ref 中通常会缩小比例以容纳 3D 透视带来的空间延伸，并在底部增加底座结构。
+
+[Subject Scale Rule]
+主体宽度约占画布宽度的 50%-60%，高度约占 60%-70%。必须包含底部的冰座，使整体视觉重心稳定。不允许主体溢出画布边缘。
+
+[Detail Complexity Rule]
+在保持 Logo 轮廓简洁的前提下，增加材质层面的复杂度（气泡、纹理、反光）。去除 Original 中的文字标签（如 'AI'）、复杂的色彩渐变层叠，仅保留最核心的图形符号。
+
+[Theme Fidelity Constraints]
+[
+  "主体必须呈现为半透明的冰质材质，严禁使用不透明塑料或金属质感。",
+  "必须包含底部的冰座或地面接触阴影，不能悬浮于纯白背景中无根基。",
+  "内部必须包含随机的气泡或雪花纹理细节，避免材质过于纯净像玻璃。",
+  "颜色必须严格限制在冰蓝/青色系，禁止还原 App 原始品牌色。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留 Original 的扁平化设计风格。",
+  "禁止使用暖色调或非冰蓝色的材质颜色。",
+  "禁止去除 3D 体积感使其看起来像贴图。",
+  "禁止过度重构导致 Logo 几何特征丢失（如将音符变成真正的乐器）。"
+]
+
+[Theme Board]
+{
+  "palette": "统一使用高透明度的冰蓝色（Ice Blue/Cyan）作为主体材质色，模拟冻结水的质感；背景统一为纯白或极浅的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无传统描边。通过材质的厚度、边缘的高光折射和内部阴影来定义轮廓。线条表现为圆润、厚实的立体块面，边缘光滑但带有物理冻结的自然感。",
+  "material": "核心材质为“冰块”或“ frozen glass”。具有半透明特性，内部包含细微的气泡、裂纹或雪花纹理。表面呈现湿润的光泽感，具有强烈的次表面散射（SSS）效果。",
+  "background": "极简留白。主体通常置于一个透明的冰制底座上，底部有融化的水渍或碎冰屑投影，增强落地感和真实物理属性。",
+  "composition": "中心构图。主体物体被放大并居中，占据画布约 60%-70% 的面积。采用微俯视或平视的 3D 视角，强调物体的体积感。",
+  "motif_rules": "将原本的平面 Logo 转化为 3D 冰雕实体。保留原 Logo 的核心几何特征，但将其“冻结”化。允许添加微小的装饰性元素（如雪花、气泡）来强化主题，但不改变主体识别度。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.

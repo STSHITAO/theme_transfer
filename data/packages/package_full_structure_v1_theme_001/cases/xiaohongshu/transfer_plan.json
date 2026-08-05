@@ -1,0 +1,61 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或强几何符号类图标，采取直接立体化策略。小红书的核心识别完全依赖于这三个特定的汉字字形，任何对结构的重组（如变成书本或相机）都会导致身份丢失。因此，必须保留原始文字的完整轮廓，仅将其从平面矢量转换为具有厚度的3D冰雕实体。",
+  "preserve": [
+    "“小红书”三个汉字的完整字形结构",
+    "文字在图标中的中心布局及占据比例",
+    "文字笔画的粗细比例和断笔/连笔的逻辑位置",
+    "文字之间的相对位置和间距"
+  ],
+  "must_preserve": [
+    "“小红书”三字的完整轮廓剪影",
+    "字体的特定笔画形态（如“红”字绞丝旁的折角处理）",
+    "白色文字在红色背景上的负空间关系（转化为冰体本身的形状）"
+  ],
+  "recompose_allowed": [
+    "材质由不透明纯色变为半透明冰体",
+    "颜色由红白强制转换为冰蓝/透白",
+    "表面增加冷凝水珠、雪花纹理等主题细节",
+    "底部增加融化的水迹或薄冰底座以增强落地感"
+  ],
+  "restyle": [
+    "将平面矢量文字拉伸为具有Z轴厚度的3D实体",
+    "边缘处理为圆润光滑的冰蚀效果",
+    "内部填充次表面散射（SSS）效果的冰蓝色调",
+    "嵌入微小气泡和雪花结晶作为材质纹理"
+  ],
+  "decorate": [
+    "表面散布微细冷凝水珠",
+    "内部嵌入 stylized snowflake patterns",
+    "底部添加接触阴影和微量融化水渍"
+  ],
+  "forbid": [
+    "禁止保留原始的红色背景或红色文字色相",
+    "禁止将文字替换为书籍、相机、爱心等具象物体",
+    "禁止使用不透明的塑料或金属质感",
+    "禁止文字笔画因过度融合而粘连导致无法识别",
+    "禁止背景出现复杂的冰雪场景，必须保持纯白"
+  ],
+  "generation_brief": "3D ice sculpture of the Chinese characters '小红书', translucent pale cyan material, internal bubbles and snowflake textures, condensation droplets on surface, glossy wet finish, soft rounded edges, centered composition, pure white background, subtle contact shadow and melting water at base, no red colors, high fidelity to original character shapes.",
+  "color_application": "Discard original brand red. Apply uniform 'frozen water' aesthetic: Pale Cyan/Ice Blue for the text volume, Translucent White for highlights, Cool Grey for internal shadows. No warm tones allowed.",
+  "stroke_application": "Eliminate 2D vector strokes. Convert character outlines into volumetric 3D forms with beveled, smooth edges mimicking worn ice. Define shape via light refraction and specular highlights rather than drawn lines.",
+  "composition_application": "Centralize the 3D text object occupying ~70% of canvas. Add a virtual ground plane with a subtle contact shadow and small puddle effect to anchor the floating text in 3D space. Ensure clean white background.",
+  "identity_application": "Maintain strict geometric fidelity to the '小红书' character silhouettes. The identity is preserved solely through the accurate 3D extrusion of the specific font shapes, as color cues are removed by the theme.",
+  "fidelity_constraints": [
+    "Must use unified translucent ice blue material, strictly no original brand red.",
+    "Must include internal bubbles, snowflakes, or ice crack textures.",
+    "Subject must exhibit clear 3D volume and thickness, not a flat blue silhouette.",
+    "Background must remain clean white to maximize contrast with translucent material."
+  ],
+  "negative_constraints": [
+    "No flat vector graphics or 2D appearance.",
+    "No solid opaque colors (especially red).",
+    "No complex background scenes or gradients.",
+    "No distortion of the Chinese character structures.",
+    "No plastic, metal, stone, or wood materials."
+  ]
+}

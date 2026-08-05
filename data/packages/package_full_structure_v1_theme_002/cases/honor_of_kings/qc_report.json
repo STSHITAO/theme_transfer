@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美执行了 semantic_recompose 策略。完全舍弃了写实人像，提取了“红蓝对抗”的核心语义，并将其转化为符合主题风格（粗犷手绘、黑底、哑光色块）的抽象几何徽章。保留了原图标的核心视觉结构（太极/漩涡状的红蓝对峙），既满足了主题化要求，又保持了极高的品牌识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "同样是非常优秀的重构作品，风格和技法与 candidate_01 一致。但在色彩布局上，内部圆形的红白分布与原版图标（左红右蓝/白）的逻辑略有出入（左侧偏红但被分割），相比之下 candidate_01 的色彩对位更精准地呼应了原版的视觉习惯。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\honor_of_kings\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

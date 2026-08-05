@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 import tempfile
@@ -20,7 +21,7 @@ from backend.services.qwen_client import (
     score_candidates,
 )
 from backend.services.storage_service import save_json
-from backend.services.wan_client import generate_candidates
+from backend.services.wan_client import WanApiError, generate_candidates
 
 
 def scan_target_apps(root_dir=None):
@@ -41,7 +42,15 @@ def scan_target_apps(root_dir=None):
     return apps
 
 
-def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3):
+def run_package_workflow(
+    theme_id,
+    package_id,
+    root_dir=None,
+    candidate_count=3,
+    target_app_ids=None,
+    resume=False,
+    skip_rejected_cases=False,
+):
     root = Path(root_dir) if root_dir else Path.cwd()
     load_dotenv(root / ".env")
     package_dir = root / "data" / "packages" / package_id
@@ -50,7 +59,17 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
     reference_examples = resolve_theme_examples(theme_id, root_dir=root)
     theme_profile = load_theme_profile(theme_id, root_dir=root)
     style_refs = [example["style_ref_path"] for example in reference_examples]
-    target_apps = scan_target_apps(root_dir=root)
+    available_target_apps = scan_target_apps(root_dir=root)
+    if target_app_ids is None:
+        target_apps = available_target_apps
+    else:
+        requested = sorted(set(target_app_ids))
+        unknown = sorted(set(requested) - set(available_target_apps))
+        if unknown:
+            raise ValueError("Unknown or invalid target apps: " + ", ".join(unknown))
+        target_apps = requested
+    if not target_apps:
+        raise ValueError("No target apps selected for package generation.")
     save_json(target_apps, package_dir / "target_apps.json")
 
     theme_analysis = analyze_theme_package(reference_examples, root_dir=root)
@@ -69,23 +88,71 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
 
     selected_outputs = {}
     cases = {}
-    for target_app in target_apps:
-        case_result = _run_package_case(
-            target_app,
-            package_id,
-            package_dir,
-            generation_base_prompt,
-            theme_analysis,
-            theme_design_analysis,
-            style_refs,
-            root,
-            candidate_count,
+    failed_cases = {}
+    for case_index, target_app in enumerate(target_apps, start=1):
+        case_result = (
+            _load_completed_case(target_app, package_dir, root, candidate_count)
+            if resume
+            else None
         )
+        if case_result is None:
+            try:
+                case_result = _run_package_case(
+                    target_app,
+                    package_id,
+                    package_dir,
+                    generation_base_prompt,
+                    theme_analysis,
+                    theme_design_analysis,
+                    style_refs,
+                    root,
+                    candidate_count,
+                )
+            except WanApiError as exc:
+                if not skip_rejected_cases or exc.code != "DataInspectionFailed":
+                    raise
+                failure = _record_case_failure(package_dir, target_app, exc)
+                failed_cases[target_app] = failure
+                print(
+                    json.dumps(
+                        {
+                            "event": "case_skipped",
+                            "package_id": package_id,
+                            "theme_id": theme_id,
+                            "app_id": target_app,
+                            "case_index": case_index,
+                            "case_total": len(target_apps),
+                            "reason": exc.code,
+                        }
+                    ),
+                    flush=True,
+                )
+                continue
+        _clear_case_failure(package_dir, target_app)
         cases[target_app] = case_result
         selected_outputs[target_app] = case_result["best_output_path"]
+        print(
+            json.dumps(
+                {
+                    "event": "case_complete",
+                    "package_id": package_id,
+                    "theme_id": theme_id,
+                    "app_id": target_app,
+                    "case_index": case_index,
+                    "case_total": len(target_apps),
+                    "candidate_count": len(case_result["candidate_paths"]),
+                    "resumed": bool(case_result.get("resumed")),
+                }
+            ),
+            flush=True,
+        )
 
+    if not selected_outputs:
+        raise RuntimeError(f"No successful outputs were generated for package: {package_id}")
+    successful_apps = [app_name for app_name in target_apps if app_name in selected_outputs]
+    failures_path = save_json(failed_cases, package_dir / "package_failures.json")
     contact_sheet_path = compose_contact_sheet(
-        [selected_outputs[app_name] for app_name in target_apps],
+        [selected_outputs[app_name] for app_name in successful_apps],
         package_dir / "contact_sheet.png",
     )
     package_qc = run_package_qc(
@@ -112,6 +179,8 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
         contact_sheet_path,
         package_qc["package_qc_report_path"],
         cases,
+        failed_cases,
+        failures_path,
     )
 
     return {
@@ -128,6 +197,87 @@ def run_package_workflow(theme_id, package_id, root_dir=None, candidate_count=3)
         "package_qc_report_path": package_qc["package_qc_report_path"],
         "metadata_path": metadata_path,
         "cases": cases,
+        "failed_cases": failed_cases,
+        "failures_path": failures_path,
+        "coverage": {
+            "requested_app_count": len(target_apps),
+            "successful_app_count": len(successful_apps),
+            "skipped_app_count": len(failed_cases),
+            "skipped_apps": sorted(failed_cases),
+            "ratio": len(successful_apps) / len(target_apps),
+        },
+    }
+
+
+def _record_case_failure(package_dir, target_app, exc):
+    failure = {
+        "app_id": target_app,
+        "error_type": type(exc).__name__,
+        "status_code": exc.status_code,
+        "code": exc.code,
+        "message": str(exc),
+        "wan_response_path": exc.response_path,
+        "skipped_for_batch_continuation": True,
+        "failed_at": datetime.now(timezone.utc).isoformat(),
+    }
+    save_json(failure, Path(package_dir) / "cases" / target_app / "case_failure.json")
+    return failure
+
+
+def _clear_case_failure(package_dir, target_app):
+    path = Path(package_dir) / "cases" / target_app / "case_failure.json"
+    if path.exists():
+        path.unlink()
+
+
+def _load_completed_case(target_app, package_dir, root, expected_candidate_count):
+    case_dir = Path(package_dir) / "cases" / target_app
+    required = {
+        "target_layout_path": case_dir / "target_layout.png",
+        "target_identity_path": case_dir / "target_identity.json",
+        "identity_strategy_path": case_dir / "identity_strategy.json",
+        "transfer_plan_path": case_dir / "transfer_plan.json",
+        "generation_prompt_path": case_dir / "generation_prompt.txt",
+        "wan_response_path": case_dir / "wan_response.json",
+        "best_output_path": case_dir / "best_output.png",
+        "qc_report_path": case_dir / "qc_report.json",
+    }
+    if not all(path.exists() and path.is_file() for path in required.values()):
+        return None
+    candidate_paths = sorted((case_dir / "candidates").glob("candidate_*.png"))
+    if len(candidate_paths) < expected_candidate_count:
+        return None
+    try:
+        transfer_plan = json.loads(required["transfer_plan_path"].read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    mode = transfer_plan.get("structure_preservation_mode")
+    applicable = transfer_plan.get("structure_identity_metric_applicable")
+    if mode not in {"preserve_major_structure", "semantic_recompose"}:
+        return None
+    if not isinstance(applicable, bool) or applicable != (mode == "preserve_major_structure"):
+        return None
+
+    target_inputs = resolve_target_inputs(target_app, root_dir=root)
+    return {
+        "target_app": target_app,
+        "target_image": target_inputs["target_image"],
+        "target_layout_path": str(required["target_layout_path"]),
+        "target_identity_path": str(required["target_identity_path"]),
+        "target_profile": load_target_profile(target_app, root_dir=root),
+        "identity_strategy_path": str(required["identity_strategy_path"]),
+        "transfer_plan_path": str(required["transfer_plan_path"]),
+        "structure_policy": {
+            "structure_preservation_mode": mode,
+            "structure_identity_metric_applicable": applicable,
+            "structure_policy_rationale": transfer_plan.get("structure_policy_rationale", ""),
+        },
+        "generation_prompt_path": str(required["generation_prompt_path"]),
+        "candidate_paths": [str(path) for path in candidate_paths],
+        "wan_response_path": str(required["wan_response_path"]),
+        "best_output_path": str(required["best_output_path"]),
+        "qc_report_path": str(required["qc_report_path"]),
+        "resumed": True,
     }
 
 
@@ -197,6 +347,7 @@ def _run_package_case(
         target_layout,
         generation["candidate_paths"],
         root_dir=root,
+        transfer_plan=transfer_plan,
     )
     best_output_path = _select_and_save_best_candidate(qc_report, generation["candidate_paths"], case_dir)
 
@@ -208,6 +359,11 @@ def _run_package_case(
         "target_profile": target_profile,
         "identity_strategy_path": identity_strategy_path,
         "transfer_plan_path": transfer_plan_path,
+        "structure_policy": {
+            "structure_preservation_mode": transfer_plan["structure_preservation_mode"],
+            "structure_identity_metric_applicable": transfer_plan["structure_identity_metric_applicable"],
+            "structure_policy_rationale": transfer_plan["structure_policy_rationale"],
+        },
         "generation_prompt_path": generation_prompt_path,
         "candidate_paths": generation["candidate_paths"],
         "wan_response_path": generation["wan_response_path"],
@@ -335,6 +491,8 @@ def _save_package_metadata(
     contact_sheet_path,
     package_qc_report_path,
     cases,
+    failed_cases,
+    failures_path,
 ):
     metadata = {
         "package_id": package_id,
@@ -346,6 +504,20 @@ def _save_package_metadata(
         "theme_design_analysis": theme_design_analysis_path,
         "generation_base_prompt": generation_base_prompt_path,
         "cases": cases,
+        "status": "complete_with_skips" if failed_cases else "complete",
+        "failed_cases": failed_cases,
+        "package_failures": failures_path,
+        "evaluation_coverage": {
+            "requested_app_count": len(target_apps),
+            "evaluated_app_count": len(final_outputs),
+            "skipped_app_count": len(failed_cases),
+            "skipped_apps": sorted(failed_cases),
+            "ratio": len(final_outputs) / len(target_apps),
+        },
+        "structure_evaluation_policy": {
+            app: case.get("structure_policy", {})
+            for app, case in sorted(cases.items())
+        },
         "final_outputs": final_outputs,
         "contact_sheet": contact_sheet_path,
         "package_qc_report": package_qc_report_path,

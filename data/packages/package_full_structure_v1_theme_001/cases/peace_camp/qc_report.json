@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 98,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合‘3D冰雕’主题风格。严格保留了‘和平精英’的字体骨架，特别是‘和’字中的闪电笔画清晰可见。右下角的螺旋桨图标形态准确（四叶片），且材质处理（半透明、气泡、水渍）与参考图高度一致。文字可读性极佳，无多余噪点。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 85,
+      "overall_score": 86,
+      "failure_reason": "虽然风格正确，但右下角的螺旋桨图标形态略显松散，不如candidate_01紧凑和具有辨识度。整体光影质感稍弱于candidate_01。",
+      "recommendation": "备选方案。风格统一，但在关键识别元素（螺旋桨）的还原度上略逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\peace_camp\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

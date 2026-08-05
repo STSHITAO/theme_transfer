@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与身份约束。严格保留了野蛮人的面部拓扑结构（头盔轮廓、胡须走向、张嘴表情），材质转化为高通透感的冰雕，内部气泡和雪花纹理细节丰富，底部水渍物理感真实，是极佳的候选图。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 80,
+      "failure_reason": "眼部结构丢失，导致神态识别度下降。",
+      "recommendation": "虽然整体风格符合冰雕主题，但眼睛部分处理为空洞或纯白，丢失了原图标中‘愤怒大眼’的关键特征，削弱了角色的辨识度。相比 candidate_01，其身份约束遵守程度较低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\clash_of_clans\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

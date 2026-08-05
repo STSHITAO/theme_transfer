@@ -1,0 +1,41 @@
+{
+  "app": "huya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "虎头轮廓与单眼播放键的组合结构",
+  "brand_cues_to_preserve": [
+    "标志性的虎头外轮廓（含双耳）",
+    "面部中央巨大的单眼造型",
+    "眼球内部的三角形播放符号",
+    "脸颊两侧的虎纹斑块位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "直播/视频播放语义（通过眼球内的三角形表达）",
+    "猛兽/竞技属性（通过虎头形象表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象的几何符号（虎头+播放键），符合 theme_rules 中 'preserve_when' 的条件。参考 Bilibili 和 Kuaishou 的案例，应保留其主体拓扑结构，仅对色彩、质感和描边进行主题化重构，无需改变物理轮廓。",
+  "design_rationale": "虎牙直播的原始图标已经具备了极强的符号化特征（虎头容器+播放功能），非常契合该主题‘单体居中、几何块面’的设计语言。策略上选择直接保留其核心轮廓，将原本的黄棕配色映射为主题限定的‘奶黄+砖红/深蓝’体系，并赋予其粗犷的手绘描边和哑光质感，使其看起来像一个复古的玩具徽章或贴纸。",
+  "must_preserve": [
+    "虎头的整体圆形轮廓及顶部双耳突起",
+    "占据面部主要面积的大眼眶",
+    "眼眶中心的三角形（播放键）",
+    "左右脸颊对称的条纹装饰"
+  ],
+  "can_recompose": [
+    "颜色：将原本的棕色部分替换为主题色板中的砖红或深蓝",
+    "线条：将所有平滑矢量边缘转化为抖动、不规则的粗黑手绘线",
+    "质感：去除原有的轻微立体感，改为完全平涂的哑光色块",
+    "细节：简化虎纹的形状，使其更像儿童画的几何涂鸦"
+  ],
+  "forbid": [
+    "禁止保留原始的棕色系配色",
+    "禁止使用细线条或无描边设计",
+    "禁止添加任何阴影、高光或渐变效果",
+    "禁止改变虎头的基本比例（如耳朵变小或眼睛移位）",
+    "禁止背景非纯黑"
+  ],
+  "generation_direction": "Retro hand-drawn doodle style icon of a tiger head logo. Thick, shaky black marker outlines. Flat matte texture. Color palette: Milky yellow face, Brick red or Deep Blue stripes and ears. Large central eye containing a triangle play button. Pure black background. No shadows, no gradients, naive art aesthetic."
+}

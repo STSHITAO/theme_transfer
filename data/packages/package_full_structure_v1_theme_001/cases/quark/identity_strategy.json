@@ -1,0 +1,36 @@
+{
+  "app": "quark",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The specific geometric topology of the 'Q' shape, particularly the internal negative space that resembles a stylized speech bubble or comet tail.",
+  "brand_cues_to_preserve": [
+    "The outer circular ring structure",
+    "The unique inward curve of the inner white space (the 'tail')"
+  ],
+  "semantic_cues_to_preserve": [
+    "Search/Discovery implied by the magnifying glass/Q abstraction",
+    "Communication/AI implied by the speech bubble-like negative space"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The Quark logo is a simple, high-contrast geometric symbol. According to the theme rules (e.g., Alipay, Douban), simple geometric logos must be extruded into 3D ice sculptures while strictly maintaining their 2D silhouette. No semantic recomposition is needed as the shape itself is the identity.",
+  "design_rationale": "Quark's identity relies entirely on its unique 'Q' geometry. The strategy converts the flat blue vector into a thick, translucent ice block. The 'hole' in the Q becomes a physical tunnel through the ice, allowing light refraction to highlight the depth. The uniform ice-blue palette replaces the brand blue to fit the frozen theme.",
+  "must_preserve": [
+    "The exact ratio of the outer ring thickness",
+    "The specific angle and curvature of the inner cut-out",
+    "The overall circular bounding box"
+  ],
+  "can_recompose": [
+    "Surface texture (add frost/bubbles)",
+    "Edge rounding (chamfered ice edges)",
+    "Internal lighting (caustics/refraction)"
+  ],
+  "forbid": [
+    "Filling the center hole with ice (must remain a void/tunnel)",
+    "Using the original solid royal blue color",
+    "Flattening the object (must have visible Z-axis thickness)",
+    "Adding unrelated elements like actual comets or planets"
+  ],
+  "generation_direction": "A thick, 3D sculpture of the letter 'Q' made of translucent light blue ice. The object is a ring with a specific tail-cutout inside. Material is glossy, wet ice with internal bubbles and snowflakes. Strong refraction through the body. Centered on a pure white background with a soft contact shadow and small melting puddle at the base. No solid colors, purely icy texture."
+}

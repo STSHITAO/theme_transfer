@@ -1,0 +1,60 @@
+{
+  "app": "京东 (JD.com)",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilibili（小电视）和 Douyin（音符）的处理方式，对于具有极高辨识度的具象IP形象或符号，必须保留其原始几何拓扑结构。京东 Joy 的头部轮廓和五官比例是其核心识别点，不能进行语义重组（如改为购物车或包裹），而应将其视为一个整体的 3D 雕塑对象进行材质替换。",
+  "preserve": [
+    "Joy狗头的整体剪影轮廓（圆脸、下垂长耳）",
+    "眯眼笑的眼睛形状（倒V形/弯月形）",
+    "张开的大嘴及舌头几何形态",
+    "黑色椭圆鼻子的位置与形状",
+    "面部五官的相对空间布局"
+  ],
+  "must_preserve": [
+    "狗头部的左右耳朵位置和下垂感",
+    "眼睛眯成一条线的快乐神态",
+    "大嘴笑的开口形状",
+    "主体在画面中的居中构图",
+    "品牌标准红底色（需转化为冰雕语境下的对比元素，见color_application）"
+  ],
+  "recompose_allowed": [
+    "将原本的2D黑色描边转化为冰块边缘的高光反射或内部折射阴影",
+    "移除所有非核心装饰物（黄色行李箱、蓝色飞机、酒店图标、文字）",
+    "将原本不透明的白色狗身转化为半透明冰蓝材质，通过内部气泡密度表现毛发质感"
+  ],
+  "restyle": [
+    "材质统一为高透光浅冰蓝色（Cyan-Ice Blue）",
+    "表面增加湿润高光、菲涅尔反射效果",
+    "内部填充随机微小气泡、冰晶颗粒或雪花纹理",
+    "底部增加融化的水渍和接触阴影"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小的雪花或冰裂纹样以增强主题指纹",
+    "在狗头底部增加隐形或有形的冰制底座以保持物理平衡感"
+  ],
+  "forbid": [
+    "禁止保留原本的红色背景色块（背景必须为纯白）",
+    "禁止生成不透明的白色塑料、石膏或磨砂材质（必须是半透明冰质）",
+    "禁止改变狗的五官比例（如闭合嘴巴、改变眼睛形状）",
+    "禁止出现复杂的场景化道具或叙事性元素",
+    "禁止使用暖色调作为主体主色",
+    "禁止将狗的形象替换为猫、狮子或其他动物"
+  ],
+  "generation_brief": "3D icon of JD.com mascot Joy's head, frozen ice sculpture style. Translucent cyan-blue ice material with internal air bubbles and snowflake textures. Happy expression with squinting eyes and open smiling mouth. No strokes, defined by refraction and thickness. Pure white background. Melting water puddle and soft contact shadow at base. Centered composition, high fidelity C4D/Octane render.",
+  "color_application": "强制去色。原图中的白色狗身转换为半透明的浅冰蓝色（Cyan-Ice Blue），利用材质的高明度和内部气泡密度来暗示原本的白色体积感。原图的红色背景被完全移除，替换为主题的纯白背景。原图的红色嘴巴/舌头部分，若需保留辨识度，可处理为极淡的冰层厚度变化或微弱的内部色差，但严禁使用高饱和红色，必须符合整体冷色调。",
+  "stroke_application": "消除所有二维黑色描边。利用冰块物理厚度的边缘高光（Fresnel reflection）和内部光线折射产生的暗部来界定五官轮廓（如眼睛、鼻子、嘴巴的边缘）。线条感源于光影切割而非绘制。",
+  "composition_application": "从原本填满画布的红底白狗特写，转变为单体居中构图。主体（狗头冰雕）占据画布约60%-70%空间，四周留白。去除所有周边装饰元素（飞机、行李箱等），仅保留狗头主体。底部预留空间给投影和水渍，增强立体落地感。",
+  "identity_application": "通过严格保留Joy狗头的几何拓扑结构（耳位、眼型、嘴型）来维持身份。在不破坏冰材质统一性的前提下，通过调整内部气泡的分布密度来模拟原本白色的视觉重量，确保用户在看到冰雕剪影时能瞬间识别出是京东Joy。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色（红、黑）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止出现暖色调主体、禁止实心不透明材质、禁止复杂背景。",
+    "禁止破坏身份：禁止改变Joy的五官比例、禁止移除耳朵或改变表情、禁止混淆为其他动物形象。"
+  ]
+}

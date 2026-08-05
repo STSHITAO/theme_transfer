@@ -1,0 +1,36 @@
+{
+  "app": "ctrip",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "白色海豚跃起的动态剪影轮廓",
+  "brand_cues_to_preserve": [
+    "海豚的整体流线型身姿",
+    "尾鳍与身体形成的负空间弧度"
+  ],
+  "semantic_cues_to_preserve": [
+    "向上跳跃的动势（象征旅行带来的愉悦与提升）",
+    "海洋生物特征（关联机票/度假的海洋属性）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视）和 douban（豆字）的案例，对于具有极高国民度和独特几何特征的具象符号，必须严格保留其原始轮廓拓扑。携程的海豚剪影是其核心资产，不能进行语义重组（如改为飞机或行李箱），否则会导致用户无法识别。策略是将平面海豚直接转化为立体的冰雕实体。",
+  "design_rationale": "选择 logo_preserve 策略是因为海豚是携程极其强烈的视觉锤。在“冰封”主题下，将原本扁平的白色海豚转化为一块晶莹剔透、内部含有气泡的蓝色冰雕，既能完美适配主题的清凉感，又能通过材质的体积感强化海豚跃起的力度。原图中的橙色元素作为品牌色需被移除或极度弱化，统一服从冰蓝主色调。",
+  "must_preserve": [
+    "海豚头部、背鳍、尾鳍的精确相对位置和曲线走势",
+    "海豚身体弯曲形成的封闭/半封闭负空间形状",
+    "整体构图的重心平衡"
+  ],
+  "can_recompose": [
+    "原图中的橙色尾巴部分（应融合进统一的冰蓝材质中，不再强调颜色区分）",
+    "眼睛的细节（可简化为冰块内部的一个气泡或折射点，无需画出瞳孔）",
+    "表面的平滑度（增加冰裂纹理和湿润的高光反射）"
+  ],
+  "forbid": [
+    "禁止保留原本的深蓝色背景和橙色尾巴颜色",
+    "禁止改变海豚的跳跃方向或身体比例",
+    "禁止生成不透明的实心蓝色塑料质感",
+    "禁止添加额外的场景元素（如海浪、沙滩），保持单体图标纯粹性"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Ctrip dolphin logo. The subject is a translucent cyan-blue ice block shaped exactly like the leaping dolphin silhouette. Material features internal air bubbles, snowflake textures, and glossy wet surface reflections. No outline strokes. Pure white background with a soft contact shadow and melting water puddle at the base. Remove original orange color; unify into ice blue tones."
+}

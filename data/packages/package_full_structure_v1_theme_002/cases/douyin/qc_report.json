@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan 的所有约束。保留了标准的音符拓扑结构，应用了粗糙的手绘黑色描边（这是 plan 中 must_preserve 的关键点），填充色为砖红，内部有蓝色四角星装饰。背景纯黑，无多余元素。是最佳的主题化重构结果。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "缺少必须保留的粗犷黑色手绘描边（must_preserve: 粗犷的黑色/深色手绘描边）。虽然颜色和形状正确，但边缘处理过于柔和，缺乏参考图中那种明显的黑色轮廓线，导致风格匹配度不如 candidate_01，且违反了具体的描边约束。",
+      "recommendation": "虽然识别度尚可，但未严格遵守关于黑色描边的强制约束，风格上略显单薄，不如 candidate_01 贴切。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\douyin\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

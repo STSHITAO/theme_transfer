@@ -1,0 +1,61 @@
+{
+  "app": "alipay",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）的迁移案例显示，核心策略是将平面汉字直接转化为具有厚度的立体冰砖。原图标的几何结构（尤其是底部的无限循环符号）具有极高的辨识度，必须完整保留其轮廓和空间关系，仅通过增加Z轴厚度、倒角边缘和赋予冰材质来实现主题化，严禁改变字形结构。",
+  "preserve": [
+    "“支”字的整体骨架与笔画拓扑关系",
+    "底部类似无穷大符号（∞）的闭环几何特征",
+    "字体的重心位置与长宽比例",
+    "左下角的负形镂空区域"
+  ],
+  "must_preserve": [
+    "“支”字的完整笔画结构",
+    "底部圆环/无限符号的闭合形态",
+    "字体的整体比例"
+  ],
+  "recompose_allowed": [
+    "将扁平笔触转化为具有物理厚度的3D实体",
+    "笔画末端和转折处进行圆润化倒角处理",
+    "在冰块内部随机分布气泡或雪花纹理",
+    "底部生成接触阴影及融化水渍细节"
+  ],
+  "restyle": [
+    "材质统一替换为半透明青冰蓝（Cyan-Ice Blue）",
+    "表面增加高光泽度湿润感与次表面散射效果",
+    "去除原有品牌蓝色背景，改为纯白背景",
+    "移除任何非核心的营销后缀（如'AI'字样）"
+  ],
+  "decorate": [
+    "内部嵌入微小的空气气泡与冰晶颗粒",
+    "表面模拟天然冰块的细微裂纹或雪花纹样",
+    "边缘添加菲涅尔反射高光以增强体积感"
+  ],
+  "forbid": [
+    "禁止改变“支”字的写法或结构拓扑",
+    "禁止使用不透明的蓝色塑料、金属或磨砂材质",
+    "禁止保留原始的大面积蓝色背景色块",
+    "禁止生成没有底部投影或水渍的悬浮物体",
+    "禁止引入钱袋、二维码、卡通蚂蚁等无关语义图形"
+  ],
+  "generation_brief": "3D ice sculpture of the Chinese character '支' (Alipay logo), translucent cyan-blue ice material, internal air bubbles and snowflake textures, glossy wet surface with chamfered edges, exact preservation of the infinity-loop bottom structure, pure white background, realistic contact shadow and melting water puddles at base, octane render, high fidelity.",
+  "color_application": "强制去色。主体完全转换为统一的浅冰蓝色（Cyan-Ice Blue）调，摒弃原有的品牌深蓝底色。仅通过光影明暗表现结构，无杂色。",
+  "stroke_application": "消除二维描边。将“支”字的线条转化为三维实体的边缘，通过材质的折射率差异、边缘高光和内部焦散来界定轮廓，边缘需做圆润倒角处理。",
+  "composition_application": "单体居中构图。主体占据画布约60%-70%空间，从平面填充转变为独立3D物件放置在白色空间中，底部预留空间给物理投影和水渍，强调垂直体积感。",
+  "identity_application": "几何守恒，材质重构。严格保留“支”字及其底部无限符号的剪影和内部结构，通过赋予其统一的冰材质、厚度和光影效果来实现主题化，确保用户能通过形状瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌蓝作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止出现文字水印、低分辨率或模糊渲染。"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，对于以汉字为核心视觉符号的App，必须严格保留汉字的笔画骨架和空间布局。美团图标的核心识别度完全依赖于这两个字的特定字体设计，因此不能进行语义重组，只能进行材质和维度的转换（2D平面字 -> 3D冰砖字）。",
+  "preserve": [
+    "“美团”二字的完整汉字字形结构",
+    "“美”字的横向笔画层级及底部撇捺舒展形态",
+    "“团”字的外部方框包围结构及内部“才”字骨架",
+    "两个汉字之间的紧凑间距与水平对齐关系",
+    "文字在画面中的居中布局及约 60%-70% 的视觉比重"
+  ],
+  "must_preserve": [
+    "汉字的拓扑结构准确性（严禁断笔、错字或结构变形）",
+    "冰块材质的半透明通透感（Subsurface Scattering）",
+    "内部随机分布的微小气泡与雪花纹理",
+    "底部的物理接触阴影与融化水渍细节",
+    "纯白极简背景"
+  ],
+  "recompose_allowed": [
+    "将原本锐利的字体边缘转化为圆润的冰质倒角（Chamfered edges）",
+    "将原本的黑色实心填充转化为半透明的青冰蓝材质",
+    "移除原有的黄色背景色块，替换为留白环境"
+  ],
+  "restyle": [
+    "应用高光泽度的冰冻材质，模拟湿润表面反射",
+    "通过光线折射和内部焦散（Caustics）来界定笔画轮廓，而非描边",
+    "赋予文字Z轴厚度，使其成为立体的冰砖实体"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小的空气气泡",
+    "在冰块表面或内部添加细微的冰晶/雪花纹理",
+    "在主体底部添加少量碎冰屑或融水 puddles"
+  ],
+  "forbid": [
+    "禁止保留原始的高饱和度品牌黄（#FFC300）作为主色或背景",
+    "禁止生成不透明的蓝色塑料、磨砂玻璃或金属质感",
+    "禁止改变汉字内容（如改为拼音 MT 或英文 Meituan）",
+    "禁止添加原图标中不存在的图形元素（如袋鼠、外卖箱等）",
+    "禁止使用暖色调光源或背景",
+    "禁止出现二维扁平化视觉效果"
+  ],
+  "generation_brief": "3D icon of Chinese characters '美团' carved from translucent cyan-blue ice. Thick, glossy ice material with internal air bubbles and snowflake textures. Rounded, chamfered edges simulating melting ice. Centered on a pure white background. Realistic contact shadows and small water puddles at the base. High-fidelity Octane render, caustic lighting, no brand colors.",
+  "color_application": "严格执行去色规则。原图标的黑色文字和黄色背景均被移除。主体统一渲染为 Cyan-Ice Blue（青冰蓝）和 Translucent White（半透明白），利用光影深浅表现结构，严禁出现黄色或黑色实心色块。",
+  "stroke_application": "消除所有2D描边。将汉字的笔画转化为具有物理厚度的3D实体边缘。通过菲涅尔反射（Fresnel reflection）和高光来勾勒笔画轮廓，边缘需做圆润倒角处理以符合冰雕质感。",
+  "composition_application": "采用单体居中构图。主体占据画布60%-70%空间。去除原图的满版背景，改为纯白留白背景，强调主体的悬浮感或放置在冰面上的物理稳定感，底部预留空间给投影和水渍。",
+  "identity_application": "通过严格保持“美团”二字的几何拓扑结构和笔画比例来保留身份。虽然颜色和材质完全改变，但用户应能通过冰块的剪影瞬间识别出汉字形态。不引入任何非文字类的品牌符号。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "汉字结构必须与原Logo保持高度一致的拓扑关系，严禁形变。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：严禁保留黄色背景或使用暖色调。",
+    "禁止破坏身份：严禁写错汉字、改变笔画数量或将文字抽象化为不可识别的几何体。",
+    "禁止材质错误：严禁生成实心、不透明或哑光材质。"
+  ]
+}

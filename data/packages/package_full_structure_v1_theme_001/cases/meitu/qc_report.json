@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。材质为标准的半透明冰质，内部气泡纹理清晰且分布自然（符合指纹特征）。几何结构上，外圆环和内部 'M' 形线条的拓扑结构、曲率、比例均被严格保留，且成功去除了原品牌红色，转化为统一的冰蓝色调。底部有合理的接触阴影和水渍，立体感强。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 30,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 82,
+      "failure_reason": "装饰元素过度干扰主体识别。虽然保留了基本几何结构，但内部添加了巨大的雪花图案和过多的气泡，导致视觉重心分散，破坏了 'M' 形线条的纯净度和辨识度。相比 candidate_01，其重构程度略高，引入了不必要的复杂细节，不符合 strict 约束下对核心轮廓清晰度的要求。",
+      "recommendation": "不推荐作为首选。虽然风格匹配，但过度的装饰（大雪花）影响了图标的清晰度和品牌识别效率，属于轻微的重构过度风险。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\meitu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

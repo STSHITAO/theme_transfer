@@ -1,0 +1,59 @@
+{
+  "app": "youdao_dict",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或符号类图标采取严格的‘立体化复刻’策略。有道词典的核心识别完全依赖于‘有道’二字的特定书法字体设计，任何结构的重组都会导致品牌失效。因此，必须保留原始文字的二维轮廓，仅将其沿Z轴拉伸为3D冰雕实体，并移除底部的英文标签以保持构图纯净。",
+  "preserve": [
+    "“有道”汉字的完整笔画拓扑结构",
+    "“道”字走之底的标志性弧度与连笔特征",
+    "文字整体的长宽比与居中排版重心",
+    "文字表面的平整度转化为冰面凹凸质感"
+  ],
+  "must_preserve": [
+    "汉字“有道”的绝对字形准确性，禁止替换为其他字符或字体风格",
+    "3D冰材质特有的次表面散射（SSS）和边缘高光",
+    "内部的雪花或气泡纹理细节",
+    "高对比度的图文层级关系（主体文字必须清晰浮于背景之上）"
+  ],
+  "recompose_allowed": [
+    "移除底部 'youdao' 英文标识以符合极简构图",
+    "将原始红色背景区域转化为透明冰体边界或留白",
+    "增加冰面的融化水迹、冷凝水滴和内部冰裂纹理"
+  ],
+  "restyle": [
+    "将原始实心红色填充转换为半透明淡青色/冰蓝色冰质",
+    "将锐利的矢量边缘转换为圆润、带有倒角的3D冰体边缘",
+    "将平面光影转换为基于物理渲染的折射、反射和焦散效果"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小的雪花结晶图案",
+    "在冰块表面散布随机分布的冷凝水珠",
+    "在底部添加微弱的接触阴影和融化的水渍池"
+  ],
+  "forbid": [
+    "禁止保留原始的红色、橙色或任何暖色调品牌色",
+    "禁止将汉字替换为书本、放大镜、动物等具象物体",
+    "禁止生成平面的蓝色文字剪影（必须具备Z轴厚度和体积感）",
+    "禁止改变‘有道’二字的书法字体特征（如变为标准黑体或宋体）",
+    "禁止使用复杂的冰雪场景背景，必须保持纯白背景"
+  ],
+  "generation_brief": "3D icon of Chinese characters '有道' carved from translucent pale cyan ice. Exact calligraphy structure preserved, extruded into thick 3D block with rounded glossy edges. Material features internal bubbles, snowflake textures, and surface condensation droplets. Subsurface scattering, refraction, and caustics. Pure white background, soft contact shadow, small melting water puddle at base. No English text, no red colors.",
+  "color_application": "强制去色。原始品牌红色完全丢弃，统一替换为主题定义的 Pale Cyan/Ice Blue 半透明材质色。仅通过明度变化表现体积，不保留任何原始色相。",
+  "stroke_application": "消除所有2D描边。将文字笔画转化为具有物理厚度的3D实体，边缘处理为圆润光滑的冰体倒角，依靠高光折射界定轮廓，无黑色或彩色线条。",
+  "composition_application": "单体居中构图。移除原图标底部的英文标签，仅保留‘有道’二字作为核心主体，占据画布60-70%空间。主体置于虚拟地面，底部添加投影和水迹以锚定空间。",
+  "identity_application": "通过严格保留‘有道’二字的书法笔画骨架和走之底曲线来维持身份。身份识别不依赖颜色，而依赖精确的3D字形轮廓和冰材质的通透质感。",
+  "fidelity_constraints": [
+    "必须使用统一的冰蓝色半透明材质，严禁使用原始品牌红色",
+    "必须包含内部气泡、雪花或冰裂纹理，这是该主题的核心指纹",
+    "主体必须呈现明显的3D立体感和厚度，不能是平面剪影",
+    "背景必须保持干净洁白，突出主体的通透感"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：严禁出现塑料、金属、石头或不透明材质",
+    "禁止破坏身份：严禁修改汉字笔画结构或替换为其他图形符号",
+    "禁止视觉干扰：严禁保留红色背景、英文文字或复杂场景背景",
+    "禁止低质量渲染：严禁模糊、低分辨率或缺乏光影细节"
+  ]
+}

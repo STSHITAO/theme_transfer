@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格（Retro Hand-drawn Doodle），保留了袋鼠标志性的长耳轮廓和头部剪影，去除了多余道具，使用了正确的奶黄色填充和粗犷手绘描边，背景纯黑，完全符合 strict 约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 80,
+      "background_score": 90,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反身份约束：丢失了美团袋鼠标志性的长耳轮廓（耳朵变得很短且像兔子），面部特征过于像熊或狗，无法识别为美团外卖；描边过细且平滑，不符合粗犷手绘风格要求。",
+      "recommendation": "不推荐。虽然颜色接近，但主体形态重构过度，丢失了核心识别特征（长耳），且线条风格不够拙朴，不符合 transfer_plan 中的 strict 约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\meituan_waimai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

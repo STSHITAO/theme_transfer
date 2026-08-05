@@ -1,0 +1,40 @@
+{
+  "app": "lofter",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的 'L' 形线条轮廓及其独特的圆角回旋结构",
+  "brand_cues_to_preserve": [
+    "大写字母 L 的基本拓扑结构",
+    "底部向右延伸并回勾的圆弧特征",
+    "线条的连贯性（非断裂笔画）"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为内容社区的开放性（通过线条的开口暗示）",
+    "创作工具的简约感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "LOFTER 的原始图标是高度抽象的几何符号（字母 L），符合 theme_design_analysis 中关于保留清晰几何符号的规定。参考 bilibili 和 douyin 的案例，此类图标应保留主体轮廓的空间布局，仅将原本的细线条转化为粗犷的手绘色块或粗描边，严禁重构为其他物体。",
+  "design_rationale": "LOFTER 的核心识别度完全依赖于其独特的 'L' 形 Logo。在复古手绘主题下，应将原本精致的矢量线条转化为类似粗马克笔涂抹的厚实笔触。为了适应主题的‘红蓝黄’受限色板，建议将原本的青绿色替换为主题中的‘深蓝’或‘奶黄’，以维持高对比度。必须去除原有的圆形底板，让 'L' 形符号直接浮于纯黑背景之上，符合主题的贴纸化构图规则。",
+  "must_preserve": [
+    "L 形主体的垂直竖线与底部横向弧线的连接关系",
+    "纯黑背景 (#000000)",
+    "粗、不规则的手绘边缘质感",
+    "无渐变、无阴影的扁平填色"
+  ],
+  "can_recompose": [
+    "线条的粗细比例（需显著加粗以符合手绘风）",
+    "原始的青绿色（必须映射为红/蓝/黄之一）",
+    "外部的圆形容器（必须移除）",
+    "线条末端的锐利度（需改为圆润或钝角）"
+  ],
+  "forbid": [
+    "保留原始的青绿色（Teal）",
+    "保留原本的圆形背景底板",
+    "使用细线条或平滑的矢量边缘",
+    "添加任何立体高光或投影效果",
+    "将 L 形扭曲至无法识别"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the letter 'L' on a pure black background. The 'L' should have a thick, clumsy marker-pen stroke style with rough edges. Color the 'L' in solid deep blue or warm yellow (no teal). No circle background, no gradients, no shadows. Centered composition, occupying 60% of the canvas."
+}

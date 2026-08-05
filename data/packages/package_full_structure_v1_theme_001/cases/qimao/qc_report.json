@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 98,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "完美执行了 transfer_plan。严格保留了原 Logo 的几何拓扑结构（猫头+7），材质转换为半透明冰晶，去除了原有黑黄配色，符合主题风格且识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 65,
+      "failure_reason": "过度重构导致品牌特征丢失。虽然材质符合主题，但将原本标志性的“垂直细长瞳孔”改为了普通的圆孔/椭圆孔，且头部轮廓变得过于圆润像普通卡通猫，严重违反了 strict 约束中关于保留眼睛形态和几何框架的要求。",
+      "recommendation": "不推荐。虽然好看，但失去了七猫 App 的核心识别特征（特殊的眼睛形状和硬朗的几何感），变成了通用的冰雕猫图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qimao\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

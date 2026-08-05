@@ -1,0 +1,68 @@
+{
+  "app": "baidu_netdisk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（'支'字）、豆瓣（'豆'字）及抖音（音符）的案例均证明，该主题的核心逻辑是'几何守恒，材质重构'。百度网盘的三叶草/云朵结构具有极高的独特性和识别度，必须完整保留其三维空间拓扑关系，仅将原本的扁平渐变色块转化为具有厚度的实体冰块。",
+  "preserve": [
+    "三个圆环呈三角形排列的整体轮廓",
+    "圆环之间的互锁/穿插空间关系",
+    "顶部圆环与下方两个圆环的连接方式",
+    "云朵的抽象形态（暗示云存储）",
+    "循环连接的闭环结构（暗示同步与分享）",
+    "三个圆环互相咬合的准确位置关系",
+    "整体外轮廓的圆润度",
+    "中心镂空区域的形状"
+  ],
+  "must_preserve": [
+    "三个圆环的基本拓扑结构（互锁/连接）",
+    "上方一个圆环、下方两个圆环的布局",
+    "圆环内部的负空间（空心圆）",
+    "整体轮廓的云朵意象"
+  ],
+  "recompose_allowed": [
+    "原图标的色彩渐变（必须移除）",
+    "底部的波浪装饰和文字（必须移除）",
+    "圆环的截面形状（可从扁平变为圆柱状或方柱状冰条）"
+  ],
+  "restyle": [
+    "将原有蓝红渐变统一替换为半透明浅冰蓝色（Cyan-Ice Blue）",
+    "赋予圆环厚度，使其成为立体的冰制实体",
+    "边缘进行倒角处理以捕捉高光",
+    "表面增加湿润光泽感和菲涅尔反射"
+  ],
+  "decorate": [
+    "内部填充随机微小气泡和雪花纹理",
+    "底部添加融化的水渍和碎冰屑",
+    "底部投射柔和的接触阴影和焦散光斑"
+  ],
+  "forbid": [
+    "禁止保留原图的红色部分（需统一转为冰蓝）",
+    "禁止生成不透明的实心塑料质感",
+    "禁止改变三个环的前后遮挡关系",
+    "禁止添加除气泡/雪花以外的复杂内部装饰",
+    "禁止使用描边线条界定轮廓",
+    "禁止保留背景中的任何非白色元素",
+    "禁止生成通用的卡通云朵或真实照片级云朵",
+    "禁止生成文件夹、硬盘或服务器图标"
+  ],
+  "generation_brief": "3D ice sculpture of Baidu Netdisk logo: three interlocking rings forming a cloud shape. Material is translucent cyan-blue ice with internal bubbles and snowflakes. Glossy wet surface, caustic lighting. Centered on pure white background with melting water puddle and soft shadow at base. No outlines, no original colors, no text.",
+  "color_application": "强制去色。摒弃原有的蓝青渐变及任何红色点缀，主体统一渲染为高透光的浅冰蓝色（Cyan-Ice Blue）。仅通过环境光遮蔽（AO）产生的深蔚蓝阴影来表现体积和层次，严禁出现高饱和度品牌色。",
+  "stroke_application": "消除所有二维描边。将原图标的线条转化为具有物理厚度的3D冰体边缘。利用材质的折射率差异、边缘的高光反射以及内部的焦散效果来自然界定圆环的轮廓，确保边缘圆润光滑。",
+  "composition_application": "采用居中构图，主体占据画布约60%-70%空间。去除原图标底部的波浪线和文字，将视觉焦点完全集中在冻结的三环结构上。底部预留空间用于表现物理接触阴影和水渍，营造物体放置在白色平面上的真实感。",
+  "identity_application": "严格保留三环互锁的几何拓扑结构和云朵剪影。通过维持圆环的相对位置、大小比例及互锁关系来确保识别度。材质上完全服从主题的冰雕风格，但结构上不做任何语义替换或简化，确保用户能通过剪影瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色或红色元素。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "app": "douyu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度符号化的吉祥物图形，具备清晰的几何轮廓。根据 theme_rules，当主体为清晰物体轮廓时应保留其拓扑结构。因此，不需要像游戏类 App 那样重构为抽象徽章，而是直接对现有的鲨鱼图形进行‘去色、加粗描边、扁平化’的风格迁移，保留其作为 IP 的完整性。",
+  "preserve": [
+    "鲨鱼头部的特定几何剪影（头顶三角鳍和背部曲线）",
+    "张开的大嘴与锯齿状牙齿的形态",
+    "圆润夸张的眼睛位置及瞳孔朝向",
+    "火箭位于嘴部的基本空间关系"
+  ],
+  "must_preserve": [
+    "鲨鱼头部的整体外轮廓走向",
+    "嘴巴张开的角度和牙齿的尖锐锯齿特征",
+    "眼睛在头部的位置比例",
+    "鲨鱼与火箭的组合逻辑（不可分离）"
+  ],
+  "recompose_allowed": [
+    "将原本的橙色渐变背景替换为纯黑",
+    "将复杂的阴影和高光简化为纯色块",
+    "将平滑的矢量边缘转化为抖动的手绘线条",
+    "调整火箭和火焰的颜色以适配主题色板"
+  ],
+  "restyle": [
+    "应用粗犷的黑色手绘描边",
+    "使用蜡笔/马克笔质感的平涂填充",
+    "去除所有立体光影效果",
+    "色彩映射为主题限定的高饱和红/蓝/黄/白"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原本的橙色渐变背景",
+    "使用灰色或低饱和度颜色填充主体",
+    "保留细腻的光影渲染和高光点",
+    "描边过细或过于规整平滑",
+    "将鲨鱼简化为普通鱼类或海豚",
+    "移除火箭元素"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of Douyu shark head with rocket in mouth. Pure black background. Thick, rough, uneven black marker outlines. Flat solid colors: creamy white/yellow body, deep red mouth/rocket, blue accents. No gradients, no shadows, no 3D effects. Naive, clumsy, cute aesthetic. Centered composition.",
+  "color_application": "Map original orange/white/grey scheme to theme palette: Shark body becomes creamy white or light yellow; Mouth interior and Rocket become deep red/brick red; Accents (if any) become deep blue. All fills are flat, high-saturation, no gradients.",
+  "stroke_application": "Replace original clean vector lines with thick, irregular, hand-drawn black strokes. Edges should look like crayon or marker marks, slightly shaky and rounded, not sharp or perfect.",
+  "composition_application": "Center the simplified shark head and rocket combination. Remove all background elements. Ensure subject occupies 60-70% of the canvas against the pure black void. Maintain the relative position of the rocket in the mouth.",
+  "identity_application": "Preserve the unique triangular dorsal fin, jagged teeth, and round eye placement to ensure immediate recognition as Douyu's mascot. Do not abstract into generic shapes; keep the specific character silhouette intact but stylistically flattened.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must have thick, rough, hand-drawn style outlines",
+    "Colors must be limited to high-saturation Red, Blue, Yellow/White",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No realistic or photorealistic rendering",
+    "No original orange gradient background",
+    "No thin or smooth vector lines",
+    "No 3D effects, gloss, or lighting",
+    "Do not change the shark into a generic fish or remove the rocket"
+  ]
+}

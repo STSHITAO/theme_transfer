@@ -1,0 +1,39 @@
+{
+  "app": "tencent_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "头顶的企鹅帽子（黑色圆顶+黄色部轮廓）以及整体的Q版人物头部剪影",
+  "brand_cues_to_preserve": [
+    "标志性的企鹅元素（帽子或身边的企鹅公仔）",
+    "人物头部的圆润轮廓和刘海特征",
+    "Q版角色的面部比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "漫画阅读/二次元文化的角色形象暗示",
+    "活泼可爱的视觉氛围（通过材质的高光和气泡体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilibili 的处理方式表明，复杂的卡通形象应被视为整体几何结构进行‘冻结’。腾讯动漫的图标核心在于‘戴企鹅帽的人物’这一复合剪影。为了保持品牌识别度，必须严格保留人物与企鹅帽子的相对位置关系和外部轮廓，仅将原本的色块填充替换为具有体积感的冰晶材质，不可重构为其他物体。",
+  "design_rationale": "选择 logo_preserve 策略是因为腾讯动漫的图标具有极强的角色IP属性（类似 Bilibili 的小电视）。在冰雪主题下，将这个色彩丰富的卡通形象转化为通透的冰雕，既能满足主题对材质（半透明、冰蓝）的要求，又能通过保留独特的剪影（企鹅帽+大头娃娃）维持用户认知。原本鲜艳的橙色背景被移除，改为纯白背景以突出冰雕主体的折射细节。",
+  "must_preserve": [
+    "人物头部的整体外轮廓（包括头发和帽子边缘）",
+    "头顶企鹅帽子的基本形态特征",
+    "面部的五官布局位置（眼、嘴的相对坐标）",
+    "3D立体化后的厚度感"
+  ],
+  "can_recompose": [
+    "原本平涂的颜色（全部转为冰蓝色调）",
+    "手中的铲子等细小道具（若影响整体冰块完整性可简化或融合）",
+    "底部的文字（去除，仅保留图形主体）",
+    "背景的烟花和装饰元素（去除）"
+  ],
+  "forbid": [
+    "禁止保留原本的橙色背景和肤色",
+    "禁止生成不透明的塑料质感，必须是半透明冰晶",
+    "禁止改变人物头部的长宽比",
+    "禁止出现锐利的直角边缘，所有边缘需圆润如融冰"
+  ],
+  "generation_direction": "Generate a 3D translucent ice sculpture of the Tencent Comics mascot head. The subject features a round character head wearing a distinct penguin hat. Material is clear light-blue ice with internal bubbles and snowflakes. Surface is glossy and wet. No outline strokes. Pure white background with soft contact shadow and melting water details at the base. Center composition."
+}

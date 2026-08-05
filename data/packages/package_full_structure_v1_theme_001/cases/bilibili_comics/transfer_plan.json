@@ -1,0 +1,58 @@
+{
+  "app": "bilibili_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例，对于包含明确文字或独特几何符号的图标，策略均为‘几何守恒，材质重构’。哔哩哔哩漫画的核心识别度完全依赖于‘漫画’二字的书法形态及外框，因此必须完整保留其平面拓扑结构，仅做立体化和材质替换，严禁改变字形或简化为通用书本符号。",
+  "preserve": [
+    "汉字“漫画”的特定书法笔触、笔画走势及布局比例",
+    "包裹文字的不规则锯齿状/爆炸状对话气泡外轮廓剪影",
+    "文字与气泡的前后层级关系（文字嵌入气泡中）"
+  ],
+  "must_preserve": [
+    "“漫画”二字的笔画粗细变化及书法张力",
+    "气泡边缘的尖锐转折特征",
+    "冰质材质内部的雪花/气泡纹理细节（作为主题指纹）"
+  ],
+  "recompose_allowed": [
+    "移除底部的电视头吉祥物以简化构图",
+    "将原本的黑色字体填充转换为半透明冰体",
+    "将背景的彩色放射线替换为纯白留白"
+  ],
+  "restyle": [
+    "将所有实体部分（文字、气泡框）统一重构为半透明青冰蓝材质",
+    "应用高光泽度、湿润感的表面渲染",
+    "边缘进行倒角处理以捕捉高光，模拟冰块打磨感"
+  ],
+  "decorate": [
+    "在冰块内部嵌入随机分布的微小气泡和雪花纹理",
+    "在主体底部添加融化的水渍和小水洼",
+    "添加柔和的接触阴影和焦散光斑"
+  ],
+  "forbid": [
+    "禁止将汉字改为标准印刷字体（如黑体、宋体），必须保留原图书法感",
+    "禁止生成不透明的蓝色塑料、金属或磨砂玻璃材质",
+    "禁止保留原本的黑色填充、高饱和度背景色或彩色放射线",
+    "禁止缺失底部的物理接触阴影和水渍细节",
+    "禁止添加任何非冰材质的装饰物或吉祥物"
+  ],
+  "generation_brief": "3D ice sculpture icon of Chinese characters '漫画' inside a jagged speech bubble. Translucent cyan-blue ice material with internal snowflakes and bubbles. Glossy wet surface, chamfered edges. Pure white background, melting water puddles at base. No mascot, no black colors, no flat design.",
+  "color_application": "强制去色。将原图标的黑色文字和多彩背景完全替换为主题定义的 Cyan-Ice Blue（主色调）和 Translucent White（高光区）。仅通过深蔚蓝（Deep Azure）表现内部阴影和厚度，严禁出现原品牌的高饱和色。",
+  "stroke_application": "消除所有二维描边。将原图标的黑色轮廓线和气泡边缘转化为具有厚度的3D冰体边缘。通过菲涅尔反射和高光来界定形状，而非线条。边缘需圆润倒角，模拟冰块融化效果。",
+  "composition_application": "从平面填充式构图转变为居中悬浮/放置的3D物件构图。主体（文字+气泡）占据画布60%-70%空间。去除所有背景元素，仅保留纯白背景和底部水渍投影，确保视觉焦点集中在冰雕主体上。",
+  "identity_application": "通过严格保留‘漫画’二字的书法拓扑结构和气泡的几何剪影来维持身份。虽然材质变为统一的冰蓝色，但用户仍能通过独特的字形和气泡轮廓瞬间识别出是哔哩哔哩漫画。移除次要的吉祥物元素以突出核心文字标识。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色或黑色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到扁平化设计或2D矢量风格。",
+    "禁止保留原始的大面积品牌背景色或黑色填充。",
+    "禁止过度复杂的场景化重构（如添加人物、场景）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变‘漫画’二字的字形结构。"
+  ]
+}

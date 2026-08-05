@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 65,
+      "style_match_score": 65,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 40,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 80,
+      "background_score": 100,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 40,
+      "failure_reason": "严重丢失CF品牌标识（字母拓扑结构），过度重构导致无法识别目标App，且构图与参考图风格差异较大。",
+      "recommendation": "不推荐。虽然使用了红蓝配色，但完全丢失了'CF'字样这一核心识别线索，且主体变成了类似靶心的圆环结构，不符合'几何化CF Logo+枪械'的重构策略，看起来像是一个通用的射击游戏图标而非CrossFire。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了transfer_plan中的语义重构策略：保留了CF Logo的核心拓扑结构（左侧红色块与右侧蓝色块的咬合关系），去除了写实人物，采用了粗犷的手绘描边和扁平色块，背景纯黑，装饰元素（星星/圆点）符合主题要求。既保持了极高的品牌识别度，又完美融入了复古手绘主题风格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\crossfire_mobile\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,69 @@
+{
+  "app": "qimao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，即使是复杂的图形或文字，也必须保留其原始拓扑结构。七猫的 Logo 本身就是高度抽象的几何图形（猫脸+7），非常适合直接进行 3D 挤出和材质替换。若重构为真实的猫或书本，将彻底丢失品牌识别度。因此，必须严格保留原图的平面轮廓，仅做 Z 轴厚度和材质属性的迁移。",
+  "preserve": [
+    "猫头与数字7结合的特定外轮廓",
+    "两只眼睛的相对位置和竖直形态",
+    "图形的左右对称性（或原有的平衡感）",
+    "猫脸轮廓与数字7的同构几何关系",
+    "双眼的垂直椭圆形状及位置",
+    "整体图形的负空间比例"
+  ],
+  "must_preserve": [
+    "猫头部的几何化矩形框架结构",
+    "双眼的相对位置与比例（占据面部主要视觉重心）",
+    "瞳孔的垂直细长形态（这是识别‘猫’而非其他动物的关键）",
+    "眼睛内部的高光点位置",
+    "头部与身体连接处的负形空间关系",
+    "左右对称的构图逻辑"
+  ],
+  "recompose_allowed": [
+    "原本的纯黑填充改为深蓝色半透明冰体或内部深邃的空腔",
+    "原本的黄色眼睛改为高亮冰晶、气泡聚集区或微弱的暖光点缀（视生成效果而定，若主题强制去色则改为高透明白光）",
+    "边缘增加圆润的倒角和融化感",
+    "底部增加接触阴影和碎冰细节"
+  ],
+  "restyle": [
+    "将扁平矢量剪影转化为具有Z轴厚度的3D实体",
+    "表面材质替换为半透明浅冰蓝色晶体",
+    "添加内部悬浮气泡、雪花纹理和次表面散射效果",
+    "边缘处理为圆润光滑的冰蚀质感，去除锐利直角"
+  ],
+  "decorate": [
+    "底部添加柔和的接触阴影（Contact Shadow）",
+    "基座周围散落少量碎冰或融化的水渍",
+    "表面添加冷凝水珠和高光反射"
+  ],
+  "forbid": [
+    "禁止生成写实的猫头（要有毛发质感）",
+    "禁止改变眼睛的形状（如变成圆眼）",
+    "禁止丢失数字7的结构特征",
+    "禁止使用原本的亮黄色作为主色调",
+    "禁止主体悬空无投影",
+    "禁止保留原图标的实心黑色或黄色填充",
+    "禁止出现不透明塑料或金属质感",
+    "禁止复杂背景纹理干扰主体"
+  ],
+  "generation_brief": "3D icon of Qimao logo (cat head merging with number 7), made of translucent light blue ice crystal. Strictly preserve the geometric silhouette and vertical oval eyes. Eyes rendered as bright glossy highlights or clear crystal spheres within the ice. Soft rounded edges, wet surface, internal bubbles/snowflakes. Centered on pure white background with soft contact shadow and scattered ice shards at base. No yellow color, no fur, high fidelity to original shape.",
+  "color_application": "Apply theme's 'Force Desaturation' rule: Convert original black body to deep translucent cyan/ice-blue volume; convert original yellow eyes to bright white/clear crystal highlights or very pale icy blue to maintain contrast without using brand yellow. Dominant palette is Translucent Cyan/Light Ice Blue.",
+  "stroke_application": "Eliminate all 2D outlines. Define forms through 3D volume, refraction, and specular highlights. Edges must be smooth, chamfered, and physically rounded like eroded ice.",
+  "composition_application": "Center the 3D ice sculpture occupying 60-70% of canvas height. Maintain the original spatial arrangement of the cat/7 shape. Add a subtle physical base or melting puddle at the bottom to anchor the object on the white background.",
+  "identity_application": "Preserve the exact topology of the 'Cat+7' silhouette. Express identity through shape recognition rather than color. The vertical pupils and eye placement are critical anchors; render them as distinct high-reflection zones within the ice structure to ensure recognizability.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal material, not opaque plastic.",
+    "Color strictly limited to ice-blue/cyan spectrum; no original brand colors (black/yellow) in fill.",
+    "Original core silhouette and structural proportions must be strictly preserved.",
+    "Must have environmental interaction (shadow/water/ice shards) at the base."
+  ],
+  "negative_constraints": [
+    "No flat vector style or 2D appearance.",
+    "No realistic fur texture or anatomical cat features.",
+    "No dark or complex backgrounds.",
+    "No distortion of the '7' or cat head geometry.",
+    "No floating objects without ground contact shadows."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "app": "beautycam",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中Alipay和Bilibili的案例表明，即使是复杂的汉字或图形，也应直接转化为3D冰雕实体。BeautyCam的图标具有极高的几何识别度（相机外框+C形环），必须完整保留其拓扑结构，仅做材质置换和立体化加厚，严禁改变形状或重组元素。",
+  "preserve": [
+    "相机外形的整体剪影（包括顶部的突起）",
+    "内部C形环与右上角菱形的相对位置关系",
+    "无描边的纯净冰质边缘"
+  ],
+  "must_preserve": [
+    "相机外形的整体剪影（包括顶部的突起）",
+    "内部C形环与右上角菱形的相对位置关系",
+    "无描边的纯净冰质边缘"
+  ],
+  "recompose_allowed": [
+    "原图的彩虹渐变色（必须替换为单色冰蓝+光影）",
+    "原图的平面填充感（需转化为具有Z轴厚度的实体）",
+    "内部的细微装饰线条（可简化为冰裂纹理或气泡）"
+  ],
+  "restyle": [
+    "将2D扁平矢量转换为3D厚实冰砖结构",
+    "去除所有品牌色，统一应用半透明青冰蓝材质",
+    "表面增加湿润高光、菲涅尔反射及内部气泡/雪花纹理"
+  ],
+  "decorate": [
+    "底部添加融化的水迹和小水洼以增强物理接触感",
+    "内部嵌入随机微小气泡和冰晶颗粒"
+  ],
+  "forbid": [
+    "禁止保留任何粉色、黄色或蓝色的原品牌渐变色",
+    "禁止生成不透明的蓝色塑料或磨砂质感",
+    "禁止改变相机外框的圆角比例",
+    "禁止添加真实的人物面部或复杂的摄影棚背景",
+    "禁止使用二维描边界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture icon of BeautyCam camera shape. Translucent cyan-blue ice material with internal bubbles and snowflakes. Strictly preserve original silhouette: rounded square body, C-shaped ring, and top-right diamond. Glossy wet surface, caustic lighting. Pure white background with melting water puddle at base. Octane render, high fidelity.",
+  "color_application": "强制去色。将原图的高饱和粉紫渐变完全移除，主体统一渲染为浅冰蓝色（Cyan-Ice Blue），通过深蔚蓝（Deep Azure）表现阴影厚度，半透明白表现高光透光区。",
+  "stroke_application": "消除所有二维描边。利用冰块实体的物理厚度、边缘倒角的高光反射以及材质的折射率差异来自然界定轮廓。",
+  "composition_application": "采用居中构图，主体占据画布60%-70%空间。将原本平面的图标拉伸为具有Z轴厚度的立体物件，底部预留空间给投影和水渍，背景处理为纯净白色以衬托通透感。",
+  "identity_application": "通过严格保留相机外框、C形环及菱形块的几何拓扑结构来维持身份识别。虽然颜色和材质完全主题化，但用户仍能通过独特的剪影瞬间识别出是美颜相机。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积粉色/紫色品牌背景色。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的核心几何比例和拓扑关系。"
+  ]
+}

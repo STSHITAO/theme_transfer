@@ -1,0 +1,39 @@
+{
+  "app": "anipop",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "黄色小鸡的头部轮廓及红色鸡冠",
+  "brand_cues_to_preserve": [
+    "标志性的圆润三角形头部剪影",
+    "头顶红色的鸡冠形状",
+    " wink（眨眼）的面部表情结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "三消游戏的棋子感",
+    "快乐、休闲的情绪传达"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，该主题的核心逻辑是将扁平符号直接'冷冻'立体化。Anipop 的小鸡形象具有极高的国民度和独特的几何特征（圆三角头+红冠），必须完整保留其外部轮廓和五官拓扑关系，仅将材质替换为冰块，严禁重构为其他动物或抽象符号。",
+  "design_rationale": "选择 logo_preserve 策略是因为 Anipop 的核心资产是其吉祥物形象。在冰雪主题下，将原本暖色调、毛绒质感的小鸡转化为冷色调、通透质感的冰雕，能形成强烈的视觉反差（冰与火的隐喻），既符合主题包的统一性（材质、光影、背景），又通过保留标志性轮廓确保了用户能瞬间识别出这是'开心消消乐'。",
+  "must_preserve": [
+    "小鸡头部的整体外轮廓（包括脸颊的弧度）",
+    "头顶鸡冠的位置和大致形状",
+    "眼睛和嘴巴的相对位置布局",
+    "底部的物理接触阴影和水渍"
+  ],
+  "can_recompose": [
+    "原本的黄色皮肤改为半透明浅冰蓝色",
+    "原本的红冠可处理为深红色半透明冰晶或极小比例的暖色点缀（若主题允许微弱对比）",
+    "毛发质感改为光滑的冰面高光",
+    "背景中的其他动物和网格全部移除"
+  ],
+  "forbid": [
+    "禁止保留原本的亮黄色作为主体主色",
+    "禁止生成不透明的塑料或橡胶质感",
+    "禁止改变小鸡的脸部朝向或表情结构",
+    "禁止添加复杂的冰雪场景背景，保持纯白极简"
+  ],
+  "generation_direction": "3D ice sculpture of the Anipop yellow chick head. Translucent cyan-blue ice material with internal bubbles and snowflake textures. Preserve the exact silhouette of the chick's head and the red comb on top (rendered as dark red ice or subtle accent). Winking expression carved into the ice. Glossy wet surface, caustic lighting. Pure white background with melting water puddle at the base. Centered composition."
+}

@@ -1,0 +1,64 @@
+{
+  "app": "honor_of_kings",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original图标为写实人物肖像（亚瑟），包含复杂的光影、皮肤纹理和面部细节。根据theme_design_analysis中关于复杂IP的处理规则（参考honor_of_kings和lol_mobile案例），必须舍弃写实人像，转而提取‘红蓝对抗’的核心语义进行几何化重构。保留人脸轮廓会导致风格不伦不类且违反扁平化规则，因此判定为semantic_recompose。",
+  "preserve": [
+    "红与蓝的高饱和度对立配色关系",
+    "代表对抗或能量的抽象几何符号形态（如漩涡、太极、闪电、交织线条）",
+    "MOBA游戏的竞技对抗感视觉隐喻",
+    "5v5团队作战的对称或双元素并置构图"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "红蓝主色调的强烈对比",
+    "粗犷的手绘黑色描边",
+    "极简的几何化主体形态",
+    "无立体光影的平面化处理"
+  ],
+  "recompose_allowed": [
+    "将写实人物完全替换为抽象几何徽章",
+    "使用红蓝色块拼接表现对抗概念",
+    "引入简单的装饰性几何图形（如星星、圆点）",
+    "调整主体形状为圆形、盾形或对称图形"
+  ],
+  "restyle": [
+    "去除所有金属质感、渐变和高光",
+    "将边缘处理为不规则、抖动的手绘痕迹",
+    "填充方式改为哑光平涂色块",
+    "线条模拟马克笔或蜡笔的粗糙触感"
+  ],
+  "decorate": [
+    "在色块内部添加简单的手绘纹理或颗粒感",
+    "保持主体居中，四周留黑均匀"
+  ],
+  "forbid": [
+    "禁止出现任何写实的人脸、五官或肢体",
+    "禁止使用金色、银色、白色以外的金属渐变色",
+    "禁止保留原图的复杂背景纹理或场景",
+    "禁止使用细线条、平滑矢量边缘或完美对称",
+    "禁止使用主题色板（红/蓝/黄/白/黑）之外的颜色",
+    "禁止添加阴影、投影或环境光遮蔽"
+  ],
+  "generation_brief": "A retro hand-drawn doodle style icon for a MOBA game. Pure black background. Central subject is an abstract geometric badge composed of solid saturated red and blue blocks, representing opposing forces (like a stylized yin-yang or clashing shields). Thick, rough, uneven black marker-pen outlines. Flat colors, no gradients, no shadows, no realistic details. Naive, clumsy, cute aesthetic. High contrast.",
+  "color_application": "Map the original 'Red vs Blue' faction colors to the theme's high-saturation brick red and deep royal blue. Use solid flat fills only. No gold or metallic gradients; if yellow is needed for contrast, use the theme's warm yellow/milky white sparingly as an accent.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black outlines to all geometric shapes. Edges must appear rough and shaky, simulating a dry marker or crayon on paper. No smooth vector lines.",
+  "composition_application": "Center the abstract geometric symbol on the pure black canvas. Occupy 50-70% of the area. Ensure balanced visual weight between red and blue elements to imply '5v5' symmetry or confrontation. Keep surrounding space pure black.",
+  "identity_application": "Express identity through the semantic concept of 'confrontation' using red/blue color duality and dynamic geometric arrangement, rather than literal character representation. The abstract shape should evoke a battle emblem or shield clash.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must use thick, rough hand-drawn black strokes",
+    "Colors must be limited to high-saturation red, blue, yellow/white",
+    "No gradients, shadows, or 3D effects allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No realistic faces, eyes, or human features",
+    "No metallic textures, gold/silver gradients",
+    "No complex details or clutter",
+    "No white or colored backgrounds",
+    "No clean, perfect vector lines"
+  ]
+}

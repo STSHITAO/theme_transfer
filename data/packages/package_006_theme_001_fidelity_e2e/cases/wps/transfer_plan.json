@@ -1,0 +1,60 @@
+{
+  "app": "WPS Office",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "preserve": [
+    "'W' 字母的核心骨架结构（双峰/倒三角组合）",
+    "顶部水平切角与底部尖角的相对位置关系",
+    "品牌红色的色相倾向（需转换为低饱和度 pastel 红/珊瑚粉）",
+    "图形内部的负空间分割逻辑"
+  ],
+  "must_preserve": [
+    "'W' 字形的左右对称或交错结构",
+    "暖调的红色/粉色填充",
+    "黑色手绘风格的不规则描边",
+    "白色萌宠吉祥物的互动元素"
+  ],
+  "recompose_allowed": [
+    "将原本扁平锐利的折角处理为圆角",
+    "给 'W' 图形增加轻微的厚度感或立体感（伪3D/软糖质感）",
+    "调整吉祥物的位置（如趴在 'W' 的顶部凹陷处或侧面）",
+    "背景替换为统一的米黄色圆角矩形"
+  ],
+  "restyle": [
+    "材质从光滑矢量转为哑光纸质/粘土质感",
+    "线条从完美几何直线转为带有抖动感的黑色手绘细线",
+    "色彩从高饱和正红转为柔和的珊瑚粉/淡粉色"
+  ],
+  "decorate": [
+    "在 'W' 符号的顶部凹陷处或侧边添加一只白色软萌小动物（小狗/小绵羊）",
+    "动物与 'W' 符号产生物理接触（趴卧、拥抱或探出头）",
+    "保持整体构图的呼吸感，主体不顶格"
+  ],
+  "forbid": [
+    "禁止使用原本的高饱和度正红色",
+    "禁止保留原本的纯白背景和锐利直角",
+    "禁止省略吉祥物",
+    "禁止线条过于笔直僵硬",
+    "禁止将 'W' 简化为普通的 'V' 或爱心形状",
+    "禁止写实风格、3D渲染、金属光泽或复杂渐变"
+  ],
+  "generation_brief": "A cute hand-drawn app icon on a creamy yellow rounded background. The main subject is a simplified, chubby version of the WPS 'W' logo, colored in soft pastel coral-red with thick black sketchy outlines. A small fluffy white puppy is sitting comfortably in the top center dip of the 'W' shape. Matte texture, healing cartoon style, no sharp edges.",
+  "color_application": "将 WPS 品牌红转换为低饱和度的 pastel 珊瑚红或淡粉色，去除原有的红橙渐变，改为均匀的哑光色块填充，确保与奶油黄背景和谐。",
+  "stroke_application": "应用黑色细线条手绘描边，模拟马克笔触感，线条需有自然抖动和圆润转角，包裹 'W' 主体及吉祥物轮廓。",
+  "composition_application": "采用非对称平衡构图，'W' 主体居中略偏下，白色吉祥物置于 'W' 顶部凹陷处或侧边，打破原有严格对称，增加生动感，四周保留充足留白。",
+  "identity_application": "通过保留 'W' 的双峰结构和顶部切口特征来维持识别度，但将其形态‘软化’为卡通积木或软糖造型，避免锐利几何感，同时依靠吉祥物互动强化主题归属。",
+  "fidelity_constraints": [
+    "必须使用统一的米白/淡黄圆角矩形底板",
+    "必须包含黑色的手绘风格细描边",
+    "必须在画面中融入白色的简笔画萌宠吉祥物",
+    "色彩必须调整为低饱和度的 pastel 范围",
+    "保持扁平化哑光质感，禁止立体阴影"
+  ],
+  "negative_constraints": [
+    "禁止保留 Original 的原始高饱和红色和白色背景",
+    "禁止使用写实风格或复杂的 3D 渲染效果",
+    "禁止省略吉祥物元素",
+    "禁止使用锐利的直角或完美的几何线条",
+    "禁止将 'W' 误绘为 'V' 或通用下载图标"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“美团”二字的独特字形结构，特别是“团”字外框包裹内部笔画的几何拓扑关系。",
+  "brand_cues_to_preserve": [
+    "“美”字的横画排列与底部撇捺的舒展弧度",
+    "“团”字的正方形外框及其内部“才”字形的相对位置",
+    "两个汉字之间的紧凑间距与水平对齐关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字本身的识别性（作为超级App，文字即功能入口）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，对于以汉字为核心视觉符号的App，必须严格保留汉字的笔画骨架和空间布局。美团图标的核心识别度完全依赖于这两个字的特定字体设计，因此不能进行语义重组，只能进行材质和维度的转换（2D平面字 -> 3D冰砖字）。",
+  "design_rationale": "美团图标属于典型的文字标（Wordmark），其品牌资产高度集中在字体的几何特征上。根据主题规则，应将原本扁平、高对比度（黄底黑字）的图形转化为具有体积感的实体。策略上采用'几何守恒，材质重构'，将黑色笔画替换为厚实的半透明冰块，利用冰的物理属性（折射、厚度）来重塑文字的重量感，同时彻底移除黄色背景，代之以纯净的白色环境，确保在保持极高识别度的同时完美融入冰雪主题。",
+  "must_preserve": [
+    "“美团”二字的完整笔画结构",
+    "字体的原始比例和长宽比",
+    "冰块材质的通透感和内部气泡/雪花纹理",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "笔画的边缘处理（由锐利变为圆润倒角）",
+    "颜色的绝对值（由黑变冰蓝/透白）",
+    "背景的纯色块（改为留白）"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画数量或结构（如写错字）",
+    "禁止保留原始的黄色背景",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止添加与文字无关的装饰性元素（如袋鼠耳朵等，除非原图标包含）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '美团'. The characters should be made of thick, translucent cyan-blue ice with internal bubbles and snowflake textures. The strokes should have rounded, chamfered edges like melted ice. Place the text on a pure white background with realistic contact shadows and small melting water puddles at the base. Ensure the font structure matches the original logo exactly."
+}

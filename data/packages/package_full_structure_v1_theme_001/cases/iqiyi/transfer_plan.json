@@ -1,0 +1,62 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，对于包含明确文字或高度抽象符号的图标，策略是将平面图形直接‘增厚’立体化。爱奇艺的 logo 具有极高的文字识别度，且 geometry 简单清晰，非常适合转化为冰块实体。不需要进行语义重构（如变成播放器），应严格保留文字轮廓，仅做材质替换。",
+  "preserve": [
+    "iQIYI 英文字母组合的整体几何轮廓与拓扑结构",
+    "字母 Q 右下角的独特切角/缺口特征",
+    "字母 i 的点与竖画的分离关系",
+    "无衬线字体的圆润笔画风格",
+    "字母间的相对间距与视觉平衡"
+  ],
+  "must_preserve": [
+    "iQIYI 的标准字体字形骨架",
+    "Q 字母特有的几何切角细节",
+    "整体居中构图布局"
+  ],
+  "recompose_allowed": [
+    "将 2D 平面文字拉伸为具有明显 Z 轴厚度的 3D 实体",
+    "对文字边缘进行倒角（Chamfer）处理以模拟冰棱高光",
+    "在冰块内部嵌入随机分布的气泡或雪花纹理",
+    "底部增加融化的水渍、碎冰屑及接触阴影以确立物理立足点"
+  ],
+  "restyle": [
+    "将原品牌色（绿/紫渐变）完全替换为半透明青冰蓝（Cyan-Ice Blue）",
+    "赋予文字表面高光泽度的湿润冰晶质感",
+    "利用次表面散射（SSS）效果表现冰块的通透感"
+  ],
+  "decorate": [
+    "内部微小空气气泡",
+    "天然冰裂纹路",
+    "表面雪花纹理点缀"
+  ],
+  "forbid": [
+    "禁止保留原图的绿色/紫色渐变背景",
+    "禁止将文字填充为不透明的实心颜色",
+    "禁止改变字体形状（严禁将 Q 变为 O 或其他字母）",
+    "禁止生成不透明的蓝色塑料或磨砂玻璃质感",
+    "禁止添加任何非文字类的装饰元素（如播放键、屏幕框、胶片卷盘）",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D ice sculpture of the text 'iQIYI', thick translucent cyan-blue ice blocks, accurate letter shapes especially Q's cut corner, internal bubbles and snowflake textures, glossy wet surface with caustic lighting, chamfered edges, melting water puddles and contact shadow at base, pure white background, high fidelity octane render.",
+  "color_application": "强制去色。将原品牌的绿-青-紫渐变完全移除，统一应用 theme 的 Cyan-Ice Blue 为主色调，Translucent White 为高光区，Deep Azure 为阴影区。文字本身呈现半透明冰蓝色，而非纯白或原品牌色。",
+  "stroke_application": "消除所有二维描边。将文字的笔画边缘转化为三维实体的物理厚度。通过边缘的菲涅尔反射（Fresnel reflection）和倒角高光来界定字母轮廓，而非绘制线条。",
+  "composition_application": "从全幅面填充的文字标转变为独立的 3D 物件。主体 'iQIYI' 居中放置，宽度约占画布 50%-60%，四周留有白色呼吸空间。底部预留空间给投影和水渍，增强悬浮或放置的真实感。",
+  "identity_application": "通过严格保留 'iQIYI' 的字形骨架（特别是 Q 的切角）和字母排列比例来维持品牌识别。虽然材质变为冰，但剪影必须与原 Logo 高度重合，确保用户能通过形状瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（绿/紫）。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变字母 Q 的形状特征。"
+  ]
+}

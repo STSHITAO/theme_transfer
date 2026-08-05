@@ -1,0 +1,61 @@
+{
+  "app": "qq_browser",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The QQ Browser logo consists of simple, bold geometric shapes (a ring and a cloud) which are ideal candidates for direct 3D extrusion. Following the theme rules (like Alipay and Douyin), the primary structure must be preserved to ensure instant recognition. The transformation involves converting the flat vector shapes into thick, rounded ice sculptures while maintaining their exact relative positions.",
+  "preserve": [
+    "The 'Q' ring shape (circular arc open at bottom right)",
+    "The cloud shape positioned at the bottom right gap",
+    "Translucent ice material with internal bubbles/snowflakes",
+    "Pure white background with contact shadow"
+  ],
+  "must_preserve": [
+    "The 'Q' ring shape (circular arc open at bottom right)",
+    "The cloud shape positioned at the bottom right gap",
+    "Translucent ice material with internal bubbles/snowflakes",
+    "Pure white background with contact shadow"
+  ],
+  "recompose_allowed": [
+    "Surface texture (add condensation, frost, cracks)",
+    "Edge rounding (chamfered edges to look like melted ice)",
+    "Internal lighting (subsurface scattering, refraction)",
+    "Thickness of the elements (extrude 2D to 3D)"
+  ],
+  "restyle": [
+    "Convert original brand blue gradient to uniform translucent cyan/ice blue",
+    "Replace flat vector fill with volumetric ice geometry",
+    "Add glossy wet surface reflections and specular highlights"
+  ],
+  "decorate": [
+    "Internal suspended air bubbles and snowflake patterns",
+    "Surface condensation droplets",
+    "Soft contact shadow and melting water puddle at base"
+  ],
+  "forbid": [
+    "Using the original solid blue gradient color",
+    "Flattening the icon (must be 3D volumetric)",
+    "Separating the cloud too far from the Q ring",
+    "Opaque plastic or metal materials",
+    "Dark or colored backgrounds",
+    "Removing the cloud element or changing its position relative to the Q"
+  ],
+  "generation_brief": "3D icon of a translucent light-blue ice ring (shape of letter Q) with a sculpted ice cloud nestled in the bottom-right opening. Glossy wet surface, internal air bubbles and snowflake textures. Soft studio lighting, refraction, subsurface scattering. Centered on pure white background with soft contact shadow and melting water details at base.",
+  "color_application": "Discard original brand blue gradient. Apply uniform translucent cyan/light ice blue (#A0D8EF approx) to both the Q ring and cloud. Use pure white for specular highlights and deep blue/grey for internal shadows/refractions.",
+  "stroke_application": "Remove all 2D outline strokes. Define forms through 3D volume, chamfered edges, and lighting contrast. Ensure edges are smooth and rounded to mimic eroded ice.",
+  "composition_application": "Center the 'Q+Cloud' composite structure. Extrude the 2D shapes into 3D objects with consistent thickness. Maintain the original spatial overlap where the cloud fills the Q's bottom-right gap. Place on a white ground plane with contact shadow.",
+  "identity_application": "Preserve the exact topology of the 'Q' ring and the specific placement of the cloud. Recognizability relies on the silhouette of the ring-cloud combination, rendered as a single cohesive ice sculpture rather than separate parts.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal, not opaque plastic.",
+    "Color must be strictly ice-blue/cyan spectrum; no original brand colors.",
+    "Must have physical grounding (shadow/water) on white background.",
+    "Core 'Q' and cloud silhouette must remain instantly recognizable."
+  ],
+  "negative_constraints": [
+    "No flat 2D vectors or solid color fills.",
+    "No dark, grey, or colored backgrounds.",
+    "No matte finishes; surface must be glossy/wet.",
+    "No distortion of the Q-ring geometry or displacement of the cloud."
+  ]
+}

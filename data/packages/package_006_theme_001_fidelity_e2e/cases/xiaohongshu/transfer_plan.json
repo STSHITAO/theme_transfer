@@ -1,0 +1,58 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "“小红书”三个汉字的完整字形结构与相对位置",
+    "圆角矩形的外部容器轮廓",
+    "品牌红色的色相倾向（需转换为低饱和度 pastel 红/珊瑚粉）"
+  ],
+  "must_preserve": [
+    "文字必须清晰可读，禁止替换为拼音、英文或抽象图形",
+    "统一的米白/淡黄色圆角矩形底板背景",
+    "黑色细线条手绘描边风格",
+    "白色软萌小动物吉祥物（小狗或小绵羊）及其与主体的互动"
+  ],
+  "recompose_allowed": [
+    "将原本锐利的印刷体笔画边缘柔化为圆润的手绘笔触",
+    "调整文字颜色为低饱和度的珊瑚粉或淡砖红，以融入主题暖色调",
+    "吉祥物可趴在“书”字顶部、拥抱文字或从文字后方探出头",
+    "增加哑光纸质或马克笔填色的质感，去除原有扁平矢量感"
+  ],
+  "restyle": [
+    "字体风格：从标准黑体/宋体转化为带有自然抖动感的卡通手绘字体",
+    "色彩处理：高饱和红色 -> 低饱和度 pastel 珊瑚红/淡粉色",
+    "材质表现：无光泽哑光质感，模拟儿童绘本插画"
+  ],
+  "decorate": [
+    "在文字与吉祥物接触点增加简单的遮挡关系线条",
+    "保持画面四周留白，营造呼吸感",
+    "极简平光，仅在交叠处使用简单深色线条表示层次"
+  ],
+  "forbid": [
+    "禁止使用原始的高饱和度正红色（#FF2442）作为主色",
+    "禁止保留锋利、完美的几何直线边缘",
+    "禁止省略白色吉祥物元素",
+    "禁止文字过大填满画布，必须留出呼吸空间",
+    "禁止使用3D渲染、金属光泽、玻璃质感或复杂渐变"
+  ],
+  "generation_brief": "A cute hand-drawn cartoon app icon for Xiaohongshu. Background is a creamy yellow rounded rectangle with black sketchy outlines. The main subject is the Chinese characters '小红书' written in a soft, rounded, hand-drawn style, filled with pastel coral-pink color. A small, fluffy white puppy character is playfully hugging or sitting on top of the last character '书'. The lines are imperfect and warm, resembling marker drawings on paper. Matte texture, healing atmosphere, high quality illustration.",
+  "color_application": "将品牌红色转换为低饱和度的 pastel 珊瑚粉或淡砖红，确保与奶油黄背景和谐；文字填充色需保持与背景的足够对比度但不过于刺眼。",
+  "stroke_application": "所有元素（文字轮廓、吉祥物、底板边缘）均使用黑色细实线描边，线条需带有自然的手绘抖动感、断连或粗细变化，避免机械直线。",
+  "composition_application": "采用非对称平衡构图。‘小红书’文字居中略偏下，白色吉祥物占据视觉重心的一侧（如右上角或顶部），与文字产生物理互动（拥抱/趴卧），打破原有对称性。",
+  "identity_application": "通过保留‘小红书’汉字的骨架结构和红色系色相来维持身份，但通过手绘化、柔化笔画和降低饱和度来服从主题风格；吉祥物的加入增加了亲和力而不掩盖文字识别。",
+  "fidelity_constraints": [
+    "必须使用统一的米白/淡黄圆角矩形底板",
+    "必须包含黑色的手绘风格细描边",
+    "必须在画面中融入白色的简笔画萌宠吉祥物",
+    "色彩必须调整为低饱和度的奶油/马卡龙色系",
+    "保持扁平化哑光质感，禁止立体阴影或复杂光泽"
+  ],
+  "negative_constraints": [
+    "禁止保留 Original 的高饱和红色背景",
+    "禁止使用写实风格或复杂的 3D 渲染效果",
+    "禁止省略吉祥物元素",
+    "禁止使用锐利的直角或完美的几何线条",
+    "禁止文字被装饰元素遮挡导致不可读"
+  ]
+}

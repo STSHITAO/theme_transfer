@@ -13,6 +13,7 @@
 4. 区分“整包共用主题语言”和“某个参考 App 自己的身份元素”。
 5. 不要要求所有目标 App 机械保留原 logo；也不要鼓励过度重构导致不可识别。
 6. 重点提取 theme fidelity 规则：目标不是生成一套新的好看图标，而是生成像当前 theme 缺失成员的图标。
+7. 对每个参考 original -> style_ref，明确判断 style_ref 是否保留了 original 的大部分主体几何、轮廓和空间关系。语义相同但主体被钱包、道具、小场景等替代，属于结构重构，不属于结构保留。
 
 注意：
 
@@ -47,10 +48,17 @@ JSON 字段：
       "source_semantics": "该参考 App 的基础功能语义",
       "observed_transformation": "它在 style_ref 中如何被主题化表达",
       "preserved_identity": "保留了哪些身份或功能线索",
-      "redesigned_parts": "哪些结构被重组、弱化或主题化"
+      "redesigned_parts": "哪些结构被重组、弱化或主题化",
+      "preserve_major_structure": true,
+      "structure_evidence": "根据 original 与 style_ref 可观察到的主体轮廓、几何和空间关系说明判断依据"
     }
   ],
   "shared_design_rules": ["整包共用规则"],
   "identity_handling_policy": "这个主题下如何平衡 App 可识别性和主题化重设计",
+  "structure_preservation_policy": {
+    "decision_scope": "per_app_before_generation",
+    "preserve_when": "什么情况下应保留大部分原始结构",
+    "recompose_when": "什么情况下允许用语义符号、道具或场景重构主体"
+  },
   "common_forbidden_failures": ["常见失败方式"]
 }

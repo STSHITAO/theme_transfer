@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 70,
+      "artifact_score": 95,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "材质和字形还原度极高，完美符合‘立体化复刻’策略。虽然保留了底部的英文标识（计划建议移除），但作为备选方案，其核心汉字‘有道’的书法特征保留最为完整，且3D体积感强，优于候选2。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 95,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 60,
+      "failure_reason": "主体文字缺乏足够的Z轴厚度，视觉上偏向平面剪影或浅浮雕，违反了‘禁止生成平面的蓝色文字剪影（必须具备Z轴厚度和体积感）’的约束。",
+      "recommendation": "虽然构图更简洁（去除了英文），但核心的‘有道’二字立体感不足，未能达到参考图中那种厚实的冰雕质感，且字形略显单薄，识别度不如候选1。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\youdao_dict\\candidates\\candidate_01.png",
+  "warning": "All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

@@ -1,0 +1,38 @@
+{
+  "app": "eleme",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "小写字母 'e' 的几何轮廓及其右侧代表嘴部的圆点",
+  "brand_cues_to_preserve": [
+    "字母 'e' 的独特螺旋开口结构",
+    "右侧悬浮的圆形点（象征嘴巴/食物）",
+    "整体向右倾斜的动态势能"
+  ],
+  "semantic_cues_to_preserve": [
+    "进食/张嘴的隐喻（通过保留圆点实现）",
+    "即时服务的速度感（通过倾斜角度保留）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，该主题的核心逻辑是将平面符号直接转化为具有厚度的3D冰体。饿了么的 'e' 标志具有极高的抽象度和辨识度，必须完整保留其笔画拓扑结构和空间比例，仅做材质上的物理重构（扁平转立体），严禁改变字形或将其替换为餐具等具象物体。",
+  "design_rationale": "饿了么的图标是一个高度抽象且独特的几何符号（带点的 'e'）。根据 theme_design_analysis 中关于 Alipay 和 Douyin 的处理逻辑，对于此类强符号化的 App，最佳策略是保留原主体结构，将其“冻结”成冰块。这既符合主题包“几何守恒，材质重构”的全局规则，又能确保用户在统一冰蓝风格下瞬间识别出应用身份。",
+  "must_preserve": [
+    "'e' 字母的整体骨架和笔画走势",
+    "右侧圆点与主体的相对位置关系",
+    "图标的整体长宽比和倾斜角度"
+  ],
+  "can_recompose": [
+    "将原本的橙色品牌色完全替换为浅冰蓝色",
+    "将平面边缘转化为圆润的倒角和高光反射",
+    "在冰块内部添加气泡、裂纹或雪花纹理",
+    "增加 Z 轴厚度，使其成为立体的冰砖"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色或蓝色背景",
+    "禁止生成不透明的塑料或金属质感",
+    "禁止改变 'e' 的字形结构（如封口错误或笔画断裂）",
+    "禁止去除底部的接触阴影和水渍细节"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the lowercase letter 'e' with a detached dot on the right. Material is translucent cyan ice with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. Tilted slightly to the right. Pure white background with melting water puddle at the base. No orange colors."
+}

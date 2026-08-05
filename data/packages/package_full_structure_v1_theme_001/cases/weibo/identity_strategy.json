@@ -1,0 +1,40 @@
+{
+  "app": "weibo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The iconic eye shape combined with the signal waves on the top right.",
+  "brand_cues_to_preserve": [
+    "The distinct organic teardrop/eye outline of the main body",
+    "The three curved signal bars (wifi-like) floating at the top right",
+    "The internal concentric structure: white sclera and black pupil with two highlight dots"
+  ],
+  "semantic_cues_to_preserve": [
+    "Visual perception (the Eye)",
+    "Broadcasting/Transmission (the Signal waves)"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the reference patterns (Alipay, Douyin), the core geometric silhouette must be strictly preserved to ensure recognition. The Weibo logo is a unified symbol; unlike the 'Volcano' example where elements were separated, the eye and signal waves should remain in their original relative positions but rendered as a cohesive 3D ice sculpture. The flat vector shapes are extruded into thick ice blocks.",
+  "design_rationale": "Weibo's identity relies entirely on its unique 'Eye + Signal' geometry. Changing the shape would make it unrecognizable. The strategy applies the 'Ice/Crystal' theme by converting the flat red/orange vectors into a translucent, pale blue ice material. The 'signal waves' are treated as frozen arcs of ice floating near the main body, maintaining the original layout but adding Z-axis depth and physical volume.",
+  "must_preserve": [
+    "The exact aspect ratio and curvature of the main eye body",
+    "The position and angle of the three signal arcs relative to the eye",
+    "The placement of the pupil and highlights within the eye"
+  ],
+  "can_recompose": [
+    "Convert flat colors to translucent ice blue/cyan gradients",
+    "Add 3D thickness (extrusion) to all elements",
+    "Embed snowflake/bubble textures inside the ice volume",
+    "Add condensation droplets on the surface",
+    "Soften sharp vector edges into rounded, melted ice contours"
+  ],
+  "forbid": [
+    "Retaining the original red or orange brand colors",
+    "Flattening the icon into a 2D blue silhouette",
+    "Removing the signal waves",
+    "Using opaque plastic or metal materials",
+    "Complex background scenes (must be clean white)"
+  ],
+  "generation_direction": "3D icon of the Weibo logo (eye shape with signal waves) made of translucent pale blue ice. Thick extrusion, glossy wet surface with water droplets and internal snowflakes. Pure white background with soft contact shadow. No red or orange colors."
+}

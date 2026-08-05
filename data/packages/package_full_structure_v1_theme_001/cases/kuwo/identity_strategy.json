@@ -1,0 +1,40 @@
+{
+  "app": "kuwo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "中央橙红色的抽象'K'字形符号以及左上角悬浮的蓝色音符",
+  "brand_cues_to_preserve": [
+    "中央类似字母'K'或蝴蝶结形状的几何主体",
+    "左上角独立的小音符元素",
+    "外围不闭合的圆环轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐播放功能（通过保留音符符号表达）",
+    "品牌首字母'K'的形态识别"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝、抖音等案例，本主题的核心逻辑是'几何守恒，材质重构'。酷我音乐的'K'字标具有极高的几何独特性，必须完整保留其拓扑结构（包括中间的连接点和两侧的弧度），直接将其转化为厚实的冰雕实体，严禁改变形状或重组元素。",
+  "design_rationale": "酷我音乐的原图标由'K'字主体、音符和圆环组成，结构清晰且辨识度高。根据theme_design_analysis中'几何守恒'的原则，应采用logo_preserve策略。将原本扁平的橙色'K'和蓝色音符统一转化为半透明的浅冰蓝色冰块。为了增加立体感和物理真实性，原本分离的音符和圆环在3D化后应被视为同一材质体系下的独立冰块组件，或者与主体有轻微的物理接触/悬浮关系。背景必须彻底去除黄色，改为纯白，以突出冰块的通透质感。",
+  "must_preserve": [
+    "原图标中'K'字的准确笔画结构和比例",
+    "左上角音符的位置关系和形态",
+    "外围圆环的断口位置和弧度",
+    "整体构图的居中布局"
+  ],
+  "can_recompose": [
+    "原图标的颜色（必须全部转为冰蓝色系）",
+    "元素的厚度（需拉伸为3D实体）",
+    "边缘的处理（需增加倒角和高光）",
+    "内部纹理（需添加气泡、雪花或冰裂）"
+  ],
+  "forbid": [
+    "保留原始的橙色、黄色或蓝色品牌色作为主体颜色",
+    "生成不透明的塑料或金属质感",
+    "改变'K'字的几何形状（如变成真正的蝴蝶或错误的字母）",
+    "背景残留黄色或渐变",
+    "缺少底部的投影和水渍细节"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the Kuwo Music logo. The subject is the abstract 'K' shape combined with a floating musical note and a surrounding broken ring, all made of translucent cyan-blue ice. Material must have internal bubbles, snowflake textures, and glossy wet surfaces. Edges should be chamfered with caustic lighting. Place on a pure white background with realistic contact shadows and melting water puddles at the base. No brand colors, no flat design."
+}

@@ -7,7 +7,9 @@ from unittest.mock import patch
 
 from PIL import Image
 
+from backend import package_workflow
 from backend.package_workflow import _best_scored_candidate, run_package_workflow, scan_target_apps
+from backend.services.wan_client import WanApiError
 
 
 def make_png(path: Path, color=(120, 30, 40, 255)) -> None:
@@ -87,6 +89,39 @@ def make_project_fixture(root: Path) -> None:
 
 
 class PackageWorkflowTests(unittest.TestCase):
+    def test_batch_records_data_inspection_failure_and_continues_other_apps(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_project_fixture(root)
+            original_run_case = package_workflow._run_package_case
+
+            def run_case_or_reject(target_app, *args, **kwargs):
+                if target_app == "qq":
+                    raise WanApiError(
+                        "Wan API rejected the image request: DataInspectionFailed",
+                        status_code=400,
+                        code="DataInspectionFailed",
+                        response_path=str(root / "rejected_response.json"),
+                    )
+                return original_run_case(target_app, *args, **kwargs)
+
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                with patch.object(package_workflow, "_run_package_case", side_effect=run_case_or_reject):
+                    result = run_package_workflow(
+                        "theme_001",
+                        "package_001_theme_001",
+                        root_dir=root,
+                        skip_rejected_cases=True,
+                    )
+
+            self.assertEqual(set(result["final_outputs"]), {"bilibili", "xiaohongshu"})
+            self.assertEqual(result["coverage"]["skipped_apps"], ["qq"])
+            self.assertEqual(result["coverage"]["successful_app_count"], 2)
+            self.assertTrue((Path(result["package_dir"]) / "cases/qq/case_failure.json").exists())
+            metadata = json.loads(Path(result["metadata_path"]).read_text(encoding="utf-8"))
+            self.assertEqual(metadata["status"], "complete_with_skips")
+            self.assertEqual(metadata["evaluation_coverage"]["skipped_apps"], ["qq"])
+
     def test_scan_target_apps_returns_dirs_with_valid_target_images(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -157,6 +192,14 @@ class PackageWorkflowTests(unittest.TestCase):
                 self.assertIn("brand_cues_to_preserve", identity_strategy)
                 self.assertIn("semantic_cues_to_preserve", identity_strategy)
                 self.assertIn("style_fidelity_priority", identity_strategy)
+                self.assertIn(
+                    identity_strategy["structure_preservation_mode"],
+                    ["preserve_major_structure", "semantic_recompose"],
+                )
+                self.assertEqual(
+                    identity_strategy["structure_identity_metric_applicable"],
+                    identity_strategy["structure_preservation_mode"] == "preserve_major_structure",
+                )
                 self.assertIn("strategy_type", transfer_plan)
                 self.assertIn("identity_constraint_level", transfer_plan)
                 self.assertIn("must_preserve", transfer_plan)
@@ -167,6 +210,14 @@ class PackageWorkflowTests(unittest.TestCase):
                 self.assertIn("identity_application", transfer_plan)
                 self.assertIn("fidelity_constraints", transfer_plan)
                 self.assertIn("negative_constraints", transfer_plan)
+                self.assertEqual(
+                    transfer_plan["structure_preservation_mode"],
+                    identity_strategy["structure_preservation_mode"],
+                )
+                self.assertEqual(
+                    transfer_plan["structure_identity_metric_applicable"],
+                    identity_strategy["structure_identity_metric_applicable"],
+                )
                 self.assertIn("transfer_plan", generation_prompt)
                 self.assertIn("theme fidelity", generation_prompt.lower())
 
@@ -184,6 +235,10 @@ class PackageWorkflowTests(unittest.TestCase):
             self.assertEqual(metadata["target_apps"], target_apps)
             self.assertEqual(len(metadata["final_outputs"]), len(target_apps))
             self.assertIn("theme_design_analysis", metadata)
+            self.assertEqual(
+                set(metadata["structure_evaluation_policy"]),
+                set(target_apps),
+            )
 
     def test_rerun_replaces_final_directory_without_stale_apps(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -203,6 +258,32 @@ class PackageWorkflowTests(unittest.TestCase):
                 {path.name for path in final_dir.iterdir()},
                 {"bilibili.png", "qq.png", "xiaohongshu.png"},
             )
+
+    def test_resume_reuses_complete_cases_without_regeneration(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_project_fixture(root)
+            with patch.dict(os.environ, {"MOCK_MODE": "true"}, clear=False):
+                run_package_workflow(
+                    "theme_001",
+                    "package_resume",
+                    root_dir=root,
+                    candidate_count=1,
+                )
+                with patch(
+                    "backend.package_workflow._run_package_case",
+                    side_effect=AssertionError("completed case was regenerated"),
+                ):
+                    result = run_package_workflow(
+                        "theme_001",
+                        "package_resume",
+                        root_dir=root,
+                        candidate_count=1,
+                        resume=True,
+                    )
+
+            self.assertTrue(all(case.get("resumed") for case in result["cases"].values()))
+            self.assertEqual(len(result["final_outputs"]), 3)
 
     def test_failed_rerun_preserves_previous_final_directory(self):
         with tempfile.TemporaryDirectory() as temp_dir:

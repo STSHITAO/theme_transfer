@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与生成计划。保留了'i'的主体结构和右下角闪电符号，使用了纯黑背景和粗犷的手绘描边，颜色映射正确（砖红主体、暖黄闪电），且没有引入无关元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反身份约束。虽然左侧有'i'，但右侧引入了巨大的蓝色漩涡/眼睛图形（疑似参考了honor_of_kings_style_ref的特征），导致主体被淹没，无法识别为爱奇艺图标，属于过度重构。",
+      "recommendation": "不推荐。引入了非目标App的视觉特征（蓝色漩涡），破坏了品牌识别度，违反了preserve_major_structure策略。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\iqiyi_lite\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

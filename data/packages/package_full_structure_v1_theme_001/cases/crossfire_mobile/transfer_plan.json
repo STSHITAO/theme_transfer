@@ -1,0 +1,61 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，即使是复杂的汉字或符号，也应直接进行 3D 冰块化拉伸，而非重构。CF 的 Logo 具有极高的辨识度和独特的几何特征（类似弹头或双翼），必须完整保留其轮廓和笔画走势，仅做材质替换和厚度增加，以确保在统一主题下的可识别性。",
+  "preserve": [
+    "CF 字母组合的整体外轮廓剪影",
+    "字母 C 与 F 之间的连接关系及负空间形状",
+    "整体向右上方倾斜的动态势态与几何切角",
+    "Logo 的长宽比例"
+  ],
+  "must_preserve": [
+    "CF 字母的特定几何拓扑结构",
+    "锐利、向前的动态倾斜角度",
+    "射击游戏的硬核与速度感语义（通过冰的硬度隐喻）"
+  ],
+  "recompose_allowed": [
+    "将原本的金属/渐变填充替换为半透明冰蓝材质",
+    "在冰块内部嵌入雪花或气泡纹理以增加材质丰富度",
+    "边缘处理为圆润的倒角以模拟融冰效果和高光捕捉",
+    "底部增加接触阴影和少量碎冰/水渍以确立物理足点"
+  ],
+  "restyle": [
+    "材质：高光泽度半透明冰晶，具备次表面散射（SSS）效果",
+    "色彩：统一转换为 Cyan-Ice Blue（青冰蓝）主色调，去除原品牌深色/橙色",
+    "光影：全局冷光源，边缘菲涅尔反射，内部焦散光斑"
+  ],
+  "decorate": [
+    "内部随机分布的微小空气气泡",
+    "表面或内部的微细冰裂纹路",
+    "底部的融化水迹与小水洼"
+  ],
+  "forbid": [
+    "禁止使用原图的深蓝色背景或橙色装饰元素作为主体色",
+    "禁止生成不透明的蓝色塑料块或磨砂质感",
+    "禁止改变 CF 字母的比例、书写方式或拓扑结构",
+    "禁止出现人物面部、墨镜、发型等复杂细节",
+    "禁止出现枪械实物模型或通用士兵剪影",
+    "禁止去除底部的物理投影和水渍细节",
+    "禁止保留任何二维描边线条"
+  ],
+  "generation_brief": "3D ice sculpture of the 'CF' logo (CrossFire). Thick, translucent cyan-blue ice block maintaining the sharp, dynamic slanted geometry of the original letters. Internal air bubbles and snowflake textures. Glossy wet surface with caustic lighting. Pure white background. Soft contact shadow and melting water puddles at the base. No human faces, no guns, no original brand colors.",
+  "color_application": "强制去色。将原 Logo 的金属银/黑/橙色调完全移除，统一映射为 theme 规定的 Cyan-Ice Blue（青冰蓝）和 Translucent White（半透明白）。仅通过深浅不一的冰蓝色调表现体积感和阴影，严禁使用暖色调或高饱和度品牌色。",
+  "stroke_application": "消除所有二维描边。将原 Logo 的线条轮廓转化为具有厚度的 3D 实体边缘。通过材质的折射率差异、边缘的高光反射以及内部的焦散效果来界定轮廓，边缘需做倒角处理以模拟冰块的圆润感。",
+  "composition_application": "采用居中构图。将 CF Logo 作为一个独立的 3D 物体放置在画布中央，占据约 60%-70% 的空间。背景统一为纯白极简风格，去除所有原图背景元素。底部预留空间用于表现接触阴影和融化的水渍，增强物体落地的真实感。",
+  "identity_application": "通过严格保留 CF 字母的几何拓扑结构和倾斜动态来维持身份识别。利用冰材质的坚硬、冷冽质感来转译原品牌的“硬核”与“金属”气质，实现语义上的连贯性，而非依赖颜色或复杂图形。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止生成实心、不透明的物体（如磨砂玻璃、石头、塑料）。",
+    "禁止破坏身份：禁止改变 CF 字母的形状、比例或倾斜角度；禁止添加人物、枪械等非 Logo 元素。",
+    "禁止背景污染：禁止保留原图的深色背景或复杂场景。",
+    "禁止风格错误：禁止出现二维扁平化设计、描边线条或低分辨率模糊。"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。准确保留了Mango TV的核心几何结构（圆角矩形框内的M），材质渲染为半透明冰雕，包含气泡和雪花纹理，底部有融水细节，且完全去除了橙色品牌色。是标准的logo_preserve策略执行结果。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 95,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "过度重构（Over-recompose）。虽然材质风格正确，但严重违反了structure_preservation_mode。它错误地引入了类似显示器/电视的底座结构（参考了douban_style_ref的结构而非mango_tv的原型），导致原始Logo的轮廓和空间关系丢失，无法识别为Mango TV。",
+      "recommendation": "不推荐。尽管画风统一，但改变了App的核心识别符号，属于严重的结构幻觉。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\mango_tv\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

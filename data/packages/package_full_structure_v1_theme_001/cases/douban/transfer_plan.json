@@ -1,0 +1,70 @@
+{
+  "app": "douban",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中Alipay和Douban的案例均证明，对于具有强语义的汉字或符号图标，必须保留其原始笔画结构和空间布局。原图标的'豆'字结构清晰、几何感强，非常适合直接转化为3D冰砖结构，无需进行语义重组。",
+  "preserve": [
+    "'豆'字的整体字形轮廓",
+    "顶部横画、中部口字框、底部支撑腿的空间拓扑关系",
+    "文字符号的易读性",
+    "稳重、方正的文化社区气质",
+    "'豆'字的三横一竖及口字框结构",
+    "字形的长宽比例",
+    "笔画之间的负空间（镂空部分）"
+  ],
+  "must_preserve": [
+    "'豆'字的骨架拓扑：顶横、中框（口）、底支撑（丷+底横）",
+    "中间矩形镂空（负空间）必须保留，不可填充",
+    "顶部横画必须悬浮于主体之上，不可连接",
+    "底部两笔向内收敛的支撑结构",
+    "整体垂直居中的构图重心"
+  ],
+  "recompose_allowed": [
+    "将平面笔画转化为具有厚度的3D实体",
+    "将原本的直角边缘处理为圆润的冰质倒角",
+    "材质颜色由绿变为统一的浅冰蓝色",
+    "增加内部的气泡、裂纹或雪花纹理细节"
+  ],
+  "restyle": [
+    "应用高光泽度冰冻材质，模拟次表面散射（SSS）效果",
+    "边缘添加菲涅尔反射高光",
+    "内部填充随机微小气泡和雪花纹理",
+    "去除所有二维描边，通过体积感和光影界定轮廓"
+  ],
+  "decorate": [
+    "底部添加融化的水迹、小水洼或碎冰屑以增强物理接触感",
+    "底部投射柔和的接触阴影和焦散光斑"
+  ],
+  "forbid": [
+    "改变'豆'字的笔画结构或写法",
+    "使用不透明的蓝色塑料或金属材质",
+    "保留原始的绿色背景或绿色主体",
+    "添加与'豆'字无关的书籍或电影道具",
+    "缺失底部的接触阴影和水渍细节",
+    "生成实心、不透明的物体",
+    "使用暖色调作为主体主色",
+    "过度复杂的场景化重构"
+  ],
+  "generation_brief": "3D icon of Chinese character '豆' as a translucent cyan-blue ice sculpture. Strictly preserve original glyph topology (top bar, middle box, bottom legs). Material: glossy wet ice with internal bubbles/snowflakes, subsurface scattering. Background: pure white. Base: realistic melting water puddles and contact shadows. No green color, no opaque plastic, no extra props.",
+  "color_application": "强制去色。将原品牌绿完全替换为主题规定的Cyan-Ice Blue（青冰蓝）和Translucent White（半透明白）。利用Deep Azure（深蔚蓝）表现冰块厚度处的阴影，严禁出现任何绿色像素。",
+  "stroke_application": "消除所有2D描边。将原图标的白色线条转化为具有物理厚度的3D冰体边缘。边缘进行倒角处理以捕捉高光，通过材质的折射率差异和内部焦散效应来界定‘豆’字的笔画轮廓。",
+  "composition_application": "采用居中构图，主体‘豆’字冰雕占据画布60%-70%空间。从平面填充转变为立体物件悬浮/放置于白色空间中，四周留白。确保垂直方向体积感，底部预留空间给投影和水渍。",
+  "identity_application": "通过严格保持‘豆’字的几何骨架和拓扑结构（特别是中间镂空和顶部悬浮横画）来保留身份。虽然颜色和材质完全改变，但用户应能通过剪影瞬间识别。不进行语义替换（如不加书本），仅做材质的物理化重构。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（绿色）。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。",
+    "禁止将‘豆’字误写或简化为通用几何图形。"
+  ]
+}

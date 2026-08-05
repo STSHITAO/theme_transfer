@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合'几何守恒，材质重构'的策略。人形剪影的拓扑结构（头身分离、V字手臂、腿部拱形）被严格保留，且冰材质的厚度感、内部气泡纹理以及底部的融水阴影都处理得非常到位，既保留了大众点评的高辨识度，又成功融入了冰雪主题。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，风格统一。但在肢体末端的倒角处理和透视角度上，相比 candidate_01 略显随意（例如右腿末端切角较生硬），且头身间隙的负空间表现不如 candidate_01 清晰。虽然也是优秀的候选，但作为 strict 约束下的产物，精确度略逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\dianping\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

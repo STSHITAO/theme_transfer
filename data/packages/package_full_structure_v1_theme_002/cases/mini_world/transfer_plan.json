@@ -1,0 +1,59 @@
+{
+  "app": "mini_world",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标主体为高度风格化的几何方块人，其‘方头+白波浪边’的拓扑结构具有极高的品牌辨识度，符合 theme_rules 中关于保留清晰几何符号的要求。因此不应重构为抽象符号，而应直接保留该轮廓，仅将原本的3D渲染质感替换为主题的手绘平涂质感。",
+  "preserve": [
+    "正方形的头部外轮廓",
+    "头部下沿的白色波浪/锯齿状结构",
+    "居中构图",
+    "纯黑背景"
+  ],
+  "must_preserve": [
+    "正方形的头部外轮廓",
+    "头部下沿的白色波浪/锯齿状结构",
+    "居中构图",
+    "纯黑背景"
+  ],
+  "recompose_allowed": [
+    "面部五官简化为简单的点或短线（甚至可省略以强调轮廓）",
+    "身体部分可简化为简单的矩形色块或省略",
+    "原本的绿色必须映射为主题色板中的颜色（如深蓝或砖红，或者如果允许保留绿色则需降低饱和度并加粗描边，但根据规则建议映射为红/蓝/黄组合，例如蓝色头+黄色波浪边）",
+    "去除所有背景元素（蘑菇、星空、光效）"
+  ],
+  "restyle": [
+    "将3D立体渲染转换为扁平化色块填充",
+    "添加粗犷、不规则的黑色手绘描边",
+    "模拟蜡笔或马克笔的粗糙边缘质感"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原本的3D立体感和高光阴影",
+    "使用原本的鲜绿色（除非严格符合主题色板，否则建议转为靛蓝或深蓝以符合复古感）",
+    "保留复杂的面部表情细节",
+    "出现除主体以外的任何背景装饰",
+    "线条过于平滑锐利",
+    "使用渐变色或透明效果"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of a square-headed block character. Thick, rough black marker outlines. Flat solid colors (use deep blue for the head, warm yellow for the wavy hair/edge). Pure black background. No shadows, no gradients, no 3D effects. Simplified geometric shapes, naive art style, centered composition.",
+  "color_application": "强制去色并重构配色。将原始的‘迷你绿’主色调映射为主题限定的高饱和度深宝蓝/靛蓝；将白色的波浪边缘映射为暖黄/米黄。严禁使用原始绿色，严禁使用渐变，坚持纯色块平涂。",
+  "stroke_application": "从原始的无描边或精细3D边缘，转变为粗重的黑色手绘描边。线条需呈现抖动感和厚度变化，模拟马克笔手绘痕迹，边缘圆润且不规则，消除工业设计的锐利感。",
+  "composition_application": "移除原始图标中的星空背景、蘑菇配角及复杂光影。主体（方块头角色）居中放置，占据画布50%-70%面积，四周留黑均匀，形成高对比度的贴纸视觉效果。",
+  "identity_application": "在不破坏theme fidelity的前提下，严格保留‘正方形头部’和‘底部白色波浪边’的拓扑结构。通过形状联想维持IP识别度，即使颜色改变（绿变蓝/黄），用户仍能通过独特的几何轮廓识别出Mini World的角色特征。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白的高饱和度范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色（鲜绿色）",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止将方块头改为圆头或非几何形态"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与结构约束。准确保留了下方弧形头部剪影、两根触角的形态以及上方悬浮小人的姿态和相对位置。材质处理（半透明冰蓝、气泡、雪花）完全符合 transfer_plan 要求，且底部有正确的接触阴影和碎冰细节，无多余元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "风格正确，结构保留良好。相比 candidate_01，其底部的环境细节（接触阴影、碎冰）略显单薄，整体体积感和光影层次稍弱，但依然是一个高质量的合格候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\paipai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

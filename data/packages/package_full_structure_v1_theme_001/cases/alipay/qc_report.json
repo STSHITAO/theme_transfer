@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 100,
+      "style_match_score": 100,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 100,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。精确保留了“支”字的骨架和底部无限符号结构，材质为标准的半透明青冰蓝，包含气泡和雪花纹理，底部有正确的物理投影和水渍，且成功去除了原图的蓝色背景和AI后缀。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 100,
+      "style_match_score": 100,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "同样是非常优秀的生成结果，结构与材质均完全符合要求。与 candidate_01 相比，仅在内部雪花纹理的分布密度上略有不同，两者质量几乎一致，均可作为最佳候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\alipay\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

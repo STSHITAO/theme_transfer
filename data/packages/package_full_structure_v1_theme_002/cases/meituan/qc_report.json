@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。保留了‘美团’二字的完整拓扑结构和左右布局，使用了正确的奶黄填充和纯黑背景。手绘描边风格与参考图（如Bilibili）高度一致，且巧妙地在‘团’字内部融入了红蓝点缀，既丰富了细节又未破坏识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，风格正确。相比 candidate_01，其装饰元素（星星）位置略显随意，且‘团’字内部的空间分割感稍弱，但依然是一个优秀的候选项，完全符合Strict约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\meituan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

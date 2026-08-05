@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与生成计划。材质呈现极佳的半透明冰雕质感，内部气泡细节丰富。严格保留了Anipop小鸡的标志性轮廓（圆润三角形头部）、红色鸡冠位置及Wink表情结构。底部水渍自然，无多余背景干扰，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，风格统一。但在身份约束上略逊于图1：右侧多出的小翅膀/尾巴结构破坏了原本纯粹的'头部剪影'约束（计划要求保留小鸡头部的整体外轮廓）；且面部表情虽然也是Wink，但嘴巴形状较图1略显生硬，不如图1还原度高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\anipop\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

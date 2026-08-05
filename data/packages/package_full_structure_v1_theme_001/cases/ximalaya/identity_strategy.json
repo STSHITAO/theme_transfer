@@ -1,0 +1,36 @@
+{
+  "app": "ximalaya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The stylized Chinese character '听' (Listen) - specifically the unique geometric abstraction where the left radical resembles a sound wave or ear, and the right part forms a stable structure.",
+  "brand_cues_to_preserve": [
+    "The exact stroke topology of the '听' logo",
+    "The rounded corners of the left vertical rectangle component",
+    "The horizontal alignment and spacing between the left and right components"
+  ],
+  "semantic_cues_to_preserve": [
+    "The visual implication of 'listening' or 'sound waves' inherent in the left radical's shape"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban' in the reference set, the core identity of Ximalaya lies entirely in its logotype. The theme requires transforming this flat 2D typographic symbol into a 3D volumetric object. The structure must remain identical to the original vector path to ensure instant recognition, with changes limited to extrusion (thickness), material (ice), and lighting.",
+  "design_rationale": "Ximalaya's icon is a strong typographic symbol. To fit the 'Ice/Crystal' theme without losing identity, we treat the character '听' as a physical sculpture. The strategy is to freeze the logo: maintain the precise 2D silhouette but give it significant Z-axis depth. The red background is removed to comply with the white background rule, and the white strokes become translucent ice blocks. This preserves the 'Strict' identity constraint while fully adopting the theme's material language.",
+  "must_preserve": [
+    "The specific geometry of the '听' character (do not use a standard font)",
+    "The gap/separation between the left radical and the right component",
+    "The overall aspect ratio of the logo within the canvas"
+  ],
+  "can_recompose": [
+    "Internal details can be simplified to focus on the outer silhouette and volume",
+    "Surface texture (bubbles, cracks) replaces flat color fills",
+    "Edges must be rounded and smoothed (beveled) to simulate melted ice, removing sharp vector corners"
+  ],
+  "forbid": [
+    "Using the original red background",
+    "Rendering the character in opaque white or red plastic",
+    "Altering the stroke width ratios of the original logo",
+    "Adding unrelated audio elements like headphones or microphones (the character itself is sufficient)"
+  ],
+  "generation_direction": "3D ice sculpture of the Ximalaya '听' logo, centered on pure white background. Translucent pale cyan material with internal bubbles and snowflake textures. Glossy surface with condensation droplets. Soft studio lighting, subsurface scattering, contact shadow at base. No red colors."
+}

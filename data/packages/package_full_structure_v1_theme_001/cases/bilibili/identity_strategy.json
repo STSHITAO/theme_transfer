@@ -1,0 +1,40 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "电视机外轮廓（含天线）及内部 'bilibili' 文字排列",
+  "brand_cues_to_preserve": [
+    "电视机圆角矩形边框",
+    "顶部两根天线的位置与角度",
+    "内部 'bilibili' 字体的特殊几何造型（特别是第一个 'b' 的播放键三角形负空间）"
+  ],
+  "semantic_cues_to_preserve": [
+    "屏幕显示区域的概念",
+    "文字作为内容载体的语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 的迁移案例明确展示了将电视框和文字整体冻结成冰块的策略。原图标的几何结构（电视框+文字）具有极高的辨识度，且适合直接进行 3D 拉伸和材质替换，无需重构语义。必须严格保留电视机的拓扑结构和文字的相对位置，仅做材质上的‘冰封’处理。",
+  "design_rationale": "哔哩哔哩的核心识别符号是‘小电视’及其内部的 Logo 文字。在当前‘冰雕拟物’主题下，最佳策略是将整个电视图标视为一个实体的冰块模具。通过保留原有的粉色背景轮廓线作为冰块的物理边缘，将白色的文字转化为半透明的冰柱实体。这种处理方式既完全服从了主题的统一色调（去粉变蓝）和材质要求（通透、气泡），又最大程度地保留了用户的视觉记忆点。不需要引入任何额外的场景元素，因为电视本身就是一个完美的容器。",
+  "must_preserve": [
+    "电视机外框的圆角比例",
+    "天线的形态",
+    "'bilibili' 文字的字体特征（尤其是 b 的三角形切口）",
+    "文字在屏幕内的居中布局"
+  ],
+  "can_recompose": [
+    "将原本的平面色块转化为具有厚度的 3D 实体",
+    "文字边缘的倒角和高光反射",
+    "冰块内部的纹理分布（气泡、裂纹）",
+    "底部的接触阴影和水渍细节"
+  ],
+  "forbid": [
+    "禁止保留原始的粉红色调",
+    "禁止将文字简化为无法识别的抽象线条",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止改变电视机的长宽比",
+    "禁止添加除冰块/水以外的其他装饰物（如雪花人、动物等）"
+  ],
+  "generation_direction": "Generate a 3D icon of the Bilibili TV logo made entirely of translucent cyan ice. The shape must strictly follow the original outline: a rounded TV frame with two antennas on top, containing the text 'bilibili' inside. The material should be glossy, wet ice with internal air bubbles and snowflake textures. The text inside should look like carved or frozen ice pillars. Pure white background with a soft contact shadow and melting water puddle at the base. No pink colors, no solid plastic look."
+}

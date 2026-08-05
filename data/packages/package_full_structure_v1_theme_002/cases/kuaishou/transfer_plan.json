@@ -1,0 +1,62 @@
+{
+  "app": "kuaishou",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "快手原始图标本身就是高度抽象的几何符号（摄像机），符合 theme_design_analysis 中‘preserve_when’的条件。参考案例 kuaishou_ref 显示，该主题倾向于保留其三个主要部分（上双眼、下机身、侧突起）的空间相对位置，仅将线条转化为色块堆叠并增加粗描边。因此必须保留主体结构，不可重构为其他语义符号。",
+  "preserve": [
+    "上方两个圆环（或近似圆环）的并列结构",
+    "下方矩形机身的主体轮廓",
+    "机身左侧的镜头突起特征",
+    "整体垂直堆叠的空间布局"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗的不规则手绘描边",
+    "摄像机的基本拓扑结构（上圆下方）"
+  ],
+  "recompose_allowed": [
+    "线条的粗细和边缘的规整度（需变为抖动、粗糙的手绘感）",
+    "内部填充颜色（由纯白变为红/蓝/黄的色块分割）",
+    "圆角的曲率（可变得更圆润或更拙朴）"
+  ],
+  "restyle": [
+    "将平滑矢量线条转化为粗犷的马克笔/蜡笔笔触",
+    "将单一白色填充重构为高饱和度的红、蓝、黄/米白三色块拼接",
+    "去除所有立体感，转为完全扁平化"
+  ],
+  "decorate": [
+    "允许在色块内部添加轻微的颗粒质感以模拟干性绘画介质",
+    "允许边缘出现自然的涂抹不均痕迹"
+  ],
+  "forbid": [
+    "保留原始的亮橙色背景",
+    "使用平滑、锐利的矢量线条",
+    "添加阴影、高光、渐变或立体渲染",
+    "改变上下结构的相对位置",
+    "使用主题色板以外的颜色（如绿色、紫色、粉色）",
+    "将双圆环简化为单圆或椭圆",
+    "移除左侧三角形/梯形突起"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style camera icon on pure black background. Simplified geometry: two rough circles on top, rectangular body below with a side protrusion. Thick, uneven marker strokes. Flat colors restricted to brick red, indigo blue, and creamy yellow. No gradients, no shadows, no orange background. Clumsy, naive art aesthetic, centered composition.",
+  "color_application": "强制去色。将原本的高对比度白/橙配色映射为主题限定的‘砖红+靛蓝+奶黄/米白’组合。例如：机身主体用砖红，镜头圆环用靛蓝，侧边突起或内部细节用奶黄。严禁使用原始橙色背景，严禁使用渐变色。",
+  "stroke_application": "应用粗重、不规则的黑色/深色手绘描边。模拟马克笔快速涂抹的痕迹，边缘需呈现抖动感和钝角/圆角混合的拙朴感，严禁平滑锐利的工业矢量线条。",
+  "composition_application": "主体居中，占据画布约60%-70%面积。移除所有背景元素，统一为纯黑底色。保持‘上双圆、下机身、左突起’的垂直堆叠布局，确保视觉重心稳定且四周留有黑色呼吸空间。",
+  "identity_application": "通过严格保留‘双圆环+机身+侧突起’的几何拓扑结构来维持身份识别。即使颜色重组和线条风格化，用户仍能通过形状联想识别出这是快手摄像机图标。品牌识别线索（形状）被主题化重绘而非删除。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色（橙色背景）",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止将双圆环简化为单圆",
+    "禁止移除左侧突起结构"
+  ]
+}

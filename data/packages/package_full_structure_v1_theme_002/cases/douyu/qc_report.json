@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格（手绘涂鸦、黑底、高饱和色块）且严格保留了斗鱼鲨鱼的标志性几何轮廓（背鳍、眼睛位置）及核心元素（嘴里的火箭）。色彩映射准确，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "丢失了关键的品牌识别线索——嘴部的火箭元素被简化为一个蓝色圆点，导致无法识别为斗鱼App。违反了transfer_plan中'must_preserve: 鲨鱼与火箭的组合逻辑'的约束。",
+      "recommendation": "不推荐。虽然风格化做得不错，但过度重构导致主体变成了普通的卡通鱼，丢失了斗鱼特有的'鲨鱼咬火箭'这一核心IP特征，属于严重的身份丢失。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\douyu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

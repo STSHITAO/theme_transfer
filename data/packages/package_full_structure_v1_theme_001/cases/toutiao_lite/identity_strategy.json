@@ -1,0 +1,36 @@
+{
+  "app": "toutiao_lite",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“头条”二字的特定字体字形及整体红色块状布局",
+  "brand_cues_to_preserve": [
+    "“头条”汉字的笔画结构、粗细比例及空间排布",
+    "右下角代表“极速/轻量”的闪电符号（需转化为冰质附属物）"
+  ],
+  "semantic_cues_to_preserve": [
+    "新闻聚合的稳重感（通过厚实的冰体表现）",
+    "极速版的轻快感（通过通透的材质和闪电元素表现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，文字类或几何图形类图标应直接进行 3D 挤出和材质替换。Toutiao Lite 的核心识别度完全依赖于“头条”二字的特殊字形，因此必须严格保留其平面轮廓，仅增加 Z 轴厚度和冰材质感，不可重构为报纸或其他语义物体。",
+  "design_rationale": "今日头条极速版的原始图标由醒目的红色色块和白色文字组成。根据 Ice Theme 规则，需彻底移除红色背景，将白色的“头条”文字实体化为半透明的冰雕字块。为了体现“Lite（极速版）”的属性，原本位于右下角的蓝色闪电不应被丢弃，而应作为微小的冰晶装饰悬浮于主文字旁或嵌入底座，既保留了版本区分线索，又符合主题的统一性。",
+  "must_preserve": [
+    "“头条”文字的完整笔画路径",
+    "文字与背景的负空间关系",
+    "右下角的闪电符号（作为次要元素保留）"
+  ],
+  "can_recompose": [
+    "原始的红色矩形背景（完全移除）",
+    "闪电的颜色（转为冰蓝/透明）",
+    "文字的填充方式（由实心白变为透光冰）"
+  ],
+  "forbid": [
+    "禁止保留任何红色像素",
+    "禁止将文字改为宋体/黑体等标准字体，必须沿用原图定制字形",
+    "禁止生成不透明的白色塑料质感",
+    "禁止丢失右下角的闪电元素"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Chinese characters '头条'. The characters should be thick, translucent pale cyan blocks with internal bubbles and snowflake textures. Place a small, frozen lightning bolt icon near the bottom right corner. No red background. Pure white background with soft contact shadows and water puddles at the base. High gloss, refraction, subsurface scattering."
+}

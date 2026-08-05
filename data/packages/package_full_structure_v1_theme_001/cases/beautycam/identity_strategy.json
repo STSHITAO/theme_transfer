@@ -1,0 +1,37 @@
+{
+  "app": "beautycam",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "相机轮廓剪影与内部C形环绕结构",
+  "brand_cues_to_preserve": [
+    "外部圆角矩形相机机身轮廓",
+    "右上角的菱形闪光灯/装饰块位置",
+    "内部C形环状结构的开口方向与比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "相机镜头的同心圆或环形暗示",
+    "拍摄/快门的视觉隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中Alipay和Bilibili的案例表明，即使是复杂的汉字或图形，也应直接转化为3D冰雕实体。BeautyCam的图标具有极高的几何识别度（相机外框+C形环），必须完整保留其拓扑结构，仅做材质置换和立体化加厚，严禁改变形状或重组元素。",
+  "design_rationale": "BeautyCam原图标为高饱和度的粉色渐变，与冰雪主题冲突最大。策略上采用'几何守恒，材质重构'：将原本的2D扁平相机符号直接'冻结'为一块厚实的冰砖。去除所有粉色背景，将主体统一为浅冰蓝色。原图中的C形环和菱形块不再是彩色渐变，而是通过冰块的厚度变化、内部气泡分布和表面高光来体现层次感。底部增加融水细节以符合物理规律。",
+  "must_preserve": [
+    "相机外形的整体剪影（包括顶部的突起）",
+    "内部C形环与右上角菱形的相对位置关系",
+    "无描边的纯净冰质边缘"
+  ],
+  "can_recompose": [
+    "原图的彩虹渐变色（必须替换为单色冰蓝+光影）",
+    "原图的平面填充感（需转化为具有Z轴厚度的实体）",
+    "内部的细微装饰线条（可简化为冰裂纹理或气泡）"
+  ],
+  "forbid": [
+    "禁止保留任何粉色、黄色或蓝色的原品牌渐变色",
+    "禁止生成不透明的蓝色塑料或磨砂质感",
+    "禁止改变相机外框的圆角比例",
+    "禁止添加真实的人物面部或复杂的摄影棚背景"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of a camera. The shape must strictly follow the original BeautyCam logo: a rounded square camera body with a C-shaped ring and a small diamond inside. Material is translucent cyan ice with internal bubbles and snowflake textures. No outline strokes. Glossy wet surface with caustic lighting. Pure white background. Soft contact shadow and melting water puddle at the base. High fidelity Octane render style."
+}

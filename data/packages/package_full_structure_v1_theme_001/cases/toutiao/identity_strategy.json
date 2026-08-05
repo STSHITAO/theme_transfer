@@ -1,0 +1,36 @@
+{
+  "app": "toutiao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“头条”二字的特定书法字体结构及整体红色矩形色块轮廓",
+  "brand_cues_to_preserve": [
+    "“头条”汉字的笔画形态、粗细比例及空间布局",
+    "整体图标的圆角矩形外轮廓边界"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为信息载体的核心语义",
+    "新闻头部/ headlines 的直观表达"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或几何类图标采取严格的‘立体化复刻’策略。今日头条的Logo主体为高识别度的汉字图形，必须完整保留其笔画结构和外框比例，仅将原本的平面红色色块转化为具有厚度的3D冰体，严禁改变字形或重构为其他物体。",
+  "design_rationale": "今日头条的图标核心在于其独特的字体设计和红底白字的强对比。在‘冰封’主题下，需将这种强烈的品牌色（红）完全替换为统一的冰蓝色材质，利用冰的通透感和内部纹理来重塑视觉重心。通过保留精确的文字轮廓并赋予其3D体积，既维持了极高的用户识别度，又完美融入了冰雪世界的洁净氛围。",
+  "must_preserve": [
+    "“头条”二字的完整字形结构",
+    "图标整体的圆角矩形长宽比",
+    "文字与底座的层级关系（文字浮于或嵌于冰体中）"
+  ],
+  "can_recompose": [
+    "原始红色背景（必须替换为冰蓝材质）",
+    "白色文字部分（转化为透明冰雕或高光折射效果）",
+    "边缘锐利度（转化为圆润的冰体倒角）"
+  ],
+  "forbid": [
+    "禁止保留任何红色元素",
+    "禁止将文字替换为报纸、书本等具象物体",
+    "禁止使用不透明的纯色填充，必须体现冰的次表面散射（SSS）效果",
+    "禁止改变“头条”二字的字体特征"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '头条' inside a rounded rectangular ice block. Material is translucent pale cyan ice with internal bubbles and snowflake textures. No red color. The characters should look like carved or frozen crystal within the block. Glossy surface with condensation droplets. Centered composition on a pure white background with a soft contact shadow and slight melting water at the base."
+}

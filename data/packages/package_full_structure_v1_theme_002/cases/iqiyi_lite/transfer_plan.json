@@ -1,0 +1,58 @@
+{
+  "app": "iqiyi_lite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标主体为清晰的文字 Logo '爱奇艺' 和图形 'i'。根据主题规则，当 Original 为清晰几何或文字符号时，应保留其拓扑结构。因此，必须保留 'i' 的基本笔画结构和闪电的位置关系，但需将精细的文字转化为粗犷的手绘块面，去除原有的渐变背景和标准字体规范。",
+  "preserve": [
+    "'i' 字母的基本形态（上方圆点，下方竖条/矩形）",
+    "右下角闪电符号的存在及其相对位置",
+    "纯黑背景 (#000000)",
+    "粗黑色手绘风格描边"
+  ],
+  "must_preserve": [
+    "'i' 字母的基本形态（上圆下竖）",
+    "右下角闪电符号的存在",
+    "纯黑背景",
+    "粗黑色手绘描边"
+  ],
+  "recompose_allowed": [
+    "将标准印刷字体重构为不规则的粗马克笔手写体",
+    "将原本的绿紫渐变背景替换为纯黑",
+    "将闪电的锐利直角处理为圆润的钝角或不规则边缘",
+    "调整 'i' 与闪电的大小比例以适应居中构图 (50-70% 画幅)"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦质感（蜡笔/马克笔笔触）",
+    "边缘处理为毛糙、抖动的非标准化线条",
+    "内部填充改为高饱和度纯色块，无渐变"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原有的绿色/紫色渐变背景",
+    "禁止使用细线条或完美的几何圆角",
+    "禁止出现立体高光、阴影或3D渲染效果",
+    "禁止直接照搬原始的标准印刷字体",
+    "禁止使用主题色板之外的颜色（如绿色、紫色）"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon on pure black background. Subject is a simplified, thick-stroked letter 'i' in brick red, with a yellow lightning bolt at the bottom right. Rough marker pen texture, uneven edges, naive art style. Flat colors, no gradients, no shadows. Heavy black outlines.",
+  "color_application": "Map original brand identity to theme palette: 'i' shape uses high-saturation Brick Red; Lightning bolt uses Warm Yellow/Naihuang; Background is Pure Black (#000000). Remove all original green/purple gradients.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black/dark outlines to both the 'i' shape and the lightning bolt. Edges should appear shaky and clumsy, simulating a rough marker or crayon stroke.",
+  "composition_application": "Center the combined 'i' and lightning symbol. Ensure the subject occupies 60-70% of the canvas. Maintain clear separation between elements using color blocks rather than shadows. Keep ample black negative space around the subject.",
+  "identity_application": "Preserve the topological structure of the 'i' (dot + vertical bar) and the presence of the lightning bolt to maintain brand and 'Lite' version recognition, but render them in the crude, simplified doodle style.",
+  "fidelity_constraints": [
+    "Must use pure black background",
+    "Must add thick hand-drawn style outlines",
+    "Colors must be limited to Red, Blue, Yellow/White high-saturation flat fills",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flattened geometric block combination"
+  ],
+  "negative_constraints": [
+    "Do not keep original green/purple gradient background",
+    "Do not use thin lines or perfect vector curves",
+    "Do not include 3D rendering, gloss, or lighting effects",
+    "Do not use standard printed fonts",
+    "Do not drift into other styles (e.g., neon, minimalist vector, photorealistic)"
+  ]
+}

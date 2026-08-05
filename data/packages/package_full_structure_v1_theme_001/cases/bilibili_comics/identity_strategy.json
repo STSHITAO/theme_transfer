@@ -1,0 +1,36 @@
+{
+  "app": "bilibili_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字“漫画”的书法字体结构与气泡对话框轮廓",
+  "brand_cues_to_preserve": [
+    "汉字“漫画”的特定书法笔触与布局",
+    "文字外围的不规则对话气泡/爆炸框剪影"
+  ],
+  "semantic_cues_to_preserve": [
+    "漫画阅读（通过文字直接表达）",
+    "二次元社区氛围（通过气泡框形态暗示）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例，对于包含明确文字或独特几何符号的图标，策略均为‘几何守恒，材质重构’。哔哩哔哩漫画的核心识别度完全依赖于‘漫画’二字的书法形态及外框，因此必须完整保留其平面拓扑结构，仅做立体化和材质替换，严禁改变字形或简化为通用书本符号。",
+  "design_rationale": "该 App 图标主体为高识别度的汉字图形，符合主题包中‘将平面符号转化为立体冰雕’的核心逻辑。为了在统一冰雪风格下保持辨识度，需将原本扁平黑色的书法字和气泡框转化为厚实的半透明冰块。底部的电视小人（2233娘元素）因构图拥挤且非核心文字语义，依据 theme_rules 中‘简化复杂结构’的原则予以剔除，聚焦于文字主体的材质表现。",
+  "must_preserve": [
+    "“漫画”二字的笔画走势、粗细变化及相对位置",
+    "包裹文字的锯齿状/云朵状气泡外轮廓",
+    "冰质材质内部的雪花/气泡纹理细节"
+  ],
+  "can_recompose": [
+    "底部的电视头吉祥物（可移除以突出主体）",
+    "原本的黑白配色（强制转换为冰蓝色调）",
+    "背景的彩色放射线（替换为纯白留白）"
+  ],
+  "forbid": [
+    "禁止将汉字改为楷体/宋体等标准字体，必须保留原图书法感",
+    "禁止生成不透明的蓝色塑料块",
+    "禁止保留原本的黑色填充或彩色背景",
+    "禁止底部缺失接触阴影和水渍细节"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the Chinese characters '漫画' (Comics) enclosed in a jagged speech bubble outline. The entire object is made of translucent cyan-blue ice with internal snowflake textures and air bubbles. Glossy wet surface, chamfered edges. Pure white background with melting water puddles at the base. No mascot, no black colors."
+}

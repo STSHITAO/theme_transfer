@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。严格保留了“哈啰”二字的字形结构（包括“啰”字右侧罗的上下布局），材质表现为高透光的冰雕，内部有气泡和雪花纹理，边缘倒角处理得当，底部有融化的水迹细节，完全符合transfer_plan中对Alipay/Douban案例的参考要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，材质和字形识别度都很好。但在细节处理上略逊于candidate_01：'啰'字右侧'罗'部的下半部分'夕'笔画略显粘连，不如原图清晰；且缺少candidate_01中那种生动的底部融化水滴细节，物理接触感稍弱。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\hello_bike\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

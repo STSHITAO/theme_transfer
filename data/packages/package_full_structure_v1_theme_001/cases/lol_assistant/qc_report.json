@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与严格的结构保留策略。文字字形准确，材质呈现完美的半透明冰雕质感（含气泡细节），且背景干净无杂质。虽然右下角符号与主体分离，但符合'单体居中立体构图'中各元素作为独立冰块物件的逻辑，且保留了正确的相对位置关系。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 10,
+      "background_score": 70,
+      "composition_score": 75,
+      "artifact_score": 70,
+      "overall_score": 78,
+      "failure_reason": "画面底部存在明显的非主题化伪影（类似玻璃碎片或杂乱的水渍纹理），破坏了纯白背景的整洁度，不符合'background_score'和'artifact_score'的高标准要求。虽然主体重构合格，但整体完成度不如 candidate_01。",
+      "recommendation": "不推荐。尽管主体冰雕效果尚可，但底部的杂乱纹理属于生成瑕疵，影响了图标的精致感和纯净度。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\lol_assistant\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

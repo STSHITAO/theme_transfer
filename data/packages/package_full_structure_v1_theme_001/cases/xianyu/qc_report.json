@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 80,
+      "background_score": 100,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "违反了生成计划中的核心约束：'The mascot (yellow fish) is excluded to maintain the minimalist... composition rule'（排除吉祥物以保持极简构图）。虽然材质风格正确，但保留了复杂的吉祥物主体，导致构图与参考图（Alipay/Douban等纯文字/图形冰块）不一致，且增加了识别复杂度。",
+      "recommendation": "不推荐。虽然视觉效果精美且符合冰雕材质风格，但严重违反了'Exclude the fish mascot'的负向约束和构图规则。该主题要求的是类似支付宝那样的纯文字/Logo冰雕，而非角色手办。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 55,
+      "target_recognition_score": 55,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 35,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 65,
+      "artifact_score": 100,
+      "overall_score": 60,
+      "failure_reason": "同样违反了'Exclude the fish mascot'的约束。此外，相比候选1，其文字部分的比例更小，且吉祥物主体的体积感过强，进一步偏离了'text-based logos... treated as solid 3D sculptures'（基于文字的Logo被视为固体3D雕塑）这一主要策略。",
+      "recommendation": "不推荐。理由同候选1，且构图重心更偏向吉祥物而非品牌文字，不符合本包主题的'文字冰雕'核心特征。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\xianyu\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能遵守 transfer_plan 中关于'排除吉祥物（mascot）'和'保持极简构图'的严格约束。生成的图像更像是角色周边的3D渲染，而非符合参考图（Alipay/Douban）风格的纯文字/图标冰雕。建议重新生成，强制移除黄色鱼形吉祥物，仅保留'闲鱼'二字的冰雕形态。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

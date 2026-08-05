@@ -4,6 +4,7 @@
 - 多张 theme style_ref，用于判断整包主题风格。
 - 一张 target image，用于判断目标 App 原始身份。
 - 多张 candidate images，用于评分和选择。
+- 当前 App 的 transfer_plan，其中包含生成前冻结的结构保留策略。
 
 V2 质检重点：
 1. 不再只看候选图是否像原 logo。
@@ -12,6 +13,8 @@ V2 质检重点：
 4. 如果候选图过度重构、变成普通装饰物或无关主体，over_recompose_risk 必须高。
 5. 如果 target_profile 或生成计划中包含品牌识别线索，候选图丢失这些线索时，target_recognition_score 和 identity_constraint_score 必须明显扣分。
 6. 对 strict 约束的目标 App，不能因为图像风格可爱就忽略关键文字、品牌色、核心轮廓等识别线索。
+7. 当 structure_identity_metric_applicable=false 时，不要因为候选没有复刻原始几何而扣分；应检查它是否按 semantic_recompose 合理表达品牌或功能语义。
+8. 当 structure_identity_metric_applicable=true 时，候选丢失原始主体的大部分轮廓、几何或空间关系，identity_constraint_score 必须明显扣分。
 
 评分字段：
 - style_match_score：是否符合 theme style_ref 的共同风格。

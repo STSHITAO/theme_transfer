@@ -1,0 +1,40 @@
+{
+  "app": "douyu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "鲨鱼头部的侧面剪影，特别是标志性的圆眼、锯齿状牙齿以及下颚咬合火箭/飞镖的构图关系。",
+  "brand_cues_to_preserve": [
+    "鲨鱼头部的整体轮廓（包括背鳍和尾部曲线）",
+    "眼睛的大致位置和圆形特征",
+    "嘴部张开并咬住物体的动态结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "直播/游戏娱乐属性（通过保留原Logo中代表速度或互动的火箭/飞镖元素暗示）",
+    "凶猛/活力的品牌性格（通过保留尖锐的牙齿结构表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题（如Bilibili小电视、Douyin音符）均严格保留了原图标的几何拓扑结构，仅进行材质替换。斗鱼的鲨鱼形象具有极高的辨识度，其轮廓本身就是核心资产。因此，必须将原本的2D矢量鲨鱼直接转化为3D冰雕实体，严禁改变其头部比例或重构为其他鱼类/场景，以确保在统一冰蓝风格下仍能瞬间被识别。",
+  "design_rationale": "斗鱼作为高知名度直播应用，其Logo的图形识别度优先于色彩识别度。根据主题规则'几何守恒，材质重构'，应将原本橙白配色的扁平鲨鱼转化为通透的冰蓝色立体雕塑。原Logo中的橙色火箭/飞镖元素应被同化为冰质结构，成为鲨鱼口中咬住的冰制道具，既保留了'咬合'这一关键动态特征，又符合全图冰封的主题设定。",
+  "must_preserve": [
+    "鲨鱼侧脸的整体外轮廓（头顶弧线、背鳍突起、下颚线条）",
+    "嘴部张开的角度及内部锯齿状牙齿的排列形态",
+    "眼睛在头部的相对位置及圆形轮廓",
+    "下处咬合物的基本形状（保留火箭/飞镖的几何特征，但材质改为冰）"
+  ],
+  "can_recompose": [
+    "原有的黑色描边（转化为冰块的边缘厚度和折射高光）",
+    "原有的橙色、白色填充色（统一替换为浅冰蓝色半透明材质）",
+    "火箭/飞镖的具体细节纹理（简化为冰块内部的气泡或裂纹）",
+    "背景的橙色渐变（移除，替换为纯白背景）"
+  ],
+  "forbid": [
+    "禁止生成不透明的蓝色塑料或实心色块，必须体现冰的通透感（SSS效果）",
+    "禁止改变鲨鱼的朝向或头部比例",
+    "禁止去除嘴里的物体导致变成普通张嘴鲨鱼（会丢失斗鱼特有的'咬火箭'特征）",
+    "禁止保留原本的橙色或黑色作为主色调",
+    "禁止添加复杂的海洋背景或水泡场景，保持单体居中构图"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Douyu shark logo. The subject is a translucent cyan-blue ice block carved into the shape of a shark head biting a rocket/dart. Maintain the exact silhouette of the original logo including the eye, jagged teeth, and dorsal fin. The material should be glossy wet ice with internal air bubbles and snowflake textures. No outlines, define edges via refraction and thickness. Pure white background with a contact shadow and melting water puddle at the base. Centered composition."
+}

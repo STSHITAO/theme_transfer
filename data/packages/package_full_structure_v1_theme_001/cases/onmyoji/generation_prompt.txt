@@ -1,0 +1,216 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D Ice/Crystal Material Theme. The theme transforms flat 2D vector icons into three-dimensional objects made of translucent, light-blue ice or crystal. The style emphasizes volume, refraction, internal texture (bubbles/snowflakes), and a cold, refreshing atmosphere against a clean white background.
+
+[Reference Raw To Style Transform]
+The transformation converts flat, solid-color silhouettes into volumetric 3D sculptures. The original geometry is preserved but extruded to have thickness. The material changes from opaque digital colors to semi-transparent icy blue. Surface details like water droplets, internal air bubbles, or frost patterns are added to enhance the 'frozen' realism.
+
+[Color Transform Rule]
+强制去色处理。无论 original 是红、绿、黑还是多色渐变，style_ref 一律转换为统一的冰蓝色调。仅保留光影造成的亮度变化（高光白、阴影深蓝），不保留原品牌的识别色（除了极个别作为点缀的悬浮小图标）。
+
+[Background Transform Rule]
+从 original 的纯色块或复杂渐变背景，转变为 style_ref 的纯净白色/浅灰背景。去除所有背景装饰，将视觉焦点完全集中在冰雕主体及其底部的物理投影上。
+
+[Stroke Transform Rule]
+消除 original 的平面描边。转化为 3D 实体的物理边缘。边缘处理柔和，带有玻璃/冰块的折射光晕，而非硬边线条。
+
+[Composition Transform Rule]
+保持 original 的核心几何结构和空间布局不变。将 2D 图形“挤压”成 3D 实体。主体大小适中，底部增加基座或自然融化的形态以支撑视觉重心。
+
+[Subject Scale Rule]
+主体宽度约占画布宽度的 50%-60%。高度根据原图比例自然延伸，但整体需控制在画布垂直居中位置，底部留出约 15% 空间给阴影和水渍。
+
+[Detail Complexity Rule]
+简化 original 的内部细节（如文字笔画的复杂连接），将其概括为厚实的冰块结构。增加材质层面的细节（气泡、纹理、反光）来替代原本的图形细节。
+
+[Theme Fidelity Constraints]
+[
+  "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感。",
+  "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体。",
+  "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认。",
+  "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留原图标的实心色彩填充。",
+  "禁止使用黑色或深色背景。",
+  "禁止将主体设计为扁平化或低多边形（Low-poly）风格，必须是圆润的高模质感。",
+  "禁止过度重构主体形状（如将抖音音符变成真正的乐器），必须保持原 Logo 的抽象几何形态。"
+]
+
+[Theme Board]
+{
+  "palette": "统一使用清透的浅冰蓝色（Cyan/Ice Blue）作为主体主色，完全覆盖原图标品牌色。背景统一为纯白或极淡的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无传统描边。通过3D模型的边缘高光、折射和阴影来界定轮廓。线条边缘圆润光滑，模拟冰块融化或打磨后的质感，无锐利直角。",
+  "material": "核心材质为半透明冰晶/凝胶（Translucent Ice/Gel）。具有次表面散射（SSS）效果，内部包含随机分布的微小气泡、裂纹或雪花纹理。表面呈现湿润、高光泽的反射特性。",
+  "background": "极简留白。主体通常放置在纯白背景上，底部有接触阴影（Contact Shadow）和少量融化的水渍/碎冰细节，增强落地感和真实感。",
+  "composition": "单体居中构图。主体占据画布约 60%-70% 的空间。对于原本扁平的图形，强制赋予 Z 轴厚度，使其成为立体物件。",
+  "motif_rules": "必须包含‘寒冷’主题元素：如内部冻结的雪花、表面的冷凝水珠、底部的碎冰或水坑。若原图标有特定语义符号（如火焰），需将其作为独立小元素悬浮或置于旁边，不与冰主体融合。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: onmyoji
+
+[transfer_plan]
+{
+  "app": "onmyoji",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，即使是复杂图形也应保留其核心拓扑结构。Onmyoji 原图虽为复杂插画，但其‘人脸+金鱼’的组合具有极高的品牌辨识度。根据 theme_rules 中的 'target_preservation' 原则，不能将其重构为通用的神社或符咒，必须保留角色头部与金鱼的相对位置关系，仅做几何简化和材质替换。",
+  "preserve": [
+    "神乐（Kagura）头部的整体轮廓，特别是齐刘海与长发的基本形态",
+    "左上方悬浮的金鱼形状及其与头部的相对空间位置",
+    "角色面部的大致朝向与神态暗示（通过冰块内部结构表现）",
+    "右下角网易游戏 'S' 形螺旋 Logo 的独立存在与基本形态"
+  ],
+  "must_preserve": [
+    "主体必须呈现为半透明浅冰蓝色（Cyan/Ice Blue），严禁使用原图的深紫色、红色或黑色填充主体",
+    "金鱼的形态必须清晰可辨，作为独立的冰冻物件或附着在主体上的冰雕组件存在",
+    "底部必须有接触阴影和碎冰/水渍细节，确立物理落地感",
+    "边缘必须圆润光滑，模拟冰块打磨质感，无锐利描边",
+    "右下角 'S' Logo 需保持其几何识别度，可转化为冰质或保持独立悬浮，但不可被主体遮挡至不可见"
+  ],
+  "recompose_allowed": [
+    "将复杂的面部五官（眼睛、嘴巴）简化为冰内部的纹理、气泡聚集或表面凹凸结构",
+    "将头发的复杂发丝简化为整体的块面结构和流线型冰体",
+    "将金鱼的鳞片细节简化为冰表面的裂纹、气泡或内部雪花纹理",
+    "去除所有背景装饰，替换为纯白环境"
+  ],
+  "restyle": [
+    "将原图的二次元厚涂/赛璐璐风格完全转换为 3D 冰晶/水晶材质渲染风格",
+    "应用次表面散射（SSS）效果，使光线穿透冰体，营造通透感",
+    "添加表面冷凝水珠和高光反射，增强湿润感和真实感"
+  ],
+  "decorate": [
+    "在冰体内部嵌入微小的雪花图案或空气气泡",
+    "在主体底部周围散落少量碎冰 shards 或形成小水坑",
+    "在金鱼缸/金鱼部分增加内部折射细节以强调其独立性"
+  ],
+  "forbid": [
+    "禁止保留原图的深色背景和暖色调光影",
+    "禁止生成不透明的塑料质感、金属质感或实心彩色块",
+    "禁止将金鱼与人脸融合成一个无法区分的怪异团块，需保持两者结构分离或清晰层次",
+    "禁止出现扁平化的矢量线条风格或黑色描边",
+    "禁止删除右下角的品牌 Logo"
+  ],
+  "generation_brief": "3D icon of Onmyoji app: a stylized ice sculpture of an anime girl's head (Kagura) with distinct bangs, accompanied by a translucent ice goldfish floating near the top left. A small ice-carved 'S' logo sits at the bottom right. Material is translucent light blue crystal with internal bubbles and snowflakes. Glossy wet surface, soft rounded edges. Pure white background, soft contact shadow with scattered ice shards at base. High quality C4D render, refraction, subsurface scattering.",
+  "color_application": "强制去色。原图中的红、紫、黑等品牌色全部转换为统一的半透明浅冰蓝色（#A0D8EF approx）。仅通过白色高光和深蓝色阴影来表现体积，不保留任何原色填充。",
+  "stroke_application": "消除所有平面描边。通过 3D 模型的物理边缘、折射光晕和表面高光来界定轮廓。边缘处理柔和圆润，模拟冰块融化或打磨后的自然形态。",
+  "composition_application": "保持原图‘人物头部+左上金鱼+右下Logo’的空间布局。将 2D 插画元素‘挤压’为具有 Z 轴厚度的 3D 实体。主体居中偏上，底部留出空间给阴影和水渍交互。确保金鱼与头部的前后空间关系在 3D 空间中合理呈现。",
+  "identity_application": "通过保留‘齐刘海发型轮廓’和‘左上角金鱼’这两个最强视觉锚点来维持身份。放弃对瞳孔颜色、肤色等细节的还原，转而依靠冰雕的整体形态和关键部件（金鱼）的位置关系来传达‘阴阳师’的 IP 特征。右下角 Logo 作为硬性品牌标识予以保留并冰质化。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+    "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认",
+    "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+  ],
+  "negative_constraints": [
+    "禁止保留原图标的实心色彩填充（红/紫/黑）",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为扁平化或低多边形（Low-poly）风格",
+    "禁止过度重构主体形状导致金鱼或人脸特征丢失",
+    "禁止忽略右下角品牌 Logo"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: 强制去色。原图中的红、紫、黑等品牌色全部转换为统一的半透明浅冰蓝色（#A0D8EF approx）。仅通过白色高光和深蓝色阴影来表现体积，不保留任何原色填充。
+Stroke application: 消除所有平面描边。通过 3D 模型的物理边缘、折射光晕和表面高光来界定轮廓。边缘处理柔和圆润，模拟冰块融化或打磨后的自然形态。
+Composition application: 保持原图‘人物头部+左上金鱼+右下Logo’的空间布局。将 2D 插画元素‘挤压’为具有 Z 轴厚度的 3D 实体。主体居中偏上，底部留出空间给阴影和水渍交互。确保金鱼与头部的前后空间关系在 3D 空间中合理呈现。
+Identity application: 通过保留‘齐刘海发型轮廓’和‘左上角金鱼’这两个最强视觉锚点来维持身份。放弃对瞳孔颜色、肤色等细节的还原，转而依靠冰雕的整体形态和关键部件（金鱼）的位置关系来传达‘阴阳师’的 IP 特征。右下角 Logo 作为硬性品牌标识予以保留并冰质化。
+
+Fidelity constraints:
+[
+  "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+  "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+  "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认",
+  "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+]
+
+Negative constraints:
+[
+  "禁止保留原图标的实心色彩填充（红/紫/黑）",
+  "禁止使用黑色或深色背景",
+  "禁止将主体设计为扁平化或低多边形（Low-poly）风格",
+  "禁止过度重构主体形状导致金鱼或人脸特征丢失",
+  "禁止忽略右下角品牌 Logo"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching onmyoji's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like onmyoji as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

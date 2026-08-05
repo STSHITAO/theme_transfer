@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 40,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 80,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "丢失了Quark Logo核心的'q'尾巴切口结构，变成了普通的圆环/甜甜圈形状，无法识别目标App。",
+      "recommendation": "不推荐。虽然材质和风格非常符合主题（冰雕、气泡、融水），但严重违反了'structure_preservation_mode: preserve_major_structure'的约束。原Logo的关键特征是右下角的缺口（形成小写q），该候选图将其补全为封闭圆环，导致身份识别失败。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了生成计划。1. 几何结构：严格保留了外圆环和内部'q'字形的负空间切口，轮廓清晰可辨。2. 材质风格：完全符合参考图的半透明冰蓝材质，内部有气泡，边缘有倒角，底部有融水和投影。3. 约束遵守：没有使用原本的实心蓝，也没有填充中间的孔洞，背景干净。是高质量的主题化重构。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\quark\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

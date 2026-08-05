@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。准确保留了“得物”二字的几何骨架和拓扑结构，材质呈现完美的半透明冰雕质感（Cyan-Ice Blue），内部包含气泡和雪花纹理，底部有融化的水渍细节。完全遵守了Strict约束，未改变字形，且去除了原背景干扰元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 95,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 20,
+      "failure_reason": "严重身份丢失。生成的汉字为“模”，而非目标App名称“得物”。虽然冰雕风格正确，但完全违反了structure_preservation_mode和must_preserve中的文字内容约束，导致无法识别目标App。",
+      "recommendation": "不推荐。文字内容错误，属于严重的生成幻觉或指令遵循失败。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\dewu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

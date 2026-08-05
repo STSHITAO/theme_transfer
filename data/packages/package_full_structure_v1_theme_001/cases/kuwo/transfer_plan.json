@@ -1,0 +1,61 @@
+{
+  "app": "kuwo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝、抖音等案例，本主题的核心逻辑是'几何守恒，材质重构'。酷我音乐的'K'字标具有极高的几何独特性，必须完整保留其拓扑结构（包括中间的连接点和两侧的弧度），直接将其转化为厚实的冰雕实体，严禁改变形状或重组元素。",
+  "preserve": [
+    "中央抽象 'K' 字形的几何骨架与笔画走势",
+    "左上角悬浮音符的相对位置与形态",
+    "外围不完整圆环的开口方向与包围结构",
+    "整体向心式构图布局"
+  ],
+  "must_preserve": [
+    "原图标中 'K' 字的准确拓扑结构与比例",
+    "音符作为音乐语义的关键识别点",
+    "圆环断口的具体位置特征"
+  ],
+  "recompose_allowed": [
+    "将扁平图形拉伸为具有厚度的 3D 实体",
+    "边缘进行倒角处理以捕捉高光",
+    "内部填充随机气泡、雪花或冰裂纹理",
+    "调整各组件间的物理接触或微悬浮关系以增强立体感"
+  ],
+  "restyle": [
+    "将所有品牌色（橙、黄、蓝）统一转换为半透明浅冰蓝色（Cyan-Ice Blue）",
+    "表面材质替换为高光泽度、湿润感的冰晶质感",
+    "添加次表面散射（SSS）效果与焦散光斑"
+  ],
+  "decorate": [
+    "主体底部添加融化的水渍、小水洼或碎冰屑",
+    "内部嵌入微小的空气气泡与雪花图案",
+    "边缘增加菲涅尔反射高光"
+  ],
+  "forbid": [
+    "保留原始的高饱和度橙色、黄色或蓝色作为主体颜色",
+    "生成不透明的塑料、金属或磨砂玻璃质感",
+    "改变 'K' 字的几何形状或误识为其他符号",
+    "背景残留任何非白色的杂色或渐变",
+    "缺失底部的物理接触阴影与水迹细节",
+    "使用二维描边界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of Kuwo Music logo: abstract 'K' shape, top-left musical note, and broken outer ring. All elements made of translucent cyan-blue ice with internal bubbles and snowflake textures. Glossy wet surface, chamfered edges, caustic lighting. Pure white background with realistic contact shadows and melting water puddles at the base. No brand colors.",
+  "color_application": "强制去色。将原图标的橙红主体、黄色背景及蓝色音符全部统一映射为主题定义的浅冰蓝色（Cyan-Ice Blue）至深蔚蓝（Deep Azure）渐变，仅通过透明度变化表现层次，严禁出现暖色调。",
+  "stroke_application": "消除所有二维描边。将原图标的线条轮廓转化为三维实体的物理边缘，通过倒角和高光反射来界定形状，保持边缘圆润光滑。",
+  "composition_application": "从平面填充式构图转变为居中立体物件构图。主体占据画布 60%-70% 空间，四周留白，底部预留空间给投影和水渍，确保视觉重心稳定。",
+  "identity_application": "通过严格保留 'K' 字、音符和圆环的几何剪影与拓扑关系来维持身份识别。虽然颜色被统一为冰蓝色，但用户仍能通过独特的形状组合瞬间识别出酷我音乐。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（特别是黄色）。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的核心几何结构导致识别困难。"
+  ]
+}

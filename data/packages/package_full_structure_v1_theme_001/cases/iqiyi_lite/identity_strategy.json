@@ -1,0 +1,36 @@
+{
+  "app": "iqiyi_lite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“爱奇艺”三个汉字的特定字体骨架与排列结构",
+  "brand_cues_to_preserve": [
+    "“爱奇艺”三字的字形结构（特别是“爱”字上部的爪字头变体和“奇”字的大口结构）",
+    "右下角闪电符号的几何形态"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字内容作为核心识别载体",
+    "闪电符号代表的“极速/轻量”语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以汉字为主体的图标，必须保留文字的笔画拓扑结构和空间布局。虽然原图包含“极速版”三字，但为了符合主题包“几何简化、主体突出”的规则（参考抖音去除故障风），应精简为品牌主名“爱奇艺”以保证视觉清晰度，或将“极速版”极度弱化。主体结构必须是立体的汉字块，而非场景重构。",
+  "design_rationale": "爱奇艺极速版的原图标是典型的文字排版型图标。根据主题规则，需将平面文字转化为具有厚度的3D冰雕实体。考虑到图标在小尺寸下的识别性，策略上选择简化文字层级，重点重塑“爱奇艺”主品牌的冰质立体感。颜色必须完全去色，转为统一的浅冰蓝。右下角的闪电是区分“极速版”的关键线索，依据“火山版”的处理逻辑，将其作为微小的装饰性元素保留，但材质需统一或做极小范围的冷暖对比点缀，不可破坏整体的冰雪基调。",
+  "must_preserve": [
+    "“爱奇艺”汉字的准确笔画走势和间架结构",
+    "整体文字的居中构图比例",
+    "底部接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "移除“极速版”文字或将其缩小至几乎不可见，以避免画面拥挤",
+    "右下角红色背景块必须移除，仅保留白色闪电符号",
+    "文字边缘的锐利直角需改为圆润的冰质倒角"
+  ],
+  "forbid": [
+    "禁止保留原图的绿色/紫色渐变背景",
+    "禁止生成不透明的蓝色塑料质感文字",
+    "禁止改变“爱”或“奇”字的写法导致识别错误",
+    "禁止将闪电图标放大成为主体"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Chinese characters '爱奇艺' (iQIYI) centered on a pure white background. The characters must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. The edges should be smooth and rounded like melted ice. At the bottom right corner, embed a small, subtle white lightning bolt icon frozen into the ice or floating slightly nearby to signify 'Lite/Speed'. Ensure strong subsurface scattering, glossy wet surface, and a realistic contact shadow with melting water puddles at the base. No green or purple colors."
+}

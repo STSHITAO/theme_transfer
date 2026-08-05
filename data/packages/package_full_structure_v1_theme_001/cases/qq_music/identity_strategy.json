@@ -1,0 +1,36 @@
+{
+  "app": "qq_music",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "八分音符（Eighth Note）的几何轮廓与黄底圆形的空间关系",
+  "brand_cues_to_preserve": [
+    "标志性的绿色八分音符主体",
+    "黄色圆形背景底板",
+    "音符向右上方倾斜的动态角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐符号（Music Note）作为音频播放器的核心语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 douyin 和 bilibili 的处理方式，对于具有高识别度的几何符号（如音符、电视），必须严格保留其原始拓扑结构和轮廓。QQ音乐的音符形状非常经典，任何重构都会导致识别度下降。因此，策略是将2D扁平图形直接‘挤压’为3D实体，保持原有的前后遮挡关系（音符在圆盘前），仅改变材质和光影。",
+  "design_rationale": "QQ音乐的核心识别点在于那个独特的绿色音符和黄色圆盘组合。在当前‘冰雪’主题下，不能保留原本的黄绿配色，否则破坏主题统一性。策略是将整个图标（包括背景和前景音符）转化为统一的冰蓝色半透明材质。通过保留音符的立体厚度和圆盘的基座感，利用冰块的折射和内部气泡来替代原本的色彩差异，既维持了极高的品牌识别度，又完美融入了清透的冰雪环境。",
+  "must_preserve": [
+    "八分音符的标准几何形状（符头、符干、符尾的比例）",
+    "音符位于圆形底板前方的层叠关系",
+    "整体构图的居中与饱满度"
+  ],
+  "can_recompose": [
+    "将原本的实心黄/绿颜色替换为通透的冰蓝色",
+    "将平滑的矢量边缘处理为圆润的倒角（Chamfer）以模拟冰块磨损感",
+    "在冰块内部增加雪花或气泡纹理以丰富细节"
+  ],
+  "forbid": [
+    "禁止保留原本的黄色和绿色填充",
+    "禁止将音符简化为抽象线条或改变其朝向",
+    "禁止生成不透明的塑料质感，必须是半透明冰晶",
+    "禁止去除底部的接触阴影，防止图标悬空"
+  ],
+  "generation_direction": "Generate a 3D icon of the QQ Music logo (an eighth note on a circular disc) made entirely of translucent light blue ice. The note should sit in front of the disc. Material is glossy, wet crystal with internal bubbles and snowflakes. No original colors. Soft white background with contact shadow and melting water details at the base. Centered composition."
+}

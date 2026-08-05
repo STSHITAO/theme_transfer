@@ -1,0 +1,60 @@
+{
+  "app": "toutiao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或几何类图标采取严格的‘立体化复刻’策略。今日头条的Logo主体为高识别度的汉字图形，必须完整保留其笔画结构和外框比例，仅将原本的平面红色色块转化为具有厚度的3D冰体，严禁改变字形或重构为其他物体。",
+  "preserve": [
+    "“头条”二字的完整汉字结构",
+    "汉字笔画间的负空间比例",
+    "整体图标的圆角矩形外轮廓边界",
+    "文字在背景块中的居中布局及撑满版式"
+  ],
+  "must_preserve": [
+    "“头条”汉字的特定几何化字形特征",
+    "图标整体的长宽比和视觉重心",
+    "文字与底座的层级关系（文字作为主体嵌于或浮于冰体中）"
+  ],
+  "recompose_allowed": [
+    "将原始红色背景块重组为具有物理厚度的3D冰体基座",
+    "将白色文字重组为透明或半透明的冰雕质感",
+    "将锐利的矢量边缘重组为圆润的冰体倒角和高光折射边缘"
+  ],
+  "restyle": [
+    "去除所有品牌红色，统一应用冰蓝色/淡青色调",
+    "表面增加冷凝水珠、内部嵌入雪花或气泡纹理",
+    "应用次表面散射（SSS）效果以表现冰的通透感",
+    "添加底部接触阴影和微量融水以增强落地感"
+  ],
+  "decorate": [
+    "在冰体表面或内部添加微缩雪花结晶细节",
+    "在边缘处添加高光反射以界定轮廓",
+    "底部添加轻微的融化水渍效果"
+  ],
+  "forbid": [
+    "禁止保留任何红色或暖色调元素",
+    "禁止将“头条”文字替换为拼音、英文或其他图形",
+    "禁止使用不透明的纯色填充，必须体现冰的材质透光性",
+    "禁止改变“头条”二字的字体结构和笔画特征",
+    "禁止使用复杂背景，必须保持纯白/极浅灰背景"
+  ],
+  "generation_brief": "3D ice sculpture icon of Chinese characters '头条' inside a rounded rectangular block. Translucent pale cyan ice material with internal bubbles and snowflake textures. Glossy surface with condensation droplets. No red color. Pure white background with soft contact shadow and melting water at base. High fidelity to original character shape.",
+  "color_application": "Discard original brand red completely. Apply uniform pale cyan/ice blue palette to both the background block and the text elements. Use varying opacity and lightness to define volume, not hue.",
+  "stroke_application": "Eliminate 2D vector strokes. Convert all edges to smooth, rounded 3D bevels mimicking worn ice. Define boundaries through specular highlights and refraction rather than drawn lines.",
+  "composition_application": "Centralize the 3D ice block containing the text. Maintain the original aspect ratio but add Z-axis thickness. Place on a virtual ground plane with a subtle shadow to anchor it in 3D space.",
+  "identity_application": "Preserve the exact geometric silhouette and stroke structure of the '头条' characters. Ensure the characters are clearly legible as ice carvings or frozen forms within the block, maintaining their spatial relationship to the container.",
+  "fidelity_constraints": [
+    "Must use translucent ice/crystal material with subsurface scattering",
+    "Must include internal details like bubbles or snowflakes",
+    "Must maintain strict structural fidelity to the original '头条' glyph shapes",
+    "Must have a clean white background with grounding shadows"
+  ],
+  "negative_constraints": [
+    "No flat 2D vectors",
+    "No red, orange, or warm colors",
+    "No opaque plastic or metal materials",
+    "No complex or dark backgrounds",
+    "No distortion of the Chinese characters"
+  ]
+}

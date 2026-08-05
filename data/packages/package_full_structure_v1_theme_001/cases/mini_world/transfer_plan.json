@@ -1,0 +1,63 @@
+{
+  "app": "mini_world",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视框）和 douban（豆字）的案例，均是将原本具有强识别度的平面或2.5D几何图形直接转化为3D冰雕。Mini World 的核心识别点在于其独特的'方块头'角色剪影。为了保持极高的用户辨识度，必须严格保留该角色的头部比例、面部五官拓扑结构以及头顶的特征突起，仅将材质从原本的'彩绘塑料/卡通渲染'替换为'通透冰块'，严禁改变其几何形状或将其重组为其他物体。",
+  "preserve": [
+    "立方体头部的透视几何结构",
+    "面部五官（眼、眉、嘴）的相对位置和形状",
+    "头顶的特征性突起结构",
+    "整体角色的“方块人”比例"
+  ],
+  "must_preserve": [
+    "方块头部的长宽比例",
+    "面部核心表情布局",
+    "白色锯齿/波浪状的边缘细节（需转化为冰层厚度变化或内部纹理）",
+    "底部的接触阴影和水渍细节"
+  ],
+  "recompose_allowed": [
+    "背景中的宇宙星空、光效漩涡",
+    "右下角的蘑菇生物及左侧悬浮小机器人",
+    "材质的渲染风格（转为半透明冰晶质感）",
+    "非核心的装饰性高光"
+  ],
+  "restyle": [
+    "将原品牌高饱和绿色转换为统一的浅冰蓝色（Cyan-Ice Blue）",
+    "将原本的卡通皮肤质感替换为高光泽度冰冻材质",
+    "将白色波浪边处理为冰块内部的折射边界或表面浮雕"
+  ],
+  "decorate": [
+    "在冰块内部嵌入随机微小气泡和雪花纹理",
+    "在表面添加湿润的高光反射和菲涅尔效应",
+    "底部添加融化的水迹和碎冰屑"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色、紫色等高饱和品牌色作为主体主色",
+    "禁止生成不透明的蓝色塑料、磨砂玻璃或石头材质",
+    "禁止改变方块头的几何比例（如变圆或变扁）",
+    "禁止添加原本不存在的复杂场景元素（如树木、建筑）",
+    "禁止面部表情扭曲或五官位置错误导致身份丢失",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D ice sculpture icon of Mini World character head. Cube-shaped head with cute face and top protrusion, rendered in translucent cyan-blue ice. Internal air bubbles and snowflake textures. Glossy wet surface, caustic lighting. Pure white background with melting water puddle and contact shadow at base. Maintain exact geometric proportions.",
+  "color_application": "强制去色。将原图标的标志性绿色完全转换为 theme 规定的 Cyan-Ice Blue (青冰蓝) 和 Translucent White (半透明白)。仅通过 Deep Azure (深蔚蓝) 表现结构阴影，严禁保留原品牌绿色。",
+  "stroke_application": "消除所有二维描边。原图标中的白色波浪边缘通过冰块的物理厚度、倒角高光及内部折射来表现，而非绘制线条。",
+  "composition_application": "单体居中构图。主体占据画布约 60%-70% 空间。去除原图复杂的星空背景，替换为纯白背景。强调垂直方向的体积感，底部预留空间给投影和水渍。",
+  "identity_application": "几何守恒，材质重构。严格保留方块头角色的剪影、五官拓扑和头顶突起。通过赋予其统一的冰材质和光影效果来实现主题化，确保用户在看到冰雕剪影时仍能瞬间识别为 Mini World 角色。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成实心、不透明的物体",
+    "禁止保留原始的大面积品牌背景色",
+    "禁止过度复杂的场景化重构",
+    "禁止使用暖色调作为主体主色",
+    "禁止改变原图标的形状导致识别失败"
+  ]
+}

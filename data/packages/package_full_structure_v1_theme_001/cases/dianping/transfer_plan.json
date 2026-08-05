@@ -1,0 +1,63 @@
+{
+  "app": "dianping",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（'支'字立体化）和抖音（音符立体化）的案例，本主题的核心逻辑是'几何守恒，材质重构'。大众点评的人形图标具有极高的国民认知度，其识别依赖于特定的剪影轮廓。因此，必须完整保留原图标的二维拓扑结构，仅将其沿Z轴拉伸并赋予冰材质，严禁改变肢体角度或头身比例。",
+  "preserve": [
+    "人形主体的整体外轮廓（头、臂、腿的比例关系）",
+    "头部圆点与身体之间的间隙（负空间）",
+    "手臂向上张开的角度和位置",
+    "腿部拱形的跨度",
+    "图形在画面中的居中构图"
+  ],
+  "must_preserve": [
+    "人形剪影的准确几何形状",
+    "头部的正圆形特征",
+    "四肢末端的圆润倒角处理"
+  ],
+  "recompose_allowed": [
+    "将原本的平面色块转化为具有厚度的3D实体",
+    "表面增加冰裂、气泡等微观纹理",
+    "边缘增加菲涅尔反射高光"
+  ],
+  "restyle": [
+    "背景橙色替换为纯白/极浅冷灰",
+    "人形主体应用半透明青冰蓝材质",
+    "内部填充活跃的气泡纹理以隐喻人气",
+    "添加底部融水阴影以确立物理重心"
+  ],
+  "decorate": [
+    "内部随机分布微小气泡和雪花纹理",
+    "表面湿润高光反射",
+    "底部接触阴影与碎冰屑"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色背景",
+    "禁止生成不透明的白色塑料或石膏质感",
+    "禁止改变人形的肢体动作（如变成跑步或静止站立）",
+    "禁止添加非主题色的装饰元素",
+    "禁止使用暖色调作为主体主色",
+    "禁止连接头部与身体"
+  ],
+  "generation_brief": "3D ice sculpture of Dianping's abstract human figure. Translucent cyan-blue ice material with internal bubbles. Glossy wet surface, chamfered edges. Centered on pure white background. Soft contact shadow and melting water puddle at the base. No orange color. High fidelity Octane render.",
+  "color_application": "强制去色。移除所有原始橙色背景和高饱和品牌色。主体统一渲染为半透明青冰蓝（Cyan-Ice Blue），利用深蔚蓝（Deep Azure）表现厚度阴影，半透明白（Translucent White）表现高光透光区。",
+  "stroke_application": "消除二维描边。将原图标的轮廓线转化为3D实体的物理边缘，进行倒角处理（Chamfered edges）以捕捉高光，通过材质的折射和菲涅尔效应界定形状。",
+  "composition_application": "从平面填充转变为立体物件。主体居中，占据画布60%-70%空间。去除背景干扰，底部增加物理接触阴影和水渍，使悬浮的人形稳固地'立'在白色平面上。",
+  "identity_application": "严格保留人形剪影的拓扑结构（头身分离、V字手臂）。通过赋予统一的冰材质和内部气泡纹理来实现主题化，确保在不使用品牌色的情况下，用户仍能通过独特的几何轮廓瞬间识别出大众点评。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的形状或比例。"
+  ]
+}

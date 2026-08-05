@@ -1,0 +1,38 @@
+{
+  "app": "douyin_huoshan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "抖音标志性音符符号的几何轮廓 + 火山版特有的火焰元素（作为微缩点缀）",
+  "brand_cues_to_preserve": [
+    "音符符号的整体贝塞尔曲线形态",
+    "底部火焰元素的橙红色调（需缩小并置于次要位置）"
+  ],
+  "semantic_cues_to_preserve": [
+    "短视频/音乐属性（通过音符表达）",
+    "火山版的热情/活力属性（通过微缩火焰表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 douyin 和 douyin_huoshan 的转换案例均显示：核心音符结构必须完整保留并立体化。火山版的特殊性在于需在保持主体冰质化的同时，保留极小比例的火焰元素作为版本区分标识，但这不改变主体结构保留的原则。",
+  "design_rationale": "选择 logo_preserve 策略是因为：1) 主题规则明确要求'几何守恒，材质重构'；2) 参考案例中 douyin_huoshan 已验证该策略可行性；3) 音符符号具有极高辨识度，重构会导致身份丢失；4) 火焰元素作为版本差异点需保留但必须服从主题色调约束。",
+  "must_preserve": [
+    "音符符号的完整轮廓和比例",
+    "火焰元素的橙红色（仅限微缩尺寸）",
+    "冰材质的半透明感和内部气泡纹理",
+    "纯白背景和底部接触阴影"
+  ],
+  "can_recompose": [
+    "火焰元素的大小和位置（可缩小并移至左上角或底部边缘）",
+    "音符内部的细节装饰（可简化为冰晶纹理）",
+    "整体厚度和倒角处理（根据3D化需求调整）"
+  ],
+  "forbid": [
+    "将音符替换为其他符号或抽象图形",
+    "使用大面积橙红色作为主体颜色",
+    "生成不透明的塑料或金属质感",
+    "省略底部水渍/阴影导致悬浮感",
+    "火焰元素过大破坏主题统一性"
+  ],
+  "generation_direction": "将抖音火山版图标转化为3D冰雕：主体音符保持原轮廓，制成半透明浅冰蓝色冰块，内部含气泡雪花纹理；左上角或底部边缘添加微缩橙红火焰图标作为点缀；纯白背景，底部有融化水渍和接触阴影；无描边，靠光影界定边缘。"
+}

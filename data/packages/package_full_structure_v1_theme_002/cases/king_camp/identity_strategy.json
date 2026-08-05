@@ -1,0 +1,38 @@
+{
+  "app": "king_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "中心带有垂直切口的同心圆/靶心结构，以及外围类似叶片或旋风的非对称包裹轮廓。",
+  "brand_cues_to_preserve": [
+    "中心的‘靶心’或‘定位点’几何形态（象征营地/基地）",
+    "外围旋转的动态轮廓（象征王者峡谷的旋风或能量）",
+    "整体图形的负空间关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为官方辅助工具的‘核心/枢纽’语义",
+    "与王者荣耀本体（红蓝对抗）的色彩关联暗示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标已经是高度抽象的几何符号（类似靶心或漩涡），符合主题对于‘单体居中构图’和‘几何块面组合’的要求。参考 Bilibili 和 Douyin 的案例，当原标本身就是清晰符号时，应保留其拓扑结构，仅进行材质和色彩的‘主题化重绘’，而非重构。",
+  "design_rationale": "王者营地的图标本身就是一个强识别度的几何符号（靶心/旋风），不需要像游戏角色那样进行语义重构。策略是将原本扁平、单色（棕黄）的矢量图形，转化为具有粗犷手绘描边、红蓝黄配色的复古涂鸦风格。重点在于通过色彩分割（如内圈与外环异色）来打破原本的单调，同时保留其作为‘营地/基地’的核心视觉隐喻。",
+  "must_preserve": [
+    "中心的圆点及向下的垂直切口结构",
+    "外围包裹的不对称旋风/叶片状轮廓",
+    "纯黑背景",
+    "粗黑色的手绘感描边"
+  ],
+  "can_recompose": [
+    "将原本的棕黄色填充替换为红、蓝、奶黄的色块组合（例如外环用深蓝，内芯用砖红或奶黄）",
+    "将平滑的矢量边缘转化为抖动的马克笔线条",
+    "可以在色块内部增加简单的白色高光点或星星装饰以增强童趣感"
+  ],
+  "forbid": [
+    "禁止保留原本的棕黄色调",
+    "禁止使用细线条或无描边设计",
+    "禁止添加立体阴影或渐变效果",
+    "禁止改变中心靶心的基本几何比例"
+  ],
+  "generation_direction": "Draw a retro hand-drawn doodle icon on a pure black background. The subject is a stylized target or vortex shape (concentric circles with a vertical cut at the bottom center, wrapped by an asymmetrical swirling leaf shape). Use thick, rough black marker outlines with uneven edges. Fill the shapes with solid blocks of high-saturation Brick Red, Indigo Blue, and Creamy Yellow (no gradients). The style should look like a naive crayon drawing or sticker, flat and matte."
+}

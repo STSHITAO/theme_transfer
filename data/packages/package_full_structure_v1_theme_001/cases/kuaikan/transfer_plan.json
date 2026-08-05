@@ -1,0 +1,58 @@
+{
+  "app": "kuaikan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于具有强识别度的文字或符号类图标，采取‘几何守恒，材质重构’策略。快看漫画的图标核心是汉字本身，因此必须完整保留‘快看’二字的立体化形态，将其视为一块完整的冰雕文字，严禁替换为书本或画板等通用语义符号。",
+  "preserve": [
+    "“快看”二字的整体字形骨架与笔画拓扑结构",
+    "“看”字下半部分内部嵌入的眼睛/光圈图形及其相对位置",
+    "感叹号“！”的存在及其与文字的布局关系"
+  ],
+  "must_preserve": [
+    "“快看”二字的笔画粗细比例与倾斜角度",
+    "“看”字中眼睛图形的圆形特征与负形/填充逻辑",
+    "底部的物理接触阴影和水渍细节以确立足点"
+  ],
+  "recompose_allowed": [
+    "将平面黑色字体转化为具有厚度和倒角的3D冰体实体",
+    "在冰块内部添加随机的雪花、气泡纹理以符合主题指纹",
+    "调整字体边缘的高光反射以模拟冰晶折射感"
+  ],
+  "restyle": [
+    "原品牌高饱和黄色背景完全移除，替换为纯白背景",
+    "原黑色字体颜色转换为半透明浅冰蓝色（Cyan-Ice Blue）",
+    "去除所有二维描边，通过体积感和光影界定轮廓"
+  ],
+  "decorate": [
+    "主体内部嵌入微小气泡和冰晶颗粒",
+    "表面呈现湿润的高光泽度与菲涅尔反射",
+    "底部增加融化的水迹和碎冰屑细节"
+  ],
+  "forbid": [
+    "禁止保留原图的亮黄色背景或任何暖色调大面积色块",
+    "禁止将文字替换为漫画书、胶卷、摄像机等具象物体",
+    "禁止生成不透明的蓝色塑料、磨砂玻璃或金属质感",
+    "禁止改变“快看”二字的字形结构（如写错笔画或改为拼音）",
+    "禁止使用复杂的场景化背景，必须保持纯白极简"
+  ],
+  "generation_brief": "3D ice sculpture of Chinese characters '快看', translucent cyan-blue ice material, internal bubbles and snowflakes, glossy wet surface, eye symbol preserved inside '看' character, pure white background, melting water puddles at base, high fidelity octane render.",
+  "color_application": "强制去色。原黑字黄底被完全摒弃。主体统一渲染为半透明浅冰蓝色（Cyan-Ice Blue），利用深蔚蓝（Deep Azure）表现厚度阴影，高光区为半透明白。背景严格使用纯白。",
+  "stroke_application": "消除所有二维描边。将汉字的笔画转化为具有倒角（Chamfered edges）的三维实体边缘。依靠材质的折射率差异和边缘高光来界定字形轮廓，而非绘制线条。",
+  "composition_application": "从满版文字构图转变为居中悬浮/放置的3D物件构图。主体占据画布约60%-70%空间，四周留白。底部预留空间给投影和水渍，增强物理接触感。",
+  "identity_application": "在不破坏冰材质通透感的前提下，精确复刻“快看”二字的几何剪影。特别强化“看”字内部眼睛符号的冰体质感，使其如同被封存在冰块中的核心识别物，确保用户能通过字形瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（黄/黑）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到扁平化设计或2D矢量风格。",
+    "禁止保留原始的大面积黄色背景。",
+    "禁止生成实心、不透明的物体（如石头或普通塑料）。",
+    "禁止过度复杂的场景化重构（如变成小人站在雪地里）。",
+    "禁止字形扭曲或笔画错误导致无法识别。"
+  ]
+}

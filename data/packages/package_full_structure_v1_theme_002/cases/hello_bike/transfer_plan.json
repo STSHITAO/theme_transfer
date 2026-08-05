@@ -1,0 +1,60 @@
+{
+  "app": "hello_bike",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 Bilibili 案例，当 Original 为文字 Logo 时，应保留文字的拓扑结构和空间布局，将其视为图形块面处理。哈啰的图标主体即为文字，因此必须保留‘哈啰’二字的骨架，不能替换为自行车或车轮等语义符号，否则会导致品牌识别丢失。",
+  "preserve": [
+    "汉字“哈啰”的左右排列结构及整体长宽比",
+    "“哈”字口字旁的封闭几何特征",
+    "“啰”字右侧笔画的走向与负空间形态",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感描边"
+  ],
+  "must_preserve": [
+    "“哈啰”二字的完整字形可识别性",
+    "文字在画面中心的居中位置",
+    "无渐变、无阴影的平面化填充风格"
+  ],
+  "recompose_allowed": [
+    "将原始白色填充重构为主题限定色（深蓝/奶黄/砖红）",
+    "将平滑矢量边缘转化为不规则抖动的手绘轮廓",
+    "移除底部弧形分割线、动态笔触及 Slogan 文字",
+    "在笔画间隙或末端添加简单的几何装饰（如圆点、四角星）"
+  ],
+  "restyle": [
+    "字体风格由标准几何体转为粗犷拙朴的蜡笔/马克笔触",
+    "色彩映射：品牌蓝映射为主题深蓝，辅助色映射为奶黄或砖红",
+    "材质由光滑数字感转为干性绘画介质的颗粒感/涂抹感"
+  ],
+  "decorate": [
+    "在文字内部或周围点缀极简的复古几何图形（如星星、圆点）以增强趣味性",
+    "保持构图松散自由，不追求严格对称"
+  ],
+  "forbid": [
+    "禁止保留原始的亮蓝色背景和白色文字组合",
+    "禁止出现自行车、车轮、动物等具象物体替代文字主体",
+    "禁止使用细线条、无描边或过于平滑的矢量边缘",
+    "禁止保留底部的‘花得少 坐得好’标语",
+    "禁止使用渐变色、立体阴影、高光或环境光遮蔽",
+    "禁止使用主题色板之外的颜色（如绿色、紫色、粉色）"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of Chinese characters '哈啰' centered on pure black background. Characters are thick, blocky, filled with solid deep blue or creamy yellow, outlined with rough uneven black marker strokes. Naive art style, crayon texture, no gradients, no shadows, no bike imagery. Simplify font into geometric shapes while keeping text strictly readable.",
+  "color_application": "强制去色。将原始品牌蓝映射为主题色板中的深宝蓝/靛蓝作为主填充色；局部笔画或装饰点缀使用奶黄或砖红。严禁使用原始亮蓝或白色填充，严禁渐变。",
+  "stroke_application": "添加粗重、不规则的黑色手绘描边。模拟马克笔快速运笔的抖动感，转角处理为圆润或钝角，消除工业设计的锐利度。",
+  "composition_application": "移除原始满版蓝色背景和底部装饰元素。主体‘哈啰’文字居中，占据画幅约60%-70%，四周留黑均匀，形成高对比度的贴纸式视觉效果。",
+  "identity_application": "严格保留‘哈啰’二字的拓扑结构和笔画特征，将其视为核心图形符号进行风格化重绘。通过字形的完整性确保品牌识别，而非依赖颜色或辅助图形。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白的高饱和度组合范围内",
+    "主体必须是扁平化的几何块面组合，无立体光影"
+  ],
+  "negative_constraints": [
+    "禁止漂移到写实、3D渲染或精细矢量风格",
+    "禁止保留原始的品牌标准色值（需映射为主题色）",
+    "禁止引入自行车等语义符号替代文字",
+    "禁止画面杂乱，需保持极简和拙朴感"
+  ]
+}

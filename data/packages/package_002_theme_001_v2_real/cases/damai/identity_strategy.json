@@ -1,0 +1,26 @@
+{
+  "app": "damai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "design_rationale": "大麦的Logo具有极高的国民认知度，其核心识别点在于‘放射状花瓣’与‘底部绿色三角形（麦穗/舞台）’的组合结构。若采用semantic_recompose彻底重构为其他物体，会导致用户无法识别该App。因此，策略选择保留原Logo的几何骨架，但通过材质和形态的‘萌化’处理来适配主题。将原本锐利的矢量花瓣转化为圆润的、毛茸茸的触感，把底部的三角形处理成类似小鼻子或裙摆的可爱形态，既保留了品牌资产，又消除了原图标的商务感和锐利感。",
+  "must_preserve": [
+    "放射状排列的花瓣/羽毛结构（上部主体）",
+    "底部的绿色三角形/梯形支撑结构",
+    "整体呈扇形或花朵状的轮廓剪影",
+    "花瓣之间的间隔逻辑"
+  ],
+  "can_recompose": [
+    "将原本的矢量色块替换为白色或极浅色的毛绒质感主体",
+    "将尖锐的花瓣顶端处理为圆弧形",
+    "添加简单的豆豆眼表情（位于中心或底部三角处）",
+    "背景色替换为低饱和度的马卡龙色系（如淡粉、淡黄）",
+    "增加粗黑色的手绘描边"
+  ],
+  "forbid": [
+    "保留原Logo的高饱和度彩虹渐变色（必须改为单色或浅色+描边）",
+    "直接放置原始矢量图形不做任何质感处理",
+    "将放射状结构改得过于稀疏或密集，导致像太阳或车轮而非大麦Logo",
+    "边缘出现锐角或直线，破坏手绘圆润感"
+  ],
+  "generation_direction": "A cute fluffy mascot shaped like the Damai logo (radial flower petals on top, green triangle base at bottom). The shape is transformed into a soft, white, cotton-like creature with a round silhouette. Add simple kawaii dot eyes in the center. Thick hand-drawn black outline. Pastel macaron background (e.g., pale yellow or light pink). No gradients, flat vector illustration style, healing vibe."
+}

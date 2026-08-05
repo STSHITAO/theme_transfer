@@ -1,0 +1,41 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "小电视（TV）的外轮廓以及内部 'bilibili' 文字的图形化排列结构",
+  "brand_cues_to_preserve": [
+    "电视机圆角矩形外框",
+    "顶部的双天线突起",
+    "文字 'bilibili' 的左右对称布局及笔画特征（如 'b' 的圆弧、'i' 的点）"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频播放/屏幕的概念（通过电视轮廓表达）",
+    "社区互动的活泼感（通过手绘抖动线条表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 的迁移案例显示，该 App 的核心识别度依赖于‘电视轮廓+文字’的组合拓扑。Original 图标本身已是高度符号化的几何图形，符合 theme_rules 中‘当 Original 为清晰几何符号时保留主体轮廓’的原则。因此，必须锁定电视外框和内部文字的空间关系，仅对填充色、描边和质感进行主题化重构，严禁改变其物理结构。",
+  "design_rationale": "Bilibili 的原始图标具有极强的品牌资产（小电视造型），且其几何结构本身就非常适合转化为复古涂鸦风格。策略上选择直接保留其‘电视框+文字’的主体结构，将原本的粉色渐变背景替换为纯黑，将白色文字和粉色电视框映射为主题限定的红、蓝、奶黄三色块。重点在于用粗犷的手绘描边替代原有的平滑矢量边缘，模拟马克笔在黑板上绘制玩具电视的效果，既保留了极高的辨识度，又完美契合主题的拙朴趣味。",
+  "must_preserve": [
+    "电视机主体的圆角矩形轮廓",
+    "顶部两个天线的相对位置和形状",
+    "内部文字 'bilibili' 的基本笔画走向和排列顺序",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感外描边"
+  ],
+  "can_recompose": [
+    "将原本的粉白配色重组为红、蓝、黄的任意组合（例如电视框用红色，文字用奶黄或蓝色）",
+    "将平滑的矢量边缘转化为不规则的抖动线条",
+    "将文字笔画适当加粗或变形以适配手绘风格",
+    "在电视屏幕空白处或文字间隙添加微小的四角星或圆点装饰"
+  ],
+  "forbid": [
+    "禁止保留原始的粉色渐变背景",
+    "禁止使用细线条或无描边设计",
+    "禁止将电视轮廓改为其他形状（如手机、播放器图标）",
+    "禁止添加立体阴影或高光效果",
+    "禁止使用主题色板以外的颜色（如绿色、紫色）"
+  ],
+  "generation_direction": "Draw a retro hand-drawn doodle of a TV set on a pure black background. The TV has a thick, rough black outline and two antennas on top. Inside the TV screen, write 'bilibili' in a clumsy, marker-pen style using solid blocks of red, blue, or yellow. No gradients, no shadows, flat colors only. The lines should look shaky and handmade like a crayon drawing."
+}

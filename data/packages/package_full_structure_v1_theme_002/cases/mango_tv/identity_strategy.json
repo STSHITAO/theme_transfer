@@ -1,0 +1,39 @@
+{
+  "app": "mango_tv",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "M形几何轮廓及其外部包围的圆角矩形框",
+  "brand_cues_to_preserve": [
+    "标志性的 'M' 字母形态（代表 Mango）",
+    "包裹 'M' 的圆角正方形外框结构",
+    "整体图形的负空间关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为视频流媒体平台的符号化表达（通过保留类似屏幕/播放器的外框暗示）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（M+框），符合主题中关于‘清晰几何符号’保留主体轮廓的规则（参考 bilibili/kuaishou 案例）。无需像游戏类 App 那样进行语义重构，只需将原本的矢量平滑线条转化为粗犷的手绘笔触，并替换配色即可。",
+  "design_rationale": "芒果TV的Logo具有极高的国民辨识度，其核心在于'M'与外框的组合。在复古手绘主题下，应保留这一拓扑结构以确保用户能瞬间识别。策略上采用 logo_simplify，去除原有的精密矢量感，用类似马克笔涂抹的厚重色块重塑'M'和外框，使其看起来像一个手工绘制的电视徽章。颜色上，将原本的亮橙色映射为主题允许的‘砖红/朱红’或‘奶黄’，以符合受限色板要求。",
+  "must_preserve": [
+    "M字母的基本笔画走向（左竖、中间V型凹陷、右竖）",
+    "外部圆角矩形的闭合或半闭合包围感",
+    "纯黑背景",
+    "粗黑色的不规则手绘描边"
+  ],
+  "can_recompose": [
+    "将原本的橙色填充改为朱红色或奶黄色（需与描边形成高对比）",
+    "将平滑的圆角改为略带抖动的手工圆弧",
+    "适当加粗'M'的笔画，使其更具涂鸦感",
+    "忽略原图中的文字部分（恋室大逃脱），仅保留图形主体"
+  ],
+  "forbid": [
+    "禁止保留原始的亮橙色（必须映射到红/黄/蓝）",
+    "禁止使用细线条或无描边设计",
+    "禁止添加立体阴影或高光",
+    "禁止改变'M'的基本字形导致无法识别",
+    "禁止保留底部的文字标题"
+  ],
+  "generation_direction": "Draw a thick, hand-drawn doodle style icon on a pure black background. The subject is a simplified 'M' letter enclosed within a rough, rounded square frame. Use solid brick-red or creamy yellow flat colors for the shape, with a heavy, irregular black marker stroke outline. No gradients, no shadows, no text. The lines should look shaky and naive, like a crayon drawing."
+}

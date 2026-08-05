@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan 的所有约束。准确保留了彭罗斯三角/播放键的几何拓扑结构和透视关系，材质转化为半透明冰雕，包含气泡和雪花细节，底部有融化水迹，且完全去除了原始背景色和文字。是极佳的候选图。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格匹配度很高，材质处理得当。但在几何结构上略有偏差，相比原图的彭罗斯三角视错觉结构，该图更像是一个平面的三角形框架加了厚度，丢失了部分‘不可能图形’的立体连接逻辑（特别是左侧垂直边与右侧尖角的透视关系不如 candidate_01 准确）。虽然仍可识别，但在 strict 约束下不如 candidate_01 严谨。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\weishi\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 100,
+      "style_match_score": 100,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。材质为半透明冰雕，颜色正确（青蓝/白），严格保留了“淘”字的笔画拓扑结构和悬浮点的位置关系。底部有正确的接触阴影和融水细节，无违和元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 90,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "风格和内容基本正确，但主体似乎处于悬浮状态，缺乏与地面的坚实接触感（contact shadow较弱），且整体清晰度略低于 candidate_01。虽然也是优秀的冰雕重构，但在物理落地感上稍逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\taobao\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

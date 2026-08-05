@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了“支”字的拓扑结构（特别是底部的无限循环回路），色彩映射准确（深蓝+米白），背景纯黑，且正确应用了手绘/蜡笔质感和装饰元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "风格非常接近，识别度也很高。相比 candidate_01，其描边更粗且为闭合轮廓线，虽然符合风格，但稍微削弱了原图标底部“回旋丝带”的流动感，使其看起来更像一个整体的文字块，略微牺牲了一点几何特征的精确性，但依然是优秀的候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\alipay\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

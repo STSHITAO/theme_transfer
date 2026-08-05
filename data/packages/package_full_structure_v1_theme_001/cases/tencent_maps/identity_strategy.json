@@ -1,0 +1,38 @@
+{
+  "app": "tencent_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "红蓝双色拼接的指南针/箭头几何轮廓",
+  "brand_cues_to_preserve": [
+    "标志性的菱形/箭头主体轮廓",
+    "对角线分割的双色块空间布局（左下与右上）",
+    "指向右上方的动态趋势"
+  ],
+  "semantic_cues_to_preserve": [
+    "导航指针的形态",
+    "方向指示功能"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，对于高识别度的几何符号，必须严格保留其 2D 拓扑结构，仅做 Z 轴挤压和材质替换。腾讯地图的箭头轮廓极其简洁且具有高辨识度，任何重构都会导致无法识别，因此必须完整保留原图形的边缘曲线和比例，将其转化为厚实的冰雕实体。",
+  "design_rationale": "腾讯地图的核心识别在于其独特的红蓝拼色箭头形状。根据主题规则，必须去除原有的品牌色（红/蓝），统一转换为冰蓝色调。为了在去色后依然保持极高的识别度，需要依赖精准的轮廓还原和内部材质的通透感。策略上选择完全保留主体结构，将其处理为一个悬浮或放置在冰面上的半透明冰制指南针，利用光影折射来体现体积感，而非颜色差异。",
+  "must_preserve": [
+    "箭头的整体外轮廓曲线",
+    "中间分割线的走势（即使颜色统一，也要通过物理凹槽或内部纹理暗示分割）",
+    "指向右上方的角度"
+  ],
+  "can_recompose": [
+    "将原本的平面色块转化为具有厚度的 3D 实体",
+    "边缘处理为圆润的倒角（Chamfer），模拟冰块磨损感",
+    "表面增加冷凝水珠、内部气泡或雪花纹理",
+    "底部增加接触阴影和少量碎冰/水渍以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原有的红色和蓝色填充",
+    "禁止将箭头变形为其他物体（如真正的罗盘仪器或车辆）",
+    "禁止使用不透明的塑料质感",
+    "禁止主体悬空无投影"
+  ],
+  "generation_direction": "Generate a 3D icon of the Tencent Maps arrow shape made entirely of translucent light blue ice. The object should have significant thickness, rounded edges, and a glossy wet surface with internal bubbles or snowflakes. Remove all original red and blue colors; use only ice blue tones with white highlights and deep blue shadows. Place it on a pure white background with a soft contact shadow and small melting water details at the base. Maintain the exact silhouette and diagonal split structure of the original logo."
+}

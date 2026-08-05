@@ -1,0 +1,38 @@
+{
+  "app": "miyoushe",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "米游社标志性的白色兔子头部剪影，特别是其独特的长耳朵轮廓和极简的面部五官布局。",
+  "brand_cues_to_preserve": [
+    "兔子头部的整体外轮廓（包括两只竖立的长耳朵）",
+    "面部两个垂直椭圆形的眼睛/表情符号位置",
+    "圆润、亲和的卡通几何比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "社区吉祥物形象（米游兔）",
+    "年轻、活力的二次元社区氛围（通过材质的通透感和光泽感侧面表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（小电视）和 douban（豆字）的案例，对于具有高度辨识度的吉祥物或字符类图标，策略是将原有2D平面图形直接转化为3D实体。米游社的兔子形象结构清晰，无需重构，只需将其‘冻结’为冰块即可完美适配主题，同时保留极高的识别度。",
+  "design_rationale": "米游社的核心资产是其吉祥物形象。在冰雕主题下，将原本扁平的白色兔子转化为晶莹剔透的冰雕兔子，既符合‘冰雪环境’的全局设定，又能通过材质的折射光赋予角色新的生命力。必须严格保留兔子的剪影，因为这是用户识别该App的唯一视觉线索。原图的蓝色描边应转化为冰块的物理边缘厚度，而非保留蓝色线条。",
+  "must_preserve": [
+    "兔子头部的完整剪影形状",
+    "双耳的相对位置和大小比例",
+    "面部表情的相对位置",
+    "底部接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "原图的蓝色轮廓线（转化为冰块的边缘厚度和高光）",
+    "原图的纯白填充（转化为半透明冰体，内部包含气泡）",
+    "原图的纯色背景（替换为纯白留白）"
+  ],
+  "forbid": [
+    "禁止保留原图的蓝色描边线条（必须是体积边缘）",
+    "禁止生成不透明的白色塑料或石膏质感（必须是透光的冰）",
+    "禁止改变兔子的五官比例或耳朵形状",
+    "禁止添加复杂的场景道具（如胡萝卜、雪地），保持单体构图"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Miyoushe rabbit mascot head. Translucent cyan-blue ice material with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. No outline strokes; define shape via ice thickness and refraction. Centered composition on pure white background. Soft contact shadow and melting water puddle at the base. High fidelity C4D render style."
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 30,
+      "failure_reason": "严重结构错误：完全丢失了微信读书Logo的核心几何特征（书本底部的V型切口和气泡的相对位置）。生成了类似显示器或电视机的无关主体，属于严重的过度重构。",
+      "recommendation": "不推荐。虽然冰雕材质风格正确，但主体形状完全错误，无法识别为微信读书。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 30,
+      "failure_reason": "严重结构错误：与 candidate_01 相同，主体被重构为显示器/电视机形状，丢失了原始Logo的书本V型底边和气泡布局，不符合 preserve_major_structure 策略。",
+      "recommendation": "不推荐。主体几何结构完全错误，未能保留品牌识别线索。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\wechat_reading\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能遵循 transfer_plan 中的 structure_preservation_mode。计划明确要求保留‘底部书本开口的V型几何特征’和‘气泡在画面右下象限的位置比例’，但两张候选图都生成了类似显示器（Monitor/TV）的形状，这属于严重的幻觉或模型对原始轮廓理解错误。没有一张图符合‘微信读书’的身份约束。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

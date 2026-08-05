@@ -1,0 +1,38 @@
+{
+  "app": "karaoke",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "麦克风与音符/人脸轮廓融合的负空间剪影",
+  "brand_cues_to_preserve": [
+    "右下角突出的紫色麦克风手柄几何位置",
+    "中央类似眼睛或音符的圆形镂空结构",
+    "整体圆润的头部/气泡状外轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "麦克风的握持形态",
+    "歌唱/发声的抽象符号感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中抖音（Douyin）和支付宝（Alipay）的处理方式，对于具有高度辨识度的抽象符号（如音符、汉字），必须直接将其立体化为冰块，而非重构场景。全民K歌的图标本质是一个融合了麦克风元素的抽象符号，其轮廓本身就是最强的识别点，因此应完整保留原图的拓扑结构，仅做材质置换。",
+  "design_rationale": "全民K歌的原始图标是一个高抽象度的图形符号（麦克风+音符/人脸），符合主题包中'几何守恒，材质重构'的核心原则。为了保证在统一冰蓝色调下依然能被瞬间识别，必须严格锁定其独特的剪影轮廓（特别是右下角的麦克风手柄和中间的镂空）。策略上采用强保留模式，将原本的暖色渐变平面图形转化为厚实的半透明冰雕，利用冰内部的折射和气泡来丰富细节，而不是改变形状。",
+  "must_preserve": [
+    "原图标整体的外轮廓剪影（包括顶部的突起和右侧的缺口）",
+    "右下角麦克风手柄的相对位置和角度",
+    "中间圆形的负空间（镂空）结构",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "原本的红紫渐变色（必须替换为统一的浅冰蓝）",
+    "内部的平滑过渡（转化为冰块的内部纹理、气泡和裂纹）",
+    "边缘的锐利度（转化为圆润的倒角和高光）"
+  ],
+  "forbid": [
+    "禁止保留原本的红色或紫色作为主体颜色",
+    "禁止生成不透明的实心塑料块，必须体现次表面散射（SSS）效果",
+    "禁止改变麦克风和音符的相对位置关系",
+    "禁止添加复杂的背景场景（如舞台、灯光），保持纯白背景"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the 'WeSing' (Quanmin K Ge) logo. The subject is a thick, translucent cyan-blue ice block carved into the shape of the original logo: a stylized head combining a microphone handle at the bottom right and a circular negative space in the center. Material must be glossy wet ice with internal air bubbles and snowflake textures. No outline strokes. Pure white background with a realistic contact shadow and small melting water puddle at the base. High fidelity C4D render style."
+}

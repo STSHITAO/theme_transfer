@@ -1,0 +1,58 @@
+{
+  "app": "baidu_tieba",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标为高度符号化的几何图形（气泡+文字），符合主题中关于‘清晰几何符号’保留结构的判定标准。参考 Bilibili 案例，文字类 Logo 应保留其空间布局并转化为图形化块面，而非重构为其他物体。因此必须保留气泡外框和‘贴’字的相对位置关系。",
+  "preserve": [
+    "对话气泡的外轮廓特征（圆润矩形主体 + 底部三角形尖角）",
+    "汉字“贴”的笔画拓扑结构（左侧“贝”字旁与右侧“占”字的左右布局）",
+    "文字在气泡内部的居中或视觉平衡位置"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "底部尖角不可磨平，需保留以维持“对话/贴吧”语义",
+    "“贴”字的基本可识别性，严禁替换为其他字符或图形"
+  ],
+  "recompose_allowed": [
+    "将平滑矢量边缘重组为不规则、抖动的粗手绘轮廓",
+    "将标准印刷字体重组为粗犷、稚拙的手写涂鸦风格笔画",
+    "将原有的蓝紫渐变色重组为主题限定的高饱和度纯色块（深蓝/砖红/奶黄）"
+  ],
+  "restyle": [
+    "材质：从光滑矢量/拟物质感转变为蜡笔/马克笔干性绘画质感",
+    "线条：从无描边或细描边转变为粗重、不均匀的黑色手绘描边",
+    "光影：完全去除高光、阴影和立体感，转为扁平化色块拼接"
+  ],
+  "decorate": [
+    "允许在色块内部添加轻微的颗粒感或涂抹不均纹理以模拟手绘介质",
+    "允许在转角处进行圆钝化处理以符合拙朴风格"
+  ],
+  "forbid": [
+    "禁止保留原始的蓝紫色渐变或粉色光晕",
+    "禁止使用绿色、青色等主题色板之外的颜色",
+    "禁止使用细线条、完美对称或工业级锐利边缘",
+    "禁止添加任何投影、环境光遮蔽或3D渲染效果",
+    "禁止将主体替换为百度熊掌Logo或其他无关图形"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon on pure black background. Subject is a rough, deep blue speech bubble with a distinct bottom triangular point, outlined in thick uneven black marker strokes. Inside the bubble, the Chinese character '贴' is drawn in clumsy, thick crayon style using bright brick red or milky yellow. Flat colors only, no gradients, no shadows, naive and cute aesthetic.",
+  "color_application": "Map original purple/blue scheme to theme palette: Bubble body becomes solid Deep Blue or Brick Red; Character '贴' becomes contrasting Milky Yellow or White. Ensure high saturation and flat fill, strictly avoiding original gradients.",
+  "stroke_application": "Apply thick, irregular black/dark blue outlines to both the bubble shape and the character strokes. Mimic the pressure variation and jitter of a hand-held marker pen. Corners should be rounded or blunt, not sharp.",
+  "composition_application": "Center the simplified speech bubble containing the character. Scale to occupy 60-70% of the canvas. Maintain clear separation between the subject and the pure black background.",
+  "identity_application": "Preserve the topological structure of the character '贴' and the specific silhouette of the speech bubble (especially the bottom tip). Transform the visual style to hand-drawn doodle but keep the semantic meaning of 'post/comment' intact through the bubble shape.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must use thick, uneven hand-drawn style strokes",
+    "Colors must be limited to high-saturation Red, Blue, Yellow/White",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No realistic, photorealistic, or 3D rendered elements",
+    "No glossy, metallic, or glass effects",
+    "No fine vector lines or perfect symmetry",
+    "No white or colored backgrounds",
+    "No preservation of original brand gradient colors (purple/pink)"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "Subject mismatch: The candidate renders the character '支' (Alipay logo) instead of the target '听' (Ximalaya logo). Complete failure to preserve target identity.",
+      "recommendation": "Do not use. This is a generation error where the model outputted the reference style image content instead of the target app content."
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "Subject mismatch: The candidate renders the character '支' (Alipay logo) instead of the target '听' (Ximalaya logo). Complete failure to preserve target identity.",
+      "recommendation": "Do not use. Identical failure to candidate_01; wrong subject matter generated."
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\ximalaya\\candidates\\candidate_01.png",
+  "warning": "All candidates failed to generate the correct target subject ('听'). They both rendered the Alipay logo ('支') from the style reference images. No valid candidate exists for recommendation. All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

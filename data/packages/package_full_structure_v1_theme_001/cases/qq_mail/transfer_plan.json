@@ -1,0 +1,61 @@
+{
+  "app": "qq_mail",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，对于高识别度的几何图形或文字，必须严格保留其二维拓扑结构，仅进行 Z 轴挤出和材质替换。QQ邮箱的信封图标结构清晰简单，完全符合‘保留主体结构’的条件，无需重构。",
+  "preserve": [
+    "信封的长宽比例",
+    "内部V形折痕的角度和位置",
+    "外框与内部线条的相对粗细关系",
+    "整体居中对称的几何布局"
+  ],
+  "must_preserve": [
+    "经典的信封矩形外框",
+    "信封盖的倒V形线条（封口结构）",
+    "邮件/信件的通用符号语义",
+    "封闭且稳固的容器感"
+  ],
+  "recompose_allowed": [
+    "将原本的平面线条转化为具有厚度的实体冰块",
+    "边缘处理为圆润的倒角（Chamfer），模拟冰块磨损感",
+    "增加底部的物理接触阴影和少量碎冰细节"
+  ],
+  "restyle": [
+    "去除原有的黄橙渐变色",
+    "应用半透明冰晶材质",
+    "添加内部气泡和雪花纹理",
+    "表面增加湿润高光反射"
+  ],
+  "decorate": [
+    "底部添加融化水渍或微小碎冰",
+    "内部嵌入细微的冰裂纹路"
+  ],
+  "forbid": [
+    "禁止保留原有的橙色/黄色品牌色",
+    "禁止将信封设计为打开状态或异形状态",
+    "禁止使用不透明的蓝色塑料材质",
+    "禁止主体悬空无投影",
+    "禁止引入企鹅形象或对话气泡",
+    "禁止使用黑色或深色背景"
+  ],
+  "generation_brief": "3D icon of a classic mail envelope made of translucent light blue ice. Strictly preserve the rectangular frame and internal V-shaped flap line geometry. Extrude lines to have physical thickness with rounded, chamfered edges. Material is glossy wet ice with internal bubbles and snowflakes. Pure white background. Soft contact shadow and small melting water details at the base. No orange colors, no opaque plastic.",
+  "color_application": "Forcefully desaturate original yellow/orange gradient. Apply dominant Translucent Cyan/Light Ice Blue (#A0D8EF) to the entire envelope structure. Use Pure White for specular highlights and Deep Blue/Grey for internal shadows/refractions.",
+  "stroke_application": "Eliminate original 2D vector strokes. Transform lines into 3D solid ice extrusions. Define edges through lighting, refraction, and smooth rounded chamfers rather than hard outlines.",
+  "composition_application": "Center the 3D ice envelope sculpture. Occupy 60-70% of canvas height. Ensure the object rests on a ground plane with a soft diffuse contact shadow and subtle melting puddle details to anchor it.",
+  "identity_application": "Maintain recognizability by strictly preserving the topological structure of the envelope (rectangle + inverted V). Rely on shape and volume rather than color for identity. The 'sealed' nature of the envelope must remain visually apparent through the solid ice structure.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal material, not opaque plastic or metal.",
+    "Color palette strictly limited to ice blue/cyan spectrum; no original brand colors on the main body.",
+    "Must retain core silhouette recognizability despite material thickening.",
+    "Bottom must have environmental interaction (shadow/water/ice shards), no floating."
+  ],
+  "negative_constraints": [
+    "No flat vector style or 2D appearance.",
+    "No solid opaque colors (especially orange/yellow).",
+    "No dark backgrounds.",
+    "No low-poly or matte finishes.",
+    "No distortion of the envelope's fundamental geometric proportions."
+  ]
+}

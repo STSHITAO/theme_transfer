@@ -2,7 +2,7 @@
 
 ## Goal
 
-Generate a coherent package of themed mobile App icons from real theme examples, and evaluate the generated images objectively with an image-only ITTE pipeline. The product separates generation-time assistance from evaluation-time evidence.
+Generate a coherent package of themed mobile App icons from real theme examples, and evaluate the generated images objectively with image-derived ITTE scores. The product separates generation-time assistance from evaluation-time evidence; a structure policy frozen before generation controls only whether geometric identity evidence is applicable for each App.
 
 ## Users and workflows
 
@@ -16,7 +16,7 @@ Generate a coherent package of themed mobile App icons from real theme examples,
 - Single-App and package-level theme transfer.
 - Qwen-based theme/identity analysis and candidate QC.
 - Wan multi-image generation.
-- Deterministic ITTE v1.3 image evaluation with verified-label DINOv3 identity retrieval.
+- Deterministic ITTE v1.4 evaluation with verified-label DINOv3 identity retrieval gated per App by a pre-generation structure policy.
 - A self-contained real-image Benchmark with 91 originals, 231 themed assets and 158 verified original/theme pairs.
 - CPU/GPU inference selection and persistent feature caches.
 
@@ -40,3 +40,4 @@ Planned UI pages, if a frontend is added:
 - Generation-stage Qwen scores do not enter the ITTE primary score.
 - Benchmark theme descriptions are metadata, not scoring inputs.
 - Current validation establishes real-positive behavior and no-transfer separation; it does not claim human-opinion correlation or calibrated performance on synthetic degradation severity.
+- The structure policy does not contribute a score and cannot be changed after seeing generated results. It only marks DINOv3 geometric identity as primary evidence or diagnostic-only for that App.

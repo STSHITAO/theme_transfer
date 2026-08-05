@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 80,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "",
+      "recommendation": "保留了完整的品牌文字和电视轮廓，同时融入了主题风格的小羊元素，识别度最高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 30,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "风格非常统一且可爱，但为了适配粉色背景，将原本白色的品牌文字改为了深色/灰色，严重破坏了Bilibili的核心品牌色识别线索（白字粉/蓝底），导致身份约束得分较低。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 85,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "很好地平衡了主题风格与品牌识别，保留了白色文字和粉色背景的核心特征，是优秀的候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\bilibili\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

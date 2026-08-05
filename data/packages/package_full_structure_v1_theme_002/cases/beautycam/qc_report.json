@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的各项指令。它保留了原图标核心的“相机外轮廓（含顶部突起）+内部C形环+右上角菱形”的空间拓扑关系，完全符合 structure_preservation_mode: preserve_major_structure 的要求。风格上成功转换为粗犷手绘/马克笔质感，配色严格遵循了砖红、深蓝、奶黄的限定色板，且背景为纯黑。既保持了极高的品牌识别度，又完美融入了主题风格。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重丢失主体轮廓。虽然风格和配色正确，但完全丢失了原图标最关键的“相机机身外轮廓（带顶部突起）”，导致图像看起来像是一个通用的抽象符号或游戏技能图标，无法识别为“美颜相机”App。违反了 must_preserve 中关于相机轮廓和空间层级的约束，属于过度重构。",
+      "recommendation": "不推荐。尽管画风精美且符合主题色调，但它未能保留目标 App 的核心几何特征（相机框），导致用户无法通过图标识别应用功能，不符合 identity_constraint_level: balanced 的要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\beautycam\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

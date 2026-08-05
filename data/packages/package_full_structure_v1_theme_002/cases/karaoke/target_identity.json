@@ -1,0 +1,40 @@
+{
+  "app": "karaoke",
+  "identity_anchors": [
+    " stylized bird head profile facing right",
+    "circular body silhouette with ear-like tuft at top-left",
+    "white negative-space eye with red pupil",
+    "purple microphone held in lower-right quadrant",
+    "gradient from orange (top) to pink/magenta (bottom)"
+  ],
+  "must_preserve": [
+    "bird head orientation and ear tuft position",
+    "eye as white negative space with centered red dot pupil",
+    "microphone shape, placement, and purple color",
+    "overall circular form factor with smooth rounded edges",
+    "gradient direction: warm top (orange) to cool bottom (pink)"
+  ],
+  "can_restyle": [
+    "gradient saturation or hue shift within brand palette",
+    "microphone handle thickness or slight angle adjustment",
+    "edge softness or inner glow effects",
+    "background opacity or subtle texture overlay",
+    "pupil size relative to eye cavity (within recognizability limits)"
+  ],
+  "must_not_replace_with": [
+    "generic animal faces without microphone",
+    "abstract shapes lacking bird + mic combination",
+    "text-only logos or letterforms",
+    "cartoon characters unrelated to singing/karaoke",
+    "solid-color icons without gradient identity"
+  ],
+  "color_preservation": "Retain orange-to-pink vertical gradient as primary brand identifier; purple microphone must remain distinct and unsaturated away from body gradient. Eye white and pupil red are non-negotiable for recognition.",
+  "structure_summary": "Circular bird-head silhouette with top-left ear tuft, white negative-space eye containing red pupil, and purple microphone emerging from lower-right. Gradient flows vertically from orange to pink. All elements fused into single cohesive glyph.",
+  "risk_notes": [
+    "Removing microphone breaks karaoke association",
+    "Flattening gradient loses brand warmth signature",
+    "Rotating bird head disrupts user muscle memory",
+    "Replacing eye with solid shape eliminates negative-space identity",
+    "Using uniform color across body erases top-bottom thermal metaphor"
+  ]
+}

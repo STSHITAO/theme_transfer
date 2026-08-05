@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "完美遵循了所有约束。保留了音符与火焰的上下堆叠结构，使用了正确的奶黄/砖红配色和粗黑色手绘描边，且正确应用了蓝色四角星装饰。构图居中，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "空间关系重构过度。Transfer plan明确要求'火焰位于音符下方'及'托举关系'，但该图将火焰置于音符后方作为背景包裹，改变了原有的拓扑结构和遮挡关系，导致识别度略低于候选1。",
+      "recommendation": "风格符合，但违反了关于主体空间布局（火焰在下方托举）的严格约束，不如候选1准确。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\douyin_huoshan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

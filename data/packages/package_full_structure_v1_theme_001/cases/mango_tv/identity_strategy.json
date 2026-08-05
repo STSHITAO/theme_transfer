@@ -1,0 +1,37 @@
+{
+  "app": "mango_tv",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The distinctive 'M' letterform enclosed within a rounded square frame, representing the Mango brand initial.",
+  "brand_cues_to_preserve": [
+    "The specific geometry of the 'M' character (two vertical strokes connected by a V-shape).",
+    "The surrounding rounded square/rectangle border that encapsulates the 'M'.",
+    "The negative space relationship between the 'M' and the outer frame."
+  ],
+  "semantic_cues_to_preserve": [
+    "The screen-like enclosure implies a display or media window.",
+    "The solid, bold structure suggests a stable platform for content."
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'bilibili', the core geometric symbol (the 'M' inside the box) must be directly extruded into a 3D ice object. The original logo is already a simple, bold graphic suitable for direct material replacement without needing semantic reconstruction. The structure defines the brand identity completely.",
+  "design_rationale": "The Mango TV logo is a strong geometric symbol ('M' in a box). To fit the 'Ice Sculpture' theme, we treat the entire logo as a single thick block of ice. The orange background is removed, and the white logo shape becomes the volume of the ice itself. This maintains instant recognizability while applying the translucent, bubbly texture required by the theme.",
+  "must_preserve": [
+    "The 'M' shape proportions and stroke width relative to the frame.",
+    "The rounded corners of the outer frame.",
+    "The connectivity of the 'M' legs to the bottom of the frame (if applicable in the specific font variant) or their floating position."
+  ],
+  "can_recompose": [
+    "The thickness of the ice block (needs to be substantial to show refraction).",
+    "The internal distribution of bubbles and snowflake textures.",
+    "The specific angle of lighting to highlight the edges (Fresnel effect)."
+  ],
+  "forbid": [
+    "Using any orange color (strictly Cyan/Ice Blue only).",
+    "Flattening the icon (must look like a physical 3D object with depth).",
+    "Removing the outer frame (the 'M' cannot float freely without its container).",
+    "Making the ice opaque (must be translucent)."
+  ],
+  "generation_direction": "A thick, 3D ice sculpture of the Mango TV logo: a capital letter 'M' enclosed in a rounded square frame. Material is translucent cyan-blue ice with internal air bubbles and snowflake textures. Glossy wet surface with caustic lighting. Pure white background with a soft contact shadow and small melting water puddle at the base. No orange colors."
+}

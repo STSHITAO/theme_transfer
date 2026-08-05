@@ -1,0 +1,235 @@
+{
+  "package_id": "package_001_theme_001",
+  "theme_id": "theme_001",
+  "target_apps": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan",
+    "qq",
+    "tieba",
+    "wps",
+    "xiaohongshu"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "douyin",
+    "wechat"
+  ],
+  "theme_style_analysis": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\theme_style_analysis.json",
+  "theme_rules": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\theme_rules.json",
+  "theme_design_analysis": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\theme_design_analysis.json",
+  "generation_base_prompt": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\generation_base_prompt.txt",
+  "cases": {
+    "bilibili": {
+      "target_app": "bilibili",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\target_identity.json",
+      "target_profile": {
+        "app": "bilibili",
+        "display_name": "哔哩哔哩",
+        "category": "视频 / 内容社区",
+        "core_function": "观看和发布视频内容，浏览直播、动画、游戏、知识和生活等社区内容"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\bilibili\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\bilibili.png"
+    },
+    "damai": {
+      "target_app": "damai",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\damai\\damai.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\target_identity.json",
+      "target_profile": {
+        "app": "damai",
+        "display_name": "大麦",
+        "category": "演出 / 票务服务",
+        "core_function": "提供演唱会、剧场、体育赛事等活动的票务查询和购票服务"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\damai\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\damai.png"
+    },
+    "hanglvzongheng": {
+      "target_app": "hanglvzongheng",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\hanglvzongheng\\hanglvzongheng.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\target_identity.json",
+      "target_profile": {
+        "app": "hanglvzongheng",
+        "display_name": "航旅纵横",
+        "category": "航空出行 / 行程服务",
+        "core_function": "提供航班动态、行程管理、值机、登机口和机场出行相关信息服务"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\hanglvzongheng\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\hanglvzongheng.png"
+    },
+    "meituan": {
+      "target_app": "meituan",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\meituan\\meituan.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\target_identity.json",
+      "target_profile": {
+        "app": "meituan",
+        "display_name": "美团",
+        "category": "本地生活 / 服务平台",
+        "core_function": "提供餐饮、外卖、酒店、出行、休闲娱乐和本地生活服务信息"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\meituan\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\meituan.png"
+    },
+    "qq": {
+      "target_app": "qq",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\qq\\qq.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\target_identity.json",
+      "target_profile": {
+        "app": "qq",
+        "display_name": "QQ",
+        "category": "社交 / 通讯",
+        "core_function": "提供即时聊天、群组交流、语音视频通话、文件传输和社区互动服务"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\qq\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\qq.png"
+    },
+    "tieba": {
+      "target_app": "tieba",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\tieba\\405f68281d6d577866154c984322804c.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\target_identity.json",
+      "target_profile": {
+        "app": "tieba",
+        "display_name": "百度贴吧",
+        "category": "兴趣社区 / 论坛",
+        "core_function": "围绕兴趣主题发布帖子、回复讨论和浏览社区内容"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\tieba\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\tieba.png"
+    },
+    "wps": {
+      "target_app": "wps",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\wps\\wps.jpg",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\target_identity.json",
+      "target_profile": {
+        "app": "wps",
+        "display_name": "WPS Office",
+        "category": "办公 / 文档工具",
+        "core_function": "创建、编辑和查看文档、表格、演示文稿及相关办公文件"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\wps\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\wps.png"
+    },
+    "xiaohongshu": {
+      "target_app": "xiaohongshu",
+      "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\xiaohongshu\\xiaohongshu.png",
+      "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\target_identity.json",
+      "target_profile": {
+        "app": "xiaohongshu",
+        "display_name": "小红书",
+        "category": "内容社区 / 生活记录",
+        "core_function": "发布和浏览图文、视频笔记，记录和分享生活经验、商品体验、旅行、美妆、穿搭等内容"
+      },
+      "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\transfer_plan.json",
+      "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_01.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_02.png",
+        "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\candidates\\candidate_03.png"
+      ],
+      "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\wan_response.json",
+      "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\best_output.png",
+      "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\cases\\xiaohongshu\\qc_report.json",
+      "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\xiaohongshu.png"
+    }
+  },
+  "final_outputs": {
+    "bilibili": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\bilibili.png",
+    "damai": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\damai.png",
+    "hanglvzongheng": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\hanglvzongheng.png",
+    "meituan": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\meituan.png",
+    "qq": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\qq.png",
+    "tieba": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\tieba.png",
+    "wps": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\wps.png",
+    "xiaohongshu": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\final\\xiaohongshu.png"
+  },
+  "contact_sheet": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\contact_sheet.png",
+  "package_qc_report": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_001_theme_001\\package_qc_report.json",
+  "model_config": {
+    "plan_model": "qwen3.7-plus",
+    "image_model": "wan2.7-image-pro"
+  },
+  "mock_mode": true,
+  "created_at": "2026-07-08T12:50:47.078211+00:00"
+}

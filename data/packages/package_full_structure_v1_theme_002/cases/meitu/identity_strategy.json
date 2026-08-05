@@ -1,0 +1,38 @@
+{
+  "app": "meitu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的 'M' 形波浪线条与外围圆环结构",
+  "brand_cues_to_preserve": [
+    "M 字母的波浪起伏形态（模拟山峰或波形）",
+    "外围的圆形边框轮廓",
+    "红白配色的品牌基因（需映射为主题色板）"
+  ],
+  "semantic_cues_to_preserve": [
+    "图形化的字母 M",
+    "居中构图的徽章感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（M+圆环），符合 theme_rules 中关于保留清晰几何符号的要求。无需像游戏类 App 那样重构语义，只需将平滑的矢量线条转化为粗犷的手绘笔触，并严格执行去色和描边规则。",
+  "design_rationale": "美图秀秀的 Logo 具有极高的国民辨识度，其核心就是一个 stylized 的 'M'。在复古手绘主题下，强行改变结构会导致用户无法识别。策略是将原本精致、圆润的矢量 'M' 和圆环，重绘为类似马克笔或蜡笔涂抹的粗糙线条。颜色上，将原本的亮粉色/洋红色映射为主题限定的砖红或朱红，背景强制纯黑，增加内部的装饰性细节（如星星或噪点）以符合 motif_rules。",
+  "must_preserve": [
+    "M 字母的基本拓扑结构（左低右高或双峰形态）",
+    "外圈圆环的闭合或半闭合形态",
+    "主体居中的构图比例"
+  ],
+  "can_recompose": [
+    "线条的边缘必须破坏平滑感，改为抖动、断裂或粗细不均的手绘痕迹",
+    "颜色必须从品牌粉替换为砖红/朱红 + 奶黄/米白填充",
+    "圆环不必是完美的正圆，可以是手绘的不规则椭圆",
+    "可以在 M 的内部或周围添加主题规定的四角星装饰"
+  ],
+  "forbid": [
+    "禁止保留原本的亮粉色/洋红色（必须转为复古红）",
+    "禁止使用平滑的矢量曲线（必须有手绘拙稚感）",
+    "禁止保留原本的红色背景（必须为纯黑）",
+    "禁止添加阴影、高光或立体效果"
+  ],
+  "generation_direction": "Draw a thick, hand-drawn doodle style letter 'M' with wavy peaks inside a rough circular ring. Use brick red and creamy yellow flat colors on a pure black background. Apply heavy, uneven black marker strokes for outlines. No gradients, no shadows, naive art aesthetic."
+}

@@ -1,53 +1,179 @@
 {
   "theme_id": "theme_001",
-  "description": "应用图标主题风格参考包。每个参考样例由原始图标 original 和主题化后的风格参考图 style_ref 组成，用于分析 original -> style_ref 的共同设计变化。",
+  "description": "应用图标主题风格参考包。每个参考样例由同一 App 的原始图标和设计师主题图组成，用于分析 original -> style_ref 的共同设计变化。",
   "input_schema": "reference_original_to_style_ref",
   "reference_pair_schema": {
-    "original": "参考 App 的原始系统图标或未主题化图标，是该参考 App 的身份和功能语义来源。",
-    "style_ref": "同一参考 App 已完成主题绘制后的风格图，用于学习当前主题包的设计语言。"
+    "original": "参考 App 的原始图标，是该 App 的身份和功能语义来源。",
+    "style_ref": "同一 App 的设计师主题图，用于学习当前主题包的设计语言。"
   },
   "examples": {
     "alipay": {
       "app": "alipay",
       "display_name": "支付宝",
-      "category": "支付 / 金融服务",
-      "core_function": "提供支付、收款、转账、账单、生活缴费等金融和生活服务入口。"
+      "category": "金融 / 支付与生活服务",
+      "store_description": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。",
+      "core_function": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。"
     },
-    "baidu": {
-      "app": "baidu",
-      "display_name": "百度",
-      "category": "搜索 / 信息服务",
-      "core_function": "提供网页搜索、信息检索、知识查询和内容入口服务。"
+    "bilibili": {
+      "app": "bilibili",
+      "display_name": "哔哩哔哩",
+      "category": "视频 / 内容社区",
+      "store_description": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。",
+      "core_function": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。"
     },
-    "camera": {
-      "app": "camera",
-      "display_name": "相机",
-      "category": "系统工具 / 拍摄",
-      "core_function": "拍摄照片和视频，记录影像内容。"
+    "douban": {
+      "app": "douban",
+      "display_name": "豆瓣",
+      "category": "社区 / 文化内容",
+      "store_description": "围绕电影、图书、音乐和生活兴趣提供评分、评论、内容发现及小组交流。",
+      "core_function": "围绕电影、图书、音乐和生活兴趣提供评分、评论、内容发现及小组交流。"
     },
     "douyin": {
       "app": "douyin",
       "display_name": "抖音",
-      "category": "短视频 / 内容社区",
-      "core_function": "观看、发布和分享短视频、直播及娱乐内容。"
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。",
+      "core_function": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。"
     },
-    "phone": {
-      "app": "phone",
-      "display_name": "电话",
-      "category": "系统工具 / 通讯",
-      "core_function": "拨打和接听电话，管理通话记录，并作为联系人通信入口。"
+    "douyin_huoshan": {
+      "app": "douyin_huoshan",
+      "display_name": "抖音火山版",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频观看与创作、直播互动和生活化内容分享，强调轻量娱乐与社区交流。",
+      "core_function": "提供短视频观看与创作、直播互动和生活化内容分享，强调轻量娱乐与社区交流。"
     },
-    "wangyiyun": {
-      "app": "wangyiyun",
+    "douyu": {
+      "app": "douyu",
+      "display_name": "斗鱼",
+      "category": "直播 / 游戏娱乐",
+      "store_description": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。",
+      "core_function": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。"
+    },
+    "genshin": {
+      "app": "genshin",
+      "display_name": "原神",
+      "category": "游戏 / 开放世界角色扮演",
+      "store_description": "在开放世界中探索、解谜和战斗，通过角色收集与队伍搭配推进冒险剧情。",
+      "core_function": "在开放世界中探索、解谜和战斗，通过角色收集与队伍搭配推进冒险剧情。"
+    },
+    "jd": {
+      "app": "jd",
+      "display_name": "京东",
+      "category": "电商 / 综合购物",
+      "store_description": "提供数码家电、日用百货、生鲜等商品的在线购买、物流配送和售后服务。",
+      "core_function": "提供数码家电、日用百货、生鲜等商品的在线购买、物流配送和售后服务。"
+    },
+    "king_camp": {
+      "app": "king_camp",
+      "display_name": "王者营地",
+      "category": "游戏工具 / 社区",
+      "store_description": "作为王者荣耀官方社区，提供资讯、战绩查询、赛事内容、攻略和玩家交流。",
+      "core_function": "作为王者荣耀官方社区，提供资讯、战绩查询、赛事内容、攻略和玩家交流。"
+    },
+    "kuaishou": {
+      "app": "kuaishou",
+      "display_name": "快手",
+      "category": "视频 / 短视频与直播",
+      "store_description": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。",
+      "core_function": "提供短视频拍摄与观看、直播、社交互动和生活内容分享。"
+    },
+    "lol_assistant": {
+      "app": "lol_assistant",
+      "display_name": "掌上英雄联盟",
+      "category": "游戏工具 / 社区",
+      "store_description": "作为英雄联盟官方服务平台，提供游戏资讯、战绩查询、赛事内容、攻略和社区互动。",
+      "core_function": "作为英雄联盟官方服务平台，提供游戏资讯、战绩查询、赛事内容、攻略和社区互动。"
+    },
+    "lol_mobile": {
+      "app": "lol_mobile",
+      "display_name": "英雄联盟手游",
+      "category": "游戏 / MOBA竞技",
+      "store_description": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。",
+      "core_function": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。"
+    },
+    "meituan": {
+      "app": "meituan",
+      "display_name": "美团",
+      "category": "本地生活 / 综合服务",
+      "store_description": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。",
+      "core_function": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。"
+    },
+    "minecraft": {
+      "app": "minecraft",
+      "display_name": "我的世界",
+      "category": "游戏 / 沙盒创造",
+      "store_description": "在方块世界中进行建造、探索、生存和多人联机，支持自由创造与冒险玩法。",
+      "core_function": "在方块世界中进行建造、探索、生存和多人联机，支持自由创造与冒险玩法。"
+    },
+    "netease_music": {
+      "app": "netease_music",
       "display_name": "网易云音乐",
+      "category": "音乐 / 音频社区",
+      "store_description": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。",
+      "core_function": "提供在线音乐、歌单推荐、播客、有声内容、评论和音乐社区互动。"
+    },
+    "peace_elite": {
+      "app": "peace_elite",
+      "display_name": "和平精英",
+      "category": "游戏 / 战术射击",
+      "store_description": "提供多人战术竞技、团队协作、射击生存和多种地图模式。",
+      "core_function": "提供多人战术竞技、团队协作、射击生存和多种地图模式。"
+    },
+    "pinduoduo": {
+      "app": "pinduoduo",
+      "display_name": "拼多多",
+      "category": "电商 / 综合购物",
+      "store_description": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。",
+      "core_function": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。"
+    },
+    "qq_mail": {
+      "app": "qq_mail",
+      "display_name": "QQ邮箱",
+      "category": "效率 / 邮件",
+      "store_description": "提供邮件收发、附件管理、日历提醒、多账号登录和邮件分类处理。",
+      "core_function": "提供邮件收发、附件管理、日历提醒、多账号登录和邮件分类处理。"
+    },
+    "qq_music": {
+      "app": "qq_music",
+      "display_name": "QQ音乐",
       "category": "音乐 / 音频娱乐",
-      "core_function": "播放音乐、发现歌单、收听音频内容，并参与音乐社区互动。"
+      "store_description": "提供歌曲播放、歌单、电台、数字专辑、歌词和个性化音乐推荐。",
+      "core_function": "提供歌曲播放、歌单、电台、数字专辑、歌词和个性化音乐推荐。"
+    },
+    "quark": {
+      "app": "quark",
+      "display_name": "夸克",
+      "category": "工具 / 搜索与浏览器",
+      "store_description": "提供网页浏览、智能搜索、AI问答、网盘、扫描和文档处理等工具服务。",
+      "core_function": "提供网页浏览、智能搜索、AI问答、网盘、扫描和文档处理等工具服务。"
+    },
+    "tmall": {
+      "app": "tmall",
+      "display_name": "天猫",
+      "category": "电商 / 品牌购物",
+      "store_description": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。",
+      "core_function": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。"
     },
     "wechat": {
       "app": "wechat",
       "display_name": "微信",
       "category": "社交 / 通讯",
-      "core_function": "提供聊天、社交、语音视频通话、支付和小程序等综合服务。"
+      "store_description": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。",
+      "core_function": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。"
+    },
+    "weibo": {
+      "app": "weibo",
+      "display_name": "微博",
+      "category": "社交 / 公共内容",
+      "store_description": "提供热点资讯、图文与视频发布、关注互动、话题讨论和公开社交。",
+      "core_function": "提供热点资讯、图文与视频发布、关注互动、话题讨论和公开社交。"
+    },
+    "youku": {
+      "app": "youku",
+      "display_name": "优酷",
+      "category": "视频 / 流媒体",
+      "store_description": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。",
+      "core_function": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。"
     }
   }
 }

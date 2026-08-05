@@ -1,0 +1,55 @@
+{
+  "app": "Ctrip",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视）和 douban（豆字）的案例，对于具有极高国民度和独特几何特征的具象符号，必须严格保留其原始轮廓拓扑。携程的海豚剪影是其核心资产，不能进行语义重组（如改为飞机或行李箱），否则会导致用户无法识别。策略是将平面海豚直接转化为立体的冰雕实体。",
+  "preserve": [
+    "海豚头部、背鳍、尾鳍的精确相对位置和曲线走势",
+    "海豚身体弯曲形成的封闭/半封闭负空间形状（隐含 'C' 字结构）",
+    "整体构图的重心平衡与向上跳跃的动态姿态"
+  ],
+  "must_preserve": [
+    "海豚的整体侧身跳跃姿态与头部朝向",
+    "身体曲线围合出的 'C' 形负空间",
+    "图形主体的白色高亮属性（通过冰材质的高光与透光区体现，而非颜色）"
+  ],
+  "recompose_allowed": [
+    "原图中的橙色尾巴部分（融合进统一的冰蓝材质中，不再强调颜色区分）",
+    "眼睛的细节（简化为冰块内部的一个气泡或折射点，无需画出瞳孔）",
+    "表面的平滑度（增加冰裂纹理和湿润的高光反射）"
+  ],
+  "restyle": [
+    "将原本扁平的白色海豚剪影转化为具有厚度的3D冰砖结构",
+    "材质替换为半透明青冰蓝（Cyan-Ice Blue），具备次表面散射效果",
+    "去除所有原有品牌色（深蓝背景、橙色点缀），统一为冰色调"
+  ],
+  "decorate": [
+    "内部嵌入随机分布的微小空气气泡和雪花纹理",
+    "表面添加湿润的高光反射和菲涅尔边缘光",
+    "底部添加融化的水渍、小水洼及柔和的接触阴影"
+  ],
+  "forbid": [
+    "禁止保留原本的深蓝色背景和橙色尾巴颜色",
+    "禁止改变海豚的跳跃方向或身体比例",
+    "禁止生成不透明的实心蓝色塑料质感",
+    "禁止添加额外的场景元素（如海浪、沙滩、飞机、行李箱）",
+    "禁止使用描边线条界定轮廓"
+  ],
+  "generation_brief": "3D icon of Ctrip dolphin logo carved from translucent cyan ice. Exact leaping silhouette preserved. Internal air bubbles and snowflake textures. Glossy wet surface with caustic lighting. No orange color, no blue background. Pure white background with melting water puddle and soft shadow at base. High fidelity octane render.",
+  "color_application": "强制去色。原品牌的深蓝背景移除，主体由白色/橙色转为统一的半透明青冰蓝（Cyan-Ice Blue）与透明白（Translucent White）。利用材质的厚度变化产生深蔚蓝（Deep Azure）阴影，完全摒弃原有品牌色相。",
+  "stroke_application": "消除所有二维描边。将海豚的轮廓线转化为3D实体的物理边缘，通过倒角处理（Chamfered edges）捕捉高光，利用光影切割和折射率差异来界定形状，而非绘制线条。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。海豚主体居中，占据画布约60%-70%空间，四周留白。底部预留空间给投影和水渍，增强物体放置在白色平面上的真实物理感。",
+  "identity_application": "通过严格保持海豚跃起的几何剪影和腹部'C'形负空间来保留身份。原有的橙色尾部特征被材质化消融，不再作为颜色识别点，而是通过形态的完整性确保用户能通过剪影瞬间识别出是携程海豚。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍细节。",
+    "严禁直接使用原图的高饱和度品牌色（蓝、橙）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止出现暖色调主体、木质/金属/磨砂材质、复杂背景场景。",
+    "禁止破坏身份：禁止改变海豚的身体比例、跳跃方向，禁止丢失'C'形负空间，禁止将海豚误绘为鲸鱼或其他海洋生物。"
+  ]
+}

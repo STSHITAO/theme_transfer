@@ -1,0 +1,36 @@
+{
+  "app": "hello_bike",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“哈啰”二字的特定字体结构与笔画几何特征",
+  "brand_cues_to_preserve": [
+    "“哈”字左侧口字旁与右侧合字的紧凑比例",
+    "“啰”字右侧罗字的上下结构布局",
+    "整体文字的圆角处理风格"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字本身的识别性（作为品牌名即功能入口）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和豆瓣（Douban）的案例均证明，对于以汉字或独特符号为核心的图标，必须严格保留其二维平面拓扑结构，仅进行Z轴拉伸和材质替换。哈啰图标的核心资产即为这两个汉字的特定字形，任何对笔画的简化或重组都会导致品牌识别失效，因此必须采用 preserve_major_structure 模式，将文字直接转化为冰雕实体。",
+  "design_rationale": "哈啰出行图标由极具辨识度的定制字体构成。在冰雪主题下，最佳策略是将这两个字视为两块独立的、紧挨着的冰砖或一个整体的冰雕文字块。利用冰材质的通透感和内部气泡来打破纯文字图标的单调感，同时严格遵守主题的去色规则，将原本的蓝底白字反转为白背景下的冰蓝字（或透明冰体配环境光），确保视觉语言与整包主题高度统一。",
+  "must_preserve": [
+    "“哈啰”二字的完整字形结构",
+    "文字笔画的粗细比例和圆角特征",
+    "两个字之间的相对位置和间距"
+  ],
+  "can_recompose": [
+    "底部的波浪线条装饰（建议移除或极度简化为冰底座纹理，以免干扰主体文字）",
+    "原有的蓝色背景（必须替换为纯白）",
+    "文字颜色（必须转换为冰材质表现）"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构（如把口字旁写成圆圈）",
+    "禁止保留原始的深蓝色背景",
+    "禁止生成不透明的实心蓝色塑料字",
+    "禁止添加与文字无关的自行车具象模型"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Chinese characters '哈啰'. The characters should be made of translucent cyan-blue ice with internal bubbles and snowflake textures. Place them on a pure white background. Ensure the font structure matches the original logo exactly. Add glossy highlights and a subtle melting water puddle at the base. No solid colors, no background graphics."
+}

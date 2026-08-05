@@ -1,0 +1,61 @@
+{
+  "app": "king_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标已经是高度抽象的几何符号（类似靶心或漩涡），符合主题对于‘单体居中构图’和‘几何块面组合’的要求。参考 Bilibili 和 Douyin 的案例，当原标本身就是清晰符号时，应保留其拓扑结构，仅进行材质和色彩的‘主题化重绘’，而非重构。",
+  "preserve": [
+    "中心的圆点及向下的垂直切口结构（靶心/定位隐喻）",
+    "外围包裹的不对称旋风/叶片状轮廓",
+    "整体图形的负空间关系和旋转动态感",
+    "主体在画布中的居中位置和大致比例"
+  ],
+  "must_preserve": [
+    "中心靶心的基本几何比例和拓扑结构",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感描边",
+    "品牌识别线索：靶心形态与旋风轮廓"
+  ],
+  "recompose_allowed": [
+    "将原本的棕黄色填充替换为红、蓝、奶黄的色块组合",
+    "将平滑的矢量边缘转化为抖动的马克笔线条",
+    "在色块内部增加简单的白色高光点或星星装饰以增强童趣感"
+  ],
+  "restyle": [
+    "去除所有立体光影、渐变和金属质感",
+    "应用哑光平涂质感，模拟蜡笔或记号笔涂抹效果",
+    "边缘处理为不规则、圆润且带有抖动感的粗线条"
+  ],
+  "decorate": [
+    "使用高饱和度的砖红、深宝蓝、暖黄/米白进行色块分割",
+    "保持极简构图，无额外背景装饰元素"
+  ],
+  "forbid": [
+    "禁止保留原本的棕黄色调或品牌标准色",
+    "禁止使用细线条、平滑矢量线或无描边设计",
+    "禁止添加立体阴影、高光渲染或渐变效果",
+    "禁止改变中心靶心的基本几何比例导致不可识别",
+    "禁止使用绿色、紫色等主题色板之外的颜色",
+    "禁止写实风格、3D渲染或复杂细节"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of a stylized target/vortex shape on pure black background. Subject features a central dot with a vertical downward cut, wrapped by an asymmetrical swirling leaf-like contour. Use thick, rough, uneven black marker outlines. Fill shapes with solid flat blocks of high-saturation Brick Red, Indigo Blue, and Creamy Yellow. No gradients, no shadows, matte crayon texture. Centered composition, naive and clumsy aesthetic.",
+  "color_application": "强制去色并重构配色。将原图的深褐色/棕黄色映射为主题限定的高饱和度色板：外环旋风部分可使用深宝蓝或砖红，中心靶心部分使用暖黄或对比色。严禁使用渐变色，坚持纯色块填充。",
+  "stroke_application": "从原图的无描边或精细矢量边缘，转变为粗重的黑色手绘描边。线条需呈现明显的抖动感和厚度变化，模拟马克笔快速涂抹的痕迹，转角处处理为圆角或不规则钝角。",
+  "composition_application": "保持原图的中心化符号构图。主体占据画布约60%-70%面积，四周留黑均匀。删减所有非核心的装饰性元素，仅保留靶心和旋风轮廓的核心几何块面。",
+  "identity_application": "在不破坏主题手绘拙朴感的前提下，严格保留‘中心带切口的靶心’和‘外围不对称旋风’的拓扑结构。通过色块的颜色区分（如内圈与外环异色）来强化结构层次，确保用户仍能通过形状联想识别出王者营地的‘基地/枢纽’隐喻。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白的高饱和度组合范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或保留原图的棕褐色调",
+    "禁止破坏身份的结构性改变（如变成圆形或字母K）",
+    "禁止出现光滑塑料感、金属光泽或3D渲染效果",
+    "禁止线条过于平滑、锐利或具有工业设计感",
+    "禁止背景非纯黑或包含额外装饰光效"
+  ]
+}

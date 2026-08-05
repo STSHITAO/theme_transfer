@@ -1,0 +1,40 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "英雄联盟标志性的'L'与'O'交织盾牌徽章（LoL Logo）",
+  "brand_cues_to_preserve": [
+    "经典的 LoL 盾牌轮廓结构",
+    "内部 L 形与 O 形的拓扑连接关系",
+    "盾牌底部的尖角特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "坚硬的防御感（通过冰的厚度体现）",
+    "竞技徽章的庄重感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Douban 等案例均严格保留了原图标的几何骨架。尽管目标 App 当前图标为人物海报，但作为系统应用图标，必须回归其最具辨识度的品牌符号——LoL 盾牌徽标。该徽标具有高度抽象且独特的几何特征，符合 theme_design_analysis 中'保留核心几何轮廓'的要求，因此选择将二维徽标直接转化为三维冰雕实体，而非重构场景。",
+  "design_rationale": "当前提供的原始图标是带有'4周年'字样的人物海报，不适合作为系统级统一主题图标。为了融入'冰雪拟物'主题并保持极高的品牌识别度，策略是将英雄联盟的核心视觉资产——盾牌 Logo 进行材质化重构。利用冰块的厚重感和透光性来表现盾牌的坚固，同时完全去除原图的暖色（橙色爆炸框）和复杂背景，仅保留纯净的冰蓝主体，以符合整包主题的洁净感。",
+  "must_preserve": [
+    "LoL 盾牌的整体外轮廓比例",
+    "内部 L 与 O 字母的负空间切割形状",
+    "底部中心的锐利尖角",
+    "半透明冰质感与内部气泡纹理",
+    "底部的物理接触阴影与水渍"
+  ],
+  "can_recompose": [
+    "将原本平面的矢量线条转化为具有倒角的厚实冰砖边缘",
+    "忽略原图中的金属质感或金色描边，统一替换为冰的高光反射",
+    "移除所有文字（如'4周年'）和人物形象"
+  ],
+  "forbid": [
+    "禁止生成不透明的蓝色塑料块",
+    "禁止保留原图的橙色/红色爆炸背景元素",
+    "禁止改变盾牌内部的字母结构导致无法识别",
+    "禁止使用写实的人物头像作为图标主体",
+    "禁止缺少底部投影导致物体悬浮"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the League of Legends shield logo. The shape must be the classic LoL crest with the interlocking L and O. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Edges are chamfered and glossy. Pure white background with a melting water puddle and contact shadow at the base. No text, no characters, no orange colors."
+}

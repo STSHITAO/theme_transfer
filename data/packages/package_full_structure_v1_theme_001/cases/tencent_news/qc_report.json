@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 40,
+      "style_match_score": 40,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反色彩约束：保留了原始的黄色、绿色和红色，未执行‘全部替换为冰蓝/青色渐变’的指令。材质呈现有色玻璃质感而非统一的冰雕质感。",
+      "recommendation": "不推荐。虽然结构还原度极高，但完全无视了主题化的核心色彩规则（去色换冰蓝），导致无法融入统一的冰雪主题包。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了所有指令：将企鹅和弧线转化为半透明冰雕，统一了Pale Cyan色调，保留了精确的几何轮廓和空间拓扑关系，且背景干净无杂质。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\tencent_news\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

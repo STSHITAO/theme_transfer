@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与生成计划。严格保留了信封的矩形外框和内部V形折痕结构（preserve_major_structure），材质为半透明冰晶且带有气泡细节，底部有融化的水渍投影，无悬浮感。识别度极高，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "虽然材质风格正确，但构图采用了俯视/倾斜角度，导致信封的几何比例（长宽比）发生透视变形，不如正面视图清晰。此外，底部缺乏明显的接触阴影或融化细节，主体略显悬浮，不符合'禁止主体悬空'的约束。",
+      "recommendation": "风格匹配但结构和落地感不如 candidate_01。透视角度削弱了作为图标的识别效率，且缺少底部环境交互细节。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qq_mail\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

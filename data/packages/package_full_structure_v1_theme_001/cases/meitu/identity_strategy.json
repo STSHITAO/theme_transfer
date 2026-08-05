@@ -1,0 +1,37 @@
+{
+  "app": "meitu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "圆环包裹下的 'M' 形波浪线条（类似山脉或心电图的几何结构）",
+  "brand_cues_to_preserve": [
+    "外部完整的圆形轮廓",
+    "内部 'M' 字母的独特起伏曲线（左低右高，中间有波峰）",
+    "图形与外圆的相对比例关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "流畅的线条感（暗示修图的平滑与美化）",
+    "封闭的环形结构（暗示全能工具箱）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和抖音（Douyin）的处理方式，对于具有高度抽象且独特几何符号的图标，必须直接将其立体化。美图的 'M' 形线条具有极高的辨识度，不需要语义重构，只需将原本的白色扁平线条转化为具有厚度的冰质实体，并保留外圆作为边界容器即可。",
+  "design_rationale": "美图秀秀的原图标由极简的几何线条构成，非常适合转化为3D冰雕风格。策略上采用'几何守恒，材质重构'：完全去除原本的红色背景和白色填充，将整个图标（包括外圆和内部M形）统一转化为半透明的浅冰蓝色实体。为了增强立体感，内部的'M'线条不应是平贴在背景上的，而应表现为悬浮在圆环平面之上或与之融为一体的厚冰条，利用次表面散射（SSS）展现冰的通透质感。",
+  "must_preserve": [
+    "原图标的正圆外框结构",
+    "内部'M'形的具体笔画走势（特别是右侧向上的笔触）",
+    "线条边缘的圆润倒角（模拟冰块打磨感）"
+  ],
+  "can_recompose": [
+    "将原本的2D平面线条增加Z轴厚度，变为立体的冰柱/冰条",
+    "在冰体内部添加随机的雪花、气泡纹理",
+    "在外圆底部增加融化的水渍和接触阴影"
+  ],
+  "forbid": [
+    "禁止保留原本的红色背景",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止改变'M'的线条曲率导致识别错误",
+    "禁止去掉外圆只保留内部线条"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the Meitu logo. The subject is a thick, translucent cyan-blue ice ring containing a stylized 'M' shaped ice wave inside. Material is glossy clear ice with internal bubbles and snowflake textures. No red colors. Pure white background. Soft contact shadow and melting water puddle at the bottom. Centered composition."
+}

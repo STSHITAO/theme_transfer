@@ -1,0 +1,217 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D Ice/Crystal Material Theme. The theme transforms flat 2D vector icons into three-dimensional, translucent ice sculptures. The visual language is defined by a cold, refreshing atmosphere with a unified pale cyan/blue color palette, regardless of the original icon's color. Key features include internal refraction, surface condensation (water droplets), embedded snowflake details, and a grounded physical presence on a white background.
+
+[Reference Raw To Style Transform]
+The transformation converts flat geometry into volumetric 3D objects with significant thickness (extrusion). Original colors are discarded in favor of a uniform 'frozen water' aesthetic (pale blue/cyan). The material becomes semi-transparent glass or ice, allowing light to pass through while maintaining structural integrity. Flat edges become rounded and smooth, mimicking the erosion of ice or polished crystal.
+
+[Color Transform Rule]
+强制去色处理。无论 original 是红、绿、蓝还是多色渐变，style_ref 一律转换为统一的冰蓝色调。仅保留明度变化以表现体积，不再保留原始品牌的识别色（如支付宝蓝、豆瓣绿均被同化为冰蓝）。
+
+[Background Transform Rule]
+从 original 的纯色填充或复杂渐变背景，彻底转换为纯白/亮白背景。移除所有非主体的背景装饰元素，仅保留主体下方的投影和微量水迹以支撑空间关系。
+
+[Stroke Transform Rule]
+消除所有 2D 描边。将原本的平面线条转化为具有物理厚度的 3D 实体。边缘不再是锐利的矢量线，而是具有折射率的圆润冰体边缘。
+
+[Composition Transform Rule]
+从平面扁平化布局转换为 2.5D 或 3D 立体布局。主体被赋予 Z 轴厚度，通常略微侧转或正视但强调体积。原本位于底部的装饰（如火山版的火焰）可能被移位至顶部悬浮或缩小作为点缀，以避免破坏主体的完整性。
+
+[Subject Scale Rule]
+主体在画布中保持较大比例（约占高度的 60-70%），但在垂直方向上可能因为增加了底座或为了容纳立体透视而略微压缩视觉高度。允许为主体增加一个通用的“冰台”底座。
+
+[Detail Complexity Rule]
+简化原始图形的内部细节，转而增加材质层面的细节（气泡、纹理）。不追求还原原始 logo 的每一个像素转折，而是追求整体轮廓在结冰后的形态准确性。
+
+[Theme Fidelity Constraints]
+[
+  "必须使用统一的冰蓝色半透明材质，严禁使用原始品牌色。",
+  "必须包含内部气泡、雪花或冰裂纹理，这是该主题的核心指纹。",
+  "主体必须呈现 3D 立体感，不能是平面的蓝色剪影。",
+  "背景必须保持干净洁白，突出主体的通透感。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留原始 App 的品牌主色（如绿色、红色、粉色）。",
+  "禁止使用不透明的塑料或金属材质，必须是透光的冰/水晶质感。",
+  "禁止使用复杂的场景背景，必须是纯色背景。",
+  "禁止将主体完全重构为无关物体（如把抖音变成真正的乐器），必须保留原 Logo 的几何轮廓。"
+]
+
+[Theme Board]
+{
+  "palette": "统一采用高透明度的冰蓝色（Ice Blue）或淡青色作为主体材质色，完全覆盖原始品牌色。背景统一为纯白或极浅的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无描边线条。依靠3D模型的体积感、边缘的高光折射以及内部的气泡/裂纹纹理来界定轮廓。边缘处理圆润光滑，模拟冰块融化或打磨后的质感。",
+  "material": "核心材质为“冻冰”或“水晶”。具有明显的次表面散射（SSS）效果，表现为半透明、通透且带有内部杂质（如微小气泡、雪花结晶、冰裂纹理）。表面呈现湿润的高光反射。",
+  "background": "极简留白。主体通常悬浮或放置在一个薄薄的冰层底座上，底部有轻微的接触阴影和融化的水渍，增强落地感。",
+  "composition": "单体居中构图。主体占据画布约 60%-70% 的空间，保持视觉重心稳定。对于原本复杂的图形，进行立体化拉伸，使其具有厚度。",
+  "motif_rules": "必须在主体内部或表面嵌入“雪花”、“冰晶”或“气泡”作为通用装饰纹理。若原图标包含特定语义元素（如火焰、音符），需将其转化为冰雕质感，或以微缩形式作为附属物保留。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: xigua_video
+
+[transfer_plan]
+{
+  "app": "xigua_video",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'douyin' and 'alipay' reference patterns, the core logo geometry must be strictly preserved to maintain brand recognition. The transformation is purely material (flat red vector -> 3D ice sculpture) and dimensional (adding Z-axis thickness), without altering the silhouette or internal proportions.",
+  "preserve": [
+    "The exact outer boundary curve of the organic blob shape",
+    "The central triangular play button cutout (negative space)",
+    "The relative position of the play button within the mass",
+    "The specific lower-left inward concave curve characteristic"
+  ],
+  "must_preserve": [
+    "The exact outer boundary curve of the red shape",
+    "The triangular hole in the center",
+    "3D extrusion/thickness of the object",
+    "Internal bubbles/snowflake textures within the ice volume"
+  ],
+  "recompose_allowed": [
+    "Surface details (add condensation droplets, frost)",
+    "Edge highlights (specular reflections to define the 3D form)",
+    "Base contact shadow and melting water puddle",
+    "Internal refraction and subsurface scattering effects"
+  ],
+  "restyle": [
+    "Convert original flat red vector to translucent pale cyan/ice-blue 3D volume",
+    "Replace solid color with crystalline ice material containing micro-bubbles and snowflakes",
+    "Round off sharp vector edges to mimic eroded/polished ice contours"
+  ],
+  "decorate": [
+    "Embed stylized snowflake patterns within the ice volume",
+    "Add scattered water droplets (condensation) on the surface",
+    "Apply glossy specular highlights on upper edges",
+    "Add subtle ground shadow and small water puddle at base"
+  ],
+  "forbid": [
+    "Retaining the original red/pink/warm colors",
+    "Flattening the icon into a 2D blue shape",
+    "Changing the organic blob shape into a perfect circle, square, or standard geometric shape",
+    "Using opaque plastic, metal, or stone materials",
+    "Depicting realistic watermelon slices or fruit imagery",
+    "Complex background scenes (must be clean white)"
+  ],
+  "generation_brief": "3D icon of Xigua Video logo as a thick translucent ice sculpture. Pale cyan/ice-blue material with internal bubbles and embedded snowflakes. Glossy wet surface with condensation droplets. Strictly preserve the irregular organic blob outline and central triangular play cutout. White background with soft contact shadow and water puddle at base. No red colors, no flat vectors.",
+  "color_application": "Discard original high-saturation red. Apply uniform pale cyan/ice-blue palette. Use lightness variations only to define 3D volume and refraction, not brand identity.",
+  "stroke_application": "Eliminate all 2D strokes. Define edges through 3D volume, light refraction, and specular highlights. Ensure contours are smooth, rounded, and beveled like worn ice.",
+  "composition_application": "Center the 3D ice object occupying 60-70% of canvas. Add Z-axis thickness to the flat logo. Anchor with a subtle ground shadow and water puddle on a pure white background.",
+  "identity_application": "Maintain strict fidelity to the unique asymmetrical organic silhouette and the central negative-space triangle. Identity is conveyed solely through shape preservation, as color is standardized to the theme.",
+  "fidelity_constraints": [
+    "Must use unified ice-blue semi-transparent material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must present clear 3D volumetric presence with subsurface scattering",
+    "Background must be clean white/high-key"
+  ],
+  "negative_constraints": [
+    "No original brand colors (red/warm tones)",
+    "No opaque materials (plastic/metal/stone)",
+    "No complex or dark backgrounds",
+    "No distortion of the core organic blob silhouette",
+    "No realistic fruit depiction"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: Discard original high-saturation red. Apply uniform pale cyan/ice-blue palette. Use lightness variations only to define 3D volume and refraction, not brand identity.
+Stroke application: Eliminate all 2D strokes. Define edges through 3D volume, light refraction, and specular highlights. Ensure contours are smooth, rounded, and beveled like worn ice.
+Composition application: Center the 3D ice object occupying 60-70% of canvas. Add Z-axis thickness to the flat logo. Anchor with a subtle ground shadow and water puddle on a pure white background.
+Identity application: Maintain strict fidelity to the unique asymmetrical organic silhouette and the central negative-space triangle. Identity is conveyed solely through shape preservation, as color is standardized to the theme.
+
+Fidelity constraints:
+[
+  "Must use unified ice-blue semi-transparent material",
+  "Must include internal bubbles, snowflakes, or ice crack textures",
+  "Must present clear 3D volumetric presence with subsurface scattering",
+  "Background must be clean white/high-key"
+]
+
+Negative constraints:
+[
+  "No original brand colors (red/warm tones)",
+  "No opaque materials (plastic/metal/stone)",
+  "No complex or dark backgrounds",
+  "No distortion of the core organic blob silhouette",
+  "No realistic fruit depiction"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching xigua_video's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like xigua_video as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

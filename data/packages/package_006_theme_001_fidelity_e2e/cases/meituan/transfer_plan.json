@@ -1,0 +1,60 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "Chinese characters '美团' (Meituan)",
+    "Relative spatial arrangement of the two characters",
+    "Brand yellow color identity (adapted to pastel/cream tone)",
+    "Rounded square container shape"
+  ],
+  "must_preserve": [
+    "Legibility of '美团' characters",
+    "Thick, bold stroke weight of the characters (avoid thin lines)",
+    "High contrast logic: Dark text on Light background",
+    "Interaction with the unified white mascot character"
+  ],
+  "recompose_allowed": [
+    "Transform sharp vector font edges into soft, rounded, balloon-like or clay-like shapes",
+    "Adjust yellow saturation to match theme's pastel/cream palette",
+    "Add hand-drawn black sketchy outlines around characters",
+    "Position mascot interacting physically with the text (e.g., hugging, resting on top)"
+  ],
+  "restyle": [
+    "Convert flat typography into soft, matte, puffy 3D-like cartoon objects",
+    "Apply irregular hand-drawn black outlines to character strokes",
+    "Soften corners and terminals of the font to mimic marker/pen drawing"
+  ],
+  "decorate": [
+    "Unified white fluffy animal mascot (puppy/sheep) interacting with the text",
+    "Subtle matte texture resembling children's book illustration",
+    "Creamy yellow background with slight paper/sticker质感"
+  ],
+  "forbid": [
+    "Replacing text with kangaroo icon or other symbols",
+    "Using original high-saturation Meituan yellow (#FFC300)",
+    "Using sharp, geometric, or standard system fonts",
+    "Omitting the white mascot",
+    "Complex gradients, glossy effects, or realistic 3D rendering",
+    "White background with black text (must remain yellow-ish background)"
+  ],
+  "generation_brief": "A healing hand-drawn cartoon app icon. Background is a creamy pale yellow rounded square. The main subject is the Chinese text '美团' rendered as soft, puffy, bubble-letter style shapes in pastel yellow, with thick, irregular black hand-drawn outlines. A cute small white fluffy puppy is hugging the character '团' or resting its chin on the character '美'. Matte texture, no gloss, simple composition, high quality illustration.",
+  "color_application": "Replace original high-saturation brand yellow with a low-saturation pastel cream/yellow. Keep text color as a soft dark grey/black or deep warm brown to maintain contrast but reduce harshness, adhering to the theme's warm palette.",
+  "stroke_application": "Apply a consistent, irregular black hand-drawn outline around both the '美团' characters and the mascot. Lines should have natural jitter and varying thickness, avoiding perfect vector straightness.",
+  "composition_application": "Center the '美团' text but allow it to be slightly offset to accommodate the mascot. The mascot should occupy about 1/4 of the visual space, interacting physically with the text to break symmetry. Ensure ample padding between the subject and the rounded rectangle border.",
+  "identity_application": "Preserve the exact glyph structure of '美团' but soften its physical appearance (make it look like inflated balloons or clay). Do not change the characters to English or symbols. The identity relies on the recognizable shape of the characters combined with the signature yellow tone, now softened.",
+  "fidelity_constraints": [
+    "Must include the unified white mascot interacting with the subject",
+    "Must use creamy/pastel yellow background",
+    "Must have hand-drawn black outlines",
+    "Must maintain matte, non-glossy texture",
+    "Must preserve '美团' character legibility"
+  ],
+  "negative_constraints": [
+    "No realistic 3D renders or glossy materials",
+    "No high-saturation neon colors",
+    "No sharp geometric lines or perfect vectors",
+    "No omission of the mascot",
+    "No replacement of text with icons (kangaroo, bag, etc.)"
+  ]
+}

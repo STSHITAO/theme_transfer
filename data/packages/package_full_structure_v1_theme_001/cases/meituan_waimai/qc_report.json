@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。材质为标准的半透明冰雕，内部气泡和雪花纹理清晰（符合主题指纹）。最关键的是严格保留了美团袋鼠的剪影拓扑结构，特别是长耳朵的倾斜角度和面部五官比例，既完成了去色重构，又保证了极高的品牌识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 82,
+      "failure_reason": "材质表现略显浑浊，接近磨砂或实心冰块，缺乏参考图中那种清透的次表面散射感。更严重的是结构偏差：左耳过于直立，失去了原图标志性的倾斜特征，导致整体轮廓像普通兔子而非美团袋鼠，违反了 strict 约束下的结构保留策略。",
+      "recommendation": "不推荐。虽然风格大致正确，但关键的结构特征（耳朵角度）丢失，且材质通透度不如 candidate_01，识别度较低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\meituan_waimai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

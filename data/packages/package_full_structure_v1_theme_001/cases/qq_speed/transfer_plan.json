@@ -1,0 +1,64 @@
+{
+  "app": "qq_speed",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，即使是复杂的图形或文字组合，也应保持其原始拓扑结构不变，仅做材质替换和立体化挤出。QQ飞车的核心识别在于‘戴帽子的头像’这一特定剪影以及帽子上的文字，若重构为赛车或赛道将导致用户无法识别App身份。因此必须严格保留原图标的几何轮廓，将其视为一个整体的3D冰雕物件处理。",
+  "preserve": [
+    "头部与鸭舌帽的整体外轮廓剪影",
+    "帽子正面的 'DRIFT' 文字排版骨架与倾斜角度",
+    "帽子侧面的圆形徽章几何位置",
+    "人物头部的宽高比与佩戴角度",
+    "底部物理接触阴影与水渍细节"
+  ],
+  "must_preserve": [
+    "帽檐的弧度与帽顶的结构线",
+    "'DRIFT' 文字的相对位置和字形骨架",
+    "头部与帽子的遮挡关系",
+    "底部的物理接触阴影与水渍细节"
+  ],
+  "recompose_allowed": [
+    "面部五官细节（简化为冰面起伏，避免恐怖谷）",
+    "头发发丝细节（转化为冰块内部流纹或裂纹）",
+    "原本的色彩（强制统一为 Ice Blue）",
+    "背景元素（完全移除，改为纯白背景）"
+  ],
+  "restyle": [
+    "将原本的黄色帽子、肤色、红瞳等所有色彩统一转换为半透明浅冰蓝色",
+    "将平面矢量线条转化为具有厚度的3D实体边缘",
+    "将表面光泽从漫反射调整为高光泽湿润冰面反射",
+    "增加内部次表面散射效果，模拟光线穿透冰块"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小气泡和雪花纹理以增强冰冻感",
+    "在表面添加冷凝水珠细节",
+    "在底部添加融化的水坑和碎冰屑以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原本的黄色、肤色、红色等品牌色",
+    "禁止生成不透明的蓝色塑料或金属质感",
+    "禁止将人物主体替换为赛车模型或赛道风景",
+    "禁止主体悬空无投影",
+    "禁止 'DRIFT' 文字变形至不可辨认",
+    "禁止使用深色或复杂背景"
+  ],
+  "generation_brief": "3D icon of QQ Speed character head wearing a cap, sculpted entirely from translucent light blue ice. The cap features the word 'DRIFT' clearly embossed/frozen inside. Material is glossy wet ice with internal bubbles and snowflakes. No skin tones or yellow colors; monochromatic ice blue. Centered on pure white background with soft contact shadow and melting water puddle at base. High fidelity to original silhouette.",
+  "color_application": "严格执行去色处理。将原图标中的黄色帽子、肤色、红瞳等所有颜色映射为统一的 Translucent Cyan / Light Ice Blue (#A0D8EF)。仅通过高光（Pure White）和内部阴影（Deep Blue/Grey）来表现体积，不保留任何原品牌色填充。",
+  "stroke_application": "消除所有2D描边。通过3D模型的物理边缘、折射光晕和高光对比来界定轮廓。边缘处理圆润光滑，模拟冰块融化后的自然形态，无锐利直角。",
+  "composition_application": "保持原图标中心构图。将2D头像挤压为3D实体，占据画布60-70%高度。去除原有星空背景，替换为纯白背景。底部增加接触阴影和融化水渍，确保视觉重心稳定落地。",
+  "identity_application": "通过严格保留‘戴帽头像’的几何剪影和‘DRIFT’文字的拓扑结构来维持身份。放弃色彩识别，依赖形态识别。将面部细节简化为冰面纹理以避免恐怖谷效应，但确保帽子结构和文字清晰可读。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+    "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊",
+    "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+  ],
+  "negative_constraints": [
+    "禁止保留原图标的实心色彩填充（特别是黄色和肤色）",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为扁平化或低多边形风格",
+    "禁止过度重构主体形状（如将人头变为赛车）",
+    "禁止文字变得不可辨认"
+  ]
+}

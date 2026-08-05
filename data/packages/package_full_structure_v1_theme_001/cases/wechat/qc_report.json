@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与身份约束。严格保留了微信双气泡的几何轮廓、前后遮挡关系（左后右前）及内部圆点特征。材质表现为高质量的半透明冰雕，带有内部雪花纹理和底部融化水迹，完全遵循了transfer_plan中的所有strict约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "整体质量很高，风格匹配度好。但在结构上，右侧小气泡似乎“骑”在了左侧大气泡的边缘上，且两者连接处的物理逻辑略显模糊（像是融合在一起而非清晰的前后层叠），相比candidate_01，其几何结构的还原度稍逊一筹，但仍是优秀的候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\wechat\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

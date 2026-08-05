@@ -1,0 +1,40 @@
+{
+  "app": "kuaiying",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "摄像机轮廓与右侧分离式镜头组件的几何拓扑关系",
+  "brand_cues_to_preserve": [
+    "左侧类似 'C' 形的机身框架",
+    "右侧两个独立的垂直矩形条（代表镜头/信号）",
+    "整体图标的长宽比和负空间分布"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频录制/摄像机的通用符号语义",
+    "工具类应用的稳固感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视）和 douyin（音符）的案例，对于具有强几何特征的硬件符号（如摄像机），必须直接将其立体化。快影的图标由清晰的几何块面组成，非常适合转化为厚实的冰砖结构，无需进行语义重组，只需将原本的扁平色块替换为具有厚度的冰体即可。",
+  "design_rationale": "快影作为视频编辑工具，其图标本质是一个抽象化的摄像机。在冰雪主题下，应将其视为一个微缩的冰雕摆件。通过保留原有的'C'形机身和右侧镜头条的相对位置，确保用户能瞬间识别出这是'相机/视频'类应用。材质上完全服从主题，去除原本的暖色渐变，改为通透的冰蓝色，利用冰块内部的折射和气泡来丰富原本单调的几何形状。",
+  "must_preserve": [
+    "摄像机机身的 'C' 形开口朝向和圆角曲率",
+    "右侧两个竖条的大小比例及间距",
+    "图标整体的居中构图",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "将原本的平面色块拉伸为具有明显厚度（Z轴）的实体",
+    "边缘处理为圆润的倒角以模拟冰的融化感",
+    "内部填充随机的雪花纹理和微小气泡",
+    "表面增加湿润的高光反射和焦散效果"
+  ],
+  "forbid": [
+    "禁止保留原本的粉红色/橙红色渐变",
+    "禁止将图标变成真实的写实相机照片",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止改变右侧两个竖条的数量或排列方式",
+    "禁止背景出现非白色的杂色"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of a stylized video camera. The主体 consists of a thick, translucent cyan-blue ice block shaped like a 'C' (camera body) on the left, and two separate vertical ice bars (lens elements) on the right. Maintain the exact spatial layout of the original logo. The material must be high-quality glass-like ice with internal bubbles, snowflake textures, and a glossy wet surface. Place on a pure white background with realistic contact shadows and melting water puddles at the base. No outlines, no brand colors."
+}

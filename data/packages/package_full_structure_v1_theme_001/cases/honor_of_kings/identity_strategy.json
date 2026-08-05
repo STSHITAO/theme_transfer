@@ -1,0 +1,40 @@
+{
+  "app": "honor_of_kings",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "左上角的 '5v5' 立体字样及整体圆角矩形徽章轮廓",
+  "brand_cues_to_preserve": [
+    "'5v5' 字样的特定字体形态与倾斜角度",
+    "图标外框的圆角矩形几何比例",
+    "右下角的交叉剑/星形符号（若作为版本标识需保留轮廓）"
+  ],
+  "semantic_cues_to_preserve": [
+    "竞技对抗的张力（通过冰块的锐利边缘和内部裂纹暗示）",
+    "MOBA游戏的团队属性（通过 '5v5' 文字直接表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、抖音等案例均严格保留了原图标的核心几何骨架。王者荣耀原图标虽有人物，但最具通用识别度的是 '5v5' 文字标。根据 theme_rules 中 '禁止过度复杂的场景化重构' 和 '几何守恒' 原则，必须剔除复杂的人物面部细节，将 '5v5' 文字和外部边框作为主体进行冰块化重构，以确保在统一风格下的可识别性。",
+  "design_rationale": "原图标为写实人物头像，直接转化为冰雕会导致面部特征模糊且难以辨认（变成generic face）。为了符合 '3D冰雕拟物' 的主题语言，策略上选择提取原图标中最具符号化的 '5v5' 文字元素作为视觉中心，将其转化为厚实的冰砖结构。人物部分被舍弃或极度简化为背景纹理，以保证主题的统一性和图标的清晰度。这符合主题分析中 '对于复杂图形，简化为剪影后立体化' 的规则。",
+  "must_preserve": [
+    "'5v5' 文字的笔画结构和空间布局",
+    "半透明浅冰蓝色的主色调",
+    "内部的雪花/气泡纹理",
+    "底部的接触阴影和水渍",
+    "无描边的圆润边缘处理"
+  ],
+  "can_recompose": [
+    "原图中的人物面部（完全移除或仅作为极淡的冰底纹理）",
+    "原图的金色/红色品牌色（强制转换为冰蓝色）",
+    "背景的复杂渐变（替换为纯白）"
+  ],
+  "forbid": [
+    "生成写实的人脸冰雕（易产生恐怖谷效应且识别度低）",
+    "保留原图的红色或金色作为主色",
+    "使用不透明的塑料或金属材质",
+    "缺少底部投影导致物体悬浮",
+    "改变 '5v5' 的字体设计"
+  ],
+  "generation_direction": "Create a 3D ice sculpture icon of the text '5v5'. The text should be thick, translucent cyan-blue ice with internal bubbles and snowflake textures. Place it on a pure white background with a wet contact shadow and melting water puddle at the base. No human faces, no original brand colors. High gloss, refraction, SSS effect."
+}

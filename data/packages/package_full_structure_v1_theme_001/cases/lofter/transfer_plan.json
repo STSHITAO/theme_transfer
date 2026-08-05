@@ -1,0 +1,60 @@
+{
+  "app": "lofter",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、豆瓣等案例均严格保留了原图标的核心骨架。LOFTER 的 'L' 形具有极高的品牌独特性，且几何结构简单清晰，完全符合‘几何守恒，材质重构’的主题原则。无需进行语义重组，直接将其转化为立体冰雕即可完美融合主题并保持识别度。",
+  "preserve": [
+    "'L' 字母的主体骨架结构",
+    "线条末端的圆角处理与特定几何走势（垂直向下后圆润转折向右）",
+    "图形的正负形关系（线条宽度比例）"
+  ],
+  "must_preserve": [
+    "'L' 形的准确拓扑结构（特别是底部的钩状曲线）",
+    "线条末端的圆润倒角",
+    "整体线条的相对粗细"
+  ],
+  "recompose_allowed": [
+    "将2D平面线条转化为具有厚度的3D实体（冰砖/冰柱）",
+    "颜色由白/Teal转换为统一的浅冰蓝色调",
+    "增加表面的高光、折射和内部的气泡/雪花细节",
+    "底部增加接触阴影和融化水渍以确立物理存在感"
+  ],
+  "restyle": [
+    "材质统一替换为半透明冰晶质感（Ice Sculpture Skeuomorphism）",
+    "表面呈现湿润的高光反射和次表面散射效果",
+    "内部填充微小的空气气泡、冰晶颗粒或雪花纹理"
+  ],
+  "decorate": [
+    "主体内部嵌入随机分布的微小气泡或雪花纹理",
+    "底部添加融化的水迹或小水洼",
+    "边缘通过菲涅尔反射和高光界定轮廓"
+  ],
+  "forbid": [
+    "禁止改变 'L' 的形状、比例或长宽比",
+    "禁止使用不透明的塑料、金属或磨砂玻璃材质",
+    "禁止保留原始的青绿色（Teal）背景或大面积品牌色",
+    "禁止添加任何额外的装饰性元素（如相机、画笔、文字）",
+    "禁止生成实心、无通透感的物体",
+    "禁止背景出现杂色或非纯白/极浅冷灰"
+  ],
+  "generation_brief": "3D icon of LOFTER 'L' logo as a translucent cyan-blue ice sculpture. Exact extrusion of the original 'L' shape with rounded corners and hook end. Material: glossy wet ice with internal bubbles and snowflake textures. Lighting: caustic reflections, cold global light. Background: pure white. Base: soft contact shadow and melting water puddle. No solid colors, no brand background.",
+  "color_application": "强制去色。将原本的白色线条和Teal背景统一转换为高透光的浅冰蓝色（Cyan-Ice Blue）。利用深蔚蓝（Deep Azure）表现厚度区的阴影，半透明白（Translucent White）表现高光区。严禁使用原始的Teal色作为主色。",
+  "stroke_application": "消除二维描边。将原本的白色线条转化为具有物理厚度的3D冰体边缘。通过材质的折射率差异、边缘的高光反射以及内部的焦散来界定轮廓，而非绘制线条。边缘需做倒角处理以捕捉高光。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体'L'居中放置，占据画布约60%-70%空间。去除原有圆形背景，改为纯白极简背景。主体底部预留空间给投影和水渍，营造悬浮或放置在冰面上的真实感。",
+  "identity_application": "通过严格保留'L'字母的几何拓扑结构（特别是底部的钩状曲线和圆角）来维持身份识别。虽然颜色和材质完全改变，但用户仍能通过剪影瞬间识别出是Lofter。不添加任何额外符号，仅靠形状识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（Teal）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变'L'的形状导致识别为数字'1'或其他符号。"
+  ]
+}

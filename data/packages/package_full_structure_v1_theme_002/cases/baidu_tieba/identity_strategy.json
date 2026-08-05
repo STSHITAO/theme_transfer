@@ -1,0 +1,36 @@
+{
+  "app": "baidu_tieba",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "气泡轮廓与内部汉字“贴”的组合结构",
+  "brand_cues_to_preserve": [
+    "对话气泡的外轮廓（含底部尖角）",
+    "汉字“贴”的笔画拓扑结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "对话框/聊天的语义暗示",
+    "文字内容的载体感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标为高度符号化的几何图形（气泡+文字），符合主题中关于‘清晰几何符号’保留结构的判定标准。参考 Bilibili 案例，文字类 Logo 应保留其空间布局并转化为图形化块面，而非重构为其他物体。因此必须保留气泡外框和‘贴’字的相对位置关系。",
+  "design_rationale": "百度贴吧的核心识别度完全依赖于‘贴’字与气泡的结合。在复古手绘主题下，应将原本平滑的矢量气泡转化为类似剪纸或马克笔涂抹的不规则色块，将标准的黑体/圆体‘贴’字转化为粗犷的手写涂鸦字体。颜色上，将原本的蓝紫渐变映射为主题限定的深蓝色（气泡）与奶黄色或朱红色（文字），以维持高对比度。",
+  "must_preserve": [
+    "气泡的基本形态（圆润矩形带底角）",
+    "‘贴’字的左右结构比例",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "气泡边缘的平滑度（改为抖动线条）",
+    "‘贴’字的具体笔画形态（改为手写体/蜡笔触感）",
+    "原始的品牌渐变色（改为红蓝黄平涂）"
+  ],
+  "forbid": [
+    "禁止保留原始的蓝紫色渐变",
+    "禁止使用细线条描边",
+    "禁止去除底部的对话气泡尖角",
+    "禁止将‘贴’字替换为其他无关符号"
+  ],
+  "generation_direction": "Draw a retro hand-drawn speech bubble icon on a pure black background. The bubble shape is rough, filled with solid deep blue, outlined with thick uneven black marker strokes. Inside the bubble, draw the Chinese character '贴' (Tie) using a clumsy, thick crayon style in bright yellow or brick red. No gradients, no shadows, flat colors only. The overall look should resemble a naive sticker or doodle."
+}

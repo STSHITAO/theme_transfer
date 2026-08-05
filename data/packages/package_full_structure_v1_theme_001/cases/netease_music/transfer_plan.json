@@ -1,0 +1,60 @@
+{
+  "app": "netease_music",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'douyin' and 'alipay' reference patterns: The original logo is a clear, high-contrast geometric symbol. It must be extruded directly into 3D ice without altering the path or topology. The 'red background' must be completely discarded; only the white symbol becomes the ice sculpture, floating on a pure white background.",
+  "preserve": [
+    "The specific topological structure of the continuous loop (note head merging into staff/record circle)",
+    "The rounded, fluid stroke width and terminal shapes",
+    "The exact curvature and connection point of the music note tail",
+    "The relative size ratio between the note head and the outer ring"
+  ],
+  "must_preserve": [
+    "The unique continuous loop geometry combining a musical note and a vinyl record shape",
+    "Translucent light blue ice material with subsurface scattering",
+    "Pure white background with soft contact shadow"
+  ],
+  "recompose_allowed": [
+    "Extrusion thickness to create 3D volume",
+    "Internal texture details (random snowflakes or air bubbles trapped inside the ice)",
+    "Edge highlights and refraction effects",
+    "Base interaction (melting puddle or subtle ice shard base for stability)"
+  ],
+  "restyle": [
+    "Convert flat white vector lines into volumetric translucent ice sculptures",
+    "Replace opaque red background with pure white environment",
+    "Apply glossy, wet surface finish with specular highlights"
+  ],
+  "decorate": [
+    "Internal suspended particles (snowflakes/bubbles)",
+    "Surface condensation droplets",
+    "Soft ambient occlusion shadows at the base"
+  ],
+  "forbid": [
+    "Retaining the original red background color or any brand red fill",
+    "Opaque plastic, metal, or solid blue material (must be translucent ice)",
+    "Flattening the 3D effect (must have visible Z-axis depth)",
+    "Distorting the logo proportions or changing the topology to a standard music note",
+    "Dark or complex backgrounds"
+  ],
+  "generation_brief": "3D icon of Netease Music logo sculpted from translucent light blue ice. The logo features a continuous loop combining a music note and circular record shape. Material has subsurface scattering, internal bubbles, and glossy wet surface. Centered on pure white background with soft contact shadow and subtle melting base. No red colors. C4D render style, high fidelity, refreshing cold aesthetic.",
+  "color_application": "Strictly apply theme palette: Dominant Translucent Cyan/Ice Blue for the logo body, Pure White for highlights/background, Deep Blue/Grey for internal shadows. Completely remove original brand red.",
+  "stroke_application": "Eliminate all 2D outlines. Define form through 3D volume, lighting, and refraction. Edges must be smooth, rounded, and chamfered to mimic eroded ice.",
+  "composition_application": "Centralized composition. The 3D ice logo occupies 60-70% of canvas height. Resting on a subtle ground plane with contact shadow. Maintain original spatial arrangement of the note/circle elements.",
+  "identity_application": "Preserve the exact geometric topology of the Netease Music logo (note+circle loop). Recognizability relies solely on the silhouette shape as color is removed. Do not simplify into a generic music note.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal, not opaque plastic",
+    "Color spectrum limited to ice blue/cyan/white/grey",
+    "Original logo silhouette must be instantly recognizable",
+    "Must include physical grounding elements (shadow/puddle)"
+  ],
+  "negative_constraints": [
+    "No red or original brand colors",
+    "No flat 2D vector appearance",
+    "No dark backgrounds",
+    "No distorted geometry or low-poly styles",
+    "No generic music symbols replacing the specific brand logo"
+  ]
+}

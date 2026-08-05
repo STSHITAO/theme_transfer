@@ -1,0 +1,113 @@
+{
+  "theme_id": "theme_001",
+  "package_id": "package_006_theme_001_fidelity_e2e",
+  "theme_transfer_examples": [
+    {
+      "app": "alipay",
+      "original_path": "data\\styles\\theme_001\\alipay\\alipay.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\alipay\\alipay.jpg"
+    },
+    {
+      "app": "baidu",
+      "original_path": "data\\styles\\theme_001\\baidu\\baidu.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\baidu\\baidu_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\baidu\\baidu.jpg"
+    },
+    {
+      "app": "camera",
+      "original_path": "data\\styles\\theme_001\\camera\\camera.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\camera\\camera_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\camera\\camera.jpg"
+    },
+    {
+      "app": "douyin",
+      "original_path": "data\\styles\\theme_001\\douyin\\douyin.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\douyin\\douyin.jpg"
+    },
+    {
+      "app": "phone",
+      "original_path": "data\\styles\\theme_001\\phone\\phone.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\phone\\phone_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\phone\\phone.jpg"
+    },
+    {
+      "app": "wangyiyun",
+      "original_path": "data\\styles\\theme_001\\wangyiyun\\wangyiyun.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\wangyiyun\\wangyiyun_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\wangyiyun\\wangyiyun.jpg"
+    },
+    {
+      "app": "wechat",
+      "original_path": "data\\styles\\theme_001\\wechat\\wechat.jpg",
+      "style_ref_path": "data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg",
+      "reference_raw_path": "data\\styles\\theme_001\\wechat\\wechat.jpg"
+    }
+  ],
+  "theme_refs": [
+    "data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg",
+    "data\\styles\\theme_001\\baidu\\baidu_style_ref.jpg",
+    "data\\styles\\theme_001\\camera\\camera_style_ref.jpg",
+    "data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg",
+    "data\\styles\\theme_001\\phone\\phone_style_ref.jpg",
+    "data\\styles\\theme_001\\wangyiyun\\wangyiyun_style_ref.jpg",
+    "data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg"
+  ],
+  "generated_icons": [
+    {
+      "app": "bilibili",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\bilibili.png"
+    },
+    {
+      "app": "damai",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\damai.png"
+    },
+    {
+      "app": "hanglvzongheng",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\hanglvzongheng.png"
+    },
+    {
+      "app": "meituan",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\meituan.png"
+    },
+    {
+      "app": "qq",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\qq.png"
+    },
+    {
+      "app": "tieba",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\tieba.png"
+    },
+    {
+      "app": "wps",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\wps.png"
+    },
+    {
+      "app": "xiaohongshu",
+      "path": "data\\packages\\package_006_theme_001_fidelity_e2e\\final\\xiaohongshu.png"
+    }
+  ],
+  "target_originals": {
+    "bilibili": "data\\targets\\bilibili\\bilibili.png",
+    "damai": "data\\targets\\damai\\damai.jpg",
+    "hanglvzongheng": "data\\targets\\hanglvzongheng\\hanglvzongheng.jpg",
+    "meituan": "data\\targets\\meituan\\meituan.jpg",
+    "qq": "data\\targets\\qq\\qq.jpg",
+    "tieba": "data\\targets\\tieba\\405f68281d6d577866154c984322804c.jpg",
+    "wps": "data\\targets\\wps\\wps.jpg",
+    "xiaohongshu": "data\\targets\\xiaohongshu\\xiaohongshu.png"
+  },
+  "app_names": [
+    "bilibili",
+    "damai",
+    "hanglvzongheng",
+    "meituan",
+    "qq",
+    "tieba",
+    "wps",
+    "xiaohongshu"
+  ],
+  "missing_apps": [],
+  "skipped_apps": []
+}

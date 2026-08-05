@@ -1,0 +1,37 @@
+{
+  "app": "netease_music",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The unique continuous loop geometry combining a musical note and a vinyl record shape.",
+  "brand_cues_to_preserve": [
+    "The specific topological structure of the white line art (note head merging into the staff/record circle).",
+    "The rounded, fluid stroke width and terminal shapes."
+  ],
+  "semantic_cues_to_preserve": [
+    "Musical note symbol.",
+    "Vinyl record / Disc circular form."
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'douyin' and 'alipay' reference patterns: The original logo is a clear, high-contrast geometric symbol. It must be extruded directly into 3D ice without altering the path or topology. The 'red background' must be completely discarded; only the white symbol becomes the ice sculpture, floating on a pure white background.",
+  "design_rationale": "Netease Music's identity relies entirely on its distinctive logo shape. Following the theme rules, we treat this logo as a physical object made of ice. We strictly preserve the curve continuity to ensure instant recognition, while applying the global 'Ice/Crystal' material rules (translucency, bubbles, refraction) to replace the original flat red/white aesthetic.",
+  "must_preserve": [
+    "The exact curvature and connection point of the music note tail.",
+    "The relative size ratio between the note head and the outer ring.",
+    "Translucent light blue ice material with subsurface scattering.",
+    "Pure white background with soft contact shadow."
+  ],
+  "can_recompose": [
+    "The thickness of the icon (extruded to give volume).",
+    "Internal texture details (random snowflakes or air bubbles trapped inside the ice).",
+    "Edge highlights and refraction effects."
+  ],
+  "forbid": [
+    "Retaining the original red background color.",
+    "Opaque plastic or solid blue material (must look like ice).",
+    "Flattening the 3D effect (must have Z-axis depth).",
+    "Distorting the logo proportions to fit a square block."
+  ],
+  "generation_direction": "Generate a 3D icon of the Netease Music logo (music note inside a circle) sculpted from translucent light blue ice. The object should have a glossy, wet surface with internal air bubbles and snowflake textures. Place it centrally on a clean white background with a soft shadow underneath. No red colors. High-end C4D render style, refraction, subsurface scattering."
+}

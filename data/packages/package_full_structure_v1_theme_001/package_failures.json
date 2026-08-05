@@ -1,0 +1,12 @@
+{
+  "naruto_mobile": {
+    "app_id": "naruto_mobile",
+    "error_type": "WanApiError",
+    "status_code": 400,
+    "code": "DataInspectionFailed",
+    "message": "Wan API rejected the image request: status_code=400, DataInspectionFailed, Green net check failed for input image",
+    "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\naruto_mobile\\wan_response.json",
+    "skipped_for_batch_continuation": true,
+    "failed_at": "2026-08-05T16:01:58.345489+00:00"
+  }
+}

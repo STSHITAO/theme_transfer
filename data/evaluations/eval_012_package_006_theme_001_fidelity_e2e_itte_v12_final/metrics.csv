@@ -1,0 +1,9 @@
+app,itte_score,style_fidelity_score,identity_preservation_score,package_membership_score,visual_quality_score,is_package_outlier,quality_warnings,identity_components
+bilibili,74.38565122063363,90.02772288661208,100.0,100.0,100.0,False,,"{""dino_dense"": 100.0, ""dists_structure"": 100.0, ""lpips_content"": 100.0}"
+damai,74.38565122063363,73.33174811064391,56.77959723824897,50.38495871457263,100.0,False,,"{""dino_dense"": 100.0, ""dists_structure"": 0.441538226885728, ""lpips_content"": 33.235678850916244}"
+hanglvzongheng,74.38565122063363,71.46125633050929,14.276198991619259,50.229730789548846,92.5,False,foreground_ratio_outside_reference_envelope,"{""dino_dense"": 0.0, ""dists_structure"": 9.173553072582001, ""lpips_content"": 57.62066534922329}"
+meituan,74.38565122063363,87.81138063997253,31.380961162702476,100.0,100.0,False,,"{""dino_dense"": 22.560097733057294, ""dists_structure"": 59.1464702362562, ""lpips_content"": 11.784856126484858}"
+qq,74.38565122063363,58.422074209422874,100.0,100.0,100.0,False,,"{""dino_dense"": 100.0, ""dists_structure"": 100.0, ""lpips_content"": 100.0}"
+tieba,74.38565122063363,58.05113709910895,89.98579703737369,100.0,52.5,False,large_black_border|foreground_ratio_outside_reference_envelope,"{""dino_dense"": 100.0, ""dists_structure"": 100.0, ""lpips_content"": 49.928985186868424}"
+wps,74.38565122063363,68.94757111083341,100.0,0.0,100.0,False,,"{""dino_dense"": 100.0, ""dists_structure"": 100.0, ""lpips_content"": 100.0}"
+xiaohongshu,74.38565122063363,84.65782973269387,100.0,100.0,100.0,False,,"{""dino_dense"": 100.0, ""dists_structure"": 100.0, ""lpips_content"": 100.0}"

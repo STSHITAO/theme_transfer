@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。精确还原了海豚跳跃的剪影和腹部'C'形负空间，材质呈现完美的半透明青冰蓝（Cyan-Ice Blue），内部气泡纹理与参考图一致，底部水渍细节增强了物理真实感，且完全去除了原品牌色。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "风格基本正确，但海豚的身体比例略显臃肿，不如 candidate_01 修长灵动。腹部的'C'形负空间不够清晰，导致品牌识别度略降。材质质感稍显厚重，接近果冻而非清脆的冰雕，且高光处理不如前者锐利。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\ctrip\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

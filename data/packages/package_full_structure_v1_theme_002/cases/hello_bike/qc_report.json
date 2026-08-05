@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan。保留了‘哈啰’二字的完整拓扑结构和左右排列，严格遵循了纯黑背景和粗手绘描边的要求。色彩映射准确（奶黄/砖红/深蓝），且没有引入禁止的自行车元素或渐变光影。文字识别度极高，风格化重构恰到好处。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "",
+      "recommendation": "风格基本符合，但字形重构过度。‘哈’字的口字旁被处理成类似‘D’的形状，‘啰’字的结构也较为松散，导致文字的可读性和品牌识别度下降。虽然符合拙朴风格，但在 strict 约束下，丢失了部分关键笔画特征（如‘哈’字右边的合结构），不如 candidate_01 准确。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\hello_bike\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

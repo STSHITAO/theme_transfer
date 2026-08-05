@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 98,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格（冰晶材质、光影、水渍细节），且严格保留了腾讯地图箭头的几何轮廓和倾斜角度，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "目标主体错误。生成了支付宝的'支'字图标，完全丢失了腾讯地图的箭头身份。",
+      "recommendation": "不推荐。虽然风格正确，但对象完全错误（ hallucination / 串题）。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\tencent_maps\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

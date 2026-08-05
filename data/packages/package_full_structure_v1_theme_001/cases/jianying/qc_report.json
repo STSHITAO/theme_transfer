@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与结构约束。完整保留了剪映标志性的'X'形交叉几何及右侧延伸结构，材质转化为半透明冰雕质感，内部气泡与雪花细节丰富且清晰，无多余伪影，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 70,
+      "composition_score": 80,
+      "artifact_score": 60,
+      "overall_score": 75,
+      "failure_reason": "底部存在明显的圆形半透明白色伪影（可能是生成错误或多余的UI元素），破坏了画面的纯净度。",
+      "recommendation": "虽然主体结构和冰材质表现尚可，但底部的圆形瑕疵严重影响画面质量（Artifact），不建议直接使用。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\jianying\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

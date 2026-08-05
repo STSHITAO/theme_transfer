@@ -1,0 +1,64 @@
+{
+  "app": "Quark",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The Quark logo is a simple, high-contrast geometric symbol. According to the theme rules (e.g., Alipay, Douban), simple geometric logos must be extruded into 3D ice sculptures while strictly maintaining their 2D silhouette. No semantic recomposition is needed as the shape itself is the identity.",
+  "preserve": [
+    "Outer circular ring structure",
+    "Internal negative space forming the lowercase 'q' tail",
+    "Specific topology of the tail cutting the ring at bottom-right",
+    "Overall circular bounding box and geometric symmetry"
+  ],
+  "must_preserve": [
+    "The exact ratio of the outer ring thickness",
+    "The specific angle and curvature of the inner cut-out",
+    "The overall circular bounding box",
+    "The void/tunnel nature of the 'q' negative space (do not fill with ice)"
+  ],
+  "recompose_allowed": [
+    "Surface texture (add frost, bubbles, snowflakes)",
+    "Edge rounding (chamfered ice edges to mimic erosion)",
+    "Internal lighting effects (caustics, refraction, subsurface scattering)",
+    "Base interaction (melting puddle, contact shadow)"
+  ],
+  "restyle": [
+    "Convert flat vector to volumetric 3D sculpture",
+    "Replace solid Electric Blue with translucent Cyan/Ice Blue material",
+    "Add glossy wet surface finish with specular highlights",
+    "Soften sharp geometric edges to rounded ice contours"
+  ],
+  "decorate": [
+    "Internal suspended air bubbles and micro-snowflakes",
+    "Surface condensation droplets",
+    "Soft diffuse contact shadow on white ground plane",
+    "Small melting water puddle or ice shards at base"
+  ],
+  "forbid": [
+    "Using original solid Royal/Electric Blue color for the main body",
+    "Filling the center 'q' hole with solid ice (must remain a void)",
+    "Adding unrelated elements like comets, planets, birds, or feathers",
+    "Flat 2D appearance or opaque plastic/metal materials",
+    "Dark or colored backgrounds (must be pure white/light grey)",
+    "Distorting the 'q' tail direction or position"
+  ],
+  "generation_brief": "3D icon of Quark logo: a thick, translucent light-blue ice sculpture shaped like a ring with a specific 'q' tail cutout. Material is glossy wet ice with internal bubbles and snowflakes. Strong refraction and subsurface scattering. Centered on pure white background with soft contact shadow and small melting puddle at base. No solid colors, no outlines, high fidelity to original geometric silhouette.",
+  "color_application": "Strictly replace original Electric Blue with theme's Translucent Cyan/Ice Blue (#A0D8EF approx). Use Pure White for specular highlights and Deep Blue/Grey for internal shadows/refraction. No brand color retention in the main body.",
+  "stroke_application": "Eliminate all 2D strokes. Define form through 3D volume, lighting, and refractive edges. Edges must be smooth, rounded, and chamfered like eroded ice.",
+  "composition_application": "Center the 3D 'Q' sculpture. Occupy 60-70% of canvas height. Ensure the object sits on a ground plane with a visible contact shadow and base details (puddle/shards) to anchor it vertically.",
+  "identity_application": "Maintain strict geometric fidelity of the 'Q' shape and its negative space. Recognizability comes from the precise silhouette of the ring and tail, rendered in ice material rather than color.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal, not opaque plastic.",
+    "Color palette restricted to Ice Blue/White/Deep Blue shadows.",
+    "Original 'Q' silhouette must be instantly recognizable.",
+    "Must have physical grounding (shadow/base interaction)."
+  ],
+  "negative_constraints": [
+    "No flat vector styles.",
+    "No original brand blue solid fill.",
+    "No dark backgrounds.",
+    "No unrelated semantic objects (birds, comets).",
+    "No matte finishes."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "心形外轮廓与内部‘拼’字结构",
+  "brand_cues_to_preserve": [
+    "心形（Heart）整体几何轮廓",
+    "中心位置的汉字‘拼’及其笔画拓扑",
+    "围绕中心的三角形网格布局（Triangular Grid Layout）"
+  ],
+  "semantic_cues_to_preserve": [
+    "网格内包含的微型商品符号（如衣服、苹果、鱼等），需简化为冰雕纹理或浮雕细节"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，对于具有强文字或几何特征的图标，必须保留其原始轮廓和笔画结构，仅做材质替换。拼多多的心形和‘拼’字是其核心识别符，严禁重构为其他物体（如购物袋或礼盒），必须将现有的二维平面图形直接‘挤压’为三维冰块实体。",
+  "design_rationale": "拼多多原图标结构复杂（心形+网格+文字+小图标），若完全重绘会丢失品牌特征。策略是将整个复杂的平面Logo视为一个整体的‘冰砖’或‘冰雕摆件’。通过统一的冰蓝材质覆盖原本的红色，利用3D厚度和内部气泡/裂纹来替代原本繁复的线条分割，既保留了‘拼’字的识别度，又完美契合冰雪主题的通透感。",
+  "must_preserve": [
+    "心形的外边缘轮廓",
+    "中间‘拼’字的字形结构",
+    "三角形分割线的空间位置关系（转化为物理厚度或凹槽）"
+  ],
+  "can_recompose": [
+    "网格内的微小商品图标（可弱化为冰块内部的冻结物或表面浅浮雕，不可喧宾夺主）",
+    "原本锐利的直角转折（需打磨圆润，模拟冰块融化感）",
+    "红色的品牌色（必须完全去除，转为冰蓝）"
+  ],
+  "forbid": [
+    "禁止保留红色填充或红色描边",
+    "禁止将心形改为圆形或其他形状",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止主体悬空无投影",
+    "禁止过度简化导致‘拼’字无法辨认"
+  ],
+  "generation_direction": "Generate a 3D translucent ice sculpture of the Pinduoduo logo. Shape: A heart-shaped block composed of triangular ice segments. Center: The Chinese character '拼' carved in thick ice. Material: Light cyan ice with internal bubbles and frost. Lighting: Glossy wet surface, white background, soft contact shadow with melting water details at the base. No red colors."
+}

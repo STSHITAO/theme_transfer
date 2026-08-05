@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美保留了原Logo的放射状结构和底部绿色三角形特征，同时融入了主题特有的线条小狗元素和柔和色调，识别度极高且风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "优秀候选。结构与原图一致，但色彩饱和度略低，且外框线条较粗，整体精致度略逊于candidate_01。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 75,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 80,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "左侧花瓣形状发生变异（变成心形），破坏了原Logo的几何规律性，导致品牌识别特征丢失较多。",
+      "recommendation": "不推荐。虽然风格可爱，但改变了核心图形结构（出现心形），降低了作为应用图标的严肃性和识别准确度。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\damai\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

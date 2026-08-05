@@ -1,0 +1,64 @@
+{
+  "app": "Keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Douyin 等案例均严格保留了原图标的核心剪影。Keep 的 'K' 字具有极高的品牌辨识度，且几何结构简单清晰，非常适合直接转化为 3D 冰雕实体。不需要进行语义重组，只需将平面图形立体化并赋予冰材质即可。",
+  "preserve": [
+    "字母 'K' 的整体骨架与笔画比例",
+    "右侧斜杠的悬浮/断开特征",
+    "右上角的四角星（Sparkle）装饰元素的位置关系",
+    "'K' 字的准确拓扑结构（左侧竖线，右侧折线与悬浮短线）"
+  ],
+  "must_preserve": [
+    "字母 'K' 的拓扑结构：左侧垂直竖线，右侧由两条斜线汇聚于中下部节点",
+    "右侧斜线的断开/悬浮设计特征",
+    "四角星的位置关系（位于右上方，不与主体连接）",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "recompose_allowed": [
+    "将原本平面的笔画转化为具有倒角和厚度的 3D 实体",
+    "将紫色的星星转化为透明的冰晶质感或内部的气泡聚集体",
+    "调整笔画末端的圆润度以模拟冰块融化感",
+    "圆角的具体曲率半径"
+  ],
+  "restyle": [
+    "主体 'K' 和四角星统一替换为半透明浅冰蓝色（Cyan-Ice Blue）材质",
+    "去除原有的深紫色渐变背景和高饱和度品牌色",
+    "表面增加高光泽度、湿润感和次表面散射（SSS）效果",
+    "内部填充随机微小气泡、冰晶颗粒或雪花纹理"
+  ],
+  "decorate": [
+    "在冰块内部或表面嵌入微小的雪花或冰晶纹理作为主题指纹",
+    "底部添加融化的水迹、小水洼或碎冰屑以增强物理接触感",
+    "边缘添加菲涅尔反射高光以界定轮廓"
+  ],
+  "forbid": [
+    "禁止保留原本的深紫色背景",
+    "禁止使用高饱和度的紫色、红色或绿色作为主体颜色",
+    "禁止将 'K' 字变形为其他字母、标准字体或抽象图形",
+    "禁止生成不透明的塑料、金属或磨砂玻璃质感",
+    "禁止添加通用的健身哑铃、跑鞋等无关具象元素",
+    "禁止生成实心、无通透感的物体",
+    "禁止忽略底部投影和水渍导致物体悬浮感缺失"
+  ],
+  "generation_brief": "3D icon of Keep app, featuring a thick translucent cyan-blue ice sculpture of the letter 'K' with its characteristic detached right stroke. A small four-pointed star shape floats near the top right, also rendered in clear ice or as an internal bubble cluster. Pure white background. High-gloss wet surface with internal air bubbles and snowflake textures. Realistic contact shadows and melting water puddles at the base. Octane render, C4D style, minimalist composition.",
+  "color_application": "强制去色。将原品牌的深紫色和白色完全转换为统一的浅冰蓝色调（Cyan-Ice Blue）。利用深蓝（Deep Azure）表现厚度阴影，半透明白（Translucent White）表现高光和透光区。严禁出现任何高饱和度品牌色。",
+  "stroke_application": "消除所有二维描边。将 'K' 的线条转化为具有厚度的三维冰砖实体。边缘进行倒角处理以捕捉高光，通过材质的折射率和光影切割来界定轮廓，而非绘制线条。",
+  "composition_application": "单体居中构图。主体 'K' 占据画布约 60%-70% 空间。从平面填充式转变为立体物件式，四周留有白色呼吸空间。确保 'K' 和右上角的星星在视觉上保持原有的平衡关系，但整体作为一个 3D 物体放置在白色平面上。",
+  "identity_application": "通过严格保留 'K' 字的独特几何拓扑（特别是右侧断笔）和右上角四角星的相对位置来维持身份。将原本依靠颜色对比（紫底白字）识别的特征，转化为依靠形状剪影和材质通透感识别。星星虽去色但仍保留其形状和位置，作为关键识别锚点。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（紫色）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到扁平化设计或 2D 矢量风格。",
+    "禁止保留原始的大面积深紫色背景。",
+    "禁止生成暖色调主体。",
+    "禁止改变 'K' 字的核心几何结构或省略四角星。",
+    "禁止过度复杂的场景化重构（如小人站在雪地里）。"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "app": "huya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 theme_design_analysis 中 bilibili 和 douyin 的处理方式，虎牙图标具有极高的几何识别度。必须完整保留虎头的拓扑结构（耳朵、脸型、五官位置），仅将原本的扁平矢量图形转化为具有物理厚度的3D冰雕实体。严禁改变虎头的长宽比或简化掉虎牙细节。",
+  "preserve": [
+    "虎头整体剪影轮廓（含双耳）",
+    "面部中央播放按钮（三角形）的负空间形态",
+    "底部单颗尖牙的几何位置与形状",
+    "脸颊两侧虎纹的相对位置布局"
+  ],
+  "must_preserve": [
+    "虎头外轮廓的拓扑结构",
+    "播放三角形的镂空/内嵌关系",
+    "标志性的下门牙特征",
+    "纯白背景与底部物理接触阴影"
+  ],
+  "recompose_allowed": [
+    "将原棕色虎纹转化为冰表面的凹凸雕刻纹理或内部裂纹",
+    "将原黄色底色完全替换为半透明浅冰蓝色材质",
+    "简化眼部细节为冰内部的折射光影效果"
+  ],
+  "restyle": [
+    "材质：高光泽度半透明冰晶，含气泡与雪花纹理",
+    "色彩：统一为 Cyan-Ice Blue 主色调，摒弃黄/褐品牌色",
+    "光影：增加菲涅尔边缘高光与内部焦散效果"
+  ],
+  "decorate": [
+    "表面添加随机微小气泡与冰晶颗粒",
+    "底部添加融化水渍与小水洼以增强落地感"
+  ],
+  "forbid": [
+    "保留任何原始的高饱和度黄色或褐色填充",
+    "生成不透明的蓝色塑料、磨砂玻璃或金属质感",
+    "改变虎头的外轮廓比例或移除虎牙/播放键",
+    "背景出现非白色杂色或复杂场景元素",
+    "丢失底部的接触阴影和水迹细节"
+  ],
+  "generation_brief": "3D ice sculpture of Huya tiger head icon, translucent cyan-blue ice material with internal bubbles and snowflake textures. Strictly preserve the tiger silhouette, central play button triangle, and bottom fang. Glossy wet surface, caustic lighting. Pure white background with realistic contact shadow and melting water puddle at base. No yellow or brown colors.",
+  "color_application": "强制去色。将原图标的黄底褐纹完全转换为统一的浅冰蓝色（Cyan-Ice Blue）半透明材质。原品牌色仅通过材质的通透度和内部纹理暗示，不再使用实体颜色填充。",
+  "stroke_application": "消除所有二维描边。将原图标的线条转化为3D实体的物理边缘，通过倒角处理捕捉高光，利用材质折射率差异界定轮廓，而非绘制线条。",
+  "composition_application": "单体居中构图，主体占据画布60%-70%空间。将扁平虎头拉伸为具有厚度的立体冰砖结构，底部预留空间给投影和水渍，确保物体稳固‘立’在白色平面上。",
+  "identity_application": "通过严格保留虎头剪影、播放键负形和虎牙特征来维持身份识别。将原有的色彩识别线索（黄/褐）转化为材质识别线索（冰的通透感与内部纹理），在不破坏主题统一性的前提下保留核心几何符号。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（黄/褐）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积黄色或褐色背景/填充。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变虎头的基本拓扑结构（如移除耳朵或虎牙）。"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "app": "king_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和抖音（Douyin）的案例，该主题的核心逻辑是将高识别度的平面符号直接转化为3D冰雕实体。王者营地的图标具有非常独特的几何拓扑（外部回旋+内部核心），这种结构本身就是最强的身份识别符。因此，必须完整保留其二维轮廓的准确性，仅通过增加Z轴厚度、倒角和冰材质来重构，严禁改变其笔画走势或将其替换为其他语义物体（如剑、盾等）。",
+  "preserve": [
+    "外部的旋风/回旋镖状包围结构与内部类似'Q'或'定位点'的几何核心",
+    "中心圆点与下方垂直切口的组合结构",
+    "整体图标的负空间比例关系",
+    "外部类似太极或旋风的动态包围轮廓"
+  ],
+  "must_preserve": [
+    "原图标外部类似'C'形或回旋镖的包围结构及其尖锐的末端",
+    "内部同心圆环及中心带有缺口的圆点结构",
+    "图形各部分之间的相对位置和负空间形状",
+    "统一的浅冰蓝色调（Cyan/Ice Blue）",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "recompose_allowed": [
+    "将原本的深褐色填充替换为半透明的冰晶材质",
+    "在冰块内部添加随机的微小气泡或雪花纹理",
+    "将锐利的2D边缘处理为圆润的3D倒角高光",
+    "去除右下角的红色装饰元素（如有），保持主体纯净",
+    "调整光影以表现冰块的次表面散射（SSS）效果"
+  ],
+  "restyle": [
+    "应用3D冰雕拟物风格",
+    "赋予高光泽度冰冻材质",
+    "模拟自然日光穿过冰块的冷光源照明"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡",
+    "内部嵌入雪花纹理",
+    "表面呈现湿润的高光反射",
+    "底部添加融化的水迹和小水洼"
+  ],
+  "forbid": [
+    "禁止改变外部包围结构的开口方向或旋转角度",
+    "禁止将内部图形简化为实心圆点而丢失下方的切口细节",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止保留原始的深褐色或金黄色背景",
+    "禁止生成没有底部投影的悬浮感错误的图像",
+    "禁止生成实心、不透明的物体",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D ice sculpture of King Camp logo: outer swirling boomerang ring enclosing inner circle with vertical bottom slit. Translucent cyan-blue ice material with internal bubbles/snowflakes. Glossy wet surface, caustic lighting. Pure white background with melting water puddle and contact shadow at base. Strict geometric fidelity to original shape.",
+  "color_application": "强制去色。将原图的深褐色与暖黄色完全移除，统一转换为高透光的浅冰蓝色（Cyan-Ice Blue）作为主体颜色，利用Deep Azure表现阴影厚度，Translucent White表现高光透光区。",
+  "stroke_application": "消除所有二维描边。将原图标的线条转化为具有厚度的3D实体边缘，边缘经过倒角处理以捕捉菲涅尔反射高光，通过材质的折射率差异界定轮廓。",
+  "composition_application": "采用居中构图，主体占据画布约60%-70%空间。将原本平面的嵌套结构拉伸为具有体积感的立体冰砖，底部预留空间放置接触阴影和水渍，确保物体稳固'立'在白色平面上。",
+  "identity_application": "严格保留'外部回旋包围+内部带切口圆点'的拓扑结构。通过精确复刻这一独特的几何剪影，并在冰材质中保持其清晰度，确保用户在主题化后仍能通过形状瞬间识别出王者营地。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成不透明的蓝色塑料块",
+    "禁止改变原图标的形状（如回旋镖开口方向、内部切口位置）",
+    "禁止背景残留原图的深褐色或暖黄色",
+    "禁止忽略底部的投影和水渍"
+  ]
+}

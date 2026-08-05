@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。主体严格保留了 Steve 的方块人剪影和持花动作，材质转化为高通透感的冰雕（含气泡纹理），色彩严格执行了去色处理（仅保留红花），且底部有正确的物理接触阴影和水渍，完全符合 theme style_ref 和 transfer_plan 的要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "违反了 'must_preserve' 中关于底部物理接触阴影的约束。人物呈现悬浮状态，缺乏落地感，且冰块边缘的高光处理略显生硬，不如 candidate_01 通透自然。",
+      "recommendation": "虽然主体识别度尚可，但缺失了关键的底部阴影细节，导致立体感和真实感下降，不符合生成计划中对物理细节的严格要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\minecraft\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的各项约束。它保留了核心的定位针轮廓（preserve_major_structure），正确应用了砖红色主体和奶黄色内部文字（color_application），并且使用了粗的手绘描边风格（stroke_application）。虽然内部增加了一个米色圆形底色块，但这符合主题参考图中常见的“色块堆叠”逻辑，且没有破坏识别度，反而增强了复古涂鸦的质感。背景纯黑，无多余元素，是最佳选择。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "",
+      "recommendation": "推荐。该图也非常优秀，严格遵循了定位针轮廓和颜色约束。相比 candidate_01，它去除了内部的圆形底色，直接将文字浮于红色主体上，这在结构还原度上略高一点点（更接近原图的直接填充感）。但在风格化表现力上，candidate_01 的层次感略微更丰富一些，更符合参考图中那种“拼贴/涂鸦”的复杂感。两者皆为高质量生成，candidate_02 作为备选完全合格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\baidu_maps\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

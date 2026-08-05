@@ -1,0 +1,36 @@
+{
+  "app": "youku",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The iconic 'play button' shape formed by two intersecting rounded rectangles (capsules) in a diagonal arrangement.",
+  "brand_cues_to_preserve": [
+    "The specific geometric intersection of the upper and lower capsule shapes",
+    "The diagonal orientation (top-left to bottom-right flow)",
+    "The rounded ends of the capsules"
+  ],
+  "semantic_cues_to_preserve": [
+    "The universal 'Play' triangle implication created by the negative space and overall silhouette"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The Youku logo is a highly abstract geometric symbol where identity relies entirely on the precise spatial relationship between the two capsule shapes. According to the theme rules (similar to Alipay/Douyin), the structural outline must be strictly preserved and extruded into 3D. The original orange/blue color split is discarded in favor of the unified ice material, making the silhouette the sole carrier of identity.",
+  "design_rationale": "Adopting 'logo_preserve' with 'strict' constraints because the Youku icon is a pure geometric abstract symbol. Unlike illustrative icons, any deviation in the angle or overlap of the two shapes would destroy brand recognition. The strategy focuses on translating the flat vector intersection into a cohesive 3D ice sculpture, relying on the unique 'broken play button' silhouette for identification within the uniform ice-blue theme.",
+  "must_preserve": [
+    "The exact diagonal angle of the two intersecting bars",
+    "The rounded cap geometry of both segments",
+    "The continuous flow of the shape (no gaps between the merged volume)"
+  ],
+  "can_recompose": [
+    "Internal color separation (must be unified into single ice material)",
+    "Surface texture details (bubbles, frost patterns can be added freely)",
+    "Edge highlights and refraction properties"
+  ],
+  "forbid": [
+    "Retaining the original orange or bright blue colors",
+    "Separating the two shapes into distinct floating objects (they must merge into one ice block)",
+    "Changing the aspect ratio or thickness of the capsules",
+    "Using opaque plastic or metal materials"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Youku logo: two intersecting rounded rectangular bars forming a diagonal play-button shape. Material is translucent pale cyan ice with internal bubbles and snowflake textures. Surface is glossy with condensation droplets. Unified ice-blue color, no orange. Centered on white background with soft contact shadow and melting water trace at base."
+}

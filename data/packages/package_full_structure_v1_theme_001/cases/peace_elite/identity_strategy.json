@@ -1,0 +1,38 @@
+{
+  "app": "peace_elite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "三级头盔（Level 3 Helmet）的侧面轮廓与护目镜结构",
+  "brand_cues_to_preserve": [
+    "标志性的圆顶战术头盔外形",
+    "面部护目镜/面罩的横向矩形特征",
+    "头盔下部的系带或下巴防护结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "军事战术装备的硬朗感（通过材质硬度体现）",
+    "射击游戏的对抗属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，即使是复杂图形也应保留其核心拓扑结构。和平精英的原图标虽为写实人物，但其‘三级头盔’具有极高的国民辨识度，等同于品牌Logo。因此，必须剔除原图中的人物躯干、背景和枪械，仅提取并立体化‘头盔’这一核心几何体，将其作为冰雕主体，以符合 theme_design_analysis 中关于保留核心轮廓识别度的要求。",
+  "design_rationale": "原图标为复杂的写实场景，直接转换会导致视觉杂乱且不符合极简冰雕主题。选择‘logo_simplify’策略，将最具代表性的‘三级头盔’从原图中剥离并重构为独立的3D冰晶物体。这既保留了游戏的核心身份（头盔=吃鸡），又完美适配了主题的材质规则（半透明、圆润边缘、内部气泡）。",
+  "must_preserve": [
+    "头盔的整体圆润穹顶形状",
+    "正面护目镜的黑色/深色区域（在冰主题中表现为深色阴影或内嵌物）",
+    "头盔侧面的铆钉或连接件细节（简化为冰面起伏）"
+  ],
+  "can_recompose": [
+    "原图中的金属哑光质感 -> 重组为高光泽半透明冰质感",
+    "原图的灰黑色调 -> 重组为统一的浅冰蓝色",
+    "原图的人物身体、枪支、背景 -> 完全移除",
+    "右下角的橙色交叉符号 -> 移除或极弱化处理（避免破坏主体纯度）"
+  ],
+  "forbid": [
+    "禁止生成不透明的深灰色金属头盔（必须透光）",
+    "禁止保留原图的写实皮肤纹理或衣物细节",
+    "禁止出现原图的橙红色背景",
+    "禁止将头盔变形为其他物体（如雪球或普通帽子）"
+  ],
+  "generation_direction": "Generate a 3D icon of a tactical Level 3 helmet made entirely of translucent light blue ice. The helmet should have a glossy, wet surface with internal air bubbles and snowflake textures. Preserve the iconic shape of the visor and chin strap but render them as frozen ice structures. Place on a pure white background with a soft contact shadow and small melting water puddles at the base. No metal, no skin, no orange colors."
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "Best candidate. Perfectly matches the '3D ice sculpture' theme with correct material (translucent ice blue), internal textures (bubbles/snowflakes), and lighting. Crucially, it strictly preserves the 'double-peak M' silhouette and the specific intersection geometry required by the transfer plan. The added base provides a grounded 3D look consistent with the style references."
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "Good alternative. The geometry is very accurate to the original vector path. However, it lacks the strong 3D volume and grounding (base/shadows) seen in the style references and candidate_01, appearing slightly flatter or floating. Still a valid execution of the ice theme."
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\tencent_meeting\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。主体为标准的冰质音符，保留了完整的几何拓扑；微缩火焰元素位置恰当（左上角），既作为版本标识又未破坏整体冰雕感；底部水渍和阴影细节丰富，完全符合 transfer_plan 要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 95,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 78,
+      "failure_reason": "火焰元素重构过度。虽然保留了冰质主体，但火焰不再是一个独立的微缩图标，而是变成了穿透主体的橙色色块/切片，违反了'将火焰元素缩小为微缩图标'及'保留极小比例...作为点缀'的策略，导致视觉重心分散，且破坏了冰块的完整性感。",
+      "recommendation": "不推荐。火焰的处理方式过于激进，变成了抽象的橙色几何体穿插，不符合'火山版'保留独立火焰标识的要求，且视觉上不如 candidate_01 干净统一。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\douyin_huoshan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

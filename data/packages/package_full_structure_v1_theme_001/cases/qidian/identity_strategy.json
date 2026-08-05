@@ -1,0 +1,38 @@
+{
+  "app": "qidian",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“起点”二字的独特笔画拓扑结构，特别是“起”字走之底的动态曲线和“点”字底部的四点排列。",
+  "brand_cues_to_preserve": [
+    "“起点”汉字的完整字形结构",
+    "文字的水平排列布局",
+    "笔画的粗细比例关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为阅读App的文字载体属性",
+    "清晰可读的视觉传达"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 theme_design_analysis 中 alipay（支）和 douban（豆）的处理方式，对于以文字为核心的图标，必须严格保留其二维平面上的笔画拓扑和空间布局。仅将原本的扁平白色文字‘挤压’为具有厚度的3D冰雕实体，严禁改变字形结构或重组笔画。",
+  "design_rationale": "起点读书的核心识别度完全依赖于‘起点’这两个汉字。在冰雪主题下，若重构主体会导致用户无法第一时间识别App。因此策略选择强保留原Logo结构，通过材质（半透明冰晶）和光影（折射、高光）的变化来适配主题，同时去除原有的红色背景，改为纯净的白色环境，使文字本身成为视觉焦点。",
+  "must_preserve": [
+    "“起点”二字的准确字形",
+    "文字的左右并列结构",
+    "底部接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "将平面文字转化为具有Z轴厚度的立体块状",
+    "笔画边缘进行圆润化处理（模拟冰的融化感）",
+    "内部添加气泡、裂纹或雪花纹理",
+    "表面增加冷凝水珠和高光反射"
+  ],
+  "forbid": [
+    "禁止保留原图的红色背景",
+    "禁止将文字变为不透明的蓝色塑料质感",
+    "禁止修改汉字的笔画连接方式",
+    "禁止文字悬空无投影"
+  ],
+  "generation_direction": "Generate a 3D icon of the Chinese characters '起点' made of translucent light blue ice. The characters should be thick, glossy, and rounded like frozen sculptures. Place them on a pure white background with soft contact shadows and melting water details at the base. Internal texture includes small air bubbles and frost. No red color, no flat vector style."
+}

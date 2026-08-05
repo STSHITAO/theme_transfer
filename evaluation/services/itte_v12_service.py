@@ -16,9 +16,10 @@ from evaluation.services.vgg_gram_service import compute_vgg_gram_style_fit
 
 
 STYLE_GROUPS = ("color", "background", "stroke", "texture_material", "composition", "complexity")
-ITTE_VERSION = "v1.3-image-only"
+ITTE_VERSION = "v1.4-structure-policy-gated"
 IDENTITY_CALIBRATION = "dino-dense-same-run-gallery-percentile-v1"
 QUALITY_RULES_VERSION = "reference-normalized-artifacts-v2-dark-border-diagnostic"
+STRUCTURE_POLICY_VERSION = "pre-generation-per-app-v1"
 STYLE_COMPONENT_WEIGHTS = {
     "vgg_gram": 0.40,
     "dists_texture": 0.20,
@@ -51,6 +52,10 @@ def compute_itte_v12_metrics(
     root_dir: Path,
 ) -> ItteMetrics:
     app_names = [item.app for item in resolved.generated_icons]
+    structure_policies = {
+        item.app: item.structure_policy
+        for item in resolved.generated_icons
+    }
     reference_raw_paths = [item.reference_raw_path for item in resolved.theme_examples]
     theme_paths = list(resolved.theme_refs)
     generated_paths = [item.path for item in resolved.generated_icons]
@@ -121,6 +126,7 @@ def compute_itte_v12_metrics(
         generated_paths,
         app_names,
         dense_structure_features,
+        structure_policies,
     )
     identity_components = {
         "dino_dense": _component(
@@ -137,7 +143,8 @@ def compute_itte_v12_metrics(
             IDENTITY_COMPONENT_WEIGHTS["lpips_content"],
         ),
     }
-    identity_score, identity_available_weight = _weighted_available(identity_components)
+    identity_score_value, identity_available_weight = _weighted_available(identity_components)
+    identity_score = identity_score_value if identity_available_weight > 1e-8 else None
     identity_per_app = _merge_identity_rows(
         app_names,
         dense_identity["per_app"],
@@ -145,11 +152,15 @@ def compute_itte_v12_metrics(
         perceptual["lpips_content"].get("per_app", []),
         identity_components,
     )
-    identity_scores = [item["score"] for item in identity_per_app]
+    identity_scores = [item["score"] for item in identity_per_app if item["score"] is not None]
     identity = {
         "score": identity_score,
-        "p10_score": float(np.percentile(identity_scores, 10)) if identity_scores else 0.0,
+        "p10_score": float(np.percentile(identity_scores, 10)) if identity_scores else None,
         "available_weight": identity_available_weight,
+        "structure_policy_version": STRUCTURE_POLICY_VERSION,
+        "applicable_app_count": dense_identity["applicable_app_count"],
+        "skipped_app_count": dense_identity["skipped_app_count"],
+        "skipped_apps": dense_identity["skipped_apps"],
         "components": identity_components,
         "dino_dense": dense_identity,
         "dists_structure": perceptual["dists_structure"],
@@ -165,15 +176,21 @@ def compute_itte_v12_metrics(
         style_features,
     )
     quality = compute_visual_quality(theme_paths, generated_paths, app_names)
-    total = _weighted_score(
-        [
-            (style_score, 0.35),
-            (identity_score, 0.30),
-            (package["score"], 0.20),
-            (quality["score"], 0.15),
-        ]
+    total_components = [
+        (style_score, 0.35),
+        (package["score"], 0.20),
+        (quality["score"], 0.15),
+    ]
+    if identity_score is not None:
+        total_components.append((identity_score, 0.30))
+    total = _weighted_score(total_components)
+    confidence = _evaluation_confidence(
+        len(theme_paths),
+        style_available_weight,
+        identity_available_weight,
+        attributes,
+        dense_identity["applicable_app_count"],
     )
-    confidence = _evaluation_confidence(len(theme_paths), style_available_weight, identity_available_weight, attributes)
     hard_failures = _hard_failures(identity, package, quality, style_available_weight)
     decision = _decision(total, style_score, identity, package, quality, confidence, hard_failures)
     qwen_diagnostic = _load_generation_qwen_diagnostic(root_dir, resolved.package_id)
@@ -183,9 +200,20 @@ def compute_itte_v12_metrics(
         "eval_id": None,
         "evaluation_framework": "ITTE",
         "itte_version": ITTE_VERSION,
-        "evaluation_scope": "observable_image_transfer_only",
+        "evaluation_scope": "observable_image_transfer_with_pre_generation_structure_applicability",
         "theme_id": resolved.theme_id,
         "package_id": resolved.package_id,
+        "evaluation_coverage": {
+            "requested_app_count": len(resolved.generated_icons) + len(resolved.skipped_apps),
+            "evaluated_app_count": len(resolved.generated_icons),
+            "skipped_app_count": len(resolved.skipped_apps),
+            "skipped_apps": resolved.skipped_apps,
+            "ratio": (
+                len(resolved.generated_icons) / (len(resolved.generated_icons) + len(resolved.skipped_apps))
+                if resolved.generated_icons or resolved.skipped_apps
+                else 0.0
+            ),
+        },
         "itte_score": total,
         "tpqs": total,
         "tpqs_primary_score": total,
@@ -208,10 +236,15 @@ def compute_itte_v12_metrics(
             "text_policy": "out_of_scope",
             "perceptual_backend": perceptual,
             "identity_metric_validation": {
-                "dino_dense_used_in_primary_identity_score": True,
+                "dino_dense_used_in_primary_identity_score": "only_for_preserve_major_structure_apps",
                 "dists_structure_used_in_primary_identity_score": False,
                 "lpips_content_used_in_primary_identity_score": False,
                 "basis": "Verified-label retrieval on 158 real original/designer pairs.",
+            },
+            "structure_evaluation_policy": {
+                "version": STRUCTURE_POLICY_VERSION,
+                "frozen_before_generation": True,
+                "policies": structure_policies,
             },
         },
         "provenance": provenance,
@@ -339,7 +372,16 @@ def _motif_style_score(raw_paths, theme_paths, target_paths, generated_paths, ap
     }
 
 
-def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths, app_names, dense):
+def _dense_identity_score(
+    raw_paths,
+    theme_paths,
+    target_paths,
+    generated_paths,
+    app_names,
+    dense,
+    structure_policies=None,
+):
+    structure_policies = structure_policies or {}
     positive = [dense_correspondence(dense[str(raw)], dense[str(theme)])["score"] for raw, theme in zip(raw_paths, theme_paths)]
     gallery_paths = list(dict.fromkeys([*raw_paths, *target_paths]))
     distractor = [
@@ -373,10 +415,19 @@ def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths,
         ties = sum(abs(own["score"] - value) <= 1e-8 for value in distractor_scores)
         score = float((wins + ties) / max(len(distractor_scores), 1) * 100.0)
         rank = int(1 + sum(value > own["score"] for value in distractor_scores))
+        policy = structure_policies.get(app, {})
+        applicable = bool(policy.get("structure_identity_metric_applicable", True))
         per_app.append(
             {
                 "app": app,
-                "score": score,
+                "score": score if applicable else None,
+                "diagnostic_score": score,
+                "structure_identity_metric_applicable": applicable,
+                "structure_preservation_mode": policy.get(
+                    "structure_preservation_mode",
+                    "preserve_major_structure",
+                ),
+                "structure_policy_source": policy.get("source", "legacy_default"),
                 "raw_correspondence": own["score"],
                 "appearance_similarity": own["appearance_similarity"],
                 "spatial_consistency": own["spatial_consistency"],
@@ -385,11 +436,15 @@ def _dense_identity_score(raw_paths, theme_paths, target_paths, generated_paths,
                 "distractor_count": len(distractor_scores),
             }
         )
-    scores = [item["score"] for item in per_app]
+    scores = [item["score"] for item in per_app if item["score"] is not None]
+    skipped_apps = [item["app"] for item in per_app if item["score"] is None]
     return {
-        "score": float(np.mean(scores)) if scores else 0.0,
-        "p10_score": float(np.percentile(scores, 10)) if scores else 0.0,
-        "reliable": bool(positive and distractor),
+        "score": float(np.mean(scores)) if scores else None,
+        "p10_score": float(np.percentile(scores, 10)) if scores else None,
+        "reliable": bool(positive and distractor and scores),
+        "applicable_app_count": len(scores),
+        "skipped_app_count": len(skipped_apps),
+        "skipped_apps": skipped_apps,
         "positive_reference_similarity": positive_baseline,
         "distractor_similarity": distractor_baseline,
         "calibration": IDENTITY_CALIBRATION,
@@ -418,7 +473,21 @@ def _merge_identity_rows(app_names, dense_rows, dists_rows, lpips_rows, componen
             for name, value in values.items()
         }
         score, _ = _weighted_available(weighted)
-        output.append({"app": app, "score": score, "components": values})
+        dense_item = maps[0].get(app, {})
+        applicable = bool(dense_item.get("structure_identity_metric_applicable", True))
+        output.append(
+            {
+                "app": app,
+                "score": score if applicable else None,
+                "diagnostic_score": dense_item.get("diagnostic_score"),
+                "structure_identity_metric_applicable": applicable,
+                "structure_preservation_mode": dense_item.get(
+                    "structure_preservation_mode",
+                    "preserve_major_structure",
+                ),
+                "components": values,
+            }
+        )
     return output
 
 
@@ -482,6 +551,15 @@ def _per_app_report(app_names, style, identity, package, quality, total):
                 "itte_score": total,
                 "style_fidelity_score": float(np.mean(style_values)) if style_values else style["score"],
                 "identity_preservation_score": identity_map[app]["score"],
+                "identity_structure_diagnostic_score": identity_map[app].get("diagnostic_score"),
+                "structure_identity_metric_applicable": identity_map[app].get(
+                    "structure_identity_metric_applicable",
+                    True,
+                ),
+                "structure_preservation_mode": identity_map[app].get(
+                    "structure_preservation_mode",
+                    "preserve_major_structure",
+                ),
                 "package_membership_score": package_map[app]["score"],
                 "visual_quality_score": quality_map[app]["score"],
                 "is_package_outlier": package_map[app]["is_outlier"],
@@ -513,7 +591,7 @@ def _decision(total, style, identity, package, quality, confidence, hard_failure
         return "style_transfer_success"
     if style < 60.0:
         return "style_transfer_weak"
-    if identity["score"] < 60.0:
+    if identity["score"] is not None and identity["score"] < 60.0:
         return "identity_preservation_weak"
     if package["score"] < 60.0:
         return "package_coherence_weak"
@@ -522,10 +600,13 @@ def _decision(total, style, identity, package, quality, confidence, hard_failure
     return "needs_review"
 
 
-def _evaluation_confidence(reference_count, style_weight, identity_weight, attributes):
-    if reference_count >= 8 and style_weight >= 0.80 and identity_weight >= 0.80 and attributes["reliable"]:
+def _evaluation_confidence(reference_count, style_weight, identity_weight, attributes, identity_applicable_count=None):
+    identity_required = identity_applicable_count != 0
+    identity_high = not identity_required or identity_weight >= 0.80
+    identity_medium = not identity_required or identity_weight >= 0.50
+    if reference_count >= 8 and style_weight >= 0.80 and identity_high and attributes["reliable"]:
         return "high"
-    if reference_count >= 5 and style_weight >= 0.60 and identity_weight >= 0.50:
+    if reference_count >= 5 and style_weight >= 0.60 and identity_medium:
         return "medium"
     return "low"
 
@@ -653,6 +734,7 @@ def _provenance(root, paths, config):
         "style_weights": STYLE_COMPONENT_WEIGHTS,
         "identity_weights": IDENTITY_COMPONENT_WEIGHTS,
         "identity_calibration": IDENTITY_CALIBRATION,
+        "structure_policy_version": STRUCTURE_POLICY_VERSION,
         "quality_rules_version": QUALITY_RULES_VERSION,
     }
     return {

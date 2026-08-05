@@ -1,0 +1,40 @@
+{
+  "app": "qq_speed",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "带有“DRIFT”字样的鸭舌帽轮廓及整体头部剪影",
+  "brand_cues_to_preserve": [
+    "帽子正面的“DRIFT”文字排版与字体风格",
+    "帽子左侧的圆形徽章结构",
+    "人物头部的整体宽高比与帽子佩戴角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "竞速/漂移的游戏属性（通过DRIFT文字体现）",
+    "年轻化/潮流文化的视觉暗示（通过帽子造型体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，即使是复杂的图形或文字组合，也应保持其原始拓扑结构不变，仅做材质替换和立体化挤出。QQ飞车的核心识别在于‘戴帽子的头像’这一特定剪影以及帽子上的文字，若重构为赛车或赛道将导致用户无法识别App身份。因此必须严格保留原图标的几何轮廓，将其视为一个整体的3D冰雕物件处理。",
+  "design_rationale": "选择 logo_preserve 策略是因为 QQ飞车 的图标具有极高的人物特征辨识度。根据 theme_design_analysis，所有主体必须转化为半透明冰晶材质。我们将原本色彩丰富的二次元头像转化为单色（冰蓝）的冰雕，利用冰块的厚度和内部纹理（如冻结的气泡代替原本的头发细节）来重塑体积感。帽子上的“DRIFT”文字将作为浮雕或内嵌结构保留，确保在去色后依然可读。",
+  "must_preserve": [
+    "帽檐的弧度与帽顶的结构线",
+    "“DRIFT”文字的相对位置和字形骨架",
+    "头部与帽子的遮挡关系",
+    "底部的物理接触阴影与水渍细节"
+  ],
+  "can_recompose": [
+    "面部五官细节（可简化为冰面起伏或模糊化处理，避免恐怖谷效应）",
+    "头发的发丝细节（转化为冰块内部的流纹或裂纹）",
+    "原本的色彩（强制统一为 Ice Blue）",
+    "背景元素（完全移除，改为纯白背景）"
+  ],
+  "forbid": [
+    "禁止保留原本的黄色帽子和肤色",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止将人物替换为真实的赛车模型",
+    "禁止主体悬空无投影",
+    "禁止文字变得不可辨认"
+  ],
+  "generation_direction": "Generate a 3D icon of a character head wearing a cap, sculpted entirely from translucent light blue ice. The cap features the word 'DRIFT' clearly embossed or frozen inside the ice structure. The material must look like frozen water with internal bubbles and a glossy wet surface. No skin tones or yellow colors; everything is monochromatic ice blue. Centered composition on a pure white background with a soft contact shadow and melting water puddle at the base. High fidelity to the original silhouette."
+}

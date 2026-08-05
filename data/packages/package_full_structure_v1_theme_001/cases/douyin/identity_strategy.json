@@ -1,0 +1,38 @@
+{
+  "app": "douyin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的音符几何轮廓（Note shape）",
+  "brand_cues_to_preserve": [
+    "音符的整体剪影形状",
+    "符头圆环与符干的比例关系",
+    "右侧切角的几何特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐符号的通用语义",
+    "动态与节奏感的视觉暗示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考案例中 douyin 和 douyin_huoshan 均严格保留了音符的主体轮廓，仅做材质替换和底座添加。抖音的音符具有极高的国民辨识度，任何结构重组都会导致识别失败，因此必须采用 preserve_major_structure，将平面音符直接转化为立体冰雕。",
+  "design_rationale": "抖音图标属于高抽象度的超级符号，其核心价值在于独特的曲线轮廓。根据 theme_design_analysis 中的 'geometry conservation' 原则，应将原图的故障风（Glitch）红蓝重影效果完全移除，转化为纯净的单色冰体。为了符合主题的物理真实感，需要为悬浮的音符增加一个厚实的冰块底座，使其稳固地立在白色背景上，同时通过内部的气泡和表面的高光来体现冰雪质感。",
+  "must_preserve": [
+    "音符的准确拓扑结构（符头、符干、符尾的连接方式）",
+    "半透明浅冰蓝色（Cyan/Ice Blue）的主色调",
+    "底部的物理接触阴影和水渍细节",
+    "内部的雪花或气泡纹理"
+  ],
+  "can_recompose": [
+    "原图的黑底背景（改为纯白）",
+    "原图的红蓝色彩偏移特效（改为统一冰色）",
+    "符尾末端的尖锐度（可略微圆润化以模拟冰的融化感）"
+  ],
+  "forbid": [
+    "保留原图的红、青、黑品牌色",
+    "生成不透明的塑料或金属质感",
+    "改变音符的长宽比或弯曲弧度",
+    "缺少底部投影导致物体看起来像漂浮的贴纸"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the TikTok/Douyin musical note symbol. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. The note stands on a thick, clear ice base for stability. Pure white background with soft contact shadow and melting water puddle at the bottom. No red or black colors."
+}

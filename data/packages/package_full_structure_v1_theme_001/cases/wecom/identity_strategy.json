@@ -1,0 +1,37 @@
+{
+  "app": "wecom",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "蓝色气泡轮廓与右下角四色水滴的相对位置关系",
+  "brand_cues_to_preserve": [
+    "巨大的蓝色对话气泡主体轮廓",
+    "右下角呈环形排列的四颗水滴/逗号状元素",
+    "气泡左下角的尖角指向"
+  ],
+  "semantic_cues_to_preserve": [
+    "沟通/对话（气泡语义）",
+    "连接/聚合（多色水滴汇聚语义）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，对于具有极高识别度的几何符号（文字或具象物体），必须完整保留其二维轮廓并直接进行 3D 挤出。WeCom 的气泡与水滴组合是其核心身份，严禁重构为其他办公场景（如真实的桌子或文件），必须将原 Logo 整体转化为冰雕。",
+  "design_rationale": "企业微信的图标由明确的几何图形（气泡+水滴）组成，符合主题中“保留原始 Logo 核心几何轮廓”的规则。策略是将原本扁平、高饱和度的蓝/绿/黄/橙配色，统一替换为通透的冰蓝色材质。原本的彩色水滴不再使用原色，而是转化为冰体内部的气泡或不同密度的冰晶结构，以维持主题的统一性（去色处理），同时通过保留精确的剪影来确保用户能一眼识别出这是企业微信。",
+  "must_preserve": [
+    "气泡的整体圆环形状及左下尾巴",
+    "四个水滴围绕右下角排列的空间布局",
+    "图标的正视图透视角度"
+  ],
+  "can_recompose": [
+    "原本鲜艳的绿、黄、橙色必须被同化为冰蓝色调",
+    "水滴的实体感可以转化为半透明的内部包裹物或表面浮雕",
+    "边缘需从锐利矢量线变为圆润的冰体倒角"
+  ],
+  "forbid": [
+    "禁止保留原始的绿色、黄色、橙色",
+    "禁止将气泡改为方形或其他形状",
+    "禁止生成不透明的塑料质感",
+    "禁止省略底部的接触阴影和水迹"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the WeCom logo. The main shape is a large, thick ring resembling a speech bubble with a tail at the bottom left. At the bottom right, embed four teardrop shapes arranged in a cluster, mimicking the original layout. Material is translucent pale cyan ice with internal bubbles and snowflake textures. Surface has condensation droplets. No original colors (green/yellow/orange); everything is unified ice blue. White background with a soft shadow and melting water puddle at the base."
+}

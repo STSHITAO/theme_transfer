@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 65,
+      "style_match_score": 65,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "该候选图在身份识别度上表现极佳，完整保留了‘戴企鹅帽人物’的核心剪影、五官布局及手持铲子的特征，符合 strict 约束下对结构保留的高要求。然而，其材质渲染偏向于不透明的磨砂冰或半透明塑料（Matte/Plastic），缺乏参考图中那种清澈通透的液态冰晶感（Glossy/Translucent）和内部折射细节，导致风格匹配度略低。尽管如此，鉴于其对品牌轮廓的精准还原，仍作为首选推荐，但需注意材质质感需向参考图对齐。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 40,
+      "background_score": 95,
+      "composition_score": 85,
+      "artifact_score": 90,
+      "overall_score": 65,
+      "failure_reason": "虽然材质渲染非常接近参考图的冰晶风格（通透、有气泡），但在结构保留上存在明显缺陷。为了追求冰块的整体感，面部五官（特别是眼睛）发生了严重的形变和模糊，几乎无法辨认，违反了 identity_constraint_level: strict 的要求。此外，整体轮廓略显臃肿，丢失了原图标中人物头部的清晰边缘，导致目标识别度大幅下降。",
+      "recommendation": "不推荐。尽管风格化程度高，但牺牲了核心的品牌识别特征（面部和轮廓清晰度），属于过度重构（Over-recompose）。在 strict 模式下，识别度优先于纯粹的材质美感。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\tencent_comics\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

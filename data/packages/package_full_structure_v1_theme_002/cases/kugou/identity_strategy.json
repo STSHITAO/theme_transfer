@@ -1,0 +1,36 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "蓝色圆环包裹的白色 'K' 字母结构",
+  "brand_cues_to_preserve": [
+    "外部的圆形轮廓框架",
+    "内部大写的 'K' 字母形态",
+    "蓝白配色的基础关系（需映射为主题色）"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐播放器的品牌标识性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "酷狗音乐的原始图标本身就是高度抽象的几何符号（圆+K），完全符合主题中关于‘几何块面组合’的要求。参考 Bilibili 和 Douyin 的案例，对于此类清晰的符号化 Logo，应保留其拓扑结构，仅对填充颜色、描边风格和质感进行主题化迁移，无需重构主体。",
+  "design_rationale": "选择 logo_preserve 策略，因为原图标的几何特征非常显著且简洁。通过保留‘圆环+K’的结构，能确保用户在主题化后依然能瞬间识别出 App。设计重点在于将原本平滑的矢量风格转化为粗犷的手绘涂鸦风格：将标准的蓝色替换为高饱和度的靛蓝或深蓝，白色 K 字改为奶黄或米白以增加复古感，并添加标志性的粗黑抖动描边，使其看起来像是一个手工绘制的徽章或贴纸。",
+  "must_preserve": [
+    "圆环包围 K 字的同心布局",
+    "K 字的基本笔画走势（左侧竖线，右侧上下分叉）",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "圆环的闭合度（允许手绘造成的微小缺口或连接处重叠）",
+    "K 字与圆环的相对大小比例（可适度调整以适配构图）",
+    "具体的色值（必须从标准蓝白映射到主题的红蓝黄体系）"
+  ],
+  "forbid": [
+    "禁止保留原始的平滑矢量边缘",
+    "禁止使用原始的标准亮蓝色（#0055FF）",
+    "禁止添加任何立体高光或阴影",
+    "禁止改变 K 字的字形结构（如变成小写 k 或其他字体）"
+  ],
+  "generation_direction": "Draw a thick, hand-drawn doodle style icon on a pure black background. The subject is a large capital letter 'K' enclosed within a circular ring. Use high-saturation indigo blue for the ring and creamy yellow or off-white for the 'K'. Apply heavy, rough black marker strokes for outlines with visible jitter and uneven thickness. Flatten all shapes, remove gradients and shadows. The composition should be centered, resembling a clumsy, retro handmade badge."
+}

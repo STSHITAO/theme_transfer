@@ -1,0 +1,61 @@
+{
+  "app": "Soul",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'alipay' and 'bilibili' reference patterns, the text/logo structure is the primary identifier. The strategy requires extruding the 2D text into 3D ice blocks while maintaining the exact font topology. No structural重组 is needed as the text is already a strong geometric symbol.",
+  "preserve": [
+    "The legibility of the word 'Soul'",
+    "The specific curvature at the bottom of the letter 'l'",
+    "Translucent ice material with internal bubbles/snowflakes",
+    "Contact shadow and melting water details at the base"
+  ],
+  "must_preserve": [
+    "The exact letterforms and spacing of 'Soul'",
+    "The distinct shape of the letter 'l' (vertical stroke with bottom curve)",
+    "The horizontal alignment of the text"
+  ],
+  "recompose_allowed": [
+    "The background planet/starry texture (remove completely)",
+    "The cyan brand color (replace with ice blue refraction)",
+    "The flat 2D surface (convert to volumetric 3D)"
+  ],
+  "restyle": [
+    "Convert all letters to translucent light-blue ice material",
+    "Round off sharp edges to mimic eroded/melted ice",
+    "Add internal subsurface scattering, air bubbles, and snowflake textures",
+    "Apply glossy wet surface finish with specular highlights"
+  ],
+  "decorate": [
+    "Add soft contact shadow on white ground plane",
+    "Add small puddle of water or ice shards at the base for grounding",
+    "Ensure studio lighting creates strong white reflections on upper curves"
+  ],
+  "forbid": [
+    "Retaining the black background or starry texture",
+    "Using the original cyan color for the letters",
+    "Changing the font style or letter shapes",
+    "Opaque plastic or metal materials",
+    "Floating objects without ground contact shadows",
+    "Flat vector styles or 2D appearances"
+  ],
+  "generation_brief": "3D icon of the text 'Soul' sculpted from translucent light-blue ice. Letters are thick, rounded, and glossy with internal bubbles and snowflakes. The letter 'l' retains its unique hook shape. Pure white background. Soft contact shadow and small water puddle at the base. High-quality C4D render, refraction, subsurface scattering.",
+  "color_application": "Discard original black/cyan palette. Apply uniform translucent cyan/ice-blue (#A0D8EF) to all letterforms. Use pure white for specular highlights and deep blue/grey for internal shadows and refraction depth.",
+  "stroke_application": "Remove all 2D outlines. Define forms through 3D volume, lighting contrast, and refractive edges. Ensure edges are smooth, chamfered, and physically rounded like melted ice.",
+  "composition_application": "Center the 'Soul' text block. Occupy 60-70% of canvas height. Maintain horizontal alignment. Place on a clean white ground plane with subtle contact shadow and base details (puddle/shards) to anchor the object.",
+  "identity_application": "Preserve the exact typographic skeleton of 'Soul', especially the distinctive 'l'. Recognizability relies on the 3D form matching the original 2D silhouette exactly, just extruded and materialized as ice.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal, not opaque plastic.",
+    "Color must be strictly ice-blue/cyan spectrum; no original brand colors.",
+    "Original icon shape (text 'Soul') must be clearly recognizable.",
+    "Must have environmental interaction (shadow/water) at the base."
+  ],
+  "negative_constraints": [
+    "No flat vector or 2D styles.",
+    "No solid/opaque colors.",
+    "No dark or complex backgrounds (must be white/light grey).",
+    "No distortion of letter shapes or font changes.",
+    "No floating objects without shadows."
+  ]
+}

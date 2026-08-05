@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了生成计划。材质呈现高通透度的冰晶质感，内部气泡与雪花纹理细节丰富且自然。严格保留了虎头剪影、播放键负空间及底部虎牙特征，长宽比准确。底部接触阴影与水渍处理符合物理规律，完全符合 strict 约束要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "整体风格正确，但在材质表现上略显浑浊（偏向磨砂或半透明塑料感），不如 candidate_01 清澈通透。几何结构保留完整，但边缘的高光折射感稍弱，导致立体感和精致度略逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\huya\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

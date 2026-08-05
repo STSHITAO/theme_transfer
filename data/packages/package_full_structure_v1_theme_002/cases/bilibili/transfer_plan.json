@@ -1,0 +1,64 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 的迁移案例显示，该 App 的核心识别度依赖于‘电视轮廓+文字’的组合拓扑。Original 图标本身已是高度符号化的几何图形，符合 theme_rules 中‘当 Original 为清晰几何符号时保留主体轮廓’的原则。因此，必须锁定电视外框和内部文字的空间关系，仅对填充色、描边和质感进行主题化重构，严禁改变其物理结构。",
+  "preserve": [
+    "电视机主体的圆角矩形轮廓",
+    "顶部两个天线的相对位置和形状",
+    "内部文字 'bilibili' 的基本笔画走向和排列顺序",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感外描边"
+  ],
+  "must_preserve": [
+    "电视机主体的圆角矩形轮廓",
+    "顶部两个天线的相对位置和形状",
+    "内部文字 'bilibili' 的基本笔画走向和排列顺序",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感外描边"
+  ],
+  "recompose_allowed": [
+    "将原本的粉白配色重组为红、蓝、黄的任意组合（例如电视框用红色，文字用奶黄或蓝色）",
+    "将平滑的矢量边缘转化为不规则的抖动线条",
+    "将文字笔画适当加粗或变形以适配手绘风格",
+    "在电视屏幕空白处或文字间隙添加微小的四角星或圆点装饰"
+  ],
+  "restyle": [
+    "去除所有粉色渐变和立体光影",
+    "应用蜡笔/马克笔的粗糙颗粒质感",
+    "使用高饱和度的砖红、深蓝、奶黄进行纯色块平涂",
+    "边缘处理为不规则的手绘抖动效果"
+  ],
+  "decorate": [
+    "可选：在文字间隙或电视角落添加简单的黄色四角星或圆点作为涂鸦点缀"
+  ],
+  "forbid": [
+    "禁止保留原始的粉色渐变背景",
+    "禁止使用细线条或无描边设计",
+    "禁止将电视轮廓改为其他形状（如手机、播放器图标）",
+    "禁止添加立体阴影或高光效果",
+    "禁止使用主题色板以外的颜色（如绿色、紫色）",
+    "禁止移除顶部的双天线结构"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of a TV set on pure black background. Thick, rough black outline with shaky marker-pen texture. Inside the TV screen, stylized text 'bilibili' in solid blocks of brick red, deep blue, or creamy yellow. No gradients, no shadows, flat colors only. Two antennas on top. Clumsy, naive art style.",
+  "color_application": "Map original pink/white scheme to theme's limited palette: use brick red or deep blue for the TV frame, and creamy yellow or contrasting primary color for the 'bilibili' text. Ensure high saturation and flat fill.",
+  "stroke_application": "Apply thick, irregular black strokes to all edges (TV frame, antennas, text). Simulate hand-drawn marker lines with varying thickness and rough ends. No smooth vector lines.",
+  "composition_application": "Center the TV icon, occupying 60-70% of the canvas. Maintain the vertical hierarchy: antennas on top, TV body containing text below. Keep ample black negative space around the subject.",
+  "identity_application": "Preserve the iconic 'small TV' silhouette and the specific arrangement of the 'bilibili' text within it. The identity relies on the combination of the TV shape and the brand name, not just the shape alone.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, rough, hand-drawn style outlines",
+    "Colors must be restricted to high-saturation red, blue, yellow/white",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No pink gradients or original brand colors unless mapped to theme palette",
+    "No 3D rendering, gloss, or lighting effects",
+    "No thin or perfect vector lines",
+    "No removal of TV antennas or change of TV shape",
+    "No complex details or photorealism"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "app": "onmyoji",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，即使是复杂图形也应保留其核心拓扑结构。Onmyoji 原图虽为复杂插画，但其‘人脸+金鱼’的组合具有极高的品牌辨识度。根据 theme_rules 中的 'target_preservation' 原则，不能将其重构为通用的神社或符咒，必须保留角色头部与金鱼的相对位置关系，仅做几何简化和材质替换。",
+  "preserve": [
+    "神乐（Kagura）头部的整体轮廓，特别是齐刘海与长发的基本形态",
+    "左上方悬浮的金鱼形状及其与头部的相对空间位置",
+    "角色面部的大致朝向与神态暗示（通过冰块内部结构表现）",
+    "右下角网易游戏 'S' 形螺旋 Logo 的独立存在与基本形态"
+  ],
+  "must_preserve": [
+    "主体必须呈现为半透明浅冰蓝色（Cyan/Ice Blue），严禁使用原图的深紫色、红色或黑色填充主体",
+    "金鱼的形态必须清晰可辨，作为独立的冰冻物件或附着在主体上的冰雕组件存在",
+    "底部必须有接触阴影和碎冰/水渍细节，确立物理落地感",
+    "边缘必须圆润光滑，模拟冰块打磨质感，无锐利描边",
+    "右下角 'S' Logo 需保持其几何识别度，可转化为冰质或保持独立悬浮，但不可被主体遮挡至不可见"
+  ],
+  "recompose_allowed": [
+    "将复杂的面部五官（眼睛、嘴巴）简化为冰内部的纹理、气泡聚集或表面凹凸结构",
+    "将头发的复杂发丝简化为整体的块面结构和流线型冰体",
+    "将金鱼的鳞片细节简化为冰表面的裂纹、气泡或内部雪花纹理",
+    "去除所有背景装饰，替换为纯白环境"
+  ],
+  "restyle": [
+    "将原图的二次元厚涂/赛璐璐风格完全转换为 3D 冰晶/水晶材质渲染风格",
+    "应用次表面散射（SSS）效果，使光线穿透冰体，营造通透感",
+    "添加表面冷凝水珠和高光反射，增强湿润感和真实感"
+  ],
+  "decorate": [
+    "在冰体内部嵌入微小的雪花图案或空气气泡",
+    "在主体底部周围散落少量碎冰 shards 或形成小水坑",
+    "在金鱼缸/金鱼部分增加内部折射细节以强调其独立性"
+  ],
+  "forbid": [
+    "禁止保留原图的深色背景和暖色调光影",
+    "禁止生成不透明的塑料质感、金属质感或实心彩色块",
+    "禁止将金鱼与人脸融合成一个无法区分的怪异团块，需保持两者结构分离或清晰层次",
+    "禁止出现扁平化的矢量线条风格或黑色描边",
+    "禁止删除右下角的品牌 Logo"
+  ],
+  "generation_brief": "3D icon of Onmyoji app: a stylized ice sculpture of an anime girl's head (Kagura) with distinct bangs, accompanied by a translucent ice goldfish floating near the top left. A small ice-carved 'S' logo sits at the bottom right. Material is translucent light blue crystal with internal bubbles and snowflakes. Glossy wet surface, soft rounded edges. Pure white background, soft contact shadow with scattered ice shards at base. High quality C4D render, refraction, subsurface scattering.",
+  "color_application": "强制去色。原图中的红、紫、黑等品牌色全部转换为统一的半透明浅冰蓝色（#A0D8EF approx）。仅通过白色高光和深蓝色阴影来表现体积，不保留任何原色填充。",
+  "stroke_application": "消除所有平面描边。通过 3D 模型的物理边缘、折射光晕和表面高光来界定轮廓。边缘处理柔和圆润，模拟冰块融化或打磨后的自然形态。",
+  "composition_application": "保持原图‘人物头部+左上金鱼+右下Logo’的空间布局。将 2D 插画元素‘挤压’为具有 Z 轴厚度的 3D 实体。主体居中偏上，底部留出空间给阴影和水渍交互。确保金鱼与头部的前后空间关系在 3D 空间中合理呈现。",
+  "identity_application": "通过保留‘齐刘海发型轮廓’和‘左上角金鱼’这两个最强视觉锚点来维持身份。放弃对瞳孔颜色、肤色等细节的还原，转而依靠冰雕的整体形态和关键部件（金鱼）的位置关系来传达‘阴阳师’的 IP 特征。右下角 Logo 作为硬性品牌标识予以保留并冰质化。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内，禁止使用原品牌色填充主体",
+    "必须保留 original 的核心轮廓识别度，不可因材质化导致形状模糊无法辨认",
+    "底部必须有环境交互细节（阴影、水渍、碎冰），不能悬空"
+  ],
+  "negative_constraints": [
+    "禁止保留原图标的实心色彩填充（红/紫/黑）",
+    "禁止使用黑色或深色背景",
+    "禁止将主体设计为扁平化或低多边形（Low-poly）风格",
+    "禁止过度重构主体形状导致金鱼或人脸特征丢失",
+    "禁止忽略右下角品牌 Logo"
+  ]
+}

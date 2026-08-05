@@ -1,0 +1,58 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（小电视）和 douban（豆字）均保留了复杂的具象轮廓并直接转化为冰雕。金铲铲的企鹅形象具有极高的辨识度，且其圆润的身体结构非常适合表现冰块的体积感和次表面散射效果。因此，必须完整保留企鹅+铲子的剪影结构，仅做材质替换，不进行语义重组。",
+  "preserve": [
+    "企鹅的整体剪影（包括头盔突起）",
+    "铲子的独特形状（手柄与铲头比例）",
+    "企鹅面部五官的相对位置"
+  ],
+  "must_preserve": [
+    "企鹅的基本生物特征（圆眼、尖喙）",
+    "头盔覆盖头部的结构关系",
+    "锅铲作为核心道具的存在感及形态",
+    "角色的正面朝向和构图重心"
+  ],
+  "recompose_allowed": [
+    "原本复杂的金属反光和羽毛纹理（统一简化为冰内气泡/裂纹）",
+    "原图标的暖色光源（改为冷色环境光）",
+    "右下角的橙色角标（移除或极微小化处理，避免破坏冰蓝主色调）"
+  ],
+  "restyle": [
+    "将企鹅身体、头盔和铲子统一重构为半透明青冰蓝材质",
+    "表面增加高光泽湿润感和菲涅尔反射",
+    "内部填充随机微小气泡和雪花纹理以模拟天然冰块"
+  ],
+  "decorate": [
+    "底部添加融化的水迹和小水洼以增强物理接触感",
+    "边缘进行倒角处理以捕捉高光"
+  ],
+  "forbid": [
+    "禁止生成不透明的白色雪球或塑料质感",
+    "禁止改变铲子的形状（如变成剑或法杖）",
+    "禁止保留原图的大面积深蓝色背景或品牌色",
+    "禁止丢失企鹅的眼睛和嘴巴细节",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D ice sculpture of a penguin mascot wearing a helmet and holding a spatula. Translucent cyan-blue ice material with internal bubbles and snowflake textures. Glossy wet surface, caustic lighting. Centered composition on pure white background. Melting water puddles at base. No solid colors, no brand colors.",
+  "color_application": "强制去色。将原图的蓝白企鹅和金铲统一转换为半透明青冰蓝（Cyan-Ice Blue）。利用深蔚蓝（Deep Azure）表现阴影厚度，半透明白表现高光。完全摒弃原有的金色和橙色，除非作为极微小的内部杂质点缀，否则不作为主色。",
+  "stroke_application": "消除所有二维描边。将企鹅和铲子的轮廓转化为具有厚度的3D实体边缘。通过材质的折射率差异和边缘高光来界定形状，而非线条。原图中的负空间保持通透。",
+  "composition_application": "单体居中构图。企鹅主体占据画布约60%-70%空间。去除原图的复杂背景漩涡，替换为纯白背景。确保企鹅稳固地'立'在平面上，底部预留空间给投影和水渍。",
+  "identity_application": "通过严格保留企鹅佩戴头盔手持铲子的独特剪影来维持身份。即使材质变为统一的冰蓝色，用户仍能通过轮廓识别出是金铲铲之战的吉祥物。五官细节通过冰层折射隐约可见，保持神态。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（金/橙/深蓝）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题（如保持原图的金属/毛绒质感）。",
+    "禁止破坏身份（如改变铲子形状或移除头盔）。",
+    "禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构。"
+  ]
+}

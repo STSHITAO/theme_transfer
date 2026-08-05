@@ -1,0 +1,61 @@
+{
+  "app": "WeChat",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和抖音（Douyin）的转换案例，该主题的核心逻辑是将平面Logo直接转化为具有厚度的3D冰雕实体。微信的双气泡结构清晰且具有高辨识度，必须完整保留其几何轮廓、重叠关系和比例，仅通过增加Z轴厚度、倒角和冰材质来重塑，严禁改变气泡的形状或将其替换为其他物体。",
+  "preserve": [
+    "双气泡的整体剪影轮廓",
+    "前后遮挡的空间关系（右侧小气泡在前）",
+    "内部圆点的位置和大小比例",
+    "底部的融化水迹和接触阴影"
+  ],
+  "must_preserve": [
+    "一大一小两个气泡的层叠布局（左后右前）",
+    "气泡尾部的指向性尖角",
+    "气泡内部的两个圆形“眼睛”特征",
+    "对话/聊天的语义符号（气泡形状）",
+    "社交互动的隐喻（成对出现）"
+  ],
+  "recompose_allowed": [
+    "原始的绿色背景（必须移除）",
+    "平面的白色填充（转换为半透明冰体）",
+    "锐利的矢量边缘（转换为圆润的冰体倒角）"
+  ],
+  "restyle": [
+    "将扁平气泡转化为具有物理厚度的3D冰雕",
+    "表面添加冷凝水珠和高光反射",
+    "内部嵌入雪花或微小气泡纹理",
+    "边缘处理为圆润光滑的冰体质感"
+  ],
+  "decorate": [
+    "底部增加微量融化的水渍以增强落地感",
+    "主体内部呈现次表面散射（SSS）效果"
+  ],
+  "forbid": [
+    "禁止保留任何绿色元素",
+    "禁止将气泡做成不透明的实心塑料或金属",
+    "禁止改变气泡的长宽比或重叠方式",
+    "禁止添加复杂的冰雪场景背景",
+    "禁止使用2D平面矢量风格"
+  ],
+  "generation_brief": "3D icon of WeChat logo: two overlapping speech bubbles made of translucent pale blue ice. Strict geometry: larger bubble back-left, smaller bubble front-right, each with two dot eyes. Material: frozen water with internal bubbles/snowflakes, glossy surface with condensation droplets. Background: pure white. Base: soft contact shadow and melting water puddle. No green colors.",
+  "color_application": "强制去色。原始品牌绿完全丢弃，统一转换为高透明度的冰蓝色（Pale Cyan/Ice Blue）。仅通过明度变化表现体积，不使用任何彩色渐变。",
+  "stroke_application": "消除所有2D描边。依靠3D模型的体积感、边缘的高光折射以及内部的气泡/裂纹纹理来界定轮廓。边缘处理圆润光滑，模拟冰块打磨后的质感。",
+  "composition_application": "单体居中构图。主体占据画布约60-70%空间。原本位于背景的绿色被移除，主体悬浮于纯白背景之上，底部增加接触阴影和水迹以建立空间关系。",
+  "identity_application": "通过严格保留双气泡的几何轮廓、重叠顺序（左后右前）及内部“眼睛”圆点的位置来维持身份识别。不依赖颜色，完全依赖形状和结构比例。",
+  "fidelity_constraints": [
+    "必须使用统一的冰蓝色半透明材质，严禁使用原始品牌色（绿色）。",
+    "必须包含内部气泡、雪花或冰裂纹理，这是该主题的核心指纹。",
+    "主体必须呈现3D立体感，不能是平面的蓝色剪影。",
+    "背景必须保持干净洁白，突出主体的通透感。"
+  ],
+  "negative_constraints": [
+    "禁止保留原始App的品牌主色（绿色）。",
+    "禁止使用不透明的塑料或金属材质，必须是透光的冰/水晶质感。",
+    "禁止使用复杂的场景背景，必须是纯色背景。",
+    "禁止将主体完全重构为无关物体，必须保留原Logo的几何轮廓。",
+    "禁止生成平面图标，缺乏3D厚度和光影折射。"
+  ]
+}

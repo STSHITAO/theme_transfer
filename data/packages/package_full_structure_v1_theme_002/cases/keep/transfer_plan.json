@@ -1,0 +1,61 @@
+{
+  "app": "Keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Keep 的原始图标已经是高度抽象的几何符号（字母 K），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Douyin 的案例，对于此类强符号化的 Logo，应保留其主体拓扑结构，仅对填充材质、描边风格和色彩进行主题化重构，无需进行语义重组。",
+  "preserve": [
+    "K 字母的整体骨架结构（左侧竖条，右侧两斜线）",
+    "右上角四角星装饰符号的存在及其相对位置",
+    "笔画末端的圆润处理（Caps）",
+    "K 字母右上斜线与中心连接点的断开/分离特征"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗黑色的不规则手绘描边",
+    "K 字母的基础拓扑结构不可改变",
+    "星星作为二级品牌标识必须保留"
+  ],
+  "recompose_allowed": [
+    "颜色映射：将原白/紫渐变替换为主题限定的高饱和度色块（砖红/深蓝/奶黄）",
+    "边缘处理：将平滑矢量边缘转化为抖动、粗糙的手绘线条",
+    "内部填充：去除光泽/渐变，改为哑光平涂色块",
+    "星星形状：可简化为更几何化、拙朴的四角星形态"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦风格（Retro Hand-drawn Doodle）",
+    "模拟马克笔或蜡笔在粗糙表面的干性绘画质感",
+    "采用扁平化设计，完全摒弃立体光影渲染"
+  ],
+  "decorate": [
+    "在 K 字母内部或周围不添加额外装饰，保持极简",
+    "星星使用奶黄色/米白色平涂，作为视觉点睛"
+  ],
+  "forbid": [
+    "保留原始的紫色调、渐变色或高光阴影",
+    "使用细线条、平滑矢量线或无描边设计",
+    "背景出现除纯黑以外的任何颜色或纹理",
+    "将 K 字母替换为哑铃、跑步人形等通用运动符号",
+    "改变 K 字母骨架导致识别度丧失"
+  ],
+  "generation_brief": "A retro hand-drawn doodle style icon of the letter 'K' on a pure black background. The 'K' is filled with solid high-saturation brick red or deep blue, featuring thick, rough, uneven black marker-style outlines. A small four-pointed star in creamy yellow sits at the top right. Flat color, no gradients, no shadows, naive art style, centered composition, crayon texture.",
+  "color_application": "强制去色并重构配色。移除 Keep 原有的紫色渐变背景和白/灰字体色。将 K 主体映射为主题色板中的高饱和度砖红或深宝蓝，星星映射为奶黄/米白。所有色块均为纯色平涂，无渐变。",
+  "stroke_application": "从原有的无描边或精细边缘，转变为粗重的黑色手绘描边。线条需呈现明显的抖动感和厚度变化，模拟马克笔快速涂抹的痕迹，转角处处理为不规则圆角或钝角。",
+  "composition_application": "保持单体居中构图。K 字母占据画布中心约 60%-70% 面积，四周留黑均匀。星星位于 K 的右上角区域，保持原有的空间相对位置，但随整体风格简化。",
+  "identity_application": "严格保留 K 字母的几何骨架和右上角星星，这是 Keep 的核心识别锚点。通过主题化的粗描边和高饱和色块重绘这些元素，确保在拙朴风格下仍具备极高的品牌辨识度，严禁改变 K 的基本拓扑结构。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的紫色渐变或白色高光",
+    "禁止使用细线条或完美平滑的矢量边缘",
+    "禁止添加任何立体阴影、投影或环境光遮蔽",
+    "禁止将主体替换为哑铃、人物剪影等非品牌符号",
+    "禁止背景出现非纯黑色"
+  ]
+}

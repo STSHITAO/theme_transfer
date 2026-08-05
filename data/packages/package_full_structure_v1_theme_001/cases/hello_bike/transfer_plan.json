@@ -1,0 +1,63 @@
+{
+  "app": "hello_bike",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和豆瓣（Douban）的案例均证明，对于以汉字或独特符号为核心的图标，必须严格保留其二维平面拓扑结构，仅进行Z轴拉伸和材质替换。哈啰图标的核心资产即为这两个汉字的特定字形，任何对笔画的简化或重组都会导致品牌识别失效，因此必须采用 preserve_major_structure 模式，将文字直接转化为冰雕实体。",
+  "preserve": [
+    "“哈”字左侧口字旁与右侧合字的紧凑比例",
+    "“啰”字右侧罗字的上下结构布局",
+    "整体文字的圆角处理风格",
+    "两个字之间的相对位置和间距"
+  ],
+  "must_preserve": [
+    "“哈啰”二字的完整字形结构",
+    "文字笔画的粗细比例和圆角特征",
+    "文字本身的识别性（作为品牌名即功能入口）"
+  ],
+  "recompose_allowed": [
+    "底部的波浪线条装饰（建议移除或极度简化为冰底座纹理，以免干扰主体文字）",
+    "原有的蓝色背景（必须替换为纯白）",
+    "文字颜色（必须转换为冰材质表现）"
+  ],
+  "restyle": [
+    "将白色粗体汉字转化为半透明青冰蓝材质的3D实体",
+    "赋予文字厚度感，边缘进行倒角处理以捕捉高光",
+    "内部填充微小气泡、冰晶颗粒或雪花纹理",
+    "表面呈现湿润的高光反射和次表面散射效果"
+  ],
+  "decorate": [
+    "底部增加融化的水迹或小水洼以增强物理接触感",
+    "投射柔和的接触阴影和焦散光斑",
+    "在冰块内部嵌入随机的雪花或裂纹纹理"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构（如把口字旁写成圆圈）",
+    "禁止保留原始的深蓝色背景",
+    "禁止生成不透明的实心蓝色塑料字",
+    "禁止添加与文字无关的自行车具象模型",
+    "禁止使用暖色调作为主体主色",
+    "禁止使用描边来界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of Chinese characters '哈啰', translucent cyan-blue ice material, internal air bubbles and snowflake textures, glossy wet surface, chamfered edges, pure white background, melting water puddles at base, caustic lighting, high fidelity render, centered composition.",
+  "color_application": "强制去色。摒弃原品牌的深蓝底色和白字对比，将文字主体统一转化为高透光的浅冰蓝色（Cyan-Ice Blue）。利用材质的透明度、折射率和内部阴影来表现层次，而非依靠颜色填充。",
+  "stroke_application": "消除所有二维描边。将文字的笔画边缘转化为具有厚度的3D实体边缘，通过菲涅尔反射高光和环境光遮蔽来界定字形轮廓，保持边缘圆润光滑。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体文字居中放置，占据画布约60%-70%空间，四周留白。去除原有底部波浪装饰对视觉重心的干扰，将其简化为支撑文字的物理底座或完全移除，确保文字稳固'立'在冰面上。",
+  "identity_application": "严格保留'哈啰'二字的几何拓扑结构和笔画特征。通过材质的物理属性（通透感、气泡、光泽）来重构视觉体验，确保用户在第一眼能通过剪影和字形识别出品牌，同时感受到统一的冰雪主题氛围。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。",
+    "必须严格保留目标App图标的核心几何轮廓和拓扑结构。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。",
+    "禁止出现自行车实物图形、车轮、链条等机械部件。"
+  ]
+}

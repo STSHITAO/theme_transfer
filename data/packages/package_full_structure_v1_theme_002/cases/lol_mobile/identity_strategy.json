@@ -1,0 +1,40 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "symbolic_scene",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "品牌标志性的 'L' 字母徽章结构及红蓝对抗色体系",
+  "brand_cues_to_preserve": [
+    "英雄联盟的盾牌/L形轮廓框架",
+    "代表阵营对抗的红蓝双色逻辑",
+    "游戏名称文字（若作为图形元素处理）"
+  ],
+  "semantic_cues_to_preserve": [
+    "MOBA竞技的对立感",
+    "通过符号而非写实人物传达游戏属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题中 lol_mobile 的处理方式显示，当原图为复杂写实人物（如金克丝）时，必须放弃人物还原。应提取品牌核心符号（L徽标）进行重构，将原本的生物特征结构完全替换为几何排版结构，以符合主题的极简涂鸦风格。",
+  "design_rationale": "原始图标为高度写实的3D角色插画且包含复杂的周年庆文字角标，这与主题的‘复古手绘、极简几何’冲突极大。根据 theme_rules 和 reference_patterns，对于此类高复杂度IP图标，最佳策略是舍弃人物细节，转而使用最具辨识度的品牌Logo（L形盾牌）作为载体。这既解决了风格迁移的难度，又保留了最核心的品牌识别度。",
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗不规则的手绘黑色描边",
+    "红、蓝、奶黄的高饱和度受限色板",
+    "L形/盾牌形的主体轮廓暗示"
+  ],
+  "can_recompose": [
+    "原始的人物面部特征和发型",
+    "原始的3D光影和材质",
+    "复杂的背景光效",
+    "具体的周年庆文字内容（可简化为装饰性笔画或省略）"
+  ],
+  "forbid": [
+    "保留任何写实的人物五官或皮肤质感",
+    "使用原始图标的蓝色渐变背景",
+    "出现绿色、紫色等主题色板以外的颜色",
+    "精细平滑的矢量线条",
+    "试图在图标中完整保留'4周年'文字导致画面杂乱"
+  ],
+  "generation_direction": "Draw a thick, hand-drawn doodle style 'L' shaped shield logo centered on a pure black background. Use solid blocks of deep blue and brick red to fill the shape, mimicking a crayon or marker texture. Add rough, uneven black outlines. Inside the shield, include simple geometric accents in yellow. No realistic faces, no gradients, no complex text. Flat, naive art style."
+}

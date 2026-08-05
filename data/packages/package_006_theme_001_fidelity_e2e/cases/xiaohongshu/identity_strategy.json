@@ -1,0 +1,35 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“小红书”三个汉字的字形结构及排版关系",
+  "brand_cues_to_preserve": [
+    "“小红书”汉字标识",
+    "品牌红色的色相倾向（需降饱和）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字的可读性",
+    "社区分享的记录感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "design_rationale": "小红书的核心识别完全依赖于品牌名称文字，而非抽象图形。根据主题规则，需要将原本锐利、高饱和的红色Logo转化为柔和的手绘风格。策略上保留文字骨架以确保识别度（Strict），但在材质和色彩上严格执行主题的奶油色系和手绘描边规则，避免破坏整体的治愈感。吉祥物将作为互动元素打破文字的严肃感。",
+  "must_preserve": [
+    "“小红书”三个汉字的相对位置和基本笔画结构",
+    "统一的米白/淡黄圆角矩形底板",
+    "黑色手绘细描边",
+    "白色简笔画萌宠吉祥物"
+  ],
+  "can_recompose": [
+    "字体边缘：将原本的几何切角改为圆润的手绘笔触",
+    "色彩：将正红色转换为低饱和度的珊瑚粉或淡砖红",
+    "布局：吉祥物可以趴在“书”字的一角，或者抱着其中一个字",
+    "质感：去除扁平矢量感，增加类似马克笔填色的哑光质感"
+  ],
+  "forbid": [
+    "禁止使用原始的高饱和度正红色背景",
+    "禁止保留原本锋利、标准的印刷字体边缘",
+    "禁止省略吉祥物元素",
+    "禁止文字过大导致没有呼吸空间"
+  ],
+  "generation_direction": "Draw the Chinese characters '小红书' in a cute, hand-drawn sketch style with soft coral-pink fill and black outlines. Place them on a creamy yellow rounded rectangle background. A small white fluffy puppy is playfully hugging or sitting on top of the last character '书'. The lines should be imperfect and rounded, resembling a marker drawing. Matte texture, pastel tones, healing atmosphere."
+}

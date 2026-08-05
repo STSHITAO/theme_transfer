@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 0,
+      "failure_reason": "严重错误：候选图内容为Bilibili（小电视）图标，完全丢失了目标App（今日头条）的身份信息。尽管冰雕风格执行完美，但属于生成对象错误。",
+      "recommendation": "不推荐。这是Bilibili的图标，不是今日头条。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 0,
+      "failure_reason": "严重错误：候选图内容为支付宝（支）图标，完全丢失了目标App（今日头条）的身份信息。尽管冰雕风格执行完美，但属于生成对象错误。",
+      "recommendation": "不推荐。这是支付宝的图标，不是今日头条。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\toutiao\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能生成目标App（toutiao/头条）的内容。Candidate_01生成了Bilibili，Candidate_02生成了Alipay。虽然风格（Style）和材质（Material）符合参考图要求，但核心主体（Target Identity）完全错误，无法使用。建议检查生成模型的提示词或ControlNet约束条件。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

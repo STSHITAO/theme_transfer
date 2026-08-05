@@ -1,0 +1,36 @@
+{
+  "app": "kuaikan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“快看”二字独特的粗黑体字形结构，以及“看”字内部嵌入的黄色眼睛符号。",
+  "brand_cues_to_preserve": [
+    "“快看”两个汉字的整体轮廓和笔画布局",
+    "“看”字下半部分（目）内部的圆形眼睛图案"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为阅读类应用的核心语义载体",
+    "眼睛符号代表“观看/漫画”的功能属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于具有强识别度的文字或符号类图标，采取‘几何守恒，材质重构’策略。快看漫画的图标核心是汉字本身，因此必须完整保留‘快看’二字的立体化形态，将其视为一块完整的冰雕文字，严禁替换为书本或画板等通用语义符号。",
+  "design_rationale": "快看漫画的原图标由极具张力的黑色粗体汉字构成，视觉冲击力强。在‘冰封’主题下，应将这两个字转化为厚重的半透明冰砖。原图中的黄色背景需完全去除，改为纯白背景；黑色的字体需转化为浅冰蓝色。为了保留品牌灵魂，‘看’字中的眼睛元素应被特别处理，使其在冰块内部清晰可见，仿佛被封存的宝石。",
+  "must_preserve": [
+    "“快看”二字的笔画拓扑结构（横平竖直及倾斜角度）",
+    "“看”字中眼睛图形的相对位置和圆形特征",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "将原本平面的黑色填充转化为具有厚度和倒角的3D冰体",
+    "在冰块内部添加随机的雪花、气泡纹理以符合主题指纹",
+    "调整字体的边缘光泽，模拟冰块的折射感"
+  ],
+  "forbid": [
+    "禁止保留原图的亮黄色背景",
+    "禁止将文字替换为漫画书、卷轴等具象物体",
+    "禁止生成不透明的蓝色塑料质感，必须是通透的冰",
+    "禁止改变‘快看’二字的字形结构（如写错笔画）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '快看'. The material is translucent cyan-blue ice with internal bubbles and snowflake textures. The characters are thick and blocky with rounded edges. Inside the character '看', preserve the eye symbol clearly. Place on a pure white background with melting water puddles at the base. No yellow background."
+}

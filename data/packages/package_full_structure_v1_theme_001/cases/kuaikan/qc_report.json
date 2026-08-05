@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反结构保留策略。底部生成了巨大的、类似支付宝Logo下半部分的环形/无限符号结构，完全替换了原图中‘快看’二字的正确笔画和落脚点。虽然材质优秀，但主体几何结构错误，导致无法识别目标App。",
+      "recommendation": "不推荐。尽管风格匹配度高，但属于严重的结构性幻觉（Hallucination），丢失了核心品牌字形，不符合Strict约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了‘几何守恒，材质重构’策略。准确保留了‘快看！’的字形骨架、笔画拓扑以及‘看’字内部的眼睛符号。冰雕质感通透，内部气泡与雪花纹理符合主题指纹，底部水渍细节真实，且无多余干扰元素。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\kuaikan\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

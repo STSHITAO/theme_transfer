@@ -1,0 +1,39 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "iQIYI 英文字母组合的特定排版与几何特征（特别是 Q 的尾部切角）",
+  "brand_cues_to_preserve": [
+    "iQIYI 字母的整体宽度比例",
+    "Q 字母右下角的独特缺口/切角设计",
+    "字母 i 的圆点与竖画的分离关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为品牌名称的直接指代性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，对于包含明确文字或高度抽象符号的图标，策略是将平面图形直接‘增厚’立体化。爱奇艺的 logo 具有极高的文字识别度，且 geometry 简单清晰，非常适合转化为冰块实体。不需要进行语义重构（如变成播放器），应严格保留文字轮廓，仅做材质替换。",
+  "design_rationale": "爱奇艺原图标为纯文字标，具有极强的品牌独占性。根据 theme_design_analysis 中的 identity_handling_policy（几何守恒，材质重构），应将 'iQIYI' 文字视为一个整体的 3D 模型进行冻结处理。为了符合主题的物理规律，需要给原本悬浮的文字增加厚度，使其像一块刻字的冰砖或独立的冰雕字母组，底部需添加接触阴影以确立空间感。",
+  "must_preserve": [
+    "iQIYI 的标准字体字形（无衬线、圆润）",
+    "Q 字母特有的几何切角",
+    "字母之间的间距比例",
+    "整体居中构图"
+  ],
+  "can_recompose": [
+    "将原本的 2D 平面文字拉伸为具有明显 Z 轴厚度的 3D 实体",
+    "文字边缘进行倒角（Chamfer）处理以模拟冰块的折射高光",
+    "在冰块内部嵌入雪花或气泡纹理",
+    "底部增加融化的水渍和投影"
+  ],
+  "forbid": [
+    "禁止保留原图的绿色/紫色渐变背景",
+    "禁止将文字改为其他颜色（必须统一为冰蓝色/透明白）",
+    "禁止改变字体形状（如把 Q 变成 O）",
+    "禁止生成不透明的实心塑料质感",
+    "禁止添加任何非文字类的装饰元素（如播放键、屏幕框）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the text 'iQIYI'. The letters should be thick, translucent cyan-blue ice blocks with rounded edges and internal bubbles/snowflakes. Place on a pure white background with realistic contact shadows and melting water at the base. Ensure the specific shape of the letter 'Q' is preserved accurately."
+}

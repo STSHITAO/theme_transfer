@@ -7,11 +7,11 @@ data/styles + data/targets
         |
         v
 backend/package_workflow.py
-  Qwen analysis -> Wan candidates -> Qwen QC -> final package
+  Qwen theme analysis -> per-App frozen structure policy -> Wan candidates -> Qwen QC -> final package
         |
         v
 evaluation/tpqs_workflow.py
-  preprocessing -> cached features -> ITTE v1.3 -> reports
+  preprocessing -> cached features -> ITTE v1.4 policy-gated scoring -> reports
 
 benchmark/evaluation_set_v1
         |
@@ -22,6 +22,16 @@ benchmark/tools/evaluate_current_itte.py
 
 Generation and evaluation are deliberately separated. Prompt text and generation QC are diagnostic provenance only.
 
+## Pre-generation structure policy
+
+Each theme/App case freezes the following fields in `identity_strategy.json` and carries them unchanged into `transfer_plan.json` before Wan is called:
+
+- `structure_preservation_mode`: `preserve_major_structure` or `semantic_recompose`;
+- `structure_identity_metric_applicable`: derived deterministically from the mode;
+- `structure_policy_rationale`: evidence from reference original/style pairs and the target identity.
+
+`preserve_major_structure` means the main silhouette, geometry and spatial relationships should remain recognizable. `semantic_recompose` allows the main geometry to be replaced by a function symbol, prop or small scene while still preserving brand or semantic identity. Package metadata records the policy for every App. Evaluation rejects inconsistent mode/boolean pairs. Legacy packages without the fields default to structural evaluation for backward compatibility.
+
 ## ITTE data flow
 
 - Appearance view: style, material, color and package comparisons.
@@ -31,7 +41,7 @@ Generation and evaluation are deliberately separated. Prompt text and generation
 - VGG16 Gram: multi-layer style texture representation.
 - DISTS: texture evidence in style; structure distance remains diagnostic for identity.
 - LPIPS: content-distance identity diagnostic.
-- Primary identity: DINOv3 dense same-label score ranked against reference-original and target-original identity galleries. DISTS/LPIPS identity weights are zero because real-label retrieval AUC was only 0.543/0.559 versus DINOv3 0.827.
+- Primary identity: DINOv3 dense same-label score ranked against reference-original and target-original identity galleries, but only for Apps frozen as `preserve_major_structure`. For `semantic_recompose`, the same value is retained as a diagnostic and excluded from the primary identity and total score. DISTS/LPIPS identity weights remain zero because real-label retrieval AUC was only 0.543/0.559 versus DINOv3 0.827.
 - Handcrafted visual groups: color, background, stroke, texture/material, composition and complexity.
 
 ## Execution devices
@@ -72,6 +82,7 @@ Reference and query identities are disjoint within a Benchmark run. Splits are g
 - Mean designer/control ITTE separation improved from 40.12 to 45.01.
 - Style and package scores are unchanged between matched runs.
 - Absolute identity hard gates were removed because available data does not validate a defensible absolute cutoff. Low identity remains visible in continuous scores and decisions.
+- The frozen v1.3 Benchmark result remains the evidence for the image metrics themselves. ITTE v1.4 changes applicability rather than the DINO scoring formula; its four-theme generated-package validation is tracked separately and must not overwrite the frozen v1.3 baseline.
 
 ## Security
 

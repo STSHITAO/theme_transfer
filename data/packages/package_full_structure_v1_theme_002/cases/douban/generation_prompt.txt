@@ -1,0 +1,218 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_002
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_002.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_002.
+
+[Theme Style Analysis]
+复古手绘涂鸦风格（Retro Hand-drawn Doodle）。该主题将原本精细、拟物或扁平化的现代图标，转化为具有粗犷笔触、不规则边缘和手工质感的简笔画。整体呈现出一种类似儿童蜡笔画或马克笔涂鸦的视觉效果，强调趣味性、拙朴感和非标准化的几何形态。
+
+[Reference Raw To Style Transform]
+从‘精确/写实’向‘抽象/符号化’转变。去除原有的复杂光影、渐变和精细纹理，将主体概括为简单的色块组合。线条由平滑的矢量曲线变为带有抖动感的徒手线条。色彩由丰富细腻过渡到limited palette（受限色板）的高饱和度平涂。
+
+[Color Transform Rule]
+强制去色并重构配色。无论 original 颜色多么丰富或具有渐变，style_ref 必须转换为‘红+蓝+黄/白’的有限色板。去除所有高光、阴影和渐变色，改为纯色块填充。保留 original 的主色调倾向（如抖音保留红色调，LOL保留蓝色调），但将其映射到主题限定的复古色值上。
+
+[Background Transform Rule]
+彻底移除 original 的复杂背景（如人物场景、渐变光效、品牌色底），统一替换为纯黑背景。主体不再与背景融合，而是像贴纸一样浮于黑色之上。
+
+[Stroke Transform Rule]
+从 original 的无描边或精细描边，转变为粗重的黑色/深色手绘描边。边缘不再平滑锐利，而是呈现出手工绘制的不规则圆润感或折角感。
+
+[Composition Transform Rule]
+从 original 的满版构图或复杂场景构图，转变为中心化符号构图。大幅删减次要元素（如人物面部细节、文字标签、角标），仅保留最具识别度的核心轮廓，并将其放大居中。
+
+[Subject Scale Rule]
+主体宽度通常控制在画布宽度的 50%-70% 之间。允许根据原始图形的长宽比进行适度缩放，但必须保证在黑色背景中有足够的呼吸感，避免撑满画布。
+
+[Detail Complexity Rule]
+极度简化。将写实风格（如王者荣耀的人物脸）转化为抽象几何符号（如眼睛/太极图）；将复杂Logo（如哔哩哔哩的文字）转化为图形化块面。细节密度降低 90% 以上，仅保留轮廓特征和极少量的内部装饰（如星星）。
+
+[Theme Fidelity Constraints]
+[
+  "必须使用纯黑背景",
+  "必须添加粗黑/深色手绘风格描边",
+  "色彩必须限制在红、蓝、黄/白范围内",
+  "禁止使用渐变、阴影或写实纹理",
+  "主体必须是扁平化的几何块面组合"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留 original 的写实画风或3D渲染效果",
+  "禁止使用 original 的品牌标准色（除非恰好符合主题色板）",
+  "禁止使用细线条或无描边设计",
+  "禁止在黑色背景上添加除主体以外的装饰性光效"
+]
+
+[Theme Board]
+{
+  "palette": "以纯黑（#000000）为绝对背景，主体采用高饱和度的复古三原色体系：砖红/朱红、深蓝/靛蓝、奶黄/米白。色彩之间界限分明，无渐变过渡。",
+  "line_style": "粗犷的手绘描边风格。所有图形元素均带有不规则的黑色或深色轮廓线，线条具有明显的抖动感和厚度变化，模拟马克笔或粗画笔的手绘痕迹。",
+  "material": "哑光平涂质感，类似剪纸、贴纸或早期Flash动画的矢量填充效果，无光泽、无纹理、无立体光影渲染。",
+  "background": "统一的纯黑底色，无底板、无投影、无环境光。主体与背景通过高对比度分离，边缘处理干脆但轮廓本身是手绘式的粗糙。",
+  "composition": "单体居中构图。主体图形占据画布中心约 50%-70% 的区域，四周留黑均匀。视觉重心完全集中在简化的符号上。",
+  "motif_rules": "将复杂的现实物体或精细Logo抽象为几何块面组合。允许在主体内部嵌入简单的装饰性几何图形（如四角星、圆点）作为点睛之笔。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_002.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_002's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_002's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_002's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: douban
+
+[transfer_plan]
+{
+  "app": "douban",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "豆瓣原始图标本身就是高度抽象的几何文字符号，符合主题规则中‘当 Original 图标本身就是清晰的几何符号...必须保留其主体轮廓’的条件。虽然颜色需要从品牌绿映射到主题色，但其拓扑结构（上中下三部分）是识别该 App 的唯一核心，不可重构为其他物体。",
+  "preserve": [
+    "“豆”字的三段式垂直堆叠布局：顶部短横、中部口字框、底部支撑腿",
+    "中间封闭矩形框与下方开放支撑结构的相对比例",
+    "纯黑背景 (#000000)",
+    "粗重的黑色手绘描边"
+  ],
+  "must_preserve": [
+    "“豆”字的基本笔画架构：顶部短横、中部口字框、底部支撑腿",
+    "纯黑背景 (#000000)",
+    "粗重的黑色手绘描边",
+    "红/蓝/黄的高饱和度配色体系"
+  ],
+  "recompose_allowed": [
+    "将原本的直角转折处理为圆润或不规则的手绘钝角",
+    "将原本均匀的白色填充改为红、蓝、黄的色块拼接（例如上部红色，中部蓝色，下部黄色）",
+    "线条边缘的抖动感和厚度变化",
+    "内部空间的负形比例微调以适应手绘风格"
+  ],
+  "restyle": [
+    "去除原有的品牌绿色，替换为主题限定的高饱和度砖红、深宝蓝或暖黄",
+    "将平滑矢量边缘转化为带有毛糙感、抖动感的马克笔/蜡笔手绘边缘",
+    "消除所有立体光影，转为完全扁平的色块填充"
+  ],
+  "decorate": [
+    "允许在色块内部添加轻微的颗粒质感以模拟干性绘画介质",
+    "允许在转角处呈现不规则的钝角或圆角，增强拙朴感"
+  ],
+  "forbid": [
+    "禁止保留原始的鲜绿色 (#48BB32)",
+    "禁止使用平滑的矢量边缘或标准圆角",
+    "禁止添加阴影、高光或立体浮雕效果",
+    "禁止改变“豆”字的笔画顺序或结构导致无法识别",
+    "禁止使用除红蓝黄白黑以外的任何颜色",
+    "禁止将“豆”字替换为真实的豆子植物、书本或电影胶片等符号"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of the Chinese character '豆' on pure black background. Thick, rough marker strokes with uneven edges. Recolor using high-saturation brick red, indigo blue, and cream yellow block segments. Clumsy, cute wooden toy block aesthetic. Flat design, no gradients, no shadows. Centered composition.",
+  "color_application": "强制移除品牌绿色。将“豆”字的三个主要结构部分（顶横、中框、底脚）分别映射为主题色板中的砖红、深宝蓝和暖黄/米白。确保色彩界限分明，无渐变，保持高饱和度平涂。",
+  "stroke_application": "为“豆”字的每一个笔画添加粗重、不规则的黑色手绘描边。描边需模拟马克笔快速运笔的痕迹，边缘抖动，转角处呈圆润或钝角，严禁平滑锐利的矢量线条。",
+  "composition_application": "主体“豆”字居中放置，占据画布约60%-70%面积。四周留黑均匀，保持极简构图。去除原图标中可能存在的任何背景装饰或辅助图形，仅保留核心字形结构。",
+  "identity_application": "通过严格保留“豆”字的拓扑结构（上横、中框、下脚）来维持身份识别。尽管颜色和材质发生剧烈变化，但字形的骨架比例和笔画逻辑必须清晰可辨，避免退化为通用的几何方块。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色（绿色）",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止将字形简化为无法识别的抽象符号"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: 强制移除品牌绿色。将“豆”字的三个主要结构部分（顶横、中框、底脚）分别映射为主题色板中的砖红、深宝蓝和暖黄/米白。确保色彩界限分明，无渐变，保持高饱和度平涂。
+Stroke application: 为“豆”字的每一个笔画添加粗重、不规则的黑色手绘描边。描边需模拟马克笔快速运笔的痕迹，边缘抖动，转角处呈圆润或钝角，严禁平滑锐利的矢量线条。
+Composition application: 主体“豆”字居中放置，占据画布约60%-70%面积。四周留黑均匀，保持极简构图。去除原图标中可能存在的任何背景装饰或辅助图形，仅保留核心字形结构。
+Identity application: 通过严格保留“豆”字的拓扑结构（上横、中框、下脚）来维持身份识别。尽管颜色和材质发生剧烈变化，但字形的骨架比例和笔画逻辑必须清晰可辨，避免退化为通用的几何方块。
+
+Fidelity constraints:
+[
+  "必须使用纯黑背景",
+  "必须添加粗黑/深色手绘风格描边",
+  "色彩必须限制在红、蓝、黄/白范围内",
+  "禁止使用渐变、阴影或写实纹理",
+  "主体必须是扁平化的几何块面组合"
+]
+
+Negative constraints:
+[
+  "禁止保留 original 的写实画风或3D渲染效果",
+  "禁止使用 original 的品牌标准色（绿色）",
+  "禁止使用细线条或无描边设计",
+  "禁止在黑色背景上添加除主体以外的装饰性光效",
+  "禁止将字形简化为无法识别的抽象符号"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching douban's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like douban as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

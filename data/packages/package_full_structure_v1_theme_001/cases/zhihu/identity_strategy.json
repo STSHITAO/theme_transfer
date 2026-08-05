@@ -1,0 +1,40 @@
+{
+  "app": "zhihu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“知乎”二字的标准字形结构，特别是“知”字右侧“口”部下方的尖角缺口设计。",
+  "brand_cues_to_preserve": [
+    "“知乎”两个汉字的完整笔画顺序与拓扑结构",
+    "“知”字右下角的标志性V型切口",
+    "字体的粗细比例与重心位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为知识载体的符号意义",
+    "清晰、理性的视觉传达感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或抽象图形为主体的图标，必须严格保留其二维轮廓的准确性。知乎的核心识别度完全依赖于这两个特定设计的汉字，任何对笔画的重构都会导致无法识别。因此，策略是将平面文字直接进行3D挤出（Extrusion），赋予其冰块的厚度，而非重新设计场景。",
+  "design_rationale": "知乎的图标是典型的文字标（Wordmark），其品牌资产完全集中在字形设计上。在“冰封”主题下，最佳表达方式是将这两个字视为两块独立的或相连的冰雕。通过保留严格的字形轮廓，结合高透光的冰蓝材质和内部的气泡纹理，既能维持极高的品牌识别度（Strict Identity），又能完美契合主题的洁净、理性气质。不需要引入额外的道具或场景，文字本身就是最强的语义载体。",
+  "must_preserve": [
+    "“知乎”二字的准确字形，严禁错别字或笔画缺失",
+    "“知”字口部的尖角特征",
+    "文字在画面中的居中布局和大致比例（占画布60-70%）"
+  ],
+  "can_recompose": [
+    "将原本平面的白色填充替换为半透明冰蓝色材质",
+    "增加Z轴厚度，使文字变成立体块状",
+    "在笔画内部添加随机的微小气泡或冰裂纹",
+    "边缘处理为圆润的倒角，模拟冰的融化感",
+    "底部增加接触阴影和微量水渍"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构（如把“知”写成“智”）",
+    "禁止使用原本的深蓝色背景，必须改为纯白背景",
+    "禁止生成不透明的实心塑料质感，必须有通透感",
+    "禁止添加与文字无关的复杂背景装饰（如书本、灯泡等）",
+    "禁止文字出现扭曲或透视变形过度导致难以辨认"
+  ],
+  "generation_direction": "Generate a 3D icon of the Chinese characters '知乎' made of translucent pale blue ice. Strictly preserve the original font structure and the specific V-cut in the character '知'. The text should have significant thickness (extruded), rounded edges, and contain internal bubbles or snowflake textures. Place on a clean white background with a soft contact shadow and subtle water puddle at the base. High gloss surface, subsurface scattering, no solid colors."
+}

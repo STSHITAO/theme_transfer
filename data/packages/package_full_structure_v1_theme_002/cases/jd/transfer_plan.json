@@ -1,0 +1,61 @@
+{
+  "app": "京东 (JD.com)",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标虽然是3D渲染且包含行李箱等复杂道具，但核心识别物是‘Joy狗头’。根据主题规则，对于具有强IP属性的吉祥物，应保留其生物特征轮廓（头部、五官布局），但必须剥离3D光影、去除次要道具（行李箱、飞机、文字块），将其转化为扁平化的几何色块组合。",
+  "preserve": [
+    "Joy狗头的整体外轮廓（包括下垂的耳朵形状）",
+    "面部五官的拓扑结构（V形眯眼、黑色椭圆鼻、张开的微笑嘴型）",
+    "白色作为狗头主体的基础色相",
+    "正脸或微侧脸的构图视角"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷、不规则的黑色手绘描边",
+    "狗头在画面中心的主体地位",
+    "品牌特有的快乐/调皮神态（通过眼嘴形状体现）"
+  ],
+  "recompose_allowed": [
+    "将3D高光和阴影重构为纯色块或简单的几何装饰",
+    "移除原图中的黄色行李箱、蓝色飞机和‘酒店’文字块",
+    "简化毛发细节，用不规则的边缘线表现质感",
+    "将原本的红色背景替换为主题规定的纯黑背景"
+  ],
+  "restyle": [
+    "材质从3D glossy转为哑光蜡笔/马克笔平涂质感",
+    "边缘从平滑矢量转为带有抖动感的徒手线条",
+    "色彩从高饱和红底白狗转为黑底白狗配红蓝黄点缀"
+  ],
+  "decorate": [
+    "可在狗头内部或周围添加极少量的主题化几何点缀（如黄色小星星或圆点），但不干扰主体识别"
+  ],
+  "forbid": [
+    "禁止保留原图的3D立体感、光泽或投影",
+    "禁止出现原图的红色背景底色",
+    "禁止保留行李箱、飞机等非核心识别元素",
+    "禁止使用细线条或平滑的工业矢量边缘",
+    "禁止使用除红、蓝、黄、白、黑以外的颜色",
+    "禁止将狗头抽象为无法识别的几何图形或替换为其他动物"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of JD Joy's head. Centered on pure black background. Thick, rough, uneven black marker outlines. Face filled with flat milky-white color. Simple black shapes for V-shaped eyes and oval nose. Red accent for open smiling mouth/collar. No 3D shading, no gradients, no luggage, no airplane, no text. Naive, clumsy, cute aesthetic. High contrast flat colors.",
+  "color_application": "强制去色并重构。狗头主体使用奶白色/米白色平涂；五官使用纯黑色；嘴巴或项圈细节使用主题砖红色；若有装饰点缀使用深蓝或暖黄。严禁使用渐变、阴影或原图的鲜艳红底。",
+  "stroke_application": "所有可见边缘（狗头轮廓、五官内部边界）均施加粗重、不规则的黑色手绘描边。线条需模拟马克笔或蜡笔在粗糙纸面上的运笔痕迹，避免平滑锐利的矢量感。",
+  "composition_application": "采用中心化符号构图。移除所有背景元素和次要道具（行李、飞机），仅保留Joy狗头。狗头占据画布中心约60%-70%面积，四周留黑均匀，保持视觉呼吸感。",
+  "identity_application": "在不破坏theme fidelity的前提下，通过严格保留Joy狗头的特定五官比例（特别是V形眼和张嘴笑）和耳朵下垂的轮廓特征来维持品牌身份。将3D形态压扁为2D色块，但保持拓扑结构不变。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准红底",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止改变狗头的基本生物特征导致识别失败"
+  ]
+}

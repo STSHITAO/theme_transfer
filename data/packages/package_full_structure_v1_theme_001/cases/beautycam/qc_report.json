@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 95,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 25,
+      "failure_reason": "严重结构错误：完全丢失了BeautyCam的相机外框剪影，错误地生成了Bilibili风格的电视机外形（带有天线和底部支脚），仅保留了内部的C形环元素，违反了'structure_preservation_mode: preserve_major_structure'的严格约束。",
+      "recommendation": "不推荐。虽然材质风格符合主题，但主体几何结构完全错误，变成了电视图标，无法识别为美颜相机。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 25,
+      "target_recognition_score": 25,
+      "semantic_fit_score": 35,
+      "identity_constraint_score": 15,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 30,
+      "failure_reason": "严重结构错误：与候选1类似，错误地使用了电视机（带天线）作为外部轮廓，而非BeautyCam的相机轮廓。虽然内部浮雕包含了C形环和菱形，但整体拓扑结构被破坏，不符合'preserve_major_structure'要求。",
+      "recommendation": "不推荐。主体轮廓错误，混淆了目标App与参考图（Bilibili）的特征，属于过度重构导致的身份丢失。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\beautycam\\candidates\\candidate_02.png",
+  "warning": "所有候选图均未能正确执行transfer_plan中的结构保留策略。模型似乎过度受到了参考图（特别是Bilibili电视图标）的影响，导致生成的主体轮廓变成了电视机而非相机。虽然材质（冰雕、气泡、水渍）渲染非常完美且符合主题，但核心几何结构（相机外框+顶部突起）完全丢失，属于严重的结构性失败。建议在生成时加强对Target Layout中外部轮廓的ControlNet约束或增加负向提示词禁止电视机形状。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

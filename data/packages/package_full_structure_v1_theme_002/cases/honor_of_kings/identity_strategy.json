@@ -1,0 +1,38 @@
+{
+  "app": "honor_of_kings",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "红蓝对抗的阵营色彩关系与5v5竞技概念",
+  "brand_cues_to_preserve": [
+    "红与蓝的高饱和度对立配色",
+    "代表对抗或能量的抽象几何符号（如漩涡、太极、闪电）"
+  ],
+  "semantic_cues_to_preserve": [
+    "MOBA游戏的竞技对抗感",
+    "5v5的团队作战隐喻（通过左右对称或双元素并置表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original图标为写实人物肖像（亚瑟），包含复杂的光影、皮肤纹理和面部细节。根据theme_design_analysis中关于复杂IP的处理规则（参考honor_of_kings和lol_mobile案例），必须舍弃写实人像，转而提取‘红蓝对抗’的核心语义进行几何化重构。保留人脸轮廓会导致风格不伦不类且违反扁平化规则，因此判定为semantic_recompose。",
+  "design_rationale": "王者荣耀的原生图标是典型的3D写实风格，直接描边无法适配复古手绘主题。为了保持主题的统一性（粗犷、拙朴、高饱和色块），需要将‘英雄对战’这一抽象概念转化为可视化的几何符号。选择红蓝双色块面结合简单的对抗性图形（如交织的线条或简化的徽章），既能传达游戏核心玩法，又能完美融入主题的涂鸦风格。",
+  "must_preserve": [
+    "纯黑背景",
+    "红蓝主色调的强烈对比",
+    "粗犷的手绘黑色描边",
+    "极简的几何化主体形态"
+  ],
+  "can_recompose": [
+    "人物面部特征（完全移除）",
+    "金属质感的盔甲细节",
+    "原本的光效和立体阴影",
+    "具体的英雄形象"
+  ],
+  "forbid": [
+    "禁止出现任何写实的人脸或五官",
+    "禁止使用金色、银色等金属渐变色",
+    "禁止保留原图的复杂背景纹理",
+    "禁止使用细线条或平滑的矢量边缘"
+  ],
+  "generation_direction": "Draw a simplified, abstract geometric badge on a pure black background. Use solid blocks of saturated red and blue to represent opposing forces, arranged in a dynamic, symmetrical composition (like a stylized yin-yang or clashing shields). Apply thick, rough, hand-drawn black outlines with a marker pen texture. No gradients, no shadows, no realistic details. Flat, naive art style."
+}

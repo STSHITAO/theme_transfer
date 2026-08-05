@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan 的所有约束。保留了 Joy 狗头的核心生物特征（V形眼、张嘴笑、下垂耳），严格执行了纯黑背景、粗犷手绘描边和去3D扁平化重构。装饰元素（红蓝菱形）点缀得当，未干扰主体识别，是最佳的主题化候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "风格匹配度很高，但构图采用了横向压扁的宽幅设计，虽然保留了五官特征，但改变了原图 Joy 狗头相对饱满的头部比例拓扑结构。相比 candidate_01，其作为 App 图标的视觉重心略显分散，且面部装饰点略多，略微增加了识别噪音。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\jd\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

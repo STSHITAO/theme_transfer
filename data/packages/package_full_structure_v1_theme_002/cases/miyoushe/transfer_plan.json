@@ -1,0 +1,62 @@
+{
+  "app": "miyoushe",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度简化的几何图形（大耳朵+圆脸），符合主题‘将复杂物体抽象为几何块面’的规则。因此不需要像游戏角色那样进行语义重构，而是直接保留其拓扑结构，仅对色彩、质感和描边进行主题化迁移。",
+  "preserve": [
+    "米游兔头部整体剪影比例",
+    "双耳结构：左耳略低微倾，右耳直立",
+    "面部极简特征：两个垂直排列的短线条/胶囊状眼睛",
+    "主体与背景之间的白色隔离带（White Stroke/Outline）视觉层级"
+  ],
+  "must_preserve": [
+    "双耳竖立的相对位置和比例",
+    "脸部的大致圆角矩形/椭圆形态",
+    "五官（眼睛）的简单点位关系",
+    "主体周围的白色宽描边层（防止在深色背景下丢失轮廓）"
+  ],
+  "recompose_allowed": [
+    "将原本平滑的蓝色描边替换为粗糙的黑色马克笔手绘描边",
+    "将原本的浅蓝/白色填充映射为主题限定色板（奶黄、砖红、深蓝）",
+    "去除所有高光、阴影和立体感，改为完全平涂色块",
+    "耳朵内部细节简化为纯色块或简单几何装饰"
+  ],
+  "restyle": [
+    "材质由矢量平滑转为蜡笔/粉笔干性绘画质感",
+    "边缘处理为不规则、抖动的徒手线条",
+    "色彩由高饱和品牌蓝白转换为复古三原色组合"
+  ],
+  "decorate": [
+    "可在主体内部嵌入简单的主题装饰元素（如四角星、圆点），但不得干扰核心识别特征"
+  ],
+  "forbid": [
+    "禁止保留原本的浅蓝色调和渐变效果",
+    "禁止使用细线条或无描边设计",
+    "禁止改变耳朵的数量或基本朝向",
+    "禁止添加写实毛发纹理或复杂表情（如嘴巴、鼻子）",
+    "禁止使用绿色、紫色等非主题色板颜色",
+    "禁止保留3D渲染、光影或玻璃质感"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of the Miyoushe mascot head on a pure black background. The shape features two iconic long ears (one slightly tilted) and simple vertical line eyes. Use thick, uneven black marker strokes for the outline, with a visible white inner border separating the subject from the black edge. Fill the face with solid creamy yellow and ears with solid brick red or deep blue. Flat colors only, crayon texture, no gradients, no shadows, clumsy and cute aesthetic.",
+  "color_application": "Map original Brand Blue/White to theme palette: Face becomes Creamy Yellow/Milk White, Ears become Brick Red or Deep Blue. Maintain high contrast between subject parts. Strictly flat, no gradients.",
+  "stroke_application": "Replace original smooth vector stroke with thick, rough, hand-drawn black marker outline. Ensure the 'white isolation band' is preserved as a visual layer between the colored subject and the outer black sketch line.",
+  "composition_application": "Center the mascot head, occupying 60-70% of the canvas. Keep the composition loose and free, ensuring sufficient black breathing space around the subject.",
+  "identity_application": "Preserve the specific asymmetry of the ears (left lower, right upright) and the minimalist eye placement to ensure recognition as Miyoushe, not a generic rabbit. Retain the 'sticker-like' white border effect but render it with手绘 imperfection.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must apply thick, uneven hand-drawn style outlines",
+    "Colors must be limited to high-saturation Red, Blue, Yellow/White",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No realistic rabbit fur or 3D rendering",
+    "No original brand blue gradient background",
+    "No thin or perfect vector lines",
+    "No extra facial features (mouth, nose, blush)",
+    "No green, purple, or neon colors",
+    "No complex details or text watermarks"
+  ]
+}

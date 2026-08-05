@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了 K 的完整骨架和右上角星星，应用了正确的粗黑手绘描边、纯黑背景和主题配色（砖红/奶黄）。风格与参考图高度一致，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反 'must_preserve' 中的描边约束（缺失粗黑手绘描边）；K 字母内部被分割成多色块，破坏了原有的单一主体拓扑结构，导致重构风险过高且风格不统一。",
+      "recommendation": "不推荐。虽然保留了 K 的大致形状，但丢失了核心的品牌识别线索（粗描边），且内部色彩分割不符合 Keep 原始 Logo 的几何特征，显得杂乱。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\keep\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,40 @@
+{
+  "app": "karaoke",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "鹦鹉头部轮廓与麦克风元素的组合形态",
+  "brand_cues_to_preserve": [
+    "鹦鹉头部的侧面剪影（特别是头顶的羽冠突起）",
+    "圆形的眼睛/面部留白区域",
+    "右下角代表麦克风的深色圆形及手柄暗示"
+  ],
+  "semantic_cues_to_preserve": [
+    "歌唱/发声的意象（通过鹦鹉张嘴或麦克风表达）",
+    "音乐社交的活跃感（通过高饱和度色彩表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度概括的图形符号（鹦鹉+麦克风），并非写实照片。根据 theme_rules，对于清晰的几何符号或物体轮廓，应保留其主体拓扑结构。因此，必须维持‘左侧鹦鹉头+右下麦克风’的空间布局，仅对边缘和填充进行主题化重构，而非重新设计场景。",
+  "design_rationale": "全民K歌的原生Logo具有极高的辨识度（鹦鹉形象）。在复古手绘主题下，直接保留其轮廓是最稳妥的策略。通过将原本平滑的渐变矢量图转化为粗犷的马克笔涂鸦风格，既保留了品牌身份，又完美融入了主题的‘拙朴感’。色彩上需将原本的粉紫渐变强制映射为红、黄、蓝块面，以符合主题限制。",
+  "must_preserve": [
+    "鹦鹉头部的整体外轮廓（包括头顶特征）",
+    "麦克风位于右下角的相对位置关系",
+    "纯黑背景",
+    "粗黑色的手绘不规则描边"
+  ],
+  "can_recompose": [
+    "将原本的粉/橙/紫渐变色替换为砖红、奶黄、深蓝的纯色块拼接",
+    "将平滑的矢量边缘处理为抖动、粗糙的手绘线条",
+    "简化眼睛和嘴巴的内部细节，改为简单的几何色块或留白",
+    "麦克风的形状可以简化为一个粗圆的色块加短柄"
+  ],
+  "forbid": [
+    "禁止保留原有的粉色到紫色的平滑渐变",
+    "禁止使用细线条或无描边设计",
+    "禁止添加任何立体高光或阴影效果",
+    "禁止改变鹦鹉头朝向或麦克风位置",
+    "禁止使用绿色、青色等主题外的颜色"
+  ],
+  "generation_direction": "Retro hand-drawn doodle style icon on pure black background. A simplified parrot head silhouette facing right, combined with a microphone shape at the bottom right. Use thick, rough marker strokes with uneven edges. Fill with solid blocks of brick red, creamy yellow, and deep blue (no gradients). The parrot's eye should be a simple yellow or white block. Heavy black outline surrounding the whole shape. Flat, naive art aesthetic."
+}

@@ -1,0 +1,61 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "酷狗音乐的原始图标本身就是高度抽象的几何符号（圆+K），完全符合主题中关于‘几何块面组合’的要求。参考 Bilibili 和 Douyin 的案例，对于此类清晰的符号化 Logo，应保留其拓扑结构，仅对填充颜色、描边风格和质感进行主题化迁移，无需重构主体。",
+  "preserve": [
+    "外部圆形轮廓框架",
+    "内部大写 'K' 字母形态",
+    "蓝白配色的基础对比关系",
+    "圆环包围 K 字的同心布局",
+    "K 字的基本笔画走势（左侧竖线，右侧上下分叉）"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "圆环与 K 字的相对位置关系",
+    "K 字作为核心识别主体的地位"
+  ],
+  "recompose_allowed": [
+    "将标准亮蓝色映射为主题高饱和靛蓝/深宝蓝",
+    "将白色 K 字映射为主题奶黄/米白或保留高亮白",
+    "圆环线条的手绘化抖动与粗细不均处理",
+    "K 字端点的圆润化或钝角化处理以适配涂鸦风格"
+  ],
+  "restyle": [
+    "添加粗重、不规则的黑色手绘描边",
+    "应用蜡笔/马克笔的干性涂抹质感",
+    "去除所有渐变、高光、阴影和立体效果",
+    "边缘处理为毛糙、非标准化的几何形态"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原始的平滑矢量边缘",
+    "禁止使用原始的标准亮蓝色 (#0055FF) 而不进行主题色映射",
+    "禁止添加任何立体高光、环境光遮蔽或投影",
+    "禁止改变 K 字的字形结构（如变成小写 k 或其他字体）",
+    "禁止使用绿色、紫色等主题色板之外的颜色",
+    "禁止保留写实纹理或金属/玻璃光泽"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon on pure black background. Subject: Capital letter 'K' inside a circular ring. Colors: High-saturation indigo blue for the ring, creamy yellow/off-white for the 'K'. Style: Thick, rough black marker outlines with jitter, flat crayon texture, no gradients or shadows. Centered composition, clumsy and cute aesthetic.",
+  "color_application": "Map original brand blue to theme's high-saturation indigo/deep blue; map original white to theme's creamy yellow or off-white. Use solid flat fills only, strictly avoiding gradients.",
+  "stroke_application": "Apply heavy, irregular black hand-drawn strokes to both the outer ring and the inner 'K'. Ensure edges are rough and uneven, simulating a thick marker or crayon on paper.",
+  "composition_application": "Center the 'K-in-ring' symbol. Scale it to occupy 60-70% of the canvas. Maintain the concentric layout but allow for slight handmade asymmetry in the ring's closure.",
+  "identity_application": "Preserve the topological structure of the 'K' (vertical line + two diagonal branches) and the enclosing ring. Do not replace with music notes or other symbols. The identity is carried by the geometric shape, restyled with theme textures.",
+  "fidelity_constraints": [
+    "Must use pure black background",
+    "Must have thick, rough hand-drawn black outlines",
+    "Colors must be limited to theme palette (Indigo/Blue, Cream/Yellow, Red)",
+    "No gradients, shadows, or 3D effects",
+    "Flat, matte crayon/marker texture"
+  ],
+  "negative_constraints": [
+    "No realistic or photorealistic elements",
+    "No smooth vector lines",
+    "No original brand bright blue without theme mapping",
+    "No white background",
+    "No complex details or text watermarks",
+    "No neon glow or lighting effects"
+  ]
+}

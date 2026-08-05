@@ -1,0 +1,61 @@
+{
+  "app": "Clash of Clans",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题中《王者荣耀》和《LOL Mobile》的处理逻辑，当原始图标为复杂的3D写实人物头像时，严禁直接描摹面部细节。必须放弃原本的解剖结构，提取其最具辨识度的‘头盔+胡子’剪影作为新的几何主体，将其重构为扁平化的色块组合，以符合主题的‘拙朴手绘’风格。",
+  "preserve": [
+    "野蛮人头盔与连鬓胡的整体外轮廓（倒U型/马蹄形结构）",
+    "高饱和度的亮黄色主色调",
+    "愤怒/咆哮的情绪暗示（简化的眉眼或嘴部线条）",
+    "纯黑背景 (#000000)"
+  ],
+  "must_preserve": [
+    "主体的亮黄色调（映射自原图头盔色）",
+    "粗重、不规则的手绘黑色描边",
+    "野蛮人头盔顶部的双角突起结构特征",
+    "面部核心识别区：瞪大的眼睛和张开的嘴巴（简化为几何符号）"
+  ],
+  "recompose_allowed": [
+    "将3D写实面部重构为扁平化几何色块",
+    "去除皮肤质感、光影高光及立体渲染",
+    "简化牙齿和唾液等次要细节为简单线条或省略",
+    "将紫色背景替换为主题规定的纯黑背景"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦风格（Retro Hand-drawn Doodle）",
+    "模拟蜡笔或马克笔在粗糙表面的干性绘画质感",
+    "边缘处理为毛糙、抖动的手绘痕迹，拒绝平滑矢量感"
+  ],
+  "decorate": [
+    "可在主体内部嵌入简单的几何装饰（如代表愤怒的短线或圆点）",
+    "保持构图居中，主体占据画面60%-70%面积"
+  ],
+  "forbid": [
+    "保留3D立体渲染效果、高光、阴影或环境光遮蔽",
+    "使用紫色、绿色或粉色等非主题限定色",
+    "绘制写实的人脸解剖结构或精细五官",
+    "使用细线条、平滑锐利的矢量边缘",
+    "添加除主体以外的背景装饰元素或光效"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of Clash of Clans Barbarian. Pure black background. Subject is a simplified, flat, bright yellow silhouette of the helmet and beard shape. Thick, rough, shaky black marker outlines. Face features are abstracted into simple geometric shapes: wide angry eyes and an open mouth. No shadows, no gradients, no 3D effects. Crayon texture, naive art style, centered composition.",
+  "color_application": "强制去色并重构配色。将原图的亮黄色头盔/胡子映射为主题限定的高饱和度奶黄/米黄色块。去除原有的紫色背景和肤色渐变，背景统一为纯黑(#000000)。仅允许使用黄、黑以及极少量的红/蓝作为点缀（如有必要），坚持纯色块填充。",
+  "stroke_application": "从原图的无描边或精细3D边缘，转变为粗重的黑色手绘描边。线条需模拟马克笔或粗画笔的痕迹，具有明显的不规则抖动感和厚度变化，转角处处理为圆润或钝角，杜绝工业设计的锐利感。",
+  "composition_application": "从原图的满版人物特写重构为中心化符号构图。大幅删减面部琐碎细节，仅保留‘头盔+胡子’的核心剪影，将其放大居中，占据画布50%-70%区域，四周留黑均匀，形成类似贴纸浮于黑底的视觉效果。",
+  "identity_application": "在不破坏theme fidelity的前提下，通过保留‘黄色头盔+大胡子’的独特拓扑结构和‘愤怒表情’的抽象符号来维持品牌识别。放弃写实还原，转而追求神似和符号化的辨识度，确保用户能通过剪影联想到野蛮人角色。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内（主体主要为黄）",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留original的3D渲染效果或立体光影",
+    "禁止使用紫色作为主色或背景色",
+    "禁止绘制写实的人脸结构",
+    "禁止边缘平滑锐利或缺乏手绘拙稚感",
+    "禁止画面杂乱，需极度简化细节"
+  ]
+}

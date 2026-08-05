@@ -1,0 +1,66 @@
+{
+  "app": "clash_of_clans",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、抖音等案例均严格保留了原图标的核心几何骨架。部落冲突的图标具有极高的辨识度，其头部轮廓本身就是品牌符号。因此，必须完整保留野蛮人的面部拓扑结构，仅将原本的卡通渲染材质替换为冰雕材质，严禁改变脸型或头盔形状。",
+  "preserve": [
+    "Barbarian 面部特写剪影",
+    "标志性黄色头盔的外轮廓（顶部圆润，两侧护耳下垂）",
+    "浓密八字胡的整体走向和体积感",
+    "愤怒咆哮的张嘴表情及露出的牙齿结构",
+    "大眼、宽鼻的面部五官比例",
+    "面部的正中对称构图"
+  ],
+  "must_preserve": [
+    "野蛮人头盔的外轮廓线",
+    "胡子的整体走向和体积感",
+    "张开的嘴巴和露出的牙齿结构",
+    "面部的正中对称构图"
+  ],
+  "recompose_allowed": [
+    "将原本的皮肤颜色转化为半透明冰蓝",
+    "将原本的金发/头盔颜色转化为同色系冰体，依靠高光和厚度区分层次",
+    "将背景的紫色渐变替换为纯白背景",
+    "将面部的细微肤色红晕转化为冰内部的折射阴影"
+  ],
+  "restyle": [
+    "从 3D CGI 卡通渲染风格转换为 3D 冰雕拟物风格",
+    "表面材质统一为高光泽度、湿润的冰冻质感",
+    "内部填充随机微小气泡、裂纹或雪花纹理",
+    "边缘进行倒角处理以捕捉高光"
+  ],
+  "decorate": [
+    "在冰块内部嵌入雪花或冰晶纹理",
+    "底部添加融化的水迹、小水洼或碎冰屑",
+    "利用菲涅尔反射和焦散光斑增强体积感"
+  ],
+  "forbid": [
+    "禁止将野蛮人替换为 generic 的维京头盔、剑盾符号或其他角色",
+    "禁止保留原本的亮黄色、肉色或深紫色背景色",
+    "禁止生成不透明的蓝色塑料、磨砂玻璃或石头质感",
+    "禁止省略底部的接触阴影和水渍",
+    "禁止改变头盔和胡子的相对位置关系",
+    "禁止使用暖色调作为主体主色",
+    "禁止生成扁平化 2D 矢量图形"
+  ],
+  "generation_brief": "3D icon of Clash of Clans Barbarian head as a translucent cyan-blue ice sculpture. Strictly preserve the helmet silhouette, thick mustache, and roaring open-mouth expression. Material: glossy wet ice with internal bubbles/snowflakes, subsurface scattering. Background: pure white. Base: realistic melting water puddle and contact shadow. No yellow/skin tones, only ice blue variations.",
+  "color_application": "强制去色。将原图的亮黄色头盔和肉色皮肤完全转换为统一的浅冰蓝色（Cyan-Ice Blue）调。通过冰块的厚度变化产生深浅不一的蔚蓝阴影，替代原有的色彩对比。",
+  "stroke_application": "消除所有二维描边。将原图的轮廓线转化为三维实体的物理边缘，通过材质的折射率差异、边缘的高光反射以及内部的焦散效果来界定头盔、胡须和面部的结构界限。",
+  "composition_application": "从原图的极近特写填充式构图转变为立体物件式构图。主体居中，占据画布约 60%-70% 空间，四周留白。底部预留空间给投影和水渍，增强物体放置在平面上的真实物理感。",
+  "identity_application": "在不破坏 theme fidelity 的前提下，通过严格保留野蛮人独特的面部拓扑结构（头盔形状、胡须形态、张嘴表情）来维持身份识别。利用冰材质的通透感和内部纹理重构原本的视觉层次，而非依赖原品牌色。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色（黄、紫、肉色）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的核心几何轮廓导致无法识别。"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "app": "miyoushe",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "米游社标志性的‘大耳朵’吉祥物头部轮廓（类似兔子/米游兔），这是用户识别该社区App的最核心视觉符号。",
+  "brand_cues_to_preserve": [
+    "头部两侧竖立的长椭圆形耳朵结构",
+    "面部极简的两点式眼睛布局",
+    "圆润饱满的脸部外轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "社区吉祥物的亲和力与可爱感",
+    "作为游戏玩家聚集地的非攻击性、陪伴感形象"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度简化的几何图形（大耳朵+圆脸），符合主题‘将复杂物体抽象为几何块面’的规则。因此不需要像游戏角色那样进行语义重构，而是直接保留其拓扑结构，仅对色彩、质感和描边进行主题化迁移。",
+  "design_rationale": "米游社的原始图标具有极高的辨识度，其‘双耳’特征是该品牌的超级符号。根据 theme_design_analysis 中关于 Bilibili（保留电视轮廓）和 Kuaishou（保留相机轮廓）的处理逻辑，对于此类本身就是符号化的 App，应优先保留主体结构。策略是将原本的蓝白清新配色强制映射为复古三原色（如奶黄脸+红/蓝耳），并添加粗的手绘黑色描边，使其从‘现代矢量贴纸’转变为‘复古手绘涂鸦’，同时确保老用户能一眼认出。",
+  "must_preserve": [
+    "双耳竖立的相对位置和比例",
+    "脸部的大致圆角矩形/椭圆形态",
+    "五官（眼睛）的简单点位关系"
+  ],
+  "can_recompose": [
+    "原本平滑的蓝色描边改为粗糙的黑色马克笔描边",
+    "原本的浅蓝/白色填充改为高饱和度的奶黄、砖红或深蓝纯色块",
+    "去除原本的高光和立体阴影，改为完全平涂"
+  ],
+  "forbid": [
+    "禁止保留原本的浅蓝色调和渐变效果",
+    "禁止使用细线条或无描边设计",
+    "禁止改变耳朵的数量或基本朝向",
+    "禁止添加写实毛发纹理"
+  ],
+  "generation_direction": "Draw a simplified, retro hand-drawn doodle of the Miyoushe mascot head on a pure black background. Use thick, uneven black marker strokes for the outline. Fill the face with solid creamy yellow and the ears with solid brick red or deep blue. Flat colors only, no gradients or shadows. The shape must retain the iconic two long ears and simple dot eyes, looking like a clumsy, cute sticker."
+}

@@ -1,0 +1,35 @@
+{
+  "app": "dianping",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的白色抽象人形剪影（头部圆形与四肢张开的动态结构）",
+  "brand_cues_to_preserve": [
+    "人形Logo的整体拓扑结构：头部的独立圆点、躯干与四肢的连接关系",
+    "张开双臂和双腿的欢庆/拥抱姿态"
+  ],
+  "semantic_cues_to_preserve": [
+    "拟人化的图形特征，传达‘大众’、‘用户’、‘生活’的语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标已经是高度抽象的几何符号，符合 theme_rules 中‘当 Original 是清晰几何符号时保留主体轮廓’的规则。该人形结构具有极高的品牌辨识度，无需进行语义重构，只需将其从平滑矢量转化为手绘涂鸦风格即可。",
+  "design_rationale": "大众点评的 Logo 本身就是一个极简的几何人形，非常契合复古手绘主题的‘拙朴感’。策略上直接保留其人形骨架，将原本锐利的矢量边缘处理为带有抖动感的粗马克笔触，填充色由原本的橙色改为主题限定的高饱和度砖红或奶黄，以在纯黑背景上形成强烈的视觉冲击，同时维持品牌的绝对识别度。",
+  "must_preserve": [
+    "人形Logo的五个主要部件位置关系（头、躯干、四肢）",
+    "纯黑背景 (#000000)",
+    "粗犷的手绘描边风格"
+  ],
+  "can_recompose": [
+    "线条的边缘平滑度（需改为不规则手绘边缘）",
+    "原始的品牌橙色（需映射为主题色板中的砖红或奶黄）",
+    "图形的内部填充质感（需改为哑光平涂，模拟蜡笔或颜料堆积感）"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色背景",
+    "禁止使用细线条或无描边设计",
+    "禁止添加任何立体阴影或高光",
+    "禁止改变人形的基本姿态（如变成站立不动或坐下）"
+  ],
+  "generation_direction": "在纯黑背景中央绘制一个粗犷手绘风格的抽象人形图标。主体使用高饱和度的砖红色或奶黄色块填充，边缘带有明显的黑色粗描边和手绘抖动感，模拟马克笔涂鸦效果。保持原Logo头部圆形与四肢张开的结构，去除所有光影渐变，呈现扁平化剪纸质感。"
+}

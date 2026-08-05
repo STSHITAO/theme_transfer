@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "高度推荐。完美契合参考图的“毛绒云朵/小狗”风格，将核心识别字“贴”进行了合理的拟物化重构，既保留了极高的文字辨识度，又融入了可爱的主题元素（笔画末端的小脸），画面干净无瑕疵。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 20,
+      "background_score": 85,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 84,
+      "failure_reason": "",
+      "recommendation": "推荐。保留了原Logo的气泡轮廓特征，语义表达准确。但相比图1，其字体设计的“毛绒感”和趣味性稍弱，更像是一个普通的立体字，主题风格的融合度略逊一筹。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 80,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "可选。风格与图1非常接近，也使用了毛绒字体和小脸元素。但在构图上，底部的尖角（气泡特征）处理得比较生硬，且整体视觉冲击力略不如图1饱满。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_002_theme_001_v2_real\\cases\\tieba\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

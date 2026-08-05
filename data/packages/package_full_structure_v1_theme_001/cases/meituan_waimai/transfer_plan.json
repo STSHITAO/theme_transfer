@@ -1,0 +1,60 @@
+{
+  "app": "meituan_waimai",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（电视）和 douban（豆字）的案例，对于具有高辨识度的IP形象或文字符号，必须保留其原始拓扑结构。美团袋鼠的耳朵和脸型是核心识别点，不能因为材质变化而改变其轮廓比例。需将原本的不透明黄色实体转化为半透明冰雕，但外形必须严格对齐原图。",
+  "preserve": [
+    "袋鼠头部的完整外轮廓",
+    "长耳朵的几何特征及倾斜角度",
+    "眼睛与嘴巴的空间布局及相对位置",
+    "整体头部的圆润体积感"
+  ],
+  "must_preserve": [
+    "袋鼠头部的剪影拓扑结构",
+    "面部五官的极简比例关系",
+    "底部的物理接触阴影和水渍细节",
+    "冰材质内部的雪花/气泡纹理"
+  ],
+  "recompose_allowed": [
+    "手中的奶茶杯和红包（简化为纯冰质挂件或移除以保持头部清晰）",
+    "品牌标志性的亮黄色（完全替换为冰蓝色调）",
+    "表面光泽质感（从塑胶感转为湿润冰感）"
+  ],
+  "restyle": [
+    "将不透明黄色实体重构为半透明浅冰蓝色冰雕",
+    "应用高光泽度冰冻材质与次表面散射效果",
+    "边缘进行倒角处理以捕捉高光"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡和冰晶颗粒",
+    "表面添加湿润水渍和高光反射",
+    "底部增加融化的水迹和碎冰屑"
+  ],
+  "forbid": [
+    "保留原本的黄色、橙色或任何暖色调作为主体主色",
+    "生成不透明的蓝色塑料、磨砂玻璃或石头材质",
+    "改变袋鼠耳朵的长度、宽度或弯曲度",
+    "背景出现非白色或非极浅冷灰色的杂色",
+    "使用二维描边线条界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of Meituan Kangaroo head, translucent cyan-blue ice material, internal air bubbles and snowflake textures, glossy wet surface, caustic lighting. Strictly preserve original silhouette of long ears and face shape. No yellow/orange colors. Centered on pure white background with melting water puddle at base. No outline strokes.",
+  "color_application": "强制去色。将原品牌亮黄色完全转换为统一的浅冰蓝色（Cyan-Ice Blue）和半透明白（Translucent White）。仅通过深蔚蓝（Deep Azure）表现阴影厚度，严禁出现暖色调。",
+  "stroke_application": "消除所有二维描边。依靠冰块实体的物理厚度、边缘的高光反射以及内部折射来界定袋鼠的轮廓。边缘处理圆润光滑，模拟冰块打磨后的质感。",
+  "composition_application": "单体居中构图。袋鼠头部占据画布约60%-70%空间，保持垂直方向的体积感。去除原图中复杂的背景元素，转为纯白留白背景，底部预留空间给投影和水渍。",
+  "identity_application": "通过严格保留袋鼠头部的几何剪影（特别是长耳特征）和五官布局来维持身份识别。虽然颜色和材质彻底改变，但用户应能通过冰雕的轮廓瞬间识别出是美团袋鼠。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌黄作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积黄色或橙色背景/主体色。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变袋鼠耳朵的特征形状导致识别失败。"
+  ]
+}

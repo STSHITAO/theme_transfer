@@ -1,0 +1,63 @@
+{
+  "app": "naruto_mobile",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilbili 和 Douyin 的案例表明，即使是复杂图形也必须保留原始几何轮廓。对于 Naruto 这种强角色IP，面部结构（五官比例、护额位置）是识别核心。必须将原本的2D插画脸谱直接转化为具有厚度的3D冰雕浮雕，严禁重构为手里剑或卷轴等通用道具，否则将失去IP辨识度。",
+  "preserve": [
+    "额头护额的长方形轮廓及内部的螺旋木纹结构",
+    "脸颊两侧对称的三道杠纹路位置与形态",
+    "面部的整体长宽比和发型外轮廓（刺猬头剪影）",
+    "竖瞳/狐狸眼的眼部神态轮廓"
+  ],
+  "must_preserve": [
+    "木叶村护额及其中心螺旋标志的几何骨架",
+    "脸颊两侧的三道胡须状纹路",
+    "人物面部的核心轮廓线（下巴、耳朵、护额边界）",
+    "整体构图的居中对称性"
+  ],
+  "recompose_allowed": [
+    "原本发光的眼睛转化为高透光的冰晶核心区域",
+    "原本复杂的背景火焰/查克拉 aura 简化为底座周围的雾气或融水",
+    "面部阴影转化为冰体内部的折射暗部和气泡密度变化",
+    "右下角的角标移除或极小化融入底座"
+  ],
+  "restyle": [
+    "将所有原始暖色调（橙/黄/红）强制转换为统一的冰蓝色/淡青色",
+    "将平面矢量线条转化为具有物理厚度的3D圆润冰体边缘",
+    "将皮肤质感替换为半透明结晶冰材质，带有内部气泡和雪花纹理"
+  ],
+  "decorate": [
+    "表面添加冷凝水珠（condensation droplets）",
+    "内部嵌入微缩雪花图案或冰裂纹理",
+    "底部添加接触阴影和微量融化水迹以增强落地感",
+    "边缘添加高光反射以界定轮廓"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色、黄色或红色品牌色",
+    "禁止生成扁平化的2D图标，必须有明显的Z轴厚度",
+    "禁止省略护额或胡须纹等关键身份线索",
+    "禁止使用不透明的塑料、金属或真实皮肤材质",
+    "禁止使用复杂的场景背景，必须为纯白/亮白背景",
+    "禁止将主体重构为无关物体（如手里剑、卷轴）"
+  ],
+  "generation_brief": "3D ice sculpture of Naruto Uzumaki's head, translucent pale cyan crystal material, strict preservation of forehead protector with spiral symbol and three cheek whisker marks, spiky hair silhouette, internal bubbles and snowflake textures, glossy wet surface with condensation droplets, no orange colors, pure white background, soft contact shadow and melting water at base, high fidelity C4D render style.",
+  "color_application": "Discard all original warm colors (orange/red/yellow). Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use brightness variations within the blue spectrum to define volume and facial features instead of hue changes.",
+  "stroke_application": "Eliminate all 2D vector strokes. Convert edges into smooth, rounded, beveled ice contours defined by specular highlights and refraction rather than drawn lines. Ensure significant thickness (extrusion) for all facial features.",
+  "composition_application": "Center the 3D head sculpture occupying 70-80% of the canvas. Place on a virtual ground plane with a subtle ice base. Remove background flames/aura, replacing them with minimal base mist or water effects to maintain clean composition.",
+  "identity_application": "Preserve identity strictly through geometric structure: the specific shape of the forehead protector, the exact count and position of whisker marks, and the hair silhouette. Express 'chakra energy' not through color, but through internal light refraction, bubble density, and clarity of the ice material around the eyes.",
+  "fidelity_constraints": [
+    "Must use unified semi-transparent ice blue material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must present clear 3D volumetric presence with subsurface scattering",
+    "Background must be clean white/light grey"
+  ],
+  "negative_constraints": [
+    "No flat 2D vector styles",
+    "No original brand colors (orange, red, yellow)",
+    "No opaque plastic, metal, or stone materials",
+    "No complex or dark backgrounds",
+    "No distortion of key facial features (protector, whiskers)"
+  ]
+}

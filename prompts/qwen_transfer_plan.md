@@ -22,6 +22,7 @@
 6. generation_brief 要短、明确、可执行，直接指导 Wan 生成。
 7. 如果 target_profile 包含 brand_identity_cues，这些线索必须进入 preserve 或 must_preserve。
 8. 品牌识别线索只能要求主题化重绘、柔化、低饱和化或材质化，不能要求删除。
+9. structure_preservation_mode、structure_identity_metric_applicable 和 structure_policy_rationale 必须原样继承 identity_strategy，不能在生成后调整。
 
 只输出合法 JSON，不要输出 Markdown，不要输出解释文字。
 
@@ -31,6 +32,9 @@ JSON 格式必须是：
   "app": "",
   "strategy_type": "logo_preserve | logo_simplify | semantic_recompose | symbolic_scene",
   "identity_constraint_level": "strict | balanced | flexible",
+  "structure_preservation_mode": "preserve_major_structure | semantic_recompose",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "生成前冻结的结构策略依据",
   "preserve": [],
   "must_preserve": [],
   "recompose_allowed": [],

@@ -1,0 +1,37 @@
+{
+  "app": "douyu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "鲨鱼头部轮廓及标志性的张嘴露齿表情",
+  "brand_cues_to_preserve": [
+    "鲨鱼头部的侧面剪影",
+    "张开的大嘴与锯齿状牙齿",
+    "圆润夸张的眼睛位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "直播平台的娱乐性与攻击性（通过锐利的牙齿表达）",
+    "吉祥物IP形象"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已经是高度符号化的吉祥物图形，具备清晰的几何轮廓。根据 theme_rules，当主体为清晰物体轮廓时应保留其拓扑结构。因此，不需要像游戏类 App 那样重构为抽象徽章，而是直接对现有的鲨鱼图形进行‘去色、加粗描边、扁平化’的风格迁移，保留其作为 IP 的完整性。",
+  "design_rationale": "斗鱼的鲨鱼形象具有极高的品牌辨识度，且原图结构已经足够简化，符合主题对‘单体居中构图’的要求。策略上选择保留主体结构，重点在于将原本的橙色渐变背景和复杂的阴影高光去除，替换为主题规定的纯黑背景和复古三原色（红/蓝/黄）平涂。通过加粗不规则的手绘描边，赋予鲨鱼一种‘涂鸦玩具’的质感，既保留了品牌资产，又完美融入了 Retro Doodle 风格。",
+  "must_preserve": [
+    "鲨鱼头部的整体外轮廓走向",
+    "嘴巴张开的角度和牙齿的锯齿形态",
+    "眼睛在头部的位置比例"
+  ],
+  "can_recompose": [
+    "原本的身体部分（可简化或裁切，仅保留头部为主视觉）",
+    "原本的色彩填充（必须映射为红/蓝/黄/白）",
+    "原本的平滑矢量边缘（需转化为抖动的手绘线条）"
+  ],
+  "forbid": [
+    "保留原本的橙色渐变背景",
+    "使用原本的灰色或黑色作为主体填充色（应改为高饱和色块）",
+    "保留原本细腻的光影渲染和高光点",
+    "描边过细或过于规整平滑"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of a shark head on a pure black background. Use thick, rough marker strokes for the outline. Fill the shark body with solid flat colors from the limited palette (e.g., creamy white or light yellow body, deep red mouth interior). Simplify details: remove gradients and shadows, keep only the iconic open mouth with jagged teeth and a round eye. The style should look like a naive crayon drawing or sticker."
+}

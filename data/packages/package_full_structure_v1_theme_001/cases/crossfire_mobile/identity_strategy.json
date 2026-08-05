@@ -1,0 +1,38 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "CF 字母组合徽标（双翼/子弹头造型）",
+  "brand_cues_to_preserve": [
+    "CF 字母的几何拓扑结构",
+    "锐利、向前的动态倾斜角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "射击游戏的硬核与速度感",
+    "金属质感的冷峻气息（通过冰材质转译）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，即使是复杂的汉字或符号，也应直接进行 3D 冰块化拉伸，而非重构。CF 的 Logo 具有极高的辨识度和独特的几何特征（类似弹头或双翼），必须完整保留其轮廓和笔画走势，仅做材质替换和厚度增加，以确保在统一主题下的可识别性。",
+  "design_rationale": "穿越火线作为硬核射击游戏，其原本的金属、科技风格与“冰雕”主题的冷冽、坚硬质感高度契合。选择 logo_preserve 策略是因为 CF 的图形标（CF字母组合）本身就是极强的视觉符号，不需要额外的场景或道具辅助。将其转化为厚实的冰砖，既能满足主题的通透感要求，又能通过冰的硬度隐喻游戏的竞技强度。严禁使用人物头像，因为复杂的人脸在冰块化后会丢失细节且难以辨认。",
+  "must_preserve": [
+    "CF 字母的整体外轮廓剪影",
+    "字母之间的连接关系和负空间形状",
+    "整体向右上方倾斜的动态势态"
+  ],
+  "can_recompose": [
+    "将原本的金属/渐变填充替换为半透明冰蓝材质",
+    "在冰块内部嵌入雪花或气泡纹理",
+    "边缘处理为圆润的倒角以模拟融冰效果",
+    "底部增加接触阴影和少量碎冰/水渍"
+  ],
+  "forbid": [
+    "禁止使用原图的深蓝色背景或橙色装饰元素",
+    "禁止生成不透明的蓝色塑料块",
+    "禁止改变 CF 字母的比例或书写方式",
+    "禁止出现人物面部或枪械实物模型",
+    "禁止去除底部的物理投影"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the 'CF' logo (CrossFire). The logo should be a thick, translucent cyan-blue ice block with internal bubbles and snowflake textures. Maintain the sharp, dynamic slanted geometry of the original letters. Glossy wet surface with caustic lighting. Pure white background. Soft contact shadow and melting water puddles at the base. No human faces, no guns, no original brand colors."
+}

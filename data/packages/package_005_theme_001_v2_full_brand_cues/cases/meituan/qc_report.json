@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 80,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "完美保留了美团的核心文字标识，同时成功融入了参考图中的手绘描边和可爱表情风格。虽然背景色偏淡（米黄色），不如原品牌黄醒目，但整体质感非常符合主题包要求，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "最佳候选。不仅字体风格化（加粗描边、表情）处理得当，且背景色准确还原了美团的品牌黄，视觉冲击力和主题一致性都是最好的。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 85,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "",
+      "recommendation": "质量很高，与 candidate_02 非常接近。背景色略浅于 candidate_02，字体内部留白稍多。依然是非常优秀的主题化图标，可作为备选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_005_theme_001_v2_full_brand_cues\\cases\\meituan\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,37 @@
+{
+  "app": "xingtu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "完美的正圆形轮廓及内部垂直分割的光影结构",
+  "brand_cues_to_preserve": [
+    "正圆形的主体几何轮廓",
+    "球体内部的垂直中轴线光影（模拟透镜或修图前后的对比感）",
+    "球体边缘的柔和光晕感（转化为冰体边缘的折射高光）"
+  ],
+  "semantic_cues_to_preserve": [
+    "类似镜头光圈或晶体的通透质感",
+    "中心聚焦的视觉引导"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中对于简单几何体（如支付宝的'支'字、豆瓣的抽象图形）均采取了严格的轮廓保留策略。醒图的核心识别度完全依赖于其独特的'发光球体'剪影。尽管原图标是平面的荧光绿渐变，但在主题化时必须将其视为一个具有物理厚度的3D冰球实体。必须保留圆形的完美曲率和内部垂直的光影分割线，仅将材质从'平面光效'替换为'立体冰块'。",
+  "design_rationale": "醒图的原图标是一个极简的荧光绿球体，带有明显的垂直光效分割。在'冰雪'主题下，这个球体非常适合被解释为一颗打磨完美的'冰珠'或'水晶镜头'。策略上选择直接保留其圆形轮廓和内部结构，利用冰材质的次表面散射（SSS）和内部气泡来重构原本的荧光质感。垂直的光影分割线可以转化为冰体内部的应力纹或折射光路，既保留了'修图/ lens'的语义，又完美契合冰封主题。",
+  "must_preserve": [
+    "正圆形的外轮廓",
+    "球体中央垂直向的光影/纹理分割",
+    "边缘的圆润高光处理"
+  ],
+  "can_recompose": [
+    "原本的荧光绿色泽（必须转为冰蓝/透白）",
+    "平面的光晕效果（转化为3D体积感和边缘折射）",
+    "黑色的背景（转为纯白背景）"
+  ],
+  "forbid": [
+    "禁止保留原始的荧光绿色",
+    "禁止生成扁平的圆形色块，必须有明显的Z轴厚度",
+    "禁止丢失内部的垂直分割特征，否则会变成普通的冰球",
+    "禁止添加与修图无关的复杂装饰（如相机机身等）"
+  ],
+  "generation_direction": "Generate a 3D translucent ice sphere icon. The shape must be a perfect circle with significant thickness. Inside the ice, embed a vertical structural line or refraction pattern mimicking a lens split. Material is pale cyan crystal with internal bubbles and snowflake textures. Surface has condensation droplets and glossy highlights. Place on a clean white background with a soft contact shadow and melting water trace at the base. No green color."
+}

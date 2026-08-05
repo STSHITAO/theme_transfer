@@ -1,0 +1,59 @@
+{
+  "app": "peace_elite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，即使是复杂图形也应保留其核心拓扑结构。和平精英的原图标虽为写实人物，但其‘三级头盔’具有极高的国民辨识度，等同于品牌Logo。因此，必须剔除原图中的人物躯干、背景和枪械，仅提取并立体化‘头盔’这一核心几何体，将其作为冰雕主体，以符合 theme_design_analysis 中关于保留核心轮廓识别度的要求。",
+  "preserve": [
+    "三级头盔的标志性圆顶轮廓",
+    "正面护目镜/面罩的横向矩形结构位置",
+    "头盔下部的下巴防护/系带结构形态",
+    "头盔侧面的铆钉或连接件大致布局"
+  ],
+  "must_preserve": [
+    "头盔的整体几何形状（圆顶、护耳、面部遮挡区）",
+    "右下角品牌角标（橙色渐变背景+白色四角星/交叉图形）"
+  ],
+  "recompose_allowed": [
+    "将金属哑光材质重组为高光泽半透明冰质感",
+    "将灰黑/军绿色调重组为统一浅冰蓝色",
+    "简化内部机械细节为冰块内部的气泡或纹理",
+    "移除人物躯干、枪支及复杂战场背景"
+  ],
+  "restyle": [
+    "应用次表面散射（SSS）效果模拟冰层厚度",
+    "边缘倒角处理以模拟冰块融化圆润感",
+    "添加表面冷凝水珠和内部悬浮雪花纹理"
+  ],
+  "decorate": [
+    "底部增加接触阴影（Contact Shadow）",
+    "基座周围添加少量融化的水渍或碎冰细节",
+    "顶部添加锐利的高光反射以表现湿润表面"
+  ],
+  "forbid": [
+    "禁止生成不透明的深灰色金属或塑料质感",
+    "禁止保留原图的写实皮肤、衣物纹理或枪械细节",
+    "禁止使用橙红色、军绿色等原品牌色填充主体",
+    "禁止将头盔变形为雪球、普通帽子或非战术类物体",
+    "禁止悬空无投影，必须有物理落地感"
+  ],
+  "generation_brief": "3D icon of a tactical Level 3 helmet made entirely of translucent light blue ice. Glossy wet surface, internal air bubbles and snowflakes. Preserve iconic visor and chin strap shape as frozen structures. Pure white background, soft contact shadow, melting puddles at base. No metal, no skin, no orange colors.",
+  "color_application": "强制去色。将原头盔的金属灰/军绿及角标的橙红全部转换为统一的 Translucent Cyan / Light Ice Blue (#A0D8EF)。仅通过白色高光和深蓝阴影表现体积，不保留任何原品牌色块。",
+  "stroke_application": "消除所有平面描边。通过3D冰块的物理边缘折射和高光来界定轮廓。边缘必须圆润光滑，模拟被水冲刷或融化的冰缘，无锐利直角。",
+  "composition_application": "单体居中构图。移除原图双人及背景，仅保留头盔主体。头盔占据画布60-70%高度，垂直居中。底部预留空间给阴影和水渍基座，确保视觉重心稳定。",
+  "identity_application": "通过严格保留‘三级头盔’的独特拓扑结构（圆顶+面罩+下巴带）来维持身份。放弃色彩和材质识别，完全依赖形态识别。右下角角标若存在需极度弱化或作为微缩冰雕配件，避免破坏主视觉纯度，但根据must_preserve要求需尝试保留其几何形态的冰晶化版本。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，严禁出现不透明塑料或金属质感",
+    "颜色必须严格限制在冰蓝/青色光谱内",
+    "必须保留 original 的核心轮廓识别度（头盔形状）",
+    "底部必须有环境交互细节（阴影、水渍、碎冰）"
+  ],
+  "negative_constraints": [
+    "禁止漂移到原图的写实军事风格",
+    "禁止保留原图标的实心色彩填充（特别是橙色角标背景）",
+    "禁止使用黑色或深色背景",
+    "禁止过度简化导致头盔变成无法识别的蓝色方块",
+    "禁止出现人物肢体或枪械"
+  ]
+}

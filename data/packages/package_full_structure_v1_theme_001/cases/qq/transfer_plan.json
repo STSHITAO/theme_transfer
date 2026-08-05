@@ -1,0 +1,62 @@
+{
+  "app": "QQ",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "QQ企鹅属于高辨识度的具象IP形象，其轮廓本身就是最强的识别符号。根据主题规则（如Alipay和Bilibili案例），必须完整保留企鹅的外部剪影和五官布局，仅将原本的黑色羽毛、黄色喙/脚转化为统一的冰晶材质，通过材质的通透感来重塑体积，严禁改变企鹅的形态或将其替换为其他物体。",
+  "preserve": [
+    "企鹅整体圆润剪影（头部与身体连接比例）",
+    "左眼睁开、右眼眨眼的特定神态",
+    "颈部围巾的环绕路径与胸前垂落形态",
+    "拟人化站立姿态"
+  ],
+  "must_preserve": [
+    "企鹅外轮廓拓扑结构",
+    "眨眼表情的几何特征",
+    "围巾作为独立视觉元素的存在",
+    "底部物理接触阴影与水渍"
+  ],
+  "recompose_allowed": [
+    "将实心黑色身体重组为半透明浅冰蓝色冰体",
+    "将黄色嘴/脚重组为同色系冰晶或淡化处理",
+    "将红色围巾重组为红色半透明冰晶材质",
+    "增加内部气泡、雪花纹理及表面冷凝水珠"
+  ],
+  "restyle": [
+    "材质：从扁平矢量转为3D半透明冰晶/凝胶",
+    "色彩：去品牌色，统一为Cyan/Ice Blue光谱（围巾除外）",
+    "光影：添加次表面散射(SSS)、高光反射及环境折射"
+  ],
+  "decorate": [
+    "内部悬浮微小雪花或气泡",
+    "表面湿润光泽与冷凝水珠",
+    "底部融化形成的水坑与碎冰细节"
+  ],
+  "forbid": [
+    "保留原图不透明黑色或黄色填充",
+    "主体悬空无投影",
+    "使用塑料、金属或磨砂材质",
+    "改变企鹅姿势或丢失眨眼特征",
+    "将围巾改为绿色、蓝色等非品牌色",
+    "背景非纯白/极淡冷灰"
+  ],
+  "generation_brief": "3D icon of QQ penguin sculpted from translucent light blue ice. Strictly preserve the classic silhouette, winking expression (one eye open, one closed), and scarf draping. Body is semi-transparent cyan ice with internal bubbles/snowflakes. Scarf is rendered as red translucent ice crystal. Glossy wet surface with condensation droplets. Soft contact shadow and melting puddle on pure white background. C4D render style, high fidelity, cute aesthetic.",
+  "color_application": "Apply 'Force Desaturation' rule: Convert original black body and yellow beak/feet to uniform Translucent Cyan/Ice Blue. Exception: Render the scarf in Red Translucent Ice to maintain brand cue, acting as a color accent against the monochrome ice body.",
+  "stroke_application": "Eliminate all 2D outlines. Define form through 3D volume, refraction, and specular highlights. Edges must be chamfered and rounded to mimic eroded ice, ensuring smooth transitions without sharp vector lines.",
+  "composition_application": "Center the 3D penguin sculpture occupying 60-70% of canvas height. Maintain original spatial arrangement of head, body, and scarf. Anchor the figure with a soft contact shadow and subtle melting water/ice shards at the base on a pure white background.",
+  "identity_application": "Preserve identity strictly through geometric silhouette and facial expression (wink). Do not rely on original colors for recognition. The 'Penguin' shape + 'Wink' + 'Red Scarf' combination ensures recognizability while adhering to the ice material theme.",
+  "fidelity_constraints": [
+    "Material must appear as translucent ice/crystal with subsurface scattering, not opaque plastic.",
+    "Color palette restricted to Ice Blue/Cyan for the body; White for highlights; Red only for the scarf.",
+    "Original silhouette proportions must remain unchanged.",
+    "Must include physical grounding elements (shadow/puddle)."
+  ],
+  "negative_constraints": [
+    "No flat 2D vector styles.",
+    "No dark or colored backgrounds.",
+    "No opaque black/yellow fills.",
+    "No distortion of the winking expression.",
+    "No floating objects without shadows."
+  ]
+}

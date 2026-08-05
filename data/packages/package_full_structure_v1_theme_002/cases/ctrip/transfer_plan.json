@@ -1,0 +1,63 @@
+{
+  "app": "ctrip",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象和符号化的几何图形（海豚剪影），符合 theme_rules 中 'preserve_when' 的条件。不需要像游戏角色那样进行语义重构，而是直接保留其拓扑结构，将平滑的矢量边缘转化为粗犷的手绘描边，并将品牌蓝映射为主题限定的深蓝色块。",
+  "preserve": [
+    "海豚向右上方跃起的动态姿态",
+    "身体与尾巴围合出的类圆形/螺旋状负空间",
+    "尾部尖端必须保留橙色色块（识别关键）",
+    "眼睛的相对位置及神态",
+    "整体图形的宽高比和重心",
+    "头部朝向右侧的特征"
+  ],
+  "must_preserve": [
+    "海豚的整体外轮廓（头、背鳍、卷曲的尾巴）",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘感描边",
+    "尾部尖端的橙色/暖黄色点缀"
+  ],
+  "recompose_allowed": [
+    "将光滑矢量边缘转化为抖动、粗糙的蜡笔/马克笔线条",
+    "将品牌标准蓝调整为主题指定的高饱和度深蓝/靛蓝",
+    "简化眼睛等微小细节为简单色块或留白",
+    "去除所有渐变、阴影和高光，改为纯色块平涂"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦风格（Retro Hand-drawn Doodle）",
+    "模拟干性绘画介质（蜡笔/粉笔）的颗粒感和涂抹不均",
+    "使用不规则的钝角和圆角处理转折处"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原有的平滑矢量质感或工业锐利度",
+    "禁止使用原本的亮蓝色背景（必须换为纯黑）",
+    "禁止添加水花、波浪、气泡等复杂环境元素",
+    "禁止使用渐变色、立体阴影或高光渲染",
+    "禁止改变海豚朝向（如改为向左）",
+    "禁止将海豚误画为鲸鱼、鲨鱼或普通鱼类",
+    "禁止移除尾部橙色/暖黄色点缀"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of the Ctrip dolphin logo. Thick, rough black marker outlines with a naive, clumsy aesthetic. Body filled with solid deep indigo blue. Tail tip accent in warm yellow/orange. Pure black background. No gradients, no shadows, no realistic details. Simplified geometric shapes, crayon texture.",
+  "color_application": "Map original brand blue to theme's high-saturation Deep Blue/Indigo. Map original white body to theme's Cream/Milk White or keep as negative space if contrast allows, but preferably solid fill. Map original orange tail tip to theme's Warm Yellow/Orange. All colors must be flat, solid blocks without gradients.",
+  "stroke_application": "Replace original clean vector edges with thick, irregular, hand-drawn black strokes. Simulate the jitter and thickness variation of a marker pen or crayon. Ensure corners are rounded or blunt, not sharp.",
+  "composition_application": "Center the simplified dolphin symbol on the pure black canvas. Occupy 60-70% of the area. Remove all background elements (waves, water). Maintain the original aspect ratio and right-facing orientation.",
+  "identity_application": "Preserve the specific topology of the jumping dolphin: head up-right, body curving down, tail curling up to form a C-shape/negative space. Keep the orange/yellow accent at the tail tip strictly. Do not alter the fundamental silhouette.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, rough, hand-drawn style black outlines",
+    "Colors must be limited to the theme palette (Deep Blue, Warm Yellow/Orange, Cream/White)",
+    "No gradients, shadows, lighting effects, or glossy textures",
+    "Subject must be flat, naive art style"
+  ],
+  "negative_constraints": [
+    "No realistic or photorealistic rendering",
+    "No original brand blue background",
+    "No smooth vector lines or perfect symmetry",
+    "No complex details like water splashes or waves",
+    "No change in dolphin orientation (must face right)",
+    "No removal of the tail accent color"
+  ]
+}

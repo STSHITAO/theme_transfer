@@ -1,0 +1,62 @@
+{
+  "app": "amap",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "高德地图的'纸飞机'符号具有极高的国民认知度，且其几何结构简单明确（三角形组合），完全符合主题规则中关于'高度抽象且独特的几何符号直接立体化'的要求。参考抖音音符和支付宝'支'字的处理逻辑，应保留原图标的完整剪影和内部折痕拓扑，仅做材质替换，严禁重构为指南针或地图等其他语义符号。",
+  "preserve": [
+    "纸飞机的整体外轮廓剪影",
+    "机头朝向右上方的角度（约45度）",
+    "机身中间的脊线（折痕）位置",
+    "机翼与机身的比例关系",
+    "折纸结构的层级拓扑"
+  ],
+  "must_preserve": [
+    "标志性的蓝色折纸飞机轮廓",
+    "机头指向右上方约45度的动态趋势",
+    "机身中轴线与机翼的折叠结构关系"
+  ],
+  "recompose_allowed": [
+    "将原本的纯色填充改为半透明冰质感",
+    "在折痕处增加由于厚度产生的光影折射细节",
+    "表面增加微小的雪花或气泡纹理",
+    "边缘进行圆润化处理以模拟冰的融化感"
+  ],
+  "restyle": [
+    "材质从纸质转变为高光泽半透明冰晶",
+    "颜色从高饱和品牌蓝转变为Cyan-Ice Blue（青冰蓝）",
+    "光照从漫反射转变为次表面散射（SSS）和焦散效果"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡和冰晶颗粒",
+    "表面添加湿润的高光反射",
+    "底部添加融化的水渍和小水洼"
+  ],
+  "forbid": [
+    "禁止改变飞机的朝向（如变成垂直向上或向左）",
+    "禁止生成不透明的实心蓝色塑料块",
+    "禁止添加复杂的背景地图元素或四宫格背景",
+    "禁止丢失机翼的折叠结构导致变成扁平三角形",
+    "禁止使用暖色调或保留原始高饱和品牌蓝",
+    "禁止出现描边线条"
+  ],
+  "generation_brief": "3D ice sculpture of a paper airplane pointing top-right. Translucent cyan-blue ice material with internal bubbles and snowflake textures. Glossy wet surface, caustic lighting, rounded icy edges preserving origami fold structure. Pure white background with melting water puddle and contact shadow at base. No text, no map background, no solid colors.",
+  "color_application": "强制去色。将原品牌高饱和蓝转换为统一的浅冰蓝色（Cyan-Ice Blue）。仅通过深蔚蓝（Deep Azure）表现阴影厚度，通过半透明白（Translucent White）表现高光透光区。严禁保留原始品牌色。",
+  "stroke_application": "消除所有二维描边。将原图标的折痕线条转化为三维实体的边缘倒角。通过材质的折射率差异和内部焦散来界定轮廓，而非绘制线条。",
+  "composition_application": "去除原背景中的四宫格地图元素。主体居中构图，占据画布60%-70%空间。底部预留空间给投影和水渍，营造物体放置在白色平面上的物理真实感。",
+  "identity_application": "严格保留纸飞机的几何剪影和指向右上方的动态趋势。通过冰块的厚度和内部折射来强调原有的折纸结构层次，确保在不使用品牌色的情况下，仅凭形状即可识别为高德地图。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束：禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色或地图网格。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变纸飞机的飞行方向。"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "app": "mi_home",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "米家盾牌形 'MJ' 组合 Logo（猫耳轮廓与字母 M/J 的负空间结合）",
+  "brand_cues_to_preserve": [
+    "盾牌/徽章的整体外轮廓",
+    "顶部的双尖角（猫耳特征）",
+    "中间 'M' 形的折线结构",
+    "底部 'J' 形的圆弧钩状结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "家居守护/安全感的盾牌形态",
+    "智能连接的聚合感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身已是高度抽象的几何符号（盾牌+MJ），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Douyin 的案例，当原标具备清晰拓扑结构时，应保留其骨架，仅替换填充材质、描边风格和配色，而非重构语义。",
+  "design_rationale": "米家 Logo 具有极高的国民辨识度，且其几何特征（盾牌、猫耳、MJ字母）非常适合转化为复古涂鸦风格。策略上选择完全保留其物理轮廓，将其视为一个‘复古贴纸’或‘玩具徽章’进行处理。将原本的科技绿替换为主题限定的高饱和色（如奶黄或砖红），并强制添加粗犷的手绘黑色描边，以消除原有的精密矢量感，融入主题的拙朴氛围。",
+  "must_preserve": [
+    "盾牌状的外围轮廓",
+    "顶部两个尖角（猫耳）",
+    "内部 M 与 J 的笔画连接关系",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "颜色：由品牌绿映射为主题色板中的奶黄（主体）配深蓝（细节）或全砖红",
+    "边缘：由平滑锐利变为抖动、粗细不均的手绘墨迹",
+    "质感：由扁平矢量变为类似蜡笔或马克笔的哑光涂抹感"
+  ],
+  "forbid": [
+    "保留原始的绿色（必须映射到红/蓝/黄）",
+    "保留平滑的矢量边缘（必须有手绘抖动感）",
+    "添加立体阴影或高光",
+    "改变盾牌的长宽比或角度"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the Mi Home shield logo on a pure black background. The shape must strictly follow the original shield outline with cat-ear tips and MJ internal structure. Fill the shape with solid saturated Cream Yellow or Brick Red (no green). Apply thick, rough, uneven black marker strokes for the outline. Flat color, no gradients, no shadows, crayon texture."
+}

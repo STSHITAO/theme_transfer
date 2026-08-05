@@ -1,0 +1,40 @@
+{
+  "app": "minecraft",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的像素方块人（Steve）头部轮廓及手持红色花朵的姿态",
+  "brand_cues_to_preserve": [
+    "正方体头部几何结构",
+    "手持红色花朵的动作特征",
+    "棕色/土色系的主色调倾向"
+  ],
+  "semantic_cues_to_preserve": [
+    "方块构建世界的核心概念",
+    "探索与创造的游戏氛围"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Minecraft 的原始图标主体已经是高度符号化的几何体（方块人），符合主题‘将复杂物体抽象为几何块面’的规则。因此不需要像游戏角色头像那样进行语义重构，而是直接保留其经典的方块人头轮廓和手持花朵的空间关系，仅对材质、描边和配色进行主题化迁移。",
+  "design_rationale": "选择保留主体结构是因为 Minecraft 的方块人本身就是极简几何符号的代表，完美契合复古手绘主题的拙朴感。策略上重点在于‘去像素化’：将原本锐利的马赛克边缘转化为粗犷的手绘马克笔触，将原本的绿色草地背景替换为纯黑，并将人物肤色映射为主题限定的砖红或奶黄色系，同时保留那朵红花作为视觉点睛之笔（对应主题色板中的红色）。",
+  "must_preserve": [
+    "方块状的人头轮廓",
+    "手中持有的花朵形态",
+    "居中构图",
+    "粗黑色手绘描边"
+  ],
+  "can_recompose": [
+    "面部五官细节（简化为简单的色块或线条）",
+    "身体躯干部分（可简化或省略，聚焦头部）",
+    "原始的绿色和棕色像素格纹理",
+    "底部的立体文字"
+  ],
+  "forbid": [
+    "保留原始的像素网格线",
+    "使用原始的绿色草方块背景",
+    "使用平滑的矢量线条",
+    "添加任何立体光影或渐变",
+    "出现除红蓝黄白黑以外的颜色（如原本的鲜绿色）"
+  ],
+  "generation_direction": "在纯黑背景上绘制一个粗犷手绘风格的 Minecraft 方块人头部。使用不规则的粗黑色马克笔描边勾勒轮廓。主体填充色改为高饱和度的砖红色或奶黄色（替代原本的肉色），手中的花朵保留为鲜艳的红色。完全去除像素格纹理，表现为扁平的哑光色块。无阴影，无渐变，造型圆润拙朴。"
+}

@@ -1,0 +1,62 @@
+{
+  "app": "tencent_news",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的处理方式，对于具有高辨识度的具象符号（企鹅）和特定几何布局（环绕弧线），必须严格保留其原始矢量轮廓。主题化仅体现在将平面色块转化为具有厚度的 3D 冰雕实体，严禁改变企鹅的姿态或弧线的排列逻辑，以确保在统一冰蓝材质下仍能通过剪影被瞬间识别。",
+  "preserve": [
+    "中央企鹅的完整身体轮廓（头部圆润度、翅膀位置、底部宽度）",
+    "三条环绕弧线的相对位置、曲率半径及空间包围关系",
+    "企鹅位于视觉绝对中心，弧线呈非闭合环状分布",
+    "图标整体的圆形构图趋势"
+  ],
+  "must_preserve": [
+    "企鹅剪影的精确外形比例",
+    "三条弧线围绕企鹅的空间拓扑关系",
+    "冰材质内部的次表面散射（SSS）效果和气泡细节"
+  ],
+  "recompose_allowed": [
+    "原始的红、黄、绿、蓝品牌色（必须全部替换为冰蓝/青色渐变）",
+    "平面的边缘（需转化为圆润的倒角或融化感的边缘）",
+    "实心的填充（需转化为半透明晶体，允许看到背部轮廓的折射）",
+    "底部的支撑结构（可添加薄冰底座以增强落地感）"
+  ],
+  "restyle": [
+    "将平面矢量图形转换为 3D 立体冰雕",
+    "应用统一的 Pale Cyan/Ice Blue 色调",
+    "增加表面冷凝水珠和内部雪花纹理",
+    "强化边缘的高光折射效果"
+  ],
+  "decorate": [
+    "主体内部嵌入微小气泡和冰裂纹",
+    "表面散布冷凝水珠",
+    "底部添加接触阴影和微量融水渍"
+  ],
+  "forbid": [
+    "禁止保留原始的黄色、绿色或红色",
+    "禁止将企鹅替换为其他鸟类或真实照片",
+    "禁止使用不透明的塑料质感，必须是透光的冰",
+    "禁止去除环绕的弧线导致只剩一只企鹅",
+    "禁止背景出现复杂的冰雪场景，保持纯白",
+    "禁止生成平面 2D 图标"
+  ],
+  "generation_brief": "3D ice sculpture of Tencent News logo: central penguin silhouette surrounded by three curved arcs (top-left, top-right, bottom). All elements made of translucent pale cyan ice with internal bubbles and snowflake textures. No original colors. Glossy surface with condensation droplets. Pure white background, soft contact shadow and melting water puddle at base.",
+  "color_application": "Discard all original brand colors (blue penguin, yellow/green/red arcs). Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use lightness variations only to define volume and depth, not hue.",
+  "stroke_application": "Eliminate all 2D vector strokes. Transform edges into smooth, rounded, beveled ice contours defined by specular highlights and refraction rather than drawn lines.",
+  "composition_application": "Convert flat centralized layout to 3D volumetric composition. Penguin and arcs gain Z-axis thickness. Maintain strict central alignment. Add a subtle ice base/puddle to ground the object on the white background.",
+  "identity_application": "Preserve the exact geometric silhouette of the penguin and the spatial topology of the three surrounding arcs. Identity is maintained through shape recognition under the unified ice material, not through color.",
+  "fidelity_constraints": [
+    "Must use uniform semi-transparent ice/crystal material.",
+    "Must include internal details like bubbles, snowflakes, or ice cracks.",
+    "Must exhibit 3D volume with subsurface scattering and refraction.",
+    "Background must be clean pure white."
+  ],
+  "negative_constraints": [
+    "No original brand colors (red, green, yellow, solid blue).",
+    "No opaque plastic, metal, or stone materials.",
+    "No complex background scenes.",
+    "No distortion of the penguin's key features (head, wings) or arc positions.",
+    "No flat 2D appearance."
+  ]
+}

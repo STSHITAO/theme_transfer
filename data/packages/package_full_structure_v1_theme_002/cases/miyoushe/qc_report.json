@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反结构保留策略：添加了原图中不存在的‘双发髻/丸子头’结构，导致主体轮廓发生根本性改变，丢失了米游兔原本的长耳特征和头部比例。",
+      "recommendation": "不推荐。虽然风格匹配度高，但重构过度，将角色识别为其他形象（如哪吒或特定游戏角色），不符合 preserve_major_structure 的严格约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan：保留了标志性的双耳结构（包括左低右高的微妙不对称）和极简五官；正确应用了复古手绘描边、白色隔离带和主题色板（奶黄/砖红）；去除了所有立体感和渐变，完全符合 strict 约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\miyoushe\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

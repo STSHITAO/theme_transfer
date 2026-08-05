@@ -1,0 +1,39 @@
+{
+  "app": "soul",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The specific typography of the word 'Soul', particularly the unique geometry of the lowercase 'l' which resembles a hook or antenna.",
+  "brand_cues_to_preserve": [
+    "The exact letterforms and spacing of 'Soul'",
+    "The distinct shape of the letter 'l' (vertical stroke with bottom curve)",
+    "The horizontal alignment of the text"
+  ],
+  "semantic_cues_to_preserve": [
+    "Text-based logo identity",
+    "Social connection implied by the unified wordmark"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'alipay' and 'bilibili' reference patterns, the text/logo structure is the primary identifier. The strategy requires extruding the 2D text into 3D ice blocks while maintaining the exact font topology. No structural重组 is needed as the text is already a strong geometric symbol.",
+  "design_rationale": "Soul's identity is entirely typographic. To fit the Ice Theme, the letters must be transformed into physical ice sculptures. The 'l' is a critical differentiator and must remain distinct. The background planet texture from the original is discarded in favor of the theme's clean white void to ensure the ice text stands out.",
+  "must_preserve": [
+    "The legibility of the word 'Soul'",
+    "The specific curvature at the bottom of the letter 'l'",
+    "Translucent ice material with internal bubbles/snowflakes",
+    "Contact shadow and melting water details at the base"
+  ],
+  "can_recompose": [
+    "The background planet/starry texture (remove completely)",
+    "The cyan brand color (replace with ice blue refraction)",
+    "The flat 2D surface (convert to volumetric 3D)"
+  ],
+  "forbid": [
+    "Retaining the black background or starry texture",
+    "Using the original cyan color for the letters",
+    "Changing the font style or letter shapes",
+    "Opaque plastic or metal materials",
+    "Floating objects without ground contact shadows"
+  ],
+  "generation_direction": "3D render of the text 'Soul' made of thick translucent light-blue ice. Letters are rounded and glossy like frozen water. Internal suspended snowflakes and air bubbles. The letter 'l' retains its unique hook shape. Pure white background. Soft contact shadow and small puddle of water at the base. Studio lighting, high refraction."
+}

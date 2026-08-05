@@ -1,0 +1,37 @@
+{
+  "app": "baidu_tieba",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字'贴'的笔画结构及底部的对话气泡尖角",
+  "brand_cues_to_preserve": [
+    "'贴'字的完整字形骨架",
+    "底部居中的气泡尖角（Tail）",
+    "圆角矩形的整体外轮廓"
+  ],
+  "semantic_cues_to_preserve": [
+    "对话/交流的语义（通过气泡形状表达）",
+    "文字内容的语义（通过汉字表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于包含明确文字或独特几何符号的图标，采取'几何守恒，材质重构'策略。百度贴吧的核心识别点在于'贴'字与气泡的结合体，必须完整保留其二维拓扑结构，仅将其转化为具有厚度的3D冰雕实体，不可拆解或重组。",
+  "design_rationale": "百度贴吧的原图标由'贴'字和对话气泡组成，具有极高的文字识别度。根据主题规则，应将整个图标视为一个整体的'冰砖'进行雕刻。去除原本的紫/粉/蓝多色配色，统一替换为高透光的浅冰蓝色。重点表现汉字的立体厚度、气泡尖角的圆润感以及冰块内部的雪花纹理，确保在纯白背景下依然能通过剪影清晰辨认。",
+  "must_preserve": [
+    "'贴'字的左右结构比例",
+    "气泡底部的三角形尖端位置",
+    "图标整体的圆角正方形轮廓"
+  ],
+  "can_recompose": [
+    "将原本平面的笔画末端处理为圆润的冰质倒角",
+    "在冰块内部添加随机分布的气泡和裂纹细节",
+    "增加底部的物理接触阴影和融化水渍"
+  ],
+  "forbid": [
+    "禁止改变'贴'字的字体结构或笔画连接方式",
+    "禁止保留原本的紫色或粉色背景色块",
+    "禁止生成不透明的实心塑料质感",
+    "禁止去掉底部的气泡尖角使其变成普通方块"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Baidu Tieba logo. The subject is a thick, translucent cyan-blue ice block shaped like a speech bubble containing the Chinese character '贴'. The character strokes should be carved into the ice with rounded, glossy edges. Internal texture must include frozen air bubbles and snowflakes. The bottom tip of the speech bubble should be distinct but smooth. Place on a pure white background with a realistic wet contact shadow and small puddle at the base. No outline strokes, rely on refraction and highlights."
+}

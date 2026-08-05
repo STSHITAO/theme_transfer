@@ -1,0 +1,37 @@
+{
+  "app": "lofter",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "独特的 'L' 形几何线条结构",
+  "brand_cues_to_preserve": [
+    "标志性的 'L' 字母轮廓（竖画顶端圆润，底部向右延伸并带有波浪/钩状收尾）",
+    "线条的粗细比例与转折处的圆角特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为社区/创作平台的抽象符号感",
+    "线条的连贯性（代表流动与连接）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、豆瓣等案例均严格保留了原图标的核心骨架。LOFTER 的 'L' 形具有极高的品牌独特性，且几何结构简单清晰，完全符合‘几何守恒，材质重构’的主题原则。无需进行语义重组，直接将其转化为立体冰雕即可完美融合主题并保持识别度。",
+  "design_rationale": "LOFTER 的图标本质上是一个高辨识度的几何符号。在当前‘冰雕拟物’主题下，最佳策略是将原本平面的白色线条‘冻结’成一根立体的冰条。这种处理方式既严格遵守了主题关于材质（半透明冰蓝、气泡纹理）和背景（纯白）的要求，又通过保留精确的 'L' 形轮廓确保了用户能瞬间识别出应用身份。原有的青绿色背景被移除， replaced by 纯净的白色空间，使主体更加突出。",
+  "must_preserve": [
+    "'L' 形的准确拓扑结构（特别是底部的钩状曲线）",
+    "线条末端的圆润倒角",
+    "整体线条的相对粗细"
+  ],
+  "can_recompose": [
+    "将原本的2D平面线条转化为具有厚度的3D长方体或圆柱体截面",
+    "颜色由白变为浅冰蓝色",
+    "增加表面的高光、折射和内部的气泡/雪花细节",
+    "底部增加接触阴影和融化水渍"
+  ],
+  "forbid": [
+    "禁止改变 'L' 的形状或比例",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止保留原始的青绿色背景",
+    "禁止添加任何额外的装饰性元素（如相机、画笔等），保持极简"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the LOFTER 'L' logo. The shape must be an exact 3D extrusion of the original white line: vertical stroke with rounded top, curving at the bottom to the right with a wave/hook end. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. Place on a pure white background with a soft contact shadow and small melting water puddle at the base. No background color, no solid plastic look."
+}

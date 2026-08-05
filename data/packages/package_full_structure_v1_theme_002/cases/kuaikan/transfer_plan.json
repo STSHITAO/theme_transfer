@@ -1,0 +1,64 @@
+{
+  "app": "kuaikan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标主体为高识别度的品牌文字 Logo，属于清晰的几何/符号化轮廓。根据 structure_preservation_policy，当 Original 为清晰符号或文字时，应保留其主体轮廓和空间布局。因此，必须保留“快看！”的文字架构，仅对其进行风格化重绘（如将笔画转化为粗犷的手绘色块），而非重构为其他物体。",
+  "preserve": [
+    "“快看”两个汉字的整体骨架与相对位置",
+    "“看”字下半部分嵌入的眼睛/瞳孔图形特征",
+    "感叹号“！”的形态及其视觉平衡",
+    "纯黑背景 (#000000)",
+    "粗黑色的手绘不规则描边"
+  ],
+  "must_preserve": [
+    "“快看”汉字的字形骨架",
+    "“看”字内部的眼睛符号",
+    "感叹号的存在",
+    "黑底上的高对比度主体"
+  ],
+  "recompose_allowed": [
+    "笔画边缘由锐利转为圆润、抖动的涂鸦质感",
+    "字体填充色由纯黑转换为红/蓝/黄的高饱和色块组合",
+    "底部装饰性碎片简化为极简几何点缀或移除",
+    "字体粗细调整为适应手绘风格的厚重感"
+  ],
+  "restyle": [
+    "将工业黑体字转化为粗犷马克笔手写风格",
+    "去除所有渐变、阴影和立体光影",
+    "应用哑光平涂质感，模拟蜡笔或粉笔痕迹"
+  ],
+  "decorate": [
+    "在字符内部或周围添加极少量的主题性几何点缀（如小圆点、短划线）以增强拙朴感",
+    "确保装饰不干扰文字识别"
+  ],
+  "forbid": [
+    "保留原始的黄色背景",
+    "使用平滑矢量线条或标准印刷字体",
+    "添加高光、阴影、投影或3D效果",
+    "将文字替换为书本、卷轴等具象物体",
+    "使用绿色、紫色、粉色等非主题色板颜色",
+    "出现白色背景或复杂场景背景"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon on pure black background. Subject is simplified Chinese text '快看!' rendered as thick, clumsy marker strokes. Character '快' in brick red, '看' in indigo blue. The character '看' must contain a stylized eye symbol. Exclamation mark included. Rough uneven edges, thick dark outlines, flat solid colors, no gradients, no shadows, naive art style.",
+  "color_application": "Map original brand yellow/black to theme palette: Use Brick Red and Indigo Blue for character fills to maintain high saturation contrast against black background. Avoid original yellow if it clashes with theme limits, or use Theme Yellow only for the eye highlight if necessary. No gradients.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black/dark outlines to all character strokes. Edges must appear rough and shaky, simulating a dry marker or crayon on paper. No smooth vector curves.",
+  "composition_application": "Center the '快看!' text block. Scale to occupy 60-70% of canvas width. Ensure balanced spacing between characters and the exclamation mark. Remove original bottom decorative fragments or simplify them drastically to maintain minimalist centered composition.",
+  "identity_application": "Preserve the topological structure of the characters '快看' and the embedded eye symbol in '看'. Stylize the strokes to look like hand-drawn doodles but keep the legibility of the brand name. The eye symbol is the critical semantic anchor.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, rough, hand-drawn style outlines",
+    "Colors must be limited to high-saturation Red, Blue, Yellow/White",
+    "No gradients, shadows, or realistic textures",
+    "Subject must be flat geometric blocks"
+  ],
+  "negative_constraints": [
+    "No white or colored backgrounds",
+    "No smooth vector lines or perfect symmetry",
+    "No 3D renders, gloss, or lighting effects",
+    "No green, purple, or pink colors",
+    "No complex details or photorealistic elements",
+    "Do not replace text with unrelated objects like books or scrolls"
+  ]
+}

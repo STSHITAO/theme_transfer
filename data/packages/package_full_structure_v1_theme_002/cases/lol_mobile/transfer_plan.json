@@ -1,0 +1,59 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "symbolic_scene",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题中 lol_mobile 的处理方式显示，当原图为复杂写实人物（如金克丝）时，必须放弃人物还原。应提取品牌核心符号（L徽标）进行重构，将原本的生物特征结构完全替换为几何排版结构，以符合主题的极简涂鸦风格。",
+  "preserve": [
+    "L形/盾牌形的主体轮廓暗示",
+    "红蓝对抗的色彩逻辑",
+    "纯黑背景"
+  ],
+  "must_preserve": [
+    "英雄联盟的盾牌/L形轮廓框架",
+    "代表阵营对抗的红蓝双色逻辑",
+    "粗不规则的手绘黑色描边",
+    "高饱和度受限色板（红、蓝、奶黄）"
+  ],
+  "recompose_allowed": [
+    "将写实人物重组为几何化的L形徽章",
+    "将复杂文字简化为装饰性笔画或省略",
+    "内部细节简化为简单的几何色块拼接"
+  ],
+  "restyle": [
+    "去除所有3D光影和渐变",
+    "应用蜡笔/马克笔的粗糙质感",
+    "边缘处理为不规则手绘抖动效果"
+  ],
+  "decorate": [
+    "在L形结构内部添加简单的黄色几何点缀（如圆点或短线）",
+    "保持构图的松散与拙朴感"
+  ],
+  "forbid": [
+    "保留任何写实的人物五官、发型或皮肤质感",
+    "使用原始图标的蓝色渐变背景或光效",
+    "出现绿色、紫色等主题色板以外的颜色",
+    "精细平滑的矢量线条或完美对称",
+    "试图完整保留'4周年'等运营文字导致画面杂乱"
+  ],
+  "generation_brief": "A retro hand-drawn doodle style icon of the League of Legends 'L' shield logo. Centered on pure black background. The shield shape is filled with solid blocks of deep blue and brick red, separated by rough uneven black outlines. Simple yellow geometric accents inside. Crayon/marker texture, flat colors, no gradients, no shadows, no realistic face. Naive, clumsy aesthetic.",
+  "color_application": "Map original brand colors to theme palette: Deep Blue for one half of the L/Shield, Brick Red for the other. Use Milk Yellow for small internal accents. No gradients, only solid flat fills.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black outlines around the L-shield contour and internal color blocks. Lines should have a shaky, marker-pen quality, not smooth vectors.",
+  "composition_application": "Center the simplified L-shield symbol. Occupy 60-70% of the canvas. Remove all background elements and text labels. Ensure balanced but loose placement on the black void.",
+  "identity_application": "Express identity through the abstracted 'L' shield shape and the iconic Red vs. Blue color scheme, rather than character features. This maintains brand recognition while adhering to the theme's simplification rules.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must use thick, rough hand-drawn outlines",
+    "Colors must be limited to High Saturation Red, Blue, and Yellow",
+    "No gradients, shadows, or 3D effects allowed",
+    "Subject must be a flat geometric recomposition of the L-logo"
+  ],
+  "negative_constraints": [
+    "No realistic human faces or Jinx character details",
+    "No original blue gradient backgrounds or lighting effects",
+    "No fine, clean vector lines",
+    "No colors outside the Red/Blue/Yellow palette (e.g., green, purple)",
+    "No complex text or watermarks"
+  ]
+}

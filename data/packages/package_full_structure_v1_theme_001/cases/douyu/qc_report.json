@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 70,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "丢失了核心识别线索：嘴部的火箭/飞镖物体。根据transfer_plan，必须保留'下处咬合物的基本形状'。该图将鲨鱼重构为类似吃豆人（Pac-Man）的通用张嘴形象，导致无法区分是斗鱼还是其他鱼类应用，违反了strict约束。",
+      "recommendation": "不推荐。虽然冰雕质感和风格非常完美，但丢失了'咬火箭'这一关键品牌特征，且头部轮廓过于圆润，失去了原Logo的锐利感，识别度大幅下降。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了transfer_plan。1. 材质：半透明冰蓝质感，内部有气泡和雪花，符合主题指纹。2. 结构：严格保留了鲨鱼侧脸轮廓、圆眼位置、锯齿牙齿。3. 关键点：清晰保留了嘴部咬住的物体（火箭/飞镖）的几何特征，这是区别于普通鲨鱼的关键。4. 细节：底部有融化的水渍和阴影，无多余背景。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\douyu\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

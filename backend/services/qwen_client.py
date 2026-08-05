@@ -53,6 +53,9 @@ REQUIRED_TRANSFER_PLAN_FIELDS = [
     "identity_application",
     "fidelity_constraints",
     "negative_constraints",
+    "structure_preservation_mode",
+    "structure_identity_metric_applicable",
+    "structure_policy_rationale",
 ]
 
 REQUIRED_THEME_DESIGN_FIELDS = [
@@ -68,6 +71,7 @@ REQUIRED_THEME_DESIGN_FIELDS = [
     "reference_transformation_patterns",
     "shared_design_rules",
     "identity_handling_policy",
+    "structure_preservation_policy",
     "common_forbidden_failures",
 ]
 
@@ -84,7 +88,15 @@ REQUIRED_IDENTITY_STRATEGY_FIELDS = [
     "brand_cues_to_preserve",
     "semantic_cues_to_preserve",
     "style_fidelity_priority",
+    "structure_preservation_mode",
+    "structure_identity_metric_applicable",
+    "structure_policy_rationale",
 ]
+
+STRUCTURE_PRESERVATION_MODES = {
+    "preserve_major_structure",
+    "semantic_recompose",
+}
 
 
 
@@ -273,7 +285,7 @@ def build_transfer_plan(
     )
 
 
-def score_candidates(theme_style_refs, target_layout, candidate_paths, root_dir=None):
+def score_candidates(theme_style_refs, target_layout, candidate_paths, root_dir=None, transfer_plan=None):
     root = Path(root_dir) if root_dir else Path.cwd()
     _load_env(root)
     (root / "prompts" / "qwen_qc.md").read_text(encoding="utf-8")
@@ -304,7 +316,15 @@ def score_candidates(theme_style_refs, target_layout, candidate_paths, root_dir=
         }
 
     prompt = (root / "prompts" / "qwen_qc.md").read_text(encoding="utf-8")
-    content = [{"text": prompt}]
+    content = [
+        {
+            "text": (
+                f"{prompt}\n\n"
+                "【transfer_plan】\n"
+                f"{json.dumps(transfer_plan or {}, ensure_ascii=False, indent=2)}"
+            )
+        }
+    ]
     for path in theme_style_refs:
         content.append({"text": f"主题参考图: {Path(path).name}"})
         content.append({"image": _image_data_url(path, max_size=(512, 512), quality=72)})
@@ -342,7 +362,16 @@ def score_package_consistency(theme_style_refs, contact_sheet, final_outputs, ro
         content.append({"image": _image_data_url(path, max_size=(512, 512), quality=72)})
     content.append({"text": "整包 contact_sheet，用于检查所有输出是否像同一套主题。"})
     content.append({"image": _image_data_url(contact_sheet, max_size=(1024, 1024), quality=78)})
-    for app_name, path in _final_output_items(final_outputs):
+    sampled_outputs = _sample_final_output_items(final_outputs, max_items=12)
+    content.append(
+        {
+            "text": (
+                f"整包共 {len(app_names)} 个 App。contact_sheet 覆盖全部 App；"
+                f"以下额外提供 {len(sampled_outputs)} 个按排序均匀抽取的单图用于细节检查。"
+            )
+        }
+    )
+    for app_name, path in sampled_outputs:
         content.append({"text": f"最终输出图: {app_name}"})
         content.append({"image": _image_data_url(path, max_size=(512, 512), quality=72)})
 
@@ -420,11 +449,18 @@ def _mock_theme_design(reference_examples, theme_profile):
                 "observed_transformation": "mock: infer how source semantics are represented in the transferred style_ref.",
                 "preserved_identity": "mock: retain at least one recognizable brand or function cue.",
                 "redesigned_parts": "mock: allow structure to be simplified or recomposed when theme language requires it.",
+                "preserve_major_structure": True,
+                "structure_evidence": "mock: the main silhouette and spatial arrangement remain recognizable.",
             }
             for app_name in used
         ],
         "shared_design_rules": ["use one shared theme_board for every target app"],
         "identity_handling_policy": "mock: choose identity expression dynamically from target image and neutral app semantics.",
+        "structure_preservation_policy": {
+            "decision_scope": "per_app_before_generation",
+            "preserve_when": "the theme examples retain the main silhouette and spatial arrangement",
+            "recompose_when": "the theme examples replace the main geometry with semantic symbols or a scene",
+        },
         "common_forbidden_failures": [
             "do not turn every app into a generic decoration",
             "do not redefine theme style per app",
@@ -434,9 +470,15 @@ def _mock_theme_design(reference_examples, theme_profile):
 
 def _mock_identity_strategy(theme_design_analysis, target_profile):
     app = target_profile.get("app", "")
+    strategy_type = "semantic_recompose" if app in {"xiaohongshu", "damai", "tieba"} else "logo_simplify"
+    structure_mode = (
+        "semantic_recompose"
+        if strategy_type in {"semantic_recompose", "symbolic_scene"}
+        else "preserve_major_structure"
+    )
     return {
         "app": app,
-        "strategy_type": "semantic_recompose" if app in {"xiaohongshu", "damai", "tieba"} else "logo_simplify",
+        "strategy_type": strategy_type,
         "identity_constraint_level": "balanced",
         "design_rationale": "mock: choose an app expression from the target image, neutral app profile, and shared theme_board.",
         "must_preserve": ["recognizable app name or symbol cue", "core function cue"],
@@ -450,6 +492,9 @@ def _mock_identity_strategy(theme_design_analysis, target_profile):
         "brand_cues_to_preserve": target_profile.get("brand_identity_cues", []),
         "semantic_cues_to_preserve": [target_profile.get("core_function", "")] if target_profile.get("core_function") else [],
         "style_fidelity_priority": "theme_fidelity_first",
+        "structure_preservation_mode": structure_mode,
+        "structure_identity_metric_applicable": structure_mode == "preserve_major_structure",
+        "structure_policy_rationale": "mock: freeze the expected structure policy before image generation.",
     }
 
 
@@ -461,6 +506,13 @@ def _mock_transfer_plan(theme_rules, target_identity, identity_strategy=None):
     if strategy:
         preserve = strategy.get("must_preserve", preserve)
         forbid = strategy.get("forbid", forbid)
+    structure_mode = strategy.get("structure_preservation_mode")
+    if structure_mode not in STRUCTURE_PRESERVATION_MODES:
+        structure_mode = (
+            "semantic_recompose"
+            if strategy.get("strategy_type") in {"semantic_recompose", "symbolic_scene"}
+            else "preserve_major_structure"
+        )
     return {
         "app": app,
         "strategy_type": strategy.get("strategy_type", "logo_simplify"),
@@ -493,6 +545,12 @@ def _mock_transfer_plan(theme_rules, target_identity, identity_strategy=None):
             "do not create a new theme style",
             "do not make only internally consistent icons that are inconsistent with theme_001",
         ],
+        "structure_preservation_mode": structure_mode,
+        "structure_identity_metric_applicable": structure_mode == "preserve_major_structure",
+        "structure_policy_rationale": strategy.get(
+            "structure_policy_rationale",
+            "mock: copied from the pre-generation identity strategy.",
+        ),
     }
 
 
@@ -595,6 +653,16 @@ def _parse_theme_design_json(text, reference_examples, theme_profile):
     fallback = _mock_theme_design(reference_examples, theme_profile)
     for key in REQUIRED_THEME_DESIGN_FIELDS:
         parsed.setdefault(key, fallback[key])
+    patterns = parsed.get("reference_transformation_patterns")
+    if not isinstance(patterns, list):
+        patterns = fallback["reference_transformation_patterns"]
+        parsed["reference_transformation_patterns"] = patterns
+    for item in patterns:
+        if isinstance(item, dict):
+            item.setdefault("preserve_major_structure", True)
+            if not isinstance(item.get("preserve_major_structure"), bool):
+                item["preserve_major_structure"] = True
+            item.setdefault("structure_evidence", "")
     return parsed
 
 
@@ -611,6 +679,7 @@ def _parse_identity_strategy_json(text, target_profile):
         parsed.setdefault(key, fallback[key])
     if parsed.get("identity_constraint_level") not in ["strict", "balanced", "flexible"]:
         parsed["identity_constraint_level"] = "balanced"
+    _normalize_structure_policy(parsed)
     _protect_brand_identity_cues(parsed, target_profile, preserve_keys=["must_preserve"], recompose_keys=["can_recompose"])
     return parsed
 
@@ -626,6 +695,7 @@ def _parse_transfer_plan_json(text, target_identity, identity_strategy=None, tar
     fallback = _mock_transfer_plan({}, target_identity, identity_strategy=identity_strategy)
     for key in REQUIRED_TRANSFER_PLAN_FIELDS:
         parsed.setdefault(key, fallback[key])
+    _normalize_structure_policy(parsed, source=identity_strategy)
     _protect_brand_identity_cues(
         parsed,
         target_profile or {},
@@ -633,6 +703,26 @@ def _parse_transfer_plan_json(text, target_identity, identity_strategy=None, tar
         recompose_keys=["recompose_allowed"],
     )
     return parsed
+
+
+def _normalize_structure_policy(data, source=None):
+    source = source if isinstance(source, dict) else {}
+    source_mode = source.get("structure_preservation_mode")
+    mode = source_mode if source_mode in STRUCTURE_PRESERVATION_MODES else data.get("structure_preservation_mode")
+    if mode not in STRUCTURE_PRESERVATION_MODES:
+        strategy_type = source.get("strategy_type", data.get("strategy_type"))
+        mode = (
+            "semantic_recompose"
+            if strategy_type in {"semantic_recompose", "symbolic_scene"}
+            else "preserve_major_structure"
+        )
+    data["structure_preservation_mode"] = mode
+    data["structure_identity_metric_applicable"] = mode == "preserve_major_structure"
+    data["structure_policy_rationale"] = source.get(
+        "structure_policy_rationale",
+        data.get("structure_policy_rationale", "Pre-generation policy derived from theme examples and target identity."),
+    )
+    return data
 
 
 def _protect_brand_identity_cues(data, target_profile, preserve_keys, recompose_keys):
@@ -775,6 +865,14 @@ def _final_output_items(final_outputs):
 
 def _final_output_app_names(final_outputs):
     return [app_name for app_name, _ in _final_output_items(final_outputs)]
+
+
+def _sample_final_output_items(final_outputs, max_items=12):
+    items = _final_output_items(final_outputs)
+    if len(items) <= max_items:
+        return items
+    indices = [round(index * (len(items) - 1) / (max_items - 1)) for index in range(max_items)]
+    return [items[index] for index in indices]
 
 
 def _parse_json(text):

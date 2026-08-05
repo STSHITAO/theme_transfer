@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 65,
+      "style_match_score": 65,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "虽然保留了极高的品牌识别度（轮廓、波浪边），但严重违反了色彩约束。Transfer Plan 明确要求‘强制去色’并将绿色映射为深宝蓝/蓝，严禁使用原始绿色。该候选图保留了原本的鲜绿色头部，属于指令遵循失败。但在所有候选中，它是唯一能准确传达 Mini World IP 特征的图像，若对颜色不敏感则可选用。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "过度重构导致主体身份丢失。虽然完美执行了色彩映射（蓝色头+黄色波浪）和手绘风格，但将原本标志性的‘白色波浪刘海/下沿’错误地渲染成了类似‘鲨鱼牙齿’或‘锯齿状嘴巴’的结构，且面部完全留白。这导致图标看起来像一个通用的蓝色怪兽或盒子，失去了 Mini World 角色特有的温和与辨识度，不符合 strict 约束下保留核心拓扑结构的要求。",
+      "recommendation": "不推荐。尽管风格和颜色正确，但牺牲了最重要的品牌识别特征（波浪边的形态），导致用户无法联想到目标 App。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\mini_world\\candidates\\candidate_01.png",
+  "warning": "两个候选图均存在明显缺陷：Candidate 01 违反了严格的色彩重置指令（保留了绿色）；Candidate 02 在执行色彩指令时破坏了核心几何结构的语义（波浪变牙齿）。建议重新生成，要求严格结合 Candidate 01 的正确结构与 Candidate 02 的正确配色（深蓝头+暖黄波浪）。",
+  "needs_retry": false
+}

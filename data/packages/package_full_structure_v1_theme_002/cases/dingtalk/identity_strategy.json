@@ -1,0 +1,37 @@
+{
+  "app": "dingtalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "翅膀与闪电结合的抽象几何轮廓（象征速度与执行力）",
+  "brand_cues_to_preserve": [
+    "翅膀的整体外轮廓",
+    "底部向右下延伸的闪电/折线结构",
+    "左侧三根羽毛的层叠排列关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "向上的动势",
+    "锐利的切角（代表效率）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "钉钉的原始图标本身就是高度抽象的几何符号（翅膀+闪电），并非写实场景或复杂人物。根据 theme_rules 中 'preserve_when' 的定义，当 Original 为清晰几何符号时，必须保留其主体轮廓和空间布局。因此，不应重构为其他物体，而应直接对现有轮廓进行主题化填充和描边处理。",
+  "design_rationale": "钉钉的图标具有极高的品牌辨识度，其‘翅膀+闪电’的组合已经非常符合极简符号的要求。策略上选择直接保留这一强识别结构，仅将其从原本的‘科技蓝渐变+平滑矢量’转换为‘复古手绘+红蓝黄平涂’。这种处理方式既维持了企业级应用的专业识别度，又完美融入了主题的拙朴趣味感。",
+  "must_preserve": [
+    "翅膀的主干走向",
+    "底部的闪电折角形态",
+    "羽毛的分层结构"
+  ],
+  "can_recompose": [
+    "内部颜色分配（可改为红蓝黄组合）",
+    "边缘线条（必须变为粗糙手绘风）",
+    "背景（必须变为纯黑）"
+  ],
+  "forbid": [
+    "保留原始的蓝色渐变背景",
+    "使用平滑的贝塞尔曲线边缘",
+    "添加立体高光或阴影",
+    "改变翅膀的基本拓扑结构"
+  ],
+  "generation_direction": "Pure black background. A simplified, hand-drawn doodle style wing shape centered. The wing consists of a main body and three layered feathers on the left, ending in a lightning-bolt angle at the bottom right. Use thick, rough marker strokes for the outline. Fill with solid blocks of retro primary colors (e.g., deep blue body, yellow feathers, or red accents). No gradients, no shadows, no realistic textures. Flat, naive art aesthetic."
+}

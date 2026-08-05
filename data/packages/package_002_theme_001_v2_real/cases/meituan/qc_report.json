@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美契合主题风格（毛绒质感、拟人化），将“美”字重构为可爱的角色形象，既保留了原Logo的核心字形结构（可识别性高），又极具创意和趣味性，是高质量的主题化设计。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 80,
+      "background_score": 85,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "目标识别错误。虽然画风符合主题，但主体字形变成了“支”（支付宝的Logo特征），而非目标App“美团”的“美”字。属于严重的身份张冠李戴。",
+      "recommendation": "不推荐。这是支付宝（Alipay）的主题图标，不是美团的。虽然画得可爱，但完全搞错了对象。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 88,
+      "target_recognition_score": 88,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 88,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "",
+      "recommendation": "推荐。与candidate_01非常相似，同样成功地将“美”字进行了毛绒拟人化处理，风格统一且识别度高。相比01，表情略有不同，也是优秀的候选项。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_002_theme_001_v2_real\\cases\\meituan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

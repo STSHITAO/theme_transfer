@@ -1,0 +1,39 @@
+{
+  "app": "qimao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "黑色猫头剪影与数字'7'的完美融合结构，以及标志性的黄色竖瞳眼睛",
+  "brand_cues_to_preserve": [
+    "猫脸轮廓与数字7的同构几何关系",
+    "双眼的垂直椭圆形状及位置",
+    "整体图形的负空间比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "猫的拟人化注视感（通过眼睛表达）",
+    "作为阅读类App的陪伴者形象"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，即使是复杂的图形或文字，也必须保留其原始拓扑结构。七猫的 Logo 本身就是高度抽象的几何图形（猫脸+7），非常适合直接进行 3D 挤出和材质替换。若重构为真实的猫或书本，将彻底丢失品牌识别度。因此，必须严格保留原图的平面轮廓，仅做 Z 轴厚度和材质属性的迁移。",
+  "design_rationale": "七猫免费小说的核心识别点在于其独特的‘黑猫+7’图形符号。在当前‘冰雪晶体’主题下，策略是将原本扁平、高对比度的黑黄图形转化为通透的冰雕艺术品。利用冰材质的折射特性来表现原本黑色的区域（通过深色阴影或内部深邃感），利用高光来表现原本黄色的眼睛区域（或者保留眼睛作为独立的发光/高亮元素）。这种处理方式既服从了全局的清透冰蓝调性，又通过保留核心轮廓确保了用户能一眼认出这是七猫。",
+  "must_preserve": [
+    "猫头与数字7结合的特定外轮廓",
+    "两只眼睛的相对位置和竖直形态",
+    "图形的左右对称性（或原有的平衡感）"
+  ],
+  "can_recompose": [
+    "原本的纯黑填充改为深蓝色半透明冰体或内部深邃的空腔",
+    "原本的黄色眼睛改为高亮冰晶、气泡聚集区或微弱的暖光点缀（视生成效果而定，若主题强制去色则改为高透明白光）",
+    "边缘增加圆润的倒角和融化感",
+    "底部增加接触阴影和碎冰细节"
+  ],
+  "forbid": [
+    "禁止生成写实的猫头（要有毛发质感）",
+    "禁止改变眼睛的形状（如变成圆眼）",
+    "禁止丢失数字7的结构特征",
+    "禁止使用原本的亮黄色作为主色调",
+    "禁止主体悬空无投影"
+  ],
+  "generation_direction": "3D icon of Qimao Free Novel logo, shaped like a cat head merging with the number 7. Material is translucent light blue ice crystal with internal bubbles and frost. The eyes are distinct vertical ovals, rendered as bright glossy highlights or clear crystal spheres within the ice. Soft rounded edges, wet surface reflection. Centered on pure white background with soft contact shadow and scattered ice shards at the base. No yellow color, no fur texture, strict geometric preservation of the original silhouette."
+}

@@ -58,6 +58,39 @@ def make_eval_fixture(root: Path) -> None:
 
 
 class TpqsEvaluationTests(unittest.TestCase):
+    def test_eval_skips_expected_app_without_final_output_and_reports_coverage(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_eval_fixture(root)
+            package_dir = root / "data/packages/package_001_theme_001"
+            (package_dir / "target_apps.json").write_text(
+                json.dumps(["bilibili", "qq", "wps", "naruto_mobile"]),
+                encoding="utf-8",
+            )
+
+            resolved = resolve_eval_inputs("theme_001", "package_001_theme_001", root_dir=root)
+
+            self.assertEqual(resolved.skipped_apps, ["naruto_mobile"])
+            with patch.dict(
+                os.environ,
+                {
+                    "TPQS_EMBEDDING_BACKEND": "stats",
+                    "ITTE_USE_PERCEPTUAL": "false",
+                    "ITTE_USE_VGG_GRAM": "false",
+                },
+                clear=False,
+            ):
+                report = run_tpqs(
+                    "theme_001",
+                    "package_001_theme_001",
+                    "eval_001",
+                    root_dir=root,
+                )["report"]
+
+            self.assertEqual(report["evaluation_coverage"]["requested_app_count"], 4)
+            self.assertEqual(report["evaluation_coverage"]["evaluated_app_count"], 3)
+            self.assertEqual(report["evaluation_coverage"]["skipped_apps"], ["naruto_mobile"])
+
     def test_resolve_eval_inputs_maps_generated_icons_to_matching_target_originals(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -122,12 +155,17 @@ class TpqsEvaluationTests(unittest.TestCase):
 
             report = result["report"]
             self.assertEqual(report["evaluation_framework"], "ITTE")
-            self.assertEqual(report["itte_version"], "v1.3-image-only")
-            self.assertEqual(report["evaluation_scope"], "observable_image_transfer_only")
+            self.assertEqual(report["itte_version"], "v1.4-structure-policy-gated")
+            self.assertEqual(
+                report["evaluation_scope"],
+                "observable_image_transfer_with_pre_generation_structure_applicability",
+            )
             self.assertEqual(report["itte_score"], report["tpqs"])
             self.assertFalse(report["diagnostics"]["generation_qwen_qc_used_in_score"])
             self.assertFalse(report["diagnostics"]["openclip_used_in_score"])
             self.assertEqual(report["diagnostics"]["text_policy"], "out_of_scope")
+            self.assertEqual(report["identity_preservation"]["applicable_app_count"], 3)
+            self.assertEqual(report["identity_preservation"]["skipped_app_count"], 0)
             self.assertEqual(
                 json.loads((eval_dir / "itte_report.json").read_text(encoding="utf-8")),
                 json.loads((eval_dir / "tpqs_report.json").read_text(encoding="utf-8")),
@@ -177,6 +215,68 @@ class TpqsEvaluationTests(unittest.TestCase):
                 resolve_eval_inputs("theme_001", "package_001_theme_001", root_dir=root)
 
             self.assertIn("Missing target original for generated apps: qq", str(ctx.exception))
+
+    def test_pre_generation_recompose_policy_skips_structure_primary_score_but_keeps_diagnostic(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_eval_fixture(root)
+            case_dir = root / "data/packages/package_001_theme_001/cases/qq"
+            case_dir.mkdir(parents=True)
+            (case_dir / "transfer_plan.json").write_text(
+                json.dumps(
+                    {
+                        "app": "qq",
+                        "structure_preservation_mode": "semantic_recompose",
+                        "structure_identity_metric_applicable": False,
+                        "structure_policy_rationale": "Frozen before generation for test.",
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with patch.dict(
+                os.environ,
+                {
+                    "TPQS_EMBEDDING_BACKEND": "stats",
+                    "ITTE_USE_PERCEPTUAL": "false",
+                    "ITTE_USE_VGG_GRAM": "false",
+                },
+                clear=False,
+            ):
+                report = run_tpqs(
+                    "theme_001",
+                    "package_001_theme_001",
+                    "eval_001",
+                    root_dir=root,
+                )["report"]
+
+            identity = report["identity_preservation"]
+            self.assertEqual(identity["applicable_app_count"], 2)
+            self.assertEqual(identity["skipped_app_count"], 1)
+            self.assertEqual(identity["skipped_apps"], ["qq"])
+            qq = next(item for item in report["per_app"] if item["app"] == "qq")
+            self.assertIsNone(qq["identity_preservation_score"])
+            self.assertIsNotNone(qq["identity_structure_diagnostic_score"])
+            self.assertFalse(qq["structure_identity_metric_applicable"])
+
+    def test_inconsistent_structure_policy_is_rejected(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            make_eval_fixture(root)
+            case_dir = root / "data/packages/package_001_theme_001/cases/qq"
+            case_dir.mkdir(parents=True)
+            (case_dir / "transfer_plan.json").write_text(
+                json.dumps(
+                    {
+                        "structure_preservation_mode": "semantic_recompose",
+                        "structure_identity_metric_applicable": True,
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "Inconsistent structure identity policy"):
+                resolve_eval_inputs("theme_001", "package_001_theme_001", root_dir=root)
 
     def test_dinov3_cache_dirs_are_project_local(self):
         with tempfile.TemporaryDirectory() as temp_dir:

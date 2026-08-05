@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了'几何守恒，材质重构'的策略。精确保留了Lofter 'L'形的拓扑结构（包括底部的钩状曲线和圆角），同时成功转换为具有气泡细节和次表面散射效果的冰雕材质。背景干净，光影物理感强，完全符合主题要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 60,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 65,
+      "failure_reason": "严重违反'strict'身份约束和'must_preserve'条款。虽然材质风格正确，但主体形状发生了错误的拓扑改变：原Logo是单线条结构，而该候选图生成了类似回形针的双层嵌套结构（中间多了一条缝隙/空洞）。这导致用户无法通过剪影准确识别为Lofter，且违反了禁止改变'L'形状的指令。",
+      "recommendation": "不推荐。尽管材质好看，但核心几何结构错误，丢失了品牌识别度，属于过度重构导致的身份丢失。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\lofter\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

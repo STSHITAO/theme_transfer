@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。保留了核心的‘圆头+红冠’拓扑结构，严格执行了纯黑背景、奶黄主体、砖红鸡冠的配色约束。描边具有明显的手绘抖动感（符合 theme style），且去除了所有3D光影和次要角色，是极佳的主题化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "虽然风格统一且识别度高，但违反了多项严格的身份约束（Identity Constraints）。主要问题在于：1. 描边颜色使用了深蓝色而非规定的粗犷黑色；2. 添加了原图中不存在的翅膀元素，属于过度重构；3. 线条过于平滑圆润，缺乏参考图中那种‘笨拙蜡笔/马克笔’的粗糙质感。",
+      "recommendation": "不推荐。尽管看起来可爱，但它更像是一个通用的卡通小鸡图标，丢失了针对该主题特定的‘黑色粗描边’和‘极简几何’的品牌约束特征。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\anipop\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

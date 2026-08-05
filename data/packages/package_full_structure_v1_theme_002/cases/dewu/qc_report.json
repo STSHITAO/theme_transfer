@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了“得物”二字的原始拓扑结构和空间比例，严格执行了纯黑背景和红/蓝/米色配色方案。笔触处理为粗犷的手绘涂鸦风格，且没有添加任何禁止的阴影或立体效果。文字识别度极高，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "风格匹配度尚可，但字形结构发生了较大变形（如“得”字右侧部件和“物”字牛字旁的扭曲），导致识别度略低于 candidate_01。虽然仍保留核心特征，但在 strict 约束下，对原始几何结构的破坏使其得分较低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\dewu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

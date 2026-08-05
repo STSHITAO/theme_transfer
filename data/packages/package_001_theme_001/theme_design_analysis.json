@@ -1,0 +1,40 @@
+{
+  "theme_board": {
+    "palette": "mock shared palette from style_ref images",
+    "line_style": "mock shared line language",
+    "material": "mock shared surface material",
+    "background": "mock shared icon background treatment",
+    "composition": "mock shared centered icon composition"
+  },
+  "reference_transformation_patterns": [
+    {
+      "app": "alipay",
+      "source_semantics": "提供支付、收款、转账、账单、生活缴费等服务",
+      "observed_transformation": "mock: infer how source semantics are represented in the transferred style_ref.",
+      "preserved_identity": "mock: retain at least one recognizable brand or function cue.",
+      "redesigned_parts": "mock: allow structure to be simplified or recomposed when theme language requires it."
+    },
+    {
+      "app": "douyin",
+      "source_semantics": "观看和发布短视频、直播、娱乐内容",
+      "observed_transformation": "mock: infer how source semantics are represented in the transferred style_ref.",
+      "preserved_identity": "mock: retain at least one recognizable brand or function cue.",
+      "redesigned_parts": "mock: allow structure to be simplified or recomposed when theme language requires it."
+    },
+    {
+      "app": "wechat",
+      "source_semantics": "提供聊天、社交、语音视频通话、支付和小程序等服务",
+      "observed_transformation": "mock: infer how source semantics are represented in the transferred style_ref.",
+      "preserved_identity": "mock: retain at least one recognizable brand or function cue.",
+      "redesigned_parts": "mock: allow structure to be simplified or recomposed when theme language requires it."
+    }
+  ],
+  "shared_design_rules": [
+    "use one shared theme_board for every target app"
+  ],
+  "identity_handling_policy": "mock: choose identity expression dynamically from target image and neutral app semantics.",
+  "common_forbidden_failures": [
+    "do not turn every app into a generic decoration",
+    "do not redefine theme style per app"
+  ]
+}

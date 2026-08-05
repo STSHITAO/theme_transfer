@@ -1,0 +1,45 @@
+{
+  "app": "tieba",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "汉字“贴”的整体字形轮廓和空间结构",
+    "原图标中包裹文字的圆角矩形/气泡容器暗示",
+    "左右结构的布局比例"
+  ],
+  "must_preserve": [
+    "必须保留汉字“贴”作为视觉主体，不可替换为其他文字或纯图形",
+    "必须保留对话气泡的几何特征（圆角矩形加底部三角）",
+    "必须保留冷色调（蓝/紫）作为主色基调以维持品牌联想",
+    "文字与气泡边框的比例关系需保持稳定"
+  ],
+  "recompose_allowed": [
+    "将硬朗的书法/黑体笔画重构为柔软的毛绒肢体",
+    "去除原有的深蓝/紫红品牌色，改为白色主体+马卡龙背景",
+    "添加豆豆眼、小嘴巴等表情细节",
+    "边缘增加手绘粗描边和毛发溢出效果"
+  ],
+  "restyle": [
+    "主体材质转化为白色蓬松毛绒/棉花质感",
+    "线条风格转为粗黑/深灰手绘描边，消除锐角",
+    "背景调整为低饱和度马卡龙色系（如淡天蓝或薄荷绿）",
+    "光照处理为均匀柔和，无强烈高光"
+  ],
+  "decorate": [
+    "在“贴”字结构上添加简单的豆豆眼和小嘴",
+    "主体下方添加轻微接触阴影以增加立体感",
+    "边缘呈现细微的毛发溢出效果"
+  ],
+  "forbid": [
+    "直接放置原始的蓝色“贴”字Logo",
+    "将“贴”字完全替换为无关的动物（如直接放一只狗而看不出是“贴”字）",
+    "保留高饱和度的霓虹配色",
+    "笔画边缘锐利、无圆润化处理",
+    "禁止将主体替换为通用的聊天气泡图标（无“贴”字）",
+    "禁止移除气泡底部的尖角结构使其变成普通圆角矩形",
+    "禁止使用暖色调（如红、黄、橙）作为主色"
+  ],
+  "color_strategy": "主体采用白色或极浅色毛绒质感，辅以低饱和度冷色调（淡蓝/淡紫）点缀以呼应品牌色；背景统一为低饱和度马卡龙色系（如淡天蓝、薄荷绿），严禁使用高饱和度品牌原色或深色背景。",
+  "identity_priority": "严格保留汉字“贴”的字形骨架结构，确保用户能通过字形联想到百度贴吧，同时通过毛绒生物化改造符合主题风格。",
+  "generation_brief": "Cute chibi mascot icon design, a fluffy white creature shaped exactly like the Chinese character '贴' (Tie), preserving the character's stroke structure as soft fur limbs. Simple kawaii face with dot eyes. Thick hand-drawn black outline. Pastel macaron background (light mint or pale blue). Soft lighting, vector illustration style, minimalist and healing vibe. No sharp edges, no original blue logo colors."
+}

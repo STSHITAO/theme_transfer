@@ -1,0 +1,38 @@
+{
+  "app": "kuaiying",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "右侧开口的摄像机轮廓及代表镜头/信号的分离色块",
+  "brand_cues_to_preserve": [
+    "摄像机机身的C形框架结构",
+    "右侧代表镜头或信号发射的两个独立几何块",
+    "整体向右的视觉导向"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频录制/剪辑的工具属性",
+    "镜头聚焦的意象"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "快影原始图标已经是高度抽象的几何符号（摄像机），符合主题中‘保留清晰几何符号’的条件。参考快手（Kuaishou）的处理方式，应保留其核心的C形机身和右侧镜头块的空间布局，仅将平滑的矢量线条转化为粗犷的手绘色块，不做语义重构。",
+  "design_rationale": "快影作为视频编辑工具，其图标本身就是功能符号（摄像机）。根据主题规则，对于此类清晰的几何Logo，应采用‘简化并重绘’策略。需去除原有的粉色渐变和圆滑边缘，改用红、蓝、黄高饱和色块拼接，并添加标志性的粗黑手绘描边，使其看起来像是一个画在黑板上的复古玩具摄像机。",
+  "must_preserve": [
+    "左侧包围式的C形机身轮廓",
+    "右侧悬浮的两个矩形/梯形块（镜头/信号）",
+    "纯黑背景",
+    "粗黑色的不规则手绘描边"
+  ],
+  "can_recompose": [
+    "将原本的渐变色替换为砖红、深蓝或奶黄的纯色填充",
+    "将平滑的圆角调整为略带抖动的手工圆弧",
+    "调整内部色块的分割比例以适应手绘风格"
+  ],
+  "forbid": [
+    "保留原本的粉橙渐变色",
+    "使用细线条或无描边设计",
+    "添加立体光影或高光效果",
+    "改变摄像机的基本朝向（必须保持开口向右）"
+  ],
+  "generation_direction": "Draw a retro hand-drawn video camera icon on a pure black background. The shape is a thick, C-shaped body opening to the right, with two separate geometric blocks floating on the right side representing the lens. Use solid high-saturation colors (brick red, deep blue, or creamy yellow) filled flat without gradients. Apply a heavy, rough, uneven black marker-style outline around all shapes. The style should look like a naive crayon or marker drawing, clumsy and cute."
+}

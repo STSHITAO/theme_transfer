@@ -1,0 +1,41 @@
+{
+  "app": "genshin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "派蒙（Paimon）的面部轮廓、标志性的眨眼表情及头侧的星形发饰",
+  "brand_cues_to_preserve": [
+    "派蒙的头部剪影与发型走势",
+    "右眼闭合、左眼睁开的神态特征",
+    "头侧深蓝色的四角星装饰物",
+    "左下角的黄色花朵装饰（需转化为冰质或作为点缀保留）"
+  ],
+  "semantic_cues_to_preserve": [
+    "向导/吉祥物的亲切感（通过表情传达）",
+    "奇幻冒险题材的神秘感（通过材质传达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（小电视）和 douban（豆字）的案例，对于具有高辨识度的角色或符号类图标，策略是将其整体‘冻结’。原神图标核心是派蒙的脸，必须完整保留其五官布局和发型轮廓，不能简化为抽象几何，否则将失去IP识别度。需将原本扁平的赛璐璐画风转化为具有厚度的3D冰雕实体。",
+  "design_rationale": "原神图标属于强IP角色导向，用户通过派蒙的脸直接识别应用。根据 theme_design_analysis 的‘几何守恒，材质重构’原则，应将派蒙的头像视为一个整体的3D模具。原本的肤色、发色全部替换为统一的浅冰蓝色半透明材质，利用冰块的折射和内部气泡来表现头发的层次和面部的立体感。底部的 miHoYo 文字栏应被移除或极度弱化，仅保留头部主体悬浮于白色背景中。",
+  "must_preserve": [
+    "派蒙脸部的整体外轮廓（包括头发两侧的弧度）",
+    "一睁一闭的眼睛位置关系",
+    "头顶/侧边的星形发饰形状",
+    "冰块材质的通透感与次表面散射效果"
+  ],
+  "can_recompose": [
+    "原本平涂的色彩（全部转为冰蓝渐变）",
+    "面部的具体线条（转化为冰块的边缘高光或内部裂纹）",
+    "左下角的黄花（可转化为冰晶花或极小的暖色点缀，若破坏整体感则省略）",
+    "底部的深色横幅背景（必须去除，改为留白）"
+  ],
+  "forbid": [
+    "禁止保留原本的肉色皮肤或黑色头发颜色",
+    "禁止生成实心的蓝色塑料块，必须有透光感",
+    "禁止改变派蒙的五官比例（如眼睛大小、嘴巴位置）",
+    "禁止保留原本的黑色描边线",
+    "禁止保留底部的 miHoYo 文字条"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the character Paimon from Genshin Impact. The subject is a translucent, cyan-blue ice block carved into the shape of Paimon's face, featuring her signature wink and star-shaped hair ornament. The material must look like frozen gel with internal bubbles and snowflake textures. No outlines, no skin tones, no black hair colors—everything is monochromatic ice blue. Pure white background with a soft contact shadow and melting water puddle at the base. High gloss, refraction, and subsurface scattering."
+}

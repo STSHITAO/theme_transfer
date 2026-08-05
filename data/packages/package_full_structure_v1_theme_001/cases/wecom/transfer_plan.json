@@ -1,0 +1,58 @@
+{
+  "app": "WeCom",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，对于具有极高识别度的几何符号（文字或具象物体），必须完整保留其二维轮廓并直接进行 3D 挤出。WeCom 的气泡与水滴组合是其核心身份，严禁重构为其他办公场景（如真实的桌子或文件），必须将原 Logo 整体转化为冰雕。",
+  "preserve": [
+    "对话气泡（Speech Bubble）的整体圆环几何骨架",
+    "气泡左下角的指向性尖角（尾部）位置与方向",
+    "右下角四颗水滴/逗号状元素的环形排列布局",
+    "气泡主体与右下角水滴群的相对空间比例"
+  ],
+  "must_preserve": [
+    "气泡的整体圆环形状及左下尾巴",
+    "四个水滴围绕右下角排列的空间布局",
+    "图标的正视图透视角度"
+  ],
+  "recompose_allowed": [
+    "将原本高饱和度的绿、黄、橙、蓝四色统一转换为半透明冰蓝色调",
+    "将实体水滴转化为冰体内部的气泡包裹物或表面微浮雕",
+    "将锐利的矢量边缘处理为圆润光滑的冰体倒角"
+  ],
+  "restyle": [
+    "材质：从扁平不透明色块转换为 translucent crystalline ice（半透明水晶冰）",
+    "色彩：强制去色，应用统一的 Pale Cyan/Ice Blue 色调",
+    "光影：添加次表面散射（SSS）、内部折射和高光反射"
+  ],
+  "decorate": [
+    "在冰体表面添加冷凝水珠（condensation droplets）",
+    "在冰体内部嵌入微小的雪花结晶或冰裂纹理",
+    "在底部添加接触阴影和微量融化的水渍 puddle"
+  ],
+  "forbid": [
+    "禁止保留原始的品牌色（绿色、黄色、橙色、深蓝色）",
+    "禁止生成不透明的塑料、金属或实心材质",
+    "禁止改变气泡的形状（如变为方形或圆形无尾）",
+    "禁止省略右下角的四点式结构",
+    "禁止使用复杂背景，必须为纯白/极浅灰背景"
+  ],
+  "generation_brief": "3D icon of WeCom logo as a translucent ice sculpture. Main shape: thick speech bubble ring with tail at bottom-left. Detail: four teardrop shapes clustered at bottom-right, integrated into the ice mass. Material: pale cyan ice, internal bubbles, snowflake textures, surface condensation. Lighting: glossy highlights, subsurface scattering. Background: pure white with soft contact shadow and melting water puddle at base. No original colors.",
+  "color_application": "Discard all original brand colors (blue, green, yellow, orange). Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use brightness variations only to define volume and depth, not hue.",
+  "stroke_application": "Remove all 2D vector strokes. Transform edges into smooth, rounded, beveled ice contours defined by light refraction and specular highlights rather than drawn lines.",
+  "composition_application": "Centralize the 3D ice object occupying 70-80% of the canvas. Maintain the original 2D spatial relationship between the bubble and the four drops, but extrude them into a unified 3D volume with physical thickness.",
+  "identity_application": "Preserve the exact silhouette of the speech bubble and the specific arrangement of the four drops. Identity is conveyed through shape fidelity, while color and material are fully subordinated to the ice theme.",
+  "fidelity_constraints": [
+    "Must use translucent ice/crystal material, not opaque plastic or glass.",
+    "Must include internal details like bubbles or snowflakes.",
+    "Must have a clean white background with grounding shadow/water.",
+    "Must strictly preserve the core geometric outline of the WeCom logo."
+  ],
+  "negative_constraints": [
+    "No flat 2D vectors.",
+    "No warm colors or original brand colors (green/yellow/orange).",
+    "No complex backgrounds or scenes.",
+    "No distorted shapes or missing structural elements (tail or drops)."
+  ]
+}

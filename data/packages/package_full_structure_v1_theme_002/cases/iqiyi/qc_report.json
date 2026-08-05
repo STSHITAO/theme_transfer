@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan 的所有约束。保留了 'iQIYI' 的完整拼写和结构，使用了正确的主题色（红、蓝、黄）和纯黑背景。手绘描边风格与参考图（bilibili）高度一致，且装饰元素（星星、圆点）恰到好处，未干扰文字识别。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "同样是非常优秀的候选项。风格、颜色和结构都符合要求。相比 candidate_01，其字母 'i' 的点处理得略显分离，且整体布局稍微松散一点点，但依然完全可用且识别度极高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\iqiyi\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

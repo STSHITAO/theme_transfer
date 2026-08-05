@@ -1,0 +1,40 @@
+{
+  "app": "genshin",
+  "identity_anchors": [
+    "Paimon (white-haired chibi character) facial features",
+    "Winking expression with one open purple eye",
+    "Blue four-pointed star hair accessory",
+    "Yellow flower accessory on the left side",
+    "Hand gesture (peace sign/V-sign) near the face",
+    "miHoYo text logo at the bottom"
+  ],
+  "must_preserve": [
+    "Character identity as Paimon (white hair, specific bangs structure)",
+    "The blue star-shaped ornament on the head",
+    "The specific winking facial expression layout",
+    "The 'miHoYo' logotype at the bottom banner",
+    "The composition of the hand interacting with the face/head area"
+  ],
+  "can_restyle": [
+    "Line art style (can be changed to vector, flat, or painterly)",
+    "Background texture (currently dark blue cape/starry sky)",
+    "Shading and lighting effects",
+    "Color saturation of the skin and hair (while keeping base tones recognizable)",
+    "The yellow flower accessory (can be stylized but shape should remain)"
+  ],
+  "must_not_replace_with": [
+    "Generic anime girls without Paimon's specific accessories",
+    "Abstract symbols or logos unrelated to the character",
+    "Other Genshin Impact characters (e.g., Traveler, Qiqi)",
+    "Generic mascots or animals",
+    "Landscapes or weapon icons"
+  ],
+  "color_preservation": "Must retain the white/silver hair, the specific deep blue/purple of the open eye, and the dark blue/navy tone of the lower garment/background to maintain contrast. The blue star accessory is a critical color anchor.",
+  "structure_summary": "Close-up portrait composition dominated by a white-haired character's face. Key structural elements include the asymmetrical eyes (one open, one closed), the diagonal placement of the blue star accessory, and the hand framing the right side of the face. A horizontal band at the bottom contains the publisher logo.",
+  "risk_notes": [
+    "Removing the blue star accessory makes the character unrecognizable as Paimon.",
+    "Changing the hair color away from white/silver breaks the primary visual identifier.",
+    "Obscuring the 'miHoYo' text may violate brand guidelines depending on the theme's intent.",
+    "Altering the aspect ratio or cropping out the hand gesture reduces the specific 'icon' recognizability."
+  ]
+}

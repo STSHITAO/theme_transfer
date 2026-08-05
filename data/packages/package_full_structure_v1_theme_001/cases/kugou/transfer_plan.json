@@ -1,0 +1,61 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于具有强几何特征的字母或汉字图标，主题策略是直接将其'实体化'而非重构。酷狗的'K'字结构简单且辨识度极高，必须完整保留其拓扑结构，仅做材质替换和立体增厚处理。",
+  "preserve": [
+    "外部正圆环的闭合几何轮廓",
+    "内部字母 'K' 的标准字形骨架、笔画比例及倾斜度",
+    "'K' 与圆环的同心居中空间布局",
+    "原图标的整体长宽比"
+  ],
+  "must_preserve": [
+    "字母 'K' 的几何识别性",
+    "圆环结构的完整性",
+    "主体在画布中心的构图位置"
+  ],
+  "recompose_allowed": [
+    "将平面图形拉伸为具有厚度的3D实体",
+    "边缘倒角处理以模拟冰块融化感",
+    "内部填充随机气泡、雪花纹理或冰裂纹",
+    "底部添加接触阴影和微量融水细节"
+  ],
+  "restyle": [
+    "材质统一替换为半透明浅冰蓝色（Cyan-Ice Blue）",
+    "表面增加高光泽湿润感和菲涅尔反射高光",
+    "利用次表面散射（SSS）表现冰的通透质感",
+    "去除所有二维描边，通过光影界定轮廓"
+  ],
+  "decorate": [
+    "内部嵌入微小的空气气泡和冰晶颗粒",
+    "表面呈现自然的冰裂纹理或不完美美感"
+  ],
+  "forbid": [
+    "禁止改变 'K' 字的字体风格或笔画粗细",
+    "禁止将圆环变形为椭圆或其他非圆形",
+    "禁止使用原图的深蓝色或任何高饱和品牌色作为主体主色",
+    "禁止生成不透明的实心塑料、金属或磨砂玻璃质感",
+    "禁止去除背景留白，必须保持纯白/极浅冷灰背景",
+    "禁止引入音符、耳机等额外语义元素"
+  ],
+  "generation_brief": "3D ice sculpture of Kugou logo: a thick, translucent cyan-blue ice ring enclosing a solid ice letter 'K'. Material features internal air bubbles, snowflake textures, and glossy wet surface. Smooth chamfered edges. Centered on pure white background with soft contact shadow and small melting water puddle at base. No outlines, defined by refraction and thickness.",
+  "color_application": "强制去色。将原图的深蓝色背景和白色主体统一转换为半透明的浅冰蓝色（Cyan-Ice Blue）和透明白色。仅通过光影深浅（Deep Azure阴影）表现体积，严禁保留原品牌的高饱和蓝色。",
+  "stroke_application": "消除所有二维描边。将原图的线条轮廓转化为三维实体的物理边缘。通过冰块的厚度、折射率和边缘高光来界定 'K' 和圆环的形状，而非绘制线条。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体（冰雕K+圆环）居中放置，占据画布约60%空间。背景清理为纯白，底部预留空间给投影和水渍，营造物体放置在冰面上的真实感。",
+  "identity_application": "严格保留 'K' 字母和圆环的几何拓扑结构。通过赋予其统一的冰材质和3D厚度来实现主题化，确保用户能通过剪影瞬间识别出酷狗音乐，同时完全服从冰雕主题的视觉规范。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变 'K' 的字形结构或圆环形状。"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "app": "QQ",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "企鹅整体剪影结构（圆润头部、椭圆身体）",
+    "经典配色布局：黑色头背、白色腹部、黄色喙与脚掌",
+    "红色围巾环绕颈部的形态",
+    "眨眼表情特征（左眼睁开、右眼闭合的豆豆眼风格）"
+  ],
+  "must_preserve": [
+    "红围巾作为核心识别元素不可移除或变色",
+    "黑白分明的正负形关系不可颠倒",
+    "黄色喙部位于面部中央偏下的位置关系"
+  ],
+  "recompose_allowed": [
+    "将平滑矢量边缘转化为毛绒/棉花质感的粗糙边缘",
+    "将纯色块替换为哑光纸质或带有细微噪点的纹理",
+    "调整肢体比例使其呈现趴卧或蜷缩的软体玩偶姿态",
+    "简化眼部细节为统一的豆豆眼风格，保留眨眼神态"
+  ],
+  "restyle": [
+    "添加粗重的深灰色手绘描边（Doodle style）",
+    "消除所有高光和3D渲染质感，转为扁平哑光插画",
+    "线条需圆润流畅，带有轻微手抖感，消除锐角"
+  ],
+  "decorate": [
+    "背景使用低饱和度马卡龙色系（如淡天蓝或薄荷绿）纯色填充",
+    "主体下方添加轻微接触阴影以增强层级感",
+    "整体视觉保持圆润、柔软、治愈的Q版生物感"
+  ],
+  "forbid": [
+    "禁止去除红围巾或将其改为其他颜色",
+    "禁止使用高饱和度原色（如纯黑、纯红、亮黄）直接填充，需适度柔化但保持色相",
+    "禁止使用3D渲染、塑料光泽或写实照片质感",
+    "禁止线条过细、过于规整机械或出现尖锐直角",
+    "禁止将企鹅替换为其他动物（如狗、猫）或抽象团子"
+  ],
+  "color_strategy": "保留红、黄、黑、白核心色相，但降低饱和度并叠加哑光材质；背景强制使用低饱和度马卡龙 pastel 色系。",
+  "identity_priority": "企鹅形态与红围巾是最高优先级识别锚点，其次为眨眼表情和黑白分布。",
+  "generation_brief": "Cute fluffy penguin mascot icon, lying down pose, wearing a soft red scarf. Black head/back, white belly, yellow beak and feet. Winking kawaii face with dot eyes. Thick hand-drawn dark grey outline, doodle style. Matte paper/cotton texture, no gloss. Pastel light blue background. Soft lighting, healing vibe, 2d flat illustration."
+}

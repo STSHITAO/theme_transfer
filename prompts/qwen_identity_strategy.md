@@ -17,6 +17,8 @@
 6. design_rationale 给人看；generation_direction 给 Wan 用，必须短、明确、可执行。
 7. brand_identity_cues 是事实型品牌识别线索，不是设计建议；不能放入 can_recompose 或 forbid。
 8. style_fidelity_priority 用于说明主题忠实度优先级，默认应优先服从 theme_design_analysis 的 color / stroke / composition 规则。
+9. 必须在生成前冻结 structure_preservation_mode。若保留 original 的大部分主体轮廓、几何和空间关系，取 preserve_major_structure；若用语义符号、道具或小场景替代主要几何，取 semantic_recompose。
+10. structure_identity_metric_applicable 必须由 structure_preservation_mode 唯一决定：preserve_major_structure 为 true，semantic_recompose 为 false。不能根据生成结果事后修改。
 
 strategy_type 可选：
 
@@ -37,6 +39,9 @@ JSON 字段：
   "brand_cues_to_preserve": ["必须保留或主题化重绘的品牌识别线索"],
   "semantic_cues_to_preserve": ["必须保留或表达的功能语义线索"],
   "style_fidelity_priority": "theme_fidelity_first | balanced_with_identity | identity_first_when_risky",
+  "structure_preservation_mode": "preserve_major_structure | semantic_recompose",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "结合参考主题的 original -> style_ref 变化和当前 App 身份，说明为什么保留或重构主体结构",
   "design_rationale": "为什么选择这个表达策略",
   "must_preserve": ["必须保留的身份或功能识别线索"],
   "can_recompose": ["可以被重组、弱化或主题化的部分"],

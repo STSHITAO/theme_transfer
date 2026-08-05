@@ -1,0 +1,63 @@
+{
+  "app": "peace_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题（Alipay, Douban）明确展示了将复杂汉字直接转化为3D冰雕的能力。‘和平精英’的字体虽然笔画粗壮且有几何切角，但拓扑结构清晰，完全符合‘preserve_major_structure’的条件。必须保留文字的原始排列和笔画特征，仅做材质替换和厚度挤压，不可重构为其他图形。",
+  "preserve": [
+    "‘和平精英’四个汉字的整体骨架与排列关系",
+    "‘和’字中嵌入的闪电笔画结构",
+    "右下角螺旋桨图标的四叶片旋转形态",
+    "主标题与副标题的上下层级关系"
+  ],
+  "must_preserve": [
+    "‘和平精英’四字的标准字形结构",
+    "‘和’字部首内的闪电负形/切口",
+    "右下角的抽象星形/四叶螺旋桨符号",
+    "文字作为信息载体的可读性"
+  ],
+  "recompose_allowed": [
+    "原图标的橙红色渐变背景（移除，改为纯白）",
+    "文字表面的平面光泽（改为次表面散射和折射高光）",
+    "右下角星形符号的具体摆放角度（微调以适应3D透视）",
+    "字体边缘的锐利度（适度圆润化以模拟冰块融化感）"
+  ],
+  "restyle": [
+    "将所有实体颜色转换为半透明冰蓝色",
+    "增加内部雪花、气泡纹理",
+    "添加表面冷凝水珠和高光反射",
+    "底部增加碎冰和水渍细节"
+  ],
+  "decorate": [
+    "内部悬浮的微小雪花颗粒",
+    "底部的接触阴影和融化水坑",
+    "边缘的玻璃质感折射光晕"
+  ],
+  "forbid": [
+    "禁止保留任何橙色、红色或暖色调",
+    "禁止将文字简化为无法识别的方块",
+    "禁止使用不透明的塑料或金属质感",
+    "禁止主体悬空无投影",
+    "禁止修改‘和’字的闪电笔画",
+    "禁止将螺旋桨简化为普通十字星或花朵"
+  ],
+  "generation_brief": "3D icon of Chinese text '和平精英' sculpted from translucent light blue ice. Strictly preserve the lightning bolt shape inside the character '和'. Include a small ice-made four-blade propeller symbol at the bottom right. Pure white background, soft contact shadow, internal snowflakes, glossy wet surface, no warm colors.",
+  "color_application": "强制去色。将原有的深褐色/黑灰色文字和白色符号统一转换为半透明浅冰蓝色（#A0D8EF）。仅通过高光（纯白）和内部阴影（深蓝/灰）表现体积，严禁出现原品牌的暖橙色或金黄色。",
+  "stroke_application": "消除原有字体的硬边描边。将笔画边缘处理为圆润光滑的冰面，通过光线折射和边缘高光来界定轮廓，模拟冰块被水流冲刷后的柔和质感。",
+  "composition_application": "保持‘和平精英’文字居中主导的布局。将2D文字挤压出Z轴厚度，使其成为立体冰雕。右下角的螺旋桨符号作为附属冰制物件，保持与文字的相对位置，共同置于同一水平面上。",
+  "identity_application": "通过严格保留‘和’字中的闪电笔画特征和螺旋桨的四叶形态来维持身份识别。放弃色彩识别，完全依赖形态和光影下的结构清晰度。确保文字在冰材质下依然清晰可读。",
+  "fidelity_constraints": [
+    "主体必须是半透明冰质材质，具有次表面散射效果",
+    "颜色严格限制在冰蓝/青色光谱内",
+    "底部必须有环境交互细节（阴影、水渍、碎冰）",
+    "必须清晰保留‘和’字内的闪电结构"
+  ],
+  "negative_constraints": [
+    "禁止不透明塑料或金属质感",
+    "禁止保留原品牌暖色调（橙/红/黄）",
+    "禁止扁平化2D风格",
+    "禁止主体悬空",
+    "禁止模糊不清导致文字不可读"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题化重构要求。材质为高透冰感，颜色统一为冰蓝，且严格保留了三级头盔的核心拓扑结构（圆顶、面罩框、护耳），识别度极高，无多余杂质。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 85,
+      "overall_score": 86,
+      "failure_reason": "画面内部添加了较多雪花纹理，导致通透感略逊于 candidate_01；下巴部分的几何结构略显模糊，不如 candidate_01  crisp。",
+      "recommendation": "整体风格正确，但细节处理（如内部纹理干扰视线、下部轮廓清晰度）略逊于 candidate_01，作为备选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\peace_elite\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

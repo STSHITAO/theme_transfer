@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 90,
+      "composition_score": 60,
+      "artifact_score": 95,
+      "overall_score": 45,
+      "failure_reason": "严重违反结构保留策略。候选图在“美团”二字下方添加了原图标不存在的倒V形支架和底座，将原本独立的文字主体重构为类似显示器或电视机的复合图形（疑似错误复用了其他App的生成逻辑）。这直接违反了transfer_plan中‘禁止添加原图标中不存在的图形元素’以及‘preserve_major_structure’的严格约束，导致品牌识别度大幅下降。",
+      "recommendation": "不推荐。虽然冰材质感优秀，但主体结构被错误修改，添加了无关的支架底座，不符合美团App的图标规范。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了transfer_plan的所有要求。1. 结构上：严格保留了“美团”二字的拓扑结构和笔画特征，无多余组件。2. 材质上：准确呈现了半透明青冰蓝质感，内部包含气泡和雪花纹理，边缘有圆润倒角。3. 环境上：纯白背景配合底部物理接触阴影和融水细节，完全符合参考图风格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\meituan\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

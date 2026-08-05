@@ -1,0 +1,59 @@
+{
+  "app": "huya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象的几何符号（虎头+播放键），符合 theme_rules 中 'preserve_when' 的条件。参考 Bilibili 和 Kuaishou 的案例，应保留其主体拓扑结构，仅对色彩、质感和描边进行主题化重构，无需改变物理轮廓。",
+  "preserve": [
+    "虎头的整体圆形轮廓及顶部双耳突起",
+    "占据面部主要面积的大眼眶",
+    "眼眶中心的三角形（播放键）",
+    "左右脸颊对称的条纹装饰位置"
+  ],
+  "must_preserve": [
+    "标志性的虎头外轮廓（含双耳）",
+    "面部中央巨大的单眼造型",
+    "眼球内部的三角形播放符号",
+    "脸颊两侧的虎纹斑块位置"
+  ],
+  "recompose_allowed": [
+    "颜色：将原本的棕色部分替换为主题色板中的砖红或深蓝",
+    "线条：将所有平滑矢量边缘转化为抖动、不规则的粗黑手绘线",
+    "质感：去除原有的轻微立体感，改为完全平涂的哑光色块",
+    "细节：简化虎纹的形状，使其更像儿童画的几何涂鸦"
+  ],
+  "restyle": [
+    "应用粗犷的手绘黑色描边，模拟马克笔触感",
+    "填充色改为高饱和度平涂，无渐变",
+    "边缘处理为不规则圆润或钝角，消除工业锐利度"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原始的棕色系配色",
+    "禁止使用细线条或无描边设计",
+    "禁止添加任何阴影、高光或渐变效果",
+    "禁止改变虎头的基本比例（如耳朵变小或眼睛移位）",
+    "禁止背景非纯黑",
+    "禁止写实纹理或3D渲染"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of a tiger head logo. Thick, shaky black marker outlines. Flat matte texture. Color palette: Milky yellow face, Brick red or Deep Blue stripes and ears. Large central eye containing a triangle play button. Pure black background. No shadows, no gradients, naive art aesthetic.",
+  "color_application": "Map original yellow to theme's milky/yellow; map original brown stripes/ears to theme's brick red or deep blue. Use solid flat fills only, no gradients.",
+  "stroke_application": "Apply thick, irregular, hand-drawn black strokes to all contours. Edges should look rough and shaky, mimicking a marker pen on paper.",
+  "composition_application": "Center the simplified tiger head symbol. Ensure it occupies 60-70% of the canvas against a pure black background. Maintain symmetrical balance of ears and stripes.",
+  "identity_application": "Preserve the topological structure of the tiger head (ears, round face) and the critical 'play button' triangle within the eye. Simplify details into geometric blocks but keep the recognition cues intact.",
+  "fidelity_constraints": [
+    "Must use pure black background (#000000)",
+    "Must have thick, rough hand-drawn black outlines",
+    "Colors must be from the limited palette (Yellow, Red, Blue)",
+    "No shadows, highlights, or gradients allowed",
+    "Flat, matte, crayon/marker texture only"
+  ],
+  "negative_constraints": [
+    "No realistic or photorealistic elements",
+    "No original brand colors (brown/orange) unless mapped to theme palette",
+    "No thin or perfect vector lines",
+    "No complex details or text",
+    "No white or colored background"
+  ]
+}

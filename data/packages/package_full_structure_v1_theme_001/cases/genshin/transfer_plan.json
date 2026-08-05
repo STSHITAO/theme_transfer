@@ -1,0 +1,60 @@
+{
+  "app": "genshin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili（小电视）和 douban（豆字）的案例，对于具有高辨识度的角色或符号类图标，策略是将其整体‘冻结’。原神图标核心是派蒙的脸，必须完整保留其五官布局和发型轮廓，不能简化为抽象几何，否则将失去IP识别度。需将原本扁平的赛璐璐画风转化为具有厚度的3D冰雕实体。",
+  "preserve": [
+    "Paimon's head silhouette and hair bangs structure",
+    "Facial layout: left eye open, right eye winking/closed",
+    "Four-pointed star hair accessory shape",
+    "Hand gesture framing the face (if visible in original crop)"
+  ],
+  "must_preserve": [
+    "The specific asymmetrical facial expression (wink)",
+    "The geometric topology of the four-pointed star ornament",
+    "The overall aspect ratio and centered composition of the character head"
+  ],
+  "recompose_allowed": [
+    "Convert flat color fills to volumetric ice thickness",
+    "Replace skin/hair colors with translucent cyan/ice-blue gradients",
+    "Transform line art into physical edges/chamfers of the ice block",
+    "Remove bottom 'miHoYo' text banner and dark background strip",
+    "Stylize the yellow flower accessory as a small ice crystal or omit if it disrupts unity"
+  ],
+  "restyle": [
+    "Apply high-gloss wet ice material with subsurface scattering",
+    "Embed internal air bubbles and snowflake textures within the ice volume",
+    "Use refraction and caustics to define facial features instead of drawn lines"
+  ],
+  "decorate": [
+    "Add melting water puddles and contact shadows at the base",
+    "Include subtle frost patterns on the surface edges"
+  ],
+  "forbid": [
+    "Retaining original brand colors (skin tone, black hair, yellow flower)",
+    "Using opaque plastic or matte materials",
+    "Keeping the dark bottom banner or text",
+    "Distorting the facial proportions or removing the wink",
+    "Adding complex background scenery or other characters"
+  ],
+  "generation_brief": "3D ice sculpture icon of Genshin Impact's Paimon. Translucent cyan-blue ice material, carved into Paimon's face shape with signature wink and star hair accessory. Internal bubbles and snowflake textures. Glossy wet surface, caustic lighting. Pure white background, soft contact shadow, melting water puddle at base. No outlines, no skin tones, no text.",
+  "color_application": "Forcefully desaturate all original colors. Map skin, hair, and accessories to a monochromatic palette of Cyan-Ice Blue, Translucent White (highlights), and Deep Azure (shadows/thickness). No warm colors allowed except potentially tiny refracted highlights.",
+  "stroke_application": "Eliminate all 2D vector strokes. Define contours through the physical thickness of the ice block, chamfered edges, and Fresnel reflections. Facial features are defined by internal refraction and depth changes, not lines.",
+  "composition_application": "Center the Paimon head sculpture, occupying 60-70% of the canvas. Remove the original bottom banner to create a floating/standing object effect on a pure white background. Ensure vertical balance with a base shadow/puddle.",
+  "identity_application": "Preserve the exact geometric silhouette of Paimon's head, the specific wink expression, and the star accessory. Recognizability relies on the frozen shape matching the original character profile, despite the total material change.",
+  "fidelity_constraints": [
+    "Subject must exhibit clear semi-transparent ice/jelly texture with subsurface scattering.",
+    "Internal random bubbles or snowflake textures are mandatory.",
+    "Background must be pure white with physical contact shadow/water puddle at the base.",
+    "No high-saturation brand colors allowed on the main body."
+  ],
+  "negative_constraints": [
+    "Forbidden: Opaque blue plastic, stone, or metal textures.",
+    "Forbidden: Retaining original large-area brand background colors.",
+    "Forbidden: Complex scene reconstruction (e.g., Paimon standing in a landscape).",
+    "Forbidden: Warm tones as primary subject color.",
+    "Forbidden: Distorted facial features or missing the wink."
+  ]
+}

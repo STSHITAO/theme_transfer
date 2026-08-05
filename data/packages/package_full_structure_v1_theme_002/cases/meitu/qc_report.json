@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 20,
+      "failure_reason": "严重身份丢失：完全未保留 Meitu 的 'M' 字母拓扑结构和圆环层级关系，变成了类似王者荣耀或抽象符号的图形。",
+      "recommendation": "不推荐。虽然风格符合主题（手绘、黑底、红黄配色），但完全丢失了目标 App 的核心识别特征（M形波浪），属于过度重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 40,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "背景颜色错误：使用了白色背景，违反了 transfer_plan 中 'Must use pure black background (#000000)' 的严格约束。",
+      "recommendation": "勉强推荐（需后期处理）。这是唯一保留了 Meitu 核心 'M' 结构（双峰波浪）和圆环关系的候选图，且笔触风格（抖动、粗黑描边）非常符合主题要求。主要缺陷是背景未执行去色/变黑操作，若能将背景替换为纯黑，则为完美候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\meitu\\candidates\\candidate_02.png",
+  "warning": "最佳候选图 candidate_02.png 的背景颜色不符合生成计划中的强制黑色背景要求，建议进行简单的背景替换处理后再使用。candidate_01.png 虽然背景正确但主体完全错误。",
+  "needs_retry": false
+}

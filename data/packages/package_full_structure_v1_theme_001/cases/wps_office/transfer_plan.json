@@ -1,0 +1,69 @@
+{
+  "app": "wps_office",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，对于具有高度抽象几何特征的 Logo，必须严格保留其二维平面上的拓扑结构和比例。WPS 的 'W' 符号具有极高的辨识度，任何结构重组都会导致识别失败。因此，策略是将该平面图形直接进行 Z 轴拉伸（Extrusion），转化为厚实的冰砖，完全保留原始路径，仅改变材质维度和光影表现。",
+  "preserve": [
+    "W 字母的整体外轮廓和负空间结构",
+    "左右两部分笔画的穿插与重叠关系",
+    "圆润的端点处理",
+    "W 符号的准确几何比例和笔画走向",
+    "左右结构的互锁/重叠空间关系",
+    "圆角矩形的笔画末端特征"
+  ],
+  "must_preserve": [
+    "core 'W' shape formed by two interlocking V-like ribbons",
+    "central overlapping fold with gradient transition",
+    "positive-negative space relationship forming internal triangles",
+    "overall symmetry and balanced proportions",
+    "brand-recognizable red dominance with orange accent at fold",
+    "W 符号的准确几何比例和笔画走向",
+    "左右结构的互锁/重叠空间关系",
+    "圆角矩形的笔画末端特征"
+  ],
+  "recompose_allowed": [
+    "原始的红橙渐变色（必须移除）",
+    "平面的矢量质感（必须转为 3D 实体）",
+    "内部细节（简化为材质纹理，如气泡）"
+  ],
+  "restyle": [
+    "Convert flat geometry to volumetric 3D ice sculpture with significant thickness",
+    "Replace red/orange brand colors with uniform pale cyan/ice blue translucent material",
+    "Apply glossy, wet surface texture with condensation droplets",
+    "Embed internal snowflake patterns and micro-bubbles for ice fidelity",
+    "Soften edges to mimic eroded/polished ice, removing sharp vector lines"
+  ],
+  "decorate": [
+    "Add subtle contact shadow and small melting water puddle at base",
+    "Ensure strong specular highlights on upper edges to define 3D form",
+    "Include internal refraction and subsurface scattering effects"
+  ],
+  "forbid": [
+    "保留红色或橙色品牌色",
+    "生成不透明的塑料、金属或石材质感",
+    "改变 W 的笔画连接方式或破坏对称性",
+    "添加复杂的办公场景背景（如桌子、笔、文件夹）",
+    "使用平面 2D 渲染风格",
+    "使用深色或复杂渐变背景"
+  ],
+  "generation_brief": "3D icon of WPS Office logo: a stylized 'W' formed by two interlocking ribbon-like shapes. Rendered as a thick, translucent pale cyan ice sculpture. Material features internal bubbles, embedded snowflakes, and surface condensation droplets. Edges are smooth and rounded with high-gloss specular highlights. No red color. Centered on a pure white background with a soft contact shadow and slight melting water at the base. High fidelity, C4D render style, cold and refreshing atmosphere.",
+  "color_application": "Strictly discard original red/orange gradient. Apply unified 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use brightness variations only to define volume and depth, maintaining translucency.",
+  "stroke_application": "Eliminate all 2D vector strokes. Define contours through 3D volume, edge refraction, and specular highlights. Ensure edges are beveled and smooth like worn ice.",
+  "composition_application": "Center the 3D 'W' object occupying 70-80% of the canvas. Place on a virtual ground plane with a subtle base shadow. Maintain strict symmetry and balanced proportions of the original logo.",
+  "identity_application": "Preserve the exact geometric silhouette and interlocking structure of the 'W'. Identity is maintained through shape fidelity, not color. The 'W' must be instantly recognizable despite the material change to ice.",
+  "fidelity_constraints": [
+    "Must use uniform pale cyan/ice blue translucent material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must exhibit 3D volume with subsurface scattering and refraction",
+    "Background must be clean pure white"
+  ],
+  "negative_constraints": [
+    "No original brand colors (red, orange)",
+    "No opaque plastic, metal, or stone materials",
+    "No flat 2D appearance",
+    "No complex scene backgrounds",
+    "No distortion of the 'W' geometric structure"
+  ]
+}

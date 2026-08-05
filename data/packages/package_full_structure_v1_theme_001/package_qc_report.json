@@ -1,0 +1,44 @@
+{
+  "package_consistency_score": 85,
+  "style_consistency_score": 80,
+  "target_identity_score": 95,
+  "problematic_apps": [
+    {
+      "app": "toutiao_lite",
+      "issue": "风格严重跑偏。参考图和其他图标均为纯冰雕质感（单色浅蓝），该图标保留了原App的大面积红色背景和白色文字，仅在外圈加了冰框，破坏了整包的统一色调和材质感。",
+      "retry_suggestion": "去除红色背景，将‘头条’文字转化为冰雕实体，保持整体浅蓝色调。"
+    },
+    {
+      "app": "zhihu",
+      "issue": "立体感和材质表现不足。相比其他图标的厚实冰块感，该图标显得过于扁平，像是一层薄冰片，缺乏体积感和光影折射。",
+      "retry_suggestion": "增加字体的厚度和体积感，增强冰块的通透度和边缘高光。"
+    },
+    {
+      "app": "qq",
+      "issue": "色彩一致性略差。虽然身份识别度极高，但企鹅的黄色嘴巴和脚掌、红色围巾在整包冷色调中非常突兀。如果是刻意保留特征可接受，但作为严格质检，颜色略显跳脱。",
+      "retry_suggestion": "尝试将企鹅完全冰雕化（全蓝），或者降低非蓝色部分的饱和度以融入整体。"
+    },
+    {
+      "app": "bilibili_comics",
+      "issue": "构图与厚度不一致。外框线条过细，像是一个平面贴纸，而内部文字是立体的，整体缺乏与其他图标一致的厚重底座或支撑感。",
+      "retry_suggestion": "加粗外框使其具有冰块体积，或增加底部支撑结构。"
+    }
+  ],
+  "accepted_apps": [
+    "alipay",
+    "douyin",
+    "huya",
+    "kuaikan",
+    "mango_tv",
+    "netease_music",
+    "taobao",
+    "xianyu"
+  ],
+  "retry_apps": [
+    "toutiao_lite",
+    "zhihu",
+    "bilibili_comics",
+    "qq"
+  ],
+  "overall_comment": "整包图标在‘冰雪/冰块’主题上执行得相当不错，大部分图标（如支付宝、抖音、网易云音乐）完美还原了参考图的晶莹剔透感和雪花细节。主要问题集中在个别App（如今日头条）未能完全摆脱原色干扰，以及部分文字类图标（如知乎）的立体感构建不够扎实。建议重点重试那些保留了原色背景或显得过于扁平的图标。"
+}

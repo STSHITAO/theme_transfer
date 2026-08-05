@@ -1,0 +1,38 @@
+{
+  "app": "alipay",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The stylized Chinese character '支' (Zhi) with the distinct infinity-loop stroke at the bottom.",
+  "brand_cues_to_preserve": [
+    "The specific calligraphic structure of the '支' character",
+    "The continuous loop connecting the vertical stroke to the bottom curve",
+    "The relative proportions of the upper horizontal strokes versus the lower loop"
+  ],
+  "semantic_cues_to_preserve": [
+    "The concept of flow and continuity implied by the loop",
+    "The stability of the character structure representing financial security"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The reference analysis for Alipay explicitly demonstrates transforming the flat '支' character into a 3D ice pillar structure while strictly maintaining the original stroke topology. The identity of this app relies entirely on the specific geometry of the character; altering the structure would destroy recognition. Therefore, the mode is set to preserve the major structure, treating the logo as a mold for the ice sculpture.",
+  "design_rationale": "Alipay's icon is a strong geometric logotype. Following the theme rules, we must discard the original brand blue and the 'AI' text label. The strategy is to extrude the existing 2D vector into a thick, translucent ice block. The bottom loop needs to look like a solid piece of frozen water curving back on itself. The 'AI' text is forbidden as it violates the minimalist ice aesthetic. The focus is purely on material translation: from flat white-on-blue to volumetric cyan-ice-on-white.",
+  "must_preserve": [
+    "The exact silhouette of the '支' character",
+    "The connection point where the vertical line merges into the bottom loop",
+    "The thickness and roundness of the strokes (converted to 3D tube/block shape)"
+  ],
+  "can_recompose": [
+    "The internal texture (add bubbles/cracks inside the strokes)",
+    "The lighting angles (to highlight the curvature of the bottom loop)",
+    "The base structure (add a melted ice puddle underneath the character)"
+  ],
+  "forbid": [
+    "Retaining the original solid blue background",
+    "Including the 'AI' text at the bottom",
+    "Using opaque plastic or metal materials",
+    "Changing the stroke width ratios of the character",
+    "Floating the object without a ground shadow or ice base"
+  ],
+  "generation_direction": "Generate a 3D icon of the Alipay '支' character sculpted from translucent cyan ice. The character stands upright on a small block of melting ice against a pure white background. The material must show internal bubbles and subsurface scattering. No text, no original blue color. High gloss surface with soft studio lighting."
+}

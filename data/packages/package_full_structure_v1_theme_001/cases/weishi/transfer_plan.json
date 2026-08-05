@@ -1,0 +1,61 @@
+{
+  "app": "weishi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Douyin 和 Alipay 的案例表明，该主题的核心逻辑是将平面或简单的立体符号转化为具有物理厚度的冰雕实体。Weishi 的图标本身就是一个立体几何图形（彭罗斯三角/播放键），这与主题的 3D 化规则完美契合。因此，必须严格保留其线框结构和透视关系，仅将原本的白色线条替换为具有厚度的透明冰条，严禁改变其几何拓扑结构。",
+  "preserve": [
+    "立体三角形的整体外轮廓",
+    "三角形内部线条的连接方式和透视角度",
+    "作为播放键的指向性（尖端朝右）",
+    "彭罗斯三角形的几何视错觉骨架"
+  ],
+  "must_preserve": [
+    "核心图形必须保持为线框结构的播放键/三角形",
+    "图形的三维透视关系和线条连接逻辑不可改变",
+    "主体图形必须位于视觉中心",
+    "若进行主题化，必须保留‘播放’这一核心语义符号"
+  ],
+  "recompose_allowed": [
+    "将原本的白色实心线条重组为半透明的圆柱状或方柱状冰条",
+    "将锐利的矢量边缘处理为圆润的冰质倒角",
+    "移除背景流体纹理和底部营销文字"
+  ],
+  "restyle": [
+    "材质由不透明白色转换为半透明冰蓝色水晶",
+    "表面增加冷凝水珠、内部气泡和雪花纹理",
+    "边缘通过高光折射而非描边来界定"
+  ],
+  "decorate": [
+    "在冰体内部嵌入微小的雪花结晶",
+    "在表面散布细小的冷凝水珠",
+    "底部添加轻微的融化水迹以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原始的紫色、红色或黑色背景",
+    "禁止将立体三角形压扁为平面图形",
+    "禁止使用不透明的白色或塑料材质",
+    "禁止改变三角形的透视结构（如变成正三角形）",
+    "禁止添加任何与播放功能无关的装饰物（如真正的摄像机）",
+    "禁止保留底部的‘领现金’文字"
+  ],
+  "generation_brief": "3D ice sculpture of Weishi logo: a Penrose triangle/play button shape formed by thick, translucent ice-blue bars. Material is clear frozen water with internal bubbles and snowflake textures. Edges are rounded, glossy, and refractive. Centered on a thin ice base with contact shadow and melting water traces. Pure white background. No text, no colorful fluids.",
+  "color_application": "强制去色。将原图标的白色线条和紫红背景统一转换为统一的 Pale Cyan/Ice Blue 色调。利用明度变化表现冰的体积感，不再保留原始品牌色。",
+  "stroke_application": "消除2D描边。将原本的线性框架转化为具有物理厚度的3D冰柱实体。边缘处理为圆润光滑的倒角，通过光线折射和高光来定义轮廓，而非依靠线条。",
+  "composition_application": "采用单体居中构图。移除所有背景元素，主体占据画布60-70%空间。主体略微侧转以展示彭罗斯三角的立体透视，底部增加薄冰底座以锚定空间。",
+  "identity_application": "通过严格保留彭罗斯三角形/播放键的几何拓扑结构和透视角度来维持身份。将原有的‘白色线框’语义转化为‘冰晶框架’，确保用户能通过形状瞬间识别出微视的播放符号。",
+  "fidelity_constraints": [
+    "必须使用统一的冰蓝色半透明材质，严禁使用原始品牌色",
+    "必须包含内部气泡、雪花或冰裂纹理",
+    "主体必须呈现明显的3D立体感和厚度",
+    "背景必须保持干净洁白"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成平面蓝色剪影",
+    "禁止保留紫色/红色/黑色背景",
+    "禁止出现文字、水印或复杂的场景背景",
+    "禁止使用不透明的塑料或金属质感"
+  ]
+}

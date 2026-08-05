@@ -1,0 +1,36 @@
+{
+  "app": "alipay",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字“支”的整体骨架，特别是下半部分类似无穷大符号（∞）的闭环结构。",
+  "brand_cues_to_preserve": [
+    "“支”字的笔画拓扑关系（横、竖、撇、捺及底部的循环圈）",
+    "字符的重心与长宽比"
+  ],
+  "semantic_cues_to_preserve": [
+    "底部循环结构暗示的资金流转与连接含义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）的迁移案例显示，核心策略是将平面汉字直接转化为具有厚度的立体冰砖。原图标的几何结构（尤其是底部的无限循环符号）具有极高的辨识度，必须完整保留其轮廓和空间关系，仅通过增加Z轴厚度、倒角边缘和赋予冰材质来实现主题化，严禁改变字形结构。",
+  "design_rationale": "支付宝的图标本身就是高度抽象且独特的几何符号（汉字+无限循环），完全符合'几何守恒，材质重构'的主题原则。选择 logo_preserve 策略能最大程度保证用户在冰雪主题下仍能瞬间识别出应用，同时通过冰块的通透感和内部气泡纹理传达清凉感，去除原有的品牌蓝底，统一为白色背景下的冰雕实体。",
+  "must_preserve": [
+    "“支”字的完整笔画结构",
+    "底部圆环/无限符号的闭合形态",
+    "字体的整体比例"
+  ],
+  "can_recompose": [
+    "将原本的扁平笔触转化为具有物理厚度的3D实体",
+    "笔画末端和转折处进行圆润化处理以模拟冰的融化感",
+    "在冰块内部添加随机的雪花或气泡纹理",
+    "底部增加接触阴影和少量融化的水渍"
+  ],
+  "forbid": [
+    "禁止改变“支”字的写法或结构",
+    "禁止使用不透明的蓝色塑料或金属材质",
+    "禁止保留原始的大面积蓝色背景",
+    "禁止生成没有底部投影的悬浮感错误的物体"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese character '支' (Alipay logo). The character must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. Maintain the exact stroke structure and the infinity-loop shape at the bottom. Give it physical thickness with rounded, chamfered edges. Place it on a pure white background with a realistic contact shadow and small melting water puddles at the base. No outline strokes, rely on refraction and highlights."
+}

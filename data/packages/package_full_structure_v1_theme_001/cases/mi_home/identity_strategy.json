@@ -1,0 +1,41 @@
+{
+  "app": "mi_home",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "M形盾牌轮廓与内部猫耳负空间的组合几何",
+  "brand_cues_to_preserve": [
+    "M字母的主体骨架",
+    "顶部两个尖角（象征猫耳）",
+    "底部圆润的U型曲线",
+    "整体盾牌的封闭感"
+  ],
+  "semantic_cues_to_preserve": [
+    "家居守护（盾牌形态）",
+    "宠物/家庭伴侣（猫耳暗示）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、豆瓣等案例均严格保留了原图标的核心剪影。米家图标的'M'形结构具有极高的辨识度和几何稳定性，完全符合'几何守恒，材质重构'的主题原则。不需要进行语义重组，直接将该平面符号转化为厚实的冰雕实体即可完美适配主题。",
+  "design_rationale": "米家图标本身就是一个高度抽象且稳固的几何符号（M+盾牌）。在冰雕主题下，这个符号非常适合被表现为一块厚重的、边缘打磨光滑的冰砖。通过保留其标志性的'猫耳'缺口和底部的圆弧，用户能瞬间识别出这是米家，同时统一的冰蓝色调和内部气泡纹理将其融入整包风格。",
+  "must_preserve": [
+    "M形外轮廓的准确性",
+    "顶部猫耳缺口的形状和位置",
+    "底部弧线的曲率",
+    "整体的中心对称性"
+  ],
+  "can_recompose": [
+    "将原本的绿色背景替换为纯白",
+    "将白色的M形主体替换为半透明浅冰蓝色",
+    "增加Z轴厚度，使其成为立体物件",
+    "在冰块内部添加雪花或气泡纹理",
+    "边缘增加倒角和高光反射"
+  ],
+  "forbid": [
+    "禁止改变M形的比例或笔画粗细关系",
+    "禁止使用原本的.mi绿色作为主色",
+    "禁止生成不透明的实心塑料块",
+    "禁止添加额外的装饰物（如真的猫或房子），保持符号的纯粹性"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Mi Home logo (M-shield with cat ears). Translucent cyan-blue ice material with internal bubbles and snowflake textures. Glossy wet surface with chamfered edges. Centered on a pure white background with a soft contact shadow and melting water puddle at the base. No green color."
+}

@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "",
+      "recommendation": "完美保留了'小红书'文字标识，字体形态准确。背景采用了主题统一的米黄色调，并添加了标志性的小狗元素，既符合主题风格（手绘、可爱、暖色调），又保证了极高的品牌识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "最佳候选。不仅保留了完整的文字标识，还保留了原Logo经典的红色圆角矩形背景（虽然调整为更符合主题的暗红/砖红色），这种'形色俱在'的重构方式最符合图标主题化的要求，识别度与风格化平衡得最好。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "整体质量不错，保留了红色背景和文字。但小狗的位置遮挡了'小'字的一部分，且文字边缘的描边处理略显粗糙，相比前两张图，视觉清晰度和精致度稍逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\xiaohongshu\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

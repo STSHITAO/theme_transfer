@@ -1,0 +1,61 @@
+{
+  "app": "mango_tv",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'bilibili', the core geometric symbol (the 'M' inside the box) must be directly extruded into a 3D ice object. The original logo is already a simple, bold graphic suitable for direct material replacement without needing semantic reconstruction. The structure defines the brand identity completely.",
+  "preserve": [
+    "The specific geometry of the 'M' character (two vertical strokes connected by a V-shape).",
+    "The surrounding rounded square/rectangle border that encapsulates the 'M'.",
+    "The negative space relationship between the 'M' and the outer frame.",
+    "The screen-like enclosure implies a display or media window.",
+    "The solid, bold structure suggests a stable platform for content."
+  ],
+  "must_preserve": [
+    "The 'M' shape proportions and stroke width relative to the frame.",
+    "The rounded corners of the outer frame.",
+    "The connectivity of the 'M' legs to the bottom of the frame (if applicable in the specific font variant) or their floating position."
+  ],
+  "recompose_allowed": [
+    "The thickness of the ice block (needs to be substantial to show refraction).",
+    "The internal distribution of bubbles and snowflake textures.",
+    "The specific angle of lighting to highlight the edges (Fresnel effect)."
+  ],
+  "restyle": [
+    "Convert all original colors (orange background, white M) to translucent Cyan-Ice Blue material.",
+    "Apply glossy wet surface texture with caustic lighting effects.",
+    "Add internal air bubbles and snowflake textures to simulate natural ice imperfections."
+  ],
+  "decorate": [
+    "Add melting water puddles and small ice shards at the base for physical contact realism.",
+    "Ensure soft contact shadows are cast on the pure white background."
+  ],
+  "forbid": [
+    "Using any orange color (strictly Cyan/Ice Blue only).",
+    "Flattening the icon (must look like a physical 3D object with depth).",
+    "Removing the outer frame (the 'M' cannot float freely without its container).",
+    "Making the ice opaque (must be translucent).",
+    "Replacing the 'M' with a real mango fruit image.",
+    "Replacing the symbol with a generic play triangle."
+  ],
+  "generation_brief": "3D ice sculpture of Mango TV logo: capital letter 'M' enclosed in a rounded square frame. Material is translucent cyan-blue ice with internal air bubbles and snowflake textures. Glossy wet surface, caustic lighting, pure white background, soft contact shadow and melting water puddle at base. No orange colors, no flat design.",
+  "color_application": "Forcefully remove original orange brand color. Apply uniform Cyan-Ice Blue palette to the entire 3D volume (both the 'M' and the frame). Use Deep Azure for shadowed thick areas and Translucent White for highlights/refraction zones.",
+  "stroke_application": "Eliminate all 2D outlines. Define the 'M' and frame boundaries through the physical thickness of the ice block, chamfered edges catching light, and refractive index differences against the white background.",
+  "composition_application": "Center the 3D ice object. Scale to occupy 60-70% of canvas. Ensure the 'M' within the frame maintains its original proportional topology. Add vertical volume to transform the flat logo into a standing ice block.",
+  "identity_application": "Preserve the exact geometric skeleton of the 'M' and its enclosing rounded rectangle. Recognizability relies entirely on the silhouette of this specific letter-in-box structure, now rendered as a monolithic ice entity.",
+  "fidelity_constraints": [
+    "Subject must exhibit clear semi-transparent ice/jelly texture, not opaque plastic or metal.",
+    "Internal random bubbles or snowflake textures are mandatory fingerprint features.",
+    "Background must remain pure white/clean.",
+    "Base must have physical contact shadow and water/melt details.",
+    "Strictly no high-saturation brand colors (orange) on the main body."
+  ],
+  "negative_constraints": [
+    "No flat 2D vector styles.",
+    "No solid opaque materials (stone, matte plastic).",
+    "No residual orange background or brand colors.",
+    "No complex scenery or character transformations.",
+    "No distortion of the 'M' letterform or removal of the outer frame."
+  ]
+}

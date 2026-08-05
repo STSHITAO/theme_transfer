@@ -1,0 +1,59 @@
+{
+  "app": "tencent_meeting",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of Alipay and Douyin, the core logo geometry must be strictly preserved to ensure instant recognition. The transformation is purely material (flat vector to 3D ice) and dimensional (adding thickness), without altering the silhouette or spatial relationship of the peaks.",
+  "preserve": [
+    "The double-peak 'M' silhouette",
+    "The precise angle of the chevrons",
+    "The relative size and position of the two intersecting parts",
+    "Rounded corners of the stroke ends"
+  ],
+  "must_preserve": [
+    "The exact vector path of the double-peak 'M' logo",
+    "The overlapping intersection point between the left and right peaks"
+  ],
+  "recompose_allowed": [
+    "Convert flat white fill to translucent ice blue volume",
+    "Replace background gradient with pure white",
+    "Substitute internal details with frozen bubbles and snowflake textures"
+  ],
+  "restyle": [
+    "Apply translucent crystalline ice material",
+    "Add surface condensation droplets and embedded snowflakes",
+    "Round sharp edges to mimic melted/polished ice",
+    "Enhance center intersection with subsurface scattering/refraction effects"
+  ],
+  "decorate": [
+    "Micro-textures of condensation droplets on surface",
+    "Internal macro-textures of bubbles and ice fractures",
+    "Stylized snowflake patterns embedded within the volume"
+  ],
+  "forbid": [
+    "Changing the logo to a literal camera, microphone, or meeting table icon",
+    "Using the original dark blue brand color",
+    "Creating a flat 2D blue shape without 3D volume",
+    "Sharp, jagged vector edges",
+    "Complex or dark backgrounds"
+  ],
+  "generation_brief": "3D ice sculpture of Tencent Meeting's abstract 'M' logo (two interlocking peaks). Material: translucent pale cyan ice with internal bubbles, snowflakes, and condensation droplets. Style: glossy, rounded edges, strong refraction at center intersection. Background: clean white with subtle contact shadow and melting water puddle at base. No text, no original brand colors.",
+  "color_application": "Discard original brand blue/white. Apply uniform 'frozen water' aesthetic: Pale Cyan/Ice Blue for the body, Translucent White for highlights, Cool Grey for shadows. Maintain high contrast against white background via lighting rather than color difference.",
+  "stroke_application": "Eliminate all 2D strokes. Define shape through 3D volume, edge highlighting, and light refraction. Ensure contours are smooth, continuous, and rounded like worn ice.",
+  "composition_application": "Center the 3D 'M' object occupying 70-80% of canvas. Anchor on a virtual ground plane with contact shadow. Integrate the two peaks into a single cohesive ice mass while preserving their distinct geometric intersection.",
+  "identity_application": "Preserve the exact topology of the double-peak 'M' structure. Use the central overlapping area to showcase theme-specific refraction and subsurface scattering, turning the original 'connection' visual cue into a physical ice fusion effect.",
+  "fidelity_constraints": [
+    "Must use unified ice blue semi-transparent material, strictly no original brand colors.",
+    "Must include internal bubbles, snowflakes, or ice crack textures.",
+    "Subject must exhibit clear 3D volume with thickness, not a flat cutout.",
+    "Background must be clean white/high-key grey."
+  ],
+  "negative_constraints": [
+    "No flat vector styles or 2D appearances.",
+    "No warm colors, fire, wood, metal, or stone materials.",
+    "No complex scenes or dark backgrounds.",
+    "No distortion of the 'M' shape into waves or mountains.",
+    "No opaque plastic or glass look; must be specifically 'ice'."
+  ]
+}

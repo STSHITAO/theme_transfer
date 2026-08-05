@@ -1,0 +1,38 @@
+{
+  "app": "youdao_dict",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“有道”二字的汉字字形结构，特别是“道”字底部夸张的走之底曲线。",
+  "brand_cues_to_preserve": [
+    "“有道”汉字的笔画拓扑结构",
+    "文字在画布中的居中排版比例",
+    "“道”字走之底的标志性弧度"
+  ],
+  "semantic_cues_to_preserve": [
+    "作为词典工具的稳重感（通过厚重的冰体体积表现）",
+    "文字的清晰度与可读性轮廓"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或符号类图标采取严格的‘立体化复刻’策略。有道词典的核心识别完全依赖于‘有道’二字的特定书法字体设计，任何结构的重组都会导致品牌失效。因此，必须保留原始文字的二维轮廓，仅将其沿Z轴拉伸为3D冰雕实体，并移除底部的英文标签以保持构图纯净。",
+  "design_rationale": "有道词典是典型的文字标（Wordmark）应用。在‘冰封’主题下，最合适的表达是将这两个汉字视为一块完整的、被冻结的冰碑。通过保留原本的红色背景区域作为冰块的物理边界（或者让文字本身成为悬浮的冰体），利用冰材质的通透感和内部气泡来打破原本实心红色的沉闷，同时严格维持字形的辨识度。底部的 'youdao' 英文应当被舍弃，以符合主题‘单体居中、极简留白’的构图规则。",
+  "must_preserve": [
+    "“有道”两个汉字的完整笔画形状",
+    "文字整体的长宽比和重心位置",
+    "3D冰材质特有的次表面散射（SSS）和边缘高光",
+    "内部的雪花或气泡纹理细节"
+  ],
+  "can_recompose": [
+    "底部的 'youdao' 英文字母（建议移除）",
+    "原始的纯红/渐变色背景（替换为透明冰体或白色背景）",
+    "文字表面的平整度（增加冰面的凹凸、融化和折射质感）"
+  ],
+  "forbid": [
+    "禁止保留原始的红色或橙色品牌色",
+    "禁止将汉字替换为书本、放大镜等具象物体",
+    "禁止生成平面的蓝色文字剪影（必须有厚度和光影）",
+    "禁止改变‘有道’二字的字体特征（如将楷书变为黑体）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '有道'. The material is translucent pale cyan ice with internal bubbles and snowflake textures. The characters retain their exact original calligraphy structure and stroke thickness but are extruded into a thick 3D block. Edges are rounded and glossy with refraction. No English text. Pure white background with a soft contact shadow and melting water puddle at the base. High-key lighting."
+}

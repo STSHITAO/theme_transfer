@@ -1,0 +1,37 @@
+{
+  "app": "eleme",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "蓝色的 'e' 字母图形及其右侧的圆点（象征嘴巴/食物），这是饿了么最具辨识度的视觉符号。",
+  "brand_cues_to_preserve": [
+    "品牌标志性的蓝色（需映射为主题深蓝/靛蓝）",
+    "'e' 字母的独特几何形态（类似侧脸或笑脸）",
+    "'e' 右侧代表食物的圆点元素"
+  ],
+  "semantic_cues_to_preserve": [
+    "外卖配送服务的即时性（通过圆润、饱满的造型暗示）",
+    "进食/满足感（通过拟人化的 e 造型表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标核心为高度抽象的几何 Logo（'e' + 点），属于清晰的符号类图标，符合 theme_design_analysis 中 'preserve_when' 的条件。参考 bilibili 和 douyin 的案例，应保留其主体轮廓拓扑结构，仅对填充材质、描边风格和色彩进行主题化重构，而非重新设计场景。",
+  "design_rationale": "饿了么的 'e' logo 具有极高的国民辨识度，且本身已是几何化图形，非常适合转化为复古手绘风格。策略上采用 logo_simplify，将原本平滑的矢量 'e' 转化为带有粗犷黑色描边、边缘抖动的马克笔涂鸦效果。色彩上严格遵循主题限制，将品牌蓝替换为主题色板中的深宝蓝/靛蓝，背景统一为纯黑，去除原有的橙色渐变底，使图标像一张蓝色的复古贴纸浮在黑色画布上。",
+  "must_preserve": [
+    "'e' 字母的基本笔画走向和开口方向",
+    "右侧圆点与 'e' 的相对位置关系",
+    "整体的蓝色调性（主题化后的蓝）"
+  ],
+  "can_recompose": [
+    "将平滑的矢量边缘重组为不规则的手绘抖动线条",
+    "将原本的白色或浅蓝填充重组为高饱和度的主题深蓝平涂色块",
+    "内部的高光细节全部移除，改为纯色或简单的装饰性几何点"
+  ],
+  "forbid": [
+    "禁止保留原有的橙色背景或橙蓝渐变",
+    "禁止使用细线条或无描边的平滑矢量风格",
+    "禁止添加立体阴影、光泽或3D渲染效果",
+    "禁止改变 'e' 的识别结构导致看起来像其他字母"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the Eleme 'e' logo on a pure black background. The 'e' shape should be filled with solid deep blue (indigo) and outlined with a thick, rough, shaky black marker stroke. Include the characteristic dot next to the 'e'. No gradients, no shadows, no orange colors. Flat, naive art style, centered composition."
+}

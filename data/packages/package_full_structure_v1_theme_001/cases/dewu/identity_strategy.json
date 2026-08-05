@@ -1,0 +1,38 @@
+{
+  "app": "dewu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“得物”二字的独特几何化字体结构（特别是“得”字的双人旁与右侧部件的紧凑咬合，以及“物”字牛字旁的方正处理）",
+  "brand_cues_to_preserve": [
+    "“得物”汉字的整体骨架与笔画拓扑关系",
+    "字体的方正、硬朗几何特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为核心识别符号的功能性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的案例，该主题的核心逻辑是将高辨识度的平面符号（汉字/字母）直接转化为具有厚度的3D冰雕实体。得物的Logo本身就是高度几何化的汉字设计，具有极强的剪影识别度，因此必须完整保留其字形结构，仅做材质上的‘冻结’处理，严禁重构为鞋子或盒子等语义物体。",
+  "design_rationale": "得物App的图标核心在于其独特的定制字体。在‘冰封’主题下，这种硬朗的几何线条非常适合表现为切割整齐的冰块。策略上完全遵循theme_design_analysis中关于汉字图标（如支付宝、豆瓣）的处理范式：保持字形绝对准确，通过增加Z轴厚度、倒角边缘和内部气泡纹理来实现主题化，背景彻底留白以突出冰体质感。",
+  "must_preserve": [
+    "“得物”两个汉字的准确写法与结构比例",
+    "笔画的粗细均匀度与几何转折角度",
+    "整体的黑白负空间关系（即笔画间的空隙）"
+  ],
+  "can_recompose": [
+    "将原本的平面白色填充替换为半透明浅冰蓝色材质",
+    "为字体增加物理厚度（挤压成型）",
+    "在笔画末端和转角处增加圆润的倒角和高光",
+    "在冰块内部添加随机的雪花或气泡纹理",
+    "底部增加融化的水渍和接触阴影"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构或写错字",
+    "禁止使用原本的青色（Cyan）作为主体颜色，必须转为冰蓝",
+    "禁止保留底部的‘礼物节’波浪背景和心形元素",
+    "禁止生成不透明的实心塑料块",
+    "禁止添加鞋子、包装盒等具象物体干扰文字主体"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '得物'. The characters must maintain their exact original geometric structure and stroke layout. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Glossy wet surface with chamfered edges. Pure white background. Soft contact shadow and melting water puddle at the base. No other objects."
+}

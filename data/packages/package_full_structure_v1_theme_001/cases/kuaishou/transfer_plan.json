@@ -1,0 +1,62 @@
+{
+  "app": "kuaishou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Bilibili 等案例均严格保留了原图标的核心几何骨架，仅做材质替换。快手图标具有极高的图形识别度（独特的摄像机抽象造型），且结构简单清晰，非常适合直接转化为 3D 冰雕。必须完整保留其‘上圆下框’的拓扑关系，不可重构为其他物体。",
+  "preserve": [
+    "摄像机整体几何骨架（上部双圆环镜头，下部圆角矩形机身）",
+    "顶部两个相连圆环的大小比例与相对位置",
+    "底部机身左侧内嵌的三角形播放符号结构",
+    "图标整体的垂直长宽比与居中构图逻辑"
+  ],
+  "must_preserve": [
+    "原图标中两个圆圈（镜头）的大小比例和相对位置",
+    "下方矩形机身与左侧三角形的连接关系",
+    "线条的粗细比例（转化为冰块的厚度）",
+    "整体的垂直居中构图"
+  ],
+  "recompose_allowed": [
+    "将原本的二维平面线条拉伸为具有 Z 轴厚度的立体模型",
+    "边缘处理由锐利变为圆润倒角（模拟冰块融化感）",
+    "内部填充随机的雪花纹理和微小气泡",
+    "表面增加湿润的高光反射和焦散效果"
+  ],
+  "restyle": [
+    "材质统一替换为半透明青冰蓝（Cyan-Ice Blue）",
+    "去除所有原始品牌色（橙红、白），转为冰材质的透光与高光",
+    "通过次表面散射（SSS）和内部纹理表现体积感，而非描边"
+  ],
+  "decorate": [
+    "内部嵌入微小的空气气泡和冰晶颗粒",
+    "表面呈现湿润光泽和高光反射",
+    "底部添加融化的水渍、小水洼及碎冰屑细节"
+  ],
+  "forbid": [
+    "禁止改变摄像机的基本形状（如把圆圈变成方形）",
+    "禁止保留原始的橙红色背景或主体颜色",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止省略底部的接触阴影和水渍细节",
+    "禁止添加额外的装饰性元素（如真实的镜头玻璃反光），保持图标的符号化特征",
+    "禁止将顶部双圆环误读为数字'8'或无穷大符号而忽略底部机身"
+  ],
+  "generation_brief": "3D ice sculpture of Kuaishou logo: translucent cyan-blue ice block shaped as a stylized camera (two connected circles on top, rectangular body with left-side triangle below). Pure white background. Material features internal bubbles, snowflake textures, glossy wet surface, and caustic lighting. Base has soft contact shadow and melting water puddle. Centered composition, high fidelity Octane render.",
+  "color_application": "强制去色。将原图标的白色主体和橙色背景完全替换为统一的浅冰蓝色调（Cyan/Ice Blue）。利用冰材质的透明度变化（从半透明白到深蔚蓝阴影）来表现原图形的明暗关系，严禁出现任何暖色调或高饱和度品牌色。",
+  "stroke_application": "消除所有二维描边。将原图标的白色线条转化为具有物理厚度的三维冰实体边缘。通过边缘的菲涅尔反射（Fresnel reflection）和倒角高光来界定轮廓，确保线条感源于光影切割而非绘制线条。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体作为独立的3D冰雕居中放置，占据画布约60%-70%空间。去除原图的纯色背景，替换为纯净的白色/极浅冷灰背景，并在主体底部预留空间展示物理接触阴影和融水细节。",
+  "identity_application": "严格保留快手图标‘上双圆、下机身带三角’的独特几何拓扑结构。通过将该特定剪影直接立体化为冰砖，确保用户在透过冰材质观察时，仍能通过轮廓瞬间识别出快手品牌。不改变任何结构比例，仅改变材质属性。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和融水细节。",
+    "严禁直接使用原图的高饱和度品牌色（橙红）作为主体或背景颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃、石头或塑料）。",
+    "禁止保留原始的大面积橙色背景。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止扭曲原图标的核心几何结构（如将双圆环变形为非对称或非圆形）。"
+  ]
+}

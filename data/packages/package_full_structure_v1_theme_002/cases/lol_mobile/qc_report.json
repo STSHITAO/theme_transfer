@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了生成计划。准确提取了英雄联盟的核心'L'形盾牌轮廓，严格遵循了红蓝对抗的色彩逻辑和纯黑背景要求。手绘蜡笔质感与参考图风格高度一致，去除了原图复杂的人物细节，重构为极简几何符号，识别度极高且风格化彻底。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 30,
+      "failure_reason": "主体错误。生成的图像是一个音符形状（类似抖音或音乐类App的图标），完全丢失了目标App（lol_mobile）的'L'形盾牌特征和品牌识别线索。虽然画风符合主题，但无法识别为目标应用。",
+      "recommendation": "不推荐。虽然风格匹配，但主体完全错误，属于严重的身份识别失败。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\lol_mobile\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

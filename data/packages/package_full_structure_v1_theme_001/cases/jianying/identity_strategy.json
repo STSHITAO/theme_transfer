@@ -1,0 +1,38 @@
+{
+  "app": "jianying",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "由两个三角形组成的抽象'X'形符号（或类似领结/沙漏的几何结构），这是剪映最核心的视觉识别特征。",
+  "brand_cues_to_preserve": [
+    "标志性的'X'形交叉几何轮廓",
+    "左右对称的布局结构",
+    "右侧延伸出的摄像机镜头/机身暗示（若原图有明确指向性）"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频剪辑工具的精密感",
+    "图形本身的连贯性和闭环感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（'支'字）、抖音（音符）等案例均严格保留了原图标的核心几何骨架，仅做材质替换和立体化增厚。剪映的'X'形符号具有极高的抽象度和辨识度，必须完整保留其拓扑结构，不能进行语义重组，否则将失去品牌识别度。",
+  "design_rationale": "剪映的图标是一个高度抽象且独特的几何符号（类X形/领结形）。根据主题规则'几何守恒，材质重构'，最佳策略是将这个平面符号直接转化为立体的冰雕实体。通过赋予其厚度和冰材质，既能完美契合'冰雪环境'的主题氛围，又能最大程度保留用户熟悉的App入口形象。不需要引入额外的道具或场景，符号本身即是主体。",
+  "must_preserve": [
+    "原图标'X'形的整体外轮廓和内部交叉线条走向",
+    "图标的长宽比例",
+    "左右两侧的端点形态"
+  ],
+  "can_recompose": [
+    "将平面线条转化为具有倒角和厚度的3D实体",
+    "表面增加雪花、气泡纹理",
+    "边缘增加融化的水渍细节",
+    "底部增加接触阴影和碎冰"
+  ],
+  "forbid": [
+    "禁止改变'X'形的交叉角度或断开连接",
+    "禁止使用原品牌的黑色或白色作为主色（必须转为冰蓝）",
+    "禁止生成不透明的塑料质感",
+    "禁止添加与视频编辑无关的复杂背景元素"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Jianying logo (abstract X-shape/bowtie geometry). Material: translucent cyan-blue ice with internal bubbles and snowflake textures. Style: glossy, wet surface with chamfered edges. Background: pure white with melting water puddles and contact shadow at the base. Maintain the exact geometric topology of the original logo, just extruded into 3D ice."
+}

@@ -1,0 +1,61 @@
+{
+  "app": "Alipay",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The reference analysis for Alipay explicitly demonstrates transforming the flat '支' character into a 3D ice pillar structure while strictly maintaining the original stroke topology. The identity of this app relies entirely on the specific geometry of the character; altering the structure would destroy recognition. Therefore, the mode is set to preserve the major structure, treating the logo as a mold for the ice sculpture.",
+  "preserve": [
+    "The exact silhouette of the stylized Chinese character '支'",
+    "The continuous infinity-loop stroke at the bottom connecting to the vertical stem",
+    "The relative proportions of the upper horizontal strokes versus the lower loop",
+    "The topological connection points of the character strokes"
+  ],
+  "must_preserve": [
+    "The specific calligraphic structure of the '支' character",
+    "The distinct infinity-loop geometry at the base",
+    "The overall balance and negative space of the character form"
+  ],
+  "recompose_allowed": [
+    "Internal material texture (adding random bubbles, snowflakes, or ice cracks within the volume)",
+    "Surface lighting and refraction effects (specular highlights, subsurface scattering)",
+    "Base structure (adding a melting ice puddle or small ice platform for grounding)"
+  ],
+  "restyle": [
+    "Convert flat white fill to translucent cyan-blue ice material",
+    "Replace sharp 2D edges with rounded, thick 3D extruded forms",
+    "Remove all original brand colors (solid blue background) and replace with theme palette",
+    "Eliminate any text labels such as 'AI'"
+  ],
+  "decorate": [
+    "Add subtle internal frozen air bubbles",
+    "Add micro-snowflake textures inside the ice volume",
+    "Add realistic contact shadow and melted water details at the base"
+  ],
+  "forbid": [
+    "Retaining the original solid blue background",
+    "Including the 'AI' text suffix",
+    "Using opaque plastic, metal, or glass materials (must be ice)",
+    "Changing the stroke width ratios or topology of the '支' character",
+    "Floating the object without a ground shadow or ice base",
+    "Replacing the character with generic financial symbols (coins, wallets)"
+  ],
+  "generation_brief": "3D icon of Alipay's '支' character sculpted from translucent cyan-blue ice. Strictly preserve the character's calligraphic structure and bottom infinity loop. Material features internal bubbles, snowflake textures, and glossy refraction. Place on a pure white background with a small melting ice base and contact shadow. No text, no original blue color, high-detail C4D render style.",
+  "color_application": "Discard original brand blue. Apply uniform Ice Blue/Cyan palette. Use varying thickness of the ice to create depth via light absorption rather than color changes. Highlights are pure white; shadows are pale blue/cyan.",
+  "stroke_application": "Eliminate 2D vector strokes. Extrude the '支' character into a solid 3D volume with rounded, smooth edges. Define contours through specular highlights and edge refraction typical of ice, not drawn lines.",
+  "composition_application": "Center the 3D ice sculpture. Scale to occupy 60-70% of the canvas. Add a physical ice base/puddle at the bottom to ground the object. Use a slight micro-perspective to enhance 3D volume while keeping the character upright and recognizable.",
+  "identity_application": "Maintain strict geometric fidelity to the '支' character silhouette. The identity is preserved through the accurate 3D extrusion of the original stroke paths, ensuring the infinity loop and upper structure remain instantly recognizable despite the material change.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice with internal bubbles/cracks, not opaque plastic.",
+    "Must include a physical base (ice block/puddle) and contact shadow.",
+    "Color must be strictly Ice Blue/Cyan/White palette.",
+    "No original brand colors or text labels allowed."
+  ],
+  "negative_constraints": [
+    "No flat 2D design elements.",
+    "No dark or colored backgrounds.",
+    "No distortion of the '支' character topology.",
+    "No inclusion of 'AI' text or other non-core graphical elements.",
+    "No warm tones or non-ice materials."
+  ]
+}

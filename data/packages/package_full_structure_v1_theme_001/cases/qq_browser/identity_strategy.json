@@ -1,0 +1,40 @@
+{
+  "app": "qq_browser",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The specific geometric relationship between the blue 'Q' ring and the white cloud at the bottom-right.",
+  "brand_cues_to_preserve": [
+    "The incomplete circular 'Q' shape (open at bottom right)",
+    "The fluffy cloud element nestled in the bottom-right opening",
+    "The spatial overlap where the cloud sits slightly in front of or integrated with the ring"
+  ],
+  "semantic_cues_to_preserve": [
+    "Browser/Cloud connectivity implied by the cloud shape",
+    "Circular motion/completeness implied by the ring"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The QQ Browser logo consists of simple, bold geometric shapes (a ring and a cloud) which are ideal candidates for direct 3D extrusion. Following the theme rules (like Alipay and Douyin), the primary structure must be preserved to ensure instant recognition. The transformation involves converting the flat vector shapes into thick, rounded ice sculptures while maintaining their exact relative positions.",
+  "design_rationale": "The strategy is 'logo_preserve' because the original icon's geometry is distinct and simple enough to be directly translated into the theme's material language without losing identity. The 'Q' ring becomes a curved ice tube, and the cloud becomes a sculpted ice formation. Strict adherence to the original layout is required because changing the position of the cloud would break the brand recognition. The color must shift from brand blue to the theme's uniform ice blue.",
+  "must_preserve": [
+    "The 'Q' ring shape (circular arc open at bottom right)",
+    "The cloud shape positioned at the bottom right gap",
+    "Translucent ice material with internal bubbles/snowflakes",
+    "Pure white background with contact shadow"
+  ],
+  "can_recompose": [
+    "Surface texture (add condensation, frost, cracks)",
+    "Edge rounding (chamfered edges to look like melted ice)",
+    "Internal lighting (subsurface scattering, refraction)",
+    "Thickness of the elements (extrude 2D to 3D)"
+  ],
+  "forbid": [
+    "Using the original solid blue gradient color",
+    "Flattening the icon (must be 3D volumetric)",
+    "Separating the cloud too far from the Q ring",
+    "Opaque plastic or metal materials",
+    "Dark or colored backgrounds"
+  ],
+  "generation_direction": "3D icon of a translucent light-blue ice ring (shape of letter Q) with a sculpted ice cloud nestled in the bottom-right opening. Glossy wet surface, internal air bubbles and snowflake textures. Soft studio lighting, refraction, subsurface scattering. Centered on pure white background with soft contact shadow and melting water details at base."
+}

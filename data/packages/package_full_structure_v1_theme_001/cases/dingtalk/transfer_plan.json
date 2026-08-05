@@ -1,0 +1,67 @@
+{
+  "app": "DingTalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "钉钉的图标是一个高度抽象且独特的几何符号（翅膀+闪电），符合 theme_design_analysis 中关于'具有高度抽象且独特的几何符号必须直接立体化'的规则。参考抖音音符和支付宝'支'字的处理方式，应完整保留其外轮廓和内部线条拓扑，仅做材质替换和厚度增加，不进行语义重构。",
+  "preserve": [
+    "翅膀与闪电融合的剪影轮廓",
+    "三段式羽毛结构的相对比例",
+    "底部闪电的尖锐折角特征",
+    "整体向右上方倾斜的动态角度",
+    "图标的原始长宽比"
+  ],
+  "must_preserve": [
+    "核心图形必须是‘翅膀+闪电’的融合体，不可拆分",
+    "图形整体的负空间切割方式（三道羽毛/闪电的分隔）",
+    "图形的指向性（右上方向）",
+    "高对比度的白图蓝底关系转化为高明度冰体与纯白背景的对比"
+  ],
+  "recompose_allowed": [
+    "将2D平面图形拉伸为具有物理厚度的3D实体",
+    "边缘进行圆润倒角处理以模拟冰块融化感",
+    "内部填充随机气泡、雪花纹理和冰裂细节",
+    "表面增加湿润的高光反射和焦散效果",
+    "底部添加接触阴影和融水水渍"
+  ],
+  "restyle": [
+    "去除原始深蓝色背景，替换为纯白/极浅冷灰背景",
+    "主体颜色由品牌蓝转换为半透明青冰蓝（Cyan-Ice Blue）",
+    "材质由扁平矢量转换为高光泽度冰冻材质（SSS效果）",
+    "消除所有二维描边，通过体积感和光影界定轮廓"
+  ],
+  "decorate": [
+    "内部嵌入微小空气气泡",
+    "表面或内部嵌入雪花/冰晶纹理",
+    "底部添加少量碎冰屑或水洼细节"
+  ],
+  "forbid": [
+    "禁止改变翅膀或闪电的几何形状结构",
+    "禁止保留原始的深蓝色实心背景",
+    "禁止生成不透明的蓝色塑料或磨砂质感",
+    "禁止添加任何非冰材质的装饰（如金属、木纹）",
+    "禁止丢失底部的接触阴影和水渍",
+    "禁止使用暖色调作为主体主色",
+    "禁止过度圆润化导致闪电特征消失"
+  ],
+  "generation_brief": "3D ice sculpture of DingTalk logo (wing-lightning hybrid), translucent cyan-blue ice, internal bubbles and snowflakes, glossy wet surface, sharp lightning angles preserved but edges chamfered, pure white background, contact shadow and melting puddle at base, octane render, high fidelity.",
+  "color_application": "强制去色。将原品牌蓝底白图转换为统一的半透明青冰蓝（Cyan-Ice Blue）主体，背景转换为纯白。利用冰的透光性和内部阴影表现层次，严禁使用原品牌的高饱和度蓝色。",
+  "stroke_application": "消除所有二维描边。将原图标的线条转化为三维实体的边缘，通过倒角（Chamfered edges）和高光反射来界定轮廓，保持闪电部分的锐利感但边缘需有冰融化的圆润过渡。",
+  "composition_application": "从平面填充式构图转变为立体物件式构图。主体居中，占据画布60%-70%空间，底部预留空间给投影和水渍，四周留白以突出冰块的通透感。",
+  "identity_application": "严格保留‘翅膀+闪电’的几何拓扑结构和右上倾斜姿态。通过冰材质的折射和通透感来隐喻‘速度’与‘高效’，在不改变形状的前提下实现主题化。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变原图标的比例长宽比。",
+    "禁止将主体改为低对比度颜色导致识别困难。"
+  ]
+}

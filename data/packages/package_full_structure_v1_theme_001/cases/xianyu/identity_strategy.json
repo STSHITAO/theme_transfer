@@ -1,0 +1,37 @@
+{
+  "app": "xianyu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The specific geometric structure of the stylized Chinese characters '闲鱼' (Xianyu), particularly the rounded strokes and the fish-tail underline beneath the character '鱼'.",
+  "brand_cues_to_preserve": [
+    "The exact stroke width and curvature of the '闲鱼' typography.",
+    "The horizontal arrangement of the two characters.",
+    "The distinctive underline stroke that mimics a fish tail or water wave."
+  ],
+  "semantic_cues_to_preserve": [
+    "The textual identity serves as the primary semantic cue for a marketplace app in this context.",
+    "Legibility of the characters must remain high despite material transformation."
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the reference pattern of 'alipay' and 'douban', text-based logos in this theme are treated as solid 3D sculptures. The original flat vector paths of the '闲鱼' characters must be extruded into ice blocks without altering the font geometry, stroke connections, or spatial layout. The mascot (yellow fish) is excluded to maintain the minimalist 'ice sculpture on white background' composition rule established by the theme analysis.",
+  "design_rationale": "The target app relies heavily on its logotype for recognition. To adhere to the 'Ice/Crystal' theme while maintaining strict identity, the strategy is to transform the 2D black text into a 3D translucent ice sculpture. This preserves the exact silhouette (crucial for reading the text) while completely replacing the color and material properties with the theme's signature pale cyan ice, internal bubbles, and wet surface highlights. The mascot is omitted to prevent visual clutter and to align with the 'single subject centered' composition rule seen in other text-based references like Alipay.",
+  "must_preserve": [
+    "The precise outline and internal negative space of the characters '闲' and '鱼'.",
+    "The relative size and spacing between the two characters.",
+    "The specific 'fish tail' shape of the bottom stroke in '鱼'."
+  ],
+  "can_recompose": [
+    "The thickness (Z-axis depth) of the characters can be exaggerated to enhance the 3D ice block effect.",
+    "Internal details like bubbles or snowflakes can be embedded within the strokes.",
+    "Edges should be rounded and smoothed to simulate melted ice, removing sharp vector corners."
+  ],
+  "forbid": [
+    "Retaining the original yellow brand color or black text color.",
+    "Including the yellow fish mascot in the composition.",
+    "Creating a flat 2D blue text icon without volume or refraction.",
+    "Distorting the font structure to the point of illegibility."
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese text '闲鱼'. Material is translucent pale cyan crystal with internal air bubbles and snowflake textures. Surface is glossy with condensation droplets. No outlines, defined by refraction and highlights. Centered on a pure white background with a soft contact shadow and a small melting water puddle at the base. High fidelity C4D render style."
+}

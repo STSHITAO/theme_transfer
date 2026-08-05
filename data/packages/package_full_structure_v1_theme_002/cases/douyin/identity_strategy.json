@@ -1,0 +1,40 @@
+{
+  "app": "douyin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "经典的八分音符（Musical Note）轮廓结构",
+  "brand_cues_to_preserve": [
+    "音符的整体S形曲线走向",
+    "左下方的圆形符头",
+    "右上方的符尾旗帜形状"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐/节奏符号",
+    "短视频内容的流动性暗示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "抖音的原始图标本身就是高度抽象的几何符号（音符），符合 theme_design_analysis 中‘保留清晰几何符号’的条件。参考案例中 douyin 也是保留了音符拓扑结构。因此必须严格保留其主体轮廓和空间布局，仅对填充色、描边和质感进行主题化重构，严禁改变其基本形态。",
+  "design_rationale": "抖音的核心识别度完全依赖于音符符号。在复古手绘主题下，应将原本具有科技感和故障风（Glitch）的精细矢量图形，转化为类似儿童蜡笔或马克笔涂鸦的拙朴风格。去除原有的红青重影特效，改为单一的高饱和度红色填充（映射主题色板），并添加粗重的黑色手绘描边以匹配整体风格。内部可嵌入简单的装饰元素（如四角星）以增加趣味性，但绝不能破坏音符的可识别性。",
+  "must_preserve": [
+    "音符的标准轮廓形状（符头、符干、符尾的位置关系）",
+    "纯黑背景 (#000000)",
+    "粗犷的黑色/深色手绘描边",
+    "高饱和度的主题红色（砖红/朱红）作为主色"
+  ],
+  "can_recompose": [
+    "原有的青色/蓝色重影效果（必须移除）",
+    "原本的白色填充（改为红色或奶黄色）",
+    "平滑锐利的矢量边缘（改为抖动、圆润的手绘边缘）",
+    "内部的纯色块（可替换为带有轻微笔触感的平涂）"
+  ],
+  "forbid": [
+    "保留原有的青色（Cyan）和故障风双色错位效果",
+    "使用细线条或无描边设计",
+    "添加立体阴影、高光或渐变效果",
+    "将音符变形为其他物体（如相机、播放键）",
+    "使用非主题色板的颜色（如亮粉色、紫色）"
+  ],
+  "generation_direction": "Draw a thick, hand-drawn doodle style musical note (Douyin logo shape) centered on a pure black background. Use solid brick red fill with no gradients. Add a heavy, rough black marker outline with uneven edges. Inside the note head, draw a small simple yellow or blue four-pointed star. Flat vector art style, naive and clumsy aesthetic, high contrast."
+}

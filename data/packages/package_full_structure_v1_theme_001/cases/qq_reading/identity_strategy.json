@@ -1,0 +1,37 @@
+{
+  "app": "qq_reading",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "正在阅读书本的企鹅形象（Penguin reading a book）",
+  "brand_cues_to_preserve": [
+    "企鹅的整体轮廓（头部、身体、翅膀/手的位置）",
+    "手中捧着的打开的书本形态",
+    "企鹅面部朝向与书本的互动关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "阅读动作（低头看书的姿态）",
+    "书本作为核心道具的存在感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douyin 的案例表明，即便是复杂的具象吉祥物或符号，也必须保留其原始几何拓扑结构。QQ阅读的‘企鹅看书’具有极高的品牌识别度，且结构清晰（头、身、书），完全符合‘preserve_major_structure’的条件。不需要重构为抽象符号，而是直接将现有的3D企鹅模型转化为冰雕材质。",
+  "design_rationale": "QQ阅读的核心识别在于‘企鹅’这一IP形象以及‘阅读’这一行为。在冰雪主题下，将原本毛茸茸的质感和暖色调（橙色围巾/蓝色书）全部替换为通透的冰晶质感是关键挑战。策略上选择严格保留企鹅捧书的姿态轮廓，利用冰块的次表面散射（SSS）来模拟原本白色的腹部，利用深蓝色的冰层阴影来表现原本的黑色背部。书本不再使用鲜艳的蓝/红配色，而是变成一块冻结的蓝色冰板，通过内部纹理暗示书页。",
+  "must_preserve": [
+    "企鹅标志性的圆头圆脑轮廓",
+    "双手捧书置于胸前的经典构图",
+    "书本打开的V字形结构"
+  ],
+  "can_recompose": [
+    "原本复杂的衣物细节（如背包带、衣服褶皱）需简化为冰块表面的起伏或裂纹",
+    "书本的颜色必须去色，转为统一的冰蓝色调",
+    "面部表情简化，仅保留眼部的凹陷或高光点暗示"
+  ],
+  "forbid": [
+    "禁止保留原本的橙色围巾或黄色帽子颜色",
+    "禁止将企鹅变成站立的抽象几何体，必须保持‘坐着/捧着书’的姿态",
+    "禁止书本看起来像一块实心的蓝色塑料，必须有冰的通透感",
+    "禁止背景出现暑期行动的金色光效或复杂场景"
+  ],
+  "generation_direction": "Generate a 3D icon of the QQ Reading penguin mascot made entirely of translucent light blue ice. The penguin is sitting and holding an open book. The entire figure (head, body, book) is frozen crystal with internal bubbles and snowflakes. No original colors (orange/black/blue); everything is monochromatic ice blue with white specular highlights. Clean white background with soft contact shadow and melting water at the base. High gloss, wet surface finish."
+}

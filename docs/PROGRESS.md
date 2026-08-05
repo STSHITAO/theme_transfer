@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 
 ## Completed
 
@@ -20,17 +20,23 @@ Last updated: 2026-08-05
 - Implemented ITTE v1.3 identity-gallery calibration and removed unsupported absolute identity hard gates.
 - Corrected dark-background quality false positives while retaining actual empty/exposure hard failures.
 - Completed the matched v1.3 five-fold rerun: designer-positive acceptance 95%, designer/control separation 45.01 versus 40.12 in v1.2.
-- Verified cache-miss CPU inference for DINOv3, VGG16, DISTS and LPIPS; full suite passes (57 tests).
+- Verified cache-miss CPU inference for DINOv3, VGG16, DISTS and LPIPS.
 - Delivered the validated ITTE v1.3 project and Benchmark evidence to `STSHITAO/theme_transfer` on the `main` branch; required model weights remain versioned with Git LFS.
+- Added and exercised `scripts/prepare_generation_data.py`: it converts the read-only normalized dataset into 91 generation targets and 158 matched theme examples, preserves image formats and reports 73 unmatched theme assets.
+- Implemented the pre-generation per-App structure policy across theme analysis, identity strategy, transfer plan, package metadata and ITTE v1.4 conditional identity scoring; full suite passes (68 tests).
+- Added resumable four-theme generation and batch evaluation entry points; the current validation run uses two candidates per App for multimodal QC selection.
+- Added per-App Wan content-inspection fault isolation: rejected inputs are recorded and skipped, while ITTE evaluates successful outputs with explicit coverage and cross-theme common-intersection metadata.
 
 ## In progress
 
-- No active implementation task.
+- Four-theme real generation/evaluation pipeline started on 2026-08-05. It runs themes sequentially, generates two candidates per App, applies multimodal QC, then launches ITTE v1.4 on `cuda:0` with feature caching.
+- The run is paused by the external Wan API account entitlement: theme_001 produced 90 usable Apps and one recorded content-inspection rejection; theme_002 produced 48 Apps before `AccessDenied.Unpurchased`; themes 003 and 004 have not started. No cross-theme ITTE summary is claimed from this partial run.
 
 ## Pending
 
 - Future optional validation: add independently sourced generated failures or human ratings only when such data becomes available; do not synthesize subjective labels merely to tune weights.
+- Restore Wan API billing/entitlement, resume from `package_full_structure_v1_theme_002`, then complete and summarize the four-theme real generation/evaluation run before treating v1.4 as empirically accepted.
 
 ## Deployment status
 
-No hosted service is deployed. The project runs locally through Python CLI entry points and its source is synchronized to `https://github.com/STSHITAO/theme_transfer` on `main`.
+No hosted service is deployed. The project runs locally through Python CLI entry points. The previously delivered ITTE v1.3 state is available at `https://github.com/STSHITAO/theme_transfer`; the current data-preparation changes have not been pushed.

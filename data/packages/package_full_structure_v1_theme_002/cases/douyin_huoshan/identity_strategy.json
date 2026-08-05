@@ -1,0 +1,40 @@
+{
+  "app": "douyin_huoshan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "经典的音符轮廓与底部火焰元素的组合结构",
+  "brand_cues_to_preserve": [
+    "标志性的八分音符几何拓扑（左下圆环，右上旗尾）",
+    "底部的火焰形态及其托举音符的空间关系",
+    "代表‘火山’属性的暖色调倾向（映射为红/黄）"
+  ],
+  "semantic_cues_to_preserve": [
+    "短视频/音乐属性（通过音符表达）",
+    "热情/活力/直播属性（通过火焰表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标由清晰的几何符号（音符）和具象符号（火焰）组成，符合 theme_design_analysis 中 preserve_major_structure 的判定条件。参考抖音主版的迁移案例，必须保留音符的基本S形曲线和火焰的相对位置，仅对填充方式、描边和色彩进行主题化重构，严禁改变主体轮廓或将其抽象为无关图形。",
+  "design_rationale": "抖音火山版的核心识别度依赖于‘音符+火焰’的组合。在复古手绘主题下，应将原本平滑渐变的白色音符转化为粗犷的奶黄色块，将写实的橙红火焰简化为红黄相间的几何色块堆叠。两者均需添加不规则的黑色粗描边，模拟马克笔涂鸦质感，去除所有立体光影，使其像贴纸一样浮于纯黑背景之上。",
+  "must_preserve": [
+    "音符的整体走向和比例",
+    "火焰位于音符下方的布局",
+    "纯黑背景",
+    "粗黑色手绘描边",
+    "红/蓝/黄/白限定色板"
+  ],
+  "can_recompose": [
+    "火焰的具体舌状细节（可简化为圆润的波浪形色块）",
+    "音符内部的渐变高光（改为纯色或简单的星星装饰）",
+    "颜色的具体色值（强制映射为砖红、深蓝、奶黄）"
+  ],
+  "forbid": [
+    "保留原本的白色渐变或立体光泽",
+    "使用橙色、紫色等主题外颜色",
+    "火焰形状过于写实或尖锐",
+    "描边过细或边缘过于平滑锐利",
+    "背景非纯黑"
+  ],
+  "generation_direction": "Retro hand-drawn doodle icon on pure black background. A thick, clumsy marker-style musical note (filled with creamy yellow) sitting on top of simplified geometric flames (filled with brick red and orange-yellow). Heavy, irregular black outlines around all shapes. Flat colors, no gradients, no shadows. Naive art style, high contrast."
+}

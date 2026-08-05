@@ -1,0 +1,39 @@
+{
+  "app": "douban",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字“豆”的几何化轮廓结构",
+  "brand_cues_to_preserve": [
+    "“豆”字的三段式垂直堆叠布局（顶横、中框、底脚）",
+    "中间封闭矩形框与下方开放支撑结构的相对比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字符号作为文化/内容社区的载体感",
+    "稳固、平衡的构图暗示评分体系的权威性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "豆瓣原始图标本身就是高度抽象的几何文字符号，符合主题规则中‘当 Original 图标本身就是清晰的几何符号...必须保留其主体轮廓’的条件。虽然颜色需要从品牌绿映射到主题色，但其拓扑结构（上中下三部分）是识别该 App 的唯一核心，不可重构为其他物体。",
+  "design_rationale": "选择 logo_simplify 策略。豆瓣的“豆”字图标具有极高的国民辨识度，且其本身已经是极简的几何块面，非常契合 retro doodle 风格对简单形状的要求。不需要像游戏图标那样进行语义重构（semantic_recompose），也不需要完全照搬（logo_preserve），而是需要在保留“豆”字骨架的前提下，用粗犷的手绘笔触和复古三原色重新演绎，使其看起来像一个手工制作的木质或塑料积木玩具。",
+  "must_preserve": [
+    "“豆”字的基本笔画架构：顶部短横、中部口字框、底部支撑腿",
+    "纯黑背景 (#000000)",
+    "粗重的黑色手绘描边",
+    "红/蓝/黄的高饱和度配色体系"
+  ],
+  "can_recompose": [
+    "将原本的直角转折处理为圆润或不规则的手绘钝角",
+    "将原本均匀的白色填充改为红、蓝、黄的色块拼接（例如上部红色，中部蓝色，下部黄色）",
+    "线条边缘的抖动感和厚度变化",
+    "内部空间的负形比例微调以适应手绘风格"
+  ],
+  "forbid": [
+    "禁止保留原始的鲜绿色 (#48BB32)",
+    "禁止使用平滑的矢量边缘或标准圆角",
+    "禁止添加阴影、高光或立体浮雕效果",
+    "禁止改变“豆”字的笔画顺序或结构导致无法识别",
+    "禁止使用除红蓝黄白黑以外的任何颜色"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the Chinese character '豆' (Douban logo) on a pure black background. Use thick, rough marker strokes with uneven edges. Recolor the character using high-saturation primary colors (brick red, indigo blue, cream yellow) in blocky segments instead of the original green. The shape should look like a clumsy, cute wooden toy block. No gradients, no shadows, no realistic textures. Centered composition."
+}

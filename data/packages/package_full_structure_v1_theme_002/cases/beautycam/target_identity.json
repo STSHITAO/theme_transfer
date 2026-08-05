@@ -1,0 +1,27 @@
+{
+  "raw_response": "{\n  \"app\": \"beautycam\",\n  \"identity_anchors\": [\n    \"相机轮廓剪影（顶部双圆弧突起）\",\n    \"中心C形渐变圆环（代表镜头/光圈）\",\n    \"右上角悬浮的菱形/方块元素（代表闪光灯或装饰）\",\n    \"高饱和度粉色背景基调\"\n  ],\n  \"must_preserve\": [\n    \"外部相机的整体几何轮廓（必须保留顶部两个圆润突起）\",\n    \"内部C形环状结构的拓扑关系（开口方向、大致比例）\",\n    \"C形环与右上角菱形的相对位置关系\",\n    \"图标整体的中心对称布局\"\n  ],\n  \"can_restyle\": [\n    \"C形环的具体材质（如从3D玻璃质感改为扁平、线条或手绘风格）\",\n    \"渐变色系（可调整为符合新主题的色系，但需保持多彩或高光感）\",\n    \"右上角菱形的具体形状（可微调为圆形或星形，但需保持在同一位置）\",\n    \"背景的粉色饱和度及光影效果\",\n    \"图标的立体感程度（拟物或扁平）\"\n  ],\n  \"must_not_replace_with\": [\n    \"通用的真实相机照片\",\n    \"单纯的字母'B'或文字',\n    \"无关的抽象几何图形（如三角形、五角星）\",\n    \"动物、人物或表情包形象\",\n    \"纯文字Logo\"\n  ],\n  \"color_preservation\": \"背景必须保留粉色系（Pink/Magenta）作为品牌识别色；内部C形环建议保留彩虹色或多色渐变特征以体现'美颜/滤镜'属性，若主题限制严格，至少保留高明度的亮色点缀。\",\n  \"structure_summary\": \"图标由两层结构组成：底层为标准的相机机身剪影（圆角矩形加顶部双弧），上层为核心视觉符号——一个未闭合的彩色C形圆环搭配右上角的小几何体。整体呈现为'容器+核心组件'的组合形式。\",\n  \"risk_notes\": [\n    \"过度简化可能导致C形环被误认为是普通加载图标或字母C，必须结合相机外框使用。\",\n    \"若去除粉色背景，需确保相机轮廓足够显著，否则易与其他工具类App混淆。\",\n    \"右上角的菱形是打破圆环单调性的关键，移除后会降低辨识度。\"\n  ]\n}",
+  "app": "beautycam",
+  "identity_anchors": [
+    "beautycam original silhouette",
+    "primary brand color tendency"
+  ],
+  "must_preserve": [
+    "core logo geometry",
+    "recognizable subject structure",
+    "key brand color tendency"
+  ],
+  "can_restyle": [
+    "outline",
+    "surface material",
+    "shadow",
+    "background finish",
+    "small theme decoration"
+  ],
+  "must_not_replace_with": [
+    "generic plush ball",
+    "unrelated animal",
+    "unrecognizable cute blob"
+  ],
+  "color_preservation": "Preserve or softly adapt the target app's key recognisable colors when they are part of identity.",
+  "warning": "Qwen returned invalid JSON; fallback target identity was used."
+}

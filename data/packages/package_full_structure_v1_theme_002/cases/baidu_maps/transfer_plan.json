@@ -1,0 +1,59 @@
+{
+  "app": "baidu_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象的几何符号（定位针），符合 theme_rules 中 '当 Original 图标本身就是清晰的几何符号...必须保留其主体轮廓' 的条件。因此不需要像游戏图标那样进行语义重构，而是直接对现有的定位针形状进行风格化填充和描边处理。",
+  "preserve": [
+    "红色的倒水滴形/气球状定位针外轮廓",
+    "定位针尖端指向底部的空间关系",
+    "内部 'du' 字母的图形化骨架结构"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗重的黑色/深色手绘风格描边",
+    "主题限定色板：砖红/朱红（主体）、奶黄/米白（内部文字）",
+    "无渐变、无阴影的平面化质感"
+  ],
+  "recompose_allowed": [
+    "将平滑矢量边缘转化为抖动、不规则的手绘边缘",
+    "将标准的 'du' 字体转化为粗犷的涂鸦式笔画或几何块面",
+    "移除原始图标底部的透视地图路网背景",
+    "移除所有高光、环境光遮蔽和立体渲染"
+  ],
+  "restyle": [
+    "主体填充改为高饱和度的砖红色纯色块",
+    "内部文字改为奶黄色或米白色纯色块",
+    "模拟蜡笔或马克笔在粗糙纸面上的涂抹质感",
+    "线条粗细不均，转角处处理为圆润或钝角"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原始的白色圆角矩形底板",
+    "保留底部的蓝色/绿色透视道路背景",
+    "使用细线条或无描边设计",
+    "使用非主题色（如原本的浅蓝、浅绿、纯白文字）",
+    "保留任何立体光影、渐变效果或写实纹理",
+    "改变定位针的基本拓扑结构（如变成圆形或方形）"
+  ],
+  "generation_brief": "A retro hand-drawn doodle style icon of a Baidu Maps location pin. Centered on a pure black background. The pin is a solid brick-red shape with thick, rough, uneven black marker outlines. Inside the pin, the letters 'du' are abstracted into clumsy, thick brush strokes in creamy yellow or off-white. Flat design, no gradients, no shadows, crayon texture, naive art aesthetic.",
+  "color_application": "Map original brand red to theme's 'Brick Red/Vermillion'. Map original white text to theme's 'Creamy Yellow/Off-White'. Background forced to Pure Black (#000000). Remove all other colors (blues, greens from map background).",
+  "stroke_application": "Apply thick, irregular black/dark grey hand-drawn outlines around the pin and internal letter shapes. Edges must appear shaky and manual, not vector-smooth.",
+  "composition_application": "Center the simplified pin icon. Remove the bottom perspective map layer entirely. Ensure the pin occupies 60-70% of the canvas height, floating on the black void.",
+  "identity_application": "Maintain the iconic teardrop/pin silhouette strictly. Abstract the 'du' text into recognizable but stylized graphic strokes that fit the doodle aesthetic, ensuring it remains legible as the brand mark within the pin.",
+  "fidelity_constraints": [
+    "Must use pure black background",
+    "Must have thick, rough hand-drawn outlines",
+    "Colors limited to Brick Red, Cream/Yellow, Black",
+    "No gradients, shadows, or 3D effects",
+    "Flat, matte, crayon-like texture"
+  ],
+  "negative_constraints": [
+    "No realistic map details or road networks",
+    "No white rounded rectangle background",
+    "No smooth vector lines or perfect symmetry",
+    "No glossy, metallic, or glass materials",
+    "No blue or green colors from original map theme"
+  ]
+}

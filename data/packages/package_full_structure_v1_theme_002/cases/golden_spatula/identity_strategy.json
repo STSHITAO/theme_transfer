@@ -1,0 +1,40 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "戴头盔的企鹅（小小英雄）头部轮廓及手中的金色铲子",
+  "brand_cues_to_preserve": [
+    "企鹅的圆润头部与身体比例",
+    "标志性的银色/金属质感头盔（带有尖顶和护耳）",
+    "右手持有的金色铲子（核心道具）",
+    "企鹅的面部特征（大眼睛、橙色嘴巴）"
+  ],
+  "semantic_cues_to_preserve": [
+    "铲子作为‘金铲铲’的核心语义符号",
+    "头盔代表的战斗/竞技属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 bilibili 和 kuaishou 的案例，当原始图标主体为清晰的物体或角色轮廓时，应保留其物理拓扑结构。金铲铲的企鹅形象具有极高的辨识度，且轮廓清晰（圆头+头盔突起+手持物），适合直接进行风格化转译，而非像 LOL 那样重构为抽象符号。需保留企鹅与铲子的空间位置关系。",
+  "design_rationale": "金铲铲之战的核心识别点在于‘戴头盔的企鹅’这一IP形象以及‘铲子’这一道具。虽然原图是3D渲染，但根据主题规则，需将其转化为2D扁平手绘风格。策略上保留企鹅的主体轮廓和铲子的位置，将复杂的3D光影简化为主题限定的红、蓝、黄三色块面。头盔的金属感通过粗的黑色描边和纯色块（如奶黄或深蓝）来表现，去除写实光泽，强调涂鸦的拙朴感。",
+  "must_preserve": [
+    "企鹅头部的圆形轮廓",
+    "头盔顶部的尖角结构",
+    "铲子的基本形状（长柄+带孔铲头）",
+    "纯黑背景"
+  ],
+  "can_recompose": [
+    "将3D立体光影转化为平涂色块",
+    "将复杂的眼睛细节简化为简单的黑色圆点或几何图形",
+    "将原本丰富的色彩映射为复古三原色（如头盔用深蓝或奶黄，铲子用奶黄）",
+    "边缘处理为不规则的手绘抖动线条"
+  ],
+  "forbid": [
+    "禁止保留原图的3D渲染质感和高光",
+    "禁止使用原图的复杂渐变色背景",
+    "禁止出现除红蓝黄白黑以外的颜色（如原本的紫色、浅蓝色需转换）",
+    "禁止线条过于平滑锐利，必须体现手绘感"
+  ],
+  "generation_direction": "Retro hand-drawn doodle icon on pure black background. A simplified, flat-color penguin wearing a helmet and holding a spatula. Thick, rough marker strokes with uneven edges. Colors limited to brick red, deep blue, and creamy yellow. No gradients, no shadows, no 3D effects. The penguin is a geometric block composition, cute and naive style. Centered composition."
+}

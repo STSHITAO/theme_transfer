@@ -1,0 +1,64 @@
+{
+  "app": "youku",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The Youku logo is a highly abstract geometric symbol where identity relies entirely on the precise spatial relationship between the two capsule shapes. According to the theme rules (similar to Alipay/Douyin), the structural outline must be strictly preserved and extruded into 3D. The original orange/blue color split is discarded in favor of the unified ice material, making the silhouette the sole carrier of identity.",
+  "preserve": [
+    "Diagonal 'greater-than' (> ) skeletal structure formed by two intersecting bars",
+    "Rounded cap geometry of both upper and lower segments",
+    "Specific intersection angle and overlap ratio of the two bars",
+    "Continuous volumetric flow (merged into a single ice block, not separate parts)",
+    "Negative space forming the sharp inner angle"
+  ],
+  "must_preserve": [
+    "The exact diagonal angle of the two intersecting bars",
+    "The rounded cap geometry of both segments",
+    "The continuous flow of the shape (no gaps between the merged volume)"
+  ],
+  "recompose_allowed": [
+    "Internal color separation (unified into single ice material)",
+    "Surface texture details (bubbles, frost patterns, condensation droplets)",
+    "Edge highlights, refraction properties, and subsurface scattering effects",
+    "Addition of subtle base/puddle for grounding"
+  ],
+  "restyle": [
+    "Convert flat 2D vector to 3D volumetric ice sculpture with significant thickness",
+    "Replace original Blue/Orange brand colors with uniform Pale Cyan/Ice Blue translucent material",
+    "Smooth all edges to mimic eroded/polished ice contours",
+    "Apply glossy wet surface finish with specular highlights"
+  ],
+  "decorate": [
+    "Embed stylized snowflake patterns within the ice volume",
+    "Scatter micro-texture condensation droplets on the surface",
+    "Include internal air bubbles or ice fractures for material realism",
+    "Add subtle contact shadow and melting water trace at the base"
+  ],
+  "forbid": [
+    "Retaining original Orange or bright Blue brand colors",
+    "Separating the two shapes into distinct floating objects",
+    "Changing the aspect ratio, thickness, or angle of the capsules",
+    "Using opaque plastic, metal, or stone materials",
+    "Adding text ('Youku', '优酷') or unrelated semantic objects (eyes, animals)",
+    "Complex background scenes (must be clean white/light grey)"
+  ],
+  "generation_brief": "3D icon of Youku logo: two intersecting rounded rectangular bars forming a diagonal play-button shape, rendered as a single block of translucent pale cyan ice. Material features internal bubbles, snowflake textures, and surface condensation droplets. Glossy finish with strong specular highlights. Centered on pure white background with soft contact shadow and small water puddle at base. No orange color, no text, no complex background.",
+  "color_application": "Discard original Blue/Orange palette. Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue tones. Use translucency and light refraction to define form instead of color contrast.",
+  "stroke_application": "Eliminate 2D strokes. Define edges through 3D volume, beveled ice contours, and light refraction/highlights. Ensure smooth, rounded transitions typical of melted/polished ice.",
+  "composition_application": "Center the 3D ice sculpture occupying 60-70% of canvas. Maintain the diagonal orientation of the original logo. Add a virtual ground plane with contact shadow to anchor the object in 3D space.",
+  "identity_application": "Preserve the unique geometric intersection and diagonal angle of the two capsule shapes as the sole identity carrier. Rely on silhouette accuracy rather than color or internal details for recognition.",
+  "fidelity_constraints": [
+    "Must use unified ice-blue semi-transparent material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must exhibit 3D volume with subsurface scattering and refraction",
+    "Background must be clean white/light grey"
+  ],
+  "negative_constraints": [
+    "No flat 2D vector appearance",
+    "No original brand colors (Orange/Blue)",
+    "No opaque materials (plastic/metal)",
+    "No complex backgrounds or text",
+    "No distortion of the core 'play button' geometric structure"
+  ]
+}

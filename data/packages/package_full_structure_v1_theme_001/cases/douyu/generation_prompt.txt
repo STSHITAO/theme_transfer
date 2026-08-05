@@ -1,0 +1,215 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D冰雕拟物风格（Ice Sculpture Skeuomorphism）。核心特征是将原本平面的2D图标符号转化为具有体积感、通透感和寒冷质感的3D冰块实体。整体视觉呈现出清透的淡蓝色调，强调材质的折射率、内部的气泡/雪花杂质以及表面的融化水渍细节，营造出一种精致、清凉且高完成度的微缩景观效果。
+
+[Reference Raw To Style Transform]
+从扁平化矢量图形向高保真3D材质渲染转变。原始图标的轮廓被提取并拉伸为具有厚度的立体模型，表面材质统一替换为半透明的冰晶质感。原有的品牌色（如红、绿、黑）被完全摒弃，统一转化为冰的淡青色或透明色，仅保留形状作为识别依据。
+
+[Color Transform Rule]
+强制去色。无论 Original 是彩色、渐变还是黑白，Style_ref 均转换为统一的浅冰蓝色调。仅保留极低饱和度的环境光遮蔽（AO）阴影来表现结构。原品牌识别色（如抖音的红蓝、火山版的橙红）被移除或压缩为极小的装饰性图标。
+
+[Background Transform Rule]
+从 Original 的纯色块或复杂渐变背景，转变为纯白/留白背景。去除所有背景中的图形元素，将视觉焦点完全集中在前景的冰块主体上。
+
+[Stroke Transform Rule]
+消除所有二维描边。将线条转化为三维实体的边缘。Original 中的负空间（镂空部分）在 Style_ref 中依然保持通透，但边缘变得厚实且有倒角。
+
+[Composition Transform Rule]
+从平面填充式构图转变为立体物件式构图。主体不再填满整个画布，而是作为一个独立的 3D 物体悬浮或放置在白色空间中，四周留有呼吸感。
+
+[Subject Scale Rule]
+主体宽度约占画布宽度的 50%-60%。高度根据物体比例自然延伸，但整体控制在画布垂直方向的 70% 以内，底部预留空间给投影和水渍。
+
+[Detail Complexity Rule]
+几何结构简化，材质细节丰富。忽略 Original 中的细微线条装饰，专注于表现冰块的通透感、内部的气泡纹理和表面的光泽感。
+
+[Theme Fidelity Constraints]
+[
+  "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+  "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+  "背景必须保持洁白干净，底部必须有物理接触阴影。",
+  "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+  "禁止保留原始的大面积品牌背景色。",
+  "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里），应保持图标本身的几何形态。",
+  "禁止使用暖色调作为主体主色。"
+]
+
+[Theme Board]
+{
+  "palette": "统一使用高透光的浅冰蓝色（Cyan/Ice Blue）作为主体主色，完全覆盖原品牌色。背景统一为纯白或极淡的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无描边。依靠材质本身的体积感、折射光和阴影来界定轮廓。边缘处理圆润光滑，模拟冰块融化或打磨后的质感。",
+  "material": "核心材质为“半透明冰块/凝胶”。具有强烈的次表面散射（SSS）效果，内部包含随机分布的微小气泡、裂纹或雪花纹理。表面呈现湿润的高光反射。",
+  "background": "纯白极简背景。主体底部通常有接触阴影和少量融化的水渍/碎冰，增强物体放置在平面上的真实物理感。",
+  "composition": "单体居中构图。主体占据画布约 60%-70% 的空间。对于原本扁平的图形，通过增加厚度使其立体化；对于复杂图形，简化为剪影后立体化。",
+  "motif_rules": "必须在主体内部或表面嵌入“雪花”、“冰晶”或“气泡”作为主题装饰纹样。允许保留极小比例的原品牌标志性元素（如火焰、特定颜色圆点）作为点缀，但必须缩小并置于次要位置，形成“冰与火”或“冷与暖”的对比。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: douyu
+
+[transfer_plan]
+{
+  "app": "douyu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题（如Bilibili小电视、Douyin音符）均严格保留了原图标的几何拓扑结构，仅进行材质替换。斗鱼的鲨鱼形象具有极高的辨识度，其轮廓本身就是核心资产。因此，必须将原本的2D矢量鲨鱼直接转化为3D冰雕实体，严禁改变其头部比例或重构为其他鱼类/场景，以确保在统一冰蓝风格下仍能瞬间被识别。",
+  "preserve": [
+    "鲨鱼头部的整体外轮廓（头顶弧线、背鳍突起、下颚线条）",
+    "嘴部张开的角度及内部锯齿状牙齿的排列形态",
+    "眼睛在头部的相对位置及圆形轮廓",
+    "下处咬合物的基本形状（保留火箭/飞镖的几何特征）"
+  ],
+  "must_preserve": [
+    "鲨鱼侧脸的整体外轮廓",
+    "嘴部张开的角度及内部锯齿状牙齿的排列形态",
+    "眼睛在头部的相对位置及圆形轮廓",
+    "下处咬合物的基本形状（保留火箭/飞镖的几何特征，但材质改为冰）"
+  ],
+  "recompose_allowed": [
+    "原有的黑色描边（转化为冰块的边缘厚度和折射高光）",
+    "原有的橙色、白色填充色（统一替换为浅冰蓝色半透明材质）",
+    "火箭/飞镖的具体细节纹理（简化为冰块内部的气泡或裂纹）",
+    "背景的橙色渐变（移除，替换为纯白背景）"
+  ],
+  "restyle": [
+    "将扁平矢量图形转化为具有体积感的3D冰雕实体",
+    "应用次表面散射（SSS）效果模拟半透明冰晶质感",
+    "去除所有品牌原色（橙/黑/白），统一为Cyan-Ice Blue色调",
+    "边缘进行倒角处理以捕捉高光，模拟冰块融化感"
+  ],
+  "decorate": [
+    "在冰块内部嵌入随机分布的微小气泡和雪花纹理",
+    "在主体底部添加融化的水渍、小水洼或碎冰屑",
+    "添加柔和的接触阴影和光线折射形成的焦散光斑"
+  ],
+  "forbid": [
+    "禁止生成不透明的蓝色塑料或实心色块",
+    "禁止改变鲨鱼的朝向或头部比例",
+    "禁止去除嘴里的物体导致变成普通张嘴鲨鱼",
+    "禁止保留原本的橙色或黑色作为主色调",
+    "禁止添加复杂的海洋背景或水泡场景",
+    "禁止使用二维描边界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of Douyu shark logo, translucent cyan-blue ice material, shark head biting a rocket/dart, exact silhouette preservation including eye and jagged teeth, internal air bubbles and snowflake textures, glossy wet surface, caustic lighting, melting water puddle at base, pure white background, centered composition, octane render style.",
+  "color_application": "强制去色。将原Logo的橙色背景和黑白主体完全替换为主题定义的Cyan-Ice Blue（青冰蓝）和Translucent White（半透明白）。仅通过深蔚蓝（Deep Azure）表现阴影厚度，严禁出现任何暖色调或高饱和度品牌色。",
+  "stroke_application": "消除所有二维黑色描边。将原Logo的线条轮廓转化为3D实体的物理边缘，通过冰块的厚度、折射率差异和菲涅尔反射高光来界定形状。边缘需圆润光滑，模拟冰块打磨后的质感。",
+  "composition_application": "从平面填充式构图转变为立体物件式居中构图。主体占据画布约60%-70%空间，四周留白。确保鲨鱼与口中咬合物作为一个整体悬浮或立于白色空间中，底部预留空间给投影和水渍。",
+  "identity_application": "严格保留鲨鱼侧脸剪影、圆眼位置、锯齿牙齿以及'咬住火箭'的动态结构。将这些几何特征直接映射为冰雕实体，不进行语义替换或形态重构，仅通过材质的通透感和内部纹理（气泡/雪花）来体现主题化，确保用户能通过剪影瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍",
+    "严禁直接使用原图的高饱和度品牌色（橙色）作为主体颜色"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止生成实心、不透明的物体（如磨砂玻璃或石头）",
+    "禁止破坏身份：禁止改变鲨鱼头部比例、去除牙齿或嘴中物体、改变朝向",
+    "禁止背景污染：禁止保留原始橙色背景或添加复杂场景元素",
+    "禁止风格错误：禁止使用二维描边、扁平化设计或暖色调主色"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: 强制去色。将原Logo的橙色背景和黑白主体完全替换为主题定义的Cyan-Ice Blue（青冰蓝）和Translucent White（半透明白）。仅通过深蔚蓝（Deep Azure）表现阴影厚度，严禁出现任何暖色调或高饱和度品牌色。
+Stroke application: 消除所有二维黑色描边。将原Logo的线条轮廓转化为3D实体的物理边缘，通过冰块的厚度、折射率差异和菲涅尔反射高光来界定形状。边缘需圆润光滑，模拟冰块打磨后的质感。
+Composition application: 从平面填充式构图转变为立体物件式居中构图。主体占据画布约60%-70%空间，四周留白。确保鲨鱼与口中咬合物作为一个整体悬浮或立于白色空间中，底部预留空间给投影和水渍。
+Identity application: 严格保留鲨鱼侧脸剪影、圆眼位置、锯齿牙齿以及'咬住火箭'的动态结构。将这些几何特征直接映射为冰雕实体，不进行语义替换或形态重构，仅通过材质的通透感和内部纹理（气泡/雪花）来体现主题化，确保用户能通过剪影瞬间识别。
+
+Fidelity constraints:
+[
+  "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属",
+  "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征",
+  "背景必须保持洁白干净，底部必须有物理接触阴影和水渍",
+  "严禁直接使用原图的高饱和度品牌色（橙色）作为主体颜色"
+]
+
+Negative constraints:
+[
+  "禁止漂移到新主题：禁止生成实心、不透明的物体（如磨砂玻璃或石头）",
+  "禁止破坏身份：禁止改变鲨鱼头部比例、去除牙齿或嘴中物体、改变朝向",
+  "禁止背景污染：禁止保留原始橙色背景或添加复杂场景元素",
+  "禁止风格错误：禁止使用二维描边、扁平化设计或暖色调主色"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching douyu's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like douyu as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

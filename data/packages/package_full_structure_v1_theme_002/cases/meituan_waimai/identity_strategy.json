@@ -1,0 +1,40 @@
+{
+  "app": "meituan_waimai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "袋鼠头部轮廓及标志性的大耳朵形状",
+  "brand_cues_to_preserve": [
+    "袋鼠头部的侧面剪影",
+    "向前伸展的长耳朵形态",
+    "品牌主色调（映射为主题奶黄色）"
+  ],
+  "semantic_cues_to_preserve": [
+    "外卖配送员/吉祥物的拟人化特征",
+    "面部朝向右侧的动态感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "美团外卖的袋鼠形象具有极高的国民辨识度，其核心识别点在于独特的长耳轮廓和头部比例。根据 theme_rules，当 Original 为清晰的吉祥物轮廓时，应保留主体拓扑结构。因此，必须保留袋鼠头部的整体外轮廓，仅将原本的3D圆润质感重构为扁平几何色块，并去除手中的奶茶、红包等复杂道具，以符合主题的极简符号化要求。",
+  "design_rationale": "选择 logo_simplify 策略是因为美团袋鼠本身就是成熟的图形符号。为了适配‘复古手绘涂鸦’主题，需要剥离原图中复杂的3D光影、手持道具（奶茶、红包）以及底部的营销文字。将袋鼠简化为一个由粗黑色线条勾勒的黄色几何头像，既保留了品牌身份，又完美契合主题要求的‘拙朴感’和‘高对比度’视觉风格。",
+  "must_preserve": [
+    "袋鼠头部的侧面剪影轮廓",
+    "标志性的长耳朵形状与位置",
+    "纯黑背景 (#000000)",
+    "粗犷不规则的手绘黑色描边"
+  ],
+  "can_recompose": [
+    "将3D立体渲染转化为扁平色块填充",
+    "将原本丰富的黄色调整为符合主题的奶黄/米白色",
+    "简化面部五官为简单的几何点或短线",
+    "移除所有手持物品（奶茶、红包）及底部文字"
+  ],
+  "forbid": [
+    "禁止保留原图的3D光泽、渐变和高光",
+    "禁止出现奶茶、红包等复杂道具",
+    "禁止使用细线条或平滑的矢量边缘",
+    "禁止使用非主题色板颜色（如橙色底、粉色红包）",
+    "禁止保留‘秋天第1杯’等营销文字"
+  ],
+  "generation_direction": "Generate a simplified, flat geometric icon of the Meituan Kangaroo head on a pure black background. Use thick, rough hand-drawn black outlines with a naive doodle style. Fill the kangaroo shape with solid creamy yellow (no gradients). Remove all held items (milk tea, red packets) and text. Focus solely on the iconic silhouette of the head and long ears. High contrast, matte texture, retro marker pen aesthetic."
+}

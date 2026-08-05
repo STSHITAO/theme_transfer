@@ -1,0 +1,40 @@
+{
+  "app": "keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的 'K' 字母轮廓，其形态隐含了奔跑/运动的人体动态线条。",
+  "brand_cues_to_preserve": [
+    "K 字母的整体骨架结构",
+    "右上角的四角星装饰符号",
+    "笔画的粗细比例关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "向上的动势（代表活力与提升）",
+    "简洁有力的几何感（代表自律与专注）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Keep 的原始图标已经是高度抽象的几何符号（字母 K），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Douyin 的案例，对于此类强符号化的 Logo，应保留其主体拓扑结构，仅对填充材质、描边风格和色彩进行主题化重构，无需进行语义重组。",
+  "design_rationale": "Keep 的 'K' 字标具有极高的国民辨识度，且其本身就是一个优秀的几何图形。策略上选择直接保留 'K' 的主体轮廓以维持品牌识别（Strict Identity）。设计上严格执行主题规则：将原本的白色/紫色渐变替换为主题限定的高饱和度色块（如砖红或深蓝），添加粗犷的黑色手绘描边，模拟马克笔涂鸦质感。右上角的星星作为点睛之笔保留，但需改为奶黄色或米白色平涂，去除光晕效果。背景统一为纯黑，使主体像贴纸一样凸显。",
+  "must_preserve": [
+    "K 字母的基本笔画走向和连接点位置",
+    "右上角星星的存在及其相对位置",
+    "纯黑背景 (#000000)",
+    "粗黑色的不规则手绘描边"
+  ],
+  "can_recompose": [
+    "颜色映射（原白/紫 -> 主题红/蓝/黄）",
+    "边缘处理（平滑矢量 -> 抖动粗糙线条）",
+    "内部填充（渐变/光泽 -> 哑光平涂色块）",
+    "星星的具体形状（可简化为更几何化的四角星）"
+  ],
+  "forbid": [
+    "保留原始的紫色调或渐变色",
+    "使用细线条或无描边设计",
+    "添加任何立体阴影或高光渲染",
+    "改变 K 字母的基础骨架导致不可识别",
+    "背景出现除纯黑以外的颜色或纹理"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of the letter 'K' on a pure black background. The 'K' should be filled with solid high-saturation brick red or deep blue, featuring thick, rough, uneven black marker-style outlines. A small four-pointed star in creamy yellow sits at the top right. Flat color, no gradients, no shadows, naive art style, centered composition."
+}

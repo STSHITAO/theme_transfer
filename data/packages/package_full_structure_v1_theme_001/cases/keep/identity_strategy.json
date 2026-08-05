@@ -1,0 +1,37 @@
+{
+  "app": "keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "独特的 'K' 字形几何结构，特别是右侧笔画的断开设计与右上角的四角星符号。",
+  "brand_cues_to_preserve": [
+    "字母 'K' 的整体骨架与笔画比例",
+    "右侧斜杠的悬浮/断开特征",
+    "右上角的四角星（Sparkle）装饰元素"
+  ],
+  "semantic_cues_to_preserve": [
+    "向上的动势（通过 K 字右侧笔画体现）",
+    "星光/灵感（通过四角星体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Douyin 等案例均严格保留了原图标的核心剪影。Keep 的 'K' 字具有极高的品牌辨识度，且几何结构简单清晰，非常适合直接转化为 3D 冰雕实体。不需要进行语义重组，只需将平面图形立体化并赋予冰材质即可。",
+  "design_rationale": "Keep 图标本身由简洁的几何线条构成，符合主题“几何守恒，材质重构”的核心原则。选择 logo_preserve 策略，将原本扁平的白色 'K' 和紫色星星转化为厚实的半透明冰块。为了符合主题统一性，必须去除原本的深紫背景和高饱和紫色星星，将其统一为浅冰蓝色调，但保留星星的形状作为内部纹理或表面浮雕，以维持“运动活力”的隐喻。",
+  "must_preserve": [
+    "'K' 字的准确拓扑结构（左侧竖线，右侧折线与悬浮短线）",
+    "右上角四角星的相对位置和形状",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "将原本平面的笔画转化为具有倒角和厚度的 3D 实体",
+    "将紫色的星星转化为透明的冰晶质感或内部的气泡聚集体",
+    "调整笔画末端的圆润度以模拟冰块融化感"
+  ],
+  "forbid": [
+    "禁止保留原本的深紫色背景",
+    "禁止使用高饱和度的紫色作为主体颜色",
+    "禁止将 'K' 字变形为其他字母或抽象图形",
+    "禁止生成不透明的塑料质感"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the letter 'K' in translucent cyan-blue. The 'K' should have thick, rounded edges like frozen water. Include a small, four-pointed star shape floating near the top right, also made of ice or embedded as a bubble cluster. Pure white background with realistic contact shadows and melting water puddles at the base. No purple colors, no flat design."
+}

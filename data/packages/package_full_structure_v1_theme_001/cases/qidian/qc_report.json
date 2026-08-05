@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "严重身份识别错误：生成的汉字是“支”（Alipay），而非目标App“起点”。完全丢失了目标App的核心文字线索，属于严重的生成幻觉或素材错配。",
+      "recommendation": "不推荐。虽然材质和风格完美符合主题要求，但主体内容完全错误，无法代表目标App。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "严重身份识别错误：生成的汉字是“支”（Alipay），而非目标App“起点”。与candidate_01相同，未能保留‘起点’二字的骨架与拓扑结构。",
+      "recommendation": "不推荐。主体错误，无法使用。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\qidian\\candidates\\candidate_01.png",
+  "warning": "所有候选图均生成了错误的汉字主体（支付宝的'支'），未遵循transfer_plan中关于保留'起点'二字结构的严格约束。建议检查生成模型的ControlNet条件或Prompt中的文字描述，重新生成。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

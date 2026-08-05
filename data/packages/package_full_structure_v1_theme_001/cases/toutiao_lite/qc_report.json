@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 30,
+      "style_match_score": 30,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 10,
+      "background_score": 80,
+      "composition_score": 70,
+      "artifact_score": 90,
+      "overall_score": 40,
+      "failure_reason": "严重违反颜色约束（保留了红色背景），未执行3D体积化重构（仍为平面贴图感），不符合Ice主题风格。",
+      "recommendation": "不推荐。虽然识别度极高，但完全未遵循生成计划中的'移除红色背景'和'3D冰雕质感'要求，属于风格迁移失败。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 75,
+      "failure_reason": "违反了'禁止保留原始红色像素'的负向约束，文字主体未完全转化为冰材质（仍为实心白字）。",
+      "recommendation": "相对推荐。虽然违反了颜色禁令且文字材质处理不够彻底（应为全冰块而非白字嵌冰），但其整体构图、3D冰框质感和纯净背景最接近参考图风格，且核心文字轮廓保留完整，识别度良好。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\toutiao_lite\\candidates\\candidate_02.png",
+  "warning": "两个候选图均未能完美执行Transfer Plan。Candidate 01 几乎未做风格化处理；Candidate 02 虽然风格较好但错误保留了品牌红色。理想结果应为纯淡青色/冰蓝色的“头条”立体字，无红色背景。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

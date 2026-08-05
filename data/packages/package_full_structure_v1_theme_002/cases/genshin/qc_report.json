@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 30,
+      "failure_reason": "严重识别错误。候选图直接复制了参考图 honor_of_kings_style_ref 的几何结构（红蓝回旋镖+中间阴阳鱼），仅修改了颜色并添加了一个星星。这完全丢失了目标 App (Genshin/Paimon) 的特征（白色头部、蓝色披风、四角星发饰），变成了王者荣耀图标的换色版。",
+      "recommendation": "不推荐。属于严重的模型幻觉或参考图过拟合，未能执行针对 Genshin 的重构策略。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 semantic_recompose 策略。准确提取了派蒙的核心视觉锚点：奶白色的圆润头部块面、下方的深蓝色披风块面、以及标志性的四角星发饰。风格上完全符合 retro hand-drawn doodle 的要求，使用了粗犷抖动的黑色马克笔描边和哑光平涂质感，且严格遵守了纯黑背景和禁止面部细节的约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\genshin\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 90,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 30,
+      "failure_reason": "严重结构错误：完全丢失了Mi Home的盾牌/MJ轮廓，错误地生成了类似Honor of Kings的旋转/太极几何结构。虽然风格匹配度高，但无法识别为目标App，属于严重的过度重构（Over-recompose）。",
+      "recommendation": "不推荐。虽然画风符合主题，但主体形状完全错误，未能保留必须存在的盾牌和MJ拓扑结构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了Transfer Plan：保留了严格的盾牌外轮廓、猫耳特征和内部MJ折线结构；正确应用了复古手绘描边和蜡笔质感；颜色准确映射为奶黄配砖红，且背景为纯黑。既符合主题风格又保持了极高的品牌识别度。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\mi_home\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

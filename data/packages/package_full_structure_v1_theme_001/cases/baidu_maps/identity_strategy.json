@@ -1,0 +1,38 @@
+{
+  "app": "baidu_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "红色水滴状定位销（Location Pin）的整体轮廓及内部 'du' 字母的负空间形态。",
+  "brand_cues_to_preserve": [
+    "水滴/定位销的外轮廓剪影",
+    "内部 'du' 字母的字形结构",
+    "底部尖端的指向性特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "地图定位点的通用语义",
+    "导航与目的地的指向感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（'支'字）、豆瓣（'豆'字）和抖音（音符）的案例，均是将原图标的核心平面符号直接转化为具有厚度的3D冰体。百度地图的定位销具有极高的国民认知度，且几何结构简单清晰，完全符合'几何守恒，材质重构'的原则。必须保留其标志性的水滴外形和内部镂空字母，仅做材质上的冰雕化处理，不可改变形状或重组元素。",
+  "design_rationale": "选择 logo_preserve 策略是因为百度地图的图标本身就是极强的功能符号（定位点）。在冰雪主题下，将其处理为一块晶莹剔透的蓝色冰制定位销，既完美契合主题的'寒冷、通透'质感，又通过材质的物理属性（厚度、折射）赋予了原本扁平的符号以体积感。底部的尖端可以设计为接触冰面，产生自然的融水效果，增强落地感。",
+  "must_preserve": [
+    "定位销（水滴形）的外部轮廓曲线",
+    "内部 'd' 和 'u' 两个字母的相对位置和字形",
+    "整体垂直居中的构图比例"
+  ],
+  "can_recompose": [
+    "原图中的红色填充（必须转为冰蓝/半透明）",
+    "底部的彩色地图背景（必须移除，改为白色背景）",
+    "字母的边缘（需增加倒角和厚度，模拟冰块切割感）"
+  ],
+  "forbid": [
+    "禁止保留原本的红色品牌色",
+    "禁止生成不透明的实心蓝色塑料块",
+    "禁止改变 'du' 的字体形状或将其替换为其他文字",
+    "禁止保留底部的地图路网背景",
+    "禁止丢失底部的接触阴影和水渍细节"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Baidu Maps location pin icon. The shape must be the classic teardrop/pin silhouette with the letters 'du' cut out or embedded inside. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. Place on a pure white background with a realistic melting water puddle and contact shadow at the bottom tip. No red colors, no map background."
+}

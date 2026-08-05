@@ -1,0 +1,60 @@
+{
+  "app": "zepp_life",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Zepp Life 的图标是一个纯粹的几何符号（双圆重叠），没有复杂的背景装饰或易冲突的元素。根据 theme_design_analysis 中关于 douban 和 alipay 的处理逻辑，此类高识别度的几何图形应完整保留其轮廓和空间关系，仅进行材质维度的转换（2D转3D冰雕）。不需要进行语义重组。",
+  "preserve": [
+    "双圆相交的剪影轮廓",
+    "小圆在大圆右上方约1-2点钟方向的相对位置",
+    "整体图形的圆润无棱角特征",
+    "大圆与小圆的体积比例关系"
+  ],
+  "must_preserve": [
+    "双圆相交的构图比例",
+    "小圆位于大圆右上方的空间位置",
+    "圆形边缘的光滑度"
+  ],
+  "recompose_allowed": [
+    "重叠区域的视觉效果（由颜色混合改为物理厚度的堆叠或融合）",
+    "表面的纹理细节（增加雪花、气泡以打破纯几何的单调）",
+    "底部的支撑结构（增加薄冰底座）"
+  ],
+  "restyle": [
+    "将原始橙/黄/红暖色调强制转换为统一的 Pale Cyan/Ice Blue 冰质色调",
+    "将平面矢量图形转化为具有 Z 轴厚度的 3D 实体",
+    "利用次表面散射（SSS）和内部折射替代原有的颜色叠加效果"
+  ],
+  "decorate": [
+    "在冰体内部嵌入微小的气泡和雪花结晶纹理",
+    "在表面添加冷凝水珠细节",
+    "在底部添加接触阴影和微量融化水迹"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色、红色或黄色",
+    "禁止将两个圆分离或改变相对大小比例",
+    "禁止使用不透明的实心材质",
+    "禁止添加任何非冰质的装饰元素（如真实的叶子、水滴等）",
+    "禁止使用描边线条定义轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of two intersecting spheres: a larger sphere at bottom-left and a smaller sphere at top-right. Material is translucent pale cyan ice with internal bubbles and snowflake textures. The intersection area shows physical thickness and light refraction. Glossy wet surface with condensation droplets. Clean white background, soft contact shadow and melting water trace at base. No original colors.",
+  "color_application": "Discard original orange/yellow/red palette. Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use brightness variations and subsurface scattering to define volume instead of color gradients.",
+  "stroke_application": "Remove all 2D strokes. Define edges through 3D volume, specular highlights, and light refraction. Ensure edges are smooth, rounded, and beveled like worn ice.",
+  "composition_application": "Center the dual-sphere structure. Maintain the specific spatial relationship (small circle top-right of large circle). Add slight extrusion for 3D depth. Place on a virtual ground plane with a subtle ice base/shadow.",
+  "identity_application": "Preserve the exact geometric silhouette of the overlapping circles. Translate the 'lens/fusion' effect of the original overlap into physical ice thickness and internal refraction patterns, maintaining the brand's structural logic without using brand colors.",
+  "fidelity_constraints": [
+    "Must use unified pale cyan/translucent ice material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must exhibit 3D volumetric presence with subsurface scattering",
+    "Background must be clean white/high-key"
+  ],
+  "negative_constraints": [
+    "No flat vector styles",
+    "No original brand colors (orange, red, yellow)",
+    "No opaque plastic or metal materials",
+    "No complex scene backgrounds",
+    "No separation of the two circles",
+    "No sharp jagged lines"
+  ]
+}

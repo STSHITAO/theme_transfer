@@ -1,0 +1,28 @@
+{
+  "theme_style_analysis": "复古手绘涂鸦风格（Retro Hand-drawn Doodle）。该主题将原本精细、拟物或扁平化的现代图标，转化为具有粗犷笔触、不规则边缘和手工质感的简笔画。整体呈现出一种类似儿童蜡笔画或马克笔涂鸦的视觉效果，强调趣味性、拙朴感和非标准化的几何形态。",
+  "common_original_to_style_transform": "从‘精确/写实’向‘抽象/符号化’转变。去除原有的复杂光影、渐变和精细纹理，将主体概括为简单的色块组合。线条由平滑的矢量曲线变为带有抖动感的徒手线条。色彩由丰富细腻过渡到limited palette（受限色板）的高饱和度平涂。",
+  "common_background_transform": "统一使用纯黑色（#000000）作为底板背景。这种高对比度的黑底不仅突出了前景的鲜艳色彩，还模拟了黑板画或夜间涂鸦的视觉氛围。背景中无额外装饰元素，保持极简以衬托主体的拙朴感。",
+  "common_foreground_transform": "主体被极度简化和夸张。例如，复杂的摄像机被简化为几个几何圆块的堆叠；人物肖像被抽象为标志性的轮廓剪影或符号（如字母L）。所有形状都显得圆润、饱满，且边缘不规整，仿佛是用粗头画笔快速涂抹而成。",
+  "color_palette": [
+    "纯黑背景 (#000000)",
+    "高饱和度原色：深红/砖红",
+    "深宝蓝/靛蓝",
+    "暖黄/米黄/橙色",
+    "避免使用渐变色，坚持纯色块填充"
+  ],
+  "line_style": "无明显的独立描边，或者描边与色块融为一体。边缘呈现‘毛糙’感，不具备工业设计的锐利度。线条粗细不均，带有明显的手绘运笔痕迹，转角处通常处理为圆角或不规则的钝角。",
+  "texture_material": "模拟干性绘画介质（如蜡笔、粉笔或记号笔）在粗糙表面上的质感。色块内部可能存在轻微的涂抹不均或颗粒感，拒绝光滑的塑料感或金属光泽。",
+  "lighting_shadow": "完全摒弃立体光影渲染（无高光、无环境光遮蔽、无投影）。采用完全的平面化（Flat Design）处理，通过色块的并置来表现结构，而非通过明暗变化。",
+  "icon_composition_rules": "主体居中，占据画面约60%-70%的面积。构图松散自由，不追求严格的对称或网格对齐。元素之间允许重叠，通过颜色的区分来界定层级，而非通过遮挡关系产生的阴影。",
+  "target_preservation": "必须保留目标App最具辨识度的核心轮廓或符号（如特定的字母形状、标志性物体的剪影）。即使进行了极度的抽象化，用户仍能通过形状联想识别出原始App的身份。严禁改变主体的基本拓扑结构。",
+  "generation_prompt": "A retro hand-drawn doodle style icon, thick marker pen strokes, crayon texture, rough uneven edges, naive art style. Solid flat colors without gradients or shadows. High saturation primary colors (red, blue, yellow) on a pure black background. Simplified geometric shapes, clumsy and cute aesthetic, minimalist composition, centered subject.",
+  "negative_prompt": "realistic, photorealistic, 3d render, glossy, gradient, shadow, lighting effects, clean vector lines, perfect symmetry, complex details, text, watermark, photo, white background, neon glow.",
+  "qc_focus": "检查是否保留了纯黑背景；检查主体是否具备明显的手绘/蜡笔质感而非平滑矢量；检查颜色是否为高饱和度的红蓝黄组合；检查是否去除了所有立体光影效果；确认主体轮廓是否仍可识别为目标App。",
+  "used_reference_examples": [
+    "bilibili",
+    "douyin",
+    "honor_of_kings",
+    "kuaishou",
+    "lol_mobile"
+  ]
+}

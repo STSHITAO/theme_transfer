@@ -1,0 +1,62 @@
+{
+  "app": "dewu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 Bilibili 案例，当 Original 为文字 Logo 时，应保留文字的拓扑结构和空间布局，将其视为几何图形处理。得物的核心资产即为这两个汉字，因此必须保留其主体轮廓，仅对笔画进行主题化的粗处理和填色，不可重构为其他物体。",
+  "preserve": [
+    "汉字“得物”的整体字形骨架与左右结构比例",
+    "纯黑背景 (#000000)",
+    "高对比度的视觉层级（前景亮色 vs 背景黑色）"
+  ],
+  "must_preserve": [
+    "“得物”两个汉字的相对位置和大小比例",
+    "纯黑背景",
+    "粗黑色的不规则手绘外轮廓",
+    "红/蓝/黄的高饱和度限定配色"
+  ],
+  "recompose_allowed": [
+    "将标准印刷字体转化为粗犷的马克笔/蜡笔笔触块面",
+    "笔画边缘由平滑矢量变为带有抖动感的徒手线条",
+    "内部细节简化（如点、撇简化为短粗色块）",
+    "移除底部原有的青蓝色波浪块和心形装饰"
+  ],
+  "restyle": [
+    "字体风格：从工业无衬线体转变为复古手绘涂鸦体（Retro Hand-drawn Doodle）",
+    "材质：模拟干性绘画介质（蜡笔/粉笔）在粗糙表面的哑光平涂质感",
+    "色彩映射：原有品牌青蓝色强制替换为主题色板中的深蓝或砖红"
+  ],
+  "decorate": [
+    "在笔画转折处增加圆润钝角或不规则折角",
+    "允许在字块内部嵌入简单的主题装饰元素（如四角星、圆点），但不干扰文字识别"
+  ],
+  "forbid": [
+    "保留原有的青蓝色（Cyan/Turquoise）",
+    "保留底部的“礼物节”文字和心形图案",
+    "使用细线条、平滑矢量线或标准印刷字体",
+    "添加阴影、高光、渐变或立体光影效果",
+    "将文字变形到无法辨认的程度",
+    "使用绿色、紫色等主题色板之外的颜色"
+  ],
+  "generation_brief": "A retro hand-drawn doodle style icon of the Chinese characters '得物' (DeWu) centered on a pure black background. The characters are rendered as thick, clumsy marker-pen strokes with rough, uneven edges and a crayon texture. Use high-saturation flat colors from the theme palette: Brick Red for '得' and Deep Blue for '物' (or alternating red/blue blocks). No gradients, no shadows, no glossy effects. Add a thick, irregular black hand-drawn outline around the character blocks. The style should look like a naive, cute, handmade sticker or graffiti art.",
+  "color_application": "Apply the theme's limited palette: Map the original white text to high-saturation Brick Red and Deep Blue (e.g., split color per character or block). Ensure pure black (#000000) background. Strictly avoid the original brand Cyan color; replace it with theme Blue or Red.",
+  "stroke_application": "Replace original sharp vector edges with thick, irregular, hand-drawn black outlines. Simulate the jitter and thickness variation of a marker pen. Corners should be rounded or blunt, not sharp.",
+  "composition_application": "Center the '得物' text block, occupying 60-70% of the canvas. Remove all bottom decorative elements (waves, hearts). Maintain a loose, free composition without strict grid alignment, but keep the characters legible and balanced.",
+  "identity_application": "Preserve the topological structure and relative proportions of the characters '得' and '物'. Treat the characters as geometric shapes rather than typography. Ensure the 'clumsy' hand-drawn style does not distort the characters beyond recognition.",
+  "fidelity_constraints": [
+    "Must use pure black background",
+    "Must add thick black/ dark hand-drawn style strokes",
+    "Colors must be restricted to Red, Blue, Yellow/White high-saturation combinations",
+    "No gradients, shadows, or realistic textures allowed",
+    "Subject must be flat geometric block combinations"
+  ],
+  "negative_constraints": [
+    "No realistic, photorealistic, or 3D render styles",
+    "No glossy, gradient, shadow, or lighting effects",
+    "No clean vector lines or perfect symmetry",
+    "No original brand Cyan color",
+    "No complex details or text other than '得物'",
+    "No white background or neon glow"
+  ]
+}

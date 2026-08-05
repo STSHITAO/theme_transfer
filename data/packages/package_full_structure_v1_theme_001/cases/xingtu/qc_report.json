@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 98,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了生成计划。保留了正圆形轮廓和核心的垂直分割线（转化为冰体折射），材质替换为半透明冰蓝，细节包含气泡和雪花，背景纯白，完全符合 strict 约束下的结构保留策略。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 70,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 55,
+      "failure_reason": "严重丢失核心识别特征。原图标的核心特征是'球体中央垂直向的光影/纹理分割'，该候选图将其错误生成了三条竖线，导致无法识别为醒图 App，变成了普通的装饰性冰盘。",
+      "recommendation": "不推荐。虽然风格统一，但改变了主体的几何结构（从单条垂直分割变为三条线），违反了 preserve_major_structure 和 must_preserve 的严格约束，导致目标识别度极低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\xingtu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

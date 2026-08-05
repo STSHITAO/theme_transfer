@@ -1,0 +1,63 @@
+{
+  "app": "xigua_video",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the 'douyin' and 'alipay' reference patterns, the core logo geometry must be strictly preserved to maintain brand recognition. The transformation is purely material (flat red vector -> 3D ice sculpture) and dimensional (adding Z-axis thickness), without altering the silhouette or internal proportions.",
+  "preserve": [
+    "The exact outer boundary curve of the organic blob shape",
+    "The central triangular play button cutout (negative space)",
+    "The relative position of the play button within the mass",
+    "The specific lower-left inward concave curve characteristic"
+  ],
+  "must_preserve": [
+    "The exact outer boundary curve of the red shape",
+    "The triangular hole in the center",
+    "3D extrusion/thickness of the object",
+    "Internal bubbles/snowflake textures within the ice volume"
+  ],
+  "recompose_allowed": [
+    "Surface details (add condensation droplets, frost)",
+    "Edge highlights (specular reflections to define the 3D form)",
+    "Base contact shadow and melting water puddle",
+    "Internal refraction and subsurface scattering effects"
+  ],
+  "restyle": [
+    "Convert original flat red vector to translucent pale cyan/ice-blue 3D volume",
+    "Replace solid color with crystalline ice material containing micro-bubbles and snowflakes",
+    "Round off sharp vector edges to mimic eroded/polished ice contours"
+  ],
+  "decorate": [
+    "Embed stylized snowflake patterns within the ice volume",
+    "Add scattered water droplets (condensation) on the surface",
+    "Apply glossy specular highlights on upper edges",
+    "Add subtle ground shadow and small water puddle at base"
+  ],
+  "forbid": [
+    "Retaining the original red/pink/warm colors",
+    "Flattening the icon into a 2D blue shape",
+    "Changing the organic blob shape into a perfect circle, square, or standard geometric shape",
+    "Using opaque plastic, metal, or stone materials",
+    "Depicting realistic watermelon slices or fruit imagery",
+    "Complex background scenes (must be clean white)"
+  ],
+  "generation_brief": "3D icon of Xigua Video logo as a thick translucent ice sculpture. Pale cyan/ice-blue material with internal bubbles and embedded snowflakes. Glossy wet surface with condensation droplets. Strictly preserve the irregular organic blob outline and central triangular play cutout. White background with soft contact shadow and water puddle at base. No red colors, no flat vectors.",
+  "color_application": "Discard original high-saturation red. Apply uniform pale cyan/ice-blue palette. Use lightness variations only to define 3D volume and refraction, not brand identity.",
+  "stroke_application": "Eliminate all 2D strokes. Define edges through 3D volume, light refraction, and specular highlights. Ensure contours are smooth, rounded, and beveled like worn ice.",
+  "composition_application": "Center the 3D ice object occupying 60-70% of canvas. Add Z-axis thickness to the flat logo. Anchor with a subtle ground shadow and water puddle on a pure white background.",
+  "identity_application": "Maintain strict fidelity to the unique asymmetrical organic silhouette and the central negative-space triangle. Identity is conveyed solely through shape preservation, as color is standardized to the theme.",
+  "fidelity_constraints": [
+    "Must use unified ice-blue semi-transparent material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Must present clear 3D volumetric presence with subsurface scattering",
+    "Background must be clean white/high-key"
+  ],
+  "negative_constraints": [
+    "No original brand colors (red/warm tones)",
+    "No opaque materials (plastic/metal/stone)",
+    "No complex or dark backgrounds",
+    "No distortion of the core organic blob silhouette",
+    "No realistic fruit depiction"
+  ]
+}

@@ -1,0 +1,1520 @@
+{
+  "eval_id": "eval_012_package_006_theme_001_fidelity_e2e_itte_v12_final",
+  "evaluation_framework": "ITTE",
+  "itte_version": "v1.2-image-only",
+  "evaluation_scope": "observable_image_transfer_only",
+  "theme_id": "theme_001",
+  "package_id": "package_006_theme_001_fidelity_e2e",
+  "itte_score": 74.38565122063363,
+  "tpqs": 74.38565122063363,
+  "tpqs_primary_score": 74.38565122063363,
+  "style_fidelity_score": 59.63336384647278,
+  "identity_preservation_score": 74.05281930374305,
+  "package_coherence_score": 86.64689041622624,
+  "visual_quality_score": 93.125,
+  "style_fidelity": {
+    "score": 59.63336384647278,
+    "available_weight": 1.0,
+    "components": {
+      "vgg_gram": {
+        "score": 48.67778913836222,
+        "reliable": true,
+        "weight": 0.4
+      },
+      "dists_texture": {
+        "score": 56.57651235820086,
+        "reliable": true,
+        "weight": 0.2
+      },
+      "visual_attributes": {
+        "score": 64.3545671208379,
+        "reliable": true,
+        "weight": 0.25
+      },
+      "dino_motif": {
+        "score": 85.0553595951883,
+        "reliable": true,
+        "weight": 0.15
+      }
+    },
+    "vgg_gram": {
+      "score": 48.67778913836222,
+      "enabled": true,
+      "reliable": true,
+      "used_in_itte_score": true,
+      "D_TR_vgg_gram": 0.31431844830513,
+      "D_GR_vgg_gram": 0.25253140181303024,
+      "D_RR_vgg_gram": 0.18738777296883719,
+      "per_app": [
+        {
+          "index": 0,
+          "score": 81.33576382013291,
+          "generated_to_theme_distance": 0.22357618808746338,
+          "target_to_theme_distance": 0.38127952814102173
+        },
+        {
+          "index": 1,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.29950714111328125,
+          "target_to_theme_distance": 0.2828666567802429
+        },
+        {
+          "index": 2,
+          "score": 80.75852815412364,
+          "generated_to_theme_distance": 0.21741288900375366,
+          "target_to_theme_distance": 0.3434315323829651
+        },
+        {
+          "index": 3,
+          "score": 68.58500393359033,
+          "generated_to_theme_distance": 0.24645203351974487,
+          "target_to_theme_distance": 0.37540072202682495
+        },
+        {
+          "index": 4,
+          "score": 27.602922133187384,
+          "generated_to_theme_distance": 0.21027624607086182,
+          "target_to_theme_distance": 0.21900296211242676
+        },
+        {
+          "index": 5,
+          "score": 0.0,
+          "generated_to_theme_distance": 0.3483940362930298,
+          "target_to_theme_distance": 0.30207234621047974
+        },
+        {
+          "index": 6,
+          "score": 49.277351908045006,
+          "generated_to_theme_distance": 0.21050840616226196,
+          "target_to_theme_distance": 0.2329702377319336
+        },
+        {
+          "index": 7,
+          "score": 59.64121961791696,
+          "generated_to_theme_distance": 0.2641242742538452,
+          "target_to_theme_distance": 0.37752360105514526
+        }
+      ],
+      "layers": [
+        "relu1_2",
+        "relu2_2",
+        "relu3_3",
+        "relu4_3"
+      ],
+      "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.2."
+    },
+    "dists_texture": {
+      "score": 56.57651235820086,
+      "reliable": true,
+      "D_RR": 0.27002185583114624,
+      "D_TR": 0.32210070214101244,
+      "D_GR": 0.29263630722250256
+    },
+    "visual_attributes": {
+      "score": 64.3545671208379,
+      "reliable": true,
+      "reliable_group_count": 5,
+      "groups": {
+        "color": {
+          "score": 59.84422469417768,
+          "reliable": true,
+          "D_RR": 0.05512845516204834,
+          "D_OR": 0.18708673545292445,
+          "D_TR": 0.09818295389413834,
+          "D_GR": 0.04896758496761322,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 100.0
+            },
+            {
+              "app": "damai",
+              "score": 0.0
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": 53.680423323312475
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq",
+              "score": 100.0
+            },
+            {
+              "app": "tieba",
+              "score": 25.073374230108968
+            },
+            {
+              "app": "wps",
+              "score": 0.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            }
+          ]
+        },
+        "background": {
+          "score": 85.94126515779655,
+          "reliable": true,
+          "D_RR": 0.007227957248687744,
+          "D_OR": 0.05363850934164865,
+          "D_TR": 0.028593987226486206,
+          "D_GR": 0.00915519893169403,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 100.0
+            },
+            {
+              "app": "damai",
+              "score": 100.0
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": 100.0
+            },
+            {
+              "app": "meituan",
+              "score": 100.0
+            },
+            {
+              "app": "qq",
+              "score": 0.0
+            },
+            {
+              "app": "tieba",
+              "score": 100.0
+            },
+            {
+              "app": "wps",
+              "score": 100.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 87.53012126237239
+            }
+          ]
+        },
+        "stroke": {
+          "score": 71.21531662231739,
+          "reliable": true,
+          "D_RR": 0.04579120874404907,
+          "D_OR": 0.07939044918332781,
+          "D_TR": 0.08517555892467499,
+          "D_GR": 0.04856513440608978,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 100.0
+            },
+            {
+              "app": "damai",
+              "score": 79.4753086419753
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": 9.529741208087922
+            },
+            {
+              "app": "meituan",
+              "score": 99.0215528902516
+            },
+            {
+              "app": "qq",
+              "score": 81.69593023822429
+            },
+            {
+              "app": "tieba",
+              "score": 0.0
+            },
+            {
+              "app": "wps",
+              "score": 100.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            }
+          ]
+        },
+        "texture_material": {
+          "score": 49.777214884700285,
+          "reliable": true,
+          "D_RR": 0.005558609962463379,
+          "D_OR": 0.027041665145329068,
+          "D_TR": 0.0252825990319252,
+          "D_GR": 0.014224238693714142,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 52.01465201465202
+            },
+            {
+              "app": "damai",
+              "score": 43.42081629795149
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": 100.0
+            },
+            {
+              "app": "meituan",
+              "score": 21.922449597282707
+            },
+            {
+              "app": "qq",
+              "score": 45.44236738515962
+            },
+            {
+              "app": "tieba",
+              "score": 0.0
+            },
+            {
+              "app": "wps",
+              "score": 35.417433782556394
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            }
+          ]
+        },
+        "composition": {
+          "score": null,
+          "reliable": false,
+          "D_RR": 0.010804057121276855,
+          "D_OR": 0.02023965971810477,
+          "D_TR": 0.017112448811531067,
+          "D_GR": 0.012170091271400452,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": null
+            },
+            {
+              "app": "damai",
+              "score": null
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": null
+            },
+            {
+              "app": "meituan",
+              "score": null
+            },
+            {
+              "app": "qq",
+              "score": null
+            },
+            {
+              "app": "tieba",
+              "score": null
+            },
+            {
+              "app": "wps",
+              "score": null
+            },
+            {
+              "app": "xiaohongshu",
+              "score": null
+            }
+          ]
+        },
+        "complexity": {
+          "score": 54.9948142451976,
+          "reliable": true,
+          "D_RR": 0.005544304847717285,
+          "D_OR": 0.020871596676962718,
+          "D_TR": 0.018366992473602295,
+          "D_GR": 0.00964241474866867,
+          "per_app": [
+            {
+              "app": "bilibili",
+              "score": 100.0
+            },
+            {
+              "app": "damai",
+              "score": 47.94900247683527
+            },
+            {
+              "app": "hanglvzongheng",
+              "score": 100.0
+            },
+            {
+              "app": "meituan",
+              "score": 62.0536251052062
+            },
+            {
+              "app": "qq",
+              "score": 29.955886379539393
+            },
+            {
+              "app": "tieba",
+              "score": 0.0
+            },
+            {
+              "app": "wps",
+              "score": 0.0
+            },
+            {
+              "app": "xiaohongshu",
+              "score": 100.0
+            }
+          ]
+        }
+      },
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 90.40293040293041
+        },
+        {
+          "app": "damai",
+          "score": 54.169025483352414
+        },
+        {
+          "app": "hanglvzongheng",
+          "score": 72.6420329062801
+        },
+        {
+          "app": "meituan",
+          "score": 76.5995255185481
+        },
+        {
+          "app": "qq",
+          "score": 51.418836800584664
+        },
+        {
+          "app": "tieba",
+          "score": 25.014674846021794
+        },
+        {
+          "app": "wps",
+          "score": 47.08348675651128
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 97.50602425247448
+        }
+      ]
+    },
+    "dino_motif": {
+      "score": 85.0553595951883,
+      "reliable": true,
+      "prototype_count": 28,
+      "reference_coverage": 0.6998235583305359,
+      "target_coverage": 0.4448620453476906,
+      "generated_coverage": 0.6617204770445824,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 89.65251537029377,
+          "target_coverage": 0.48489513993263245,
+          "generated_coverage": 0.6775838732719421
+        },
+        {
+          "app": "damai",
+          "score": 92.49447073793542,
+          "target_coverage": 0.39902517199516296,
+          "generated_coverage": 0.6772470474243164
+        },
+        {
+          "app": "hanglvzongheng",
+          "score": 70.28047975473848,
+          "target_coverage": 0.4573819637298584,
+          "generated_coverage": 0.6277710795402527
+        },
+        {
+          "app": "meituan",
+          "score": 99.02323576139696,
+          "target_coverage": 0.3870280683040619,
+          "generated_coverage": 0.6967682838439941
+        },
+        {
+          "app": "qq",
+          "score": 65.42531161826109,
+          "target_coverage": 0.5061102509498596,
+          "generated_coverage": 0.632847785949707
+        },
+        {
+          "app": "tieba",
+          "score": 91.08759935219611,
+          "target_coverage": 0.45601460337638855,
+          "generated_coverage": 0.6780943274497986
+        },
+        {
+          "app": "wps",
+          "score": 90.81165546515554,
+          "target_coverage": 0.41799458861351013,
+          "generated_coverage": 0.6739281415939331
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 71.80963521291326,
+          "target_coverage": 0.45044657588005066,
+          "generated_coverage": 0.6295232772827148
+        }
+      ]
+    }
+  },
+  "identity_preservation": {
+    "score": 74.05281930374305,
+    "p10_score": 26.249532511377513,
+    "available_weight": 1.0,
+    "components": {
+      "dino_dense": {
+        "score": 77.82001221663216,
+        "reliable": true,
+        "weight": 0.5
+      },
+      "dists_structure": {
+        "score": 71.09519519196549,
+        "reliable": true,
+        "weight": 0.3
+      },
+      "lpips_content": {
+        "score": 69.0712731891866,
+        "reliable": true,
+        "weight": 0.2
+      }
+    },
+    "dino_dense": {
+      "score": 77.82001221663216,
+      "p10_score": 15.792068413140107,
+      "reliable": true,
+      "positive_reference_similarity": 0.639715388417244,
+      "distractor_similarity": 0.5755812600255013,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "raw_correspondence": 0.7633616775274277,
+          "appearance_similarity": 0.7443832755088806,
+          "spatial_consistency": 0.8202968835830688
+        },
+        {
+          "app": "damai",
+          "score": 100.0,
+          "raw_correspondence": 0.7303005903959274,
+          "appearance_similarity": 0.7550196647644043,
+          "spatial_consistency": 0.6561433672904968
+        },
+        {
+          "app": "hanglvzongheng",
+          "score": 0.0,
+          "raw_correspondence": 0.5139594078063965,
+          "appearance_similarity": 0.47662848234176636,
+          "spatial_consistency": 0.6259521842002869
+        },
+        {
+          "app": "meituan",
+          "score": 22.560097733057294,
+          "raw_correspondence": 0.5900499820709229,
+          "appearance_similarity": 0.5896509885787964,
+          "spatial_consistency": 0.5912469625473022
+        },
+        {
+          "app": "qq",
+          "score": 100.0,
+          "raw_correspondence": 0.7427033931016922,
+          "appearance_similarity": 0.7653100490570068,
+          "spatial_consistency": 0.6748834252357483
+        },
+        {
+          "app": "tieba",
+          "score": 100.0,
+          "raw_correspondence": 0.6829653233289719,
+          "appearance_similarity": 0.6684319376945496,
+          "spatial_consistency": 0.7265654802322388
+        },
+        {
+          "app": "wps",
+          "score": 100.0,
+          "raw_correspondence": 0.7374683916568756,
+          "appearance_similarity": 0.7262592315673828,
+          "spatial_consistency": 0.771095871925354
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 100.0,
+          "raw_correspondence": 0.770322784781456,
+          "appearance_similarity": 0.7557395696640015,
+          "spatial_consistency": 0.8140724301338196
+        }
+      ],
+      "pairwise": {
+        "app_names": [
+          "bilibili",
+          "damai",
+          "hanglvzongheng",
+          "meituan",
+          "qq",
+          "tieba",
+          "wps",
+          "xiaohongshu"
+        ],
+        "generated_to_target_dense_similarity": [
+          [
+            0.7633616775274277,
+            0.45800653100013733,
+            0.5386750102043152,
+            0.4720507860183716,
+            0.4758468568325043,
+            0.5963113605976105,
+            0.5085244476795197,
+            0.5864842534065247
+          ],
+          [
+            0.5443755835294724,
+            0.7303005903959274,
+            0.5345690548419952,
+            0.3873184397816658,
+            0.519359715282917,
+            0.523933470249176,
+            0.5097075700759888,
+            0.5671718716621399
+          ],
+          [
+            0.6036396026611328,
+            0.4825073257088661,
+            0.5139594078063965,
+            0.3895406946539879,
+            0.49241550266742706,
+            0.519788533449173,
+            0.5237709730863571,
+            0.5659487694501877
+          ],
+          [
+            0.6223311424255371,
+            0.43988819420337677,
+            0.4860246032476425,
+            0.5900499820709229,
+            0.48515552282333374,
+            0.5754631459712982,
+            0.477223701775074,
+            0.6314421892166138
+          ],
+          [
+            0.4188076853752136,
+            0.39145873486995697,
+            0.4029987007379532,
+            0.3731578215956688,
+            0.7427033931016922,
+            0.4015366807579994,
+            0.37174469977617264,
+            0.4035983085632324
+          ],
+          [
+            0.6610970497131348,
+            0.4433850049972534,
+            0.5494952201843262,
+            0.515004113316536,
+            0.4663305878639221,
+            0.6829653233289719,
+            0.47947751730680466,
+            0.5956295430660248
+          ],
+          [
+            0.6503218412399292,
+            0.5137537717819214,
+            0.566050574183464,
+            0.45737529546022415,
+            0.5227020233869553,
+            0.602815181016922,
+            0.7374683916568756,
+            0.6693666130304337
+          ],
+          [
+            0.726944699883461,
+            0.48124298453330994,
+            0.5580985993146896,
+            0.5265457779169083,
+            0.47692860662937164,
+            0.6675636619329453,
+            0.5252171754837036,
+            0.770322784781456
+          ]
+        ],
+        "reference_pair_identity_similarity": [
+          0.5986851900815964,
+          0.5668238252401352,
+          0.6547119915485382,
+          0.6782351285219193,
+          0.49591847509145737,
+          0.639715388417244,
+          0.6771613359451294
+        ]
+      }
+    },
+    "dists_structure": {
+      "score": 71.09519519196549,
+      "p10_score": 6.55394861887312,
+      "positive_reference_distance": 0.7781832218170166,
+      "distractor_distance": 0.8391461372375488,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.6526265144348145
+        },
+        {
+          "app": "damai",
+          "score": 0.441538226885728,
+          "distance": 0.8388769626617432
+        },
+        {
+          "app": "hanglvzongheng",
+          "score": 9.173553072582001,
+          "distance": 0.833553671836853
+        },
+        {
+          "app": "meituan",
+          "score": 59.1464702362562,
+          "distance": 0.8030887246131897
+        },
+        {
+          "app": "qq",
+          "score": 100.0,
+          "distance": 0.7289422154426575
+        },
+        {
+          "app": "tieba",
+          "score": 100.0,
+          "distance": 0.7491422891616821
+        },
+        {
+          "app": "wps",
+          "score": 100.0,
+          "distance": 0.6900849342346191
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 100.0,
+          "distance": 0.5798746347427368
+        }
+      ],
+      "reliable": true
+    },
+    "lpips_content": {
+      "score": 69.0712731891866,
+      "p10_score": 26.80043203358683,
+      "positive_reference_distance": 0.6031705141067505,
+      "distractor_distance": 0.7189766466617584,
+      "per_app": [
+        {
+          "app": "bilibili",
+          "score": 100.0,
+          "distance": 0.515163004398346
+        },
+        {
+          "app": "damai",
+          "score": 33.235678850916244,
+          "distance": 0.6804876923561096
+        },
+        {
+          "app": "hanglvzongheng",
+          "score": 57.62066534922329,
+          "distance": 0.6522483825683594
+        },
+        {
+          "app": "meituan",
+          "score": 11.784856126484858,
+          "distance": 0.7053290605545044
+        },
+        {
+          "app": "qq",
+          "score": 100.0,
+          "distance": 0.5781676173210144
+        },
+        {
+          "app": "tieba",
+          "score": 49.928985186868424,
+          "distance": 0.6611558198928833
+        },
+        {
+          "app": "wps",
+          "score": 100.0,
+          "distance": 0.5736456513404846
+        },
+        {
+          "app": "xiaohongshu",
+          "score": 100.0,
+          "distance": 0.4891338050365448
+        }
+      ],
+      "reliable": true
+    },
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "damai",
+        "score": 56.77959723824897,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 0.441538226885728,
+          "lpips_content": 33.235678850916244
+        }
+      },
+      {
+        "app": "hanglvzongheng",
+        "score": 14.276198991619259,
+        "components": {
+          "dino_dense": 0.0,
+          "dists_structure": 9.173553072582001,
+          "lpips_content": 57.62066534922329
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 31.380961162702476,
+        "components": {
+          "dino_dense": 22.560097733057294,
+          "dists_structure": 59.1464702362562,
+          "lpips_content": 11.784856126484858
+        }
+      },
+      {
+        "app": "qq",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "tieba",
+        "score": 89.98579703737369,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 49.928985186868424
+        }
+      },
+      {
+        "app": "wps",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "components": {
+          "dino_dense": 100.0,
+          "dists_structure": 100.0,
+          "lpips_content": 100.0
+        }
+      }
+    ]
+  },
+  "package_coherence": {
+    "score": 86.64689041622624,
+    "package_unity_score": 100.0,
+    "theme_membership_score": 75.07683618801519,
+    "generated_p90_distance": 0.09087319672107697,
+    "reference_p90_distance": 0.10506844520568848,
+    "reference_mad": 0.01420891284942627,
+    "outlier_apps": [],
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 100.0,
+        "distance_to_reference": 0.02097839117050171,
+        "internal_distance": 0.02564626932144165,
+        "is_outlier": false
+      },
+      {
+        "app": "damai",
+        "score": 50.38495871457263,
+        "distance_to_reference": 0.04740029573440552,
+        "internal_distance": 0.022827327251434326,
+        "is_outlier": false
+      },
+      {
+        "app": "hanglvzongheng",
+        "score": 50.229730789548846,
+        "distance_to_reference": 0.06585770845413208,
+        "internal_distance": 0.044477760791778564,
+        "is_outlier": false
+      },
+      {
+        "app": "meituan",
+        "score": 100.0,
+        "distance_to_reference": 0.045673489570617676,
+        "internal_distance": 0.024583399295806885,
+        "is_outlier": false
+      },
+      {
+        "app": "qq",
+        "score": 100.0,
+        "distance_to_reference": 0.03210180997848511,
+        "internal_distance": 0.02722257375717163,
+        "is_outlier": false
+      },
+      {
+        "app": "tieba",
+        "score": 100.0,
+        "distance_to_reference": 0.0414731502532959,
+        "internal_distance": 0.030924975872039795,
+        "is_outlier": false
+      },
+      {
+        "app": "wps",
+        "score": 0.0,
+        "distance_to_reference": 0.02054917812347412,
+        "internal_distance": 0.01868957281112671,
+        "is_outlier": false
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "distance_to_reference": 0.04050809144973755,
+        "internal_distance": 0.03816908597946167,
+        "is_outlier": false
+      }
+    ]
+  },
+  "visual_quality": {
+    "score": 93.125,
+    "p10_score": 80.5,
+    "per_app": [
+      {
+        "app": "bilibili",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8743500709533691,
+          "contrast": 0.1665019690990448,
+          "saturation": 0.12849199771881104,
+          "sharpness": 0.01207900419831276,
+          "edge_density": 0.061070033482142856,
+          "foreground_ratio": 0.5445083306760204,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.14518665918690601,
+          "contrast": 1.3106803586539313,
+          "saturation": -3.0458133344852696,
+          "sharpness": 79.05983157470472,
+          "edge_density": 1.4596871794871802,
+          "foreground_ratio": 2.3370072471665204,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "damai",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8899621963500977,
+          "contrast": 0.14770835638046265,
+          "saturation": 0.1230500116944313,
+          "sharpness": 0.01529701892286539,
+          "edge_density": 0.07006337691326531,
+          "foreground_ratio": 0.3935696348852041,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.6115816855860612,
+          "contrast": 0.7511339588252105,
+          "saturation": -3.3498394872443624,
+          "sharpness": 100.76534089181223,
+          "edge_density": 2.153403703703705,
+          "foreground_ratio": 0.11018695510026179,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "hanglvzongheng",
+        "score": 92.5,
+        "warnings": [
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.8729790449142456,
+          "contrast": 0.09757041186094284,
+          "saturation": 0.13374558091163635,
+          "sharpness": 0.005672119092196226,
+          "edge_density": 0.03728874362244898,
+          "foreground_ratio": 0.9598264110331632,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.7427056760204082,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.10422876847940865,
+          "contrast": -0.7416341837773343,
+          "saturation": -2.752312638386631,
+          "sharpness": 35.845391533948714,
+          "edge_density": -0.3747222222222223,
+          "foreground_ratio": 8.46425463164777,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 5009.549784757653,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "meituan",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.853162944316864,
+          "contrast": 0.2049003690481186,
+          "saturation": 0.14502745866775513,
+          "sharpness": 0.013185312040150166,
+          "edge_density": 0.045843630420918366,
+          "foreground_ratio": 0.3018076371173469,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -0.4877553801478352,
+          "contrast": 2.453924436970158,
+          "saturation": -2.122030628340101,
+          "sharpness": 86.52187796789802,
+          "edge_density": 0.28517321937321943,
+          "foreground_ratio": -1.2435909982563196,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "qq",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8879984617233276,
+          "contrast": 0.229115828871727,
+          "saturation": 0.05758252739906311,
+          "sharpness": 0.008933724835515022,
+          "edge_density": 0.046710578762755105,
+          "foreground_ratio": 0.1847546635841837,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.5529172795670538,
+          "contrast": 3.174896693203782,
+          "saturation": -7.007296028288264,
+          "sharpness": 57.844922272633994,
+          "edge_density": 0.352046723646724,
+          "foreground_ratio": -2.970490355274626,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "tieba",
+        "score": 52.5,
+        "warnings": [
+          "large_black_border",
+          "foreground_ratio_outside_reference_envelope"
+        ],
+        "metrics": {
+          "brightness": 0.8206822872161865,
+          "contrast": 0.22099284827709198,
+          "saturation": 0.1315775364637375,
+          "sharpness": 0.022579411044716835,
+          "edge_density": 0.07163783482142858,
+          "foreground_ratio": 0.9518195950255102,
+          "border_dark_ratio": 0.19826211734693877,
+          "border_foreground_contact": 0.8013791454081632,
+          "border_edge_ratio": 0.031329719387755105,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -1.4580791855860613,
+          "contrast": 2.9330493903106802,
+          "saturation": -2.8734342674302358,
+          "sharpness": 149.88507575370022,
+          "edge_density": 2.274852136752138,
+          "foreground_ratio": 8.34612892327811,
+          "border_dark_ratio": 1337.277981505102,
+          "border_foreground_contact": 5405.30233577806,
+          "border_edge_ratio": 211.31895727040816,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "wps",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8775304555892944,
+          "contrast": 0.14041708409786224,
+          "saturation": 0.18370811641216278,
+          "sharpness": 0.004686066880822182,
+          "edge_density": 0.032525510204081634,
+          "foreground_ratio": 0.5325504225127551,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": 0.24019714229144667,
+          "contrast": 0.5340492919763458,
+          "saturation": 0.03893257655233699,
+          "sharpness": 29.19446936823078,
+          "edge_density": -0.7421421652421654,
+          "foreground_ratio": 2.160590507846554,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "warnings": [],
+        "metrics": {
+          "brightness": 0.8069050908088684,
+          "contrast": 0.16392531991004944,
+          "saturation": 0.21100309491157532,
+          "sharpness": 0.009824215434491634,
+          "edge_density": 0.045091278698979595,
+          "foreground_ratio": 0.313053053252551,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        },
+        "robust_z": {
+          "brightness": -1.869657732312566,
+          "contrast": 1.2339652108580839,
+          "saturation": 1.5638147180430246,
+          "sharpness": 63.851281362731235,
+          "edge_density": 0.2271393162393166,
+          "foreground_ratio": -1.0776857563208357,
+          "border_dark_ratio": 0.0,
+          "border_foreground_contact": 0.0,
+          "border_edge_ratio": 0.0,
+          "semi_transparent_ratio": 0.0
+        }
+      }
+    ],
+    "hard_failures": [
+      {
+        "app": "tieba",
+        "reasons": [
+          "large_black_border"
+        ]
+      }
+    ],
+    "reference_envelopes": {
+      "brightness": {
+        "median": 0.8694900870323181,
+        "mad": 0.02257823944091797
+      },
+      "contrast": {
+        "median": 0.12247984856367111,
+        "mad": 0.022654585540294647
+      },
+      "saturation": {
+        "median": 0.1830112338066101,
+        "mad": 0.012073367834091187
+      },
+      "sharpness": {
+        "median": 0.0003577541501726955,
+        "mad": 0.0001
+      },
+      "edge_density": {
+        "median": 0.04214664381377551,
+        "mad": 0.008744220344387751
+      },
+      "foreground_ratio": {
+        "median": 0.38610092474489793,
+        "mad": 0.04571906887755106
+      },
+      "border_dark_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_foreground_contact": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "border_edge_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      },
+      "semi_transparent_ratio": {
+        "median": 0.0,
+        "mad": 0.0001
+      }
+    },
+    "method": "deterministic_reference_normalized_artifact_checks"
+  },
+  "hard_failures": [
+    {
+      "type": "identity_below_35",
+      "app": "hanglvzongheng",
+      "score": 14.276198991619259
+    },
+    {
+      "type": "identity_below_35",
+      "app": "meituan",
+      "score": 31.380961162702476
+    },
+    {
+      "type": "identity_p10_below_45",
+      "score": 26.249532511377513
+    },
+    {
+      "type": "visual_quality",
+      "app": "tieba",
+      "reasons": [
+        "large_black_border"
+      ]
+    }
+  ],
+  "evaluation_confidence": "medium",
+  "decision": "failed_hard_gate",
+  "per_app": [
+    {
+      "app": "bilibili",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 90.02772288661208,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "damai",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 73.33174811064391,
+      "identity_preservation_score": 56.77959723824897,
+      "package_membership_score": 50.38495871457263,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 0.441538226885728, \"lpips_content\": 33.235678850916244}"
+    },
+    {
+      "app": "hanglvzongheng",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 71.46125633050929,
+      "identity_preservation_score": 14.276198991619259,
+      "package_membership_score": 50.229730789548846,
+      "visual_quality_score": 92.5,
+      "is_package_outlier": false,
+      "quality_warnings": "foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 0.0, \"dists_structure\": 9.173553072582001, \"lpips_content\": 57.62066534922329}"
+    },
+    {
+      "app": "meituan",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 87.81138063997253,
+      "identity_preservation_score": 31.380961162702476,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 22.560097733057294, \"dists_structure\": 59.1464702362562, \"lpips_content\": 11.784856126484858}"
+    },
+    {
+      "app": "qq",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 58.422074209422874,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "tieba",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 58.05113709910895,
+      "identity_preservation_score": 89.98579703737369,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 52.5,
+      "is_package_outlier": false,
+      "quality_warnings": "large_black_border|foreground_ratio_outside_reference_envelope",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 49.928985186868424}"
+    },
+    {
+      "app": "wps",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 68.94757111083341,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 0.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    },
+    {
+      "app": "xiaohongshu",
+      "itte_score": 74.38565122063363,
+      "style_fidelity_score": 84.65782973269387,
+      "identity_preservation_score": 100.0,
+      "package_membership_score": 100.0,
+      "visual_quality_score": 100.0,
+      "is_package_outlier": false,
+      "quality_warnings": "",
+      "identity_components": "{\"dino_dense\": 100.0, \"dists_structure\": 100.0, \"lpips_content\": 100.0}"
+    }
+  ],
+  "diagnostics": {
+    "generation_qwen_qc": {
+      "available": true,
+      "report": {
+        "package_consistency_score": 85,
+        "style_consistency_score": 90,
+        "target_identity_score": 95,
+        "problematic_apps": [
+          {
+            "app": "tieba",
+            "issue": "背景处理严重不一致。整包其他图标均为浅色/米色暖调背景，唯独该图标使用了纯黑色背景，破坏了整套图标的视觉统一性。此外，底部多出了一个胶囊形状的元素，构图与其他图标不符。",
+            "retry_suggestion": "请将背景颜色调整为与其他图标一致的米色/浅暖色调，去除底部多余的胶囊元素，保持构图简洁统一。"
+          },
+          {
+            "app": "qq",
+            "issue": "背景颜色过白（接近纯白），与整包其他图标使用的暖米色/奶油色背景存在色差，显得突兀。",
+            "retry_suggestion": "请调整背景颜色，使其与整包统一的暖米色调保持一致。"
+          }
+        ],
+        "accepted_apps": [
+          "bilibili",
+          "damai",
+          "hanglvzongheng",
+          "meituan",
+          "wps",
+          "xiaohongshu"
+        ],
+        "retry_apps": [
+          "tieba",
+          "qq"
+        ],
+        "overall_comment": "整包图标风格非常统一，成功应用了‘线条小狗/绵羊’趴在图标上的核心设计元素，目标App的身份识别度也很高（如B站的小电视、美团的文字、WPS的Logo等）。主要问题集中在背景颜色的一致性上：Tieba的黑色背景严重跑偏，QQ的白色背景也略显突兀。修复这两个背景问题后，这将是一套质量很高的主题包。"
+      }
+    },
+    "generation_qwen_qc_used_in_score": false,
+    "openclip_used_in_score": false,
+    "text_policy": "out_of_scope",
+    "perceptual_backend": {
+      "available": true,
+      "device": "cuda",
+      "dists_texture": {
+        "score": 56.57651235820086,
+        "reliable": true,
+        "D_RR": 0.27002185583114624,
+        "D_TR": 0.32210070214101244,
+        "D_GR": 0.29263630722250256
+      },
+      "dists_structure": {
+        "score": 71.09519519196549,
+        "p10_score": 6.55394861887312,
+        "positive_reference_distance": 0.7781832218170166,
+        "distractor_distance": 0.8391461372375488,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.6526265144348145
+          },
+          {
+            "app": "damai",
+            "score": 0.441538226885728,
+            "distance": 0.8388769626617432
+          },
+          {
+            "app": "hanglvzongheng",
+            "score": 9.173553072582001,
+            "distance": 0.833553671836853
+          },
+          {
+            "app": "meituan",
+            "score": 59.1464702362562,
+            "distance": 0.8030887246131897
+          },
+          {
+            "app": "qq",
+            "score": 100.0,
+            "distance": 0.7289422154426575
+          },
+          {
+            "app": "tieba",
+            "score": 100.0,
+            "distance": 0.7491422891616821
+          },
+          {
+            "app": "wps",
+            "score": 100.0,
+            "distance": 0.6900849342346191
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0,
+            "distance": 0.5798746347427368
+          }
+        ],
+        "reliable": true
+      },
+      "lpips_content": {
+        "score": 69.0712731891866,
+        "p10_score": 26.80043203358683,
+        "positive_reference_distance": 0.6031705141067505,
+        "distractor_distance": 0.7189766466617584,
+        "per_app": [
+          {
+            "app": "bilibili",
+            "score": 100.0,
+            "distance": 0.515163004398346
+          },
+          {
+            "app": "damai",
+            "score": 33.235678850916244,
+            "distance": 0.6804876923561096
+          },
+          {
+            "app": "hanglvzongheng",
+            "score": 57.62066534922329,
+            "distance": 0.6522483825683594
+          },
+          {
+            "app": "meituan",
+            "score": 11.784856126484858,
+            "distance": 0.7053290605545044
+          },
+          {
+            "app": "qq",
+            "score": 100.0,
+            "distance": 0.5781676173210144
+          },
+          {
+            "app": "tieba",
+            "score": 49.928985186868424,
+            "distance": 0.6611558198928833
+          },
+          {
+            "app": "wps",
+            "score": 100.0,
+            "distance": 0.5736456513404846
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0,
+            "distance": 0.4891338050365448
+          }
+        ],
+        "reliable": true
+      },
+      "models": {
+        "dists": "DISTS-pytorch-0.1",
+        "lpips": "LPIPS-vgg-0.1"
+      },
+      "reason": "DISTS and LPIPS computed from deterministic pretrained perceptual networks."
+    }
+  },
+  "provenance": {
+    "input_sha256": {
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay.jpg": "9de3ee402969c7d48b4513e65f5e76db1e19c335617cf1d2c457f871ca684ed5",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu.jpg": "c0feebb51c2bb7ba999435d9fe644bd9a789f8e37d485b5a316532457687c4de",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera.jpg": "741f809fbfa8540bf61e9fa63021646b6db9fe10bd15ef5b96ca1f96f679c589",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin.jpg": "5a8e042ba9d648ea3c67806ea8d38c7f92cd27b0aaa75dce4e924fc7e8982151",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone.jpg": "4dd440814e1f92d2c05b233599a2b8129b7efe6ab0a3aeb5a340e439f94e16b0",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun.jpg": "0c7e2b4e88e1b53accdab3f62823a9954d053df7f83059153eae8deac964eae6",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat.jpg": "c5a1ece9d49923634c1d7563c2d3e76df261035aa1b8fcb369c0233597ad28af",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\alipay\\alipay_style_ref.jpg": "5ebe3997f5cf61414683c6827bf5ae0fa5eb2d61a40e4ababa5a76b2322f0c7f",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\baidu\\baidu_style_ref.jpg": "d7909ab71524398ec7d8cef4ba1cac5ee9ca433f0cab79e693431feb1db14318",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\camera\\camera_style_ref.jpg": "3039fde95415c7266b493297f894a8fa08f1f450ad10b6662948d979221d5830",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\douyin\\douyin_style_ref.jpg": "60c4151e94a6e615156ef8cef9816b1ecf814764a950a6d404fa5663f0e706e6",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\phone\\phone_style_ref.jpg": "20edd237d1c2ca6a19c2ba8217a67a30c31112a95917f51dce1f02f065ff0b22",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wangyiyun\\wangyiyun_style_ref.jpg": "a68db4a49cdbf133dddaa536e4164aa59d9615f869ea00aedd914cc4d8e6a170",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\styles\\theme_001\\wechat\\wechat_style_ref.jpg": "86cfa1eb7332fee95130f47b1d64cd15f6dfbaa32783dd85cc509c66b2b1aba9",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png": "75d9c986d21041bc15f636cb729559a9ea839ec41c4d80407e8758f75129a8b7",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\damai\\damai.jpg": "224eb46c20cc86811003b223c278dde3c04db6293786abf2d483bc7cc3975127",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\hanglvzongheng\\hanglvzongheng.jpg": "4901766176c269c2543d3cc722cb3e92ea43aa1f2ce6a90e6805095220e94e35",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\meituan\\meituan.jpg": "8dba98d2cbe795f1502701fc5bb4c0c88ad2d4146d3fb1a1071ff04cd5aedd64",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\qq\\qq.jpg": "d07ed26d9077c309ea1451a749d44b3283a9f0b63e2ca705fc0173bba73ae6c8",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\tieba\\405f68281d6d577866154c984322804c.jpg": "7c5dca665e4c2bbd9847b15ca08e01d0e6638a4e38cc81131117785a355739d8",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\wps\\wps.jpg": "f14cad8bb07570ee69948596da951c565b9a37b541707bdd89265f9e8b89df61",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\xiaohongshu\\xiaohongshu.png": "f774ef16a902595f8975c53e6131a344643b399edd0e3794e29ca803e6737abc",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\bilibili.png": "3a7f7fde2688e964244cfac8f3a655f9ef907e2bacf7b4bdbc41b0cd3b867294",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\damai.png": "d89e857250078914231274ff7eb8c8b5fdcc886d81adac34a6d4c15899d9333a",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\hanglvzongheng.png": "eb4abd39d46053fea0703c30674b4ff8f2bfc1e2303f6a1f1a0c972889d4b5cf",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\meituan.png": "aaf3629facdd84000e444d3b7f4d468af52e8dcf02ad8f57567f46633102ac12",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\qq.png": "ee407f59ea698d21e87534d72048a93aec860b38eb55ae0e6366ef9480a2b100",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\tieba.png": "f4274eceafe1d924d784f2431fa11fdb3e4e84255d5194cb65d65654723c2548",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\wps.png": "ada0636d0bf76734723981ee68cc6dfe26c79ed83fdb43755e472bad0265449c",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\final\\xiaohongshu.png": "867ba7436759910a1db1c5dfd12837b2139b881a6df324130622408db40a1b64"
+    },
+    "model_revisions": {
+      "dinov3": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "vgg_gram": "torchvision-vgg16-default",
+      "dists": "DISTS-pytorch-0.1",
+      "lpips": "LPIPS-vgg-0.1"
+    },
+    "code_commit": "18a0bb11c1362afada6b0901eecc42125806187e",
+    "scoring_config_hash": "d5aaa72998c12469f158789cbf072caaaee0ac8dfa3499e9c4f42fa46403bb13",
+    "scoring_config": {
+      "embedding_backend": "dinov3",
+      "model_source": "modelscope",
+      "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+      "image_size": 224,
+      "use_perceptual": true,
+      "use_vgg_gram": true,
+      "style_weights": {
+        "vgg_gram": 0.4,
+        "dists_texture": 0.2,
+        "visual_attributes": 0.25,
+        "dino_motif": 0.15
+      },
+      "identity_weights": {
+        "dino_dense": 0.5,
+        "dists_structure": 0.3,
+        "lpips_content": 0.2
+      }
+    }
+  },
+  "compatibility": {
+    "tpqs_fields_are_aliases": true,
+    "legacy_v11_scores_removed_from_main_decision": true
+  }
+}

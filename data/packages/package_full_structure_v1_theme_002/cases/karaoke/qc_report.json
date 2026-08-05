@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反风格约束：使用了平滑的矢量边缘和完美的几何色块，完全丢失了 transfer_plan 中强制要求的 'thick, rough, hand-drawn black outline'（粗犷手绘黑色描边）和 'jittery, uneven marker-like strokes'（抖动马克笔笔触）。虽然识别度极高，但看起来像是一个新的扁平化 Logo 设计，而非指定的复古涂鸦风格重构。",
+      "recommendation": "不推荐。尽管完美保留了原图结构，但未能执行核心的风格化指令（手绘/粗糙描边），导致风格与参考图（如 candidate_02 或 style refs 中的粗糙感）不符。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了所有约束：1. 严格保留了‘左侧鹦鹉头+右下麦克风’的空间布局和拓扑结构；2. 成功应用了 retro hand-drawn doodle 风格，拥有明显的粗糙黑色描边和马克笔质感；3. 正确映射了砖红、深蓝、奶油黄的配色方案且无渐变；4. 背景纯黑。是高质量的主题化重构。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\karaoke\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

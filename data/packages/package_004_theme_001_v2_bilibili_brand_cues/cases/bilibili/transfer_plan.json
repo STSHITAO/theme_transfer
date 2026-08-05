@@ -1,0 +1,49 @@
+{
+  "app": "bilibili",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "小电视的整体圆角矩形轮廓拓扑结构",
+    "顶部的两根天线特征（需转化为圆润短粗形态）",
+    "屏幕区域作为视觉中心的地位",
+    "品牌标志性的粉色基调（必须转换为低饱和度马卡龙粉/浅桃色）",
+    "粉色圆角方形背景底色",
+    "bilibili 文字标识的结构骨架",
+    "粉色圆角方形底",
+    "小电视轮廓",
+    "bilibili 文字标识"
+  ],
+  "must_preserve": [
+    "小电视轮廓",
+    "顶部双天线结构",
+    "bilibili 文字标识",
+    "粉色圆角方形底"
+  ],
+  "recompose_allowed": [
+    "将天线线条处理为具有手绘抖动感的不规则曲线",
+    "将电视机边缘转化为蓬松的毛绒质感边界",
+    "在屏幕区域融合拟人化表情（豆豆眼、微笑嘴）与简化的文字元素",
+    "调整粉色的明度和饱和度以匹配主题板的柔和氛围"
+  ],
+  "restyle": [
+    "主体填充为暖调米白色或极浅粉色的短毛绒材质",
+    "背景处理为平滑细腻的哑光纸质或粘土质感",
+    "添加深炭灰色细线条手绘描边，模拟马克笔触感",
+    "消除所有玻璃光泽、渐变和高光反射"
+  ],
+  "decorate": [
+    "在电视机顶部或天线旁依附统一的‘小白狗/小团子’装饰角色",
+    "为主体添加极简的豆豆眼和微笑嘴，赋予生命感",
+    "主体下方添加极淡的接触阴影以区分层级"
+  ],
+  "forbid": [
+    "保留原始的高饱和度荧光粉色背景",
+    "使用锐利、完美的几何直线绘制天线或边框",
+    "添加玻璃质感、高光反射或强烈的立体阴影",
+    "将电视机变形为手机、相机或其他非电视类物体",
+    "出现真实人脸、恐怖元素或复杂细节"
+  ],
+  "color_strategy": "低饱和度马卡龙色系。背景使用柔和的浅粉/米白，主体使用暖调米白/浅粉毛发，描边使用深炭灰色。严禁使用原品牌高饱和粉色。",
+  "identity_priority": "严格保留小电视轮廓与天线特征，确保 bilibili 文字结构可辨，在此基础上进行毛绒化和拟人化改造。",
+  "generation_brief": "Cute soft cartoon icon of Bilibili TV. Rounded square TV shape with two short stubby antennas on top. Body is fluffy macaron pink and warm white fur texture. Screen area has simple kawaii dot eyes and smile, integrating simplified 'bilibili' text structure. Thick sketchy dark grey hand-drawn outline. Matte paper background in pale pastel tone. No gloss, no sharp edges, no high saturation."
+}

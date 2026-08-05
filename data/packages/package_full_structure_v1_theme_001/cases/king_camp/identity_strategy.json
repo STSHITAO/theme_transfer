@@ -1,0 +1,42 @@
+{
+  "app": "king_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "外部的旋风/回旋镖状包围结构与内部类似'Q'或'定位点'的几何核心",
+  "brand_cues_to_preserve": [
+    "外部类似太极或旋风的动态包围轮廓",
+    "中心圆点与下方垂直切口的组合结构",
+    "整体图标的负空间比例关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "象征游戏竞技的动感与聚焦感",
+    "作为官方助手的权威性与工具属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和抖音（Douyin）的案例，该主题的核心逻辑是将高识别度的平面符号直接转化为3D冰雕实体。王者营地的图标具有非常独特的几何拓扑（外部回旋+内部核心），这种结构本身就是最强的身份识别符。因此，必须完整保留其二维轮廓的准确性，仅通过增加Z轴厚度、倒角和冰材质来重构，严禁改变其笔画走势或将其替换为其他语义物体（如剑、盾等）。",
+  "design_rationale": "王者营地的原始图标是一个高度抽象且具备强几何特征的符号。根据 theme_design_analysis 中的 'identity_handling_policy'（几何守恒，材质重构），对于此类具有独特剪影的App，最佳策略是保持原样立体化。选择 logo_preserve 策略可以确保用户在看到冰蓝色图标时，依然能通过那个标志性的'旋风包围圆点'结构瞬间识别出这是王者营地。同时，利用冰材质的通透感和内部气泡纹理，可以消除原图深褐色的沉重感，赋予其清凉、精致的3D微缩景观质感，完美契合整包主题的统一性。",
+  "must_preserve": [
+    "原图标外部类似'C'形或回旋镖的包围结构及其尖锐的末端",
+    "内部同心圆环及中心带有缺口的圆点结构",
+    "图形各部分之间的相对位置和负空间形状",
+    "统一的浅冰蓝色调（Cyan/Ice Blue）",
+    "底部的物理接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "将原本的深褐色填充替换为半透明的冰晶材质",
+    "在冰块内部添加随机的微小气泡或雪花纹理",
+    "将锐利的2D边缘处理为圆润的3D倒角高光",
+    "去除右下角的红色装饰元素（如有），保持主体纯净",
+    "调整光影以表现冰块的次表面散射（SSS）效果"
+  ],
+  "forbid": [
+    "禁止改变外部包围结构的开口方向或旋转角度",
+    "禁止将内部图形简化为实心圆点而丢失下方的切口细节",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止保留原始的深褐色或金黄色背景",
+    "禁止生成没有底部投影的悬浮感错误的图像"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the King Camp logo. The shape must strictly follow the original: an outer swirling boomerang-like ring enclosing an inner circle with a vertical slit at the bottom. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Edges are rounded and glossy with caustic lighting. Place on a pure white background with a realistic melting water puddle and contact shadow at the base. No solid colors, no plastic look."
+}

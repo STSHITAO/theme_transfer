@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了纸飞机的核心几何结构和指向，应用了正确的深宝蓝配色和纯黑背景。最重要的是，它成功模拟了参考图中的粗重手绘描边风格（尽管颜色偏白/浅灰而非纯黑，但视觉效果符合‘粗糙马克笔’的质感要求），风格化程度高且身份识别度极佳。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 70,
+      "style_match_score": 70,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "未遵守必须保留粗重手绘描边的约束。虽然形状和颜色正确，但边缘处理过于平滑、单薄，缺乏参考图中那种抖动、粗糙的马克笔笔触质感，导致风格匹配度不足。",
+      "recommendation": "不推荐。虽然主体识别无误，但未能执行transfer_plan中关于stroke_application（转变为粗重黑色手绘描边）的关键指令，看起来更像是一个简单的矢量填色图，而非主题化的手绘图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\amap\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

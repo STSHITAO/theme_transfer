@@ -1,0 +1,211 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+3D冰雕拟物风格（Ice Sculpture Skeuomorphism）。核心特征是将原本平面的2D图标符号转化为具有体积感、通透感和寒冷质感的3D冰块实体。整体视觉呈现出清透的淡蓝色调，强调材质的折射率、内部的气泡/雪花杂质以及表面的融化水渍细节，营造出一种精致、清凉且高完成度的微缩景观效果。
+
+[Reference Raw To Style Transform]
+从扁平化矢量图形向高保真3D材质渲染转变。原始图标的轮廓被提取并拉伸为具有厚度的立体模型，表面材质统一替换为半透明的冰晶质感。原有的品牌色（如红、绿、黑）被完全摒弃，统一转化为冰的淡青色或透明色，仅保留形状作为识别依据。
+
+[Color Transform Rule]
+强制去色。无论 Original 是彩色、渐变还是黑白，Style_ref 均转换为统一的浅冰蓝色调。仅保留极低饱和度的环境光遮蔽（AO）阴影来表现结构。原品牌识别色（如抖音的红蓝、火山版的橙红）被移除或压缩为极小的装饰性图标。
+
+[Background Transform Rule]
+从 Original 的纯色块或复杂渐变背景，转变为纯白/留白背景。去除所有背景中的图形元素，将视觉焦点完全集中在前景的冰块主体上。
+
+[Stroke Transform Rule]
+消除所有二维描边。将线条转化为三维实体的边缘。Original 中的负空间（镂空部分）在 Style_ref 中依然保持通透，但边缘变得厚实且有倒角。
+
+[Composition Transform Rule]
+从平面填充式构图转变为立体物件式构图。主体不再填满整个画布，而是作为一个独立的 3D 物体悬浮或放置在白色空间中，四周留有呼吸感。
+
+[Subject Scale Rule]
+主体宽度约占画布宽度的 50%-60%。高度根据物体比例自然延伸，但整体控制在画布垂直方向的 70% 以内，底部预留空间给投影和水渍。
+
+[Detail Complexity Rule]
+几何结构简化，材质细节丰富。忽略 Original 中的细微线条装饰，专注于表现冰块的通透感、内部的气泡纹理和表面的光泽感。
+
+[Theme Fidelity Constraints]
+[
+  "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+  "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+  "背景必须保持洁白干净，底部必须有物理接触阴影。",
+  "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+  "禁止保留原始的大面积品牌背景色。",
+  "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里），应保持图标本身的几何形态。",
+  "禁止使用暖色调作为主体主色。"
+]
+
+[Theme Board]
+{
+  "palette": "统一使用高透光的浅冰蓝色（Cyan/Ice Blue）作为主体主色，完全覆盖原品牌色。背景统一为纯白或极淡的冷灰白色，营造冰雪环境的洁净感。",
+  "line_style": "无描边。依靠材质本身的体积感、折射光和阴影来界定轮廓。边缘处理圆润光滑，模拟冰块融化或打磨后的质感。",
+  "material": "核心材质为“半透明冰块/凝胶”。具有强烈的次表面散射（SSS）效果，内部包含随机分布的微小气泡、裂纹或雪花纹理。表面呈现湿润的高光反射。",
+  "background": "纯白极简背景。主体底部通常有接触阴影和少量融化的水渍/碎冰，增强物体放置在平面上的真实物理感。",
+  "composition": "单体居中构图。主体占据画布约 60%-70% 的空间。对于原本扁平的图形，通过增加厚度使其立体化；对于复杂图形，简化为剪影后立体化。",
+  "motif_rules": "必须在主体内部或表面嵌入“雪花”、“冰晶”或“气泡”作为主题装饰纹样。允许保留极小比例的原品牌标志性元素（如火焰、特定颜色圆点）作为点缀，但必须缩小并置于次要位置，形成“冰与火”或“冷与暖”的对比。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: jd
+
+[transfer_plan]
+{
+  "app": "京东 (JD.com)",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilibili（小电视）和 Douyin（音符）的处理方式，对于具有极高辨识度的具象IP形象或符号，必须保留其原始几何拓扑结构。京东 Joy 的头部轮廓和五官比例是其核心识别点，不能进行语义重组（如改为购物车或包裹），而应将其视为一个整体的 3D 雕塑对象进行材质替换。",
+  "preserve": [
+    "Joy狗头的整体剪影轮廓（圆脸、下垂长耳）",
+    "眯眼笑的眼睛形状（倒V形/弯月形）",
+    "张开的大嘴及舌头几何形态",
+    "黑色椭圆鼻子的位置与形状",
+    "面部五官的相对空间布局"
+  ],
+  "must_preserve": [
+    "狗头部的左右耳朵位置和下垂感",
+    "眼睛眯成一条线的快乐神态",
+    "大嘴笑的开口形状",
+    "主体在画面中的居中构图",
+    "品牌标准红底色（需转化为冰雕语境下的对比元素，见color_application）"
+  ],
+  "recompose_allowed": [
+    "将原本的2D黑色描边转化为冰块边缘的高光反射或内部折射阴影",
+    "移除所有非核心装饰物（黄色行李箱、蓝色飞机、酒店图标、文字）",
+    "将原本不透明的白色狗身转化为半透明冰蓝材质，通过内部气泡密度表现毛发质感"
+  ],
+  "restyle": [
+    "材质统一为高透光浅冰蓝色（Cyan-Ice Blue）",
+    "表面增加湿润高光、菲涅尔反射效果",
+    "内部填充随机微小气泡、冰晶颗粒或雪花纹理",
+    "底部增加融化的水渍和接触阴影"
+  ],
+  "decorate": [
+    "在冰块内部嵌入微小的雪花或冰裂纹样以增强主题指纹",
+    "在狗头底部增加隐形或有形的冰制底座以保持物理平衡感"
+  ],
+  "forbid": [
+    "禁止保留原本的红色背景色块（背景必须为纯白）",
+    "禁止生成不透明的白色塑料、石膏或磨砂材质（必须是半透明冰质）",
+    "禁止改变狗的五官比例（如闭合嘴巴、改变眼睛形状）",
+    "禁止出现复杂的场景化道具或叙事性元素",
+    "禁止使用暖色调作为主体主色",
+    "禁止将狗的形象替换为猫、狮子或其他动物"
+  ],
+  "generation_brief": "3D icon of JD.com mascot Joy's head, frozen ice sculpture style. Translucent cyan-blue ice material with internal air bubbles and snowflake textures. Happy expression with squinting eyes and open smiling mouth. No strokes, defined by refraction and thickness. Pure white background. Melting water puddle and soft contact shadow at base. Centered composition, high fidelity C4D/Octane render.",
+  "color_application": "强制去色。原图中的白色狗身转换为半透明的浅冰蓝色（Cyan-Ice Blue），利用材质的高明度和内部气泡密度来暗示原本的白色体积感。原图的红色背景被完全移除，替换为主题的纯白背景。原图的红色嘴巴/舌头部分，若需保留辨识度，可处理为极淡的冰层厚度变化或微弱的内部色差，但严禁使用高饱和红色，必须符合整体冷色调。",
+  "stroke_application": "消除所有二维黑色描边。利用冰块物理厚度的边缘高光（Fresnel reflection）和内部光线折射产生的暗部来界定五官轮廓（如眼睛、鼻子、嘴巴的边缘）。线条感源于光影切割而非绘制。",
+  "composition_application": "从原本填满画布的红底白狗特写，转变为单体居中构图。主体（狗头冰雕）占据画布约60%-70%空间，四周留白。去除所有周边装饰元素（飞机、行李箱等），仅保留狗头主体。底部预留空间给投影和水渍，增强立体落地感。",
+  "identity_application": "通过严格保留Joy狗头的几何拓扑结构（耳位、眼型、嘴型）来维持身份。在不破坏冰材质统一性的前提下，通过调整内部气泡的分布密度来模拟原本白色的视觉重量，确保用户在看到冰雕剪影时能瞬间识别出是京东Joy。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色（红、黑）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止出现暖色调主体、禁止实心不透明材质、禁止复杂背景。",
+    "禁止破坏身份：禁止改变Joy的五官比例、禁止移除耳朵或改变表情、禁止混淆为其他动物形象。"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: 强制去色。原图中的白色狗身转换为半透明的浅冰蓝色（Cyan-Ice Blue），利用材质的高明度和内部气泡密度来暗示原本的白色体积感。原图的红色背景被完全移除，替换为主题的纯白背景。原图的红色嘴巴/舌头部分，若需保留辨识度，可处理为极淡的冰层厚度变化或微弱的内部色差，但严禁使用高饱和红色，必须符合整体冷色调。
+Stroke application: 消除所有二维黑色描边。利用冰块物理厚度的边缘高光（Fresnel reflection）和内部光线折射产生的暗部来界定五官轮廓（如眼睛、鼻子、嘴巴的边缘）。线条感源于光影切割而非绘制。
+Composition application: 从原本填满画布的红底白狗特写，转变为单体居中构图。主体（狗头冰雕）占据画布约60%-70%空间，四周留白。去除所有周边装饰元素（飞机、行李箱等），仅保留狗头主体。底部预留空间给投影和水渍，增强立体落地感。
+Identity application: 通过严格保留Joy狗头的几何拓扑结构（耳位、眼型、嘴型）来维持身份。在不破坏冰材质统一性的前提下，通过调整内部气泡的分布密度来模拟原本白色的视觉重量，确保用户在看到冰雕剪影时能瞬间识别出是京东Joy。
+
+Fidelity constraints:
+[
+  "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+  "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+  "背景必须保持洁白干净，底部必须有物理接触阴影。",
+  "严禁直接使用原图的高饱和度品牌色（红、黑）作为主体颜色。"
+]
+
+Negative constraints:
+[
+  "禁止漂移到新主题：禁止出现暖色调主体、禁止实心不透明材质、禁止复杂背景。",
+  "禁止破坏身份：禁止改变Joy的五官比例、禁止移除耳朵或改变表情、禁止混淆为其他动物形象。"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching jd's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like jd as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

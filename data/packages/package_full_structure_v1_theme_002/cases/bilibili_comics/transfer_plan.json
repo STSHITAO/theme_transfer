@@ -1,0 +1,64 @@
+{
+  "app": "bilibili_comics",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标由清晰的几何图形（爆炸气泡）和具象符号（小电视）组成，符合 theme_rules 中 'preserve_when' 的条件。参考 bilibili 主App的处理方式，应保留其核心拓扑结构（气泡在上，电视在下），仅对填充色、描边风格和细节复杂度进行主题化重构，而非重新设计主体。",
+  "preserve": [
+    "爆炸形/锯齿状边缘的对话气泡轮廓",
+    "气泡内的汉字“漫画”字形骨架",
+    "底部小电视（TV头）造型及双天线特征",
+    "小电视面部的极简线条表情（眯眼/波浪嘴）",
+    "前景手势与背景文字的层叠遮挡关系"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "汉字“漫画”的可识别性（即使风格化为手绘体）",
+    "小电视的天线位置和屏幕脸部的基本布局",
+    "爆炸气泡的整体外轮廓拓扑结构"
+  ],
+  "recompose_allowed": [
+    "将平滑矢量描边替换为粗细不均的黑色马克笔手绘描边",
+    "将原图青/粉/白等颜色映射为主题限定色板（砖红、深蓝、奶黄）",
+    "简化小电视面部细节，去除立体光影，转为平面色块",
+    "调整气泡与电视的比例以适应中心构图，去除多余装饰元素"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦质感（蜡笔/粉笔颗粒感）",
+    "边缘处理为不规则、抖动的粗糙效果",
+    "内部填充改为无渐变的高饱和度平涂色块",
+    "字体风格转化为粗犷的手写涂鸦风"
+  ],
+  "decorate": [
+    "可在色块内部添加简单的几何点缀（如四角星、圆点）以增强拙朴感",
+    "保持构图松散自由，允许元素间轻微重叠"
+  ],
+  "forbid": [
+    "禁止保留原图的青色、粉色、绿色等非主题色系颜色",
+    "禁止使用平滑、锐利的工业级矢量描边",
+    "禁止添加任何阴影、高光、环境光遮蔽或3D立体效果",
+    "禁止移除或替换“漫画”文字为其他图形",
+    "禁止将小电视变形为无法识别的抽象几何体",
+    "禁止使用白色或其他非黑色背景"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon on pure black background. Central composition featuring a jagged comic speech bubble with stylized handwritten Chinese characters '漫画' inside. Below the bubble sits a simplified Bilibili TV-head mascot with two antennas. Use thick, shaky black marker outlines. Fill shapes with flat, high-saturation blocks of brick red, deep blue, and creamy yellow. No gradients, no shadows, naive art style, crayon texture.",
+  "color_application": "Map original multi-color palette to theme's limited triad: Brick Red, Deep Blue, Creamy Yellow. Replace all gradients and complex shading with solid flat fills. Ensure high contrast against the pure black background.",
+  "stroke_application": "Replace original clean vector lines with thick, irregular, hand-drawn black outlines. Edges should appear rough and shaky, simulating a marker or crayon stroke. No smooth Bezier curves.",
+  "composition_application": "Center the combined 'Bubble + TV Head' structure. Maintain the vertical stacking (Bubble top, TV bottom) but simplify internal details. Subject should occupy 60-70% of the canvas, leaving uniform black breathing space around edges.",
+  "identity_application": "Preserve the specific topology of the 'Comic' speech bubble and the Bilibili TV mascot (antennas + screen face). Stylize the '漫画' text into a bold, handwritten form that remains legible. Keep the mascot's iconic lazy/playful expression via minimal lines.",
+  "fidelity_constraints": [
+    "Must use pure black (#000000) background",
+    "Must apply thick, shaky hand-drawn black outlines",
+    "Colors strictly limited to Brick Red, Deep Blue, Creamy Yellow flat blocks",
+    "No gradients, shadows, lighting effects, or glossy textures",
+    "Subject must be flattened into geometric block combinations"
+  ],
+  "negative_constraints": [
+    "No realistic, photorealistic, or 3D rendered elements",
+    "No original brand colors (cyan, pink, etc.) unless they match the theme palette",
+    "No thin, clean, or perfect vector lines",
+    "No white or colored backgrounds",
+    "No removal of the '漫画' text or distortion of the TV mascot beyond recognition"
+  ]
+}

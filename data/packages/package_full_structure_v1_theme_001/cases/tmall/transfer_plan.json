@@ -1,0 +1,60 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝（Alipay）和哔哩哔哩（Bilibili）的案例，对于具有极高国民度且由清晰几何/文字构成的Logo，必须严格保留其原始矢量轮廓。天猫的猫头剪影和文字是其核心资产，不能进行语义重组。策略是将原本的平面红色背景+黑色猫头+白色文字，整体转化为一个具有厚度的、统一的冰雕实体。",
+  "preserve": [
+    "猫头剪影的整体外轮廓（含双耳弧度）",
+    "“天猫”二字的笔画骨架与相对位置",
+    "猫眼与鼻子的负空间几何关系",
+    "图标整体的正方形/圆角矩形边界感"
+  ],
+  "must_preserve": [
+    "“天猫”汉字的完整字形结构，不可替换为拼音或英文",
+    "猫头剪影的耳朵形状及面部留白比例",
+    "文字位于上方、图形位于下方的层级布局逻辑（转化为浮雕深度差异）"
+  ],
+  "recompose_allowed": [
+    "将原本的红色背景和黑白图形统一融合为单一半透明冰体",
+    "将2D平面线条转化为具有物理厚度和倒角的3D实体边缘",
+    "用内部气泡、雪花纹理替代原有的纯色填充"
+  ],
+  "restyle": [
+    "材质：从扁平色块转变为 translucent crystalline ice / frozen water",
+    "颜色：从红/黑/白高对比色转变为统一的 Pale Cyan / Ice Blue",
+    "光影：增加次表面散射（SSS）、边缘高光和内部折射效果",
+    "细节：表面添加冷凝水珠，内部嵌入微缩雪花或冰裂纹"
+  ],
+  "decorate": [
+    "在冰体内部随机分布微小气泡以增强体积感",
+    "在主体底部添加融化的水渍和接触阴影以锚定空间",
+    "边缘处理为圆润光滑的冰磨质感，消除锐利矢量角"
+  ],
+  "forbid": [
+    "禁止保留任何原始品牌色（红色、黑色、纯白不透明区域）",
+    "禁止将猫头简化为抽象符号或写实猫咪插画",
+    "禁止文字变形导致“天猫”二字不可读",
+    "禁止生成缺乏厚度的平面剪纸或2D矢量风格",
+    "禁止使用复杂场景背景，必须保持纯白/极浅灰背景"
+  ],
+  "generation_brief": "3D icon of Tmall logo as a single thick translucent ice sculpture. Shape strictly follows original silhouette: cat head outline with embedded Chinese characters '天猫'. Material is pale cyan frozen water with internal bubbles and snowflake textures. Glossy surface with condensation droplets. No red or black colors. Rounded edges, subsurface scattering. Centered on pure white background with subtle contact shadow and melting water puddle at base.",
+  "color_application": "Discard original red/black/white palette. Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue tones. Use brightness variations only to define volume and depth, not brand identity.",
+  "stroke_application": "Eliminate all 2D vector strokes. Convert original outlines into volumetric 3D edges with rounded, beveled corners mimicking eroded ice. Define boundaries via light refraction and specular highlights rather than drawn lines.",
+  "composition_application": "Transform flat layered layout into a unified 3D monolithic block. Maintain the relative spatial arrangement (text above, cat face below) but integrate them into a single extruded ice mass. Center the object, occupying 70-80% of canvas height.",
+  "identity_application": "Preserve identity exclusively through the precise geometric silhouette of the cat head and the legible structure of the '天猫' characters. Do not rely on color or texture for recognition; rely on shape fidelity within the ice material.",
+  "fidelity_constraints": [
+    "Must use unified ice blue semi-transparent material, strictly no original brand colors.",
+    "Must include internal details like bubbles, snowflakes, or ice cracks.",
+    "Subject must exhibit strong 3D volume with subsurface scattering, not a flat blue shape.",
+    "Background must remain clean white to highlight translucency."
+  ],
+  "negative_constraints": [
+    "No flat vector style, 2D appearance, or solid opaque colors.",
+    "No warm colors (red, orange) or dark backgrounds.",
+    "No realistic cat illustrations or generic shopping icons.",
+    "No distorted character shapes or unreadable text.",
+    "No plastic, metal, or stone materials; must look like cold ice."
+  ]
+}

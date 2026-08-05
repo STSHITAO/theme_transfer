@@ -1,0 +1,41 @@
+{
+  "app": "kuaishou",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "上下结构的摄像机轮廓（上方双圆代表镜头/取景器，下方机身带侧边突起）",
+  "brand_cues_to_preserve": [
+    "经典的‘8’字形或双圆环上部结构",
+    "下方的摄像机机身主体",
+    "左侧突出的三角形/梯形镜头部件",
+    "整体垂直堆叠的空间布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "摄像机的基本形态",
+    "记录与拍摄的隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "快手原始图标本身就是高度抽象的几何符号（摄像机），符合 theme_design_analysis 中‘preserve_when’的条件。参考案例 kuaishou_ref 显示，该主题倾向于保留其三个主要部分（上双眼、下机身、侧突起）的空间相对位置，仅将线条转化为色块堆叠并增加粗描边。因此必须保留主体结构，不可重构为其他语义符号。",
+  "design_rationale": "快手图标属于典型的几何符号类 Logo，具备极高的识别度且结构简单，非常适合直接进行风格化迁移。策略上选择保留其标志性的‘双圆+机身’拓扑结构，严格执行主题的色彩映射（红蓝黄）和手绘描边规则。将原本平滑的白色线条转化为具有厚度感的色块组合，模拟蜡笔或马克笔的涂抹质感，去除原本的橙色背景，使其像贴纸一样浮于纯黑背景之上。",
+  "must_preserve": [
+    "上方两个圆环（或近似圆环）的并列结构",
+    "下方矩形机身的主体轮廓",
+    "机身左侧的镜头突起特征",
+    "纯黑背景 (#000000)",
+    "粗的不规则手绘描边"
+  ],
+  "can_recompose": [
+    "线条的粗细和边缘的规整度（需变为抖动、粗糙的手绘感）",
+    "内部填充颜色（由纯白变为红/蓝/黄的色块分割）",
+    "圆角的曲率（可变得更圆润或更拙朴）"
+  ],
+  "forbid": [
+    "保留原始的亮橙色背景",
+    "使用平滑、锐利的矢量线条",
+    "添加阴影、高光或立体渲染",
+    "改变上下结构的相对位置",
+    "使用主题色板以外的颜色（如绿色、紫色）"
+  ],
+  "generation_direction": "Retro hand-drawn doodle style camera icon on pure black background. Simplified geometry: two rough circles on top, rectangular body below with a side protrusion. Thick, uneven marker strokes. Flat colors restricted to brick red, indigo blue, and creamy yellow. No gradients, no shadows, no orange background. Clumsy, naive art aesthetic, centered composition."
+}

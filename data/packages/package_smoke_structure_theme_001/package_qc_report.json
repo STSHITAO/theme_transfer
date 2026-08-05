@@ -1,0 +1,11 @@
+{
+  "package_consistency_score": 10,
+  "style_consistency_score": 10,
+  "target_identity_score": 10,
+  "problematic_apps": [],
+  "accepted_apps": [
+    "alipay"
+  ],
+  "retry_apps": [],
+  "overall_comment": "整包仅包含一个应用（Alipay），其输出图完美契合参考图定义的‘冰雕/冰块’主题风格。材质呈现出通透的浅蓝色冰质感，内部包含雪花细节，边缘锐利且具有高光反射，底部有自然的融水阴影。作为单图质检，该图标在风格一致性、材质表现和目标App身份识别（‘支’字清晰）上均表现优秀，无需重试。"
+}

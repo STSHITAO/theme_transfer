@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美执行了语义重构策略。保留了最具辨识度的‘黄色头盔+胡子’倒U型轮廓和双角特征，色彩严格遵循纯黑背景与高饱和黄/红配色，手绘描边质感与参考图高度一致，既符合主题风格又极具品牌识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 60,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "颜色分配错误，违反了主体亮黄色的核心约束。将头盔拆分成了红蓝黄三色块，导致角色特征模糊，看起来像普通维京人而非Clash of Clans的野蛮人，且引入了非主题限定的复杂配色逻辑。",
+      "recommendation": "不推荐。虽然画风接近，但丢失了核心的品牌色（全黄头盔），导致识别度大幅下降，不符合strict身份约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\clash_of_clans\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

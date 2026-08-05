@@ -1,0 +1,40 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "CF 品牌 Logo 图形与枪械/准星符号",
+  "brand_cues_to_preserve": [
+    "CF 字母组合的几何轮廓（特别是 F 的横折结构）",
+    "射击游戏的核心语义：枪口、准星或弹道轨迹",
+    "红蓝对抗的色彩阵营关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "第一人称射击（FPS）的指向性",
+    "竞技对抗的紧张感（通过锐利角度表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "Original 图标为写实人物肖像（戴墨镜的男性），属于高复杂度生物特征，无法直接通过描边和填色转化为复古手绘风格而不产生恐怖谷效应或丢失主题趣味性。根据 theme_rules 中关于复杂 IP（如 LOL、王者荣耀）的处理逻辑，必须舍弃人物主体，提取其品牌符号（CF Logo）和功能符号（枪/准星）进行几何化重构。",
+  "design_rationale": "穿越火线作为硬核射击游戏，原图的人物写实风格与‘复古手绘涂鸦’主题冲突强烈。为了保持主题的拙朴感和统一性，同时不丢失游戏辨识度，策略上选择‘语义重构’。将原本的人物特写替换为极具识别度的‘CF’字母标与‘枪支/准星’元素的组合。利用主题限定的红蓝配色呼应游戏中的保卫者与潜伏者阵营对抗，用粗犷的黑色描边模拟战术标记或涂鸦墙绘的感觉，既符合主题又保留了游戏的硬核基因。",
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷、不规则的手绘黑色描边",
+    "红、蓝、黄/白的高饱和度受限色板",
+    "CF 字母的基本拓扑结构（需可识别）",
+    "扁平化无光影处理"
+  ],
+  "can_recompose": [
+    "人物面部、墨镜、发型等写实细节（必须移除）",
+    "原本的金属质感、皮革纹理",
+    "复杂的背景光效和粒子效果",
+    "CF Logo 的标准比例（允许为了构图进行夸张变形或拆解）"
+  ],
+  "forbid": [
+    "禁止保留任何写实的人脸特征或皮肤质感",
+    "禁止使用原本的品牌标准银灰色或冷青色渐变",
+    "禁止出现精细的矢量线条，必须是手绘抖动感",
+    "禁止在黑色背景上添加投影或环境光"
+  ],
+  "generation_direction": "Draw a simplified, retro hand-drawn doodle of the 'CF' logo combined with a stylized gun silhouette or crosshair. Use thick, rough black marker outlines. Fill shapes with solid blocks of Brick Red and Indigo Blue to represent opposing factions. Add a simple Yellow star or spark as a muzzle flash accent. Pure black background. Flat, naive art style, no shading."
+}

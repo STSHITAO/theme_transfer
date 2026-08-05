@@ -1,0 +1,40 @@
+{
+  "app": "tencent_news",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "中央的企鹅剪影轮廓及环绕的三色弧形结构",
+  "brand_cues_to_preserve": [
+    "中央企鹅的完整身体轮廓（头部圆润度、翅膀位置、底部宽度）",
+    "三条环绕弧线的相对位置、曲率半径及空间包围关系",
+    "企鹅位于视觉绝对中心，弧线呈非闭合环状分布"
+  ],
+  "semantic_cues_to_preserve": [
+    "新闻聚合与全球视野的隐喻（通过环绕结构表达）",
+    "腾讯系产品的家族化识别符号（企鹅形象）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的处理方式，对于具有高辨识度的具象符号（企鹅）和特定几何布局（环绕弧线），必须严格保留其原始矢量轮廓。主题化仅体现在将平面色块转化为具有厚度的 3D 冰雕实体，严禁改变企鹅的姿态或弧线的排列逻辑，以确保在统一冰蓝材质下仍能通过剪影被瞬间识别。",
+  "design_rationale": "腾讯新闻的图标由核心IP形象（企鹅）和象征新闻多维度的环绕线条组成。在当前‘冰封’主题下，策略是将原本鲜艳的彩色平面图形整体‘冻结’。企鹅和弧线不再依靠颜色区分，而是依靠统一的冰蓝色调、半透明质感以及内部的气泡/雪花纹理来呈现。这种处理方式既保留了腾讯系的强品牌资产，又完美契合了主题的洁净、通透感。",
+  "must_preserve": [
+    "企鹅剪影的精确外形比例",
+    "三条弧线围绕企鹅的空间拓扑关系",
+    "图标整体的圆形构图趋势",
+    "冰材质内部的次表面散射（SSS）效果和气泡细节"
+  ],
+  "can_recompose": [
+    "原始的红、黄、绿、蓝品牌色（必须全部替换为冰蓝/青色渐变）",
+    "平面的边缘（需转化为圆润的倒角或融化感的边缘）",
+    "实心的填充（需转化为半透明晶体，允许看到背部轮廓的折射）",
+    "底部的支撑结构（可添加薄冰底座以增强落地感）"
+  ],
+  "forbid": [
+    "禁止保留原始的黄色、绿色或红色",
+    "禁止将企鹅替换为其他鸟类或真实照片",
+    "禁止使用不透明的塑料质感，必须是透光的冰",
+    "禁止去除环绕的弧线导致只剩一只企鹅",
+    "禁止背景出现复杂的冰雪场景，保持纯白"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon of the Tencent News logo. Central subject is a cute penguin silhouette made of translucent pale cyan ice with internal bubbles and snowflake textures. Surrounding the penguin are three curved ice arcs (top-left, top-right, bottom) maintaining their original spatial arrangement. All elements share the same frozen water material, no original colors. Soft studio lighting, refraction, glossy surface with condensation droplets. Pure white background with a subtle contact shadow and melting water puddle at the base."
+}

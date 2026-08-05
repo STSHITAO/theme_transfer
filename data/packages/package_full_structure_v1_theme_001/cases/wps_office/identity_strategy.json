@@ -1,0 +1,37 @@
+{
+  "app": "wps_office",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "WPS 标志性的红色几何 'W' 符号（由两个互锁的三角形/折线构成）",
+  "brand_cues_to_preserve": [
+    "W 字母的整体外轮廓和负空间结构",
+    "左右两部分笔画的穿插与重叠关系",
+    "圆润的端点处理"
+  ],
+  "semantic_cues_to_preserve": [
+    "文档办公的稳重感（通过材质的厚实度体现）",
+    "连接与协作（通过结构的互锁感体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，对于具有高度抽象几何特征的 Logo，必须严格保留其二维平面上的拓扑结构和比例。WPS 的 'W' 符号具有极高的辨识度，任何结构重组都会导致识别失败。因此，策略是将该平面图形直接进行 Z 轴拉伸（Extrusion），转化为厚实的冰砖，完全保留原始路径，仅改变材质维度和光影表现。",
+  "design_rationale": "WPS Office 的核心资产是其独特的几何 'W' 标识。在冰雪主题下，这个扁平的红色符号需要被‘冻结’成一个实体的冰雕。为了符合 theme_design_analysis 中关于‘单体居中’和‘3D立体化’的要求，我们将原本的红色渐变替换为通透的冰蓝色，利用次表面散射（SSS）展现冰块的厚度。原本平面的线条变成了有体积的冰柱，边缘的高光折射代替了原有的描边，既保留了品牌身份，又完美融入了冰雪世界的洁净感。",
+  "must_preserve": [
+    "W 符号的准确几何比例和笔画走向",
+    "左右结构的互锁/重叠空间关系",
+    "圆角矩形的笔画末端特征"
+  ],
+  "can_recompose": [
+    "原始的红橙渐变色（必须移除）",
+    "平面的矢量质感（必须转为 3D 实体）",
+    "内部细节（简化为材质纹理，如气泡）"
+  ],
+  "forbid": [
+    "禁止保留红色或橙色",
+    "禁止生成不透明的塑料质感",
+    "禁止改变 W 的笔画连接方式",
+    "禁止添加复杂的办公场景背景（如桌子、笔）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the WPS 'W' logo. The shape must strictly follow the original geometric outline: two interlocking triangular strokes forming a W. Material is translucent pale cyan ice with internal bubbles and snowflake textures. Surface is glossy with condensation droplets. No red color. Pure white background with a soft contact shadow and slight melting water at the base. Centered composition, occupying 70% of canvas."
+}

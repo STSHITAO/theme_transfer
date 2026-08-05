@@ -1,0 +1,68 @@
+{
+  "app": "jianying",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标已经是高度抽象的几何符号（摄像机剪影），符合主题中‘将复杂物体抽象为几何块面’的规则。参考 Bilibili 和 Kuaishou 的案例，当主体本身就是清晰的几何轮廓时，应保留其拓扑结构，仅对填充色、描边和质感进行主题化重构，而非重新设计形状。",
+  "preserve": [
+    "左侧上下对称的三角形几何结构（类似沙漏或蝴蝶结）",
+    "右侧向右延伸的梯形/三角形突起（代表摄像机镜头）",
+    "整体呈现为一个风格化的摄像机侧面剪影",
+    "视频编辑工具属性",
+    "摄像机/录制设备的形态暗示"
+  ],
+  "must_preserve": [
+    "左侧上下两个三角形的相对位置和交叉关系",
+    "右侧镜头突起的方向和大致比例",
+    "整体的摄像机侧视轮廓",
+    "纯黑背景",
+    "'X' 形交叉负空间结构",
+    "图形的长宽比和几何骨架"
+  ],
+  "recompose_allowed": [
+    "内部的色彩分布（原图为纯白，现需拆解为红蓝黄块面）",
+    "线条的边缘处理（由平滑变为手绘抖动）",
+    "图形的圆角弧度（可略微夸张以增加拙朴感）"
+  ],
+  "restyle": [
+    "应用粗犷的黑色手绘描边，边缘不规则且带有抖动感",
+    "将内部填充改为高饱和度的砖红、深蓝、奶黄纯色块拼接",
+    "模拟蜡笔或马克笔在粗糙表面的哑光质感",
+    "去除所有立体光影、渐变和高光"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原始的纯白单色填充",
+    "禁止使用平滑的矢量边缘",
+    "禁止改变‘X’形交叉的基本拓扑结构",
+    "禁止添加任何阴影、高光或立体效果",
+    "禁止使用非主题色板颜色（如绿色、紫色）",
+    "禁止替换为真实的摄像机照片或写实图标",
+    "禁止替换为通用的播放按钮（三角形）",
+    "禁止替换为剪刀工具图标",
+    "禁止替换为字母 'J' 或 'Y' 的字体设计",
+    "禁止使用任何动物、人物或无关装饰物替代主体"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of Jianying app. Stylized camera silhouette with abstract 'X' hourglass structure on left and lens protrusion on right. Thick, rough black marker outlines with uneven edges. Geometric sections filled with solid blocks of brick red, deep blue, and creamy yellow. No gradients, no shadows. Pure black background. Flat, naive art aesthetic, centered composition.",
+  "color_application": "强制去色并重构配色。将原始黑白图形拆解，不同几何区块分别填充为主题限定的高饱和度砖红、深蓝或奶黄。确保颜色之间界限分明，无渐变过渡，保持高对比度以突出‘X’形结构。",
+  "stroke_application": "从原始的无描边或精细边缘，转变为粗重的黑色手绘描边。线条需模拟马克笔或粗画笔痕迹，具有明显的抖动感和厚度变化，转角处理为圆润或不规则的钝角，消除工业设计的锐利感。",
+  "composition_application": "保持主体居中构图，占据画布约60%-70%面积。移除原始背景，统一替换为纯黑底色。主体像贴纸一样浮于黑色之上，四周留黑均匀，视觉重心集中在简化的摄像机符号上。",
+  "identity_application": "在不破坏 theme fidelity 的前提下，严格保留剪映核心的‘X’形交叉负空间和右侧镜头突起的拓扑结构。通过色块分割和粗犷描边来表现这一几何骨架，确保用户仍能通过形状联想识别出视频剪辑工具的身份。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止保留 original 的渐变色或立体阴影",
+    "禁止描边过细或过于平滑",
+    "禁止使用了主题色板之外的颜色",
+    "禁止试图在极简风格下保留过多原始细节导致画面杂乱",
+    "禁止白色背景",
+    "禁止3D渲染效果"
+  ]
+}

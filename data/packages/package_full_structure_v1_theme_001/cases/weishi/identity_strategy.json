@@ -1,0 +1,39 @@
+{
+  "app": "weishi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "立体三角形播放按钮（彭罗斯三角结构）",
+  "brand_cues_to_preserve": [
+    "白色线框构成的立体三角形轮廓",
+    "三角形的透视角度和顶点位置",
+    "内部线条的分割比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "向右指向的播放箭头语义",
+    "3D 空间感的几何形态"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Douyin 和 Alipay 的案例表明，该主题的核心逻辑是将平面或简单的立体符号转化为具有物理厚度的冰雕实体。Weishi 的图标本身就是一个立体几何图形（彭罗斯三角/播放键），这与主题的 3D 化规则完美契合。因此，必须严格保留其线框结构和透视关系，仅将原本的白色线条替换为具有厚度的透明冰条，严禁改变其几何拓扑结构。",
+  "design_rationale": "微视的图标本质是一个立体的播放符号，非常适合直接转化为‘冰晶框架’。策略上采用 logo_preserve，因为原图标的几何特征本身就是其最强识别点。设计重点在于表现‘冻结的线条’：将原本平面的白色描边转化为有体积感的冰柱或冰条连接而成的三角形，利用冰的折射率来体现线条的边缘，同时去除原图中复杂的紫红流体背景和底部的营销文字，只保留核心的立体三角结构悬浮于冰台之上。",
+  "must_preserve": [
+    "立体三角形的整体外轮廓",
+    "三角形内部线条的连接方式和透视角度",
+    "作为播放键的指向性（尖端朝右）"
+  ],
+  "can_recompose": [
+    "原本的白色实心线条 -> 重组为半透明的圆柱状或方柱状冰条",
+    "背景的紫色/红色流体 -> 移除，替换为纯白背景",
+    "底部的‘领现金’文字 -> 完全移除",
+    "线条的锐利边缘 -> 处理为圆润的冰质倒角"
+  ],
+  "forbid": [
+    "禁止保留原始的紫色、红色或黑色背景",
+    "禁止将立体三角形压扁为平面图形",
+    "禁止使用不透明的白色材质，必须是透光的冰蓝",
+    "禁止改变三角形的透视结构（如变成正三角形）",
+    "禁止添加任何与播放功能无关的装饰物（如真正的摄像机）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Weishi logo (a Penrose triangle/play button shape). The structure consists of thick, translucent ice-blue bars forming a立体 triangular frame. Material is clear frozen water with internal bubbles and snowflake textures. Edges are rounded and glossy with refraction. Place on a thin ice base with a contact shadow. Pure white background. No text, no colorful fluids."
+}

@@ -1,0 +1,58 @@
+{
+  "app": "douyin_huoshan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 douyin 和 douyin_huoshan 的转换案例均显示：核心音符结构必须完整保留并立体化。火山版的特殊性在于需在保持主体冰质化的同时，保留极小比例的火焰元素作为版本区分标识，但这不改变主体结构保留的原则。",
+  "preserve": [
+    "抖音标志性音符符号的完整几何轮廓与贝塞尔曲线形态",
+    "音符与火焰元素的相对空间关系（即使火焰缩小）",
+    "底部火焰元素的橙红色调特征"
+  ],
+  "must_preserve": [
+    "音符符号的拓扑结构（顶部弧形、中间竖线、底部圆圈）",
+    "火焰元素的暖色调（橙/红），严禁转换为冷色",
+    "冰材质的半透明感、内部气泡/雪花纹理及表面高光",
+    "纯白背景及底部的物理接触阴影与水渍细节"
+  ],
+  "recompose_allowed": [
+    "将原本包围音符的大面积火焰背景移除或极度简化",
+    "将火焰元素缩小为微缩图标，置于左上角或底部边缘作为点缀",
+    "调整音符的Z轴厚度与边缘倒角以适配3D冰雕质感"
+  ],
+  "restyle": [
+    "将音符主体材质从平面矢量重构为半透明浅冰蓝色（Cyan-Ice Blue）冰块",
+    "赋予表面湿润光泽、次表面散射（SSS）效果及菲涅尔反射",
+    "在冰块内部嵌入随机分布的微小气泡、裂纹或雪花纹理"
+  ],
+  "decorate": [
+    "在冰块底部添加融化的水迹、小水洼或碎冰屑",
+    "在微缩火焰元素周围保留极少量的暖色光晕以增强对比"
+  ],
+  "forbid": [
+    "使用大面积橙红色或原品牌色填充主体",
+    "生成不透明的塑料、金属或磨砂玻璃质感",
+    "改变音符的基本形状（如变为字母'd'或通用音乐符号）",
+    "省略底部投影和水渍导致物体悬浮",
+    "火焰元素过大破坏整体冰雕主题的视觉统一性"
+  ],
+  "generation_brief": "3D ice sculpture icon of Douyin Huoshan logo. Main subject: The distinctive Douyin musical note shape, rendered as a thick, translucent cyan-blue ice block with internal air bubbles and snowflake textures. Detail: A tiny, micro-scale orange-red flame icon placed subtly at the top-left or bottom edge as a version identifier. Material: Glossy wet ice, caustic lighting, subsurface scattering. Background: Pure white. Base: Soft contact shadow with melting water puddles and ice shards. No outlines, no flat colors.",
+  "color_application": "主体音符强制去色，统一转换为高透光的浅冰蓝色（Cyan-Ice Blue）；仅允许微缩的火焰元素保留低饱和度的橙红色，形成冷暖对比点缀。",
+  "stroke_application": "消除所有2D描边，通过冰块的物理厚度、边缘高光反射及内部折射来界定音符轮廓；边缘进行圆润倒角处理。",
+  "composition_application": "单体居中构图，主体占据画布60%-70%空间；去除原图复杂背景，改为纯白留白；底部预留空间给物理投影和水渍。",
+  "identity_application": "严格保留音符的几何骨架以确保识别度；通过将火焰元素微缩化并置于次要位置，既保留了‘火山版’的身份线索，又服从了主题的去色规则。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料",
+    "内部必须包含随机的气泡或雪花纹理",
+    "背景必须保持洁白干净，底部必须有物理接触阴影",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体",
+    "禁止保留原始的大面积品牌背景色",
+    "禁止过度复杂的场景化重构",
+    "禁止使用暖色调作为主体主色",
+    "禁止改变音符的核心几何形状"
+  ]
+}

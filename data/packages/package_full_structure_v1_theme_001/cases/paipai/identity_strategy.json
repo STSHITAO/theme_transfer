@@ -1,0 +1,40 @@
+{
+  "app": "paipai",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "黑色剪影化的卡通头部轮廓（含触角）与上方悬浮的黄色小人角色的空间组合关系。",
+  "brand_cues_to_preserve": [
+    "下方巨大的黑色弧形头部剪影及其两根弯曲的触角",
+    "上方悬浮的小人角色的椭圆身体与四肢动态",
+    "上下两个元素之间的相对位置比例（小人位于头部正上方）"
+  ],
+  "semantic_cues_to_preserve": [
+    "社交互动感（通过小人与头部的空间关系体现）",
+    "趣味/游戏属性（通过圆润夸张的卡通造型体现）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 douban 的案例表明，即使是复杂的图形或文字，也必须保留其原始拓扑结构。Paipai 的图标由清晰的几何剪影组成，完全符合‘preserve_major_structure’的条件。必须将原本的2D剪影直接转化为具有厚度的3D冰雕实体，严禁改变触角的数量、弯曲度或小人的姿态，以确保用户在去色后仍能通过轮廓识别应用。",
+  "design_rationale": "选择 logo_preserve 策略是因为 Paipai 的图标具有极高的图形识别度（独特的黑色大头与小黄人组合）。根据 theme_design_analysis，需强制去除原有的高饱和度蓝黄配色，将其统一转化为浅冰蓝色调的半透明材质。为了维持‘社交/互动’的语义，必须严格保留小人悬浮于头顶的空间布局，将其处理为两个独立的冰制组件（或视觉上分离的冰块），底部增加融化的水渍以增强落地感，避免悬空。",
+  "must_preserve": [
+    "原图标的整体外轮廓剪影（Silhouette）",
+    "头部触角的数量和弯曲形态",
+    "上方小人的肢体动作和身体比例",
+    "主体与背景的高对比度边缘（通过高光界定）"
+  ],
+  "can_recompose": [
+    "将原本的纯黑/纯黄填充替换为半透明冰晶材质",
+    "在冰块内部添加气泡、裂纹或雪花纹理以增加细节",
+    "将锐利的矢量边缘打磨为圆润的冰块边缘（Chamfered edges）",
+    "增加底部的接触阴影和少量碎冰/水坑细节"
+  ],
+  "forbid": [
+    "禁止保留原始的亮黄色和深黑色填充（必须转为冰蓝/透白）",
+    "禁止将小人简化为抽象符号或移除",
+    "禁止使用不透明的塑料或金属质感",
+    "禁止主体悬空无投影",
+    "禁止改变触角的方向或数量"
+  ],
+  "generation_direction": "Generate a 3D icon of the Paipai logo made entirely of translucent light blue ice. The subject consists of a large, rounded head silhouette with two curved antennae at the bottom, and a small, cute character floating above it. Both parts must look like frozen ice sculptures with internal bubbles and snowflakes. The surface should be glossy and wet. Place the object on a pure white background with a soft contact shadow and small melting puddles at the base. Ensure the original shape is strictly preserved but rendered with volume and thickness."
+}

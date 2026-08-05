@@ -1,0 +1,38 @@
+{
+  "app": "douban",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字'豆'的几何骨架与三段式层级结构",
+  "brand_cues_to_preserve": [
+    "'豆'字的整体字形轮廓",
+    "顶部横画、中部口字框、底部支撑腿的空间拓扑关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字符号的易读性",
+    "稳重、方正的文化社区气质"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中Alipay和Douban的案例均证明，对于具有强语义的汉字或符号图标，必须保留其原始笔画结构和空间布局。原图标的'豆'字结构清晰、几何感强，非常适合直接转化为3D冰砖结构，无需进行语义重组。",
+  "design_rationale": "豆瓣的核心识别度完全依赖于'豆'字的独特字形。根据主题规则，应将原本扁平的绿色矢量图形转化为立体的半透明冰块。重点在于表现冰块的厚度、边缘的倒角高光以及内部的次表面散射效果，同时严格保持原字形的笔画比例，确保用户在看到冰雕时仍能第一时间认出是豆瓣。",
+  "must_preserve": [
+    "'豆'字的三横一竖及口字框结构",
+    "字形的长宽比例",
+    "笔画之间的负空间（镂空部分）"
+  ],
+  "can_recompose": [
+    "将平面笔画转化为具有厚度的3D实体",
+    "将原本的直角边缘处理为圆润的冰质倒角",
+    "材质颜色由绿变为统一的浅冰蓝色",
+    "增加内部的气泡、裂纹或雪花纹理细节"
+  ],
+  "forbid": [
+    "改变'豆'字的笔画结构或写法",
+    "使用不透明的蓝色塑料或金属材质",
+    "保留原始的绿色背景或绿色主体",
+    "添加与'豆'字无关的书籍或电影道具",
+    "缺失底部的接触阴影和水渍细节"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese character '豆' (Douban logo). The material is translucent cyan-blue ice with internal bubbles and snowflake textures. The character structure must be identical to the original flat icon but extruded into a thick, glossy ice block with rounded edges. Place it on a pure white background with realistic melting water puddles and contact shadows at the base. No green color, no opaque plastic."
+}

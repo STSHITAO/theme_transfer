@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan。材质呈现高透光的冰雕质感，内部气泡和雪花纹理清晰（主题指纹）。严格保留了 Joy 狗头的剪影、下垂耳朵、眯眼笑和大嘴张开的几何结构。去除了所有非核心装饰（行李箱、飞机、文字），背景纯白，底部有融水阴影。是高质量的 3D 图标重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 60,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 65,
+      "failure_reason": "违反身份约束：添加了原本不存在的身体部分（小手小脚），改变了原图仅保留头部的构图策略；违反材质约束：五官（眼睛、嘴巴）使用了生硬的黑色描边/贴图，未转化为冰块边缘的高光或折射阴影，破坏了整体的通透感和 3D 雕塑感。",
+      "recommendation": "不推荐。虽然也是冰材质，但过度重构了主体（增加了身体），且五官处理手法落后（使用平面线条而非光影体积），不符合 strict 模式下对几何结构和材质统一性的要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\jd\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

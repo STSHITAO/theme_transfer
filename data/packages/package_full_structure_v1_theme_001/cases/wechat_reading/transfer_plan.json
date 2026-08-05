@@ -1,0 +1,58 @@
+{
+  "app": "wechat_reading",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，该风格严格保留原始图形的几何轮廓和空间布局，仅进行材质维度的转换。微信读书的图标由明确的几何图形（书本底边+气泡）构成，符合‘清晰符号’的定义，因此必须完整保留其二维剪影结构，将其整体转化为具有厚度的3D冰雕，不可重构为真实书籍场景。",
+  "preserve": [
+    "底部书本开口的V型几何特征",
+    "气泡在画面右下象限的位置比例",
+    "气泡内两点眼睛的排列",
+    "整体图形的扁平化剪影轮廓在3D化后的投影一致性"
+  ],
+  "must_preserve": [
+    "底部中央向下凹陷的书本展开形态（V型切口）",
+    "右下角白色气泡及其内部两个圆点（眼睛）的相对位置",
+    "气泡尾部的指向性角度"
+  ],
+  "recompose_allowed": [
+    "将原本的平面色块转换为具有次表面散射（SSS）效果的半透明冰体",
+    "在冰体内部增加雪花、气泡或冰裂纹理以丰富细节",
+    "边缘处理为圆润的倒角，模拟冰块融化感",
+    "增加底部的接触阴影和微量水迹以增强落地感"
+  ],
+  "restyle": [
+    "应用统一的 Pale Cyan/Ice Blue 半透明材质",
+    "移除所有原始品牌色（深蓝/天蓝），转为冰蓝色调",
+    "表面添加冷凝水珠和内部嵌入雪花纹理"
+  ],
+  "decorate": [
+    "底部添加柔和的接触阴影和微小融水 puddle",
+    "高光反射强调冰质光泽和边缘折射"
+  ],
+  "forbid": [
+    "禁止保留原始的深蓝色背景，必须转为纯白背景",
+    "禁止将气泡替换为真实的对话文字或复杂场景",
+    "禁止使用不透明的塑料质感，必须体现冰的通透性",
+    "禁止改变书本底边的开口角度或气泡的相对位置",
+    "禁止生成平面2D矢量风格"
+  ],
+  "generation_brief": "3D ice sculpture icon of WeChat Reading. Shape: exact silhouette of original logo featuring a bottom base with a V-shaped book opening and a speech bubble with two dot-eyes in the lower right. Material: translucent pale cyan ice with internal bubbles, snowflake textures, and condensation droplets. Lighting: glossy highlights, subsurface scattering, refraction. Background: pure white with soft contact shadow and small water puddle at base. No outlines, no original colors.",
+  "color_application": "Discard original brand blues. Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use translucency and light refraction to define form instead of color contrast.",
+  "stroke_application": "Eliminate all 2D strokes. Convert flat edges into rounded, beveled 3D ice contours defined by specular highlights and refraction rather than drawn lines.",
+  "composition_application": "Center the 3D ice object occupying 70-80% of canvas. Maintain the spatial relationship between the book base and the floating bubble. Add a virtual ground plane with contact shadow.",
+  "identity_application": "Preserve the exact geometric silhouette of the book's V-notch and the bubble's position/internal dots. Express identity through shape fidelity within the ice material, not through original colors.",
+  "fidelity_constraints": [
+    "Must use unified semi-transparent ice blue material.",
+    "Must include internal bubbles, snowflakes, or ice crack textures.",
+    "Subject must have significant 3D volume and thickness.",
+    "Background must be clean white/high-key."
+  ],
+  "negative_constraints": [
+    "No original brand colors (blue/green/red).",
+    "No opaque plastic or metal materials.",
+    "No complex scene backgrounds.",
+    "No distortion of the core logo silhouette (book V-shape and bubble dots)."
+  ]
+}

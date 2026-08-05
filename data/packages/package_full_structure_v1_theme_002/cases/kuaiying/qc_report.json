@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反身份约束：在C形机身内部添加了不属于原Logo的‘眼睛/瞳孔’图形（疑似挪用王者荣耀参考图元素），导致主体识别错误；且该添加物破坏了负空间结构。",
+      "recommendation": "不推荐。虽然风格匹配度极高，但核心几何结构被篡改，添加了无关的‘眼睛’元素，导致无法正确识别为快影App，属于过度重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "与候选01存在相同问题：在C形机身内部错误添加了‘眼睛’图形，违反了保留原始几何符号和负空间的严格约束。",
+      "recommendation": "不推荐。理由同candidate_01，尽管手绘质感和配色符合主题，但错误的内部细节使其失去了作为快影图标的准确性。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\kuaiying\\candidates\\candidate_01.png",
+  "warning": "所有候选图均出现了严重的幻觉或过度重构现象，在原本应为空的C形机身内部添加了类似‘眼睛’的图案（可能受参考图honor_of_kings影响），这完全改变了快影图标的拓扑结构，导致无法通过严格的身份质检。建议重新生成， strictly forbid adding internal details inside the C-frame. All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

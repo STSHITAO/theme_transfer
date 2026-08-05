@@ -1,0 +1,58 @@
+{
+  "app": "meituan_waimai",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "美团外卖的袋鼠形象具有极高的国民辨识度，其核心识别点在于独特的长耳轮廓和头部比例。根据 theme_rules，当 Original 为清晰的吉祥物轮廓时，应保留主体拓扑结构。因此，必须保留袋鼠头部的整体外轮廓，仅将原本的3D圆润质感重构为扁平几何色块，并去除手中的奶茶、红包等复杂道具，以符合主题的极简符号化要求。",
+  "preserve": [
+    "袋鼠头部的侧面剪影轮廓",
+    "标志性的长耳朵形状与位置（左耳向右倾斜特征）",
+    "面部五官的相对位置关系"
+  ],
+  "must_preserve": [
+    "袋鼠头部的侧面剪影轮廓",
+    "标志性的长耳朵形状与位置",
+    "纯黑背景 (#000000)",
+    "粗犷不规则的手绘黑色描边"
+  ],
+  "recompose_allowed": [
+    "将3D立体渲染转化为扁平色块填充",
+    "将原本丰富的黄色调整为符合主题的奶黄/米白色",
+    "简化面部五官为简单的几何点或短线",
+    "移除所有手持物品（奶茶、红包）及底部文字"
+  ],
+  "restyle": [
+    "应用复古手绘涂鸦风格（Retro Hand-drawn Doodle）",
+    "模拟蜡笔或马克笔的粗糙边缘与颗粒质感",
+    "去除所有高光、阴影和渐变，改为纯色块平涂"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原图的3D光泽、渐变和高光",
+    "禁止出现奶茶、红包等复杂道具",
+    "禁止使用细线条或平滑的矢量边缘",
+    "禁止使用非主题色板颜色（如橙色底、粉色红包、绿色等）",
+    "禁止保留‘秋天第1杯’等营销文字",
+    "禁止使用写实纹理或金属质感"
+  ],
+  "generation_brief": "A simplified flat geometric icon of the Meituan Kangaroo head on a pure black background. Thick, rough hand-drawn black outlines with naive doodle style. Solid creamy yellow fill (no gradients/shadows). Iconic silhouette of head and long ears only. No held items, no text. High contrast, matte crayon texture.",
+  "color_application": "将美团品牌黄映射为主题色板中的‘奶黄/米白’高饱和纯色；面部细节使用深宝蓝或砖红点缀（若需要），严禁使用渐变或原图橙色；背景强制为纯黑(#000000)。",
+  "stroke_application": "添加粗重、不规则的黑色手绘描边，模拟马克笔运笔痕迹，边缘需呈现抖动感和圆润钝角，严禁平滑矢量线。",
+  "composition_application": "主体居中，占据画布60%-70%面积；移除所有手持道具和背景装饰，仅保留袋鼠头部剪影，确保四周留黑均匀，视觉重心集中。",
+  "identity_application": "通过严格保留袋鼠头部的拓扑结构（特别是长耳轮廓）来维持身份识别；将3D形态压扁为2D几何色块，在保持‘拙朴感’的同时不丢失生物特征。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色（除非恰好符合主题色板）",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止出现任何文字、水印或复杂道具"
+  ]
+}

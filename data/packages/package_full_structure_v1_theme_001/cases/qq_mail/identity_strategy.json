@@ -1,0 +1,37 @@
+{
+  "app": "qq_mail",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "信封轮廓及其内部V形折痕结构",
+  "brand_cues_to_preserve": [
+    "经典的信封矩形外框",
+    "信封盖的倒V形线条（封口结构）",
+    "整体居中对称的几何布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "邮件/信件的通用符号语义",
+    "封闭且稳固的容器感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Bilibili 的案例表明，对于高识别度的几何图形或文字，必须严格保留其二维拓扑结构，仅进行 Z 轴挤出和材质替换。QQ邮箱的信封图标结构清晰简单，完全符合‘保留主体结构’的条件，无需重构。",
+  "design_rationale": "QQ邮箱的图标是极其标准的信封符号，具有极高的国民认知度。在该冰雪主题下，核心挑战在于将原本扁平、暖色调（橙黄）的线条转化为具有体积感的冷色调冰雕。策略上应完全忠实于原图的几何比例，通过赋予厚度、圆润化边缘以及添加冰晶纹理来实现主题化，严禁改变信封的基本形态。",
+  "must_preserve": [
+    "信封的长宽比例",
+    "内部V形折痕的角度和位置",
+    "外框与内部线条的相对粗细关系"
+  ],
+  "can_recompose": [
+    "将原本的平面线条转化为具有厚度的实体冰块",
+    "边缘处理为圆润的倒角（Chamfer），模拟冰块磨损感",
+    "增加底部的物理接触阴影和少量碎冰细节"
+  ],
+  "forbid": [
+    "禁止保留原有的橙色/黄色品牌色",
+    "禁止将信封设计为打开状态或异形状态",
+    "禁止使用不透明的蓝色塑料材质",
+    "禁止主体悬空无投影"
+  ],
+  "generation_direction": "Generate a 3D icon of a classic mail envelope made of translucent light blue ice. The shape must strictly follow the original flat vector geometry: a rectangular frame with a V-shaped flap line inside. Extrude the lines to give them physical thickness. The material should be glossy, wet ice with internal bubbles and snowflakes. Place it on a pure white background with a soft contact shadow and small melting water details at the base. No orange colors."
+}

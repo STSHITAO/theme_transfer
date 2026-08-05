@@ -20,8 +20,13 @@ env/
 
 # Generated workflow artifacts
 data/evaluations/_cache/
-data/evaluations/
-data/packages/
+# Version reproducible package/evaluation evidence, but never API responses
+# containing temporary signed URLs or runtime-only monitoring output.
+data/packages/**/wan_response.json
+data/packages/_full_generation_logs/
+data/packages/**/*.log
+# Package ZIP exports duplicate the versioned package directories.
+data/packages/*.zip
 
 # Model weights are versioned through Git LFS; ignore only incomplete/local cache state.
 models/**/*.partial

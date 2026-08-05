@@ -1,0 +1,41 @@
+{
+  "app": "kuaikan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“快看”二字的字形结构及“看”字内部的眼睛符号",
+  "brand_cues_to_preserve": [
+    "“快看”汉字的整体骨架与笔画走势",
+    "“看”字下半部分嵌入的眼睛/瞳孔图形",
+    "感叹号“！”的 punctuation 形态"
+  ],
+  "semantic_cues_to_preserve": [
+    "眼睛符号（代表观看、视觉内容）",
+    "文字排版带来的冲击力（代表“快”的节奏感）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标主体为高识别度的品牌文字 Logo，属于清晰的几何/符号化轮廓。根据 structure_preservation_policy，当 Original 为清晰符号或文字时，应保留其主体轮廓和空间布局。因此，必须保留“快看！”的文字架构，仅对其进行风格化重绘（如将笔画转化为粗犷的手绘色块），而非重构为其他物体。",
+  "design_rationale": "快看漫画的原始图标是典型的文字标（Wordmark），具有极高的品牌辨识度。在复古手绘主题下，最佳策略是将原本锐利、工业感的黑体字转化为类似马克笔书写的粗涂鸦字体。保留“看”字中的眼睛元素作为核心语义锚点，既符合主题的拙朴感，又维持了用户对品牌的瞬间识别。色彩上需将原本的黄底黑字反转为黑底上的红/蓝/黄高饱和色块填充。",
+  "must_preserve": [
+    "“快看”两个汉字的相对位置和大致字形",
+    "“看”字内部的眼睛图形特征",
+    "结尾的感叹号",
+    "纯黑背景",
+    "粗黑色的手绘不规则描边"
+  ],
+  "can_recompose": [
+    "笔画的边缘处理（由直变曲，增加抖动感）",
+    "填充颜色（由纯黑变为红、蓝、黄的组合，例如“快”用红，“看”用蓝）",
+    "底部的装饰性碎片（可以简化为几个简单的几何点缀或去除以保持极简）",
+    "字体的粗细比例（适应手绘风格的厚重感）"
+  ],
+  "forbid": [
+    "保留原始的黄色背景",
+    "使用平滑的矢量线条或标准印刷字体",
+    "添加阴影、高光或立体效果",
+    "将文字完全替换为书本或漫画卷轴等具象物体（会丢失品牌名识别）",
+    "使用绿色、紫色等非主题色板颜色"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon on a pure black background. The subject is the Chinese text '快看!' simplified into thick, clumsy marker-style strokes. Use high-saturation brick red and indigo blue solid fills for the characters. The character '看' must feature a stylized eye symbol inside. All edges should be rough and uneven with a thick dark outline. No gradients, no shadows, flat geometric blocks only."
+}

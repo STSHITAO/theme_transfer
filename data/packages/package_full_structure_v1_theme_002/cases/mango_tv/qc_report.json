@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "结构还原度极高，完美保留了Mango TV的'M'骨架和外框拓扑关系。但风格匹配度稍弱：颜色偏暗（接近深褐色而非参考图中的砖红/朱红），且线条质感偏向平滑的手绘矢量，缺乏参考图（如bilibili/kuaishou）中那种明显的抖动感和粗犷马克笔笔触。作为保底选项可用，但不够'拙'。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 95,
+      "failure_reason": "",
+      "recommendation": "最佳候选。完美执行了transfer_plan：1. 颜色准确映射为砖红色外框+奶黄色填充，符合主题色板；2. 笔触具有明显的粗糙感和不规则边缘，高度契合bilibili/douyin等参考图的涂鸦风格；3. 严格保留了'M'字母结构和圆角矩形外框，识别度满分；4. 纯黑背景干净无杂质。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\mango_tv\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

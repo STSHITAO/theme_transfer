@@ -1,0 +1,40 @@
+{
+  "app": "lol_assistant",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "右下角的星形/风车状符号（掌上英雄联盟特有标识）及'英雄联盟'四个汉字的整体骨架。",
+  "brand_cues_to_preserve": [
+    "右下角独特的四叶风车/星芒符号",
+    "'英雄联盟'四个汉字的笔画结构",
+    "LEAGUE OF LEGENDS 英文衬线字体特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字排版的主次层级（中文为主，英文为辅）",
+    "辅助图标位于右下角的空间位置关系"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和豆瓣的案例，该主题的核心逻辑是将平面符号直接转化为具有厚度的冰雕实体。'掌上英雄联盟'的图标核心在于文字本身和特有的角标，因此必须完整保留文字的拓扑结构和角标的几何形态，仅做材质替换和立体化拉伸，不可重组或简化为其他语义符号。",
+  "design_rationale": "选择 logo_preserve 策略是因为该 App 的识别度高度依赖文字内容和特定的角标符号。根据 theme_design_analysis，对于包含明确文字或独特几何符号的图标，应将其视为'立体物件'进行冰封处理。通过保留原有的排版布局，将汉字和角标统一转化为半透明浅冰蓝色材质，既符合整包'冰雪环境'的主题设定，又能确保用户在 glance 测试中通过剪影和布局瞬间识别出这是'掌盟'。",
+  "must_preserve": [
+    "'英雄联盟'四个汉字的准确字形",
+    "右下角风车/星芒符号的四瓣结构",
+    "中英文混排的相对位置",
+    "底部接触阴影和水渍细节"
+  ],
+  "can_recompose": [
+    "原图的深蓝色渐变背景（需替换为纯白）",
+    "原图的金黄色品牌色（需替换为冰蓝/透明白）",
+    "字体的边缘锐度（需倒角圆润化以模拟冰块融化感）",
+    "内部填充纹理（需加入气泡、雪花或冰裂纹）"
+  ],
+  "forbid": [
+    "禁止保留原图的金黄色或深蓝色作为主体颜色",
+    "禁止生成不透明的塑料质感",
+    "禁止改变'英雄联盟'的字形结构",
+    "禁止移除右下角的风车符号",
+    "禁止使用复杂的游戏场景作为背景"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture icon on a pure white background. The subject consists of the Chinese characters '英雄联盟' and the English text 'LEAGUE OF LEGENDS' arranged centrally, with a distinct four-bladed windmill/star symbol in the bottom right corner. All elements must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. The edges should be rounded and glossy (wet look). Add a realistic contact shadow and small melting water puddles at the base. No original brand colors (gold/blue), strictly ice material."
+}

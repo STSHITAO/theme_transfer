@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 5,
+      "background_score": 80,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "",
+      "recommendation": "几何结构还原度极高，完美保留了快影的C形机身和右侧镜头组件的拓扑关系。但作为冰雕主题，它缺乏参考图中显著的立体厚度（Z轴）感，看起来更像是一个带有纹理的2D平面图标，且缺少底部融化的水渍细节，材质表现力不如候选2。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "最佳推荐。完美执行了transfer_plan中的所有指令：将扁平色块转化为具有明显厚度的3D冰砖，保留了精确的C形框架和双竖条镜头结构。材质呈现出高质量的半透明冰质感，内部包含气泡和雪花纹理，底部有符合物理规律的接触阴影和水渍，与主题参考图（如Bilibili、Douyin）的风格高度一致。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\kuaiying\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,61 @@
+{
+  "app": "moji_weather",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The target icon is a typographic logo with a very distinct silhouette. Following the theme's 'Geometric Conservation' policy (similar to Alipay/Douban examples), the letters must be extruded into 3D ice blocks without altering their font shape or spacing. The structure is preserved to ensure immediate brand recognition despite the material change.",
+  "preserve": [
+    "The exact letterforms of M, O, J, I",
+    "The relative spacing and alignment of the letters",
+    "The circular hole in the 'O'",
+    "The specific angle of the cut in the 'J'"
+  ],
+  "must_preserve": [
+    "The exact letterforms of M, O, J, I",
+    "The relative spacing and alignment of the letters",
+    "The circular hole in the 'O'",
+    "The specific angle of the cut in the 'J'"
+  ],
+  "recompose_allowed": [
+    "Color (Orange -> Ice Blue/Translucent)",
+    "Surface finish (Matte/Flat -> Glossy/Wet Ice)",
+    "Internal texture (Solid -> Bubbles/Snowflakes)",
+    "Z-axis depth (2D -> Thick 3D block)"
+  ],
+  "restyle": [
+    "Convert flat typography to thick 3D ice sculpture",
+    "Apply translucent cyan-blue ice material with internal bubbles/snowflakes",
+    "Add glossy wet surface and caustic lighting effects"
+  ],
+  "decorate": [
+    "Internal air bubbles and snowflake textures within the ice letters",
+    "Melting water puddles and contact shadows at the base"
+  ],
+  "forbid": [
+    "Retaining the original orange color for the 'O'",
+    "Changing the font style or rounding the sharp corners excessively",
+    "Separating the letters into floating individual pieces",
+    "Opaque plastic or metal materials",
+    "Flat 2D vector appearance"
+  ],
+  "generation_brief": "3D ice sculpture of the text 'MOJI'. Translucent cyan-blue ice material with internal bubbles and snowflake textures. Glossy wet surface with caustic lighting. The letter 'O' is a clear ice ring. The letter 'J' has a sharp curved cut. Pure white background with melting water puddles and contact shadows at the base. Centered composition.",
+  "color_application": "Force decolorization: Replace original orange 'O' and white/black text with uniform translucent Cyan-Ice Blue. Use Deep Azure for shadowed thickness areas and Translucent White for highlights/refraction zones. No brand colors allowed.",
+  "stroke_application": "Eliminate all 2D strokes. Define letter contours through the physical thickness of the ice blocks, chamfered edges, and Fresnel reflections. The 'cut' in 'J' and hole in 'O' are defined by void space and edge refraction.",
+  "composition_application": "Centered composition. The 'MOJI' text block occupies 60-70% of canvas width. Treat the four letters as a single cohesive 3D object/group resting on a white plane, not floating separately. Add base contact shadows.",
+  "identity_application": "Preserve the precise geometric topology of the 'MOJI' logotype. The identity relies entirely on the shape of the letters (especially the 'O' ring and 'J' cut). Do not alter font weight or spacing. Recognizability comes from the silhouette, not the color.",
+  "fidelity_constraints": [
+    "Subject must exhibit semi-transparent ice/jelly texture with subsurface scattering.",
+    "Internal random bubbles or snowflake textures are mandatory.",
+    "Background must be pure white/clean.",
+    "Base must have physical contact shadow and melting water details.",
+    "No high-saturation brand colors (orange) on the main body."
+  ],
+  "negative_constraints": [
+    "No opaque plastic, stone, or metal textures.",
+    "No retention of original orange/black/white brand colors.",
+    "No distortion of letter shapes (M top curve, J cut, O circle).",
+    "No complex scenery or background elements.",
+    "No flat 2D vector look."
+  ]
+}

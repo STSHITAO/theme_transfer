@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "Best candidate. Successfully applies the 'ice sculpture' theme (translucent blue material, bubbles, snowflakes) while strictly preserving the Weibo logo's geometric silhouette (eye shape, pupil position, signal waves). Although it retains some orange color in the signal waves (which violates the strict 'no red/orange' negative constraint), the structural fidelity and material application are excellent, making it highly recognizable and stylistically consistent with the reference pack."
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 30,
+      "style_match_score": 30,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 40,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 80,
+      "background_score": 90,
+      "composition_score": 60,
+      "artifact_score": 80,
+      "overall_score": 35,
+      "failure_reason": "Failed to apply the required theme style. The main subject remains a flat 2D vector with original brand colors (red/black), merely placed on top of an unrelated ice base. It violates the instruction to convert the logo itself into a 3D ice object and fails to discard original brand colors.",
+      "recommendation": "Not recommended. The generation failed to restyle the main icon body, resulting in a collage rather than a unified themed icon."
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\weibo\\candidates\\candidate_01.png",
+  "warning": "All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "完美契合主题风格（毛绒质感、可爱表情），同时保留了Bilibili核心识别元素（小电视外形+天线），是最佳的重构方案。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 85,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格统一，识别度良好。相比candidate_01，其面部表情略显普通，且整体轮廓的圆润度稍逊，但依然是高质量的候选图。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 20,
+      "background_score": 80,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "",
+      "recommendation": "风格符合，但外部的白色线框显得略微多余，且内部电视主体的比例较小，视觉冲击力不如前两张，识别度略低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_002_theme_001_v2_real\\cases\\bilibili\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

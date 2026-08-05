@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了‘几何守恒，材质重构’策略。完整保留了‘漫画’二字的书法笔触和气泡的锯齿状轮廓，同时成功转换为半透明冰质材质，内部纹理（雪花、气泡）与主题参考图高度一致，底部水渍细节符合物理规律，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 86,
+      "failure_reason": "",
+      "recommendation": "风格基本正确，但材质表现略显浑浊，不如 candidate_01 通透。构图上主体填充满整个画幅，缺乏呼吸感，且缺少底部明确的水渍投影细节，整体精致度略逊于前者。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\bilibili_comics\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

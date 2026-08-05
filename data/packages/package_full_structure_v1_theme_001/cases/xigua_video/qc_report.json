@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 70,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 55,
+      "failure_reason": "Failed to preserve the specific organic blob silhouette; changed to a perfect circle.",
+      "recommendation": "Not recommended. Although the ice material style is excellent and matches the theme references perfectly, it violates the strict structure preservation constraint by turning the unique Xigua Video logo shape into a generic circle. This significantly lowers brand recognition."
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 70,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 55,
+      "failure_reason": "Failed to preserve the specific organic blob silhouette; changed to a perfect circle.",
+      "recommendation": "Not recommended. Similar to candidate_01, the execution of the ice texture is high quality, but the geometric identity is lost. The transfer plan explicitly forbids changing the shape to a standard geometric shape like a circle."
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\xigua_video\\candidates\\candidate_01.png",
+  "warning": "Both candidates failed the strict geometry constraint (preserve_major_structure). They replaced the distinctive irregular 'Xigua' outline with a standard circle, which violates the negative constraints. Candidate 01 is selected as best only due to slightly cleaner surface details, but neither is fully compliant. All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

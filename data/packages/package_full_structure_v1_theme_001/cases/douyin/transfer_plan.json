@@ -1,0 +1,62 @@
+{
+  "app": "douyin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考案例中 douyin 和 douyin_huoshan 均严格保留了音符的主体轮廓，仅做材质替换和底座添加。抖音的音符具有极高的国民辨识度，任何结构重组都会导致识别失败，因此必须采用 preserve_major_structure，将平面音符直接转化为立体冰雕。",
+  "preserve": [
+    "音符的整体剪影形状",
+    "符头圆环与符干的比例关系",
+    "右侧切角的几何特征",
+    "音乐符号的通用语义",
+    "动态与节奏感的视觉暗示"
+  ],
+  "must_preserve": [
+    "音符的准确拓扑结构（符头、符干、符尾的连接方式）",
+    "半透明浅冰蓝色（Cyan/Ice Blue）的主色调",
+    "底部的物理接触阴影和水渍细节",
+    "内部的雪花或气泡纹理"
+  ],
+  "recompose_allowed": [
+    "原图的黑底背景（改为纯白）",
+    "原图的红蓝色彩偏移特效（改为统一冰色）",
+    "符尾末端的尖锐度（可略微圆润化以模拟冰的融化感）"
+  ],
+  "restyle": [
+    "从扁平矢量转变为高保真3D冰雕实体",
+    "去除所有品牌色（红/青/黑），统一为冰蓝色调",
+    "增加Z轴厚度，赋予体积感",
+    "表面增加湿润高光反射和次表面散射效果"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡和雪花纹理",
+    "底部增加厚实的透明冰块底座以支撑主体",
+    "底部生成融化的水迹和小水洼"
+  ],
+  "forbid": [
+    "保留原图的红、青、黑品牌色",
+    "生成不透明的塑料或金属质感",
+    "改变音符的长宽比或弯曲弧度",
+    "缺少底部投影导致物体看起来像漂浮的贴纸",
+    "使用深色或复杂背景"
+  ],
+  "generation_brief": "3D icon of Douyin musical note, frozen ice sculpture style. Translucent cyan-blue ice material with internal bubbles and snowflakes. Glossy wet surface, caustic lighting. Note stands on a thick clear ice base. Pure white background, soft contact shadow, melting water puddle at base. No red/black colors.",
+  "color_application": "强制去色。完全摒弃原图的红/青/黑配色，主体统一渲染为高透光的浅冰蓝色（Cyan-Ice Blue），仅通过光影深浅表现结构，无彩色描边。",
+  "stroke_application": "消除二维描边。将原图的线条轮廓转化为三维实体的边缘，通过倒角处理和高光反射来界定形状，边缘圆润光滑，模拟冰的自然形态。",
+  "composition_application": "从平面填充转为立体物件居中构图。主体占据画布60%-70%，四周留白。为悬浮的音符增加隐形或有形的冰制底座，使其稳固立于白色背景上，底部预留空间给投影和水渍。",
+  "identity_application": "严格保留音符的几何拓扑结构（符头、符干、符尾连接方式）。通过材质的物理属性（通透感、厚度）而非颜色差异来表达身份。移除故障艺术效果，依靠精准的剪影识别品牌。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（黑色）。",
+    "禁止过度复杂的场景化重构，应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变音符的基本笔画走势或比例。"
+  ]
+}

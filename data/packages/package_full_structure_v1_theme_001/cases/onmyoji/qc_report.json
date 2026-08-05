@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令。1. 材质与风格：成功将原图转换为半透明浅冰蓝色（Cyan/Ice Blue）的 3D 冰晶质感，符合 theme style_ref 的统一调性。2. 结构保留：严格保留了‘神乐头部+左上金鱼+右下S Logo’的核心拓扑结构，齐刘海和金鱼形态清晰可辨。3. 细节处理：右下角网易游戏 'S' Logo 被独立转化为冰块且保持几何识别度，底部有合理的碎冰和接触阴影，无多余背景干扰。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 85,
+      "failure_reason": "",
+      "recommendation": "备选。虽然整体风格也是冰质化，但相比 candidate_01，其构图略显拥挤，且右下角 'S' Logo 的形态不如 candidate_01 清晰独立（看起来更像融化的冰块而非明确的 Logo）。此外，画面边缘似乎保留了原图的圆角遮罩痕迹（白色边角），不如 candidate_01 的主体切割干净。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\onmyoji\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

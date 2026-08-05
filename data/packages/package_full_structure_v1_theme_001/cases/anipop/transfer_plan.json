@@ -1,0 +1,63 @@
+{
+  "app": "anipop",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，该主题的核心逻辑是将扁平符号直接'冷冻'立体化。Anipop 的小鸡形象具有极高的国民度和独特的几何特征（圆三角头+红冠），必须完整保留其外部轮廓和五官拓扑关系，仅将材质替换为冰块，严禁重构为其他动物或抽象符号。",
+  "preserve": [
+    "小鸡头部的整体外轮廓（包括脸颊的弧度）",
+    "头顶鸡冠的位置和大致形状",
+    "眼睛和嘴巴的相对位置布局",
+    "wink（眨眼）的面部表情结构",
+    "标志性的圆润三角形头部剪影"
+  ],
+  "must_preserve": [
+    "小鸡头部的整体外轮廓（包括脸颊的弧度）",
+    "头顶鸡冠的位置和大致形状",
+    "眼睛和嘴巴的相对位置布局",
+    "底部的物理接触阴影和水渍"
+  ],
+  "recompose_allowed": [
+    "原本的黄色皮肤改为半透明浅冰蓝色",
+    "原本的红冠可处理为深红色半透明冰晶或极小比例的暖色点缀",
+    "毛发质感改为光滑的冰面高光",
+    "背景中的其他动物和网格全部移除"
+  ],
+  "restyle": [
+    "材质从毛绒/3D glossy转换为半透明冰雕质感",
+    "色彩从高饱和暖黄/红转换为统一 Cyan-Ice Blue 色调",
+    "表面增加气泡、雪花纹理及湿润高光"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡和冰晶颗粒",
+    "表面添加雪花纹理装饰",
+    "底部添加融化的水迹和小水洼"
+  ],
+  "forbid": [
+    "禁止保留原本的亮黄色作为主体主色",
+    "禁止生成不透明的塑料或橡胶质感",
+    "禁止改变小鸡的脸部朝向或表情结构",
+    "禁止添加复杂的冰雪场景背景，保持纯白极简",
+    "禁止使用二维描边",
+    "禁止删除红色鸡冠元素"
+  ],
+  "generation_brief": "3D ice sculpture of Anipop chick head. Translucent cyan-blue ice material with internal bubbles/snowflakes. Preserve exact head silhouette and red comb (as dark red ice accent). Winking expression. Glossy wet surface, caustic lighting. Pure white background with melting water puddle at base. Centered.",
+  "color_application": "强制去色。主体（小鸡身体）统一转换为 Cyan-Ice Blue 半透明色调；鸡冠作为关键识别点，保留为 Deep Azure 或极低饱和度的暗红色半透明冰晶，形成微弱冷暖对比，但严禁使用原始高饱和亮黄。",
+  "stroke_application": "消除所有二维描边。通过冰块的物理厚度、边缘倒角的高光反射以及内部折射来界定小鸡轮廓和五官结构。",
+  "composition_application": "单体居中构图。移除原背景网格及其他动物伙伴，仅保留小鸡头部主体。主体占据画布 60%-70%，底部预留空间给投影和水渍，背景为纯白。",
+  "identity_application": "严格保留小鸡头部的几何剪影、鸡冠形状及 wink 表情拓扑。通过材质的冰质化（通透、冷色调）重塑视觉风格，但确保用户能通过轮廓瞬间识别出是 Anipop 吉祥物。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍。",
+    "严禁直接使用原图的高饱和度品牌色（亮黄）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体。",
+    "禁止保留原始的大面积品牌背景色或网格背景。",
+    "禁止过度复杂的场景化重构。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止改变小鸡的核心面部特征和轮廓比例。"
+  ]
+}

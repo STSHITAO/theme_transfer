@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 98,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了企鹅、头盔、铲子的核心轮廓和空间关系，同时成功应用了粗犷手绘描边、平涂色彩（深蓝/奶黄/砖红）和纯黑背景。风格与参考图高度一致，且没有过度重构风险。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 88,
+      "target_recognition_score": 88,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "头盔细节保留过多，使用了复杂的几何分割线，违反了'restyle'中关于简化细节和去除复杂结构的约束；眼睛画法偏向卡通圆环而非简单的黑色圆点或几何图形，略显精致，不够'naive'。",
+      "recommendation": "虽然识别度尚可，但风格化程度不如 candidate_01 彻底。头盔部分的线条过于规整和复杂，不符合'rough marker strokes'和'simplified'的要求，看起来更像矢量插画而非手绘涂鸦。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\golden_spatula\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

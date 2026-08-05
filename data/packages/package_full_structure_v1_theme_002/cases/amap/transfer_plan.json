@@ -1,0 +1,59 @@
+{
+  "app": "amap",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "高德地图的原始图标本身就是高度抽象的几何符号（纸飞机），符合 theme_design_analysis 中关于‘清晰几何符号需保留主体轮廓’的规则。参考 bilibili 和 douyin 的案例，此类图标应维持原有拓扑结构，仅进行材质和色彩的置换，无需重构为其他语义符号。",
+  "preserve": [
+    "纸飞机的整体三角形拓扑结构",
+    "机头指向右上方的动态趋势",
+    "机身折叠产生的几何分割线",
+    "导航与出行的方向感",
+    "轻盈、快速的移动意象"
+  ],
+  "must_preserve": [
+    "纸飞机的尖锐机头和展开的双翼轮廓",
+    "代表折痕的内部几何线条",
+    "纯黑背景 (#000000)",
+    "粗重且不规则的手绘描边"
+  ],
+  "recompose_allowed": [
+    "将原本的立体渐变蓝色替换为平涂的深宝蓝或靛蓝",
+    "将平滑的矢量边缘处理为抖动、粗糙的手绘线条",
+    "移除原始背景中的网格色块",
+    "简化内部折痕细节，仅保留主要结构线"
+  ],
+  "restyle": [
+    "去除所有3D高光、阴影和渐变效果",
+    "应用哑光平涂质感，模拟蜡笔或马克笔在粗糙表面的涂抹感",
+    "边缘呈现毛糙、不规则的手绘痕迹"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原始的3D高光和阴影渲染",
+    "禁止使用原始图标中的浅绿色或浅青色",
+    "禁止使用细线条或完美的几何直线",
+    "禁止添加除纸飞机以外的复杂场景元素",
+    "禁止使用通用定位针、指南针或真实飞机形象替代纸飞机"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of a blue paper airplane on pure black background. Thick, rough marker pen strokes with uneven edges. Flat solid deep blue color fill, no gradients or shadows. Simplified geometric folds. Naive art aesthetic, centered composition.",
+  "color_application": "强制去色并重构配色。将原图标的高德蓝映射为主题限定的深宝蓝/靛蓝（Deep Royal Blue/Indigo）。去除所有渐变色，改为纯色块填充。背景统一为纯黑（#000000）。",
+  "stroke_application": "从原图标的无描边或精细矢量边缘，转变为粗重的黑色手绘描边。线条需具有明显的抖动感和厚度变化，模拟马克笔手绘痕迹，转角处处理为圆角或不规则钝角。",
+  "composition_application": "从原图的满版或带背景构图，转变为中心化符号构图。主体纸飞机居中，占据画布约60%-70%面积，四周留黑均匀。移除原始背景中的四宫格地图色块，仅保留主体。",
+  "identity_application": "严格保留纸飞机的核心几何骨架（机头尖锐、机翼折叠）和右上角45度指向。通过扁平化的深蓝块面和粗黑描边重塑视觉身份，确保在极简手绘风格下仍能清晰识别为高德地图的纸飞机符号。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内（此处主体用蓝色）",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止将纸飞机替换为定位针、指南针或文字Logo"
+  ]
+}

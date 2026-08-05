@@ -1,0 +1,94 @@
+{
+  "theme_board": {
+    "palette": "统一使用高透明度的冰蓝色（Ice Blue/Cyan）作为主体材质色，模拟冻结水的质感；背景统一为纯白或极浅的冷灰白色，营造冰雪环境的洁净感。",
+    "line_style": "无传统描边。通过材质的厚度、边缘的高光折射和内部阴影来定义轮廓。线条表现为圆润、厚实的立体块面，边缘光滑但带有物理冻结的自然感。",
+    "material": "核心材质为“冰块”或“ frozen glass”。具有半透明特性，内部包含细微的气泡、裂纹或雪花纹理。表面呈现湿润的光泽感，具有强烈的次表面散射（SSS）效果。",
+    "background": "极简留白。主体通常置于一个透明的冰制底座上，底部有融化的水渍或碎冰屑投影，增强落地感和真实物理属性。",
+    "composition": "中心构图。主体物体被放大并居中，占据画布约 60%-70% 的面积。采用微俯视或平视的 3D 视角，强调物体的体积感。",
+    "motif_rules": "将原本的平面 Logo 转化为 3D 冰雕实体。保留原 Logo 的核心几何特征，但将其“冻结”化。允许添加微小的装饰性元素（如雪花、气泡）来强化主题，但不改变主体识别度。"
+  },
+  "color_transform_rule": "完全摒弃 Original 的品牌固有色（如支付宝蓝、豆瓣绿、抖音黑红），强制转换为统一的冰蓝色调。颜色的深浅仅通过冰块的厚度和光影折射来表现，不再依赖色相区分 App。",
+  "background_transform_rule": "从 Original 的纯色填充或复杂渐变背景，转变为纯白/极浅灰的虚空背景。去除所有非主体的背景图形，仅在底部保留物理接触面的阴影和水渍细节。",
+  "stroke_transform_rule": "消除所有 2D 矢量描边。轮廓由 3D 模型的边缘倒角和高光反射形成。边缘处理圆润厚实，模拟冰块融化或打磨后的手感，避免尖锐的几何切角。",
+  "composition_transform_rule": "主体从 2D 平面填充变为 3D 立体悬浮或落地。增加 Z 轴深度信息。Original 中填满画布的图形，在 Style_ref 中通常会缩小比例以容纳 3D 透视带来的空间延伸，并在底部增加底座结构。",
+  "subject_scale_rule": "主体宽度约占画布宽度的 50%-60%，高度约占 60%-70%。必须包含底部的冰座，使整体视觉重心稳定。不允许主体溢出画布边缘。",
+  "detail_complexity_rule": "在保持 Logo 轮廓简洁的前提下，增加材质层面的复杂度（气泡、纹理、反光）。去除 Original 中的文字标签（如 'AI'）、复杂的色彩渐变层叠，仅保留最核心的图形符号。",
+  "theme_fidelity_constraints": [
+    "主体必须呈现为半透明的冰质材质，严禁使用不透明塑料或金属质感。",
+    "必须包含底部的冰座或地面接触阴影，不能悬浮于纯白背景中无根基。",
+    "内部必须包含随机的气泡或雪花纹理细节，避免材质过于纯净像玻璃。",
+    "颜色必须严格限制在冰蓝/青色系，禁止还原 App 原始品牌色。"
+  ],
+  "forbidden_style_drift": [
+    "禁止保留 Original 的扁平化设计风格。",
+    "禁止使用暖色调或非冰蓝色的材质颜色。",
+    "禁止去除 3D 体积感使其看起来像贴图。",
+    "禁止过度重构导致 Logo 几何特征丢失（如将音符变成真正的乐器）。"
+  ],
+  "reference_transformation_patterns": [
+    {
+      "app": "alipay",
+      "source_semantics": "支付、连接、无限循环（支字形态）",
+      "observed_transformation": "将平面的'支'字转化为立体的冰柱结构，笔画连接处呈现自然的冰体融合。",
+      "preserved_identity": "保留了'支'字的完整笔画结构和下方的无限循环曲线特征。",
+      "redesigned_parts": "去除了底部的'AI'文字标识；将白色实心填充改为半透明冰材质；增加了厚度感。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Style_ref 的轮廓与 Original 的汉字笔画走向完全一致，包括顶部的横竖结构和底部的圆弧交叉，仅仅是维度的提升。"
+    },
+    {
+      "app": "bilibili",
+      "source_semantics": "视频播放、电视屏幕、弹幕社区",
+      "observed_transformation": "将电视机外框和内部文字整体铸造为一块冰雕。",
+      "preserved_identity": "保留了经典的圆角矩形电视轮廓、天线形状以及内部'bilibili'字样的排列布局。",
+      "redesigned_parts": "去除了粉色背景；文字不再是独立的白色图层，而是与外框连为一体的冰雕镂空或浮雕效果；底部增加了融化的冰水底座。",
+      "preserve_major_structure": true,
+      "structure_evidence": "电视机的天线位置、屏幕长宽比、字母的间距和高低错落关系均与 Original 严格对应，未发生结构性重组。"
+    },
+    {
+      "app": "douban",
+      "source_semantics": "书籍、文化、豆字形态",
+      "observed_transformation": "将抽象的'豆'字图形转化为厚实的冰块堆叠。",
+      "preserved_identity": "保留了上中下三段式的结构布局，以及中间矩形的负空间特征。",
+      "redesigned_parts": "去除了绿色背景；将原本分离的笔画在 3D 空间中进行了物理连接或邻近摆放；材质透明化。",
+      "preserve_major_structure": true,
+      "structure_evidence": "顶部的短横、中间的口字型、底部的支撑结构，这三部分的相对位置和比例关系在 3D 化后保持不变。"
+    },
+    {
+      "app": "douyin",
+      "source_semantics": "音乐、音符、节奏",
+      "observed_transformation": "将标志性的音符符号雕刻成一块直立的冰碑。",
+      "preserved_identity": "保留了音符的符头圆圈、符干和符尾的弯曲角度。",
+      "redesigned_parts": "去除了故障风（Glitch）的红蓝重影特效；去除了黑色背景；将平面符号拉伸为具有厚度的 3D 实体；底部增加了方形冰座以支撑细长的符干。",
+      "preserve_major_structure": true,
+      "structure_evidence": "音符的整体剪影（Silhouette）与 Original 高度重合，特别是符尾向右弯曲的弧度和符头的大小比例均未改变。"
+    },
+    {
+      "app": "douyin_huoshan",
+      "source_semantics": "短视频、火焰、激情",
+      "observed_transformation": "主体音符冰雕化，原'火焰'元素被微缩并作为悬浮装饰物保留。",
+      "preserved_identity": "保留了抖音系的音符主体结构；保留了代表火山版的'火焰'语义符号。",
+      "redesigned_parts": "原本作为背景大元素的火焰被移除，改为左上角悬浮的小图标；原本白色的音符主体变为冰质；底部增加冰座。",
+      "preserve_major_structure": true,
+      "structure_evidence": "虽然火焰元素的位置和大小发生了巨大变化（从背景变前景装饰），但核心主体（音符）的几何结构与 douyin 参考例保持一致，且火焰符号本身未被重构为其他物体，属于身份元素的保留而非结构重构。"
+    }
+  ],
+  "shared_design_rules": [
+    "所有图标必须执行'冰封'操作：材质统一为带气泡/雪花的半透明蓝冰。",
+    "所有图标必须建立'基座'：无论是自然形成的冰堆还是规整的冰台，主体不能凭空漂浮。",
+    "所有图标必须'去色'：忽略原品牌色，仅通过光影塑造体积。",
+    "所有图标必须'去底'：背景统一为洁净的白色空间。"
+  ],
+  "identity_handling_policy": "优先保留 Original 的核心几何轮廓（Silhouette）和拓扑结构。对于具有强语义的附属元素（如火山版的火），允许调整其大小和位置以适应 3D 构图，但不能将其替换为无关的通用道具。识别性主要依靠形状的准确度，而非颜色。",
+  "structure_preservation_policy": {
+    "decision_scope": "per_app_before_generation",
+    "preserve_when": "当 Original 的 Logo 本身就是一个清晰的几何图形、文字或具象符号时，必须严格保留其外形轮廓，仅做 3D 挤出的材质变换。",
+    "recompose_when": "仅当 Original 包含无法 3D 化的纯平面装饰（如复杂的渐变光晕、故障风重影、背景纹理）时，才允许剔除这些部分，专注于主体骨架的重建。"
+  },
+  "common_forbidden_failures": [
+    "生成了不透明的蓝色塑料块，缺乏冰的通透感和内部纹理。",
+    "完全照搬 Original 的颜色（如生成了绿色的豆瓣冰块），破坏了整包的一致性。",
+    "主体没有底座或投影，看起来像是贴在白纸上的 3D 渲染图，缺乏场景感。",
+    "为了追求 3D 效果而改变了 Logo 的关键特征（例如把音符的符头画成了正方形）。",
+    "保留了 Original 中的文字说明（如'AI'），导致画面杂乱且风格不统一。"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "app": "amap",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "指向右上方的立体纸飞机（折纸箭头）形态",
+  "brand_cues_to_preserve": [
+    "标志性的蓝色折纸飞机轮廓",
+    "机头指向右上方约45度的动态趋势",
+    "机身中轴线与机翼的折叠结构关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "导航、方向指引的视觉隐喻",
+    "出行与探索的轻盈感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "高德地图的'纸飞机'符号具有极高的国民认知度，且其几何结构简单明确（三角形组合），完全符合主题规则中关于'高度抽象且独特的几何符号直接立体化'的要求。参考抖音音符和支付宝'支'字的处理逻辑，应保留原图标的完整剪影和内部折痕拓扑，仅做材质替换，严禁重构为指南针或地图等其他语义符号。",
+  "design_rationale": "选择 logo_preserve 策略是因为纸飞机本身就是高德地图最强的身份锚点。在冰雪主题下，将原本轻盈的'纸'材质转化为厚重通透的'冰'材质，能形成有趣的物理反差（冰雕飞机）。必须严格保留其折纸的棱角和指向性，通过冰块的折射光来强调机翼的层次感，确保用户在看到蓝色冰块时仍能瞬间识别出这是导航软件。",
+  "must_preserve": [
+    "纸飞机的整体外轮廓剪影",
+    "机头朝向右上方的角度",
+    "机身中间的脊线（折痕）位置",
+    "机翼与机身的比例关系"
+  ],
+  "can_recompose": [
+    "原本的纯色填充改为半透明冰质感",
+    "折痕处增加由于厚度产生的光影折射细节",
+    "表面增加微小的雪花或气泡纹理",
+    "边缘进行圆润化处理以模拟冰的融化感"
+  ],
+  "forbid": [
+    "禁止改变飞机的朝向（如变成垂直向上或向左）",
+    "禁止生成不透明的实心蓝色塑料块",
+    "禁止添加复杂的背景地图元素",
+    "禁止丢失机翼的折叠结构导致变成扁平三角形",
+    "禁止使用暖色调"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of a paper airplane pointing to the top-right. Material is translucent cyan-blue ice with internal bubbles and snowflake textures. Maintain the exact origami fold structure and sharp angles but with rounded icy edges. Glossy wet surface with caustic lighting. Pure white background with a small melting water puddle and contact shadow at the base."
+}

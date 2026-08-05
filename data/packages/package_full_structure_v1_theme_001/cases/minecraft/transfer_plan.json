@@ -1,0 +1,59 @@
+{
+  "app": "Minecraft",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中支付宝、Bilibili等案例均保留了原图标的核心剪影和拓扑结构，仅做材质替换。Minecraft 的 Steve 形象具有极高的全球辨识度，其独特的‘方块人’几何本身就是最强的语义。因此必须严格保留其主体轮廓，将其直接转化为冰雕实体，而非重构场景。",
+  "preserve": [
+    "Steve 的方形头部与躯干的整体外轮廓剪影",
+    "手持红色花朵的手臂姿态与空间位置关系",
+    "人物头身比例的方正感（Blocky aesthetic）",
+    "底部物理接触阴影与水渍细节"
+  ],
+  "must_preserve": [
+    "Steve 的方形头部和身体轮廓",
+    "手持红色花朵的动作结构",
+    "底部的物理接触阴影和水渍",
+    "冰块内部的雪花或气泡纹理"
+  ],
+  "recompose_allowed": [
+    "将原本粗糙的像素表面纹理转化为光滑的冰面折射效果",
+    "将面部五官弱化为冰体内部的光影折射，不再刻画具体像素点眼睛/嘴巴",
+    "移除所有背景元素（草地、泥土、天空），替换为纯白背景"
+  ],
+  "restyle": [
+    "主体材质：从像素贴图转变为半透明青冰蓝（Cyan-Ice Blue）高光泽冰质",
+    "光影处理：应用次表面散射（SSS）和边缘菲涅尔反射，模拟冰块通透感",
+    "色彩策略：强制去色，主体统一为冰蓝色系，仅保留手中花朵为高饱和红色点缀"
+  ],
+  "decorate": [
+    "在冰块内部嵌入随机分布的微小气泡和雪花纹理",
+    "在主体底部添加融化的水迹和碎冰屑以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色草地或棕色土地背景",
+    "禁止生成不透明的蓝色塑料或实心石头质感",
+    "禁止改变 Steve 的长宽比例或肢体动作",
+    "禁止使用暖色调作为主体颜色（除极小的红花外）",
+    "禁止在冰体表面绘制明显的黑色像素网格线"
+  ],
+  "generation_brief": "3D ice sculpture of Minecraft character Steve (head and torso) holding a small red flower. Translucent cyan-blue ice material with internal bubbles and snowflakes. Smooth glossy surface, no pixel grid lines on skin. Pure white background. Soft contact shadow and melting water puddle at base. High fidelity Octane render.",
+  "color_application": "应用 theme 的 color_transform_rule：主体完全摒弃 Minecraft 原有的肤色、绿衣和棕土色，统一转换为半透明的浅冰蓝色（Cyan-Ice Blue）。仅保留手中花朵为鲜艳的红色，作为唯一的暖色视觉锚点，形成冷暖对比。",
+  "stroke_application": "应用 theme 的 stroke_transform_rule：消除所有二维像素描边。将 Steve 的方块边缘处理为带有倒角的厚实冰体边缘，通过高光反射和内部折射来界定轮廓，而非线条。",
+  "composition_application": "应用 theme 的 composition_transform_rule：采用居中构图，移除所有背景环境。Steve 主体占据画布约 60%-70% 空间，底部预留空间给投影和水渍，营造悬浮或站立在冰面上的立体物件感。",
+  "identity_application": "在不破坏 theme fidelity 的前提下，通过严格保留 Steve 标志性的‘方块人’几何剪影和持花姿态来维持身份识别。虽然表面材质变为光滑冰块，但其整体的长方体堆叠结构保持不变，确保用户能通过轮廓瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色（绿/棕）作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（草地/泥土）。",
+    "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里），应保持图标本身的几何形态。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止出现扁平化矢量风格或低分辨率像素噪点。"
+  ]
+}

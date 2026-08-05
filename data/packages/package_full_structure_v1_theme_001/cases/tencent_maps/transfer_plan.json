@@ -1,0 +1,62 @@
+{
+  "app": "tencent_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的案例表明，对于高识别度的几何符号，必须严格保留其 2D 拓扑结构，仅做 Z 轴挤压和材质替换。腾讯地图的箭头轮廓极其简洁且具有高辨识度，任何重构都会导致无法识别，因此必须完整保留原图形的边缘曲线和比例，将其转化为厚实的冰雕实体。",
+  "preserve": [
+    "箭头的整体外轮廓曲线",
+    "中间分割线的走势（通过物理凹槽或内部纹理暗示）",
+    "指向右上方的角度（约45度）",
+    "图形的封闭性与完整性"
+  ],
+  "must_preserve": [
+    "主体的箭头/指针几何骨架",
+    "整体的倾斜角度",
+    "红蓝双色块的空间布局逻辑（转化为光影或纹理差异，而非颜色）"
+  ],
+  "recompose_allowed": [
+    "将平面色块转化为具有厚度的 3D 实体",
+    "边缘处理为圆润的倒角（Chamfer），模拟冰块磨损感",
+    "表面增加冷凝水珠、内部气泡或雪花纹理",
+    "底部增加接触阴影和少量碎冰/水渍以增强落地感"
+  ],
+  "restyle": [
+    "材质质感：从扁平矢量转为半透明冰晶/凝胶",
+    "色彩：强制去色，统一为冰蓝色调（Cyan/Ice Blue）",
+    "光影：增加次表面散射（SSS）、高光反射和内部折射"
+  ],
+  "decorate": [
+    "内部悬浮的微小气泡或雪花",
+    "表面的冷凝水珠",
+    "底部的融化水渍和碎冰细节"
+  ],
+  "forbid": [
+    "禁止保留原有的红色和蓝色填充",
+    "禁止将箭头变形为其他物体（如真正的罗盘仪器、车辆或通用大头针）",
+    "禁止使用不透明的塑料、金属或木质质感",
+    "禁止主体悬空无投影",
+    "禁止使用黑色或深色背景",
+    "禁止过度简化导致变成无法识别的蓝色方块"
+  ],
+  "generation_brief": "3D icon of Tencent Maps arrow shape, made of translucent light blue ice crystal, glossy wet surface, internal bubbles and snowflakes, rounded chamfered edges, soft studio lighting, pure white background, soft contact shadow with melting water details at base, high detail refraction, subsurface scattering, centered composition.",
+  "color_application": "Strictly remove original red/blue brand colors. Apply dominant Translucent Cyan/Light Ice Blue to the entire body. Use Pure White for specular highlights and Deep Blue/Grey for internal shadows and cast shadows. No other colors allowed on the main body.",
+  "stroke_application": "Remove all 2D outline strokes. Define forms through 3D volume, lighting, and refraction. Edges must be smooth, continuous, and physically rounded (chamfered) to mimic eroded ice.",
+  "composition_application": "Centralized composition. Extrude the 2D arrow geometry into a 3D solid with significant thickness. Occupy 60-70% of canvas height. Anchor the object on the ground plane with a soft contact shadow and small ice/water details at the base.",
+  "identity_application": "Preserve the exact silhouette and diagonal split structure of the Tencent Maps arrow. Maintain the 45-degree upward-right orientation. Represent the original 'red/blue' split logic through subtle physical grooves or internal texture variations within the uniform ice material, ensuring the geometric identity remains strictly recognizable without color cues.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal material, not opaque plastic.",
+    "Color must be strictly limited to ice blue/cyan spectrum.",
+    "Original icon shape must be clearly recognizable.",
+    "Bottom must have environmental interaction details (shadow, water stains, crushed ice)."
+  ],
+  "negative_constraints": [
+    "No flat vector style.",
+    "No original brand colors (red/blue) on the main body.",
+    "No dark backgrounds.",
+    "No matte finish.",
+    "No floating objects without shadows.",
+    "No distortion of the arrow's fundamental geometry."
+  ]
+}

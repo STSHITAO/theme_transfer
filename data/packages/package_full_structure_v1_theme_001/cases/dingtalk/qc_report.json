@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。保留了钉钉Logo核心的‘翅膀+闪电’几何拓扑，包括三段式羽毛结构和底部的尖锐折角。材质转化为半透明青冰蓝，内部包含气泡和雪花纹理，背景纯白且有接触阴影，完全符合transfer_plan中的strict级别要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "同样是非常优秀的候选图。风格、材质、身份识别度均达标。相比candidate_01，它增加了底部的融水和水渍细节，这符合decorate策略，但主体边缘的倒角似乎比01略大，导致闪电尖端稍微圆润了一点点（虽然仍在允许范围内）。整体质量极高，可作为备选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\dingtalk\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

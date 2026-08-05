@@ -1,0 +1,58 @@
+{
+  "app": "anipop",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标中的黄色小鸡具有极高的国民辨识度，其‘圆头+红冠’的拓扑结构是该 App 的核心资产。根据 theme_rules，对于清晰的几何或生物轮廓应保留主体结构。因此，不能将其重构为抽象符号，而应将原本复杂的 3D 渲染小鸡简化为符合主题手绘风格的平面剪影，保留其基本形态特征。",
+  "preserve": [
+    "黄色小鸡的头部圆润外轮廓",
+    "顶部红色鸡冠（水滴状/火焰状）及其与头部的相对位置",
+    "主体居中的构图布局"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗犷、抖动的手绘黑色描边",
+    "无渐变、无阴影的平涂质感",
+    "高饱和度的奶黄色主体填充",
+    "高饱和度的砖红色鸡冠填充"
+  ],
+  "recompose_allowed": [
+    "将 3D 立体眼球简化为简单的黑色圆点或弯月形笑脸",
+    "将复杂的羽毛纹理简化为边缘的轻微锯齿或波浪线以模拟手绘感",
+    "移除原图中的青蛙、河马等次要角色",
+    "移除原图中的消除网格背景"
+  ],
+  "restyle": [
+    "从 3D 拟物渲染转换为扁平化色块拼接",
+    "材质从光滑塑料感转换为蜡笔/马克笔干性涂抹质感",
+    "边缘从平滑矢量曲线转换为不规则手绘抖动感线条"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原图的 3D 光泽、高光反射和环境光遮蔽",
+    "禁止使用原图的绿色、紫色、蓝色等多色背景或网格",
+    "禁止使用平滑、锐利的工业矢量线条",
+    "禁止出现除黄、红、黑以外的颜色（如原本的亮橙色、青色）",
+    "禁止添加任何文字标签或水印"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of a cute yellow chick head on a pure black background. Use thick, rough black marker strokes for the outline. Fill the chick with solid flat milky-yellow color and a solid red comb on top. Simplify the face to naive geometric shapes (e.g., simple dots for eyes, curved line for mouth). No shadows, no gradients, no 3D effects. The style should look like a clumsy crayon drawing.",
+  "color_application": "强制去色并重构配色。将原图中小鸡的亮黄色映射为主题限定的‘奶黄/米白’色值，将鸡冠的红色映射为‘砖红/朱红’。去除所有高光和阴影过渡，仅使用这两种纯色块进行平涂填充，确保色彩界限分明且无渐变。",
+  "stroke_application": "应用粗重的黑色手绘描边。围绕小鸡头部和鸡冠的外轮廓绘制不规则、带有抖动感的粗线条，模拟马克笔快速勾勒的痕迹。线条粗细需有自然变化，转角处处理为圆润钝角，严禁使用平滑细线。",
+  "composition_application": "采用单体居中构图。移除原图中所有的背景网格和其他动物角色，仅保留黄色小鸡头部作为唯一视觉主体。将主体放大至占据画布宽度的 60%-70%，四周留出均匀的纯黑背景空间，确保视觉重心集中且呼吸感充足。",
+  "identity_application": "通过保留‘圆头+红冠’这一核心拓扑结构来维持身份识别。虽然去除了3D细节和复杂表情，但通过简化的几何五官（如圆点眼、弧线嘴）传达快乐情绪，确保用户在极简风格下仍能一眼识别出这是‘开心消消乐’的小鸡形象。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑手绘风格描边",
+    "色彩必须限制在红、黄、黑范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的写实画风或3D渲染效果",
+    "禁止使用 original 的品牌标准色（除非恰好符合主题色板）",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止出现网格背景或其他动物角色"
+  ]
+}

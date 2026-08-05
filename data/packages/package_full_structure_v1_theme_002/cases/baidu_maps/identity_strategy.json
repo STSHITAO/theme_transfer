@@ -1,0 +1,40 @@
+{
+  "app": "baidu_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "红色的倒水滴形定位针（Location Pin）轮廓，这是地图类应用最通用的视觉符号，也是百度地图的核心识别特征。",
+  "brand_cues_to_preserve": [
+    "经典的红色倒水滴/气球状定位针外轮廓",
+    "定位针内部包含的 'du' 字母形态（需转化为图形化笔画）",
+    "底部的尖角指向性"
+  ],
+  "semantic_cues_to_preserve": [
+    "地图导航的空间指向感",
+    "定位标记的稳固感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象的几何符号（定位针），符合 theme_rules 中 '当 Original 图标本身就是清晰的几何符号...必须保留其主体轮廓' 的条件。因此不需要像游戏图标那样进行语义重构，而是直接对现有的定位针形状进行风格化填充和描边处理。",
+  "design_rationale": "百度地图的原始图标已经是极简的符号化设计，非常契合本主题的‘单体居中构图’和‘几何块面组合’规则。策略上选择直接保留其标志性的红色定位针轮廓，将内部的 'du' 文字转化为主题特有的粗犷手写笔触，并添加不规则的黑色手绘描边。背景彻底替换为纯黑，以突出主体的复古玩具感。",
+  "must_preserve": [
+    "定位针的整体外轮廓（上圆下尖）",
+    "纯黑背景 (#000000)",
+    "粗重的黑色/深色手绘描边",
+    "红、蓝、黄/白的主题限定色板"
+  ],
+  "can_recompose": [
+    "内部的 'du' 文字字体（改为涂鸦风格或几何块面）",
+    "原本底部的透视地图背景（完全移除）",
+    "原本的平滑矢量边缘（改为抖动的手绘边缘）",
+    "原本的高光和立体阴影（改为纯色平涂）"
+  ],
+  "forbid": [
+    "保留原始的白色圆角矩形底板",
+    "保留底部的蓝色/绿色透视道路背景",
+    "使用细线条或无描边设计",
+    "使用非主题色（如原本的浅蓝、浅绿、纯白文字）",
+    "保留任何立体光影或渐变效果"
+  ],
+  "generation_direction": "Generate a retro hand-drawn doodle icon of a red location pin (map marker) on a pure black background. The pin shape must be preserved but rendered with thick, rough, uneven black marker outlines and solid flat red fill. Inside the pin, abstractly represent the letters 'du' using thick, clumsy yellow or white brush strokes. No gradients, no shadows, no original map background. The style should look like a naive crayon drawing or a sticker."
+}

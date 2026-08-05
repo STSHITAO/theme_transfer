@@ -1,0 +1,57 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，对于具有强文字或几何特征的图标，必须保留其原始轮廓和笔画结构，仅做材质替换。拼多多的心形和‘拼’字是其核心识别符，严禁重构为其他物体（如购物袋或礼盒），必须将现有的二维平面图形直接‘挤压’为三维冰块实体。",
+  "preserve": [
+    "心形外轮廓骨架",
+    "中心汉字‘拼’的笔画拓扑结构",
+    "内部三角形网格的空间分割逻辑"
+  ],
+  "must_preserve": [
+    "心形整体几何形态",
+    "‘拼’字的可读性字形",
+    "三角形拼接带来的‘聚合’视觉隐喻"
+  ],
+  "recompose_allowed": [
+    "将锐利的直角边缘打磨为圆润的冰蚀效果",
+    "将网格内的微小商品图标简化为冰块内部的冻结气泡或浅浮雕纹理",
+    "调整三角形分割线为物理凹槽或厚度变化"
+  ],
+  "restyle": [
+    "去除所有红色品牌色，统一转换为半透明冰蓝色",
+    "表面增加冷凝水珠和高光反射",
+    "内部嵌入微小雪花或空气气泡以增强冰质感"
+  ],
+  "decorate": [
+    "底部添加融化的水渍和碎冰细节",
+    "投射柔和的环境接触阴影"
+  ],
+  "forbid": [
+    "禁止保留任何红色填充或描边",
+    "禁止生成不透明的塑料或金属质感",
+    "禁止将心形改为圆形或其他非心形几何体",
+    "禁止主体悬空无地面交互",
+    "禁止过度简化导致‘拼’字不可辨认"
+  ],
+  "generation_brief": "3D icon of Pinduoduo logo as a translucent light-blue ice sculpture. Heart shape composed of triangular ice segments. Center features thick ice-carved Chinese character '拼'. Material has subsurface scattering, internal bubbles, and frost. Glossy wet surface with condensation. Pure white background. Soft contact shadow with melting water puddle at base. No red colors.",
+  "color_application": "Strictly replace original red (#E02E24) with Translucent Cyan/Ice Blue (#A0D8EF). Use pure white for specular highlights and deep blue/grey for internal shadows. No brand colors allowed in the main body.",
+  "stroke_application": "Remove all 2D vector strokes. Define edges through 3D volume, refraction, and lighting contrast. Edges must be chamfered and rounded to mimic eroded ice.",
+  "composition_application": "Center the heart-shaped ice block. Maintain the original triangular grid layout but render as physical thickness/segments. Occupy 60-70% of canvas height. Anchor with ground shadow and melting details.",
+  "identity_application": "Preserve the exact silhouette of the heart and the structural topology of the character '拼'. Recognizability relies on shape preservation since color is removed. Simplify internal product icons into subtle texture details within the ice.",
+  "fidelity_constraints": [
+    "Subject must be translucent ice/crystal material, not opaque plastic.",
+    "Color palette strictly limited to ice blues, whites, and shadow greys.",
+    "Original core silhouette (heart + '拼') must be clearly recognizable.",
+    "Must include environmental grounding (shadow/water) at the base."
+  ],
+  "negative_constraints": [
+    "No flat vector styles or solid color fills.",
+    "No red, green, or other brand-specific colors in the main object.",
+    "No dark or complex backgrounds.",
+    "No low-poly or matte finishes.",
+    "No floating objects without contact shadows."
+  ]
+}

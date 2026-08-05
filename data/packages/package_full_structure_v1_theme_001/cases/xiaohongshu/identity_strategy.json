@@ -1,0 +1,39 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“小红书”三个汉字的特定字体设计（尤其是“红”字绞丝旁的折角处理和整体字重）",
+  "brand_cues_to_preserve": [
+    "原始图标的文字排版结构",
+    "三个汉字的具体笔画形态和间距",
+    "白色文字在红色背景上的负空间关系（转化为冰体本身的形状）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字的可读性",
+    "作为社区/记录平台的文本属性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的迁移案例，该主题对于文字类或强几何符号类图标，采取直接立体化策略。小红书的核心识别完全依赖于这三个特定的汉字字形，任何对结构的重组（如变成书本或相机）都会导致身份丢失。因此，必须保留原始文字的完整轮廓，仅将其从平面矢量转换为具有厚度的3D冰雕实体。",
+  "design_rationale": "选择 logo_preserve 策略是因为小红书的品牌资产高度集中在其定制字标上。根据 theme_design_analysis，所有颜色将被强制统一为冰蓝色，这意味着原本依靠“红色”建立的品牌识别将失效，唯一的识别手段只剩下“形状”。因此，必须严格保留字形的几何特征，通过增加Z轴厚度、边缘倒角和内部气泡纹理来适配冰雪主题，同时确保文字依然清晰可辨。",
+  "must_preserve": [
+    "“小红书”三字的完整轮廓剪影",
+    "字体的笔画粗细比例和转折角度",
+    "文字之间的相对位置和间距"
+  ],
+  "can_recompose": [
+    "材质（由不透明纯色变为半透明冰体）",
+    "颜色（由红白变为冰蓝/透白）",
+    "表面细节（增加冷凝水珠、雪花纹理）",
+    "底部增加融化的水迹或薄冰底座以增强落地感"
+  ],
+  "forbid": [
+    "禁止保留原始的红色背景或红色文字",
+    "禁止将文字替换为书籍、相机等具象物体",
+    "禁止使用不透明的塑料质感，必须通透",
+    "禁止文字笔画粘连导致无法识别",
+    "禁止背景出现复杂的冰雪场景，保持纯白"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '小红书'. The text should be thick, translucent pale cyan ice with internal bubbles and snowflake textures. Surface should have condensation droplets and glossy highlights. Place on a clean white background with a subtle contact shadow and melting water at the base. No red colors, no solid opaque materials."
+}

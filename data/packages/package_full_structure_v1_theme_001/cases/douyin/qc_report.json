@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。严格保留了抖音音符的拓扑结构（符头、符干比例准确），材质呈现高透光的冰雕质感，内部包含气泡和雪花纹理，底部有厚实的冰块底座及融化的水渍细节。色彩统一为浅冰蓝色，无品牌色残留，背景洁白。是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "整体风格正确，也是优秀的冰雕音符。但相比 candidate_01，其符干部分的几何形态略显僵硬，且符头与符干的连接处不如 candidate_01 自然流畅。底座和水渍细节也略逊于前者，但仍属于高质量生成结果。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\douyin\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

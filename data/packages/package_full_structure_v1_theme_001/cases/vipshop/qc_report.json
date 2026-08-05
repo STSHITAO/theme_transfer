@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 80,
+      "background_score": 90,
+      "composition_score": 50,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重违反结构保留策略。生成模型错误地将底部的辅助文字'品牌特卖'重构为立体的'V'形冰座，而核心的'唯品会'三字却处理成了缺乏体积感的平面图层，导致主体与附属元素的本末倒置，且丢失了核心文字的3D冰雕质感。",
+      "recommendation": "不推荐。虽然保留了文字内容，但空间关系和材质应用完全错误，不符合'唯品会'三字作为核心3D主体的要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了transfer_plan。将'唯品会'和'品牌特卖'准确转化为具有通透感、内部纹理（气泡/雪花）和边缘高光的3D冰雕字体。严格保留了原始字形结构和排列方式，背景干净，无多余杂物，完全符合支付宝/豆瓣案例的冰雕风格参考。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\vipshop\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

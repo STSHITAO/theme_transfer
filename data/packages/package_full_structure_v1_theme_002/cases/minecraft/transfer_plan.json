@@ -1,0 +1,59 @@
+{
+  "app": "minecraft",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Minecraft 的原始图标主体已经是高度符号化的几何体（方块人），符合主题‘将复杂物体抽象为几何块面’的规则。因此不需要像游戏角色头像那样进行语义重构，而是直接保留其经典的方块人头轮廓和手持花朵的空间关系，仅对材质、描边和配色进行主题化迁移。",
+  "preserve": [
+    "正方体头部几何结构",
+    "手持红色花朵的动作特征",
+    "居中构图布局"
+  ],
+  "must_preserve": [
+    "方块状的人头轮廓拓扑",
+    "手中持有的花朵形态",
+    "粗黑色手绘描边风格"
+  ],
+  "recompose_allowed": [
+    "面部五官细节简化为色块",
+    "身体躯干部分省略或极简处理",
+    "原始像素格纹理转化为哑光平涂",
+    "底部立体文字移除"
+  ],
+  "restyle": [
+    "将原本的肉色/肤色映射为主题限定的奶黄或砖红色块",
+    "将原本的绿色草地背景彻底移除，替换为纯黑背景",
+    "将锐利的像素锯齿边缘转化为不规则的手绘马克笔触"
+  ],
+  "decorate": [
+    "在花朵或面部适当位置增加简单的主题装饰点（如四角星）以增强涂鸦感"
+  ],
+  "forbid": [
+    "保留原始的像素网格线或抗锯齿平滑效果",
+    "使用原始的绿色草方块背景或任何非纯黑背景",
+    "使用细线条、矢量圆角或工业级平滑边缘",
+    "添加立体光影、渐变、高光或环境光遮蔽",
+    "出现除红、蓝、黄/白、黑以外的颜色（特别是原本的鲜绿色）",
+    "写实化渲染或3D建模效果"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of Minecraft Steve's head. Pure black background. Subject is a simplified cubic head shape with rough, thick black marker outlines. Fill colors are high-saturation brick red or creamy yellow (no green). Holding a simple red flower. Flat matte texture, crayon/marker feel, no pixels, no shadows, no gradients. Clumsy, naive, cute aesthetic.",
+  "color_application": "强制去色。将原图的肤色映射为高饱和度的奶黄或砖红，花朵保持鲜艳红色。严禁使用绿色、棕色或渐变色。所有色块均为纯色平涂。",
+  "stroke_application": "添加粗重、不规则的黑色手绘描边。边缘需呈现马克笔涂抹的抖动感和拙朴感，禁止平滑矢量线条。",
+  "composition_application": "主体（方块人头+花）居中，占据画布60%-70%面积。移除所有背景纹理和底部文字，确保纯黑背景留白均匀。",
+  "identity_application": "通过保留‘立方体头部’和‘手持红花’的核心拓扑结构来维持身份。即使去除了像素细节和特定肤色，用户仍能通过几何形状识别出Minecraft。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景 (#000000)",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的像素网格或抗锯齿平滑边缘",
+    "禁止使用 original 的绿色/棕色品牌标准色",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效或背景纹理",
+    "禁止出现3D渲染、光泽感或照片级真实感"
+  ]
+}

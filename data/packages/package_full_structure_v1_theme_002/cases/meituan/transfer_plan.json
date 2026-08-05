@@ -1,0 +1,61 @@
+{
+  "app": "Meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 bilibili 案例，当 Original 为清晰的文字 Logo 时，应保留其主体轮廓和空间布局。美团的图标本质是纯文字设计，若重构为其他物体（如袋鼠、外卖箱）会导致品牌识别度在极简风格下丧失。因此必须保留“美团”二字的拓扑结构，仅对笔画进行主题化的几何块面重组。",
+  "preserve": [
+    "“美团”两个汉字的左右并列布局与相对比例",
+    "“团”字的外部方形包围结构及其内部构件的相对位置",
+    "汉字笔画的基本拓扑连接关系",
+    "主体居中的构图方式"
+  ],
+  "must_preserve": [
+    "“美团”二字的完整字形骨架，严禁简化为拼音或英文",
+    "纯黑背景 (#000000)",
+    "粗重的黑色手绘感描边",
+    "禁止引入袋鼠、外卖箱等具象插图元素"
+  ],
+  "recompose_allowed": [
+    "将锐利的黑体笔画转化为圆润、不规则的蜡笔/马克笔粗条块",
+    "将直角转角处理为钝角或圆角，模拟手绘拙朴感",
+    "去除原有字体的衬线、切角等精细印刷细节",
+    "允许在笔画间隙或内部嵌入极少量的主题装饰色块（如红/蓝点缀）"
+  ],
+  "restyle": [
+    "字体材质由工业矢量转为哑光平涂的蜡笔/粉笔质感",
+    "边缘由平滑锐利转为抖动、毛糙的手绘轮廓",
+    "色彩由黑白高对比转为主题限定的奶黄/米白主色，辅以红/蓝点缀"
+  ],
+  "decorate": [
+    "在保持字形清晰的前提下，允许笔画末端呈现自然的涂抹不均感",
+    "允许轻微的笔画粗细变化以模拟运笔压力"
+  ],
+  "forbid": [
+    "禁止保留原本的亮黄色背景",
+    "禁止使用渐变、阴影、高光或3D立体效果",
+    "禁止使用细线条或完美的几何直线",
+    "禁止使用主题色板（红/蓝/黄/白/黑）之外的颜色（如绿色、紫色）",
+    "禁止将文字替换为图形符号或吉祥物"
+  ],
+  "generation_brief": "Retro hand-drawn doodle style icon of the Chinese characters '美团'. Thick, clumsy marker strokes with rough uneven edges. Characters filled with creamy yellow flat color, outlined with heavy black hand-drawn lines. Pure black background. Simplified geometric blocky shapes for strokes, retaining the square structure of '团' and symmetry of '美'. No gradients, no shadows, no realistic details, no kangaroo.",
+  "color_application": "将原品牌黄色的视觉权重映射为主题色板中的‘奶黄/米白’作为文字主填充色。若需增加层次，可在笔画局部点缀主题深红或深蓝，但必须保持高饱和度平涂，严禁渐变。背景强制替换为纯黑 (#000000)。",
+  "stroke_application": "移除原有字体的精细边缘，添加粗重、不规则的黑色手绘描边。描边应具有明显的抖动感和厚度变化，模拟马克笔快速书写的痕迹，转角处处理为圆润或钝角，避免锐利直角。",
+  "composition_application": "保持‘美团’二字居中布局，占据画布约60%-70%面积。去除所有背景装饰，确保主体与纯黑背景形成强烈对比。维持左右结构的平衡，不追求严格对称，允许轻微的手绘偏移以增加生动感。",
+  "identity_application": "通过严格保留‘美团’二字的拓扑结构和‘团’字的方框特征来维持身份。将原本工业感的黑体字重构为主题化的拙朴块面，确保用户在看到简化的黄色手绘文字时仍能立即识别为美团，而非其他应用。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须具有粗黑手绘描边",
+    "色彩必须限制在红、蓝、黄/白范围内",
+    "必须完全扁平化，无光影立体感",
+    "必须保留汉字‘美团’的可读性结构"
+  ],
+  "negative_constraints": [
+    "禁止出现写实风格的袋鼠或人物",
+    "禁止保留原有的亮黄色背景",
+    "禁止使用细线条或平滑矢量边缘",
+    "禁止使用渐变色或透明效果",
+    "禁止将汉字替换为英文或拼音"
+  ]
+}

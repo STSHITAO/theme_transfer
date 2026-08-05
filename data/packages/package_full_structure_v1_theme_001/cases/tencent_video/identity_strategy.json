@@ -1,0 +1,37 @@
+{
+  "app": "tencent_video",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "Three-layered triangular play button structure (Blue outer, Green middle, Orange inner)",
+  "brand_cues_to_preserve": [
+    "The specific concentric triangular arrangement of the three color bands",
+    "The central negative space forming a 'Play' triangle",
+    "The rounded, fluid curvature of the outer edges"
+  ],
+  "semantic_cues_to_preserve": [
+    "Universal 'Play' symbol semantics",
+    "Layered depth implying content richness"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "The reference examples (Alipay, Bilibili) demonstrate that complex logos are preserved as exact 3D extrusions. For Tencent Video, the three overlapping triangles form a unique geometric signature that must remain intact to be recognizable. The transformation is purely material (flat vector -> 3D ice block) and chromatic (multi-color -> unified ice blue), without altering the silhouette or internal segmentation lines.",
+  "design_rationale": "Tencent Video's logo is a highly recognizable geometric symbol. Following the theme's 'Identity Handling Policy', we maintain the exact shape to ensure instant recognition while applying the 'Ice/Crystal' material to unify it with the theme. The distinct layers of the original logo translate perfectly into layers of ice with varying refraction or internal bubbles, creating a natural 3D effect without needing to redesign the object.",
+  "must_preserve": [
+    "The overall triangular silhouette pointing right",
+    "The internal division lines separating the three bands (rendered as grooves or internal refraction lines in the ice)",
+    "The central triangular hole"
+  ],
+  "can_recompose": [
+    "Original brand colors (Blue/Green/Orange) must be replaced by Ice Blue/Translucent White",
+    "Flat surfaces become volumetric with thickness (Z-axis extrusion)",
+    "Internal details can be represented by embedded snowflakes or bubbles rather than solid color fills"
+  ],
+  "forbid": [
+    "Retaining the original Green or Orange colors",
+    "Flattening the icon into a 2D blue shape",
+    "Removing the internal segmentation lines (making it a solid triangle)",
+    "Adding unrelated props like a TV set or film reel"
+  ],
+  "generation_direction": "3D translucent ice sculpture of the Tencent Video logo. Shape: Three nested triangular bands forming a play button, extruded with thickness. Material: Pale cyan/ice blue crystal with subsurface scattering. Details: Embedded snowflake textures and tiny air bubbles inside the ice volume. Surface: Glossy, wet look with condensation droplets. Lighting: Soft studio lighting with caustics. Background: Pure white with a subtle contact shadow and melting water puddle at the base."
+}

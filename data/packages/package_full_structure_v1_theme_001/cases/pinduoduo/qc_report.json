@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合生成计划。严格保留了心形轮廓和‘拼’字的拓扑结构，材质替换为通透的冰块，且去除了所有红色品牌色。底部的融水细节与参考图风格高度一致，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 70,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "核心识别符丢失。虽然材质和构图符合主题，但中心的‘拼’字被错误地重构为模糊的纹理或不可读的符号，违反了‘must_preserve: ‘拼’字的可读性字形’的严格约束。对于拼多多这种强文字特征的图标，丢失文字意味着丢失身份。",
+      "recommendation": "不推荐。尽管冰雕质感和三角形分割做得很好，但由于无法识别核心汉字‘拼’，导致目标App辨识度极低，属于过度重构导致的身份丢失。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\pinduoduo\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

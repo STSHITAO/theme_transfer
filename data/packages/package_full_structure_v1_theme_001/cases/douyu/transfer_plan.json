@@ -1,0 +1,62 @@
+{
+  "app": "douyu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题（如Bilibili小电视、Douyin音符）均严格保留了原图标的几何拓扑结构，仅进行材质替换。斗鱼的鲨鱼形象具有极高的辨识度，其轮廓本身就是核心资产。因此，必须将原本的2D矢量鲨鱼直接转化为3D冰雕实体，严禁改变其头部比例或重构为其他鱼类/场景，以确保在统一冰蓝风格下仍能瞬间被识别。",
+  "preserve": [
+    "鲨鱼头部的整体外轮廓（头顶弧线、背鳍突起、下颚线条）",
+    "嘴部张开的角度及内部锯齿状牙齿的排列形态",
+    "眼睛在头部的相对位置及圆形轮廓",
+    "下处咬合物的基本形状（保留火箭/飞镖的几何特征）"
+  ],
+  "must_preserve": [
+    "鲨鱼侧脸的整体外轮廓",
+    "嘴部张开的角度及内部锯齿状牙齿的排列形态",
+    "眼睛在头部的相对位置及圆形轮廓",
+    "下处咬合物的基本形状（保留火箭/飞镖的几何特征，但材质改为冰）"
+  ],
+  "recompose_allowed": [
+    "原有的黑色描边（转化为冰块的边缘厚度和折射高光）",
+    "原有的橙色、白色填充色（统一替换为浅冰蓝色半透明材质）",
+    "火箭/飞镖的具体细节纹理（简化为冰块内部的气泡或裂纹）",
+    "背景的橙色渐变（移除，替换为纯白背景）"
+  ],
+  "restyle": [
+    "将扁平矢量图形转化为具有体积感的3D冰雕实体",
+    "应用次表面散射（SSS）效果模拟半透明冰晶质感",
+    "去除所有品牌原色（橙/黑/白），统一为Cyan-Ice Blue色调",
+    "边缘进行倒角处理以捕捉高光，模拟冰块融化感"
+  ],
+  "decorate": [
+    "在冰块内部嵌入随机分布的微小气泡和雪花纹理",
+    "在主体底部添加融化的水渍、小水洼或碎冰屑",
+    "添加柔和的接触阴影和光线折射形成的焦散光斑"
+  ],
+  "forbid": [
+    "禁止生成不透明的蓝色塑料或实心色块",
+    "禁止改变鲨鱼的朝向或头部比例",
+    "禁止去除嘴里的物体导致变成普通张嘴鲨鱼",
+    "禁止保留原本的橙色或黑色作为主色调",
+    "禁止添加复杂的海洋背景或水泡场景",
+    "禁止使用二维描边界定轮廓"
+  ],
+  "generation_brief": "3D ice sculpture of Douyu shark logo, translucent cyan-blue ice material, shark head biting a rocket/dart, exact silhouette preservation including eye and jagged teeth, internal air bubbles and snowflake textures, glossy wet surface, caustic lighting, melting water puddle at base, pure white background, centered composition, octane render style.",
+  "color_application": "强制去色。将原Logo的橙色背景和黑白主体完全替换为主题定义的Cyan-Ice Blue（青冰蓝）和Translucent White（半透明白）。仅通过深蔚蓝（Deep Azure）表现阴影厚度，严禁出现任何暖色调或高饱和度品牌色。",
+  "stroke_application": "消除所有二维黑色描边。将原Logo的线条轮廓转化为3D实体的物理边缘，通过冰块的厚度、折射率差异和菲涅尔反射高光来界定形状。边缘需圆润光滑，模拟冰块打磨后的质感。",
+  "composition_application": "从平面填充式构图转变为立体物件式居中构图。主体占据画布约60%-70%空间，四周留白。确保鲨鱼与口中咬合物作为一个整体悬浮或立于白色空间中，底部预留空间给投影和水渍。",
+  "identity_application": "严格保留鲨鱼侧脸剪影、圆眼位置、锯齿牙齿以及'咬住火箭'的动态结构。将这些几何特征直接映射为冰雕实体，不进行语义替换或形态重构，仅通过材质的通透感和内部纹理（气泡/雪花）来体现主题化，确保用户能通过剪影瞬间识别。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征",
+    "背景必须保持洁白干净，底部必须有物理接触阴影和水渍",
+    "严禁直接使用原图的高饱和度品牌色（橙色）作为主体颜色"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题：禁止生成实心、不透明的物体（如磨砂玻璃或石头）",
+    "禁止破坏身份：禁止改变鲨鱼头部比例、去除牙齿或嘴中物体、改变朝向",
+    "禁止背景污染：禁止保留原始橙色背景或添加复杂场景元素",
+    "禁止风格错误：禁止使用二维描边、扁平化设计或暖色调主色"
+  ]
+}

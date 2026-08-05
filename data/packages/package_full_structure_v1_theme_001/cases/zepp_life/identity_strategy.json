@@ -1,0 +1,37 @@
+{
+  "app": "zepp_life",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "一大一小两个圆形的特定重叠几何关系（大圆在左下，小圆在右上），以及重叠区域的透镜/融合感。",
+  "brand_cues_to_preserve": [
+    "双圆相交的构图比例",
+    "小圆位于大圆右上方的空间位置",
+    "圆形边缘的光滑度"
+  ],
+  "semantic_cues_to_preserve": [
+    "圆形象征生命、细胞或健康数据的聚合",
+    "重叠部分象征设备与人的连接/数据同步"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Zepp Life 的图标是一个纯粹的几何符号（双圆重叠），没有复杂的背景装饰或易冲突的元素。根据 theme_design_analysis 中关于 douban 和 alipay 的处理逻辑，此类高识别度的几何图形应完整保留其轮廓和空间关系，仅进行材质维度的转换（2D转3D冰雕）。不需要进行语义重组。",
+  "design_rationale": "选择 logo_preserve 策略是因为 Zepp Life 的原始图标结构极其简洁且具有高辨识度。主题的核心挑战在于如何将原本依靠“颜色叠加”产生的视觉重心（红橙色重叠区），转化为依靠“物理体积和光影折射”产生的视觉重心。通过将双圆处理为两块交融的冰体，利用冰的次表面散射（SSS）和内部气泡来替代原有的色彩渐变，既保留了品牌基因，又完美契合冰雪主题。",
+  "must_preserve": [
+    "双圆相交的剪影轮廓",
+    "小圆在大圆右上方约1-2点钟方向的相对位置",
+    "整体图形的圆润无棱角特征"
+  ],
+  "can_recompose": [
+    "重叠区域的视觉效果（由颜色混合改为物理厚度的堆叠或融合）",
+    "表面的纹理细节（增加雪花、气泡以打破纯几何的单调）",
+    "底部的支撑结构（增加薄冰底座）"
+  ],
+  "forbid": [
+    "禁止保留原始的橙色、红色或黄色",
+    "禁止将两个圆分离或改变相对大小比例",
+    "禁止使用不透明的实心材质",
+    "禁止添加任何非冰质的装饰元素（如真实的叶子、水滴等）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of two intersecting spheres: a larger sphere at the bottom-left and a smaller sphere at the top-right. Material is translucent pale cyan ice with internal bubbles and snowflake textures. The intersection area should show thickness and refraction. No original colors. White background with soft contact shadow and melting water trace at the base."
+}

@@ -1,0 +1,27 @@
+{
+  "theme_style_analysis": "3D冰晶拟物风格（Ice Crystal Skeuomorphism）。该主题将原本扁平、矢量化的App图标转化为具有物理体积感的半透明冰块雕塑。核心特征是材质的通透感、内部的气泡与雪花纹理，以及物体置于白色背景上产生的真实投影和融化水渍细节。",
+  "common_original_to_style_transform": "从2D平面图形向3D立体实体的转化。原始图标的颜色被统一替换为冰蓝色调；原本的线条或色块被赋予厚度和深度，变成实体冰块；表面增加高光、折射和内部杂质（气泡/裂纹）以模拟真实冰块的质感。",
+  "common_background_transform": "背景统一处理为纯白或极淡的冷灰白色，以突出主体的通透感。主体底部通常伴有接触阴影（Contact Shadow）以及少量融化的水渍或碎冰屑，增强落地感和真实度。",
+  "common_foreground_transform": "主体符号完全材质化为冰块。边缘圆润光滑，带有明显的倒角和高光反射。内部包含随机分布的微小气泡、冰裂纹或雪花图案。对于原本有复杂配色的图标，仅保留其轮廓结构，颜色统一为冰蓝。",
+  "color_palette": [
+    "Cyan-Blue (冰蓝/青色)",
+    "White (纯白/高光)",
+    "Pale Blue (淡蓝/阴影)",
+    "Transparent (透明/半透明)"
+  ],
+  "line_style": "无描边。依靠3D模型的边缘高光和环境光遮蔽（AO）来界定轮廓。线条表现为光滑、圆润的实体边缘，具有玻璃或冰块的折射特性。",
+  "texture_material": "高光泽度的半透明冰材质（Translucent Ice）。表面光滑如镜，内部浑浊度低但含有冻结的气泡和细微的冰晶纹理。具有次表面散射（Subsurface Scattering）效果，光线能穿透物体边缘。",
+  "lighting_shadow": "全局冷色调照明，模拟自然光或影棚柔光。主体顶部和边缘有强烈的 specular highlights（镜面高光）。底部有柔和的投影，且投影边缘因光线穿透冰块而略带蓝色调（焦散效果）。",
+  "icon_composition_rules": "主体居中，占据画布约60%-70%的空间。保持原始图标的几何比例和识别特征，但通过3D透视略微调整角度（通常为微侧视或正视），使其看起来像是一个摆放在桌面上的实物摆件。",
+  "target_preservation": "必须严格保留目标App图标的核心轮廓、笔画结构和关键识别符号（如字母形状、特定几何组合）。严禁改变图标的拓扑结构，仅改变其材质表现和维度（2D转3D）。",
+  "generation_prompt": "3D icon design, frozen ice sculpture style, translucent cyan-blue ice material, internal bubbles and snowflake textures inside the ice, glossy surface with refraction, soft studio lighting, white background, contact shadow and melting water puddle at the base, high detail, photorealistic texture, C4D render style, minimalist composition.",
+  "negative_prompt": "flat design, 2d vector, solid colors, opaque material, plastic texture, metal texture, wood texture, dark background, complex background, text, watermark, logo leakage from reference apps, distorted shape, low resolution.",
+  "qc_focus": "检查主体是否呈现正确的半透明冰质感（而非塑料或玻璃）；检查内部是否有气泡/雪花细节；检查底部是否有自然的阴影和水渍；检查目标App的核心轮廓是否准确无误；检查是否去除了原始图标的品牌色（应统一为冰蓝色）。",
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ]
+}

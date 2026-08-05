@@ -1,0 +1,61 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay、Douban 等案例均严格保留了原图标的几何骨架。尽管目标 App 当前图标为人物海报，但作为系统应用图标，必须回归其最具辨识度的品牌符号——LoL 盾牌徽标。该徽标具有高度抽象且独特的几何特征，符合 theme_design_analysis 中'保留核心几何轮廓'的要求，因此选择将二维徽标直接转化为三维冰雕实体，而非重构场景。",
+  "preserve": [
+    "LoL 盾牌的整体外轮廓比例",
+    "内部 L 与 O 字母的负空间切割形状",
+    "底部中心的锐利尖角"
+  ],
+  "must_preserve": [
+    "LoL 盾牌的整体外轮廓比例",
+    "内部 L 与 O 字母的负空间切割形状",
+    "底部中心的锐利尖角",
+    "半透明冰质感与内部气泡纹理",
+    "底部的物理接触阴影与水渍"
+  ],
+  "recompose_allowed": [
+    "将原本平面的矢量线条转化为具有倒角的厚实冰砖边缘",
+    "忽略原图中的金属质感或金色描边，统一替换为冰的高光反射",
+    "移除所有文字（如'4周年'）和人物形象"
+  ],
+  "restyle": [
+    "整体渲染风格转为3D冰雕拟物",
+    "材质替换为高光泽度半透明冰晶",
+    "表面增加湿润高光与次表面散射效果"
+  ],
+  "decorate": [
+    "内部嵌入随机微小气泡与雪花纹理",
+    "边缘添加菲涅尔反射高光",
+    "底部添加融化水迹与碎冰屑"
+  ],
+  "forbid": [
+    "禁止生成不透明的蓝色塑料块",
+    "禁止保留原图的橙色/红色爆炸背景元素",
+    "禁止改变盾牌内部的字母结构导致无法识别",
+    "禁止使用写实的人物头像作为图标主体",
+    "禁止缺少底部投影导致物体悬浮",
+    "禁止使用暖色调作为主体主色"
+  ],
+  "generation_brief": "3D ice sculpture of the League of Legends shield logo (classic crest with interlocking L and O). Translucent cyan-blue ice material with internal air bubbles and snowflake textures. Glossy wet surface with chamfered edges. Pure white background. Melting water puddle and soft contact shadow at the base. No text, no characters, no orange colors. High fidelity Octane render.",
+  "color_application": "强制去色。将原Logo的金属金/黑/白配色完全转换为统一的浅冰蓝色（Cyan-Ice Blue）调。利用深蔚蓝（Deep Azure）表现冰块厚度产生的阴影，半透明白（Translucent White）表现高光透光区。严禁保留任何原品牌的高饱和度暖色。",
+  "stroke_application": "消除所有二维描边。将Logo的线条转化为三维实体的边缘，通过倒角处理（Chamfered edges）捕捉高光来界定轮廓。原Logo中的负空间（镂空部分）保持通透，但边缘需具备冰块的物理厚度。",
+  "composition_application": "采用居中构图，主体（盾牌Logo）占据画布约60%-70%的空间。从平面填充式转变为立体物件式构图，四周留白。底部预留空间给投影和水渍，确保物体稳固地'立'在白色平面上。",
+  "identity_application": "通过严格保留LoL盾牌徽标的几何拓扑结构（L与O的交织关系、底部尖角）来维持身份识别。放弃原图中的人物和复杂背景，仅依靠标志性的剪影形状和冰材质的厚重感来传达'防御'与'竞技'的品牌语义。",
+  "fidelity_constraints": [
+    "主体必须呈现明显的半透明冰质/果冻质感，不可表现为不透明塑料或金属。",
+    "内部必须包含随机的气泡或雪花纹理，这是该主题包的指纹特征。",
+    "背景必须保持洁白干净，底部必须有物理接触阴影。",
+    "严禁直接使用原图的高饱和度品牌色作为主体颜色。"
+  ],
+  "negative_constraints": [
+    "禁止生成实心、不透明的物体（如磨砂玻璃或石头）。",
+    "禁止保留原始的大面积品牌背景色（特别是橙色爆炸框）。",
+    "禁止过度复杂的场景化重构（如把图标变成一个小人站在雪地里）。",
+    "禁止使用暖色调作为主体主色。",
+    "禁止出现文字、水印或模糊低分辨率。"
+  ]
+}

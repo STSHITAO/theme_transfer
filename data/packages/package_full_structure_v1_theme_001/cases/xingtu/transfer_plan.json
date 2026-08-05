@@ -1,0 +1,58 @@
+{
+  "app": "xingtu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中对于简单几何体（如支付宝的'支'字、豆瓣的抽象图形）均采取了严格的轮廓保留策略。醒图的核心识别度完全依赖于其独特的'发光球体'剪影。尽管原图标是平面的荧光绿渐变，但在主题化时必须将其视为一个具有物理厚度的3D冰球实体。必须保留圆形的完美曲率和内部垂直的光影分割线，仅将材质从'平面光效'替换为'立体冰块'。",
+  "preserve": [
+    "正圆形的外轮廓",
+    "球体中央垂直向的光影/纹理分割",
+    "边缘的圆润高光处理"
+  ],
+  "must_preserve": [
+    "正圆形的外轮廓",
+    "球体中央垂直向的光影/纹理分割",
+    "边缘的圆润高光处理"
+  ],
+  "recompose_allowed": [
+    "原本的荧光绿色泽（必须转为冰蓝/透白）",
+    "平面的光晕效果（转化为3D体积感和边缘折射）",
+    "黑色的背景（转为纯白背景）"
+  ],
+  "restyle": [
+    "将平面荧光绿球体重绘为半透明冰蓝色3D冰球",
+    "将内部光影分割线转化为冰体内部的应力纹或折射光路",
+    "将边缘柔光转化为冰体边缘的 specular highlights 和 refraction"
+  ],
+  "decorate": [
+    "表面添加冷凝水珠（condensation droplets）",
+    "内部嵌入微小气泡和雪花纹理（snowflake details）",
+    "底部添加接触阴影和微量融化水迹"
+  ],
+  "forbid": [
+    "禁止保留原始的荧光绿色",
+    "禁止生成扁平的圆形色块，必须有明显的Z轴厚度",
+    "禁止丢失内部的垂直分割特征，否则会变成普通的冰球",
+    "禁止添加与修图无关的复杂装饰（如相机机身等）",
+    "禁止使用深色或黑色背景"
+  ],
+  "generation_brief": "3D icon of Xingtu app: a perfect translucent ice sphere with significant thickness. Inside the pale cyan crystal, feature a distinct vertical refraction line or stress pattern mimicking a lens split. Surface has glossy highlights, condensation droplets, and embedded snowflakes/bubbles. Clean white background with soft contact shadow and melting water trace at base. No green color, no flat vector style.",
+  "color_application": "Discard original fluorescent green. Apply uniform Pale Cyan/Ice Blue palette. Use translucency and subsurface scattering to define volume instead of color saturation.",
+  "stroke_application": "Remove all 2D strokes. Define edges through 3D volume, beveled ice corners, and light refraction/highlights. Ensure smooth, rounded contours.",
+  "composition_application": "Center the 3D ice sphere on a pure white background. Maintain the spherical geometry but add Z-axis thickness. Add a subtle ground shadow and water puddle at the base to anchor the object.",
+  "identity_application": "Preserve the perfect circular silhouette and the central vertical structural division. Translate the original 'glowing' effect into physical ice properties (refraction, internal cracks/light paths) to maintain the 'lens/editing' semantic without using color.",
+  "fidelity_constraints": [
+    "Must use unified ice blue semi-transparent material, strictly no original brand colors.",
+    "Must include internal bubbles, snowflakes, or ice crack textures.",
+    "Subject must present 3D volumetric sense, not a flat blue silhouette.",
+    "Background must be clean white to highlight translucency."
+  ],
+  "negative_constraints": [
+    "No fluorescent green or warm colors.",
+    "No flat 2D vector styles or solid opaque fills.",
+    "No dark or black backgrounds.",
+    "No loss of the central vertical division feature.",
+    "No complex scene elements or camera hardware illustrations."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "app": "Weibo",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the reference patterns (Alipay, Douyin), the core geometric silhouette must be strictly preserved to ensure recognition. The Weibo logo is a unified symbol; unlike the 'Volcano' example where elements were separated, the eye and signal waves should remain in their original relative positions but rendered as a cohesive 3D ice sculpture. The flat vector shapes are extruded into thick ice blocks.",
+  "preserve": [
+    "The distinct organic teardrop/eye outline of the main body",
+    "The three curved signal bars floating at the top right",
+    "The internal concentric structure: white sclera area and black pupil with two highlight dots",
+    "The exact aspect ratio and curvature of the main eye body",
+    "The position and angle of the three signal arcs relative to the eye"
+  ],
+  "must_preserve": [
+    "The distinct organic teardrop/eye outline of the main body",
+    "The three curved signal bars floating at the top right",
+    "The internal concentric structure: white sclera area and black pupil with two highlight dots"
+  ],
+  "recompose_allowed": [
+    "Convert flat colors to translucent ice blue/cyan gradients",
+    "Add 3D thickness (extrusion) to all elements",
+    "Embed snowflake/bubble textures inside the ice volume",
+    "Add condensation droplets on the surface",
+    "Soften sharp vector edges into rounded, melted ice contours"
+  ],
+  "restyle": [
+    "Apply uniform pale cyan/ice blue material to replace original red/orange",
+    "Render internal structures (pupil/sclera) as variations in ice density or embedded dark/clear ice layers rather than flat colors",
+    "Round all vector edges to simulate eroded/melted ice"
+  ],
+  "decorate": [
+    "Surface condensation water droplets",
+    "Internal embedded snowflake patterns",
+    "Micro-bubbles within the ice volume",
+    "Subtle ground shadow and melting puddle at base"
+  ],
+  "forbid": [
+    "Retaining the original red or orange brand colors",
+    "Flattening the icon into a 2D blue silhouette",
+    "Removing the signal waves",
+    "Using opaque plastic or metal materials",
+    "Complex background scenes (must be clean white)",
+    "Distorting the specific irregular 'bird head/eye' contour into a standard circle/oval"
+  ],
+  "generation_brief": "3D icon of Weibo logo (organic eye shape with 3 signal waves) made of translucent pale blue ice. Thick extrusion, glossy wet surface with water droplets and internal snowflakes. Pure white background with soft contact shadow. No red or orange colors. High fidelity C4D render style.",
+  "color_application": "Discard original red/orange palette. Apply uniform 'frozen water' aesthetic using Pale Cyan and Ice Blue. Use translucency and light refraction to define internal structures (pupil/sclera) instead of contrasting colors.",
+  "stroke_application": "Eliminate all 2D strokes. Convert outlines into volumetric 3D edges with rounded, beveled corners mimicking worn ice. Define shapes via specular highlights and refraction rather than drawn lines.",
+  "composition_application": "Centralized composition. Extrude the 2D logo into a 3D object occupying 70-80% of canvas. Maintain original relative positioning of eye and signal waves. Add subtle ground shadow/puddle to anchor the object on a white background.",
+  "identity_application": "Preserve the exact geometric silhouette of the 'eye' and 'signal waves'. Express identity through shape fidelity and structural accuracy, not color. Internal details (pupil/highlights) are rendered as density variations or embedded elements within the ice block.",
+  "fidelity_constraints": [
+    "Must use unified ice blue semi-transparent material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Subject must present 3D volume with subsurface scattering",
+    "Background must be clean white"
+  ],
+  "negative_constraints": [
+    "No original brand colors (red/orange)",
+    "No opaque plastic or metal materials",
+    "No complex scene backgrounds",
+    "No distortion of key geometric features (eye shape, signal wave count/curve)"
+  ]
+}

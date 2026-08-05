@@ -1,0 +1,40 @@
+{
+  "app": "dingtalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "翅膀与闪电结合的剪影轮廓（Wing-Lightning Silhouette）",
+  "brand_cues_to_preserve": [
+    "标志性的白色翅膀形状",
+    "底部的闪电/折线结构",
+    "向右上方倾斜的动态角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "速度感（通过闪电元素表达）",
+    "飞翔/提升（通过翅膀元素表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "钉钉的图标是一个高度抽象且独特的几何符号（翅膀+闪电），符合 theme_design_analysis 中关于'具有高度抽象且独特的几何符号必须直接立体化'的规则。参考抖音音符和支付宝'支'字的处理方式，应完整保留其外轮廓和内部线条拓扑，仅做材质替换和厚度增加，不进行语义重构。",
+  "design_rationale": "钉钉作为高频使用的办公应用，其'翅膀+闪电'的符号具有极高的国民辨识度。在当前'冰雕拟物'主题下，最佳策略是将这一扁平符号直接转化为立体的冰晶雕塑。保留原图标的锐利边缘和动态倾角，利用冰材质的折射和通透感来表现'速度'与'高效'，同时严格遵守主题的去色规则，将原本的蓝色背景去除，主体统一为浅冰蓝色。",
+  "must_preserve": [
+    "翅膀的三段式羽毛结构比例",
+    "底部闪电的尖锐折角",
+    "整体向右上方冲刺的姿态",
+    "图标的长宽比"
+  ],
+  "can_recompose": [
+    "将平面图形拉伸为具有物理厚度的3D实体",
+    "边缘进行圆润倒角处理以模拟冰块融化感",
+    "内部填充气泡、雪花纹理和冰裂细节",
+    "表面增加湿润的高光反射和焦散效果"
+  ],
+  "forbid": [
+    "禁止改变翅膀或闪电的形状结构",
+    "禁止保留原始的深蓝色背景",
+    "禁止生成不透明的蓝色塑料质感",
+    "禁止添加任何非冰材质的装饰（如金属螺丝、木纹）",
+    "禁止丢失底部的接触阴影和水渍"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the DingTalk logo (a stylized wing combined with a lightning bolt). The object must be made of translucent cyan-blue ice with internal bubbles and snowflake textures. Maintain the exact original silhouette and sharp angles but with rounded, melted edges. Place it on a pure white background with a realistic contact shadow and a small puddle of melting water at the base. No solid colors, no background graphics."
+}

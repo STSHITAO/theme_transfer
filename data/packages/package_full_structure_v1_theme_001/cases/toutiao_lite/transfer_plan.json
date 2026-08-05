@@ -1,0 +1,59 @@
+{
+  "app": "toutiao_lite",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的案例表明，文字类或几何图形类图标应直接进行 3D 挤出和材质替换。Toutiao Lite 的核心识别度完全依赖于“头条”二字的特殊字形，因此必须严格保留其平面轮廓，仅增加 Z 轴厚度和冰材质感，不可重构为报纸或其他语义物体。",
+  "preserve": [
+    "“头条”汉字的特定笔画结构、粗细比例及空间排布",
+    "右下角代表“极速/轻量”的闪电符号形态",
+    "文字与背景形成的负空间关系"
+  ],
+  "must_preserve": [
+    "“头条”文字的完整笔画路径",
+    "右下角的闪电符号（作为次要元素保留）"
+  ],
+  "recompose_allowed": [
+    "将原始红色矩形背景移除，转化为纯白背景",
+    "将实心白色文字填充转换为半透明冰质实体",
+    "将蓝色闪电符号转换为同材质的冰晶装饰",
+    "调整闪电位置至主文字旁或底座附近以适配3D构图"
+  ],
+  "restyle": [
+    "应用 Pale Cyan/Ice Blue 统一色调",
+    "添加表面冷凝水珠和内部雪花/气泡纹理",
+    "边缘圆润化处理，模拟冰块磨损质感",
+    "增加次表面散射（SSS）和折射效果"
+  ],
+  "decorate": [
+    "在冰体内部嵌入微缩雪花图案",
+    "在底部添加接触阴影和微量融化水渍",
+    "在主体边缘添加高光反射以定义轮廓"
+  ],
+  "forbid": [
+    "禁止保留任何原始红色像素",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止将文字替换为标准字体（如宋体/黑体）或英文",
+    "禁止丢失右下角的闪电元素",
+    "禁止使用复杂场景背景，必须为纯白背景"
+  ],
+  "generation_brief": "3D ice sculpture of Chinese characters '头条', thick translucent pale cyan blocks, internal bubbles and snowflake textures, small frozen lightning bolt icon at bottom right, pure white background, soft contact shadows, water puddles at base, high gloss, refraction, subsurface scattering.",
+  "color_application": "Discard original red and blue brand colors. Apply uniform Pale Cyan/Ice Blue palette to the entire '头条' text volume and the lightning bolt. Use translucency and light refraction to define form instead of solid color fills.",
+  "stroke_application": "Eliminate all 2D vector strokes. Transform the flat character outlines into volumetric 3D ice blocks with rounded, beveled edges. Define boundaries through specular highlights and refraction rather than drawn lines.",
+  "composition_application": "Center the 3D '头条' ice sculpture on a clean white background. Integrate the lightning bolt as a smaller, adjacent ice element near the bottom right. Add a subtle ground shadow and melting water effect at the base to anchor the object in 3D space.",
+  "identity_application": "Maintain strict fidelity to the specific geometric shape and stroke structure of the '头条' characters. Preserve the presence of the lightning bolt as a key 'Lite' version identifier, ensuring it is recognizable despite being rendered in ice material.",
+  "fidelity_constraints": [
+    "Must use unified semi-transparent ice blue material",
+    "Must include internal bubbles, snowflakes, or ice crack textures",
+    "Subject must exhibit 3D volume with thickness, not a flat silhouette",
+    "Background must be clean white to highlight translucency"
+  ],
+  "negative_constraints": [
+    "No original brand colors (red/blue)",
+    "No opaque plastic or metal materials",
+    "No complex scene backgrounds",
+    "No distortion of the '头条' character geometry",
+    "No removal of the lightning bolt symbol"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字“美团”的字形结构，特别是“团”字的外框包裹感与内部笔画的几何化特征。",
+  "brand_cues_to_preserve": [
+    "“美团”二字的左右并列布局",
+    "“团”字的方形外轮廓（象征聚合/平台）",
+    "品牌标志性的黄色调（需映射为主题奶黄/米白）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为核心识别符号的功能性",
+    "笔画的粗壮感以维持视觉重量"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考 bilibili 案例，当 Original 为清晰的文字 Logo 时，应保留其主体轮廓和空间布局。美团的图标本质是纯文字设计，若重构为其他物体（如袋鼠、外卖箱）会导致品牌识别度在极简风格下丧失。因此必须保留“美团”二字的拓扑结构，仅对笔画进行主题化的几何块面重组。",
+  "design_rationale": "美团图标属于高识别度的文字标。为了适应复古手绘主题，需要将原本锐利、工业感的黑体字转化为圆润、拙朴的手绘块面。策略上选择保留字形骨架，将横竖笔画处理为类似蜡笔涂抹的粗条，颜色严格遵循主题的红蓝黄体系，利用黄色作为主色呼应品牌印象，同时通过粗黑描边强化剪纸/贴纸质感。",
+  "must_preserve": [
+    "“美团”两个汉字的相对位置和大小比例",
+    "“团”字的外部方框结构",
+    "纯黑背景",
+    "粗的手绘黑色描边"
+  ],
+  "can_recompose": [
+    "笔画的端点和转角（由直角变为圆角或不规则钝角）",
+    "笔画内部的细节（简化为纯色块，去除原本的衬线或切角设计）",
+    "颜色填充（由纯黑文字变为奶黄/米白填充，或红蓝装饰点缀）"
+  ],
+  "forbid": [
+    "禁止保留原本的细线条或标准黑体字形",
+    "禁止使用原本的亮黄色背景（必须换为纯黑底）",
+    "禁止添加写实的外卖员、袋鼠或食物插图",
+    "禁止使用渐变或立体阴影"
+  ],
+  "generation_direction": "Draw the Chinese characters '美团' in a thick, retro hand-drawn doodle style. Use creamy yellow flat color for the characters with rough, uneven black marker outlines. Place on a pure black background. Simplify the strokes into clumsy geometric blocks, keeping the square shape of '团' and the structure of '美'. No gradients, no realistic details."
+}

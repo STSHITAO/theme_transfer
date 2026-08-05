@@ -1,0 +1,38 @@
+{
+  "app": "jd",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "Joy（京东吉祥物）的头部轮廓、标志性的笑脸表情及五官布局",
+  "brand_cues_to_preserve": [
+    "狗头部的整体剪影形状",
+    "眼睛的弯月形/倒V形特征",
+    "张开的嘴巴和舌头的几何形态",
+    "鼻子的位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "快乐、友好的表情（电商服务的亲和力）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Bilibili（小电视）和 Douyin（音符）的处理方式，对于具有极高辨识度的具象IP形象或符号，必须保留其原始几何拓扑结构。京东 Joy 的头部轮廓和五官比例是其核心识别点，不能进行语义重组（如改为购物车或包裹），而应将其视为一个整体的 3D 雕塑对象进行材质替换。",
+  "design_rationale": "京东图标核心为吉祥物 Joy 的特写。根据 theme_design_analysis 中'几何守恒，材质重构'的原则，应将原本红底白狗的扁平/2.5D插画转化为统一的冰雕实体。原图中的红色背景、黄色行李箱、蓝色飞机等干扰元素必须全部剔除，仅保留狗头主体。通过冰材质的次表面散射（SSS）表现白色的狗毛质感，利用冰块内部的气泡和裂纹替代原有的黑色描边来界定五官。",
+  "must_preserve": [
+    "狗头的左右耳朵位置和下垂感",
+    "眼睛眯成一条线的快乐神态",
+    "大嘴笑的开口形状",
+    "主体在画面中的居中构图"
+  ],
+  "can_recompose": [
+    "原本的黑色线条描边（转化为冰块的边缘高光或内部阴影）",
+    "红色的项圈（可省略或转化为极淡的冰层厚度变化）",
+    "周围的装饰物（行李箱、飞机、文字块必须移除）"
+  ],
+  "forbid": [
+    "禁止保留原本的红色背景",
+    "禁止生成不透明的白色塑料或石膏质感（必须是半透明冰蓝）",
+    "禁止改变狗的五官比例（如把眼睛变大或嘴巴闭合）",
+    "禁止出现复杂的场景化道具（如让狗拿着冰块）"
+  ],
+  "generation_direction": "Generate a centered 3D ice sculpture of the JD.com mascot dog head (Joy). Material is translucent cyan-blue ice with internal bubbles and snowflake textures. The dog has a happy expression with squinting eyes and an open smiling mouth. No outline strokes; define features via ice refraction and thickness. Pure white background with a melting water puddle shadow at the base. Remove all accessories like suitcases, planes, and text. High gloss surface, C4D render style."
+}

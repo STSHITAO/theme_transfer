@@ -1,0 +1,58 @@
+{
+  "app": "快影 (Kuaiying)",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "快影原始图标已经是高度抽象的几何符号（摄像机），符合主题中‘保留清晰几何符号’的条件。参考快手（Kuaishou）的处理方式，应保留其核心的C形机身和右侧镜头块的空间布局，仅将平滑的矢量线条转化为粗犷的手绘色块，不做语义重构。",
+  "preserve": [
+    "左侧包围式的C形机身轮廓",
+    "右侧悬浮的两个矩形/梯形块（镜头/信号）",
+    "整体向右的视觉导向",
+    "负空间形成的镜头感"
+  ],
+  "must_preserve": [
+    "纯黑背景 (#000000)",
+    "粗黑色的不规则手绘描边",
+    "C形框架开口朝右",
+    "右侧两个独立几何块的相对位置关系"
+  ],
+  "recompose_allowed": [
+    "将原本的粉橙渐变色替换为砖红、深蓝或奶黄的纯色填充",
+    "将平滑的圆角调整为略带抖动的手工圆弧",
+    "调整内部色块的分割比例以适应手绘风格"
+  ],
+  "restyle": [
+    "去除所有立体光影、高光和渐变",
+    "应用干性绘画介质（蜡笔/马克笔）质感",
+    "边缘处理为毛糙、不规则的手绘痕迹"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原本的粉橙渐变色",
+    "使用细线条或无描边设计",
+    "添加立体光影或高光效果",
+    "改变摄像机的基本朝向",
+    "使用绿色、紫色等非主题色系",
+    "写实相机照片或复杂细节"
+  ],
+  "generation_brief": "Retro hand-drawn doodle icon of a video camera on pure black background. Shape: thick C-shaped body opening right, with two separate geometric blocks floating on the right as lens. Colors: solid high-saturation brick red, deep blue, or creamy yellow flat fills, NO gradients. Style: heavy rough uneven black marker outlines, crayon texture, naive and clumsy aesthetic. Centered composition.",
+  "color_application": "Map original warm gradient to theme's limited palette: use Brick Red for the main C-body, Deep Blue or Creamy Yellow for the right-side lens blocks. Ensure high saturation and flat filling.",
+  "stroke_application": "Apply heavy, rough, uneven black marker-style outlines to all shapes. Edges must look hand-drawn with slight jitter, not smooth vector lines.",
+  "composition_application": "Center the simplified camera symbol. Maintain the horizontal layout (C-body left, lens blocks right). Subject occupies ~60% of canvas against pure black background.",
+  "identity_application": "Preserve the topological structure of the 'C' frame and the two detached right-side blocks to maintain the 'camera/recording' semantic. Do not merge them into a single solid shape.",
+  "fidelity_constraints": [
+    "Must use pure black background",
+    "Must have thick, rough black hand-drawn strokes",
+    "Colors must be from the restricted palette (Red/Blue/Yellow)",
+    "No gradients, shadows, or lighting effects",
+    "Flat design with crayon/marker texture"
+  ],
+  "negative_constraints": [
+    "No pink/orange gradients from original",
+    "No realistic camera details or photorealism",
+    "No thin or clean vector lines",
+    "No white or colored backgrounds",
+    "No generic play buttons or film reels"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "package_id": "package_004_theme_001_v2_bilibili_brand_cues",
+  "theme_id": "theme_001",
+  "target_apps": [
+    "bilibili"
+  ],
+  "theme_style_analysis_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\theme_style_analysis.json",
+  "theme_rules_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\theme_rules.json",
+  "theme_design_analysis_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\theme_design_analysis.json",
+  "generation_base_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\generation_base_prompt.txt",
+  "case": {
+    "target_app": "bilibili",
+    "target_image": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\targets\\bilibili\\bilibili.png",
+    "target_layout_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\target_layout.png",
+    "target_identity_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\target_identity.json",
+    "target_profile": {
+      "app": "bilibili",
+      "display_name": "哔哩哔哩",
+      "category": "视频 / 内容社区",
+      "core_function": "观看和发布视频内容，浏览直播、动画、游戏、知识和生活等社区内容",
+      "brand_identity_cues": [
+        "粉色圆角方形底",
+        "小电视轮廓",
+        "bilibili 文字标识"
+      ]
+    },
+    "identity_strategy_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\identity_strategy.json",
+    "transfer_plan_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\transfer_plan.json",
+    "generation_prompt_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\generation_prompt.txt",
+    "candidate_paths": [
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\candidates\\candidate_01.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\candidates\\candidate_02.png",
+      "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\candidates\\candidate_03.png"
+    ],
+    "wan_response_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\wan_response.json",
+    "best_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\best_output.png",
+    "qc_report_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\cases\\bilibili\\qc_report.json",
+    "final_output_path": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_004_theme_001_v2_bilibili_brand_cues\\final\\bilibili.png"
+  }
+}

@@ -1,0 +1,216 @@
+你是图标主题风格迁移模型。
+
+输入图片说明：
+- 前几张图是同一主题包中的纯主题风格参考图 style_ref。
+- 最后一张图是目标 App 的原始目标图。
+
+任务：
+请把前几张参考图中共同的主题绘制规则迁移到最后一张目标图上。最终只输出一个完整图标，不要输出对照板、分栏布局、说明文字或输入图片拼贴。
+
+你应该学习“规则类型”，而不是复制某个参考 App 的身份：
+
+1. 主体重绘规则：
+   学习参考图中主体如何被主题化，例如简化、抽象、拟物、卡通化、材质化、结构化、装饰化等。具体采用哪种方式必须来自 Qwen 分析结果和参考图本身，不能由模板写死。
+
+2. 背景重绘规则：
+   学习参考图中背景的颜色、形状、纹理、边界、空间感、装饰元素和光影如何统一到主题风格。
+
+3. 前景与背景关系：
+   学习主体与背景之间的比例、层级、接触、遮挡、阴影、留白和构图重心。
+
+4. 视觉语言：
+   学习颜色体系、线条风格、材质、纹理、光照、阴影、细节密度、完成度和整体情绪。
+
+5. 主题装饰规则：
+   如果参考图中存在统一装饰语言，请迁移这种装饰规则；不要复制参考 App 的具体 logo、文字、主体符号或身份。
+
+6. 目标保留：
+   最后一张目标图是唯一的目标身份来源。必须保留目标 App 的核心轮廓、主体结构、关键符号、背景结构和整体构图。
+
+正例：
+- 学习参考图的主题化方式，并应用到目标 App 主体上。
+- 保留目标 App 的身份，同时改变绘制风格、材质、线条、背景和装饰语言。
+- 如果参考图有统一装饰规律，只迁移规律，不复制具体参考主体。
+
+反例：
+- 把参考 App 的主体符号、logo、文字或轮廓复制到目标图。
+- 把某个具体风格元素写死为所有 theme 都必须使用。
+- 生成对照板、分栏图片、说明标签、输入图片拼贴。
+- 生成与目标 App 身份冲突的额外主体。
+
+不要生成：
+- 说明文字、标签文字、水印、乱码。
+- 额外 logo 或参考 App logo。
+- 额外主体物体。
+- 与目标 App 身份冲突的元素。
+
+
+[Package Base Prompt]
+theme_id: theme_001
+
+This base prompt is shared by every target App in the package.
+All outputs must reuse the same theme fidelity rules. Identity strategy may change how an App is expressed, but it must not redefine the global theme style.
+
+[Theme Fidelity Goal]
+The result must look like a missing App icon from theme_001.
+Do not create a new theme style.
+Do not generate only an internally consistent icon set that is inconsistent with theme_001.
+
+[Theme Style Analysis]
+治愈系手绘卡通风格（Healing Hand-drawn Cartoon）。核心特征是将原本扁平或拟物的图标转化为具有生命力的场景。所有图标均引入了一只统一的白色软萌小动物（类似小绵羊或小狗）作为视觉伴侣，通过它与主体符号的互动（拥抱、趴卧、手持、躲藏）来重构图标。整体色调柔和温暖（奶油黄、淡粉、天蓝），线条为不规则的手绘描边，充满童趣和亲和力。
+
+[Reference Raw To Style Transform]
+从‘静态符号’向‘动态互动场景’转变。原始图标中的抽象图形或物体被具象化、玩具化或软化。最关键的变化是引入了统一的吉祥物角色，该角色不再是装饰背景，而是成为构图的一部分，与App的核心功能符号产生物理接触或情感连接（如Phone图标中动物抱着听筒，Camera图标中动物趴在相机顶）。
+
+[Color Transform Rule]
+从 Original 的高对比度、品牌标准色（如支付宝蓝、抖音黑）转换为 Theme 的低饱和度 pastel 色调。去除原有的复杂渐变和发光效果，改为平涂色块。保留品牌的识别色相（如电话仍保留绿色倾向，但变为淡黄绿或配合黄色听筒），但大幅降低明度对比，融入整体的暖调氛围。
+
+[Background Transform Rule]
+彻底替换原有背景。无论 Original 是纯色、渐变还是图片，Style_ref 均统一替换为米白色/淡黄色的圆角矩形底板。主体图形不再作为背景的一部分，而是作为独立的插画元素浮于底板之上。
+
+[Stroke Transform Rule]
+从 Original 的无描边或隐形边缘，转变为明显的黑色细实线描边。线条粗细均匀，端点和拐角处理圆润，模拟手绘草图的质感，增强了图标的卡通属性和轮廓识别度。
+
+[Composition Transform Rule]
+主体图形进行简化和拟物化/卡通化处理。Original 中抽象的 Logo（如抖音音符、支付宝汉字）被转化为更具象的物体或保留核心轮廓但增加厚度感。吉祥物元素的加入打破了原有的平衡，增加了画面的趣味性和动态感，视觉重心略微上移或偏向吉祥物所在位置。
+
+[Subject Scale Rule]
+主体图形相对于画布适中偏大，但四周留白明显（约占宽度的 15%-20%）。不允许主体填满整个底板，必须留出空间给描边和呼吸感。吉祥物尺寸较小，约为主体尺寸的 1/5 到 1/4。
+
+[Detail Complexity Rule]
+极度简化。去除 Original 中的所有纹理、高光、阴影和微小细节（如相机镜头的反光、百度的复杂爪印）。只保留最核心的识别轮廓，并用简单的色块填充。细节主要通过吉祥物的互动来体现，而非主体本身的复杂度。
+
+[Theme Fidelity Constraints]
+[
+  "必须使用统一的米白/淡黄圆角矩形底板。",
+  "必须包含黑色的手绘风格细描边。",
+  "必须在画面中融入白色的简笔画萌宠吉祥物（如趴在物体上、抱着物体等）。",
+  "色彩必须调整为低饱和度的奶油/马卡龙色系，禁止使用原本的高饱和品牌色。",
+  "保持扁平化，禁止添加立体阴影或复杂光泽。"
+]
+
+[Forbidden Style Drift]
+[
+  "禁止保留 Original 的原始背景色（如抖音的黑底、微信的绿底）。",
+  "禁止使用写实风格或复杂的 3D 渲染效果。",
+  "禁止省略吉祥物元素，这是该主题包的核心识别特征。",
+  "禁止使用锐利的直角或完美的几何线条，需保持手绘的圆润感。"
+]
+
+[Theme Board]
+{
+  "palette": "低饱和度马卡龙/奶油色系。背景统一为暖调米白或淡黄色，主体色彩柔和（如淡蓝、鹅黄、浅粉），避免高饱和度和纯黑纯白，整体呈现温暖、治愈的视觉感受。",
+  "line_style": "手绘感黑色细描边。线条并非完美的几何直线，带有轻微的手绘抖动感和圆润的转角，类似马克笔或针管笔勾勒的涂鸦风格。",
+  "material": "扁平化矢量插画风格，无复杂光影、渐变或立体材质。表面呈现哑光纸质或简单填色效果，强调轮廓清晰度。",
+  "background": "统一的圆角矩形底板，填充色为温暖的米白色或极淡的奶油黄。图标主体与底板边缘之间留有明显的呼吸感（Padding），不顶格设计。",
+  "composition": "中心构图为主，主体图形占据画布约 60%-70% 面积。关键特征是在主体图形的顶部、侧边或内部巧妙融入一只白色的“简笔画小狗/小熊”吉祥物作为装饰元素。",
+  "motif_rules": "必须包含标志性的白色萌宠吉祥物。吉祥物通常以探头、趴卧、拥抱或互动的姿态出现，作为连接不同 App 图标的统一视觉符号（Visual Motif）。"
+}
+
+[Global Wan Constraints]
+- Output must look like a missing member of theme_001.
+- Do not invent a new color palette, stroke style, composition system, or background treatment.
+- Color must match theme_001's hue range, saturation, brightness, and background handling.
+- Stroke must match theme_001's line weight, roundedness, edge density, and edge complexity.
+- Composition must match theme_001's subject scale, centering, whitespace, and background ratio.
+- Preserve the current target App identity cues, but theme fidelity has priority unless identity would become unrecognizable.
+- Do not copy any reference App identity, logo, wordmark, or subject.
+- Do not output text explanations, comparison boards, watermarks, extra logos, or pasted input images.
+
+
+[Current Target App]
+target_app: qq
+
+[transfer_plan]
+{
+  "app": "QQ",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "preserve": [
+    "企鹅整体圆润剪影轮廓",
+    "红色围巾的形态与环绕位置",
+    "黄色喙与脚掌的相对位置",
+    "黑白配色的基本分布逻辑"
+  ],
+  "must_preserve": [
+    "企鹅主体识别性",
+    "围巾元素",
+    "统一的米白/淡黄圆角矩形底板",
+    "黑色手绘风格细描边",
+    "白色简笔画萌宠吉祥物（小狗/小熊）及其与主体的互动"
+  ],
+  "recompose_allowed": [
+    "将高饱和纯黑调整为深炭灰或深蓝灰",
+    "将正红调整为低饱和度的豆沙红或砖红",
+    "简化眼部细节为手绘圆点或弧线",
+    "调整吉祥物的具体互动姿态（如趴在头顶、拥抱侧面）"
+  ],
+  "restyle": [
+    "去除原有3D光影、玻璃质感和高光",
+    "转换为哑光、扁平化的手绘矢量填充风格",
+    "线条增加自然抖动感和圆润转角，模拟马克笔触感"
+  ],
+  "decorate": [
+    "在企鹅头部或身体侧方添加一只白色软萌小动物（小狗或小熊）",
+    "确保小动物与企鹅有物理接触或情感互动（非孤立存在）"
+  ],
+  "forbid": [
+    "禁止使用原版高饱和度纯黑和正红",
+    "禁止保留立体渲染、金属光泽或复杂渐变",
+    "禁止省略白色吉祥物元素",
+    "禁止线条笔直僵硬或几何完美",
+    "禁止主体填满画布，必须保留四周呼吸感",
+    "禁止使用写实风格或恐怖/攻击性表情"
+  ],
+  "generation_brief": "A cute hand-drawn cartoon app icon of a simplified QQ penguin on a creamy yellow rounded background. The penguin has a soft matte texture with sketchy black outlines, wearing a muted red scarf. A small white fluffy puppy mascot is playfully sitting on the penguin's head or hugging it. Pastel colors, healing style, no complex gradients, high quality illustration.",
+  "color_application": "将QQ原本的高对比度品牌色（纯黑、正红、亮黄）转换为低饱和度的Pastel色系。黑色转为深炭灰，红色转为柔和的豆沙红/砖红，黄色转为奶油黄或淡鹅黄，背景统一为暖调米白/淡黄。",
+  "stroke_application": "应用统一的黑色细实线描边，线条需带有手绘的自然抖动感和不规则性，拐角处理圆润，避免矢量直线的机械感，模拟针管笔或马克笔勾勒效果。",
+  "composition_application": "采用非对称平衡构图。企鹅主体居中略偏，占据画布60-70%面积，四周留出明显呼吸感。白色吉祥物作为视觉补充，打破原有对称性，增加画面动态感和陪伴感。",
+  "identity_application": "在严格保留企鹅剪影、围巾形态和黑白分布逻辑的前提下，通过材质柔化和色彩降饱和来融入主题。吉祥物的互动不仅不破坏身份，反而增强了‘社交亲和力’的语义表达。",
+  "fidelity_constraints": [
+    "必须使用统一的米白/淡黄圆角矩形底板",
+    "必须包含黑色手绘风格细描边",
+    "必须包含白色萌宠吉祥物并与主体互动",
+    "色彩必须为低饱和度奶油/马卡龙色系",
+    "保持扁平哑光质感，无立体光影"
+  ],
+  "negative_constraints": [
+    "禁止保留原始高饱和品牌色",
+    "禁止3D渲染、 glossy、金属或霓虹效果",
+    "禁止省略吉祥物",
+    "禁止锐利直角或完美几何线条",
+    "禁止背景复杂渐变或纹理"
+  ]
+}
+
+[Executable Theme Fidelity Instructions]
+Color application: 将QQ原本的高对比度品牌色（纯黑、正红、亮黄）转换为低饱和度的Pastel色系。黑色转为深炭灰，红色转为柔和的豆沙红/砖红，黄色转为奶油黄或淡鹅黄，背景统一为暖调米白/淡黄。
+Stroke application: 应用统一的黑色细实线描边，线条需带有手绘的自然抖动感和不规则性，拐角处理圆润，避免矢量直线的机械感，模拟针管笔或马克笔勾勒效果。
+Composition application: 采用非对称平衡构图。企鹅主体居中略偏，占据画布60-70%面积，四周留出明显呼吸感。白色吉祥物作为视觉补充，打破原有对称性，增加画面动态感和陪伴感。
+Identity application: 在严格保留企鹅剪影、围巾形态和黑白分布逻辑的前提下，通过材质柔化和色彩降饱和来融入主题。吉祥物的互动不仅不破坏身份，反而增强了‘社交亲和力’的语义表达。
+
+Fidelity constraints:
+[
+  "必须使用统一的米白/淡黄圆角矩形底板",
+  "必须包含黑色手绘风格细描边",
+  "必须包含白色萌宠吉祥物并与主体互动",
+  "色彩必须为低饱和度奶油/马卡龙色系",
+  "保持扁平哑光质感，无立体光影"
+]
+
+Negative constraints:
+[
+  "禁止保留原始高饱和品牌色",
+  "禁止3D渲染、 glossy、金属或霓虹效果",
+  "禁止省略吉祥物",
+  "禁止锐利直角或完美几何线条",
+  "禁止背景复杂渐变或纹理"
+]
+
+[Priority]
+Strictly execute transfer_plan.
+The icon must preserve target App identity anchors and semantic cues, while matching qq's output to the shared theme fidelity rules.
+Do not reduce the task to making a merely nice-looking icon. It must look like qq as a missing member of the same theme package.
+
+[Output]
+Return exactly one complete themed icon. No captions, no comparison layout, no input collage, no watermark, no extra logo.

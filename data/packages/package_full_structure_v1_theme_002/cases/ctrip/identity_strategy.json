@@ -1,0 +1,38 @@
+{
+  "app": "ctrip",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "标志性的海豚跳跃轮廓及C形尾部曲线",
+  "brand_cues_to_preserve": [
+    "海豚的侧身跳跃姿态",
+    "尾鳍卷曲形成的C形负空间或线条",
+    "头部朝向右侧的特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "海洋/旅行的生物象征（海豚）",
+    "动态向上的视觉趋势"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标本身就是高度抽象和符号化的几何图形（海豚剪影），符合 theme_rules 中 'preserve_when' 的条件。不需要像游戏角色那样进行语义重构，而是直接保留其拓扑结构，将平滑的矢量边缘转化为粗犷的手绘描边，并将品牌蓝映射为主题限定的深蓝色块。",
+  "design_rationale": "携程的海豚Logo具有极高的国民辨识度，且其本身已经是简化的图形符号。在复古手绘主题下，应将其处理为一个类似儿童蜡笔画出的海豚玩具或贴纸。重点在于用不规则的黑色粗轮廓线打破原有的精致感，用高饱和度的深蓝填充主体，保留其核心的C形尾巴特征以维持身份识别。",
+  "must_preserve": [
+    "海豚的整体外轮廓（头、背鳍、卷曲的尾巴）",
+    "纯黑背景",
+    "粗黑色的手绘感描边"
+  ],
+  "can_recompose": [
+    "原本光滑的边缘需变为抖动、粗糙的线条",
+    "原本的品牌标准蓝需调整为主题指定的深蓝/靛蓝",
+    "眼睛等微小细节可简化为简单的色块或留白，无需写实",
+    "原本的橙色尾部点缀可保留或转化为奶黄色块"
+  ],
+  "forbid": [
+    "禁止保留原有的平滑矢量质感",
+    "禁止使用原本的亮蓝色背景（必须换为纯黑）",
+    "禁止添加水花、波浪等复杂环境元素",
+    "禁止使用渐变色或立体阴影"
+  ],
+  "generation_direction": "Draw a simplified, retro hand-drawn doodle of a dolphin jumping. Use thick, rough black marker outlines with a naive, clumsy aesthetic. Fill the body with solid deep blue (indigo) and use cream/yellow for small accents if needed. Place on a pure black background. No gradients, no shadows, no realistic details. The shape must clearly resemble the Ctrip dolphin logo but look like a crayon drawing."
+}

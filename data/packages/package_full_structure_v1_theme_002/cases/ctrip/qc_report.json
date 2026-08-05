@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "完美符合 'logo_preserve' 策略。保留了原图标志性的负空间结构和橙色尾部点缀，同时成功应用了手绘涂鸦风格和纯黑背景，识别度极高且风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 80,
+      "style_match_score": 80,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "",
+      "recommendation": "风格化效果尚可，但添加了明显的白色粗描边（Outline），这违反了 transfer_plan 中关于 'Must have thick, rough, hand-drawn style black outlines' 的约束（原图无白边，且参考图多为色块拼接）。虽然识别度依然很高，但在身份约束遵守上不如 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\ctrip\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

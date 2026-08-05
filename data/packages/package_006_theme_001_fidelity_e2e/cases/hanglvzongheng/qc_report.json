@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 60,
+      "failure_reason": "丢失了原Logo的核心图形（H形/盾牌）和品牌色（绿色），完全重构为地球图案，无法识别目标App身份。",
+      "recommendation": "不推荐。虽然风格统一且语义相关（旅游），但作为图标失去了品牌识别度，属于过度重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 60,
+      "failure_reason": "同candidate_01，丢失原Logo特征，仅保留了旅游语义，无法识别具体App。",
+      "recommendation": "不推荐。理由同上。"
+    },
+    {
+      "file": "candidate_03.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 30,
+      "target_recognition_score": 30,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 60,
+      "failure_reason": "同candidate_01，丢失原Logo特征，仅保留了旅游语义，无法识别具体App。",
+      "recommendation": "不推荐。理由同上。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\admin\\Desktop\\theme_transfer\\data\\packages\\package_006_theme_001_fidelity_e2e\\cases\\hanglvzongheng\\candidates\\candidate_01.png",
+  "warning": "所有候选图均进行了彻底的重构，虽然符合主题风格并表达了'航旅'的通用语义（地球），但完全丢失了'航旅纵横'原始Logo的品牌特征（如特定的H形符号、绿色主色调），导致用户无法通过图标识别出该App，存在极高的过重构风险。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 60,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 65,
+      "failure_reason": "严重违反材质约束：文字'Soul'未转化为半透明冰块，而是保留了不透明的白色实体和青色实体，仅作为贴图附着在冰球表面。违反了'restyle: Convert all letters to translucent light-blue ice material'及'forbid: Opaque plastic'的要求。",
+      "recommendation": "不推荐。虽然风格统一且识别度高，但完全未执行核心的材质重构指令（文字变冰块），属于简单的素材拼贴而非3D重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 70,
+      "background_score": 85,
+      "composition_score": 80,
+      "artifact_score": 90,
+      "overall_score": 72,
+      "failure_reason": "违反背景与构图约束：保留了原图复杂的黑色星空/行星背景，违反了'forbid: Retaining the black background'及'recompose_allowed: remove completely'的指令。文字虽做了冰质感处理，但被封装在球体内部，增加了视觉复杂度。",
+      "recommendation": "相对推荐。尽管违反了背景清除指令，但该候选图正确执行了最关键的'文字转冰块材质'指令，且保留了'l'的独特钩形结构。相比候选1的材质错误，候选2的背景错误更容易通过后期裁剪修复，且其3D重构程度更符合主题要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_001\\cases\\soul\\candidates\\candidate_02.png",
+  "warning": "两个候选图均未完美遵循生成计划。Candidate 01 材质错误（文字未变冰），Candidate 02 背景错误（未去除黑底）。建议重新生成，严格强调：1. 纯白背景；2. 文字本身必须是半透明冰块材质，而非表面贴图。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

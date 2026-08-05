@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 20,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 90,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格还原度极高，完美契合参考图的粗犷手绘/蜡笔质感。虽然添加了星星装饰（属于轻微过度重构），但核心的 'K' 字结构、音符位置及圆环轮廓均得到完整保留，且严格遵循了黑底和色板约束，识别度依然很高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "风格迁移不彻底，线条过于平滑整洁，缺乏参考图中要求的粗糙手绘感和蜡笔纹理，看起来更像矢量图而非手绘涂鸦。",
+      "recommendation": "虽然结构保留最完美，但未能有效执行 'restyle' 策略（将平滑边缘替换为粗犷笔触），导致与主题包整体风格（Bilibili/Douyin 参考图）割裂，不建议作为首选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\kuwo\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

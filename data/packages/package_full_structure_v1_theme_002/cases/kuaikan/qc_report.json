@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan。保留了“快看！”的文字骨架和核心识别点（看字内的眼睛符号），背景为纯黑，色彩使用了砖红与靛蓝的高饱和搭配，笔触呈现粗的手绘马克笔质感，完全符合 strict 约束下的风格化重构要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 40,
+      "style_match_score": 40,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "风格严重偏离。虽然文字可识别，但线条过于平滑、规整，缺乏 transfer_plan 要求的“粗犷马克笔手写风格”和“粗糙边缘”。看起来像标准的矢量描边字体，未体现拙朴感，且颜色饱和度较低，不符合主题参考图的高对比度特征。",
+      "recommendation": "不推荐。未能执行 restyle 策略中的质感要求，看起来像普通的字体设计而非手绘涂鸦风格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_full_structure_v1_theme_002\\cases\\kuaikan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

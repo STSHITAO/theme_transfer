@@ -21,7 +21,7 @@ from backend.services.qwen_client import (
     build_transfer_plan,
     score_candidates,
 )
-from backend.services.wan_client import _call_wan
+from backend.services.wan_client import WanApiError, _call_wan, _download_candidates, _extract_image_urls
 from backend.services.storage_service import save_json, save_metadata
 from backend.services.wan_client import generate_candidates
 
@@ -35,6 +35,41 @@ def make_image(path: Path, color=(20, 40, 80, 255)) -> None:
 
 
 class MockServiceTests(unittest.TestCase):
+    def test_wan_candidate_download_retries_transient_ssl_failure(self):
+        class Response:
+            content = b"candidate"
+
+            def raise_for_status(self):
+                return None
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir)
+            with patch(
+                "backend.services.wan_client.requests.get",
+                side_effect=[requests.exceptions.SSLError("temporary"), Response()],
+            ) as get:
+                with patch("backend.services.wan_client.time.sleep"):
+                    paths = _download_candidates(["https://example.test/candidate.png"], output_dir)
+
+            self.assertEqual(get.call_count, 2)
+            self.assertEqual(Path(paths[0]).read_bytes(), b"candidate")
+            self.assertFalse((output_dir / "candidate_01.png.part").exists())
+
+    def test_wan_api_error_with_null_output_is_reported_without_attribute_error(self):
+        response = {
+            "status_code": 400,
+            "code": "DataInspectionFailed",
+            "message": "Green net check failed for input image",
+            "output": None,
+        }
+
+        with self.assertRaises(WanApiError) as context:
+            _extract_image_urls(response)
+
+        self.assertEqual(context.exception.status_code, 400)
+        self.assertEqual(context.exception.code, "DataInspectionFailed")
+        self.assertIn("Green net check failed", str(context.exception))
+
     def test_real_qwen_call_uses_plan_key_and_disables_thinking(self):
         response = {
             "status_code": 200,
@@ -447,6 +482,8 @@ class MockServiceTests(unittest.TestCase):
             self.assertIn("strategy_type", result)
             self.assertIn("design_rationale", result)
             self.assertIn("generation_direction", result)
+            self.assertEqual(result["structure_preservation_mode"], "semantic_recompose")
+            self.assertFalse(result["structure_identity_metric_applicable"])
             for key in [
                 "identity_anchor",
                 "brand_cues_to_preserve",
@@ -502,6 +539,8 @@ class MockServiceTests(unittest.TestCase):
             self.assertFalse(any("sample mark" in item.lower() for item in result["can_recompose"]))
             self.assertFalse(any("sample mark" in item.lower() for item in result["forbid"]))
             self.assertTrue(any("original label" in item.lower() for item in result["forbid"]))
+            self.assertEqual(result["structure_preservation_mode"], "preserve_major_structure")
+            self.assertTrue(result["structure_identity_metric_applicable"])
 
     def test_transfer_plan_preserves_generic_identity_cues(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -553,6 +592,8 @@ class MockServiceTests(unittest.TestCase):
             self.assertFalse(any("sample mark" in item.lower() for item in result["recompose_allowed"]))
             self.assertFalse(any("signature badge" in item.lower() for item in result["forbid"]))
             self.assertTrue(any("original label" in item.lower() for item in result["forbid"]))
+            self.assertEqual(result["structure_preservation_mode"], "preserve_major_structure")
+            self.assertTrue(result["structure_identity_metric_applicable"])
 
     def test_text_identity_cue_preserves_shape_without_requiring_readable_text(self):
         with tempfile.TemporaryDirectory() as temp_dir:

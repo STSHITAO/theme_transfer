@@ -1,0 +1,67 @@
+{
+  "package_id": "package_smoke_structure_theme_001",
+  "theme_id": "theme_001",
+  "target_apps": [
+    "alipay"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ],
+  "theme_style_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\theme_style_analysis.json",
+  "theme_rules": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\theme_rules.json",
+  "theme_design_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\theme_design_analysis.json",
+  "generation_base_prompt": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\generation_base_prompt.txt",
+  "cases": {
+    "alipay": {
+      "target_app": "alipay",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\alipay\\alipay.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\target_identity.json",
+      "target_profile": {
+        "app": "alipay",
+        "display_name": "支付宝",
+        "category": "金融 / 支付与生活服务",
+        "store_description": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。",
+        "core_function": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "The reference analysis for Alipay explicitly demonstrates transforming the flat '支' character into a 3D ice pillar structure while strictly maintaining the original stroke topology. The identity of this app relies entirely on the specific geometry of the character; altering the structure would destroy recognition. Therefore, the mode is set to preserve the major structure, treating the logo as a mold for the ice sculpture."
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\cases\\alipay\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\final\\alipay.png"
+    }
+  },
+  "structure_evaluation_policy": {
+    "alipay": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "The reference analysis for Alipay explicitly demonstrates transforming the flat '支' character into a 3D ice pillar structure while strictly maintaining the original stroke topology. The identity of this app relies entirely on the specific geometry of the character; altering the structure would destroy recognition. Therefore, the mode is set to preserve the major structure, treating the logo as a mold for the ice sculpture."
+    }
+  },
+  "final_outputs": {
+    "alipay": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\final\\alipay.png"
+  },
+  "contact_sheet": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\contact_sheet.png",
+  "package_qc_report": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_smoke_structure_theme_001\\package_qc_report.json",
+  "model_config": {
+    "plan_model": "qwen3.7-plus",
+    "image_model": "wan2.7-image-pro"
+  },
+  "mock_mode": false,
+  "created_at": "2026-08-05T13:21:59.401341+00:00"
+}

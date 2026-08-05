@@ -1,0 +1,59 @@
+{
+  "app": "eleme",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Original 图标核心为高度抽象的几何 Logo（'e' + 点），属于清晰的符号类图标，符合 theme_design_analysis 中 'preserve_when' 的条件。参考 bilibili 和 douyin 的案例，应保留其主体轮廓拓扑结构，仅对填充材质、描边风格和色彩进行主题化重构，而非重新设计场景。",
+  "preserve": [
+    "'e' 字母的基本笔画走向和开口方向",
+    "右侧圆点与 'e' 的相对位置关系",
+    "整体的蓝色调性（主题化后的蓝）",
+    "品牌标志性的蓝色（需映射为主题深蓝/靛蓝）",
+    "'e' 字母的独特几何形态（类似侧脸或笑脸）",
+    "'e' 右侧代表食物的圆点元素"
+  ],
+  "must_preserve": [
+    "'e' 字母的基本笔画走向和开口方向",
+    "右侧圆点与 'e' 的相对位置关系",
+    "整体的蓝色调性（主题化后的蓝）"
+  ],
+  "recompose_allowed": [
+    "将平滑的矢量边缘重组为不规则的手绘抖动线条",
+    "将原本的白色或浅蓝填充重组为高饱和度的主题深蓝平涂色块",
+    "内部的高光细节全部移除，改为纯色或简单的装饰性几何点"
+  ],
+  "restyle": [
+    "应用粗犷的黑色手绘描边，模拟马克笔触感",
+    "去除所有渐变、阴影和立体光影，转为完全扁平化",
+    "边缘处理为圆润、不规则的拙朴感"
+  ],
+  "decorate": [],
+  "forbid": [
+    "禁止保留原有的橙色背景或橙蓝渐变",
+    "禁止使用细线条或无描边的平滑矢量风格",
+    "禁止添加立体阴影、光泽或3D渲染效果",
+    "禁止改变 'e' 的识别结构导致看起来像其他字母",
+    "禁止使用主题色板之外的颜色（如绿色、紫色、粉色）",
+    "禁止在黑色背景上添加除主体以外的装饰性光效"
+  ],
+  "generation_brief": "A retro hand-drawn doodle icon of the Eleme 'e' logo on a pure black background. The 'e' shape is filled with solid deep indigo blue and outlined with a thick, rough, shaky black marker stroke. Include the characteristic dot next to the 'e'. No gradients, no shadows, no orange colors. Flat, naive art style, centered composition, crayon texture.",
+  "color_application": "强制去色并重构配色。将饿了么原本的品牌蓝映射为主题限定的高饱和度深宝蓝/靛蓝。彻底移除原有的橙色背景和任何渐变色，主体仅使用单一的深蓝色块填充，背景严格保持纯黑 (#000000)。",
+  "stroke_application": "从 original 的无描边或精细矢量边缘，转变为粗重的黑色手绘描边。线条需具有明显的抖动感和厚度变化，模拟马克笔或粗画笔在粗糙表面上的运笔痕迹，边缘呈现不规则的圆润感。",
+  "composition_application": "从 original 的上下分割构图转变为中心化符号构图。移除底部的蓝色通栏背景和顶部的橙色区域，仅提取核心的 'e' 图形和圆点，将其放大并居中放置，占据画布约 60%-70% 的面积，四周留黑均匀。",
+  "identity_application": "在不破坏 theme fidelity 的前提下，严格保留 'e' 字母的拓扑结构和右侧圆点的相对位置。通过独特的深蓝色调和标志性的几何轮廓来维持品牌识别度，即使经过手绘简化，用户仍能一眼认出是饿了么。",
+  "fidelity_constraints": [
+    "必须使用纯黑背景",
+    "必须添加粗黑/深色手绘风格描边",
+    "色彩必须限制在红、蓝、黄/白范围内（此处主要使用深蓝）",
+    "禁止使用渐变、阴影或写实纹理",
+    "主体必须是扁平化的几何块面组合"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的橙蓝双色分割布局",
+    "禁止使用 original 的品牌标准橙色",
+    "禁止使用细线条或无描边设计",
+    "禁止在黑色背景上添加除主体以外的装饰性光效",
+    "禁止出现任何立体感、高光或金属光泽"
+  ]
+}
