@@ -1,0 +1,68 @@
+{
+  "app": "peace_camp",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'peace_elite' 的 transformation pattern，原图若是复杂场景或纯文字排版（如本例中的大字报式Logo），均放弃原有几何结构，转而提取核心语义符号（三级头盔）重构为菜狗形象。当前目标 'peace_camp' 原图为高饱和渐变背景下的纯文字排版，缺乏单一明确的主体轮廓可供保留，符合 theme_rules 中 'recompose_when' 的条件（纯文字排版、缺乏单一明确轮廓）。因此，必须采用语义重构，沿用同IP 'peace_elite' 的视觉资产（戴头盔的菜狗）以建立身份关联，同时通过底部文字区分具体App。",
+  "preserve": [
+    "和平精英IP关联符号：卡通化三级头盔轮廓",
+    "橙红色护目镜条（作为极小面积原色记忆点）",
+    "绿叶耳朵/装饰、粉腮红、豆豆眼等主题母题特征"
+  ],
+  "must_preserve": [
+    "底部居中黑色手写体 App 名称 'Peace Camp'",
+    "纯白圆角矩形底板与充足留白",
+    "深绿手绘抖动粗描边与扁平涂鸦质感",
+    "三级头盔的核心识别特征（灰色主体+橙红护目镜）"
+  ],
+  "recompose_allowed": [
+    "原有的橙黄色爆炸渐变背景替换为纯白底板",
+    "原有的粗黑体中文大字移除，仅保留底部英文手写",
+    "右下角星形符号移除或简化为手绘装饰",
+    "主体姿态调整为坐姿或手持小地图/望远镜以体现营地/攻略属性"
+  ],
+  "restyle": [
+    "将战术装备材质转化为扁平手绘纸面质感",
+    "将严肃竞技氛围转化为呆萌治愈的营地守护者情绪",
+    "将标准印刷字体转化为黑色手写体标签"
+  ],
+  "decorate": [
+    "手持物：简笔画风格的小地图或望远镜（隐喻攻略/资讯工具属性）",
+    "面部细节：粉色椭圆腮红、吐舌或呆萌表情",
+    "头部装饰：从头盔缝隙或两侧伸出的绿色叶片耳朵"
+  ],
+  "forbid": [
+    "保留原图大面积橙黄色渐变背景或高饱和品牌色填充",
+    "保留原有的粗黑体印刷汉字或标准矢量字体",
+    "使用平滑矢量线条、3D渲染、光影渐变或金属质感",
+    "主体撑满画布导致失去留白和底部文字区域",
+    "遗漏三级头盔特征导致无法识别为和平精英系应用",
+    "添加写实枪械、血腥元素或复杂战场背景"
+  ],
+  "generation_brief": "A cute hand-drawn doodle style app icon on a pure white rounded square background. Central subject is an adorable green vegetable-dog character wearing a cartoonish Level 3 tactical helmet (grey body with signature orange-red visor strip). The dog has leaf-shaped green ears, pink oval blushes, dot eyes, and a playful expression. It sits relaxed holding a tiny hand-drawn map or binoculars to symbolize 'camp/guide'. Thick wobbly dark green marker outlines, flat matte coloring with leaf vein textures. Bottom center features 'Peace Camp' in casual black handwritten font. Subject occupies 50-65% of canvas with ample white space. Sticker art style, healing mood, no gradients or 3D effects.",
+  "color_application": "彻底剥离原图橙黄渐变背景，强制使用纯白底色。主体填充浅嫩绿/黄绿，轮廓使用深草绿/墨绿手绘线条。仅保留橙红色作为三级头盔护目镜条的微量点缀色，腮红使用淡粉色，文字与眼睛使用纯黑。严禁出现原图高饱和橙色大面积填充。",
+  "stroke_application": "将原图无描边或锐利矢量边缘全部转化为深绿色手绘马克笔粗轮廓。线条需带有自然抖动、断笔和圆润端点，消除所有机械几何感。头盔与狗身的结合处使用同色系细线勾勒叶脉纹理，模拟纸质涂鸦笔触。",
+  "composition_application": "严格执行垂直三段式构图：上部为戴头盔的菜狗主体（占画布50%-65%），中部留白过渡，下部为黑色手写体'Peace Camp'。主体严格居中偏上，四周保留均匀呼吸空间。禁止主体触碰边缘或撑满画布，确保贴纸式布局。",
+  "identity_application": "通过'三级头盔+橙红护目镜'这一强IP符号建立与和平精英的身份关联，而非复刻原图文字排版。利用'手持地图/望远镜'的姿态隐喻营地社区的工具属性。底部手写'Peace Camp'作为功能识别兜底。在保持主题萌系画风的前提下，让头盔成为角色的Cosplay道具而非写实装备。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须是绿叶小狗/蔬菜萌宠形态，包含绿叶耳、粉腮红、呆萌脸三要素",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形",
+    "底部必须包含黑色手写风格'Peace Camp'，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑及微量橙红（护目镜）范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原图高饱和橙黄色作为大面积背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗核心母题，使用无关卡通形象或写实士兵",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止保留原图粗黑体汉字、复杂营销元素或写实枪械道具",
+    "禁止过度弱化三级头盔特征导致IP关联断裂",
+    "禁止将护目镜橙红色扩大为大面积填充，仅限微量点缀"
+  ]
+}

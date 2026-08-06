@@ -1,0 +1,75 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 pinduoduo 的 original -> style_ref 规律，原图复杂的红色心形网格阵列被彻底重构为'小狗抱心形牌'的场景。当前目标原图同样是密集的商品图标网格填充心形，缺乏单一明确的主体轮廓，符合 theme_design_analysis 中 'recompose_when' 的条件（密集几何阵列、复杂多元素堆叠）。因此，放弃保留原图的网格拓扑结构，转而提取'心形'和'拼'字作为核心语义符号，由主题母题角色（绿叶小狗）持有该符号，以符合主题包的统一构图逻辑。",
+  "preserve": [
+    "心形的外轮廓形状",
+    "汉字'拼'的可读性与中心位置",
+    "绿叶小狗的核心母题特征（叶耳、腮红、呆萌脸）",
+    "底部手写体 App 名称 'Pinduoduo'"
+  ],
+  "must_preserve": [
+    "心形几何轮廓作为核心识别锚点",
+    "汉字'拼'位于心形内部或显著关联位置",
+    "主题统一的白底圆角矩形背景与留白比例",
+    "手绘抖动粗线条与扁平哑光质感"
+  ],
+  "recompose_allowed": [
+    "原图周围的10个商品小图标网格（完全移除）",
+    "原图的大面积红色背景（替换为白底）",
+    "心形的填充方式（从网格变为实心色块或手持道具）",
+    "红色的使用范围（从主色降级为心形描边、文字或微量点缀）",
+    "将平面心形转化为小狗怀抱、举着或背负的立体互动道具"
+  ],
+  "restyle": [
+    "将标准几何心形重绘为边缘圆润、带抖动感的马克笔手绘心形",
+    "将汉字'拼'从印刷体转为手写涂鸦风格",
+    "将品牌高饱和红柔化为深红/橙红描边或局部填色，避免刺眼",
+    "为小狗添加叶脉纹理耳朵与粉色椭圆腮红"
+  ],
+  "decorate": [
+    "在心形边缘或小狗头部添加少量手绘叶片/嫩芽装饰",
+    "在小狗脸颊添加淡粉色椭圆腮红",
+    "在心形或小狗面部添加极简白色高光点暗示体积",
+    "底部文字旁可添加极微小的手绘爱心或购物袋涂鸦点缀（可选）"
+  ],
+  "forbid": [
+    "保留原图的红色满版背景或高饱和红大面积填充",
+    "保留原图周围的一圈商品小图标网格或任何密集阵列",
+    "使用平滑矢量线条、锐利折角或完美几何形状绘制心形",
+    "遗漏底部的 'Pinduoduo' 手写文字或使用标准印刷字体",
+    "让心形或小狗过大撑满画布，失去四周留白与呼吸感",
+    "添加3D光影、渐变、金属质感或投影效果",
+    "将心形替换为通用爱心、购物车、钱袋等无关符号",
+    "删除或过度艺术化导致汉字'拼'不可辨认"
+  ],
+  "generation_brief": "White rounded square background. Center: A cute green vegetable-dog character holding a large hand-drawn heart-shaped sign with wobbly dark green outlines. The heart contains the Chinese character '拼' in white or soft red, written in casual handwritten style. The dog has green leaf ears with vein texture, pink oval blushes, tiny black dot eyes, and a playful tongue. Flat matte doodle style, no gradients or shadows. Bottom: Handwritten black text 'Pinduoduo' centered below. Ample white space, no product grid icons, no red background.",
+  "color_application": "彻底移除原图高饱和红色背景，强制使用纯白/米白底板。心形轮廓与小狗外轮廓使用深草绿(#4A7C29)手绘粗线；心形内部填充浅嫩绿(#A8D060)或留白，汉字'拼'使用白色或柔化橙红(#E57373)手写体；小狗腮红使用淡粉(#FFB6C1)；仅在心形描边或文字中微量保留柔化红色作为品牌语义锚点，严禁大面积红底。",
+  "stroke_application": "所有轮廓（心形、小狗、文字）均使用粗细不均、边缘抖动的手绘马克笔线条，端点圆润无尖角。心形外框与小狗主体用深绿粗线勾勒，内部叶脉、五官细节用同色系细线补充。禁止平滑矢量线、机械几何曲线或锐利折角，确保整体呈现儿童简笔画般的拙朴感。",
+  "composition_application": "严格遵循垂直三段式贴纸构图：上部60%区域为小狗怀抱心形的居中主体，中部留白过渡，下部20%区域放置黑色手写'Pinduoduo'。主体整体占比控制在55%-60%，四周保留充足白色呼吸空间，心形与小狗组合重心偏上，底部文字与主体在垂直轴居中对齐，形成稳定上图下文版式。",
+  "identity_application": "通过'语义符号+母题角色+底部文字'三重机制保障识别：提取原图核心语义符号'心形+拼字'作为小狗手持道具，既保留品牌记忆点又融入主题母题；小狗的绿叶耳、粉腮红、呆萌脸确保主题一致性；底部手写英文名兜底身份。红色仅以柔化描边或文字形式微量存在，避免破坏主题色彩体系，同时维持'拼单/购物'的功能联想。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止任何彩色、渐变或纹理背景",
+    "主体必须包含绿叶小狗母题三要素：叶脉耳朵、粉色腮红、豆豆眼/吐舌表情",
+    "所有线条必须为手绘抖动粗描边，禁止平滑矢量或标准几何",
+    "底部必须包含黑色手写体'Pinduoduo'，禁止印刷字体或缺失",
+    "色彩严格限制在白、绿、粉、黑及微量柔化红范围内，禁止原品牌高饱和红大面积出现",
+    "整体必须为2D扁平哑光手绘质感，禁止3D、光影、高光或拟物效果",
+    "主体占比50%-65%，保证充足留白与底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原图红色满版背景或高饱和红作为主填充色",
+    "禁止保留或重现原图周围的10个商品小图标网格",
+    "禁止使用平滑矢量线、锐利边缘或完美几何心形",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染",
+    "禁止主体撑满画布或触碰边缘，必须保留呼吸留白",
+    "禁止偏离绿叶小狗母题，使用无关卡通形象或通用爱心",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止将心形替换为购物车、钱袋、礼盒等非原始语义符号",
+    "禁止过度重构导致'拼'字不可读或心形轮廓消失",
+    "禁止在未获许可下引入蓝、紫、金等非主题色"
+  ]
+}

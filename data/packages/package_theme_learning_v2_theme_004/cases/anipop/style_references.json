@@ -1,0 +1,10 @@
+{
+  "target_app": "anipop",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "peace_elite",
+    "zhihu",
+    "honor_of_kings"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

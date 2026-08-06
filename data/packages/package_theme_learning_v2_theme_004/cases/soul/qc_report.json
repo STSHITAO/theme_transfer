@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 30,
+      "overall_score": 55,
+      "failure_reason": "底部手写体标签错误显示为'Alipay'，严重违反必须保留黑色手写体'Soul'标签的身份约束，导致品牌识别混淆。",
+      "recommendation": "不推荐。虽然主体图形风格完美契合且保留了Soul字形与青色锚点，但底部文字错误是致命缺陷，直接破坏了App的身份识别。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 60,
+      "overall_score": 78,
+      "failure_reason": "底部手写体标签拼写错误/乱码（显示为'Sopd'而非'Soul'），违反身份约束；主体字母'l'的青色点缀略显生硬，但整体结构保留较好。",
+      "recommendation": "推荐使用。尽管底部文字存在拼写瑕疵（AI生成常见伪影），但主体'Soul'字形结构、绿叶纹理、菜狗表情及青色锚点均准确还原，相比候选1的品牌名完全错误，此图更能维持目标App的核心识别度。建议后期修正底部文字。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\soul\\candidates\\candidate_02.png",
+  "warning": "两张候选图的底部手写体标签均未正确生成'Soul'（分别为'Alipay'和'Sopd'），这是严重的身份约束违规。但在必须二选一的情况下，candidate_02的主体图形识别度更高，且未错误指向其他竞品App，故作为次优解推荐，需注意文字瑕疵。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

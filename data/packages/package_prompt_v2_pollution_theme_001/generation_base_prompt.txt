@@ -1,0 +1,45 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_001
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+3D Ice/Crystal Material Theme. The theme transforms flat 2D icons into three-dimensional objects made of translucent, light-blue ice or crystal. The style emphasizes physical volume, refraction, internal textures (bubbles, snowflakes), and a cold, refreshing atmosphere set against a clean white background.
+
+[Shared original-to-style transform]
+Transform flat vector shapes into thick, extruded 3D solids with rounded edges. Apply a unified 'frozen' material treatment: semi-transparent cyan/blue body, glossy surface highlights, and internal imperfections like trapped air bubbles or frost patterns. Remove original brand colors and replace them with the theme's ice palette.
+
+[Color]
+强制全量替换为冰蓝色系。原始图标的固有色（Brand Color）被移除，转化为材质的透明度变化或高光颜色。仅在极少数情况（如 douyin_huoshan）下，允许保留一个极小的原色符号（火焰）作为点缀，其余部分全部同化为冰材质。
+
+[Background]
+从原始的各种纯色/渐变背景统一转换为纯净的白色/浅灰背景。去除所有背景图形元素，将视觉重心完全集中在前景的 3D 冰雕主体上。增加底部的物理投影以确立空间关系。
+
+[Edges and strokes]
+去除所有 2D 描边。轮廓通过 3D 模型的倒角（Bevel）和高光反射来定义。边缘处理非常光滑，没有锐利的切角，模拟冰块的物理特性。
+
+[Composition]
+从 2D 平面填充转变为 3D 实体居中。主体不再撑满画布边缘，而是留出呼吸感（Padding）。增加垂直方向的厚度感（Z轴），使图标看起来像是一个摆放在桌面上的实物模型。
+
+[Subject scale]
+主体宽度约为画布宽度的 50%-60%，高度约为 60%-70%。允许根据原始图标的长宽比进行适当缩放，但必须保持视觉重心的稳定。
+
+[Detail complexity]
+增加物理细节复杂度（水珠、纹理、光影），简化图形语义复杂度（去除多余装饰、文字、复杂渐变）。将扁平的几何图形转化为具有体积感的简单几何体。
+
+[Required style properties]
+- 必须严格使用半透明冰蓝色材质，不可出现其他主色调。
+- 必须包含表面水珠或内部雪花/气泡等冰质感细节。
+- 必须保留原始图标的核心几何轮廓，不可重构为无关物体。
+- 背景必须保持极简洁白，突出主体的通透感。
+- 光影逻辑必须符合 3D 渲染规律（顶光或侧光，底部有阴影）。
+
+[Forbidden style drift]
+- 禁止使用原始 App 的品牌背景色。
+- 禁止生成不透明的塑料、金属或玻璃材质（必须是冰/雪质感）。
+- 禁止保留 2D 扁平化设计风格。
+- 禁止过度添加与“冰/冷”主题无关的复杂场景道具。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.

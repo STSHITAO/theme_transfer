@@ -1,0 +1,10 @@
+{
+  "target_app": "honor_of_kings",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "golden_spatula",
+    "qidian",
+    "genshin"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

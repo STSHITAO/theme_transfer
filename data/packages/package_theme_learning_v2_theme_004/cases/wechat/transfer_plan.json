@@ -1,0 +1,81 @@
+{
+  "app": "wechat",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律明确显示：当原图具有极高辨识度的封闭几何框架（双气泡）时，必须严格保留主体的大小比例、重叠方式、空间朝向和尾部拓扑结构。当前目标原图正是这一经典双气泡结构，因此遵循 preserve_major_structure 策略，仅将气泡边缘手绘化、内部填充主题母题五官，而不改变其核心几何骨架。",
+  "preserve": [
+    "一大一小两个气泡的重叠关系与相对位置",
+    "气泡下方的尖角尾巴朝向",
+    "每个气泡内部的两点式眼睛布局",
+    "整体的居中偏上构图与留白比例"
+  ],
+  "must_preserve": [
+    "双气泡重叠的核心几何轮廓",
+    "气泡内部的四个圆点（双眼）结构及相对位置",
+    "气泡尾巴的指向方向",
+    "右侧气泡遮挡左侧气泡的层级关系",
+    "整体的正负形对比关系"
+  ],
+  "recompose_allowed": [
+    "原纯绿色背景替换为纯白/米白圆角底板",
+    "气泡的光滑矢量边缘替换为深绿手绘抖动粗线条",
+    "气泡内部空白区域填充浅绿/白色并添加叶脉纹理",
+    "气泡顶部延伸出绿叶状耳朵",
+    "添加粉色圆形腮红、豆豆眼和吐舌/呆萌表情",
+    "底部新增黑色手写体 'WeChat' 文字"
+  ],
+  "restyle": [
+    "背景绿色的具体色值、渐变方向或材质转化为扁平手绘质感",
+    "气泡主体的填充颜色转化为浅嫩绿/黄绿加叶脉纹理",
+    "圆角矩形的背景底板形状统一为iOS风格纯白底板",
+    "边缘的高光、阴影、描边等装饰性细节转化为深绿马克笔抖动感线条",
+    "气泡边缘的平滑度转化为不规则手绘圆润感"
+  ],
+  "decorate": [
+    "气泡顶部添加绿叶状耳朵以呼应蔬菜萌宠母题",
+    "面部添加淡粉色椭圆腮红",
+    "眼部绘制为黑色小圆点豆豆眼",
+    "嘴部添加吐出的小舌头或呆萌表情",
+    "底部居中放置黑色手写体英文 'WeChat'"
+  ],
+  "forbid": [
+    "保留原图大面积高饱和绿色背景",
+    "改变双气泡的大小比例或重叠逻辑导致无法识别",
+    "使用平滑矢量线或标准几何圆形",
+    "添加3D光影、渐变或立体浮雕效果",
+    "遗漏底部手写App名称",
+    "主体撑满画布导致失去留白和文字区域",
+    "遗漏绿叶、粉腮红等核心母题特征",
+    "将气泡具象化为真实动物或毛绒球",
+    "移除气泡内的圆点眼睛结构"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. The central subject strictly preserves the WeChat double-bubble structure: one large bubble behind and one small bubble in front, overlapping with specific tail directions (left-down, right-down). Reimagine both bubbles as adorable green vegetable-dog heads with leaf-vein texture fills and thick wobbly dark green marker outlines. Add kawaii features: black dot eyes aligned with original bubble holes, pink oval blushes, tiny tongues, and green leaf ears sprouting from tops. Maintain exact size ratio and spatial relationship of the two bubbles. Below the centered graphic, write 'WeChat' in casual bold black handwritten font. Flat sticker art style, ample white space, no shadows, no gradients, healing mood.",
+  "color_application": "彻底移除原图高饱和微信绿背景，替换为纯白/米白底色。双气泡主体填充浅嫩绿(#A8D060)或黄绿(#C5E1A5)，内部叠加叶脉纹理。外轮廓使用深草绿(#4A7C29)手绘粗线。腮红使用淡粉(#FFB6C1)，眼睛和底部文字使用纯黑(#000000)。仅在极小面积点缀天蓝汗滴(可选)。",
+  "stroke_application": "将原图光滑矢量气泡边缘完全转化为深绿手绘马克笔质感粗线条，边缘带有自然抖动、断笔和不规则圆润感。内部叶脉和五官细节使用同色系细线勾勒。严禁平滑直线、锐利折角或机械几何曲线。线条端点圆润，模拟真实纸面涂鸦笔触。",
+  "composition_application": "采用垂直三段式贴纸构图：上部为双气泡萌化主体(占画布50%-65%)，严格居中偏上；中部留白过渡；下部为黑色手写体'WeChat'(占15%-20%)。主体四周保留充足白色呼吸空间，严禁触碰画布边缘。双气泡的大小比例、重叠位置和尾部朝向必须与原图几何拓扑一致。",
+  "identity_application": "通过严格保留双气泡的重叠比例、尾部指向和四点眼睛布局来维持微信的绝对识别性。在此基础上，将气泡轮廓软化为蔬菜小狗头部形态，利用原气泡孔洞作为豆豆眼位置，顶部添加绿叶耳朵，面部叠加粉腮红和吐舌表情，实现主题母题无缝融合。底部手写'WeChat'作为双重身份保障。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入绿叶小狗/蔬菜萌宠母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形",
+    "底部必须包含黑色手写风格'WeChat'名称，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑体系内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间",
+    "双气泡的大小比例、重叠顺序和尾部方向必须与原图一致"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和度微信绿作为大面积背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何圆形",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止改变双气泡的大小比例、重叠逻辑或尾巴朝向",
+    "禁止移除气泡内的圆点眼睛结构或将其替换为其他五官",
+    "禁止将气泡具象化为真实动物、毛绒球或Emoji表情",
+    "禁止过度重构导致双气泡核心轮廓完全消失"
+  ]
+}

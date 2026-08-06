@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：保留了“和平精英”专属字形及“平”字内的闪电负形，英文副标题排版正确；色彩准确转换为薄荷青，具备标准的白色模切包边、深灰虚线缝线及右下硬投影；背景网格与淡红虚线框符合主题规范。画面干净，无伪影。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。与 candidate_01 质量相当，同样精准还原了文字骨架、闪电细节及贴纸材质效果。色彩、构图、背景元素均严格符合 strict 约束和 generation_brief 要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

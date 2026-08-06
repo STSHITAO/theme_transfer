@@ -1,0 +1,65 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 kugou、kugou_music、qq_music 等音乐类 App 的迁移规律，当原图为简洁的几何图形（圆环）加字母/符号时，均严格保留主体几何拓扑关系（preserve_major_structure）。当前目标原图为极简的蓝底白圈白 K，结构清晰且无复杂 3D 或插画细节，完全符合直接进行贴纸化映射的条件，无需进行语义重构或结构替换。",
+  "preserve": [
+    "正圆形外轮廓的完整闭合形态",
+    "居中大写字母 K 的无衬线粗体字形及倾斜切角特征",
+    "字母 K 与外围圆环的居中嵌套比例关系",
+    "前景图形与背景的高对比度可读性结构"
+  ],
+  "must_preserve": [
+    "字母 K 的笔画骨架与几何拓扑",
+    "正圆环包裹 K 字的经典组合范式",
+    "K 字在圆内的相对大小与居中位置"
+  ],
+  "recompose_allowed": [
+    "原图纯蓝色背景替换为网格底板",
+    "原图白色填充转为薄荷绿填充或白色负空间镂空",
+    "边缘锐度圆润化处理以适配纸质特性",
+    "添加极少量主题内装饰性虚线点缀"
+  ],
+  "restyle": [
+    "主体填充色统一为低饱和度薄荷青",
+    "添加白色宽模切包边与深灰色虚线缝纫轮廓",
+    "右下方添加柔和浅灰色硬边缘投影",
+    "整体转为哑光纸质贴纸质感"
+  ],
+  "decorate": [
+    "米白底浅灰网格背景纹理",
+    "外围淡红/淡粉色圆角虚线裁剪框"
+  ],
+  "forbid": [
+    "保留原图高饱和度品牌蓝色背景",
+    "改变圆环或 K 字的基本几何结构与比例",
+    "使用通用音符、耳机等无关音乐符号替换 K 字",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红虚线框",
+    "添加写实光泽、3D 立体效果、渐变或复杂纹理"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon on light grey grid notebook paper. The subject is a mint cyan circle containing a bold sans-serif letter 'K', strictly preserving the original geometric proportion and centered layout. The sticker has a thick white die-cut border with dark grey dashed stitching lines inside. A soft grey drop shadow falls to the bottom right. Surrounded by a faint red dashed rectangular guide line on the grid background. Handcraft scrapbook style, matte paper texture, rounded corners, clean vector illustration, cute and fresh aesthetic.",
+  "color_application": "彻底剥离原图高饱和蓝色背景与白色前景，将圆环与 K 字主体统一填充为低饱和度薄荷青/浅蓝绿色；原白色元素转化为白色描边或负空间；辅色仅限白、浅灰、淡红四色，确保色彩一致性优先级高于品牌色保留。",
+  "stroke_application": "将原图无描边或锐利边缘转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；所有直角柔化为圆角，仅保留定义圆环与 K 字轮廓的必要虚线，呈现手工剪裁的柔和感。",
+  "composition_application": "主体从原图满版构图收缩为居中独立贴纸，尺寸控制在画布 50%-60%；严格置于网格底板中央红色虚线框安全区内，四周保留均匀网格留白；形成'底板-虚线框-贴纸'三层嵌套层级，视觉重心锁定中心。",
+  "identity_application": "在不破坏主题 fidelity 前提下，通过精确保留'正圆环+居中 K 字'的几何拓扑关系维持识别度；K 字的笔画走向、粗细比例及与圆环的嵌套空间必须与原图一致；仅通过颜色归一化与材质转换完成主题适配，禁止对核心结构进行任何形式的重组或替换。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原 App 品牌蓝色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D 立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留 original 的高饱和度蓝色背景或渐变色",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止改变圆环或 K 字的几何结构、比例或相对位置",
+    "禁止用音符、耳机等通用音乐符号替换 K 字主体",
+    "禁止添加写实材质、金属光泽、霓虹发光等不符合手工剪纸风格的特效",
+    "禁止在主体内部保留过多 original 细节导致视觉杂乱"
+  ]
+}

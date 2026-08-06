@@ -1,0 +1,39 @@
+{
+  "app": "dingtalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "白色翅膀与闪电结合的几何轮廓（钉钉Logo核心形态）",
+  "brand_cues_to_preserve": [
+    "翅膀加闪电的整体剪影结构",
+    "向右上方飞翔/冲刺的动态朝向",
+    "三层羽翼的层叠关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "高效、快速的办公语义（通过闪电形态保留）",
+    "沟通与连接（通过翅膀/飞翔隐喻）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 Bilibili（保留电视框）、Ctrip（保留海豚C形）、Netease Music（保留音符螺旋）等案例，当原App拥有单一、高辨识度的几何符号时，策略均为严格保留主体轮廓并进行材质/物种替换。钉钉的‘翅膀闪电’符号具有极高的品牌识别度且结构简单明确，符合 preserve_when 规则。因此，必须保留其几何骨架和空间朝向，仅将锐利边缘手绘化、填充绿色叶脉纹理并植入萌宠五官，而非像 Dianping 或 Douyin 那样进行彻底的语义重构。",
+  "design_rationale": "钉钉作为强工具属性App，其Logo的几何形状是用户识别的第一要素。在‘绿叶小狗’主题下，最佳策略是将这个硬朗的几何符号‘软化’和‘生物化’。保留翅膀闪电的外轮廓，将其转化为一只正在飞翔的绿色蔬菜小狗的身体或翅膀形态，既维持了品牌识别，又完美融入了主题的治愈手绘风格。底部的‘DingTalk’手写文字进一步加固身份认知。",
+  "must_preserve": [
+    "翅膀与闪电结合的主体外轮廓",
+    "主体居中偏上的构图位置",
+    "向右上的动态趋势"
+  ],
+  "can_recompose": [
+    "原有的纯蓝色渐变背景（必须移除）",
+    "原有的平滑矢量边缘（改为手绘抖动线）",
+    "白色的填充色（改为浅绿/白相间，增加叶脉）",
+    "内部细节（可增加豆豆眼、腮红、吐舌头等萌宠特征）"
+  ],
+  "forbid": [
+    "保留原图的蓝色背景",
+    "改变翅膀闪电的基本拓扑结构（如变成完全不同的动物站姿）",
+    "使用平滑的电脑矢量线条",
+    "遗漏底部的手写App名称",
+    "添加3D光影或立体效果"
+  ],
+  "generation_direction": "纯白圆角底板。主体保留钉钉‘翅膀+闪电’的白色剪影轮廓，但转化为手绘深绿粗描边，内部填充浅嫩绿并带叶脉纹理。将翅膀形态拟人化为绿色蔬菜小狗的飞翼或身体，融入豆豆眼、粉色腮红和吐舌表情，保持向右上飞翔的动态。线条需有马克笔抖动感。底部居中书写黑色手写体 'DingTalk'。主体占比60%，扁平涂鸦风格。"
+}

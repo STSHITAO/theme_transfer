@@ -1,0 +1,65 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 tmall 的真实 original -> style_ref 规律显示，当原图包含文字与图形组合时，策略倾向于移除文字部分（如'天猫'汉字），仅保留最具辨识度的图形主体（猫头）并严格保留其几何轮廓与五官空间关系。当前目标原图同样为'文字+猫头'的上下结构，且猫头轮廓简洁清晰，符合 preserve_when 条件，因此应保留猫头主体结构，剔除文字以适配贴纸的极简语言。",
+  "preserve": [
+    "猫头整体外轮廓曲线与双耳形状",
+    "两个椭圆形大眼睛的相对位置与比例",
+    "中间的小倒三角鼻子",
+    "猫形吉祥物暗示的品牌亲和力与电商属性"
+  ],
+  "must_preserve": [
+    "猫头的外轮廓曲线与双耳尖角（需圆润化处理）",
+    "双眼与鼻子的空间拓扑关系",
+    "主体居中的构图逻辑"
+  ],
+  "recompose_allowed": [
+    "上方的'天猫'汉字（应完全移除）",
+    "原图的红色背景与黑色填充色（需替换为薄荷绿填充+白边）",
+    "眼睛内部的细节（可简化为白色负空间镂空）"
+  ],
+  "restyle": [
+    "红色背景的材质、渐变或纹理",
+    "白色文字与图形的边缘光泽、立体感或描边",
+    "整体图标的圆角弧度",
+    "色彩的明度与饱和度微调"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留红色的品牌底色或黑色的原始填充",
+    "保留上方的'天猫'文字导致贴纸轮廓破碎",
+    "使用渐变、高光或 3D 立体渲染破坏纸质哑光感",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "改变猫头五官的比例导致不可识别",
+    "写实风格的猫咪插画或毛绒玩具质感",
+    "通用的卡通动物表情团子",
+    "云朵、星星等无关几何图形"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the Tmall cat head silhouette placed on a light grey grid notebook paper background. The cat head is simplified, rounded, and filled with uniform mint cyan color. Eyes and nose are rendered as white negative space cutouts preserving original geometric layout. The subject is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting. No text, no red background, no black fill.",
+  "color_application": "彻底剥离original的红黑品牌色，将猫头主体强制填充为低饱和度薄荷绿/青蓝色；原图中的白色眼睛和鼻子转化为白色负空间镂空；完全去除光影渐变和高光，转为纯色块填充。",
+  "stroke_application": "将original的无描边或锐利边缘转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；猫耳尖端及所有转角柔化为圆角，线条密度降低，仅保留定义猫头轮廓和五官镂空的必要虚线。",
+  "composition_application": "移除original上方的'天猫'文字，仅保留底部猫头作为独立贴纸主体；将猫头居中放置于网格底板中央的红色虚线框安全区内，尺寸缩放至画布50%左右，四周保留均匀充足的网格留白，形成明确的'底板-虚线框-贴纸'三层嵌套层级。",
+  "identity_application": "通过严格保留猫头外轮廓、双耳位置、双眼椭圆比例及倒三角鼻子的空间拓扑关系来维持身份识别；利用白色负空间精准还原五官特征，确保在单色薄荷绿填充下依然可被识别为天猫猫头，而非通用猫形图案。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留红色或黑色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（约50%），严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理",
+    "所有几何转角必须圆润化处理，符合纸质贴纸物理特性"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度红色背景或黑色猫头填充",
+    "禁止保留上方的'天猫'汉字或其他任何文字元素",
+    "禁止使用纯色背景、透明背景或非网格纹理背景",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影",
+    "禁止添加写实毛发、金属光泽、霓虹发光等不符合手工剪纸风格的特效",
+    "禁止将猫头重构为钱包、购物袋等通用电商道具",
+    "禁止改变猫眼大小、鼻子位置或耳朵形状导致身份丢失",
+    "禁止在主体内部保留过多细节导致视觉杂乱"
+  ]
+}

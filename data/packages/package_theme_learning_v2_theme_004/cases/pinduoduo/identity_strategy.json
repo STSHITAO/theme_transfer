@@ -1,0 +1,41 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "心形轮廓与汉字'拼'的组合，以及拼单/购物的语义",
+  "brand_cues_to_preserve": [
+    "心形几何轮廓",
+    "汉字'拼'",
+    "红色品牌色（微量点缀）"
+  ],
+  "semantic_cues_to_preserve": [
+    "拼单/聚合的语义",
+    "购物/商品的暗示",
+    "优惠/热闹的氛围"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 pinduoduo 的 original -> style_ref 规律，原图复杂的红色心形网格阵列被彻底重构为'小狗抱心形牌'的场景。当前目标原图同样是密集的商品图标网格填充心形，缺乏单一明确的主体轮廓，符合 theme_design_analysis 中 'recompose_when' 的条件（密集几何阵列、复杂多元素堆叠）。因此，放弃保留原图的网格拓扑结构，转而提取'心形'和'拼'字作为核心语义符号，由主题母题角色（绿叶小狗）持有该符号，以符合主题包的统一构图逻辑。",
+  "design_rationale": "原图的高饱和度红色背景和密集的白色商品剪影网格与主题的'极简、留白、手绘涂鸦'风格冲突极大。根据主题规则，必须剥离复杂背景，将视觉重心收敛到单一的萌系角色上。保留'心形'和'拼'字足以维持品牌识别，将其转化为小狗手中的道具（如心形气球或牌子），既能表达'拼单'的功能语义，又能完美融入'绿叶小狗'的主题母题，同时通过底部手写文字强化身份。",
+  "must_preserve": [
+    "心形的外轮廓形状",
+    "汉字'拼'的可读性",
+    "绿叶小狗的核心母题特征（叶耳、腮红、呆萌脸）",
+    "底部手写体 App 名称"
+  ],
+  "can_recompose": [
+    "原图周围的10个商品小图标网格（完全移除）",
+    "原图的大面积红色背景（替换为白底）",
+    "心形的填充方式（从网格变为实心或手持物）",
+    "红色的使用范围（从主色降级为心形描边或腮红点缀）"
+  ],
+  "forbid": [
+    "保留原图的红色满版背景",
+    "保留原图周围的一圈商品小图标",
+    "使用平滑矢量线条绘制心形",
+    "遗漏底部的 'Pinduoduo' 手写文字",
+    "让心形过大撑满画布，失去留白"
+  ],
+  "generation_direction": "White rounded square background. Center: A cute green vegetable-dog character holding a large heart-shaped sign. The heart contains the Chinese character '拼' in white. The dog has green leaf ears, pink blush, and dot eyes. Use thick wobbly dark green outlines. Flat hand-drawn doodle style. Bottom: Handwritten black text 'Pinduoduo'. No red background, no product grid icons."
+}

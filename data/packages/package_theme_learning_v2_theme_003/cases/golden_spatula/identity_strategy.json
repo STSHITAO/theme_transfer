@@ -1,0 +1,38 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "金铲铲道具符号与底部羁绊/旋风动态线",
+  "brand_cues_to_preserve": [
+    "铲子的三齿头部轮廓",
+    "底部的弧形旋风/羁绊线条"
+  ],
+  "semantic_cues_to_preserve": [
+    "自走棋装备/铲子语义",
+    "战斗/旋转/羁绊的动态感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示：当原图为复杂的 3D 企鹅角色加写实光影时，应完全舍弃具象角色，提取核心道具'铲子'与底部动态线进行重构。当前目标原图同样是高细节的 3D 企鹅插画，符合 theme_design_analysis 中'复杂3D渲染允许放弃原始结构，提取核心功能语义符号'的重构条件。因此不保留企鹅主体几何，而是用语义符号重组，以适配手工剪纸贴纸的极简轮廓要求。",
+  "design_rationale": "原图标为高精度的 3D 卡通企鹅渲染，细节繁复且依赖光影立体感，直接保留主体轮廓会导致贴纸形态崩坏或细节杂乱。根据主题包对该 App 的历史迁移规律及手账贴纸的工艺限制，选择提取最具品牌和功能辨识度的'金铲铲'道具符号，并结合底部的旋风线条暗示自走棋的羁绊与战斗机制。这种策略既彻底服从了主题的扁平单色与极简轮廓规则，又通过核心道具保留了 App 的身份与功能语义。",
+  "must_preserve": [
+    "铲子的基本几何形态（手柄与三齿头部）",
+    "底部暗示旋转/羁绊的弧形线条",
+    "居中构图与贴纸安全区比例"
+  ],
+  "can_recompose": [
+    "企鹅吉祥物形象",
+    "金属头盔与写实材质",
+    "蓝色漩涡背景与橙色角标",
+    "铲子的金属光泽与立体厚度"
+  ],
+  "forbid": [
+    "保留企鹅角色的 3D 面部或身体轮廓",
+    "使用金色、蓝色或橙色等原品牌色",
+    "添加金属反光、渐变或 3D 立体渲染",
+    "遗漏网格底板、红色虚线框、白色宽边或深灰缝线",
+    "将铲子替换为与原 App 无关的通用武器或工具"
+  ],
+  "generation_direction": "薄荷绿扁平铲子符号结合底部弧形旋风线，居中置于米白网格底板与淡红虚线框内，添加白色宽包边、深灰虚线缝线与右下硬投影，哑光纸质贴纸风格，无渐变无3D，圆润手绘轮廓。"
+}

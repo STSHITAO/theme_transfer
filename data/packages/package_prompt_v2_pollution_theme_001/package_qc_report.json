@@ -1,0 +1,32 @@
+{
+  "package_consistency_score": 85,
+  "style_consistency_score": 90,
+  "target_identity_score": 70,
+  "problematic_apps": [
+    {
+      "app": "tencent_maps",
+      "issue": "风格严重跑偏且身份丢失。参考图均为立体冰块质感，而该图标呈现为扁平的深蓝色水滴/叶片状图形，缺乏厚度和冰晶纹理，颜色也过深，完全不像同一套主题。",
+      "retry_suggestion": "需重绘。必须改为立体的冰块造型，保持浅蓝透明色调，并增加气泡和雪花细节以匹配整包风格。"
+    },
+    {
+      "app": "zhihu",
+      "issue": "背景处理不一致。整包其他图标均为纯白或极淡的背景，唯独该图标使用了明显的灰色渐变背景和强烈的地面倒影，导致在 Contact Sheet 中显得突兀，像是一张摄影照片而非图标素材。",
+      "retry_suggestion": "需调整背景。去除灰色背景和强倒影，改为与其他图标一致的洁净白色背景，保留冰块主体即可。"
+    }
+  ],
+  "accepted_apps": [
+    "crossfire_mobile",
+    "iqiyi",
+    "iqiyi_lite",
+    "karaoke",
+    "qidian",
+    "tmall",
+    "toutiao",
+    "ximalaya"
+  ],
+  "retry_apps": [
+    "tencent_maps",
+    "zhihu"
+  ],
+  "overall_comment": "整包图标在‘冰块材质’、‘浅蓝色调’以及‘内部气泡/雪花细节’上保持了很高的一致性，视觉统一感较强。大部分文字类图标（如头条、起点）和图形类图标（如天猫、唱吧）都很好地转化为了冰雕风格。主要问题在于腾讯地图完全丢失了立体冰质感，变成了平面图形；知乎的背景光影处理与其他图标格格不入。修复这两个问题后，整包质量将非常优秀。"
+}

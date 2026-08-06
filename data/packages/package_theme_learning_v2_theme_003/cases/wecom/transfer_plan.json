@@ -1,0 +1,69 @@
+{
+  "app": "wecom",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 wecom 的 original -> style_ref 规律明确显示：在去除多色渐变和3D高光后，完整保留了大气泡轮廓及右下角四个节点的连接结构与空间分布。当前目标原图主体为简洁的2D几何图形（气泡+节点），轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 preserve_when 条件。因此必须严格保留原始几何拓扑、节点相对位置和气泡形态，仅执行颜色归一化、材质贴纸化和背景标准化处理，不进行语义重构。",
+  "preserve": [
+    "聊天气泡的主体外形与左下角尾巴指向",
+    "右下角四个水滴状节点的环形排列与连接关系",
+    "气泡与节点之间的空间嵌套布局",
+    "气泡右下方的断开/缺口设计"
+  ],
+  "must_preserve": [
+    "聊天气泡的整体外轮廓曲线与尾部尖角朝向",
+    "右下角四个水滴/节点元素的相对位置、大小比例与环绕连接关系",
+    "气泡主体与节点组件的空间层级与嵌套逻辑",
+    "气泡右下方的缺口与四色组合的咬合结构"
+  ],
+  "recompose_allowed": [
+    "原图的蓝、绿、黄、橙四色区分强制统一为薄荷绿单色填充",
+    "原图的3D立体高光、渐变光泽与塑料质感转为扁平哑光纸质",
+    "节点内部的细微色彩过渡简化为纯色块或白色负空间留白"
+  ],
+  "restyle": [
+    "整体填充色替换为低饱和度薄荷青",
+    "添加白色宽模切边与深灰色虚线缝纫轮廓",
+    "右下方添加浅灰色硬边缘投影",
+    "所有尖锐转角圆润化处理以适配纸质贴纸质感"
+  ],
+  "decorate": [
+    "米白/浅灰白方格纸背景纹理",
+    "环绕主体的淡红/淡粉色圆角虚线裁剪框"
+  ],
+  "forbid": [
+    "保留原图的多色节点或蓝色品牌主色",
+    "遗漏白色宽包边、深灰虚线缝线、右下硬投影或网格背景中的任一主题指纹",
+    "改变气泡与四个节点的空间拓扑关系或相对位置",
+    "将节点重构为无关的通用图标或破坏连接语义的独立元素",
+    "使用尖锐直角、模糊漫反射阴影或3D立体渲染效果",
+    "主体尺寸超出40%-70%安全区或触碰画布边缘",
+    "封闭气泡右下方的缺口导致结构识别失败"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker icon of the WeCom logo placed on a light grey grid notebook paper background. The main subject strictly preserves the original chat bubble outline with its bottom-left tail and the four teardrop-shaped connection nodes at the bottom-right gap, maintaining their exact relative positions and ring arrangement. The entire shape is filled with uniform mint cyan, surrounded by a thick white die-cut border with dark grey dashed stitching lines inside. A soft grey hard-edge drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, rounded corners, clean vector illustration, no gradients, no 3D effects, no original brand colors.",
+  "color_application": "彻底剥离企业微信原有的蓝色气泡及绿黄橙蓝四色节点，将气泡主体与四个连接节点统一填充为低饱和度薄荷青/浅蓝绿色；原图中的白色高光或反光区域转化为白色描边或负空间镂空；禁止保留任何原始品牌色相或多色区分。",
+  "stroke_application": "将原图无描边或细线轮廓转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫针脚；气泡尾巴尖端及节点连接处的锐利转角全部柔化为圆角，线条密度降低以呈现手工剪裁的柔和感。",
+  "composition_application": "将原图满版构图收缩为居中放置的独立贴纸形态，主体严格置于网格底板中央的淡红虚线框安全区内，占据画布约50%-60%比例；四周保留均匀充足的网格留白，形成明确的'底板-虚线框-贴纸'三层嵌套层级关系，严禁出血或触碰边缘。",
+  "identity_application": "在彻底服从薄荷绿单色贴纸主题的前提下，通过精确保留气泡轮廓曲线、左下角尾巴指向、右下角缺口设计及四个水滴节点的环形排列拓扑来维持企业微信的身份识别；不依赖颜色区分，而是依靠独特的'气泡+四节点咬合'几何结构作为唯一身份锚点。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色或引入其他色相",
+    "必须具备白色宽包边与内部/边缘深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板，不可省略或替换",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致，禁止使用模糊漫反射阴影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血、触碰边缘或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果、写实纹理或现代UI材质",
+    "所有几何转角必须圆润化处理，符合布艺/纸质贴纸的物理特性"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度品牌色、渐变色或多色搭配",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止主体过大撑满画布或过小缩在角落，破坏居中贴纸的构图平衡",
+    "禁止添加写实材质、金属光泽、霓虹发光、3D渲染等不符合手工剪纸风格的特效",
+    "禁止将主体重构为与原App功能/名称语义无关的通用道具或小场景",
+    "禁止使用实线粗描边替代虚线缝纫效果，或使用尖锐直角破坏手工感",
+    "禁止改变气泡与四节点的相对位置、数量或连接关系",
+    "禁止封闭气泡右下方的缺口或移除四个水滴状节点"
+  ]
+}

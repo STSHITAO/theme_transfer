@@ -1,0 +1,430 @@
+{
+  "theme_board": {
+    "palette": "以纯白或米白为统一底色，主体强制使用低饱和度草绿/嫩绿/橄榄绿色系。点缀色严格限制为淡粉色（腮红）和深墨绿/黑色（描边与文字）。原App高饱和品牌色仅允许作为极小面积的功能语义锚点（如抖音故障色、QQ红围巾）保留，其余一律剥离。",
+    "line_style": "手绘马克笔/蜡笔质感的粗线条，边缘带有自然抖动、断笔和不规则圆润感，严禁平滑矢量线、锐利折角或机械几何曲线。轮廓线通常为深绿或黑色，内部细节用同色系细线勾勒。",
+    "material": "完全扁平化哑光质感，模拟纸质手账或儿童简笔画。禁止任何3D渲染、光影渐变、高光、立体浮雕或玻璃拟物效果。色彩填充均匀或带轻微手绘涂抹痕迹。",
+    "background": "统一的纯白/米白圆角矩形底板（iOS图标轮廓）。背景必须保持绝对干净，无任何纹理、图案或渐变。主体周围留有大量均匀呼吸空间，底部固定预留手写文字区域。",
+    "composition": "垂直三段式稳定构图：上部为主题化主体（占画布50%-65%），中部留白过渡，下部为黑色手写体App名称（占15%-20%）。主体严格居中偏上，视觉重心收敛，强调贴纸感与松弛感。",
+    "motif_rules": "核心母题为“绿叶小狗/蔬菜萌宠”。所有图标必须包含以下特征组合：绿色叶子状耳朵/装饰、粉色圆形腮红、豆豆眼、吐舌头/呆萌表情。该母题通过替换原主体、拟人化原符号或作为Cosplay道具植入来实现统一。"
+  },
+  "color_transform_rule": "彻底摒弃原App的高饱和度品牌主色背景，强制映射为主题专用的低饱和绿色系+白底。仅当原色具有极强功能语义绑定（如抖音红青故障、和平精英橙红护目镜）时，才以描边偏移、服饰或手持物形式微量保留。金属色、光影色全部简化为平涂色块。",
+  "background_transform_rule": "无论原图是全出血彩色、深色模式还是复杂场景，统一裁剪替换为纯白/米白圆角底板。背景占比从原图的0%留白提升至40%-50%以上。唯一例外是原App强依赖深色氛围维持核心识别（如醒图黑底发光球），可保留深色底但需提亮主体。",
+  "stroke_transform_rule": "将原图的无描边、细矢量线或3D边缘全部转化为深绿/黑色手绘粗轮廓。线条密度大幅降低，边缘圆润度极高，消除所有尖角。通过断线、飞白和粗细变化模拟真实笔触，边界复杂度从高精度几何简化为概括性涂鸦。",
+  "composition_transform_rule": "主体从原图的撑满画布/复杂多层叠加，收缩为单一居中的卡通形象或符号容器。视觉重心从分散的品牌叙事集中到萌系角色上。底部强制新增手写体App名称区域，形成“上图下文”的固定版式，改变原有纯图形构图逻辑。",
+  "subject_scale_rule": "主体相对画布尺寸显著缩小，高度控制在50%-65%，宽度控制在40%-60%。严禁主体触碰画布边缘或撑满全图。缩放方式为等比概括缩小，确保四周尤其是底部有充足留白以容纳文字并维持呼吸感。",
+  "detail_complexity_rule": "细节密度极度降低。移除原图所有写实纹理、3D光影、复杂五官、营销道具和多角色堆叠。仅保留识别身份所需的最简几何特征，并强制叠加主题三要素（叶脉/叶子、粉腮红、吐舌/呆萌脸）。装饰数量严格受限，纹理复杂度归零。",
+  "theme_fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景（深色氛围App除外）。",
+    "主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情。",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形。",
+    "底部必须包含黑色手写风格App英文/拼音名称，禁止标准印刷字体。",
+    "色彩严格限制在白、绿、粉、黑及极少量原App识别点缀色范围内。",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果。",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间。"
+  ],
+  "forbidden_style_drift": [
+    "禁止保留原App高饱和度品牌色作为大面积背景或主填充。",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状。",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果。",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域。",
+    "禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象。",
+    "禁止遗漏底部手写App名称或使用电脑标准字体。",
+    "禁止保留原图复杂营销元素、写实道具或多角色堆叠。",
+    "禁止过度重构导致原App核心轮廓/语义符号完全消失。"
+  ],
+  "reference_transformation_patterns": [
+    {
+      "app": "alipay",
+      "source_semantics": "移动支付与金融服务，核心符号为汉字'支'。",
+      "observed_transformation": "保留'支'字的基本笔画骨架，将其转化为绿色手绘线条。将字的下半部分重构为菜狗的头部，融入绿鼻子、腮红和白菜叶，底部添加手写'Alipay'。",
+      "preserved_identity": "汉字'支'的整体字形结构和空间布局。",
+      "redesigned_parts": "原有的立体飘带质感、蓝色背景、AI标识被完全移除，替换为扁平绿色涂鸦和菜狗面部特征。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中依然可以清晰辨认出 original 中'支'字的横、竖、撇、捺的空间位置和比例关系，主体几何未被替代，仅在表面进行了主题化皮肤覆盖和局部拟人化。"
+    },
+    {
+      "app": "anipop",
+      "source_semantics": "三消休闲游戏，核心符号为多种卡通动物头像和网格。",
+      "observed_transformation": "完全舍弃原有的多角色和网格背景，提取游戏中角色的三角形/圆润轮廓，重构为一个独立的三角形菜狗形象，头顶白菜叶，底部添加手写中文名。",
+      "preserved_identity": "休闲、可爱、圆润的游戏氛围，以及大致的三角形主体占位。",
+      "redesigned_parts": "原有的黄色小鸡、绿色青蛙等多角色堆叠、3D质感和深色网格背景被完全重构为单一扁平菜狗。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是复杂的多角色前景加背景网格构图，style_ref 是单一的居中卡通形象。主体的具体几何轮廓（从具体的鸡/蛙变为抽象的三角菜狗）和空间关系发生了根本性重构，属于语义替代而非结构保留。"
+    },
+    {
+      "app": "bilibili",
+      "source_semantics": "视频弹幕社区，核心符号为小电视外框和'bilibili'文字。",
+      "observed_transformation": "保留小电视的圆角矩形外框轮廓，将天线替换为两片白菜叶。框内填入菜狗的五官（绿鼻子、腮红、歪嘴），原有文字移至底部作为手写标签。",
+      "preserved_identity": "小电视的圆角矩形外框轮廓这一最强身份符号。",
+      "redesigned_parts": "原有的粉色背景、内部半透明电视图案、框内白色文字被移除，内部空间被菜狗面部填充。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 中小电视的圆角矩形主体轮廓和居中位置，天线位置被同构替换为菜叶，主体几何和空间关系高度一致。"
+    },
+    {
+      "app": "clash_of_clans",
+      "source_semantics": "策略战争游戏，核心符号为怒吼的野蛮人首领头像。",
+      "observed_transformation": "舍弃野蛮人的具体人脸，提取其'戴头盔/王冠的战士'语义，重构为一个穿着蓝色披风、戴着金色王冠、手持皇冠的站立菜狗形象，底部添加手写英文名。",
+      "preserved_identity": "王冠、披风等代表部落首领/战争的策略游戏语义符号。",
+      "redesigned_parts": "原有的3D写实人脸、紫色背景、怒吼表情被完全重构为2D扁平的全身菜狗卡通形象。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是特写的人脸头像，style_ref 是全身站立的卡通角色。主体的几何形态（从人脸到狗身）、视角（从特写到全身）和空间占比均发生彻底改变，属于基于语义的重构。"
+    },
+    {
+      "app": "ctrip",
+      "source_semantics": "在线旅行预订，核心符号为海豚与字母'C'结合的游动姿态。",
+      "observed_transformation": "完美保留海豚/'C'字的弯曲游动轮廓和朝向，将鱼鳍和尾部替换为白菜叶，加入菜狗的五官特征，底部添加手写'Ctrip'。",
+      "preserved_identity": "海豚/'C'字的经典弯曲流线型轮廓和游动姿态。",
+      "redesigned_parts": "原有的蓝色背景、白色填充、橙色尾部点缀被替换为绿色线条和菜叶纹理。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中主体的'S'/'C'形弯曲弧度、头部朝向、尾部卷曲方向与 original 的海豚轮廓几乎完全重合，主体几何和空间关系被严格保留。"
+    },
+    {
+      "app": "dianping",
+      "source_semantics": "本地生活消费评价，原Logo为张开双臂欢呼的人形，代表活力、发现与分享。",
+      "observed_transformation": "将欢呼的人形重构为一只张开四肢、欢快跳跃的绿色小狗，保留了原Logo的动态张力。",
+      "preserved_identity": "保留了“张开双臂/四肢欢呼”的核心动态语义和积极向上的情绪。",
+      "redesigned_parts": "人形几何完全被小狗生物形态替代，橙色背景被白底替代，增加了底部文字。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original是抽象几何人形，style_ref是具象卡通小狗，主体轮廓、几何拓扑和空间占用完全不同，属于基于动态语义的结构重构。"
+    },
+    {
+      "app": "douyin",
+      "source_semantics": "短视频与音乐，原Logo为带红青故障色的音符，代表节奏、潮流与视觉冲击。",
+      "observed_transformation": "将音符重构为一只坐着的黑色小狗，但在小狗轮廓边缘保留了标志性的红青色故障偏移描边，耳朵保留绿色叶子元素。",
+      "preserved_identity": "保留了红青双色故障艺术（Glitch）这一极强的品牌视觉特征，以及音乐/节奏带来的动感暗示。",
+      "redesigned_parts": "音符符号被完全替换为小狗，黑色背景转为白底，增加了底部文字。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original是音符几何图形，style_ref是坐姿小狗，主体形状毫无相似性，仅通过边缘色彩特效继承身份，属于典型的结构重构。"
+    },
+    {
+      "app": "douyin_huoshan",
+      "source_semantics": "短视频火山版，原Logo为音符加底部火焰，代表更热烈、轻量娱乐的内容社区。",
+      "observed_transformation": "沿用抖音小狗的基础形态，在尾部增加手绘“抖”字动感线，并在底部文字旁增加一个小火焰emoji，映射“火山”语义。",
+      "preserved_identity": "保留了抖音系的红青故障描边，并通过附加火焰符号明确区分“火山版”的热烈属性。",
+      "redesigned_parts": "音符与实体火焰被替换为小狗+emoji火焰的组合，背景转为白底。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original是音符叠加火焰图形，style_ref是小狗叠加小火焰图标，主体几何从符号变为生物，属于结构重构。"
+    },
+    {
+      "app": "douyu",
+      "source_semantics": "游戏直播，原Logo为骑火箭的鲨鱼，代表速度、竞技、娱乐与攻击性。",
+      "observed_transformation": "将鲨鱼重构为一只吐着舌头、表情调皮、呈游动/飞行姿态的绿色小狗，保留了原图的动态朝向和娱乐感。",
+      "preserved_identity": "保留了“张嘴露齿/吐舌”的调皮表情和向前冲刺的动态语义，映射直播的娱乐互动属性。",
+      "redesigned_parts": "鲨鱼与火箭的复合结构被简化为单一体态的小狗，橙色背景被白底替代。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original是鲨鱼+火箭的复杂复合图形，style_ref是单一小狗，轮廓、组件数量和空间关系完全改变，属于结构重构。"
+    },
+    {
+      "app": "eleme",
+      "source_semantics": "外卖配送，原图为淘宝闪购联合标识，核心语义为快速、即时配送、饿了。",
+      "observed_transformation": "将配送语义重构为一只满头大汗、吐舌喘气、正在奔跑的绿色小狗，用“累/饿/急”的状态隐喻外卖配送的即时性与辛苦。",
+      "preserved_identity": "保留了原品牌蓝色作为汗滴和局部装饰色，通过“奔跑流汗”的动态精准映射“闪购/即时配送”的功能语义。",
+      "redesigned_parts": "复杂的文字排版和双色背景被完全移除，替换为单一动态小狗和底部文字。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original是纯文字排版图标，style_ref是具象卡通角色，从 typography 到 illustration 的跨维度转换，属于彻底的结构重构。"
+    },
+    {
+      "app": "golden_spatula",
+      "source_semantics": "自走棋策略游戏，核心元素是企鹅吉祥物（羽饰骑士）和金铲子装备。",
+      "observed_transformation": "将精致的 3D 企鹅转化为绿色的蔬菜状生物，头盔简化为带叶脉的紫色/绿色叶片结构，金铲子简化为黄色手绘涂鸦。保留了持铲动作和头盔特征。",
+      "preserved_identity": "企鹅/小怪兽的身体轮廓、头盔形状、手持铲子的姿态。",
+      "redesigned_parts": "材质从 3D 渲染变为扁平手绘；颜色从蓝银金变为绿白黄；面部增加了腮红和舌头；背景从蓝色漩涡变为纯白。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中主体的身体朝向、头部位置、手持道具的空间关系与 original 完全一致，仅进行了风格化和材质替换，未改变主体几何拓扑。"
+    },
+    {
+      "app": "honor_of_kings",
+      "source_semantics": "MOBA 竞技游戏，核心元素是英雄头像（亚瑟）和 5v5 标识。",
+      "observed_transformation": "放弃了写实的人类英雄头像，提取了游戏 Logo 中的‘盾牌/翅膀’轮廓作为外框，内部填充了一只绿色的蔬菜柴犬脸。这是一种语义重构，用‘荣耀’的符号包裹‘萌宠’内核。",
+      "preserved_identity": "游戏 Logo 的外部轮廓形状（盾牌/羽翼），以及底部的英文名称 'King of Glory'。",
+      "redesigned_parts": "主体从写实人脸完全替换为卡通狗头；去除了 '5v5' 文字标；颜色从金红变为全绿。属于结构重构，因为主体生物种类发生了根本变化。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是人脸特写，style_ref 的主体是狗头加盾牌外框。虽然外框轮廓相似，但核心主体（人脸 vs 狗头）的几何结构和语义已被替换，属于基于品牌符号的重构，而非原图结构的直接保留。"
+    },
+    {
+      "app": "iqiyi_lite",
+      "source_semantics": "视频流媒体，核心元素是品牌文字 'iQIYI' 和极速版闪电标识。",
+      "observed_transformation": "保留了 'iQIYI' 的文字排版结构，但将字母 'Q' 替换为绿色的蔬菜猪头/怪兽头。闪电标识保留但改为手绘黄色。",
+      "preserved_identity": "文字 Logo 的排列顺序和大致字形，闪电符号的位置。",
+      "redesigned_parts": "字母 'Q' 被具象化为角色；字体从标准黑体变为手绘圆体；背景从渐变色变为纯白。",
+      "preserve_major_structure": true,
+      "structure_evidence": "整体构图依然是横向文字排列，'i', 'I', 'Y', 'I' 的位置和比例关系得以保留，仅中间元素进行了主题化替换，空间关系未变。"
+    },
+    {
+      "app": "jd",
+      "source_semantics": "电商购物，核心元素是 Joy 狗吉祥物、行李箱和旅行元素。",
+      "observed_transformation": "将 3D 白色的 Joy 狗转化为绿色的蔬菜狗，耳朵变成菜叶。去除了行李箱、飞机和酒店标签等次要道具，仅保留狗头主体。",
+      "preserved_identity": "Joy 狗的头部轮廓、下垂的耳朵形状、微笑的嘴型。",
+      "redesigned_parts": "去除了所有前景道具（箱子、标签）；颜色从红白变为绿白；材质从 3D 变为手绘。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的狗头朝向、耳朵位置、五官布局与 original 中的 Joy 狗高度一致，仅仅是去除了周围杂物并改变了皮肤材质。"
+    },
+    {
+      "app": "kuaishou",
+      "source_semantics": "短视频平台，核心元素是摄像机图标。",
+      "observed_transformation": "将几何化的白色摄像机图标转化为绿色的蔬菜摄像机。镜头部分变成了猪鼻子/怪兽脸，顶部的胶片卷变成了两片菜叶。",
+      "preserved_identity": "摄像机的基本外形（左侧手柄/镜头突出，右侧机身，顶部双圆结构）。",
+      "redesigned_parts": "几何线条变为有机手绘线条；顶部结构具象化为叶子；机身增加了面部表情。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 摄像机图标的 silhouette（剪影），包括左边突出的镜头部分和上方两个圆圈的相对位置，只是将圆圈内容替换为了叶子纹理。"
+    },
+    {
+      "app": "kugou",
+      "source_semantics": "音乐播放，核心标识为圆圈内的字母K。",
+      "observed_transformation": "蓝色背景变为白底。白色圆圈变为黑色手绘虚线圆环。字母K被重构为一只站立的小狗，K的笔画转化为狗的躯干和腿，耳朵部分替换为绿叶。底部增加手写 Kugoo。",
+      "preserved_identity": "外围的圆形轮廓结构，以及核心字母 K 的骨架走向（被巧妙转化为狗的形态）。",
+      "redesigned_parts": "背景色完全替换；字母K从几何字体变为生物形态；增加了绿叶耳朵、粉腮红和底部文字。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 保留了 original 中‘外圆内主体’的核心空间关系，且内部主体的骨架依然能清晰辨认出字母 K 的几何走向，只是进行了生物化和主题化填充。"
+    },
+    {
+      "app": "meituan_waimai",
+      "source_semantics": "外卖配送，核心标识为黄色袋鼠吉祥物。",
+      "observed_transformation": "去除橙色背景和奶茶/红包等营销道具。3D黄色袋鼠变为2D手绘淡黄色狗头。袋鼠的长耳朵被直接替换为两片大绿叶。保留黑鼻子和微笑。底部增加手写 Meituan。",
+      "preserved_identity": "袋鼠/狗的面部基本比例、大黑鼻子、微笑嘴型以及双耳竖立的空间布局。",
+      "redesigned_parts": "去除了所有3D质感和营销道具；耳朵材质从皮毛变为绿叶；色彩从高饱和黄橙变为低饱和淡黄加黑白线稿。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 中袋鼠头部的主体轮廓、五官位置（大鼻子居中、眼睛在上）和双耳向上的空间关系，仅对耳朵内部填充和线条风格进行了主题化替换。"
+    },
+    {
+      "app": "mi_home",
+      "source_semantics": "智能家居，核心标识为盾牌/M形猫脸轮廓。",
+      "observed_transformation": "绿色背景变为白底。白色M形盾牌变为黑色手绘线条。M的左上角延伸出一片绿叶作为耳朵。内部增加了狗的五官（黑鼻子、豆豆眼、吐出的粉色舌头）。底部增加手写 MI JIA。",
+      "preserved_identity": "核心的 M 形/盾牌形外轮廓几何结构。",
+      "redesigned_parts": "背景色替换；原本抽象的几何负空间被填充为具象的狗脸五官；增加了绿叶和舌头元素。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的外轮廓与 original 的 M 形盾牌几何高度一致，顶部的折角和底部的圆弧空间关系被完整保留，只是在轮廓内部和边缘添加了主题化的五官和叶子。"
+    },
+    {
+      "app": "netease_music",
+      "source_semantics": "音乐社区，核心标识为红色背景上的白色音符/唱片螺旋。",
+      "observed_transformation": "红色圆角背景变为白底。白色螺旋音符变为绿色带叶脉的藤蔓/叶子构成的螺旋。螺旋中心空白处填充了狗的五官（黑鼻子、粉腮红、吐舌头）。底部增加手写 Cloud Music。",
+      "preserved_identity": "核心的螺旋/音符状环形几何结构及其开口方向。",
+      "redesigned_parts": "背景色替换；音符材质从光滑白色变为绿色叶脉藤蔓；中心负空间被具象化为动物脸部。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完美保留了 original 中音符螺旋的粗细变化、环绕方向和中心留白的空间结构，主体几何未被破坏，仅进行了材质（叶子）和内部填充（狗脸）的主题化改造。"
+    },
+    {
+      "app": "paipai",
+      "source_semantics": "社交游戏，核心标识为蓝色背景下的大头蚂蚁/昆虫和上方的小黄虫。",
+      "observed_transformation": "蓝色背景变为白底。黑色大头昆虫变为手绘狗头，原本的黑色触角被替换为两片绿叶。上方的小黄虫被保留并简化为手绘风格。底部增加手写 PaiPai。",
+      "preserved_identity": "上下分布的空间构图（下方大头主体，上方悬浮小虫），以及大头主体的基本面部朝向。",
+      "redesigned_parts": "背景色替换；下方主体的物种从昆虫变为狗，触角变为叶子；整体线条从矢量平滑变为手绘涂鸦。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 保留了 original 中‘下方巨大半圆头部 + 上方悬浮小物体’的核心空间布局和比例关系，下方主体的面部中心线和小物体的相对位置均未发生结构性偏移。"
+    },
+    {
+      "app": "peace_elite",
+      "source_semantics": "战术射击、三级头盔、生存竞技。",
+      "observed_transformation": "写实士兵被替换为绿叶小狗，小狗佩戴着卡通化的三级头盔。保留了头盔的灰色主体和橙色护目镜条。去除了女性角色、枪械和战场背景。",
+      "preserved_identity": "三级头盔的轮廓和配色特征。",
+      "redesigned_parts": "人物身体完全重构为小狗；写实材质重构为扁平涂鸦；复杂背景重构为纯白。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图为双人写实半身像，占据满版；style_ref为单个卡通全身像，居中悬浮。主体几何从“写实人体+装备”变为“Q版动物+装备道具”，属于语义符号替代的结构重构。"
+    },
+    {
+      "app": "pinduoduo",
+      "source_semantics": "拼单、爱心、综合购物、红色品牌色。",
+      "observed_transformation": "红色心形网格被重构为小狗抱着的绿色心形气球/牌子。心形内部保留白色的“拼”字。去除了周围的商品小图标网格。",
+      "preserved_identity": "心形轮廓、“拼”字字符。",
+      "redesigned_parts": "红色背景重构为白色；商品网格重构为小狗的身体和爪子；心形从平面图形变为小狗持有的道具。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图为满版红色背景上的几何心形阵列；style_ref为白色背景上的小狗抱心形。主体从“抽象几何图形”变为“具象角色持有符号”，空间关系从平面铺满变为前后遮挡，属于结构重构。"
+    },
+    {
+      "app": "qimao",
+      "source_semantics": "阅读、猫、数字7、黄色品牌色。",
+      "observed_transformation": "黑猫脸与数字7的结合体，被重构为绿叶小狗的脸与数字7身体的结合体。保留了数字7的弯曲颈部/身体结构。",
+      "preserved_identity": "数字“7”的几何形态、面部位于顶部的构图逻辑。",
+      "redesigned_parts": "猫耳重构为狗耳（带叶脉）；黑色剪影重构为绿色线稿+填色；黄色背景重构为白色。",
+      "preserve_major_structure": true,
+      "structure_evidence": "原图的核心几何是“顶部宽面部+下部弯曲数字7”；style_ref严格保留了这一拓扑结构，仅将面部物种从猫换为狗，颜色从黑黄换为绿白。主体轮廓和空间关系高度一致。"
+    },
+    {
+      "app": "qq",
+      "source_semantics": "社交、企鹅、红围巾、眨眼表情。",
+      "observed_transformation": "3D企鹅被重构为2D绿叶小狗。保留了企鹅的站姿、白肚皮区域、红围巾、以及一只眼睁一只眼眨的表情。",
+      "preserved_identity": "红围巾、眨眼表情、直立站姿、白肚皮轮廓。",
+      "redesigned_parts": "企鹅物种重构为狗；3D材质重构为扁平手绘；灰色背景重构为白色。",
+      "preserve_major_structure": true,
+      "structure_evidence": "原图与style_ref的主体外轮廓（头部+身体+两侧翅膀/手臂+底部脚）几乎完全重合。围巾的位置、眼睛的布局、肚皮的白色区域均保持原有的空间映射关系。属于结构保留下的风格与物种替换。"
+    },
+    {
+      "app": "qq_browser",
+      "source_semantics": "浏览器、字母Q、云朵、蓝色渐变。",
+      "observed_transformation": "蓝色圆环Q与云朵的组合，被重构为卷曲成圆环状的绿叶小狗与祥云的组合。保留了Q的圆环结构和右下角的云朵元素。",
+      "preserved_identity": "圆环/Q形轮廓、云朵符号、右下云朵的空间位置。",
+      "redesigned_parts": "蓝色渐变重构为绿色平涂；光滑圆环重构为毛茸茸/菜叶状的狗身；写实云朵重构为涂鸦祥云。",
+      "preserve_major_structure": true,
+      "structure_evidence": "原图主体是一个大圆环加右下角云朵；style_ref主体同样是一个大圆环（由狗身构成）加右下角云朵。两者的负空间（圆环中心空白）和正空间布局完全一致。属于结构保留下的材质与形态软化。"
+    },
+    {
+      "app": "qq_music",
+      "source_semantics": "音乐播放、音符符号、音频娱乐",
+      "observed_transformation": "原黄色圆形背景和绿色音符被完全替换为黄色小狗头像，音符形态隐含在小狗头顶黑色毛发造型中，耳朵采用绿叶 motif，底部添加手写文字",
+      "preserved_identity": "黄色主色调倾向、音乐应用的活泼感、圆形构图暗示",
+      "redesigned_parts": "音符符号被重构为小狗头部造型，圆形背景被移除改为白底，整体从抽象符号变为具象角色",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是圆形背景内的抽象音符几何体，style_ref 是独立的小狗头像插画，主体轮廓从音符形状完全变为动物头部形状，空间关系从背景+前景变为单一主体+底部文字，属于结构重构而非结构保留"
+    },
+    {
+      "app": "quark",
+      "source_semantics": "搜索、浏览器、环形符号、智能工具",
+      "observed_transformation": "原蓝色圆环和内部白色负形被转化为绿色小狗脸部，圆环轮廓保留为小狗头部外圈，内部负形变为鼻子和嘴巴区域，添加绿叶耳朵和腮红细节",
+      "preserved_identity": "圆环构图框架、内部负形空间关系、蓝绿色彩倾向转为草绿",
+      "redesigned_parts": "精确几何圆环变为手绘不规则圆形，纯色填充变为扁平色块加黑边，抽象符号拟人化为动物面部",
+      "preserve_major_structure": true,
+      "structure_evidence": "original 的外圆环轮廓和内部偏心负形结构在 style_ref 中被完整保留为小狗头部外轮廓和鼻嘴区域，主体几何拓扑关系一致，仅将几何边缘手绘化并添加面部细节，属于结构保留下的主题化改造"
+    },
+    {
+      "app": "tencent_news",
+      "source_semantics": "新闻资讯、企鹅IP、三色环绕、信息聚合",
+      "observed_transformation": "原蓝色企鹅剪影被替换为坐姿小狗，外围黄绿红三色弧线保留并手绘化，小狗耳朵采用绿叶 motif，底部添加手写文字",
+      "preserved_identity": "三色环绕构图框架、中心主体+外围弧线的空间关系、红黄绿配色方案",
+      "redesigned_parts": "企鹅剪影重构为小狗全身像，精确弧线变为手绘笔触，纯色填充增加黑边和腮红细节",
+      "preserve_major_structure": true,
+      "structure_evidence": "original 的中心主体被三段弧线环绕的构图在 style_ref 中完全保留，三段弧线的相对位置、角度和色彩对应关系一致，仅中心主体从企鹅变为小狗且线条手绘化，主体轮廓和空间关系高度吻合，属于结构保留"
+    },
+    {
+      "app": "wechat",
+      "source_semantics": "即时通讯、双气泡、社交对话、绿色品牌",
+      "observed_transformation": "原绿色背景和白色双气泡被转化为两只小狗头部，气泡轮廓保留为小狗脸型，气泡尾巴保留为下巴尖端，眼睛和鼻子对应气泡孔洞，添加绿叶耳朵和腮红",
+      "preserved_identity": "双主体一大一小的重叠关系、气泡轮廓形态、对话语义、绿色点缀",
+      "redesigned_parts": "全屏绿色背景移除改为白底，精确气泡几何变为手绘动物头部，纯色填充变为白底黑边加局部上色",
+      "preserve_major_structure": true,
+      "structure_evidence": "original 的两个重叠气泡的大小比例、相对位置、重叠方式和尾部朝向在 style_ref 中被精确映射为两只小狗头部的对应关系，主体轮廓拓扑结构一致，仅将几何气泡边缘手绘化并添加五官，属于结构保留下的拟人化改造"
+    },
+    {
+      "app": "wechat_reading",
+      "source_semantics": "电子阅读、书本、微信气泡、知识获取",
+      "observed_transformation": "原蓝色背景和底部书本白色区域被重构为底部手绘打开的书本线条，右上气泡变为小狗头部悬浮于书本上方，添加绿叶耳朵和吐舌细节",
+      "preserved_identity": "书本+气泡的双元素语义、上下空间分层关系、阅读与社交结合的功能暗示",
+      "redesigned_parts": "全屏蓝色背景移除，精确书本几何变为简笔线条，气泡从实心白色变为手绘小狗头，整体从抽象界面变为场景插画",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是背景色块分割加抽象书本底部和气泡的组合界面，style_ref 是独立书本线条加悬浮小狗头的插画场景，主体从界面元素重构为道具+角色组合，空间关系从填充式变为悬浮式，轮廓和几何关系发生根本变化，属于结构重构"
+    },
+    {
+      "app": "wecom",
+      "source_semantics": "企业沟通、协作、连接（气泡与彩色节点）。",
+      "observed_transformation": "将蓝色气泡轮廓转化为小狗的头部虚线轮廓，保留右下角的四色节点作为装饰，耳朵变为绿色叶子。",
+      "preserved_identity": "蓝色主色调、四色连接节点、沟通气泡的意象。",
+      "redesigned_parts": "气泡实体变为虚线狗头，增加了面部表情和吐舌头动作。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图为抽象气泡几何，style_ref为具象动物头像，主体轮廓完全改变，仅保留了局部元素（四色点）的空间位置关系。"
+    },
+    {
+      "app": "xiaohongshu",
+      "source_semantics": "生活分享、社区、红色品牌标识。",
+      "observed_transformation": "将红色背景转化为小狗穿的红色衣服，头顶加上绿叶（呼应小红书名字中的植物/生活感），底部加英文。",
+      "preserved_identity": "红色主色调、生活化的轻松氛围。",
+      "redesigned_parts": "文字Logo完全被角色替代，红色从背景变为服装。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图为纯文字排版，style_ref为全身角色立绘，结构完全重构，无语义几何保留。"
+    },
+    {
+      "app": "xigua_video",
+      "source_semantics": "视频播放、西瓜品牌联想。",
+      "observed_transformation": "将红色播放按钮形状转化为绿色西瓜纹理的小狗身体，保留中间的播放三角形作为嘴巴/鼻子区域，增加藤蔓。",
+      "preserved_identity": "播放按钮的负形空间、西瓜的绿色条纹纹理、圆形轮廓。",
+      "redesigned_parts": "颜色从红变绿（呼应西瓜名），实体形状变为生物，增加四肢和表情。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref保留了原图独特的缺口圆形轮廓和中心三角形负空间的基本拓扑结构，只是将其纹理化和生物化。"
+    },
+    {
+      "app": "xingtu",
+      "source_semantics": "图片编辑、光影、修图（发光球体）。",
+      "observed_transformation": "保留黑色背景和绿色发光球体，在球体上绘制简笔画狗脸，利用光晕作为脸部轮廓。",
+      "preserved_identity": "黑色背景、荧光绿主色、中心发光球体构图。",
+      "redesigned_parts": "纯色光球增加了五官细节，底部增加文字。",
+      "preserve_major_structure": true,
+      "structure_evidence": "主体几何（中心圆形光晕）、背景（全黑）、空间关系（居中发光）与原图高度一致，仅增加了面部线条细节。"
+    },
+    {
+      "app": "youdao_dict",
+      "source_semantics": "词典、翻译、学习工具（文字与书本意象）。",
+      "observed_transformation": "小狗手持写有“有道”字样的牌子，耳朵变为绿色叶子，保留底部英文。",
+      "preserved_identity": "有道汉字标识、红色品牌色（隐含在牌子或腮红中，此处主要靠文字）、教育工具的持物动作。",
+      "redesigned_parts": "红色波浪背景被移除，改为白色背景，主体从文字变为持牌小狗。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图为上下分割的文字排版，style_ref为中心角色+手持道具，主体结构完全重构，仅保留了核心文字信息。"
+    },
+    {
+      "app": "zhihu",
+      "source_semantics": "知识问答社区，核心身份是汉字'知乎'，功能语义围绕提问、解答与知识分享。",
+      "observed_transformation": "将'知乎'二字进行萌系手绘重构，'知'保留绿色手绘字形，'乎'被创意替换为一只带有兔耳和腮红的绿色小动物形象，底部补充手写体'Zhihu'标签，整体融入白底绿线的清新主题。",
+      "preserved_identity": "保留了'知'字的基本字形结构作为核心识别锚点，并通过底部拼音'Zhihu'明确指向原App身份。",
+      "redesigned_parts": "'乎'字被完全重构为动物插画，原有字体的几何笔画被手绘粗线条替代，蓝色品牌背景被彻底移除并替换为白色留白底板。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original的主体是两个标准汉字的紧密排布，style_ref中'乎'字已被动物形象替代，主体的几何轮廓、笔画结构和空间比例均发生根本性改变，属于基于语义的创意重构而非结构保留。"
+    }
+  ],
+  "shared_design_rules": [
+    "统一白底圆角矩形底板+大面积留白+底部手写文字的三段式版式。",
+    "统一深绿/黑色手绘抖动粗描边+扁平填色的涂鸦质感。",
+    "统一‘绿叶小狗/蔬菜萌宠’母题（绿叶耳/饰、粉腮红、呆萌脸）。",
+    "统一去品牌色、去3D、去复杂细节的极简化处理原则。",
+    "统一主体50%-65%占比与居中偏上的贴纸式构图。",
+    "原App识别性依赖‘核心轮廓/语义符号+主题皮肤+底部文字’三重保障，而非原色或原Logo复刻。"
+  ],
+  "identity_handling_policy": "App可识别性不依赖原始品牌色或精细Logo复刻，而是通过‘核心轮廓/几何骨架保留 + 主题母题皮肤覆盖 + 功能语义动态隐喻 + 底部手写文字兜底’四重机制实现。对于强几何/吉祥物App，保留轮廓换肤；对于复杂/抽象App，提取语义符号重构为母题角色；微量保留原App特征色或标志性配饰作为身份锚点。宁可牺牲几何精确度也要保证主题语言统一，但必须保留足以触发用户记忆的关键视觉线索。",
+  "structure_preservation_policy": {
+    "decision_scope": "per_app_before_generation",
+    "preserve_when": "当original具有单一明确的高辨识度几何轮廓、文字符号、吉祥物头型或封闭框架（如支付宝‘支’字、B站小电视、携程海豚C、QQ企鹅站姿、夸克圆环、微信双气泡、七猫数字7、摄像机剪影）时，必须保留该主体几何的大部分结构、比例、空间朝向和拓扑关系，仅进行手绘化、材质替换、物种转换和主题特征叠加（如天线变菜叶、气泡变狗脸）。",
+    "recompose_when": "当original是复杂多元素堆叠、3D写实人像、全幅场景、密集几何阵列、纯文字排版或缺乏单一明确轮廓时（如开心消消乐、部落冲突、和平精英、拼多多、小红书、企业微信、知乎），允许放弃原始几何结构，转而提取核心功能语义或代表性道具（头盔、心形拼字、红衣、持牌、动物化汉字），用语义相符的母题形象或小场景进行重新构图，底部手写文字作为强制识别保障。"
+  },
+  "common_forbidden_failures": [
+    "遗漏底部手写App名称，导致图标信息不完整且不像主题包成员。",
+    "保留原App高饱和品牌主色作为背景或大面积填充，破坏整包色彩统一性。",
+    "线条过于规整、平滑或纤细，失去手绘涂鸦的拙朴感和断笔特征。",
+    "主体过大撑满画布或过小难以辨认，未遵守50%-65%占比规则，失去留白呼吸感。",
+    "遗漏母题核心特征（绿叶、粉腮红、吐舌/呆萌脸），导致主题灵魂丢失。",
+    "在白色底板上添加多余阴影、边框、纹理或渐变背景。",
+    "过度重构导致原App核心轮廓/语义符号完全消失，变成通用卡通狗，丧失身份关联。",
+    "直接使用标准印刷字体替代手写体，或使用平滑AI矢量线条。",
+    "小狗/萌宠姿态与原App功能语义毫无关联，变成随机生成的可爱图案。",
+    "虽然变绿但未体现‘叶子/叶脉/蔬菜’特征，看起来只是普通绿色卡通，缺失核心motif。"
+  ],
+  "analysis_coverage": {
+    "reference_pair_count": 36,
+    "batch_count": 8,
+    "batch_size": 5,
+    "analyzed_apps": [
+      "alipay",
+      "anipop",
+      "bilibili",
+      "clash_of_clans",
+      "ctrip",
+      "dianping",
+      "douyin",
+      "douyin_huoshan",
+      "douyu",
+      "eleme",
+      "golden_spatula",
+      "honor_of_kings",
+      "iqiyi_lite",
+      "jd",
+      "kuaishou",
+      "kugou",
+      "meituan_waimai",
+      "mi_home",
+      "netease_music",
+      "paipai",
+      "peace_elite",
+      "pinduoduo",
+      "qimao",
+      "qq",
+      "qq_browser",
+      "qq_music",
+      "quark",
+      "tencent_news",
+      "wechat",
+      "wechat_reading",
+      "wecom",
+      "xiaohongshu",
+      "xigua_video",
+      "xingtu",
+      "youdao_dict",
+      "zhihu"
+    ]
+  }
+}

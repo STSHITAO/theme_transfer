@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "严重身份错误：候选图主体为支付宝的'支'字冰雕，完全丢失了目标App（穿越火线）的CF徽标和射击游戏语义。违反了'禁止把任一风格参考图的主体当作当前目标主体'的禁令。",
+      "recommendation": "不推荐。虽然材质风格完美匹配主题，但这是错误的App图标（支付宝），无法识别为目标应用。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 100,
+      "overall_score": 10,
+      "failure_reason": "严重身份错误：候选图主体为支付宝的'支'字冰雕，完全丢失了目标App（穿越火线）的CF徽标和射击游戏语义。属于直接复制参考图主体的过度重构风险。",
+      "recommendation": "不推荐。与candidate_01相同，生成了错误的App主体，未能保留CF品牌锚点。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能正确执行生成计划。模型似乎过度拟合了风格参考图（支付宝）的主体形状，导致生成的图标变成了'支'字而不是'CF'徽标。没有一张图符合'以 CF 互锁字母徽标作为唯一主体身份锚点'的核心约束。建议重新生成并加强主体轮廓控制。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

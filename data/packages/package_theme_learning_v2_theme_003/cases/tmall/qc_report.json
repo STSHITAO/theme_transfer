@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "猫头轮廓略显方正，耳朵不够尖锐，但核心五官特征保留较好。",
+      "recommendation": "推荐使用。该图完美遵循了主题风格（薄荷绿填充、网格背景、虚线缝线、白边），且成功移除了文字，保留了天猫猫头的核心五官布局（椭圆眼、倒三角鼻），虽然外轮廓略宽，但仍具有足够的品牌识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 10,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 20,
+      "failure_reason": "主体完全错误，生成了类似Bilibili电视机的形状，而非天猫猫头，丢失了所有关键身份特征。",
+      "recommendation": "不推荐。该图虽然风格符合，但主体完全重构为了无关的电视机/机器人形象，丢失了天猫猫头的外轮廓和五官特征，属于严重的身份丢失和过度重构。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

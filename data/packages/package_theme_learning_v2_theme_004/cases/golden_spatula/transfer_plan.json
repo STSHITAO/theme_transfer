@@ -1,0 +1,78 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示，该 App 采用结构保留策略：主体的身体朝向、头部位置、手持道具的空间关系与原图完全一致，仅进行风格化和材质替换。当前目标原图具有单一明确的高辨识度吉祥物轮廓（头盔+企鹅+铲子），符合 preserve_when 条件，因此必须保留主体几何的大部分结构、比例和空间拓扑，仅进行手绘化、物种微调和主题特征叠加。",
+  "preserve": [
+    "吉祥物居中持铲的整体构图与空间关系",
+    "头盔的基本几何外形与佩戴位置",
+    "金色铲子的道具识别性",
+    "张嘴/吐舌的欢快表情语义"
+  ],
+  "must_preserve": [
+    "白色圆润鸟类/企鹅主体的基本轮廓与面部特征（大眼睛、橙色张开的嘴巴）",
+    "银色头盔的整体几何结构及其顶部的金色菱形装饰",
+    "金色锅铲的明确形状（带孔的铲面与手柄）",
+    "右下角橙色三角形区域与白色多角星芒Logo的组合结构",
+    "角色、锅铲与右下角Logo之间的空间遮挡与构图关系"
+  ],
+  "recompose_allowed": [
+    "3D 光影、金属质感与蓝色漩涡背景",
+    "企鹅的具体物种特征（可泛化为绿色蔬菜狗/萌宠）",
+    "头盔的复杂金属纹理（可简化为叶片/叶脉结构）",
+    "右下角的橙色角标与星形图案"
+  ],
+  "restyle": [
+    "蓝色漩涡背景的纹理、渐变与光效",
+    "头盔与锅铲的金属材质表现（改为扁平手绘涂鸦）",
+    "角色羽毛/身体的光影渲染与立体感（改为纯色平涂）",
+    "整体画面的色彩饱和度与对比度（映射为主题绿白黄体系）",
+    "边缘的高光、阴影与发光特效（全部移除）"
+  ],
+  "decorate": [
+    "绿叶状耳朵或头盔上的叶脉纹理",
+    "粉色椭圆腮红",
+    "黑色豆豆眼",
+    "吐出的小舌头或呆萌表情细节",
+    "底部黑色手写体 'Golden Spatula'"
+  ],
+  "forbid": [
+    "保留原图的 3D 渲染、高光渐变或写实材质",
+    "保留大面积高饱和蓝色背景或橙色角标作为主色",
+    "改变手持铲子的动作或移除铲子道具",
+    "使用平滑矢量线或标准印刷字体",
+    "遗漏绿叶耳朵/装饰、粉腮红或底部手写名称",
+    "主体撑满画布导致失去留白呼吸感",
+    "无头盔的普通企鹅或通用鸟类形象",
+    "非锅铲形状的武器或道具",
+    "移除或替换右下角腾讯游戏星芒标识的结构"
+  ],
+  "generation_brief": "Pure white rounded square background. Center: a cute green vegetable-pet hybrid character retaining the exact pose and silhouette of the original helmeted penguin holding a golden spatula. The helmet is simplified into leaf-vein textured green/purple foliage. The spatula remains yellow/gold but in flat hand-drawn doodle style. Add kawaii face: black dot eyes, pink oval blush, open mouth with tongue. Bottom right: simplified orange triangle with white star mark in hand-drawn outline. Thick wobbly dark green marker outlines, flat matte coloring, no gradients or 3D. Bottom center: casual black handwritten text 'Golden Spatula'. Sticker art style, ample white space, subject occupies 55%.",
+  "color_application": "将原图蓝色漩涡背景替换为纯白；企鹅身体与头盔主体映射为浅嫩绿/黄绿填充；金色锅铲与头盔徽章保留低饱和黄色/金色平涂以维持语义；右下角橙红角标降级为手绘轮廓内的淡橙点缀；描边统一使用深草绿/墨绿；腮红使用淡粉；文字与眼睛使用纯黑。彻底去除原图高饱和蓝、银金属光泽及3D渐变。",
+  "stroke_application": "将原图3D渲染边缘与矢量轮廓全部转化为粗细不均的手绘马克笔/蜡笔线条。外轮廓使用深绿色粗抖动线，内部细节（如叶脉、铲子孔洞）使用同色系细线。所有尖角圆润化，消除机械几何感。右下角角标与头盔徽章均以手绘涂鸦线条重绘，禁止平滑矢量描边。",
+  "composition_application": "严格遵循垂直三段式构图：上部55%为居中持铲的绿色萌宠（保留原图姿态与空间拓扑），中部留白过渡，下部15%-20%为黑色手写体'Golden Spatula'。右下角橙白星芒角标作为附属元素保留在原相对位置但缩小并手绘化。整体呈现贴纸感，四周充足留白，禁止主体触碰边缘。",
+  "identity_application": "通过严格保留'戴头盔+持金铲+张嘴欢呼'的核心姿态与几何拓扑维持身份识别；将企鹅物种柔化为绿色蔬菜萌宠以融入主题；头盔金属质感转化为叶脉纹理；金色铲子保留形状但改为扁平涂鸦；右下角品牌角标以手绘形式微量保留；底部手写文字兜底。在不破坏主题fidelity前提下，依靠轮廓、道具与文字三重锚点确保可识别性。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形",
+    "底部必须包含黑色手写风格'Golden Spatula'，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑及低饱和金黄/淡橙点缀范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和度蓝色背景或大面积橙色填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止移除金色锅铲或改变其基本形状",
+    "禁止移除头盔或将其改为无识别性的普通帽子",
+    "禁止删除右下角橙白星芒角标的结构（可手绘化但不可消失）",
+    "禁止过度重构导致原App核心轮廓/姿态完全消失"
+  ]
+}

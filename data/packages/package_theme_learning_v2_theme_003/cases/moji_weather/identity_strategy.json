@@ -1,0 +1,37 @@
+{
+  "app": "moji_weather",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "天气功能语义符号（云朵与气流）",
+  "brand_cues_to_preserve": [
+    "天气服务的功能属性",
+    "墨迹天气的品牌名称语义关联"
+  ],
+  "semantic_cues_to_preserve": [
+    "实时天气与预报的核心功能",
+    "气象变化的视觉隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 moji_weather 的既定迁移规律（reference_transformation_patterns），原图的 'MOJI' 文字 Logo 被明确放弃，转而使用 '云朵+风' 的图形符号来指代天气功能。当前目标原图为黑底白字加橙色 'O' 的文字排版，若强行保留文字结构将违背该 App 在主题包中已确立的语义重构路径。因此，依据主题包的可观察规律，采用功能语义符号替代原始文字主体，进行结构重组。",
+  "design_rationale": "墨迹天气的核心价值在于提供气象服务。在原图仅为品牌文字的情况下，提取 '云朵' 与 '气流/风' 作为视觉主体，能更直观地在手账贴纸风格中传达 '天气' 的功能语义。这种策略既符合主题包对该 App 的历史处理逻辑，也避免了纯文字在极简贴纸风格中可能带来的识别度下降，同时严格服从薄荷绿单色、网格底板和缝纫线迹的主题规范。",
+  "must_preserve": [
+    "云朵的基础轮廓形态",
+    "气流或风的动态线条暗示",
+    "天气功能的直观可识别性"
+  ],
+  "can_recompose": [
+    "原始的 'MOJI' 字母排版",
+    "黑底与橙色的品牌配色",
+    "文字的具体字体细节"
+  ],
+  "forbid": [
+    "保留原始的黑色背景或橙色品牌色",
+    "继续使用 'MOJI' 文字作为主体",
+    "引入写实风格的云朵渲染或 3D 光影",
+    "遗漏网格背景、红色虚线框或白色宽边缝线",
+    "使用与天气无关的通用道具替代"
+  ],
+  "generation_direction": "绘制一个扁平的薄荷绿色云朵与气流线条组合符号，作为居中贴纸主体。添加白色宽包边和深灰色虚线缝线，右下方投射浅灰硬阴影。背景使用米白底浅灰网格，外围环绕淡红色圆角虚线框。主体占比 40%-70%，严禁出现文字、原品牌色或 3D 效果。"
+}

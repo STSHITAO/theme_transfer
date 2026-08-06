@@ -1,0 +1,39 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "横向排列的 'iQIYI' 英文字母骨架，尤其是字母 'Q' 的圆环与尾巴结构",
+  "brand_cues_to_preserve": [
+    "iQIYI 字母的横向排列顺序",
+    "字母 Q 的圆形主体与右下角尾巴特征",
+    "整体文字 Logo 的视觉重心"
+  ],
+  "semantic_cues_to_preserve": [
+    "视频流媒体/娱乐的品牌属性（通过活泼的萌宠形象暗示）",
+    "文字标识的可读性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 'iqiyi_lite' 和 'alipay' 的变换规律，当原 App 核心身份为明确的文字 Logo 时，策略倾向于保留文字的整体排版结构和空间位置（preserve_major_structure），仅对局部笔画或特定字母（如 Q）进行生物化/主题化重构。当前目标 'iqiyi' 原图为标准的纯文字 Logo，具有极高的几何辨识度，因此应严格保留 'iQIYI' 的横向布局，将字母转化为手绘绿色线条，并将 'Q' 拟人化为菜狗头部，以符合主题包对文字类图标的处理逻辑。",
+  "design_rationale": "爱奇艺的核心识别点在于其独特的英文 Logo 排版。为了在强风格化的主题中保持可识别性，采用 'logo_preserve' 策略，保留 'iQIYI' 的字形骨架。借鉴 'iqiyi_lite' 的成功案例，将字母 'Q' 替换为带有绿叶耳朵和腮红的菜狗头，既植入了主题母题，又锚定了品牌身份。其余字母简化为深绿色手绘粗线条，去除原有的渐变背景，统一为白底手写风格，确保整包视觉一致性。",
+  "must_preserve": [
+    "iQIYI 字母的横向排列结构",
+    "字母 Q 的位置和大致圆环形态（作为狗头载体）",
+    "底部手写体 App 名称区域"
+  ],
+  "can_recompose": [
+    "原有的绿紫渐变背景（必须移除）",
+    "原有的标准无衬线字体（转化为手绘马克笔线条）",
+    "字母 Q 的内部细节（重构为狗脸五官）",
+    "下方的中文 '爱奇艺'（移除，仅保留底部英文手写标签）"
+  ],
+  "forbid": [
+    "保留原有的高饱和度绿紫渐变背景",
+    "使用平滑的电脑标准字体",
+    "改变 iQIYI 字母的排列顺序或导致文字不可读",
+    "遗漏绿叶、腮红等主题核心母题特征",
+    "主体过大撑满画布，失去留白"
+  ],
+  "generation_direction": "White rounded square background. Centered hand-drawn text 'iQIYI' in thick wobbly dark green marker lines. The letter 'Q' is reimagined as a cute green vegetable dog head with leaf ears, pink blush, and dot eyes, replacing the standard letter form but keeping the 'Q' silhouette. Other letters (i, I, Y, I) are simplified green doodles. Remove original gradient background. Bottom area contains black handwritten text 'iQIYI'. Flat sticker style, ample white space."
+}

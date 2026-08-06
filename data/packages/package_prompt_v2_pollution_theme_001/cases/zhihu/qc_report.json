@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束。字形结构（特别是'知'字的V型切口）保留极其精准，材质呈现完美的半透明冰雕质感，光影折射自然，且无多余杂质。是最佳的主题化重构案例。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 30,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 80,
+      "overall_score": 82,
+      "failure_reason": "字形发生不必要的形变。虽然风格正确，但'知'字右侧'口'部变成了圆角矩形甚至接近椭圆，'乎'字的笔画也出现了融化导致的结构模糊。对于strict约束的知乎图标，这种几何精度的丢失是不可接受的。",
+      "recommendation": "不推荐。虽然材质和氛围不错，但作为文字Logo，其核心识别特征（笔画骨架）被过度'融化'处理，导致品牌识别度下降，违反了preserve_major_structure的严格约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

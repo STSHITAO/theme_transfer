@@ -1,0 +1,10 @@
+{
+  "target_app": "kuaikan",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "douyin_huoshan",
+    "tencent_video",
+    "douyin"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

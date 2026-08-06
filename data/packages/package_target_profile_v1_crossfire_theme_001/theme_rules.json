@@ -1,0 +1,27 @@
+{
+  "theme_style_analysis": "这是一个高度统一的‘3D冰雕/冻结’主题。核心特征是将原本扁平、多彩或具象的App图标转化为半透明的浅蓝色冰块材质。所有图标都呈现出凝固、寒冷、晶莹剔透的视觉效果，仿佛被瞬间冷冻。主体通常具有明显的厚度（3D挤压感），表面带有冰霜纹理、气泡或雪花装饰，底部常有融化的水渍或独立的冰底座，背景统一为纯白以突出冰的质感。",
+  "common_original_to_style_transform": "从2D平面图形向3D立体冰块的转化。无论原图是文字（如‘支’、‘bilibili’）、抽象符号（如抖音音符）还是几何图形（如豆瓣），都被重构为具有物理体积的冰柱或冰板。颜色被统一替换为冰蓝色调，原有的品牌色（如粉色、绿色、黑红）被移除或仅作为极微小的点缀保留（如火山版的火焰小图标）。",
+  "common_background_transform": "背景完全统一为纯白色（#FFFFFF）或极淡的冷灰白，去除了原图中所有的彩色底板。这种高亮背景是为了最大化展现冰材质的透光性和边缘轮廓。底部通常伴有少量的融化水迹、碎冰屑或阴影，以增强物体放置在平面上的真实感。",
+  "common_foreground_transform": "主体符号被‘实体化’和‘材质化’。原本的线条变成了有厚度的冰条，原本的面变成了冰块。边缘处理圆润但保持硬朗的切割感。关键的变化在于增加了‘内部细节’：冰层内部可见悬浮的气泡、裂纹或白色的雪花图案。部分复杂结构（如bilibili的电视框）会被处理成整体的模具浇筑感。",
+  "color_palette": [
+    "主色调：冰川蓝 (Glacial Blue, approx #A0D8EF)",
+    "高光色：纯白 (Pure White, for specular highlights)",
+    "阴影色：深青灰 (Deep Cyan-Grey, for depth and refraction)",
+    "辅助色：极少量的原色点缀（仅在特定语义下，如火焰）"
+  ],
+  "line_style": "无描边。依靠材质本身的折射率差异和边缘的高光/阴影来界定轮廓。线条表现为光滑、圆润的3D倒角，类似经过水流冲刷的冰块边缘。",
+  "texture_material": "核心材质为‘半透明冰/冻胶’。表面具有强烈的光泽感（Glossy）和次表面散射（Subsurface Scattering）效果。纹理细节包括：表面的凝霜感、内部的不规则气泡、以及特定的雪花结晶图案。材质看起来坚硬但通透。",
+  "lighting_shadow": "全局冷光源照明，模拟自然日光下的冰雪反射。高光主要集中在物体的顶部边缘和转折处（Specular Highlights）。物体内部有光线穿透产生的焦散效果（Caustics）。底部有柔和的接触阴影（Contact Shadow）和模糊的环境光遮蔽，表现物体与地面的接触。",
+  "icon_composition_rules": "主体居中，占据画布约60%-70%的面积。采用微俯视或平视视角，强调物体的立体厚度。如果原图有底座概念（如火山版），在冰雕化后会显式生成一个冰块底座来支撑主体。整体构图稳重，留白充足。",
+  "target_preservation": "必须严格保留目标App的核心识别符号（如Logo的形状、文字的笔画结构、关键图形的拓扑关系）。虽然材质变为冰，但符号的几何特征不能变形到无法识别。例如，如果是文字图标，笔画的连断关系必须保持一致；如果是图形图标，其独特的曲线或角度必须精准还原。",
+  "generation_prompt": "3D icon design, frozen ice sculpture style, translucent glacial blue material, subsurface scattering, glossy surface with frost texture, internal air bubbles and snowflake details, white background, soft studio lighting, caustic reflections, melting water puddle at base, high detail, C4D render style, minimalist composition.",
+  "negative_prompt": "flat design, 2d vector, solid colors, warm tones, red, orange, green, pink, black background, matte material, plastic texture, metal texture, wood texture, blurry, low resolution, text watermark, extra objects, distorted shape.",
+  "qc_focus": "1. 检查主体是否成功转化为‘冰’材质（通透感、蓝色调、气泡/雪花细节）。2. 检查原App的核心符号是否可识别（形状准确度）。3. 检查背景是否为纯白且干净。4. 检查是否有不合理的原色残留（除非是特意保留的小装饰）。5. 检查光影是否自然（高光位置、底部阴影）。",
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ]
+}

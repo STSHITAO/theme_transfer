@@ -1,0 +1,36 @@
+{
+  "app": "Keep",
+  "identity_anchors": [
+    " stylized letter 'K' formed by thick rounded strokes",
+    "disconnected upper-right diagonal stroke of the 'K'",
+    "four-pointed star/sparkle symbol at the top right",
+    "deep purple background gradient"
+  ],
+  "must_preserve": [
+    "The specific geometric skeleton of the letter 'K' (vertical bar, lower diagonal, detached upper diagonal)",
+    "The rounded caps on all strokes of the 'K'",
+    "The four-pointed star shape and its position relative to the 'K'",
+    "The negative space gap between the upper diagonal and the rest of the 'K'"
+  ],
+  "can_restyle": [
+    "Background gradient colors (can be shifted to match theme but should remain dark/contrasting)",
+    "Stroke color of the 'K' (can be tinted but must remain high contrast)",
+    "Star color and glow effect",
+    "Corner radius of the app icon container",
+    "Shadow or depth effects on the strokes"
+  ],
+  "must_not_replace_with": [
+    "Generic fitness icons (dumbbells, hearts, running figures)",
+    "Standard serif or sans-serif letter 'K' without the specific detached stroke design",
+    "Abstract shapes that do not resemble the letter 'K'",
+    "Cute mascots, animals, or cloud shapes"
+  ],
+  "color_preservation": "The deep purple is a strong brand identifier; if themed, it should be mapped to a similarly dark, rich hue to maintain the contrast with the white/light logo. The white 'K' can be slightly off-white or tinted, but must remain the lightest element. The star's blue-purple gradient can be adapted to the theme's accent color.",
+  "structure_summary": "A minimalist, geometric logo featuring a custom rounded 'K' where the top-right arm is detached, accompanied by a sparkle icon on a dark purple field. The identity relies heavily on the specific typography of the 'K' and the purple/white contrast.",
+  "risk_notes": [
+    "Changing the 'K' to a standard font will lose brand recognition immediately.",
+    "Removing the detached stroke detail makes it look like a generic initial.",
+    "Using a light background without adjusting the logo color will destroy visibility.",
+    "Replacing the star with a different shape (like a circle or heart) alters the specific brand vibe."
+  ]
+}

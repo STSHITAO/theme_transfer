@@ -1,0 +1,37 @@
+{
+  "app": "douyin",
+  "identity_anchors": [
+    " stylized lowercase 'd' / musical note silhouette",
+    "cyan and magenta chromatic aberration (glitch) offset effect",
+    "white core shape with colored edge shifts",
+    "dark navy/black background"
+  ],
+  "must_preserve": [
+    "The specific geometry of the 'd' note shape (vertical stem, top right flag, bottom left loop)",
+    "The tri-color layering relationship (white center, cyan shift, magenta shift)",
+    "The direction of the color offsets (cyan to top-left, magenta to bottom-right)",
+    "The negative space inside the bottom loop"
+  ],
+  "can_restyle": [
+    "Background texture or gradient (as long as it remains dark/high contrast)",
+    "Icon container shape (squircle vs circle vs rounded square)",
+    "Surface material (glossy, matte, neon, 3D extrusion)",
+    "Intensity of the glow or shadow effects",
+    "Exact hue saturation of the cyan/magenta (can be softened but not removed)"
+  ],
+  "must_not_replace_with": [
+    "Generic musical notes without the specific 'd' shape",
+    "Cartoon characters or mascots",
+    "Abstract blobs or clouds",
+    "Standard flat icons without the glitch/offset effect",
+    "Unrelated animals or objects"
+  ],
+  "color_preservation": "The cyan (#25F4EE approx) and magenta/red (#FE2C55 approx) are critical identity colors. They must remain distinct from the white core. The dark background is essential for the neon/glitch effect to work; light backgrounds will destroy the identity. Colors can be slightly desaturated for soft themes but cannot be changed to arbitrary palettes (e.g., all blue or all green).",
+  "structure_summary": "A white stylized lowercase 'd' resembling a musical note, featuring a signature chromatic aberration effect where a cyan layer shifts top-left and a magenta layer shifts bottom-right, set against a solid dark background.",
+  "risk_notes": [
+    "Removing the cyan/magenta offset makes it look like a generic music app.",
+    "Changing the background to white/light gray ruins the neon aesthetic.",
+    "Altering the 'd' shape proportions breaks brand recognition.",
+    "Over-stylizing the edges (e.g., making them too fuzzy or hand-drawn) loses the digital/tech feel."
+  ]
+}

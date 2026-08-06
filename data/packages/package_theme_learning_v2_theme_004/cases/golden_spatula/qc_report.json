@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 90,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：保留了原图企鹅持铲的核心姿态与空间拓扑，成功将风格转化为绿叶萌宠手绘风，色彩、描边、背景均符合要求。底部文字和右下角角标结构完整，构图留白得当，是高质量的主题化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 15,
+      "background_score": 90,
+      "composition_score": 75,
+      "artifact_score": 90,
+      "overall_score": 86,
+      "failure_reason": "主体占比过大，导致底部文字与主体重叠，且右下角角标过于巨大并遮挡文字，违反了'主体占比50%-65%'及'充足留白'的构图约束。",
+      "recommendation": "不推荐。虽然风格化和身份识别做得很好，但构图严重失误，主体撑满画布导致文字可读性受损，且破坏了贴纸感的留白呼吸感，不符合 generation_brief 中的构图要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\golden_spatula\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

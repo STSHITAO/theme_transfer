@@ -1,0 +1,10 @@
+{
+  "target_app": "wps_office",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "ximalaya",
+    "kuwo",
+    "xigua_video"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

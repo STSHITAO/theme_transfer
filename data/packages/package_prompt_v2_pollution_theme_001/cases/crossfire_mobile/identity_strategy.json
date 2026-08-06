@@ -1,0 +1,39 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "CF 字母组合 Logo（核心品牌识别）",
+  "brand_cues_to_preserve": [
+    "CF 字母标志的锐利几何切角",
+    "Logo 的整体宽扁比例结构"
+  ],
+  "semantic_cues_to_preserve": [
+    "射击/竞技的硬朗感（通过材质硬度体现）",
+    "第一人称视角的符号暗示（可选：准星或枪口轮廓的抽象化，若不影响主体则不强制）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "原始图标为写实人物肖像（Face），直接将其转化为冰块会导致面部特征模糊且产生恐怖谷效应，不符合主题清爽的风格。参考 theme_rules 中对于复杂场景或非几何图标的处理逻辑，应舍弃人物主体，提取左下角的 'CF' 文字 Logo 作为重构主体。将扁平的 CF Logo 立体化为厚重的冰雕字块，既保留了最核心的品牌识别，又完美适配冰晶材质的物理特性。",
+  "design_rationale": "选择 semantic_recompose 策略是因为原图的人物肖像无法直接进行“冰封”处理而不损失辨识度或美感。通过提取 'CF' Logo 并将其作为 3D 冰雕主体，能够确保用户在主题化后依然能瞬间识别出这是《穿越火线》。这种处理方式符合整包主题将复杂图形简化为几何实体的规律，同时利用冰材质的通透感和内部裂纹来传达游戏原本具有的硬核、冷峻的竞技氛围。",
+  "must_preserve": [
+    "CF 字母的标准字形和连接关系",
+    "冰蓝色半透明材质与内部气泡/雪花细节",
+    "纯白背景与底部接触阴影",
+    "边缘的高光折射效果（无描边）"
+  ],
+  "can_recompose": [
+    "去除原始的人物头像、墨镜、衣领等写实元素",
+    "去除原始的深色渐变背景和橙色装饰角标",
+    "将原本扁平的 Logo 拉伸为具有厚度的 3D 实体",
+    "调整 Logo 在画面中的透视角度（微俯视）"
+  ],
+  "forbid": [
+    "禁止生成写实的人脸冰块（避免恐怖谷效应）",
+    "禁止保留原始的黑色/深蓝色背景",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止改变 CF Logo 的笔画结构导致不可识别",
+    "禁止出现 2D 平面描边"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the 'CF' logo (CrossFire). The letters should be thick, extruded blocks made of translucent cyan-blue ice with internal bubbles and frost textures. Edges are smooth and glossy with refraction. Place on a pure white background with soft contact shadows and scattered ice chips at the base. No human face, no dark background. High-end C4D render style."
+}

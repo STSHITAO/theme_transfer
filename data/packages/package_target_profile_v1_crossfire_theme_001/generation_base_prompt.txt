@@ -1,0 +1,44 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_001
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+这是一个高度统一的‘3D冰雕/冻结’主题。核心特征是将原本扁平、多彩或具象的App图标转化为半透明的浅蓝色冰块材质。所有图标都呈现出凝固、寒冷、晶莹剔透的视觉效果，仿佛被瞬间冷冻。主体通常具有明显的厚度（3D挤压感），表面带有冰霜纹理、气泡或雪花装饰，底部常有融化的水渍或独立的冰底座，背景统一为纯白以突出冰的质感。
+
+[Shared original-to-style transform]
+从2D平面图形向3D立体冰块的转化。无论原图是文字（如‘支’、‘bilibili’）、抽象符号（如抖音音符）还是几何图形（如豆瓣），都被重构为具有物理体积的冰柱或冰板。颜色被统一替换为冰蓝色调，原有的品牌色（如粉色、绿色、黑红）被移除或仅作为极微小的点缀保留（如火山版的火焰小图标）。
+
+[Color]
+完全抛弃 Original 的品牌固有色（如支付宝蓝、豆瓣绿、抖音黑红），强制转换为统一的冰蓝色调。饱和度降低，明度提高，增加通透感。仅当 Original 具有极强且不可替代的语义符号（如火焰）时，才允许以微小比例保留原色作为装饰，否则全量转译为冰色。
+
+[Background]
+从 Original 的实心品牌色背景转变为纯白/极浅灰背景。去除所有背景图形，仅在底部保留极少量的环境互动元素（如碎冰、水迹），以衬托主体的晶莹剔透。
+
+[Edges and strokes]
+取消 2D 矢量描边。将轮廓转化为 3D 实体的物理边缘，边缘处理光滑圆润，通过环境光遮蔽（AO）和高光来界定边界，而非线条。
+
+[Composition]
+从 2D 平面填充构图转变为 3D 物体陈列构图。主体不再撑满画布边缘，而是作为一个独立的立体物件悬浮或放置在画面中央，四周留有呼吸感。
+
+[Subject scale]
+主体相对画布尺寸约为 60%-70%。允许为了表现 3D 透视而适当调整长宽比，但整体视觉重量需保持一致。
+
+[Detail complexity]
+简化 Original 的复杂渐变和装饰性光影，将其替换为统一的材质细节（冰裂纹、气泡）。 complexity 体现在材质的物理真实感上，而非图形设计的复杂度上。
+
+[Required style properties]
+- 主体必须呈现为半透明的冰雕或冰块质感，严禁使用不透明塑料或金属材质。
+- 颜色必须严格限制在冰蓝/青色系，严禁直接使用 Original 的品牌色填充主体。
+- 必须包含冰雪主题的特征细节（如雪花图标、表面霜冻感）。
+- 必须保留 Original 的核心几何轮廓，确保用户能一眼识别出是哪个 App。
+
+[Forbidden style drift]
+- 禁止生成扁平化或 2D 矢量风格的图标。
+- 禁止保留 Original 的深色或高饱和度暖色背景。
+- 禁止过度重构导致主体轮廓面目全非（例如将抖音音符变成真正的乐器）。
+- 禁止使用与冰雪无关的材质（如木纹、布料、火焰实体）。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.

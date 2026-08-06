@@ -1,0 +1,29 @@
+{
+  "theme_style_analysis": "当前主题是一种统一的“手绘绿色萌系涂鸦”风格。所有参考样例均将原本的商业化、扁平或3D质感的图标，转化为白底圆角矩形上的可爱卡通形象。核心视觉语言是使用深浅不一的绿色粗线条进行勾勒，融入植物叶片纹理，并赋予主体拟人化的呆萌表情（如豆豆眼、粉色腮红、吐舌头），整体呈现出轻松、治愈、手账贴纸般的视觉效果。",
+  "common_original_to_style_transform": "原始图标到主题图标的共同变化是“去商业化材质化”与“生物/植物拟人化”。原本写实的渐变背景、3D光影和标准字体被完全剥离；主体的核心几何轮廓或文字结构被保留，但被重绘为带有手绘抖动感的不规则线条，并巧妙地融合进一个统一的绿色卡通小怪兽/植物精灵的形象中，使其具有生命力和情绪。",
+  "common_background_transform": "背景从原本的高饱和度品牌色（蓝、橙、红）或复杂渐变，统一替换为纯净的白色或极浅的灰白色底板。底板形状统一为带有柔和圆角的正方形（类似iOS图标轮廓）。背景完全留白，没有任何多余的装饰、纹理或空间透视，以最大化突出中央的手绘主体。",
+  "common_foreground_transform": "前景主体经历了“轮廓保留+萌化重构”。原有的Logo符号或文字骨架被严格保留以维持识别度，但线条被替换为深绿色的手绘马克笔质感描边。主体内部填充浅绿色、白色，并加入叶脉纹理。最关键的是，主体被赋予了统一的卡通面部特征（黑色小圆点眼睛、粉色椭圆腮红、偶尔吐出的小舌头或水滴），部分笔画被转化为植物叶片或动物耳朵。",
+  "color_palette": [
+    "纯白/米白 (#FFFFFF / #FDFDFD) - 背景底色",
+    "深草绿/墨绿 (#4A7C29 / #2E5A1C) - 主体外轮廓描边",
+    "浅嫩绿/黄绿 (#A8D060 / #C5E1A5) - 主体内部填充与叶片",
+    "淡粉色 (#FFB6C1) - 卡通腮红点缀",
+    "纯黑 (#000000) - 底部手写体文字与眼睛",
+    "天蓝色 (#87CEEB) - 偶尔出现的汗滴/口水点缀"
+  ],
+  "line_style": "粗细不均的手绘马克笔/蜡笔线条，边缘带有自然的抖动感和不完美感，非矢量平滑直线。外轮廓使用较粗的深绿色线条，内部细节使用较细的同色系线条。线条端点圆润，无锐利尖角。",
+  "texture_material": "完全去除原始的玻璃、金属、3D塑料或渐变光泽材质。转化为扁平的纸面手绘质感，色彩填充为纯色平涂，偶有简单的高光白点（如鼻子或眼睛上的反光）来增加一点点立体感，整体呈现哑光、纸质贴纸的触感。",
+  "lighting_shadow": "无全局环境光照，无投射阴影。主体与背景之间没有明显的层级阴影分离。仅在主体内部通过简单的白色高光点（如鼻尖、叶片反光）来暗示微弱的体积感，整体光照均匀、扁平。",
+  "icon_composition_rules": "严格的居中构图。主体图形占据画布中央约60%-70%的面积，四周留有充足的白色呼吸空间。主体下方固定预留位置，放置黑色的手写体/圆体英文名称。主体与底部文字在垂直轴线上居中对齐，形成稳定的“上图下文”贴纸式布局。",
+  "target_preservation": "必须严格保留 target_image 的核心几何轮廓、关键笔画走向或标志性符号结构，确保用户能一眼认出是哪个App。功能语义不能丢失。在此基础上，按照当前主题规则进行绿色化、手绘化、添加叶片纹理和萌系五官的重绘。底部的文字需替换为目标App对应的英文/拼音手写体。",
+  "generation_prompt": "A cute hand-drawn doodle style app icon on a pure white rounded square background. The central subject retains the core silhouette and structure of the original app logo but is reimagined as an adorable green plant-animal hybrid character. Use thick, slightly wobbly dark green marker outlines and fill with light嫩 green and white. Incorporate leaf vein textures into the strokes. Add kawaii facial features: tiny black dot eyes, soft pink oval blushes, and a small playful tongue or sweat drop. Below the centered graphic, write the app's English name in a casual, bold black handwritten font. Flat vector illustration, sticker art style, clean composition, ample white space, healing and playful mood.",
+  "negative_prompt": "realistic textures, 3D rendering, gradients, glossy surfaces, metallic shine, complex backgrounds, drop shadows, sharp geometric vectors, corporate branding style, original brand colors (blue, orange, red), extra objects, watermark, text other than the app name, messy lines, deformed core logo structure, unrecognizable subject, photorealistic, dark theme.",
+  "qc_focus": "1. 核心轮廓保留度：重绘后的主体是否还能清晰辨认出原App的身份。2. 风格一致性：线条是否为手绘抖动感，颜色是否严格限制在白/绿/粉/黑体系内。3. 萌系元素：是否包含统一的豆豆眼、腮红等面部特征。4. 背景纯净度：是否为纯白圆角底板，无多余杂色。5. 文字规范：底部是否有对应的手写体英文名，且无乱码。6. 无原品牌色泄漏：确保没有出现原图的高饱和蓝、橙、红等颜色。",
+  "used_reference_examples": [
+    "alipay",
+    "eleme",
+    "netease_music",
+    "quark",
+    "zhihu"
+  ]
+}

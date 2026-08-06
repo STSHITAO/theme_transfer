@@ -1,0 +1,64 @@
+{
+  "app": "tencent_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和抖音的案例，腾讯地图的图标属于高识别度的单一几何符号。根据 theme_design_analysis 中 'preserve_when' 的规则，应严格保留其外部轮廓和内部红蓝分割比例，仅将原本的扁平色块转化为具有物理厚度的3D冰雕实体。不需要重构语义，只需进行材质置换。",
+  "preserve": [
+    "菱形/指针的整体外轮廓剪影",
+    "左上与右下的对角分割位置关系",
+    "45度倾斜的角度",
+    "标志性的对角线分割结构",
+    "整体呈45度倾斜的菱形/指针几何形态"
+  ],
+  "must_preserve": [
+    "菱形/指针的整体外轮廓剪影",
+    "左上与右下的对角分割位置关系",
+    "45度倾斜的角度"
+  ],
+  "recompose_allowed": [
+    "原始的红蓝固有色（需转化为冰材质下的光影或内部微小装饰）",
+    "表面的光泽质感（改为冰的次表面散射和高光）",
+    "边缘的锐利度（改为圆润的冰角）"
+  ],
+  "restyle": [
+    "将扁平矢量图形转化为具有厚度的3D实体",
+    "应用半透明冰蓝色材质替换原有品牌色",
+    "增加内部气泡、雪花纹理以模拟冰晶质感",
+    "边缘倒角处理，模拟冰块融化效果"
+  ],
+  "decorate": [
+    "底部添加碎冰屑和水渍以增强落地感",
+    "表面添加冷凝水珠细节",
+    "内部嵌入微小的折射纹理暗示原红蓝分割区域"
+  ],
+  "forbid": [
+    "禁止保留原本鲜艳的大面积红蓝实心填充（必须通透）",
+    "禁止改变菱形的长宽比或倾斜角度",
+    "禁止添加与导航无关的背景元素（如道路、车辆）",
+    "禁止生成不透明的塑料质感",
+    "禁止使用2D描边线条",
+    "禁止使用深色或彩色背景"
+  ],
+  "generation_brief": "3D render of Tencent Maps icon as a thick, translucent blue ice sculpture. Diamond/rhombus shape tilted 45 degrees. Internal diagonal split structure hinted by refraction and trapped bubbles, not solid colors. Glossy surface with subsurface scattering, water droplets, and frost textures. Clean white background, soft contact shadow, scattered ice chips at base. Photorealistic C4D/Octane style.",
+  "color_application": "强制移除原始红蓝品牌色，主体统一为半透明冰蓝色（Translucent Cyan/Ice Blue）。原红蓝分割区域通过内部折射率变化、微小气泡密度差异或极淡的色调倾向来隐喻，严禁出现大面积不透明色块。",
+  "stroke_application": "完全去除2D描边。轮廓由3D模型的厚度、边缘高光（Rim Light）和折射定义。边缘需进行圆润倒角处理，模拟冰块的物理磨损和融化感。",
+  "composition_application": "采用单体居中构图，主体占据画布60-70%。视角为微俯视3/4角度，展示图标的Z轴厚度。背景替换为纯白/浅灰工作室背景，底部增加柔和接触阴影和碎冰装饰以确立空间感。",
+  "identity_application": "通过严格保留菱形指针的外部剪影和45度倾斜角度来维持身份。内部的对角分割结构通过冰晶内部的纹理差异（如一侧气泡稍多或折射稍强）来微妙表达，确保在不破坏冰主题统一性的前提下保留核心几何特征。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节",
+    "必须保留原始图标的核心几何轮廓（菱形指针）",
+    "背景必须保持极简洁白，突出主体的通透感",
+    "光影逻辑必须符合3D渲染规律（顶光或侧光，底部有阴影）"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成不透明的塑料、金属或玻璃材质",
+    "禁止保留2D扁平化设计风格",
+    "禁止过度添加与“冰/冷”主题无关的复杂场景道具",
+    "禁止将指针形状改为垂直向上的水滴形定位标",
+    "禁止移除对角分割结构的视觉暗示"
+  ]
+}

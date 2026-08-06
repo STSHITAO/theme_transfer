@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 semantic_recompose 策略，将原 Logo 重构为'云朵 + 风'的语义符号，精准对应墨迹天气的核心功能。风格元素（薄荷绿、网格背景、红色虚线框、白色宽边、深灰缝线、右下硬投影）全部严格符合 transfer_plan 和主题参考图要求。画面干净，无多余元素。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 75,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 25,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "缺失关键语义元素'风/气流'。transfer_plan 明确要求 must_preserve 包含'气流或风的动态线条暗示'，且 generation_brief 指定为'cloud and wind flow symbol'。该候选图仅保留了云朵，丢失了动态气流线索，导致语义表达不完整，与普通天气图标区分度降低。",
+      "recommendation": "不推荐作为首选。虽然风格匹配度高，但未能完整呈现计划中要求的'云 + 风'组合语义，识别特征弱于 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

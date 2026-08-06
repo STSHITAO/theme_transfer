@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美保留了钉钉翅膀+闪电的核心几何轮廓与三层羽翼结构，同时成功融入了绿叶纹理、萌宠五官和手绘抖动线条风格。底部手写体文字清晰准确，色彩符合主题要求，无蓝色残留，构图留白得当。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "闪电部分的叶脉纹理处理略显杂乱，像缝合线而非自然叶脉，略微影响美观度；主体比例略小于候选01，视觉冲击力稍弱。",
+      "recommendation": "推荐。整体符合主题化要求，保留了核心识别特征，但在细节纹理处理上略逊于候选01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\dingtalk\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

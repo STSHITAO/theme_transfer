@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：严格保留了微信双气泡的大小比例、重叠关系和尾部朝向；成功融入了绿叶耳朵、粉腮红、豆豆眼和吐舌表情等蔬菜萌宠母题；使用了符合主题的手绘抖动粗线条；底部包含了正确的手写体 'WeChat' 文字。画面干净，风格统一，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "右侧小气泡的嘴部绘制成了猫嘴形状（w形），略微偏离了通用的呆萌/吐舌表情设定，且整体线条的抖动手绘感略弱于 candidate_01，显得稍显平滑。",
+      "recommendation": "推荐。整体质量很高，结构保留完整，风格匹配度好。但在面部表情的细节处理上（特别是右侧气泡的嘴型）不如 candidate_01 贴合 '蔬菜小狗/呆萌' 的统一母题，且手绘笔触的质感稍逊一筹。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\wechat\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

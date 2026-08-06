@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与身份约束。准确还原了'听'字的几何结构（包括左侧'口'的圆角和右侧'斤'的笔画关系），材质为通透的冰蓝色，包含气泡细节，且背景干净无杂质。严格遵守了禁止红色、禁止扁平化的要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 90,
+      "artifact_score": 85,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "风格正确，识别度高。但在构图上略显拥挤，且底部阴影处理不如 candidate_01 自然（显得略微悬浮或透视角度稍怪）。虽然也符合冰雕主题，但整体精致度和对原始结构的忠实度略逊于第一张。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

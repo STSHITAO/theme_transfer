@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有严格约束：1. 严格保留了 'K' 字的核心几何骨架，特别是准确还原了原图中右上角断开的笔画结构，这是识别 Keep 品牌的关键；2. 风格迁移到位，使用了手绘抖动线条、绿叶纹理和萌系表情，符合主题参考图风格；3. 底部手写体 'Keep' 拼写正确且位置恰当；4. 背景纯白，无多余装饰。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 60,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 72,
+      "failure_reason": "关键结构丢失：原图 'K' 字右上角的笔画是断开的（detached upper diagonal），这是 Keep Logo 的核心识别特征。候选图将其画成了连通的普通 'K' 字，违反了 'preserve_major_structure' 和 'must_preserve' 中关于几何骨架拓扑结构的严格要求。此外，多个面部表情略显杂乱。",
+      "recommendation": "不推荐。虽然风格可爱且符合主题色调，但丢失了品牌 Logo 最关键的断开笔画特征，导致身份识别度下降，不符合 strict 级别的约束要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\keep\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,4 +1,5 @@
 import json
+import hashlib
 import os
 import shutil
 import tempfile
@@ -56,7 +57,8 @@ def run_package_workflow(
     package_dir = root / "data" / "packages" / package_id
     package_dir.mkdir(parents=True, exist_ok=True)
 
-    reference_examples = resolve_theme_examples(theme_id, root_dir=root)
+    all_reference_examples = resolve_theme_examples(theme_id, root_dir=root, max_examples=None)
+    reference_examples = _spread_select(all_reference_examples, 5)
     theme_profile = load_theme_profile(theme_id, root_dir=root)
     style_refs = [example["style_ref_path"] for example in reference_examples]
     available_target_apps = scan_target_apps(root_dir=root)
@@ -72,17 +74,34 @@ def run_package_workflow(
         raise ValueError("No target apps selected for package generation.")
     save_json(target_apps, package_dir / "target_apps.json")
 
-    theme_analysis = analyze_theme_package(reference_examples, root_dir=root)
-    theme_analysis_path = save_json(theme_analysis, package_dir / "theme_style_analysis.json")
-    theme_rules_path = save_json(theme_analysis, package_dir / "theme_rules.json")
-    theme_design_analysis = analyze_theme_design(reference_examples, theme_profile, root_dir=root)
-    theme_design_analysis_path = save_json(theme_design_analysis, package_dir / "theme_design_analysis.json")
-    generation_base_prompt_path = build_generation_base_prompt(
-        theme_analysis,
-        theme_id,
-        package_dir / "generation_base_prompt.txt",
-        root_dir=root,
-        theme_design_analysis=theme_design_analysis,
+    cached_theme = _load_theme_artifacts(package_dir) if resume else None
+    if cached_theme:
+        theme_analysis = cached_theme["theme_analysis"]
+        theme_design_analysis = cached_theme["theme_design_analysis"]
+        theme_analysis_path = cached_theme["theme_analysis_path"]
+        theme_rules_path = cached_theme["theme_rules_path"]
+        theme_design_analysis_path = cached_theme["theme_design_analysis_path"]
+        generation_base_prompt_path = cached_theme["generation_base_prompt_path"]
+    else:
+        theme_analysis = analyze_theme_package(reference_examples, root_dir=root)
+        theme_analysis_path = save_json(theme_analysis, package_dir / "theme_style_analysis.json")
+        theme_rules_path = save_json(theme_analysis, package_dir / "theme_rules.json")
+        theme_design_analysis = analyze_theme_design(all_reference_examples, theme_profile, root_dir=root)
+        theme_design_analysis_path = save_json(theme_design_analysis, package_dir / "theme_design_analysis.json")
+        generation_base_prompt_path = build_generation_base_prompt(
+            theme_analysis,
+            theme_id,
+            package_dir / "generation_base_prompt.txt",
+            root_dir=root,
+            theme_design_analysis=theme_design_analysis,
+        )
+    save_json(
+        {
+            "all_reference_apps": [item["app_name"] for item in all_reference_examples],
+            "package_style_anchor_apps": [item["app_name"] for item in reference_examples],
+            "selection_rule": "Evenly spaced deterministic anchors; all pairs are analyzed in Qwen batches.",
+        },
+        package_dir / "theme_reference_selection.json",
     )
     generation_base_prompt = Path(generation_base_prompt_path).read_text(encoding="utf-8")
 
@@ -104,7 +123,8 @@ def run_package_workflow(
                     generation_base_prompt,
                     theme_analysis,
                     theme_design_analysis,
-                    style_refs,
+                    theme_profile,
+                    all_reference_examples,
                     root,
                     candidate_count,
                 )
@@ -288,7 +308,8 @@ def _run_package_case(
     generation_base_prompt,
     theme_rules,
     theme_design_analysis,
-    style_refs,
+    theme_profile,
+    reference_examples,
     root,
     candidate_count,
 ):
@@ -316,6 +337,23 @@ def _run_package_case(
         root_dir=root,
     )
     identity_strategy_path = save_json(identity_strategy, case_dir / "identity_strategy.json")
+    case_reference_examples = _select_case_reference_examples(
+        reference_examples,
+        theme_design_analysis,
+        identity_strategy,
+        target_app,
+        limit=3,
+    )
+    style_refs = [example["style_ref_path"] for example in case_reference_examples]
+    style_reference_path = save_json(
+        {
+            "target_app": target_app,
+            "structure_preservation_mode": identity_strategy["structure_preservation_mode"],
+            "reference_apps": [example["app_name"] for example in case_reference_examples],
+            "selection_rule": "Same-route references when available; target App excluded; deterministic spread.",
+        },
+        case_dir / "style_references.json",
+    )
     transfer_plan = build_transfer_plan(
         theme_rules,
         target_identity,
@@ -330,6 +368,8 @@ def _run_package_case(
         target_app,
         case_dir / "generation_prompt.txt",
         transfer_plan=transfer_plan,
+        target_profile=target_profile,
+        forbidden_reference_terms=_reference_identity_terms(style_refs, theme_profile, target_app),
     )
     prompt_text = Path(generation_prompt_path).read_text(encoding="utf-8")
     generation = generate_candidates(
@@ -358,6 +398,8 @@ def _run_package_case(
         "target_identity_path": target_identity_path,
         "target_profile": target_profile,
         "identity_strategy_path": identity_strategy_path,
+        "style_references_path": style_reference_path,
+        "style_reference_apps": [example["app_name"] for example in case_reference_examples],
         "transfer_plan_path": transfer_plan_path,
         "structure_policy": {
             "structure_preservation_mode": transfer_plan["structure_preservation_mode"],
@@ -370,6 +412,89 @@ def _run_package_case(
         "best_output_path": str(best_output_path),
         "qc_report_path": str(case_dir / "qc_report.json"),
     }
+
+
+def _load_theme_artifacts(package_dir):
+    package_dir = Path(package_dir)
+    paths = {
+        "theme_analysis_path": package_dir / "theme_style_analysis.json",
+        "theme_rules_path": package_dir / "theme_rules.json",
+        "theme_design_analysis_path": package_dir / "theme_design_analysis.json",
+        "generation_base_prompt_path": package_dir / "generation_base_prompt.txt",
+    }
+    if not all(path.is_file() for path in paths.values()):
+        return None
+    try:
+        theme_analysis = json.loads(paths["theme_analysis_path"].read_text(encoding="utf-8"))
+        theme_rules = json.loads(paths["theme_rules_path"].read_text(encoding="utf-8"))
+        theme_design_analysis = json.loads(paths["theme_design_analysis_path"].read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    if theme_analysis != theme_rules:
+        return None
+    coverage = theme_design_analysis.get("analysis_coverage", {})
+    if not isinstance(coverage, dict) or not coverage.get("reference_pair_count"):
+        return None
+    return {
+        **{key: str(path) for key, path in paths.items()},
+        "theme_analysis": theme_analysis,
+        "theme_design_analysis": theme_design_analysis,
+    }
+
+
+def _spread_select(items, limit, rotation_key=None):
+    ordered = list(items)
+    if not ordered or limit <= 0:
+        return []
+    if rotation_key and len(ordered) > 1:
+        digest = hashlib.sha256(str(rotation_key).encode("utf-8")).digest()
+        offset = int.from_bytes(digest[:4], "big") % len(ordered)
+        ordered = ordered[offset:] + ordered[:offset]
+    if len(ordered) <= limit:
+        return ordered
+    if limit == 1:
+        return [ordered[len(ordered) // 2]]
+    indices = [round(index * (len(ordered) - 1) / (limit - 1)) for index in range(limit)]
+    return [ordered[index] for index in indices]
+
+
+def _select_case_reference_examples(reference_examples, theme_design_analysis, identity_strategy, target_app, limit=3):
+    target_key = str(target_app).casefold()
+    available = [
+        example
+        for example in reference_examples
+        if str(example.get("app_name", "")).casefold() != target_key
+    ]
+    desired_preserve = identity_strategy.get("structure_preservation_mode") == "preserve_major_structure"
+    pattern_modes = {
+        str(item.get("app", "")).casefold(): bool(item.get("preserve_major_structure", True))
+        for item in theme_design_analysis.get("reference_transformation_patterns", [])
+        if isinstance(item, dict) and item.get("app")
+    }
+    matching = [
+        example
+        for example in available
+        if pattern_modes.get(str(example.get("app_name", "")).casefold()) == desired_preserve
+    ]
+    pool = matching if len(matching) >= limit else available
+    return _spread_select(pool, min(limit, len(pool)), rotation_key=target_app)
+
+
+def _reference_identity_terms(style_refs, theme_profile, target_app):
+    terms = []
+    target_key = str(target_app).casefold()
+    examples = theme_profile.get("examples", {}) if isinstance(theme_profile, dict) else {}
+    for path in style_refs[:3]:
+        app_id = Path(path).parent.name
+        if app_id.casefold() == target_key:
+            continue
+        terms.append(app_id)
+        profile = examples.get(app_id, {}) if isinstance(examples, dict) else {}
+        if isinstance(profile, dict):
+            display_name = profile.get("display_name")
+            if display_name:
+                terms.append(display_name)
+    return terms
 
 
 def _publish_final_outputs(package_dir, selected_outputs):

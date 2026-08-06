@@ -1,0 +1,64 @@
+{
+  "app": "douyin",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 douyin 的真实变换规律（original 音符 -> style_ref 坐姿小狗），原图的音符几何结构被完全舍弃，转而通过保留极具辨识度的‘红青故障描边’这一品牌视觉特征来锚定身份。当前目标 App 原图同样是带故障色的音符，遵循该规律，应放弃音符轮廓，重构为符合主题母题的绿色小狗，仅将故障色作为边缘特效微量保留，属于典型的语义重构而非结构保留。",
+  "preserve": [
+    "红青色故障/错位描边效果（作为极小面积点缀）",
+    "音乐/节奏带来的动感暗示"
+  ],
+  "must_preserve": [
+    "绿叶小狗/蔬菜萌宠的核心母题特征（绿叶耳、粉腮红、呆萌脸）",
+    "纯白圆角底板与底部手写'Douyin'文字",
+    "红青色故障/错位描边效果（作为极小面积点缀）"
+  ],
+  "recompose_allowed": [
+    "原音符的几何形状（完全替换为小狗形态）",
+    "原黑色背景（替换为纯白底板）",
+    "原高饱和大面积色彩（剥离，仅留边缘故障色）"
+  ],
+  "restyle": [
+    "将红青故障色转化为手绘马克笔质感的错位描边",
+    "将音符符号转化为坐姿绿色菜狗形象",
+    "将黑色背景转化为纯白圆角底板"
+  ],
+  "decorate": [
+    "小狗耳朵替换为带叶脉纹理的绿叶",
+    "面部添加粉色椭圆腮红、黑色豆豆眼和吐出的小舌头",
+    "底部居中放置黑色手写体英文'Douyin'"
+  ],
+  "forbid": [
+    "保留原音符的完整几何轮廓",
+    "使用平滑矢量线或标准几何图形",
+    "让红青故障色大面积填充主体或背景",
+    "遗漏底部手写App名称",
+    "添加3D光影、渐变或立体浮雕效果",
+    "主体撑满画布导致失去留白",
+    "保留原黑色或深色背景"
+  ],
+  "generation_brief": "A cute hand-drawn doodle style app icon on a pure white rounded square background. The central subject is an adorable sitting green vegetable-dog character with leaf ears, pink oval blushes, dot eyes, and a playful tongue. Crucially, apply a subtle cyan and magenta/red glitch offset outline effect around the dog's silhouette to retain Douyin identity. Use thick, wobbly dark green marker strokes and flat matte coloring. Below the centered graphic, write 'Douyin' in casual bold black handwritten font. Flat vector illustration, sticker art style, clean composition, ample white space, no shadows, no gradients.",
+  "color_application": "彻底移除原黑色背景和白色音符填充，强制映射为纯白底板+低饱和嫩绿/草绿主体。仅在小狗轮廓边缘以手绘错位线条形式微量保留Cyan (#25F4EE) 和 Magenta (#FE2C55) 作为故障艺术点缀，严禁将其作为主填充色或背景色。",
+  "stroke_application": "将原Logo的平滑矢量故障边缘转化为粗细不均的手绘马克笔抖动线条。深绿色 (#4A7C29) 作为主体外轮廓主描边，红青故障色仅作为主轮廓外侧的轻微偏移复描，模拟手绘重影效果，保持线条端点圆润且带有自然断笔感。",
+  "composition_application": "严格遵循三段式贴纸构图：上部60%区域居中绘制坐姿绿叶小狗，中部留白过渡，下部20%区域居中书写黑色手写体'Douyin'。主体占比控制在50%-65%，四周保留充足白色呼吸空间，彻底改变原图撑满画布的暗色构图逻辑。",
+  "identity_application": "放弃音符几何结构，通过‘语义重构’策略保留身份。利用主题统一的绿叶小狗承载萌系视觉，同时通过在狗身轮廓上叠加标志性的红青双色手绘故障描边，精准唤起用户对抖音的品牌记忆。底部手写文字作为双重识别保障，确保在高度主题化下依然可被准确辨认。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止任何深色或彩色背景",
+    "主体必须是绿叶小狗/蔬菜萌宠形象，包含绿叶耳、粉腮红、呆萌表情三要素",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线",
+    "底部必须包含黑色手写风格'Douyin'字样",
+    "红青故障色仅限轮廓边缘微量点缀，不可大面积使用",
+    "整体必须是2D扁平哑光手绘质感，禁止3D或光影效果"
+  ],
+  "negative_constraints": [
+    "禁止保留原音符几何形状或将其作为主体轮廓",
+    "禁止使用原黑色/深色背景或任何渐变背景",
+    "禁止红青故障色占据超过5%的画面面积或用于内部填充",
+    "禁止使用标准印刷字体或电脑字库字体",
+    "禁止添加阴影、高光、金属质感或立体效果",
+    "禁止主体过大触碰画布边缘或过小难以辨认",
+    "禁止遗漏绿叶、腮红等核心母题特征",
+    "禁止生成除'Douyin'外的任何其他文字或水印"
+  ]
+}

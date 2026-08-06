@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 40,
+      "overall_score": 72,
+      "failure_reason": "底部文字错误生成为 'Kugoo'，未遵循生成计划中必须包含黑色手写体 'QQ' 的严格约束，导致品牌名称识别错误。",
+      "recommendation": "不推荐。虽然主体形象（绿叶企鹅、红围巾、眨眼）完美保留了QQ的结构特征且风格匹配度高，但底部文字错误是致命缺陷，违反了 strict 身份约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 30,
+      "overall_score": 68,
+      "failure_reason": "底部文字错误生成为 'Wughat'（乱码/无关词），未遵循生成计划中必须包含黑色手写体 'QQ' 的严格约束。",
+      "recommendation": "不推荐。主体风格化重构非常成功，符合手绘涂鸦主题，但底部文字完全错误，丢失了关键的品牌名称线索，无法满足 strict 约束要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\qq\\candidates\\candidate_01.png",
+  "warning": "两张候选图均未能正确生成底部必须的 'QQ' 文字，分别错误显示为 'Kugoo' 和 'Wughat'，违反了 transfer_plan 中的 strict 身份约束和 fidelity_constraints。尽管 candidate_01 的主体结构保留得更好，但文字错误使得两者均不可直接用作最终成品，建议重新生成或后期修正文字。在此强制选择中，candidate_01 因主体轮廓更接近原企鹅形态且文字至少为真实单词（虽错误）而略优于 candidate_02 的乱码。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

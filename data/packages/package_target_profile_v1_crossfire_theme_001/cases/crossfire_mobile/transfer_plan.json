@@ -1,0 +1,72 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "原图是复杂的写实人物与游戏场景，直接保持全部像素结构不适合图标主题化；生成前固定改用品牌锚点和射击竞技语义重构。",
+  "preserve": [
+    "第一人称射击",
+    "团队竞技与战术对抗",
+    "CF 互锁字母徽标",
+    "锐利、宽扁的电竞徽章轮廓",
+    "CF 互锁字母徽标的拓扑结构与锐利几何轮廓",
+    "宽扁的电竞徽章整体外廓形态",
+    "第一人称射击（FPS）与战术竞技的语义暗示"
+  ],
+  "must_preserve": [
+    "以 CF 互锁字母徽标作为唯一主体身份锚点",
+    "生成结果应能表达射击竞技游戏，而不是支付、视频、社交或其他 App",
+    "CF 互锁字母的笔画连接关系与整体外轮廓",
+    "冰蓝色半透明材质与内部气泡/雪花细节",
+    "纯白背景与底部融冰/碎冰细节"
+  ],
+  "recompose_allowed": [
+    "原始写实人物、服装和复杂背景可以省略",
+    "可使用克制的准星环、竞技徽章或战术几何强化游戏语义",
+    "原始写实人物、服装和复杂背景完全省略",
+    "使用克制的准星环、十字线或战术几何图形强化游戏语义",
+    "将原本的金属/火焰质感替换为寒冰质感",
+    "在 CF 标志周围或内部增加准星、弹道等射击元素的抽象几何暗示",
+    "调整徽标的厚度与透视角度以适应 3D 构图"
+  ],
+  "restyle": [
+    "将 CF 徽标转化为具有厚度的 3D 冰雕实体",
+    "边缘处理保留锐利切割感但增加圆润倒角以符合冰材质特性",
+    "表面增加霜冻纹理、内部增加悬浮气泡和冰裂纹"
+  ],
+  "decorate": [
+    "在冰雕内部或表面巧妙融入抽象的准星或十字交叉线条",
+    "底部添加少量碎冰屑和融化水迹以增强落地感",
+    "表面高光模拟冰雪反射效果"
+  ],
+  "forbid": [
+    "禁止出现其他 App 的 Logo、文字、吉祥物或主体轮廓",
+    "禁止出现支付符号、电视机外框、播放按钮或社交气泡",
+    "禁止把任一风格参考图的主体当作当前目标主体",
+    "禁止出现原图中的人物面部、墨镜、头发或特工形象",
+    "禁止使用原图的黑色背景或暖色调高光",
+    "禁止生成扁平化的 2D 矢量图标",
+    "禁止改变 CF 字母的基本拓扑结构导致无法识别",
+    "禁止使用不透明塑料或金属材质替代冰材质"
+  ],
+  "generation_brief": "以原图中的 CF 互锁字母徽标为清晰主视觉，用克制的准星或竞技几何表达第一人称射击和团队竞技；不要复刻复杂人物场景，也不要生成任何其他 App 身份。 3D icon of CrossFire Mobile, featuring the 'CF' interlocked letters as a sharp, thick glacial blue ice sculpture. The ice material is translucent with internal bubbles, frost texture, and subtle crosshair/cross-line geometric details embedded within to imply FPS gameplay. Pure white background, soft studio lighting, caustic reflections, small puddle of melting water and ice shards at the base. No human figures, no warm colors, no flat design.",
+  "color_application": "完全抛弃原图的银灰、橙色及黑金配色。主体统一转换为半透明的冰川蓝（#A0D8EF），利用高光（纯白）和阴影（深青灰）塑造体积。仅在极微小的准星装饰中允许保留极淡的冷色调对比，严禁出现原色橙色。",
+  "stroke_application": "取消所有2D描边。通过冰块的物理厚度、边缘的高光折射和内部阴影来界定CF字母的轮廓。边缘需呈现光滑圆润但带有硬朗切割感的冰质倒角。",
+  "composition_application": "主体居中，占据画布60%-70%。采用微俯视或平视的3D视角，强调CF徽标的立体厚度。去除原图复杂的三角平衡构图（人物-文字-符号），简化为单一的CF冰雕主体，四周留白充足。",
+  "identity_application": "通过保留CF字母独特的互锁结构和锐利几何特征来维持品牌识别。通过嵌入抽象的准星/十字线元素来传达‘枪战/射击’的语义，而非依赖人物形象。确保用户能一眼识别出这是CrossFire的冰雕版本。",
+  "fidelity_constraints": [
+    "主体必须呈现为半透明的冰雕或冰块质感，严禁使用不透明塑料或金属材质。",
+    "颜色必须严格限制在冰蓝/青色系，严禁直接使用 Original 的品牌色填充主体。",
+    "必须包含冰雪主题的特征细节（如雪花图标、表面霜冻感、内部气泡）。",
+    "必须保留 CF 徽标的核心几何轮廓，确保用户能一眼识别出是哪个 App。"
+  ],
+  "negative_constraints": [
+    "禁止生成扁平化或 2D 矢量风格的图标。",
+    "禁止保留 Original 的深色或高饱和度暖色背景。",
+    "禁止出现人物、墨镜、枪械实物等复杂具象元素。",
+    "禁止使用与冰雪无关的材质（如木纹、布料、火焰实体）。",
+    "禁止混淆为其他App（如支付宝、B站等）的图标结构。"
+  ],
+  "identity_anchor": "原图中的 CF 互锁字母徽标及其锐利、宽扁的电竞轮廓"
+}

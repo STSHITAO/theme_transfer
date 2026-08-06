@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 semantic_recompose 策略，将原图复杂的多角色网格重构为符合主题母题的单一菜狗形象。手绘抖动线条、低饱和绿白配色、粉腮红与吐舌表情均精准命中 transfer_plan 要求。底部手写体‘开心消消乐’清晰且位置正确，构图留白合理，既保持了主题包的高度一致性，又通过文字和语义保留了目标 App 的识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 60,
+      "style_match_score": 60,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 90,
+      "background_score": 100,
+      "composition_score": 70,
+      "artifact_score": 100,
+      "overall_score": 45,
+      "failure_reason": "严重抄袭主题参考图 honor_of_kings_style_ref.png 的构图与主体形态（旋转叶片背景+狗头），未针对 anipop 进行独立的语义重构。虽然保留了底部文字，但主体视觉与王者荣耀主题图几乎雷同，导致目标 App 识别度极低，且违反了生成计划中关于‘圆润/微三角轮廓’及独立重构的要求，属于过度依赖参考图导致的身份混淆。",
+      "recommendation": "不推荐。该图直接复用了王者荣耀主题参考图的视觉结构，缺乏针对开心消消乐的独立设计，容易导致用户混淆，且不符合 transfer_plan 中对主体轮廓和独立语义重构的要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\anipop\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

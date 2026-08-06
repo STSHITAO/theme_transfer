@@ -1,0 +1,73 @@
+{
+  "app": "moji_weather",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 iqiyi_lite（保留文字排版，Q 变猪头）、kugou（保留 K 骨架变狗）、zhihu（保留知字，乎变动物）的规律，对于纯文字 Logo 类 App，策略是保留文字的空间布局和字形骨架，将关键字母进行生物化/主题化改造。墨迹天气原图为清晰的 'MOJI' 文字，具有明确的几何结构，因此选择保留主体文字结构，仅对字母 'O' 进行菜狗面部化重构，符合 preserve_major_structure 的定义。",
+  "preserve": [
+    "MOJI 四个字母的横向排列顺序与相对间距",
+    "字母 M 顶部的向下凹陷弧线特征",
+    "字母 O 的闭合圆环几何轮廓",
+    "字母 J 底部向左弯曲的弧度与 I 的垂直竖线结构",
+    "文字整体的水平居中排版与粗体几何感"
+  ],
+  "must_preserve": [
+    "MOJI 字母组合的完整拼写可读性",
+    "字母 O 作为视觉焦点的圆形位置与比例",
+    "字母 M 顶部独特的内凹曲线（非标准尖角）",
+    "底部黑色手写体 'Moji Weather' 文字"
+  ],
+  "recompose_allowed": [
+    "字母 O 的内部填充重构为菜狗五官（豆豆眼、粉腮红、吐舌）",
+    "字母 O 顶部添加两片绿叶作为耳朵/装饰",
+    "字母 M/J/I 的线条末端可转化为卷曲藤蔓或叶片形态",
+    "字体风格从标准无衬线体转为手绘抖动粗线条",
+    "背景从纯黑替换为纯白/米白圆角底板"
+  ],
+  "restyle": [
+    "所有字母颜色统一为主题深草绿描边+浅嫩绿填充",
+    "线条质感转为马克笔/蜡笔手绘的不规则边缘",
+    "去除原图所有光泽、阴影及高对比度效果",
+    "整体呈现扁平哑光纸质贴纸质感"
+  ],
+  "decorate": [
+    "字母 O（菜狗脸）添加淡粉色椭圆腮红",
+    "字母 O 内部添加纯黑小圆点眼睛与粉色小舌头",
+    "字母笔画连接处可增加微小的叶脉纹理细节",
+    "偶尔在字母旁点缀天蓝色小水滴暗示天气属性"
+  ],
+  "forbid": [
+    "完全丢弃 MOJI 文字结构，仅绘制通用天气图标（太阳/云朵/雨滴）",
+    "保留原图的纯黑背景或高饱和度橙色主色",
+    "使用平滑矢量线、锐利折角或标准电脑印刷字体",
+    "添加任何 3D 渲染、渐变、高光或投影效果",
+    "字母 O 变形为非圆形或丢失面部特征",
+    "主体撑满画布导致底部无文字空间或四周无留白",
+    "遗漏底部手写体 App 名称"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. The center features the text 'MOJI' in thick, wobbly dark green marker lines with light green fill. The letter 'O' is transformed into an adorable vegetable dog face: retaining the circular outline, filled with tiny black dot eyes, pink oval blushes, a small playful tongue, and two green leaf ears on top. Letters 'M', 'J', 'I' keep their original geometric skeleton but with rounded, organic hand-drawn strokes; 'M' has a distinct curved dip at the top, 'J' curls slightly like a tail. Below the graphic, write 'Moji Weather' in casual bold black handwritten font. Flat sticker art style, matte paper texture, ample white space, healing and playful mood.",
+  "color_application": "彻底移除原图黑底橙字配色。背景强制为纯白 (#FFFFFF)。字母 M/J/I 使用深草绿 (#4A7C29) 描边与浅嫩绿 (#A8D060) 填充。字母 O（菜狗脸）沿用同色系绿色，腮红使用淡粉 (#FFB6C1)，眼睛与底部文字使用纯黑 (#000000)。原品牌橙色完全剥离，仅通过底部手写文字兜底识别。",
+  "stroke_application": "将原图精确的无衬线几何字体转化为手绘马克笔质感。外轮廓使用粗细不均的深绿色抖动线条，端点圆润无尖角。字母内部细节（如叶脉、五官）使用同色系细线勾勒。消除所有机械直线，M 的凹陷弧线与 J 的弯钩需保留走势但增加手工涂抹的不完美感。",
+  "composition_application": "严格遵循三段式贴纸构图。MOJI 文字图形整体居中偏上，高度占画布 55%-60%，确保四周尤其是底部有充足留白。字母 O 作为视觉重心保持居中。底部固定区域放置黑色手写体 'Moji Weather'，与上方图形垂直居中对齐，形成稳定的上图下文版式。",
+  "identity_application": "采用‘文字骨架保留+关键字母拟人化’策略。通过严格保留 M-O-J-I 的横向排列、M 的独特顶弧、O 的圆形占位来维持品牌字形识别。将 O 重构为菜狗脸以融入主题母题，利用底部手写英文名作为第二重识别保障。不依赖原色，而是靠定制字形结构与主题化角色的结合来触发用户记忆。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何深色或彩色背景",
+    "字母 O 必须包含完整的菜狗面部三要素（绿叶耳、粉腮红、呆萌脸）",
+    "所有线条必须为手绘抖动粗描边，禁止平滑矢量或标准字体",
+    "底部必须包含黑色手写体 'Moji Weather'，禁止印刷体",
+    "色彩严格限制在白、绿、粉、黑四色体系内",
+    "主体占比控制在 50%-65%，保证呼吸感与文字空间",
+    "整体必须为 2D 扁平哑光涂鸦质感，禁止 3D 或光影"
+  ],
+  "negative_constraints": [
+    "禁止恢复原图黑底或高饱和橙色作为主色调",
+    "禁止用通用天气符号（云/太阳/雨）替代 MOJI 文字结构",
+    "禁止使用平滑、锐利或完美的几何线条绘制字母",
+    "禁止添加阴影、高光、渐变或立体浮雕效果",
+    "禁止让文字撑满画布或触碰边缘，丢失留白",
+    "禁止遗漏绿叶、腮红等核心萌系母题特征",
+    "禁止使用标准电脑字体或遗漏底部手写名称",
+    "禁止过度变形字母导致 MOJI 无法被拼读识别"
+  ]
+}

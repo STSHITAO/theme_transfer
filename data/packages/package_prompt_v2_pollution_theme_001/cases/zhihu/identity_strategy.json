@@ -1,0 +1,38 @@
+{
+  "app": "zhihu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "知乎二字的标准字形结构，特别是'知'字右侧'口'部下方的尖角缺口设计",
+  "brand_cues_to_preserve": [
+    "知乎标准字体的笔画走势与空间比例",
+    "'知'字右下角的标志性V型切口",
+    "左右两个汉字的水平对齐关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为知识载体的语义",
+    "清晰、理性的视觉感受"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，主题化策略为'材质置换+3D拉伸'。知乎的图标是高度标准化的文字Logo，其识别度完全依赖于笔画结构。因此，必须严格保留原始字形的2D轮廓，将其转化为具有厚度的3D冰雕实体，不可重构为书本或其他象征物，以免破坏品牌识别。",
+  "design_rationale": "知乎的核心资产是其独特的字体设计。在冰晶主题下，将平面的白色文字转化为立体的半透明冰块，不仅能完美契合'冻结/冷凝'的全局视觉语言，还能通过冰的通透感隐喻知识的纯粹与冷静。保留严格的字形结构是确保用户在应用列表中瞬间识别出知乎的关键。",
+  "must_preserve": [
+    "完整的'知乎'二字字形",
+    "'知'字右下角的尖角特征",
+    "文字的长宽比和笔画粗细比例"
+  ],
+  "can_recompose": [
+    "将2D平面笔画转化为具有倒角和厚度的3D模型",
+    "表面增加冷凝水珠、内部增加雪花或气泡纹理",
+    "边缘处理为圆润的冰块质感，去除锐利切角",
+    "底部增加融化的水渍或碎冰细节"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构或书写风格",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止保留原始的纯蓝色背景",
+    "禁止添加与文字主体无关的复杂道具（如眼镜、灯泡等）"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '知乎'. The material is translucent light blue ice with internal bubbles and surface water droplets. Strictly maintain the original font structure, especially the V-cut in the bottom right of the first character. Place on a clean white background with soft contact shadows and scattered ice chips at the base. No outlines, defined by refraction and highlights."
+}

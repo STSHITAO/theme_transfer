@@ -1,0 +1,36 @@
+{
+  "app": "douyin",
+  "identity_anchors": [
+    " stylized lowercase 'd' / musical note shape",
+    "cyan and magenta chromatic aberration (glitch) offset effect",
+    "white core fill of the main symbol",
+    "dark/black background"
+  ],
+  "must_preserve": [
+    "The specific geometry of the 'd' note: vertical stem, top-right flag, bottom-left circular loop",
+    "The tri-color layering relationship: Cyan offset to the top-left, Magenta/Red offset to the bottom-right, White in the center",
+    "The negative space inside the bottom loop of the 'd'",
+    "The overall silhouette which must remain recognizable as the Douyin/TikTok logo"
+  ],
+  "can_restyle": [
+    "Background texture (can add noise, gradient, or pattern as long as it remains dark)",
+    "Material finish of the white core (can be glossy, metallic, matte, or neon)",
+    "Intensity of the glitch effect (can be softened or sharpened)",
+    "Corner radius of the app icon container",
+    "Adding subtle ambient glow around the colors"
+  ],
+  "must_not_replace_with": [
+    "A realistic musical instrument",
+    "A generic cloud or speech bubble",
+    "A cute animal or mascot character",
+    "A standard sans-serif letter 'd' without the note flag",
+    "A completely different geometric shape"
+  ],
+  "color_preservation": "The Cyan (#25F4EE approx) and Magenta/Red (#FE2C55 approx) are critical brand identifiers. They must remain distinct hues. The White core can be slightly tinted by the theme but must remain the lightest element. The background must remain dark (black or deep navy) to ensure the neon glitch effect is visible; do not invert to a light background.",
+  "structure_summary": "A central white glyph resembling a lowercase 'd' or musical note, flanked by a cyan shadow shifted up-left and a red shadow shifted down-right, creating a stereoscopic 3D/glitch effect on a dark square background.",
+  "risk_notes": [
+    "Removing the cyan/red split will destroy brand recognition immediately",
+    "Changing the background to white/light gray will ruin the neon aesthetic and make the glitch effect invisible",
+    "Altering the curve of the 'd' loop or the angle of the top flag will make it look like a generic music app"
+  ]
+}

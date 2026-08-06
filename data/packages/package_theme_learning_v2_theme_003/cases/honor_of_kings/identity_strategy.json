@@ -1,0 +1,37 @@
+{
+  "app": "honor_of_kings",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "MOBA竞技与峡谷对战的核心功能语义符号（如瞄准罗盘/准星）",
+  "brand_cues_to_preserve": [
+    "5v5多人实时对战的竞技概念",
+    "王者荣耀IP的战场/峡谷属性"
+  ],
+  "semantic_cues_to_preserve": [
+    "瞄准/锁定目标的视觉隐喻",
+    "战术地图/罗盘的几何特征"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 honor_of_kings 的真实 original -> style_ref 规律显示，原图复杂的写实人物头像（亚瑟）因细节过多、依赖光影渲染，无法在手工剪纸贴纸风格下保留主体几何，因此被完全舍弃并重构为抽象的圆形罗盘/准星符号。当前目标原图同样是高复杂度的写实英雄面部特写叠加营销角标，符合 theme_design_analysis 中 'recompose_when' 的触发条件（复杂3D渲染/写实插画）。因此，必须放弃原图的人脸结构，提取 MOBA 游戏最具代表性的'瞄准/竞技'语义符号进行重构，以适配贴纸的极简轮廓要求。",
+  "design_rationale": "原图标为高度写实的3D人物肖像，包含复杂的面部光影、毛发细节及高饱和度的营销文字（5v5），这与主题包要求的'扁平单色块+虚线轮廓+极低细节密度'的手工剪纸工艺完全冲突。强行保留人脸轮廓会导致贴纸形态崩坏或语义丢失。遵循主题包对该App的历史处理规律及 identity_handling_policy，选择提取 MOBA 竞技的核心功能语义（瞄准、罗盘、战场），将其转化为简洁的几何徽记符号，既能清晰传达游戏属性，又能完美融入薄荷绿手账贴纸的统一视觉语言。",
+  "must_preserve": [
+    "MOBA竞技/瞄准的功能语义可识别性",
+    "圆形或几何化的稳定构图以适配居中贴纸布局"
+  ],
+  "can_recompose": [
+    "写实英雄人物面部及身体",
+    "5v5营销文字角标",
+    "金色边框及背景光效",
+    "所有高饱和度品牌色与3D光影"
+  ],
+  "forbid": [
+    "保留写实人脸或复杂的五官细节",
+    "保留原图的金色、红色等高饱和品牌色",
+    "使用3D渲染、渐变光泽或金属质感",
+    "遗漏网格背景、红色虚线框、白色宽边、虚线缝线或右下硬投影",
+    "主体过大撑满画布或破坏居中留白平衡"
+  ],
+  "generation_direction": "生成一张置于米白浅灰网格底板中央的手工剪纸贴纸。主体为极简扁平的薄荷绿圆形罗盘/准星几何符号，象征MOBA竞技与瞄准，严格控制在画布40%-70%大小并居中。主体填充纯薄荷绿，外层包裹粗实纯白模切宽边，内侧叠加深灰色手绘虚线缝线，所有转角圆润化。主体右下方添加统一的浅灰色硬边缘投影。背景铺满淡灰色正交网格，主体外围环绕一圈淡红/粉色圆角虚线框。绝对禁止出现人脸、文字、渐变、3D效果或原图品牌色，保持哑光纸质贴纸质感。"
+}

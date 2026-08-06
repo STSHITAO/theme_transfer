@@ -1,0 +1,40 @@
+{
+  "app": "toutiao_lite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "汉字'头条'的字形骨架与右下角的闪电极速标识",
+  "brand_cues_to_preserve": [
+    "汉字'头条'的基本笔画结构",
+    "右下角代表极速版的闪电符号",
+    "文字横向排版的视觉重心"
+  ],
+  "semantic_cues_to_preserve": [
+    "新闻资讯的文字属性",
+    "极速/轻量化的闪电隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 alipay（保留'支'字骨架）、zhihu（保留'知'字结构）、iqiyi_lite（保留文字排版）的规律，当原图核心为高辨识度汉字时，应保留文字的空间布局和笔画走向。toutiao_lite 的核心识别在于'头条'二字，因此采用 preserve_major_structure，将红色色块和白色文字转化为绿色手绘线条，同时保留右下角闪电的位置关系以区分极速版，符合主题包对文字类 Logo 的处理逻辑。",
+  "design_rationale": "原图标是典型的红底白字加角标设计。为了融入'绿叶小狗'主题，需剥离高饱和红色背景，将'头条'二字进行萌化手绘重构。参考 zhihu 的处理方式，可以将部分笔画（如'条'字的下半部分或'头'字的点）巧妙转化为菜狗的耳朵或面部特征，或者让一只小菜狗趴在文字上。右下角的青色闪电需保留但改为手绘黄色/绿色，以维持'极速版'的身份识别。底部增加手写英文名完成版式统一。",
+  "must_preserve": [
+    "汉字'头条'的可读性与大致字形",
+    "右下角闪电符号的存在与位置",
+    "白底圆角矩形底板",
+    "底部手写英文名称"
+  ],
+  "can_recompose": [
+    "红色背景色块（必须移除）",
+    "文字的标准印刷字体（改为手绘抖动线条）",
+    "闪电的颜色（从青色改为符合主题的淡黄或嫩绿）",
+    "文字笔画的末端（可卷曲成叶子形状）"
+  ],
+  "forbid": [
+    "保留大面积红色背景",
+    "使用标准电脑字体书写'头条'",
+    "遗漏右下角的闪电标识导致无法区分极速版",
+    "主体撑满画布，失去底部文字空间",
+    "出现 3D 光影或平滑矢量边缘"
+  ],
+  "generation_direction": "纯白圆角底板，中央绘制手绘风格的汉字'头条'，使用深绿色抖动粗线条勾勒，笔画末端融入嫩绿菜叶纹理。将'条'字下部或局部笔画拟人化为带粉腮红、豆豆眼的菜狗笑脸。右下角保留一个小巧的手绘闪电符号（淡黄色或嫩绿色）。底部居中书写黑色手写体 'Toutiao Lite'。整体扁平涂鸦质感，无阴影，主体占比 60%。"
+}

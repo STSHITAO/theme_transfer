@@ -1,0 +1,39 @@
+{
+  "app": "iqiyi_lite",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“爱奇艺极速版”五个汉字的排版结构及右下角红色闪电符号的位置关系",
+  "brand_cues_to_preserve": [
+    "两行文字布局（上：爱奇艺，下：极速版）",
+    "右下角的闪电符号（语义锚点）",
+    "字体的几何特征（方正、硬朗）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字内容的可读性轮廓",
+    "闪电代表的“快/轻量”语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的处理方式，对于以文字为主体的图标，必须严格保留文字的笔画结构和空间排布。将原本平面的白色文字转化为具有厚度的 3D 冰雕字块。虽然原图标包含强烈的红绿品牌色，但根据 theme_rules 需完全替换为冰蓝材质，仅通过光影和体积感来维持识别度。",
+  "design_rationale": "该 App 图标核心由纯文字构成，属于高识别度但在风格迁移中易丢失细节的类型。采用 logo_preserve 策略，将文字整体视为一个 3D 实体进行冻结处理。为了体现“极速版”的轻量化和速度感，冰块边缘应处理得较为锐利清晰，内部可封存气泡以增强通透感。右下角的闪电符号作为重要的功能语义（Lite/Speed），必须作为独立的冰晶组件保留在原有位置，不可省略。",
+  "must_preserve": [
+    "上下两行文字的相对大小和间距",
+    "每个汉字的关键笔画走势（不可连笔或模糊）",
+    "右下角闪电符号的形态和位置",
+    "整体的矩形构图范围"
+  ],
+  "can_recompose": [
+    "文字的颜色（转为冰蓝/透明）",
+    "背景的渐变色（转为纯白）",
+    "文字的质感（增加磨砂、水珠、裂纹细节）",
+    "闪电符号的材质（转为透明冰晶，去除红色填充）"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色/红色背景色",
+    "禁止将文字简化为无法辨认的抽象几何块",
+    "禁止去掉右下角的闪电符号",
+    "禁止生成不透明的实心塑料质感"
+  ],
+  "generation_direction": "3D render of translucent blue ice sculpture forming the Chinese characters '爱奇艺' on top and '极速版' below. The text is extruded with thickness, glossy surface, internal bubbles. A small ice crystal lightning bolt symbol is embedded in the bottom right corner. Pure white background, soft studio lighting, refraction, caustics, C4D style."
+}

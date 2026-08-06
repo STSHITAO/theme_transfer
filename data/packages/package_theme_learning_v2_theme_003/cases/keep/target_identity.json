@@ -1,0 +1,37 @@
+{
+  "app": "Keep",
+  "identity_anchors": [
+    " stylized letter 'K' composed of thick rounded strokes",
+    "disconnected upper-right diagonal stroke of the 'K'",
+    "four-pointed star/sparkle symbol at the top right",
+    "deep purple background gradient"
+  ],
+  "must_preserve": [
+    "The specific geometric structure of the letter 'K' (vertical bar, lower diagonal, detached upper diagonal)",
+    "The rounded terminals/caps of the 'K' strokes",
+    "The four-pointed star shape and its relative position to the 'K'",
+    "The high contrast between the white logo mark and the dark background"
+  ],
+  "can_restyle": [
+    "Background gradient hue and saturation (as long as it remains dark enough for contrast)",
+    "Material/texture of the 'K' (e.g., neon, metallic, matte, glass)",
+    "Glow effects or shadows around the 'K' and star",
+    "The specific color of the star (can shift within cool tones or match theme accent)",
+    "Corner radius of the overall icon container"
+  ],
+  "must_not_replace_with": [
+    "Generic dumbbells or weights",
+    "Running figures or silhouettes",
+    "Hearts or pulse lines",
+    "Cute animals or mascots",
+    "Standard serif or sans-serif typography without the specific disconnected stroke design"
+  ],
+  "color_preservation": "The deep purple is a strong brand identifier but can be shifted to analogous dark tones (indigo, violet) or desaturated for dark modes. The white 'K' should remain light/high-contrast. The star's blue-purple gradient can be adapted to the theme's accent color but must remain distinct from the main 'K' color.",
+  "structure_summary": "A minimalist, geometric monogram of the letter 'K' with rounded ends and a deliberately detached upper-right arm, accompanied by a magical four-pointed sparkle in the upper right quadrant, set against a solid or subtly graded dark field.",
+  "risk_notes": [
+    "Reconnecting the upper-right stroke of the 'K' will destroy the specific brand geometry.",
+    "Changing the 'K' to a standard font will lose the custom identity.",
+    "Removing the star makes the icon look like a generic initial.",
+    "Using a light background without adjusting the 'K' color will ruin visibility."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "app": "wechat",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律显示，对于微信这种几何结构极其简洁且辨识度极高的 Logo，必须严格保留气泡轮廓、重叠关系和眼睛位置（preserve_major_structure=true）。当前目标原图同样是标准的简洁 2D 几何图形，无需进行语义重构或道具替代，直接保留主体拓扑结构并应用贴纸材质即可完美平衡主题统一性与品牌识别度。",
+  "preserve": [
+    "双气泡重叠的经典轮廓",
+    "四个眼睛圆点的空间排布",
+    "气泡尖角的朝向"
+  ],
+  "must_preserve": [
+    "一大一小两个气泡的重叠布局",
+    "气泡尾部的指向角度",
+    "每个气泡内部两个圆点眼睛的相对位置",
+    "即时通讯与社交对话的气泡隐喻"
+  ],
+  "recompose_allowed": [
+    "原本的纯绿色满版背景（替换为网格底板）",
+    "气泡的颜色逻辑（从白底绿背景反转为绿底白边）",
+    "边缘锐度（进行圆润化和手绘感柔化）"
+  ],
+  "restyle": [
+    "气泡填充色统一为薄荷绿/青蓝色",
+    "添加白色宽包边与深灰色虚线缝线",
+    "添加右下方浅灰色硬边缘投影",
+    "背景替换为米白底浅灰网格与淡红虚线框"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原有的微信品牌绿色",
+    "改变气泡的数量、大小比例或重叠层级",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "添加任何 3D 光泽、渐变或写实纹理",
+    "将气泡融合为一个或替换为其他通讯符号"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of WeChat logo on light grey grid notebook paper. Two overlapping rounded chat bubbles filled with uniform mint cyan, left bubble larger and behind, right bubble smaller and in front. Each bubble contains two white circular dots as eyes. Thick white die-cut border with dark grey dashed stitching line inside. Soft grey drop shadow to bottom right. Faint red dashed rectangular frame surrounds the sticker. Handcraft scrapbook style, matte paper texture, clean vector, cute aesthetic.",
+  "color_application": "彻底剥离微信原始品牌绿，将双气泡主体强制填充为统一的低饱和度薄荷绿/青蓝色；气泡内的眼睛圆点保留为纯白色负空间或镂空；背景完全替换为米白/浅灰白底色，禁止保留任何原始绿色背景或渐变。",
+  "stroke_application": "在双气泡组合体的最外层包裹粗实纯白包边模拟模切边缘，紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫针脚；所有气泡转角及尾巴尖端进行圆润化处理，消除锐利折角，呈现手工剪裁的柔和感。",
+  "composition_application": "双气泡主体严格居中放置于网格底板中央，尺寸缩放至画布的50%左右，确保完整落入淡红色虚线框安全区内；四周保留均匀充足的网格留白，维持'底板-红框-贴纸'三层嵌套层级，严禁主体出血或触碰边缘。",
+  "identity_application": "在不破坏主题贴纸质感的前提下，通过精确保留'左大右小气泡重叠'、'四眼圆点布局'及'尾巴朝向'三大核心几何锚点来维持微信身份；识别度完全依赖于轮廓拓扑结构的准确性，而非原始色彩。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度微信绿或渐变色",
+    "禁止使用纯色背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一特征",
+    "禁止改变气泡数量、大小比例或重叠层级关系",
+    "禁止将气泡重构为云朵、动物或其他通用通讯符号",
+    "禁止在主体内部保留过多细节导致视觉杂乱",
+    "禁止使用尖锐直角破坏手工剪纸的柔和感"
+  ]
+}

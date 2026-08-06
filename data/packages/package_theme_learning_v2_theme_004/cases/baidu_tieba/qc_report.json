@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美保留了'贴'字结构和气泡尖角，手绘风格与主题高度一致，绿叶耳朵和腮红元素融合自然，底部文字规范，完全符合transfer_plan的所有严格约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "推荐。整体风格符合，'贴'字识别度高。但气泡轮廓略显圆润，尖角特征不如candidate_01明显，且顶部绿叶装饰位置稍显随意，不如candidate_01的耳朵造型贴合'菜狗'母题。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\baidu_tieba\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

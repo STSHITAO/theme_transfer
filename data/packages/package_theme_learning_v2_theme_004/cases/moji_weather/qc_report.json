@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：保留了 MOJI 的文字骨架，字母 O 成功转化为菜狗脸（含绿叶耳、粉腮红、吐舌），M/J/I 的手绘化处理自然且保留了原字形特征（如 M 的顶部凹陷）。底部手写体文字清晰，配色严格遵循白/绿/粉/黑体系，风格与参考图高度一致，画面干净无伪影。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 25,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 84,
+      "failure_reason": "字母 M 的结构变形过度，添加了不符合原字形的悬挂豆荚状装饰，破坏了 'preserve_major_structure' 中关于 M 顶部凹陷弧线的保留要求；字母 O 的耳朵形态更接近普通动物耳朵而非计划要求的 '绿叶' 形态，主题契合度略低于 candidate_01。",
+      "recommendation": "可以使用，但次于 candidate_01。主要问题在于字母 M 的装饰性重构略显多余，干扰了文字识别的纯粹性，且 O 的主题化特征（菜狗叶耳）不如 candidate_01 准确。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\moji_weather\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

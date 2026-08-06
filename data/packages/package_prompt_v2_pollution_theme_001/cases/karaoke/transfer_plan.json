@@ -1,0 +1,62 @@
+{
+  "app": "karaoke",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的处理方式，对于具有高度概括性几何符号的图标，应严格保留其 2D 外部轮廓（Silhouette）。全民K歌的鹦鹉+麦克风图形结构紧凑且识别度极高，不需要重构，只需将其从平面渐变转化为具有厚度的 3D 冰雕实体。",
+  "preserve": [
+    "整体圆形外轮廓及顶部羽冠突起",
+    "白色负空间形成的眼睛圆点与弯曲喙部形状",
+    "右下角麦克风的相对位置与指向性",
+    "麦克风必须保持独立于鸟身的深色实体感"
+  ],
+  "must_preserve": [
+    "鹦鹉头部的完整外轮廓",
+    "麦克风与头部的连接位置",
+    "眼睛部位的镂空/负空间形状",
+    "3D 冰晶材质的通透感与水珠细节"
+  ],
+  "recompose_allowed": [
+    "原本的红/紫品牌色（必须移除）",
+    "内部的色彩渐变层次（转化为冰的厚度变化或内部光影）",
+    "平滑的边缘（增加倒角和融化感）"
+  ],
+  "restyle": [
+    "将红橙粉渐变主色调替换为半透明冰蓝色系",
+    "将深紫色麦克风转化为深色半透明冰体或嵌入冰中的深色核心",
+    "边缘锐度转为圆润光滑的冰面折射效果"
+  ],
+  "decorate": [
+    "表面添加冷凝水珠",
+    "内部嵌入微小气泡或雪花纹理",
+    "底部添加碎冰屑和融化水渍",
+    "边缘添加高光折射（Rim Light）"
+  ],
+  "forbid": [
+    "保留任何红色、橙色或紫色主色调",
+    "生成不透明的塑料或金属质感",
+    "改变鹦鹉或麦克风的相对位置",
+    "使用深色或复杂背景",
+    "添加描边线条"
+  ],
+  "generation_brief": "3D render of the 'WeSing' (Quanmin K Ge) app icon as a translucent blue ice sculpture. Shape: stylized parrot head silhouette with a microphone in the bottom right corner. Material: clear cyan ice with internal bubbles, frost patterns, and subsurface scattering. Lighting: bright studio lighting, strong rim highlights, no outlines. Background: pure white with soft contact shadow and scattered ice chips at the base. High detail, photorealistic C4D/Octane style.",
+  "color_application": "强制全量替换为冰蓝色系（Translucent Cyan/Pale Ice Blue）。原始的红橙粉渐变和深紫色完全移除，转化为冰材质的透明度变化、内部阴影深度以及高光颜色。麦克风部分表现为较深的半透明冰体或内部深色包裹物，以维持视觉重心，但严禁使用原始紫色。",
+  "stroke_application": "去除所有 2D 描边。轮廓通过 3D 模型的倒角（Bevel）和高光反射来定义。边缘处理非常光滑，模拟冰块打磨后的质感，利用光线折射区分鹦鹉头部与麦克风的边界。",
+  "composition_application": "单体居中构图。主体物体占据画布约 60%-70% 的面积。采用微俯视或平视的 3D 视角，展现物体的厚度和体积感。背景统一为纯白，去除原有背景色，增加底部物理投影以确立空间关系。",
+  "identity_application": "严格保留鹦鹉头部侧面剪影、眼部负空间及麦克风位置的几何结构。通过‘材质置换’策略，将原本的扁平矢量图拉伸为具有 Z 轴厚度的 3D 实体。利用冰的通透性和内部纹理（如气泡）来暗示原图的层次感，而非依靠颜色对比。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调。",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节。",
+    "必须保留原始图标的核心几何轮廓（鹦鹉+麦克风），不可重构为无关物体。",
+    "背景必须保持极简洁白，突出主体的通透感。",
+    "光影逻辑必须符合 3D 渲染规律（顶光或侧光，底部有阴影）。"
+  ],
+  "negative_constraints": [
+    "禁止使用原始 App 的品牌背景色（红/橙/粉/紫）。",
+    "禁止生成不透明的塑料、金属或玻璃材质（必须是冰/雪质感）。",
+    "禁止保留 2D 扁平化设计风格。",
+    "禁止过度添加与“冰/冷”主题无关的复杂场景道具。",
+    "禁止改变鹦鹉头部与麦克风的相对位置关系。"
+  ]
+}

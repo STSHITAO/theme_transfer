@@ -1,0 +1,37 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "汉字'拼'的字形结构",
+  "brand_cues_to_preserve": [
+    "汉字'拼'的专属字体笔画",
+    "拼团/聚合的核心语义"
+  ],
+  "semantic_cues_to_preserve": [
+    "购物/电商属性（通过文字隐含）",
+    "拼单概念"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 pinduoduo 的真实迁移规律（original -> style_ref），原图复杂的心形拼图网格和周围环绕的商品小图标（裙子、相机、鱼等）被完全舍弃，仅提取中心的'拼'字作为主体。这是因为原图主体过于复杂且依赖多色块拼接，无法在保持手账贴纸简洁性的前提下保留整体心形几何。因此，策略遵循主题包规律，放弃原始心形结构，转而提取最具品牌识别度的文字符号进行重构，符合 semantic_recompose 模式。",
+  "design_rationale": "拼多多原图标由心形框架、中心文字和周围10个商品图标组成，细节密度极高。根据主题规则'detail_complexity_rule'和参考案例，必须极度简化。保留'拼'字既能维持品牌核心识别（Identity Anchor），又能完美适配薄荷绿单色填充+虚线缝线的贴纸风格。移除周围商品图标和心形外框，避免了视觉杂乱，确保了贴纸形态的清晰与统一。",
+  "must_preserve": [
+    "汉字'拼'的完整字形和笔画特征",
+    "文字居中的构图逻辑"
+  ],
+  "can_recompose": [
+    "外围的心形几何框架",
+    "周围环绕的所有商品小图标（衣服、相机、鱼等）",
+    "红色背景和高饱和度配色",
+    "原有的三角形拼接纹理"
+  ],
+  "forbid": [
+    "保留原图的红色背景或任何非薄荷绿的主色",
+    "保留周围的商品小图标导致细节过载",
+    "保留心形外框导致主体轮廓过于复杂",
+    "使用3D效果、渐变或写实材质",
+    "遗漏白色宽包边、深灰虚线缝线或网格背景"
+  ],
+  "generation_direction": "Create a flat mint green paper cutout sticker of the Chinese character '拼' centered on a light grey grid notebook background. The character should have a thick white die-cut border and a dark grey dashed stitching line inside. Add a soft grey drop shadow to the bottom right. Surround the sticker with a faint red dashed rectangular frame. Remove all surrounding product icons and the heart shape from the original logo. Matte paper texture, handcraft scrapbook style, clean vector illustration."
+}

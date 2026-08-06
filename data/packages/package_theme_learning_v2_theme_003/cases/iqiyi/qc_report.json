@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 100,
+      "style_match_score": 100,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 100,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：准确保留了 'iQIYI' 核心文字标识与圆角矩形播放器外框，成功移除了中文副标题以简化视觉；色彩严格统一为薄荷青色，彻底剥离了原图渐变；双层轮廓（白色宽包边+深灰虚线缝线）、右下硬投影、网格底板及淡红虚线框等主题指纹均精准呈现。构图居中平衡，纸质剪裁质感逼真，无任何伪影或违规元素，与主题参考图风格高度一致。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 92,
+      "style_match_score": 92,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 85,
+      "composition_score": 95,
+      "artifact_score": 85,
+      "overall_score": 92,
+      "failure_reason": "画面右侧边缘存在明显的多余灰色圆形伪影/拼贴痕迹，破坏了画面的干净度与手工贴纸的纯粹感。",
+      "recommendation": "主体设计与风格还原度极高，完全符合身份约束与语义要求，但右侧边缘的多余圆形伪影属于明显瑕疵，影响了 artifact_score 和整体推荐优先级，建议作为备选或在修复伪影后使用。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

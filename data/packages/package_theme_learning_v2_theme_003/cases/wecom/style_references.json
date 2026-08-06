@@ -1,0 +1,10 @@
+{
+  "target_app": "wecom",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "douyu",
+    "tencent_video",
+    "douyin_huoshan"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

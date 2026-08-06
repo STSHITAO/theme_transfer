@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了transfer_plan中的所有指令：保留了'美团'二字的完整骨架和左右布局，'团'字外框清晰，内部融入了符合主题的五官（腮红、吐舌），'美'字带有绿叶元素。底部手写体'Meituan'清晰可读，背景纯白，线条具有手绘质感，完全符合主题风格且识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 35,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 82,
+      "failure_reason": "'团'字内部结构过度重构，原有的'才'字部件被替换为具象的小狗头形象，导致汉字骨架丢失，违反了'structure_identity_metric_applicable=true'时保留原始主体轮廓的要求，识别度较candidate_01有所下降。",
+      "recommendation": "可以使用，但不如candidate_01。虽然风格统一且可爱，但'团'字内部的改动过大，牺牲了部分文字识别度来换取装饰性，略微偏离了'保留字形骨架'的核心策略。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\meituan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,62 @@
+{
+  "app": "mini_world",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 minecraft 和 mini_world 自身的历史迁移规律（reference_transformation_patterns），当原图标为复杂的3D角色插画且充满画面时，主题策略均选择放弃具象角色，转而提取游戏标题文字作为主体。当前目标原图为高复杂度的3D卡通角色与星空漩涡背景，若强行保留角色轮廓将违反主题‘极度简化’与‘扁平剪纸’的工艺限制。因此，依据主题包可观察规律，采用语义重构策略，用标题文字替代原3D主体结构。",
+  "preserve": [
+    "“迷你世界”四个汉字的专属字形结构与笔画特征",
+    "字体原本的活泼圆润感与可读性骨架"
+  ],
+  "must_preserve": [
+    "“迷你世界”文字的可读性与字形骨架",
+    "薄荷绿单色填充",
+    "白色宽包边与深灰虚线缝线",
+    "米白网格底板与淡红虚线框",
+    "右下浅灰硬投影"
+  ],
+  "recompose_allowed": [
+    "3D卡通恐龙头套角色形象",
+    "星空漩涡背景与魔法特效",
+    "蘑菇等次要场景道具",
+    "原有的高饱和品牌色彩与光影质感",
+    "文字边缘的圆润化手绘处理"
+  ],
+  "restyle": [
+    "将文字填充色统一映射为低饱和度薄荷绿/青蓝色",
+    "添加白色模切宽边与内部深灰色缝纫虚线",
+    "应用哑光纸质材质与右下方浅灰硬边缘投影",
+    "背景替换为米白底浅灰网格纸与淡红圆角虚线框"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原图的3D角色、星空背景或复杂插画场景",
+    "使用原图的高饱和绿色、紫色或星空渐变色",
+    "遗漏网格背景、红色虚线框、白边或缝线特征",
+    "主体过大撑满画布或过小失去辨识度",
+    "添加写实材质、金属光泽、霓虹发光或3D立体效果",
+    "引入与“迷你世界”名称语义无关的通用道具"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon on light grey grid notebook paper with a faint red dashed rounded border. The main subject is the Chinese text '迷你世界' in a playful, rounded font, filled with uniform mint cyan. The text has a thick white die-cut border and inner dark grey dashed stitching lines. A soft grey hard-edge drop shadow falls to the bottom right. Matte paper texture, handcraft scrapbook style, centered composition occupying 50% of canvas, no 3D characters, no gradients, no original brand colors.",
+  "color_application": "彻底剥离原图的高饱和绿色、紫色及星空渐变，将“迷你世界”文字主体强制填充为统一的低饱和度薄荷绿/青蓝色；原图中的白色高光或装饰转化为白色贴纸包边或负空间，确保色彩完全服从主题单色规则。",
+  "stroke_application": "将原文字的锐利或3D边缘转化为双层贴纸轮廓：外层包裹厚实的纯白实线模切边，内层紧贴白边内侧叠加一层深灰色手绘感虚线以模拟缝纫针脚；所有笔画转角进行圆润化处理，消除尖锐折角，呈现手工剪裁的柔和感。",
+  "composition_application": "完全移除原图的满版3D角色与星空背景，将“迷你世界”文字作为独立贴纸居中放置于米白网格底板中央；文字占比控制在40%-70%之间，四周保留均匀充足的网格留白，外围环绕淡红/粉圆角虚线框，形成明确的“底板-虚线框-文字贴纸”三层嵌套层级。",
+  "identity_application": "放弃无法适配贴纸风格的3D恐龙头套角色，转而提取最具辨识度的品牌资产“迷你世界”标题文字作为身份锚点；通过精确保留文字的专属字形结构、笔画比例和活泼风格来维持IP识别度，同时允许对文字边缘进行符合手工剪纸语言的圆润化重绘。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止生成3D卡通角色、恐龙头套或任何具象人物形象",
+    "禁止出现星空、魔法光环、蘑菇等原图背景元素",
+    "禁止使用原图的高饱和绿色、紫色或渐变色",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影",
+    "禁止将文字替换为与App名称无关的通用图形或道具",
+    "禁止使用尖锐直角、金属光泽或现代UI材质破坏手工感"
+  ]
+}

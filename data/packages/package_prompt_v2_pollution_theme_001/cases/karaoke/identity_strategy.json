@@ -1,0 +1,38 @@
+{
+  "app": "karaoke",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "鹦鹉头部轮廓与麦克风组合的负空间图形",
+  "brand_cues_to_preserve": [
+    "鹦鹉头部的侧面剪影（含喙部尖角）",
+    "圆形的眼睛负空间位置",
+    "右下角麦克风的几何形态与角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "麦克风手柄的指向性",
+    "整体图形的圆润聚合感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的处理方式，对于具有高度概括性几何符号的图标，应严格保留其 2D 外部轮廓（Silhouette）。全民K歌的鹦鹉+麦克风图形结构紧凑且识别度极高，不需要重构，只需将其从平面渐变转化为具有厚度的 3D 冰雕实体。",
+  "design_rationale": "采用'材质置换'策略。将原本热烈的红橙渐变色完全替换为通透的冰蓝色，利用冰材质的次表面散射（SSS）和内部纹理（如气泡或雪花）来重塑体积感。保留原有的鹦鹉与麦克风咬合关系，通过边缘的高光折射来定义轮廓，而非描边。",
+  "must_preserve": [
+    "鹦鹉头部的完整外轮廓",
+    "麦克风与头部的连接位置",
+    "眼睛部位的镂空/负空间形状",
+    "3D 冰晶材质的通透感与水珠细节"
+  ],
+  "can_recompose": [
+    "原本的红/紫品牌色（必须移除）",
+    "内部的色彩渐变层次（转化为冰的厚度变化或内部光影）",
+    "平滑的边缘（增加倒角和融化感）"
+  ],
+  "forbid": [
+    "保留任何红色、橙色或紫色主色调",
+    "生成不透明的塑料或金属质感",
+    "改变鹦鹉或麦克风的相对位置",
+    "使用深色或复杂背景"
+  ],
+  "generation_direction": "Generate a 3D translucent ice sculpture of the 'WeSing' (Quanmin K Ge) logo. The shape is a stylized parrot head holding a microphone. Material is clear cyan/blue ice with internal bubbles and frost textures. No outlines, defined by refraction and rim light. White background with soft contact shadow and scattered ice chips at the base. High gloss, rounded edges, C4D render style."
+}

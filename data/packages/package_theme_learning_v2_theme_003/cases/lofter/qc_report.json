@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 90,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：准确保留了 'l' 字母的几何轮廓和底部回环特征，应用了正确的薄荷绿填充、白色模切边框、深灰色虚线缝线以及右下方投影。背景网格和红色虚线框也符合规范。虽然主体周围有一圈淡淡的圆形虚线痕迹（可能是原图圆形背景的残留暗示），但这不影响整体识别度和风格一致性，且符合贴纸风格。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 30,
+      "background_score": 90,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 82,
+      "failure_reason": "未严格遵守身份约束和结构保留策略。transfer_plan 明确要求 '将原始白色填充转换为薄荷绿主题色' 并 '应用薄荷绿单色填充'，但该候选图中 'l' 字母主体仍为线条状或镂空状，未进行实心薄荷绿填充，导致视觉权重过轻，不符合 'preserve_major_structure' 中对主体形态的强化要求。此外，贴纸形状变成了不规则圆形而非紧贴字母轮廓的模切形状，偏离了 'logo_preserve' 策略中关于提取主体并应用贴纸材质的预期。",
+      "recommendation": "不推荐。主要失败原因是未执行颜色填充指令（主体未变为薄荷绿实心），且贴纸轮廓未紧贴字母主体，导致品牌识别度虽在但风格化执行不到位。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

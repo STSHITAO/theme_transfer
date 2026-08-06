@@ -1,0 +1,64 @@
+{
+  "app": "lofter",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 lofter 的真实 original -> style_ref 规律（以及 keep、wps_office 等简洁几何 Logo 的处理方式），当原图主体为简洁的 2D 字母/几何符号时，必须严格保留其核心几何轮廓与空间拓扑。当前目标原图的 'L' 形符号线条流畅、结构极简，完全符合 preserve_major_structure 的触发条件。因此，仅剥离 teal 圆形背景，将 'L' 形主体提取并应用薄荷绿填充与贴纸材质，不进行任何语义替换或结构重组。",
+  "preserve": [
+    "风格化小写字母 'l' 的完整外轮廓路径",
+    "字母顶部圆润弧度与底部向右回勾的丝带状结构",
+    "线条粗细比例与端点圆角处理",
+    "主体在画布中的绝对居中位置"
+  ],
+  "must_preserve": [
+    "'l' 字母独特的底部回环镂空形态",
+    "字母左侧垂直主干与顶部弧度的连接关系",
+    "主体几何结构的精确拓扑关系"
+  ],
+  "recompose_allowed": [
+    "移除原始青绿色圆形背景并替换为网格底板",
+    "将原始白色填充转换为薄荷绿主题色",
+    "边缘锐度柔化以适应剪纸质感"
+  ],
+  "restyle": [
+    "应用薄荷绿单色填充",
+    "添加白色宽模切边框",
+    "添加深灰色虚线缝纫轮廓",
+    "添加右下方浅灰色硬边缘投影",
+    "应用哑光纸质纹理"
+  ],
+  "decorate": [
+    "背景添加淡红色圆角虚线裁剪框",
+    "背景铺设浅灰色正交网格线"
+  ],
+  "forbid": [
+    "保留原始青绿色圆形背景",
+    "修改 'l' 字母的笔画走向或回环形状",
+    "使用通用羽毛笔、钢笔或普通字母 L 替换主体",
+    "引入渐变、高光、3D 立体效果或金属质感",
+    "主体尺寸超出 40%-70% 范围或触碰红色虚线框",
+    "遗漏白边、虚线缝线或投影等任一贴纸特征"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of a stylized lowercase 'l' with a unique bottom loop, placed centered on light grey grid notebook paper. The 'l' shape is filled with uniform mint cyan, surrounded by a thick white die-cut border and inner dark grey dashed stitching line. A soft hard-edged grey drop shadow falls to the bottom right. A faint red dashed rectangular frame surrounds the sticker on the grid. Matte paper texture, handcraft scrapbook style, clean vector, rounded corners, no gradients, no original teal circle background.",
+  "color_application": "彻底移除原始青绿色圆形背景和白色前景色，将 'l' 字母主体强制填充为统一的低饱和度薄荷绿/青蓝色，背景替换为米白/浅灰白底色，装饰仅限白、浅灰、淡红四色。",
+  "stroke_application": "将原始无描边或细线条转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫针脚，所有转角必须圆润化处理。",
+  "composition_application": "移除原始满版圆形构图，将 'l' 字母作为独立贴纸居中置于网格底板中央，尺寸控制在画布 40%-70% 之间，四周保留均匀网格留白，外围环绕淡红色虚线框，形成明确的三层嵌套层级。",
+  "identity_application": "在严格服从薄荷绿单色填充和贴纸材质规范的前提下，通过精确保留 'l' 字母的原始几何路径、底部回环特征及线条比例来维持品牌识别度，不依赖原始品牌色，仅靠轮廓拓扑传递身份。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原始青绿色背景",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白底+浅灰网格+淡红虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中，严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D 立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留原始青绿色圆形背景或任何品牌色泄漏",
+    "禁止改变 'l' 字母的几何结构、笔画走向或回环形状",
+    "禁止使用羽毛笔、普通字母 L 或其他无关图形替换主体",
+    "禁止遗漏白边、虚线缝线、投影或红色虚线框中的任一元素",
+    "禁止主体过大撑满画布或过小失去辨识度",
+    "禁止添加写实材质、金属光泽、霓虹发光或复杂装饰细节"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了语义重构策略，保留了三级头盔和橙红护目镜这一核心IP识别符号，同时通过手持地图准确传达了'Camp/攻略'的功能语义。画风、配色、留白及底部手写文字均严格符合transfer_plan要求，画面干净无伪影。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 85,
+      "failure_reason": "三级头盔特征弱化，护目镜变为头带样式，IP关联度略低于候选1。",
+      "recommendation": "推荐作为备选。整体风格统一，坐姿和手持书本/地图的语义表达清晰。但头盔的还原度不如候选1（护目镜变成了类似发带的结构，缺乏战术头盔的包裹感），导致和平精英的IP识别线索稍弱。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\peace_camp\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

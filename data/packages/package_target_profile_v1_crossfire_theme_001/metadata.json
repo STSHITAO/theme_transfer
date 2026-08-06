@@ -1,0 +1,105 @@
+{
+  "package_id": "package_target_profile_v1_crossfire_theme_001",
+  "theme_id": "theme_001",
+  "target_apps": [
+    "crossfire_mobile"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ],
+  "theme_style_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\theme_style_analysis.json",
+  "theme_rules": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\theme_rules.json",
+  "theme_design_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\theme_design_analysis.json",
+  "generation_base_prompt": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\generation_base_prompt.txt",
+  "cases": {
+    "crossfire_mobile": {
+      "target_app": "crossfire_mobile",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\crossfire_mobile\\crossfire_mobile.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\target_identity.json",
+      "target_profile": {
+        "app": "crossfire_mobile",
+        "display_name": "穿越火线：枪战王者",
+        "category": "游戏 / 射击竞技",
+        "store_description": "提供团队竞技、爆破、生化等多种第一人称射击模式和多人在线对战体验。",
+        "core_function": "提供团队竞技、爆破、生化等多种第一人称射击模式和多人在线对战体验。",
+        "generation_policy": {
+          "strategy_type": "semantic_recompose",
+          "structure_preservation_mode": "semantic_recompose",
+          "structure_policy_rationale": "原图是复杂的写实人物与游戏场景，直接保持全部像素结构不适合图标主题化；生成前固定改用品牌锚点和射击竞技语义重构。",
+          "identity_anchor": "原图中的 CF 互锁字母徽标及其锐利、宽扁的电竞轮廓",
+          "brand_cues_to_preserve": [
+            "CF 互锁字母徽标",
+            "锐利、宽扁的电竞徽章轮廓"
+          ],
+          "semantic_cues_to_preserve": [
+            "第一人称射击",
+            "团队竞技与战术对抗"
+          ],
+          "must_preserve": [
+            "以 CF 互锁字母徽标作为唯一主体身份锚点",
+            "生成结果应能表达射击竞技游戏，而不是支付、视频、社交或其他 App"
+          ],
+          "can_recompose": [
+            "原始写实人物、服装和复杂背景可以省略",
+            "可使用克制的准星环、竞技徽章或战术几何强化游戏语义"
+          ],
+          "forbid": [
+            "禁止出现其他 App 的 Logo、文字、吉祥物或主体轮廓",
+            "禁止出现支付符号、电视机外框、播放按钮或社交气泡",
+            "禁止把任一风格参考图的主体当作当前目标主体"
+          ],
+          "generation_direction": "以原图中的 CF 互锁字母徽标为清晰主视觉，用克制的准星或竞技几何表达第一人称射击和团队竞技；不要复刻复杂人物场景，也不要生成任何其他 App 身份。"
+        }
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "原图是复杂的写实人物与游戏场景，直接保持全部像素结构不适合图标主题化；生成前固定改用品牌锚点和射击竞技语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\cases\\crossfire_mobile\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\final\\crossfire_mobile.png"
+    }
+  },
+  "status": "complete",
+  "failed_cases": {},
+  "package_failures": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\package_failures.json",
+  "evaluation_coverage": {
+    "requested_app_count": 1,
+    "evaluated_app_count": 1,
+    "skipped_app_count": 0,
+    "skipped_apps": [],
+    "ratio": 1.0
+  },
+  "structure_evaluation_policy": {
+    "crossfire_mobile": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "原图是复杂的写实人物与游戏场景，直接保持全部像素结构不适合图标主题化；生成前固定改用品牌锚点和射击竞技语义重构。"
+    }
+  },
+  "final_outputs": {
+    "crossfire_mobile": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\final\\crossfire_mobile.png"
+  },
+  "contact_sheet": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\contact_sheet.png",
+  "package_qc_report": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_target_profile_v1_crossfire_theme_001\\package_qc_report.json",
+  "model_config": {
+    "plan_model": "qwen3.7-plus",
+    "image_model": "wan2.7-image"
+  },
+  "mock_mode": false,
+  "created_at": "2026-08-06T13:49:12.743793+00:00"
+}

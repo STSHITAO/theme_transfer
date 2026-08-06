@@ -1,0 +1,61 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和抖音的处理方式，天猫的图标由极其标准的几何图形（猫头剪影+文字）构成。根据 theme_design_analysis 中的 structure_preservation_policy，当原始图标为清晰几何图形时，应严格保留外部轮廓。因此，必须将原本的红色猫头和黑色五官直接转化为同比例的3D冰雕实体，不可改变其长宽比或五官位置，仅做材质替换和立体化拉伸。",
+  "preserve": [
+    "猫头整体外轮廓（双耳形状、脸颊曲线）",
+    "'猫'字的完整笔画结构与字形骨架",
+    "底部五官（眼、鼻）的相对位置与排列",
+    "图标整体的宽高比例与中心对称性"
+  ],
+  "must_preserve": [
+    "标志性的猫头剪影几何形态",
+    "'猫'字右半部分融合猫耳特征的特定笔画设计",
+    "文字与图形的上下层级空间关系"
+  ],
+  "recompose_allowed": [
+    "将原有的红黑配色完全转换为半透明冰蓝色材质",
+    "增加Z轴厚度，使平面Logo变为立体浮雕/圆雕",
+    "边缘倒角处理，模拟冰块打磨后的圆润感",
+    "表面添加冷凝水珠、内部添加微小气泡或雪花纹理"
+  ],
+  "restyle": [
+    "材质：高光泽半透明冰晶/冻水，具有次表面散射效果",
+    "光影：强边缘高光（Rim Light）定义轮廓，内部折射阴影替代原有黑色填充",
+    "细节：去除所有2D描边，通过体积感和光影区分结构"
+  ],
+  "decorate": [
+    "底部添加柔和的接触阴影（Contact Shadow）以确立落地感",
+    "基座周围散落少量碎冰屑或微小水渍",
+    "冰体内部嵌入微小的雪花图案或冻结气泡"
+  ],
+  "forbid": [
+    "保留任何原始的红色背景或黑色实色填充",
+    "生成不透明的塑料、金属或磨砂材质",
+    "改变猫头或文字的几何轮廓",
+    "使用深色或彩色背景",
+    "添加与天猫品牌无关的复杂场景道具"
+  ],
+  "generation_brief": "3D render of Tmall logo as a translucent cyan-blue ice sculpture. The iconic cat head silhouette and Chinese character '猫' are extruded into thick, rounded ice solids. Material features internal bubbles, snowflake textures, and surface water droplets. No outlines; shape defined by refraction and glossy rim lighting. Pure white background with soft ground shadow and scattered ice chips at base. Photorealistic C4D/Octane style.",
+  "color_application": "完全移除原始的红黑品牌色。主体统一应用主题规定的 Translucent Cyan/Pale Ice Blue。原有的黑色五官区域转化为冰层内部的深色阴影或凹陷结构，利用光线穿透率的差异来表现，而非填充黑色颜料。",
+  "stroke_application": "去除所有2D矢量描边。轮廓通过3D模型的厚度和边缘的高光反射（Rim Light）来界定。边缘必须进行平滑倒角处理，模拟冰块的自然融化或打磨形态，严禁锐利切角。",
+  "composition_application": "采用居中构图，主体占据画布60-70%面积。将原本平面的Logo沿Z轴拉伸，赋予物理厚度。视角略微俯视（3/4 view）以展示冰雕的体积感和顶部细节。背景替换为纯净的白色摄影棚环境。",
+  "identity_application": "通过严格保持‘猫头剪影’和‘猫字笔画’的几何拓扑结构不变来保留身份。将品牌识别从‘颜色对比’转移为‘形态识别’。利用冰材质的通透性和内部折射来重现原本黑白分明的视觉层次，确保在单色调下依然清晰可辨。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节",
+    "必须保留原始图标的核心几何轮廓（猫头+文字），不可重构",
+    "背景必须保持极简洁白，突出主体的通透感",
+    "光影逻辑必须符合3D渲染规律，体现冰的折射率"
+  ],
+  "negative_constraints": [
+    "禁止保留原始App的红色背景或黑色填充色",
+    "禁止生成不透明的塑料、金属或玻璃材质（必须是冰/雪质感）",
+    "禁止改变猫头耳朵形状或文字笔画结构",
+    "禁止生成2D扁平化风格或带有描边的矢量图",
+    "禁止背景使用深色或杂色"
+  ]
+}

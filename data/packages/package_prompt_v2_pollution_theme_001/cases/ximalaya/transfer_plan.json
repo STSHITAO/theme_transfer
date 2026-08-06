@@ -1,0 +1,62 @@
+{
+  "app": "ximalaya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban', the core identity of Ximalaya lies entirely in the specific calligraphy/geometry of the character '听'. The theme rules dictate transforming flat characters into 3D ice sculptures while maintaining their exact 2D footprint. Therefore, the structure must be strictly preserved as a 3D extrusion of the original logo, ensuring immediate recognition despite the material change.",
+  "preserve": [
+    "The exact geometry and stroke logic of the Chinese character '听'",
+    "The rounded corners of the strokes",
+    "The spatial gap/separation between the left radical '口' and right component '斤'",
+    "The overall rectangular silhouette formed by the character parts"
+  ],
+  "must_preserve": [
+    "The specific stroke width ratios of the '听' character",
+    "The closed loop structure of the left '口' radical",
+    "The horizontal-vertical skeletal relationship of the right '斤' component",
+    "Translucent ice blue/cyan material (NO red color)",
+    "Clean white background"
+  ],
+  "recompose_allowed": [
+    "Internal texture: embed subtle air bubbles or faint snowflake patterns within the ice volume",
+    "Surface details: add condensation droplets or frost textures on the surface",
+    "Base interaction: create a small melting water puddle or scattered ice chips at the base"
+  ],
+  "restyle": [
+    "Transform flat 2D vector shape into thick, extruded 3D solid with rounded edges",
+    "Apply semi-transparent cyan/blue ice material with subsurface scattering",
+    "Replace original high-contrast red/white colors with unified ice palette (translucent blue body, white highlights)"
+  ],
+  "decorate": [
+    "Glossy surface highlights to define edge curvature",
+    "Rim lighting to separate object from white background",
+    "Soft ambient occlusion shadow at the base"
+  ],
+  "forbid": [
+    "Using the original brand red color for the character body or background",
+    "Changing the font style, stroke thickness, or breaking the character structure",
+    "Adding external props like headphones, microphones, or sound waves outside the character",
+    "Flat 2D rendering without Z-axis volume",
+    "Opaque white or plastic material (must be translucent ice)",
+    "Dark or colored backgrounds"
+  ],
+  "generation_brief": "3D render of the Chinese character '听' made of thick translucent cyan-blue ice, centered on a pure white background. The character has rounded edges, glossy surface, and internal trapped air bubbles. Strong rim lighting, subsurface scattering, soft contact shadow, and small melting water puddle at the base. Photorealistic C4D/Octane style.",
+  "color_application": "Strictly replace original red/white scheme with theme's ice palette. The character body becomes translucent cyan/pale ice blue. Highlights are pure white. Shadows/refractions are deep blue. No red is allowed.",
+  "stroke_application": "Remove all 2D outlines. Define the character's strokes through 3D volume, beveled edges, and light refraction. Edges must be smooth and rounded to simulate carved/melted ice.",
+  "composition_application": "Centered composition. The 3D character occupies 60-70% of the canvas. Use a slightly elevated 3/4 view to show thickness. Pure white studio background with subtle ground shadow.",
+  "identity_application": "Preserve the exact 2D footprint and stroke logic of the '听' character. Recognizability relies on the precise geometric structure of the left '口' and right '斤' components, rendered as a single cohesive ice sculpture.",
+  "fidelity_constraints": [
+    "Must use semi-transparent ice/crystal material with subsurface scattering",
+    "Must include internal details like bubbles or snowflakes",
+    "Must have a clean white background with physical grounding shadows",
+    "Must maintain the exact structural proportions of the '听' character"
+  ],
+  "negative_constraints": [
+    "No original brand red color",
+    "No flat 2D design",
+    "No opaque plastic or metal materials",
+    "No complex scenery or text watermarks",
+    "No distortion of the character's stroke logic"
+  ]
+}

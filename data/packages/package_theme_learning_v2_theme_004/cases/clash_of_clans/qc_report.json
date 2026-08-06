@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 92,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了 semantic_recompose 策略，将野蛮人首领重构为戴叶片王冠的绿色蔬菜小狗。保留了头盔/王冠、披风和吐舌表情这三个关键身份线索，底部文字清晰准确，风格与参考图高度一致，构图留白合理。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 92,
+      "style_match_score": 92,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 88,
+      "identity_constraint_score": 88,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 89,
+      "failure_reason": "",
+      "recommendation": "推荐。整体符合主题风格和要求，但相比 candidate_01，其王冠/头盔的结构感稍弱，更像是一簇叶子而非明确的头饰，且身体部分的披风语义不如 candidate_01 清晰（candidate_01 有明显的交叉手臂或披风褶皱感）。不过依然是一个高质量的候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\clash_of_clans\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,66 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 'iqiyi_lite' 和 'alipay' 的变换规律，当原 App 核心身份为明确的文字 Logo 时，策略倾向于保留文字的整体排版结构和空间位置（preserve_major_structure），仅对局部笔画或特定字母（如 Q）进行生物化/主题化重构。当前目标 'iqiyi' 原图为标准的纯文字 Logo，具有极高的几何辨识度，因此应严格保留 'iQIYI' 的横向布局，将字母转化为手绘绿色线条，并将 'Q' 拟人化为菜狗头部，以符合主题包对文字类图标的处理逻辑。",
+  "preserve": [
+    "iQIYI 字母的横向排列顺序与空间比例",
+    "字母 Q 的圆环轮廓与右下角尾巴结构",
+    "文字 Logo 的整体视觉重心与可读性"
+  ],
+  "must_preserve": [
+    "iQIYI 字母的横向排列结构",
+    "字母 Q 的位置和大致圆环形态（作为狗头载体）",
+    "底部手写体 App 名称区域"
+  ],
+  "recompose_allowed": [
+    "原有的绿紫渐变背景（必须移除）",
+    "原有的标准无衬线字体（转化为手绘马克笔线条）",
+    "字母 Q 的内部细节（重构为狗脸五官）",
+    "下方的中文 '爱奇艺'（移除，仅保留底部英文手写标签）"
+  ],
+  "restyle": [
+    "所有字母笔画转为深绿色手绘抖动粗线条",
+    "字母 Q 重构为带绿叶耳朵、粉腮红、豆豆眼的菜狗头",
+    "整体质感转为扁平哑光纸质贴纸风格"
+  ],
+  "decorate": [
+    "字母 Q 狗头添加叶脉纹理与吐舌/呆萌表情",
+    "其余字母笔画末端可自然融入小叶片或卷曲藤蔓",
+    "底部手写 'iQIYI' 使用黑色圆润手写体"
+  ],
+  "forbid": [
+    "保留原有的高饱和度绿紫渐变背景",
+    "使用平滑的电脑标准字体或矢量直线",
+    "改变 iQIYI 字母的排列顺序或导致文字不可读",
+    "遗漏绿叶、腮红等主题核心母题特征",
+    "主体过大撑满画布，失去留白与底部文字空间",
+    "添加任何非文字/非菜狗的通用视频符号（如播放键）"
+  ],
+  "generation_brief": "White rounded square background. Centered hand-drawn text 'iQIYI' in thick wobbly dark green marker lines. The letter 'Q' is reimagined as a cute green vegetable dog head with leaf ears, pink blush, and dot eyes, replacing the standard letter form but keeping the 'Q' silhouette. Other letters (i, I, Y, I) are simplified green doodles. Remove original gradient background. Bottom area contains black handwritten text 'iQIYI'. Flat sticker style, ample white space.",
+  "color_application": "彻底移除原绿紫渐变背景，替换为纯白底板；所有字母及Q狗头统一使用深草绿(#4A7C29)描边与浅嫩绿(#A8D060)填充；腮红使用淡粉(#FFB6C1)；底部文字与眼睛使用纯黑(#000000)；禁止任何原品牌高饱和色泄漏。",
+  "stroke_application": "将原标准无衬线字体的平滑边缘全部转化为手绘马克笔质感的抖动粗线条；外轮廓用深绿粗线，内部叶脉/五官用同色细线；线条端点圆润，允许自然断笔与粗细变化，严禁矢量平滑感。",
+  "composition_application": "采用垂直三段式构图：上部50%-65%区域居中放置手绘化'iQIYI'文字（Q为狗头），中部留白过渡，下部15%-20%区域放置黑色手写'iQIYI'；整体严格居中，四周保留充足白色呼吸空间，禁止主体触碰边缘。",
+  "identity_application": "通过严格保留'iQIYI'五字母横向排列结构与Q的圆环轮廓维持品牌识别；将Q字母内部空间主题化为菜狗面部，既植入母题又不破坏字形骨架；底部手写英文名作为双重识别保障；去除中文与渐变，但确保字母可读性与原始排版逻辑不变。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何渐变或彩色背景",
+    "字母Q必须同时呈现Q的轮廓与菜狗母题特征（绿叶耳、粉腮红、豆豆眼）",
+    "所有线条必须为手绘抖动粗描边，禁止平滑矢量或标准字体",
+    "底部必须包含黑色手写体'iQIYI'，禁止印刷体",
+    "色彩仅限白、绿、粉、黑四色体系",
+    "主体占比50%-65%，保证留白与底部文字空间",
+    "整体为2D扁平手绘涂鸦质感，禁止3D、光影或立体效果"
+  ],
+  "negative_constraints": [
+    "禁止恢复原绿紫渐变背景或任何高饱和品牌色",
+    "禁止使用标准无衬线字体或平滑几何线条",
+    "禁止改变字母顺序、遮挡关键笔画或导致'iQIYI'不可读",
+    "禁止用播放按钮、胶片等通用视频符号替代文字主体",
+    "禁止遗漏Q字母的狗头母题特征或将其变为普通圆形",
+    "禁止主体撑满画布或挤压底部手写文字区域",
+    "禁止添加阴影、高光、纹理或任何非手绘质感",
+    "禁止保留中文'爱奇艺'或任何非'iQIYI'的文字内容"
+  ]
+}

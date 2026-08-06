@@ -1,0 +1,62 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 alipay 的案例表明，对于以文字或清晰几何符号为主体的图标，应严格保留其 2D 轮廓和内部结构比例。爱奇艺图标由纯文字构成，识别度完全依赖于字形的准确性，因此必须采用 preserve_major_structure 模式，将平面文字直接转化为具有厚度的 3D 冰雕实体，不可重构为播放器或其他语义符号。",
+  "preserve": [
+    "'iQIYI' 英文字母的完整拼写及特定字形（特别是 Q 的尾部缺口）",
+    "'爱奇艺' 三个汉字的笔画结构与间距",
+    "英文在上、中文在下的垂直对齐布局",
+    "两行文字的相对大小比例和中心对齐方式"
+  ],
+  "must_preserve": [
+    "iQIYI 和 爱奇艺 的完整文字内容",
+    "字体的原始笔画粗细比例和几何特征",
+    "文字作为信息载体的清晰度与可读性"
+  ],
+  "recompose_allowed": [
+    "将 2D 平面文字拉伸为具有 Z 轴厚度的 3D 实体",
+    "边缘进行圆润倒角处理以模拟冰块融化感",
+    "增加底部的物理投影、碎冰屑或融水细节",
+    "表面添加冷凝水珠、微小裂纹或内部雪花纹理"
+  ],
+  "restyle": [
+    "去除原本的绿色/紫色渐变背景，替换为纯白/浅灰背景",
+    "文字颜色由不透明白色转换为半透明冰蓝色材质",
+    "通过材质的透明度变化和高光反射来定义文字轮廓，而非描边",
+    "整体色调统一为主题规定的 Translucent Cyan / Pale Ice Blue"
+  ],
+  "decorate": [
+    "内部嵌入微小的气泡或雪花图案以增加冰晶质感",
+    "表面覆盖高光反射和次表面散射（SSS）效果",
+    "底部添加柔和的接触阴影以确立空间落地感"
+  ],
+  "forbid": [
+    "禁止改变文字的字形、拼写或缩写（如严禁改为 IQ）",
+    "禁止使用原本的绿色、紫色或任何非冰色系背景",
+    "禁止生成不透明的塑料、金属、木材或磨砂玻璃质感",
+    "禁止添加与文字无关的复杂装饰元素（如播放键三角形、屏幕框、摄像机等）",
+    "禁止文字边缘出现锐利的 2D 黑色或彩色描边",
+    "禁止背景出现杂色或复杂场景"
+  ],
+  "generation_brief": "3D render of the text 'iQIYI' stacked above '爱奇艺' as a single cohesive ice sculpture. Material is translucent cyan crystal with internal bubbles and snowflake textures. Glossy surface with strong rim lighting. Pure white studio background. Soft ground shadow with scattered ice chips at base. No original brand colors. High fidelity to original font shapes but extruded in 3D.",
+  "color_application": "Forcefully replace original green/purple gradient and white text with unified Translucent Cyan/Pale Ice Blue material. Use varying transparency and internal refraction to differentiate letter layers instead of color contrast. Highlights remain white/bright blue.",
+  "stroke_application": "Remove all 2D outlines. Define letter edges through 3D beveling, specular highlights, and light refraction within the ice material. Edges must be smooth and rounded, simulating carved or melted ice.",
+  "composition_application": "Center the 3D text block on a pure white background. Maintain the original vertical stacking ratio of English and Chinese text. Scale the object to occupy 60-70% of the canvas width, leaving ample white space (padding) around it. Apply a slight 3/4 perspective to show thickness.",
+  "identity_application": "Preserve the exact geometric skeleton of 'iQIYI' and '爱奇艺' fonts. Transform them from flat vectors into thick, physical ice blocks. Ensure legibility is maintained through high-contrast lighting and clear structural definition, despite the translucent material.",
+  "fidelity_constraints": [
+    "Must strictly use semi-transparent ice/crystal material (not opaque plastic).",
+    "Must include micro-details like bubbles, snowflakes, or surface water droplets.",
+    "Must maintain the exact character structure and layout of the original logo.",
+    "Background must be clean white/light grey with realistic contact shadows."
+  ],
+  "negative_constraints": [
+    "No original brand colors (green, purple).",
+    "No flat 2D design elements.",
+    "No additional symbols like play buttons or TV frames.",
+    "No dark or colored backgrounds.",
+    "No distorted or illegible typography."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 iqiyi 和 iqiyi_lite 的转换规律，当原图包含复杂中英文混排时，策略倾向于提取最核心的 'iQIYI' 英文标识并置入圆角矩形播放器外框中，以强化视频语义并适配贴纸的简洁几何语言。当前目标原图为绿紫渐变背景上的 'iQIYI' 与 '爱奇艺' 纯文字排版，无独立图形 Logo。依据主题规律，应舍弃中文副标题，保留 'iQIYI' 字母骨架，并为其增加主题化的圆角矩形播放器外框（或闪电符号暗示），主体文字自身的几何结构与空间比例严格保留，仅做材质、颜色和背景的主题化映射，符合 preserve_major_structure 的判定标准。",
+  "preserve": [
+    "iQIYI 字母序列与字形比例",
+    "圆角矩形播放器/屏幕轮廓",
+    "品牌名称的直接文字识别线索",
+    "在线视频播放/流媒体功能语义"
+  ],
+  "must_preserve": [
+    "iQIYI 字母的排列顺序、字形特征与相对比例",
+    "圆角矩形外框所暗示的屏幕/播放器语义",
+    "居中构图与充足的网格背景留白"
+  ],
+  "recompose_allowed": [
+    "移除 '爱奇艺' 中文字符以简化视觉密度",
+    "将绿紫渐变背景完全替换为标准米白网格+淡红虚线框底板",
+    "将白色文字反转为薄荷绿填充，并包裹统一的白色宽边与深灰虚线缝线",
+    "可添加极简的闪电或播放三角符号作为视频语义的辅助点缀"
+  ],
+  "restyle": [
+    "文字与外框统一填充薄荷青色",
+    "添加白色模切宽边与深灰色虚线缝纫轮廓",
+    "右下方投射浅灰色硬边缘阴影",
+    "所有转角圆润化处理以符合纸质剪裁感"
+  ],
+  "decorate": [
+    "背景铺满浅灰色正交网格线",
+    "主体外围环绕淡红色圆角虚线裁剪框"
+  ],
+  "forbid": [
+    "保留原图的绿色到紫色渐变色或任何高饱和品牌色",
+    "同时保留中英文导致贴纸内部文字拥挤、笔画粘连",
+    "遗漏白色宽包边、深灰虚线缝线、右下硬投影或网格底板中的任一主题指纹",
+    "使用 3D 立体渲染、玻璃拟态、霓虹发光或写实光影破坏手工纸质质感",
+    "主体过大撑满画布或过小失去辨识度，破坏居中贴纸的构图平衡",
+    "用通用播放键或电视机图标完全替代 iQIYI 文字标识"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon on light grey grid notebook paper with a faint red dashed border. Center subject is the text 'iQIYI' inside a simplified rounded rectangle player frame, filled with uniform mint cyan. Thick white die-cut border with dark grey dashed stitching line inside. Soft grey drop shadow to bottom right. Matte paper texture, no gradients, rounded corners, handcraft scrapbook style.",
+  "color_application": "彻底剥离原图绿紫渐变品牌色，将 'iQIYI' 字母及圆角矩形外框统一填充为低饱和度薄荷青色；原白色文字转化为薄荷绿填充+白色描边结构；背景强制替换为米白底+浅灰网格+淡红虚线框的标准底板配色。",
+  "stroke_application": "将原图无描边文字转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；字母与外框的所有尖锐直角柔化为圆角，线条呈现手工剪裁的柔和感。",
+  "composition_application": "将原图满版文字排版收缩为居中放置的独立贴纸形态；'iQIYI' 字母组合及外框严格置于网格底板中央的红色虚线框安全区内，占比控制在40%-70%；四周保留均匀充足的网格留白，形成明确的'底板-虚线框-贴纸'三层嵌套层级。",
+  "identity_application": "在严格服从薄荷绿单色贴纸风格的前提下，通过精确保留 'iQIYI' 字母的特定字形、排列顺序及圆角矩形播放器外框来维持身份识别；移除中文副标题以避免视觉杂乱，依靠核心英文标识与屏幕轮廓的组合传达视频平台属性。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌渐变色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或现代UI材质"
+  ],
+  "negative_constraints": [
+    "禁止保留 '爱奇艺' 中文字符导致贴纸细节过密",
+    "禁止使用原图绿紫渐变或任何非薄荷绿的品牌色",
+    "禁止用通用播放按钮、电视机或电影胶片图标替换 'iQIYI' 文字主体",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止使用实线粗描边替代虚线缝纫效果，或使用尖锐直角破坏手工感",
+    "禁止主体过大撑满画布或过小缩在角落，破坏居中贴纸的构图平衡"
+  ]
+}

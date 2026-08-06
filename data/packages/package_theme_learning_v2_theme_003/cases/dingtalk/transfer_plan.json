@@ -1,0 +1,71 @@
+{
+  "app": "dingtalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 dingtalk 的 original -> style_ref 变换规律，该 App 的核心 Logo 几何结构简洁且识别度极高，完全符合 preserve_major_structure 的判定标准。原图的翅膀闪电轮廓在单色化和贴纸化后依然清晰可辨，无需进行语义重构或道具替代，应严格保留其拓扑结构、羽毛层级和闪电折角，仅做颜色映射和材质转换。",
+  "preserve": [
+    "翅膀与闪电组合的整体外轮廓",
+    "左侧三段式羽毛弧线的分层负空间切口",
+    "右下方闪电的锯齿状折线结构与尖端指向",
+    "整体向右上方倾斜的动感姿态与重心位置"
+  ],
+  "must_preserve": [
+    "翅膀加闪电的复合几何轮廓拓扑关系",
+    "羽毛分层的数量与相对比例",
+    "闪电折角的锐利度（在圆润化前提下保留折线特征）",
+    "主体居中且占比40%-70%的构图安全区"
+  ],
+  "recompose_allowed": [
+    "背景从蓝色渐变替换为米白浅灰网格底板",
+    "主体填充色从白色/蓝色替换为统一薄荷绿",
+    "边缘锐利度柔化为圆角并包裹白色宽边",
+    "添加深灰色虚线缝纫轨迹与右下方硬投影"
+  ],
+  "restyle": [
+    "主体填充为低饱和度薄荷青/浅蓝绿色",
+    "外层包裹厚实纯白模切边框",
+    "白边内侧叠加深灰色手绘感虚线缝迹",
+    "整体呈现哑光纸质卡纸剪裁质感"
+  ],
+  "decorate": [
+    "背景铺设极淡灰色正交网格线",
+    "主体外围环绕一圈淡红/淡粉色圆角虚线框",
+    "主体右下方添加统一的浅灰色硬边缘投影"
+  ],
+  "forbid": [
+    "保留任何原始蓝色品牌色、渐变色或高光效果",
+    "将闪电尾部过度圆润化导致失去折角特征",
+    "合并或删除左侧三层羽毛的负空间切口",
+    "使用通用鸟类、鸽子或单独闪电符号替代原Logo",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "主体过大撑满画布或过小失去辨识度",
+    "添加3D立体光泽、金属质感、霓虹发光或写实阴影"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the DingTalk logo (wing and lightning bolt combined silhouette) placed on a light grey grid notebook paper background. The main subject strictly preserves the original three-layer feather structure and sharp lightning tail geometry, filled with uniform mint cyan color. The subject is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting, cute and fresh aesthetic.",
+  "color_application": "彻底剥离钉钉原始蓝色系品牌色与渐变，主体强制填充统一低饱和度薄荷绿/青蓝色；原白色剪影转化为白色宽包边与内部负空间；辅色仅限白、浅灰、淡红四色，禁止任何品牌色泄漏。",
+  "stroke_application": "将原始无描边或锐利边缘转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层紧贴白边叠加深灰色细虚线模拟缝纫针脚；闪电折角与羽毛弧线在保持拓扑结构的前提下进行微圆角化处理，呈现手工剪裁的柔和感。",
+  "composition_application": "移除原始满版蓝色背景，替换为标准化米白底+浅灰网格+淡红虚线框底板；主体严格居中置于虚线框安全区内，尺寸缩放至画布40%-70%，四周保留均匀网格留白，形成明确的底板-虚线框-贴纸三层嵌套层级。",
+  "identity_application": "在严格服从薄荷绿单色填充、白边虚线描边、网格底板等主题指纹元素的前提下，通过精确保留翅膀三层羽毛切口、闪电折角走向及整体倾斜动势来维持钉钉身份识别；不依赖品牌色，仅靠核心几何轮廓的拓扑一致性确保可辨认性。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留蓝色品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸控制在40%-70%，严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理",
+    "所有几何转角必须圆润化处理，符合纸质贴纸物理特性"
+  ],
+  "negative_constraints": [
+    "禁止保留原始蓝色渐变、高光或任何非主题色相",
+    "禁止将翅膀闪电Logo替换为通用鸟类、鸽子或抽象图形",
+    "禁止合并或删除左侧三层羽毛的负空间切口结构",
+    "禁止将闪电折角过度圆润化导致失去速度感隐喻",
+    "禁止遗漏白色宽包边、深灰虚线缝线或右下硬投影中的任一元素",
+    "禁止使用纯色、透明或非网格纹理背景替代标准化底板",
+    "禁止主体过大撑满画布或过小缩在角落破坏构图平衡",
+    "禁止添加3D渲染、金属光泽、霓虹发光等不符合手工剪纸风格的特效"
+  ]
+}

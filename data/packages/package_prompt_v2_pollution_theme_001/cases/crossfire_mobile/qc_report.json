@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 90,
+      "overall_score": 15,
+      "failure_reason": "严重身份识别错误。候选图显示的是支付宝的'支'字冰雕，完全丢失了目标App（穿越火线）的核心品牌符号'CF'。虽然风格与主题参考图高度一致，但主体内容错误，属于严重的生成幻觉或素材错配。",
+      "recommendation": "不推荐。尽管材质和风格完美契合主题，但主体是'支'字而非'CF'，无法代表目标App，属于无效生成。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 90,
+      "overall_score": 15,
+      "failure_reason": "严重身份识别错误。候选图显示的是豆瓣的Logo冰雕，完全丢失了目标App（穿越火线）的核心品牌符号'CF'。主体内容错误，无法识别为目标应用。",
+      "recommendation": "不推荐。尽管材质和风格完美契合主题，但主体是豆瓣Logo而非'CF'，无法代表目标App，属于无效生成。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能正确生成目标App（Crossfire Mobile）的'CF'标志。Candidate_01生成了支付宝的'支'字，Candidate_02生成了豆瓣的Logo。虽然它们在材质（冰雕）、光影和背景处理上完美符合Theme Style Ref的要求，但由于核心主体（Identity）完全错误，导致无法作为有效图标使用。建议检查生成模型的ControlNet约束或提示词中的主体描述，确保锁定'CF'字母组合。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

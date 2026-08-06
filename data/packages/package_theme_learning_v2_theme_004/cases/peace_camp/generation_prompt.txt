@@ -1,0 +1,125 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_004
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+当前主题是一种统一的“手绘绿色萌系涂鸦”风格。所有参考样例均将原本的商业化、扁平或3D质感的图标，转化为白底圆角矩形上的可爱卡通形象。核心视觉语言是使用深浅不一的绿色粗线条进行勾勒，融入植物叶片纹理，并赋予主体拟人化的呆萌表情（如豆豆眼、粉色腮红、吐舌头），整体呈现出轻松、治愈、手账贴纸般的视觉效果。
+
+[Shared original-to-style transform]
+原始图标到主题图标的共同变化是“去商业化材质化”与“生物/植物拟人化”。原本写实的渐变背景、3D光影和标准字体被完全剥离；主体的核心几何轮廓或文字结构被保留，但被重绘为带有手绘抖动感的不规则线条，并巧妙地融合进一个统一的绿色卡通小怪兽/植物精灵的形象中，使其具有生命力和情绪。
+
+[Color]
+彻底摒弃原App的高饱和度品牌主色背景，强制映射为主题专用的低饱和绿色系+白底。仅当原色具有极强功能语义绑定（如STYLE_REFERENCE红青故障、和平精英橙红护目镜）时，才以描边偏移、服饰或手持物形式微量保留。金属色、光影色全部简化为平涂色块。
+
+[Background]
+无论原图是全出血彩色、深色模式还是复杂场景，统一裁剪替换为纯白/米白圆角底板。背景占比从原图的0%留白提升至40%-50%以上。唯一例外是原App强依赖深色氛围维持核心识别（如醒图黑底发光球），可保留深色底但需提亮主体。
+
+[Edges and strokes]
+将原图的无描边、细矢量线或3D边缘全部转化为深绿/黑色手绘粗轮廓。线条密度大幅降低，边缘圆润度极高，消除所有尖角。通过断线、飞白和粗细变化模拟真实笔触，边界复杂度从高精度几何简化为概括性涂鸦。
+
+[Composition]
+主体从原图的撑满画布/复杂多层叠加，收缩为单一居中的卡通形象或符号容器。视觉重心从分散的品牌叙事集中到萌系角色上。底部强制新增手写体App名称区域，形成“上图下文”的固定版式，改变原有纯图形构图逻辑。
+
+[Subject scale]
+主体相对画布尺寸显著缩小，高度控制在50%-65%，宽度控制在40%-60%。严禁主体触碰画布边缘或撑满全图。缩放方式为等比概括缩小，确保四周尤其是底部有充足留白以容纳文字并维持呼吸感。
+
+[Detail complexity]
+细节密度极度降低。移除原图所有写实纹理、3D光影、复杂五官、营销道具和多角色堆叠。仅保留识别身份所需的最简几何特征，并强制叠加主题三要素（叶脉/叶子、粉腮红、吐舌/呆萌脸）。装饰数量严格受限，纹理复杂度归零。
+
+[Required style properties]
+- 必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景（深色氛围App除外）。
+- 主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情。
+- 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形。
+- 底部必须包含黑色手写风格App英文/拼音名称，禁止标准印刷字体。
+- 色彩严格限制在白、绿、粉、黑及极少量原App识别点缀色范围内。
+- 整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果。
+- 主体占比必须在50%-65%之间，保证充足留白和底部文字空间。
+
+[Forbidden style drift]
+- 禁止保留原App高饱和度品牌色作为大面积背景或主填充。
+- 禁止使用平滑矢量线、锐利边缘或完美几何形状。
+- 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果。
+- 禁止让主体撑满画布，导致失去留白和底部文字区域。
+- 禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象。
+- 禁止遗漏底部手写App名称或使用电脑标准字体。
+- 禁止保留原图复杂营销元素、写实道具或多角色堆叠。
+- 禁止过度重构导致原App核心轮廓/语义符号完全消失。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.
+
+
+[ABSOLUTE IDENTITY LOCK — HIGHEST PRIORITY]
+
+The first input image, labelled TARGET_IMAGE, is the only allowed source of subject identity.
+Every following image, labelled STYLE_REFERENCE, is style-only evidence.
+
+TARGET_IMAGE is the only allowed source of:
+- logo and text content
+- recognizable symbol and semantic object
+- subject silhouette and object category
+- internal geometry, negative space, and spatial layout
+
+STYLE_REFERENCE images may contribute only visual treatment. They must contribute zero logo content, text, recognizable symbol, subject silhouette, object category, internal layout, or brand identity.
+If any identity content from a STYLE_REFERENCE appears in the result, the result is invalid.
+
+[CURRENT TARGET]
+target_app: peace_camp
+display_name: 和平营地
+category: 游戏工具 / 社区
+core_function: 作为和平精英官方社区，提供资讯、战绩、攻略、赛事内容和玩家交流。
+
+[TARGET SEMANTIC FACTS — FROM TARGET.JSON]
+store_description: 作为和平精英官方社区，提供资讯、战绩、攻略、赛事内容和玩家交流。
+These neutral facts explain what CURRENT TARGET does. Derive a visual interpretation only within the frozen theme-specific structure policy below. They do not prescribe an object and do not authorize identity content from STYLE_REFERENCE images.
+
+[STRUCTURE POLICY]
+mode: semantic_recompose
+identity_constraint_level: balanced
+Semantic recomposition is allowed only when it preserves the target App's specified identity and functional cues. No subject or geometry may be borrowed from a style reference.
+
+[MUST PRESERVE FROM TARGET_IMAGE]
+- 底部居中黑色手写体 App 名称 'Peace Camp'
+- 纯白圆角矩形底板与充足留白
+- 深绿手绘抖动粗描边与扁平涂鸦质感
+- 三级头盔的核心识别特征（灰色主体+橙红护目镜）
+
+[TARGET IDENTITY APPLICATION]
+通过'三级头盔+橙红护目镜'这一强IP符号建立与和平精英的身份关联，而非复刻原图文字排版。利用'手持地图/望远镜'的姿态隐喻营地社区的工具属性。底部手写'Peace Camp'作为功能识别兜底。在保持主题萌系画风的前提下，让头盔成为角色的Cosplay道具而非写实装备。
+
+[EXECUTION BRIEF]
+A cute hand-drawn doodle style app icon on a pure white rounded square background. Central subject is an adorable green vegetable-dog character wearing a cartoonish Level 3 tactical helmet (grey body with signature orange-red visor strip). The dog has leaf-shaped green ears, pink oval blushes, dot eyes, and a playful expression. It sits relaxed holding a tiny hand-drawn map or binoculars to symbolize 'camp/guide'. Thick wobbly dark green marker outlines, flat matte coloring with leaf vein textures. Bottom center features 'Peace Camp' in casual black handwritten font. Subject occupies 50-65% of canvas with ample white space. Sticker art style, healing mood, no gradients or 3D effects.
+
+[ALLOWED TARGET RECOMPOSITION]
+- 原有的橙黄色爆炸渐变背景替换为纯白底板
+- 原有的粗黑体中文大字移除，仅保留底部英文手写
+- 右下角星形符号移除或简化为手绘装饰
+- 主体姿态调整为坐姿或手持小地图/望远镜以体现营地/攻略属性
+
+[THEME APPLICATION]
+- Color: 彻底剥离原图橙黄渐变背景，强制使用纯白底色。主体填充浅嫩绿/黄绿，轮廓使用深草绿/墨绿手绘线条。仅保留橙红色作为三级头盔护目镜条的微量点缀色，腮红使用淡粉色，文字与眼睛使用纯黑。严禁出现原图高饱和橙色大面积填充。
+- Edges and strokes: 将原图无描边或锐利矢量边缘全部转化为深绿色手绘马克笔粗轮廓。线条需带有自然抖动、断笔和圆润端点，消除所有机械几何感。头盔与狗身的结合处使用同色系细线勾勒叶脉纹理，模拟纸质涂鸦笔触。
+- Composition: 严格执行垂直三段式构图：上部为戴头盔的菜狗主体（占画布50%-65%），中部留白过渡，下部为黑色手写体'Peace Camp'。主体严格居中偏上，四周保留均匀呼吸空间。禁止主体触碰边缘或撑满画布，确保贴纸式布局。
+- Required theme properties: 必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景; 主体必须是绿叶小狗/蔬菜萌宠形态，包含绿叶耳、粉腮红、呆萌脸三要素; 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形; 底部必须包含黑色手写风格'Peace Camp'，禁止标准印刷字体; 色彩严格限制在白、绿、粉、黑及微量橙红（护目镜）范围内; 整体必须是2D扁平手绘涂鸦质感，禁止3D、拟物或光影效果; 主体占比必须在50%-65%之间，保证充足留白和底部文字空间
+
+[INVALID OUTPUT CONDITIONS]
+- Any text, logo, recognizable symbol, subject, silhouette, or internal layout copied from a STYLE_REFERENCE.
+- Any text or symbol absent from TARGET_IMAGE.
+- A result that resembles a STYLE_REFERENCE subject more than TARGET_IMAGE.
+- A changed object category or an unrecognizable target App.
+- Violating these target-specific constraints: 禁止保留原图高饱和橙黄色作为大面积背景或主填充; 禁止使用平滑矢量线、锐利边缘或完美几何形状; 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果; 禁止让主体撑满画布，导致失去留白和底部文字区域; 禁止偏离绿叶小狗核心母题，使用无关卡通形象或写实士兵; 禁止遗漏底部手写App名称或使用电脑标准字体; 禁止保留原图粗黑体汉字、复杂营销元素或写实枪械道具; 禁止过度弱化三级头盔特征导致IP关联断裂; 禁止将护目镜橙红色扩大为大面积填充，仅限微量点缀
+
+[PRIORITY]
+1. Preserve target identity and the required target structure.
+2. Apply theme material and visual treatment without changing identity.
+3. Add decorative detail only when priorities 1 and 2 remain satisfied.
+
+If identity and theme styling conflict, preserve identity. Theme fidelity must never replace target identity.
+
+[FINAL INTERNAL CHECK]
+Before generating, identify the subject and required geometry in TARGET_IMAGE, separate them from the visual treatment in STYLE_REFERENCE images, and confirm that the output contains zero reference identity.
+
+[OUTPUT]
+Return exactly one complete themed target icon. No captions, comparison layout, input collage, watermark, explanation, or extra logo.

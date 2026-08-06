@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：严格保留了米家 Logo 的盾牌轮廓、M 形负空间及右侧断口特征；颜色准确映射为低饱和薄荷绿；贴纸效果（白边、虚线缝线、硬投影）与背景网格底板均符合主题风格规范。几何结构准确，无过度重构，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 90,
+      "overall_score": 55,
+      "failure_reason": "严重违反结构保留策略。Logo 内部几何结构发生错误变形，原图 M 形下方的负空间（白色区域）被错误填充为实心薄荷绿，导致 Logo 失去了标志性的 'M' 字母特征，变成了一个实心的块状图形，无法识别为米家 App。违反了 'must_preserve: 内部 M 形负空间的精确位置' 的约束。",
+      "recommendation": "不推荐。虽然风格化处理（贴纸、背景）符合要求，但核心 Logo 几何结构绘制错误，丢失了关键的品牌识别特征（负空间），属于严重的身份约束失败。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "app": "kugou",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "正圆外框与内部大写字母 K 的组合结构",
+  "brand_cues_to_preserve": [
+    "正圆形外轮廓",
+    "居中的大写字母 K",
+    "K 字特有的笔画粗细与倾斜角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐播放器的经典圆形唱片/按钮隐喻",
+    "品牌首字母标识"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 kugou、kugou_music、qq_music 等音乐类 App 的迁移规律，当原图为简洁的几何图形（圆环）加字母/符号时，均严格保留主体几何拓扑关系（preserve_major_structure）。当前目标原图为极简的蓝底白圈白 K，结构清晰且无复杂 3D 或插画细节，完全符合直接进行贴纸化映射的条件，无需进行语义重构或结构替换。",
+  "design_rationale": "酷狗音乐原图标由极其简洁的几何元素（圆环+字母 K）构成，识别度高度依赖于这一经典组合。在手工剪纸贴纸主题下，应严格保留圆环与 K 字的空间比例和几何形态，仅通过色彩归一化（薄荷绿）、材质转换（纸质贴纸+缝线）和背景标准化（网格手账本）来完成主题适配。任何对圆环或 K 字结构的改动都会破坏品牌核心识别，因此选择 logo_preserve 策略。",
+  "must_preserve": [
+    "正圆外框的完整闭合形态",
+    "字母 K 在圆内的居中位置与大小比例",
+    "K 字笔画的几何特征（竖笔、斜笔的交汇关系）"
+  ],
+  "can_recompose": [
+    "原图的纯蓝色背景（必须替换为网格底板）",
+    "原图的白色填充色（可转为薄荷绿填充或白色负空间镂空，需符合主题色彩规则）",
+    "边缘锐度（需圆润化处理以符合布艺/纸质特性）",
+    "可添加极少量的主题内装饰性虚线（如暗示音符的小点缀，但不可喧宾夺主）"
+  ],
+  "forbid": [
+    "保留原图的高饱和度蓝色背景",
+    "改变圆环或 K 字的基本几何结构",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红/粉虚线框",
+    "添加写实光泽、3D 立体效果或复杂纹理"
+  ],
+  "generation_direction": "将酷狗音乐原图的蓝底白圈白 K 转化为薄荷绿单色贴纸。保留正圆外框和内部 K 字的几何比例与居中关系。主体填充薄荷绿，添加白色宽包边和内部深灰虚线缝线，右下角加浅灰硬投影。背景替换为米白底浅灰网格，外围环绕淡红虚线框。主体居中缩小至画布 50% 左右，边缘圆润化，呈现扁平手工剪纸质感。"
+}

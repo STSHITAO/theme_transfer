@@ -1,0 +1,70 @@
+{
+  "app": "wps_office",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 wps_office 的 reference_transformation_patterns 显示，该 App 的原始 Logo 为简洁的 2D 几何图形，在转化为贴纸风格时，其核心 'W' 轮廓、折角特征和空间比例被严格保留（preserve_major_structure: true）。当前目标原图同样是简洁的几何 'W' 造型，符合主题包中'当 original 的主体是简洁的 2D 几何图形...必须严格保留大部分原始几何结构'的规律。因此，无需进行语义重构，只需进行材质和颜色的主题化映射，以确保品牌识别度最大化。",
+  "preserve": [
+    "W 字母的整体外部轮廓形状",
+    "笔画的粗细比例和转折角度",
+    "内部两个倒三角形负空间的位置和大小关系",
+    "中间斜向色带的层叠穿插拓扑结构"
+  ],
+  "must_preserve": [
+    "W 字母几何骨架及三个向下尖端",
+    "左右两侧内部的倒三角镂空负形",
+    "中间色带从左上至右下的倾斜走向及遮挡层级",
+    "粗线条圆角端点与转折特征"
+  ],
+  "recompose_allowed": [
+    "将红橙渐变品牌色完全替换为统一薄荷绿填充",
+    "将3D立体折叠光影转换为扁平色块加右下硬投影",
+    "将锐利边缘柔化为圆润的手工剪纸质感",
+    "去除所有非结构性的装饰纹理或高光"
+  ],
+  "restyle": [
+    "主体填充统一低饱和度薄荷青/浅蓝绿色",
+    "添加厚实的白色模切宽边",
+    "在白边内侧或边缘叠加深灰色手绘虚线缝线",
+    "右下方添加统一的浅灰色硬边缘投影以表现贴纸厚度",
+    "所有几何转角进行圆润化处理以符合纸质特性"
+  ],
+  "decorate": [
+    "米白/浅灰白方格纸网格背景",
+    "主体外围环绕淡红/淡粉色圆角虚线裁剪框"
+  ],
+  "forbid": [
+    "保留任何红色、橙色、黄色或渐变色彩",
+    "改变 W 字母的基本拓扑结构、笔画连接方式或负空间形状",
+    "使用通用文档、纸张、笔等办公道具替换 W 字母主体",
+    "使用模糊漫反射阴影、3D高光、金属光泽或玻璃拟态材质",
+    "遗漏白色宽包边、深灰虚线缝线、网格背景或红色虚线框中的任一元素",
+    "主体过大撑满画布或过小失去辨识度",
+    "引入毛绒球、云朵、动物等无关具象可爱形象"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the WPS Office 'W' logo placed on a light grey grid notebook paper background. The 'W' geometric shape is strictly preserved with its original folded ribbon structure and two internal inverted triangle negative spaces, but filled with uniform mint cyan color. All sharp corners are rounded. The subject is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting.",
+  "color_application": "彻底剥离 WPS 原始的红橙渐变品牌色，将 'W' 字母主体强制统一填充为低饱和度薄荷绿/青蓝色；原有的白色负空间保留为镂空或白色填充；完全去除光影渐变和环境色，转为纯色块填充，确保与主题包色彩系统绝对一致。",
+  "stroke_application": "将原始无描边或3D边缘转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色细虚线模拟缝纫针脚；所有尖锐直角和折角均柔化为圆润转角，仅保留定义 'W' 轮廓和内部负空间分割的必要虚线。",
+  "composition_application": "将 'W' 字母从原始满版布局收缩为居中放置的独立贴纸形态，尺寸控制在画布40%-70%之间；严格置于网格底板中央的红色虚线框安全区内，四周保留均匀充足的网格留白；主体可带微小倾斜角度以增加手工粘贴的自然感，但视觉重心锁定中心。",
+  "identity_application": "在不破坏主题 fidelity 的前提下，通过严格保留 'W' 字母的几何拓扑结构、笔画比例和内部倒三角负空间来维持品牌识别；身份表达完全依赖于轮廓的精确性而非品牌色；允许将立体折叠感简化为扁平层级，但必须保留中间色带的穿插遮挡关系以防止结构崩塌。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留红橙品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理",
+    "所有几何转角必须圆润化处理，符合布艺/纸质贴纸的物理特性"
+  ],
+  "negative_constraints": [
+    "禁止保留原始红橙渐变色或引入任何非主题色相",
+    "禁止改变 'W' 字母的核心几何结构、笔画走向或负空间形状",
+    "禁止使用文档、纸张、笔等通用办公道具替换 'W' 字母主体",
+    "禁止使用模糊阴影、3D渲染、金属光泽或霓虹发光等非手工材质",
+    "禁止遗漏白色宽描边、深灰虚线缝线、网格背景或红色虚线框",
+    "禁止主体过大撑满画布或过小缩在角落，破坏居中构图平衡",
+    "禁止在主体内部保留过多的原始细节导致视觉杂乱",
+    "禁止将主体重构为与原App功能/名称语义无关的通用道具或小场景"
+  ]
+}

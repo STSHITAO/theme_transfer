@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 95,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合 transfer_plan 要求。严格保留了 'iQIYI' 和 '爱奇艺' 的原始字形、拼写及上下布局结构（preserve_major_structure）。材质成功转化为半透明冰蓝色晶体，去除了原品牌色，且没有添加任何无关装饰（如播放键），是标准的文字立体化重构。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 90,
+      "background_score": 90,
+      "composition_score": 70,
+      "artifact_score": 90,
+      "overall_score": 45,
+      "failure_reason": "严重违反 identity_constraint_level: strict 和 structure_preservation_mode。虽然风格像冰雕，但底部汉字被错误重构为类似支架或底座的几何结构，完全丢失了 '爱奇艺' 的文字识别度。违反了 forbid 中关于禁止改变字形和禁止添加无关主体的规定。",
+      "recommendation": "不推荐。尽管材质风格正确，但作为以文字为主体的 App 图标，它丢失了核心识别信息（汉字部分变成了不可读的物体），属于过度重构（over_recompose）。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

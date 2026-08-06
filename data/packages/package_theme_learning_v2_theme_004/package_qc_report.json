@@ -1,0 +1,71 @@
+{
+  "package_consistency_score": 85,
+  "style_consistency_score": 82,
+  "target_identity_score": 78,
+  "problematic_apps": [
+    {
+      "app": "qq",
+      "issue": "标签错误：图像内容为QQ企鹅形象，但底部文字标签显示为'Kugoo'（酷狗），属于严重的身份/标签不匹配。此外，该图标使用了红色围巾和黄色嘴巴/脚，色彩饱和度与整包统一的低饱和绿色调略有偏差。",
+      "retry_suggestion": "修正底部文字标签为'QQ'，并尝试将围巾和身体细节调整为更符合主题的绿色系或降低红色饱和度。"
+    },
+    {
+      "app": "toutiao_lite",
+      "issue": "风格跑偏：该图标使用了深墨绿色实心填充，线条硬朗，缺乏参考图和其他图标中常见的浅绿色、手绘描边、圆润感和高光细节，看起来像是一个普通的矢量Logo而非本套主题的卡通图标。",
+      "retry_suggestion": "重新生成，使用浅绿色填充，增加手绘描边质感，融入叶子或卡通表情元素，使其与其他图标材质统一。"
+    },
+    {
+      "app": "soul",
+      "issue": "标签不一致：图像主体文字为'Soul'，但底部标签显示为'Sopd'，存在拼写错误或映射错误。",
+      "retry_suggestion": "修正底部标签为'Soul'。"
+    },
+    {
+      "app": "douyin",
+      "issue": "风格微瑕：虽然保留了抖音的故障风（红蓝偏移），但整体绿色填充较为平淡，相比其他图标缺少一些叶子纹理或更生动的手绘笔触细节。",
+      "retry_suggestion": "可选重试，尝试在绿色填充中加入少许叶脉纹理或调整光影以更好地融入整包质感。"
+    }
+  ],
+  "accepted_apps": [
+    "alipay",
+    "clash_of_clans",
+    "iqiyi",
+    "kuaikan",
+    "meituan",
+    "moji_weather",
+    "wps_office",
+    "zhihu",
+    "tieba",
+    "meituan_waimai",
+    "dewu",
+    "dingtalk",
+    "douyu",
+    "golden_spatula",
+    "king_of_goray",
+    "jianying",
+    "keep",
+    "kugou",
+    "lofter",
+    "lol_mobile",
+    "mi_jia",
+    "mini_world",
+    "onmyoji",
+    "peace_camp",
+    "pinduoduo",
+    "qq_mail",
+    "qq_reading",
+    "tencent_comics",
+    "tencent_meeting",
+    "tmall",
+    "wechat",
+    "wecom",
+    "xiaohongshu",
+    "ximalaya",
+    "youku",
+    "happy_match"
+  ],
+  "retry_apps": [
+    "qq",
+    "toutiao_lite",
+    "soul"
+  ],
+  "overall_comment": "整包主题一致性较高，成功将40个App统一在绿色蔬菜/手绘卡通风格下。大部分图标能清晰识别原App身份且风格融合自然。主要问题集中在个别图标的标签错误（QQ显示为Kugoo，Soul显示为Sopd）以及极少数图标（头条极速版）的材质和颜色深度与其他图标明显不统一。建议针对这几个问题进行局部重试修正。"
+}

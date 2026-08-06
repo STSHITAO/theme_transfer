@@ -1,0 +1,40 @@
+{
+  "app": "ximalaya",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "The stylized Chinese character '听' (Listen) and its unique geometric proportions.",
+  "brand_cues_to_preserve": [
+    "The specific stroke width and rounded terminals of the '听' character",
+    "The spatial relationship between the left radical '口' and the right component '斤'",
+    "The overall rectangular silhouette formed by the two parts"
+  ],
+  "semantic_cues_to_preserve": [
+    "The concept of 'listening' implied by the character itself",
+    "Audio waves or sound vibration (optional internal texture)"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban', the core identity of Ximalaya lies entirely in the specific calligraphy/geometry of the character '听'. The theme rules dictate transforming flat characters into 3D ice sculptures while maintaining their exact 2D footprint. Therefore, the structure must be strictly preserved as a 3D extrusion of the original logo, ensuring immediate recognition despite the material change.",
+  "design_rationale": "Ximalaya's icon is a typographic logo similar to Alipay's '支'. To maintain brand recognition within the 'Ice' theme, we apply the 'Material Displacement' strategy: keeping the 2D outline identical but giving it significant Z-axis thickness. The red background is removed to comply with the white background rule. The character becomes a solid block of ice, utilizing subsurface scattering to make the thick strokes look glowing and translucent rather than opaque white plastic.",
+  "must_preserve": [
+    "The exact geometry of the '听' character",
+    "The rounded corners of the strokes",
+    "The gap/separation between the left and right components",
+    "Translucent ice blue material (no red)",
+    "Clean white background"
+  ],
+  "can_recompose": [
+    "Internal texture (can add subtle sound wave lines or bubbles inside the ice)",
+    "Surface details (condensation, frost)",
+    "Base interaction (melting water pool)"
+  ],
+  "forbid": [
+    "Using the original red color for the character body",
+    "Changing the font style or stroke thickness",
+    "Adding external props like headphones or microphones (keep it purely typographic)",
+    "Flat 2D rendering without volume",
+    "Opaque white material (must look like ice)"
+  ],
+  "generation_direction": "A 3D ice sculpture of the Chinese character '听' centered on a white background. The character is made of thick, translucent cyan-blue ice with rounded edges and glossy highlights. Internal details include trapped air bubbles or faint snowflake patterns. The lighting creates strong refraction and subsurface scattering, making the ice glow slightly. Soft contact shadow and small melting water puddle at the base. No red colors, no background graphics."
+}

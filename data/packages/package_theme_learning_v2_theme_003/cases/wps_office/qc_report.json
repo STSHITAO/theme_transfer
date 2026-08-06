@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有严格约束：W 字母的几何拓扑结构、内部倒三角负空间以及中间色带的穿插层级被精确保留；颜色准确替换为统一的薄荷绿；白色宽包边、深灰虚线缝线、网格背景及红色虚线框等主题元素完整且位置正确；阴影方向一致，画面干净无伪影。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 5,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 85,
+      "overall_score": 84,
+      "failure_reason": "右侧边缘存在明显的多余灰色圆形伪影（类似 UI 控件残留）；阴影过于浓重且边缘生硬，不符合'浅灰色硬边缘投影'的柔和贴纸质感要求；主体略微偏大，视觉重心稍显拥挤。",
+      "recommendation": "不推荐。虽然主体结构保留尚可，但画面右侧的多余伪影属于明显的质量缺陷（artifact），且阴影处理不如 candidate_01 自然，违反了画面干净和无多余主体的要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

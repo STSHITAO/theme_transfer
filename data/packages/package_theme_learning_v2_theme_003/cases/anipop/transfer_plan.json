@@ -1,0 +1,71 @@
+{
+  "app": "anipop",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 anipop 的真实迁移规律（reference_transformation_patterns），原图复杂的 3D 多角色堆叠场景被明确重构为单一极简的小鸡 2D 剪影。当前目标原图同样是多角色、高细节的 3D 渲染场景，直接保留整体结构会违反主题的'极度简化'和'扁平单色块'规则。因此，遵循主题包已验证的规律，放弃原图的空间布局和多元素堆叠，提取最具代表性的黄色小鸡作为唯一主体进行语义重组，以适配手工剪纸贴纸的工艺限制。",
+  "preserve": [
+    "小鸡角色的三角形/水滴形身体 silhouette",
+    "头顶呆毛/鸡冠的几何位置与形态",
+    "单眼 wink 的俏皮表情特征（眯眼线条）",
+    "圆润的喙部轮廓暗示"
+  ],
+  "must_preserve": [
+    "小鸡核心外轮廓的可识别性",
+    "头顶呆毛作为关键身份锚点",
+    "wink 表情的负空间或虚线表达",
+    "主体严格居中且尺寸控制在画布 40%-70%"
+  ],
+  "recompose_allowed": [
+    "移除绿色猫头鹰、蓝色河马等所有次要角色",
+    "移除原图深色网格棋盘背景及内部动物头像",
+    "将 3D 高光、渐变、立体厚度完全扁平化为单色块",
+    "将黄色、红色、绿色等多色统一映射为主题薄荷绿",
+    "将复杂五官细节简化为最简白色负空间或深灰虚线"
+  ],
+  "restyle": [
+    "3D 渲染材质转为哑光纸质贴纸",
+    "品牌色转为统一薄荷绿填充",
+    "锐利边缘转为圆润手工剪裁感",
+    "写实光影转为右下浅灰硬投影"
+  ],
+  "decorate": [
+    "白色宽模切包边",
+    "深灰色虚线缝纫线迹",
+    "右下方浅灰色硬边缘投影",
+    "淡红色圆角虚线外框"
+  ],
+  "forbid": [
+    "保留原图黄色、红色、绿色等高饱和品牌色",
+    "保留 3D 渲染质感、环境光遮蔽或 glossy 高光",
+    "在贴纸内还原多个角色堆叠导致视觉杂乱",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "主体过大撑满画布或过小失去辨识度",
+    "使用尖锐直角或现代 UI 材质"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon on light grey grid notebook paper with a faint red dashed rounded border. The subject is a minimalist mint cyan silhouette of the Anipop chick character, featuring a triangular body, head tuft, and winking eye expression simplified into white negative space or dashed lines. Centered composition occupying 50% of canvas. Thick white die-cut border with inner dark grey dashed stitching line. Soft grey hard drop shadow to bottom right. Matte paper texture, no gradients, no 3D effects, rounded corners, handcraft scrapbook style.",
+  "color_application": "彻底剥离原图黄色小鸡、红色鸡冠及多彩背景，将小鸡主体强制填充为低饱和度薄荷绿/青蓝色；表情细节通过白色负空间或深灰虚线表现；背景替换为米白底+浅灰网格；完全去除原图高饱和色彩与光影渐变。",
+  "stroke_application": "将原图 3D 角色边缘转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；小鸡身体、呆毛及五官转角全部圆润化处理，去除锐利折角与立体描边。",
+  "composition_application": "放弃原图多角色堆叠与满版网格布局，将单一小鸡剪影严格居中放置于网格底板中央；主体缩放至画布 50% 左右，四周保留均匀网格留白；外围固定环绕淡红/粉圆角虚线框，形成'底板-虚线框-贴纸'三层嵌套结构。",
+  "identity_application": "通过提取并极度简化小鸡的三角形轮廓、头顶呆毛和 wink 表情这三个核心语义符号来维持身份识别；放弃对原图色彩、材质和复杂场景的还原，依靠精准的剪影几何特征在统一主题下实现可辨认性。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App黄色或红色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度品牌色、渐变色或多色搭配",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止主体过大撑满画布或过小缩在角落",
+    "禁止添加写实材质、金属光泽、霓虹发光、3D渲染等不符合手工剪纸风格的特效",
+    "禁止将主体重构为与开心消消乐无关的通用道具或小场景",
+    "禁止在主体内部保留过多的original细节（如完整五官、毛发纹理）导致视觉杂乱",
+    "禁止试图还原原图的多角色堆叠构图"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "app": "dingtalk",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "翅膀与闪电结合的白色Logo剪影",
+  "brand_cues_to_preserve": [
+    "翅膀羽毛的三层级结构",
+    "底部闪电的折角形态",
+    "整体向右上方倾斜的动势"
+  ],
+  "semantic_cues_to_preserve": [
+    "高效沟通与连接的视觉隐喻",
+    "企业办公的敏捷感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 dingtalk 的 original -> style_ref 变换规律，该 App 的核心 Logo 几何结构简洁且识别度极高，完全符合 preserve_major_structure 的判定标准。原图的翅膀闪电轮廓在单色化和贴纸化后依然清晰可辨，无需进行语义重构或道具替代，应严格保留其拓扑结构、羽毛层级和闪电折角，仅做颜色映射和材质转换。",
+  "design_rationale": "钉钉的 Logo 本身即为高度抽象的几何符号（翅膀+闪电），不具备复杂的 3D 渲染或写实细节，非常适合直接转化为扁平剪纸贴纸。为了维持品牌在企业办公场景下的强识别性，必须严格保留 Logo 的原始轮廓和空间比例，通过主题统一的薄荷绿填充、白色宽包边、深灰虚线缝线以及网格底板来完成风格迁移，确保既融入手账主题又不失品牌身份。",
+  "must_preserve": [
+    "翅膀与闪电组合的整体外轮廓",
+    "羽毛分层的负空间或虚线分割关系",
+    "闪电尖端的指向性与折角角度",
+    "Logo 整体的倾斜动势"
+  ],
+  "can_recompose": [
+    "原图的蓝色渐变背景（替换为网格底板）",
+    "原图的纯白填充色（替换为薄荷绿）",
+    "边缘锐利度（柔化为圆角并添加贴纸白边与缝线）"
+  ],
+  "forbid": [
+    "保留原图的蓝色品牌色或任何渐变效果",
+    "改变翅膀羽毛的数量或闪电的基本走向",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "主体过大撑满画布或过小失去辨识度",
+    "添加 3D 立体光泽、金属质感或写实阴影"
+  ],
+  "generation_direction": "将钉钉翅膀闪电Logo转为薄荷绿扁平贴纸，严格保留原轮廓、羽毛层级与闪电折角，添加白色宽包边与深灰虚线缝线，右下方加浅灰硬投影，居中置于米白浅灰网格底板上，外围环绕淡红圆角虚线框，主体占比40%-70%，全图哑光纸质无渐变。"
+}

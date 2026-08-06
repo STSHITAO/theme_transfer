@@ -1,0 +1,125 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_004
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+当前主题是一种统一的“手绘绿色萌系涂鸦”风格。所有参考样例均将原本的商业化、扁平或3D质感的图标，转化为白底圆角矩形上的可爱卡通形象。核心视觉语言是使用深浅不一的绿色粗线条进行勾勒，融入植物叶片纹理，并赋予主体拟人化的呆萌表情（如豆豆眼、粉色腮红、吐舌头），整体呈现出轻松、治愈、手账贴纸般的视觉效果。
+
+[Shared original-to-style transform]
+原始图标到主题图标的共同变化是“去商业化材质化”与“生物/植物拟人化”。原本写实的渐变背景、3D光影和标准字体被完全剥离；主体的核心几何轮廓或文字结构被保留，但被重绘为带有手绘抖动感的不规则线条，并巧妙地融合进一个统一的绿色卡通小怪兽/植物精灵的形象中，使其具有生命力和情绪。
+
+[Color]
+彻底摒弃原App的高饱和度品牌主色背景，强制映射为主题专用的低饱和绿色系+白底。仅当原色具有极强功能语义绑定（如抖音红青故障、和平精英橙红护目镜）时，才以描边偏移、服饰或手持物形式微量保留。金属色、光影色全部简化为平涂色块。
+
+[Background]
+无论原图是全出血彩色、深色模式还是复杂场景，统一裁剪替换为纯白/米白圆角底板。背景占比从原图的0%留白提升至40%-50%以上。唯一例外是原App强依赖深色氛围维持核心识别（如STYLE_REFERENCE黑底发光球），可保留深色底但需提亮主体。
+
+[Edges and strokes]
+将原图的无描边、细矢量线或3D边缘全部转化为深绿/黑色手绘粗轮廓。线条密度大幅降低，边缘圆润度极高，消除所有尖角。通过断线、飞白和粗细变化模拟真实笔触，边界复杂度从高精度几何简化为概括性涂鸦。
+
+[Composition]
+主体从原图的撑满画布/复杂多层叠加，收缩为单一居中的卡通形象或符号容器。视觉重心从分散的品牌叙事集中到萌系角色上。底部强制新增手写体App名称区域，形成“上图下文”的固定版式，改变原有纯图形构图逻辑。
+
+[Subject scale]
+主体相对画布尺寸显著缩小，高度控制在50%-65%，宽度控制在40%-60%。严禁主体触碰画布边缘或撑满全图。缩放方式为等比概括缩小，确保四周尤其是底部有充足留白以容纳文字并维持呼吸感。
+
+[Detail complexity]
+细节密度极度降低。移除原图所有写实纹理、3D光影、复杂五官、营销道具和多角色堆叠。仅保留识别身份所需的最简几何特征，并强制叠加主题三要素（叶脉/叶子、粉腮红、吐舌/呆萌脸）。装饰数量严格受限，纹理复杂度归零。
+
+[Required style properties]
+- 必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景（深色氛围App除外）。
+- 主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情。
+- 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形。
+- 底部必须包含黑色手写风格App英文/拼音名称，禁止标准印刷字体。
+- 色彩严格限制在白、绿、粉、黑及极少量原App识别点缀色范围内。
+- 整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果。
+- 主体占比必须在50%-65%之间，保证充足留白和底部文字空间。
+
+[Forbidden style drift]
+- 禁止保留原App高饱和度品牌色作为大面积背景或主填充。
+- 禁止使用平滑矢量线、锐利边缘或完美几何形状。
+- 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果。
+- 禁止让主体撑满画布，导致失去留白和底部文字区域。
+- 禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象。
+- 禁止遗漏底部手写App名称或使用电脑标准字体。
+- 禁止保留原图复杂营销元素、写实道具或多角色堆叠。
+- 禁止过度重构导致原App核心轮廓/语义符号完全消失。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.
+
+
+[ABSOLUTE IDENTITY LOCK — HIGHEST PRIORITY]
+
+The first input image, labelled TARGET_IMAGE, is the only allowed source of subject identity.
+Every following image, labelled STYLE_REFERENCE, is style-only evidence.
+
+TARGET_IMAGE is the only allowed source of:
+- logo and text content
+- recognizable symbol and semantic object
+- subject silhouette and object category
+- internal geometry, negative space, and spatial layout
+
+STYLE_REFERENCE images may contribute only visual treatment. They must contribute zero logo content, text, recognizable symbol, subject silhouette, object category, internal layout, or brand identity.
+If any identity content from a STYLE_REFERENCE appears in the result, the result is invalid.
+
+[CURRENT TARGET]
+target_app: kugou
+display_name: 酷狗音乐
+category: 音乐 / 音频娱乐
+core_function: 提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。
+
+[TARGET SEMANTIC FACTS — FROM TARGET.JSON]
+store_description: 提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。
+These neutral facts explain what CURRENT TARGET does. Derive a visual interpretation only within the frozen theme-specific structure policy below. They do not prescribe an object and do not authorize identity content from STYLE_REFERENCE images.
+
+[STRUCTURE POLICY]
+mode: preserve_major_structure
+identity_constraint_level: strict
+This is a material-and-style transformation. Preserve the target silhouette, topology, major geometry, negative space, and internal spatial relationships; do not replace or reinterpret the target subject.
+
+[MUST PRESERVE FROM TARGET_IMAGE]
+- 字母 K 的无衬线粗体骨架与倾斜切角特征的空间拓扑
+- K 与外围圆环的居中嵌套比例关系
+- 圆环的完整闭合形态
+- 底部手写体 'Kugou' 文字区域
+
+[TARGET IDENTITY APPLICATION]
+通过“结构保留+母题皮肤覆盖”双重机制维持身份。严格保留外圆内K的经典几何布局与字母K的笔画走向作为识别锚点，同时将K字生物化为站立小狗并叠加绿叶耳朵、粉腮红等主题特征。底部手写文字作为强制识别兜底。确保重绘后的主体既能清晰辨认出酷狗音乐的K字骨架，又完全融入绿叶萌宠主题语言。
+
+[EXECUTION BRIEF]
+纯白圆角矩形底板，中央绘制手绘深绿色粗线条的不规则圆环。圆环内部将字母 K 的骨架巧妙转化为一只站立的绿色蔬菜小狗：K 的竖画为狗身，撇捺为四肢，耳朵替换为绿叶，面部添加豆豆眼、粉腮红和吐舌表情。线条需有马克笔抖动感，扁平填色带叶脉纹理。底部居中书写黑色手写体 'Kugou'。严禁蓝色背景，严禁平滑矢量线，严禁3D效果。
+
+[ALLOWED TARGET RECOMPOSITION]
+- 字母 K 的具体填充材质转化为绿色小狗身体或叶脉纹理
+- 圆环的精确几何形状软化为手绘不规则圆或虚线
+- K 的笔画末端转化为小狗的四肢或尾巴
+- 原蓝色背景完全替换为纯白/米白底板
+
+[THEME APPLICATION]
+- Color: 彻底移除原App高饱和蓝色背景，强制映射为纯白/米白底色。字母K与圆环的轮廓使用深草绿/墨绿 (#4A7C29) 手绘描边，内部填充浅嫩绿 (#A8D060)。腮红使用淡粉色 (#FFB6C1)，眼睛与底部文字使用纯黑 (#000000)。不允许任何蓝色残留，除非作为极微小的功能语义点缀（如汗滴）。
+- Edges and strokes: 将原图平滑矢量圆环与K字边缘全部转化为粗细不均的手绘马克笔线条。外圆环使用较粗的深绿色抖动描边，可带有断笔或不规则圆润感；K字内部结构使用同色系稍细线条勾勒。消除所有机械几何曲线与锐利尖角，模拟真实纸面涂鸦笔触。
+- Composition: 严格遵循垂直三段式构图：上部为主题化后的“圆环+K字小狗”主体，占据画布50%-65%面积，居中偏上放置；中部留白过渡；底部固定预留15%-20%空间书写黑色手写体 'Kugou'。主体与文字在垂直轴线居中对齐，四周保留充足白色呼吸空间，严禁主体触碰画布边缘。
+- Required theme properties: 必须使用纯白/米白圆角矩形底板，禁止任何彩色或渐变背景; 主体必须融入绿叶小狗母题：绿叶耳朵、粉腮红、豆豆眼、呆萌表情; 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形; 底部必须包含黑色手写风格 'Kugou' 名称，禁止标准印刷字体; 色彩严格限制在白、绿、粉、黑体系内，禁止原品牌蓝色泄漏; 整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果; 主体占比必须在50%-65%之间，保证充足留白和底部文字空间
+
+[INVALID OUTPUT CONDITIONS]
+- Any text, logo, recognizable symbol, subject, silhouette, or internal layout copied from a STYLE_REFERENCE.
+- Any text or symbol absent from TARGET_IMAGE.
+- A result that resembles a STYLE_REFERENCE subject more than TARGET_IMAGE.
+- A changed object category or an unrecognizable target App.
+- Violating these target-specific constraints: 禁止保留原App高饱和蓝色作为背景或主填充色; 禁止使用平滑矢量线、锐利边缘或完美几何圆环; 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果; 禁止让主体撑满画布，导致失去留白和底部文字区域; 禁止偏离绿叶小狗核心母题，使用无关卡通形象或通用音乐符号; 禁止遗漏底部手写App名称或使用电脑标准字体; 禁止过度重构导致字母K骨架或圆环结构完全消失; 禁止在白色底板上添加多余纹理、边框或装饰图案
+
+[PRIORITY]
+1. Preserve target identity and the required target structure.
+2. Apply theme material and visual treatment without changing identity.
+3. Add decorative detail only when priorities 1 and 2 remain satisfied.
+
+If identity and theme styling conflict, preserve identity. Theme fidelity must never replace target identity.
+
+[FINAL INTERNAL CHECK]
+Before generating, identify the subject and required geometry in TARGET_IMAGE, separate them from the visual treatment in STYLE_REFERENCE images, and confirm that the output contains zero reference identity.
+
+[OUTPUT]
+Return exactly one complete themed target icon. No captions, comparison layout, input collage, watermark, explanation, or extra logo.

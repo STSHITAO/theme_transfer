@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "主体几何结构略有简化，原Logo上下两臂交汇处的内部负空间夹角被合并为单一轮廓内的凹陷，丢失了部分原始拓扑细节，但整体外轮廓和指向性保留较好。",
+      "recommendation": "推荐使用。风格高度统一，构图规范，虽然几何细节有轻微损失，但作为主题化图标仍具备足够的识别度。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 98,
+      "overall_score": 87,
+      "failure_reason": "与candidate_01存在相同的几何简化问题，且左侧边缘处存在轻微的线条伪影/多余笔触，画面洁净度略逊于candidate_01。",
+      "recommendation": "备选。整体质量与candidate_01接近，但因微小的画面瑕疵和相同的结构简化问题，优先级略低。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\candidates\\candidate_01.png",
+  "warning": "两张候选图均将优酷Logo原本分离的上下两臂合并为了一个连续的整体轮廓，丢失了transfer_plan中强调的'上下两段圆角矩形条带的交汇结构与负空间夹角'这一关键拓扑特征，导致identity_constraint_score受到扣分。但在当前候选集中，candidate_01的画面最为干净规范，故作为最佳推荐。",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美保留了原App核心汉字'听'的几何拓扑和左右结构，字形骨架清晰可辨。风格上严格遵循了手绘绿叶线条、白底绿图、粉腮红点缀及底部手写名称的要求，与主题参考图风格高度一致。五官点缀虽然较多，但分布在笔画内部，未破坏整体字形识别度，符合transfer_plan中的重构允许范围。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 92,
+      "style_match_score": 92,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 92,
+      "identity_constraint_score": 88,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 92,
+      "artifact_score": 100,
+      "overall_score": 90,
+      "failure_reason": "右侧部件结构略有变形，顶部横画倾斜度较大，虽仍可识别为'听'字，但相比candidate_01对原始几何拓扑的保留稍弱。",
+      "recommendation": "推荐。风格契合度高，核心身份保留完整。但在字形结构的严谨性上略逊于candidate_01，右侧部件的形态稍微有些松散，不过依然是一个高质量的候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\ximalaya\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

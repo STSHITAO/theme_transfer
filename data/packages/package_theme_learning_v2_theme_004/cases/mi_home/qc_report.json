@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 95,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的 strict 约束：严格保留了米家 M 形盾牌/猫脸的核心几何轮廓（包括顶部双折角、右侧断口和底部圆弧），同时成功融入了主题要求的绿叶耳朵、菜狗五官（豆豆眼、粉腮红、吐舌头）以及手绘抖动线条风格。底部手写体 'Mi JiA' 清晰且符合规范，整体构图留白得当，既保持了极高的品牌识别度，又完美契合主题风格。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 20,
+      "target_recognition_score": 20,
+      "semantic_fit_score": 30,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 45,
+      "failure_reason": "严重违反身份约束与结构保留策略。候选图完全丢失了米家 App 核心的 M 形盾牌几何轮廓，将其重构为一个通用的圆角矩形蔬菜萌宠形象。根据 transfer_plan，structure_identity_metric_applicable=true 且要求 preserve_major_structure，该图未能保留必须保留的 M 形外框拓扑、顶部双折角及右侧断口，导致目标 App 无法被识别，属于过度重构。",
+      "recommendation": "不推荐。虽然画风符合主题，但完全丢弃了原 Logo 的几何特征，违反了 strict 级别的身份约束，无法作为米家 App 的主题化图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\mi_home\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

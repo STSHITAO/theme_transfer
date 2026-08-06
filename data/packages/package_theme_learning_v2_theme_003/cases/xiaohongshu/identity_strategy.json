@@ -1,0 +1,38 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“小红书”三个汉字的专属定制字体造型与横向排版结构",
+  "brand_cues_to_preserve": [
+    "“小红书”三字的标准字形",
+    "“红”字左侧的闪电状折笔特征",
+    "“书”字右上角的圆点装饰",
+    "三个字紧凑的横向排列比例"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字本身直接传达的品牌名称语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 xiaohongshu、meituan、toutiao 等纯文字 Logo 的迁移规律（reference_transformation_patterns），当原图主体为简洁且高识别度的品牌标准字时，均严格保留文字的几何轮廓、笔画走向和空间排布（preserve_major_structure=true），仅进行颜色映射和贴纸材质化处理。当前目标原图为标准的“小红书”白字红底，文字结构清晰且无复杂 3D 或插画干扰，完全符合直接保留主体几何结构的条件，无需进行语义重构或道具替代。",
+  "design_rationale": "“小红书”的品牌识别度高度依赖其独特的定制字体设计。在手工剪纸/贴纸主题下，最稳妥且符合主题包一致性的策略是将红色背景剥离，把白色文字反转为薄荷绿填充的独立贴纸主体。这样既彻底服从了主题的色彩归一化和材质规则，又通过精确保留字形骨架维持了极高的身份可识别性，避免了因过度抽象或替换为通用书本符号而导致的品牌认知断裂。",
+  "must_preserve": [
+    "“小红书”三个汉字的完整笔画结构与负空间",
+    "字体的专属设计特征（如折角、圆点、连笔趋势）",
+    "文字整体的横向居中构图与字间距比例"
+  ],
+  "can_recompose": [
+    "原有的大面积纯红背景（必须替换为网格底板）",
+    "文字的颜色（从白色反转为薄荷绿填充）",
+    "文字边缘的物理质感（增加白色宽包边、深灰虚线缝线和右下硬投影）"
+  ],
+  "forbid": [
+    "保留原有的红色背景或引入任何非主题色",
+    "改变汉字的笔画结构、错字或使用通用系统字体替代定制字形",
+    "将文字主体替换为书本、笔记等通用图形道具",
+    "遗漏白色宽边、虚线缝线、网格背景或红色虚线框等任一主题指纹元素",
+    "主体过大撑满画布或过小失去文字辨识度"
+  ],
+  "generation_direction": "薄荷绿填充的“小红书”定制字体贴纸，居中置于米白浅灰网格底板上，外围环绕淡红虚线框。文字外加粗白边与深灰虚线缝线，右下方带浅灰硬投影。彻底去除红底，扁平哑光纸质质感，圆润手绘风，严禁渐变与3D效果。"
+}

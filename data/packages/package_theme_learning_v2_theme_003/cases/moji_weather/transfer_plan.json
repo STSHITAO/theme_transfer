@@ -1,0 +1,62 @@
+{
+  "app": "moji_weather",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 moji_weather 的既定迁移规律（reference_transformation_patterns），原图的 'MOJI' 文字 Logo 被明确放弃，转而使用 '云朵+风' 的图形符号来指代天气功能。当前目标原图为黑底白字加橙色 'O' 的文字排版，若强行保留文字结构将违背该 App 在主题包中已确立的语义重构路径。因此，依据主题包的可观察规律，采用功能语义符号替代原始文字主体，进行结构重组。",
+  "preserve": [
+    "天气服务的功能属性",
+    "墨迹天气的品牌名称语义关联",
+    "实时天气与预报的核心功能视觉隐喻"
+  ],
+  "must_preserve": [
+    "云朵的基础轮廓形态",
+    "气流或风的动态线条暗示",
+    "天气功能的直观可识别性"
+  ],
+  "recompose_allowed": [
+    "原始的 'MOJI' 字母排版",
+    "黑底与橙色的品牌配色",
+    "文字的具体字体细节"
+  ],
+  "restyle": [
+    "将云朵与气流符号统一填充为薄荷绿/青蓝色",
+    "添加白色宽包边与深灰色虚线缝纫轮廓",
+    "应用右下方浅灰色硬边缘投影",
+    "置于米白底浅灰网格背景上"
+  ],
+  "decorate": [
+    "外围环绕淡红/淡粉色圆角虚线框",
+    "主体边缘圆润化处理以符合纸质剪裁感"
+  ],
+  "forbid": [
+    "保留原始的黑色背景或橙色品牌色",
+    "继续使用 'MOJI' 文字作为主体",
+    "引入写实风格的云朵渲染或 3D 光影",
+    "遗漏网格背景、红色虚线框或白色宽边缝线",
+    "使用与天气无关的通用道具替代",
+    "添加渐变、高光、金属质感或霓虹效果"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker icon featuring a simplified cloud and wind flow symbol, centered on a light grey grid notebook paper background. The cloud and wind shapes are rounded, filled with uniform mint green, and surrounded by a thick white die-cut border with dark grey dashed stitching lines inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, no text, no original brand colors.",
+  "color_application": "彻底剥离原App的黑色背景与橙色'O'标识，将重构后的云朵与气流符号强制填充为统一的低饱和度薄荷绿/青蓝色；所有白色元素仅用于贴纸宽包边或内部负空间镂空，禁止保留任何原品牌色相。",
+  "stroke_application": "将云朵与气流的轮廓转化为双层贴纸语言：外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边叠加深灰色手绘感虚线模拟缝纫针脚；所有转角必须圆润化，禁止尖锐折角或实线描边。",
+  "composition_application": "放弃原文字的横向满版排版，将云朵与气流组合符号收缩为居中独立贴纸，尺寸控制在画布40%-70%之间；四周保留均匀的米白网格留白与淡红色虚线框，形成明确的'底板-虚线框-贴纸'三层嵌套结构。",
+  "identity_application": "通过提取'云朵+气流'这一强功能语义符号替代原'MOJI'文字，在完全服从薄荷绿单色贴纸风格的前提下，确保用户能直观识别出该图标代表天气服务，而非依赖已失效的品牌字形或配色。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色或引入其他色相",
+    "必须具备白色宽包边与内部/边缘深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板，不可省略或替换",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致，禁止使用模糊漫反射阴影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血、触碰边缘或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果、写实纹理或现代UI材质"
+  ],
+  "negative_constraints": [
+    "禁止生成任何形式的'MOJI'字母或文字标识",
+    "禁止使用黑色、橙色或原App的任何品牌配色",
+    "禁止使用写实云朵、3D渲染、光泽感或复杂气象插画",
+    "禁止遗漏白色宽边、深灰虚线缝线、右下硬投影或红色虚线框中的任一元素",
+    "禁止主体过大撑满画布或过小失去辨识度",
+    "禁止使用太阳、雨滴等除云朵和风之外的冗余天气符号干扰核心语义"
+  ]
+}

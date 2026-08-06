@@ -1,0 +1,1714 @@
+{
+  "framework": "ITTE v1.3 image-only",
+  "attribute_transfer": {
+    "score": 80.21140590005605,
+    "reliable": true,
+    "reliable_group_count": 6,
+    "groups": {
+      "color": {
+        "score": 73.51723613466888,
+        "reliable": true,
+        "D_RR": 0.008460462093353271,
+        "D_OR": 0.21911599900987414,
+        "D_TR": 0.23736217319965364,
+        "D_GR": 0.04660947918891907,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 87.72350617232564
+          },
+          {
+            "app": "anipop",
+            "score": 86.24251567648291
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 31.545144870591553
+          },
+          {
+            "app": "bilibili",
+            "score": 77.98739087336675
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 91.1912688307524
+          },
+          {
+            "app": "dewu",
+            "score": 89.89881687864064
+          },
+          {
+            "app": "dingtalk",
+            "score": 92.81398460598183
+          },
+          {
+            "app": "douyin",
+            "score": 90.0042149211072
+          },
+          {
+            "app": "douyu",
+            "score": 77.31779990796971
+          },
+          {
+            "app": "golden_spatula",
+            "score": 56.84220168666487
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 88.86099064140606
+          },
+          {
+            "app": "iqiyi",
+            "score": 92.67842742573568
+          },
+          {
+            "app": "jianying",
+            "score": 67.08762634716592
+          },
+          {
+            "app": "keep",
+            "score": 93.70195626928884
+          },
+          {
+            "app": "kuaikan",
+            "score": 80.7493588602343
+          },
+          {
+            "app": "kugou",
+            "score": 95.40372656843658
+          },
+          {
+            "app": "lofter",
+            "score": 88.40288049275699
+          },
+          {
+            "app": "lol_mobile",
+            "score": 50.247139066644664
+          },
+          {
+            "app": "meituan",
+            "score": 95.10092491215853
+          },
+          {
+            "app": "mi_home",
+            "score": 95.75537033821946
+          },
+          {
+            "app": "mini_world",
+            "score": 89.23986641375011
+          },
+          {
+            "app": "moji_weather",
+            "score": 92.43789521965297
+          },
+          {
+            "app": "onmyoji",
+            "score": 88.41072657229851
+          },
+          {
+            "app": "peace_camp",
+            "score": 80.96800530497879
+          },
+          {
+            "app": "pinduoduo",
+            "score": 93.8764153309233
+          },
+          {
+            "app": "qq",
+            "score": 49.30010265430858
+          },
+          {
+            "app": "qq_mail",
+            "score": 66.18308479994143
+          },
+          {
+            "app": "qq_reading",
+            "score": 84.6384745811015
+          },
+          {
+            "app": "soul",
+            "score": 92.3971809365296
+          },
+          {
+            "app": "tencent_comics",
+            "score": 32.29779261843531
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 90.15175459521065
+          },
+          {
+            "app": "tmall",
+            "score": 78.31954538046307
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 51.24630641492942
+          },
+          {
+            "app": "wechat",
+            "score": 61.50972823299834
+          },
+          {
+            "app": "wecom",
+            "score": 0.0
+          },
+          {
+            "app": "wps_office",
+            "score": 0.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 93.67164101135334
+          },
+          {
+            "app": "ximalaya",
+            "score": 82.97844074781895
+          },
+          {
+            "app": "youku",
+            "score": 0.0
+          },
+          {
+            "app": "zhihu",
+            "score": 83.50723922613112
+          }
+        ]
+      },
+      "background": {
+        "score": 94.62018410096502,
+        "reliable": true,
+        "D_RR": 0.002186596393585205,
+        "D_OR": 0.1510632551378674,
+        "D_TR": 0.1627659633755684,
+        "D_GR": 0.003249622881412506,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 100.0
+          },
+          {
+            "app": "anipop",
+            "score": 96.63679170946162
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 97.63168722748455
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 100.0
+          },
+          {
+            "app": "dewu",
+            "score": 100.0
+          },
+          {
+            "app": "dingtalk",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 99.89081058108283
+          },
+          {
+            "app": "douyu",
+            "score": 99.06152895907874
+          },
+          {
+            "app": "golden_spatula",
+            "score": 97.45394013097514
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 97.99257527842707
+          },
+          {
+            "app": "jianying",
+            "score": 99.51493848307202
+          },
+          {
+            "app": "keep",
+            "score": 100.0
+          },
+          {
+            "app": "kuaikan",
+            "score": 99.94131374965268
+          },
+          {
+            "app": "kugou",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 61.49847127379646
+          },
+          {
+            "app": "lol_mobile",
+            "score": 88.28265788701157
+          },
+          {
+            "app": "meituan",
+            "score": 99.74047799818416
+          },
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "mini_world",
+            "score": 100.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 100.0
+          },
+          {
+            "app": "onmyoji",
+            "score": 98.66715155561914
+          },
+          {
+            "app": "peace_camp",
+            "score": 100.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0
+          },
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "qq_mail",
+            "score": 97.64258835682136
+          },
+          {
+            "app": "qq_reading",
+            "score": 99.65183483307618
+          },
+          {
+            "app": "soul",
+            "score": 99.02851692640627
+          },
+          {
+            "app": "tencent_comics",
+            "score": 98.83983547695583
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 99.94133819568314
+          },
+          {
+            "app": "tmall",
+            "score": 98.16484529668361
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 55.14274747528225
+          },
+          {
+            "app": "wechat",
+            "score": 97.58222722605959
+          },
+          {
+            "app": "wecom",
+            "score": 25.32393850658858
+          },
+          {
+            "app": "wps_office",
+            "score": 86.14867293833962
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 99.93527115441196
+          },
+          {
+            "app": "ximalaya",
+            "score": 100.0
+          },
+          {
+            "app": "youku",
+            "score": 91.09320281844649
+          },
+          {
+            "app": "zhihu",
+            "score": 100.0
+          }
+        ]
+      },
+      "stroke": {
+        "score": 79.61096995539499,
+        "reliable": true,
+        "D_RR": 0.017812103033065796,
+        "D_OR": 0.07770244446065691,
+        "D_TR": 0.09237286001443863,
+        "D_GR": 0.024696703255176543,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 61.604679163328214
+          },
+          {
+            "app": "anipop",
+            "score": 100.0
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 100.0
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 100.0
+          },
+          {
+            "app": "dewu",
+            "score": 58.72991167787701
+          },
+          {
+            "app": "dingtalk",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 98.53455914051331
+          },
+          {
+            "app": "douyu",
+            "score": 100.0
+          },
+          {
+            "app": "golden_spatula",
+            "score": 22.553258379638883
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 10.927486555825022
+          },
+          {
+            "app": "jianying",
+            "score": 100.0
+          },
+          {
+            "app": "keep",
+            "score": 74.2836250628399
+          },
+          {
+            "app": "kuaikan",
+            "score": 28.865924134650996
+          },
+          {
+            "app": "kugou",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 43.74161348948961
+          },
+          {
+            "app": "lol_mobile",
+            "score": 43.18596818210245
+          },
+          {
+            "app": "meituan",
+            "score": 85.1121152062493
+          },
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "mini_world",
+            "score": 53.744514066898894
+          },
+          {
+            "app": "moji_weather",
+            "score": 88.67785611097693
+          },
+          {
+            "app": "onmyoji",
+            "score": 100.0
+          },
+          {
+            "app": "peace_camp",
+            "score": 100.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0
+          },
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "qq_mail",
+            "score": 100.0
+          },
+          {
+            "app": "qq_reading",
+            "score": 100.0
+          },
+          {
+            "app": "soul",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 0.0
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 92.91738268834598
+          },
+          {
+            "app": "tmall",
+            "score": 100.0
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 62.297687497879004
+          },
+          {
+            "app": "wechat",
+            "score": 100.0
+          },
+          {
+            "app": "wecom",
+            "score": 92.26823278246472
+          },
+          {
+            "app": "wps_office",
+            "score": 86.72342271701856
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "ximalaya",
+            "score": 80.2705613597012
+          },
+          {
+            "app": "youku",
+            "score": 100.0
+          },
+          {
+            "app": "zhihu",
+            "score": 100.0
+          }
+        ]
+      },
+      "texture_material": {
+        "score": 79.85173749554365,
+        "reliable": true,
+        "D_RR": 0.006017357110977173,
+        "D_OR": 0.03708440230952369,
+        "D_TR": 0.044140022993087766,
+        "D_GR": 0.009323407709598542,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 79.93144276951676
+          },
+          {
+            "app": "anipop",
+            "score": 83.22886201406871
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 0.0
+          },
+          {
+            "app": "bilibili",
+            "score": 97.71896927608834
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 90.19994916819216
+          },
+          {
+            "app": "dewu",
+            "score": 57.476714140776366
+          },
+          {
+            "app": "dingtalk",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 77.70680256364038
+          },
+          {
+            "app": "douyu",
+            "score": 62.29983673052263
+          },
+          {
+            "app": "golden_spatula",
+            "score": 65.42709865362161
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 65.95794339886186
+          },
+          {
+            "app": "jianying",
+            "score": 99.63544530343508
+          },
+          {
+            "app": "keep",
+            "score": 100.0
+          },
+          {
+            "app": "kuaikan",
+            "score": 0.0
+          },
+          {
+            "app": "kugou",
+            "score": 99.85586261810694
+          },
+          {
+            "app": "lofter",
+            "score": 100.0
+          },
+          {
+            "app": "lol_mobile",
+            "score": 65.41769156483953
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "mini_world",
+            "score": 100.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 98.29479745991277
+          },
+          {
+            "app": "onmyoji",
+            "score": 72.38768676189856
+          },
+          {
+            "app": "peace_camp",
+            "score": 100.0
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0
+          },
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "qq_mail",
+            "score": 81.582605533732
+          },
+          {
+            "app": "qq_reading",
+            "score": 89.71376103410438
+          },
+          {
+            "app": "soul",
+            "score": 100.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 66.1832727698164
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 90.62677768919895
+          },
+          {
+            "app": "tmall",
+            "score": 0.0
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 72.92913119874798
+          },
+          {
+            "app": "wecom",
+            "score": 79.47547348224269
+          },
+          {
+            "app": "wps_office",
+            "score": 100.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "ximalaya",
+            "score": 98.01937569042197
+          },
+          {
+            "app": "youku",
+            "score": 100.0
+          },
+          {
+            "app": "zhihu",
+            "score": 100.0
+          }
+        ]
+      },
+      "composition": {
+        "score": 73.66726297705665,
+        "reliable": true,
+        "D_RR": 0.0019432008266448975,
+        "D_OR": 0.029535942607455783,
+        "D_TR": 0.034687913954257965,
+        "D_GR": 0.0077829092741012575,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 100.0
+          },
+          {
+            "app": "anipop",
+            "score": 96.60383767331676
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 100.0
+          },
+          {
+            "app": "bilibili",
+            "score": 80.53168713774316
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 100.0
+          },
+          {
+            "app": "dewu",
+            "score": 96.81906635097882
+          },
+          {
+            "app": "dingtalk",
+            "score": 0.0
+          },
+          {
+            "app": "douyin",
+            "score": 0.0
+          },
+          {
+            "app": "douyu",
+            "score": 0.0
+          },
+          {
+            "app": "golden_spatula",
+            "score": 73.16447848400117
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 78.36904711115938
+          },
+          {
+            "app": "jianying",
+            "score": 74.74169096818284
+          },
+          {
+            "app": "keep",
+            "score": 97.03054166030098
+          },
+          {
+            "app": "kuaikan",
+            "score": 86.22548503116786
+          },
+          {
+            "app": "kugou",
+            "score": 100.0
+          },
+          {
+            "app": "lofter",
+            "score": 0.0
+          },
+          {
+            "app": "lol_mobile",
+            "score": 73.19918244984831
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "mini_world",
+            "score": 84.97805267703184
+          },
+          {
+            "app": "moji_weather",
+            "score": 94.2195337162268
+          },
+          {
+            "app": "onmyoji",
+            "score": 87.28265786519678
+          },
+          {
+            "app": "peace_camp",
+            "score": 95.3321782239188
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0
+          },
+          {
+            "app": "qq",
+            "score": 81.38028765732402
+          },
+          {
+            "app": "qq_mail",
+            "score": 34.686274372233015
+          },
+          {
+            "app": "qq_reading",
+            "score": 100.0
+          },
+          {
+            "app": "soul",
+            "score": 47.01915077950065
+          },
+          {
+            "app": "tencent_comics",
+            "score": 82.49142813531196
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 24.284480933066185
+          },
+          {
+            "app": "tmall",
+            "score": 91.33651605541067
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 100.0
+          },
+          {
+            "app": "wechat",
+            "score": 0.0
+          },
+          {
+            "app": "wecom",
+            "score": 67.1879436422401
+          },
+          {
+            "app": "wps_office",
+            "score": 46.567754381611444
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 83.62322830375987
+          },
+          {
+            "app": "ximalaya",
+            "score": 79.64331866294141
+          },
+          {
+            "app": "youku",
+            "score": 89.97269680979339
+          },
+          {
+            "app": "zhihu",
+            "score": 100.0
+          }
+        ]
+      },
+      "complexity": {
+        "score": 80.00104473670719,
+        "reliable": true,
+        "D_RR": 0.0046710968017578125,
+        "D_OR": 0.03606421914365557,
+        "D_TR": 0.044265513122081754,
+        "D_GR": 0.009442885220050812,
+        "per_app": [
+          {
+            "app": "alipay",
+            "score": 66.51123357354811
+          },
+          {
+            "app": "anipop",
+            "score": 82.07578096233703
+          },
+          {
+            "app": "baidu_tieba",
+            "score": 0.0
+          },
+          {
+            "app": "bilibili",
+            "score": 95.5375739166915
+          },
+          {
+            "app": "clash_of_clans",
+            "score": 87.57186347437941
+          },
+          {
+            "app": "dewu",
+            "score": 37.90490064246227
+          },
+          {
+            "app": "dingtalk",
+            "score": 100.0
+          },
+          {
+            "app": "douyin",
+            "score": 75.42619339045288
+          },
+          {
+            "app": "douyu",
+            "score": 57.908737924949946
+          },
+          {
+            "app": "golden_spatula",
+            "score": 65.20396810680512
+          },
+          {
+            "app": "honor_of_kings",
+            "score": 100.0
+          },
+          {
+            "app": "iqiyi",
+            "score": 66.50268633730596
+          },
+          {
+            "app": "jianying",
+            "score": 99.18088875868455
+          },
+          {
+            "app": "keep",
+            "score": 100.0
+          },
+          {
+            "app": "kuaikan",
+            "score": 100.0
+          },
+          {
+            "app": "kugou",
+            "score": 93.80247558197699
+          },
+          {
+            "app": "lofter",
+            "score": 100.0
+          },
+          {
+            "app": "lol_mobile",
+            "score": 64.72147010469551
+          },
+          {
+            "app": "meituan",
+            "score": 100.0
+          },
+          {
+            "app": "mi_home",
+            "score": 100.0
+          },
+          {
+            "app": "mini_world",
+            "score": 100.0
+          },
+          {
+            "app": "moji_weather",
+            "score": 98.22004691490727
+          },
+          {
+            "app": "onmyoji",
+            "score": 68.90246151349517
+          },
+          {
+            "app": "peace_camp",
+            "score": 98.54247116797336
+          },
+          {
+            "app": "pinduoduo",
+            "score": 100.0
+          },
+          {
+            "app": "qq",
+            "score": 100.0
+          },
+          {
+            "app": "qq_mail",
+            "score": 76.37812956101942
+          },
+          {
+            "app": "qq_reading",
+            "score": 86.00137116316225
+          },
+          {
+            "app": "soul",
+            "score": 100.0
+          },
+          {
+            "app": "tencent_comics",
+            "score": 59.833671040465845
+          },
+          {
+            "app": "tencent_meeting",
+            "score": 85.83597809415774
+          },
+          {
+            "app": "tmall",
+            "score": 0.0
+          },
+          {
+            "app": "toutiao_lite",
+            "score": 0.0
+          },
+          {
+            "app": "wechat",
+            "score": 67.84780741901086
+          },
+          {
+            "app": "wecom",
+            "score": 72.83049379813399
+          },
+          {
+            "app": "wps_office",
+            "score": 100.0
+          },
+          {
+            "app": "xiaohongshu",
+            "score": 100.0
+          },
+          {
+            "app": "ximalaya",
+            "score": 93.30158602167211
+          },
+          {
+            "app": "youku",
+            "score": 100.0
+          },
+          {
+            "app": "zhihu",
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    "per_app": [
+      {
+        "app": "alipay",
+        "score": 82.62847694645312
+      },
+      {
+        "app": "anipop",
+        "score": 90.79796467261117
+      },
+      {
+        "app": "baidu_tieba",
+        "score": 55.25752414509859
+      },
+      {
+        "app": "bilibili",
+        "score": 91.56788473856238
+      },
+      {
+        "app": "clash_of_clans",
+        "score": 94.827180245554
+      },
+      {
+        "app": "dewu",
+        "score": 73.47156828178919
+      },
+      {
+        "app": "dingtalk",
+        "score": 82.13566410099698
+      },
+      {
+        "app": "douyin",
+        "score": 73.59376343279943
+      },
+      {
+        "app": "douyu",
+        "score": 66.09798392042018
+      },
+      {
+        "app": "golden_spatula",
+        "score": 63.44082424028446
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 98.14349844023434
+      },
+      {
+        "app": "iqiyi",
+        "score": 68.73802768455249
+      },
+      {
+        "app": "jianying",
+        "score": 90.02676497675674
+      },
+      {
+        "app": "keep",
+        "score": 94.16935383207162
+      },
+      {
+        "app": "kuaikan",
+        "score": 65.96368029595097
+      },
+      {
+        "app": "kugou",
+        "score": 98.17701079475341
+      },
+      {
+        "app": "lofter",
+        "score": 65.60716087600717
+      },
+      {
+        "app": "lol_mobile",
+        "score": 64.175684875857
+      },
+      {
+        "app": "meituan",
+        "score": 96.65891968609867
+      },
+      {
+        "app": "mi_home",
+        "score": 99.29256172303657
+      },
+      {
+        "app": "mini_world",
+        "score": 87.99373885961347
+      },
+      {
+        "app": "moji_weather",
+        "score": 95.3083549036128
+      },
+      {
+        "app": "onmyoji",
+        "score": 85.94178071141802
+      },
+      {
+        "app": "peace_camp",
+        "score": 95.80710911614516
+      },
+      {
+        "app": "pinduoduo",
+        "score": 98.97940255515387
+      },
+      {
+        "app": "qq",
+        "score": 88.44673171860545
+      },
+      {
+        "app": "qq_mail",
+        "score": 76.0787804372912
+      },
+      {
+        "app": "qq_reading",
+        "score": 93.33424026857405
+      },
+      {
+        "app": "soul",
+        "score": 73.07414144040608
+      },
+      {
+        "app": "tencent_comics",
+        "score": 56.60766667349756
+      },
+      {
+        "app": "tencent_meeting",
+        "score": 80.62628536594376
+      },
+      {
+        "app": "tmall",
+        "score": 61.30348445542622
+      },
+      {
+        "app": "toutiao_lite",
+        "score": 44.781123564681785
+      },
+      {
+        "app": "wechat",
+        "score": 66.64481567946946
+      },
+      {
+        "app": "wecom",
+        "score": 56.18101370194501
+      },
+      {
+        "app": "wps_office",
+        "score": 69.90664167282827
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 96.20502341158753
+      },
+      {
+        "app": "ximalaya",
+        "score": 89.03554708042593
+      },
+      {
+        "app": "youku",
+        "score": 80.17764993803998
+      },
+      {
+        "app": "zhihu",
+        "score": 97.25120653768852
+      }
+    ]
+  },
+  "vgg_gram": {
+    "score": 94.64217959491769,
+    "enabled": true,
+    "reliable": true,
+    "used_in_itte_score": true,
+    "D_TR_vgg_gram": 0.4188159629702568,
+    "D_GR_vgg_gram": 0.13139368146657943,
+    "D_RR_vgg_gram": 0.11512232157919142,
+    "per_app": [
+      {
+        "index": 0,
+        "score": 85.48912950052264,
+        "generated_to_theme_distance": 0.1697688102722168,
+        "target_to_theme_distance": 0.4917123317718506
+      },
+      {
+        "index": 1,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.1077834963798523,
+        "target_to_theme_distance": 0.3077229857444763
+      },
+      {
+        "index": 2,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09942179918289185,
+        "target_to_theme_distance": 0.3947795033454895
+      },
+      {
+        "index": 3,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09027159214019775,
+        "target_to_theme_distance": 0.5381300449371338
+      },
+      {
+        "index": 4,
+        "score": 89.49782512450159,
+        "generated_to_theme_distance": 0.14509481191635132,
+        "target_to_theme_distance": 0.40051549673080444
+      },
+      {
+        "index": 5,
+        "score": 69.437318004225,
+        "generated_to_theme_distance": 0.18493998050689697,
+        "target_to_theme_distance": 0.3435631990432739
+      },
+      {
+        "index": 6,
+        "score": 86.18923438535236,
+        "generated_to_theme_distance": 0.17480474710464478,
+        "target_to_theme_distance": 0.5472665429115295
+      },
+      {
+        "index": 7,
+        "score": 83.86114232937352,
+        "generated_to_theme_distance": 0.15666711330413818,
+        "target_to_theme_distance": 0.37254321575164795
+      },
+      {
+        "index": 8,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10650432109832764,
+        "target_to_theme_distance": 0.32310181856155396
+      },
+      {
+        "index": 9,
+        "score": 92.04789846799247,
+        "generated_to_theme_distance": 0.14016413688659668,
+        "target_to_theme_distance": 0.4300304651260376
+      },
+      {
+        "index": 10,
+        "score": 97.56840952779359,
+        "generated_to_theme_distance": 0.12346875667572021,
+        "target_to_theme_distance": 0.4583723545074463
+      },
+      {
+        "index": 11,
+        "score": 86.24431921884899,
+        "generated_to_theme_distance": 0.14994925260543823,
+        "target_to_theme_distance": 0.3683044910430908
+      },
+      {
+        "index": 12,
+        "score": 94.42869547208946,
+        "generated_to_theme_distance": 0.1303883194923401,
+        "target_to_theme_distance": 0.3891335129737854
+      },
+      {
+        "index": 13,
+        "score": 93.06890243204802,
+        "generated_to_theme_distance": 0.13764995336532593,
+        "target_to_theme_distance": 0.4401448965072632
+      },
+      {
+        "index": 14,
+        "score": 74.06854649916286,
+        "generated_to_theme_distance": 0.16482150554656982,
+        "target_to_theme_distance": 0.30677831172943115
+      },
+      {
+        "index": 15,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09801959991455078,
+        "target_to_theme_distance": 0.4950879216194153
+      },
+      {
+        "index": 16,
+        "score": 96.73374135791103,
+        "generated_to_theme_distance": 0.12167012691497803,
+        "target_to_theme_distance": 0.31559038162231445
+      },
+      {
+        "index": 17,
+        "score": 87.90769156142649,
+        "generated_to_theme_distance": 0.14759695529937744,
+        "target_to_theme_distance": 0.3836784362792969
+      },
+      {
+        "index": 18,
+        "score": 78.01760624191883,
+        "generated_to_theme_distance": 0.18021160364151,
+        "target_to_theme_distance": 0.41121965646743774
+      },
+      {
+        "index": 19,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09053272008895874,
+        "target_to_theme_distance": 0.46338820457458496
+      },
+      {
+        "index": 20,
+        "score": 91.41725818350461,
+        "generated_to_theme_distance": 0.13619714975357056,
+        "target_to_theme_distance": 0.3606712222099304
+      },
+      {
+        "index": 21,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10094964504241943,
+        "target_to_theme_distance": 0.3782249689102173
+      },
+      {
+        "index": 22,
+        "score": 90.53652033756322,
+        "generated_to_theme_distance": 0.1428242325782776,
+        "target_to_theme_distance": 0.40784668922424316
+      },
+      {
+        "index": 23,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09637391567230225,
+        "target_to_theme_distance": 0.3755108714103699
+      },
+      {
+        "index": 24,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10379314422607422,
+        "target_to_theme_distance": 0.5121238231658936
+      },
+      {
+        "index": 25,
+        "score": 94.20372593366821,
+        "generated_to_theme_distance": 0.12640023231506348,
+        "target_to_theme_distance": 0.3096940517425537
+      },
+      {
+        "index": 26,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10058283805847168,
+        "target_to_theme_distance": 0.48688805103302
+      },
+      {
+        "index": 27,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.08024883270263672,
+        "target_to_theme_distance": 0.3235781192779541
+      },
+      {
+        "index": 28,
+        "score": 80.63896748908496,
+        "generated_to_theme_distance": 0.154793381690979,
+        "target_to_theme_distance": 0.32002389430999756
+      },
+      {
+        "index": 29,
+        "score": 90.60502297975283,
+        "generated_to_theme_distance": 0.1310042142868042,
+        "target_to_theme_distance": 0.28416895866394043
+      },
+      {
+        "index": 30,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.11511033773422241,
+        "target_to_theme_distance": 0.5997692942619324
+      },
+      {
+        "index": 31,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.11042481660842896,
+        "target_to_theme_distance": 0.5417960286140442
+      },
+      {
+        "index": 32,
+        "score": 75.23617509283487,
+        "generated_to_theme_distance": 0.21161115169525146,
+        "target_to_theme_distance": 0.5047585368156433
+      },
+      {
+        "index": 33,
+        "score": 85.8282571461854,
+        "generated_to_theme_distance": 0.15654778480529785,
+        "target_to_theme_distance": 0.4074326157569885
+      },
+      {
+        "index": 34,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.11143743991851807,
+        "target_to_theme_distance": 0.25095129013061523
+      },
+      {
+        "index": 35,
+        "score": 82.22690460827783,
+        "generated_to_theme_distance": 0.18243253231048584,
+        "target_to_theme_distance": 0.4938420057296753
+      },
+      {
+        "index": 36,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.09613674879074097,
+        "target_to_theme_distance": 0.55350261926651
+      },
+      {
+        "index": 37,
+        "score": 78.84527820399263,
+        "generated_to_theme_distance": 0.20528042316436768,
+        "target_to_theme_distance": 0.5413066148757935
+      },
+      {
+        "index": 38,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.06986653804779053,
+        "target_to_theme_distance": 0.4190225601196289
+      },
+      {
+        "index": 39,
+        "score": 100.0,
+        "generated_to_theme_distance": 0.10400229692459106,
+        "target_to_theme_distance": 0.500462532043457
+      }
+    ],
+    "layers": [
+      "relu1_2",
+      "relu2_2",
+      "relu3_3",
+      "relu4_3"
+    ],
+    "device": "cuda:0",
+    "cache": {
+      "directory": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\evaluations\\_cache\\vgg_gram",
+      "hits": 40,
+      "misses": 76,
+      "device": "cuda:0"
+    },
+    "reason": "Multi-layer VGG Gram is the Gatys-derived primary texture/style representation in ITTE v1.3."
+  },
+  "dists_texture": {
+    "score": 89.83658043705226,
+    "reliable": true,
+    "D_RR": 0.26402509212493896,
+    "D_TR": 0.402457756921649,
+    "D_GR": 0.27809458466039766
+  },
+  "dino_motif": {
+    "score": 68.00112795306715,
+    "reliable": true,
+    "prototype_count": 32,
+    "reference_coverage": 0.6547366678714752,
+    "target_coverage": 0.3537418246269226,
+    "generated_coverage": 0.5584217131137847,
+    "per_app": [
+      {
+        "app": "alipay",
+        "score": 13.762119728459577,
+        "target_coverage": 0.33687499165534973,
+        "generated_coverage": 0.38061949610710144
+      },
+      {
+        "app": "anipop",
+        "score": 75.47214801997387,
+        "target_coverage": 0.49500811100006104,
+        "generated_coverage": 0.6155586838722229
+      },
+      {
+        "app": "baidu_tieba",
+        "score": 62.83896642901687,
+        "target_coverage": 0.3373214900493622,
+        "generated_coverage": 0.536781907081604
+      },
+      {
+        "app": "bilibili",
+        "score": 85.88497184718675,
+        "target_coverage": 0.36691099405288696,
+        "generated_coverage": 0.614109992980957
+      },
+      {
+        "app": "clash_of_clans",
+        "score": 69.2688527529962,
+        "target_coverage": 0.41442710161209106,
+        "generated_coverage": 0.5808867812156677
+      },
+      {
+        "app": "dewu",
+        "score": 23.432816486552234,
+        "target_coverage": 0.3439221978187561,
+        "generated_coverage": 0.4167547821998596
+      },
+      {
+        "app": "dingtalk",
+        "score": 51.70969251668216,
+        "target_coverage": 0.31501537561416626,
+        "generated_coverage": 0.4906842112541199
+      },
+      {
+        "app": "douyin",
+        "score": 100.0,
+        "target_coverage": 0.29931390285491943,
+        "generated_coverage": 0.6614364385604858
+      },
+      {
+        "app": "douyu",
+        "score": 75.88465617207085,
+        "target_coverage": 0.49924367666244507,
+        "generated_coverage": 0.6172389984130859
+      },
+      {
+        "app": "golden_spatula",
+        "score": 27.925397246401275,
+        "target_coverage": 0.45944997668266296,
+        "generated_coverage": 0.5139845609664917
+      },
+      {
+        "app": "honor_of_kings",
+        "score": 100.0,
+        "target_coverage": 0.328752726316452,
+        "generated_coverage": 0.6612519025802612
+      },
+      {
+        "app": "iqiyi",
+        "score": 51.08166710551371,
+        "target_coverage": 0.30477121472358704,
+        "generated_coverage": 0.4835394024848938
+      },
+      {
+        "app": "jianying",
+        "score": 67.37462562360828,
+        "target_coverage": 0.29528915882110596,
+        "generated_coverage": 0.5374655723571777
+      },
+      {
+        "app": "keep",
+        "score": 44.45657783292243,
+        "target_coverage": 0.32475659251213074,
+        "generated_coverage": 0.4714544415473938
+      },
+      {
+        "app": "kuaikan",
+        "score": 35.27005247137895,
+        "target_coverage": 0.39939308166503906,
+        "generated_coverage": 0.48945289850234985
+      },
+      {
+        "app": "kugou",
+        "score": 88.32229199410837,
+        "target_coverage": 0.30487626791000366,
+        "generated_coverage": 0.61388099193573
+      },
+      {
+        "app": "lofter",
+        "score": 90.50610020175968,
+        "target_coverage": 0.3467276394367218,
+        "generated_coverage": 0.6254945993423462
+      },
+      {
+        "app": "lol_mobile",
+        "score": 51.609092006659,
+        "target_coverage": 0.3918457627296448,
+        "generated_coverage": 0.5275213718414307
+      },
+      {
+        "app": "meituan",
+        "score": 40.79045924515007,
+        "target_coverage": 0.2842300236225128,
+        "generated_coverage": 0.435361385345459
+      },
+      {
+        "app": "mi_home",
+        "score": 84.74315758854938,
+        "target_coverage": 0.26991042494773865,
+        "generated_coverage": 0.5960243344306946
+      },
+      {
+        "app": "mini_world",
+        "score": 20.15208155862347,
+        "target_coverage": 0.47592848539352417,
+        "generated_coverage": 0.5119620561599731
+      },
+      {
+        "app": "moji_weather",
+        "score": 84.96880038202667,
+        "target_coverage": 0.28209322690963745,
+        "generated_coverage": 0.5987238883972168
+      },
+      {
+        "app": "onmyoji",
+        "score": 82.89286681765266,
+        "target_coverage": 0.40291327238082886,
+        "generated_coverage": 0.611656904220581
+      },
+      {
+        "app": "peace_camp",
+        "score": 87.87230522372998,
+        "target_coverage": 0.340048611164093,
+        "generated_coverage": 0.6165722608566284
+      },
+      {
+        "app": "pinduoduo",
+        "score": 89.29318733111964,
+        "target_coverage": 0.3506677746772766,
+        "generated_coverage": 0.6221805810928345
+      },
+      {
+        "app": "qq",
+        "score": 67.53229772402992,
+        "target_coverage": 0.4541589021682739,
+        "generated_coverage": 0.589613676071167
+      },
+      {
+        "app": "qq_mail",
+        "score": 77.07167841451732,
+        "target_coverage": 0.2703093886375427,
+        "generated_coverage": 0.5665939450263977
+      },
+      {
+        "app": "qq_reading",
+        "score": 66.94688702518619,
+        "target_coverage": 0.506834864616394,
+        "generated_coverage": 0.6058505177497864
+      },
+      {
+        "app": "soul",
+        "score": 48.78815382252496,
+        "target_coverage": 0.33127033710479736,
+        "generated_coverage": 0.48908358812332153
+      },
+      {
+        "app": "tencent_comics",
+        "score": 50.38841672397027,
+        "target_coverage": 0.5126254558563232,
+        "generated_coverage": 0.5842330455780029
+      },
+      {
+        "app": "tencent_meeting",
+        "score": 79.14572680259603,
+        "target_coverage": 0.28046175837516785,
+        "generated_coverage": 0.5766843557357788
+      },
+      {
+        "app": "tmall",
+        "score": 72.47645760444081,
+        "target_coverage": 0.27383047342300415,
+        "generated_coverage": 0.5498977899551392
+      },
+      {
+        "app": "toutiao_lite",
+        "score": 36.24118875396023,
+        "target_coverage": 0.32498306035995483,
+        "generated_coverage": 0.4444896876811981
+      },
+      {
+        "app": "wechat",
+        "score": 56.45301173947846,
+        "target_coverage": 0.41560429334640503,
+        "generated_coverage": 0.5506017208099365
+      },
+      {
+        "app": "wecom",
+        "score": 100.0,
+        "target_coverage": 0.3808645009994507,
+        "generated_coverage": 0.6595011949539185
+      },
+      {
+        "app": "wps_office",
+        "score": 57.79143396164888,
+        "target_coverage": 0.2818634808063507,
+        "generated_coverage": 0.4973522424697876
+      },
+      {
+        "app": "xiaohongshu",
+        "score": 100.0,
+        "target_coverage": 0.26225292682647705,
+        "generated_coverage": 0.6709764003753662
+      },
+      {
+        "app": "ximalaya",
+        "score": 42.37573586170299,
+        "target_coverage": 0.28710898756980896,
+        "generated_coverage": 0.442893922328949
+      },
+      {
+        "app": "youku",
+        "score": 100.0,
+        "target_coverage": 0.3265771269798279,
+        "generated_coverage": 0.658026397228241
+      },
+      {
+        "app": "zhihu",
+        "score": 91.06520127300162,
+        "target_coverage": 0.2712353467941284,
+        "generated_coverage": 0.6204715967178345
+      }
+    ]
+  }
+}

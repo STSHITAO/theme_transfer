@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 92,
+      "target_recognition_score": 92,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 98,
+      "composition_score": 95,
+      "artifact_score": 98,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "完美符合主题风格与生成计划。严格保留了“爱奇艺极速版”的上下排版结构和文字笔画，材质为标准的半透明冰雕质感，右下角闪电符号位置准确且形态清晰（嵌入冰块中），无多余杂质，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 40,
+      "background_score": 90,
+      "composition_score": 75,
+      "artifact_score": 95,
+      "overall_score": 72,
+      "failure_reason": "底部出现了多余的底座结构，破坏了原图标纯文字排版的构图；右下角闪电符号脱离了主体文字区域，变成了独立的装饰物，违反了位置约束。",
+      "recommendation": "虽然材质风格正确，但构图发生了不合理的改变（增加了底座），且核心识别元素（闪电）的位置偏移，不如 candidate_01 严谨。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

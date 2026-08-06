@@ -1,0 +1,64 @@
+{
+  "app": "zhihu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，主题化策略为'材质置换+3D拉伸'。知乎的图标是高度标准化的文字Logo，其识别度完全依赖于笔画结构。因此，必须严格保留原始字形的2D轮廓，将其转化为具有厚度的3D冰雕实体，不可重构为书本或其他象征物，以免破坏品牌识别。",
+  "preserve": [
+    "完整的“知乎”二字字形结构",
+    "“知”字右下角的标志性V型切口/尖角特征",
+    "两个汉字的水平对齐关系与相对比例",
+    "笔画的整体骨架与空间布局"
+  ],
+  "must_preserve": [
+    "完整的“知乎”二字字形",
+    "“知”字右下角的尖角特征",
+    "文字的长宽比和笔画粗细比例"
+  ],
+  "recompose_allowed": [
+    "将2D平面笔画转化为具有倒角和厚度的3D模型",
+    "表面增加冷凝水珠、内部增加雪花或气泡纹理",
+    "边缘处理为圆润的冰块质感，去除锐利切角",
+    "底部增加融化的水渍或碎冰细节"
+  ],
+  "restyle": [
+    "移除原始品牌蓝背景，替换为纯白/浅灰背景",
+    "文字材质由不透明白色/蓝色转变为半透明冰蓝色晶体",
+    "通过次表面散射（SSS）和高光折射表现体积感",
+    "整体色调统一为Translucent Cyan/Pale Ice Blue"
+  ],
+  "decorate": [
+    "内部嵌入微小的雪花图案或气泡",
+    "表面覆盖凝结的水珠",
+    "底部散落少量碎冰屑和水渍以锚定空间"
+  ],
+  "forbid": [
+    "禁止改变汉字的笔画结构或书写风格",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止保留原始的纯蓝色背景",
+    "禁止添加与文字主体无关的复杂道具（如眼镜、灯泡等）",
+    "禁止出现描边线条",
+    "禁止使用非蓝色系的文字颜色"
+  ],
+  "generation_brief": "3D render of Chinese characters '知乎' carved from translucent light-blue ice. Strictly preserve original font structure and the V-cut in '知'. Material: glossy crystal ice with internal bubbles/snowflakes and surface water droplets. Lighting: bright studio light, strong refraction, rim highlights. Background: pure white with soft contact shadow and scattered ice chips at base. No outlines, no flat colors.",
+  "color_application": "Discard original Zhihu Blue background. Transform the white text and blue background into a unified translucent ice-blue material (Translucent Cyan/Pale Ice Blue). Use Deep Blue for internal refraction shadows and White for specular highlights. The object itself carries the color via material properties, not surface paint.",
+  "stroke_application": "Remove all 2D outlines. Define the character strokes through 3D beveled edges, light refraction, and specular highlights. Edges must be smooth and rounded to simulate melted/carved ice, avoiding sharp vector-like corners.",
+  "composition_application": "Centered composition. The '知乎' text block is extruded into a 3D solid occupying ~60-70% of the canvas. Use a slight 3/4 elevated perspective to show thickness. Place on a clean white background with grounded shadows.",
+  "identity_application": "Preserve the exact 2D silhouette of the '知乎' logotype, especially the distinctive V-notch in the '知' character. Translate this 2D shape directly into a 3D ice sculpture without altering the glyph geometry. Identity is maintained through structural fidelity, not color.",
+  "fidelity_constraints": [
+    "Must strictly use semi-transparent ice/crystal material, not opaque plastic or glass.",
+    "Must include micro-details like bubbles, snowflakes, or water droplets.",
+    "Background must be pure white/light grey.",
+    "Lighting must follow physical 3D rendering rules (refraction, subsurface scattering).",
+    "Core silhouette of '知乎' must be geometrically accurate to the original logo."
+  ],
+  "negative_constraints": [
+    "No flat 2D design or vector styles.",
+    "No original brand blue background.",
+    "No matte, metal, or wood textures.",
+    "No distortion of Chinese character strokes.",
+    "No complex scenery or unrelated objects.",
+    "No dark or colored backgrounds."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "app": "douyin",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "抖音标志性的音符符号 silhouette，包括顶部的圆弧、竖直主干和底部的弯钩结构",
+  "brand_cues_to_preserve": [
+    "音符的整体几何轮廓",
+    "符头、符干与符尾的空间比例关系",
+    "音符弯曲的走向特征"
+  ],
+  "semantic_cues_to_preserve": [
+    "音乐与短视频的核心符号语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 douyin 的 original -> style_ref 规律显示，当原图标为简洁的 2D 几何符号时，严格保留其拓扑结构和空间关系，仅进行颜色归一化和材质贴纸化。当前目标原图为经典的音符 Logo，几何结构清晰且辨识度极高，符合 preserve_major_structure 的判定标准，无需进行语义重构或道具替代。",
+  "design_rationale": "抖音的音符 Logo 本身具有极高的品牌识别度，且几何形态简洁，非常适合转化为手工剪纸贴纸风格。策略上选择严格保留音符的主体轮廓，彻底剥离原有的红蓝故障艺术效果和黑色背景，将其统一映射为薄荷绿填充，并添加主题规定的白色宽包边、深灰虚线缝线和网格底板，以确保在服从整包视觉语言的同时最大化保留品牌身份。",
+  "must_preserve": [
+    "音符符号的完整外轮廓",
+    "音符各部分（头、干、尾）的相对位置和比例",
+    "居中构图和适当的主体缩放比例（40%-70%）"
+  ],
+  "can_recompose": [
+    "原有的红蓝青色偏移/故障效果（需合并为单色）",
+    "原有的纯黑背景（需替换为网格手账底板）",
+    "原有的锐利边缘（需圆润化处理以符合布艺/纸质特性）"
+  ],
+  "forbid": [
+    "保留原图的红、蓝、青多色搭配或故障分层效果",
+    "保留黑色背景或使用非网格纹理背景",
+    "遗漏白色宽描边、深灰虚线缝线、右下硬投影或淡红虚线框中的任一主题指纹",
+    "改变音符的基本几何形状或将其替换为其他无关道具",
+    "使用渐变、高光或 3D 立体渲染破坏扁平手工质感"
+  ],
+  "generation_direction": "将抖音音符 Logo 转化为扁平薄荷绿单色填充贴纸，严格保留音符原始轮廓与比例。去除红蓝故障效果与黑底，添加白色宽包边、内部深灰虚线缝线及右下浅灰硬投影。置于米白浅灰网格底板中央，外围环绕淡红圆角虚线框，主体占比 50%，转角圆润，哑光纸质质感。"
+}

@@ -1,0 +1,1721 @@
+{
+  "package_id": "package_theme_learning_v2_theme_003",
+  "theme_id": "theme_003",
+  "target_apps": [
+    "alipay",
+    "anipop",
+    "baidu_tieba",
+    "bilibili",
+    "clash_of_clans",
+    "dewu",
+    "dingtalk",
+    "douyin",
+    "douyu",
+    "golden_spatula",
+    "honor_of_kings",
+    "iqiyi",
+    "jianying",
+    "keep",
+    "kuaikan",
+    "kugou",
+    "lofter",
+    "lol_mobile",
+    "meituan",
+    "mi_home",
+    "mini_world",
+    "moji_weather",
+    "onmyoji",
+    "peace_camp",
+    "pinduoduo",
+    "qq",
+    "qq_mail",
+    "qq_reading",
+    "soul",
+    "tencent_comics",
+    "tencent_meeting",
+    "tmall",
+    "toutiao_lite",
+    "wechat",
+    "wecom",
+    "wps_office",
+    "xiaohongshu",
+    "ximalaya",
+    "youku",
+    "zhihu"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "hello_bike",
+    "mi_home",
+    "tencent_maps",
+    "zhihu"
+  ],
+  "theme_style_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\theme_style_analysis.json",
+  "theme_rules": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\theme_rules.json",
+  "theme_design_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\theme_design_analysis.json",
+  "generation_base_prompt": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\generation_base_prompt.txt",
+  "cases": {
+    "alipay": {
+      "target_app": "alipay",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\alipay\\alipay.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\target_identity.json",
+      "target_profile": {
+        "app": "alipay",
+        "display_name": "支付宝",
+        "category": "金融 / 支付与生活服务",
+        "store_description": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。",
+        "core_function": "提供移动支付、收付款、转账、账单管理、生活缴费、出行及多种便民服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\style_references.json",
+      "style_reference_apps": [
+        "tmall",
+        "huya",
+        "tencent_video"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 alipay 的真实 original -> style_ref 规律（preserve_major_structure: true），原图的'支'字几何结构简单清晰，在单色化和贴纸化后依然具有极高的辨识度。根据主题包的 structure_preservation_policy，当 original 主体为简洁的文字 Logo 时，必须严格保留其拓扑结构和空间关系。因此，策略选择保留'支'字的完整轮廓，仅进行颜色映射和材质转换，不进行语义重构或结构替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\alipay.png"
+    },
+    "anipop": {
+      "target_app": "anipop",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\anipop\\anipop.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\target_identity.json",
+      "target_profile": {
+        "app": "anipop",
+        "display_name": "开心消消乐",
+        "category": "游戏 / 休闲益智",
+        "store_description": "以三消闯关为核心，提供丰富关卡、限时活动和轻量化休闲玩法。",
+        "core_function": "以三消闯关为核心，提供丰富关卡、限时活动和轻量化休闲玩法。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\style_references.json",
+      "style_reference_apps": [
+        "pinduoduo",
+        "golden_spatula",
+        "peace_elite"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 anipop 的真实迁移规律（reference_transformation_patterns），原图复杂的 3D 多角色堆叠场景被明确重构为单一极简的小鸡 2D 剪影。当前目标原图同样是多角色、高细节的 3D 渲染场景，直接保留整体结构会违反主题的'极度简化'和'扁平单色块'规则。因此，遵循主题包已验证的规律，放弃原图的空间布局和多元素堆叠，提取最具代表性的黄色小鸡作为唯一主体进行语义重组，以适配手工剪纸贴纸的工艺限制。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\anipop.png"
+    },
+    "baidu_tieba": {
+      "target_app": "baidu_tieba",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\baidu_tieba\\baidu_tieba.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\target_identity.json",
+      "target_profile": {
+        "app": "baidu_tieba",
+        "display_name": "百度贴吧",
+        "category": "社区 / 兴趣交流",
+        "store_description": "围绕兴趣主题建立讨论社区，支持浏览帖子、发布内容、评论互动和关注吧友。",
+        "core_function": "围绕兴趣主题建立讨论社区，支持浏览帖子、发布内容、评论互动和关注吧友。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\style_references.json",
+      "style_reference_apps": [
+        "youdao_dict",
+        "mango_tv",
+        "xingtu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 baidu_tieba 的 original -> style_ref 规律显示，当原图标主体为简洁的几何图形（气泡）加核心文字（贴）时，应严格保留其拓扑结构和空间比例，仅进行颜色映射和材质转换。当前目标原图结构简单清晰，符合 preserve_major_structure 的判定标准，无需进行语义重构或元素替换，直接保留气泡与文字的几何关系即可确保最高识别度。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\baidu_tieba.png"
+    },
+    "bilibili": {
+      "target_app": "bilibili",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\bilibili\\bilibili.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\target_identity.json",
+      "target_profile": {
+        "app": "bilibili",
+        "display_name": "哔哩哔哩",
+        "category": "视频 / 内容社区",
+        "store_description": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。",
+        "core_function": "提供动画、影视、游戏、知识、生活等视频内容，以及直播、投稿和弹幕社区互动。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\style_references.json",
+      "style_reference_apps": [
+        "xigua_video",
+        "kuwo",
+        "xiaohongshu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 bilibili 的 original -> style_ref 规律明确显示：保留小电视的外轮廓、天线和支脚的空间布局，仅将内部复杂的 'bilibili' 字体简化为 theme 风格的简笔表情（-w-），以适配贴纸的简洁语言。当前目标原图主体即为小电视与文字的组合，几何结构清晰且非复杂 3D 渲染，符合 'preserve_when' 条件。因此必须严格保留小电视的主体几何结构、天线与支脚的空间关系，仅做颜色映射、材质转换和内部细节的极简化处理，不进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\bilibili.png"
+    },
+    "clash_of_clans": {
+      "target_app": "clash_of_clans",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\clash_of_clans\\clash_of_clans.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\target_identity.json",
+      "target_profile": {
+        "app": "clash_of_clans",
+        "display_name": "部落冲突",
+        "category": "游戏 / 策略经营",
+        "store_description": "通过建设村庄、训练军队、加入部落和参与多人对战，体验策略经营与攻防玩法。",
+        "core_function": "通过建设村庄、训练军队、加入部落和参与多人对战，体验策略经营与攻防玩法。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\style_references.json",
+      "style_reference_apps": [
+        "xianyu",
+        "mini_world",
+        "wechat_reading"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 clash_of_clans 的真实迁移规律（original 为 3D 野蛮人头像，style_ref 重构为 'CLASH of CLANS' 文字排版），以及 jd、genshin、mini_world 等复杂 3D/插画图标的处理模式，当原图主体为高细节写实/3D 渲染且无法在极简贴纸语言中保留时，应放弃原始几何结构，提取最具辨识度的官方文字 Logo 进行重构。当前目标原图为复杂的 3D 野蛮人面部特写，依赖光影和色彩表现神态，强行保留轮廓会导致贴纸形态崩坏或语义丢失，因此采用文字标识替代原主体结构，符合主题包的语义重构策略。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\clash_of_clans.png"
+    },
+    "dewu": {
+      "target_app": "dewu",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\dewu\\dewu.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\target_identity.json",
+      "target_profile": {
+        "app": "dewu",
+        "display_name": "得物",
+        "category": "电商 / 潮流消费",
+        "store_description": "提供潮流商品交易、商品鉴别、球鞋服饰选购及潮流生活社区内容。",
+        "core_function": "提供潮流商品交易、商品鉴别、球鞋服饰选购及潮流生活社区内容。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\style_references.json",
+      "style_reference_apps": [
+        "youdao_dict",
+        "mango_tv",
+        "xingtu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 dewu 的真实 original -> style_ref 规律，以及 meituan、xiaohongshu、toutiao 等文字类 App 的处理方式，当原图主体为清晰的品牌标准字时，主题化策略严格保留文字的几何轮廓、笔画走向和空间排布，仅剥离背景与营销元素。当前目标原图的核心识别点即为“得物”二字，其字形结构简洁且辨识度高，完全符合 preserve_major_structure 的适用条件，无需进行语义重构或道具替代。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dewu.png"
+    },
+    "dingtalk": {
+      "target_app": "dingtalk",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\dingtalk\\dingtalk.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\target_identity.json",
+      "target_profile": {
+        "app": "dingtalk",
+        "display_name": "钉钉",
+        "category": "办公 / 企业协作",
+        "store_description": "提供企业即时通讯、考勤、审批、会议、文档和组织管理等数字化办公能力。",
+        "core_function": "提供企业即时通讯、考勤、审批、会议、文档和组织管理等数字化办公能力。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\style_references.json",
+      "style_reference_apps": [
+        "huya",
+        "tmall",
+        "douyu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 dingtalk 的 original -> style_ref 变换规律，该 App 的核心 Logo 几何结构简洁且识别度极高，完全符合 preserve_major_structure 的判定标准。原图的翅膀闪电轮廓在单色化和贴纸化后依然清晰可辨，无需进行语义重构或道具替代，应严格保留其拓扑结构、羽毛层级和闪电折角，仅做颜色映射和材质转换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dingtalk.png"
+    },
+    "douyin": {
+      "target_app": "douyin",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\douyin\\douyin.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\target_identity.json",
+      "target_profile": {
+        "app": "douyin",
+        "display_name": "抖音",
+        "category": "视频 / 短视频与直播",
+        "store_description": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。",
+        "core_function": "提供短视频浏览、内容创作、直播、社交互动和个性化内容推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\style_references.json",
+      "style_reference_apps": [
+        "karaoke",
+        "wechat",
+        "jianying"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 douyin 的 original -> style_ref 规律显示，当原图标为简洁的 2D 几何符号时，严格保留其拓扑结构和空间关系，仅进行颜色归一化和材质贴纸化。当前目标原图为经典的音符 Logo，几何结构清晰且辨识度极高，符合 preserve_major_structure 的判定标准，无需进行语义重构或道具替代。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyin.png"
+    },
+    "douyu": {
+      "target_app": "douyu",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\douyu\\douyu.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\target_identity.json",
+      "target_profile": {
+        "app": "douyu",
+        "display_name": "斗鱼",
+        "category": "直播 / 游戏娱乐",
+        "store_description": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。",
+        "core_function": "提供游戏、赛事、娱乐和户外等直播内容，支持观看、弹幕互动和主播关注。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\style_references.json",
+      "style_reference_apps": [
+        "kuaiying",
+        "wps_office",
+        "kuaikan"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 douyu 的 original -> style_ref 规律显示，当原图为清晰的 2D 卡通吉祥物时，应严格保留主体几何轮廓（鲨鱼+火箭的组合形态、眼睛位置、咬合关系），仅进行颜色归一化和材质贴纸化。当前目标原图结构简单明确，无复杂 3D 渲染或营销文字干扰，符合 preserve_major_structure 的判定标准，无需进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyu.png"
+    },
+    "golden_spatula": {
+      "target_app": "golden_spatula",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\golden_spatula\\golden_spatula.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\target_identity.json",
+      "target_profile": {
+        "app": "golden_spatula",
+        "display_name": "金铲铲之战",
+        "category": "游戏 / 自走棋策略",
+        "store_description": "通过招募英雄、组合羁绊、布置阵容和装备，在多人对局中进行自动战斗策略竞技。",
+        "core_function": "通过招募英雄、组合羁绊、布置阵容和装备，在多人对局中进行自动战斗策略竞技。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\style_references.json",
+      "style_reference_apps": [
+        "minecraft",
+        "wechat_reading",
+        "meitu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示：当原图为复杂的 3D 企鹅角色加写实光影时，应完全舍弃具象角色，提取核心道具'铲子'与底部动态线进行重构。当前目标原图同样是高细节的 3D 企鹅插画，符合 theme_design_analysis 中'复杂3D渲染允许放弃原始结构，提取核心功能语义符号'的重构条件。因此不保留企鹅主体几何，而是用语义符号重组，以适配手工剪纸贴纸的极简轮廓要求。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\golden_spatula.png"
+    },
+    "honor_of_kings": {
+      "target_app": "honor_of_kings",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\honor_of_kings\\honor_of_kings.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\target_identity.json",
+      "target_profile": {
+        "app": "honor_of_kings",
+        "display_name": "王者荣耀",
+        "category": "游戏 / MOBA竞技",
+        "store_description": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。",
+        "core_function": "以多人实时对战为核心，提供5对5峡谷竞技、英雄养成和多种娱乐模式。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\style_references.json",
+      "style_reference_apps": [
+        "golden_spatula",
+        "qidian",
+        "genshin"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 honor_of_kings 的真实 original -> style_ref 规律显示，原图复杂的写实人物头像（亚瑟）因细节过多、依赖光影渲染，无法在手工剪纸贴纸风格下保留主体几何，因此被完全舍弃并重构为抽象的圆形罗盘/准星符号。当前目标原图同样是高复杂度的写实英雄面部特写叠加营销角标，符合 theme_design_analysis 中 'recompose_when' 的触发条件（复杂3D渲染/写实插画）。因此，必须放弃原图的人脸结构，提取 MOBA 游戏最具代表性的'瞄准/竞技'语义符号进行重构，以适配贴纸的极简轮廓要求。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\honor_of_kings.png"
+    },
+    "iqiyi": {
+      "target_app": "iqiyi",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\iqiyi\\iqiyi.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\target_identity.json",
+      "target_profile": {
+        "app": "iqiyi",
+        "display_name": "爱奇艺",
+        "category": "视频 / 流媒体",
+        "store_description": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。",
+        "core_function": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\style_references.json",
+      "style_reference_apps": [
+        "iqiyi_lite",
+        "toutiao_lite",
+        "huya"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 iqiyi 和 iqiyi_lite 的转换规律，当原图包含复杂中英文混排时，策略倾向于提取最核心的 'iQIYI' 英文标识并置入圆角矩形播放器外框中，以强化视频语义并适配贴纸的简洁几何语言。当前目标原图为绿紫渐变背景上的 'iQIYI' 与 '爱奇艺' 纯文字排版，无独立图形 Logo。依据主题规律，应舍弃中文副标题，保留 'iQIYI' 字母骨架，并为其增加主题化的圆角矩形播放器外框（或闪电符号暗示），主体文字自身的几何结构与空间比例严格保留，仅做材质、颜色和背景的主题化映射，符合 preserve_major_structure 的判定标准。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\iqiyi.png"
+    },
+    "jianying": {
+      "target_app": "jianying",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\jianying\\jianying.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\target_identity.json",
+      "target_profile": {
+        "app": "jianying",
+        "display_name": "剪映",
+        "category": "摄影 / 视频编辑",
+        "store_description": "提供视频剪辑、字幕识别、模板、特效、滤镜、配乐和智能创作工具。",
+        "core_function": "提供视频剪辑、字幕识别、模板、特效、滤镜、配乐和智能创作工具。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\style_references.json",
+      "style_reference_apps": [
+        "paipai",
+        "baidu_netdisk",
+        "netease_music"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 jianying 的 original -> style_ref 变换规律显示，该App原本简洁的2D几何Logo被严格保留了主体轮廓、交叉线和两侧弧形结构，仅做了颜色替换和贴纸化处理。当前目标原图同样是高对比度的简洁几何图形，无复杂3D渲染或插画细节，完全符合 preserve_when 条件。因此必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅进行主题风格迁移。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\jianying.png"
+    },
+    "keep": {
+      "target_app": "keep",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\keep\\keep.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\target_identity.json",
+      "target_profile": {
+        "app": "keep",
+        "display_name": "Keep",
+        "category": "健康健美 / 运动",
+        "store_description": "提供健身课程、训练计划、跑步与骑行记录、运动数据分析和健康管理。",
+        "core_function": "提供健身课程、训练计划、跑步与骑行记录、运动数据分析和健康管理。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\style_references.json",
+      "style_reference_apps": [
+        "miyoushe",
+        "amap",
+        "mi_home"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 keep 的真实 original -> style_ref 规律显示，原图简洁的 'K' 字 Logo 在转化时严格保留了笔画走向、断笔结构和空间比例，仅做了颜色替换和贴纸化描边。当前目标原图同样是简洁的 2D 几何字母，轮廓清晰且无复杂 3D 渲染，完全符合 'preserve_when' 条件。因此必须冻结为 preserve_major_structure，精确保留 'K' 字的几何拓扑，仅移除右上角的紫色星星装饰以适配主题的极简化规则。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\keep.png"
+    },
+    "kuaikan": {
+      "target_app": "kuaikan",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\kuaikan\\kuaikan.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\target_identity.json",
+      "target_profile": {
+        "app": "kuaikan",
+        "display_name": "快看漫画",
+        "category": "阅读 / 漫画",
+        "store_description": "提供国漫、条漫和多题材漫画阅读，支持追更、评论互动和创作者社区。",
+        "core_function": "提供国漫、条漫和多题材漫画阅读，支持追更、评论互动和创作者社区。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\style_references.json",
+      "style_reference_apps": [
+        "douyin_huoshan",
+        "tencent_video",
+        "douyin"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 kuaikan 自身的迁移规律（以及 meituan、toutiao、xiaohongshu 等文字类 App），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和空间排布，仅进行颜色映射和材质转换。当前目标原图主体即为高辨识度的“快看！”文字，符合 preserve_when 条件，无需进行语义重构，应完整保留文字骨架以维持品牌识别。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kuaikan.png"
+    },
+    "kugou": {
+      "target_app": "kugou",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\kugou\\kugou.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\target_identity.json",
+      "target_profile": {
+        "app": "kugou",
+        "display_name": "酷狗音乐",
+        "category": "音乐 / 音频娱乐",
+        "store_description": "提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。",
+        "core_function": "提供在线音乐播放、歌单、电台、音效、歌词和K歌等音频服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\style_references.json",
+      "style_reference_apps": [
+        "lofter",
+        "ximalaya",
+        "kuwo"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 kugou、kugou_music、qq_music 等音乐类 App 的迁移规律，当原图为简洁的几何图形（圆环）加字母/符号时，均严格保留主体几何拓扑关系（preserve_major_structure）。当前目标原图为极简的蓝底白圈白 K，结构清晰且无复杂 3D 或插画细节，完全符合直接进行贴纸化映射的条件，无需进行语义重构或结构替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kugou.png"
+    },
+    "lofter": {
+      "target_app": "lofter",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\lofter\\lofter.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\target_identity.json",
+      "target_profile": {
+        "app": "lofter",
+        "display_name": "LOFTER",
+        "category": "社区 / 兴趣创作",
+        "store_description": "面向兴趣爱好者和创作者提供图文、插画、摄影、同人等内容发布与交流。",
+        "core_function": "面向兴趣爱好者和创作者提供图文、插画、摄影、同人等内容发布与交流。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\style_references.json",
+      "style_reference_apps": [
+        "xigua_video",
+        "kugou",
+        "xiaohongshu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 lofter 的真实 original -> style_ref 规律（以及 keep、wps_office 等简洁几何 Logo 的处理方式），当原图主体为简洁的 2D 字母/几何符号时，必须严格保留其核心几何轮廓与空间拓扑。当前目标原图的 'L' 形符号线条流畅、结构极简，完全符合 preserve_major_structure 的触发条件。因此，仅剥离 teal 圆形背景，将 'L' 形主体提取并应用薄荷绿填充与贴纸材质，不进行任何语义替换或结构重组。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lofter.png"
+    },
+    "lol_mobile": {
+      "target_app": "lol_mobile",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\lol_mobile\\lol_mobile.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\target_identity.json",
+      "target_profile": {
+        "app": "lol_mobile",
+        "display_name": "英雄联盟手游",
+        "category": "游戏 / MOBA竞技",
+        "store_description": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。",
+        "core_function": "在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\style_references.json",
+      "style_reference_apps": [
+        "xianyu",
+        "mini_world",
+        "wechat_reading"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 lol_mobile 的真实迁移规律（reference_transformation_patterns），原图复杂的金克丝人物插画和运营标签被完全舍弃，重构为 'LD' 字母组合徽标。这是因为原图主体为写实 3D 人物特写，细节过于丰富且依赖色彩光影，无法在保持手账贴纸简洁性的前提下保留原始几何结构。因此，遵循主题包对复杂插画类 App 的处理逻辑，提取品牌底层徽标进行语义重构，而非保留原图的人物轮廓。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lol_mobile.png"
+    },
+    "meituan": {
+      "target_app": "meituan",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\meituan\\meituan.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\target_identity.json",
+      "target_profile": {
+        "app": "meituan",
+        "display_name": "美团",
+        "category": "本地生活 / 综合服务",
+        "store_description": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。",
+        "core_function": "提供外卖、到店餐饮、酒店、电影、旅游、打车和多种本地生活服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\style_references.json",
+      "style_reference_apps": [
+        "paipai",
+        "baidu_netdisk",
+        "netease_music"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中针对文字类Logo（如dewu、meituan、xiaohongshu、toutiao）的变换规律，当原图主体为清晰的品牌标准字时，均严格保留文字的笔画骨架、字间距和排版结构，仅进行颜色映射和材质贴纸化。当前目标App原图为极简的“美团”黑字黄底，几何结构清晰且无复杂3D或插画干扰，完全符合preserve_major_structure的适用条件。保留文字轮廓能最大化维持品牌识别度，同时完美适配手账贴纸的扁平剪纸语言。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\meituan.png"
+    },
+    "mi_home": {
+      "target_app": "mi_home",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\mi_home\\mi_home.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\target_identity.json",
+      "target_profile": {
+        "app": "mi_home",
+        "display_name": "米家",
+        "category": "生活 / 智能家居",
+        "store_description": "用于连接和管理智能家居设备，支持设备控制、自动化场景和家庭共享。",
+        "core_function": "用于连接和管理智能家居设备，支持设备控制、自动化场景和家庭共享。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\style_references.json",
+      "style_reference_apps": [
+        "jianying",
+        "wechat",
+        "iqiyi_lite"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 mi_home 的 original -> style_ref 变换规律，以及 keep、wps_office 等简洁几何 Logo 的处理方式，当原图主体为清晰的 2D 几何符号时，必须严格保留其拓扑结构。米家 Logo 本身即为极简的盾牌+M 组合，无复杂 3D 渲染或多余装饰，完全符合 preserve_major_structure 的适用条件。因此，策略锁定为保留原始几何轮廓、折角位置和负空间关系，仅执行颜色映射、材质贴纸化和背景标准化，不进行任何语义重构或形状替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mi_home.png"
+    },
+    "mini_world": {
+      "target_app": "mini_world",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\mini_world\\mini_world.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\target_identity.json",
+      "target_profile": {
+        "app": "mini_world",
+        "display_name": "迷你世界",
+        "category": "游戏 / 沙盒创造",
+        "store_description": "提供三维沙盒建造、探索、生存、联机和玩家内容创作体验。",
+        "core_function": "提供三维沙盒建造、探索、生存、联机和玩家内容创作体验。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\style_references.json",
+      "style_reference_apps": [
+        "clash_of_clans",
+        "onmyoji",
+        "bilibili_comics"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 minecraft 和 mini_world 自身的历史迁移规律（reference_transformation_patterns），当原图标为复杂的3D角色插画且充满画面时，主题策略均选择放弃具象角色，转而提取游戏标题文字作为主体。当前目标原图为高复杂度的3D卡通角色与星空漩涡背景，若强行保留角色轮廓将违反主题‘极度简化’与‘扁平剪纸’的工艺限制。因此，依据主题包可观察规律，采用语义重构策略，用标题文字替代原3D主体结构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mini_world.png"
+    },
+    "moji_weather": {
+      "target_app": "moji_weather",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\moji_weather\\moji_weather.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\target_identity.json",
+      "target_profile": {
+        "app": "moji_weather",
+        "display_name": "墨迹天气",
+        "category": "天气 / 生活工具",
+        "store_description": "提供实时天气、逐小时和多日预报、空气质量、降水提醒及生活指数。",
+        "core_function": "提供实时天气、逐小时和多日预报、空气质量、降水提醒及生活指数。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\style_references.json",
+      "style_reference_apps": [
+        "honor_of_kings",
+        "qq_speed",
+        "hello_bike"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 moji_weather 的既定迁移规律（reference_transformation_patterns），原图的 'MOJI' 文字 Logo 被明确放弃，转而使用 '云朵+风' 的图形符号来指代天气功能。当前目标原图为黑底白字加橙色 'O' 的文字排版，若强行保留文字结构将违背该 App 在主题包中已确立的语义重构路径。因此，依据主题包的可观察规律，采用功能语义符号替代原始文字主体，进行结构重组。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\moji_weather.png"
+    },
+    "onmyoji": {
+      "target_app": "onmyoji",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\onmyoji\\onmyoji.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\target_identity.json",
+      "target_profile": {
+        "app": "onmyoji",
+        "display_name": "阴阳师",
+        "category": "游戏 / 角色扮演",
+        "store_description": "以和风妖怪题材为背景，提供式神收集、回合制战斗、剧情探索和社交玩法。",
+        "core_function": "以和风妖怪题材为背景，提供式神收集、回合制战斗、剧情探索和社交玩法。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\style_references.json",
+      "style_reference_apps": [
+        "honor_of_kings",
+        "qq_speed",
+        "hello_bike"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 onmyoji 的真实迁移规律（original 为神乐人物插画，style_ref 重构为'陰陽師'书法文字贴纸），以及 genshin、naruto_mobile 等复杂插画类 App 的处理方式，当原图主体为高细节写实/动漫人物时，主题包规律支持放弃原始几何结构，转而提取最具辨识度的官方文字 Logo 或 IP 符号进行重构。当前目标原图为复杂的神乐 3D 插画，直接保留轮廓会破坏贴纸的简洁性与手工感，因此遵循主题包既定规律，采用文字语义重构策略。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\onmyoji.png"
+    },
+    "peace_camp": {
+      "target_app": "peace_camp",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\peace_camp\\peace_camp.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\target_identity.json",
+      "target_profile": {
+        "app": "peace_camp",
+        "display_name": "和平营地",
+        "category": "游戏工具 / 社区",
+        "store_description": "作为和平精英官方社区，提供资讯、战绩、攻略、赛事内容和玩家交流。",
+        "core_function": "作为和平精英官方社区，提供资讯、战绩、攻略、赛事内容和玩家交流。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\style_references.json",
+      "style_reference_apps": [
+        "qimao",
+        "beautycam",
+        "paipai"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 peace_camp 的 original -> style_ref 规律，该 App 的转换策略明确为提取核心文字 Logo 并剥离写实背景。当前目标原图主体即为“和平精英”文字与英文副标题，属于简洁的 2D 排版结构，符合 preserve_when 条件。因此必须严格保留文字的字形骨架、笔画比例和上下空间关系，仅进行颜色映射、材质贴纸化和背景网格化，不进行语义重构或主体替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\peace_camp.png"
+    },
+    "pinduoduo": {
+      "target_app": "pinduoduo",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\pinduoduo\\pinduoduo.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\target_identity.json",
+      "target_profile": {
+        "app": "pinduoduo",
+        "display_name": "拼多多",
+        "category": "电商 / 综合购物",
+        "store_description": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。",
+        "core_function": "提供日用百货、食品、服饰和数码等商品的在线购物、拼单和优惠活动。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\style_references.json",
+      "style_reference_apps": [
+        "peace_elite",
+        "genshin",
+        "onmyoji"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 pinduoduo 的真实迁移规律（original -> style_ref），原图复杂的心形拼图网格和周围环绕的商品小图标（裙子、相机、鱼等）被完全舍弃，仅提取中心的'拼'字作为主体。这是因为原图主体过于复杂且依赖多色块拼接，无法在保持手账贴纸简洁性的前提下保留整体心形几何。因此，策略遵循主题包规律，放弃原始心形结构，转而提取最具品牌识别度的文字符号进行重构，符合 semantic_recompose 模式。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\pinduoduo.png"
+    },
+    "qq": {
+      "target_app": "qq",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq\\qq.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\target_identity.json",
+      "target_profile": {
+        "app": "qq",
+        "display_name": "QQ",
+        "category": "社交 / 通讯",
+        "store_description": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。",
+        "core_function": "提供即时聊天、群聊、语音视频通话、文件传输、空间和兴趣社交。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\style_references.json",
+      "style_reference_apps": [
+        "qq_browser",
+        "ctrip",
+        "qimao"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 'qq' 的 reference_transformation_patterns 明确显示，对于 QQ 这种核心主体为简洁吉祥物 silhouette 的 App，策略是极度简化内部细节（移除五官、围巾），但严格保留企鹅身体的整体外轮廓几何。当前目标原图即为经典的戴围巾企鹅，其外部轮廓清晰且具备极高辨识度，符合 'preserve_when' 规则中关于简洁 2D 吉祥物 silhouette 的定义，因此必须保留主体几何结构，仅做材质和颜色的主题化映射，不进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq.png"
+    },
+    "qq_mail": {
+      "target_app": "qq_mail",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq_mail\\qq_mail.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\target_identity.json",
+      "target_profile": {
+        "app": "qq_mail",
+        "display_name": "QQ邮箱",
+        "category": "效率 / 邮件",
+        "store_description": "提供邮件收发、附件管理、日历提醒、多账号登录和邮件分类处理。",
+        "core_function": "提供邮件收发、附件管理、日历提醒、多账号登录和邮件分类处理。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\style_references.json",
+      "style_reference_apps": [
+        "toutiao",
+        "huya",
+        "tmall"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中对于简洁几何图形（如 'quark' 的圆环、'tencent_meeting' 的M形、'wps_office' 的W形）的处理规律，当原图主体为清晰的2D线性或块面符号时，均严格保留其拓扑结构和空间比例，仅做材质和颜色的主题化映射。QQ邮箱原图为极简的白色线性信封，几何结构清晰且无复杂3D或插画细节，完全符合 'preserve_when' 的条件。因此，必须保留信封的外轮廓和内部折线结构，禁止将其重构为其他道具或改变几何形态，以确保在统一贴纸风格下的高识别度。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_mail.png"
+    },
+    "qq_reading": {
+      "target_app": "qq_reading",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq_reading\\qq_reading.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\target_identity.json",
+      "target_profile": {
+        "app": "qq_reading",
+        "display_name": "QQ阅读",
+        "category": "阅读 / 电子书",
+        "store_description": "提供网络小说、出版书和漫画等内容阅读，支持书架、听书、追更和推荐。",
+        "core_function": "提供网络小说、出版书和漫画等内容阅读，支持书架、听书、追更和推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\style_references.json",
+      "style_reference_apps": [
+        "bilibili_comics",
+        "moji_weather",
+        "anipop"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 qq_reading 的真实 original -> style_ref 规律显示，当原图为复杂的 3D 探险场景（含帽子、背包、营销文字）时，必须放弃原始整体结构，提取'企鹅+阅读'的核心语义进行重构。当前目标原图同样是高复杂度的 3D 渲染插画，依赖光影和道具细节，无法在保持贴纸简洁性的前提下保留原几何。因此遵循主题包规律，采用语义重组策略，将主体降维为扁平的企鹅读书剪影，既符合手工剪纸的工艺限制，又清晰传达了 App 身份与功能。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_reading.png"
+    },
+    "soul": {
+      "target_app": "soul",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\soul\\soul.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\target_identity.json",
+      "target_profile": {
+        "app": "soul",
+        "display_name": "Soul",
+        "category": "社交 / 兴趣交友",
+        "store_description": "基于兴趣和内容匹配提供聊天、语音房、动态发布和社区互动。",
+        "core_function": "基于兴趣和内容匹配提供聊天、语音房、动态发布和社区互动。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\style_references.json",
+      "style_reference_apps": [
+        "quark",
+        "dingtalk",
+        "qq_music"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 soul 的 reference_transformation_pattern 明确显示，当 original 主体为清晰的品牌文字时，策略是严格保留文字的几何轮廓、字母排列和相对位置，仅进行颜色映射（转为薄荷绿）和材质转换（添加贴纸白边、虚线缝线）。当前目标 App 原图核心即为 'Soul' 文字，符合 preserve_when 条件（简洁文字 Logo），因此必须保留主体结构，不进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\soul.png"
+    },
+    "tencent_comics": {
+      "target_app": "tencent_comics",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tencent_comics\\tencent_comics.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\target_identity.json",
+      "target_profile": {
+        "app": "tencent_comics",
+        "display_name": "腾讯动漫",
+        "category": "阅读 / 漫画",
+        "store_description": "提供国漫、日漫和多题材漫画阅读，支持追更、收藏、评论和作品推荐。",
+        "core_function": "提供国漫、日漫和多题材漫画阅读，支持追更、收藏、评论和作品推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\style_references.json",
+      "style_reference_apps": [
+        "mini_world",
+        "anipop",
+        "minecraft"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 tencent_comics 的真实 original -> style_ref 规律，原图复杂的 IP 角色插画（一人之下）被完全舍弃，转而提取‘阅读/漫画’的通用语义符号（纸飞机）进行重构。当前目标原图同样是高复杂度的 3D 卡通角色场景，依赖特定色彩和光影，无法在保持手账贴纸简洁性的前提下保留主体几何。因此，遵循主题包既定规律，放弃原始结构，采用语义符号替代，以符合手工剪纸的工艺限制和视觉统一性。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_comics.png"
+    },
+    "tencent_meeting": {
+      "target_app": "tencent_meeting",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tencent_meeting\\tencent_meeting.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\target_identity.json",
+      "target_profile": {
+        "app": "tencent_meeting",
+        "display_name": "腾讯会议",
+        "category": "商务 / 视频会议",
+        "store_description": "提供多人音视频会议、屏幕共享、会议录制、字幕和协作管理功能。",
+        "core_function": "提供多人音视频会议、屏幕共享、会议录制、字幕和协作管理功能。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\style_references.json",
+      "style_reference_apps": [
+        "mango_tv",
+        "zepp_life",
+        "lol_assistant"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tencent_meeting 的 original -> style_ref 规律显示，该App原本简洁的2D折叠几何Logo在转化时严格保留了顶点位置、折线角度和整体长宽比，仅进行了材质和颜色的主题化替换。当前目标原图同样是简洁的蓝底白色折叠M形几何体，轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 theme_design_analysis 中 'preserve_when' 的条件（简洁2D几何图形在单色化和添加贴纸边框后依然清晰可辨）。因此，必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅执行色彩归一化、双层贴纸轮廓添加和背景标准化，不进行任何语义重构或主体替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_meeting.png"
+    },
+    "tmall": {
+      "target_app": "tmall",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tmall\\tmall.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\target_identity.json",
+      "target_profile": {
+        "app": "tmall",
+        "display_name": "天猫",
+        "category": "电商 / 品牌购物",
+        "store_description": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。",
+        "core_function": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\style_references.json",
+      "style_reference_apps": [
+        "ctrip",
+        "qq",
+        "bilibili"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tmall 的真实 original -> style_ref 规律显示，当原图包含文字与图形组合时，策略倾向于移除文字部分（如'天猫'汉字），仅保留最具辨识度的图形主体（猫头）并严格保留其几何轮廓与五官空间关系。当前目标原图同样为'文字+猫头'的上下结构，且猫头轮廓简洁清晰，符合 preserve_when 条件，因此应保留猫头主体结构，剔除文字以适配贴纸的极简语言。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tmall.png"
+    },
+    "toutiao_lite": {
+      "target_app": "toutiao_lite",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\toutiao_lite\\toutiao_lite.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\target_identity.json",
+      "target_profile": {
+        "app": "toutiao_lite",
+        "display_name": "今日头条极速版",
+        "category": "新闻 / 轻量资讯",
+        "store_description": "以轻量化方式提供新闻、短视频和图文内容浏览及个性化推荐。",
+        "core_function": "以轻量化方式提供新闻、短视频和图文内容浏览及个性化推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\style_references.json",
+      "style_reference_apps": [
+        "lol_assistant",
+        "youdao_dict",
+        "lofter"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 toutiao 和 toutiao_lite 的真实迁移规律（reference_transformation_patterns），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和排版比例，仅移除背景色块并进行材质转换。当前目标 App 原图主体为高识别度的“头条”文字加闪电角标，属于简洁的 2D 图形/文字组合，符合 preserve_when 条件，因此必须保留主要结构，不进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\toutiao_lite.png"
+    },
+    "wechat": {
+      "target_app": "wechat",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wechat\\wechat.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\target_identity.json",
+      "target_profile": {
+        "app": "wechat",
+        "display_name": "微信",
+        "category": "社交 / 通讯",
+        "store_description": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。",
+        "core_function": "提供聊天、群聊、语音视频通话、朋友圈、支付、小程序和公众号等综合服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\style_references.json",
+      "style_reference_apps": [
+        "tencent_news",
+        "douyin_huoshan",
+        "tencent_meeting"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律显示，对于微信这种几何结构极其简洁且辨识度极高的 Logo，必须严格保留气泡轮廓、重叠关系和眼睛位置（preserve_major_structure=true）。当前目标原图同样是标准的简洁 2D 几何图形，无需进行语义重构或道具替代，直接保留主体拓扑结构并应用贴纸材质即可完美平衡主题统一性与品牌识别度。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wechat.png"
+    },
+    "wecom": {
+      "target_app": "wecom",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wecom\\wecom.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\target_identity.json",
+      "target_profile": {
+        "app": "wecom",
+        "display_name": "企业微信",
+        "category": "办公 / 企业协作",
+        "store_description": "提供企业通讯录、即时沟通、客户联系、会议、文档和办公应用集成。",
+        "core_function": "提供企业通讯录、即时沟通、客户联系、会议、文档和办公应用集成。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\style_references.json",
+      "style_reference_apps": [
+        "douyu",
+        "tencent_video",
+        "douyin_huoshan"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wecom 的 original -> style_ref 规律明确显示：在去除多色渐变和3D高光后，完整保留了大气泡轮廓及右下角四个节点的连接结构与空间分布。当前目标原图主体为简洁的2D几何图形（气泡+节点），轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 preserve_when 条件。因此必须严格保留原始几何拓扑、节点相对位置和气泡形态，仅执行颜色归一化、材质贴纸化和背景标准化处理，不进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wecom.png"
+    },
+    "wps_office": {
+      "target_app": "wps_office",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wps_office\\wps_office.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\target_identity.json",
+      "target_profile": {
+        "app": "wps_office",
+        "display_name": "WPS Office",
+        "category": "效率 / 办公软件",
+        "store_description": "提供文字、表格、演示文稿和PDF的查看、编辑、转换、云同步及协作。",
+        "core_function": "提供文字、表格、演示文稿和PDF的查看、编辑、转换、云同步及协作。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\style_references.json",
+      "style_reference_apps": [
+        "ximalaya",
+        "kuwo",
+        "xigua_video"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wps_office 的 reference_transformation_patterns 显示，该 App 的原始 Logo 为简洁的 2D 几何图形，在转化为贴纸风格时，其核心 'W' 轮廓、折角特征和空间比例被严格保留（preserve_major_structure: true）。当前目标原图同样是简洁的几何 'W' 造型，符合主题包中'当 original 的主体是简洁的 2D 几何图形...必须严格保留大部分原始几何结构'的规律。因此，无需进行语义重构，只需进行材质和颜色的主题化映射，以确保品牌识别度最大化。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wps_office.png"
+    },
+    "xiaohongshu": {
+      "target_app": "xiaohongshu",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\xiaohongshu\\xiaohongshu.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\target_identity.json",
+      "target_profile": {
+        "app": "xiaohongshu",
+        "display_name": "小红书",
+        "category": "社区 / 生活方式",
+        "store_description": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。",
+        "core_function": "提供生活经验、消费分享、图文视频创作、兴趣社区和商品发现。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\style_references.json",
+      "style_reference_apps": [
+        "karaoke",
+        "wechat",
+        "jianying"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 xiaohongshu、meituan、toutiao 等纯文字 Logo 的迁移规律（reference_transformation_patterns），当原图主体为简洁且高识别度的品牌标准字时，均严格保留文字的几何轮廓、笔画走向和空间排布（preserve_major_structure=true），仅进行颜色映射和贴纸材质化处理。当前目标原图为标准的“小红书”白字红底，文字结构清晰且无复杂 3D 或插画干扰，完全符合直接保留主体几何结构的条件，无需进行语义重构或道具替代。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\xiaohongshu.png"
+    },
+    "ximalaya": {
+      "target_app": "ximalaya",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\ximalaya\\ximalaya.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\target_identity.json",
+      "target_profile": {
+        "app": "ximalaya",
+        "display_name": "喜马拉雅",
+        "category": "音乐 / 有声内容",
+        "store_description": "提供播客、有声书、广播剧、课程、相声和儿童内容等音频服务。",
+        "core_function": "提供播客、有声书、广播剧、课程、相声和儿童内容等音频服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\style_references.json",
+      "style_reference_apps": [
+        "lol_assistant",
+        "youdao_dict",
+        "lofter"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 ximalaya、douban、zhihu、meituan 等文字/字形类 App 的 original -> style_ref 规律，当原图主体为简洁且高识别度的汉字或字母时，均严格保留原始几何轮廓、笔画走向与空间比例，仅进行单色填充、白边包裹、虚线缝线添加及背景网格化替换。当前目标原图为极简的艺术化'听'字，无复杂 3D 渲染、多元素堆叠或写实插画，完全符合 preserve_when 条件。保留该字形结构既能确保品牌身份零损耗，又能完美适配手账贴纸的扁平剪纸语言，无需进行语义重构或结构替换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\ximalaya.png"
+    },
+    "youku": {
+      "target_app": "youku",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\youku\\youku.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\target_identity.json",
+      "target_profile": {
+        "app": "youku",
+        "display_name": "优酷",
+        "category": "视频 / 流媒体",
+        "store_description": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。",
+        "core_function": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\style_references.json",
+      "style_reference_apps": [
+        "dianping",
+        "qq_music",
+        "dewu"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tencent_video、xigua_video、weishi 等视频类 App 的转换规律，当原图为简洁的 2D 播放符号或几何 Logo 时，均严格保留了主体的外轮廓、内部镂空及空间比例，仅做单色化和贴纸化处理。优酷原图的折叠箭头本身即为高度抽象且简洁的 2D 几何图形，无复杂 3D 渲染或写实细节，完全符合 preserve_major_structure 的触发条件。保留其几何拓扑关系既能确保极高的品牌识别度，又能完美适配手账贴纸的扁平剪裁语言，无需进行语义重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\youku.png"
+    },
+    "zhihu": {
+      "target_app": "zhihu",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\zhihu\\zhihu.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\target_identity.json",
+      "target_profile": {
+        "app": "zhihu",
+        "display_name": "知乎",
+        "category": "社区 / 知识内容",
+        "store_description": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。",
+        "core_function": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\identity_strategy.json",
+      "style_references_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\style_references.json",
+      "style_reference_apps": [
+        "amap",
+        "mi_home",
+        "alipay"
+      ],
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 zhihu 自身的迁移规律（original 为“知乎”双字，style_ref 简化为单字“知”贴纸）以及 toutiao、meituan 等文字类 App 的处理方式，当原主体为简洁的品牌标准字时，应严格保留核心文字的几何骨架和空间关系。当前目标原图为“知乎”二字，依据主题包已有的 zhihu 转换先例及 detail_complexity_rule（极度简化），选择提取最具识别度的首字“知”作为主体，保留其原始笔画结构，仅进行颜色映射、材质转换和背景标准化，不进行语义符号替换或几何重构。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\zhihu.png"
+    }
+  },
+  "status": "complete",
+  "failed_cases": {},
+  "package_failures": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\package_failures.json",
+  "evaluation_coverage": {
+    "requested_app_count": 40,
+    "evaluated_app_count": 40,
+    "skipped_app_count": 0,
+    "skipped_apps": [],
+    "ratio": 1.0
+  },
+  "structure_evaluation_policy": {
+    "alipay": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 alipay 的真实 original -> style_ref 规律（preserve_major_structure: true），原图的'支'字几何结构简单清晰，在单色化和贴纸化后依然具有极高的辨识度。根据主题包的 structure_preservation_policy，当 original 主体为简洁的文字 Logo 时，必须严格保留其拓扑结构和空间关系。因此，策略选择保留'支'字的完整轮廓，仅进行颜色映射和材质转换，不进行语义重构或结构替换。"
+    },
+    "anipop": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 anipop 的真实迁移规律（reference_transformation_patterns），原图复杂的 3D 多角色堆叠场景被明确重构为单一极简的小鸡 2D 剪影。当前目标原图同样是多角色、高细节的 3D 渲染场景，直接保留整体结构会违反主题的'极度简化'和'扁平单色块'规则。因此，遵循主题包已验证的规律，放弃原图的空间布局和多元素堆叠，提取最具代表性的黄色小鸡作为唯一主体进行语义重组，以适配手工剪纸贴纸的工艺限制。"
+    },
+    "baidu_tieba": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 baidu_tieba 的 original -> style_ref 规律显示，当原图标主体为简洁的几何图形（气泡）加核心文字（贴）时，应严格保留其拓扑结构和空间比例，仅进行颜色映射和材质转换。当前目标原图结构简单清晰，符合 preserve_major_structure 的判定标准，无需进行语义重构或元素替换，直接保留气泡与文字的几何关系即可确保最高识别度。"
+    },
+    "bilibili": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 bilibili 的 original -> style_ref 规律明确显示：保留小电视的外轮廓、天线和支脚的空间布局，仅将内部复杂的 'bilibili' 字体简化为 theme 风格的简笔表情（-w-），以适配贴纸的简洁语言。当前目标原图主体即为小电视与文字的组合，几何结构清晰且非复杂 3D 渲染，符合 'preserve_when' 条件。因此必须严格保留小电视的主体几何结构、天线与支脚的空间关系，仅做颜色映射、材质转换和内部细节的极简化处理，不进行语义重构。"
+    },
+    "clash_of_clans": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 clash_of_clans 的真实迁移规律（original 为 3D 野蛮人头像，style_ref 重构为 'CLASH of CLANS' 文字排版），以及 jd、genshin、mini_world 等复杂 3D/插画图标的处理模式，当原图主体为高细节写实/3D 渲染且无法在极简贴纸语言中保留时，应放弃原始几何结构，提取最具辨识度的官方文字 Logo 进行重构。当前目标原图为复杂的 3D 野蛮人面部特写，依赖光影和色彩表现神态，强行保留轮廓会导致贴纸形态崩坏或语义丢失，因此采用文字标识替代原主体结构，符合主题包的语义重构策略。"
+    },
+    "dewu": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 dewu 的真实 original -> style_ref 规律，以及 meituan、xiaohongshu、toutiao 等文字类 App 的处理方式，当原图主体为清晰的品牌标准字时，主题化策略严格保留文字的几何轮廓、笔画走向和空间排布，仅剥离背景与营销元素。当前目标原图的核心识别点即为“得物”二字，其字形结构简洁且辨识度高，完全符合 preserve_major_structure 的适用条件，无需进行语义重构或道具替代。"
+    },
+    "dingtalk": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 dingtalk 的 original -> style_ref 变换规律，该 App 的核心 Logo 几何结构简洁且识别度极高，完全符合 preserve_major_structure 的判定标准。原图的翅膀闪电轮廓在单色化和贴纸化后依然清晰可辨，无需进行语义重构或道具替代，应严格保留其拓扑结构、羽毛层级和闪电折角，仅做颜色映射和材质转换。"
+    },
+    "douyin": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 douyin 的 original -> style_ref 规律显示，当原图标为简洁的 2D 几何符号时，严格保留其拓扑结构和空间关系，仅进行颜色归一化和材质贴纸化。当前目标原图为经典的音符 Logo，几何结构清晰且辨识度极高，符合 preserve_major_structure 的判定标准，无需进行语义重构或道具替代。"
+    },
+    "douyu": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 douyu 的 original -> style_ref 规律显示，当原图为清晰的 2D 卡通吉祥物时，应严格保留主体几何轮廓（鲨鱼+火箭的组合形态、眼睛位置、咬合关系），仅进行颜色归一化和材质贴纸化。当前目标原图结构简单明确，无复杂 3D 渲染或营销文字干扰，符合 preserve_major_structure 的判定标准，无需进行语义重构。"
+    },
+    "golden_spatula": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示：当原图为复杂的 3D 企鹅角色加写实光影时，应完全舍弃具象角色，提取核心道具'铲子'与底部动态线进行重构。当前目标原图同样是高细节的 3D 企鹅插画，符合 theme_design_analysis 中'复杂3D渲染允许放弃原始结构，提取核心功能语义符号'的重构条件。因此不保留企鹅主体几何，而是用语义符号重组，以适配手工剪纸贴纸的极简轮廓要求。"
+    },
+    "honor_of_kings": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 honor_of_kings 的真实 original -> style_ref 规律显示，原图复杂的写实人物头像（亚瑟）因细节过多、依赖光影渲染，无法在手工剪纸贴纸风格下保留主体几何，因此被完全舍弃并重构为抽象的圆形罗盘/准星符号。当前目标原图同样是高复杂度的写实英雄面部特写叠加营销角标，符合 theme_design_analysis 中 'recompose_when' 的触发条件（复杂3D渲染/写实插画）。因此，必须放弃原图的人脸结构，提取 MOBA 游戏最具代表性的'瞄准/竞技'语义符号进行重构，以适配贴纸的极简轮廓要求。"
+    },
+    "iqiyi": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 iqiyi 和 iqiyi_lite 的转换规律，当原图包含复杂中英文混排时，策略倾向于提取最核心的 'iQIYI' 英文标识并置入圆角矩形播放器外框中，以强化视频语义并适配贴纸的简洁几何语言。当前目标原图为绿紫渐变背景上的 'iQIYI' 与 '爱奇艺' 纯文字排版，无独立图形 Logo。依据主题规律，应舍弃中文副标题，保留 'iQIYI' 字母骨架，并为其增加主题化的圆角矩形播放器外框（或闪电符号暗示），主体文字自身的几何结构与空间比例严格保留，仅做材质、颜色和背景的主题化映射，符合 preserve_major_structure 的判定标准。"
+    },
+    "jianying": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 jianying 的 original -> style_ref 变换规律显示，该App原本简洁的2D几何Logo被严格保留了主体轮廓、交叉线和两侧弧形结构，仅做了颜色替换和贴纸化处理。当前目标原图同样是高对比度的简洁几何图形，无复杂3D渲染或插画细节，完全符合 preserve_when 条件。因此必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅进行主题风格迁移。"
+    },
+    "keep": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 keep 的真实 original -> style_ref 规律显示，原图简洁的 'K' 字 Logo 在转化时严格保留了笔画走向、断笔结构和空间比例，仅做了颜色替换和贴纸化描边。当前目标原图同样是简洁的 2D 几何字母，轮廓清晰且无复杂 3D 渲染，完全符合 'preserve_when' 条件。因此必须冻结为 preserve_major_structure，精确保留 'K' 字的几何拓扑，仅移除右上角的紫色星星装饰以适配主题的极简化规则。"
+    },
+    "kuaikan": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 kuaikan 自身的迁移规律（以及 meituan、toutiao、xiaohongshu 等文字类 App），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和空间排布，仅进行颜色映射和材质转换。当前目标原图主体即为高辨识度的“快看！”文字，符合 preserve_when 条件，无需进行语义重构，应完整保留文字骨架以维持品牌识别。"
+    },
+    "kugou": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 kugou、kugou_music、qq_music 等音乐类 App 的迁移规律，当原图为简洁的几何图形（圆环）加字母/符号时，均严格保留主体几何拓扑关系（preserve_major_structure）。当前目标原图为极简的蓝底白圈白 K，结构清晰且无复杂 3D 或插画细节，完全符合直接进行贴纸化映射的条件，无需进行语义重构或结构替换。"
+    },
+    "lofter": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 lofter 的真实 original -> style_ref 规律（以及 keep、wps_office 等简洁几何 Logo 的处理方式），当原图主体为简洁的 2D 字母/几何符号时，必须严格保留其核心几何轮廓与空间拓扑。当前目标原图的 'L' 形符号线条流畅、结构极简，完全符合 preserve_major_structure 的触发条件。因此，仅剥离 teal 圆形背景，将 'L' 形主体提取并应用薄荷绿填充与贴纸材质，不进行任何语义替换或结构重组。"
+    },
+    "lol_mobile": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 lol_mobile 的真实迁移规律（reference_transformation_patterns），原图复杂的金克丝人物插画和运营标签被完全舍弃，重构为 'LD' 字母组合徽标。这是因为原图主体为写实 3D 人物特写，细节过于丰富且依赖色彩光影，无法在保持手账贴纸简洁性的前提下保留原始几何结构。因此，遵循主题包对复杂插画类 App 的处理逻辑，提取品牌底层徽标进行语义重构，而非保留原图的人物轮廓。"
+    },
+    "meituan": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中针对文字类Logo（如dewu、meituan、xiaohongshu、toutiao）的变换规律，当原图主体为清晰的品牌标准字时，均严格保留文字的笔画骨架、字间距和排版结构，仅进行颜色映射和材质贴纸化。当前目标App原图为极简的“美团”黑字黄底，几何结构清晰且无复杂3D或插画干扰，完全符合preserve_major_structure的适用条件。保留文字轮廓能最大化维持品牌识别度，同时完美适配手账贴纸的扁平剪纸语言。"
+    },
+    "mi_home": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 mi_home 的 original -> style_ref 变换规律，以及 keep、wps_office 等简洁几何 Logo 的处理方式，当原图主体为清晰的 2D 几何符号时，必须严格保留其拓扑结构。米家 Logo 本身即为极简的盾牌+M 组合，无复杂 3D 渲染或多余装饰，完全符合 preserve_major_structure 的适用条件。因此，策略锁定为保留原始几何轮廓、折角位置和负空间关系，仅执行颜色映射、材质贴纸化和背景标准化，不进行任何语义重构或形状替换。"
+    },
+    "mini_world": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 minecraft 和 mini_world 自身的历史迁移规律（reference_transformation_patterns），当原图标为复杂的3D角色插画且充满画面时，主题策略均选择放弃具象角色，转而提取游戏标题文字作为主体。当前目标原图为高复杂度的3D卡通角色与星空漩涡背景，若强行保留角色轮廓将违反主题‘极度简化’与‘扁平剪纸’的工艺限制。因此，依据主题包可观察规律，采用语义重构策略，用标题文字替代原3D主体结构。"
+    },
+    "moji_weather": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 moji_weather 的既定迁移规律（reference_transformation_patterns），原图的 'MOJI' 文字 Logo 被明确放弃，转而使用 '云朵+风' 的图形符号来指代天气功能。当前目标原图为黑底白字加橙色 'O' 的文字排版，若强行保留文字结构将违背该 App 在主题包中已确立的语义重构路径。因此，依据主题包的可观察规律，采用功能语义符号替代原始文字主体，进行结构重组。"
+    },
+    "onmyoji": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 onmyoji 的真实迁移规律（original 为神乐人物插画，style_ref 重构为'陰陽師'书法文字贴纸），以及 genshin、naruto_mobile 等复杂插画类 App 的处理方式，当原图主体为高细节写实/动漫人物时，主题包规律支持放弃原始几何结构，转而提取最具辨识度的官方文字 Logo 或 IP 符号进行重构。当前目标原图为复杂的神乐 3D 插画，直接保留轮廓会破坏贴纸的简洁性与手工感，因此遵循主题包既定规律，采用文字语义重构策略。"
+    },
+    "peace_camp": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 peace_camp 的 original -> style_ref 规律，该 App 的转换策略明确为提取核心文字 Logo 并剥离写实背景。当前目标原图主体即为“和平精英”文字与英文副标题，属于简洁的 2D 排版结构，符合 preserve_when 条件。因此必须严格保留文字的字形骨架、笔画比例和上下空间关系，仅进行颜色映射、材质贴纸化和背景网格化，不进行语义重构或主体替换。"
+    },
+    "pinduoduo": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 pinduoduo 的真实迁移规律（original -> style_ref），原图复杂的心形拼图网格和周围环绕的商品小图标（裙子、相机、鱼等）被完全舍弃，仅提取中心的'拼'字作为主体。这是因为原图主体过于复杂且依赖多色块拼接，无法在保持手账贴纸简洁性的前提下保留整体心形几何。因此，策略遵循主题包规律，放弃原始心形结构，转而提取最具品牌识别度的文字符号进行重构，符合 semantic_recompose 模式。"
+    },
+    "qq": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 'qq' 的 reference_transformation_patterns 明确显示，对于 QQ 这种核心主体为简洁吉祥物 silhouette 的 App，策略是极度简化内部细节（移除五官、围巾），但严格保留企鹅身体的整体外轮廓几何。当前目标原图即为经典的戴围巾企鹅，其外部轮廓清晰且具备极高辨识度，符合 'preserve_when' 规则中关于简洁 2D 吉祥物 silhouette 的定义，因此必须保留主体几何结构，仅做材质和颜色的主题化映射，不进行语义重构。"
+    },
+    "qq_mail": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中对于简洁几何图形（如 'quark' 的圆环、'tencent_meeting' 的M形、'wps_office' 的W形）的处理规律，当原图主体为清晰的2D线性或块面符号时，均严格保留其拓扑结构和空间比例，仅做材质和颜色的主题化映射。QQ邮箱原图为极简的白色线性信封，几何结构清晰且无复杂3D或插画细节，完全符合 'preserve_when' 的条件。因此，必须保留信封的外轮廓和内部折线结构，禁止将其重构为其他道具或改变几何形态，以确保在统一贴纸风格下的高识别度。"
+    },
+    "qq_reading": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 qq_reading 的真实 original -> style_ref 规律显示，当原图为复杂的 3D 探险场景（含帽子、背包、营销文字）时，必须放弃原始整体结构，提取'企鹅+阅读'的核心语义进行重构。当前目标原图同样是高复杂度的 3D 渲染插画，依赖光影和道具细节，无法在保持贴纸简洁性的前提下保留原几何。因此遵循主题包规律，采用语义重组策略，将主体降维为扁平的企鹅读书剪影，既符合手工剪纸的工艺限制，又清晰传达了 App 身份与功能。"
+    },
+    "soul": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 soul 的 reference_transformation_pattern 明确显示，当 original 主体为清晰的品牌文字时，策略是严格保留文字的几何轮廓、字母排列和相对位置，仅进行颜色映射（转为薄荷绿）和材质转换（添加贴纸白边、虚线缝线）。当前目标 App 原图核心即为 'Soul' 文字，符合 preserve_when 条件（简洁文字 Logo），因此必须保留主体结构，不进行语义重构。"
+    },
+    "tencent_comics": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "参考主题包中 tencent_comics 的真实 original -> style_ref 规律，原图复杂的 IP 角色插画（一人之下）被完全舍弃，转而提取‘阅读/漫画’的通用语义符号（纸飞机）进行重构。当前目标原图同样是高复杂度的 3D 卡通角色场景，依赖特定色彩和光影，无法在保持手账贴纸简洁性的前提下保留主体几何。因此，遵循主题包既定规律，放弃原始结构，采用语义符号替代，以符合手工剪纸的工艺限制和视觉统一性。"
+    },
+    "tencent_meeting": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 tencent_meeting 的 original -> style_ref 规律显示，该App原本简洁的2D折叠几何Logo在转化时严格保留了顶点位置、折线角度和整体长宽比，仅进行了材质和颜色的主题化替换。当前目标原图同样是简洁的蓝底白色折叠M形几何体，轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 theme_design_analysis 中 'preserve_when' 的条件（简洁2D几何图形在单色化和添加贴纸边框后依然清晰可辨）。因此，必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅执行色彩归一化、双层贴纸轮廓添加和背景标准化，不进行任何语义重构或主体替换。"
+    },
+    "tmall": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 tmall 的真实 original -> style_ref 规律显示，当原图包含文字与图形组合时，策略倾向于移除文字部分（如'天猫'汉字），仅保留最具辨识度的图形主体（猫头）并严格保留其几何轮廓与五官空间关系。当前目标原图同样为'文字+猫头'的上下结构，且猫头轮廓简洁清晰，符合 preserve_when 条件，因此应保留猫头主体结构，剔除文字以适配贴纸的极简语言。"
+    },
+    "toutiao_lite": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 toutiao 和 toutiao_lite 的真实迁移规律（reference_transformation_patterns），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和排版比例，仅移除背景色块并进行材质转换。当前目标 App 原图主体为高识别度的“头条”文字加闪电角标，属于简洁的 2D 图形/文字组合，符合 preserve_when 条件，因此必须保留主要结构，不进行语义重构。"
+    },
+    "wechat": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律显示，对于微信这种几何结构极其简洁且辨识度极高的 Logo，必须严格保留气泡轮廓、重叠关系和眼睛位置（preserve_major_structure=true）。当前目标原图同样是标准的简洁 2D 几何图形，无需进行语义重构或道具替代，直接保留主体拓扑结构并应用贴纸材质即可完美平衡主题统一性与品牌识别度。"
+    },
+    "wecom": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 wecom 的 original -> style_ref 规律明确显示：在去除多色渐变和3D高光后，完整保留了大气泡轮廓及右下角四个节点的连接结构与空间分布。当前目标原图主体为简洁的2D几何图形（气泡+节点），轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 preserve_when 条件。因此必须严格保留原始几何拓扑、节点相对位置和气泡形态，仅执行颜色归一化、材质贴纸化和背景标准化处理，不进行语义重构。"
+    },
+    "wps_office": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 wps_office 的 reference_transformation_patterns 显示，该 App 的原始 Logo 为简洁的 2D 几何图形，在转化为贴纸风格时，其核心 'W' 轮廓、折角特征和空间比例被严格保留（preserve_major_structure: true）。当前目标原图同样是简洁的几何 'W' 造型，符合主题包中'当 original 的主体是简洁的 2D 几何图形...必须严格保留大部分原始几何结构'的规律。因此，无需进行语义重构，只需进行材质和颜色的主题化映射，以确保品牌识别度最大化。"
+    },
+    "xiaohongshu": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 xiaohongshu、meituan、toutiao 等纯文字 Logo 的迁移规律（reference_transformation_patterns），当原图主体为简洁且高识别度的品牌标准字时，均严格保留文字的几何轮廓、笔画走向和空间排布（preserve_major_structure=true），仅进行颜色映射和贴纸材质化处理。当前目标原图为标准的“小红书”白字红底，文字结构清晰且无复杂 3D 或插画干扰，完全符合直接保留主体几何结构的条件，无需进行语义重构或道具替代。"
+    },
+    "ximalaya": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 ximalaya、douban、zhihu、meituan 等文字/字形类 App 的 original -> style_ref 规律，当原图主体为简洁且高识别度的汉字或字母时，均严格保留原始几何轮廓、笔画走向与空间比例，仅进行单色填充、白边包裹、虚线缝线添加及背景网格化替换。当前目标原图为极简的艺术化'听'字，无复杂 3D 渲染、多元素堆叠或写实插画，完全符合 preserve_when 条件。保留该字形结构既能确保品牌身份零损耗，又能完美适配手账贴纸的扁平剪纸语言，无需进行语义重构或结构替换。"
+    },
+    "youku": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 tencent_video、xigua_video、weishi 等视频类 App 的转换规律，当原图为简洁的 2D 播放符号或几何 Logo 时，均严格保留了主体的外轮廓、内部镂空及空间比例，仅做单色化和贴纸化处理。优酷原图的折叠箭头本身即为高度抽象且简洁的 2D 几何图形，无复杂 3D 渲染或写实细节，完全符合 preserve_major_structure 的触发条件。保留其几何拓扑关系既能确保极高的品牌识别度，又能完美适配手账贴纸的扁平剪裁语言，无需进行语义重构。"
+    },
+    "zhihu": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题包中 zhihu 自身的迁移规律（original 为“知乎”双字，style_ref 简化为单字“知”贴纸）以及 toutiao、meituan 等文字类 App 的处理方式，当原主体为简洁的品牌标准字时，应严格保留核心文字的几何骨架和空间关系。当前目标原图为“知乎”二字，依据主题包已有的 zhihu 转换先例及 detail_complexity_rule（极度简化），选择提取最具识别度的首字“知”作为主体，保留其原始笔画结构，仅进行颜色映射、材质转换和背景标准化，不进行语义符号替换或几何重构。"
+    }
+  },
+  "final_outputs": {
+    "alipay": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\alipay.png",
+    "anipop": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\anipop.png",
+    "baidu_tieba": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\baidu_tieba.png",
+    "bilibili": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\bilibili.png",
+    "clash_of_clans": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\clash_of_clans.png",
+    "dewu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dewu.png",
+    "dingtalk": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dingtalk.png",
+    "douyin": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyin.png",
+    "douyu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyu.png",
+    "golden_spatula": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\golden_spatula.png",
+    "honor_of_kings": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\honor_of_kings.png",
+    "iqiyi": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\iqiyi.png",
+    "jianying": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\jianying.png",
+    "keep": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\keep.png",
+    "kuaikan": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kuaikan.png",
+    "kugou": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kugou.png",
+    "lofter": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lofter.png",
+    "lol_mobile": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lol_mobile.png",
+    "meituan": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\meituan.png",
+    "mi_home": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mi_home.png",
+    "mini_world": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mini_world.png",
+    "moji_weather": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\moji_weather.png",
+    "onmyoji": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\onmyoji.png",
+    "peace_camp": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\peace_camp.png",
+    "pinduoduo": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\pinduoduo.png",
+    "qq": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq.png",
+    "qq_mail": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_mail.png",
+    "qq_reading": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_reading.png",
+    "soul": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\soul.png",
+    "tencent_comics": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_comics.png",
+    "tencent_meeting": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_meeting.png",
+    "tmall": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tmall.png",
+    "toutiao_lite": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\toutiao_lite.png",
+    "wechat": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wechat.png",
+    "wecom": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wecom.png",
+    "wps_office": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wps_office.png",
+    "xiaohongshu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\xiaohongshu.png",
+    "ximalaya": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\ximalaya.png",
+    "youku": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\youku.png",
+    "zhihu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\zhihu.png"
+  },
+  "contact_sheet": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\contact_sheet.png",
+  "package_qc_report": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\package_qc_report.json",
+  "model_config": {
+    "plan_model": "qwen3.8-max",
+    "image_model": "wan2.7-image"
+  },
+  "mock_mode": false,
+  "created_at": "2026-08-06T15:35:33.123820+00:00"
+}

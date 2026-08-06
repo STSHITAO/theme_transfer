@@ -1,0 +1,68 @@
+{
+  "app": "keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 keep 的真实 original -> style_ref 规律显示，原图简洁的 'K' 字 Logo 在转化时严格保留了笔画走向、断笔结构和空间比例，仅做了颜色替换和贴纸化描边。当前目标原图同样是简洁的 2D 几何字母，轮廓清晰且无复杂 3D 渲染，完全符合 'preserve_when' 条件。因此必须冻结为 preserve_major_structure，精确保留 'K' 字的几何拓扑，仅移除右上角的紫色星星装饰以适配主题的极简化规则。",
+  "preserve": [
+    "大写字母 K 的整体骨架与特定倾斜角度",
+    "右侧上方短笔画与下方长笔画之间的断开缺口特征",
+    "所有笔画末端的圆润端点处理",
+    "左侧竖线与右侧折线的空间比例关系"
+  ],
+  "must_preserve": [
+    "K 字母右侧笔画的断开/分离结构（核心识别锚点）",
+    "K 字母独特的几何拓扑与笔画走向",
+    "笔画连接处的圆角形态"
+  ],
+  "recompose_allowed": [
+    "移除右上角的四角星/闪光装饰符号以适配极简贴纸风格",
+    "将深紫色渐变背景完全替换为标准网格底板",
+    "将白色主体填充色替换为薄荷绿主题色"
+  ],
+  "restyle": [
+    "主体填充统一为低饱和度薄荷绿/青蓝色",
+    "添加白色宽包边模拟模切贴纸边缘",
+    "在白边内侧或紧贴边缘添加深灰色虚线模拟缝纫针脚",
+    "右下方添加浅灰色硬边缘投影以营造悬浮层级感",
+    "所有几何转角进一步柔化处理以符合纸质剪裁质感"
+  ],
+  "decorate": [
+    "背景使用米白/浅灰白底色铺满淡灰色正方形网格",
+    "主体外围环绕一圈淡红/淡粉色圆角虚线框作为裁剪定位参考"
+  ],
+  "forbid": [
+    "连接 K 字母右侧断开的笔画或改变其几何结构",
+    "保留深紫色背景、渐变色或四角星的原始颜色",
+    "将 K 字母替换为哑铃、跑鞋、跑步人物等具象运动道具",
+    "使用尖锐直角替代原有的圆润笔画端点",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影中的任一元素",
+    "引入金属光泽、霓虹发光、3D 立体渲染等非纸质材质",
+    "主体过大撑满画布或过小失去辨识度"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the stylized letter 'K' placed on a light grey grid notebook paper background. The 'K' features a distinct disconnected upper-right diagonal stroke and rounded terminals, filled with uniform mint cyan color. The letter is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. No star decoration. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting.",
+  "color_application": "彻底剥离 Keep 原始的深紫色背景和白色/渐变星星配色，将 K 字母主体强制填充为统一的低饱和度薄荷绿/青蓝色；原图中的白色转化为白色宽包边；背景严格使用米白底+浅灰网格+淡红虚线框的标准底板配色，禁止任何品牌色泄漏。",
+  "stroke_application": "将原始 K 字母的实心边缘转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层叠加深灰色细虚线模拟手工缝纫针脚；K 字母的所有笔画端点和转折处必须保持圆润化处理，禁止尖锐直角，线条密度降低以符合手工剪纸的柔和感。",
+  "composition_application": "将 K 字母从原始的满版构图收缩为居中放置的独立贴纸形态，主体尺寸控制在画布的 50% 左右，严格落入红色虚线框安全区内；四周保留均匀充足的网格留白，形成明确的'底板-虚线框-贴纸'三层嵌套层级关系；移除右上角星星后视觉重心更聚焦于 K 字母本身。",
+  "identity_application": "在严格服从薄荷绿单色填充和贴纸材质规范的前提下，通过精确保留 K 字母右侧断笔结构、圆润端点和特定几何比例来维持品牌识别度；移除星星装饰不会损害核心身份，因为 K 字母的独特构造已是充分识别线索；禁止用功能道具替代字母主体。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留紫色或白色填充",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（约 50%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D 立体效果或写实纹理",
+    "K 字母的所有几何转角必须圆润化处理"
+  ],
+  "negative_constraints": [
+    "禁止保留原始的深紫色背景或四角星装饰的原始颜色",
+    "禁止连接 K 字母右侧断开的笔画或篡改其几何拓扑",
+    "禁止将主体替换为哑铃、跑步人物等通用运动符号",
+    "禁止使用纯色背景、透明背景或非网格纹理背景",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影",
+    "禁止主体过大撑满画布或过小缩在角落",
+    "禁止添加金属光泽、霓虹发光、玻璃拟态等非手工纸艺材质",
+    "禁止在 K 字母内部保留过多原始细节导致视觉杂乱"
+  ]
+}

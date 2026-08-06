@@ -1,0 +1,27 @@
+{
+  "theme_style_analysis": "3D Ice/Crystal Material Theme. The theme transforms flat 2D icons into three-dimensional objects made of translucent, light-blue ice or crystal. The style emphasizes physical volume, refraction, internal textures (bubbles, snowflakes), and a cold, refreshing atmosphere set against a clean white background.",
+  "common_original_to_style_transform": "Transform flat vector shapes into thick, extruded 3D solids with rounded edges. Apply a unified 'frozen' material treatment: semi-transparent cyan/blue body, glossy surface highlights, and internal imperfections like trapped air bubbles or frost patterns. Remove original brand colors and replace them with the theme's ice palette.",
+  "common_background_transform": "Replace all original colored backgrounds with a pure white or very light grey studio background. Add subtle ground contact shadows and small scattered ice chips or water droplets at the base to anchor the object in 3D space.",
+  "common_foreground_transform": "The main icon symbol becomes a physical sculpture. Edges are smoothed and beveled to catch light. Internal details (like the snowflake in Douyin or bubbles in Alipay) are embedded within the volume. If the original had separate elements (like the fire in Douyin Huoshan), they may be retained as small floating accents or integrated into the ice structure, but the primary mass is always ice.",
+  "color_palette": [
+    "Translucent Cyan",
+    "Pale Ice Blue",
+    "White (Highlights/Background)",
+    "Deep Blue (Refraction/Shadows)"
+  ],
+  "line_style": "No outlines. Forms are defined by lighting, refraction, and edge highlights (rim light). Edges are soft and rounded, simulating melted or carved ice.",
+  "texture_material": "High-gloss translucent ice/crystal. Surface features include specular highlights, subsurface scattering (glowing from within), and internal inclusions like tiny bubbles, cracks, or snowflake patterns.",
+  "lighting_shadow": "Bright, cool studio lighting. Strong rim lighting on edges to define shape against the white background. Soft ambient occlusion shadows at the base. Light passes through the object (translucency).",
+  "icon_composition_rules": "Centered composition. The object occupies about 70-80% of the canvas. Floating elements (if any) are balanced around the main mass. Perspective is slightly elevated (3/4 view) to show depth and thickness.",
+  "target_preservation": "Must strictly preserve the target App's core silhouette and recognizable geometry. Do not change the fundamental shape of the logo, only its material and dimensionality. Ensure the 'ice' treatment does not obscure critical negative space or structural lines necessary for identification.",
+  "generation_prompt": "3D render of an app icon made of translucent blue ice, crystal clear material, internal bubbles and snowflake textures, glossy surface, refraction, caustics, rounded edges, extruded 3D shape, bright studio lighting, white background, subtle ground shadow, ice chips at base, high detail, photorealistic texture, C4D style, octane render.",
+  "negative_prompt": "flat design, 2D vector, solid colors, matte plastic, metal, wood, dark background, complex scenery, text, watermark, blurry, low resolution, distorted shape, original brand colors.",
+  "qc_focus": "Check if the material looks like ice/crystal (translucent, not opaque plastic). Verify the target icon's shape is accurate and recognizable. Ensure the background is clean white. Check for realistic lighting and shadows.",
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ]
+}

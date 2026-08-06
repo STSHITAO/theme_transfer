@@ -1,0 +1,69 @@
+{
+  "app": "xiaohongshu",
+  "strategy_type": "symbolic_scene",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 xiaohongshu 的真实 original -> style_ref 规律（纯文字排版重构为穿红衣的全身角色立绘），以及 eleme（纯文字重构为奔跑小狗）、zhihu（文字重构为动物+文字）的案例，当原图为纯文字排版且缺乏单一几何轮廓时，应放弃原始几何结构，转而提取核心功能语义（生活分享）和品牌色线索（红色），用语义相符的母题形象（穿红衣/持物的绿叶小狗）进行重新构图。",
+  "preserve": [
+    "品牌红色调作为极小面积服饰或道具点缀",
+    "生活分享与记录的轻松社区氛围语义"
+  ],
+  "must_preserve": [
+    "绿叶小狗/蔬菜萌宠核心母题特征（绿叶耳、粉腮红、豆豆眼、呆萌表情）",
+    "纯白圆角矩形底板与充足留白呼吸空间",
+    "底部居中黑色手写体 'Xiaohongshu'",
+    "深绿/黑色手绘抖动粗描边与扁平哑光填色质感",
+    "主体占比50%-65%且严格居中偏上"
+  ],
+  "recompose_allowed": [
+    "原有白色汉字'小红书'排版完全移除并由底部手写英文替代",
+    "原有高饱和红色全屏背景转化为白底，红色仅保留在角色服饰上",
+    "角色姿态可设计为手持相机、笔记本或开心站立以映射生活分享语义",
+    "将文字标彻底替换为具象化的绿叶小狗全身立绘"
+  ],
+  "restyle": [
+    "线条转化为粗细不均的手绘马克笔/蜡笔质感，边缘带自然抖动",
+    "色彩从高饱和品牌红映射为低饱和草绿/嫩绿主色+微量红色点缀",
+    "材质从扁平矢量色块转化为纸质手账贴纸触感"
+  ],
+  "decorate": [
+    "头顶绿色叶片状耳朵或植物装饰",
+    "面部粉色椭圆腮红与黑色豆豆眼",
+    "手持小相机或笔记本等生活记录道具",
+    "偶尔出现的汗滴或口水点缀增强呆萌感"
+  ],
+  "forbid": [
+    "保留红色作为大面积背景或主填充色",
+    "使用平滑矢量线、锐利边缘或标准印刷字体",
+    "遗漏绿叶、粉腮红等主题核心母题特征",
+    "添加3D光影、渐变、高光或复杂纹理",
+    "主体撑满画布导致失去留白和底部文字区域",
+    "直接复刻原图白色汉字排版而忽略主题化角色重构",
+    "使用与原App无关的随机卡通形象或通用书本图标"
+  ],
+  "generation_brief": "A cute hand-drawn doodle style app icon on a pure white rounded square background. Central subject is an adorable green plant-animal hybrid puppy character wearing a small red outfit or scarf as brand color accent. The puppy has leaf-shaped green ears, pink oval blushes, tiny black dot eyes, and a playful expression, holding a small camera or notebook to symbolize lifestyle sharing. Use thick wobbly dark green marker outlines with flat light green fill. Below the centered graphic, write 'Xiaohongshu' in casual bold black handwritten font. Flat sticker art style, clean composition, ample white space, no shadows or gradients.",
+  "color_application": "彻底移除原高饱和红色背景，强制使用纯白底板+低饱和草绿/嫩绿作为主体主色；品牌红色仅以极小面积保留在角色服饰（红衣/红围巾）或手持物上作为身份锚点；腮红使用淡粉色，描边与文字使用深墨绿或纯黑。",
+  "stroke_application": "将原图无描边的纯色块文字转化为深绿色手绘马克笔粗轮廓，线条边缘带自然抖动、断笔与圆润端点；内部细节用同色系细线勾勒叶脉纹理；严禁平滑矢量线或机械几何曲线。",
+  "composition_application": "从原图撑满画布的纯文字排版收缩为单一居中偏上的卡通角色立绘，主体高度控制在50%-65%，四周保留充足白色呼吸空间；底部固定预留15%-20%区域放置黑色手写体App名称，形成稳定的上图下文贴纸式三段构图。",
+  "identity_application": "放弃原始汉字几何结构，通过三重机制维持识别：1) 微量保留品牌红色于服饰/道具；2) 角色姿态与手持物映射'生活分享/记录'核心语义；3) 底部手写体'Xiaohongshu'作为强制文字兜底。主题母题特征（绿叶耳、粉腮红、呆萌脸）优先于原始字形精确度。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须包含绿叶元素、粉腮红、豆豆眼、呆萌表情四要素",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量或标准几何",
+    "底部必须包含黑色手写风格'Xiaohongshu'，禁止印刷字体",
+    "色彩严格限制在白、绿、粉、黑及微量红色点缀范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D或光影效果",
+    "主体占比必须在50%-65%之间，保证留白与底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和红色作为大面积背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染",
+    "禁止主体撑满画布导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止直接复刻原图汉字排版而不进行角色化重构",
+    "禁止过度重构导致品牌红色线索与生活分享语义完全消失"
+  ]
+}

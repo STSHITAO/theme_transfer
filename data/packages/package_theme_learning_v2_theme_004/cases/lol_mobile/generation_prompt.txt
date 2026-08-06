@@ -1,0 +1,124 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_004
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+当前主题是一种统一的“手绘绿色萌系涂鸦”风格。所有参考样例均将原本的商业化、扁平或3D质感的图标，转化为白底圆角矩形上的可爱卡通形象。核心视觉语言是使用深浅不一的绿色粗线条进行勾勒，融入植物叶片纹理，并赋予主体拟人化的呆萌表情（如豆豆眼、粉色腮红、吐舌头），整体呈现出轻松、治愈、手账贴纸般的视觉效果。
+
+[Shared original-to-style transform]
+原始图标到主题图标的共同变化是“去商业化材质化”与“生物/植物拟人化”。原本写实的渐变背景、3D光影和标准字体被完全剥离；主体的核心几何轮廓或文字结构被保留，但被重绘为带有手绘抖动感的不规则线条，并巧妙地融合进一个统一的绿色卡通小怪兽/植物精灵的形象中，使其具有生命力和情绪。
+
+[Color]
+彻底摒弃原App的高饱和度品牌主色背景，强制映射为主题专用的低饱和绿色系+白底。仅当原色具有极强功能语义绑定（如抖音红青故障、和平精英橙红护目镜）时，才以描边偏移、服饰或手持物形式微量保留。金属色、光影色全部简化为平涂色块。
+
+[Background]
+无论原图是全出血彩色、深色模式还是复杂场景，统一裁剪替换为纯白/米白圆角底板。背景占比从原图的0%留白提升至40%-50%以上。唯一例外是原App强依赖深色氛围维持核心识别（如醒图黑底发光球），可保留深色底但需提亮主体。
+
+[Edges and strokes]
+将原图的无描边、细矢量线或3D边缘全部转化为深绿/黑色手绘粗轮廓。线条密度大幅降低，边缘圆润度极高，消除所有尖角。通过断线、飞白和粗细变化模拟真实笔触，边界复杂度从高精度几何简化为概括性涂鸦。
+
+[Composition]
+主体从原图的撑满画布/复杂多层叠加，收缩为单一居中的卡通形象或符号容器。视觉重心从分散的品牌叙事集中到萌系角色上。底部强制新增手写体App名称区域，形成“上图下文”的固定版式，改变原有纯图形构图逻辑。
+
+[Subject scale]
+主体相对画布尺寸显著缩小，高度控制在50%-65%，宽度控制在40%-60%。严禁主体触碰画布边缘或撑满全图。缩放方式为等比概括缩小，确保四周尤其是底部有充足留白以容纳文字并维持呼吸感。
+
+[Detail complexity]
+细节密度极度降低。移除原图所有写实纹理、3D光影、复杂五官、营销道具和多角色堆叠。仅保留识别身份所需的最简几何特征，并强制叠加主题三要素（叶脉/叶子、粉腮红、吐舌/呆萌脸）。装饰数量严格受限，纹理复杂度归零。
+
+[Required style properties]
+- 必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景（深色氛围App除外）。
+- 主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情。
+- 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形。
+- 底部必须包含黑色手写风格App英文/拼音名称，禁止标准印刷字体。
+- 色彩严格限制在白、绿、粉、黑及极少量原App识别点缀色范围内。
+- 整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果。
+- 主体占比必须在50%-65%之间，保证充足留白和底部文字空间。
+
+[Forbidden style drift]
+- 禁止保留原App高饱和度品牌色作为大面积背景或主填充。
+- 禁止使用平滑矢量线、锐利边缘或完美几何形状。
+- 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果。
+- 禁止让主体撑满画布，导致失去留白和底部文字区域。
+- 禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象。
+- 禁止遗漏底部手写App名称或使用电脑标准字体。
+- 禁止保留原图复杂营销元素、写实道具或多角色堆叠。
+- 禁止过度重构导致原App核心轮廓/语义符号完全消失。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.
+
+
+[ABSOLUTE IDENTITY LOCK — HIGHEST PRIORITY]
+
+The first input image, labelled TARGET_IMAGE, is the only allowed source of subject identity.
+Every following image, labelled STYLE_REFERENCE, is style-only evidence.
+
+TARGET_IMAGE is the only allowed source of:
+- logo and text content
+- recognizable symbol and semantic object
+- subject silhouette and object category
+- internal geometry, negative space, and spatial layout
+
+STYLE_REFERENCE images may contribute only visual treatment. They must contribute zero logo content, text, recognizable symbol, subject silhouette, object category, internal layout, or brand identity.
+If any identity content from a STYLE_REFERENCE appears in the result, the result is invalid.
+
+[CURRENT TARGET]
+target_app: lol_mobile
+display_name: 英雄联盟手游
+category: 游戏 / MOBA竞技
+core_function: 在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。
+
+[TARGET SEMANTIC FACTS — FROM TARGET.JSON]
+store_description: 在移动端提供多人实时MOBA对战、英雄操作、排位竞技和多种娱乐模式。
+These neutral facts explain what CURRENT TARGET does. Derive a visual interpretation only within the frozen theme-specific structure policy below. They do not prescribe an object and do not authorize identity content from STYLE_REFERENCE images.
+
+[STRUCTURE POLICY]
+mode: semantic_recompose
+identity_constraint_level: balanced
+Semantic recomposition is allowed only when it preserves the target App's specified identity and functional cues. No subject or geometry may be borrowed from a style reference.
+
+[MUST PRESERVE FROM TARGET_IMAGE]
+- 绿叶小狗/蔬菜萌宠的核心母题特征（绿叶耳/饰、粉腮红、呆萌脸）
+- 底部黑色手写体 'LOL Mobile' 文字标识
+- 纯白圆角矩形底板与充足留白
+
+[TARGET IDENTITY APPLICATION]
+通过语义重构保留身份：将金克丝的'蓝色双马尾'转译为'绿色菜叶双马尾头饰'，将'疯狂大笑'转译为'吐舌+张嘴的呆萌狂野表情'，配合底部手写文字兜底识别，在不破坏主题萌系统一性的前提下传递角色神韵。
+
+[EXECUTION BRIEF]
+White rounded square background. Center: a cute green vegetable-dog character head mimicking Jinx's vibe. Replace blue hair with messy green cabbage leaves/vines forming pigtails shape. Face: kawaii dot eyes, pink blush, wide open mouth with tongue sticking out (crazy happy expression). Thick wobbly dark green marker outlines, flat light green fill. No 3D, no blue background. Bottom: handwritten black text 'LOL Mobile'. Sticker art style.
+
+[ALLOWED TARGET RECOMPOSITION]
+- 将金克丝蓝色双马尾重构为绿色菜叶/藤蔓状的双马尾头饰
+- 将写实人脸五官重构为豆豆眼、粉色腮红与简笔画大笑嘴型
+- 将3D皮肤与光影材质重构为扁平马克笔涂鸦质感
+- 移除'4周年'营销贴纸、橙色爆炸框及右下角腾讯Logo
+
+[THEME APPLICATION]
+- Color: 彻底剥离原图蓝色头发与橙色营销色，强制映射为主题专用的深草绿(#4A7C29)描边与浅嫩绿(#A8D060)填充；仅保留淡粉色(#FFB6C1)作为腮红点缀，背景统一为纯白(#FFFFFF)，确保无原品牌高饱和色泄漏。
+- Edges and strokes: 将原图3D渲染边缘与平滑发丝线条全部转化为深绿色手绘马克笔粗轮廓，线条需带有自然抖动、断笔与圆润端点，禁止任何锐利尖角或机械几何曲线，内部细节用同色系细线勾勒叶脉。
+- Composition: 放弃原图非对称半身像与营销角标布局，采用严格居中构图，主体（菜狗版金克丝）占画布50%-65%，四周保留充足白色呼吸空间，底部固定预留区域放置黑色手写体'LOL Mobile'，形成稳定的上图下文贴纸版式。
+- Required theme properties: 必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景; 主体必须融入绿叶小狗/蔬菜萌宠母题：绿叶元素、粉腮红、豆豆眼、呆萌表情; 必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形; 底部必须包含黑色手写风格'LOL Mobile'，禁止标准印刷字体; 色彩严格限制在白、绿、粉、黑范围内，禁止原图蓝橙色大面积出现; 整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果; 主体占比必须在50%-65%之间，保证充足留白和底部文字空间
+
+[INVALID OUTPUT CONDITIONS]
+- Any text, logo, recognizable symbol, subject, silhouette, or internal layout copied from a STYLE_REFERENCE.
+- Any text or symbol absent from TARGET_IMAGE.
+- A result that resembles a STYLE_REFERENCE subject more than TARGET_IMAGE.
+- A changed object category or an unrecognizable target App.
+- Violating these target-specific constraints: 禁止保留原App高饱和度蓝色/橙色作为背景或主填充; 禁止使用平滑矢量线、锐利边缘或完美几何形状; 禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果; 禁止让主体撑满画布，导致失去留白和底部文字区域; 禁止偏离绿叶小狗/蔬菜萌宠核心母题，使用通用动漫女孩或写实人脸; 禁止遗漏底部手写App名称或使用电脑标准字体; 禁止保留'4周年'贴纸、腾讯Logo等营销元素与复杂道具; 禁止过度重构导致金克丝的双马尾/狂笑语义完全消失变成普通菜狗
+
+[PRIORITY]
+1. Preserve target identity and the required target structure.
+2. Apply theme material and visual treatment without changing identity.
+3. Add decorative detail only when priorities 1 and 2 remain satisfied.
+
+If identity and theme styling conflict, preserve identity. Theme fidelity must never replace target identity.
+
+[FINAL INTERNAL CHECK]
+Before generating, identify the subject and required geometry in TARGET_IMAGE, separate them from the visual treatment in STYLE_REFERENCE images, and confirm that the output contains zero reference identity.
+
+[OUTPUT]
+Return exactly one complete themed target icon. No captions, comparison layout, input collage, watermark, explanation, or extra logo.

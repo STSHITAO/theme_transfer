@@ -1,0 +1,41 @@
+{
+  "app": "qq_reading",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "企鹅IP形象与手持书本的阅读动作",
+  "brand_cues_to_preserve": [
+    "企鹅/圆润生物的面部特征（大眼、喙/鼻）",
+    "双手捧书的姿态",
+    "QQ系产品的萌系基因"
+  ],
+  "semantic_cues_to_preserve": [
+    "打开的书本",
+    "阅读/学习的专注状态",
+    "探险/暑期行动的帽子元素（可选作为装饰）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'qq' (保留站姿换肤) 和 'wechat_reading' (重构为书本+悬浮头) 的规律。原图是复杂的3D写实场景（企鹅+背包+帽子+书+背景），属于 'complex_original'。根据规则，需剥离3D材质、复杂背景和营销文字（'暑期行动'）。由于原图主体是全身像且细节过多，无法直接保留几何结构（preserve_major_structure），因此采用语义重构：提取'企鹅读书'的核心语义，将其转化为符合主题母题的'绿叶小狗/蔬菜萌宠'正在读书的形象，保留书本道具和头部特征作为身份锚点。",
+  "design_rationale": "QQ阅读的核心识别在于'QQ企鹅'IP和'阅读'功能。在主题化过程中，将3D企鹅转化为2D手绘绿叶小狗（呼应QQ的萌系属性但服从主题母题），保留其捧书阅读的动作以明确功能语义。去除原图复杂的探险装备和背景，简化为白底贴纸风格，底部添加手写体名称以确保识别。",
+  "must_preserve": [
+    "双手捧着打开的书本这一核心动作",
+    "圆润可爱的头部轮廓（映射企鹅脸型）",
+    "专注或开心的阅读表情"
+  ],
+  "can_recompose": [
+    "企鹅物种转化为绿叶小狗/蔬菜萌宠",
+    "3D写实材质转化为扁平手绘涂鸦",
+    "复杂的探险帽/背包简化为头顶的绿叶装饰或简单线条",
+    "深色复杂背景替换为纯白底板",
+    "移除'暑期行动'营销大字"
+  ],
+  "forbid": [
+    "保留原图的3D光影和写实质感",
+    "保留深紫色/金色的复杂背景",
+    "保留'暑期行动'等中文营销字体",
+    "主体撑满画布，失去底部文字空间",
+    "遗漏书本元素导致功能语义丢失"
+  ],
+  "generation_direction": "White rounded square background. Center: A cute hand-drawn green vegetable-dog character holding an open book with both paws, reading happily. The character has leaf-shaped ears, pink blush, and dot eyes. Simplify the original penguin's hat into a small leaf sprout on head. Remove backpack and complex background. Thick wobbly dark green outlines, flat light green fill. Bottom: Handwritten black text 'QQ Reading'. Sticker art style, ample white space."
+}

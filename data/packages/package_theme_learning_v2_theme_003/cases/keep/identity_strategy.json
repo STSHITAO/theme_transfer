@@ -1,0 +1,37 @@
+{
+  "app": "keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "Keep 品牌标志性的断笔 'K' 字母几何构造",
+  "brand_cues_to_preserve": [
+    "大写字母 K 的整体骨架",
+    "右侧笔画的断开/分离特征",
+    "笔画的圆润端点与特定倾斜角度"
+  ],
+  "semantic_cues_to_preserve": [
+    "运动与活力的抽象符号感"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 keep 的真实 original -> style_ref 规律显示，原图简洁的 'K' 字 Logo 在转化时严格保留了笔画走向、断笔结构和空间比例，仅做了颜色替换和贴纸化描边。当前目标原图同样是简洁的 2D 几何字母，轮廓清晰且无复杂 3D 渲染，完全符合 'preserve_when' 条件。因此必须冻结为 preserve_major_structure，精确保留 'K' 字的几何拓扑，仅移除右上角的紫色星星装饰以适配主题的极简化规则。",
+  "design_rationale": "Keep 的核心识别度高度依赖于其独特的 'K' 字母 Logo 造型。该图形本身已经是极简的扁平几何，无需进行语义重构或道具替代。策略上应严格保留 'K' 字的断笔特征和角度，将其直接映射为薄荷绿填充的贴纸主体，剥离深紫色背景和渐变星星，完美融入手账网格底板，确保品牌识别零损耗的同时服从主题视觉语言。",
+  "must_preserve": [
+    "K 字母的左侧竖线与右侧折线的空间关系",
+    "右侧上方短笔画与下方长笔画之间的断开缺口",
+    "所有笔画末端的圆角处理"
+  ],
+  "can_recompose": [
+    "右上角的紫色四角星装饰（可移除以符合细节极简化规则）",
+    "深紫色渐变背景（必须替换为网格底板）",
+    "白色填充色（必须替换为薄荷绿主题色）"
+  ],
+  "forbid": [
+    "改变 K 字的笔画连接方式或闭合断开的缺口",
+    "保留紫色背景或星星的渐变色",
+    "将 K 字重构为哑铃、跑鞋等具象运动道具",
+    "使用尖锐直角替代原有的圆润笔画端点",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影"
+  ],
+  "generation_direction": "居中放置薄荷绿填充的 Keep 'K' 字母 Logo 贴纸，严格保留右侧断笔结构与圆角端点，移除右上角星星。添加白色宽包边、内部深灰虚线缝线及右下浅灰硬投影。背景为米白底浅灰网格，外围环绕淡红圆角虚线框。主体占比 50%，扁平哑光纸质，无渐变无 3D。"
+}

@@ -1,0 +1,97 @@
+{
+  "protocol": "prompt-v2-only; same model, target images, fixed first-three style references, and candidate count",
+  "baseline": {
+    "package_id": "package_full_structure_v1_theme_001",
+    "requested_apps": [
+      "crossfire_mobile",
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "tencent_maps",
+      "tmall",
+      "toutiao",
+      "ximalaya",
+      "zhihu"
+    ],
+    "cases_found": [
+      "crossfire_mobile",
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "tencent_maps",
+      "tmall",
+      "toutiao",
+      "ximalaya",
+      "zhihu"
+    ],
+    "candidate_count": 20,
+    "candidate_target_recognition_below_60": 15,
+    "candidate_identity_constraint_below_60": 16,
+    "selected_target_recognition_below_60": [
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "toutiao",
+      "ximalaya"
+    ],
+    "selected_identity_constraint_below_60": [
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "toutiao",
+      "ximalaya"
+    ],
+    "candidate_reference_identity_leak": 16,
+    "selected_reference_identity_leak": [
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "toutiao",
+      "ximalaya"
+    ]
+  },
+  "prompt_v2": {
+    "package_id": "package_prompt_v2_pollution_theme_001",
+    "requested_apps": [
+      "crossfire_mobile",
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "tencent_maps",
+      "tmall",
+      "toutiao",
+      "ximalaya",
+      "zhihu"
+    ],
+    "cases_found": [
+      "crossfire_mobile",
+      "iqiyi",
+      "iqiyi_lite",
+      "karaoke",
+      "qidian",
+      "tencent_maps",
+      "tmall",
+      "toutiao",
+      "ximalaya",
+      "zhihu"
+    ],
+    "candidate_count": 20,
+    "candidate_target_recognition_below_60": 4,
+    "candidate_identity_constraint_below_60": 5,
+    "selected_target_recognition_below_60": [
+      "crossfire_mobile"
+    ],
+    "selected_identity_constraint_below_60": [
+      "crossfire_mobile"
+    ],
+    "candidate_reference_identity_leak": 2,
+    "selected_reference_identity_leak": [
+      "crossfire_mobile"
+    ]
+  }
+}

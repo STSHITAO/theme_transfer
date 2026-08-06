@@ -1,0 +1,62 @@
+{
+  "app": "toutiao_lite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 toutiao 和 toutiao_lite 的真实迁移规律（reference_transformation_patterns），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和排版比例，仅移除背景色块并进行材质转换。当前目标 App 原图主体为高识别度的“头条”文字加闪电角标，属于简洁的 2D 图形/文字组合，符合 preserve_when 条件，因此必须保留主要结构，不进行语义重构。",
+  "preserve": [
+    "“头条”二字的完整字形轮廓与笔画骨架",
+    "右下角闪电符号的几何形状",
+    "文字与闪电符号的相对空间布局"
+  ],
+  "must_preserve": [
+    "“头条”汉字的可读性与专属字体特征",
+    "闪电符号作为极速版标识的存在",
+    "文字与闪电的组合关系"
+  ],
+  "recompose_allowed": [
+    "红色倾斜背景色块（完全移除）",
+    "青色闪电角标底色（融入主体或转为负空间）",
+    "文字内部的填充颜色（转为薄荷绿）",
+    "边缘锐度（圆润化处理以适配贴纸风格）"
+  ],
+  "restyle": [
+    "整体填充色统一为薄荷青",
+    "添加白色宽包边与深灰虚线缝线",
+    "添加右下方浅灰硬投影",
+    "背景替换为米白网格纸与淡红虚线框"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留红色的品牌主色或青色的角标色",
+    "改变“头条”二字的笔画结构导致不可读",
+    "遗漏闪电符号导致丢失极速版语义",
+    "使用渐变或 3D 立体效果破坏扁平纸质质感",
+    "主体过大撑满画布或破坏网格背景留白",
+    "引入报纸、卷轴等通用新闻图标替代文字主体"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker icon on light grey grid notebook paper background. The main subject is the simplified Chinese characters '头条' combined with a lightning bolt symbol at the bottom right, preserving original glyph structure and layout. The sticker has a thick white die-cut border with dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker. Handcraft scrapbook style, matte paper texture, rounded corners, no gradients, no original red/blue colors.",
+  "color_application": "彻底剥离原图的红色背景与青色角标，将“头条”文字与闪电符号统一填充为低饱和度薄荷青；原白色文字转为白色描边或负空间镂空；辅色仅限白、浅灰、淡红四色，严禁保留任何品牌原色。",
+  "stroke_application": "将原文字与闪电的锐利边缘柔化为圆角，外层包裹粗实纯白包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；仅保留定义字形和闪电轮廓的必要线条，去除所有内部纹理与光泽细节。",
+  "composition_application": "将“头条”文字与闪电组合作为独立贴纸居中放置，尺寸控制在画布40%-70%之间，严格落入淡红虚线框安全区内；四周保留均匀充足的网格留白，形成明确的“底板-虚线框-贴纸”三层嵌套层级。",
+  "identity_application": "在严格服从薄荷青单色与贴纸材质的前提下，通过精确保留“头条”专属字形骨架与闪电符号的相对位置来维持身份识别；不依赖品牌色，仅靠轮廓拓扑与语义符号传达“今日头条极速版”信息。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷青，禁止保留原App红色或青色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白底+浅灰网格+淡红圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留original的红色背景、青色角标或任何品牌原色",
+    "禁止使用纯色背景、透明背景或非网格纹理背景",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影",
+    "禁止主体过大撑满画布或过小缩在角落",
+    "禁止添加写实材质、金属光泽、霓虹发光或3D渲染",
+    "禁止将“头条”文字替换为报纸、书本等通用道具",
+    "禁止使用实线粗描边替代虚线缝纫效果或使用尖锐直角",
+    "禁止在主体内部保留过多original细节导致视觉杂乱"
+  ]
+}

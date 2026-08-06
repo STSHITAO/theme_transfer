@@ -1,0 +1,79 @@
+{
+  "app": "mini_world",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 bilibili（保留电视外框）、kuaishou（保留摄像机剪影）、mi_home（保留M形盾牌）等案例，当原图具有单一明确的高辨识度几何轮廓或吉祥物头型时，必须保留主体几何的大部分结构。迷你世界的原图核心是一个极具辨识度的‘方块恐龙头套’，其方形轮廓、波浪牙齿和头顶突起构成了强烈的品牌记忆点。因此，应严格保留这一方块头套的空间拓扑和比例关系，仅将3D渲染材质转化为手绘涂鸦，并将背景剥离，符合 preserve_major_structure 的判定标准。",
+  "preserve": [
+    "方块状的头套外轮廓几何",
+    "头套开口处的白色波浪/锯齿边缘",
+    "头顶的三角突起和侧面的斑点装饰位置",
+    "面部居中、大眼张嘴的基本五官布局"
+  ],
+  "must_preserve": [
+    "角色的核心方块几何轮廓与体素（Voxel）风格",
+    "绿色恐龙头套及其白色波浪边缘的组合关系",
+    "面部五官的比例、神态与相对位置",
+    "头套顶部的小尖角结构",
+    "角色作为画面绝对主体的构图比例"
+  ],
+  "recompose_allowed": [
+    "3D塑料/渲染材质转化为扁平纸质手绘质感",
+    "复杂的紫色星空/漩涡背景转化为纯白留白",
+    "写实的眼睛和高光简化为豆豆眼和简单反光点",
+    "头套的绿色调整为统一的低饱和草绿/嫩绿色系",
+    "身体部分可适度简化或弱化，突出头部主体"
+  ],
+  "restyle": [
+    "背景的紫色星空、魔法漩涡及发光特效",
+    "背景中的次要元素（如右下角的紫色蘑菇、左侧的小光球、远处的像素风景）",
+    "角色表面的材质质感（需保持方块结构）",
+    "光影效果、环境光颜色及整体色调氛围",
+    "图标的圆角矩形边界及背景底色"
+  ],
+  "decorate": [
+    "粉色椭圆腮红",
+    "吐出的小舌头或呆萌表情细节",
+    "头套表面增加手绘叶脉纹理",
+    "底部黑色手写体 'Mini World'"
+  ],
+  "forbid": [
+    "保留原图的紫色/蓝色星空背景或任何渐变光影",
+    "将方块头套画成圆润的普通狗头，丢失沙盒方块特征",
+    "使用平滑矢量线或标准几何直线，缺乏手绘抖动感",
+    "遗漏底部的黑色手写体 App 名称",
+    "添加投影、立体浮雕或玻璃拟物效果",
+    "主体过大撑满画布，导致失去底部文字区域和呼吸感",
+    "真实的写实恐龙或普通动物形象",
+    "无特征的通用毛绒球或云朵",
+    "圆滑无棱角的二次元常规人物",
+    "失去恐龙头套特征的普通方块人",
+    "与原IP无关的其他游戏角色或表情团子"
+  ],
+  "generation_brief": "Pure white rounded square background. Center: A hand-drawn doodle style green blocky dinosaur helmet character (voxel style). Strictly preserve the square head silhouette, white wavy/serrated teeth edges at top and bottom, small triangle spike on top, and side spots. Use thick, wobbly dark green marker outlines. Fill with low-saturation tender green and white. Add leaf vein textures to the helmet surface. Face inside helmet simplified to kawaii black dot eyes, pink oval blushes, and a small playful tongue. Remove all 3D rendering, shadows, and purple space background. Bottom center: 'Mini World' in casual bold black handwritten font. Flat sticker art style, ample white space, subject occupies 50-65% of canvas.",
+  "color_application": "彻底移除原图紫色星空背景和3D光影色。头套主色映射为低饱和嫩绿/草绿 (#A8D060/#C5E1A5)，描边使用深草绿 (#4A7C29)。白色波浪牙齿保留但转为米白/纯白平涂。点缀淡粉色 (#FFB6C1) 腮红。背景强制纯白 (#FFFFFF)。",
+  "stroke_application": "将原图3D渲染边缘和光滑矢量线全部替换为粗细不均的手绘马克笔抖动线条。外轮廓和波浪牙齿使用深绿粗线勾勒，内部斑点和叶脉纹理使用同色系细线。消除所有锐利折角，端点圆润化，模拟纸上涂鸦的不完美感。",
+  "composition_application": "从原图复杂多层叠加收缩为单一居中主体。方块恐龙头套角色垂直居中偏上放置，高度控制在画布50%-65%，四周保留充足白色呼吸空间。底部固定预留15%-20%区域放置黑色手写体 'Mini World'，形成稳定的上图下文贴纸版式。",
+  "identity_application": "在严格保留方块头套几何拓扑、波浪牙齿和头顶尖角的前提下，通过材质扁平化和手绘化实现主题融合。将写实五官重绘为豆豆眼+粉腮红+吐舌的母题表情，并在头套表面叠加叶脉纹理以呼应植物萌宠母题。底部手写文字作为双重身份保障。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止彩色或渐变背景",
+    "必须保留方块恐龙头套的核心几何轮廓和波浪牙齿结构",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何直线",
+    "必须包含绿叶/叶脉纹理、粉腮红、豆豆眼等母题特征",
+    "底部必须包含黑色手写风格 'Mini World' 名称",
+    "色彩严格限制在白、绿、粉、黑体系内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白"
+  ],
+  "negative_constraints": [
+    "禁止保留原App紫色/蓝色星空背景或高饱和品牌色",
+    "禁止将方块头套圆润化为普通动物头型，丢失体素特征",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止保留原图复杂营销元素、写实道具或多角色堆叠",
+    "禁止过度重构导致方块头套核心轮廓完全消失"
+  ]
+}

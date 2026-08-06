@@ -1,0 +1,39 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "天猫头部剪影轮廓（特别是耳朵形状）与'猫'字笔画结构",
+  "brand_cues_to_preserve": [
+    "标志性的猫头外轮廓（双耳、脸颊曲线）",
+    "'猫'字的字体骨架与笔画特征",
+    "底部眼睛/鼻子的几何位置关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "电商购物的品牌载体（通过保留Logo实现）",
+    "亲和力与品质感（通过圆润的冰雕质感表达）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和抖音的处理方式，天猫的图标由极其标准的几何图形（猫头剪影+文字）构成。根据 theme_design_analysis 中的 structure_preservation_policy，当原始图标为清晰几何图形时，应严格保留外部轮廓。因此，必须将原本的红色猫头和黑色五官直接转化为同比例的3D冰雕实体，不可改变其长宽比或五官位置，仅做材质替换和立体化拉伸。",
+  "design_rationale": "天猫的品牌识别度完全依赖于其独特的猫头剪影和特定的字体设计。在'冰封'主题下，如果重构主体会导致用户无法识别。策略选择将原本高饱和度的红黑配色完全剥离，转而利用冰材质的通透感和折射来重塑体积。原本的红色区域变为厚实的半透明冰块，原本的黑色五官变为冰层内部的深色阴影或凹陷雕刻，既保留了100%的品牌结构，又完美融入了整包的寒冷基调。",
+  "must_preserve": [
+    "猫头整体的宽高比例",
+    "两只耳朵的尖锐度与位置",
+    "'猫'字的具体笔画形态",
+    "底部五官（眼、鼻）的相对排列"
+  ],
+  "can_recompose": [
+    "颜色（必须从红黑变为冰蓝/透白）",
+    "表面质感（增加水珠、凝霜、气泡）",
+    "边缘处理（增加倒角和高光）",
+    "Z轴厚度（赋予物体物理深度）"
+  ],
+  "forbid": [
+    "保留原本的红色背景或黑色填充色",
+    "改变猫头的轮廓线条",
+    "生成不透明的塑料或金属材质",
+    "添加与猫头无关的背景道具"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Tmall logo. The subject is the iconic cat head silhouette combined with the Chinese character '猫'. Material is translucent cyan-blue ice with internal bubbles and surface water droplets. Edges are rounded and glossy. No outlines. Pure white background with soft contact shadow at the base. The original red and black colors are completely replaced by the ice material properties."
+}

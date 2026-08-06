@@ -1,0 +1,38 @@
+{
+  "app": "qidian",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“起点”二字的独特字形结构，特别是“起”字走之旁的动态笔触和“点”字底部的四点排列。",
+  "brand_cues_to_preserve": [
+    "“起点”汉字的完整笔画拓扑结构",
+    "字体的几何切角特征",
+    "文字在画面中的居中布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "阅读/文字的语义（通过汉字本身表达）",
+    "稳固的基座感（对应“起点”的含义）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，必须严格保留其2D轮廓作为3D模型的基底。起点读书的图标是高度抽象化的汉字设计，任何结构重组都会导致品牌识别丢失，因此采用‘材质置换+立体挤压’策略，完全忠实于原图轮廓。",
+  "design_rationale": "起点读书的图标核心在于其独特的字体设计。在冰主题下，应将这两个汉字视为两块厚重的冰雕碑刻。通过保留严格的字形轮廓，利用冰材质的折射和内部纹理（如气泡、裂纹）来丰富视觉细节，既维持了极高的品牌辨识度，又完美融入了整包的寒冷通透风格。红色背景必须完全移除，替换为纯净的白色背景和冰蓝色主体。",
+  "must_preserve": [
+    "“起”字和“点”字的相对位置及大小比例",
+    "汉字笔画的粗细均匀度",
+    "无描边的轮廓定义方式（依靠光影）"
+  ],
+  "can_recompose": [
+    "将平面文字拉伸为具有物理厚度的3D实体",
+    "在冰块内部添加随机的雪花或气泡纹理",
+    "边缘进行圆润化处理（倒角），模拟冰的融化感",
+    "底部增加接触阴影和少量碎冰屑"
+  ],
+  "forbid": [
+    "禁止保留原始的红色背景",
+    "禁止使用不透明的白色塑料材质（必须是半透明冰）",
+    "禁止改变汉字的笔画连接关系",
+    "禁止添加与文字无关的书籍、卷轴等具象道具"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the Chinese characters '起点'. The material is translucent cyan ice with internal bubbles and frost textures. The shape strictly follows the original logo's geometry with rounded beveled edges. Place on a pure white background with soft contact shadows and scattered ice chips at the base. No red color, no outlines, high gloss refraction."
+}

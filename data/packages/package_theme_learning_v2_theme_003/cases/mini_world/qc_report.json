@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了语义重构策略，将原3D角色替换为品牌文字'迷你世界'。文字字形清晰可读，薄荷绿填充、白色宽包边、深灰虚线缝线、米白网格背景及淡红虚线框等所有约束细节均精准还原，风格与参考图高度一致。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 50,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 40,
+      "overall_score": 65,
+      "failure_reason": "文字生成存在严重伪影和结构错误。左上角的'迷'字笔画粘连混乱，难以辨认；整体字形结构松散，违反了'保留专属字形结构与笔画特征'及'可读性'的强制约束。",
+      "recommendation": "不推荐。虽然风格元素符合，但核心识别主体（文字）出现乱码和畸形，导致无法准确传达App身份，属于质检不合格。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

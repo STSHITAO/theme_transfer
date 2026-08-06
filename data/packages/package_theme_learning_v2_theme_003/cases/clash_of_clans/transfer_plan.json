@@ -1,0 +1,67 @@
+{
+  "app": "clash_of_clans",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 clash_of_clans 的真实迁移规律（original 为 3D 野蛮人头像，style_ref 重构为 'CLASH of CLANS' 文字排版），以及 jd、genshin、mini_world 等复杂 3D/插画图标的处理模式，当原图主体为高细节写实/3D 渲染且无法在极简贴纸语言中保留时，应放弃原始几何结构，提取最具辨识度的官方文字 Logo 进行重构。当前目标原图为复杂的 3D 野蛮人面部特写，依赖光影和色彩表现神态，强行保留轮廓会导致贴纸形态崩坏或语义丢失，因此采用文字标识替代原主体结构，符合主题包的语义重构策略。",
+  "preserve": [
+    "游戏名称文字内容 'CLASH of CLANS'",
+    "字体特有的粗犷卡通风格骨架",
+    "居中贴纸的构图层级"
+  ],
+  "must_preserve": [
+    "游戏名称文字的可读性与核心字形",
+    "薄荷绿单色填充与白色宽包边",
+    "深灰色虚线缝线与右下硬投影",
+    "米白网格底板与淡红虚线框"
+  ],
+  "recompose_allowed": [
+    "将 3D 野蛮人头像完全替换为文字 Logo",
+    "字体的边缘圆润化处理以适配布艺纸质质感",
+    "去除所有紫色背景、皮肤渐变色和口水高光细节"
+  ],
+  "restyle": [
+    "3D 渲染材质转换为扁平哑光纸质",
+    "高饱和品牌色统一映射为薄荷绿",
+    "复杂光影简化为右下方浅灰硬投影"
+  ],
+  "decorate": [
+    "白色模切宽边",
+    "深灰色手绘感虚线缝线",
+    "淡红色圆角虚线外框",
+    "浅灰色方格纸背景纹理"
+  ],
+  "forbid": [
+    "保留野蛮人的 3D 面部特征、眼睛、牙齿或口水细节",
+    "使用原图的紫色背景或黄色头发颜色",
+    "添加任何渐变、高光或立体渲染效果",
+    "主体过大撑满画布或破坏网格留白",
+    "遗漏白色宽边、虚线缝线或红色虚线框等主题指纹",
+    "引入剑、盾、宝石等非文字类通用游戏道具"
+  ],
+  "generation_brief": "Generate a flat mint-green paper cutout sticker of the text 'CLASH of CLANS' centered on a light grey grid notebook background. Surround the text with a thick white die-cut border and inner dark grey dashed stitching lines. Add a soft grey drop shadow to the bottom right. Enclose the composition with a faint red dashed rectangular frame. Remove all 3D character details, original purple/yellow colors, and gradients. Ensure matte paper texture, rounded corners, and strict adherence to the handcraft scrapbook style.",
+  "color_application": "彻底剥离原图亮黄色头盔与深紫色背景，将 'CLASH of CLANS' 文字主体强制填充为低饱和度薄荷绿；原图中的白色高光或装饰转化为白色贴纸包边；背景严格使用米白底+浅灰网格，禁止保留任何原App品牌色或渐变。",
+  "stroke_application": "将原文字Logo的锐利边缘柔化为圆润转角，外层包裹厚实的纯白实线包边模拟模切贴纸边缘，内层紧贴白边内侧叠加深灰色细虚线模拟手工缝纫针脚；去除原文字的所有3D倒角、光泽描边或立体厚度。",
+  "composition_application": "放弃原图野蛮人头像撑满画面的出血构图，将 'CLASH of CLANS' 文字作为独立贴纸居中放置，尺寸控制在画布40%-70%之间；四周保留均匀充足的网格背景和淡红色虚线框空间，形成明确的'底板-虚线框-文字贴纸'三层嵌套层级。",
+  "identity_application": "通过精确保留 'CLASH of CLANS' 官方文字的特定字形结构和排版顺序来维持品牌识别，利用文字本身的粗犷卡通骨架传递游戏属性；身份表达完全让位于主题统一性，不尝试还原3D角色或原配色，依靠文字语义在贴纸语境下完成身份锚定。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿，禁止保留黄色或紫色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白底+浅灰网格+淡红圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "文字主体必须居中且尺寸适中，严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理",
+    "所有字母转角必须圆润化处理，符合纸质贴纸物理特性"
+  ],
+  "negative_constraints": [
+    "禁止生成野蛮人面部、头盔、胡须或口水等具象角色元素",
+    "禁止保留原App的亮黄色、深紫色或任何多色搭配",
+    "禁止使用纯色背景、透明背景或非网格纹理背景",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一特征",
+    "禁止文字过大撑满画布或过小缩在角落",
+    "禁止添加金属光泽、霓虹发光、玻璃拟态等非手工剪纸材质",
+    "禁止用剑、盾、宝箱等通用游戏道具替换文字主体",
+    "禁止在文字内部保留3D质感、阴影层次或细小装饰纹理"
+  ]
+}

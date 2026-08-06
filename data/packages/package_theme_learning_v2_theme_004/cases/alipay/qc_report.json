@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "虽然风格完美契合且文字拼写正确，但未能按计划在'支'字下半部分闭环区域融入菜狗面部特征（豆豆眼、腮红等），仅做了简单的笔画纹理化处理，主题融合度略显不足。",
+      "recommendation": "推荐使用。该候选图严格保留了'支'字的几何骨架，底部手写体'Alipay'拼写正确且清晰，画风与参考图高度一致，无伪影，是安全且高质量的选择。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 70,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 60,
+      "overall_score": 75,
+      "failure_reason": "底部关键品牌文字拼写错误，将'Alipay'错写为'Alippay'，违反了strict身份约束中关于必须保留正确品牌名称的要求。",
+      "recommendation": "不推荐。尽管该图在主题融合上表现更好（成功将菜狗五官融入字形），但品牌名称拼写错误属于严重质检缺陷，不可直接作为应用图标使用。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\alipay\\candidates\\candidate_01.png",
+  "warning": "candidate_02存在明显的文字拼写错误（Alippay），尽管其图形创意更符合transfer_plan中的语义重构要求，但基于品牌识别的strict约束，必须选择文字正确的candidate_01。",
+  "needs_retry": false
+}

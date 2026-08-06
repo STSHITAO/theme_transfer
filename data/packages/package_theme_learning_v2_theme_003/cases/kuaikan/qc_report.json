@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 的所有指令：严格保留了“快看！”的专属字形结构和“看”字内部的小怪兽眼睛符号；颜色准确转换为薄荷绿；具备标准的白色宽包边、深灰虚线缝线、右下硬投影以及网格纸背景和红色虚线框。构图居中，留白适宜，无任何伪影或违规元素，与主题参考图风格高度统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 10,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 75,
+      "overall_score": 82,
+      "failure_reason": "文字边缘的虚线缝线处理过于粗糙，部分笔画处的虚线断裂或与白色包边融合不清，导致贴纸质感不如 candidate_01 精致；主体略微偏大，挤压了背景留白空间。",
+      "recommendation": "可以使用，但质量略逊于 candidate_01。主要问题在于虚线缝线的渲染精度较低，且主体尺寸稍大，破坏了计划中要求的呼吸感。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

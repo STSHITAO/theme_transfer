@@ -1,0 +1,69 @@
+{
+  "app": "qq_reading",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'qq' (保留站姿换肤) 和 'wechat_reading' (重构为书本+悬浮头) 的规律。原图是复杂的3D写实场景（企鹅+背包+帽子+书+背景），属于 'complex_original'。根据规则，需剥离3D材质、复杂背景和营销文字（'暑期行动'）。由于原图主体是全身像且细节过多，无法直接保留几何结构（preserve_major_structure），因此采用语义重构：提取'企鹅读书'的核心语义，将其转化为符合主题母题的'绿叶小狗/蔬菜萌宠'正在读书的形象，保留书本道具和头部特征作为身份锚点。",
+  "preserve": [
+    "双手捧着打开的书本这一核心动作与空间关系",
+    "圆润可爱的头部轮廓比例（映射QQ企鹅脸型）",
+    "专注或开心的阅读表情神态",
+    "QQ系产品的萌系基因与亲和力"
+  ],
+  "must_preserve": [
+    "双手捧书的姿态（阅读功能的核心语义锚点）",
+    "打开的书本道具几何形态",
+    "底部手写体英文标识 'QQ Reading'"
+  ],
+  "recompose_allowed": [
+    "企鹅物种转化为绿叶小狗/蔬菜萌宠母题形象",
+    "3D写实材质转化为扁平手绘涂鸦质感",
+    "复杂的探险帽/背包简化为头顶的绿叶装饰或简单线条",
+    "深色复杂背景替换为纯白圆角底板",
+    "移除'暑期行动'等临时营销文字与光效"
+  ],
+  "restyle": [
+    "整体色彩映射为白底+深浅绿+粉腮红+黑描边体系",
+    "线条转化为粗细不均的手绘马克笔抖动质感",
+    "光影转化为扁平哑光纸面贴纸触感",
+    "五官重绘为豆豆眼、粉色椭圆腮红、吐舌/呆萌表情"
+  ],
+  "decorate": [
+    "头顶增加绿叶/嫩芽装饰以呼应植物萌宠母题",
+    "书本封面可添加极简叶脉纹理或手绘线条",
+    "面部增加微量高光白点以增加手绘生动感"
+  ],
+  "forbid": [
+    "保留原图的3D光影、渐变、金属光泽和写实质感",
+    "保留深紫色/金色的复杂背景或任何非白色底色",
+    "保留'暑期行动'等中文营销字体及发光特效",
+    "主体撑满画布导致失去留白和底部文字空间",
+    "遗漏书本元素导致阅读功能语义丢失",
+    "使用平滑矢量线、锐利边缘或标准印刷字体",
+    "出现原App高饱和蓝/橙/红品牌色作为大面积填充"
+  ],
+  "generation_brief": "White rounded square background. Center: A cute hand-drawn green vegetable-dog character holding an open book with both paws, reading happily. The character has leaf-shaped ears, pink blush, and dot eyes. Simplify the original penguin's hat into a small leaf sprout on head. Remove backpack and complex background. Thick wobbly dark green outlines, flat light green fill. Bottom: Handwritten black text 'QQ Reading'. Sticker art style, ample white space.",
+  "color_application": "彻底剥离原图3D企鹅的黑白橙配色及紫金背景，强制映射为主题白底(#FFFFFF)+深绿描边(#4A7C29)+浅绿填充(#A8D060)+粉色腮红(#FFB6C1)体系。仅保留极少量黑色用于眼睛和底部文字，书本可使用米白或浅绿区分，严禁出现原品牌高饱和色。",
+  "stroke_application": "将原图无描边的3D渲染边缘转化为深绿色手绘马克笔粗轮廓，线条需带有自然抖动、断笔和圆润端点。书本和角色内部细节使用同色系细线勾勒，消除所有机械几何直线和锐利折角，模拟真实纸面涂鸦笔触。",
+  "composition_application": "从原图撑满画布的复杂3D场景收缩为垂直三段式贴纸构图：上部50%-65%区域居中放置捧书的绿叶小狗，中部留白过渡，下部15%-20%区域固定放置黑色手写体'QQ Reading'。主体严格居中偏上，四周保留充足白色呼吸空间。",
+  "identity_application": "通过'语义重构'维持身份：将QQ企鹅转化为绿叶小狗但保留其'双手捧书'的核心动作和圆润头部比例；去除3D材质和营销元素，用主题母题皮肤覆盖；依靠'捧书姿态+萌系神态+底部手写文字'三重机制确保用户能识别为QQ阅读而非通用卡通。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须是绿叶小狗/蔬菜萌宠形象，包含绿叶耳、粉腮红、豆豆眼",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量或3D渲染",
+    "底部必须包含黑色手写风格'QQ Reading'，禁止标准字体",
+    "主体占比控制在50%-65%，保证充足留白和文字空间",
+    "整体呈现2D扁平哑光贴纸质感，禁止光影立体效果"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和品牌色（蓝/橙/红/紫/金）作为背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布或触碰边缘，导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写App名称或使用电脑标准印刷字体",
+    "禁止保留原图复杂营销元素、写实道具或多角色堆叠",
+    "禁止过度重构导致'捧书阅读'核心语义符号完全消失"
+  ]
+}

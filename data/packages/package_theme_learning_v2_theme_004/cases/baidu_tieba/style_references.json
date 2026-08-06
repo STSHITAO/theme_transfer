@@ -1,0 +1,10 @@
+{
+  "target_app": "baidu_tieba",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "wechat",
+    "kugou",
+    "tencent_news"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

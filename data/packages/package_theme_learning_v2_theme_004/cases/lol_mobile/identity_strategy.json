@@ -1,0 +1,39 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "金克丝(Jinx)的蓝色双马尾发型轮廓与疯狂大笑的表情神态",
+  "brand_cues_to_preserve": [
+    "标志性的蓝色长发/双马尾造型",
+    "张嘴大笑/吐舌的疯狂表情",
+    "MOBA竞技游戏的角色头像构图逻辑"
+  ],
+  "semantic_cues_to_preserve": [
+    "英雄角色的面部特写视角",
+    "活泼、好战且带有娱乐感的情绪氛围"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'clash_of_clans' (写实人脸重构为全身菜狗)、'peace_elite' (写实士兵重构为带头盔菜狗) 和 'honor_of_kings' (写实亚瑟重构为盾牌菜狗) 的规律，当原图为高精度3D写实人像或复杂营销场景时，主题策略均放弃原始几何结构的直接保留，转而提取核心语义符号进行重构。当前目标 'lol_mobile' 原图为复杂的3D金克丝半身像叠加'4周年'营销文字，属于典型的高复杂度写实人像，符合 'recompose_when' 规则。因此，不保留写实人脸结构，而是提取'蓝发狂气少女'的语义，重构为符合主题母题的绿色蔬菜萌宠形象。",
+  "design_rationale": "原图是高度写实的3D角色渲染图，且包含大面积营销文字，直接保留结构会破坏主题的扁平手绘质感。依据主题包对同类游戏图标（如王者荣耀、和平精英）的处理方式，应将金克丝的特征（蓝发、狂笑）转化为菜狗的特征（绿叶耳朵/装饰、吐舌头），用'萌系疯狂'替代'写实疯狂'，既保留了角色神韵，又完美融入'绿叶小狗'的主题宇宙。",
+  "must_preserve": [
+    "角色头部居中的特写构图",
+    "表现力极强的张嘴/吐舌表情",
+    "暗示原角色发型特征的绿色叶片状耳朵或头饰布局"
+  ],
+  "can_recompose": [
+    "写实的面部五官重构为豆豆眼和简笔画嘴型",
+    "蓝色头发重构为深浅不一的绿色菜叶或藤蔓",
+    "移除'4周年'营销文字和腾讯Logo",
+    "3D光影材质重构为扁平马克笔涂鸦"
+  ],
+  "forbid": [
+    "保留写实的3D人脸结构或皮肤质感",
+    "保留原图的蓝色高饱和背景或橙色营销色块",
+    "遗漏底部的黑色手写体 'LOL Mobile' 或 'League of Legends'",
+    "使用平滑矢量线绘制头发或轮廓",
+    "让主体撑满画布，失去留白呼吸感"
+  ],
+  "generation_direction": "White rounded square background. Center: a cute green vegetable-dog character head mimicking Jinx's vibe. Replace blue hair with messy green cabbage leaves/vines forming pigtails shape. Face: kawaii dot eyes, pink blush, wide open mouth with tongue sticking out (crazy happy expression). Thick wobbly dark green marker outlines, flat light green fill. No 3D, no blue background. Bottom: handwritten black text 'LOL Mobile'. Sticker art style."
+}

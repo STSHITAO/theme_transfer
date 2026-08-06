@@ -1,0 +1,10 @@
+{
+  "target_app": "soul",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "alipay",
+    "netease_music",
+    "xingtu"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

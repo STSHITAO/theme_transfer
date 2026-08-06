@@ -1,0 +1,62 @@
+{
+  "app": "zhihu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 zhihu 自身的迁移规律（original 为“知乎”双字，style_ref 简化为单字“知”贴纸）以及 toutiao、meituan 等文字类 App 的处理方式，当原主体为简洁的品牌标准字时，应严格保留核心文字的几何骨架和空间关系。当前目标原图为“知乎”二字，依据主题包已有的 zhihu 转换先例及 detail_complexity_rule（极度简化），选择提取最具识别度的首字“知”作为主体，保留其原始笔画结构，仅进行颜色映射、材质转换和背景标准化，不进行语义符号替换或几何重构。",
+  "preserve": [
+    "汉字“知”的左右结构比例与笔画走势",
+    "“知”字特有的连笔与转折特征",
+    "文字作为主体的居中构图形式"
+  ],
+  "must_preserve": [
+    "汉字“知”的核心笔画结构与空间布局",
+    "文字主体的可读性与正负形边界清晰度"
+  ],
+  "recompose_allowed": [
+    "去除“乎”字以简化构图并适应贴纸比例",
+    "将蓝色渐变背景完全替换为米白网格底板",
+    "将白色文字反转为薄荷绿填充并添加贴纸描边与投影",
+    "对字形边缘进行圆润化和手绘感柔化处理"
+  ],
+  "restyle": [
+    "主体填充色强制统一为低饱和度薄荷绿/青蓝色",
+    "增加白色宽模切包边与深灰色虚线缝纫轮廓",
+    "添加右下方浅灰色硬边缘投影以模拟贴纸厚度",
+    "整体呈现哑光纸质剪裁质感，去除所有光泽与渐变"
+  ],
+  "decorate": [
+    "背景添加淡红/淡粉色圆角虚线框作为裁剪定位参考",
+    "背景铺满极淡灰色正交网格线模拟方格纸纹理"
+  ],
+  "forbid": [
+    "保留原图的知乎蓝品牌色或任何渐变效果",
+    "遗漏白色宽包边、深灰虚线缝线、右下硬投影或网格背景中的任一主题指纹",
+    "将文字主体替换为书本、灯泡、问号、刘看山等通用语义道具或吉祥物",
+    "主体过大撑满画布或过小失去辨识度，破坏居中贴纸的留白平衡",
+    "使用尖锐直角、3D立体渲染、发光特效或写实材质破坏手工剪纸的扁平质感",
+    "保留“乎”字或其他营销文字导致视觉杂乱"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the Chinese character '知' placed on a light grey grid notebook paper background. The character is simplified with rounded edges and filled with uniform mint cyan color. It is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, centered composition with ample whitespace.",
+  "color_application": "彻底剥离知乎蓝品牌色，将汉字“知”的主体填充强制映射为统一的低饱和度薄荷绿/青蓝色；原白色文字转化为白色宽包边与负空间；背景替换为米白/浅灰白底色，完全去除渐变与光影。",
+  "stroke_application": "将原文字的锐利边缘柔化为圆润转角；外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色细虚线模拟手工缝纫针脚；仅保留定义“知”字骨架的必要轮廓线。",
+  "composition_application": "移除原图满版蓝色背景，将“知”字收缩为独立贴纸形态并绝对居中放置；主体占比控制在40%-70%之间，四周保留均匀充足的网格留白；外围固定环绕淡红/粉圆角虚线框，形成“底板-虚线框-贴纸”三层嵌套层级。",
+  "identity_application": "在不破坏主题薄荷绿贴纸统一性的前提下，通过严格保留汉字“知”的专属字形结构、笔画比例和空间布局来维持身份识别；利用白色宽边与网格背景的对比确保文字清晰可读，不依赖品牌色而依赖字形本身传达“知乎”身份。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留知乎蓝",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压留白",
+    "禁止使用任何渐变、高光、3D立体效果或现代UI材质"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度知乎蓝、渐变色或多色搭配",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止将主体重构为书本、灯泡、问号、刘看山等非“知”字的通用道具",
+    "禁止在主体内部保留过多细节或使用尖锐直角破坏手工剪纸感",
+    "禁止主体过大撑满画布或过小缩在角落破坏构图平衡"
+  ]
+}

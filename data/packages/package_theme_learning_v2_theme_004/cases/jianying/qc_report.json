@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重丢失原Logo核心几何拓扑结构。原Logo具有独特的'左侧圆角矩形+右侧交叉线条'及内部'X'形负空间，该候选图将其重构为通用的方形蔬菜/粽子状物体，完全抹除了右侧尖角和内部交叉骨架，违反了strict约束下的structure_preservation_mode。",
+      "recommendation": "不推荐。虽然风格符合主题，但作为strict约束的App，其核心品牌识别特征（几何轮廓）被过度重构导致无法识别。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 65,
+      "target_recognition_score": 65,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 45,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "保留了原Logo'左框右叉'的大致拓扑关系（左侧矩形主体，右侧开口/尖角暗示），并正确应用了手绘风格和底部文字。但内部核心的'X'形交叉负空间结构被简化丢失，仅保留了外轮廓的暗示，识别度依赖于文字兜底。",
+      "recommendation": "推荐使用。在两个候选中，该图更好地保留了原Logo的空间布局特征（左实右虚/尖），且风格化执行完美，文字清晰，符合主题包整体调性。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\jianying\\candidates\\candidate_02.png",
+  "warning": "两个候选图均未完美保留原Logo内部复杂的'X'形交叉负空间结构，这是strict约束下的主要扣分点。但candidate_02保留了外轮廓的拓扑逻辑，优于candidate_01的完全重构。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

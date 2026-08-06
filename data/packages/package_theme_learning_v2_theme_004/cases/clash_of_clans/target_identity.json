@@ -1,0 +1,38 @@
+{
+  "app": "Clash of Clans",
+  "identity_anchors": [
+    "Barbarian character face close-up",
+    "Distinctive yellow helmet and mustache shape",
+    "Asymmetrical crazy eye expression (one wide, one squinting)",
+    "Open mouth with visible teeth and drool/saliva drops",
+    "Deep purple background"
+  ],
+  "must_preserve": [
+    "The specific silhouette of the yellow helmet and the long, drooping yellow mustache",
+    "The asymmetrical eye expression (wide left eye, narrowed right eye)",
+    "The open shouting mouth with blocky teeth",
+    "The flying saliva/drool drops near the mouth",
+    "The overall facial proportions and angry/excited expression"
+  ],
+  "can_restyle": [
+    "3D rendering style (can be flattened, pixelated, or changed to other art styles)",
+    "Skin texture and shading",
+    "Helmet material (can change from plastic-like to metal, fabric, etc., as long as shape remains)",
+    "Background gradient intensity",
+    "Lighting direction and highlights"
+  ],
+  "must_not_replace_with": [
+    "Generic barbarian or viking characters without the specific mustache/helmet shape",
+    "Cute or sanitized versions removing the aggressive expression or drool",
+    "Other Clash universe characters (like Archer or Wizard)",
+    "Abstract geometric shapes losing the facial features",
+    "Realistic human faces"
+  ],
+  "color_preservation": "The bright yellow of the helmet and mustache is critical for brand recognition against the purple background. The purple background is also a strong identity marker. Skin tone can vary slightly but should remain fleshy/peach. If theming, maintain high contrast between the yellow headgear and the background.",
+  "structure_summary": "A tight close-up of a stylized 3D character head filling most of the frame. The composition relies on the bold yellow shapes of the helmet and mustache framing the expressive face. The background is a simple radial gradient. The identity is entirely character-driven rather than logo-text driven.",
+  "risk_notes": [
+    "Removing the drool/saliva drops significantly reduces the recognizable 'crazy' personality of the icon",
+    "Changing the yellow color of the hair/helmet to another color will make it unrecognizable as the Clash Barbarian",
+    "Softening the expression too much (e.g., closing the mouth) destroys the brand's energetic identity"
+  ]
+}

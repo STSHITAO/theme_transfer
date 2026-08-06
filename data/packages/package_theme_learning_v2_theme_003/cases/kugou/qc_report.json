@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了 transfer_plan 的所有指令：保留了正圆环包裹 K 字的经典结构，K 字采用白色负空间/描边形式清晰可辨；颜色正确转换为薄荷青；具备标准的网格背景、红色虚线框、白色宽包边、深灰缝线及右下投影。风格与参考图高度一致，且无任何伪影或结构错误。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 15,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 82,
+      "failure_reason": "结构还原度略逊于 candidate_01。原图是实心蓝底白圈白 K，candidate_02 将其处理为白底薄荷绿圈薄荷绿 K，虽然符合'白色填充转为...白色负空间'的某种解读，但视觉上丢失了原图'圆环内填充色块'的厚重感，显得略微单薄。此外，圆环的双层结构（外圈薄荷绿+内圈白）与原图的单一线条圆环在拓扑上略有偏差，不如 candidate_01 的实心圆块+镂空 K 字来得忠实和醒目。",
+      "recommendation": "可以使用，但 candidate_01 在结构保留和视觉冲击力上更优。candidate_02 的 K 字是实心薄荷绿，圆环也是薄荷绿，中间留白，这种处理方式虽然干净，但不如 candidate_01 那样严格对应原图的'蓝底白字'反转逻辑（即薄荷底白字）。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

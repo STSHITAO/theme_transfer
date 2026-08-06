@@ -1,0 +1,36 @@
+{
+  "app": "alipay",
+  "identity_anchors": [
+    " stylized Chinese character '支' (Zhi)",
+    " Alipay signature blue background",
+    " Ribbon-like fluid stroke at the bottom of the character",
+    " 'AI' text indicator at the bottom"
+  ],
+  "must_preserve": [
+    " The specific geometric structure and stroke order of the character '支'",
+    " The white color of the main character against a colored background",
+    " The recognizable loop/ribbon shape at the bottom of the character",
+    " The presence of the 'AI' text element indicating the specific app version"
+  ],
+  "can_restyle": [
+    " Background gradient direction and intensity",
+    " Subtle shadows or 3D bevel effects on the character",
+    " The specific hue of the blue (can be shifted slightly for theme harmony but must remain blue-dominant)",
+    " The gradient colors within the 'AI' text",
+    " Surface texture (matte, glossy, glassmorphism)"
+  ],
+  "must_not_replace_with": [
+    " Generic currency symbols ($, ¥)",
+    " Abstract geometric shapes unrelated to the character",
+    " Cartoon mascots or animals",
+    " Other Chinese characters",
+    " Removing the 'AI' text entirely if it denotes a specific product variant"
+  ],
+  "color_preservation": "The core identity relies heavily on 'Alipay Blue'. While the exact hex code can be adjusted for theme cohesion (e.g., darker for dark mode, pastel for soft themes), the background must remain distinctly blue to maintain brand recognition. The main character must remain high-contrast (white/light) against this background.",
+  "structure_summary": "A rounded square icon featuring a large, white, stylized Chinese character '支' centered on a blue background. The character has a distinctive fluid, ribbon-like lower stroke. Below the character is the text 'AI' in a smaller, gradient font.",
+  "risk_notes": [
+    " Altering the stroke thickness or curvature of the '支' character too much will destroy legibility and brand recognition.",
+    " Changing the background color away from the blue spectrum (e.g., to red or green) will cause users to confuse it with other apps.",
+    " Removing the 'AI' suffix might misrepresent the specific app version if this icon is for a specific AI-focused build."
+  ]
+}

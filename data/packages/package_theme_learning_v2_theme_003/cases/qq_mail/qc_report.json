@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 2,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：准确保留了 QQ 邮箱信封的核心几何结构（圆角矩形外轮廓 + 内部 V 形折线），并将原图的白色线条巧妙转化为薄荷绿填充下的白色负空间，符合'preserve_major_structure'策略。主题风格元素（网格背景、红色虚线框、白色宽包边、深灰虚线缝线、右下硬投影）均精准呈现，且无任何多余装饰或伪影，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 35,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 78,
+      "failure_reason": "未严格遵守结构保留策略。原图及生成计划明确要求保留极简的'V 形线条结构'，禁止添加多余细节。该候选图将信封重构为带有底部折线和顶部封口的复杂通用信封图标，丢失了 QQ 邮箱原 Logo 特有的极简几何特征，违反了'preserve_major_structure'和'forbid adding extra details'的约束，导致品牌识别度下降。",
+      "recommendation": "不推荐。虽然风格统一且画面干净，但主体几何结构发生了非预期的重构，变成了通用邮件图标而非 QQ 邮箱的特定标识，不符合 strict 级别的身份约束要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

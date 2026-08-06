@@ -1,0 +1,39 @@
+{
+  "app": "iqiyi",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "iQIYI 英文与中文汉字的上下排版结构及字体特征",
+  "brand_cues_to_preserve": [
+    "iQIYI 英文字母的特定字形（尤其是 Q 的尾部切角）",
+    "爱奇艺三个汉字的笔画结构与间距",
+    "英文在上、中文在下的垂直对齐关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字作为信息载体的清晰度",
+    "品牌名称的直接展示"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 bilibili 和 alipay 的案例表明，对于以文字或清晰几何符号为主体的图标，应严格保留其 2D 轮廓和内部结构比例。爱奇艺图标由纯文字构成，识别度完全依赖于字形的准确性，因此必须采用 preserve_major_structure 模式，将平面文字直接转化为具有厚度的 3D 冰雕实体，不可重构为播放器或其他语义符号。",
+  "design_rationale": "爱奇艺的核心识别要素是其独特的品牌字体组合。为了符合整包'冰晶/冻水'的主题设计语言，需要将原本扁平的绿色渐变背景去除，把白色的文字主体转化为半透明的冰蓝色立体字。通过增加 Z 轴厚度、边缘倒角和内部气泡/雪花纹理，使文字看起来像是被冻结在冰块中的雕塑，既保留了极高的品牌辨识度，又完美契合主题的材质与光影规则。",
+  "must_preserve": [
+    "iQIYI 和 爱奇艺 的完整文字内容",
+    "字体的原始笔画粗细比例和几何特征",
+    "两行文字的相对大小比例和中心对齐方式"
+  ],
+  "can_recompose": [
+    "将 2D 平面文字拉伸为 3D 实体",
+    "表面质感由平滑矢量图变为带有水珠、裂纹的冰材质",
+    "颜色由原本的白字绿底变为全冰蓝色调（利用透明度和高光区分层次）",
+    "增加底部的物理投影和碎冰细节"
+  ],
+  "forbid": [
+    "禁止改变文字的字形或拼写",
+    "禁止使用原本的绿色或紫色背景",
+    "禁止生成不透明的塑料或金属质感",
+    "禁止添加与文字无关的复杂装饰元素（如播放键、屏幕框等）",
+    "禁止文字边缘出现锐利的 2D 描边"
+  ],
+  "generation_direction": "Generate a 3D ice sculpture of the text 'iQIYI' stacked above '爱奇艺'. The material is translucent cyan ice with internal bubbles and snowflakes. No background color, just pure white studio background. The letters should have thickness, rounded edges, and glossy highlights. Soft shadow at the base."
+}

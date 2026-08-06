@@ -1,0 +1,10 @@
+{
+  "target_app": "anipop",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "pinduoduo",
+    "golden_spatula",
+    "peace_elite"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

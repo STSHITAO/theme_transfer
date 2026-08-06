@@ -179,8 +179,14 @@ class MockServiceTests(unittest.TestCase):
         self.assertFalse(kwargs["watermark"])
         message = kwargs["messages"][0]
         self.assertEqual(message.role, "user")
-        self.assertEqual(message.content[0]["text"], "生成提示")
+        self.assertTrue(message.content[0]["text"].startswith("生成提示"))
+        self.assertIn("STYLE_REFERENCE_1", message.content[0]["text"])
+        self.assertIn("IMAGE_1 = TARGET_IMAGE", message.content[0]["text"])
+        self.assertIn("IMAGE_2 = STYLE_REFERENCE_1", message.content[0]["text"])
+        self.assertIn("FINAL IDENTITY CHECK", message.content[0]["text"])
         self.assertIn("image", message.content[1])
+        self.assertIn("image", message.content[2])
+        self.assertEqual(sum("text" in item for item in message.content), 1)
 
     def test_real_wan_call_retries_once_for_transient_network_error(self):
         response = {
@@ -454,6 +460,37 @@ class MockServiceTests(unittest.TestCase):
                 "forbidden_style_drift",
             ]:
                 self.assertIn(key, result)
+
+    def test_theme_design_analysis_batches_all_reference_pairs(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "prompts").mkdir(parents=True)
+            (root / "prompts/qwen_theme_design_analysis.md").write_text("分析", encoding="utf-8")
+            references = [{"app_name": f"app_{index}"} for index in range(12)]
+            batch_results = [
+                {"reference_transformation_patterns": []},
+                {"reference_transformation_patterns": []},
+                {"reference_transformation_patterns": []},
+            ]
+            with patch("backend.services.qwen_client._mock_mode", return_value=False):
+                with patch(
+                    "backend.services.qwen_client._analyze_theme_design_batch",
+                    side_effect=batch_results,
+                ) as analyze_batch:
+                    with patch(
+                        "backend.services.qwen_client._aggregate_theme_design_analyses",
+                        return_value={"analysis_coverage": {"reference_pair_count": 12}},
+                    ) as aggregate:
+                        result = analyze_theme_design(
+                            references,
+                            {"theme_id": "theme_x", "examples": {}},
+                            root_dir=root,
+                            batch_size=5,
+                        )
+
+            self.assertEqual([len(call.args[0]) for call in analyze_batch.call_args_list], [5, 5, 2])
+            self.assertEqual(aggregate.call_args.args[1], references)
+            self.assertEqual(result["analysis_coverage"]["reference_pair_count"], 12)
 
     def test_mock_identity_strategy_uses_target_profile_and_theme_board(self):
         with tempfile.TemporaryDirectory() as temp_dir:

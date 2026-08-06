@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 中的 semantic_recompose 策略，将复杂的 IP 角色重构为符合主题风格的纸飞机符号。薄荷绿填充、白色包边、虚线缝线、网格背景及红色虚线框等细节均严格符合 fidelity_constraints。构图居中且留白充足，视觉风格与参考图高度统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 90,
+      "composition_score": 85,
+      "artifact_score": 95,
+      "overall_score": 82,
+      "failure_reason": "主体尺寸过大，略微超出红色虚线框的安全区域，且投影边缘略显生硬，不如 candidate_01 精致。",
+      "recommendation": "可以使用，但构图略逊于 candidate_01。主体占比稍大，压迫了背景留白，且贴纸的立体感处理不如第一张自然。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

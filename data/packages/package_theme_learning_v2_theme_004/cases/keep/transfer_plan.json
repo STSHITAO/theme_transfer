@@ -1,0 +1,75 @@
+{
+  "app": "keep",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 kugou（保留K骨架转化为狗）、qimao（保留数字7结构）、alipay（保留支字骨架）等案例，当原图标具有单一、高辨识度的字母或数字几何轮廓时，必须保留主体几何的大部分结构。Keep 的核心识别完全依赖于白色的 'K' 字造型，其结构简单明确，符合 preserve_major_structure 的触发条件。因此，策略上应严格保留 'K' 的笔画走向和空间布局，仅通过手绘化线条、材质替换（绿叶/狗身）和主题特征叠加（腮红、星星变叶子/装饰）来进行风格迁移，而非像 douyin 或 eleme 那样进行彻底的语义重构。",
+  "preserve": [
+    "字母 'K' 的核心笔画结构（竖线、下斜线、断开的上斜线）",
+    "右上角四角星/闪光符号的相对位置",
+    "'K' 字整体的倾斜动感与负空间比例",
+    "圆头笔画端点的圆润特征"
+  ],
+  "must_preserve": [
+    "字母 'K' 的几何骨架拓扑结构",
+    "右上角星形符号的存在感（可变形但不可删除）",
+    "底部黑色手写体 'Keep' 文字",
+    "纯白圆角矩形背景底板"
+  ],
+  "recompose_allowed": [
+    "将 'K' 的笔画拟人化为绿色蔬菜小狗的躯干与四肢",
+    "将右上角星星转化为手绘绿叶或萌系闪光装饰",
+    "在 'K' 字内部负空间或笔画上融入豆豆眼、粉腮红、吐舌表情",
+    "将平滑矢量线条替换为深绿色手绘抖动粗轮廓"
+  ],
+  "restyle": [
+    "深紫色渐变背景替换为纯白/米白底色",
+    "白色填充替换为浅嫩绿/黄绿平涂加叶脉纹理",
+    "标准字体替换为底部黑色手写体",
+    "3D/光泽质感替换为哑光纸质贴纸质感"
+  ],
+  "decorate": [
+    "笔画边缘添加自然抖动的马克笔笔触",
+    "面部特征：黑色小圆点眼睛、粉色椭圆腮红",
+    "植物元素：叶脉纹理、叶片状耳朵或装饰",
+    "偶尔出现的汗滴/口水点缀以呼应运动语义"
+  ],
+  "forbid": [
+    "保留深紫色背景或任何高饱和品牌色",
+    "改变 'K' 字基本拓扑结构导致无法辨认",
+    "使用平滑矢量线、锐利折角或完美几何曲线",
+    "添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "遗漏底部手写 App 名称或使用标准印刷字体",
+    "主体过大撑满画布或过小难以辨认",
+    "用哑铃、跑步人形等通用健身符号替换 'K' 字主体",
+    "遗漏绿叶/粉腮红/呆萌脸等核心母题特征"
+  ],
+  "generation_brief": "A cute hand-drawn doodle style app icon on a pure white rounded square background. The central subject strictly preserves the geometric skeleton of the letter 'K' (vertical bar, lower diagonal, detached upper diagonal with rounded caps) but reimagined as an adorable green plant-animal hybrid character. Use thick, slightly wobbly dark green marker outlines and fill with light tender green and white leaf vein textures. Integrate kawaii facial features (tiny black dot eyes, soft pink oval blushes, small playful tongue) into the K structure. Transform the top-right four-pointed star into a small green leaf or hand-drawn sparkle. Below the centered graphic, write 'Keep' in casual bold black handwritten font. Flat vector illustration, sticker art style, clean composition, ample white space, healing and playful mood.",
+  "color_application": "彻底移除深紫色渐变背景，替换为纯白/米白底板；'K' 字主体从白色填充转为浅嫩绿 (#A8D060 / #C5E1A5) 平涂并叠加叶脉纹理；外轮廓使用深草绿/墨绿 (#4A7C29 / #2E5A1C) 手绘粗描边；腮红使用淡粉色 (#FFB6C1)；底部文字与眼睛使用纯黑 (#000000)；右上角星星可保留为手绘闪光或转为同色系绿叶，禁止出现原品牌紫/蓝色。",
+  "stroke_application": "将原图平滑矢量线条和圆角几何边缘全部转化为粗细不均的手绘马克笔/蜡笔质感粗轮廓；线条边缘带有自然抖动、断笔和不规则圆润感；外轮廓使用较粗深绿线，内部细节（叶脉、五官）使用较细同色系线条；消除所有锐利尖角和机械曲线，模拟真实纸面涂鸦笔触。",
+  "composition_application": "采用垂直三段式稳定构图：上部为拟人化 'K' 字主体（占画布50%-65%），严格居中偏上；中部留白过渡；下部固定预留区域放置黑色手写体 'Keep'（占15%-20%）。主体与文字在垂直轴线居中对齐，四周保留充足白色呼吸空间，严禁主体触碰画布边缘或撑满全图。",
+  "identity_application": "严格保留 'K' 字的几何骨架拓扑（竖线、下斜线、断开的上斜线及圆头端点）作为核心识别锚点；通过将笔画拟人化为蔬菜小狗躯干、在结构中融入萌系五官、将星星转化为绿叶/闪光装饰来实现主题融合；底部手写 'Keep' 作为强制识别兜底；整体在不破坏 'K' 字可读性的前提下完成绿色萌系重绘。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入‘绿叶小狗/蔬菜萌宠’母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形",
+    "底部必须包含黑色手写风格 'Keep' 英文名称，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑范围内，禁止原品牌紫色泄漏",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间",
+    "'K' 字几何骨架必须清晰可辨，断开上斜线与圆头端点不可丢失"
+  ],
+  "negative_constraints": [
+    "禁止保留深紫色或其他高饱和品牌色作为背景或大面积填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离‘绿叶小狗/蔬菜萌宠’核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写 'Keep' 名称或使用电脑标准字体",
+    "禁止用哑铃、心形、跑步人形等通用健身符号替换 'K' 字主体",
+    "禁止过度重构导致 'K' 字核心轮廓/断开笔画/星形位置完全消失",
+    "禁止遗漏叶脉纹理、粉腮红、呆萌脸等主题灵魂特征",
+    "禁止在白色底板上添加多余阴影、边框、纹理或渐变背景"
+  ]
+}

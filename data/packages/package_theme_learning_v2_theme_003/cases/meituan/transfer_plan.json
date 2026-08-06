@@ -1,0 +1,67 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中针对文字类Logo（如dewu、meituan、xiaohongshu、toutiao）的变换规律，当原图主体为清晰的品牌标准字时，均严格保留文字的笔画骨架、字间距和排版结构，仅进行颜色映射和材质贴纸化。当前目标App原图为极简的“美团”黑字黄底，几何结构清晰且无复杂3D或插画干扰，完全符合preserve_major_structure的适用条件。保留文字轮廓能最大化维持品牌识别度，同时完美适配手账贴纸的扁平剪纸语言。",
+  "preserve": [
+    "“美”字的横画间距与底部撇捺弧度",
+    "“团”字的外框方正感与内部“才”的结构",
+    "两个汉字左右并列的空间比例",
+    "“美团”二字的完整字形轮廓与笔画走向",
+    "文字作为唯一视觉主体的居中构图"
+  ],
+  "must_preserve": [
+    "“美团”二字的专属定制字体结构与横向排版",
+    "“美”字的完整笔画结构与横向线条特征",
+    "“团”字标志性的方形外框（全包围结构）",
+    "双字水平排列的几何重心与比例"
+  ],
+  "recompose_allowed": [
+    "原图的纯黄色背景替换为网格底板",
+    "文字的黑色填充替换为薄荷绿",
+    "文字边缘的锐利直角适度圆润化以贴合布艺/纸质贴纸特性"
+  ],
+  "restyle": [
+    "文字填充色统一为主题薄荷青/浅蓝绿色",
+    "添加白色宽模切边框与深灰色虚线缝纫轮廓",
+    "右下方添加柔和深灰色漫反射投影",
+    "背景替换为浅灰白色方格纸纹理与淡红色外围虚线框"
+  ],
+  "decorate": [
+    "淡红色圆角虚线裁剪辅助框",
+    "浅灰色正交网格底纹",
+    "模拟手工粘贴的微倾斜角度（可选，需保持重心居中）"
+  ],
+  "forbid": [
+    "保留原图的高饱和度美团黄背景或黑色文字填充",
+    "改变“美团”的字形结构、笔画粗细比例或替换为袋鼠/餐具等图形",
+    "遗漏白色宽描边、深灰虚线缝线、右下硬投影或网格红虚线框中的任一主题指纹",
+    "添加渐变、高光、3D立体效果、金属质感或写实纸张纹理",
+    "主体过大撑满画布或过小失去文字辨识度",
+    "使用拼音Meituan或英文字母替代原有汉字"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of the Chinese characters '美团' placed on a light grey grid notebook paper background. The characters strictly preserve their original custom bold sans-serif font structure and horizontal layout, filled with uniform mint cyan color. The text is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, rounded corners, clean vector illustration, no gradients, no 3D effects.",
+  "color_application": "彻底剥离原图的美团黄背景与黑色文字，将“美团”二字强制填充为低饱和度薄荷青/浅蓝绿色；原图的高对比度黑白/黑黄关系转化为“薄荷绿主体+白色宽边+浅灰网格底”的主题配色；严禁保留任何黄色或黑色像素。",
+  "stroke_application": "将原图文字的锐利矢量边缘转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色细虚线模拟缝纫针脚；所有汉字笔画转角进行圆润化处理，消除尖锐折角，呈现手工剪裁的柔和感。",
+  "composition_application": "移除原图满版黄色背景，将“美团”文字作为独立贴纸居中置于米白网格底板中央；文字主体缩放至画布50%-60%比例，严格落入淡红色虚线框安全区内；四周保留均匀充足的网格留白，形成“底板-红虚线框-白边贴纸”三层嵌套层级。",
+  "identity_application": "在完全服从主题薄荷绿单色与贴纸材质的前提下，通过精确保留“美团”二字的专属定制字体骨架、笔画走向及左右排版结构来维持身份识别；不依赖品牌色，仅依靠字形轮廓的拓扑一致性确保用户可一眼认出App。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留美团黄或黑色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸控制在40%-70%，严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度品牌色、渐变色或多色搭配",
+    "禁止使用纯色背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止对“美团”字形进行艺术化变形、连笔或缺失笔画导致不可识别",
+    "禁止用袋鼠、外卖箱、食物等功能道具替换文字主体",
+    "禁止添加写实材质、金属光泽、霓虹发光等不符合手工剪纸风格的特效",
+    "禁止主体过大撑满画布或过小缩在角落破坏构图平衡"
+  ]
+}

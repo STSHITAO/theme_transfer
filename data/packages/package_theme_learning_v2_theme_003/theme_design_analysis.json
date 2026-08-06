@@ -1,0 +1,931 @@
+{
+  "theme_board": {
+    "palette": "统一的低饱和度薄荷绿/青蓝色（Teal/Mint）作为主体唯一填充色，搭配纯白色宽描边与浅灰色硬边缘投影；背景为米白/浅灰白底色铺满淡灰色正方形网格，并环绕一圈淡红/淡粉色圆角虚线框。彻底摒弃原图高饱和品牌色、渐变及多色搭配。",
+    "line_style": "双层轮廓语言：外层为粗实纯白包边模拟贴纸模切边缘，内层或紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫线迹；所有转角圆润化，无锐利折角，线条密度低且呈现手工剪裁的柔和感。",
+    "material": "扁平化纸质贴纸或布艺贴片材质，哑光无光泽，无渐变、无高光、无3D立体渲染；通过右下方统一的浅灰色硬边缘投影营造轻微浮起于纸面的物理厚度与剪贴层次感。",
+    "background": "标准化的手账底板：米白/浅灰白圆角矩形基底，覆盖极淡灰色正交网格线（类似坐标纸或切割垫），主体外围固定环绕一圈淡红/淡粉色圆角虚线框作为裁剪定位参考；背景占比极大（约60%-70%），形成稳定的留白与秩序感。",
+    "composition": "绝对居中构图，主体严格置于网格底板中央的虚线框安全区内，四周保留均匀充足的网格留白；部分批次允许主体带微小倾斜角度以增加手工粘贴的随意感，但视觉重心始终锁定中心，严禁出血或触碰画布边缘。",
+    "motif_rules": "整包强制包含五大指纹元素：1.薄荷绿单色主体填充；2.白色宽包边+深灰虚线缝线；3.右下方浅灰硬投影；4.浅灰网格底板；5.淡红/粉圆角虚线内框。所有App图标必须转化为这种'贴在网格手账本上的手工剪纸贴纸'视觉隐喻，禁止引入任何主题外材质或装饰。"
+  },
+  "color_transform_rule": "彻底剥离original的所有品牌识别色（无论红、蓝、黄、黑或复杂渐变），将主体填充色强制统一映射为低饱和度薄荷绿/青蓝色；原图中的白色元素转化为白色描边或负空间镂空，辅色仅限白、浅灰、淡红/粉四色；完全去除光影渐变、高光和环境色，转为纯色块填充，色彩一致性优先级高于品牌色保留。",
+  "background_transform_rule": "original的全出血背景（纯色、渐变、照片或复杂场景）被完全移除，替换为固定的'米白底+浅灰网格+淡红/粉虚线框'标准化底板；背景从'氛围渲染'转变为'功能性手工桌面'，占比从0%增至60%-70%，主体不再撑满画布而是作为独立贴纸悬浮于网格之上，留白比例结构化且固定。",
+  "stroke_transform_rule": "original的无描边、细描边或3D边缘统一转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；所有尖锐直角柔化为圆角，线条密度大幅降低，仅保留定义主体轮廓和关键结构分割的必要虚线，边界复杂度趋向手工剪裁的柔和感。",
+  "composition_transform_rule": "主体从original的满版、出血或复杂多层布局，收缩为居中放置的独立贴纸形态；视觉重心从'画面冲击力'转移至'中心贴纸的精致感与秩序感'，四周留出大量均匀的网格背景和红色虚线框空间，形成明确的'底板-虚线框-贴纸'三层嵌套层级关系。",
+  "subject_scale_rule": "主体相对画布尺寸显著缩小，严格控制在40%-70%之间（各批次微有浮动但均不超此范围），缩放方式为保持原始长宽比的等比适配；必须确保主体完整落入红色虚线框安全区内，与框线保持至少10%-15%间距，严禁放大撑满画布或过小失去辨识度。",
+  "detail_complexity_rule": "极度简化。original中的3D渲染、渐变光泽、复杂纹理、面部五官、毛发细节、营销文字、次要道具及装饰元素全部剔除；仅保留最核心的silhouette剪影、文字骨架或1-2个关键识别特征，细节密度降至最低，转化为扁平单色块+虚线轮廓的最简形式，符合手工剪纸的工艺限制。",
+  "theme_fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色或引入其他色相",
+    "必须具备白色宽包边与内部/边缘深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板，不可省略或替换",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致，禁止使用模糊漫反射阴影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血、触碰边缘或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果、写实纹理或现代UI材质（如玻璃拟态、霓虹发光）",
+    "所有几何转角必须圆润化处理，符合布艺/纸质贴纸的物理特性"
+  ],
+  "forbidden_style_drift": [
+    "保留original的高饱和度品牌色、渐变色或多色搭配",
+    "使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "主体过大撑满画布或过小缩在角落，破坏居中贴纸的构图平衡与留白呼吸感",
+    "添加写实材质、金属光泽、霓虹发光、3D渲染等不符合手工剪纸风格的特效",
+    "将主体重构为与原App功能/名称语义无关的通用道具或小场景",
+    "使用实线粗描边替代虚线缝纫效果，或使用尖锐直角破坏手工感",
+    "在主体内部保留过多的original细节（如五官、纹理、细小文字）导致视觉杂乱"
+  ],
+  "reference_transformation_patterns": [
+    {
+      "app": "alipay",
+      "source_semantics": "移动支付与金融服务，核心符号为汉字'支'。",
+      "observed_transformation": "将立体的白色'支'字扁平化为薄荷绿填充，添加白色宽边和灰色缝线，置于网格纸中央。移除底部的'AI'字样和蓝色渐变背景。",
+      "preserved_identity": "完整保留了'支'字的笔画结构和连笔特征。",
+      "redesigned_parts": "颜色完全替换，立体光影去除，背景重构为手账网格。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 的'支'字几何形状完全一致，笔画走向、交叉关系和空间比例均未改变，仅做了圆角化和扁平化处理。"
+    },
+    {
+      "app": "amap",
+      "source_semantics": "地图导航与出行，核心符号为纸飞机。",
+      "observed_transformation": "将 3D 折纸效果的蓝色纸飞机简化为扁平薄荷绿图形，保留折痕线条（转为白色负空间或简化线条），添加贴纸描边和缝线。移除四色地图背景。",
+      "preserved_identity": "保留了纸飞机的朝向、机翼折叠结构和整体三角形态。",
+      "redesigned_parts": "去除了 3D 厚度和光影，背景从地图色块变为网格纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "纸飞机的外轮廓、机头指向、尾翼缺口位置与 original 高度吻合，主体几何未发生替换或重组。"
+    },
+    {
+      "app": "anipop",
+      "source_semantics": "三消休闲游戏，核心符号为卡通动物角色群。",
+      "observed_transformation": "从复杂的多个 3D 角色中提取最具代表性的黄色小鸡，将其极度简化为扁平的薄荷绿三角形剪影，仅保留眯眯眼和嘴巴的最小特征。移除背景网格和其他动物。",
+      "preserved_identity": "保留了小鸡的三角形身体轮廓、头顶呆毛和标志性的眯眼表情。",
+      "redesigned_parts": "完全丢弃了其他角色、3D 渲染、丰富色彩和背景棋盘格，主体从具象 3D 模型重构为极简 2D 符号。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是多角色堆叠的复杂场景，style_ref 是单一极简符号。虽然语义源自小鸡，但主体结构从'多角色 3D 场景'被重构为'单角色 2D 剪影'，属于语义提取后的结构重组，未保留 original 的大部分主体几何和空间关系。"
+    },
+    {
+      "app": "baidu_maps",
+      "source_semantics": "地图浏览与定位，核心符号为带'du'字样的定位 Pin。",
+      "observed_transformation": "将红色的定位 Pin 改为薄荷绿，保留内部白色'du'字样。添加白色描边和缝线。移除底部的透视地图道路背景。",
+      "preserved_identity": "完整保留了定位 Pin 的水滴形状和内部的'du'字母标识。",
+      "redesigned_parts": "颜色从红变绿，去除了底部地图场景，背景统一为网格。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Pin 的外轮廓曲线、尖端位置、内部字母的比例和排版与 original 完全一致，主体几何结构被完整保留。"
+    },
+    {
+      "app": "baidu_netdisk",
+      "source_semantics": "云存储与文件同步，核心符号为三环云朵 Logo。",
+      "observed_transformation": "将渐变的蓝红三环云朵合并为统一的薄荷绿扁平云朵形状，内部圆孔保留并添加缝线细节。移除底部的'GenFlow'文字和波浪背景。",
+      "preserved_identity": "保留了三个圆环相互交织形成的云朵整体轮廓和内部孔洞布局。",
+      "redesigned_parts": "去除了多色渐变和重叠透明度效果，底部文字和装饰背景被完全移除。",
+      "preserve_major_structure": true,
+      "structure_evidence": "云朵的整体外边界、三个圆孔的相对位置和大小比例与 original 的核心 Logo 几何完全对应，未发生结构替换。"
+    },
+    {
+      "app": "baidu_tieba",
+      "source_semantics": "社区交流，核心符号为气泡和“贴”字。",
+      "observed_transformation": "保留气泡轮廓和“贴”字，整体转为薄荷绿贴纸，加虚线描边和白边投影，置于网格背景上。",
+      "preserved_identity": "气泡形状、“贴”字字形。",
+      "redesigned_parts": "去除蓝紫粉渐变，转为单色薄荷绿；去除实色背景，转为网格底板。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 的气泡外轮廓和内部“贴”字的空间位置与比例，仅改变材质和颜色，未发生结构重构。"
+    },
+    {
+      "app": "beautycam",
+      "source_semantics": "摄影美颜，核心符号为相机轮廓和镜头圆环。",
+      "observed_transformation": "提取相机镜头圆环和闪光灯方块作为主体，转为薄荷绿贴纸，加虚线描边，置于网格背景上。",
+      "preserved_identity": "镜头圆环缺口、右上角方块（闪光灯/装饰）的几何关系。",
+      "redesigned_parts": "去除粉色背景和 3D 渐变质感，简化相机外壳，仅保留核心镜头符号。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 保留了 original 中圆环与方块的相对位置和几何形态，主体轮廓从完整相机简化为核心镜头组件，但空间关系和识别特征一致。"
+    },
+    {
+      "app": "bilibili",
+      "source_semantics": "视频社区，核心符号为小电视和 bilibili 文字。",
+      "observed_transformation": "保留小电视轮廓，将内部文字替换为简化的颜文字表情（-w-），转为薄荷绿贴纸，加虚线描边，置于网格背景上。",
+      "preserved_identity": "小电视外形、天线、底部支脚。",
+      "redesigned_parts": "去除粉色渐变背景；将复杂的 bilibili 字体简化为 theme 风格的简笔表情，以适配贴纸的简洁语言。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 的小电视外轮廓、天线和支脚的空间布局，内部细节虽简化但主体几何未变。"
+    },
+    {
+      "app": "bilibili_comics",
+      "source_semantics": "漫画阅读，核心符号为“漫画”文字和小电视吉祥物。",
+      "observed_transformation": "仅保留“漫画”文字及其爆炸框轮廓，转为薄荷绿贴纸，加虚线描边，置于网格背景上。完全移除小电视吉祥物和手势。",
+      "preserved_identity": "“漫画”二字的字形和爆炸框轮廓。",
+      "redesigned_parts": "移除 original 中的小电视角色、手指和多彩背景，将复杂插画重构为单一文字贴纸。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是角色+文字的组合场景，style_ref 仅提取了文字部分作为主体，移除了角色和手势，属于语义提取后的结构重构，而非原主体几何的保留。"
+    },
+    {
+      "app": "clash_of_clans",
+      "source_semantics": "策略游戏，核心符号为野蛮人头像。",
+      "observed_transformation": "完全移除野蛮人 3D 头像，替换为游戏英文名称“CLASH of CLANS”的文字排版，转为薄荷绿贴纸，加虚线描边，置于网格背景上。",
+      "preserved_identity": "游戏名称文字语义。",
+      "redesigned_parts": "将复杂的 3D 角色渲染完全替换为扁平文字贴纸，主体从图像变为文字。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是具象的 3D 人脸，style_ref 的主体是抽象的文字排版，两者在几何轮廓、空间关系上完全不同，属于基于功能语义的完全重构。"
+    },
+    {
+      "app": "crossfire_mobile",
+      "source_semantics": "第一人称射击游戏，强调竞技、枪械和角色。",
+      "observed_transformation": "完全移除了写实的人物肖像、背景光影和营销文字，仅提取了左下角的'CF'字母Logo作为主体，并应用贴纸主题样式。",
+      "preserved_identity": "保留了'CF'字母组合的独特几何形状和锐利的边角特征。",
+      "redesigned_parts": "人物、背景、文字全部被移除；Logo颜色改为薄荷绿，增加了白边、缝线和投影。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图主体是占据大部分画面的人物肖像，style_ref的主体是原本位于角落的小型字母Logo。主体的几何轮廓、空间占比和视觉焦点发生了根本性重构，属于提取局部符号替代原主体结构。"
+    },
+    {
+      "app": "ctrip",
+      "source_semantics": "一站式旅行预订服务，海豚象征自由与出行。",
+      "observed_transformation": "保留了海豚的核心剪影，移除了蓝色背景和橙色尾巴点缀，整体转换为薄荷绿贴纸。",
+      "preserved_identity": "完整保留了海豚跃起的姿态、头部轮廓、眼睛位置和尾部卷曲的几何关系。",
+      "redesigned_parts": "背景替换为网格；橙色尾巴变为统一的薄荷绿；增加了白边、缝线和投影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref中的海豚轮廓、身体曲线、头部朝向和尾部形状与original完全一致，仅进行了颜色替换、缩小和添加主题边框，主体几何和空间关系被完整保留。"
+    },
+    {
+      "app": "dewu",
+      "source_semantics": "潮流电商与鉴别社区，强调品牌文字标识。",
+      "observed_transformation": "移除了黑色背景和底部的'礼物节'营销横幅，仅保留'得物'两个汉字作为主体，应用贴纸样式。",
+      "preserved_identity": "保留了'得物'汉字的特定字体设计、笔画粗细和字间距。",
+      "redesigned_parts": "背景和底部横幅被移除；文字颜色改为薄荷绿；文字整体被包裹在统一的白边和缝线轮廓内。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref完整保留了original中'得物'二字的字形结构、相对位置和比例，仅去除了周围的干扰元素并进行了主题化上色和描边，核心主体几何未变。"
+    },
+    {
+      "app": "dianping",
+      "source_semantics": "本地生活消费评价，小人符号代表用户与活力。",
+      "observed_transformation": "保留了白色小人的剪影，移除了橙色背景，转换为薄荷绿贴纸。",
+      "preserved_identity": "完整保留了小人的圆形头部、张开的手臂和弯曲的腿部几何特征。",
+      "redesigned_parts": "背景替换为网格；主体颜色反转为薄荷绿填充加白边；增加了缝线和投影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref中小人的头部、躯干、四肢的形状、角度和空间布局与original完全吻合，属于直接的结构保留和样式转换。"
+    },
+    {
+      "app": "dingtalk",
+      "source_semantics": "企业数字化办公协作，翅膀闪电象征高效与沟通。",
+      "observed_transformation": "保留了翅膀与闪电结合的Logo剪影，移除了蓝色渐变背景，转换为薄荷绿贴纸。",
+      "preserved_identity": "完整保留了翅膀羽毛的层级、闪电的折角和整体的倾斜动势。",
+      "redesigned_parts": "背景替换为网格；主体颜色改为薄荷绿；增加了白边、缝线和投影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref中的翅膀闪电Logo的轮廓线条、内部镂空结构和整体比例与original完全一致，仅进行了主题化的颜色和背景处理。"
+    },
+    {
+      "app": "douban",
+      "source_semantics": "文化社区，核心标识为汉字'豆'",
+      "observed_transformation": "绿色背景移除，'豆'字转为薄荷青贴纸，保留汉字骨架，内部横线简化为虚线",
+      "preserved_identity": "完整的'豆'字几何结构和笔画空间关系",
+      "redesigned_parts": "背景色、填充色、边缘处理（增加白边和虚线）",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 的'豆'字完全一致，横竖笔画的位置、比例和封闭空间均未改变，仅做了颜色和材质转换。"
+    },
+    {
+      "app": "douyin",
+      "source_semantics": "短视频，核心标识为音符符号",
+      "observed_transformation": "黑色背景和红蓝故障效果移除，音符转为单色薄荷青贴纸，保留音符曲线",
+      "preserved_identity": "音符的整体 silhouette 和弯曲走向",
+      "redesigned_parts": "故障艺术分层效果、背景色、色彩数量",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 音符的头部圆弧、竖直主干和底部弯钩的几何比例，空间关系未发生重组。"
+    },
+    {
+      "app": "douyin_huoshan",
+      "source_semantics": "短视频火山版，核心标识为音符+火焰",
+      "observed_transformation": "深色背景和写实火焰移除，音符与火焰合并为统一的薄荷青贴纸图形，火焰简化为右下角的小色块",
+      "preserved_identity": "音符主体 + 火焰元素的组合语义",
+      "redesigned_parts": "火焰的写实渐变、背景、色彩层次，火焰被抽象化为贴纸的一部分",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中音符的主体轮廓与 douyin 一致，右下角附加的火焰形状虽被简化，但仍保持与音符的空间依附关系，未替换为其他道具。"
+    },
+    {
+      "app": "douyu",
+      "source_semantics": "游戏直播，核心标识为鲨鱼+火箭",
+      "observed_transformation": "橙色背景和彩色卡通细节移除，鲨鱼与火箭合并为单色薄荷青剪影，保留大眼睛和牙齿特征",
+      "preserved_identity": "鲨鱼的头部轮廓、大眼睛、锯齿嘴和火箭的相对位置",
+      "redesigned_parts": "卡通上色、火箭的独立色彩、背景渐变，细节被简化为留白和虚线",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 中鲨鱼咬住火箭的整体外轮廓，眼睛和嘴巴的空间位置未变，仅将多色卡通简化为单色贴纸。"
+    },
+    {
+      "app": "genshin",
+      "source_semantics": "开放世界 RPG，原始图标为角色派蒙插画",
+      "observed_transformation": "角色插画被完全放弃，改用游戏官方文字 Logo'原神/Genshin'作为主体，转为薄荷青贴纸",
+      "preserved_identity": "游戏的文字品牌标识和星形符号元素",
+      "redesigned_parts": "整个角色插画被替换为文字 Logo，属于语义等价的身份切换而非结构保留",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是人物面部特写插画，style_ref 是文字 Logo 图形，两者的主体几何、轮廓和空间关系完全不同。这是用同一 App 的另一种官方身份元素替代了原图标主体，属于身份元素切换而非结构保留。"
+    },
+    {
+      "app": "golden_spatula",
+      "source_semantics": "自走棋策略游戏，核心元素为企鹅吉祥物与金铲铲装备。",
+      "observed_transformation": "完全舍弃企鹅角色形象，仅提取'铲子'这一核心道具符号，并将其与底部的旋风/羁绊动态线条结合，形成抽象的青色贴纸。",
+      "preserved_identity": "铲子的三齿轮廓与底部的弧形动态线，保留了'金铲铲'与'战斗/旋转'的功能语义。",
+      "redesigned_parts": "企鹅吉祥物、头盔、金属质感、蓝色漩涡背景全部被移除，重构为单一几何道具。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 主体为具象的企鹅角色占据画面80%以上，style_ref 主体为抽象的铲子符号，两者几何轮廓、空间占比和视觉主体完全不同，属于基于功能语义的结构重构。"
+    },
+    {
+      "app": "hello_bike",
+      "source_semantics": "共享单车与本地出行服务，核心识别为'哈啰'文字与蓝色品牌色。",
+      "observed_transformation": "舍弃中文文字与 slogan，提取品牌首字母 'H'，并将笔画转化为带有流动感的平行线条，呼应骑行与道路的语义。",
+      "preserved_identity": "字母 'H' 的整体骨架与负空间，保留了品牌名称的首字母识别线索。",
+      "redesigned_parts": "中文字体、底部波浪装饰、蓝黄配色全部被移除，重构为线条化的字母图形。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 主体为横向排列的中文字符，style_ref 主体为纵向块状的字母 H，字符结构、笔画走向和空间布局均发生根本性改变，属于语义提取后的重构。"
+    },
+    {
+      "app": "honor_of_kings",
+      "source_semantics": "MOBA竞技游戏，核心为人物英雄与5v5对战概念。",
+      "observed_transformation": "完全舍弃写实人物头像，提取游戏内代表性的'瞄准/罗盘/峡谷'圆形几何符号，进行扁平化贴纸处理。",
+      "preserved_identity": "圆形外框、中心准星与斜向指针的组合，保留了竞技、瞄准与战场地图的功能语义。",
+      "redesigned_parts": "亚瑟人物面部、光影、5v5角标、金色边框全部被移除，重构为抽象几何徽记。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 主体为写实人脸特写，style_ref 主体为同心圆几何符号，两者在形态、内容和空间关系上无任何继承，属于完全的概念重构。"
+    },
+    {
+      "app": "huya",
+      "source_semantics": "游戏直播平台，核心为老虎吉祥物与播放按钮。",
+      "observed_transformation": "保留老虎头部的整体外轮廓与耳朵特征，将内部五官极度简化，仅保留核心的三角形播放键与简化的嘴部/牙齿线条。",
+      "preserved_identity": "虎头 silhouette、双耳位置、中心播放三角形，保留了'直播'与'虎牙'的双重身份线索。",
+      "redesigned_parts": "黄色皮毛、棕色条纹、立体眼部高光、复杂表情全部被简化为单色块与留白负空间。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整继承了 original 的虎头外轮廓、耳朵相对位置和中心播放键的空间布局，主体几何与空间关系高度一致，仅做了材质与细节的扁平化简化。"
+    },
+    {
+      "app": "iqiyi",
+      "source_semantics": "在线视频流媒体，核心为 iQIYI 文字标识与绿色品牌色。",
+      "observed_transformation": "保留 iQIYI 英文字母的核心排版，将其置入一个圆角矩形（类似屏幕/播放器）的轮廓中，并在右下角附加闪电符号暗示快速/能量。",
+      "preserved_identity": "iQIYI 字母序列与相对比例，保留了品牌名称的直接文字识别线索。",
+      "redesigned_parts": "中文字符、绿紫渐变背景、无边框排版被移除，重构为带外壳的贴纸徽章形式。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的字母排列顺序、字形比例和横向空间关系与 original 基本一致，主体仍为文字标识，仅增加了主题化的外框与装饰符号，属于结构保留下的样式转换。"
+    },
+    {
+      "app": "iqiyi_lite",
+      "source_semantics": "视频流媒体平台，核心功能是影视播放。",
+      "observed_transformation": "放弃了 original 的文字排版和闪电角标，提取了品牌经典的“iQIYI”字母与圆角矩形播放器外框的组合符号。将其转化为薄荷绿填充、白边包裹的贴纸，置于网格底板上。",
+      "preserved_identity": "保留了“iQIYI”字母标识和标志性的圆角矩形播放器轮廓，这是该品牌最核心的视觉资产。",
+      "redesigned_parts": "去除了中文文字“爱奇艺极速版”和右下角的红色闪电角标。背景从绿紫渐变变为网格纸。颜色从品牌绿变为薄荷绿。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓依然是圆角矩形包裹字母的结构，与 original 中隐含的品牌 Logo 结构一致，只是去除了文字干扰，几何关系未变。"
+    },
+    {
+      "app": "jd",
+      "source_semantics": "综合电商平台，核心功能是购物、物流。",
+      "observed_transformation": "完全放弃了 original 中复杂的 3D 卡通狗形象、行李箱和飞机道具。直接提取品牌字母缩写“JD”作为主体。将字母转化为薄荷绿贴纸风格。",
+      "preserved_identity": "保留了“JD”这两个字母的几何形态，这是京东品牌的英文标识核心。",
+      "redesigned_parts": "发生了结构性重构。Original 的主体是具象的卡通角色（狗），Style_ref 的主体是抽象的字母符号。这是因为原图主体过于复杂且充满画面，无法在保持主题简洁性的前提下保留狗的轮廓，因此退回到字母标识。",
+      "preserve_major_structure": false,
+      "structure_evidence": "Original 是生物形态（狗头）加道具，Style_ref 是纯字母几何。主体轮廓完全改变，属于语义提取后的重构，而非结构保留。"
+    },
+    {
+      "app": "jianying",
+      "source_semantics": "视频剪辑工具，核心功能是编辑、特效。",
+      "observed_transformation": "完美保留了 original 中独特的“胶片/剪刀”结合的几何 Logo 形状。仅改变颜色为薄荷绿，增加白边和投影，放入网格底板。",
+      "preserved_identity": "完整保留了剪映标志性的几何图形结构，包括中间的交叉线和两侧的弧形。",
+      "redesigned_parts": "去除了黑底白图的高对比度反色处理，改为浅色底上的彩色贴纸。去除了锐利的边缘，增加了圆润的白边。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Style_ref 的主体几何路径与 Original 几乎完全重合，仅做了描边扩展和颜色填充，空间关系和轮廓特征高度一致。"
+    },
+    {
+      "app": "karaoke",
+      "source_semantics": "K歌社交应用，核心功能是唱歌、录音。",
+      "observed_transformation": "保留了 original 中鹦鹉/鸟头与麦克风结合的剪影轮廓。去除了橙红渐变和紫色的麦克风手柄细节，统一为薄荷绿单色。",
+      "preserved_identity": "保留了鸟头的大致轮廓、眼睛的负空间位置以及麦克风的基本形态。",
+      "redesigned_parts": "简化了内部细节，原图中眼睛和麦克风的分色处理被简化为统一的负空间或同色块。去除了鲜艳的渐变色。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Style_ref 的外轮廓依然是鸟头加麦克风的组合形状，内部孔洞（眼睛）的位置关系保持不变，主体结构得以保留。"
+    },
+    {
+      "app": "keep",
+      "source_semantics": "运动健身应用，核心功能是训练、健康数据。",
+      "observed_transformation": "保留了 original 中标志性的“K”字母变形 Logo。去除了右上角的紫色星星装饰。将白色 Logo 改为薄荷绿填充加白边。",
+      "preserved_identity": "完整保留了 Keep 品牌特有的“K”字几何构造，包括断笔和角度。",
+      "redesigned_parts": "去除了深紫色背景和星星装饰元素。改变了主体的颜色逻辑（从白字紫底变为绿字白边浅底）。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Style_ref 的“K”字骨架与 Original 完全一致，线条走向、转折角度均未改变，仅增加了轮廓厚度。"
+    },
+    {
+      "app": "king_camp",
+      "source_semantics": "王者荣耀官方社区，核心符号为螺旋状的眼睛/营地标志及右下角的腾讯游戏星形标。",
+      "observed_transformation": "螺旋标志和星形标被合并为一个整体的薄荷绿贴纸形状，内部用白色负空间和虚线勾勒结构，去除了原有的金黄色背景和红色角标底色。",
+      "preserved_identity": "保留了螺旋眼睛的核心几何形态和右下角星形标的相对位置关系。",
+      "redesigned_parts": "颜色完全替换，背景移除，边缘增加白色贴纸轮廓和虚线，星形标从独立角标变为贴纸的一部分。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 的螺旋标志及星形标组合后的外轮廓高度一致，内部同心圆和尖角的空间关系未变，仅做了风格化描边和填色。"
+    },
+    {
+      "app": "kuaikan",
+      "source_semantics": "漫画阅读平台，核心符号为粗体汉字“快看！”及嵌入其中的小怪兽眼睛。",
+      "observed_transformation": "黑色粗体字变为薄荷绿填充，保留字形结构，去除底部黄色气泡装饰，整体包裹在白色贴纸轮廓中，置于网格背景上。",
+      "preserved_identity": "完整保留了“快看！”四个字的字形结构和感叹号，以及“看”字内部的小眼睛细节。",
+      "redesigned_parts": "去除了底部的装饰性气泡和碎片，颜色由黑黄变为青白，增加了虚线描边和贴纸效果。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体即为 original 的文字部分，文字的笔画走向、粗细比例和排列方式完全保留，未发生几何重构。"
+    },
+    {
+      "app": "kuaiying",
+      "source_semantics": "视频剪辑工具，核心符号为摄像机形状的字母 C 及右侧的镜头组件。",
+      "observed_transformation": "渐变的粉红/橙色摄像机图标变为薄荷绿，内部增加虚线表示屏幕和镜头结构，去除黑色背景，增加白色贴纸边和投影。",
+      "preserved_identity": "保留了摄像机/C 形的主体轮廓，右侧的两个竖条镜头组件位置和比例不变。",
+      "redesigned_parts": "去除了渐变色和黑色背景，内部镂空部分改为白色填充加虚线装饰，边缘圆润化处理。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的外轮廓与 original 的摄像机图标完全吻合，左侧大 C 形和右侧双竖条的空间布局及比例关系严格保留。"
+    },
+    {
+      "app": "kugou",
+      "source_semantics": "音乐播放器，核心符号为圆圈内的字母 K。",
+      "observed_transformation": "蓝底白圈白 K 变为白底薄荷绿圈薄荷绿 K，圆圈和字母边缘增加虚线描边，周围增加装饰性的小虚线叶片/音符暗示，置于网格背景中。",
+      "preserved_identity": "保留了正圆外框和内部大写字母 K 的核心结构。",
+      "redesigned_parts": "颜色反转并统一为薄荷绿系，去除了纯蓝背景，增加了手绘感的虚线装饰细节。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体依然是圆形包裹 K 字，圆的大小和 K 字在圆内的占比、位置与 original 一致，未改变基本几何构成。"
+    },
+    {
+      "app": "kuwo",
+      "source_semantics": "音乐服务，核心符号为圆环、心形/K 形组合及左上角的音符，右下角有 HiFi 角标。",
+      "observed_transformation": "橙红圆环和心形 K 变为薄荷绿，蓝色音符变为薄荷绿，去除黄色背景和 HiFi 角标，整体融合为一个不规则圆形贴纸，内部用虚线勾勒。",
+      "preserved_identity": "保留了圆环、内部心形/K 结构以及左上角音符的相对位置。",
+      "redesigned_parts": "去除了 HiFi 文字角标和黄色背景，多色统一为单色薄荷绿，边缘增加白色贴纸轮廓。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体轮廓涵盖了 original 的圆环、音符和内部图形，各元素之间的空间拓扑关系（音符在左上，K 在中间）完全保留，未进行语义替换。"
+    },
+    {
+      "app": "lofter",
+      "source_semantics": "面向兴趣爱好者和创作者提供图文、插画、摄影、同人等内容发布与交流的社区平台。",
+      "observed_transformation": "提取 original 中核心的 'L' 形几何符号，去除 teal 圆形背景，将其转化为薄荷绿填充、带白边和虚线轮廓的贴纸，置于网格纸中央。",
+      "preserved_identity": "完整保留了 'L' 字母的几何形态、比例和空间走向。",
+      "redesigned_parts": "移除了圆形底色，改变了填充色，增加了贴纸描边、投影和网格背景。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 中的白色 'L' 形完全一致，几何拓扑关系未发生任何改变，仅做了材质和颜色的主题化替换。"
+    },
+    {
+      "app": "lol_assistant",
+      "source_semantics": "英雄联盟官方服务平台，提供游戏资讯、战绩查询、赛事内容、攻略和社区互动。",
+      "observed_transformation": "提取 original 中的 '英雄联盟' 及 'LEAGUE OF LEGENDS' 文字组合，去除深蓝背景和右下角角标，将文字整体转化为薄荷绿贴纸。",
+      "preserved_identity": "保留了中英文标准字的字形、排版结构和上下层级关系。",
+      "redesigned_parts": "移除了背景光效和腾讯游戏角标，文字颜色统一为薄荷绿，外围包裹统一的贴纸白边和虚线。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整复刻了 original 中文字块的轮廓边界和内部负空间，文字作为主体的几何结构被完整保留。"
+    },
+    {
+      "app": "lol_mobile",
+      "source_semantics": "移动端多人实时 MOBA 对战、英雄操作、排位竞技和多种娱乐模式。",
+      "observed_transformation": "完全舍弃 original 中的金克丝人物插画和 '4周年' 运营标签，重构为英雄联盟手游的 'LD' 字母组合徽标，并应用贴纸主题。",
+      "preserved_identity": "保留了英雄联盟 IP 的核心字母标识语义（L 与 D 的结合），维持了游戏品牌的底层认知。",
+      "redesigned_parts": "主体从具象的人物插画彻底重构为抽象的字母徽标，属于语义替代而非几何保留。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是复杂的人物面部和手势，style_ref 的主体是几何化的字母徽标，两者的主体轮廓、几何形态和空间关系完全不同，属于结构重构。"
+    },
+    {
+      "app": "mango_tv",
+      "source_semantics": "提供综艺、电视剧、电影、动漫和直播等在线视频内容。",
+      "observed_transformation": "提取 original 中核心的 'M' 形电视框符号，去除橙色背景和底部 '密室大逃脱' 文字，将其转化为薄荷绿贴纸。",
+      "preserved_identity": "完整保留了芒果 TV 标志性的圆角矩形外框和内部 'M' 字母的几何结构。",
+      "redesigned_parts": "移除了底部副标题文字和橙色底色，主体颜色改为薄荷绿，增加贴纸特效。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的外框形状和内部 'M' 的笔画走向与 original 完全吻合，主体几何结构被精确保留。"
+    },
+    {
+      "app": "meitu",
+      "source_semantics": "提供照片美化、人像修图、拼图、滤镜、抠图、海报和智能图片处理工具。",
+      "observed_transformation": "舍弃 original 中的波浪形 'MT' 字母，保留外围圆环结构，将内部核心语义替换为汉字 '秀'，整体应用贴纸主题。",
+      "preserved_identity": "保留了圆形外框的构图框架，并通过汉字 '秀' 直接呼应 App 名称 '美图秀秀' 的核心语义。",
+      "redesigned_parts": "内部主体从抽象字母 'MT' 重构为具象汉字 '秀'，属于基于名称语义的符号替换。",
+      "preserve_major_structure": false,
+      "structure_evidence": "虽然外圈圆环得以保留，但 original 的核心主体是波浪字母，style_ref 的核心主体是汉字，内部主体的几何轮廓和空间关系发生了根本性改变，属于结构重构。"
+    },
+    {
+      "app": "meituan",
+      "source_semantics": "本地生活综合服务平台，核心标识为'美团'文字。",
+      "observed_transformation": "保留'美团'文字结构，填充薄荷绿，添加白色厚边和虚线缝合线，置于方格纸背景上。",
+      "preserved_identity": "完整保留了'美团'二字的字形结构和空间排布。",
+      "redesigned_parts": "黄色背景被替换为方格纸，黑色文字变为薄荷绿填充加白边，增加了贴纸阴影和缝合线。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的文字轮廓、笔画粗细比例和左右排布与 original 完全一致，仅做了颜色和材质风格的主题化替换。"
+    },
+    {
+      "app": "meituan_waimai",
+      "source_semantics": "外卖配送服务，核心标识为袋鼠吉祥物。",
+      "observed_transformation": "提取袋鼠头部轮廓，简化五官，填充薄荷绿，移除所有道具和文字，制成贴纸。",
+      "preserved_identity": "保留了袋鼠标志性的长耳朵、圆脸和微笑表情特征。",
+      "redesigned_parts": "移除了 3D 渲染质感、手中的奶茶、周围的红包、底部的橙色横幅和营销文字，将复杂场景简化为单一平面轮廓。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 准确保留了 original 中袋鼠头部的主体几何轮廓和五官相对位置，去除了附属道具但核心身份未变。"
+    },
+    {
+      "app": "mi_home",
+      "source_semantics": "智能家居管理，核心标识为盾牌形 M 字母 Logo。",
+      "observed_transformation": "保留盾牌 M 形几何结构，填充薄荷绿，内部镂空处保留白色，添加贴纸效果。",
+      "preserved_identity": "完整保留了米家 Logo 的盾牌外轮廓和内部 M 形负空间结构。",
+      "redesigned_parts": "绿色渐变背景被替换为方格纸，白色 Logo 变为薄荷绿填充，增加了白边、缝合线和投影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的几何形状、线条转折和内部镂空比例与 original 的 Logo 完全吻合，属于直接的风格化映射。"
+    },
+    {
+      "app": "minecraft",
+      "source_semantics": "沙盒建造游戏，核心标识为像素风角色和标题文字。",
+      "observed_transformation": "舍弃像素角色和方块背景，仅保留'我的世界'及英文标题文字，转为薄荷绿贴纸。",
+      "preserved_identity": "保留了游戏的中英文标题文字内容和像素化的字体特征。",
+      "redesigned_parts": "完全移除了 original 中的村民角色、红花、方块草地背景，将复杂的插画场景重构为纯文字贴纸。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是像素角色和场景，style_ref 的主体变成了文字 Logo，主体几何和空间关系发生了根本性重构，属于语义替代而非结构保留。"
+    },
+    {
+      "app": "mini_world",
+      "source_semantics": "沙盒创造游戏，核心标识为卡通方块角色。",
+      "observed_transformation": "舍弃 3D 卡通角色和星空背景，仅保留'迷你世界'标题文字，转为薄荷绿贴纸。",
+      "preserved_identity": "保留了游戏的中文标题文字内容和字体的活泼造型。",
+      "redesigned_parts": "完全移除了 original 中的绿色恐龙头套角色、蘑菇、星空漩涡背景，将复杂插画重构为纯文字贴纸。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是占据大部分画面的 3D 角色，style_ref 的主体是居中的文字，主体轮廓和构图逻辑完全不同，属于结构重构。"
+    },
+    {
+      "app": "miyoushe",
+      "source_semantics": "游戏社区吉祥物（兔子头），代表玩家交流与二次元属性。",
+      "observed_transformation": "提取兔子头的双耳和面部轮廓，简化为单色剪影，应用贴纸样式。",
+      "preserved_identity": "保留了标志性的长耳朵形状和面部两点眼睛的布局，轮廓可识别为原吉祥物。",
+      "redesigned_parts": "去除了原有的蓝色描边和立体感，颜色改为薄荷绿，增加了白色贴纸边和虚线。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的双耳位置、头部圆弧轮廓与 original 完全一致，仅做了风格化简化和颜色替换，主体几何未变。"
+    },
+    {
+      "app": "moji_weather",
+      "source_semantics": "天气服务，原 logo 为文字 MOJI。",
+      "observed_transformation": "放弃文字 logo，转而使用'云朵+风'的图形符号来指代天气功能，应用贴纸样式。",
+      "preserved_identity": "通过云朵和气流线条保留了'天气'的功能语义，而非品牌字形。",
+      "redesigned_parts": "主体从文字完全重构为图形符号，属于语义替代而非结构保留。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是横向排列的文字，style_ref 是团状云朵图形。主体几何、轮廓和空间关系完全改变，属于基于功能语义的结构重构。"
+    },
+    {
+      "app": "naruto_mobile",
+      "source_semantics": "火影忍者 IP 游戏，原图为角色鸣人头像。",
+      "observed_transformation": "放弃复杂的人物肖像，提取 IP 中最具代表性的'木叶村护额标志'作为主体，应用贴纸样式。",
+      "preserved_identity": "保留了木叶标志这一核心 IP 符号，用户可通过此符号识别游戏归属。",
+      "redesigned_parts": "主体从写实/动漫人物面部重构为抽象徽章符号。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是充满画面的人脸，style_ref 是小型的叶子螺旋符号。主体内容完全不同，属于提取核心 IP 元素进行的结构重构。"
+    },
+    {
+      "app": "netease_music",
+      "source_semantics": "音乐播放器，原 logo 为红色背景上的白色音符符号。",
+      "observed_transformation": "直接提取原 logo 中的白色音符符号，改变颜色并应用贴纸样式，移除红色背景。",
+      "preserved_identity": "完整保留了音符符号的几何形状和螺旋结构，识别度极高。",
+      "redesigned_parts": "移除了红色圆角矩形背景，将符号本身作为贴纸主体，颜色改为薄荷绿。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的音符曲线、螺旋末端与 original 中的白色符号几何完全一致，仅改变了颜色和添加了贴纸边框，属于严格的结构保留。"
+    },
+    {
+      "app": "onmyoji",
+      "source_semantics": "和风妖怪 RPG，原图为角色神乐插画。",
+      "observed_transformation": "放弃人物插画，直接使用游戏名称'陰陽師'的书法字体作为主体，应用贴纸样式。",
+      "preserved_identity": "通过游戏标题文字直接传达身份，利用书法风格保留和风韵味。",
+      "redesigned_parts": "主体从人物场景重构为文字排版。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是人物半身像，style_ref 是横向排列的三个汉字。主体形态从图像变为文字，空间关系完全重组，属于基于名称语义的结构重构。"
+    },
+    {
+      "app": "paipai",
+      "source_semantics": "社交游戏互动，原始图标为黑色大虫子头顶黄色小人。",
+      "observed_transformation": "保留了大虫子和小人的上下空间关系及基本轮廓，将其转化为薄荷绿色的扁平剪影，加上贴纸白边和虚线，置于网格背景上。",
+      "preserved_identity": "保留了“大生物托举小生物”的核心构图和触角、眼睛等关键几何特征。",
+      "redesigned_parts": "去除了原有的蓝底、黄黑配色，将复杂的卡通形象简化为单色块剪影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中依然清晰可见底部的大弧形头部、两根触角以及顶部悬浮的小人轮廓，主体几何和空间层级与 original 完全一致，仅做了颜色和材质的主题化。"
+    },
+    {
+      "app": "peace_camp",
+      "source_semantics": "和平精英官方社区工具，原始图标为文字 Logo 加写实战火背景。",
+      "observed_transformation": "提取了核心的“和平精英”中文字体和“GAME FOR PEACE”英文字体，将其转为薄荷绿色块，包裹在贴纸边框内。",
+      "preserved_identity": "完整保留了品牌标准字的字形结构和闪电符号细节。",
+      "redesigned_parts": "完全去除了写实的夕阳战火背景、光效以及右下角的腾讯游戏 Logo，将文字从背景中剥离出来作为独立贴纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体就是 original 中的文字部分，文字的笔画结构、排列方式、中英文比例均未改变，属于直接的颜色和材质替换，结构完全保留。"
+    },
+    {
+      "app": "peace_elite",
+      "source_semantics": "战术射击游戏，原始图标为写实的特种兵人物和三级头。",
+      "observed_transformation": "放弃了复杂的人物写实渲染，仅提取了最具代表性的“三级头盔”侧面轮廓，将其简化为薄荷绿色的扁平图形。",
+      "preserved_identity": "保留了三级头盔这一极具辨识度的游戏核心道具符号及其侧面的条纹特征。",
+      "redesigned_parts": "完全重构了画面，去除了人物身体、面部、枪械、写实光影和背景，将复杂的 3D 场景降维成单一的 2D 道具符号。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是两个人物半身像，占据整个画面；style_ref 的主体仅为一个头盔侧影。虽然语义相关（都是和平精英），但主体几何、轮廓和空间关系发生了根本性改变，属于用核心道具替代原主体的结构重构。"
+    },
+    {
+      "app": "pinduoduo",
+      "source_semantics": "拼团购物电商，原始图标为红底心形拼图，中间是“拼”字，周围环绕商品图标。",
+      "observed_transformation": "舍弃了外围的心形框架和所有商品小图标，仅提取中心的“拼”字，将其放大并转化为薄荷绿色的贴纸。",
+      "preserved_identity": "保留了“拼”字这一最核心的品牌文字标识和笔画特征。",
+      "redesigned_parts": "去除了红色背景、心形几何框架以及周围的裙子、衣服、水果等辅助图形，将复合图形简化为单一文字符号。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的主体是一个由多个三角形拼成的心形复杂图案；style_ref 的主体仅是一个汉字。主体的外轮廓从心形变成了不规则的文字轮廓，空间关系从中心辐射变成了单一居中，属于结构重构。"
+    },
+    {
+      "app": "qidian",
+      "source_semantics": "网络文学阅读，原始图标为红底白色的“起点”二字。",
+      "observed_transformation": "保留了“起”字的结构，但巧妙地将右侧的“点”字或整体字形融合变形为一本打开的书的轮廓，赋予其阅读的属性。",
+      "preserved_identity": "保留了“起”字的基本笔画骨架，同时通过书本形态强化了“读书”的功能语义。",
+      "redesigned_parts": "将原本方正的两个独立汉字，重组为一个具有书本外形（中间凹陷，两侧展开）的单一图形符号，弱化了纯文字排版，增强了图形化隐喻。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是两个标准排列的汉字矩形块；style_ref 是一个经过艺术变形的书本状图形。虽然能认出“起”字，但整体的外轮廓、几何形态和空间占比都为了迎合“书本”语义而发生了重构，不属于原始结构的直接保留。"
+    },
+    {
+      "app": "qimao",
+      "source_semantics": "网络小说阅读，品牌符号为'猫'与数字'7'的结合。",
+      "observed_transformation": "将原本高对比度的黑黄配色改为薄荷绿单色，保留'7'字形猫脸轮廓，眼睛和胡须简化为白色负空间，增加白色描边和虚线缝合效果，置于网格纸上。",
+      "preserved_identity": "保留了'7'字形的猫头轮廓、猫耳、眼睛和胡须的空间布局，核心品牌符号清晰可辨。",
+      "redesigned_parts": "颜色完全替换，去除了黑色块面，改为单色填充+白色镂空；背景从纯黄变为网格纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 的'7'字猫脸几何形状完全一致，耳朵、眼睛、胡须的位置关系未变，仅做了颜色和材质转换。"
+    },
+    {
+      "app": "qq",
+      "source_semantics": "即时通讯，品牌符号为戴红围巾的企鹅。",
+      "observed_transformation": "极度简化，移除了企鹅的五官、红围巾、黄嘴巴和脚，仅保留企鹅身体的整体外轮廓剪影，填充薄荷绿，加白边和虚线，置于网格纸上。",
+      "preserved_identity": "保留了企鹅独特的身体 silhouette（圆润头部、两侧翅膀、底部双脚的轮廓），这是 QQ 最核心的识别点。",
+      "redesigned_parts": "内部所有细节（眼、嘴、围巾）全部被移除，变为纯色块；颜色从黑白红黄变为单色薄荷绿。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的外轮廓与 original 企鹅的身体边缘完全吻合，虽然内部细节被清空，但主体几何和空间占比保持一致，属于结构保留下的极简化。"
+    },
+    {
+      "app": "qq_browser",
+      "source_semantics": "网页浏览，品牌符号为带云朵的字母'Q'。",
+      "observed_transformation": "将蓝色渐变的'Q'和白云改为薄荷绿单色，保留'Q'的圆环结构和右下角的云朵缺口，内部圆孔和云朵用白色负空间表现，加描边和虚线。",
+      "preserved_identity": "保留了'Q'字母的环形结构和云朵附着在右下角的特征，功能语义（浏览/云）清晰。",
+      "redesigned_parts": "去除了蓝色渐变和云朵的立体感，改为扁平单色；背景变为网格纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的'Q'形圆环和云朵的几何位置、比例与 original 完全一致，主体轮廓未发生重构。"
+    },
+    {
+      "app": "qq_music",
+      "source_semantics": "音乐播放，品牌符号为黄色圆底上的绿色音符。",
+      "observed_transformation": "将黄底绿音符统一为薄荷绿圆形底+白色音符镂空（或薄荷绿音符+白底，此处表现为薄荷绿圆块内嵌白色音符轮廓），保留音符的符头、符干和符尾结构，加描边和虚线。",
+      "preserved_identity": "保留了八分音符的核心形状和圆形背景的组合关系，音乐语义明确。",
+      "redesigned_parts": "去除了黄绿双色搭配和 3D 光泽，改为单色贴纸风格；背景变为网格纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中音符的弯曲角度、符头位置和圆形外框与 original 的几何结构高度一致，未发生主体替换。"
+    },
+    {
+      "app": "qq_reading",
+      "source_semantics": "电子书阅读，原图为 3D 探险企鹅持书场景。",
+      "observed_transformation": "完全重构。抛弃了原图复杂的 3D 场景、帽子、背包和文字，提取'企鹅+阅读'的核心语义，重绘为一个简化的企鹅头部正在阅读一本打开的书的扁平剪影，填充薄荷绿，加描边和虚线。",
+      "preserved_identity": "保留了企鹅的头部特征（圆头、眨眼表情）和'手持书本'的动作语义，传达了阅读功能。",
+      "redesigned_parts": "整个主体被重新设计，从写实 3D 场景变为极简 2D 符号；原图的探险装备、背景建筑、营销文字全部被移除。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是全身 3D 企鹅加复杂背景，style_ref 是半身企鹅加书本的扁平符号，主体的几何轮廓、空间比例和视觉元素发生了根本性重组，属于语义提取后的结构重构。"
+    },
+    {
+      "app": "qq_speed",
+      "source_semantics": "赛车竞速游戏，原图以角色头像和嘉年华氛围为主。",
+      "observed_transformation": "完全舍弃人物插画和背景氛围，提取游戏名称 'QQ飞车' 的艺术字 logo 作为主体，将其转化为薄荷绿布艺贴纸。",
+      "preserved_identity": "保留了 'QQ飞车' 文字 logo 的整体字形结构和倾斜动感。",
+      "redesigned_parts": "人物角色、帽子、星空背景、底部标语全部被移除；文字颜色改为薄荷绿，边缘加缝纫线和白边。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图主体是人物面部特写（占画面 80% 以上），style_ref 主体是文字 logo（占画面 50%）。主体几何从有机的人脸轮廓变为文字块轮廓，空间关系从满版插画变为居中贴纸，属于语义提取后的结构重构。"
+    },
+    {
+      "app": "quark",
+      "source_semantics": "搜索与浏览器工具，原图为蓝色圆环内含抽象云朵/对话气泡缺口。",
+      "observed_transformation": "保留圆环和内部缺口的几何形态，颜色改为薄荷绿，添加缝纫线、白边、投影和网格背景。",
+      "preserved_identity": "完整保留了圆环外形和内部独特的缺口形状，几何拓扑关系一致。",
+      "redesigned_parts": "蓝色改为薄荷绿，去除微妙的光影渐变，增加手工贴纸的材质层（虚线、白边、阴影、网格底）。",
+      "preserve_major_structure": true,
+      "structure_evidence": "原图和 style_ref 的主体都是居中的圆环状几何体，内部缺口的位置、比例和朝向完全一致。轮廓和空间关系高度保留，仅做了材质和颜色的主题化映射。"
+    },
+    {
+      "app": "soul",
+      "source_semantics": "兴趣社交应用，原图为黑底星球纹理上的 'Soul' 文字。",
+      "observed_transformation": "舍弃黑色星球背景，提取 'Soul' 文字作为主体，转化为薄荷绿布艺贴纸，字母 'l' 的青色特征融入统一主色。",
+      "preserved_identity": "保留了 'Soul' 文字的字体形态、字母间距和整体排版。",
+      "redesigned_parts": "黑色纹理背景被网格底替代；文字颜色统一为薄荷绿；去除字母 'l' 的独立青色，改为整体统一色；增加贴纸材质层。",
+      "preserve_major_structure": true,
+      "structure_evidence": "原图和 style_ref 的核心主体都是 'Soul' 文字。文字的几何轮廓、字母排列顺序和相对位置完全一致。虽然背景从满版黑底变为留白网格，但主体自身的结构和空间关系被完整保留。"
+    },
+    {
+      "app": "tencent_comics",
+      "source_semantics": "漫画阅读平台，原图为特定 IP 角色（一人之下）的场景插画。",
+      "observed_transformation": "完全舍弃角色插画和场景，提取“阅读/漫画”的通用语义符号——纸飞机（象征故事传递/翻页），转化为薄荷绿贴纸。",
+      "preserved_identity": "未保留原图的具体视觉身份（角色/文字），仅保留了“漫画/阅读”的功能语义线索。",
+      "redesigned_parts": "整个原图主体（人物、铲子、企鹅、山石、文字）被完全替换为纸飞机符号。属于彻底的语义重构。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图主体是复杂的人物场景组合，style_ref 主体是简单的几何纸飞机。两者的轮廓、几何构成和空间布局完全不同。这是典型的用功能语义符号替代原始视觉主体的结构重构。"
+    },
+    {
+      "app": "tencent_maps",
+      "source_semantics": "地图导航工具，原图为红蓝双色的指南针/菱形指针。",
+      "observed_transformation": "保留指南针指针的核心菱形形态，但将其置于一个圆角矩形框内（模拟地图图钉或罗盘外框），颜色统一为薄荷绿，用白色线条区分原红蓝区域。",
+      "preserved_identity": "保留了指南针指针的菱形几何特征和指向性语义。",
+      "redesigned_parts": "红蓝双色合并为薄荷绿，用白色折痕线替代颜色分割；增加了外层圆角矩形框和旋转叶片状装饰线（强化罗盘/地图语义）；去除 3D 光泽。",
+      "preserve_major_structure": false,
+      "structure_evidence": "原图主体是独立的菱形指针，style_ref 主体是“圆角矩形框 + 内部菱形 + 装饰弧线”的组合体。虽然内部保留了指针语义，但整体外部轮廓从菱形变为圆角矩形，空间关系增加了外框层级，属于在保留核心语义元素基础上的结构重组。"
+    },
+    {
+      "app": "tencent_meeting",
+      "source_semantics": "商务视频会议，核心符号为折叠的'M'形或山峰形几何体，代表连接与会议。",
+      "observed_transformation": "原图的蓝白渐变折叠几何体被提取为单一薄荷绿色块，外围包裹白边和虚线，置于网格底板上。",
+      "preserved_identity": "完整保留了'M'形的核心几何轮廓、折角特征和空间比例。",
+      "redesigned_parts": "去除了原图的蓝色渐变、半透明叠加效果和光影层次，简化为纯扁平色块。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓与 original 的'M'形几何体完全一致，顶点位置、折线角度和整体长宽比均未发生结构性改变，仅进行了材质和颜色的主题化替换。"
+    },
+    {
+      "app": "tencent_news",
+      "source_semantics": "新闻资讯，核心符号为企鹅剪影与环绕的三色弧线，代表信息流转与腾讯生态。",
+      "observed_transformation": "原图的蓝企鹅与黄绿红三色弧线被统一染成薄荷绿，整体外轮廓被白边包裹，形成一枚圆形贴纸。",
+      "preserved_identity": "保留了中心企鹅的剪影形态以及三段式环绕弧线的空间布局关系。",
+      "redesigned_parts": "将三种不同的品牌色合并为单一薄荷绿，去除了弧线的粗细变化和动态渐变，使其更像静态的印章或贴纸图案。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 严格遵循了 original 的同心圆构图，企鹅位于正中，三段弧线的位置、朝向和包围关系与原图完全对应，未发生主体替换或结构重组。"
+    },
+    {
+      "app": "tencent_video",
+      "source_semantics": "在线视频播放，核心符号为彩色重叠的播放三角形。",
+      "observed_transformation": "原图复杂的橙绿蓝三色重叠播放键被简化为单色薄荷绿播放键，去除底部所有文字和麦克风插画，制成居中贴纸。",
+      "preserved_identity": "保留了圆角三角形的播放按钮外形，以及内部镂空小三角的核心语义。",
+      "redesigned_parts": "删除了原图底部的“脱口秀”文字和麦克风道具（属于运营皮肤而非核心Logo），将三色重叠结构简化为单层色块加白边。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体几何就是 original 中播放按钮的直接轮廓提取，圆角弧度、内外三角的比例和倾斜角度均保持一致，属于典型的结构保留。"
+    },
+    {
+      "app": "tmall",
+      "source_semantics": "品牌电商购物，核心符号为猫头轮廓与大眼睛，代表天猫品牌形象。",
+      "observed_transformation": "原图红底黑猫头白字被重构为薄荷绿猫头贴纸，去除了上方的“天猫”汉字，仅保留猫头五官。",
+      "preserved_identity": "保留了标志性的猫耳轮廓、两个椭圆形大眼睛和中间的小倒三角鼻子，这是天猫最核心的视觉资产。",
+      "redesigned_parts": "移除了占据上半部分画面的“天猫”文字，将原本分离的黑猫头和红背景融合为一个完整的薄荷绿猫头形状，眼睛由黑底白圈变为白底镂空。",
+      "preserve_major_structure": true,
+      "structure_evidence": "虽然去除了文字，但 style_ref 的猫头轮廓、耳朵间距、眼睛大小和位置比例与 original 下半部分的猫头完全吻合，主体几何未被钱包或购物袋等道具替代。"
+    },
+    {
+      "app": "toutiao",
+      "source_semantics": "个性化新闻推荐，核心符号为红底白字的“头条”二字，代表资讯头条。",
+      "observed_transformation": "原图的红底倾斜色块和白字被转换为薄荷绿色的“头条”文字贴纸，文字本身成为主体。",
+      "preserved_identity": "完整保留了“头条”两个汉字的字形、笔画结构和相对位置，这是该App最直接的身份标识。",
+      "redesigned_parts": "去除了原图的大面积红色倾斜背景板，将文字从“反白”效果改为“正色填充+白边”，使文字本身独立成为贴纸主体。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的主体就是 original 中文字的精确轮廓描摹，笔画的粗细、转折和两个字的空间排布与原图完全一致，没有引入任何新的图形元素。"
+    },
+    {
+      "app": "toutiao_lite",
+      "source_semantics": "新闻资讯、轻量化、极速（闪电符号）。",
+      "observed_transformation": "红色倾斜色块和青色闪电角标被移除。'头条'文字和闪电符号合并为一个整体的薄荷绿贴纸，文字笔画略微圆润化。",
+      "preserved_identity": "保留了'头条'两个汉字的核心字形和右下角的闪电符号，维持了资讯和极速的语义。",
+      "redesigned_parts": "去除了红色背景块和青色角标底色，将分离的元素合并为单一贴纸轮廓。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的'头条'文字排列、字形比例以及闪电符号的相对位置与 original 高度一致，仅是去除了背景色块并将颜色统一，主体几何未发生重构。"
+    },
+    {
+      "app": "vipshop",
+      "source_semantics": "品牌特卖、电商购物。",
+      "observed_transformation": "粉色满版背景和下方的'品牌特卖'副标题被完全移除。仅保留'唯品会'三个主字，转换为薄荷绿贴纸。",
+      "preserved_identity": "保留了'唯品会'三个汉字的核心字形和横向排列方式。",
+      "redesigned_parts": "剔除了副标题文字以简化细节，去除了粉色背景。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 中'唯品会'三个字的字体结构、间距和水平布局，仅做了颜色映射和贴纸化处理，无结构重组。"
+    },
+    {
+      "app": "wechat",
+      "source_semantics": "即时通讯、社交聊天。",
+      "observed_transformation": "绿色满版背景移除。两个白色聊天气泡转换为薄荷绿填充，眼睛保留为白色圆点。整体加上贴纸轮廓和投影。",
+      "preserved_identity": "完整保留了两个重叠聊天气泡的经典形状、大小比例、重叠关系以及四个眼睛圆点的位置。",
+      "redesigned_parts": "颜色从白底绿背景反转为绿底白边，增加了缝线和投影。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的气泡轮廓、重叠方式、尾巴指向和眼睛位置与 original 完全吻合，主体几何和空间关系被严格保留。"
+    },
+    {
+      "app": "wechat_reading",
+      "source_semantics": "电子书阅读、微信生态。",
+      "observed_transformation": "蓝色背景和底部白色书页形状重构。书页变为薄荷绿长条块，微信气泡变为薄荷绿并添加了眨眼微笑表情。",
+      "preserved_identity": "保留了'书本+微信气泡'的核心语义组合，气泡依然在书本上方。",
+      "redesigned_parts": "底部写实的书页曲线被简化为扁平的长方形色块（中间有V型缺口暗示书脊）。气泡增加了拟人化表情。背景增加了装饰性小圆点。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 的书页是占据底部的大面积曲线形状，而 style_ref 将其简化为一个居中的扁平长条块；气泡从简单的几何图形变成了带表情的卡通形象。主体的具体几何形态发生了明显简化和重组，属于语义保留但结构微调/重构。"
+    },
+    {
+      "app": "wecom",
+      "source_semantics": "企业办公、协作沟通、连接。",
+      "observed_transformation": "蓝色气泡和右下角四色（绿黄橙蓝）节点全部统一为薄荷绿。去除立体渐变，转为扁平贴纸。",
+      "preserved_identity": "保留了大气泡轮廓和右下角四个水滴状节点的连接结构和空间分布。",
+      "redesigned_parts": "去除了多色区分和3D高光质感，将彩色节点统一为单色。内部增加了白色留白以适配贴纸风格。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的气泡外形、缺口位置以及四个节点的排列角度和连接关系与 original 保持一致，仅是去除了颜色和质感，主体轮廓未变。"
+    },
+    {
+      "app": "weibo",
+      "source_semantics": "社交媒体、热点资讯、公开互动（眼睛/信号波纹符号）。",
+      "observed_transformation": "保留了经典的“大眼睛”轮廓和右上角的信号波纹，整体转为薄荷绿填充，加上白色贴纸边和虚线缝线，置于网格底板上。",
+      "preserved_identity": "眼睛形状、瞳孔位置、信号波纹的弧度和相对位置完全保留。",
+      "redesigned_parts": "去除了红色品牌色、黄色背景、眼睛内部的高光和立体感，转为扁平单色贴纸。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体轮廓、眼睛比例、波纹位置与 original 完全一致，仅做了颜色替换和贴纸边框添加，属于典型的结构保留。"
+    },
+    {
+      "app": "weishi",
+      "source_semantics": "短视频、播放、视觉内容（立体播放键符号）。",
+      "observed_transformation": "提取了核心的立体三角形播放键轮廓，去除复杂的液体背景和底部营销文字，转为薄荷绿贴纸。",
+      "preserved_identity": "立体播放键的几何结构、内部线条分割、透视角度完全保留。",
+      "redesigned_parts": "去除了紫色/粉色液体背景、底部“领现金”文字、白色粗描边改为贴纸白边+虚线。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 精准复刻了 original 中播放键的 3D 线框几何，仅去除了背景和文字，主体结构和空间关系未变。"
+    },
+    {
+      "app": "wps_office",
+      "source_semantics": "办公文档、文字处理（W 字母符号）。",
+      "observed_transformation": "保留了 W 字母的核心几何造型，去除红橙渐变，转为薄荷绿扁平贴纸。",
+      "preserved_identity": "W 字母的笔画走向、负空间三角形、整体宽高比完全保留。",
+      "redesigned_parts": "去除了红到橙的渐变色、折叠处的阴影立体感，转为单色填充加贴纸边框。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的 W 轮廓与 original 逐点对应，几何结构和空间占比一致，仅材质和颜色发生主题化变化。"
+    },
+    {
+      "app": "xianyu",
+      "source_semantics": "二手交易、闲置流转、轻松沟通（闲鱼文字 + 卡通鱼形象）。",
+      "observed_transformation": "舍弃了底部的 3D 卡通鱼形象，仅提取顶部的“闲鱼”定制字体作为主体，转为薄荷绿文字贴纸。",
+      "preserved_identity": "“闲鱼”二字的专属字体设计、笔画粗细、字间距和整体字形轮廓完全保留。",
+      "redesigned_parts": "完全移除了 3D 卡通鱼角色、黄色背景、黑色文字填充，将文字本身作为唯一主体进行贴纸化。",
+      "preserve_major_structure": false,
+      "structure_evidence": "original 是上下结构（字+鱼），style_ref 仅保留了上半部分的文字，下半部分的主体（鱼）被完全剔除。这属于为了适配主题简洁性而进行的结构取舍/弱化，但保留的文字部分自身结构未变。判定为部分保留/结构重组。"
+    },
+    {
+      "app": "xiaohongshu",
+      "source_semantics": "生活方式分享、社区、图文创作（小红书文字）。",
+      "observed_transformation": "保留了“小红书”三个字的定制字体，从红底白字反转为白底薄荷绿字贴纸。",
+      "preserved_identity": "“小红书”三字的专属字体造型、笔画连接方式、整体排版比例完全保留。",
+      "redesigned_parts": "去除了大面积红色背景、白色文字填充，反转为薄荷绿填充加白色贴纸边和虚线。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 的文字轮廓、字间距、排版位置与 original 完全一致，仅发生了颜色反转和贴纸材质叠加。"
+    },
+    {
+      "app": "xigua_video",
+      "source_semantics": "视频播放平台，核心符号为带缺口的圆环与播放三角形",
+      "observed_transformation": "红色缺口圆环转为薄荷绿扁平色块，播放三角保留为白色镂空并加缝线，整体加白边和投影，置于网格底板上",
+      "preserved_identity": "缺口圆环轮廓、中心播放三角形、左下缺口位置关系",
+      "redesigned_parts": "品牌红色被替换，实心填充改为贴纸质感，增加缝线和底板背景",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 完整保留了 original 的外轮廓曲线、左下角凹陷缺口以及中心三角形的相对位置和比例，仅改变颜色、材质和添加描边背景，主体几何未发生重构。"
+    },
+    {
+      "app": "ximalaya",
+      "source_semantics": "音频内容平台，核心符号为汉字'听'的艺术化字形",
+      "observed_transformation": "橙红底白字转为薄荷绿字形贴纸，字形外加白边和缝线，去除红色背景，置于网格底板上",
+      "preserved_identity": "'听'字的笔画结构、左右部件比例、整体字形骨架",
+      "redesigned_parts": "背景色去除，字形从负空间转为正形贴纸填充，增加手工缝线质感",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中'听'字的左右结构、笔画走向、封闭空间与 original 完全一致，仅将颜色反转并添加贴纸描边，主体轮廓和空间关系得到严格保留。"
+    },
+    {
+      "app": "xingtu",
+      "source_semantics": "图片编辑工具，核心符号为发光球体/镜头光晕",
+      "observed_transformation": "黑底荧光绿发光球转为薄荷绿扁平圆形贴纸，去除发光渐变，加白边缝线和投影，置于网格底板上",
+      "preserved_identity": "正圆形几何、居中构图、单一主体特征",
+      "redesigned_parts": "发光效果、渐变层次、黑色背景全部去除，简化为纯色圆形贴纸",
+      "preserve_major_structure": true,
+      "structure_evidence": "original 的核心主体为正圆形，style_ref 同样为正圆形且居中，虽然去除了光影细节，但基础几何形状和空间占位完全一致，属于结构保留下的材质简化。"
+    },
+    {
+      "app": "youdao_dict",
+      "source_semantics": "词典翻译工具，核心符号为汉字'有道'及底部英文",
+      "observed_transformation": "红底白字'有道'转为薄荷绿字形贴纸，去除底部英文和彩色波浪，加白边缝线，置于网格底板上",
+      "preserved_identity": "'有道'二字的连笔结构、字体风格、整体外轮廓",
+      "redesigned_parts": "底部'youdao'英文和彩色波浪装饰被移除，背景色去除，字形转为贴纸质感",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 聚焦于 original 中最具识别度的'有道'汉字主体，保留了其连笔走势和外部轮廓，虽删减了次要元素（英文/波浪），但核心主体的几何和空间关系未变，不属于结构重构。"
+    },
+    {
+      "app": "zepp_life",
+      "source_semantics": "健康穿戴管理，核心符号为大小双圆交叠",
+      "observed_transformation": "橙黄渐变双圆转为薄荷绿扁平双圆贴纸，去除透明叠加效果，改为白线分隔，加缝线投影，置于网格底板上",
+      "preserved_identity": "大圆+右上小圆的组合关系、交叠位置、整体外轮廓",
+      "redesigned_parts": "渐变色彩、透明混合模式去除，交叠处改为白色描边分隔而非颜色叠加",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 清晰保留了 original 中大圆与右上角小圆的相对位置、大小比例和交叠拓扑关系，仅将颜色统一并用白线替代透明叠加，主体几何结构完整保留。"
+    },
+    {
+      "app": "zhihu",
+      "source_semantics": "知识问答社区，核心标识为汉字“知乎”或“知”，代表知识与交流。",
+      "observed_transformation": "将原本全屏蓝色的“知乎”二字图标，转化为一张放置在网格纸上的薄荷绿色“知”字贴纸。去除了“乎”字以简化构图，聚焦核心识别字符。",
+      "preserved_identity": "保留了核心汉字“知”的字形结构和笔画走势，确保了App的可识别性。保留了文字作为主体的表现形式。",
+      "redesigned_parts": "颜色从知乎蓝变为薄荷绿；背景从纯蓝变为网格纸；增加了白色贴纸边、虚线缝合线和硬投影；去除了“乎”字；字形边缘进行了圆润化和手绘化处理。",
+      "preserve_major_structure": true,
+      "structure_evidence": "style_ref 中的主体依然是汉字“知”，其笔画结构、空间布局与 original 中的“知”字高度一致。虽然去除了“乎”字并改变了颜色和材质，但核心主体的几何轮廓和语义未发生结构性重构（未被替换为书本、灯泡等其他道具），属于在保留主体几何基础上的风格化渲染。"
+    }
+  ],
+  "shared_design_rules": [
+    "色彩归一化：所有主体强制使用薄荷绿/青蓝色单色填充，彻底剥离原品牌色",
+    "贴纸范式统一：所有主体必须呈现'白色宽包边+深灰虚线缝线+右下浅灰硬投影'的三层材质结构",
+    "底板模板化：所有图标必须使用完全相同的'米白底+浅灰网格+淡红/粉虚线框'背景系统",
+    "比例标准化：主体必须居中缩小至画布40%-70%，四周保留充足且均匀的网格留白",
+    "细节极简化：剔除所有渐变、光影、3D效果、营销文字和次要装饰，仅保留核心silhouette或文字骨架",
+    "轮廓柔化：所有转角圆润处理，线条呈现手绘/缝纫的不规则柔和感，禁止尖锐几何",
+    "身份锚点优先：可识别性依赖于核心轮廓/字形/语义符号的精确保留，而非品牌色或完整细节还原"
+  ],
+  "identity_handling_policy": "在该主题下，App的可识别性完全让位于主题包的视觉统一性。识别策略从'品牌色+完整Logo'转变为'核心几何轮廓/专属字形/功能语义符号+统一贴纸材质'。当original是简洁几何或文字时，严格保留其拓扑结构；当original过于复杂时，允许提取最具辨识度的单一元素（如IP徽章、标题文字、功能道具）进行重构，但重构后的符号必须能清晰指向该App的核心功能或名称。绝不机械保留原图复杂细节或品牌色，也避免过度重构导致连基本功能语义都丢失。平衡点在于：轮廓/字形/符号必须可辨认，但材质、颜色和背景必须完全服从手账贴纸语言。",
+  "structure_preservation_policy": {
+    "decision_scope": "per_app_before_generation",
+    "preserve_when": "当original的主体是简洁的2D几何图形、字母/汉字Logo、吉祥物silhouette或核心功能符号，且其轮廓在缩小、单色化和添加贴纸边框后依然清晰可辨时，必须严格保留大部分原始几何结构、轮廓和空间关系，仅做颜色替换、材质转换和背景标准化处理。",
+    "recompose_when": "当original的主体是复杂的3D渲染、写实人物插画、多元素堆叠场景、包含大量营销文字/道具，或依赖特定色彩/光影才能识别时，允许放弃原始整体结构，转而提取该App最核心的功能语义符号（如'对战'→准星、'天气'→云朵）、品牌底层徽标（如字母缩写）、IP核心徽章（如木叶标）或标题文字进行重构；重构后的主体必须符合贴纸的简洁轮廓要求，且在语义上可明确关联到原App功能或名称，严禁用无关通用道具替代。"
+  },
+  "common_forbidden_failures": [
+    "直接给original加滤镜/描边/边框而未进行真正的扁平化、单色化和贴纸化重绘",
+    "保留了original的品牌主色或渐变色，破坏整包色彩统一性",
+    "遗漏网格背景、红色虚线框、白色宽边、虚线缝线或右下投影中的任一主题指纹元素",
+    "主体过大撑满画布或过小失去辨识度，破坏居中贴纸的构图平衡与留白呼吸感",
+    "在主体内部保留了过多的original细节（如3D质感、五官纹理、细小文字、营销标语）导致视觉杂乱",
+    "对原本简洁的Logo进行了不必要的形状篡改或过度重构导致不可识别",
+    "将主体替换为与原App功能/名称语义无关的通用图标或小场景",
+    "使用了模糊阴影、渐变光泽、3D效果或尖锐直角，破坏了扁平手工剪纸的物理质感",
+    "背景网格或虚线框的颜色、粗细、间距在不同图标间出现不一致",
+    "强行保留复杂3D/插画主体的轮廓导致贴纸形态崩坏或语义丢失"
+  ],
+  "analysis_coverage": {
+    "reference_pair_count": 86,
+    "batch_count": 18,
+    "batch_size": 5,
+    "analyzed_apps": [
+      "alipay",
+      "amap",
+      "anipop",
+      "baidu_maps",
+      "baidu_netdisk",
+      "baidu_tieba",
+      "beautycam",
+      "bilibili",
+      "bilibili_comics",
+      "clash_of_clans",
+      "crossfire_mobile",
+      "ctrip",
+      "dewu",
+      "dianping",
+      "dingtalk",
+      "douban",
+      "douyin",
+      "douyin_huoshan",
+      "douyu",
+      "genshin",
+      "golden_spatula",
+      "hello_bike",
+      "honor_of_kings",
+      "huya",
+      "iqiyi",
+      "iqiyi_lite",
+      "jd",
+      "jianying",
+      "karaoke",
+      "keep",
+      "king_camp",
+      "kuaikan",
+      "kuaiying",
+      "kugou",
+      "kuwo",
+      "lofter",
+      "lol_assistant",
+      "lol_mobile",
+      "mango_tv",
+      "meitu",
+      "meituan",
+      "meituan_waimai",
+      "mi_home",
+      "minecraft",
+      "mini_world",
+      "miyoushe",
+      "moji_weather",
+      "naruto_mobile",
+      "netease_music",
+      "onmyoji",
+      "paipai",
+      "peace_camp",
+      "peace_elite",
+      "pinduoduo",
+      "qidian",
+      "qimao",
+      "qq",
+      "qq_browser",
+      "qq_music",
+      "qq_reading",
+      "qq_speed",
+      "quark",
+      "soul",
+      "tencent_comics",
+      "tencent_maps",
+      "tencent_meeting",
+      "tencent_news",
+      "tencent_video",
+      "tmall",
+      "toutiao",
+      "toutiao_lite",
+      "vipshop",
+      "wechat",
+      "wechat_reading",
+      "wecom",
+      "weibo",
+      "weishi",
+      "wps_office",
+      "xianyu",
+      "xiaohongshu",
+      "xigua_video",
+      "ximalaya",
+      "xingtu",
+      "youdao_dict",
+      "zepp_life",
+      "zhihu"
+    ]
+  }
+}

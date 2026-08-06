@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了 transfer_plan 中的 semantic_recompose 策略，将复杂的金克丝插画重构为简洁的 'LD' 徽标。风格上完全匹配手账贴纸主题（薄荷绿、网格底、虚线框、硬阴影）。构图居中且层级分明，严格遵守了所有负向约束（无原色、无文字、无3D质感）。虽然 'LD' 并非 LOL 官方通用缩写，但在本特定生成计划的语境下，它是被指定的唯一身份锚点，且执行质量极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "推荐。同样很好地执行了重构策略和主题风格。与 candidate_01 相比，其字母 'L' 和 'D' 的连接处处理略显拥挤，内部虚线缝纫迹在字母转折处的清晰度稍逊于 candidate_01。整体依然是一个高质量的候选，但 candidate_01 的几何形态更清晰稳健。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

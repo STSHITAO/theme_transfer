@@ -1,0 +1,37 @@
+{
+  "app": "toutiao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“头条”二字的特定字体结构与笔画形态",
+  "brand_cues_to_preserve": [
+    "汉字“头条”的完整字形",
+    "字体的几何切角与笔画粗细比例",
+    "文字在画布中的居中构图"
+  ],
+  "semantic_cues_to_preserve": [
+    "新闻标题的醒目感（通过立体厚重感表达）",
+    "信息的清晰度"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换模式，今日头条的核心识别完全依赖于“头条”这两个汉字的独特设计。原始图标为红底白字，主题化策略应移除红色背景，将白色文字实体化为厚重的冰雕字体。必须严格保留字体的外部轮廓（Silhouette）和内部笔画结构，仅做材质置换和3D拉伸，不可重构字形。",
+  "design_rationale": "今日头条属于强文字标识类App。根据主题规则，文字类图标（如Alipay的'支'）应转化为立体的冰雕字。为了保持极高的品牌识别度，不能改变字形结构。通过将原本平面的白色文字转化为具有体积感、通透感和表面细节（水珠/雪花）的冰晶实体，既符合“冰封”的主题设定，又完美保留了App的身份特征。原本的红色背景被移除，替换为统一的冰蓝色调和白色背景，以维持整包视觉的一致性。",
+  "must_preserve": [
+    "“头条”二字的准确笔画形状",
+    "字体的倾斜角度（如有）或水平对齐方式",
+    "文字作为单一主体的居中布局"
+  ],
+  "can_recompose": [
+    "原本的红色矩形背景（必须移除）",
+    "文字的平面填充色（改为半透明冰蓝材质）",
+    "文字边缘的锐利度（改为圆润的冰质倒角）"
+  ],
+  "forbid": [
+    "禁止保留红色背景或红色元素",
+    "禁止改变“头条”二字的字体设计",
+    "禁止生成不透明的塑料质感",
+    "禁止添加与文字无关的复杂装饰道具"
+  ],
+  "generation_direction": "Create a 3D ice sculpture of the Chinese characters '头条'. The characters should be thick, extruded, and made of translucent blue ice with internal bubbles and snowflake textures. Surface should be glossy with water droplets. Place centrally on a clean white background with soft shadows. No red background. Strict adherence to the original font shape."
+}

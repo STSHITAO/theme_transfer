@@ -1,0 +1,69 @@
+{
+  "app": "dewu",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 alipay（保留'支'字骨架）、zhihu（保留'知'字结构）、iqiyi_lite（保留文字排版）的规律，当原 App 核心识别为明确的汉字 Logo 时，应保留其字形几何与空间关系。得物原图主体为高辨识度的'得物'二字，符合 preserve_when 条件。因此策略为保留双字的基本笔画走向和左右布局，仅将刚性几何线条转化为手绘抖动线条，并融入绿叶/菜狗母题特征，而非彻底重构为无关道具。",
+  "preserve": [
+    "汉字'得物'的可读性与基本笔画顺序",
+    "左右双字的并列空间关系",
+    "'得'字左侧单人旁的断开设计与右侧横向平行线条",
+    "'物'字左侧牛字旁的几何折角与右侧垂直线条结构"
+  ],
+  "must_preserve": [
+    "汉字'得物'的整体字形骨架与拓扑结构",
+    "底部黑色手写体英文 'Dewu'",
+    "纯白/米白圆角矩形底板与充足留白"
+  ],
+  "recompose_allowed": [
+    "笔画末端转化为嫩绿色菜叶或藤蔓形态",
+    "在字形内部负空间或笔画间融入豆豆眼、粉色腮红等萌系五官",
+    "将刚性几何边缘替换为手绘抖动粗线条",
+    "移除原图青色心形装饰与'礼物节'营销文案"
+  ],
+  "restyle": [
+    "字体填充从纯白改为浅嫩绿/黄绿平涂或叶脉纹理",
+    "描边从锐利矢量线改为深草绿/墨绿马克笔质感粗线",
+    "整体光影从3D立体/霓虹改为2D扁平哑光纸质贴纸感"
+  ],
+  "decorate": [
+    "笔画转折处添加微小的叶片点缀",
+    "字间适当位置增加天蓝色汗滴或口水滴以增强呆萌感",
+    "底部文字旁可添加极小号的绿色爪印或爱心涂鸦"
+  ],
+  "forbid": [
+    "保留黑色背景或大面积青色色块",
+    "保留'礼物节'等临时运营文案及弧形底栏",
+    "使用平滑矢量字体、标准印刷体或衬线体",
+    "完全抛弃'得物'字形结构导致无法识别",
+    "主体撑满画布导致失去底部文字区域和呼吸空间",
+    "出现3D渲染、渐变、高光、阴影或玻璃拟物效果",
+    "使用通用鞋盒、球鞋等具象插画替代文字主体"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. The central subject is the Chinese characters '得物' reimagined in a wobbly dark green marker outline, strictly preserving the original glyph structure and left-right layout. Strokes are filled with light tender green and leaf vein textures, with ends morphing into small leaves. Integrate kawaii facial features (dot eyes, pink blush) subtly within the character negative space. Below the centered text, write 'Dewu' in casual bold black handwritten font. Flat sticker art style, ample white space, no shadows, no gradients, healing and playful mood.",
+  "color_application": "彻底移除原图黑底与青色营销色，背景强制映射为纯白/米白；'得物'字形轮廓使用深草绿(#4A7C29)手绘粗线，内部填充浅嫩绿(#A8D060)并叠加叶脉纹理；腮红使用淡粉(#FFB6C1)，底部文字使用纯黑(#000000)；仅在极小面积点缀天蓝(#87CEEB)汗滴作为情绪表达，禁止任何原品牌高饱和色泄漏。",
+  "stroke_application": "将原图锐利几何字体边缘全部转化为粗细不均的手绘马克笔/蜡笔线条，外轮廓使用深绿粗线，内部细节用同色系细线；线条端点圆润无尖角，边缘带自然抖动与断笔飞白，模拟真实纸面涂鸦质感；严禁平滑矢量线或机械几何曲线。",
+  "composition_application": "采用垂直三段式构图：上部60%区域居中放置手绘化'得物'汉字主体，中部留白过渡，下部15%-20%区域固定放置黑色手写体'Dewu'；主体严格居中偏上，四周保留40%以上纯白呼吸空间；移除原图所有满版背景与底部弧形运营栏，形成稳定的上图下文贴纸版式。",
+  "identity_application": "通过严格保留'得物'二字的笔画拓扑结构与左右空间关系维持核心识别，同时叠加主题三要素（绿叶纹理、粉腮红、呆萌表情）实现风格统一；底部手写体'Dewu'作为双重身份兜底；允许笔画末端植物化与局部五官嵌入，但不得改变字形骨架的可读性与结构完整性。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入绿叶小狗/蔬菜萌宠母题特征：叶脉纹理、粉腮红、豆豆眼",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何字体",
+    "底部必须包含黑色手写风格 'Dewu'，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑及极少量天蓝点缀范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App黑色背景或青色营销色作为大面积填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何字形",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写 'Dewu' 或使用电脑标准字体",
+    "禁止保留原图'礼物节'文案、青色心形等临时运营元素",
+    "禁止过度重构导致'得物'字形骨架完全消失或不可读",
+    "禁止使用球鞋、鞋盒等具象潮流物品替代文字主体"
+  ]
+}

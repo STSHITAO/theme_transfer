@@ -1,0 +1,65 @@
+{
+  "app": "golden_spatula",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示：当原图为复杂的 3D 企鹅角色加写实光影时，应完全舍弃具象角色，提取核心道具'铲子'与底部动态线进行重构。当前目标原图同样是高细节的 3D 企鹅插画，符合 theme_design_analysis 中'复杂3D渲染允许放弃原始结构，提取核心功能语义符号'的重构条件。因此不保留企鹅主体几何，而是用语义符号重组，以适配手工剪纸贴纸的极简轮廓要求。",
+  "preserve": [
+    "铲子的三齿头部轮廓与手柄基本形态",
+    "底部暗示旋转/羁绊的弧形动态线条"
+  ],
+  "must_preserve": [
+    "铲子作为唯一视觉主体的核心地位",
+    "底部旋风/羁绊线条与铲子的空间组合关系",
+    "居中构图与贴纸安全区比例"
+  ],
+  "recompose_allowed": [
+    "企鹅吉祥物形象（完全移除）",
+    "银色头盔与金色宝石装饰",
+    "蓝色漩涡背景与橙色角标",
+    "铲子的金属光泽、立体厚度与写实材质"
+  ],
+  "restyle": [
+    "铲子填充色统一为薄荷绿/青蓝色",
+    "所有边缘圆润化并添加白色宽包边与深灰虚线缝线",
+    "背景替换为米白网格底板与淡红虚线框",
+    "添加右下方浅灰色硬边缘投影"
+  ],
+  "decorate": [
+    "底部弧形线条可简化为手绘感虚线或流线型纸片形态",
+    "铲子内部可增加极简的白色负空间分割线以区分齿部结构"
+  ],
+  "forbid": [
+    "保留企鹅角色的任何面部特征或身体轮廓",
+    "使用金色、银色、蓝色、橙色等原品牌色或渐变色",
+    "添加金属反光、3D立体渲染、高光或阴影渐变",
+    "遗漏网格底板、红色虚线框、白色宽边或深灰缝线",
+    "将铲子替换为剑、盾、锤子等无关通用武器",
+    "保留右下角腾讯游戏星芒角标"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker of a stylized spatula with three prongs and a curved swirl line at the bottom, centered on light grey grid notebook paper. The spatula has rounded edges, thick white die-cut border, dark grey dashed stitching line, and soft grey drop shadow to bottom right. A faint red dashed rectangular frame surrounds the sticker. Matte paper texture, handcraft scrapbook style, no gradients, no 3D, no penguin character, no metallic effects.",
+  "color_application": "彻底剥离原图的金色铲子、银色头盔、蓝色背景和橙色角标，将铲子与底部旋风线条统一填充为低饱和度薄荷绿/青蓝色；所有白色元素仅用于描边或负空间镂空；禁止保留任何原品牌色或金属色。",
+  "stroke_application": "将原图无描边的3D铲子转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；铲子齿部与手柄连接处柔化为圆角，底部旋风线条简化为手绘感虚线或流线型纸片边缘。",
+  "composition_application": "完全移除原图的满版企鹅角色与漩涡背景，将铲子符号与底部旋风线条组合后居中置于网格底板中央；主体严格控制在画布40%-70%尺寸内，四周保留均匀网格留白；铲子略微倾斜5-10度以增加手工粘贴的自然感，但整体重心保持居中稳定。",
+  "identity_application": "通过保留铲子三齿头部轮廓与底部旋风线条的组合来传达'金铲铲之战'的核心语义；放弃所有具象角色与品牌色彩识别，转而依赖功能道具符号的几何特征与动态线条维持App可识别性；确保重构后的铲子形态独特且不与通用厨具图标混淆。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留金色或引入其他色相",
+    "必须具备白色宽包边与内部/边缘深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或金属质感",
+    "所有几何转角必须圆润化处理，符合纸质贴纸的物理特性"
+  ],
+  "negative_constraints": [
+    "禁止出现企鹅、小鸟或其他动物角色的任何部分",
+    "禁止保留原图的金色、银色、蓝色、橙色或任何渐变色彩",
+    "禁止使用金属光泽、反光、3D渲染或写实阴影效果",
+    "禁止遗漏网格背景、红色虚线框、白色宽边或深灰缝线中的任一元素",
+    "禁止将铲子替换为与原App无关的通用工具或武器",
+    "禁止保留右下角腾讯游戏星芒角标或任何营销文字",
+    "禁止主体过大撑满画布或过小失去辨识度",
+    "禁止在铲子内部保留过多细节导致视觉杂乱或破坏单色贴纸感"
+  ]
+}

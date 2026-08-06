@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了语义重构策略：保留了绿叶小狗母题、纯白底板和手写文字，同时精准地在轮廓边缘添加了红青故障描边以锚定抖音身份。构图稳重，符合坐姿要求，风格与参考图高度统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "姿态略显动态，不如候选1稳重；耳朵的绿叶特征不如候选1明显（更像普通狗耳加绿边），略微偏离'绿叶耳'的严格母题要求。",
+      "recommendation": "推荐作为备选。整体风格和质量很高，故障色和文字处理得当，但主体形态细节略逊于候选1。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\douyin\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

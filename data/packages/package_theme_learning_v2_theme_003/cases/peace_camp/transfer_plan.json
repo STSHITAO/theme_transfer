@@ -1,0 +1,66 @@
+{
+  "app": "peace_camp",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 peace_camp 的 original -> style_ref 规律，该 App 的转换策略明确为提取核心文字 Logo 并剥离写实背景。当前目标原图主体即为“和平精英”文字与英文副标题，属于简洁的 2D 排版结构，符合 preserve_when 条件。因此必须严格保留文字的字形骨架、笔画比例和上下空间关系，仅进行颜色映射、材质贴纸化和背景网格化，不进行语义重构或主体替换。",
+  "preserve": [
+    "“和平精英”四个汉字的专属粗体字形与笔画结构",
+    "“平”字内部嵌入的闪电符号负形细节",
+    "“GAME FOR PEACE”英文字母的无衬线字体特征",
+    "中英文上下居中对齐的层级排版关系"
+  ],
+  "must_preserve": [
+    "“和平精英”汉字的完整字形与相对位置",
+    "“平”字中的闪电识别特征",
+    "英文副标题的排列顺序与比例",
+    "文字作为唯一主体的居中构图"
+  ],
+  "recompose_allowed": [
+    "橙黄色夕阳战火背景替换为网格底板",
+    "右下角红色角标/星形符号移除或极度简化融合",
+    "字体锐利边缘圆润化处理以模拟布艺剪裁感",
+    "原有深褐色/黑色文字填充替换为薄荷绿"
+  ],
+  "restyle": [
+    "文字填充色统一为低饱和度薄荷青",
+    "添加白色宽模切包边与深灰色虚线缝纫轮廓",
+    "应用右下方浅灰色硬边缘投影",
+    "整体转为哑光纸质贴纸材质"
+  ],
+  "decorate": [
+    "米白/浅灰白方格纸背景纹理",
+    "环绕主体的淡红/淡粉色圆角虚线框"
+  ],
+  "forbid": [
+    "保留原图的橙黄渐变背景或写实战火光影",
+    "改变“和平精英”文字内容、错别字或严重扭曲字形导致不可读",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或非淡红虚线框",
+    "引入原图以外的无关道具或复杂插画元素",
+    "保留任何金属光泽、霓虹发光或3D立体效果"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker of the Chinese text '和平精英' with a lightning bolt negative space inside the character '平', and English subtitle 'GAME FOR PEACE' below. The text has rounded edges, thick white die-cut border, and dark grey dashed stitching line. Soft grey drop shadow to bottom right. Placed centrally on light grey grid notebook paper background with faint red dashed rectangular frame. Matte paper texture, handcraft scrapbook style, clean vector, no gradients.",
+  "color_application": "彻底剥离原图橙黄/红暖色渐变及深色文字填充，将“和平精英”汉字与“GAME FOR PEACE”英文统一填充为低饱和度薄荷青/蓝绿色；原图中的白色高光或反白效果转化为白色模切包边；完全去除环境色与光影渐变。",
+  "stroke_application": "将原图文字的锐利几何边缘柔化为圆润转角；外层包裹粗实纯白包边模拟贴纸模切边缘；紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫针脚；去除原文字的所有立体描边或发光轮廓。",
+  "composition_application": "移除原图满版战火背景与右下角独立角标，将中英文字组作为独立贴纸居中置于画面中央；主体尺寸控制在画布40%-70%之间；四周保留均匀充足的米白网格留白与淡红虚线框安全区，形成明确的“底板-虚线框-文字贴纸”三层嵌套。",
+  "identity_application": "在不破坏主题统一性的前提下，通过精确保留“和平精英”定制字体的笔画骨架、“平”字内闪电负形及英文副标题排版来维持身份识别；所有品牌识别线索仅做材质化（纸质）、色彩化（薄荷绿）与轮廓化（圆角+缝线）处理，绝不删除或替换核心字形结构。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App橙/黄/红品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "文字主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留original的橙黄渐变背景、写实战火光影或粒子特效",
+    "禁止改变“和平精英”文字内容、字形结构或闪电符号位置",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止添加枪械、头盔、动物等与原图文字主体无关的具象道具",
+    "禁止在文字内部保留过多的original细节（如纹理、细小装饰）导致视觉杂乱",
+    "禁止使用尖锐直角或实线粗描边破坏手工剪纸的柔和质感"
+  ]
+}

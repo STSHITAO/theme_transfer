@@ -1,0 +1,10 @@
+{
+  "target_app": "xiaohongshu",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "karaoke",
+    "wechat",
+    "jianying"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

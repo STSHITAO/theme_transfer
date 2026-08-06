@@ -1,0 +1,10 @@
+{
+  "target_app": "moji_weather",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "honor_of_kings",
+    "qq_speed",
+    "hello_bike"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

@@ -1,0 +1,10 @@
+{
+  "target_app": "douyin",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "douyin_huoshan",
+    "wechat_reading",
+    "dianping"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

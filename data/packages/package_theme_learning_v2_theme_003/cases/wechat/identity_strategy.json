@@ -1,0 +1,37 @@
+{
+  "app": "wechat",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "两个重叠的圆角聊天气泡及其内部的四个圆点眼睛",
+  "brand_cues_to_preserve": [
+    "一大一小两个气泡的重叠布局",
+    "气泡尾部的指向角度",
+    "每个气泡内部两个圆点眼睛的相对位置"
+  ],
+  "semantic_cues_to_preserve": [
+    "即时通讯与社交对话的气泡隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律显示，对于微信这种几何结构极其简洁且辨识度极高的 Logo，必须严格保留气泡轮廓、重叠关系和眼睛位置（preserve_major_structure=true）。当前目标原图同样是标准的简洁 2D 几何图形，无需进行语义重构或道具替代，直接保留主体拓扑结构并应用贴纸材质即可完美平衡主题统一性与品牌识别度。",
+  "design_rationale": "微信图标是极简几何 Logo 的典型代表，其身份完全依赖于两个气泡的特定比例和重叠方式。在手工剪纸贴纸主题下，最佳策略是完整保留这一经典 silhouette，仅将原本的绿色背景移除，把白色气泡反转为薄荷绿填充实体，并包裹上标志性的白边、虚线缝线和硬投影，使其成为一枚精致的网格手账贴纸。",
+  "must_preserve": [
+    "双气泡重叠的经典轮廓",
+    "四个眼睛圆点的空间排布",
+    "气泡尖角的朝向"
+  ],
+  "can_recompose": [
+    "原本的纯绿色满版背景（替换为网格底板）",
+    "气泡的颜色逻辑（从白底绿背景反转为绿底白边）",
+    "边缘锐度（进行圆润化和手绘感柔化）"
+  ],
+  "forbid": [
+    "保留原有的微信品牌绿色",
+    "改变气泡的数量、大小比例或重叠层级",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "添加任何 3D 光泽、渐变或写实纹理"
+  ],
+  "generation_direction": "将微信双气泡 Logo 转化为居中放置的薄荷绿扁平贴纸。气泡填充统一薄荷绿，外围包裹粗白边和深灰虚线缝线，右下方添加浅灰硬投影。眼睛保留为白色圆点或镂空。背景替换为米白底浅灰网格，外围环绕淡红虚线框。主体占比 50%，严禁保留原品牌绿，确保手工剪纸质感。"
+}

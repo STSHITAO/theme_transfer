@@ -1,0 +1,62 @@
+{
+  "app": "qidian",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，必须严格保留其2D轮廓作为3D模型的基底。起点读书的图标是高度抽象化的汉字设计，任何结构重组都会导致品牌识别丢失，因此采用‘材质置换+立体挤压’策略，完全忠实于原图轮廓。",
+  "preserve": [
+    "“起点”二字的完整笔画拓扑结构",
+    "字体的几何切角特征（如“起”字走之旁的处理）",
+    "“点”字底部四点的独特排列节奏",
+    "文字在画面中的居中布局及相对大小比例"
+  ],
+  "must_preserve": [
+    "“起”字和“点”字的相对位置及大小比例",
+    "汉字笔画的粗细均匀度",
+    "无描边的轮廓定义方式（依靠光影）",
+    "核心字形不可简化为拼音、英文或其他抽象图形"
+  ],
+  "recompose_allowed": [
+    "将平面文字拉伸为具有物理厚度的3D实体",
+    "边缘进行圆润化倒角处理，模拟冰的融化感",
+    "在冰块内部添加随机的雪花、气泡或裂纹纹理",
+    "底部增加接触阴影和少量碎冰屑以确立空间感"
+  ],
+  "restyle": [
+    "移除原始红色背景，替换为纯白/浅灰背景",
+    "主体材质由不透明红底白字转换为半透明冰蓝色晶体",
+    "利用次表面散射（SSS）和折射表现文字体积感",
+    "通过高光反射定义边缘，替代原有描边"
+  ],
+  "decorate": [
+    "内部嵌入微小的雪花图案或冻结气泡",
+    "表面覆盖冷凝水珠或霜冻纹理",
+    "底部散落微量碎冰屑和水渍"
+  ],
+  "forbid": [
+    "禁止保留原始的红色背景或任何红色主色调",
+    "禁止使用不透明的白色塑料、金属或玻璃材质",
+    "禁止改变汉字的笔画连接关系或结构比例",
+    "禁止添加书籍、卷轴、毛笔等具象阅读符号",
+    "禁止生成扁平化2D矢量风格"
+  ],
+  "generation_brief": "3D render of the Chinese characters '起点' carved from translucent cyan ice. Strictly preserve the original logo's geometry and stroke structure. Material features internal bubbles, frost textures, and glossy refraction. Rounded beveled edges. Pure white background with soft contact shadows and scattered ice chips at the base. No red color, no outlines, photorealistic C4D/Octane style.",
+  "color_application": "Completely replace the original brand red with the theme's 'Translucent Cyan' and 'Pale Ice Blue'. The text body becomes semi-transparent ice, allowing light to pass through (subsurface scattering). Highlights are pure white; shadows are deep blue. No residual red is allowed in the main mass.",
+  "stroke_application": "Remove all 2D vector strokes. Define the character contours through 3D beveling and rim lighting. Edges must be smooth and rounded to simulate melted ice, avoiding sharp geometric cuts unless they are intrinsic to the font's design, in which case they are softened slightly.",
+  "composition_application": "Centered composition on a clean white background. The 3D text object occupies 60-70% of the canvas width. Add Z-axis thickness to transform the flat text into a standing sculpture. Include subtle ground contact shadows to anchor the object.",
+  "identity_application": "Identity is preserved strictly through the geometric silhouette of the '起点' characters. The unique stroke details (like the 'walk' radical in '起' and the four dots in '点') are maintained as the physical shape of the ice sculpture. Recognition relies on the accurate 3D extrusion of these specific forms.",
+  "fidelity_constraints": [
+    "Must strictly use semi-transparent ice/crystal material with internal inclusions (bubbles/snowflakes).",
+    "Must maintain the exact structural topology of the '起点' characters.",
+    "Background must be pure white or very light grey studio setting.",
+    "Lighting must be cool, bright studio lighting with realistic refraction and caustics."
+  ],
+  "negative_constraints": [
+    "No red, green, or other brand colors in the main body.",
+    "No opaque plastic, metal, or wood textures.",
+    "No flat 2D appearance; must have visible depth/volume.",
+    "No books, scrolls, or literal reading icons.",
+    "No distorted or unrecognizable character shapes."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan：保留了 iQIYI 的横向文字结构，将 Q 巧妙重构为带有绿叶耳和粉腮红的菜狗头（符合 tencent_news 参考图风格），其余字母转化为手绘绿色粗线条。底部黑色手写体标签清晰，背景纯白，无多余元素，识别度与主题契合度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 91,
+      "failure_reason": "Q 字母内部的狗头设计略显拥挤，且带有一滴蓝色眼泪/口水，这与计划中要求的'呆萌表情/吐舌'及色彩限制（仅白绿粉黑）略有出入（出现了蓝色）。",
+      "recommendation": "推荐作为备选。整体结构保留良好，风格统一，但 Q 字母内的面部细节处理不如 candidate_01 清晰可爱，且引入了计划外的蓝色元素。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\iqiyi\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

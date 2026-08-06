@@ -25,7 +25,7 @@ def resolve_theme_examples(theme_id, root_dir=None, max_examples=5):
         example = _resolve_reference_example(app_dir)
         if example:
             examples.append(example)
-        if len(examples) >= max_examples:
+        if max_examples is not None and len(examples) >= max_examples:
             break
 
     if not examples:

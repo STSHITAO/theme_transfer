@@ -1,0 +1,67 @@
+{
+  "app": "wecom",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 wecom 的 transformation pattern 明确显示，原图的抽象蓝色气泡几何被重构为具象的小狗头部虚线轮廓，仅保留右下角四色节点的空间位置作为装饰。这符合 theme_design_analysis 中对于‘缺乏单一明确吉祥物轮廓的抽象几何图标’允许进行语义重构的规则。原图的气泡+节点结构较为抽象，直接保留几何轮廓难以融入‘绿叶小狗’母题，因此采用将气泡语义转化为小狗头部、将节点转化为手持道具或周围装饰的重构策略，以匹配主题包的统一视觉语言。",
+  "preserve": [
+    "沟通气泡的意象（通过小狗头部轮廓暗示）",
+    "右下角四个连接节点的环形排列空间关系",
+    "企业协作与多方连接的功能语义"
+  ],
+  "must_preserve": [
+    "右下角四个水滴状/节点状元素的相对位置与多色特征（绿、黄、橙、蓝点缀）",
+    "底部黑色手写体 'WeCom' 文字",
+    "绿叶小狗/蔬菜萌宠的核心母题特征（绿叶耳、粉腮红、豆豆眼）"
+  ],
+  "recompose_allowed": [
+    "蓝色气泡实体重构为绿色手绘小狗头部",
+    "四色节点从3D光泽质感转为扁平手绘涂鸦点缀",
+    "节点颜色微调为主题色系内的低饱和多色点缀",
+    "气泡尾巴转化为小狗下巴或耳朵形态"
+  ],
+  "restyle": [
+    "所有线条转为深绿色手绘马克笔抖动粗描边",
+    "填充色转为浅嫩绿/白色平涂哑光质感",
+    "背景转为纯白圆角矩形底板",
+    "添加叶脉纹理与呆萌面部表情"
+  ],
+  "decorate": [
+    "小狗头顶或耳部的白菜叶/绿叶装饰",
+    "脸颊两侧的淡粉色椭圆腮红",
+    "偶尔吐出的小舌头或汗滴以增强生动感"
+  ],
+  "forbid": [
+    "大面积高饱和蓝色背景或主体填充",
+    "丢失右下角四色节点导致与普通微信混淆",
+    "平滑矢量线条、锐利几何边缘或3D光影渐变",
+    "主体撑满画布或触碰边缘",
+    "使用标准印刷字体替代底部手写体",
+    "完整闭合的通用对话气泡形状"
+  ],
+  "generation_brief": "White rounded square background. Center: A cute green hand-drawn dog head with leaf ears, pink blush, and dot eyes, shaped to imply a speech bubble. Bottom-right of the dog: Four small hand-drawn teardrop/node shapes in muted yellow, green, orange, and blue arranged in a circle. Thick wobbly dark green outlines, flat matte texture. Bottom center: Black handwritten text 'WeCom'. Ample white space, sticker art style.",
+  "color_application": "彻底移除原App高饱和蓝色主填充，映射为浅嫩绿(#A8D060)填充+深草绿(#4A7C29)描边；右下角四色节点保留多色语义但降低饱和度作为极小面积点缀；背景强制纯白(#FFFFFF)；腮红使用淡粉(#FFB6C1)。",
+  "stroke_application": "将原图光滑矢量气泡轮廓和3D节点边缘全部转化为深绿色手绘马克笔抖动粗线条；线条端点圆润、粗细不均、带有自然断笔；内部细节用同色系细线勾勒叶脉；禁止任何平滑直线或机械曲线。",
+  "composition_application": "采用垂直三段式构图：上部60%区域居中放置拟人化小狗头（暗示气泡），右下侧悬浮四色节点装饰；中部留白过渡；底部20%区域居中放置黑色手写'WeCom'；主体严格居中偏上，四周保留充足呼吸空间。",
+  "identity_application": "通过‘小狗头部轮廓暗示气泡’+‘右下角四色节点保留’+‘底部手写文字’三重机制维持识别度；四色节点作为区分普通微信的关键锚点必须保留多色特征但手绘化；气泡语义通过生物形态隐喻而非几何复刻实现。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须包含绿叶耳、粉腮红、豆豆眼等母题特征",
+    "必须使用手绘抖动粗线条，禁止平滑矢量线",
+    "底部必须包含黑色手写风格 'WeCom'",
+    "色彩严格限制在白、绿、粉、黑及极少量四色节点点缀范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D或光影效果",
+    "主体占比控制在50%-65%，保证留白和文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和蓝色作为大面积背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何气泡形状",
+    "禁止添加阴影、高光、渐变或立体浮雕效果",
+    "禁止让主体撑满画布导致失去留白和底部文字区域",
+    "禁止遗漏右下角四色节点或将其统一为单色",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止偏离绿叶小狗核心母题使用无关卡通形象",
+    "禁止过度重构导致沟通气泡意象完全消失"
+  ]
+}

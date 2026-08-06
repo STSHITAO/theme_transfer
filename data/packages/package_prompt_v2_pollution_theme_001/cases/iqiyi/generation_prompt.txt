@@ -1,0 +1,102 @@
+[THEME STYLE CONTRACT]
+theme_id: theme_001
+
+The style-reference images are evidence for visual treatment only.
+They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
+They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+
+[Theme summary]
+3D Ice/Crystal Material Theme. The theme transforms flat 2D icons into three-dimensional objects made of translucent, light-blue ice or crystal. The style emphasizes physical volume, refraction, internal textures (bubbles, snowflakes), and a cold, refreshing atmosphere set against a clean white background.
+
+[Shared original-to-style transform]
+Transform flat vector shapes into thick, extruded 3D solids with rounded edges. Apply a unified 'frozen' material treatment: semi-transparent cyan/blue body, glossy surface highlights, and internal imperfections like trapped air bubbles or frost patterns. Remove original brand colors and replace them with the theme's ice palette.
+
+[Color]
+强制全量替换为冰蓝色系。原始图标的固有色（Brand Color）被移除，转化为材质的透明度变化或高光颜色。仅在极少数情况（如 douyin_huoshan）下，允许保留一个极小的原色符号（火焰）作为点缀，其余部分全部同化为冰材质。
+
+[Background]
+从原始的各种纯色/渐变背景统一转换为纯净的白色/浅灰背景。去除所有背景图形元素，将视觉重心完全集中在前景的 3D 冰雕主体上。增加底部的物理投影以确立空间关系。
+
+[Edges and strokes]
+去除所有 2D 描边。轮廓通过 3D 模型的倒角（Bevel）和高光反射来定义。边缘处理非常光滑，没有锐利的切角，模拟冰块的物理特性。
+
+[Composition]
+从 2D 平面填充转变为 3D 实体居中。主体不再撑满画布边缘，而是留出呼吸感（Padding）。增加垂直方向的厚度感（Z轴），使图标看起来像是一个摆放在桌面上的实物模型。
+
+[Subject scale]
+主体宽度约为画布宽度的 50%-60%，高度约为 60%-70%。允许根据原始图标的长宽比进行适当缩放，但必须保持视觉重心的稳定。
+
+[Detail complexity]
+增加物理细节复杂度（水珠、纹理、光影），简化图形语义复杂度（去除多余装饰、文字、复杂渐变）。将扁平的几何图形转化为具有体积感的简单几何体。
+
+[Required style properties]
+- 必须严格使用半透明冰蓝色材质，不可出现其他主色调。
+- 必须包含表面水珠或内部雪花/气泡等冰质感细节。
+- 必须保留原始图标的核心几何轮廓，不可重构为无关物体。
+- 背景必须保持极简洁白，突出主体的通透感。
+- 光影逻辑必须符合 3D 渲染规律（顶光或侧光，底部有阴影）。
+
+[Forbidden style drift]
+- 禁止使用原始 App 的品牌背景色。
+- 禁止生成不透明的塑料、金属或玻璃材质（必须是冰/雪质感）。
+- 禁止保留 2D 扁平化设计风格。
+- 禁止过度添加与“冰/冷”主题无关的复杂场景道具。
+
+Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.
+
+
+[ABSOLUTE IDENTITY LOCK — HIGHEST PRIORITY]
+
+The final input image, labelled TARGET_IMAGE, is the only allowed source of subject identity.
+Every preceding image, labelled STYLE_REFERENCE, is style-only evidence.
+
+TARGET_IMAGE is the only allowed source of:
+- logo and text content
+- recognizable symbol and semantic object
+- subject silhouette and object category
+- internal geometry, negative space, and spatial layout
+
+STYLE_REFERENCE images may contribute only visual treatment. They must contribute zero logo content, text, recognizable symbol, subject silhouette, object category, internal layout, or brand identity.
+If any identity content from a STYLE_REFERENCE appears in the result, the result is invalid.
+
+[CURRENT TARGET]
+target_app: iqiyi
+
+[STRUCTURE POLICY]
+mode: preserve_major_structure
+identity_constraint_level: strict
+This is a material-and-style transformation. Preserve the target silhouette, topology, major geometry, negative space, and internal spatial relationships; do not replace or reinterpret the target subject.
+
+[MUST PRESERVE FROM TARGET_IMAGE]
+- iQIYI 和 爱奇艺 的完整文字内容
+- 字体的原始笔画粗细比例和几何特征
+- 文字作为信息载体的清晰度与可读性
+
+[TARGET IDENTITY APPLICATION]
+Preserve the exact geometric skeleton of 'iQIYI' and '爱奇艺' fonts. Transform them from flat vectors into thick, physical ice blocks. Ensure legibility is maintained through high-contrast lighting and clear structural definition, despite the translucent material.
+
+[THEME APPLICATION]
+- Color: Forcefully replace original green/purple gradient and white text with unified Translucent Cyan/Pale Ice Blue material. Use varying transparency and internal refraction to differentiate letter layers instead of color contrast. Highlights remain white/bright blue.
+- Edges and strokes: Remove all 2D outlines. Define letter edges through 3D beveling, specular highlights, and light refraction within the ice material. Edges must be smooth and rounded, simulating carved or melted ice.
+- Composition: Center the 3D text block on a pure white background. Maintain the original vertical stacking ratio of English and Chinese text. Scale the object to occupy 60-70% of the canvas width, leaving ample white space (padding) around it. Apply a slight 3/4 perspective to show thickness.
+- Required theme properties: Must strictly use semi-transparent ice/crystal material (not opaque plastic).; Must include micro-details like bubbles, snowflakes, or surface water droplets.; Must maintain the exact character structure and layout of the original logo.; Background must be clean white/light grey with realistic contact shadows.
+
+[INVALID OUTPUT CONDITIONS]
+- Any text, logo, recognizable symbol, subject, silhouette, or internal layout copied from a STYLE_REFERENCE.
+- Any text or symbol absent from TARGET_IMAGE.
+- A result that resembles a STYLE_REFERENCE subject more than TARGET_IMAGE.
+- A changed object category or an unrecognizable target App.
+- Violating these target-specific constraints: No original brand colors (green, purple).; No flat 2D design elements.; No additional symbols like play buttons or TV frames.; No dark or colored backgrounds.; No distorted or illegible typography.
+
+[PRIORITY]
+1. Preserve target identity and the required target structure.
+2. Apply theme material and visual treatment without changing identity.
+3. Add decorative detail only when priorities 1 and 2 remain satisfied.
+
+If identity and theme styling conflict, preserve identity. Theme fidelity must never replace target identity.
+
+[FINAL INTERNAL CHECK]
+Before generating, identify the subject and required geometry in TARGET_IMAGE, separate them from the visual treatment in STYLE_REFERENCE images, and confirm that the output contains zero reference identity.
+
+[OUTPUT]
+Return exactly one complete themed target icon. No captions, comparison layout, input collage, watermark, explanation, or extra logo.

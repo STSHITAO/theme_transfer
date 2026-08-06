@@ -1,0 +1,40 @@
+{
+  "app": "moji_weather",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "MOJI 文字 Logo 的横向排列结构，特别是字母 'O' 的圆形几何特征",
+  "brand_cues_to_preserve": [
+    "MOJI 字母组合",
+    "字母 O 的圆环形态",
+    "文字横向排布逻辑"
+  ],
+  "semantic_cues_to_preserve": [
+    "天气/气象功能暗示（通过表情或装饰元素体现）",
+    "品牌名称的可读性"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 iqiyi_lite（保留文字排版，Q 变猪头）、kugou（保留 K 骨架变狗）、zhihu（保留知字，乎变动物）的规律，对于纯文字 Logo 类 App，策略是保留文字的空间布局和字形骨架，将关键字母进行生物化/主题化改造。墨迹天气原图为清晰的 'MOJI' 文字，具有明确的几何结构，因此选择保留主体文字结构，仅对字母 'O' 进行菜狗面部化重构，符合 preserve_major_structure 的定义。",
+  "design_rationale": "墨迹天气的核心识别点是 'MOJI' 品牌字标。为了在统一主题下保持识别度，不应完全抛弃文字改为无关的天气符号（如云朵），而应沿用主题包处理文字 Logo 的成功范式（如爱奇艺、酷狗）。将字母 'O' 转化为菜狗的脸部（利用其圆形特征），既保留了 Logo 骨架，又完美融入了‘绿叶萌宠’母题。同时，去除原图的高对比黑底和橙色，替换为白底绿线，符合主题色彩规范。",
+  "must_preserve": [
+    "MOJI 四个字母的相对位置和大小比例",
+    "字母 M、J、I 的基本笔画走向（手绘化处理）",
+    "字母 O 作为视觉中心的圆形轮廓"
+  ],
+  "can_recompose": [
+    "字母 O 的内部填充（改为菜狗五官）",
+    "字母的末端装饰（改为叶片或卷曲藤蔓）",
+    "背景颜色（黑变白）",
+    "品牌色（橙变绿/粉点缀）",
+    "字体风格（标准无衬线体变为手写抖动体）"
+  ],
+  "forbid": [
+    "完全丢弃 MOJI 文字，只画一个通用的天气图标（如太阳/云）",
+    "保留原图的纯黑背景",
+    "保留原图的高饱和度橙色作为主色",
+    "使用平滑的标准电脑字体",
+    "字母结构变形过度导致无法拼读出 MOJI"
+  ],
+  "generation_direction": "白底圆角图标，中央绘制手绘风格的 'MOJI' 文字。字母使用深绿色抖动粗线条勾勒。重点将字母 'O' 重构为绿色的菜狗头部：圆圈轮廓保留，内部画上豆豆眼、粉色腮红和吐舌头，头顶加两片绿叶耳朵。字母 M、J、I 保持原有字形骨架但线条圆润手绘化，J 的底部可略微卷曲像尾巴。底部居中写黑色手写体 'Moji Weather'。扁平涂鸦质感，无阴影。"
+}

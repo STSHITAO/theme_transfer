@@ -1,0 +1,66 @@
+{
+  "app": "crossfire_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "原始图标为写实人物肖像（Face），直接将其转化为冰块会导致面部特征模糊且产生恐怖谷效应，不符合主题清爽的风格。参考 theme_rules 中对于复杂场景或非几何图标的处理逻辑，应舍弃人物主体，提取左下角的 'CF' 文字 Logo 作为重构主体。将扁平的 CF Logo 立体化为厚重的冰雕字块，既保留了最核心的品牌识别，又完美适配冰晶材质的物理特性。",
+  "preserve": [
+    "CF 字母组合的标准字形结构",
+    "CF Logo 的宽扁比例与锐利切角几何感",
+    "冰蓝色半透明材质与内部气泡/雪花细节",
+    "纯白背景与底部接触阴影",
+    "边缘的高光折射效果（无描边）"
+  ],
+  "must_preserve": [
+    "CF 字母的标准字形和连接关系",
+    "Logo 的整体宽扁比例结构",
+    "冰蓝色半透明材质与内部气泡/雪花细节",
+    "纯白背景与底部接触阴影",
+    "边缘的高光折射效果（无描边）"
+  ],
+  "recompose_allowed": [
+    "去除原始的人物头像、墨镜、衣领等写实元素",
+    "去除原始的深色渐变背景和橙色装饰角标",
+    "将原本扁平的 Logo 拉伸为具有厚度的 3D 实体",
+    "调整 Logo 在画面中的透视角度（微俯视）",
+    "在冰体内部嵌入微小的雪花或裂纹纹理以增强质感"
+  ],
+  "restyle": [
+    "将 CF 字母转化为厚实的 3D 冰雕块面",
+    "应用次表面散射（SSS）效果表现冰的通透感",
+    "表面添加冷凝水珠和磨砂质感",
+    "通过环境光遮蔽和反射高光定义轮廓，替代原有描边"
+  ],
+  "decorate": [
+    "底部散落少量碎冰屑和水渍以锚定空间",
+    "内部封存微小的气泡或冰晶碎片",
+    "边缘施加柔和的冷色 rim light"
+  ],
+  "forbid": [
+    "禁止生成写实的人脸冰块（避免恐怖谷效应）",
+    "禁止保留原始的黑色/深蓝色背景",
+    "禁止使用不透明的塑料或金属材质",
+    "禁止改变 CF Logo 的笔画结构导致不可识别",
+    "禁止出现 2D 平面描边",
+    "禁止出现原始品牌色（如橙色X、银白金属色）作为主色调"
+  ],
+  "generation_brief": "3D render of the letters 'CF' as a thick, extruded ice sculpture. Translucent cyan-blue crystal material with internal bubbles and frost textures. Glossy smooth edges with refraction. Centered on a pure white background. Soft contact shadow and scattered ice chips at the base. No human face, no dark background. High-end C4D/Octane render style, cold atmosphere.",
+  "color_application": "强制全量替换为冰蓝色系。移除原始 CF Logo 的银白/金属色，转化为冰材质的透明度和高光变化。整体色调统一为 Translucent Cyan 和 Pale Ice Blue。",
+  "stroke_application": "去除所有 2D 描边。轮廓通过 3D 模型的倒角（Bevel）和高光反射来定义。边缘处理光滑圆润，模拟冰块打磨后的质感，无锐利线条。",
+  "composition_application": "单体居中构图。CF 字母组合占据画布约 60%-70% 面积。采用微俯视 3/4 视角，展现字母的厚度和体积感。背景留白，增加呼吸感。",
+  "identity_application": "通过提取并立体化核心品牌符号 'CF' 来保留身份。放弃难以主题化的人物肖像，确保 'CF' 的字形结构、比例和锐利感在冰雕形态下依然清晰可辨。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调。",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节。",
+    "背景必须保持极简洁白，突出主体的通透感。",
+    "光影逻辑必须符合 3D 渲染规律（顶光或侧光，底部有阴影）。"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止生成彩色或不透明的图标，丢失了冰的通透感。",
+    "禁止保留 2D 扁平化设计风格。",
+    "禁止生成写实人脸或恐怖谷效应的冰块人像。",
+    "禁止使用原始 App 的品牌背景色。"
+  ]
+}

@@ -89,6 +89,32 @@ def make_project_fixture(root: Path) -> None:
 
 
 class PackageWorkflowTests(unittest.TestCase):
+    def test_case_reference_selection_matches_route_and_excludes_target(self):
+        examples = [
+            {"app_name": name, "style_ref_path": f"/{name}.png"}
+            for name in ["a", "b", "c", "d", "target"]
+        ]
+        design = {
+            "reference_transformation_patterns": [
+                {"app": "a", "preserve_major_structure": True},
+                {"app": "b", "preserve_major_structure": False},
+                {"app": "c", "preserve_major_structure": False},
+                {"app": "d", "preserve_major_structure": False},
+                {"app": "target", "preserve_major_structure": False},
+            ]
+        }
+
+        selected = package_workflow._select_case_reference_examples(
+            examples,
+            design,
+            {"structure_preservation_mode": "semantic_recompose"},
+            "target",
+            limit=3,
+        )
+
+        self.assertEqual({item["app_name"] for item in selected}, {"b", "c", "d"})
+        self.assertNotIn("target", [item["app_name"] for item in selected])
+
     def test_batch_records_data_inspection_failure_and_continues_other_apps(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -218,7 +244,8 @@ class PackageWorkflowTests(unittest.TestCase):
                     transfer_plan["structure_identity_metric_applicable"],
                     identity_strategy["structure_identity_metric_applicable"],
                 )
-                self.assertIn("transfer_plan", generation_prompt)
+                self.assertIn("ABSOLUTE IDENTITY LOCK", generation_prompt)
+                self.assertIn("STYLE_REFERENCE images may contribute only visual treatment", generation_prompt)
                 self.assertIn("theme fidelity", generation_prompt.lower())
 
             with Image.open(package_dir / "contact_sheet.png") as sheet:

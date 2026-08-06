@@ -1,0 +1,10 @@
+{
+  "target_app": "toutiao_lite",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "lol_assistant",
+    "youdao_dict",
+    "lofter"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

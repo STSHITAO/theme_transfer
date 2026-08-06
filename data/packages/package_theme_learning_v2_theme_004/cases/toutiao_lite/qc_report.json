@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 80,
+      "overall_score": 88,
+      "failure_reason": "文字内部的叶脉纹理填充显得略微杂乱，影响了手绘线条的纯净度，但整体识别度极高。",
+      "recommendation": "推荐使用。该候选图完美保留了'头条'二字的字形结构和空间布局，右下角闪电符号位置准确，底部英文名称拼写正确且为手写体。风格上成功转化为绿色手绘质感，并融入了菜狗五官特征，符合主题包要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 95,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。相比 candidate_01，该图的文字笔画更加干净利落，去除了内部杂乱的纹理填充，更符合'扁平哑光纸质手绘质感'的要求。'头条'二字结构保留完整，菜狗表情（腮红、豆豆眼）融入自然，闪电符号和底部文字均符合规范，画面整洁度更高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\toutiao_lite\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

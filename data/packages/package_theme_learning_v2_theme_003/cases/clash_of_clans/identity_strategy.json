@@ -1,0 +1,38 @@
+{
+  "app": "clash_of_clans",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "游戏官方文字标识 'CLASH of CLANS' 或 '部落冲突'",
+  "brand_cues_to_preserve": [
+    "游戏名称文字内容",
+    "字体特有的粗犷/卡通风格骨架"
+  ],
+  "semantic_cues_to_preserve": [
+    "策略对战游戏的品牌名称识别"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 clash_of_clans 的真实迁移规律（original 为 3D 野蛮人头像，style_ref 重构为 'CLASH of CLANS' 文字排版），以及 jd、genshin、mini_world 等复杂 3D/插画图标的处理模式，当原图主体为高细节写实/3D 渲染且无法在极简贴纸语言中保留时，应放弃原始几何结构，提取最具辨识度的官方文字 Logo 进行重构。当前目标原图为复杂的 3D 野蛮人面部特写，依赖光影和色彩表现神态，强行保留轮廓会导致贴纸形态崩坏或语义丢失，因此采用文字标识替代原主体结构，符合主题包的语义重构策略。",
+  "design_rationale": "原图标是高度复杂的 3D 角色渲染，包含丰富的面部细节、渐变光影和高饱和色彩，这与主题要求的'扁平单色块+虚线轮廓+极简手工剪纸'风格存在根本冲突。根据主题包内该 App 的历史迁移记录及同类复杂图标（如 JD、原神）的处理逻辑，最稳妥且符合主题统一性的策略是舍弃 3D 头像，转而使用游戏名称文字作为主体。这样既能彻底执行薄荷绿单色填充、白边缝线和网格背景的主题规则，又能通过文字直接保留品牌身份，避免强行简化 3D 人脸导致的恐怖谷效应或识别度下降。",
+  "must_preserve": [
+    "游戏名称文字的可读性与核心字形",
+    "居中贴纸的构图层级",
+    "薄荷绿单色填充与白色宽包边",
+    "深灰色虚线缝线与右下硬投影",
+    "米白网格底板与淡红虚线框"
+  ],
+  "can_recompose": [
+    "将 3D 野蛮人头像完全替换为文字 Logo",
+    "字体的边缘圆润化处理以适配布艺/纸质质感",
+    "去除所有紫色背景、皮肤渐变色和口水高光细节"
+  ],
+  "forbid": [
+    "保留野蛮人的 3D 面部特征、眼睛、牙齿或口水细节",
+    "使用原图的紫色背景或黄色头发颜色",
+    "添加任何渐变、高光或立体渲染效果",
+    "主体过大撑满画布或破坏网格留白",
+    "遗漏白色宽边、虚线缝线或红色虚线框等主题指纹"
+  ],
+  "generation_direction": "Generate a flat mint-green paper cutout sticker of the text 'CLASH of CLANS' centered on a light grey grid notebook background. Surround the text with a thick white die-cut border and inner dark grey dashed stitching lines. Add a soft grey drop shadow to the bottom right. Enclose the composition with a faint red dashed rectangular frame. Remove all 3D character details, original purple/yellow colors, and gradients. Ensure matte paper texture, rounded corners, and strict adherence to the handcraft scrapbook style."
+}

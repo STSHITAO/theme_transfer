@@ -1,0 +1,58 @@
+{
+  "app": "pinduoduo",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 pinduoduo 的真实迁移规律（original -> style_ref），原图复杂的心形拼图网格和周围环绕的商品小图标（裙子、相机、鱼等）被完全舍弃，仅提取中心的'拼'字作为主体。这是因为原图主体过于复杂且依赖多色块拼接，无法在保持手账贴纸简洁性的前提下保留整体心形几何。因此，策略遵循主题包规律，放弃原始心形结构，转而提取最具品牌识别度的文字符号进行重构，符合 semantic_recompose 模式。",
+  "preserve": [
+    "汉字'拼'的完整字形结构和笔画特征",
+    "文字居中的构图逻辑"
+  ],
+  "must_preserve": [
+    "汉字'拼'的专属字体笔画骨架",
+    "拼团/聚合的核心语义表达"
+  ],
+  "recompose_allowed": [
+    "外围的心形几何框架",
+    "周围环绕的所有商品小图标（衣服、相机、鱼等）",
+    "红色背景和高饱和度配色",
+    "原有的三角形拼接纹理"
+  ],
+  "restyle": [
+    "将汉字'拼'填充为统一的薄荷绿/青蓝色",
+    "添加白色宽模切包边与内部深灰色虚线缝纫轮廓",
+    "应用哑光纸质材质与右下方浅灰色硬边缘投影",
+    "置于米白底浅灰网格背景上并环绕淡红/粉圆角虚线框"
+  ],
+  "decorate": [],
+  "forbid": [
+    "保留原图的红色背景或任何非薄荷绿的主色",
+    "保留周围的商品小图标导致细节过载",
+    "保留心形外框导致主体轮廓过于复杂",
+    "使用3D效果、渐变、高光或写实材质",
+    "遗漏白色宽包边、深灰虚线缝线或网格背景",
+    "将'拼'字替换为通用爱心或购物袋符号"
+  ],
+  "generation_brief": "Create a flat mint green paper cutout sticker of the Chinese character '拼' centered on a light grey grid notebook background. The character should have a thick white die-cut border and a dark grey dashed stitching line inside. Add a soft grey drop shadow to the bottom right. Surround the sticker with a faint red dashed rectangular frame. Remove all surrounding product icons and the heart shape from the original logo. Matte paper texture, handcraft scrapbook style, clean vector illustration.",
+  "color_application": "彻底剥离原图的高饱和红色与多色商品图标，将汉字'拼'强制填充为主题统一的低饱和度薄荷绿/青蓝色；原图中的白色区块转化为白色描边或负空间，严格限制色彩仅为薄荷绿、白、浅灰、淡红四色，确保色彩一致性优先于品牌色保留。",
+  "stroke_application": "将原图中锐利的几何分割线和文字边缘转化为双层贴纸轮廓：外层包裹粗实纯白包边模拟模切边缘，内层叠加深灰色细虚线模拟手工缝纫针脚；所有笔画转角进行圆润化处理，消除尖锐折角，呈现手工剪裁的柔和感。",
+  "composition_application": "放弃原图满版的心形拼图布局，将汉字'拼'作为独立贴纸居中放置，尺寸严格控制在画布40%-70%之间；四周保留充足且均匀的浅灰网格留白，外围固定环绕淡红/粉圆角虚线框，形成明确的'底板-虚线框-文字贴纸'三层嵌套层级。",
+  "identity_application": "通过精确保留汉字'拼'的专属字体结构和笔画走势来维持品牌核心识别，利用文字本身的语义传达'拼团'概念；在完全服从薄荷绿单色贴纸风格的前提下，依靠字形轮廓而非颜色或辅助图形来锚定App身份。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌红色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留原图的心形外框、商品小图标阵列或红色背景",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止将'拼'字重构为通用爱心、购物车或其他无关电商符号",
+    "禁止在主体内部保留过多的original细节导致视觉杂乱",
+    "禁止使用实线粗描边替代虚线缝纫效果或使用尖锐直角"
+  ]
+}

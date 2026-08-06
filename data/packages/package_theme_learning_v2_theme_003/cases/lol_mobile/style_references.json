@@ -1,0 +1,10 @@
+{
+  "target_app": "lol_mobile",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "xianyu",
+    "mini_world",
+    "wechat_reading"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

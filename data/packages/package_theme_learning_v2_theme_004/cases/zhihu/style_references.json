@@ -1,0 +1,10 @@
+{
+  "target_app": "zhihu",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "clash_of_clans",
+    "peace_elite",
+    "anipop"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

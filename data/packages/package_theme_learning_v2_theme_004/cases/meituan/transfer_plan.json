@@ -1,0 +1,72 @@
+{
+  "app": "meituan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中'alipay'（保留'支'字骨架）、'iqiyi_lite'（保留文字排版）和'zhihu'（保留'知'字结构）的变换规律，当原图标核心为高辨识度汉字时，应优先保留字形的空间拓扑和笔画走向。美团原图为纯文字Logo，'美团'二字具有极强的品牌识别度，因此策略上选择保留双字的主体轮廓和左右布局，仅将笔画进行手绘化、绿叶化和萌系五官填充，符合主题包对文字类Logo'保留骨架+主题换肤'的处理逻辑。",
+  "preserve": [
+    "'美'和'团'两个汉字的基本笔画结构和左右位置关系",
+    "'团'字的外框包围结构特征",
+    "深绿/黑色的手绘粗轮廓线",
+    "纯白圆角矩形底板",
+    "底部的黑色手写体'Meituan'"
+  ],
+  "must_preserve": [
+    "'美'和'团'两个汉字的完整字形骨架与左右并列布局",
+    "'团'字外围的方形边框结构",
+    "底部黑色手写体英文'Meituan'",
+    "纯白圆角矩形背景底板"
+  ],
+  "recompose_allowed": [
+    "原图的亮黄色背景（必须移除并替换为白底）",
+    "原图的标准黑体字形（转化为手绘抖动线条）",
+    "汉字的局部笔画末端（可变形为绿叶、耳朵或融入五官）",
+    "字体的锐利折角（必须圆润化处理）",
+    "'团'字内部空间（可填充菜狗五官）"
+  ],
+  "restyle": [
+    "将标准字体重绘为深绿色手绘马克笔质感粗线条",
+    "将'美'字笔画末端转化为嫩绿色叶片形态",
+    "在'团'字内部或笔画间融入豆豆眼、粉色腮红、吐舌头等萌系特征",
+    "整体采用扁平哑光纸质贴纸质感，无光影渐变"
+  ],
+  "decorate": [
+    "在'美'字顶部或笔画连接处添加小片绿叶纹理",
+    "在'团'字框内或旁边点缀淡粉色椭圆腮红",
+    "在主体适当位置添加微小的天蓝色汗滴或口水滴以增强呆萌感"
+  ],
+  "forbid": [
+    "保留原图的亮黄色作为背景或大面积填充色",
+    "使用平滑矢量线或电脑标准印刷字体绘制'美团'或底部英文",
+    "完全抛弃汉字结构，仅绘制一只通用的绿色小狗而无字形",
+    "添加任何3D光影、渐变、立体浮雕或玻璃拟物效果",
+    "主体过大撑满画布导致底部无空间书写'Meituan'",
+    "遗漏绿叶、粉腮红、呆萌表情等核心母题特征",
+    "将汉字替换为袋鼠吉祥物或其他具象动物形象"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. The central subject is the Chinese characters '美团' reimagined in thick, wobbly dark green marker lines, strictly preserving their original left-right structure and stroke topology. The strokes of '美' end in tender green leaf shapes. The square frame of '团' is softened and contains kawaii facial features: tiny black dot eyes, pink oval blushes, and a small playful tongue inside the character. Flat matte sticker texture, no shadows or gradients. Below the centered graphic, write 'Meituan' in casual bold black handwritten font. Ample white space, healing and playful mood.",
+  "color_application": "彻底移除原App的高饱和美团黄背景，替换为纯白/米白底板。主体'美团'二字使用深草绿(#4A7C29)手绘描边，内部填充浅嫩绿(#A8D060)及白色。腮红使用淡粉色(#FFB6C1)，眼睛及底部文字使用纯黑(#000000)。严禁出现任何黄色背景或高饱和品牌色泄漏。",
+  "stroke_application": "将原图标准黑体字的平滑边缘全部转化为粗细不均的手绘马克笔/蜡笔线条。外轮廓使用较粗的深绿色线条，带有自然的抖动感和不完美感，端点圆润无锐角。'团'字方框需柔化为不规则手绘矩形，内部五官细节使用同色系细线勾勒。",
+  "composition_application": "严格遵循垂直三段式构图：上部为手绘'美团'字形主体（占画布50%-65%），居中偏上放置；中部留白过渡；下部固定预留区域书写黑色手写体'Meituan'。主体四周保留充足白色呼吸空间，禁止触碰画布边缘。",
+  "identity_application": "通过严格保留'美团'二字的字形骨架、笔画走向及左右空间比例来维持核心识别度，而非依赖品牌色。将'美'字笔画叶脉化、'团'字内部五官化作为主题皮肤覆盖于字形容器之上，底部手写英文名作为双重身份保障，确保在白底绿线主题下依然可被瞬间识别为美团。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须呈现'美团'汉字的清晰可读结构，不可退化为纯抽象图形",
+    "必须包含绿叶元素、粉色腮红、豆豆眼/吐舌等萌系母题特征",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线",
+    "底部必须包含黑色手写风格'Meituan'字样",
+    "色彩严格限制在白、绿、粉、黑体系内，禁止黄色背景",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D或光影效果"
+  ],
+  "negative_constraints": [
+    "禁止保留美团黄作为背景或主填充色",
+    "禁止使用标准印刷字体或平滑AI矢量线条",
+    "禁止将汉字结构替换为袋鼠、毛绒球等非文字具象形象",
+    "禁止添加阴影、高光、渐变或立体浮雕效果",
+    "禁止主体撑满画布导致失去留白和底部文字区域",
+    "禁止遗漏底部手写App名称或使用电脑字体",
+    "禁止过度重构导致'美团'二字完全不可辨认",
+    "禁止偏离绿叶小狗/蔬菜萌宠的核心视觉母题"
+  ]
+}

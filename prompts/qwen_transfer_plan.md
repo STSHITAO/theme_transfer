@@ -5,7 +5,7 @@
 1. theme_rules：从主题包参考样例中提取的共用主题规则。
 2. target_identity：目标 App 原始图标的视觉身份锚点。
 3. theme_design_analysis：整包共用主题设计语言，尤其是 color / stroke / composition / background 迁移规律。
-4. target_profile：目标 App 的中性事实描述。
+4. target_profile：目标 App 的名称、类别、商店描述和核心功能等中性事实。
 5. identity_strategy：目标 App 在当前主题下的表达策略。
 
 你的任务：
@@ -23,6 +23,7 @@
 7. 如果 target_profile 包含 brand_identity_cues，这些线索必须进入 preserve 或 must_preserve。
 8. 品牌识别线索只能要求主题化重绘、柔化、低饱和化或材质化，不能要求删除。
 9. structure_preservation_mode、structure_identity_metric_applicable 和 structure_policy_rationale 必须原样继承 identity_strategy，不能在生成后调整。
+10. target_profile 的用途语义只能在 identity_strategy 已根据真实主题配对选择 semantic_recompose 时用于受限视觉引申；preserve_major_structure 时不得用功能物体替换目标主体。
 
 只输出合法 JSON，不要输出 Markdown，不要输出解释文字。
 

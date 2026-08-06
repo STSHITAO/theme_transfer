@@ -1,0 +1,17 @@
+{
+  "package_consistency_score": 10,
+  "style_consistency_score": 10,
+  "target_identity_score": 0,
+  "problematic_apps": [
+    {
+      "app": "crossfire_mobile",
+      "issue": "图标内容完全错误。输出图为支付宝（Alipay）的‘支’字冰雕，而非穿越火线（CrossFire）的游戏图标。虽然材质和风格符合主题，但目标App身份识别失败。",
+      "retry_suggestion": "需重新生成，确保主体图形为穿越火线的标志性元素（如交叉的步枪、CFLogo或角色剪影），同时保持冰块材质、浅蓝色调和内部雪花/气泡细节。"
+    }
+  ],
+  "accepted_apps": [],
+  "retry_apps": [
+    "crossfire_mobile"
+  ],
+  "overall_comment": "整包仅包含一个App，且该App的输出图虽然完美契合‘冰雕/透明材质’的主题风格，但完全弄错了对象（生成了支付宝图标）。属于严重的身份识别错误，必须重试。"
+}

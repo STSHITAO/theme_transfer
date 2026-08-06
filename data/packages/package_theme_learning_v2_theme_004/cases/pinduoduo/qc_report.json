@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 72,
+      "failure_reason": "心形符号过小且位于底部，未能作为核心视觉锚点突出展示；'拼'字颜色过淡且尺寸小，识别度弱；整体构图更像直接复用了主题参考图（王者荣耀）的形态，仅添加了微小道具，未充分体现拼多多原图'心形包裹商品/拼字'的核心语义结构。",
+      "recommendation": "不推荐。虽然风格统一，但品牌核心符号（心形+拼）被过度弱化，导致目标App识别度不足，且构图创新性较低。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 98,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了transfer_plan中的语义重构策略：绿叶小狗母题特征鲜明（叶耳、腮红、吐舌），手持的大心形牌清晰展示了核心汉字'拼'，且使用了柔化的橙红色作为品牌锚点，既符合主题手绘风格，又保留了极高的目标App识别度。底部文字规范，留白舒适，无 artifacts。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\pinduoduo\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

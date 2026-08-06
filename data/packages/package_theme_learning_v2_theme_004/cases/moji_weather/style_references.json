@@ -1,0 +1,10 @@
+{
+  "target_app": "moji_weather",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "kugou",
+    "wechat",
+    "kuaishou"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

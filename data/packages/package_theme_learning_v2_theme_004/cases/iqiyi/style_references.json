@@ -1,0 +1,10 @@
+{
+  "target_app": "iqiyi",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "tencent_news",
+    "kuaishou",
+    "quark"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

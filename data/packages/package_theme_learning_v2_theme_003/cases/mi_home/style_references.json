@@ -1,0 +1,10 @@
+{
+  "target_app": "mi_home",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "jianying",
+    "wechat",
+    "iqiyi_lite"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

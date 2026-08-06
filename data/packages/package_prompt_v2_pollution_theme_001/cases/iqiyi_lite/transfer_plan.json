@@ -1,0 +1,67 @@
+{
+  "app": "iqiyi_lite",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的处理方式，对于以文字为主体的图标，必须严格保留文字的笔画结构和空间排布。将原本平面的白色文字转化为具有厚度的 3D 冰雕字块。虽然原图标包含强烈的红绿品牌色，但根据 theme_rules 需完全替换为冰蓝材质，仅通过光影和体积感来维持识别度。",
+  "preserve": [
+    "两行汉字“爱奇艺”与“极速版”的上下排版结构",
+    "每个汉字的关键笔画走势与可读性轮廓",
+    "右下角闪电符号的几何形态与相对位置",
+    "整体矩形构图的视觉重心"
+  ],
+  "must_preserve": [
+    "完整的“爱奇艺极速版”六字汉字结构，不可替换为英文或拼音",
+    "右下角的闪电符号（代表Lite/极速属性）",
+    "文字与背景的层级关系（文字在上，背景在下）",
+    "上下两行文字的相对大小和间距"
+  ],
+  "recompose_allowed": [
+    "文字的颜色（转为冰蓝/透明）",
+    "背景的渐变色（转为纯白）",
+    "文字的质感（增加磨砂、水珠、裂纹细节）",
+    "闪电符号的材质（转为透明冰晶，去除红色填充）",
+    "汉字的字体边缘（圆角化以适配冰雕质感，但保持骨架不变）"
+  ],
+  "restyle": [
+    "将平面矢量文字转化为具有Z轴厚度的3D实体",
+    "应用半透明冰晶材质，内部嵌入微小气泡或雪花纹理",
+    "表面添加高光反射与次表面散射效果",
+    "边缘进行倒角处理，模拟冰块打磨后的光滑感"
+  ],
+  "decorate": [
+    "在冰块表面添加冷凝水珠",
+    "在文字内部封存细微的冰裂纹或雪花图案",
+    "在底部添加柔和的接触阴影和少量碎冰屑",
+    "闪电符号作为独立的微小冰晶组件嵌入右下角"
+  ],
+  "forbid": [
+    "禁止保留原本的绿色/红色/紫色渐变背景色",
+    "禁止将文字简化为无法辨认的抽象几何块",
+    "禁止去掉右下角的闪电符号",
+    "禁止生成不透明的实心塑料、金属或木质质感",
+    "禁止使用2D扁平化设计风格",
+    "禁止出现复杂的场景道具或非冰主题元素"
+  ],
+  "generation_brief": "3D render of translucent blue ice sculpture forming the Chinese characters '爱奇艺' on top and '极速版' below. The text is extruded with thickness, glossy surface, internal bubbles. A small ice crystal lightning bolt symbol is embedded in the bottom right corner. Pure white background, soft studio lighting, refraction, caustics, C4D style.",
+  "color_application": "强制移除原始的红/绿/紫品牌色。将所有文字主体和闪电符号统一渲染为半透明的冰蓝色（Translucent Cyan/Ice Blue）。利用材质的透明度变化和内部折射来表现层次，而非颜色差异。",
+  "stroke_application": "去除所有2D描边。通过3D模型的倒角（Bevel）和高光反射来定义文字笔画的边缘。确保笔画连接处圆润光滑，符合冰块的物理融化特性，但保持笔画骨架清晰。",
+  "composition_application": "将原本撑满画布的2D平面布局转换为居中的3D实体构图。主体文字占据画布约60-70%面积，留出白色背景呼吸感。采用微俯视角度展示文字的厚度和立体感，底部增加物理投影以确立空间落地感。",
+  "identity_application": "通过严格保留“爱奇艺极速版”六个汉字的笔画结构和右下角闪电符号的位置来维持身份。将文字本身作为3D冰雕主体进行材质置换，确保在去色后仍可通过字形轮廓和闪电符号被准确识别。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节",
+    "必须保留原始图标的核心几何轮廓（文字笔画和闪电形状）",
+    "背景必须保持极简洁白，突出主体的通透感",
+    "光影逻辑必须符合3D渲染规律（顶光或侧光，底部有阴影）"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止使用原始App的品牌背景色",
+    "禁止生成不透明的塑料、金属或玻璃材质（必须是冰/雪质感）",
+    "禁止保留2D扁平化设计风格",
+    "禁止过度添加与“冰/冷”主题无关的复杂场景道具",
+    "禁止改变汉字的基本结构导致不可读"
+  ]
+}

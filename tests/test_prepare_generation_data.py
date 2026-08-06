@@ -99,6 +99,9 @@ class PrepareGenerationDataTests(unittest.TestCase):
             self.assertTrue(resolved_examples[0]["style_ref_path"].endswith("alpha_style_ref.webp"))
             self.assertTrue(resolve_target_inputs("beta", root_dir=root)["target_image"].endswith("beta.jpg"))
 
+            all_resolved_examples = resolve_theme_examples("theme_001", root_dir=root, max_examples=None)
+            self.assertEqual([item["app_name"] for item in all_resolved_examples], ["alpha"])
+
             output_before = file_snapshot(root / "data")
             rerun_summary, rerun_warnings = prepare_generation_data(root)
             self.assertEqual(file_snapshot(root / "data"), output_before)

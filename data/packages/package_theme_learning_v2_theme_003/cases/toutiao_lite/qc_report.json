@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 0,
+      "target_recognition_score": 0,
+      "semantic_fit_score": 0,
+      "identity_constraint_score": 0,
+      "over_recompose_risk": 100,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 15,
+      "failure_reason": "候选图主体文字为“有道”，完全错误，未保留目标App“头条”的任何字形特征，属于严重的身份识别失败。",
+      "recommendation": "不推荐。主体内容完全错误，无法识别为目标App。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 10,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 25,
+      "failure_reason": "候选图主体字形混乱，似乎混合了Lofter的'L'形与有道的'道'字，完全丢失了“头条”二字的结构，且闪电符号位置与形态也不符合原图布局，无法识别。",
+      "recommendation": "不推荐。主体重构过度且错误，丢失了核心品牌文字信息。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\candidates\\candidate_02.png",
+  "warning": "所有候选图均未能正确生成目标App“头条”的文字主体，出现了严重的文字幻觉（生成了“有道”或乱码），无法满足strict级别的身份约束要求。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

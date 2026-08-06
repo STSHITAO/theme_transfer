@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan：保留了'快看!'的核心字形结构和'看'字内的眼睛符号（转化为萌系狗脸），背景替换为纯白，配色符合绿叶主题，底部包含手写英文名。画面干净，识别度极高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 96,
+      "style_match_score": 96,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 96,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 96,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "最推荐。在 candidate_01 的基础上增加了细微的动感线条和叶片装饰，更符合'活泼感'和'叶脉纹理'的 decorate 要求。'看'字内的狗脸表情更生动（吐舌），整体风格与 theme style_ref 的手绘质感契合度略高一点点。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\kuaikan\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

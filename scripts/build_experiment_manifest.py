@@ -15,7 +15,9 @@ INCLUDE_ROOTS = (
     Path("data/evaluations"),
     Path("benchmark/evaluation_set_v1/results"),
 )
-EXCLUDED_PARTS = {"_cache", "__pycache__", ".final_staging_", ".final_backup_"}
+EXCLUDED_PARTS = {"_cache", "__pycache__", "_full_generation_logs", ".final_staging_", ".final_backup_"}
+EXCLUDED_FILENAMES = {"wan_response.json"}
+EXCLUDED_SUFFIXES = {".log", ".zip"}
 
 
 def sha256_file(path: Path) -> str:
@@ -27,6 +29,8 @@ def sha256_file(path: Path) -> str:
 
 
 def is_included(relative_path: Path) -> bool:
+    if relative_path.name in EXCLUDED_FILENAMES or relative_path.suffix.lower() in EXCLUDED_SUFFIXES:
+        return False
     return not any(
         part in EXCLUDED_PARTS or part.startswith(".final_staging_") or part.startswith(".final_backup_")
         for part in relative_path.parts
@@ -62,6 +66,8 @@ def build_manifest(root: Path) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "included_roots": [item.as_posix() for item in INCLUDE_ROOTS],
         "excluded_path_parts": sorted(EXCLUDED_PARTS),
+        "excluded_filenames": sorted(EXCLUDED_FILENAMES),
+        "excluded_suffixes": sorted(EXCLUDED_SUFFIXES),
         "summary": summary,
         "artifacts": artifacts,
     }

@@ -1,0 +1,69 @@
+{
+  "app": "youku",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 tencent_video、xigua_video、weishi 等视频类 App 的转换规律，当原图为简洁的 2D 播放符号或几何 Logo 时，均严格保留了主体的外轮廓、内部镂空及空间比例，仅做单色化和贴纸化处理。优酷原图的折叠箭头本身即为高度抽象且简洁的 2D 几何图形，无复杂 3D 渲染或写实细节，完全符合 preserve_major_structure 的触发条件。保留其几何拓扑关系既能确保极高的品牌识别度，又能完美适配手账贴纸的扁平剪裁语言，无需进行语义重构。",
+  "preserve": [
+    "向右指的折叠箭头/播放键整体外轮廓",
+    "上下两段圆角矩形条带的交汇结构与负空间夹角",
+    "主体整体的倾斜动势与长宽比例",
+    "圆润的胶囊状端点特征"
+  ],
+  "must_preserve": [
+    "折叠播放箭头的完整外轮廓与圆角端点",
+    "上下两臂的交汇角度与内部负空间形态",
+    "主体居中的构图与适度的缩放比例（40%-70%）"
+  ],
+  "recompose_allowed": [
+    "原有的蓝色与橙色渐变填充（强制替换为统一薄荷绿）",
+    "原有的纯白/透明背景（强制替换为米白网格+淡红虚线框底板）",
+    "边缘的锐利度（可微调为更柔和的手工剪裁圆角）"
+  ],
+  "restyle": [
+    "青蓝色与橙色的具体色值、饱和度与明度（统一映射为薄荷绿）",
+    "图形内部的渐变方向、光影质感与立体效果（转为扁平哑光纸质）",
+    "背景底色、圆角矩形容器及边缘阴影（转为网格底板+贴纸投影）",
+    "线条的粗细微调或材质纹理（转为白边+虚线缝线）"
+  ],
+  "decorate": [
+    "白色宽模切包边",
+    "深灰色手绘感虚线缝纫迹",
+    "右下方浅灰色硬边缘投影",
+    "淡红色圆角虚线裁剪框"
+  ],
+  "forbid": [
+    "保留任何蓝色、橙色或渐变色彩",
+    "改变箭头的指向、折叠角度或整体几何比例",
+    "遗漏白色宽描边、深灰虚线缝线、右下硬投影或网格底板中的任一主题指纹",
+    "将简洁的几何 Logo 错误地重构为具象的电视机、胶片或其他无关道具",
+    "主体过大撑满画布或过小失去辨识度",
+    "使用通用三角形播放按钮替代独特的折叠箭头结构",
+    "添加3D光泽、金属质感或霓虹发光效果"
+  ],
+  "generation_brief": "A flat paper cutout sticker icon of Youku's folded play arrow logo placed on a light grey grid notebook paper background. The main subject is the iconic right-pointing folded arrow shape composed of two rounded capsule bars meeting at the right tip, strictly preserving its original geometric contour, tilt angle, and negative space. Filled with uniform mint cyan color, completely removing original blue-orange gradients. Surrounded by a thick white die-cut border with a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting, centered composition occupying 50% of canvas.",
+  "color_application": "彻底剥离优酷原始的蓝橙双色渐变，将上下两段箭头统一填充为低饱和度薄荷绿/青蓝色；原图中的白色高光或分割线转化为白色描边或负空间；完全去除光影渐变和环境色，转为纯色块填充，确保与主题包其他图标色彩绝对一致。",
+  "stroke_application": "将原始Logo的无描边或细边缘转化为双层贴纸轮廓：外层加粗纯白实线包边模拟模切边缘，内层叠加深灰色细虚线模拟缝纫针脚；所有尖锐转角柔化为圆润弧线，线条密度降低，仅保留定义箭头轮廓和上下段交接关系的必要虚线，呈现手工剪裁的柔和感。",
+  "composition_application": "将原始满版或出血布局收缩为居中放置的独立贴纸形态；折叠箭头主体严格置于网格底板中央的红色虚线框安全区内，占画布约50%，四周保留均匀充足的网格留白；主体可带微小倾斜角度以增加手工粘贴的自然感，但视觉重心始终锁定中心，严禁触碰画布边缘。",
+  "identity_application": "在不破坏主题fidelity的前提下，通过严格保留折叠箭头的独特几何拓扑（上下两臂交汇角度、右侧尖端闭合、左侧开口、胶囊状端点）来维持优酷身份；放弃对原始蓝橙配色的执着，转而依赖形状本身的唯一性进行识别；禁止用通用播放三角形或其他视频相关道具替换该特定几何结构。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App蓝橙品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸控制在40%-70%，严禁出血或挤压留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理",
+    "所有几何转角必须圆润化处理，符合纸质贴纸物理特性"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度蓝橙色、渐变色或多色搭配",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止主体过大撑满画布或过小缩在角落，破坏居中贴纸构图平衡",
+    "禁止添加写实材质、金属光泽、霓虹发光、3D渲染等不符合手工剪纸风格的特效",
+    "禁止将折叠箭头重构为通用播放键、电视机、胶片或其他无关道具",
+    "禁止使用实线粗描边替代虚线缝纫效果，或使用尖锐直角破坏手工感",
+    "禁止改变箭头的指向、折叠角度或上下段交汇的拓扑结构"
+  ]
+}

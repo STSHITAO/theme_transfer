@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反身份约束：原图 Keep Logo 的核心识别特征是右侧上方短笔画与下方长笔画之间的断开缺口（断笔结构），transfer_plan 明确要求必须保留此特征且禁止连接。候选图将 K 字母右侧笔画完全连接，变成了普通的连笔 K，丢失了品牌核心几何拓扑，导致无法准确识别为目标 App。",
+      "recommendation": "不推荐。虽然风格化效果很好，但破坏了 Logo 的核心结构特征，违反了 strict 级别的 identity_constraint_level 和 structure_preservation_mode。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反身份约束：与 candidate_01 相同，该候选图错误地连接了 K 字母右侧原本断开的笔画。原图的断笔设计是 Keep 品牌的关键视觉锚点，transfer_plan 中明确列为 'must_preserve' 和 'forbid' 项。此图将其改为普通连笔 K，导致品牌识别度大幅下降。",
+      "recommendation": "不推荐。未能遵守 'preserve_major_structure' 策略，丢失了关键的断笔结构线索。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能保留 Keep Logo 核心的'右侧断笔'结构特征，违反了 transfer_plan 中的 strict 身份约束和 structure_preservation_mode。虽然风格匹配度极高，但作为图标主题化生成，丢失品牌核心几何特征属于重大缺陷。建议在重新生成时强制约束 K 字母右侧笔画的分离状态。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

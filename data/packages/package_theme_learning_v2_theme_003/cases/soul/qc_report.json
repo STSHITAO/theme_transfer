@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：严格保留了 'Soul' 的文字结构和拼写，统一了薄荷绿填充色（去除了原图字母 l 的青色高亮），添加了标准的白色模切包边、深灰虚线缝线、右下硬投影以及网格背景和红色虚线框。画面干净，风格与参考图高度一致。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 85,
+      "composition_score": 95,
+      "artifact_score": 85,
+      "overall_score": 92,
+      "failure_reason": "左侧边缘存在明显的多余伪影（类似参考图 dingtalk 中的蓝色圆圈残留），属于画面瑕疵。",
+      "recommendation": "推荐作为备选。主体生成质量很高，符合所有身份和风格约束，但左侧边缘的伪影影响了画面的纯净度，略逊于 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

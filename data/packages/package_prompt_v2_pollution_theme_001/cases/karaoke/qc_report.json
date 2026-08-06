@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了'材质置换'策略。严格保留了全民K歌鹦鹉+麦克风的原始几何轮廓（Silhouette），包括眼部负空间和麦克风位置。将红紫配色完全替换为通透的冰蓝色系，且通过冰的厚度和内部折射自然区分了主体与麦克风，无描边，质感高级，符合Strict约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 75,
+      "failure_reason": "麦克风部分重构过度。虽然保留了轮廓，但将麦克风处理成了类似'安抚奶嘴'或'玻璃球塞子'的形状，破坏了原Logo中麦克风作为独立深色实体的识别特征，且引入了非主题的深紫色核心，违反了颜色替换策略。",
+      "recommendation": "不推荐。虽然整体风格统一，但对核心元素（麦克风）的理解出现偏差，导致语义模糊，且未严格遵守颜色约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

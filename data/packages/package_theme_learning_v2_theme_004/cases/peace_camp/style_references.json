@@ -1,0 +1,10 @@
+{
+  "target_app": "peace_camp",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "douyin",
+    "wechat_reading",
+    "dianping"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

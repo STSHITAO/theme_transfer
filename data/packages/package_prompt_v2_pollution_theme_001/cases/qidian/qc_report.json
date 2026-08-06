@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了‘材质置换+立体挤压’策略。严格保留了‘起点’二字的原始拓扑结构和笔画特征（如‘起’字的走之旁和‘点’字的四点底），同时成功转换为半透明冰蓝色晶体材质，内部包含气泡和雪花纹理，边缘圆润化处理符合冰块融化感。背景干净，无红色残留，完全符合 transfer_plan 的所有 strict 约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 10,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 91,
+      "failure_reason": "",
+      "recommendation": "风格化效果良好，材质和光影处理符合主题要求。但在字形结构的保留上略逊于 candidate_01，‘起’字的部分笔画连接处显得略微模糊，且整体立体感和体积感稍弱。虽然仍具有高识别度，但作为 strict 约束下的生成结果，不如 candidate_01 严谨。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

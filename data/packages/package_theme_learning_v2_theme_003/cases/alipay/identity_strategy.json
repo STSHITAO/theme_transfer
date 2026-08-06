@@ -1,0 +1,37 @@
+{
+  "app": "alipay",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "汉字'支'的专属连笔字形与底部圆弧结构",
+  "brand_cues_to_preserve": [
+    "汉字'支'的笔画骨架",
+    "顶部横画与竖画的交叉关系",
+    "底部标志性的圆弧连笔造型"
+  ],
+  "semantic_cues_to_preserve": [
+    "支付与金融服务的文字标识语义"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 alipay 的真实 original -> style_ref 规律（preserve_major_structure: true），原图的'支'字几何结构简单清晰，在单色化和贴纸化后依然具有极高的辨识度。根据主题包的 structure_preservation_policy，当 original 主体为简洁的文字 Logo 时，必须严格保留其拓扑结构和空间关系。因此，策略选择保留'支'字的完整轮廓，仅进行颜色映射和材质转换，不进行语义重构或结构替换。",
+  "design_rationale": "支付宝的核心识别点在于'支'字的独特书法造型。在当前手账贴纸主题下，为了保持整包视觉的统一性（薄荷绿、网格底、缝线），必须剥离原有的蓝色品牌和立体光影。由于'支'字本身结构足够简洁且具备强品牌属性，直接将其转化为扁平贴纸是最佳方案，既能完美契合主题的'手工剪纸'隐喻，又能确保用户一眼识别出这是支付宝，无需引入额外的钱包或钱币等通用符号来辅助说明。",
+  "must_preserve": [
+    "'支'字的整体外轮廓",
+    "笔画的粗细比例和连笔走势",
+    "字符在画面中的居中位置"
+  ],
+  "can_recompose": [
+    "底部的'AI'字样（应移除以简化细节）",
+    "原有的蓝色渐变背景（替换为网格底板）",
+    "字体的立体高光和阴影（替换为扁平填充+硬投影）"
+  ],
+  "forbid": [
+    "保留原有的支付宝蓝或任何渐变色",
+    "改变'支'字的笔画结构导致不可识别",
+    "将主体替换为通用的钱包、信用卡或钱币图标",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框"
+  ],
+  "generation_direction": "Generate a flat paper cutout sticker of the Chinese character '支' centered on a light grey grid notebook background. Fill the character with uniform mint cyan color. Add a thick white die-cut border and a dark grey dashed stitching line inside the border. Apply a soft grey hard drop shadow to the bottom right. Surround the sticker with a faint red dashed rectangular frame. Remove the 'AI' text and blue background. Matte paper texture, handcraft scrapbook style, clean vector illustration."
+}

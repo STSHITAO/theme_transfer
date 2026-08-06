@@ -1,0 +1,36 @@
+{
+  "app": "tencent_maps",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "红蓝双色拼接的菱形/指南针轮廓",
+  "brand_cues_to_preserve": [
+    "标志性的对角线分割结构（左上红、右下蓝）",
+    "整体呈45度倾斜的菱形/指针几何形态"
+  ],
+  "semantic_cues_to_preserve": [
+    "指向性（导航语义）",
+    "方位感（通过立体厚度和光影增强）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝和抖音的案例，腾讯地图的图标属于高识别度的单一几何符号。根据 theme_design_analysis 中 'preserve_when' 的规则，应严格保留其外部轮廓和内部红蓝分割比例，仅将原本的扁平色块转化为具有物理厚度的3D冰雕实体。不需要重构语义，只需进行材质置换。",
+  "design_rationale": "腾讯地图的核心识别点在于其独特的红蓝拼色菱形指针。在冰主题下，这个形状非常适合表现为一块切割精致的冰晶。策略上采用强保留模式，将原本平面的红蓝区域转化为冰块内部的折射纹理或微缩悬浮物，主体完全由半透明冰蓝色材质构成，以符合整包统一的视觉语言，同时通过保留几何结构确保用户能一眼认出是地图应用。",
+  "must_preserve": [
+    "菱形/指针的整体外轮廓剪影",
+    "左上与右下的对角分割位置关系",
+    "45度倾斜的角度"
+  ],
+  "can_recompose": [
+    "原始的红蓝固有色（需转化为冰材质下的光影或内部微小装饰）",
+    "表面的光泽质感（改为冰的次表面散射和高光）",
+    "边缘的锐利度（改为圆润的冰角）"
+  ],
+  "forbid": [
+    "禁止保留原本鲜艳的大面积红蓝实心填充（必须通透）",
+    "禁止改变菱形的长宽比或倾斜角度",
+    "禁止添加与导航无关的背景元素（如道路、车辆）",
+    "禁止生成不透明的塑料质感"
+  ],
+  "generation_direction": "Generate a 3D translucent ice sculpture of the Tencent Maps logo (a diamond/rhombus shape tilted at 45 degrees). The object should look like a thick block of carved blue ice. Preserve the diagonal split structure: the top-left half and bottom-right half should be distinguished by internal refraction, tiny trapped bubbles, or subtle frost patterns rather than solid colors. The material is glossy, semi-transparent cyan/blue ice with subsurface scattering. Place it on a clean white background with soft contact shadows and scattered ice chips at the base. No outlines, defined by lighting and volume."
+}

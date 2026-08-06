@@ -45,7 +45,7 @@ def generate_candidates(
         response = {
             "mock": True,
             "message": "MOCK_MODE=true，未调用 Wan API。",
-            "input_images": [*style_ref_paths[:3], target_layout],
+            "input_images": [target_layout, *style_ref_paths[:3]],
         }
         response_path = _save_response(response, case_dir)
         return {
@@ -99,13 +99,30 @@ def _call_wan(prompt, style_ref_paths, target_layout, n, size):
     from dashscope.api_entities.dashscope_response import Message
 
     dashscope.base_http_api_url = base_url
-    message = Message(
-        role="user",
-        content=[
-            {"text": prompt},
-            *[{"image": _image_data_url(path)} for path in [*style_ref_paths, target_layout]],
+    role_lines = [
+        "[INPUT IMAGE ROLE MAP]",
+        (
+            "IMAGE_1 = TARGET_IMAGE — ONLY IDENTITY SOURCE: the output subject, logo, text, symbol, silhouette, "
+            "object category, geometry, and layout must come only from this image."
+        ),
+        *[
+            (
+                f"IMAGE_{index + 1} = STYLE_REFERENCE_{index}: learn only visual treatment; do not copy its subject, "
+                "logo, text, symbol, silhouette, object category, geometry, or layout."
+            )
+            for index, _ in enumerate(style_ref_paths, start=1)
         ],
-    )
+        (
+            "[FINAL IDENTITY CHECK] Generate the TARGET_IMAGE identity with the shared visual treatment. "
+            "Any identity copied from a STYLE_REFERENCE makes the output invalid."
+        ),
+    ]
+    role_prompt = prompt.rstrip() + "\n\n" + "\n".join(role_lines)
+    content = [
+        {"text": role_prompt},
+        *[{"image": _image_data_url(path)} for path in [target_layout, *style_ref_paths]],
+    ]
+    message = Message(role="user", content=content)
     last_error = None
     for _ in range(2):
         try:

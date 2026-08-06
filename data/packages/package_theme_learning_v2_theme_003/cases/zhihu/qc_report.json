@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：准确提取了“知”字并保留了正确的笔画结构，颜色映射为薄荷绿，具备标准的白色宽包边、深灰虚线缝线、右下硬投影以及网格背景和红色虚线框。字形清晰，风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。与 candidate_01 质量相当，同样完美还原了主题风格和目标 App 的身份特征。字形结构准确，贴纸质感逼真，符合所有约束条件。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

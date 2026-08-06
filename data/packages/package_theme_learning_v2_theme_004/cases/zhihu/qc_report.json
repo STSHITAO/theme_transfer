@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 80,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 60,
+      "overall_score": 45,
+      "failure_reason": "底部文字错误生成为'菜狗消消乐'而非必须的'Zhihu'，严重违反身份约束和生成计划中的must_preserve要求，导致无法识别为目标App。",
+      "recommendation": "不推荐，关键品牌名称文字错误，完全丢失目标App身份线索。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 90,
+      "target_recognition_score": 90,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 93,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了semantic_recompose策略，保留了'知'字骨架和底部手写'Zhihu'，成功将'乎'替换为主题萌宠，风格统一且识别度高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\zhihu\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

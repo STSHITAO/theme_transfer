@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 35,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反结构保留约束。Transfer plan 明确要求保留字母 K 的骨架（竖、撇、捺）并转化为小狗形态，且 structure_identity_metric_applicable=true。该候选图完全抛弃了 K 字几何结构，将其替换为一个通用的站立卡通小熊/小狗形象，导致无法通过图形识别出酷狗音乐的核心身份，仅靠底部文字维持识别，属于过度重构。",
+      "recommendation": "不推荐。虽然风格匹配度高且画面干净，但丢失了最关键的 K 字骨架结构，不符合 strict 级别的身份约束要求。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 35,
+      "target_recognition_score": 35,
+      "semantic_fit_score": 55,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 90,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 85,
+      "overall_score": 45,
+      "failure_reason": "1. 结构丢失：与 candidate_01 类似，完全抛弃了 K 字骨架，变成了通用卡通狗，违反 preserve_major_structure 策略。2. 文字错误：底部手写体文字拼写错误，显示为 'Kugio' 而非 'Kugou'，违反 must_preserve 中关于底部文字的要求，且属于明显的生成伪影/乱码问题。",
+      "recommendation": "不推荐。存在严重的结构丢失和文字拼写错误，质量低于 candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\kugou\\candidates\\candidate_01.png",
+  "warning": "两张候选图均未能遵守 transfer_plan 中关于'保留字母 K 骨架'的核心结构约束（structure_identity_metric_applicable=true），均将 K 字完全重构为通用卡通形象，导致 target_recognition_score 和 identity_constraint_score 较低。其中 candidate_02 还存在文字拼写错误。相对而言，candidate_01 画面更干净且文字正确，故作为次优选择，但建议重新生成以保留 K 字结构。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

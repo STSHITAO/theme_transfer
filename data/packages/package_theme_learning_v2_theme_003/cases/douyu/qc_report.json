@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：严格保留了斗鱼鲨鱼咬火箭的核心轮廓、大眼睛和锯齿嘴特征；色彩准确映射为薄荷青单色；双层贴纸轮廓（白边+深灰虚线缝线）、右下硬投影、网格背景及淡红虚线框等细节均精准还原，与主题包风格高度统一，且无任何 artifacts。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 35,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重丢失核心识别元素。原图中'鲨鱼咬住火箭'的组合形态被破坏，火箭元素完全消失，导致无法识别为斗鱼 App，违反了 strict 身份约束和 must_preserve 规则。",
+      "recommendation": "不推荐。虽然风格化效果尚可，但丢失了火箭这一关键品牌识别线索，导致目标 App 不可识别，属于过度重构。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

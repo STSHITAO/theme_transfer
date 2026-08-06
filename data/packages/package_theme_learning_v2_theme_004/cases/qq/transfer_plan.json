@@ -1,0 +1,72 @@
+{
+  "app": "qq",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 QQ 的 transformation pattern 明确显示，原图与 style_ref 的主体外轮廓（头部+身体+两侧翅膀/手臂+底部脚）几乎完全重合，围巾位置、眼睛布局、肚皮白色区域均保持原有空间映射关系。这属于典型的‘结构保留下的风格与物种替换’。因此，必须保留企鹅/小狗的整体几何拓扑和站姿，仅将材质从 3D 转为手绘，物种从企鹅微调为带叶耳的小狗，并严格保留红围巾这一强身份锚点。",
+  "preserve": [
+    "企鹅直立站姿的整体几何骨架与正负形比例",
+    "白色肚皮区域的轮廓与位置",
+    "标志性红色围巾的存在、位置及基本形态",
+    "一只眼睁一只眼眨的面部表情特征",
+    "圆润的头部与两侧下垂小翅膀/手臂的空间布局"
+  ],
+  "must_preserve": [
+    "红色围巾的形状与红色填充（作为核心身份锚点）",
+    "眨眼（左眼圆睁右眼弯曲或反之）的表情特征",
+    "白色肚皮的轮廓区域",
+    "直立站姿及身体四肢的空间拓扑关系"
+  ],
+  "recompose_allowed": [
+    "将企鹅黑色羽毛质感转化为深绿色手绘线条或浅绿填充",
+    "将头部耳朵重构为绿色菜叶/植物叶片形状",
+    "将黄色嘴巴和脚掌简化为手绘色块或融入低饱和暖色",
+    "去除所有3D光影高光，转为扁平哑光纸面质感",
+    "背景从灰白渐变替换为纯白圆角底板"
+  ],
+  "restyle": [
+    "整体线条转为粗细不均的手绘马克笔/蜡笔抖动粗描边",
+    "色彩填充转为平涂嫩绿/草绿加白色肚皮",
+    "添加粉色椭圆腮红与呆萌五官细节",
+    "底部增加黑色手写体 'QQ' 文字"
+  ],
+  "decorate": [
+    "脸颊两侧添加淡粉色 (#FFB6C1) 椭圆腮红",
+    "头顶或耳部融合叶脉纹理与绿叶装饰",
+    "眼部或嘴部可微量添加天蓝色汗滴/口水点缀以增加生动感"
+  ],
+  "forbid": [
+    "移除红色围巾或将其改为非红色系",
+    "丢失眨眼表情或改为双眼对称睁开",
+    "改变主体的直立站姿或破坏身体比例",
+    "使用平滑矢量线、锐利边缘或保留3D立体渲染效果",
+    "主体过大撑满画布导致遗漏底部手写文字区域",
+    "遗漏绿叶耳朵或粉色腮红等主题母题特征",
+    "背景使用彩色、渐变或添加多余纹理阴影"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. Center: a standing green vegetable-dog character strictly retaining the QQ penguin's silhouette, white belly area, and iconic red scarf. Expression must be winking (one eye open, one closed). Ears are green leaves with vein texture. Pink oval blushes on cheeks. Thick wobbly dark green marker outlines, flat matte fill, no 3D or gradients. Bottom center: handwritten black text 'QQ'. Sticker art style, ample white space, healing mood.",
+  "color_application": "主体从黑白配色映射为深绿描边+浅绿填充+白肚皮；仅保留红色围巾作为极小面积功能语义锚点原色；黄色嘴脚柔化为低饱和暖黄或手绘色块；背景强制纯白；点缀色仅限淡粉腮红与黑色文字。",
+  "stroke_application": "将原图3D光滑边缘与无描边状态全部转化为深绿色手绘马克笔抖动粗轮廓；线条端点圆润、边缘不规则；内部细节用同色系细线勾勒叶脉与五官；严禁平滑矢量线与机械几何曲线。",
+  "composition_application": "主体严格居中偏上，占比控制在60%左右，保留充足四周留白；底部固定预留15%-20%区域放置黑色手写体'QQ'；维持上图下文的三段式贴纸版式；禁止主体触碰画布边缘。",
+  "identity_application": "通过严格保留企鹅直立站姿轮廓、白肚皮正负形、红围巾位置及眨眼表情四重锚点维持识别度；物种转换为绿叶小狗时仅做皮肤覆盖与局部拟人化，不改变核心几何拓扑；底部手写文字作为兜底识别保障。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须包含绿叶耳朵、粉色腮红、豆豆眼/眨眼等萌系母题特征",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量或标准几何",
+    "底部必须包含黑色手写风格 'QQ' 名称",
+    "红色围巾必须保留且为红色，其余色彩限制在白/绿/粉/黑体系内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D、拟物或光影",
+    "主体占比50%-65%，保证留白与底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和品牌色作为大面积背景或主填充（红围巾除外）",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止主体撑满画布导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止过度重构导致企鹅轮廓、红围巾或眨眼表情消失",
+    "禁止将红围巾改为绿色或其他颜色"
+  ]
+}

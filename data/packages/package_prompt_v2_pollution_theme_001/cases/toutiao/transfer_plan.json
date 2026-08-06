@@ -1,0 +1,62 @@
+{
+  "app": "toutiao",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换模式，今日头条的核心识别完全依赖于“头条”这两个汉字的独特设计。原始图标为红底白字，主题化策略应移除红色背景，将白色文字实体化为厚重的冰雕字体。必须严格保留字体的外部轮廓（Silhouette）和内部笔画结构，仅做材质置换和3D拉伸，不可重构字形。",
+  "preserve": [
+    "汉字“头条”的完整字形骨架与笔画结构",
+    "“头”字左侧三横一撇的结构特征",
+    "“条”字上部折文旁与下部木字底的组合比例",
+    "文字在画布中的居中构图布局",
+    "文字整体的视觉动势与倾斜角度"
+  ],
+  "must_preserve": [
+    "“头条”二字的准确笔画形状",
+    "字体的几何切角与笔画粗细比例",
+    "文字作为单一主体的居中布局"
+  ],
+  "recompose_allowed": [
+    "移除原始的红色矩形背景",
+    "将平面文字转化为具有Z轴厚度的3D实体",
+    "将锐利的矢量边缘转化为圆润的冰质倒角",
+    "将不透明白色填充转化为半透明冰晶材质"
+  ],
+  "restyle": [
+    "应用半透明冰蓝色调（Translucent Cyan/Ice Blue）",
+    "添加表面高光、折射和次表面散射效果",
+    "嵌入内部雪花或气泡纹理",
+    "添加表面冷凝水珠细节"
+  ],
+  "decorate": [
+    "底部添加柔和的接触阴影和少量碎冰/水渍",
+    "边缘添加明亮的轮廓光（Rim Light）以定义形状"
+  ],
+  "forbid": [
+    "禁止保留任何红色背景或红色元素",
+    "禁止改变“头条”二字的字体设计或简化笔画",
+    "禁止生成不透明的塑料、金属或玻璃质感",
+    "禁止添加与文字无关的复杂装饰道具（如报纸、眼睛等）",
+    "禁止使用深色或彩色背景"
+  ],
+  "generation_brief": "3D render of Chinese characters '头条' made of translucent blue ice. Thick extruded font, glossy surface with water droplets, internal snowflake textures. Clean white background, soft ground shadow, ice chips at base. No red color. Photorealistic C4D style.",
+  "color_application": "完全移除品牌红。主体文字采用主题统一的半透明冰蓝色（Translucent Cyan/Pale Ice Blue），通过材质的透明度和内部折射表现层次，高光部分为纯白，阴影部分为深蓝。",
+  "stroke_application": "去除所有2D描边。通过3D模型的圆滑倒角（Bevel）和边缘高光（Rim Light）来定义“头条”二字的轮廓，模拟冰块打磨后的光滑边缘。",
+  "composition_application": "居中构图。将原本撑满画面的文字调整为占据画布60-70%的3D实体，留出白色背景的呼吸空间。采用微俯视视角展现文字的厚度和体积感。",
+  "identity_application": "通过严格保持“头条”二字的原始字形结构和笔画比例，将其从2D平面图形直接拉伸为3D冰雕实体。身份识别依赖于字形的准确性，而非颜色。",
+  "fidelity_constraints": [
+    "必须严格使用半透明冰蓝色材质，不可出现其他主色调",
+    "必须包含表面水珠或内部雪花/气泡等冰质感细节",
+    "必须保留原始图标的核心几何轮廓（汉字字形）",
+    "背景必须保持极简洁白，突出主体的通透感",
+    "光影逻辑必须符合3D渲染规律"
+  ],
+  "negative_constraints": [
+    "禁止漂移到新主题或破坏身份的约束",
+    "禁止使用原始App的品牌背景色（红色）",
+    "禁止生成不透明的塑料、金属或玻璃材质",
+    "禁止保留2D扁平化设计风格",
+    "禁止过度添加与“冰/冷”主题无关的复杂场景道具"
+  ]
+}

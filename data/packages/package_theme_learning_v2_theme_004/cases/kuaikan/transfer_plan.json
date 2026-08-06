@@ -1,0 +1,67 @@
+{
+  "app": "kuaikan",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 alipay（保留'支'字骨架）、zhihu（保留'知'字结构）、iqiyi_lite（保留文字排列）的规律，当原图标核心为高辨识度文字 Logo 时，应保留文字的空间布局和笔画走向。快看漫画的原图主体是极具张力的'快看!'二字，其中'看'字的眼睛设计是核心品牌资产。因此，策略上选择保留这两个汉字的主体几何结构和相对位置，仅将笔画转化为手绘绿叶质感，并将'看'字中的眼睛萌化为菜狗五官，符合 theme_design_analysis 中'强几何/文字符号 App 保留轮廓换肤'的政策。",
+  "preserve": [
+    "汉字'快'和'看'的基本字形结构与左右/上下布局",
+    "'看'字内部的眼睛/镜头符号特征及其在字内的负形位置",
+    "右侧感叹号'!'的存在与相对比例",
+    "文字作为视觉主体的中心地位与整体排版骨架"
+  ],
+  "must_preserve": [
+    "'快看!'四个字符及感叹号的完整字形结构与相对位置",
+    "'看'字下半部分（目字旁区域）内嵌的单眼小怪物图形及其正负形关系",
+    "文字主体的居中偏上排版骨架"
+  ],
+  "recompose_allowed": [
+    "原图底部的白色气泡和黑色碎片装饰需移除或简化为少量手绘点缀",
+    "字体的边缘从锐利矢量变为抖动的手绘粗线条",
+    "'看'字中的眼睛可具体化为带有腮红和吐舌的狗脸特征",
+    "笔画末端可延伸出小叶片以呼应主题",
+    "原图的亮黄色背景必须替换为纯白/米白底板"
+  ],
+  "restyle": [
+    "字体填充色从高饱和黑/黄转为浅嫩绿/白",
+    "字体描边转为深草绿手绘马克笔质感",
+    "眼睛符号转为豆豆眼+粉腮红+吐舌的萌系表情",
+    "底部新增黑色手写体 'Kuaikan'"
+  ],
+  "decorate": [
+    "笔画转折处添加微小的叶脉纹理",
+    "感叹号旁可添加极小的汗滴或动感线增强活泼感"
+  ],
+  "forbid": [
+    "禁止保留原图的大面积亮黄色背景",
+    "禁止将汉字完全替换为无关的全身小狗插画导致无法读出'快看'二字",
+    "禁止使用平滑的标准电脑字体",
+    "禁止遗漏底部的英文手写名称 'Kuaikan'",
+    "禁止添加 3D 光影、渐变或立体浮雕效果",
+    "禁止移除或替换'快看!'文字结构的纯图形设计"
+  ],
+  "generation_brief": "Pure white rounded square background. Center: hand-drawn dark green marker Chinese characters '快看!' with wobbly organic strokes and light green fill. The '看' character's lower 'eye' component is transformed into a cute veggie-dog face with pink blush, dot eyes, and tongue, retaining original negative space structure. Exclamation mark preserved on right. Bottom: black handwritten 'Kuaikan'. Flat sticker style, no shadows, ample whitespace.",
+  "color_application": "彻底剥离原高明度黄色背景，替换为纯白/米白底板；文字主体填充浅嫩绿(#A8D060)，描边使用深草绿(#4A7C29)；'看'字内眼睛/狗脸保留粉色腮红(#FFB6C1)作为唯一暖色点缀；底部文字使用纯黑(#000000)。",
+  "stroke_application": "将原锐利矢量字重绘为粗细不均的手绘马克笔线条，边缘带自然抖动与圆润断笔；外轮廓用深绿粗线，内部叶脉/五官用同色细线；消除所有机械几何尖角。",
+  "composition_application": "严格遵循三段式构图：'快看!'文字主体居中偏上占画布60%，四周留白呼吸；底部15%-20%区域放置手写英文名；移除原底部杂乱装饰，保持贴纸式稳定布局。",
+  "identity_application": "通过保留'快看!'字形骨架与'看'字内眼睛符号的拓扑位置维持核心识别；将眼睛符号主题化为萌系狗脸而非删除；底部手写'Kuaikan'作为双重身份兜底；禁止用通用卡通形象替代文字主体。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止黄色或其他彩色背景",
+    "主体必须融入绿叶小狗母题：'看'字眼睛转化为带腮红/吐舌的萌脸，笔画带叶片",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量字体",
+    "底部必须包含黑色手写风格 'Kuaikan'，禁止标准印刷体",
+    "色彩严格限制在白/绿/粉/黑体系，禁止原品牌黄/黑高饱和配色泄漏",
+    "主体占比50%-65%，保证充足留白与底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App黄色背景或高饱和品牌色作为主填充",
+    "禁止使用平滑矢量线、锐利边缘或标准电脑字体",
+    "禁止添加阴影、高光、渐变或3D渲染效果",
+    "禁止让文字撑满画布导致失去留白和底部文字区",
+    "禁止将'快看!'文字完全替换为无关卡通狗或抽象图形",
+    "禁止遗漏底部手写App名称或使用非手写字体",
+    "禁止过度重构导致'看'字内眼睛符号消失或变形",
+    "禁止添加与原身份无关的营销道具或复杂背景纹理"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "严重违反结构保留策略。transfer_plan 明确要求保留'双气泡重叠的经典轮廓'和'一大一小两个气泡的重叠布局'，且 structure_identity_metric_applicable=true。候选图将两个气泡融合为一个连通的单一大气泡形状，丢失了微信 Logo 最核心的'重叠'拓扑结构和层级关系，导致品牌识别度大幅下降，属于过度重构。",
+      "recommendation": "不推荐。虽然风格贴纸化效果很好，但核心 Logo 结构错误，无法通过 strict 级别的身份约束检查。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：保留了左大右小双气泡重叠结构、四眼圆点布局及尾巴朝向；颜色正确替换为薄荷绿；具备白色宽包边、深灰虚线缝线、右下硬投影及网格红框背景。风格统一且品牌识别度极高。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

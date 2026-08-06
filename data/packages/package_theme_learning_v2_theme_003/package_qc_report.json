@@ -1,0 +1,72 @@
+{
+  "package_consistency_score": 95,
+  "style_consistency_score": 96,
+  "target_identity_score": 88,
+  "problematic_apps": [
+    {
+      "app": "moji_weather",
+      "issue": "图标主体为一个带线条的云朵，虽然风格统一，但作为墨迹天气的标识辨识度较弱，容易被误认为普通云盘或天气组件，缺乏品牌独特性。",
+      "retry_suggestion": "建议强化墨迹天气的品牌特征，例如在云朵基础上增加更明显的温度计、雨滴或品牌特有的云朵造型细节。"
+    },
+    {
+      "app": "toutiao_lite",
+      "issue": "图标使用了类似'道'字的变形设计，对于'头条极速版'的身份表达不够直观，用户可能无法第一时间识别出这是头条系应用。",
+      "retry_suggestion": "建议保留头条经典的红色/蓝色 logo 轮廓或'头条'文字特征，仅做风格化处理，确保品牌身份清晰。"
+    },
+    {
+      "app": "generic_app_row2_col3",
+      "issue": "Contact sheet 中第二行第三列的图标为一个铲子形状，目标 App 身份不明确，可能是游戏或工具类应用，但缺乏足够的视觉线索让用户识别具体是哪个 App。",
+      "retry_suggestion": "需确认该位置对应的具体 App，若为知名应用（如某款烹饪或沙盒游戏），应提取其更具代表性的核心元素。"
+    },
+    {
+      "app": "generic_app_row3_col4",
+      "issue": "Contact sheet 中第三行第四列显示为'LD'字母，目标 App 身份不清楚，可能是'_LD_'相关的应用，但通用性太强，缺乏辨识度。",
+      "retry_suggestion": "需确认该 App 的具体名称，若是'乱斗'或特定品牌，应使用更完整的 Logo 或中文名称以确保识别。"
+    }
+  ],
+  "accepted_apps": [
+    "alipay",
+    "clash_of_clans",
+    "douyin",
+    "iqiyi",
+    "kuaikan",
+    "meituan",
+    "qq",
+    "soul",
+    "wps_office",
+    "zhihu",
+    "hello_bike",
+    "mi_home",
+    "tencent_maps",
+    "tieba",
+    "bilibili",
+    "dewu",
+    "dingtalk",
+    "douyu",
+    "eleme",
+    "crossfire",
+    "cut_same_style",
+    "keep",
+    "kugou",
+    "lofter",
+    "minecraft",
+    "onmyoji",
+    "peacekeeper_elite",
+    "pinduoduo",
+    "email",
+    "qq_reader",
+    "telegram",
+    "mango_tv",
+    "maoyan",
+    "wechat",
+    "wechat_work",
+    "xiaohongshu",
+    "ximalaya",
+    "youku"
+  ],
+  "retry_apps": [
+    "moji_weather",
+    "toutiao_lite"
+  ],
+  "overall_comment": "整包图标的主题一致性极高，完美复刻了参考图的'剪纸/贴纸'风格，包括统一的薄荷绿主色调、白色描边、虚线缝合效果、投影以及背景的网格纸纹理。绝大多数 App 的身份识别度良好，核心 Logo 特征保留完整。主要问题在于少数几个 App（如墨迹天气、头条极速版）在风格化过程中牺牲了过多的品牌特征，导致辨识度下降；另有 contact_sheet 中个别图标（如铲子、LD）因缺乏上下文或设计过于抽象，难以确认具体 App 身份。建议对辨识度较低的图标进行微调，增强品牌核心元素的表达。"
+}

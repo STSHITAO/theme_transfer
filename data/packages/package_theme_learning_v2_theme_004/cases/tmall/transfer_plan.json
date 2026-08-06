@@ -1,0 +1,65 @@
+{
+  "app": "tmall",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 jd（保留Joy狗头轮廓）、meituan_waimai（保留袋鼠头轮廓）和 bilibili（保留电视外框）的规律，当原图具有单一明确的高辨识度吉祥物头部或几何外框时，应严格保留主体几何的大部分结构。天猫原图下半部分的黑色猫头剪影具有极强的品牌识别度且轮廓简单明确，符合 preserve_when 条件。因此保留猫头的外轮廓、双耳位置和五官空间关系，仅进行手绘化、材质替换（黑底变绿线/白底）和主题特征叠加（耳朵变菜叶、增加腮红），而非像 zhihu 或 xiaohongshu 那样进行彻底的语义重构。",
+  "preserve": [
+    "猫头的基本外轮廓（包括两只尖耳朵的位置和形状）",
+    "面部五官的相对位置（双眼分居两侧，鼻子居中下方）",
+    "电商购物属性的视觉暗示"
+  ],
+  "must_preserve": [
+    "猫头顶部双耳的几何轮廓与朝向",
+    "面部下方两个大圆眼加中间倒三角鼻的经典排布空间关系",
+    "底部必须包含手写体 'Tmall' 或 'Tianmao'"
+  ],
+  "recompose_allowed": [
+    "原图的红色背景必须替换为纯白/米白底板",
+    "原图上方的白色“天猫”标准汉字可移除或极度简化，由底部手写英文替代",
+    "猫耳内部可填充叶脉纹理或直接变形为白菜叶形状",
+    "原本纯黑的面部填充可改为白色或浅嫩绿，仅保留深绿/黑色粗描边",
+    "眼睛可从写实椭圆简化为豆豆眼，增加粉色腮红和吐舌/微笑表情"
+  ],
+  "restyle": [
+    "将黑色猫头剪影转化为深绿手绘粗轮廓+浅绿/白填充",
+    "将尖锐的猫耳边缘柔化为圆润的手绘叶片质感",
+    "将标准印刷体文字替换为黑色手写涂鸦字体",
+    "添加淡粉色椭圆腮红与呆萌面部表情"
+  ],
+  "decorate": [
+    "猫耳处融合叶脉纹理或白菜叶形态",
+    "面部增加粉色腮红与微小的高光点",
+    "嘴部添加吐舌头或微笑线条以增强萌系感"
+  ],
+  "forbid": [
+    "禁止保留大面积红色背景或高饱和品牌色",
+    "禁止使用平滑矢量线绘制猫头，必须有手绘抖动感",
+    "禁止遗漏底部的黑色手写App名称",
+    "禁止改变猫头的基本拓扑结构（如变成全身猫或完全抽象符号）",
+    "禁止添加3D光影、渐变效果或复杂背景纹理",
+    "禁止将猫头替换为通用的卡通狗或其他动物"
+  ],
+  "generation_brief": "White rounded square background. Centered hand-drawn doodle of a cat head silhouette with thick wobbly dark green outlines. Ears shaped like green leaves with veins. Face has light green/white fill, tiny black dot eyes, pink oval blushes, and a small smile/tongue. Preserve the original Tmall cat head geometry and eye/nose layout. Bottom center: bold black handwritten text 'Tmall'. Flat sticker style, no red background, no 3D.",
+  "color_application": "彻底移除天猫红背景，替换为纯白/米白底板；猫头主体从纯黑填充转为浅嫩绿/白色填充+深草绿(#4A7C29)手绘粗描边；点缀淡粉色(#FFB6C1)腮红；底部文字使用纯黑(#000000)手写体。",
+  "stroke_application": "将原图锐利的猫头剪影边缘转化为粗细不均、带有自然抖动感的深绿马克笔线条；猫耳轮廓柔化为有机的叶片曲线；五官线条简化为圆润的涂鸦笔触，消除所有机械几何感。",
+  "composition_application": "遵循垂直三段式构图：猫头主体居中偏上，占据画布50%-65%面积，四周保留充足白色呼吸空间；底部固定区域放置黑色手写'Tmall'文字，形成稳定的上图下文贴纸版式。",
+  "identity_application": "通过严格保留猫头外轮廓、双耳位置及眼鼻空间布局维持核心识别；将猫耳同构替换为绿叶母题，面部叠加萌系五官实现主题融合；移除上方标准汉字，依靠底部手写文字与保留的猫头几何双重锚点确保身份不丢失。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止任何红色背景残留",
+    "猫头轮廓必须保持原图拓扑结构，仅允许手绘化柔化",
+    "必须包含绿叶耳朵、粉腮红、豆豆眼等主题三要素",
+    "线条必须为手绘抖动粗描边，禁止平滑矢量线",
+    "底部必须有黑色手写体'Tmall'，禁止标准印刷字体",
+    "整体必须为2D扁平哑光贴纸质感，禁止3D或光影"
+  ],
+  "negative_constraints": [
+    "禁止漂移到通用卡通猫或狗的形象，必须锚定天猫猫头几何",
+    "禁止恢复高饱和红色背景或原始品牌配色",
+    "禁止添加阴影、高光、渐变或立体浮雕效果",
+    "禁止让主体撑满画布或触碰边缘，破坏留白规则",
+    "禁止遗漏底部手写文字或使用电脑字体",
+    "禁止过度重构导致猫头轮廓、眼鼻布局等核心识别线索消失"
+  ]
+}

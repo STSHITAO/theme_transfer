@@ -1,0 +1,65 @@
+{
+  "app": "zhihu",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 zhihu 的真实 original -> style_ref 规律显示，原图的双汉字紧密排版结构被打破，'乎'字被完全替换为绿色萌宠形象，仅保留'知'字作为识别锚点。当前目标原图为纯文字排版，缺乏单一明确的几何轮廓或吉祥物主体，符合 theme_design_analysis 中 'recompose_when' 的触发条件（纯文字排版/缺乏单一明确轮廓）。因此，放弃原始几何结构的严格保留，转而提取'知'字骨架并结合母题角色进行语义重构，以符合主题包的统一视觉语言。",
+  "preserve": [
+    "汉字'知'的基本笔画结构和空间位置",
+    "知识问答社区的语义联想"
+  ],
+  "must_preserve": [
+    "汉字'知'的手绘字形骨架",
+    "底部黑色手写体'Zhihu'英文名称",
+    "主题核心母题特征：绿叶耳朵/装饰、粉色圆形腮红、豆豆眼、呆萌表情",
+    "纯白/米白圆角矩形底板与大面积留白"
+  ],
+  "recompose_allowed": [
+    "汉字'乎'可被替换为绿色萌宠形象或简化为装饰性笔触",
+    "文字与图形的组合方式可从水平排列调整为上下或嵌套构图",
+    "原图的标准印刷字体必须转化为手绘抖动粗线条"
+  ],
+  "restyle": [
+    "原图的高饱和度蓝色渐变背景必须完全移除并替换为纯白/米白底色",
+    "文字边缘转化为深绿色手绘马克笔质感描边",
+    "整体材质转为扁平哑光纸质贴纸触感"
+  ],
+  "decorate": [
+    "在'知'字或萌宠周围添加极简的叶脉纹理或手绘小点缀",
+    "萌宠面部增加吐舌头或汗滴等呆萌表情细节"
+  ],
+  "forbid": [
+    "禁止保留原图的蓝色品牌色背景或大面积蓝色填充",
+    "禁止使用平滑矢量线、锐利边缘或标准电脑字体",
+    "禁止遗漏底部手写App名称'Zhihu'",
+    "禁止主体撑满画布，必须保留50%-65%的主体占比和底部文字空间",
+    "禁止缺失绿叶、粉腮红等主题核心母题特征",
+    "禁止添加任何3D光影、渐变或立体浮雕效果",
+    "禁止将'知'字替换为纯图形或通用问号符号"
+  ],
+  "generation_brief": "Pure white rounded square background. Center-top composition featuring a hand-drawn dark green marker sketch of the Chinese character '知' combined with a cute green vegetable-dog mascot replacing the '乎' position. The mascot has leaf ears, pink oval blushes, dot eyes, and a playful tongue. Thick wobbly outlines, flat matte fill, paper sticker texture. Bottom area reserved for black handwritten text 'Zhihu'. Ample white space, healing doodle style, no shadows, no gradients, no blue brand color.",
+  "color_application": "彻底剥离知乎品牌蓝背景，强制映射为纯白/米白底板；主体'知'字与萌宠统一使用深草绿(#4A7C29)描边与浅嫩绿(#A8D060)填充；腮红使用淡粉(#FFB6C1)，底部文字与眼睛使用纯黑(#000000)。",
+  "stroke_application": "将原标准印刷字体转化为粗细不均的手绘马克笔线条，边缘带自然抖动与断笔；外轮廓使用较粗深绿线，内部叶脉与五官使用细线；所有笔画端点圆润，消除锐利折角与矢量平滑感。",
+  "composition_application": "采用垂直三段式构图：上部50%-65%区域居中放置'知'字与萌宠组合体，中部留白过渡，下部15%-20%区域放置手写'Zhihu'；主体严格居中偏上，四周保留充足呼吸空间，形成稳定的贴纸版式。",
+  "identity_application": "通过保留'知'字核心骨架作为第一识别锚点，结合底部手写'Zhihu'作为兜底；'乎'字语义重构为萌宠形象以适配主题母题；在不破坏绿色手绘涂鸦风格的前提下，利用文字结构与角色组合维持知乎的品牌联想。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入绿叶小狗/蔬菜萌宠母题特征",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线",
+    "底部必须包含黑色手写风格'Zhihu'名称",
+    "色彩严格限制在白、绿、粉、黑体系内",
+    "整体必须是2D扁平手绘涂鸦质感",
+    "主体占比必须在50%-65%之间"
+  ],
+  "negative_constraints": [
+    "禁止保留知乎蓝作为大面积背景或主填充",
+    "禁止使用标准印刷字体或完美几何线条",
+    "禁止添加阴影、高光、渐变或3D效果",
+    "禁止主体撑满画布导致失去留白和底部文字区",
+    "禁止偏离绿叶小狗核心母题",
+    "禁止遗漏底部手写名称或使用电脑字体",
+    "禁止过度重构导致'知'字骨架完全消失",
+    "禁止使用与原App无关的随机卡通形象"
+  ]
+}

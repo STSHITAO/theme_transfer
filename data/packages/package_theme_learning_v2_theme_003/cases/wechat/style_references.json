@@ -1,0 +1,10 @@
+{
+  "target_app": "wechat",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "tencent_news",
+    "douyin_huoshan",
+    "tencent_meeting"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

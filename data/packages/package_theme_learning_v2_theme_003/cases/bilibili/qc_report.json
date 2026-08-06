@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 98,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了 transfer_plan 的所有严格约束：保留了小电视的几何轮廓、天线和支脚；颜色准确转换为薄荷绿；内部文字正确替换为颜文字 (-w-)；贴纸结构（白边、虚线缝线、硬投影）和背景（网格、红虚线框）均完全符合规范，且画面干净清晰。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 80,
+      "target_recognition_score": 80,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 75,
+      "over_recompose_risk": 25,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 90,
+      "overall_score": 82,
+      "failure_reason": "内部颜文字表情绘制变形，看起来像 '-3' 或乱码，不符合 plan 中指定的 '(-w-)' 语义；小电视轮廓过于圆润松散，丢失了部分几何结构的严谨性；右侧边缘有轻微多余伪影。",
+      "recommendation": "不推荐。虽然风格接近，但核心识别元素（颜文字表情）绘制失败，且轮廓结构不如 candidate_01 准确，违反了 strict 身份约束。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

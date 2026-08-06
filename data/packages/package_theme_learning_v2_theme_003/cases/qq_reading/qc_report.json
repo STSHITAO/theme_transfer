@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 35,
+      "over_recompose_risk": 65,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 55,
+      "failure_reason": "企鹅形象过度简化，丢失了QQ企鹅核心的生物形态特征（如喙部、眨眼表情），看起来更像通用的圆头生物或面包，难以识别为QQ阅读。",
+      "recommendation": "不推荐，主体识别度太低，无法有效传达App品牌身份。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 98,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了语义重组策略：保留了企鹅眨眼和喙部的关键IP特征，清晰展示了书本形态，风格完全符合薄荷绿剪纸贴纸主题，构图与细节处理极佳。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

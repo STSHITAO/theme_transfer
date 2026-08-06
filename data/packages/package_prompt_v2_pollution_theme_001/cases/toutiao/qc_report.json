@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美执行了生成计划。字形结构（“头条”二字）被严格保留，仅进行了材质置换（冰雕）和3D拉伸。完全符合“logo_preserve”策略，且无任何红色背景残留，是最佳候选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 75,
+      "target_recognition_score": 75,
+      "semantic_fit_score": 80,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 40,
+      "background_score": 100,
+      "composition_score": 85,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "违反了structure_preservation_mode: preserve_major_structure约束。虽然风格正确，但字体发生了严重的艺术化变形（如“头”字的撇画变成了类似铲子的形状，“条”字底部笔画断裂），导致识别度下降，不符合strict级别的 identity constraint。",
+      "recommendation": "不推荐。虽然视觉效果尚可，但作为App图标，其字形重构过度，丢失了原始Logo的关键几何特征，可能导致用户无法第一时间识别应用。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

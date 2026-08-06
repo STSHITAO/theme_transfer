@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 35,
+      "failure_reason": "严重结构丢失与身份混淆。候选图直接复用了主题参考图中 Ctrip 的 'C' 形海豚/菜狗轮廓，完全丢弃了优酷原图核心的向右开口圆角播放箭头（回旋镖）几何结构。虽然底部文字正确，但主体图形无法识别为优酷，违背了 strict 约束下必须保留主要几何拓扑的要求。",
+      "recommendation": "不推荐。主体几何完全错误，变成了 Ctrip 的变体而非优酷的主题化图标。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 10,
+      "target_recognition_score": 10,
+      "semantic_fit_score": 20,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 35,
+      "failure_reason": "严重结构丢失与身份混淆。与 candidate_01 相同，该图使用了 Ctrip 的 'C' 形轮廓而非优酷的播放箭头轮廓。尽管风格符合主题（手绘、绿色、菜狗元素），但核心品牌识别线索（播放箭头形状）完全缺失，导致无法识别目标 App。",
+      "recommendation": "不推荐。主体几何完全错误，未能保留优酷的核心视觉锚点。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\youku\\candidates\\candidate_01.png",
+  "warning": "所有候选图均未能保留优酷的核心几何结构（向右开口的播放箭头），而是错误地使用了 Ctrip 的 C 形轮廓。虽然风格匹配度高且包含正确的文字，但作为图标质检，主体结构的完全偏离导致目标识别度极低，属于严重失败案例。建议在重新生成时强制约束主体轮廓必须为优酷的播放箭头形状。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

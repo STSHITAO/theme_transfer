@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 20,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美契合主题风格（手绘绿叶菜狗），同时严格保留了Lofter原Logo核心的'l'形几何拓扑结构（竖画加底部回环）。底部的'LOFTER'文字拼写正确，字体风格符合手写要求。虽然将线条实体化为毛绒/叶片质感略微改变了原图的负空间逻辑，但在语义重构策略下是合理的，且识别度依然很高。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 90,
+      "style_match_score": 90,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 60,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 60,
+      "overall_score": 55,
+      "failure_reason": "底部App名称拼写错误，将'LOFTER'写成了'LOFFER'，违反了必须保留底部手写App名称的强制约束。此外，'l'形的顶部结构出现了分叉/中空，破坏了原Logo单线连续的核心几何特征，导致身份识别度下降。",
+      "recommendation": "不推荐。主要因为关键的品牌文字拼写错误（LOFFER），这在strict约束下是不可接受的硬伤。其次，主体结构的几何保真度不如candidate_01。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\lofter\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

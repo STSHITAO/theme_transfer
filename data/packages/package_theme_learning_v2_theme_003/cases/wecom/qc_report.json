@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 96,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的所有指令：严格保留了企业微信气泡与四节点的几何拓扑和空间关系，颜色统一为薄荷青，贴纸质感（白边、虚线缝线、硬投影）与网格背景及红色虚线框均准确无误，主体居中且比例合适，无任何伪影或结构错误。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 45,
+      "identity_constraint_score": 30,
+      "over_recompose_risk": 85,
+      "background_score": 95,
+      "composition_score": 80,
+      "artifact_score": 60,
+      "overall_score": 45,
+      "failure_reason": "严重违反结构保留约束。气泡主体轮廓发生严重扭曲和变形，失去了原有的圆润几何特征，左下角尾巴指向模糊，整体形态崩坏，导致目标 App 身份识别困难，不符合 strict 级别的身份约束要求。",
+      "recommendation": "不推荐。主体几何结构严重失真，无法作为合格的企业微信主题图标。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

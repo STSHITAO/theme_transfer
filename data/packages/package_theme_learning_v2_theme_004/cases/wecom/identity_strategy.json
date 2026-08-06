@@ -1,0 +1,38 @@
+{
+  "app": "wecom",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "蓝色沟通气泡轮廓与右下角四色连接节点的组合关系",
+  "brand_cues_to_preserve": [
+    "对话气泡的基本形态",
+    "右下角呈环形排列的四个连接点/水滴状元素",
+    "企业协作与连接的语义"
+  ],
+  "semantic_cues_to_preserve": [
+    "即时沟通（气泡）",
+    "多方连接/协作（四色节点）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 wecom 的 transformation pattern 明确显示，原图的抽象蓝色气泡几何被重构为具象的小狗头部虚线轮廓，仅保留右下角四色节点的空间位置作为装饰。这符合 theme_design_analysis 中对于‘缺乏单一明确吉祥物轮廓的抽象几何图标’允许进行语义重构的规则。原图的气泡+节点结构较为抽象，直接保留几何轮廓难以融入‘绿叶小狗’母题，因此采用将气泡语义转化为小狗头部、将节点转化为手持道具或周围装饰的重构策略，以匹配主题包的统一视觉语言。",
+  "design_rationale": "企业微信的核心识别在于‘沟通气泡’与‘连接节点’。在‘绿叶小狗’主题下，直接将蓝色气泡变为绿色小狗头是最自然的拟人化路径（参考 reference_transformation_patterns 中的 wecom 案例）。为了保留‘企业协作/多端连接’的独特语义（区别于普通微信的双气泡），必须保留右下角的四色节点元素，但需将其手绘化并缩小，作为小狗身边的装饰或手持物，避免破坏整体的绿色调性。底部手写 'WeCom' 确保身份识别。",
+  "must_preserve": [
+    "沟通气泡的意象（通过小狗头部或对话框形状体现）",
+    "右下角四个连接点的相对位置关系（作为身份锚点）",
+    "底部手写体 'WeCom' 文字"
+  ],
+  "can_recompose": [
+    "蓝色气泡实体变为绿色手绘小狗头部或虚线轮廓",
+    "四色节点的颜色可微调为主题色系内的点缀，或保留极小面积原色作为功能锚点",
+    "3D 光泽质感完全移除，转为扁平涂鸦"
+  ],
+  "forbid": [
+    "保留大面积高饱和蓝色背景或主体填充",
+    "丢失右下角四色节点这一关键区分特征（否则易与普通微信混淆）",
+    "使用平滑矢量线条绘制气泡或节点",
+    "遗漏底部手写 App 名称",
+    "主体撑满画布，失去留白"
+  ],
+  "generation_direction": "White rounded square background. Center: A cute green hand-drawn dog head with leaf ears, pink blush, and dot eyes, replacing the blue bubble. The dog's head shape implies a speech bubble. Bottom-right of the dog: Four small hand-drawn teardrop shapes in yellow, green, orange, and blue arranged in a circle, representing connection nodes. Thick wobbly dark green outlines. Flat matte texture. Bottom center: Black handwritten text 'WeCom'. Ample white space."
+}

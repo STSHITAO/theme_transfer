@@ -18,6 +18,13 @@ class ExperimentManifestTests(unittest.TestCase):
             cached = root / "data/evaluations/_cache/embeddings/app.npy"
             cached.parent.mkdir(parents=True)
             cached.write_bytes(b"cache")
+            api_response = root / "data/packages/package_a/cases/app/wan_response.json"
+            api_response.parent.mkdir(parents=True)
+            api_response.write_text("{}", encoding="utf-8")
+            duplicate_zip = root / "data/packages/package_a.zip"
+            duplicate_zip.write_bytes(b"zip")
+            runtime_log = root / "data/packages/package_a/run.log"
+            runtime_log.write_text("runtime", encoding="utf-8")
 
             manifest = build_manifest(root)
 

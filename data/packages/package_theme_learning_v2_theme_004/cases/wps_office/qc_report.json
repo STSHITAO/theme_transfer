@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 75,
+      "style_match_score": 75,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 85,
+      "over_recompose_risk": 10,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 88,
+      "failure_reason": "线条过于平滑，缺乏计划要求的'手绘抖动感'和'断笔特征'，更接近矢量图而非手绘涂鸦；顶部的叶子耳朵处理得比较含蓄，不够明显。",
+      "recommendation": "结构保留完美，识别度极高，但风格质感略偏离手绘要求，作为备选。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 5,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "完美符合所有约束：保留了W的几何结构和负空间，成功植入菜狗母题（明显的叶子耳朵、五官），线条具有手绘抖动感，底部文字正确，风格与参考图高度一致。强烈推荐。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\wps_office\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

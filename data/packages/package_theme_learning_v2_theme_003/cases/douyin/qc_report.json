@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美遵循了 transfer_plan 的所有指令：严格保留了抖音音符的几何拓扑结构，颜色统一为薄荷绿，具备标准的白色模切边、深灰虚线缝线、右下硬投影以及米白网格+淡红虚线框背景。画面干净，无任何多余伪影，风格与参考图高度一致。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 10,
+      "background_score": 70,
+      "composition_score": 85,
+      "artifact_score": 60,
+      "overall_score": 78,
+      "failure_reason": "画面右侧和底部出现了明显的多余圆形伪影（类似打孔或无关装饰），违反了 artifact_score 要求；音符符头内部出现了一个不符合原 Logo 结构的虚线小圆圈，属于过度重构或生成错误，破坏了原始几何结构的纯净度。",
+      "recommendation": "不推荐。虽然整体风格符合，但存在明显的画面伪影（多余圆点）和主体内部结构错误（多余的内部虚线圈），不符合 strict 约束下的身份保留要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

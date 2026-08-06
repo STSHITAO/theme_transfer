@@ -12,7 +12,17 @@ ITTE = Icon Theme Transfer Evaluation。当前 v1.4 的四个主维度是 Style 
 - GPU：使用 Conda 环境 `pytorch`，支持 CUDA 与磁盘特征缓存；保留 CPU 接口。
 - Web UI / 部署：尚未实现。
 
+最新的 theme-learning-v2 实验已完成：Qwen 分批学习主题内全部真实 `original -> style_ref` 配对，再结合现有 `target.json` 和目标原图为每个主题/App 动态冻结结构保留或用途语义重构路线。theme_003、theme_004 使用同一组 40 个 App，每 App 生成两个候选，生成与 ITTE 覆盖均为 100%。
+
+| 主题 | 学习配对 | 候选 / Final | 结构保留 / 语义重构 | ITTE | 风格 | 身份 | 整包一致性 | 视觉质量 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| theme_003 | 86 | 80 / 40 | 29 / 11 | 89.03 | 90.19 | 94.34 | 70.96 | 99.81 | `failed_hard_gate`：`xiaohongshu` 整包离群 |
+| theme_004 | 36 | 80 / 40 | 26 / 14 | 87.27 | 86.08 | 89.90 | 76.69 | 98.88 | `failed_hard_gate`：`wechat` 整包离群 |
+
+高平均分不代表实验通过：两个包都保留了真实硬门失败。当前实验允许目标 App 同时出现在主题学习配对中，因此衡量的是主题包内重建，而不是未见 App 泛化；详细边界、QC 失败列表和客观评测证据见实验报告。
+
 进度与待办见 [docs/PROGRESS.md](docs/PROGRESS.md)，产品和技术说明见 [docs/PRODUCT_SPEC.md](docs/PRODUCT_SPEC.md) 与 [docs/TECH_DESIGN.md](docs/TECH_DESIGN.md)。
+最新的 theme_003/theme_004 40-App 全配对学习、生图和 ITTE 结果见 [docs/THEME_LEARNING_V2_EXPERIMENT.md](docs/THEME_LEARNING_V2_EXPERIMENT.md)。
 
 ## 环境
 
@@ -50,6 +60,8 @@ data/styles/<theme_id>/<reference_app>/
 data/targets/<target_app>/
 ```
 
+每个 `data/targets/<target_app>/target.json` 提供 App 名称、类别、商店描述和核心功能等中性事实，不预先指定钱包、准星等视觉对象，也不写死结构保留模式。Qwen 先结合 `theme.json` 分批分析主题内全部 `original -> style_ref` 配对，归纳设计师在什么条件下保留主体结构、什么条件下按软件用途重构，再结合目标原图和 `target.json` 为当前“主题 × App”冻结生成路线。最终 Wan Prompt 会直接使用这些元数据及 Qwen 生成的执行 brief。
+
 输出位于 `data/packages/<package_id>/`。`.env` 包含密钥，严禁提交。
 
 规范化 `dataset/` 转换为生图入口，并显式清除旧入口数据：
@@ -70,6 +82,12 @@ python scripts/run_full_generation.py --candidate-count 2
 
 ```powershell
 python scripts/run_full_generation.py --theme-id theme_001 --candidate-count 2
+```
+
+固定抽取覆盖完整 App 列表的 40 个目标进行两候选实验：
+
+```powershell
+python scripts/run_full_generation.py --theme-id theme_003 --theme-id theme_004 --target-limit 40 --candidate-count 2 --package-prefix package_theme_learning_v2
 ```
 
 生成完成后在 GPU 上批量评测：

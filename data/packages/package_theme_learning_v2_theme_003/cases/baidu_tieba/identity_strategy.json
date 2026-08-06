@@ -1,0 +1,38 @@
+{
+  "app": "baidu_tieba",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "圆角对话气泡轮廓与内部汉字'贴'的组合结构",
+  "brand_cues_to_preserve": [
+    "对话气泡的外轮廓形状及底部尖角指向",
+    "汉字'贴'的专属字形结构与笔画比例",
+    "文字在气泡内部的居中空间关系"
+  ],
+  "semantic_cues_to_preserve": [
+    "气泡代表的社区交流与发帖语义",
+    "'贴'字直接指代的贴吧品牌名称"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 baidu_tieba 的 original -> style_ref 规律显示，当原图标主体为简洁的几何图形（气泡）加核心文字（贴）时，应严格保留其拓扑结构和空间比例，仅进行颜色映射和材质转换。当前目标原图结构简单清晰，符合 preserve_major_structure 的判定标准，无需进行语义重构或元素替换，直接保留气泡与文字的几何关系即可确保最高识别度。",
+  "design_rationale": "百度贴吧的原图标由对话气泡和汉字'贴'组成，结构简洁且语义明确，完全符合主题包对简洁 Logo 的处理规范。选择 logo_preserve 策略，旨在严格保留气泡轮廓和'贴'字骨架，通过薄荷绿填充、白色宽包边、深灰虚线缝线以及网格底板背景，将其转化为统一的手工剪纸贴纸风格，既服从主题视觉语言，又最大化保留品牌身份线索。",
+  "must_preserve": [
+    "对话气泡的整体 silhouette 和底部尖角",
+    "汉字'贴'的完整笔画结构和左右部件比例",
+    "文字相对于气泡的居中位置和大小占比"
+  ],
+  "can_recompose": [
+    "原图的蓝紫粉多色渐变背景",
+    "气泡边缘的重叠色彩效果",
+    "原图的光影立体感"
+  ],
+  "forbid": [
+    "保留原图的蓝、紫、粉等高饱和度品牌色",
+    "改变'贴'字的字形结构或将其替换为其他符号",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "添加 3D 光泽、渐变或写实纹理"
+  ],
+  "generation_direction": "将百度贴吧图标转化为薄荷绿手工贴纸。保留对话气泡轮廓和内部'贴'字结构，填充统一薄荷绿，添加白色宽包边和深灰虚线缝线，右下方加浅灰硬投影。背景替换为米白底浅灰网格加淡红虚线框。主体居中缩小至 50%，去除所有原色渐变和立体效果，保持扁平纸质质感。"
+}

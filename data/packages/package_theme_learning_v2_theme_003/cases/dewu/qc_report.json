@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：严格保留了“得物”二字的几何结构与笔画特征，成功移除了底部的营销横幅与黑色背景。色彩应用准确（薄荷绿填充），贴纸质感（白边、虚线缝线、硬投影、网格底、红虚线框）还原度极高，与主题参考图风格高度统一，无任何伪影或结构错误。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "推荐使用。整体质量非常高，文字识别度与风格匹配度均极佳。相比 candidate_01，其主体下方的投影边缘略显琐碎（在两个字的底部连接处有轻微的阴影断裂感），且白边轮廓的圆润度稍逊于 candidate_01，但依然是一张优秀的候选图。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

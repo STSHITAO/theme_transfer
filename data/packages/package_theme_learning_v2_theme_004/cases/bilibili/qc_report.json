@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 85,
+      "identity_constraint_score": 20,
+      "over_recompose_risk": 30,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 60,
+      "overall_score": 55,
+      "failure_reason": "底部文字错误显示为 'Meituan' 而非 'bilibili'，严重违反 must_preserve 约束；虽然保留了小电视轮廓和菜叶天线，但品牌名称错误导致无法正确识别为目标 App。",
+      "recommendation": "不推荐。虽然视觉风格符合主题，但关键的品牌文字标识错误，属于严重质检失败。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 45,
+      "target_recognition_score": 45,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 25,
+      "over_recompose_risk": 25,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 60,
+      "overall_score": 58,
+      "failure_reason": "底部文字错误显示为 'Meituan' 而非 'bilibili'，严重违反 must_preserve 约束；尽管小电视轮廓、菜叶天线和菜狗五官的主题化重构非常成功且符合 style_ref，但品牌名称错误是致命缺陷。",
+      "recommendation": "不推荐。图像主体重构质量很高，完美契合主题风格，但文字标签错误导致身份识别失败，需重新生成修正文字。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\bilibili\\candidates\\candidate_02.png",
+  "warning": "所有候选图均未能正确生成底部 'bilibili' 手写文字，而是错误地保留了参考图中的 'Meituan' 字样，违反了 transfer_plan 中的 must_preserve 约束。尽管 candidate_02 在视觉风格和主体结构保留上表现优异，但因文字错误无法作为最终可用结果，建议重新生成并强制指定文字内容。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 100,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 99,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 semantic_recompose 策略，将复杂的 3D 野蛮人头像成功重构为 'CLASH of CLANS' 文字贴纸。薄荷绿填充、白色宽包边、深灰虚线缝线、右下硬投影以及米白网格背景等所有主题指纹均精确还原。文字拼写正确，字形圆润符合纸质质感，构图层级清晰，无任何违规元素或伪影。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 100,
+      "target_recognition_score": 100,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 95,
+      "over_recompose_risk": 0,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "推荐使用。同样出色地完成了主题化重构，文字识别度高，风格统一。相比 candidate_01，其贴纸外轮廓的波浪起伏略显随意，且左侧边缘处有极微小的灰色噪点/伪影，整体规整度略逊于 candidate_01，但依然属于高质量候选。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 70,
+      "target_recognition_score": 70,
+      "semantic_fit_score": 75,
+      "identity_constraint_score": 60,
+      "over_recompose_risk": 15,
+      "background_score": 95,
+      "composition_score": 90,
+      "artifact_score": 95,
+      "overall_score": 72,
+      "failure_reason": "缺失 transfer_plan 中强制要求的'深灰色虚线缝纫线迹'（dark grey dashed stitching line），仅保留了白色宽包边，不符合双层轮廓结构的身份约束。",
+      "recommendation": "不推荐，因为遗漏了关键的贴纸缝线细节，导致风格还原度不足。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 95,
+      "target_recognition_score": 95,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 5,
+      "background_score": 98,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 transfer_plan 的所有指令：保留了企鹅 silhouette，移除了五官围巾，统一为薄荷绿，且完整包含了白色宽包边、内部深灰虚线缝线、右下硬投影及网格背景红虚线框。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

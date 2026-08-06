@@ -3,11 +3,12 @@
 ## Architecture
 
 ```text
+dataset/apps.json -> data/targets/<app_id>/target.json
 data/styles + data/targets
         |
         v
 backend/package_workflow.py
-  Qwen theme analysis -> per-App frozen structure policy -> Wan candidates -> Qwen QC -> final package
+  all-pair batched Qwen analysis -> per-theme/App route decision -> executable Wan prompt -> candidates -> Qwen QC -> final package
         |
         v
 evaluation/tpqs_workflow.py
@@ -21,6 +22,22 @@ benchmark/tools/evaluate_current_itte.py
 ```
 
 Generation and evaluation are deliberately separated. Prompt text and generation QC are diagnostic provenance only.
+
+## Wan identity-isolation prompt contract
+
+Wan still receives the same fixed real theme references, but the final prompt treats them as style-only evidence. The prompt is compiled from executable transfer fields rather than embedding the full Qwen reasoning JSON. `structure_policy_rationale` and reference App names are scrubbed before the request; the request is rejected locally if a forbidden reference identity remains.
+
+The single Wan text content item includes an explicit image-role map. `IMAGE_1` is `TARGET_IMAGE` and is the only source of logo, text, subject, silhouette, geometry and layout. The following three `STYLE_REFERENCE` images may contribute only visual treatment. They are selected after the route decision from examples with the same observed structure mode when possible, are deterministically distributed across the pool and always exclude the current target App. Target identity is the highest priority; theme fidelity may not replace it. The original fixed-reference packages remain frozen as the baseline for comparison.
+
+The executable prompt also receives `display_name`, `category`, `core_function`, the frozen target identity anchor, semantic cues, allowed recomposition and the final `generation_brief`. This closes the earlier gap where `target.json` reached Qwen planning but its description and the plan's executable brief were omitted from the Wan prompt.
+
+## Theme learning and target semantics
+
+`dataset/apps.json` is the maintained metadata source; `scripts/prepare_generation_data.py` copies each complete record to `data/targets/<app_id>/target.json` and into the matching entries of `theme.json`. The existing fields (`display_name`, `category`, `store_description`, `core_function`) remain neutral facts and are sufficient input for constrained multimodal reasoning; no target-level generation policy or hand-authored object list is used.
+
+Theme learning uses every valid `original -> style_ref` pair, not the first alphabetic examples. Pairs are processed in batches of five to respect multimodal input size. Each batch records the observed transformation, preserved identity, redesigned parts, structure decision and image evidence. A text-only aggregation then derives the shared theme board and conditional policy for when the designer preserves structure versus represents software function. The complete compact pair-pattern list and coverage are retained in `theme_design_analysis.json`.
+
+For each target, Qwen receives the aggregate theme evidence, existing target facts and target original. It freezes `preserve_major_structure` or `semantic_recompose` before generation. Functional objects may be inferred from `core_function` only when real theme examples support semantic recomposition; otherwise the original subject remains primary. Theme artifacts are reused on resume so an interrupted package does not repeat paid theme-analysis calls.
 
 ## Pre-generation structure policy
 

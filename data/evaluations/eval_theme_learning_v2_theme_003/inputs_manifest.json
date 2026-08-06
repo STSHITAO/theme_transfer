@@ -1,0 +1,1098 @@
+{
+  "theme_id": "theme_003",
+  "package_id": "package_theme_learning_v2_theme_003",
+  "theme_transfer_examples": [
+    {
+      "app": "alipay",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\alipay\\alipay.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\alipay\\alipay_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\alipay\\alipay.png"
+    },
+    {
+      "app": "amap",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\amap\\amap.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\amap\\amap_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\amap\\amap.png"
+    },
+    {
+      "app": "anipop",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\anipop\\anipop.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\anipop\\anipop_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\anipop\\anipop.png"
+    },
+    {
+      "app": "baidu_maps",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_maps\\baidu_maps.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_maps\\baidu_maps_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_maps\\baidu_maps.png"
+    },
+    {
+      "app": "baidu_netdisk",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_netdisk\\baidu_netdisk.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_netdisk\\baidu_netdisk_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_netdisk\\baidu_netdisk.png"
+    },
+    {
+      "app": "baidu_tieba",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_tieba\\baidu_tieba.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_tieba\\baidu_tieba_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_tieba\\baidu_tieba.png"
+    },
+    {
+      "app": "beautycam",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\beautycam\\beautycam.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\beautycam\\beautycam_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\beautycam\\beautycam.png"
+    },
+    {
+      "app": "bilibili",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili\\bilibili.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili\\bilibili_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili\\bilibili.png"
+    },
+    {
+      "app": "bilibili_comics",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili_comics\\bilibili_comics.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili_comics\\bilibili_comics_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili_comics\\bilibili_comics.png"
+    },
+    {
+      "app": "clash_of_clans",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\clash_of_clans\\clash_of_clans.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\clash_of_clans\\clash_of_clans_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\clash_of_clans\\clash_of_clans.png"
+    },
+    {
+      "app": "crossfire_mobile",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\crossfire_mobile\\crossfire_mobile.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\crossfire_mobile\\crossfire_mobile_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\crossfire_mobile\\crossfire_mobile.png"
+    },
+    {
+      "app": "ctrip",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ctrip\\ctrip.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ctrip\\ctrip_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ctrip\\ctrip.png"
+    },
+    {
+      "app": "dewu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dewu\\dewu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dewu\\dewu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dewu\\dewu.png"
+    },
+    {
+      "app": "dianping",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dianping\\dianping.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dianping\\dianping_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dianping\\dianping.png"
+    },
+    {
+      "app": "dingtalk",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dingtalk\\dingtalk.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dingtalk\\dingtalk_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dingtalk\\dingtalk.png"
+    },
+    {
+      "app": "douban",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douban\\douban.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douban\\douban_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douban\\douban.png"
+    },
+    {
+      "app": "douyin",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin\\douyin.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin\\douyin_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin\\douyin.png"
+    },
+    {
+      "app": "douyin_huoshan",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin_huoshan\\douyin_huoshan.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin_huoshan\\douyin_huoshan_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin_huoshan\\douyin_huoshan.png"
+    },
+    {
+      "app": "douyu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyu\\douyu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyu\\douyu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyu\\douyu.png"
+    },
+    {
+      "app": "genshin",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\genshin\\genshin.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\genshin\\genshin_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\genshin\\genshin.png"
+    },
+    {
+      "app": "golden_spatula",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\golden_spatula\\golden_spatula.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\golden_spatula\\golden_spatula_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\golden_spatula\\golden_spatula.png"
+    },
+    {
+      "app": "hello_bike",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\hello_bike\\hello_bike.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\hello_bike\\hello_bike_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\hello_bike\\hello_bike.png"
+    },
+    {
+      "app": "honor_of_kings",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\honor_of_kings\\honor_of_kings.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\honor_of_kings\\honor_of_kings_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\honor_of_kings\\honor_of_kings.png"
+    },
+    {
+      "app": "huya",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\huya\\huya.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\huya\\huya_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\huya\\huya.png"
+    },
+    {
+      "app": "iqiyi",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi\\iqiyi.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi\\iqiyi_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi\\iqiyi.png"
+    },
+    {
+      "app": "iqiyi_lite",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi_lite\\iqiyi_lite.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi_lite\\iqiyi_lite_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi_lite\\iqiyi_lite.png"
+    },
+    {
+      "app": "jd",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jd\\jd.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jd\\jd_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jd\\jd.png"
+    },
+    {
+      "app": "jianying",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jianying\\jianying.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jianying\\jianying_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jianying\\jianying.png"
+    },
+    {
+      "app": "karaoke",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\karaoke\\karaoke.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\karaoke\\karaoke_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\karaoke\\karaoke.png"
+    },
+    {
+      "app": "keep",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\keep\\keep.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\keep\\keep_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\keep\\keep.png"
+    },
+    {
+      "app": "king_camp",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\king_camp\\king_camp.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\king_camp\\king_camp_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\king_camp\\king_camp.png"
+    },
+    {
+      "app": "kuaikan",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaikan\\kuaikan.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaikan\\kuaikan_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaikan\\kuaikan.png"
+    },
+    {
+      "app": "kuaiying",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaiying\\kuaiying.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaiying\\kuaiying_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaiying\\kuaiying.png"
+    },
+    {
+      "app": "kugou",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kugou\\kugou.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kugou\\kugou_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kugou\\kugou.png"
+    },
+    {
+      "app": "kuwo",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuwo\\kuwo.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuwo\\kuwo_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuwo\\kuwo.png"
+    },
+    {
+      "app": "lofter",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lofter\\lofter.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lofter\\lofter_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lofter\\lofter.png"
+    },
+    {
+      "app": "lol_assistant",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_assistant\\lol_assistant.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_assistant\\lol_assistant_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_assistant\\lol_assistant.png"
+    },
+    {
+      "app": "lol_mobile",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_mobile\\lol_mobile.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_mobile\\lol_mobile_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_mobile\\lol_mobile.png"
+    },
+    {
+      "app": "mango_tv",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mango_tv\\mango_tv.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mango_tv\\mango_tv_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mango_tv\\mango_tv.png"
+    },
+    {
+      "app": "meitu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meitu\\meitu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meitu\\meitu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meitu\\meitu.png"
+    },
+    {
+      "app": "meituan",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan\\meituan.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan\\meituan_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan\\meituan.png"
+    },
+    {
+      "app": "meituan_waimai",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan_waimai\\meituan_waimai.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan_waimai\\meituan_waimai_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan_waimai\\meituan_waimai.png"
+    },
+    {
+      "app": "mi_home",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mi_home\\mi_home.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mi_home\\mi_home_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mi_home\\mi_home.png"
+    },
+    {
+      "app": "minecraft",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\minecraft\\minecraft.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\minecraft\\minecraft_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\minecraft\\minecraft.png"
+    },
+    {
+      "app": "mini_world",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mini_world\\mini_world.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mini_world\\mini_world_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mini_world\\mini_world.png"
+    },
+    {
+      "app": "miyoushe",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\miyoushe\\miyoushe.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\miyoushe\\miyoushe_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\miyoushe\\miyoushe.png"
+    },
+    {
+      "app": "moji_weather",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\moji_weather\\moji_weather.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\moji_weather\\moji_weather_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\moji_weather\\moji_weather.png"
+    },
+    {
+      "app": "naruto_mobile",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\naruto_mobile\\naruto_mobile.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\naruto_mobile\\naruto_mobile_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\naruto_mobile\\naruto_mobile.png"
+    },
+    {
+      "app": "netease_music",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\netease_music\\netease_music.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\netease_music\\netease_music_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\netease_music\\netease_music.png"
+    },
+    {
+      "app": "onmyoji",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\onmyoji\\onmyoji.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\onmyoji\\onmyoji_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\onmyoji\\onmyoji.png"
+    },
+    {
+      "app": "paipai",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\paipai\\paipai.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\paipai\\paipai_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\paipai\\paipai.png"
+    },
+    {
+      "app": "peace_camp",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_camp\\peace_camp.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_camp\\peace_camp_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_camp\\peace_camp.png"
+    },
+    {
+      "app": "peace_elite",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_elite\\peace_elite.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_elite\\peace_elite_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_elite\\peace_elite.png"
+    },
+    {
+      "app": "pinduoduo",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\pinduoduo\\pinduoduo.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\pinduoduo\\pinduoduo_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\pinduoduo\\pinduoduo.png"
+    },
+    {
+      "app": "qidian",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qidian\\qidian.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qidian\\qidian_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qidian\\qidian.png"
+    },
+    {
+      "app": "qimao",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qimao\\qimao.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qimao\\qimao_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qimao\\qimao.png"
+    },
+    {
+      "app": "qq",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq\\qq.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq\\qq_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq\\qq.png"
+    },
+    {
+      "app": "qq_browser",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_browser\\qq_browser.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_browser\\qq_browser_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_browser\\qq_browser.png"
+    },
+    {
+      "app": "qq_music",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_music\\qq_music.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_music\\qq_music_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_music\\qq_music.png"
+    },
+    {
+      "app": "qq_reading",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_reading\\qq_reading.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_reading\\qq_reading_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_reading\\qq_reading.png"
+    },
+    {
+      "app": "qq_speed",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_speed\\qq_speed.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_speed\\qq_speed_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_speed\\qq_speed.png"
+    },
+    {
+      "app": "quark",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\quark\\quark.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\quark\\quark_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\quark\\quark.png"
+    },
+    {
+      "app": "soul",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\soul\\soul.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\soul\\soul_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\soul\\soul.png"
+    },
+    {
+      "app": "tencent_comics",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_comics\\tencent_comics.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_comics\\tencent_comics_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_comics\\tencent_comics.png"
+    },
+    {
+      "app": "tencent_maps",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_maps\\tencent_maps.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_maps\\tencent_maps_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_maps\\tencent_maps.png"
+    },
+    {
+      "app": "tencent_meeting",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_meeting\\tencent_meeting.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_meeting\\tencent_meeting_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_meeting\\tencent_meeting.png"
+    },
+    {
+      "app": "tencent_news",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_news\\tencent_news.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_news\\tencent_news_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_news\\tencent_news.png"
+    },
+    {
+      "app": "tencent_video",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_video\\tencent_video.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_video\\tencent_video_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_video\\tencent_video.png"
+    },
+    {
+      "app": "tmall",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tmall\\tmall.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tmall\\tmall_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tmall\\tmall.png"
+    },
+    {
+      "app": "toutiao",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao\\toutiao.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao\\toutiao_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao\\toutiao.png"
+    },
+    {
+      "app": "toutiao_lite",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao_lite\\toutiao_lite.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao_lite\\toutiao_lite_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao_lite\\toutiao_lite.png"
+    },
+    {
+      "app": "vipshop",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\vipshop\\vipshop.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\vipshop\\vipshop_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\vipshop\\vipshop.png"
+    },
+    {
+      "app": "wechat",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat\\wechat.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat\\wechat_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat\\wechat.png"
+    },
+    {
+      "app": "wechat_reading",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat_reading\\wechat_reading.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat_reading\\wechat_reading_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat_reading\\wechat_reading.png"
+    },
+    {
+      "app": "wecom",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wecom\\wecom.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wecom\\wecom_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wecom\\wecom.png"
+    },
+    {
+      "app": "weibo",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weibo\\weibo.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weibo\\weibo_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weibo\\weibo.png"
+    },
+    {
+      "app": "weishi",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weishi\\weishi.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weishi\\weishi_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weishi\\weishi.png"
+    },
+    {
+      "app": "wps_office",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wps_office\\wps_office.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wps_office\\wps_office_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wps_office\\wps_office.png"
+    },
+    {
+      "app": "xianyu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xianyu\\xianyu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xianyu\\xianyu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xianyu\\xianyu.png"
+    },
+    {
+      "app": "xiaohongshu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xiaohongshu\\xiaohongshu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xiaohongshu\\xiaohongshu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xiaohongshu\\xiaohongshu.png"
+    },
+    {
+      "app": "xigua_video",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xigua_video\\xigua_video.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xigua_video\\xigua_video_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xigua_video\\xigua_video.png"
+    },
+    {
+      "app": "ximalaya",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ximalaya\\ximalaya.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ximalaya\\ximalaya_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ximalaya\\ximalaya.png"
+    },
+    {
+      "app": "xingtu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xingtu\\xingtu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xingtu\\xingtu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xingtu\\xingtu.png"
+    },
+    {
+      "app": "youdao_dict",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\youdao_dict\\youdao_dict.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\youdao_dict\\youdao_dict_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\youdao_dict\\youdao_dict.png"
+    },
+    {
+      "app": "zepp_life",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zepp_life\\zepp_life.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zepp_life\\zepp_life_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zepp_life\\zepp_life.png"
+    },
+    {
+      "app": "zhihu",
+      "original_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zhihu\\zhihu.png",
+      "style_ref_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zhihu\\zhihu_style_ref.png",
+      "reference_raw_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zhihu\\zhihu.png"
+    }
+  ],
+  "theme_refs": [
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\alipay\\alipay_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\amap\\amap_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\anipop\\anipop_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_maps\\baidu_maps_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_netdisk\\baidu_netdisk_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\baidu_tieba\\baidu_tieba_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\beautycam\\beautycam_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili\\bilibili_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\bilibili_comics\\bilibili_comics_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\clash_of_clans\\clash_of_clans_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\crossfire_mobile\\crossfire_mobile_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ctrip\\ctrip_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dewu\\dewu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dianping\\dianping_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\dingtalk\\dingtalk_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douban\\douban_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin\\douyin_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyin_huoshan\\douyin_huoshan_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\douyu\\douyu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\genshin\\genshin_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\golden_spatula\\golden_spatula_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\hello_bike\\hello_bike_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\honor_of_kings\\honor_of_kings_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\huya\\huya_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi\\iqiyi_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\iqiyi_lite\\iqiyi_lite_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jd\\jd_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\jianying\\jianying_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\karaoke\\karaoke_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\keep\\keep_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\king_camp\\king_camp_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaikan\\kuaikan_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuaiying\\kuaiying_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kugou\\kugou_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\kuwo\\kuwo_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lofter\\lofter_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_assistant\\lol_assistant_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\lol_mobile\\lol_mobile_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mango_tv\\mango_tv_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meitu\\meitu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan\\meituan_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\meituan_waimai\\meituan_waimai_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mi_home\\mi_home_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\minecraft\\minecraft_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\mini_world\\mini_world_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\miyoushe\\miyoushe_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\moji_weather\\moji_weather_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\naruto_mobile\\naruto_mobile_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\netease_music\\netease_music_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\onmyoji\\onmyoji_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\paipai\\paipai_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_camp\\peace_camp_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\peace_elite\\peace_elite_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\pinduoduo\\pinduoduo_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qidian\\qidian_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qimao\\qimao_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq\\qq_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_browser\\qq_browser_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_music\\qq_music_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_reading\\qq_reading_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\qq_speed\\qq_speed_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\quark\\quark_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\soul\\soul_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_comics\\tencent_comics_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_maps\\tencent_maps_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_meeting\\tencent_meeting_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_news\\tencent_news_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tencent_video\\tencent_video_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\tmall\\tmall_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao\\toutiao_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\toutiao_lite\\toutiao_lite_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\vipshop\\vipshop_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat\\wechat_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wechat_reading\\wechat_reading_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wecom\\wecom_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weibo\\weibo_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\weishi\\weishi_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\wps_office\\wps_office_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xianyu\\xianyu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xiaohongshu\\xiaohongshu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xigua_video\\xigua_video_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\ximalaya\\ximalaya_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\xingtu\\xingtu_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\youdao_dict\\youdao_dict_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zepp_life\\zepp_life_style_ref.png",
+    "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\styles\\theme_003\\zhihu\\zhihu_style_ref.png"
+  ],
+  "generated_icons": [
+    {
+      "app": "alipay",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\alipay.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 alipay 的真实 original -> style_ref 规律（preserve_major_structure: true），原图的'支'字几何结构简单清晰，在单色化和贴纸化后依然具有极高的辨识度。根据主题包的 structure_preservation_policy，当 original 主体为简洁的文字 Logo 时，必须严格保留其拓扑结构和空间关系。因此，策略选择保留'支'字的完整轮廓，仅进行颜色映射和材质转换，不进行语义重构或结构替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\alipay\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "anipop",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\anipop.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 anipop 的真实迁移规律（reference_transformation_patterns），原图复杂的 3D 多角色堆叠场景被明确重构为单一极简的小鸡 2D 剪影。当前目标原图同样是多角色、高细节的 3D 渲染场景，直接保留整体结构会违反主题的'极度简化'和'扁平单色块'规则。因此，遵循主题包已验证的规律，放弃原图的空间布局和多元素堆叠，提取最具代表性的黄色小鸡作为唯一主体进行语义重组，以适配手工剪纸贴纸的工艺限制。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "baidu_tieba",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\baidu_tieba.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 baidu_tieba 的 original -> style_ref 规律显示，当原图标主体为简洁的几何图形（气泡）加核心文字（贴）时，应严格保留其拓扑结构和空间比例，仅进行颜色映射和材质转换。当前目标原图结构简单清晰，符合 preserve_major_structure 的判定标准，无需进行语义重构或元素替换，直接保留气泡与文字的几何关系即可确保最高识别度。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\baidu_tieba\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "bilibili",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\bilibili.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 bilibili 的 original -> style_ref 规律明确显示：保留小电视的外轮廓、天线和支脚的空间布局，仅将内部复杂的 'bilibili' 字体简化为 theme 风格的简笔表情（-w-），以适配贴纸的简洁语言。当前目标原图主体即为小电视与文字的组合，几何结构清晰且非复杂 3D 渲染，符合 'preserve_when' 条件。因此必须严格保留小电视的主体几何结构、天线与支脚的空间关系，仅做颜色映射、材质转换和内部细节的极简化处理，不进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\bilibili\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "clash_of_clans",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\clash_of_clans.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 clash_of_clans 的真实迁移规律（original 为 3D 野蛮人头像，style_ref 重构为 'CLASH of CLANS' 文字排版），以及 jd、genshin、mini_world 等复杂 3D/插画图标的处理模式，当原图主体为高细节写实/3D 渲染且无法在极简贴纸语言中保留时，应放弃原始几何结构，提取最具辨识度的官方文字 Logo 进行重构。当前目标原图为复杂的 3D 野蛮人面部特写，依赖光影和色彩表现神态，强行保留轮廓会导致贴纸形态崩坏或语义丢失，因此采用文字标识替代原主体结构，符合主题包的语义重构策略。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\clash_of_clans\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "dewu",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dewu.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 dewu 的真实 original -> style_ref 规律，以及 meituan、xiaohongshu、toutiao 等文字类 App 的处理方式，当原图主体为清晰的品牌标准字时，主题化策略严格保留文字的几何轮廓、笔画走向和空间排布，仅剥离背景与营销元素。当前目标原图的核心识别点即为“得物”二字，其字形结构简洁且辨识度高，完全符合 preserve_major_structure 的适用条件，无需进行语义重构或道具替代。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dewu\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "dingtalk",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\dingtalk.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 dingtalk 的 original -> style_ref 变换规律，该 App 的核心 Logo 几何结构简洁且识别度极高，完全符合 preserve_major_structure 的判定标准。原图的翅膀闪电轮廓在单色化和贴纸化后依然清晰可辨，无需进行语义重构或道具替代，应严格保留其拓扑结构、羽毛层级和闪电折角，仅做颜色映射和材质转换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\dingtalk\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "douyin",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyin.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 douyin 的 original -> style_ref 规律显示，当原图标为简洁的 2D 几何符号时，严格保留其拓扑结构和空间关系，仅进行颜色归一化和材质贴纸化。当前目标原图为经典的音符 Logo，几何结构清晰且辨识度极高，符合 preserve_major_structure 的判定标准，无需进行语义重构或道具替代。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyin\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "douyu",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\douyu.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 douyu 的 original -> style_ref 规律显示，当原图为清晰的 2D 卡通吉祥物时，应严格保留主体几何轮廓（鲨鱼+火箭的组合形态、眼睛位置、咬合关系），仅进行颜色归一化和材质贴纸化。当前目标原图结构简单明确，无复杂 3D 渲染或营销文字干扰，符合 preserve_major_structure 的判定标准，无需进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\douyu\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "golden_spatula",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\golden_spatula.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 golden_spatula 的真实 original -> style_ref 规律明确显示：当原图为复杂的 3D 企鹅角色加写实光影时，应完全舍弃具象角色，提取核心道具'铲子'与底部动态线进行重构。当前目标原图同样是高细节的 3D 企鹅插画，符合 theme_design_analysis 中'复杂3D渲染允许放弃原始结构，提取核心功能语义符号'的重构条件。因此不保留企鹅主体几何，而是用语义符号重组，以适配手工剪纸贴纸的极简轮廓要求。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "honor_of_kings",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\honor_of_kings.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 honor_of_kings 的真实 original -> style_ref 规律显示，原图复杂的写实人物头像（亚瑟）因细节过多、依赖光影渲染，无法在手工剪纸贴纸风格下保留主体几何，因此被完全舍弃并重构为抽象的圆形罗盘/准星符号。当前目标原图同样是高复杂度的写实英雄面部特写叠加营销角标，符合 theme_design_analysis 中 'recompose_when' 的触发条件（复杂3D渲染/写实插画）。因此，必须放弃原图的人脸结构，提取 MOBA 游戏最具代表性的'瞄准/竞技'语义符号进行重构，以适配贴纸的极简轮廓要求。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\honor_of_kings\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "iqiyi",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\iqiyi.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 iqiyi 和 iqiyi_lite 的转换规律，当原图包含复杂中英文混排时，策略倾向于提取最核心的 'iQIYI' 英文标识并置入圆角矩形播放器外框中，以强化视频语义并适配贴纸的简洁几何语言。当前目标原图为绿紫渐变背景上的 'iQIYI' 与 '爱奇艺' 纯文字排版，无独立图形 Logo。依据主题规律，应舍弃中文副标题，保留 'iQIYI' 字母骨架，并为其增加主题化的圆角矩形播放器外框（或闪电符号暗示），主体文字自身的几何结构与空间比例严格保留，仅做材质、颜色和背景的主题化映射，符合 preserve_major_structure 的判定标准。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\iqiyi\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "jianying",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\jianying.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 jianying 的 original -> style_ref 变换规律显示，该App原本简洁的2D几何Logo被严格保留了主体轮廓、交叉线和两侧弧形结构，仅做了颜色替换和贴纸化处理。当前目标原图同样是高对比度的简洁几何图形，无复杂3D渲染或插画细节，完全符合 preserve_when 条件。因此必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅进行主题风格迁移。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\jianying\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "keep",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\keep.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 keep 的真实 original -> style_ref 规律显示，原图简洁的 'K' 字 Logo 在转化时严格保留了笔画走向、断笔结构和空间比例，仅做了颜色替换和贴纸化描边。当前目标原图同样是简洁的 2D 几何字母，轮廓清晰且无复杂 3D 渲染，完全符合 'preserve_when' 条件。因此必须冻结为 preserve_major_structure，精确保留 'K' 字的几何拓扑，仅移除右上角的紫色星星装饰以适配主题的极简化规则。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\keep\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "kuaikan",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kuaikan.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 kuaikan 自身的迁移规律（以及 meituan、toutiao、xiaohongshu 等文字类 App），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和空间排布，仅进行颜色映射和材质转换。当前目标原图主体即为高辨识度的“快看！”文字，符合 preserve_when 条件，无需进行语义重构，应完整保留文字骨架以维持品牌识别。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kuaikan\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "kugou",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\kugou.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 kugou、kugou_music、qq_music 等音乐类 App 的迁移规律，当原图为简洁的几何图形（圆环）加字母/符号时，均严格保留主体几何拓扑关系（preserve_major_structure）。当前目标原图为极简的蓝底白圈白 K，结构清晰且无复杂 3D 或插画细节，完全符合直接进行贴纸化映射的条件，无需进行语义重构或结构替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\kugou\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "lofter",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lofter.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 lofter 的真实 original -> style_ref 规律（以及 keep、wps_office 等简洁几何 Logo 的处理方式），当原图主体为简洁的 2D 字母/几何符号时，必须严格保留其核心几何轮廓与空间拓扑。当前目标原图的 'L' 形符号线条流畅、结构极简，完全符合 preserve_major_structure 的触发条件。因此，仅剥离 teal 圆形背景，将 'L' 形主体提取并应用薄荷绿填充与贴纸材质，不进行任何语义替换或结构重组。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lofter\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "lol_mobile",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\lol_mobile.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 lol_mobile 的真实迁移规律（reference_transformation_patterns），原图复杂的金克丝人物插画和运营标签被完全舍弃，重构为 'LD' 字母组合徽标。这是因为原图主体为写实 3D 人物特写，细节过于丰富且依赖色彩光影，无法在保持手账贴纸简洁性的前提下保留原始几何结构。因此，遵循主题包对复杂插画类 App 的处理逻辑，提取品牌底层徽标进行语义重构，而非保留原图的人物轮廓。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\lol_mobile\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "meituan",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\meituan.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中针对文字类Logo（如dewu、meituan、xiaohongshu、toutiao）的变换规律，当原图主体为清晰的品牌标准字时，均严格保留文字的笔画骨架、字间距和排版结构，仅进行颜色映射和材质贴纸化。当前目标App原图为极简的“美团”黑字黄底，几何结构清晰且无复杂3D或插画干扰，完全符合preserve_major_structure的适用条件。保留文字轮廓能最大化维持品牌识别度，同时完美适配手账贴纸的扁平剪纸语言。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\meituan\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "mi_home",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mi_home.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 mi_home 的 original -> style_ref 变换规律，以及 keep、wps_office 等简洁几何 Logo 的处理方式，当原图主体为清晰的 2D 几何符号时，必须严格保留其拓扑结构。米家 Logo 本身即为极简的盾牌+M 组合，无复杂 3D 渲染或多余装饰，完全符合 preserve_major_structure 的适用条件。因此，策略锁定为保留原始几何轮廓、折角位置和负空间关系，仅执行颜色映射、材质贴纸化和背景标准化，不进行任何语义重构或形状替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mi_home\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "mini_world",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\mini_world.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 minecraft 和 mini_world 自身的历史迁移规律（reference_transformation_patterns），当原图标为复杂的3D角色插画且充满画面时，主题策略均选择放弃具象角色，转而提取游戏标题文字作为主体。当前目标原图为高复杂度的3D卡通角色与星空漩涡背景，若强行保留角色轮廓将违反主题‘极度简化’与‘扁平剪纸’的工艺限制。因此，依据主题包可观察规律，采用语义重构策略，用标题文字替代原3D主体结构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\mini_world\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "moji_weather",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\moji_weather.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 moji_weather 的既定迁移规律（reference_transformation_patterns），原图的 'MOJI' 文字 Logo 被明确放弃，转而使用 '云朵+风' 的图形符号来指代天气功能。当前目标原图为黑底白字加橙色 'O' 的文字排版，若强行保留文字结构将违背该 App 在主题包中已确立的语义重构路径。因此，依据主题包的可观察规律，采用功能语义符号替代原始文字主体，进行结构重组。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\moji_weather\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "onmyoji",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\onmyoji.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 onmyoji 的真实迁移规律（original 为神乐人物插画，style_ref 重构为'陰陽師'书法文字贴纸），以及 genshin、naruto_mobile 等复杂插画类 App 的处理方式，当原图主体为高细节写实/动漫人物时，主题包规律支持放弃原始几何结构，转而提取最具辨识度的官方文字 Logo 或 IP 符号进行重构。当前目标原图为复杂的神乐 3D 插画，直接保留轮廓会破坏贴纸的简洁性与手工感，因此遵循主题包既定规律，采用文字语义重构策略。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\onmyoji\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "peace_camp",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\peace_camp.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 peace_camp 的 original -> style_ref 规律，该 App 的转换策略明确为提取核心文字 Logo 并剥离写实背景。当前目标原图主体即为“和平精英”文字与英文副标题，属于简洁的 2D 排版结构，符合 preserve_when 条件。因此必须严格保留文字的字形骨架、笔画比例和上下空间关系，仅进行颜色映射、材质贴纸化和背景网格化，不进行语义重构或主体替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\peace_camp\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "pinduoduo",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\pinduoduo.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 pinduoduo 的真实迁移规律（original -> style_ref），原图复杂的心形拼图网格和周围环绕的商品小图标（裙子、相机、鱼等）被完全舍弃，仅提取中心的'拼'字作为主体。这是因为原图主体过于复杂且依赖多色块拼接，无法在保持手账贴纸简洁性的前提下保留整体心形几何。因此，策略遵循主题包规律，放弃原始心形结构，转而提取最具品牌识别度的文字符号进行重构，符合 semantic_recompose 模式。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\pinduoduo\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "qq",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 'qq' 的 reference_transformation_patterns 明确显示，对于 QQ 这种核心主体为简洁吉祥物 silhouette 的 App，策略是极度简化内部细节（移除五官、围巾），但严格保留企鹅身体的整体外轮廓几何。当前目标原图即为经典的戴围巾企鹅，其外部轮廓清晰且具备极高辨识度，符合 'preserve_when' 规则中关于简洁 2D 吉祥物 silhouette 的定义，因此必须保留主体几何结构，仅做材质和颜色的主题化映射，不进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "qq_mail",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_mail.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中对于简洁几何图形（如 'quark' 的圆环、'tencent_meeting' 的M形、'wps_office' 的W形）的处理规律，当原图主体为清晰的2D线性或块面符号时，均严格保留其拓扑结构和空间比例，仅做材质和颜色的主题化映射。QQ邮箱原图为极简的白色线性信封，几何结构清晰且无复杂3D或插画细节，完全符合 'preserve_when' 的条件。因此，必须保留信封的外轮廓和内部折线结构，禁止将其重构为其他道具或改变几何形态，以确保在统一贴纸风格下的高识别度。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_mail\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "qq_reading",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\qq_reading.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 qq_reading 的真实 original -> style_ref 规律显示，当原图为复杂的 3D 探险场景（含帽子、背包、营销文字）时，必须放弃原始整体结构，提取'企鹅+阅读'的核心语义进行重构。当前目标原图同样是高复杂度的 3D 渲染插画，依赖光影和道具细节，无法在保持贴纸简洁性的前提下保留原几何。因此遵循主题包规律，采用语义重组策略，将主体降维为扁平的企鹅读书剪影，既符合手工剪纸的工艺限制，又清晰传达了 App 身份与功能。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\qq_reading\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "soul",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\soul.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 soul 的 reference_transformation_pattern 明确显示，当 original 主体为清晰的品牌文字时，策略是严格保留文字的几何轮廓、字母排列和相对位置，仅进行颜色映射（转为薄荷绿）和材质转换（添加贴纸白边、虚线缝线）。当前目标 App 原图核心即为 'Soul' 文字，符合 preserve_when 条件（简洁文字 Logo），因此必须保留主体结构，不进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\soul\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "tencent_comics",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_comics.png",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "参考主题包中 tencent_comics 的真实 original -> style_ref 规律，原图复杂的 IP 角色插画（一人之下）被完全舍弃，转而提取‘阅读/漫画’的通用语义符号（纸飞机）进行重构。当前目标原图同样是高复杂度的 3D 卡通角色场景，依赖特定色彩和光影，无法在保持手账贴纸简洁性的前提下保留主体几何。因此，遵循主题包既定规律，放弃原始结构，采用语义符号替代，以符合手工剪纸的工艺限制和视觉统一性。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_comics\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "tencent_meeting",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tencent_meeting.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tencent_meeting 的 original -> style_ref 规律显示，该App原本简洁的2D折叠几何Logo在转化时严格保留了顶点位置、折线角度和整体长宽比，仅进行了材质和颜色的主题化替换。当前目标原图同样是简洁的蓝底白色折叠M形几何体，轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 theme_design_analysis 中 'preserve_when' 的条件（简洁2D几何图形在单色化和添加贴纸边框后依然清晰可辨）。因此，必须冻结为 preserve_major_structure，严格保留原始几何拓扑，仅执行色彩归一化、双层贴纸轮廓添加和背景标准化，不进行任何语义重构或主体替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "tmall",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\tmall.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tmall 的真实 original -> style_ref 规律显示，当原图包含文字与图形组合时，策略倾向于移除文字部分（如'天猫'汉字），仅保留最具辨识度的图形主体（猫头）并严格保留其几何轮廓与五官空间关系。当前目标原图同样为'文字+猫头'的上下结构，且猫头轮廓简洁清晰，符合 preserve_when 条件，因此应保留猫头主体结构，剔除文字以适配贴纸的极简语言。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tmall\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "toutiao_lite",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\toutiao_lite.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 toutiao 和 toutiao_lite 的真实迁移规律（reference_transformation_patterns），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和排版比例，仅移除背景色块并进行材质转换。当前目标 App 原图主体为高识别度的“头条”文字加闪电角标，属于简洁的 2D 图形/文字组合，符合 preserve_when 条件，因此必须保留主要结构，不进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\toutiao_lite\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "wechat",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wechat.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wechat 的 original -> style_ref 规律显示，对于微信这种几何结构极其简洁且辨识度极高的 Logo，必须严格保留气泡轮廓、重叠关系和眼睛位置（preserve_major_structure=true）。当前目标原图同样是标准的简洁 2D 几何图形，无需进行语义重构或道具替代，直接保留主体拓扑结构并应用贴纸材质即可完美平衡主题统一性与品牌识别度。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wechat\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "wecom",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wecom.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wecom 的 original -> style_ref 规律明确显示：在去除多色渐变和3D高光后，完整保留了大气泡轮廓及右下角四个节点的连接结构与空间分布。当前目标原图主体为简洁的2D几何图形（气泡+节点），轮廓清晰且无复杂3D渲染或营销文字干扰，完全符合 preserve_when 条件。因此必须严格保留原始几何拓扑、节点相对位置和气泡形态，仅执行颜色归一化、材质贴纸化和背景标准化处理，不进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wecom\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "wps_office",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\wps_office.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 wps_office 的 reference_transformation_patterns 显示，该 App 的原始 Logo 为简洁的 2D 几何图形，在转化为贴纸风格时，其核心 'W' 轮廓、折角特征和空间比例被严格保留（preserve_major_structure: true）。当前目标原图同样是简洁的几何 'W' 造型，符合主题包中'当 original 的主体是简洁的 2D 几何图形...必须严格保留大部分原始几何结构'的规律。因此，无需进行语义重构，只需进行材质和颜色的主题化映射，以确保品牌识别度最大化。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\wps_office\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "xiaohongshu",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\xiaohongshu.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 xiaohongshu、meituan、toutiao 等纯文字 Logo 的迁移规律（reference_transformation_patterns），当原图主体为简洁且高识别度的品牌标准字时，均严格保留文字的几何轮廓、笔画走向和空间排布（preserve_major_structure=true），仅进行颜色映射和贴纸材质化处理。当前目标原图为标准的“小红书”白字红底，文字结构清晰且无复杂 3D 或插画干扰，完全符合直接保留主体几何结构的条件，无需进行语义重构或道具替代。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "ximalaya",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\ximalaya.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 ximalaya、douban、zhihu、meituan 等文字/字形类 App 的 original -> style_ref 规律，当原图主体为简洁且高识别度的汉字或字母时，均严格保留原始几何轮廓、笔画走向与空间比例，仅进行单色填充、白边包裹、虚线缝线添加及背景网格化替换。当前目标原图为极简的艺术化'听'字，无复杂 3D 渲染、多元素堆叠或写实插画，完全符合 preserve_when 条件。保留该字形结构既能确保品牌身份零损耗，又能完美适配手账贴纸的扁平剪纸语言，无需进行语义重构或结构替换。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\ximalaya\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "youku",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\youku.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 tencent_video、xigua_video、weishi 等视频类 App 的转换规律，当原图为简洁的 2D 播放符号或几何 Logo 时，均严格保留了主体的外轮廓、内部镂空及空间比例，仅做单色化和贴纸化处理。优酷原图的折叠箭头本身即为高度抽象且简洁的 2D 几何图形，无复杂 3D 渲染或写实细节，完全符合 preserve_major_structure 的触发条件。保留其几何拓扑关系既能确保极高的品牌识别度，又能完美适配手账贴纸的扁平剪裁语言，无需进行语义重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\youku\\transfer_plan.json"
+      }
+    },
+    {
+      "app": "zhihu",
+      "path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\final\\zhihu.png",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题包中 zhihu 自身的迁移规律（original 为“知乎”双字，style_ref 简化为单字“知”贴纸）以及 toutiao、meituan 等文字类 App 的处理方式，当原主体为简洁的品牌标准字时，应严格保留核心文字的几何骨架和空间关系。当前目标原图为“知乎”二字，依据主题包已有的 zhihu 转换先例及 detail_complexity_rule（极度简化），选择提取最具识别度的首字“知”作为主体，保留其原始笔画结构，仅进行颜色映射、材质转换和背景标准化，不进行语义符号替换或几何重构。",
+        "source": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\zhihu\\transfer_plan.json"
+      }
+    }
+  ],
+  "target_originals": {
+    "alipay": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\alipay\\alipay.png",
+    "anipop": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\anipop\\anipop.png",
+    "baidu_tieba": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\baidu_tieba\\baidu_tieba.png",
+    "bilibili": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\bilibili\\bilibili.png",
+    "clash_of_clans": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\clash_of_clans\\clash_of_clans.png",
+    "dewu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\dewu\\dewu.png",
+    "dingtalk": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\dingtalk\\dingtalk.png",
+    "douyin": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\douyin\\douyin.png",
+    "douyu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\douyu\\douyu.png",
+    "golden_spatula": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\golden_spatula\\golden_spatula.png",
+    "honor_of_kings": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\honor_of_kings\\honor_of_kings.png",
+    "iqiyi": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\iqiyi\\iqiyi.png",
+    "jianying": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\jianying\\jianying.png",
+    "keep": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\keep\\keep.png",
+    "kuaikan": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\kuaikan\\kuaikan.png",
+    "kugou": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\kugou\\kugou.png",
+    "lofter": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\lofter\\lofter.png",
+    "lol_mobile": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\lol_mobile\\lol_mobile.png",
+    "meituan": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\meituan\\meituan.png",
+    "mi_home": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\mi_home\\mi_home.png",
+    "mini_world": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\mini_world\\mini_world.png",
+    "moji_weather": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\moji_weather\\moji_weather.png",
+    "onmyoji": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\onmyoji\\onmyoji.png",
+    "peace_camp": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\peace_camp\\peace_camp.png",
+    "pinduoduo": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\pinduoduo\\pinduoduo.png",
+    "qq": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq\\qq.png",
+    "qq_mail": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq_mail\\qq_mail.png",
+    "qq_reading": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qq_reading\\qq_reading.png",
+    "soul": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\soul\\soul.png",
+    "tencent_comics": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tencent_comics\\tencent_comics.png",
+    "tencent_meeting": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tencent_meeting\\tencent_meeting.png",
+    "tmall": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tmall\\tmall.png",
+    "toutiao_lite": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\toutiao_lite\\toutiao_lite.png",
+    "wechat": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wechat\\wechat.png",
+    "wecom": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wecom\\wecom.png",
+    "wps_office": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\wps_office\\wps_office.png",
+    "xiaohongshu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\xiaohongshu\\xiaohongshu.png",
+    "ximalaya": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\ximalaya\\ximalaya.png",
+    "youku": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\youku\\youku.png",
+    "zhihu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\zhihu\\zhihu.png"
+  },
+  "app_names": [
+    "alipay",
+    "anipop",
+    "baidu_tieba",
+    "bilibili",
+    "clash_of_clans",
+    "dewu",
+    "dingtalk",
+    "douyin",
+    "douyu",
+    "golden_spatula",
+    "honor_of_kings",
+    "iqiyi",
+    "jianying",
+    "keep",
+    "kuaikan",
+    "kugou",
+    "lofter",
+    "lol_mobile",
+    "meituan",
+    "mi_home",
+    "mini_world",
+    "moji_weather",
+    "onmyoji",
+    "peace_camp",
+    "pinduoduo",
+    "qq",
+    "qq_mail",
+    "qq_reading",
+    "soul",
+    "tencent_comics",
+    "tencent_meeting",
+    "tmall",
+    "toutiao_lite",
+    "wechat",
+    "wecom",
+    "wps_office",
+    "xiaohongshu",
+    "ximalaya",
+    "youku",
+    "zhihu"
+  ],
+  "missing_apps": [],
+  "skipped_apps": []
+}

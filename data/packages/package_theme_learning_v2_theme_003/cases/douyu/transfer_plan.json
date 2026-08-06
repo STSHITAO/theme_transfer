@@ -1,0 +1,69 @@
+{
+  "app": "douyu",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 douyu 的 original -> style_ref 规律显示，当原图为清晰的 2D 卡通吉祥物时，应严格保留主体几何轮廓（鲨鱼+火箭的组合形态、眼睛位置、咬合关系），仅进行颜色归一化和材质贴纸化。当前目标原图结构简单明确，无复杂 3D 渲染或营销文字干扰，符合 preserve_major_structure 的判定标准，无需进行语义重构。",
+  "preserve": [
+    "鲨鱼头部与身体的圆润外轮廓剪影",
+    "单侧大眼睛的圆形比例与位置",
+    "嘴巴张开的锯齿状边缘特征",
+    "火箭与鲨鱼嘴部的咬合空间关系",
+    "火箭尾翼与头部的相对几何结构"
+  ],
+  "must_preserve": [
+    "鲨鱼咬住火箭的整体组合轮廓",
+    "大眼睛作为核心识别点的负空间或白色填充形态",
+    "锯齿嘴的开口弧度与尖牙结构",
+    "火箭元素的存在及其与鲨鱼的交叠关系"
+  ],
+  "recompose_allowed": [
+    "原有的橙色背景替换为网格底板",
+    "火箭的红色与黄色配色统一为薄荷绿或白色镂空",
+    "黑色粗描边转化为白色宽边加内部深灰虚线缝线",
+    "内部细微光影、渐变及高光完全扁平化去除"
+  ],
+  "restyle": [
+    "主体填充色强制映射为低饱和度薄荷青/浅蓝绿色",
+    "添加白色模切宽包边模拟贴纸边缘",
+    "在白边内侧或紧贴边缘添加深灰色手绘感虚线模拟缝纫针脚",
+    "右下方添加统一的浅灰色硬边缘投影以营造悬浮层级",
+    "所有尖锐转角柔化处理以符合纸质剪裁质感"
+  ],
+  "decorate": [
+    "背景使用米白/浅灰白底色铺满淡灰色正交网格线",
+    "主体外围环绕一圈淡红/淡粉色圆角虚线框作为裁剪定位参考"
+  ],
+  "forbid": [
+    "保留任何原始的橙色、红色、黄色品牌色或渐变色",
+    "改变鲨鱼与火箭的空间组合关系或用其他道具替换火箭",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影中的任一元素",
+    "使用非网格纹理背景或省略淡红色虚线框",
+    "添加3D立体效果、金属光泽、霓虹发光或写实纹理",
+    "将主体放大撑满画布或缩小至无法辨识",
+    "保留面部五官细节、毛发纹理或营销文字导致视觉杂乱"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker icon of the Douyu shark mascot biting a rocket, placed centrally on a light grey grid notebook paper background. The shark and rocket silhouette is strictly preserved with rounded edges, featuring a large eye and jagged mouth. The subject is filled with uniform mint green color, surrounded by a thick white die-cut border with dark grey dashed stitching lines inside. A soft grey hard-edge drop shadow falls to the bottom right. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, no gradients, no 3D effects.",
+  "color_application": "彻底剥离斗鱼原始的橙红黄品牌配色，将鲨鱼与火箭主体统一填充为低饱和度薄荷青/浅蓝绿色；原图中的白色高光或眼白转化为白色描边或负空间镂空；禁止保留任何原始品牌色相，确保色彩与主题包其他图标完全一致。",
+  "stroke_application": "移除原始的黑色粗实线描边，转化为双层贴纸轮廓语言：外层为粗实纯白包边模拟模切边缘，内层叠加深灰色细虚线模拟手工缝纫针脚；所有鲨鱼鳍、火箭尾翼等尖锐转角必须柔化为圆角，线条呈现手绘剪裁的柔和感。",
+  "composition_application": "将原本满版的鲨鱼火箭组合收缩为居中放置的独立贴纸形态，主体尺寸控制在画布的50%-60%之间；四周保留均匀充足的网格背景和红色虚线框留白，形成明确的'底板-虚线框-贴纸'三层嵌套层级，严禁主体出血或触碰边缘。",
+  "identity_application": "在严格服从薄荷绿单色贴纸风格的前提下，通过精确保留鲨鱼咬火箭的整体外轮廓、大眼睛位置和锯齿嘴形态来维持身份识别；利用白色负空间或镂空表现眼睛和火箭舷窗等关键细节，确保在单色化后用户仍能瞬间识别出斗鱼IP。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影，方向一致",
+    "主体必须居中且尺寸适中（50%-60%），严禁出血或挤压背景留白",
+    "禁止使用任何渐变、高光、3D立体效果或写实纹理"
+  ],
+  "negative_constraints": [
+    "禁止保留原始的橙色、红色、黄色品牌色或渐变背景",
+    "禁止使用纯色背景、透明背景或非网格纹理背景替代标准化底板",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影",
+    "禁止改变鲨鱼与火箭的组合关系或用无关道具替换火箭",
+    "禁止添加写实材质、金属光泽、霓虹发光等不符合手工剪纸风格的特效",
+    "禁止在主体内部保留过多的original细节导致视觉杂乱",
+    "禁止使用实线粗描边替代虚线缝纫效果或使用尖锐直角"
+  ]
+}

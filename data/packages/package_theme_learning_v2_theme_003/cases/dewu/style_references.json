@@ -1,0 +1,10 @@
+{
+  "target_app": "dewu",
+  "structure_preservation_mode": "preserve_major_structure",
+  "reference_apps": [
+    "youdao_dict",
+    "mango_tv",
+    "xingtu"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

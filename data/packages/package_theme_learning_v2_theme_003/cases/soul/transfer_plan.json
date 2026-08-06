@@ -1,0 +1,67 @@
+{
+  "app": "Soul",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 soul 的 reference_transformation_pattern 明确显示，当 original 主体为清晰的品牌文字时，策略是严格保留文字的几何轮廓、字母排列和相对位置，仅进行颜色映射（转为薄荷绿）和材质转换（添加贴纸白边、虚线缝线）。当前目标 App 原图核心即为 'Soul' 文字，符合 preserve_when 条件（简洁文字 Logo），因此必须保留主体结构，不进行语义重构。",
+  "preserve": [
+    "Soul 英文单词的专属字体形态与字形骨架",
+    "字母 S-o-u-l 的横向排列顺序、间距及相对比例",
+    "字母 l 的独特底部弯钩或高度特征",
+    "文字作为画面唯一主体的居中构图"
+  ],
+  "must_preserve": [
+    "完整的 'Soul' 单词拼写及字形骨架",
+    "文字在图标中的居中排版比例",
+    "字母之间的相对位置和比例关系"
+  ],
+  "recompose_allowed": [
+    "原图的黑色星球纹理背景（完全移除）",
+    "原图的青色圆角矩形外框（完全移除）",
+    "字母 l 原本的独立青色高亮（统一合并为主题薄荷绿）",
+    "文字内部的细微纹理或光影（扁平化为纯色块）"
+  ],
+  "restyle": [
+    "文字填充色统一替换为低饱和度薄荷绿/青蓝色",
+    "增加白色宽包边模拟模切贴纸边缘",
+    "增加深灰色虚线缝线模拟手工剪裁轨迹",
+    "增加右下方浅灰色硬边缘投影",
+    "所有字母转角圆润化处理以适配纸质质感"
+  ],
+  "decorate": [
+    "米白/浅灰白方格纸背景纹理",
+    "环绕主体的淡红/淡粉色圆角虚线框"
+  ],
+  "forbid": [
+    "保留原图的黑色背景、颗粒噪点或青色边框",
+    "改变 Soul 字体的基本笔画结构、字母顺序或字重",
+    "将文字替换为星球、幽灵、对话气泡等其他图形符号",
+    "使用渐变、发光、3D 立体效果或金属质感渲染文字",
+    "遗漏白色宽包边、深灰虚线缝线或网格背景中的任一元素",
+    "保留字母 l 的独立品牌色高亮（必须统一为主题色）"
+  ],
+  "generation_brief": "A flat mint green paper cutout sticker of the text 'Soul' in its specific brand font, centered on a light grey grid notebook background. The text is strictly preserved in shape and spacing but rendered as a single uniform mint cyan color with rounded corners. Surrounded by a thick white die-cut border and a dark grey dashed stitching line inside. A soft grey drop shadow falls to the bottom right. A faint red dashed rectangular frame surrounds the sticker on the grid paper. Matte paper texture, handcraft scrapbook style, no gradients, no 3D effects, no black background.",
+  "color_application": "彻底剥离原图黑色背景、青色边框及字母 l 的独立高亮色；将 'Soul' 文字整体统一填充为低饱和度薄荷绿/青蓝色；原图白色文字转化为白色贴纸包边；辅色仅限白、浅灰、淡红四色，禁止保留任何原品牌色。",
+  "stroke_application": "将原文字的锐利边缘柔化为圆润转角；外层包裹粗实纯白包边模拟模切边缘；紧贴白边内侧叠加深灰色细虚线模拟缝纫针脚；去除原文字内部的所有纹理细节，仅保留定义字形轮廓的必要线条。",
+  "composition_application": "移除原图满版星球背景和边框，将 'Soul' 文字收缩为居中放置的独立贴纸；文字尺寸控制在画布 40%-70% 之间；四周保留均匀的网格背景和红色虚线框空间；形成明确的'底板-虚线框-文字贴纸'三层嵌套层级。",
+  "identity_application": "通过严格保留 'Soul' 专属字体的几何轮廓、笔画走势和字母间距来维持身份识别；放弃对原图星球氛围和双色文字的色彩依赖；利用文字本身的结构辨识度替代色彩辨识度；确保在单色贴纸化后字形依然精准可辨。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留字母 l 的原品牌青色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "文字必须居中且尺寸适中（40%-70%），严禁出血或触碰边缘",
+    "禁止使用任何渐变、高光、3D 立体效果或噪点纹理",
+    "所有字母转角必须圆润化处理，符合纸质贴纸特性"
+  ],
+  "negative_constraints": [
+    "禁止保留原图的黑色星球背景、颗粒噪点或青色外框",
+    "禁止保留字母 l 与其他字母的颜色区分，必须全字统一色",
+    "禁止将文字替换为星球、幽灵、爱心等非文字图形",
+    "禁止使用尖锐直角、金属光泽或霓虹发光效果",
+    "禁止遗漏白色宽描边、虚线缝线或右下硬投影",
+    "禁止主体过大撑满画布或过小失去辨识度",
+    "禁止在文字内部保留原图的复杂纹理或光影细节"
+  ]
+}

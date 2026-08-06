@@ -1,0 +1,39 @@
+{
+  "app": "toutiao_lite",
+  "strategy_type": "logo_simplify",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "“头条”二字的专属粗体字形结构与右下角的闪电符号",
+  "brand_cues_to_preserve": [
+    "“头条”汉字的笔画骨架与字间距",
+    "右下角代表极速版的闪电符号",
+    "文字与闪电符号的相对空间布局"
+  ],
+  "semantic_cues_to_preserve": [
+    "新闻资讯的文字标识语义",
+    "极速/轻量化的闪电功能隐喻"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 toutiao 和 toutiao_lite 的真实迁移规律（reference_transformation_patterns），当原图主体为清晰的品牌文字时，策略严格保留文字的几何轮廓、笔画走向和排版比例，仅移除背景色块并进行材质转换。当前目标 App 原图主体为高识别度的“头条”文字加闪电角标，属于简洁的 2D 图形/文字组合，符合 preserve_when 条件，因此必须保留主要结构，不进行语义重构。",
+  "design_rationale": "“头条”文字是该 App 最直接的身份锚点，闪电符号区分了极速版属性。原图的红底色块和青色角标属于可被主题剥离的装饰层。采用 logo_simplify 策略，将文字和闪电提取为独立主体，合并为统一的薄荷绿贴纸，既符合主题包“极度简化、色彩归一”的规则，又能确保用户在网格手账背景下依然能一眼识别出应用身份。",
+  "must_preserve": [
+    "“头条”二字的完整字形轮廓",
+    "闪电符号的几何形状",
+    "文字与闪电的组合关系"
+  ],
+  "can_recompose": [
+    "红色倾斜背景色块（完全移除）",
+    "青色闪电角标底色（融入主体或转为负空间）",
+    "文字内部的填充颜色（转为薄荷绿）",
+    "边缘锐度（圆润化处理以适配贴纸风格）"
+  ],
+  "forbid": [
+    "保留红色的品牌主色或青色的角标色",
+    "改变“头条”二字的笔画结构导致不可读",
+    "遗漏闪电符号导致丢失极速版语义",
+    "使用渐变或 3D 立体效果破坏扁平纸质质感",
+    "主体过大撑满画布或破坏网格背景留白"
+  ],
+  "generation_direction": "薄荷绿单色填充的“头条”文字与闪电符号组合贴纸，居中置于米白网格纸背景上，外围环绕淡红虚线框。主体带白色宽包边与深灰虚线缝线，右下方有浅灰硬投影。去除原图红底与青色角标，文字笔画圆润化，扁平手工剪纸风格，无渐变无高光。"
+}

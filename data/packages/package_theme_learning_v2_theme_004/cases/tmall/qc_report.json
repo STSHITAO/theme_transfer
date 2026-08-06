@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 40,
+      "target_recognition_score": 40,
+      "semantic_fit_score": 60,
+      "identity_constraint_score": 35,
+      "over_recompose_risk": 75,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 20,
+      "overall_score": 52,
+      "failure_reason": "底部文字拼写错误，将 'Tmall' 写成了 'Tmail'，严重违反 must_preserve 约束；猫头轮廓过度重构，变成了趴着的通用卡通动物，丢失了天猫标志性的宽扁猫头剪影和眼鼻空间关系。",
+      "recommendation": "不推荐。文字拼写错误是致命缺陷，且主体形象偏离原品牌几何特征过多。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 88,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美契合主题风格（手绘、绿叶耳、粉腮红），底部文字 'Tmall' 拼写正确且为手写体。虽然猫头轮廓比原版略圆润，但保留了双耳位置、大眼居中下方的核心拓扑结构，识别度高且符合 transfer_plan 的重构要求。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\tmall\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

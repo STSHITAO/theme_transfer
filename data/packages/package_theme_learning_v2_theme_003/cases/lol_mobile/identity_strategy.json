@@ -1,0 +1,37 @@
+{
+  "app": "lol_mobile",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "英雄联盟手游的 'LD' 字母组合徽标或核心 IP 符号",
+  "brand_cues_to_preserve": [
+    "英雄联盟 IP 的底层视觉认知",
+    "LD 字母徽标的几何特征（若采用）"
+  ],
+  "semantic_cues_to_preserve": [
+    "MOBA 竞技对战属性",
+    "游戏品牌归属"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 lol_mobile 的真实迁移规律（reference_transformation_patterns），原图复杂的金克丝人物插画和运营标签被完全舍弃，重构为 'LD' 字母组合徽标。这是因为原图主体为写实 3D 人物特写，细节过于丰富且依赖色彩光影，无法在保持手账贴纸简洁性的前提下保留原始几何结构。因此，遵循主题包对复杂插画类 App 的处理逻辑，提取品牌底层徽标进行语义重构，而非保留原图的人物轮廓。",
+  "design_rationale": "原图标是高度写实的 3D 角色肖像加营销文字，直接扁平化会导致贴纸形态崩坏或细节杂乱。根据主题包规律，此类复杂插画应放弃原始结构，转而使用最具辨识度的品牌符号（如 LD 徽标）或功能语义符号。选择 semantic_recompose 策略，将主体重构为简化的字母徽标贴纸，既能清晰传达 '英雄联盟手游' 的身份，又能完美契合薄荷绿剪纸贴纸的极简美学。",
+  "must_preserve": [
+    "LD 字母徽标的核心几何形态（或等效的品牌核心符号）",
+    "居中构图与贴纸层级关系"
+  ],
+  "can_recompose": [
+    "金克丝人物面部、头发、手势等所有写实细节",
+    "4 周年营销文字与爆炸框背景",
+    "原图的蓝色渐变背景与橙色装饰",
+    "主体的具体外轮廓（从人脸变为字母/符号轮廓）"
+  ],
+  "forbid": [
+    "保留金克丝的写实面部特征或 3D 渲染质感",
+    "保留 '4 周年' 等营销文字",
+    "使用原图的蓝色或橙色品牌色",
+    "强行保留人物轮廓导致贴纸边缘破碎或内部细节过多",
+    "遗漏网格背景、红色虚线框、白色宽边或虚线缝线"
+  ],
+  "generation_direction": "生成一张置于米白网格纸中央的薄荷绿贴纸。主体为简化的 'LD' 字母组合徽标（或英雄联盟核心符号），填充统一薄荷绿，外围包裹白色宽边与深灰虚线缝线，右下方带浅灰硬投影。背景包含淡红虚线框。彻底移除原图人物插画、4 周年文字及所有渐变色彩，保持扁平手工剪纸质感。"
+}

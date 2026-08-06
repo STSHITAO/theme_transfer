@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 45,
+      "target_recognition_score": 45,
+      "semantic_fit_score": 50,
+      "identity_constraint_score": 40,
+      "over_recompose_risk": 65,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 62,
+      "failure_reason": "虽然风格完美匹配，但遗漏了 transfer_plan 中明确要求保留的'底部暗示旋转/羁绊的弧形动态线条'，导致主体看起来像普通的厨房铲子，丢失了游戏 App 的核心语义线索，识别度较低。",
+      "recommendation": "不推荐。缺失关键的身份识别元素（底部旋风线条），容易被误认为通用厨具图标。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 48,
+      "target_recognition_score": 48,
+      "semantic_fit_score": 52,
+      "identity_constraint_score": 42,
+      "over_recompose_risk": 62,
+      "background_score": 100,
+      "composition_score": 98,
+      "artifact_score": 100,
+      "overall_score": 65,
+      "failure_reason": "同样遗漏了 transfer_plan 中强制要求保留的'底部弧形动态线条'，导致无法有效区分于普通铲子图标。不过相比 candidate_01，其铲子形态更接近原图的几何特征（梯形头部），且构图更居中稳定。",
+      "recommendation": "勉强推荐作为备选，但需注意两者都未能完全遵循 identity constraints 中的动态线条要求。相比之下，candidate_02 的铲子形态更规整，更接近原图道具的抽象化表达。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\golden_spatula\\candidates\\candidate_02.png",
+  "warning": "两张候选图均未生成 transfer_plan 中明确要求保留的'底部暗示旋转/羁绊的弧形动态线条'，这严重影响了目标 App（金铲铲之战）的识别度，使其看起来像普通的烹饪应用。建议在后续生成中强制加入该元素。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}

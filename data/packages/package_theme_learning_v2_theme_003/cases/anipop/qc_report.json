@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 98,
+      "style_match_score": 98,
+      "target_identity_score": 85,
+      "target_recognition_score": 85,
+      "semantic_fit_score": 90,
+      "identity_constraint_score": 92,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 100,
+      "artifact_score": 100,
+      "overall_score": 94,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。该候选图完美执行了 transfer_plan 中的语义重组策略。它准确提取了 Anipop 小鸡的核心特征（水滴形身体、头顶呆毛、单眼 wink 表情），并将其转化为符合主题风格的薄荷绿扁平剪纸贴纸。背景网格、红色虚线框、白色宽包边、内部缝线及右下硬投影等细节均与参考图高度一致，且严格遵守了去色和扁平化约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 60,
+      "target_recognition_score": 60,
+      "semantic_fit_score": 70,
+      "identity_constraint_score": 65,
+      "over_recompose_risk": 45,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 100,
+      "overall_score": 78,
+      "failure_reason": "面部特征重构过度，丢失了关键的 wink 表情识别线索，且喙部形态不准确。",
+      "recommendation": "不推荐。虽然风格匹配度很高，但在身份识别上存在明显缺陷。Transfer plan 明确要求保留'单眼 wink 的俏皮表情特征'，但该候选图将其重构为双眼眯起的通用开心表情，丢失了 Anipop 小鸡最具辨识度的神态。此外，嘴部被简化为两个小圆点，失去了'圆润喙部'的特征，导致主体看起来像一个通用的薄荷绿团子，而非特定的 App 角色。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\anipop\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

@@ -1,0 +1,37 @@
+{
+  "app": "mi_home",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "盾牌外轮廓与内部'M'形负空间构成的米家Logo几何结构",
+  "brand_cues_to_preserve": [
+    "盾牌状的外边界曲线",
+    "内部'M'字母的折角与断笔特征",
+    "Logo整体的宽高比例与居中构图"
+  ],
+  "semantic_cues_to_preserve": [
+    "智能家居管理的安全感与连接感（通过盾牌形态隐含）"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 mi_home 的 original -> style_ref 变换规律，以及 keep、wps_office 等简洁几何 Logo 的处理方式，当原图主体为清晰的 2D 几何符号时，必须严格保留其拓扑结构。米家 Logo 本身即为极简的盾牌+M 组合，无复杂 3D 渲染或多余装饰，完全符合 preserve_major_structure 的适用条件。因此，策略锁定为保留原始几何轮廓、折角位置和负空间关系，仅执行颜色映射、材质贴纸化和背景标准化，不进行任何语义重构或形状替换。",
+  "design_rationale": "米家 App 的核心识别度完全依赖于其独特的盾牌 M 形 Logo。该图形结构简单、轮廓明确，在缩小至 40%-70% 并转换为单色薄荷绿后依然具有极高的辨识度。根据主题设计语言，无需像复杂插画类 App 那样提取语义符号进行重构，直接对原 Logo 进行扁平化、圆角化并添加贴纸材质层，既能完美服从手账贴纸的全局风格，又能最大化保留品牌身份锚点，避免过度设计导致的识别丢失。",
+  "must_preserve": [
+    "盾牌外轮廓的完整闭合形态",
+    "内部 M 形负空间的精确位置与角度",
+    "Logo 在画布中的绝对居中与 40%-70% 占比"
+  ],
+  "can_recompose": [
+    "原图的绿色渐变背景（替换为网格底板）",
+    "原图的纯白填充色（替换为薄荷绿填充+白边）",
+    "边缘的锐利直角（柔化为圆角以适配布艺/纸质质感）"
+  ],
+  "forbid": [
+    "保留原图的绿色渐变或任何非薄荷绿的品牌色",
+    "改变盾牌或 M 形的几何比例、笔画走向或空间关系",
+    "遗漏白色宽包边、深灰虚线缝线、右下硬投影或网格背景中的任一指纹元素",
+    "将 Logo 重构为房屋、灯泡、齿轮等其他智能家居通用道具",
+    "使用 3D 立体渲染、高光渐变或尖锐折角破坏手工剪纸质感"
+  ],
+  "generation_direction": "生成一张置于米白浅灰网格底板中央的手工剪纸贴纸。主体为米家盾牌M形Logo，严格保留原始几何轮廓与内部负空间比例，填充统一低饱和薄荷绿，外围包裹纯白宽模切边，白边内侧叠加深深灰虚线缝纫迹，所有转角圆润化。主体右下方添加浅灰硬边缘投影，四周环绕淡红/粉圆角虚线框。主体占画布50%居中，彻底去除原图渐变与品牌绿，呈现哑光纸质贴片质感。"
+}

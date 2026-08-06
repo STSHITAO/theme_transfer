@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 92,
+      "style_match_score": 92,
+      "target_identity_score": 88,
+      "target_recognition_score": 88,
+      "semantic_fit_score": 95,
+      "identity_constraint_score": 90,
+      "over_recompose_risk": 15,
+      "background_score": 100,
+      "composition_score": 95,
+      "artifact_score": 98,
+      "overall_score": 92,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美执行了 semantic_recompose 策略，将原图复杂的橙红背景与写实角色成功重构为符合主题包规律的绿叶萌宠形象。核心识别线索（手持铁锹、Q版大头比例、伴随的白色小团子）保留完整，底部手写体 App 名称清晰且风格统一。画面干净，留白充足，完全符合 transfer_plan 的所有约束。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 85,
+      "style_match_score": 85,
+      "target_identity_score": 82,
+      "target_recognition_score": 82,
+      "semantic_fit_score": 88,
+      "identity_constraint_score": 80,
+      "over_recompose_risk": 25,
+      "background_score": 100,
+      "composition_score": 80,
+      "artifact_score": 95,
+      "overall_score": 84,
+      "failure_reason": "主体占比略大，头部叶片细节稍显繁杂，略微偏离了参考图中极简涂鸦的松弛感；铁锹与手部的连接处线条略显拥挤。",
+      "recommendation": "可以使用，但略逊于 candidate_01。虽然也正确保留了铁锹、白团子和绿叶主题，但整体构图的呼吸感不如 candidate_01，头部的叶片纹理稍微有点过度设计，不够像参考图那样随性的马克笔涂鸦。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_004\\cases\\tencent_comics\\candidates\\candidate_01.png",
+  "warning": "",
+  "needs_retry": false
+}

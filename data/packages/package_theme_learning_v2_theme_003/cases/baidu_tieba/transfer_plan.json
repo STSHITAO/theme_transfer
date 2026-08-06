@@ -1,0 +1,61 @@
+{
+  "app": "baidu_tieba",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 baidu_tieba 的 original -> style_ref 规律显示，当原图标主体为简洁的几何图形（气泡）加核心文字（贴）时，应严格保留其拓扑结构和空间比例，仅进行颜色映射和材质转换。当前目标原图结构简单清晰，符合 preserve_major_structure 的判定标准，无需进行语义重构或元素替换，直接保留气泡与文字的几何关系即可确保最高识别度。",
+  "preserve": [
+    "对话气泡的整体 silhouette 和底部尖角",
+    "汉字'贴'的完整笔画结构和左右部件比例",
+    "文字相对于气泡的居中位置和大小占比"
+  ],
+  "must_preserve": [
+    "对话气泡的外轮廓形状及底部尖角指向",
+    "汉字'贴'的专属字形结构与笔画比例",
+    "文字在气泡内部的居中空间关系"
+  ],
+  "recompose_allowed": [
+    "原图的蓝紫粉多色渐变背景",
+    "气泡边缘的重叠色彩效果",
+    "原图的光影立体感"
+  ],
+  "restyle": [
+    "主体填充色统一为薄荷绿/青蓝色",
+    "添加白色宽包边与深灰色虚线缝线",
+    "右下方添加浅灰色硬边缘投影",
+    "所有转角圆润化处理以符合纸质贴纸质感"
+  ],
+  "decorate": [
+    "米白/浅灰白方格纸背景纹理",
+    "环绕主体的淡红/淡粉色圆角虚线框"
+  ],
+  "forbid": [
+    "保留原图的蓝、紫、粉等高饱和度品牌色",
+    "改变'贴'字的字形结构或将其替换为其他符号",
+    "遗漏白色宽包边、深灰虚线缝线或右下硬投影",
+    "使用非网格背景或省略淡红色虚线框",
+    "添加 3D 光泽、渐变或写实纹理",
+    "将气泡简化为无尖角的普通圆角矩形或圆形"
+  ],
+  "generation_brief": "A flat mint cyan paper cutout sticker icon of a speech bubble with a bottom tail and the Chinese character '贴' centered inside. The sticker has a thick white die-cut border and dark grey dashed stitching lines. A soft grey drop shadow is at the bottom right. Placed on a light grey grid notebook paper background with a faint red dashed rectangular frame. Handcraft scrapbook style, matte paper texture, rounded corners, clean vector illustration.",
+  "color_application": "彻底移除原图的紫、蓝、粉三色渐变及重影效果，将气泡主体与内部'贴'字统一填充为低饱和度薄荷绿/青蓝色；'贴'字通过白色负空间或白色描边形式在薄荷绿气泡上显现，保持单色扁平视觉。",
+  "stroke_application": "为气泡外轮廓添加双层贴纸描边：外层为粗实纯白包边模拟模切边缘，内层紧贴白边内侧叠加深灰色手绘感虚线模拟缝纫线迹；气泡底部尖角及'贴'字笔画转折处均需圆润化处理，禁止尖锐直角。",
+  "composition_application": "将气泡主体严格居中置于网格底板中央，尺寸缩放至画布的50%-60%以确保落入淡红色虚线框安全区内；主体四周保留均匀充足的网格留白，维持'底板-虚线框-贴纸'三层嵌套层级关系。",
+  "identity_application": "在完全服从薄荷绿单色贴纸风格的前提下，通过精确保留气泡底部的尖角特征和'贴'字的专属字形骨架来维持百度贴吧的身份识别；不使用任何额外装饰遮挡文字，确保核心识别锚点在扁平化后依然清晰可读。",
+  "fidelity_constraints": [
+    "主体填充色必须严格使用统一的薄荷绿/青蓝色，禁止保留原App品牌色",
+    "必须具备白色宽包边与内部深灰色虚线缝线的双层轮廓结构",
+    "背景必须是米白/浅灰白底+浅灰网格+淡红/粉圆角虚线框的标准化底板",
+    "主体右下方必须有统一的浅灰色硬边缘投影",
+    "主体必须居中且尺寸适中（40%-70%），严禁出血或触碰边缘"
+  ],
+  "negative_constraints": [
+    "禁止保留original的高饱和度品牌色、渐变色或多色错位效果",
+    "禁止使用纯色背景、透明背景或非网格纹理背景",
+    "禁止遗漏白色宽描边、深灰虚线缝线或右下硬投影中的任一贴纸特征",
+    "禁止对'贴'字进行艺术化变形、替换或删除",
+    "禁止将带尖角的气泡轮廓修改为普通圆形或正方形",
+    "禁止添加写实材质、金属光泽、霓虹发光或3D渲染效果"
+  ]
+}

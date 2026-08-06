@@ -1,0 +1,38 @@
+{
+  "app": "soul",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "identity_anchor": "Soul 品牌标准字体的字形结构与字母排列",
+  "brand_cues_to_preserve": [
+    "Soul 英文单词的专属字体形态",
+    "字母 S-o-u-l 的横向排列顺序与间距",
+    "字母 l 的独特底部弯钩或高度特征（若原图有）"
+  ],
+  "semantic_cues_to_preserve": [
+    "文字本身作为社交应用名称的直接指代"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 soul 的 reference_transformation_pattern 明确显示，当 original 主体为清晰的品牌文字时，策略是严格保留文字的几何轮廓、字母排列和相对位置，仅进行颜色映射（转为薄荷绿）和材质转换（添加贴纸白边、虚线缝线）。当前目标 App 原图核心即为 'Soul' 文字，符合 preserve_when 条件（简洁文字 Logo），因此必须保留主体结构，不进行语义重构。",
+  "design_rationale": "Soul 的核心识别度高度依赖其独特的英文字体设计。在原图中，文字位于复杂的星球纹理背景之上。为了适配手账贴纸主题，需要剥离黑色星球背景和青色外框，将文字本身提取为独立的薄荷绿贴纸主体。保留字形的精确结构能确保用户在失去品牌色和背景氛围后，依然能通过文字骨架瞬间识别出 App 身份。这符合主题包对文字类 Logo 的处理惯例（如 zhihu, meituan, xiaohongshu）。",
+  "must_preserve": [
+    "Soul 四个字母的完整字形骨架",
+    "字母之间的相对位置和比例关系",
+    "文字作为画面唯一主体的居中构图"
+  ],
+  "can_recompose": [
+    "原图的黑色星球纹理背景（完全移除）",
+    "原图的青色圆角矩形外框（完全移除）",
+    "字母 l 原本的独立青色高亮（统一合并为主题薄荷绿）",
+    "文字内部的细微纹理或光影（扁平化为纯色块）"
+  ],
+  "forbid": [
+    "保留原图的黑色背景或青色边框",
+    "改变 Soul 字体的基本笔画结构或字母顺序",
+    "将文字替换为星球、对话气泡等其他图形符号",
+    "使用渐变、发光或 3D 立体效果渲染文字",
+    "遗漏白色宽包边、深灰虚线缝线或网格背景中的任一元素"
+  ],
+  "generation_direction": "Extract the 'Soul' text logo from the original image. Remove the black planet background and cyan border completely. Render the text as a flat mint green paper cutout sticker with a thick white die-cut border and dark grey dashed stitching line inside. Place the sticker centered on a light grey grid notebook background with a faint red dashed rectangular frame around it. Add a soft grey drop shadow to the bottom right. Ensure the font shape and letter spacing of 'Soul' are strictly preserved. Matte paper texture, no gradients, no 3D effects."
+}

@@ -1,0 +1,41 @@
+{
+  "app": "peace_camp",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "identity_anchor": "和平精英IP关联（三级头盔/橙红护目镜特征）与社区营地属性",
+  "brand_cues_to_preserve": [
+    "和平精英品牌色系中的橙红色（仅作为极小面积点缀，如护目镜或腮红）",
+    "战术/军事游戏的装备符号（头盔）",
+    "GAME FOR PEACE 英文标识"
+  ],
+  "semantic_cues_to_preserve": [
+    "游戏社区/营地的聚集感",
+    "资讯与攻略的工具属性（可通过手持地图或望远镜隐喻，或仅保留角色站姿）",
+    "轻松交流的氛围"
+  ],
+  "style_fidelity_priority": "theme_fidelity_first",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'peace_elite' 的 transformation pattern，原图若是复杂场景或纯文字排版（如本例中的大字报式Logo），均放弃原有几何结构，转而提取核心语义符号（三级头盔）重构为菜狗形象。当前目标 'peace_camp' 原图为高饱和渐变背景下的纯文字排版，缺乏单一明确的主体轮廓可供保留，符合 theme_rules 中 'recompose_when' 的条件（纯文字排版、缺乏单一明确轮廓）。因此，必须采用语义重构，沿用同IP 'peace_elite' 的视觉资产（戴头盔的菜狗）以建立身份关联，同时通过底部文字区分具体App。",
+  "design_rationale": "原图标是典型的运营活动式大字报设计，无固定图形Logo。为了融入“绿叶小狗”主题包，必须借用同IP（和平精英）已有的主题化资产（三级头盔菜狗）作为视觉锚点。策略上选择 semantic_recompose，将原本严肃的战术射击语义转化为呆萌的营地守护者形象。保留橙红色护目镜作为唯一的原色记忆点，其余部分严格遵循白底、绿线、手绘质感。底部手写 'Peace Camp' 确保功能识别。",
+  "must_preserve": [
+    "三级头盔的轮廓特征（作为和平精英IP的核心识别）",
+    "橙红色护目镜条（微量原色保留）",
+    "底部手写体 App 名称 'Peace Camp'",
+    "绿叶耳朵/装饰、粉腮红、豆豆眼等主题母题特征"
+  ],
+  "can_recompose": [
+    "原有的橙黄色爆炸渐变背景（替换为纯白底板）",
+    "原有的粗黑体中文大字（移除，仅保留底部英文手写）",
+    "右下角的星形符号（可移除或简化为装饰）",
+    "主体的具体姿态（可调整为坐姿或手持地图/望远镜以体现'营地/攻略'属性，区别于战斗姿态）"
+  ],
+  "forbid": [
+    "保留原图的大面积橙黄色渐变背景",
+    "保留原有的粗黑体印刷汉字",
+    "使用平滑矢量线条或3D渲染质感",
+    "主体撑满画布，失去留白和底部文字区域",
+    "遗漏三级头盔特征导致无法识别为和平精英系应用"
+  ],
+  "generation_direction": "纯白圆角底板，中央绘制一只戴卡通化三级头盔的绿色菜狗，头盔保留灰色主体和橙红色护目镜条，耳朵为绿叶，面部有粉腮红和呆萌表情，姿态轻松（如坐姿或手持小地图），深绿手绘粗描边，扁平涂鸦质感，底部居中黑色手写体 'Peace Camp'，主体占比50%-65%，大量留白。"
+}

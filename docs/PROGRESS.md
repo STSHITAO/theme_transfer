@@ -26,6 +26,13 @@ Last updated: 2026-08-06
 - Implemented the pre-generation per-App structure policy across theme analysis, identity strategy, transfer plan, package metadata and ITTE v1.4 conditional identity scoring; full suite passes (68 tests).
 - Added resumable four-theme generation and batch evaluation entry points; the current validation run uses two candidates per App for multimodal QC selection.
 - Added per-App Wan content-inspection fault isolation: rejected inputs are recorded and skipped, while ITTE evaluates successful outputs with explicit coverage and cross-theme common-intersection metadata.
+- Reworked the final Wan prompt: identity is the hard priority, each image role is mapped explicitly, full transfer-plan reasoning is omitted, and reference App names are scrubbed and tested before the API call.
+- Completed a controlled prompt-v2 run on 10 known high-pollution theme_001 Apps (20 candidates). Compared with the same Apps in the frozen package, candidates below target-recognition 60 decreased from 15 to 4, and selected failures decreased from five Apps to one. Nine selected outputs passed the recognition threshold; `crossfire_mobile` still copied reference identities in both candidates.
+- Audited the complex-App metadata path and found that `target.json` was used by Qwen planning but `core_function` and the final `generation_brief` were absent from the Wan prompt. Added direct target metadata and executable-brief compilation.
+- Removed the experimental target-level `generation_policy`. Existing App facts remain unchanged; the model now derives structure preservation versus function-semantic recomposition from all designer pairs, the target profile and the target original.
+- Replaced first-five alphabetic theme learning with five-pair batched analysis over every valid pair plus aggregate conditional policy. Per-target style references now exclude the target, prefer the selected route and are deterministically distributed; Wan receives the target image first.
+- Completed theme-learning-v2 real generation for theme_003 and theme_004 on the same 40 Apps, with two candidates per App. Both themes produced 80 candidates and 40 final outputs with no API skips. Qwen observed preserve/recompose pair counts of 61/25 and 20/16; generated route counts were 29/11 and 26/14.
+- Completed cached GPU ITTE v1.4 on both new packages. theme_003 scored 89.03 and theme_004 87.27 with 100% coverage, but both correctly remain `failed_hard_gate` because of severe package outliers (`xiaohongshu` and `wechat`). Full evidence and the reconstruction/generalization boundary are recorded in `docs/THEME_LEARNING_V2_EXPERIMENT.md`.
 
 ## In progress
 
@@ -36,6 +43,9 @@ Last updated: 2026-08-06
 
 - Future optional validation: add independently sourced generated failures or human ratings only when such data becomes available; do not synthesize subjective labels merely to tune weights.
 - Restore Wan API billing/entitlement, resume from `package_full_structure_v1_theme_002`, then complete and summarize the four-theme real generation/evaluation run before treating v1.4 as empirically accepted.
+- Add a hard final-publication gate: when every candidate fails identity QC, record and skip the App instead of publishing the highest-scoring fallback. Then rerun `crossfire_mobile` as the remaining prompt-v2 failure.
+- Decide whether the next experiment should use target-wise leave-one-out theme evidence. The current run intentionally supports target/reference overlap and therefore measures in-package reconstruction, not unseen-App generalization.
+- Investigate why target-compliant outputs can still become ITTE package outliers, starting with theme_003 `xiaohongshu` and theme_004 `wechat`; do not change ITTE thresholds from these two examples alone.
 
 ## Deployment status
 

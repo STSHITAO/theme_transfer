@@ -1,0 +1,28 @@
+{
+  "theme_style_analysis": "当前主题呈现为一种‘手工剪纸/贴纸拼贴’风格。所有图标均被转化为放置在方格纸背景上的模切贴纸效果。主体符号经过扁平化、圆润化处理，统一填充为清新的薄荷绿/青色，并带有明显的白色宽边和深灰色虚线缝纫/剪裁轮廓。整体视觉传达出一种手作、草稿本、清新且富有童趣的文具质感。",
+  "common_original_to_style_transform": "原始图标从复杂的渐变、3D光影或纯色块，转化为扁平的、带有白色描边和虚线轮廓的贴纸形态。主体的颜色被统一替换为主题青色，去除了原有的复杂色彩和材质，保留了核心几何结构，但边缘变得更加圆润和卡通化。",
+  "common_background_transform": "原有的纯色或渐变背景被完全替换为统一的浅灰白色方格纸（网格本）纹理。在贴纸外围，通常有一圈红色的虚线框，模拟手工剪裁的辅助线或缝纫线迹，增强了手账本的视觉语境。",
+  "common_foreground_transform": "主体符号被提取并简化，填充统一的薄荷青色。主体外围包裹着一层厚实的白色边缘（模拟贴纸的白边），白边内部或边缘带有深灰色的虚线（模拟针脚或裁剪线）。主体右下方带有柔和的深灰色投影，使其与方格纸背景产生轻微的悬浮层级感。",
+  "color_palette": [
+    "薄荷青/浅蓝绿色 (主体填充)",
+    "纯白色 (贴纸白边与高光)",
+    "浅灰白色 (方格纸底色)",
+    "淡灰色 (网格线与投影)",
+    "淡红色/珊瑚色 (外围虚线装饰)"
+  ],
+  "line_style": "主体边缘圆润流畅，无锐利尖角。关键特征是深灰色的短虚线描边，模拟手工缝纫或剪裁轨迹。外围辅以淡红色的长虚线框。",
+  "texture_material": "哑光纸质质感。主体表现为彩色卡纸剪裁效果，背景表现为普通的作业本方格纸，整体无反光、无金属或玻璃等光滑材质，强调朴素的手工纸艺感。",
+  "lighting_shadow": "光照均匀柔和，无明显方向性高光。主要通过主体右下方的柔和漫反射阴影（Drop Shadow）来表现贴纸贴在纸面上的微弱厚度与空间层级。",
+  "icon_composition_rules": "主体居中放置，占据画面约60%-70%的比例。主体略微带有随机角度的旋转（非绝对水平垂直），以增加手工粘贴的自然随意感。主体、白边、投影、红色虚线框、方格背景形成清晰的五层结构。",
+  "target_preservation": "必须保留目标App的核心轮廓、关键笔画或标志性几何结构（如字母、汉字、特定图形），确保用户在贴纸化后仍能一眼识别出原App的身份。功能语义不能因过度抽象而丢失。",
+  "generation_prompt": "A flat paper cutout sticker icon placed on a light grey grid notebook paper background. The main subject is simplified, rounded, and filled with a uniform mint cyan color. The subject is surrounded by a thick white die-cut border with a dark grey dashed stitching line inside the white border. A soft grey drop shadow falls to the bottom right of the sticker, giving it a slight 3D layered effect. A faint red dashed rectangular line surrounds the sticker on the grid paper. Handcraft scrapbook style, matte paper texture, clean vector illustration, soft lighting, cute and fresh aesthetic.",
+  "negative_prompt": "original app colors, gradients, 3D glossy effects, metallic textures, realistic shadows, sharp corners, complex details, text, watermarks, extra logos, messy lines, photorealistic, dark colors, neon colors.",
+  "qc_focus": "1. 检查主体是否成功转化为薄荷青色填充加白色宽边和虚线轮廓的贴纸形态。2. 检查背景是否为统一的方格纸纹理，且带有红色虚线框。3. 检查主体是否保留了原App的核心可识别特征。4. 检查是否有原App的颜色或材质泄漏。5. 检查投影和层级关系是否自然，是否符合手工贴纸的视觉效果。",
+  "used_reference_examples": [
+    "alipay",
+    "hello_bike",
+    "mi_home",
+    "tencent_maps",
+    "zhihu"
+  ]
+}

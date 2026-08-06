@@ -1,0 +1,74 @@
+{
+  "app": "onmyoji",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 'clash_of_clans'（写实人脸重构为全身菜狗）、'peace_elite'（写实士兵重构为戴头盔菜狗）以及 'honor_of_kings'（写实头像重构为符号+菜狗）的规律，当原图为高精度3D/2D写实人像且细节极其复杂时，必须放弃原始几何结构。阴阳师原图是复杂的半身人像插画，无法直接保留轮廓进行简单换肤，因此依据主题规则提取'手持道具的和风角色'这一核心语义，重构为符合'绿叶小狗'母题的单一卡通形象，同时保留最具识别度的红色金鱼道具和网易Logo作为身份锚点。",
+  "preserve": [
+    "手持红色金鱼或纸伞的标志性动作语义",
+    "齐刘海黑发少女的面部特征意向（转化为发型轮廓或叶子装饰）",
+    "右下角红色的网易云/S形品牌标识形状与相对位置",
+    "和风妖怪题材的神秘与可爱感氛围"
+  ],
+  "must_preserve": [
+    "手持红色金鱼的动作姿态（金鱼保留红色作为功能语义锚点）",
+    "齐刘海的发型结构特征（可简化为黑色手绘线条或叶状刘海）",
+    "右下角网易红色S形Logo（允许手绘化但不可删除或变色）",
+    "底部手写体 'Onmyoji' 英文名称"
+  ],
+  "recompose_allowed": [
+    "写实的人脸五官替换为豆豆眼、粉腮红、吐舌头的菜狗表情",
+    "复杂的头发和发饰简化为绿叶耳朵或简单的黑色线条",
+    "写实的和服纹理简化为扁平的绿色/白色色块加手绘描边",
+    "深色渐变背景完全替换为纯白底板",
+    "人物身体比例从写实半身像重构为Q版全身或大头萌系比例"
+  ],
+  "restyle": [
+    "整体画风转为手绘马克笔涂鸦质感",
+    "色彩体系映射为白底+深绿描边+浅绿填充+粉色点缀",
+    "材质从二次元赛璐璐/厚涂转为扁平哑光纸质贴纸感",
+    "光影从复杂渲染转为无阴影纯平涂"
+  ],
+  "decorate": [
+    "头顶增加绿叶耳朵或叶脉纹理",
+    "面部增加粉色椭圆腮红和呆萌表情",
+    "金鱼道具增加手绘抖动轮廓和叶脉细节",
+    "服饰边缘增加不规则手绘笔触"
+  ],
+  "forbid": [
+    "保留原图高精度的二次元写实画风和复杂光影",
+    "使用大面积的深紫色/深蓝色原背景",
+    "遗漏手持金鱼/伞这一核心识别道具",
+    "线条过于平滑规整失去手绘马克笔抖动感",
+    "主体过大撑满画布挤压底部文字空间",
+    "将神乐替换为其他阴阳师角色或通用动漫少女",
+    "删除或修改右下角网易S形Logo的颜色与形状"
+  ],
+  "generation_brief": "Pure white rounded square background. Center: A cute green vegetable-dog character wearing simplified red-and-white Onmyoji style outfit, with leaf ears, pink blush, and playful tongue-out expression. The dog holds a hand-drawn RED goldfish (keep red color as accent) in one paw. Thick wobbly dark green marker outlines, flat matte fill. Bottom right: Tiny hand-drawn red NetEase 'S' logo doodle. Bottom center: Black handwritten text 'Onmyoji'. Subject occupies 55% canvas, ample whitespace, 2D sticker art style, no shadows, no gradients.",
+  "color_application": "背景强制替换为纯白(#FFFFFF)。主体轮廓使用深草绿(#4A7C29)手绘粗线，内部填充浅嫩绿(#A8D060)。仅在手绘金鱼和右下角网易S Logo处保留原App标志性红色(#FF4D4F)作为微量语义锚点，其余红/紫/蓝品牌色全部剥离。腮红使用淡粉(#FFB6C1)，文字与眼睛使用纯黑(#000000)。",
+  "stroke_application": "将原图精细二次元线稿彻底转化为粗细不均的手绘马克笔线条。外轮廓使用深绿色粗描边，边缘带自然抖动与断笔；内部细节（如衣褶、鱼鳞）简化为同色系细线或省略。所有尖角圆润化，禁止平滑矢量线与锐利几何边缘。",
+  "composition_application": "摒弃原图对角线复杂构图，改为严格居中偏上的单体卡通形象构图。主体高度控制在55%-60%，四周留白40%以上。底部固定预留15%-20%空间放置黑色手写体'Onmyoji'。右下角网易S Logo缩小为手绘涂鸦尺寸，置于文字右侧或主体右下侧，不破坏整体留白平衡。",
+  "identity_application": "通过'语义重构+关键道具保留'双重机制维持身份。将神乐重构为绿叶小狗母题，但必须保留'手持红色金鱼'这一强识别动作与道具颜色；齐刘海特征转化为叶状或黑色手绘刘海；网易S Logo以手绘形式原位保留。底部手写文字作为最终识别兜底，确保在彻底萌化后仍可关联原App。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须符合绿叶小狗/蔬菜萌宠母题：绿叶耳、粉腮红、呆萌表情",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量或标准几何",
+    "底部必须包含黑色手写风格'Onmyoji'，禁止印刷字体",
+    "色彩严格限制在白/绿/粉/黑及微量红色锚点范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D、拟物或光影",
+    "主体占比50%-65%，保证充足留白与底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原图高饱和深蓝/暗紫背景或复杂场景",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止主体撑满画布导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗母题，使用无关卡通或原版神乐形象",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止保留原图复杂营销元素、写实道具或多角色堆叠",
+    "禁止过度重构导致手持金鱼动作或网易Logo消失",
+    "禁止将红色金鱼改为绿色或其他颜色，丧失语义锚点",
+    "禁止生成通用Q版毛绒团子或无特征表情球"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "app": "mi_home",
+  "strategy_type": "logo_preserve",
+  "identity_constraint_level": "strict",
+  "structure_preservation_mode": "preserve_major_structure",
+  "structure_identity_metric_applicable": true,
+  "structure_policy_rationale": "参考主题包中 mi_home 的 original -> style_ref 规律明确显示：当原图具有单一明确的高辨识度几何轮廓（如M形盾牌）时，必须保留主体几何的大部分结构、比例和空间关系。当前目标原图为极简的M形盾牌，轮廓清晰且无复杂堆叠，完全符合 preserve_major_structure 的触发条件。因此策略为严格保留M形外框拓扑，仅在内部填充主题化五官并在边缘叠加绿叶母题，不进行语义替代或结构重组。",
+  "preserve": [
+    "M形盾牌/猫脸的整体外轮廓几何与空间朝向",
+    "顶部双折角与底部半圆弧的比例关系",
+    "右侧中部的标志性断口/缺口设计",
+    "字母M与盾牌结合的整体外轮廓识别度"
+  ],
+  "must_preserve": [
+    "主体白色图形的完整几何骨架（不可改变长宽比或扭曲）",
+    "顶部类似猫耳/盾牌的双折角结构",
+    "右侧线条的断开位置与负空间关系",
+    "M形盾牌/猫脸的整体外轮廓几何与空间朝向"
+  ],
+  "recompose_allowed": [
+    "原图的纯绿色渐变背景替换为纯白/米白圆角底板",
+    "原图的平滑白色矢量填充替换为手绘抖动深绿描边+浅绿/白色平涂",
+    "M形内部的空白负空间填充为菜狗的豆豆眼、黑鼻子、粉腮红和吐出的粉色舌头",
+    "M形的左上角/边缘延伸或替换为带叶脉的绿色叶子耳朵",
+    "底部区域新增黑色手写体 'MI JIA'"
+  ],
+  "restyle": [
+    "背景绿色的具体色值、渐变方向或材质改为扁平手绘白底",
+    "主体白色的填充材质改为浅绿平涂加叶脉纹理",
+    "图标整体的圆角矩形底板形状适配iOS规范",
+    "光影、投影、内发光等装饰性效果全部移除"
+  ],
+  "decorate": [
+    "M形左上角添加带叶脉的嫩绿叶子作为耳朵",
+    "主体内部添加黑色豆豆眼和椭圆粉腮红",
+    "主体下方添加吐出的粉色小舌头",
+    "底部居中放置黑色手写体 'MI JIA'"
+  ],
+  "forbid": [
+    "改变或破坏M形盾牌的基本几何拓扑和空间比例",
+    "保留原图的高饱和度绿色渐变背景或大面积品牌色填充",
+    "使用平滑矢量线、锐利折角或标准几何曲线",
+    "遗漏绿叶耳朵、粉腮红、呆萌表情等主题核心母题特征",
+    "遗漏底部手写App名称或使用电脑标准印刷字体",
+    "添加任何3D光影、立体浮雕、投影或玻璃拟物效果",
+    "让主体撑满画布导致失去四周留白和底部文字区域",
+    "将M形盾牌替换为真实的猫咪动物插画或通用房屋图标"
+  ],
+  "generation_brief": "A cute hand-drawn doodle app icon on a pure white rounded square background. The central subject strictly preserves the geometric silhouette of the Mi Home M-shaped shield/cat-face logo, outlined with thick, wobbly dark green marker lines. A light green leaf with veins extends from the top-left corner as an ear. Inside the M-shape, fill with kawaii facial features: black dot eyes, pink oval blushes, and a small pink tongue sticking out. Flat matte paper texture, no shadows or gradients. Subject occupies 55% of canvas, centered vertically. Below the graphic, write 'MI JIA' in casual bold black handwritten font. Clean composition with ample white space.",
+  "color_application": "彻底移除原图高饱和绿色渐变背景，替换为纯白/米白底板；主体轮廓使用深草绿(#4A7C29)手绘粗线，内部填充浅嫩绿(#A8D060)并叠加叶脉纹理；腮红使用淡粉(#FFB6C1)，眼睛与底部文字使用纯黑(#000000)。",
+  "stroke_application": "将原图平滑矢量边缘转化为粗细不均的手绘马克笔线条，边缘带自然抖动与圆润感；外轮廓使用深绿粗线，内部五官与叶脉使用同色系细线；严禁锐利折角或机械几何曲线。",
+  "composition_application": "采用垂直三段式构图：上部为M形盾牌主题化主体（占画布55%），中部留白过渡，下部为黑色手写体'MI JIA'；主体严格居中偏上，四周保留充足白色呼吸空间，形成贴纸式布局。",
+  "identity_application": "严格保留M形盾牌/猫脸的几何拓扑、顶部双折角、右侧断口及底部圆弧比例作为身份锚点；通过将内部负空间填充为菜狗五官、左上角延伸绿叶耳朵实现主题融合；底部手写文字作为二次识别保障，确保在不破坏主题fidelity前提下维持米家App的高识别度。",
+  "fidelity_constraints": [
+    "必须使用纯白/米白圆角矩形底板，禁止彩色或渐变背景",
+    "主体必须融入绿叶小狗/蔬菜萌宠母题特征：绿叶元素、粉腮红、豆豆眼、呆萌表情",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量线或标准几何图形",
+    "底部必须包含黑色手写风格'MI JIA'，禁止标准印刷字体",
+    "色彩严格限制在白、绿、粉、黑范围内",
+    "整体必须是2D扁平手绘涂鸦质感，禁止任何3D、拟物或光影效果",
+    "主体占比必须在50%-65%之间，保证充足留白和底部文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留原App高饱和度品牌绿作为大面积背景或主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染效果",
+    "禁止让主体撑满画布，导致失去留白和底部文字区域",
+    "禁止偏离绿叶小狗/蔬菜萌宠核心母题，使用无关卡通形象",
+    "禁止遗漏底部手写App名称或使用电脑标准字体",
+    "禁止过度重构导致M形盾牌核心轮廓消失或变为真实猫咪/房屋图标",
+    "禁止在白色底板上添加多余纹理、边框或装饰图案"
+  ]
+}

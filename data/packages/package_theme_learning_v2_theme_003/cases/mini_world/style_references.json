@@ -1,0 +1,10 @@
+{
+  "target_app": "mini_world",
+  "structure_preservation_mode": "semantic_recompose",
+  "reference_apps": [
+    "clash_of_clans",
+    "onmyoji",
+    "bilibili_comics"
+  ],
+  "selection_rule": "Same-route references when available; target App excluded; deterministic spread."
+}

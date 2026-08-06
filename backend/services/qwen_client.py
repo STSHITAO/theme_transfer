@@ -98,6 +98,8 @@ STRUCTURE_PRESERVATION_MODES = {
     "semantic_recompose",
 }
 
+THEME_DESIGN_BATCH_SIZE = 5
+
 
 
 def analyze_theme(reference_examples, target_inputs, root_dir=None):
@@ -145,13 +147,31 @@ def analyze_theme_package(reference_examples, root_dir=None):
     return _parse_analysis_json(text, reference_examples)
 
 
-def analyze_theme_design(reference_examples, theme_profile, root_dir=None):
+def analyze_theme_design(reference_examples, theme_profile, root_dir=None, batch_size=THEME_DESIGN_BATCH_SIZE):
     root = Path(root_dir) if root_dir else Path.cwd()
     _load_env(root)
     (root / "prompts" / "qwen_theme_design_analysis.md").read_text(encoding="utf-8")
 
     if _mock_mode():
         return _mock_theme_design(reference_examples, theme_profile)
+
+    if batch_size < 1:
+        raise ValueError("Theme design analysis batch_size must be at least 1.")
+    batches = [
+        reference_examples[index:index + batch_size]
+        for index in range(0, len(reference_examples), batch_size)
+    ]
+    if len(batches) == 1:
+        return _analyze_theme_design_batch(batches[0], theme_profile, root)
+
+    partials = [
+        _analyze_theme_design_batch(batch, _theme_profile_for_examples(theme_profile, batch), root)
+        for batch in batches
+    ]
+    return _aggregate_theme_design_analyses(partials, reference_examples, theme_profile, root, batch_size)
+
+
+def _analyze_theme_design_batch(reference_examples, theme_profile, root):
 
     prompt = (root / "prompts" / "qwen_theme_design_analysis.md").read_text(encoding="utf-8")
     content = [
@@ -181,6 +201,93 @@ def analyze_theme_design(reference_examples, theme_profile, root_dir=None):
 
     text = _call_qwen(content)
     return _parse_theme_design_json(text, reference_examples, theme_profile)
+
+
+def _aggregate_theme_design_analyses(partials, reference_examples, theme_profile, root, batch_size):
+    prompt = (root / "prompts" / "qwen_theme_design_aggregate.md").read_text(encoding="utf-8")
+    compact_partials = []
+    all_patterns = []
+    for index, partial in enumerate(partials, start=1):
+        patterns = partial.get("reference_transformation_patterns", [])
+        if isinstance(patterns, list):
+            all_patterns.extend(_compact_transformation_pattern(item) for item in patterns if isinstance(item, dict))
+        compact_partials.append(
+            {
+                "batch": index,
+                "theme_board": partial.get("theme_board", {}),
+                "color_transform_rule": partial.get("color_transform_rule", ""),
+                "background_transform_rule": partial.get("background_transform_rule", ""),
+                "stroke_transform_rule": partial.get("stroke_transform_rule", ""),
+                "composition_transform_rule": partial.get("composition_transform_rule", ""),
+                "subject_scale_rule": partial.get("subject_scale_rule", ""),
+                "detail_complexity_rule": partial.get("detail_complexity_rule", ""),
+                "theme_fidelity_constraints": partial.get("theme_fidelity_constraints", []),
+                "forbidden_style_drift": partial.get("forbidden_style_drift", []),
+                "shared_design_rules": partial.get("shared_design_rules", []),
+                "identity_handling_policy": partial.get("identity_handling_policy", ""),
+                "structure_preservation_policy": partial.get("structure_preservation_policy", {}),
+                "common_forbidden_failures": partial.get("common_forbidden_failures", []),
+                "reference_pattern_summaries": [
+                    _compact_transformation_pattern(item)
+                    for item in patterns
+                    if isinstance(item, dict)
+                ],
+            }
+        )
+
+    content = [{"text": f"{prompt}\n\n[batch_analyses]\n{json.dumps(compact_partials, ensure_ascii=False)}"}]
+    text = _call_qwen(content)
+    merged = _parse_theme_design_json(text, reference_examples, theme_profile)
+    merged["reference_transformation_patterns"] = _dedupe_patterns(all_patterns)
+    merged["analysis_coverage"] = {
+        "reference_pair_count": len(reference_examples),
+        "batch_count": len(partials),
+        "batch_size": batch_size,
+        "analyzed_apps": [example["app_name"] for example in reference_examples],
+    }
+    return merged
+
+
+def _theme_profile_for_examples(theme_profile, reference_examples):
+    profile = dict(theme_profile) if isinstance(theme_profile, dict) else {}
+    examples = theme_profile.get("examples", {}) if isinstance(theme_profile, dict) else {}
+    profile["examples"] = {
+        example["app_name"]: examples.get(example["app_name"], {})
+        for example in reference_examples
+    }
+    return profile
+
+
+def _compact_transformation_pattern(pattern, text_limit=240):
+    compact = {}
+    for key in (
+        "app",
+        "source_semantics",
+        "observed_transformation",
+        "preserved_identity",
+        "redesigned_parts",
+        "preserve_major_structure",
+        "structure_evidence",
+    ):
+        value = pattern.get(key)
+        if isinstance(value, str) and len(value) > text_limit:
+            value = value[:text_limit].rstrip() + "…"
+        compact[key] = value
+    compact["preserve_major_structure"] = bool(compact.get("preserve_major_structure", True))
+    return compact
+
+
+def _dedupe_patterns(patterns):
+    result = []
+    seen = set()
+    for pattern in patterns:
+        app = str(pattern.get("app", "")).strip()
+        key = app.casefold()
+        if not app or key in seen:
+            continue
+        seen.add(key)
+        result.append(pattern)
+    return result
 
 def _append_original_style_ref_example(content, index, example):
     app_name = example["app_name"]
@@ -657,6 +764,16 @@ def _parse_theme_design_json(text, reference_examples, theme_profile):
     if not isinstance(patterns, list):
         patterns = fallback["reference_transformation_patterns"]
         parsed["reference_transformation_patterns"] = patterns
+    present_apps = {
+        str(item.get("app", "")).casefold()
+        for item in patterns
+        if isinstance(item, dict) and item.get("app")
+    }
+    patterns.extend(
+        item
+        for item in fallback["reference_transformation_patterns"]
+        if str(item.get("app", "")).casefold() not in present_apps
+    )
     for item in patterns:
         if isinstance(item, dict):
             item.setdefault("preserve_major_structure", True)

@@ -1,0 +1,95 @@
+{
+  "theme_board": {
+    "palette": "统一使用冰蓝色（Ice Blue）或浅青色作为主体主色，模拟半透明冰块质感；背景统一为纯白或极浅的冷灰色，营造雪地或洁净空间的氛围。",
+    "line_style": "无传统描边。通过材质的厚度、边缘的高光折射和内部阴影来表现轮廓。线条圆润饱满，具有3D立体感。",
+    "material": "核心材质为“冻结的冰块”或“磨砂玻璃”。具有半透明属性，表面带有细微的冰晶纹理、气泡或雪花图案。边缘有明显的光泽感和折射效果。",
+    "background": "极简留白。主体通常放置在类似冰面或雪地的平面上，底部有轻微的接触阴影和融化产生的水渍/碎冰细节。",
+    "composition": "主体居中，占据画布约 60%-70% 的空间。采用微俯视或平视的 3D 视角，强调物体的体积感。",
+    "motif_rules": "必须在主体表面或周围点缀“雪花”、“冰晶”或“气泡”元素。对于原本具有强烈非冷色调语义的 App（如火山版），允许保留微小的原色符号作为点缀，但主体必须被冰封化。"
+  },
+  "color_transform_rule": "完全抛弃 Original 的品牌固有色（如支付宝蓝、豆瓣绿、抖音黑红），强制转换为统一的冰蓝色调。饱和度降低，明度提高，增加通透感。仅当 Original 具有极强且不可替代的语义符号（如火焰）时，才允许以微小比例保留原色作为装饰，否则全量转译为冰色。",
+  "background_transform_rule": "从 Original 的实心品牌色背景转变为纯白/极浅灰背景。去除所有背景图形，仅在底部保留极少量的环境互动元素（如碎冰、水迹），以衬托主体的晶莹剔透。",
+  "stroke_transform_rule": "取消 2D 矢量描边。将轮廓转化为 3D 实体的物理边缘，边缘处理光滑圆润，通过环境光遮蔽（AO）和高光来界定边界，而非线条。",
+  "composition_transform_rule": "从 2D 平面填充构图转变为 3D 物体陈列构图。主体不再撑满画布边缘，而是作为一个独立的立体物件悬浮或放置在画面中央，四周留有呼吸感。",
+  "subject_scale_rule": "主体相对画布尺寸约为 60%-70%。允许为了表现 3D 透视而适当调整长宽比，但整体视觉重量需保持一致。",
+  "detail_complexity_rule": "简化 Original 的复杂渐变和装饰性光影，将其替换为统一的材质细节（冰裂纹、气泡）。 complexity 体现在材质的物理真实感上，而非图形设计的复杂度上。",
+  "theme_fidelity_constraints": [
+    "主体必须呈现为半透明的冰雕或冰块质感，严禁使用不透明塑料或金属材质。",
+    "颜色必须严格限制在冰蓝/青色系，严禁直接使用 Original 的品牌色填充主体。",
+    "必须包含冰雪主题的特征细节（如雪花图标、表面霜冻感）。",
+    "必须保留 Original 的核心几何轮廓，确保用户能一眼识别出是哪个 App。"
+  ],
+  "forbidden_style_drift": [
+    "禁止生成扁平化或 2D 矢量风格的图标。",
+    "禁止保留 Original 的深色或高饱和度暖色背景。",
+    "禁止过度重构导致主体轮廓面目全非（例如将抖音音符变成真正的乐器）。",
+    "禁止使用与冰雪无关的材质（如木纹、布料、火焰实体）。"
+  ],
+  "reference_transformation_patterns": [
+    {
+      "app": "alipay",
+      "source_semantics": "支付、金融、连接",
+      "observed_transformation": "将平面的白色“支”字转化为立体的冰柱结构。保留了汉字笔画的拓扑结构，但将其厚度和边缘进行了圆角化和晶体化处理。",
+      "preserved_identity": "“支”字的笔画走势、上下结构比例。",
+      "redesigned_parts": "颜色由白变冰蓝，质感由平面变立体冰块，底部增加了融化的水迹细节。",
+      "preserve_major_structure": true,
+      "structure_evidence": "Style_ref 中的冰块形状与 Original 的汉字笔画完全重合，仅仅是维度的提升和材质的替换。"
+    },
+    {
+      "app": "bilibili",
+      "source_semantics": "视频社区、小电视",
+      "observed_transformation": "将电视机外框和内部文字整体转化为冰雕。电视机的天线、圆角矩形边框以及内部的 'bilibili' 字母都变成了连通的冰体。",
+      "preserved_identity": "电视机的外形轮廓、天线的角度、内部文字的排列和字体特征。",
+      "redesigned_parts": "整体材质冰晶化，底部增加了类似冰座的结构，表面覆盖雪花纹理。",
+      "preserve_major_structure": true,
+      "structure_evidence": "电视机的外轮廓和内部文字布局与 Original 高度一致，没有发生形变或元素替换。"
+    },
+    {
+      "app": "douban",
+      "source_semantics": "书籍、文化、豆字",
+      "observed_transformation": "将几何化的“豆”字转化为层叠的冰块。原本的三段式结构变成了三块悬浮或堆叠的冰板。",
+      "preserved_identity": "“豆”字的三段式几何构成、中间的空隙位置。",
+      "redesigned_parts": "锐利的直角变为圆润的冰角，绿色变为冰蓝，增加了透明度和厚度感。",
+      "preserve_major_structure": true,
+      "structure_evidence": "三个主要几何块的位置关系和大小比例严格对应 Original 的笔画结构。"
+    },
+    {
+      "app": "douyin",
+      "source_semantics": "音乐、节奏、音符",
+      "observed_transformation": "将经典的抖动音符符号铸造为一块完整的冰雕。音符被放置在一个方形的冰底座上，使其看起来像是一个奖杯或摆件。",
+      "preserved_identity": "音符的曲线走势、圆圈位置、顶部横线。",
+      "redesigned_parts": "去除了原有的故障风（Glitch）红蓝重影效果，统一为单色冰蓝。增加了底座以支撑 3D 形态。表面装饰有雪花。",
+      "preserve_major_structure": true,
+      "structure_evidence": "音符的主体曲线与 Original 完全吻合，仅增加了底座作为 3D 落地的支撑，未改变主体形态。"
+    },
+    {
+      "app": "douyin_huoshan",
+      "source_semantics": "短视频、火山、热情",
+      "observed_transformation": "主体音符同样被转化为冰雕（与抖音主App一致），但在左上角悬浮保留了一个微小的、彩色的火焰图标，形成“冰与火”的对比。",
+      "preserved_identity": "音符的主体轮廓（同抖音），以及代表“火山”属性的火焰符号。",
+      "redesigned_parts": "主体音符被冰封化，去除了原本的火焰背景。火焰符号被缩小并作为独立元素悬浮，未被冰封，保留了原色。",
+      "preserve_major_structure": true,
+      "structure_evidence": "主体音符结构与 Original 及抖音主App一致。火焰元素虽然保留，但并未重构主体，而是作为附属标识存在，属于身份元素的保留而非结构重构。"
+    }
+  ],
+  "shared_design_rules": [
+    "所有图标必须表现为放置在白色背景上的 3D 冰雕物体。",
+    "主体颜色统一为半透明的冰蓝色。",
+    "必须保留 Original 图标的核心剪影和几何特征。",
+    "细节上需添加雪花、冰裂纹或气泡等冬季元素。",
+    "底部需有投影或碎冰/水迹，以体现物体与地面的接触关系。"
+  ],
+  "identity_handling_policy": "优先保留 Original 的核心几何轮廓和拓扑结构，通过材质置换（Material Replacement）来实现主题化。对于具有强对立语义的元素（如火山版的火），采用“主体冰封+局部保留原色符号”的策略，既不破坏整体冰雪氛围，又维持了 App 的身份识别。",
+  "structure_preservation_policy": {
+    "decision_scope": "per_app_before_generation",
+    "preserve_when": "当 Original 图标具有极高的国民认知度且几何结构简单清晰时（如支付宝、抖音、B站），必须严格保留其主体轮廓，仅做 3D 化和材质化改造。",
+    "recompose_when": "仅当 Original 图标过于复杂无法直接转化为单一冰雕，或需要增加物理支撑（如底座）时，才允许微调结构，但严禁更换主体对象（如不能把抖音音符换成麦克风）。"
+  },
+  "common_forbidden_failures": [
+    "生成了不透明的蓝色塑料块，缺乏冰的通透感和光泽。",
+    "直接使用了 Original 的品牌颜色（如大红大绿），未进行冰雪色调转换。",
+    "改变了 Original 的核心形状（例如把 B站的电视变成了手机）。",
+    "背景杂乱，未保持纯净的白色/雪地背景。",
+    "缺少 3D 体积感，看起来像贴图的平面图形。"
+  ]
+}

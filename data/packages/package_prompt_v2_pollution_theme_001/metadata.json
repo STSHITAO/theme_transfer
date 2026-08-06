@@ -1,0 +1,401 @@
+{
+  "package_id": "package_prompt_v2_pollution_theme_001",
+  "theme_id": "theme_001",
+  "target_apps": [
+    "crossfire_mobile",
+    "iqiyi",
+    "iqiyi_lite",
+    "karaoke",
+    "qidian",
+    "tencent_maps",
+    "tmall",
+    "toutiao",
+    "ximalaya",
+    "zhihu"
+  ],
+  "used_reference_examples": [
+    "alipay",
+    "bilibili",
+    "douban",
+    "douyin",
+    "douyin_huoshan"
+  ],
+  "theme_style_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\theme_style_analysis.json",
+  "theme_rules": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\theme_rules.json",
+  "theme_design_analysis": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\theme_design_analysis.json",
+  "generation_base_prompt": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\generation_base_prompt.txt",
+  "cases": {
+    "crossfire_mobile": {
+      "target_app": "crossfire_mobile",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\crossfire_mobile\\crossfire_mobile.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\target_identity.json",
+      "target_profile": {
+        "app": "crossfire_mobile",
+        "display_name": "穿越火线：枪战王者",
+        "category": "游戏 / 射击竞技",
+        "store_description": "提供团队竞技、爆破、生化等多种第一人称射击模式和多人在线对战体验。",
+        "core_function": "提供团队竞技、爆破、生化等多种第一人称射击模式和多人在线对战体验。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "semantic_recompose",
+        "structure_identity_metric_applicable": false,
+        "structure_policy_rationale": "原始图标为写实人物肖像（Face），直接将其转化为冰块会导致面部特征模糊且产生恐怖谷效应，不符合主题清爽的风格。参考 theme_rules 中对于复杂场景或非几何图标的处理逻辑，应舍弃人物主体，提取左下角的 'CF' 文字 Logo 作为重构主体。将扁平的 CF Logo 立体化为厚重的冰雕字块，既保留了最核心的品牌识别，又完美适配冰晶材质的物理特性。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\crossfire_mobile\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\crossfire_mobile.png"
+    },
+    "iqiyi": {
+      "target_app": "iqiyi",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\iqiyi\\iqiyi.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\target_identity.json",
+      "target_profile": {
+        "app": "iqiyi",
+        "display_name": "爱奇艺",
+        "category": "视频 / 流媒体",
+        "store_description": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。",
+        "core_function": "提供电视剧、电影、综艺、动漫、纪录片和短视频等在线视频观看服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题中 bilibili 和 alipay 的案例表明，对于以文字或清晰几何符号为主体的图标，应严格保留其 2D 轮廓和内部结构比例。爱奇艺图标由纯文字构成，识别度完全依赖于字形的准确性，因此必须采用 preserve_major_structure 模式，将平面文字直接转化为具有厚度的 3D 冰雕实体，不可重构为播放器或其他语义符号。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\iqiyi.png"
+    },
+    "iqiyi_lite": {
+      "target_app": "iqiyi_lite",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\iqiyi_lite\\iqiyi_lite.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\target_identity.json",
+      "target_profile": {
+        "app": "iqiyi_lite",
+        "display_name": "爱奇艺极速版",
+        "category": "视频 / 轻量流媒体",
+        "store_description": "以轻量化方式提供影视、综艺、短视频等内容浏览和个性化推荐。",
+        "core_function": "以轻量化方式提供影视、综艺、短视频等内容浏览和个性化推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的处理方式，对于以文字为主体的图标，必须严格保留文字的笔画结构和空间排布。将原本平面的白色文字转化为具有厚度的 3D 冰雕字块。虽然原图标包含强烈的红绿品牌色，但根据 theme_rules 需完全替换为冰蓝材质，仅通过光影和体积感来维持识别度。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\iqiyi_lite\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\iqiyi_lite.png"
+    },
+    "karaoke": {
+      "target_app": "karaoke",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\karaoke\\karaoke.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\target_identity.json",
+      "target_profile": {
+        "app": "karaoke",
+        "display_name": "全民K歌",
+        "category": "音乐 / K歌社交",
+        "store_description": "提供歌曲演唱、录音修音、合唱、歌房、作品发布和音乐社交互动。",
+        "core_function": "提供歌曲演唱、录音修音、合唱、歌房、作品发布和音乐社交互动。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的处理方式，对于具有高度概括性几何符号的图标，应严格保留其 2D 外部轮廓（Silhouette）。全民K歌的鹦鹉+麦克风图形结构紧凑且识别度极高，不需要重构，只需将其从平面渐变转化为具有厚度的 3D 冰雕实体。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\karaoke\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\karaoke.png"
+    },
+    "qidian": {
+      "target_app": "qidian",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\qidian\\qidian.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\target_identity.json",
+      "target_profile": {
+        "app": "qidian",
+        "display_name": "起点读书",
+        "category": "阅读 / 网络文学",
+        "store_description": "提供玄幻、都市、科幻、历史等网络小说阅读、追更、书架和推荐服务。",
+        "core_function": "提供玄幻、都市、科幻、历史等网络小说阅读、追更、书架和推荐服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，必须严格保留其2D轮廓作为3D模型的基底。起点读书的图标是高度抽象化的汉字设计，任何结构重组都会导致品牌识别丢失，因此采用‘材质置换+立体挤压’策略，完全忠实于原图轮廓。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\qidian\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\qidian.png"
+    },
+    "tencent_maps": {
+      "target_app": "tencent_maps",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tencent_maps\\tencent_maps.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\target_identity.json",
+      "target_profile": {
+        "app": "tencent_maps",
+        "display_name": "腾讯地图",
+        "category": "地图 / 导航与出行",
+        "store_description": "提供地图查询、驾车与步行导航、公交地铁路线规划和周边地点搜索。",
+        "core_function": "提供地图查询、驾车与步行导航、公交地铁路线规划和周边地点搜索。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考支付宝和抖音的案例，腾讯地图的图标属于高识别度的单一几何符号。根据 theme_design_analysis 中 'preserve_when' 的规则，应严格保留其外部轮廓和内部红蓝分割比例，仅将原本的扁平色块转化为具有物理厚度的3D冰雕实体。不需要重构语义，只需进行材质置换。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tencent_maps\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\tencent_maps.png"
+    },
+    "tmall": {
+      "target_app": "tmall",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\tmall\\tmall.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\target_identity.json",
+      "target_profile": {
+        "app": "tmall",
+        "display_name": "天猫",
+        "category": "电商 / 品牌购物",
+        "store_description": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。",
+        "core_function": "面向品牌商品提供在线购物、官方旗舰店、订单管理和售后服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考支付宝和抖音的处理方式，天猫的图标由极其标准的几何图形（猫头剪影+文字）构成。根据 theme_design_analysis 中的 structure_preservation_policy，当原始图标为清晰几何图形时，应严格保留外部轮廓。因此，必须将原本的红色猫头和黑色五官直接转化为同比例的3D冰雕实体，不可改变其长宽比或五官位置，仅做材质替换和立体化拉伸。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\tmall\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\tmall.png"
+    },
+    "toutiao": {
+      "target_app": "toutiao",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\toutiao\\toutiao.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\target_identity.json",
+      "target_profile": {
+        "app": "toutiao",
+        "display_name": "今日头条",
+        "category": "新闻 / 综合内容",
+        "store_description": "提供新闻、视频、图文和兴趣内容，并根据用户偏好进行个性化推荐。",
+        "core_function": "提供新闻、视频、图文和兴趣内容，并根据用户偏好进行个性化推荐。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换模式，今日头条的核心识别完全依赖于“头条”这两个汉字的独特设计。原始图标为红底白字，主题化策略应移除红色背景，将白色文字实体化为厚重的冰雕字体。必须严格保留字体的外部轮廓（Silhouette）和内部笔画结构，仅做材质置换和3D拉伸，不可重构字形。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\toutiao\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\toutiao.png"
+    },
+    "ximalaya": {
+      "target_app": "ximalaya",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\ximalaya\\ximalaya.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\target_identity.json",
+      "target_profile": {
+        "app": "ximalaya",
+        "display_name": "喜马拉雅",
+        "category": "音乐 / 有声内容",
+        "store_description": "提供播客、有声书、广播剧、课程、相声和儿童内容等音频服务。",
+        "core_function": "提供播客、有声书、广播剧、课程、相声和儿童内容等音频服务。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban', the core identity of Ximalaya lies entirely in the specific calligraphy/geometry of the character '听'. The theme rules dictate transforming flat characters into 3D ice sculptures while maintaining their exact 2D footprint. Therefore, the structure must be strictly preserved as a 3D extrusion of the original logo, ensuring immediate recognition despite the material change."
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\ximalaya\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\ximalaya.png"
+    },
+    "zhihu": {
+      "target_app": "zhihu",
+      "target_image": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\targets\\zhihu\\zhihu.png",
+      "target_layout_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\target_layout.png",
+      "target_identity_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\target_identity.json",
+      "target_profile": {
+        "app": "zhihu",
+        "display_name": "知乎",
+        "category": "社区 / 知识内容",
+        "store_description": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。",
+        "core_function": "通过问答、文章、视频和讨论提供知识分享、经验交流和内容发现。"
+      },
+      "identity_strategy_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\identity_strategy.json",
+      "transfer_plan_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\transfer_plan.json",
+      "structure_policy": {
+        "structure_preservation_mode": "preserve_major_structure",
+        "structure_identity_metric_applicable": true,
+        "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，主题化策略为'材质置换+3D拉伸'。知乎的图标是高度标准化的文字Logo，其识别度完全依赖于笔画结构。因此，必须严格保留原始字形的2D轮廓，将其转化为具有厚度的3D冰雕实体，不可重构为书本或其他象征物，以免破坏品牌识别。"
+      },
+      "generation_prompt_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\generation_prompt.txt",
+      "candidate_paths": [
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\candidates\\candidate_01.png",
+        "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\candidates\\candidate_02.png"
+      ],
+      "wan_response_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\wan_response.json",
+      "best_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\best_output.png",
+      "qc_report_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\cases\\zhihu\\qc_report.json",
+      "final_output_path": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\zhihu.png"
+    }
+  },
+  "status": "complete",
+  "failed_cases": {},
+  "package_failures": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\package_failures.json",
+  "evaluation_coverage": {
+    "requested_app_count": 10,
+    "evaluated_app_count": 10,
+    "skipped_app_count": 0,
+    "skipped_apps": [],
+    "ratio": 1.0
+  },
+  "structure_evaluation_policy": {
+    "crossfire_mobile": {
+      "structure_preservation_mode": "semantic_recompose",
+      "structure_identity_metric_applicable": false,
+      "structure_policy_rationale": "原始图标为写实人物肖像（Face），直接将其转化为冰块会导致面部特征模糊且产生恐怖谷效应，不符合主题清爽的风格。参考 theme_rules 中对于复杂场景或非几何图标的处理逻辑，应舍弃人物主体，提取左下角的 'CF' 文字 Logo 作为重构主体。将扁平的 CF Logo 立体化为厚重的冰雕字块，既保留了最核心的品牌识别，又完美适配冰晶材质的物理特性。"
+    },
+    "iqiyi": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题中 bilibili 和 alipay 的案例表明，对于以文字或清晰几何符号为主体的图标，应严格保留其 2D 轮廓和内部结构比例。爱奇艺图标由纯文字构成，识别度完全依赖于字形的准确性，因此必须采用 preserve_major_structure 模式，将平面文字直接转化为具有厚度的 3D 冰雕实体，不可重构为播放器或其他语义符号。"
+    },
+    "iqiyi_lite": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题中 Alipay 和 Douban 的处理方式，对于以文字为主体的图标，必须严格保留文字的笔画结构和空间排布。将原本平面的白色文字转化为具有厚度的 3D 冰雕字块。虽然原图标包含强烈的红绿品牌色，但根据 theme_rules 需完全替换为冰蓝材质，仅通过光影和体积感来维持识别度。"
+    },
+    "karaoke": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考主题中 Alipay 和 Douyin 的处理方式，对于具有高度概括性几何符号的图标，应严格保留其 2D 外部轮廓（Silhouette）。全民K歌的鹦鹉+麦克风图形结构紧凑且识别度极高，不需要重构，只需将其从平面渐变转化为具有厚度的 3D 冰雕实体。"
+    },
+    "qidian": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，必须严格保留其2D轮廓作为3D模型的基底。起点读书的图标是高度抽象化的汉字设计，任何结构重组都会导致品牌识别丢失，因此采用‘材质置换+立体挤压’策略，完全忠实于原图轮廓。"
+    },
+    "tencent_maps": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考支付宝和抖音的案例，腾讯地图的图标属于高识别度的单一几何符号。根据 theme_design_analysis 中 'preserve_when' 的规则，应严格保留其外部轮廓和内部红蓝分割比例，仅将原本的扁平色块转化为具有物理厚度的3D冰雕实体。不需要重构语义，只需进行材质置换。"
+    },
+    "tmall": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考支付宝和抖音的处理方式，天猫的图标由极其标准的几何图形（猫头剪影+文字）构成。根据 theme_design_analysis 中的 structure_preservation_policy，当原始图标为清晰几何图形时，应严格保留外部轮廓。因此，必须将原本的红色猫头和黑色五官直接转化为同比例的3D冰雕实体，不可改变其长宽比或五官位置，仅做材质替换和立体化拉伸。"
+    },
+    "toutiao": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换模式，今日头条的核心识别完全依赖于“头条”这两个汉字的独特设计。原始图标为红底白字，主题化策略应移除红色背景，将白色文字实体化为厚重的冰雕字体。必须严格保留字体的外部轮廓（Silhouette）和内部笔画结构，仅做材质置换和3D拉伸，不可重构字形。"
+    },
+    "ximalaya": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "Following the pattern of 'alipay' and 'douban', the core identity of Ximalaya lies entirely in the specific calligraphy/geometry of the character '听'. The theme rules dictate transforming flat characters into 3D ice sculptures while maintaining their exact 2D footprint. Therefore, the structure must be strictly preserved as a 3D extrusion of the original logo, ensuring immediate recognition despite the material change."
+    },
+    "zhihu": {
+      "structure_preservation_mode": "preserve_major_structure",
+      "structure_identity_metric_applicable": true,
+      "structure_policy_rationale": "参考支付宝（Alipay）和豆瓣（Douban）的转换案例，对于以文字或清晰几何符号为主体的图标，主题化策略为'材质置换+3D拉伸'。知乎的图标是高度标准化的文字Logo，其识别度完全依赖于笔画结构。因此，必须严格保留原始字形的2D轮廓，将其转化为具有厚度的3D冰雕实体，不可重构为书本或其他象征物，以免破坏品牌识别。"
+    }
+  },
+  "final_outputs": {
+    "crossfire_mobile": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\crossfire_mobile.png",
+    "iqiyi": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\iqiyi.png",
+    "iqiyi_lite": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\iqiyi_lite.png",
+    "karaoke": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\karaoke.png",
+    "qidian": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\qidian.png",
+    "tencent_maps": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\tencent_maps.png",
+    "tmall": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\tmall.png",
+    "toutiao": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\toutiao.png",
+    "ximalaya": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\ximalaya.png",
+    "zhihu": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\final\\zhihu.png"
+  },
+  "contact_sheet": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\contact_sheet.png",
+  "package_qc_report": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_prompt_v2_pollution_theme_001\\package_qc_report.json",
+  "model_config": {
+    "plan_model": "qwen3.7-plus",
+    "image_model": "wan2.7-image"
+  },
+  "mock_mode": false,
+  "created_at": "2026-08-06T13:15:31.346834+00:00"
+}

@@ -1,0 +1,72 @@
+{
+  "app": "tencent_comics",
+  "strategy_type": "semantic_recompose",
+  "identity_constraint_level": "balanced",
+  "structure_preservation_mode": "semantic_recompose",
+  "structure_identity_metric_applicable": false,
+  "structure_policy_rationale": "参考主题包中 clash_of_clans（写实人脸重构为全身菜狗）、peace_elite（写实士兵重构为戴头盔菜狗）以及 douyu（复合图形重构为单一动态小狗）的规律，当原图包含复杂的多元素堆叠、特定IP写实/半写实角色及全幅背景时，允许放弃原始几何结构。当前目标原图为复杂的橙红渐变背景、多角色（女孩+白团子）及发光文字堆叠，缺乏单一封闭几何Logo。因此，依据主题规则提取‘持锹Q版角色’这一核心语义符号，将其重构为符合‘绿叶小狗/蔬菜萌宠’母题的单一居中形象，属于基于语义的结构重构。",
+  "preserve": [
+    "角色手持铁锹的核心动作与空间关系",
+    "Q版大头部与小巧身体的比例特征",
+    "旁边悬浮/伴随的小型白色萌宠元素（简化为涂鸦小团子）",
+    "呆萌、无辜的面部情绪基调"
+  ],
+  "must_preserve": [
+    "手持铁锹的动作特征",
+    "Q版大头身比例与呆萌神态",
+    "旁边伴随的小型白色团子/宠物元素",
+    "底部代表App名称或核心IP的手写文字区域"
+  ],
+  "recompose_allowed": [
+    "原图的橙红色渐变背景与烟花纹理替换为纯白底板",
+    "角色的粉色头发与具体服饰细节替换为绿色叶片纹理与扁平填色",
+    "铁锹的金属质感与立体光影替换为深绿粗线条手绘涂鸦",
+    "底部发光立体字‘一人之下’替换为黑色手写体 App 英文名称",
+    "角色的具体物种适度向主题母题的绿色小狗/蔬菜精灵靠拢"
+  ],
+  "restyle": [
+    "整体材质转为扁平哑光纸质手绘感",
+    "色彩映射为低饱和嫩绿/草绿+白底+粉腮红",
+    "线条转为抖动马克笔粗描边",
+    "面部添加豆豆眼与粉色椭圆腮红"
+  ],
+  "decorate": [
+    "耳朵化为带叶脉的绿叶",
+    "铁锹作为手绘涂鸦道具保留",
+    "白色小团子作为伴随装饰元素"
+  ],
+  "forbid": [
+    "保留原图大面积的橙红色背景或高饱和品牌色",
+    "使用平滑矢量线、锐利边缘或完美的几何圆形",
+    "添加任何3D渲染、投影、高光渐变或玻璃拟物效果",
+    "让主体撑满画布导致失去四周留白和底部文字区域",
+    "遗漏绿叶耳朵/装饰、粉色腮红、豆豆眼等主题核心母题特征",
+    "完全丢弃铁锹道具导致变成毫无关联的通用卡通狗",
+    "使用电脑标准印刷字体替代底部手写体",
+    "保留原图复杂的光效、烟花或岩石底座纹理"
+  ],
+  "generation_brief": "Pure white rounded square background. Center: a cute Q-version green vegetable-pet character holding a hand-drawn dark green shovel, accompanied by a small simple white doodle blob. The character has large head proportions, leaf-vein ears, black dot eyes, pink oval blushes, and an innocent expression. Thick wobbly dark green marker outlines, light green flat fill. No orange/red background, no 3D, no gradients. Bottom center: 'Tencent Comics' in casual black handwritten font. Sticker art style, ample white space, subject occupies 55% of canvas.",
+  "color_application": "彻底移除原图橙红渐变背景与角色粉发，强制替换为纯白底板+浅嫩绿填充+深草绿描边；仅保留淡粉色用于腮红点缀；铁锹与文字使用深墨绿/黑色平涂，杜绝任何高饱和暖色泄漏。",
+  "stroke_application": "将原图精细动漫线条与发光边缘全部转化为粗细不均的手绘马克笔抖动粗线；铁锹轮廓简化为概括性涂鸦笔触；角色外轮廓使用深绿粗线，内部叶脉与五官使用同色系细线，消除所有锐利尖角与平滑矢量感。",
+  "composition_application": "摒弃原图上下分层与满版构图，采用垂直三段式贴纸布局：上部55%区域居中放置持锹萌宠与白色团子组合，中部留白过渡，底部15%-20%区域书写黑色手写体'Tencent Comics'；主体严格居中偏上，四周保留充足呼吸空间。",
+  "identity_application": "通过‘持锹动作+Q版大头比例+白色伴随团子’三重语义锚点维持《一人之下》IP联想；将原角色物种重构为主题统一的绿叶萌宠，但保留核心姿态与情绪；底部手写英文名兜底识别性，确保在不使用原品牌色与原字形的前提下仍可被老用户辨认。",
+  "fidelity_constraints": [
+    "必须使用纯白圆角矩形底板，禁止任何彩色或渐变背景",
+    "主体必须融入绿叶耳朵、粉色腮红、豆豆眼、呆萌表情四要素",
+    "必须使用手绘抖动粗线条描边，禁止平滑矢量或标准几何",
+    "底部必须包含黑色手写风格'Tencent Comics'，禁止印刷字体",
+    "色彩严格限制在白、绿、粉、黑范围内，禁止橙红品牌色",
+    "整体必须是2D扁平手绘涂鸦质感，禁止3D或光影效果",
+    "主体占比必须在50%-65%之间，保证留白与文字空间"
+  ],
+  "negative_constraints": [
+    "禁止保留橙红色背景或高饱和暖色作为主填充",
+    "禁止使用平滑矢量线、锐利边缘或完美几何形状",
+    "禁止添加阴影、高光、渐变、立体浮雕或3D渲染",
+    "禁止主体撑满画布或触碰边缘",
+    "禁止偏离绿叶萌宠母题或使用无关卡通形象",
+    "禁止遗漏底部手写App名称或使用标准字体",
+    "禁止保留原图发光文字、烟花、岩石底座等复杂营销元素",
+    "禁止移除铁锹道具或改变持锹动作导致IP识别失效"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 0,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 90,
+      "overall_score": 96,
+      "failure_reason": "",
+      "recommendation": "强烈推荐。完美保留了“小红书”定制字体的几何结构（包括“红”字的折笔和“书”字的圆点），严格遵循了薄荷绿填充、白色包边、虚线缝线及网格背景的主题规范，识别度极高且风格统一。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 98,
+      "target_recognition_score": 98,
+      "semantic_fit_score": 100,
+      "identity_constraint_score": 98,
+      "over_recompose_risk": 0,
+      "background_score": 95,
+      "composition_score": 95,
+      "artifact_score": 95,
+      "overall_score": 97,
+      "failure_reason": "",
+      "recommendation": "最推荐。与 candidate_01 同样优秀地保留了品牌字形和主题风格，但画面底部更加干净，没有 candidate_01 中多余的圆形伪影/按钮元素，构图更纯粹，符合图标设计规范。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\xiaohongshu\\candidates\\candidate_02.png",
+  "warning": "",
+  "needs_retry": false
+}

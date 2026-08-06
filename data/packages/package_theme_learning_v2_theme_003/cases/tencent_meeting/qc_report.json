@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "file": "candidate_01.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 5,
+      "target_recognition_score": 5,
+      "semantic_fit_score": 10,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 25,
+      "failure_reason": "主体几何结构完全错误。候选图直接复制了主题参考图（Mango TV）的圆角矩形包裹M形结构，而目标App（腾讯会议）是独立的折叠M形几何体（两个倾斜块拼接）。违反了transfer_plan中关于严格保留原始几何拓扑、折线角度和左右翼高度差的强制约束。",
+      "recommendation": "不推荐。虽然风格完美匹配，但完全丢失了目标App的身份特征，属于严重的主体替换错误。"
+    },
+    {
+      "file": "candidate_02.png",
+      "style_score": 95,
+      "style_match_score": 95,
+      "target_identity_score": 5,
+      "target_recognition_score": 5,
+      "semantic_fit_score": 10,
+      "identity_constraint_score": 5,
+      "over_recompose_risk": 95,
+      "background_score": 100,
+      "composition_score": 90,
+      "artifact_score": 100,
+      "overall_score": 25,
+      "failure_reason": "主体几何结构完全错误。与candidate_01相同，使用了错误的Mango TV Logo形状，而非腾讯会议的折叠M形。未能保留目标App的核心轮廓和骨架，导致无法识别为目标应用。",
+      "recommendation": "不推荐。身份识别失败，尽管视觉风格符合主题要求，但核心主体错误。"
+    }
+  ],
+  "best_candidate": "C:\\Users\\15657\\Desktop\\theme_transfer-main\\theme_transfer-main\\data\\packages\\package_theme_learning_v2_theme_003\\cases\\tencent_meeting\\candidates\\candidate_01.png",
+  "warning": "所有候选图均严重违反身份约束。它们错误地使用了主题参考图（Mango TV）的Logo形状，而不是目标App（腾讯会议）的折叠M形几何体。根据transfer_plan的strict约束和preserve_major_structure策略，这些候选图应被视为失败，建议重新生成以修正主体形状。 All candidates are below identity threshold 75; selected highest overall candidate and marked needs_retry=true.",
+  "needs_retry": true
+}
