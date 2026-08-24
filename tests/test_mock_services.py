@@ -183,7 +183,7 @@ class MockServiceTests(unittest.TestCase):
         self.assertIn("STYLE_REFERENCE_1", message.content[0]["text"])
         self.assertIn("IMAGE_1 = TARGET_IMAGE", message.content[0]["text"])
         self.assertIn("IMAGE_2 = STYLE_REFERENCE_1", message.content[0]["text"])
-        self.assertIn("FINAL IDENTITY CHECK", message.content[0]["text"])
+        self.assertIn("最终身份检查", message.content[0]["text"])
         self.assertIn("image", message.content[1])
         self.assertIn("image", message.content[2])
         self.assertEqual(sum("text" in item for item in message.content), 1)
@@ -313,7 +313,7 @@ class MockServiceTests(unittest.TestCase):
             text_blocks = [item["text"] for item in content if "text" in item]
             image_blocks = [item for item in content if "image" in item]
             self.assertEqual(len(image_blocks), 3)
-            self.assertTrue(any("original" in text for text in text_blocks))
+            self.assertTrue(any("原始图" in text for text in text_blocks))
             self.assertTrue(any("style_ref" in text for text in text_blocks))
             self.assertFalse(any("target_background" in text for text in text_blocks))
             self.assertFalse(any("target_foreground" in text for text in text_blocks))
@@ -367,7 +367,7 @@ class MockServiceTests(unittest.TestCase):
             text_blocks = [item["text"] for item in content if "text" in item]
             image_blocks = [item for item in content if "image" in item]
             self.assertEqual(len(image_blocks), 2)
-            self.assertTrue(any("package-level theme analysis" in text for text in text_blocks))
+            self.assertTrue(any("整包级主题分析" in text for text in text_blocks))
             self.assertFalse(any("target_" in text for text in text_blocks))
 
     def test_mock_target_identity_analysis_returns_identity_fields(self):
@@ -681,7 +681,7 @@ class MockServiceTests(unittest.TestCase):
             self.assertIn("tv face outline", result["must_preserve"])
             self.assertNotIn("bilibili 文字标识", result["must_preserve"])
             self.assertFalse(any(item == "bilibili 文字标识" for item in result["preserve"]))
-            self.assertTrue(any("letterform silhouette" in item.lower() for item in result["must_preserve"]))
+            self.assertTrue(any("字形轮廓" in item for item in result["must_preserve"]))
             self.assertFalse(any("bilibili 文字标识" in item for item in result["recompose_allowed"]))
             self.assertIn("禁止出现清晰英文文字", result["forbid"])
             self.assertIn("禁止生成乱码", result["forbid"])

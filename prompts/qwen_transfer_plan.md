@@ -25,6 +25,7 @@
 9. structure_preservation_mode、structure_identity_metric_applicable 和 structure_policy_rationale 必须原样继承 identity_strategy，不能在生成后调整。
 10. target_profile 的用途语义只能在 identity_strategy 已根据真实主题配对选择 semantic_recompose 时用于受限视觉引申；preserve_major_structure 时不得用功能物体替换目标主体。
 
+除 JSON 字段名、App ID 和规定的枚举值外，所有自然语言字段值必须使用中文。
 只输出合法 JSON，不要输出 Markdown，不要输出解释文字。
 
 JSON 格式必须是：

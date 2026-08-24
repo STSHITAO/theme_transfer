@@ -6,6 +6,34 @@ from backend.services.prompt_service import build_package_target_prompt
 
 
 class PromptIsolationTests(unittest.TestCase):
+    def test_active_prompt_templates_use_chinese_instructions(self):
+        root = Path(__file__).resolve().parents[1]
+        prompt_dir = root / "prompts"
+        banned_english_instructions = [
+            "You extract neutral",
+            "Hard constraints",
+            "Output JSON only",
+            "The final image is the target",
+            "Return exactly one",
+        ]
+        for path in sorted(prompt_dir.glob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            with self.subTest(prompt=path.name):
+                self.assertRegex(text, r"[\u4e00-\u9fff]")
+                for phrase in banned_english_instructions:
+                    self.assertNotIn(phrase, text)
+
+        for path in sorted(prompt_dir.glob("qwen_*.md")):
+            with self.subTest(language_constraint=path.name):
+                self.assertIn(
+                    "所有自然语言字段值必须使用中文",
+                    path.read_text(encoding="utf-8"),
+                )
+
+        wan_prompt = (prompt_dir / "wan_generation.md").read_text(encoding="utf-8")
+        self.assertIn("第一张图标记为 `TARGET_IMAGE`", wan_prompt)
+        self.assertIn("后续图片标记为 `STYLE_REFERENCE`", wan_prompt)
+
     def test_target_prompt_scrubs_reference_names_and_omits_reasoning(self):
         plan = {
             "identity_constraint_level": "strict",
@@ -37,8 +65,8 @@ class PromptIsolationTests(unittest.TestCase):
         self.assertNotIn("哔哩哔哩", prompt)
         self.assertIn("tmall", prompt)
         self.assertIn("天猫", prompt)
-        self.assertIn("ABSOLUTE IDENTITY LOCK", prompt)
-        self.assertIn("Theme fidelity must never replace target identity", prompt)
+        self.assertIn("绝对身份锁定——最高优先级", prompt)
+        self.assertIn("主题一致性绝不能取代目标身份", prompt)
 
     def test_semantic_recompose_does_not_claim_strict_shape_preservation(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -51,8 +79,8 @@ class PromptIsolationTests(unittest.TestCase):
             )
             prompt = output.read_text(encoding="utf-8")
 
-        self.assertIn("Semantic recomposition is allowed", prompt)
-        self.assertNotIn("This is a material-and-style transformation", prompt)
+        self.assertIn("才允许进行语义重构", prompt)
+        self.assertNotIn("这是材质与风格转换", prompt)
 
     def test_target_profile_and_generation_brief_reach_final_prompt(self):
         profile = {

@@ -100,21 +100,21 @@ def _call_wan(prompt, style_ref_paths, target_layout, n, size):
 
     dashscope.base_http_api_url = base_url
     role_lines = [
-        "[INPUT IMAGE ROLE MAP]",
+        "【输入图片角色映射】",
         (
-            "IMAGE_1 = TARGET_IMAGE — ONLY IDENTITY SOURCE: the output subject, logo, text, symbol, silhouette, "
-            "object category, geometry, and layout must come only from this image."
+            "IMAGE_1 = TARGET_IMAGE（唯一身份来源）：输出中的主体、logo、文字、符号、轮廓、"
+            "对象类别、几何结构和布局都只能来自这张图片。"
         ),
         *[
             (
-                f"IMAGE_{index + 1} = STYLE_REFERENCE_{index}: learn only visual treatment; do not copy its subject, "
-                "logo, text, symbol, silhouette, object category, geometry, or layout."
+                f"IMAGE_{index + 1} = STYLE_REFERENCE_{index}：只学习视觉处理方式；不得复制其中的主体、"
+                "logo、文字、符号、轮廓、对象类别、几何结构或布局。"
             )
             for index, _ in enumerate(style_ref_paths, start=1)
         ],
         (
-            "[FINAL IDENTITY CHECK] Generate the TARGET_IMAGE identity with the shared visual treatment. "
-            "Any identity copied from a STYLE_REFERENCE makes the output invalid."
+            "【最终身份检查】使用共享的视觉处理方式表现 TARGET_IMAGE 的身份。"
+            "只要复制了任何 STYLE_REFERENCE 的身份内容，输出即为无效。"
         ),
     ]
     role_prompt = prompt.rstrip() + "\n\n" + "\n".join(role_lines)

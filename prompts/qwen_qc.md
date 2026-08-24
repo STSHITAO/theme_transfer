@@ -29,6 +29,7 @@ V2 质检重点：
 - 同时输出 target_identity_score，值可与 target_recognition_score 接近，用于兼容旧选择逻辑。
 - 同时输出 style_score，值可与 style_match_score 接近。
 
+除 JSON 字段名、文件名和规定的枚举值外，所有自然语言字段值必须使用中文。
 只输出合法 JSON，不要输出 Markdown，不要输出解释文字。
 
 JSON 格式：

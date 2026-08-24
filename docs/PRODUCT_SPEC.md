@@ -1,5 +1,11 @@
 # Product specification
 
+## 提示词语言
+
+- 主流程所有模型侧固定指令使用中文，包括主题学习、身份策略、迁移计划、QC 和 Wan 生图提示；独立应用元数据工具也使用自己的中文 Prompt。
+- JSON 字段名、枚举值、App ID 及 `TARGET_IMAGE` / `STYLE_REFERENCE` 图片角色标识保持英文，以兼容现有代码协议。
+- Wan 输入图片顺序固定为第一张目标原图、后续风格参考图，提示文本必须与该顺序一致。
+
 ## Goal
 
 Generate a coherent package of themed mobile App icons from real theme examples, and evaluate the generated images objectively with image-derived ITTE scores. The product separates generation-time assistance from evaluation-time evidence; a structure policy frozen before generation controls only whether geometric identity evidence is applicable for each App.
@@ -20,6 +26,8 @@ Generate a coherent package of themed mobile App icons from real theme examples,
 - A self-contained real-image Benchmark with 91 originals, 231 themed assets and 158 verified original/theme pairs.
 - CPU/GPU inference selection and persistent feature caches.
 - Two generation routes for target Apps: structure-preserving transfer and function-semantic recomposition. The route is decided per theme/App from designer pair evidence, the neutral `target.json` facts and the target original; it is not stored as a preset target field.
+
+应用市场描述提取是仓库内的独立研究工具，不属于产品主流程，也不会自动修改产品数据。
 
 ## Interfaces and pages
 

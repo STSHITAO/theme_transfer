@@ -100,8 +100,6 @@ STRUCTURE_PRESERVATION_MODES = {
 
 THEME_DESIGN_BATCH_SIZE = 5
 
-
-
 def analyze_theme(reference_examples, target_inputs, root_dir=None):
     root = Path(root_dir) if root_dir else Path.cwd()
     _load_env(root)
@@ -115,7 +113,7 @@ def analyze_theme(reference_examples, target_inputs, root_dir=None):
     for index, example in enumerate(reference_examples, start=1):
         _append_original_style_ref_example(content, index, example)
 
-    content.append({"text": "Target App original icon. The target identity must come only from this image."})
+    content.append({"text": "目标 App 原始图标。目标身份只能来自这张图片。"})
     content.append({"image": _image_data_url(target_inputs)})
 
     text = _call_qwen(content)
@@ -135,8 +133,8 @@ def analyze_theme_package(reference_examples, root_dir=None):
         {
             "text": (
                 f"{prompt}\n\n"
-                "This is a package-level theme analysis. Do not bind rules to any single target App. "
-                "Summarize only the shared transfer rules across all reference examples for reuse by the whole package."
+                "这是整包级主题分析。不要把规则绑定到任何单个目标 App。"
+                "只总结所有参考样例共有、可供整套主题复用的迁移规则。"
             )
         }
     ]
@@ -178,7 +176,7 @@ def _analyze_theme_design_batch(reference_examples, theme_profile, root):
         {
             "text": (
                 f"{prompt}\n\n"
-                "[theme_profile]\n"
+                "【主题资料 theme_profile】\n"
                 f"{json.dumps(theme_profile, ensure_ascii=False, indent=2)}"
             )
         }
@@ -190,9 +188,9 @@ def _analyze_theme_design_batch(reference_examples, theme_profile, root):
         content.append(
             {
                 "text": (
-                    f"Reference example {index}: {app_name}\n"
+                    f"参考样例 {index}：{app_name}\n"
                     f"{json.dumps(app_profile, ensure_ascii=False, indent=2)}\n"
-                    "The next two images are original and style_ref, used to analyze the theme redesign method."
+                    "接下来的两张图片依次是原始图和 style_ref，用于分析主题重设计方法。"
                 )
             }
         )
@@ -235,7 +233,7 @@ def _aggregate_theme_design_analyses(partials, reference_examples, theme_profile
             }
         )
 
-    content = [{"text": f"{prompt}\n\n[batch_analyses]\n{json.dumps(compact_partials, ensure_ascii=False)}"}]
+    content = [{"text": f"{prompt}\n\n【批次分析 batch_analyses】\n{json.dumps(compact_partials, ensure_ascii=False)}"}]
     text = _call_qwen(content)
     merged = _parse_theme_design_json(text, reference_examples, theme_profile)
     merged["reference_transformation_patterns"] = _dedupe_patterns(all_patterns)
@@ -293,15 +291,15 @@ def _append_original_style_ref_example(content, index, example):
     app_name = example["app_name"]
     content.append({
         "text": (
-            f"Reference example {index}: {app_name} original. "
-            "This is the reference App original icon, used with style_ref to infer transferable theme redesign rules."
+            f"参考样例 {index}：{app_name} 原始图。"
+            "它是参考 App 的原始图标，与 style_ref 配对后用于推断可迁移的主题重设计规则。"
         )
     })
     content.append({"image": _image_data_url(example["original_path"])})
     content.append({
         "text": (
-            f"Reference example {index}: {app_name} style_ref. "
-            "This is the themed result for the same reference App. Learn only transferable design language, not the App identity."
+            f"参考样例 {index}：{app_name} style_ref。"
+            "它是同一参考 App 的主题化结果。只学习可迁移的设计语言，不要学习该 App 的身份。"
         )
     })
     content.append({"image": _image_data_url(example["style_ref_path"])})
@@ -500,7 +498,7 @@ def _mock_analysis(reference_examples):
         "theme_style_analysis": "mock: 从多个参考 App 中归纳统一的柔和、干净、主题化图标绘制规律。",
         "common_background_transform": "mock: 保持背景结构，统一色彩和质感。",
         "common_foreground_transform": "mock: 保留主体轮廓，应用统一线条和材质。",
-        "color_palette": ["mock red", "mock cream", "mock dark accent"],
+        "color_palette": ["mock 红色", "mock 奶油色", "mock 深色点缀"],
         "line_style": "mock: 圆润清晰的边缘线。",
         "texture_material": "mock: 轻微纸感和柔和渐变。",
         "lighting_shadow": "mock: 统一左上光源和轻阴影。",
@@ -516,11 +514,11 @@ def _mock_analysis(reference_examples):
 def _mock_target_identity(target_app):
     return {
         "app": target_app,
-        "identity_anchors": [f"{target_app} original silhouette", "primary brand color tendency"],
-        "must_preserve": ["core logo geometry", "recognizable subject structure", "key brand color tendency"],
-        "can_restyle": ["outline", "surface material", "shadow", "background finish", "small theme decoration"],
-        "must_not_replace_with": ["generic plush ball", "unrelated animal", "unrecognizable cute blob"],
-        "color_preservation": "Preserve or softly adapt the target app's key recognisable colors when they are part of identity.",
+        "identity_anchors": [f"{target_app} 原始轮廓", "主要品牌色倾向"],
+        "must_preserve": ["核心 logo 几何结构", "可识别的主体结构", "关键品牌色倾向"],
+        "can_restyle": ["轮廓线", "表面材质", "阴影", "背景质感", "小型主题装饰"],
+        "must_not_replace_with": ["通用毛绒球", "无关动物", "无法识别的可爱团块"],
+        "color_preservation": "当关键识别色属于目标 App 身份时，保留该颜色或仅作柔和调整。",
     }
 
 
@@ -528,11 +526,11 @@ def _mock_theme_design(reference_examples, theme_profile):
     used = [example["app_name"] for example in reference_examples]
     return {
         "theme_board": {
-            "palette": "mock shared palette from style_ref images",
-            "line_style": "mock shared line language",
-            "material": "mock shared surface material",
-            "background": "mock shared icon background treatment",
-            "composition": "mock shared centered icon composition",
+            "palette": "mock：来自 style_ref 图片的共享色板",
+            "line_style": "mock：共享线条语言",
+            "material": "mock：共享表面材质",
+            "background": "mock：共享图标背景处理",
+            "composition": "mock：共享的居中图标构图",
         },
         "color_transform_rule": "mock: move each original icon toward the shared theme_001 palette and saturation range.",
         "background_transform_rule": "mock: convert original backgrounds into the shared theme_001 base shape and finish.",
@@ -541,13 +539,13 @@ def _mock_theme_design(reference_examples, theme_profile):
         "subject_scale_rule": "mock: keep subject scale within the theme_001 reference range.",
         "detail_complexity_rule": "mock: reduce or add detail until complexity matches theme_001 references.",
         "theme_fidelity_constraints": [
-            "outputs must look like missing members of theme_001",
-            "do not invent a new internally consistent theme",
+            "输出必须像 theme_001 中缺失的成员",
+            "不要另行创造一套内部自洽的新主题",
         ],
         "forbidden_style_drift": [
-            "new palette outside theme_001",
-            "stroke style that does not match theme_001",
-            "composition that ignores theme_001 subject scale and whitespace",
+            "使用 theme_001 之外的新色板",
+            "描边风格与 theme_001 不匹配",
+            "构图忽略 theme_001 的主体比例和留白",
         ],
         "reference_transformation_patterns": [
             {
@@ -561,16 +559,16 @@ def _mock_theme_design(reference_examples, theme_profile):
             }
             for app_name in used
         ],
-        "shared_design_rules": ["use one shared theme_board for every target app"],
+        "shared_design_rules": ["所有目标 App 共用同一个 theme_board"],
         "identity_handling_policy": "mock: choose identity expression dynamically from target image and neutral app semantics.",
         "structure_preservation_policy": {
             "decision_scope": "per_app_before_generation",
-            "preserve_when": "the theme examples retain the main silhouette and spatial arrangement",
-            "recompose_when": "the theme examples replace the main geometry with semantic symbols or a scene",
+            "preserve_when": "主题样例保留主要轮廓和空间排列时",
+            "recompose_when": "主题样例用语义符号或场景替换主要几何结构时",
         },
         "common_forbidden_failures": [
-            "do not turn every app into a generic decoration",
-            "do not redefine theme style per app",
+            "不要把所有 App 都变成通用装饰物",
+            "不要针对每个 App 重新定义主题风格",
         ],
     }
 
@@ -592,10 +590,10 @@ def _mock_identity_strategy(theme_design_analysis, target_profile):
         "can_recompose": ["layout", "surface treatment", "supporting symbols"],
         "forbid": ["generic decoration without app recognition", "copying reference app identity", "redefining the shared theme"],
         "generation_direction": (
-            f"Create a themed icon for {target_profile.get('display_name', app)}. "
-            "Follow the shared theme_board and preserve enough app recognition."
+            f"为 {target_profile.get('display_name', app)} 创建主题化图标。"
+            "遵循共享 theme_board，并保留足够的 App 可识别性。"
         ),
-        "identity_anchor": "mock: primary target image silhouette and app function cue",
+        "identity_anchor": "mock：目标图的主要轮廓和 App 功能线索",
         "brand_cues_to_preserve": target_profile.get("brand_identity_cues", []),
         "semantic_cues_to_preserve": [target_profile.get("core_function", "")] if target_profile.get("core_function") else [],
         "style_fidelity_priority": "theme_fidelity_first",
@@ -628,29 +626,29 @@ def _mock_transfer_plan(theme_rules, target_identity, identity_strategy=None):
         "must_preserve": preserve,
         "recompose_allowed": strategy.get("can_recompose", []),
         "restyle": [
-            "apply the shared theme outline, texture, lighting, and background rules",
-            "soften edges without changing the target logo skeleton",
+            "应用共享的主题轮廓、纹理、光照和背景规则",
+            "在不改变目标 logo 骨架的前提下柔化边缘",
         ],
-        "decorate": ["add small theme decoration only if it does not cover identity anchors"],
+        "decorate": ["只有在不遮挡身份锚点时才增加小型主题装饰"],
         "forbid": forbid,
         "generation_brief": strategy.get(
             "generation_direction",
             (
-                f"Transform {app} into the shared theme while preserving its core structure and recognisable colors. "
-                "Do not replace the subject with a generic mascot."
+                f"在保留 {app} 核心结构和可识别颜色的同时，将其转换为共享主题。"
+                "不要用通用吉祥物替换主体。"
             ),
         ),
-        "color_application": "Apply the theme_001 color transform rule to the target icon without inventing a new palette.",
-        "stroke_application": "Apply the theme_001 stroke weight, rounded edge, and edge-density rules.",
-        "composition_application": "Match theme_001 subject scale, centering, whitespace, and background ratio.",
-        "identity_application": "Preserve identity anchors while expressing them through the shared theme_001 design language.",
+        "color_application": "将 theme_001 的颜色转换规则应用到目标图标，不要创造新色板。",
+        "stroke_application": "应用 theme_001 的描边粗细、圆润边缘和边缘密度规则。",
+        "composition_application": "匹配 theme_001 的主体比例、居中程度、留白和背景占比。",
+        "identity_application": "保留身份锚点，并用共享的 theme_001 设计语言表现它们。",
         "fidelity_constraints": [
-            "result must look like a missing member of theme_001",
-            "theme_001 color, stroke, and composition rules override per-app style drift",
+            "结果必须像 theme_001 中缺失的成员",
+            "theme_001 的颜色、描边和构图规则优先于单个 App 的风格漂移",
         ],
         "negative_constraints": [
-            "do not create a new theme style",
-            "do not make only internally consistent icons that are inconsistent with theme_001",
+            "不要创造新的主题风格",
+            "不要生成仅内部自洽、却与 theme_001 不一致的图标",
         ],
         "structure_preservation_mode": structure_mode,
         "structure_identity_metric_applicable": structure_mode == "preserve_major_structure",
@@ -702,7 +700,7 @@ def _parse_analysis_json(text, reference_examples):
         parsed = {
             "raw_response": text,
             **_mock_analysis(reference_examples),
-            "warning": "Qwen returned invalid JSON; fallback analysis was used.",
+            "warning": "Qwen 返回了无效 JSON，已使用后备主题分析。",
         }
     for key in REQUIRED_ANALYSIS_FIELDS:
         parsed.setdefault(key, _mock_analysis(reference_examples)[key])
@@ -730,7 +728,7 @@ def _parse_qc_json(text, candidate_paths):
         "raw_response": text,
         "candidates": [],
         "best_candidate": candidate_paths[0] if candidate_paths else "",
-        "warning": "Qwen returned invalid JSON; fallback first candidate was used.",
+        "warning": "Qwen 返回了无效 JSON，已回退到第一个候选图。",
     }
 
 
@@ -740,7 +738,7 @@ def _parse_target_identity_json(text, target_app):
         parsed = {
             "raw_response": text,
             **_mock_target_identity(target_app),
-            "warning": "Qwen returned invalid JSON; fallback target identity was used.",
+            "warning": "Qwen 返回了无效 JSON，已使用后备目标身份分析。",
         }
     parsed.setdefault("app", target_app)
     fallback = _mock_target_identity(target_app)
@@ -755,7 +753,7 @@ def _parse_theme_design_json(text, reference_examples, theme_profile):
         parsed = {
             "raw_response": text,
             **_mock_theme_design(reference_examples, theme_profile),
-            "warning": "Qwen returned invalid JSON; fallback theme design analysis was used.",
+            "warning": "Qwen 返回了无效 JSON，已使用后备主题设计分析。",
         }
     fallback = _mock_theme_design(reference_examples, theme_profile)
     for key in REQUIRED_THEME_DESIGN_FIELDS:
@@ -789,7 +787,7 @@ def _parse_identity_strategy_json(text, target_profile):
         parsed = {
             "raw_response": text,
             **_mock_identity_strategy({}, target_profile),
-            "warning": "Qwen returned invalid JSON; fallback identity strategy was used.",
+            "warning": "Qwen 返回了无效 JSON，已使用后备身份策略。",
         }
     fallback = _mock_identity_strategy({}, target_profile)
     for key in REQUIRED_IDENTITY_STRATEGY_FIELDS:
@@ -807,7 +805,7 @@ def _parse_transfer_plan_json(text, target_identity, identity_strategy=None, tar
         parsed = {
             "raw_response": text,
             **_mock_transfer_plan({}, target_identity, identity_strategy=identity_strategy),
-            "warning": "Qwen returned invalid JSON; fallback transfer plan was used.",
+            "warning": "Qwen 返回了无效 JSON，已使用后备迁移计划。",
         }
     fallback = _mock_transfer_plan({}, target_identity, identity_strategy=identity_strategy)
     for key in REQUIRED_TRANSFER_PLAN_FIELDS:
@@ -837,7 +835,7 @@ def _normalize_structure_policy(data, source=None):
     data["structure_identity_metric_applicable"] = mode == "preserve_major_structure"
     data["structure_policy_rationale"] = source.get(
         "structure_policy_rationale",
-        data.get("structure_policy_rationale", "Pre-generation policy derived from theme examples and target identity."),
+        data.get("structure_policy_rationale", "根据主题样例与目标身份在生成前确定的策略。"),
     )
     return data
 
@@ -876,7 +874,7 @@ def _identity_preserve_cues(cues):
         if _is_text_identity_cue(cue_text):
             text_cues.append(cue_text)
             preserve_cues.append(
-                f"Preserve the identity layout and letterform silhouette of {cue_text} as non-readable shapes; do not require readable text."
+                f"将 {cue_text} 的身份布局和字形轮廓保留为不可读的图形，不要求生成可读文字。"
             )
         else:
             preserve_cues.append(cue_text)
@@ -915,8 +913,8 @@ def _merge_text_identity_policy(existing_policy, text_cues):
         {
             "mode": "preserve_identity_shape_without_readable_text",
             "source_cues": _dedupe_list([*existing_cues, *text_cues]),
-            "positive_rule": "Keep brand identity from overall layout, icon contour, and letterform silhouette only.",
-            "negative_rule": "Do not generate clear readable text, OCR-like letters, or gibberish characters.",
+            "positive_rule": "只通过整体布局、图标轮廓和字形轮廓保留品牌身份。",
+            "negative_rule": "不要生成清晰可读的文字、类似 OCR 的字母或乱码字符。",
         }
     )
     return policy
@@ -970,7 +968,7 @@ def _parse_package_qc_json(text, app_names):
         "problematic_apps": [],
         "accepted_apps": [],
         "retry_apps": app_names,
-        "overall_comment": "Qwen returned invalid JSON; fallback package QC report was used.",
+        "overall_comment": "Qwen 返回了无效 JSON，已使用后备整包 QC 报告。",
     }
 
 

@@ -11,6 +11,7 @@
 5. 只根据批次中的真实 original -> style_ref 证据总结，不要凭常识补造设计师规律。
 6. reference_transformation_patterns 由程序从各批次原样合并，因此此处输出空数组即可。
 
+除 JSON 字段名、App ID 和规定的枚举值外，所有自然语言字段值必须使用中文。
 只输出合法 JSON，不要输出 Markdown。字段必须为：
 
 {

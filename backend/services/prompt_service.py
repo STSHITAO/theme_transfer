@@ -10,27 +10,27 @@ def build_generation_prompt(analysis, theme_id, case_id, root_dir=None):
 
     prompt = f"""{template}
 
-[Theme Package]
+【主题包】
 theme_id: {theme_id}
 
-[Input Images]
-Images 1..N are style_ref references from the same theme package.
-The final image is the target App original icon and is the only source of target identity.
+【输入图片】
+第一张图片是目标 App 原始图，标记为 TARGET_IMAGE，也是唯一的目标身份来源。
+后续图片是同一主题包的 style_ref 风格参考图，标记为 STYLE_REFERENCE。
 
-[Theme Fidelity Goal]
-Generate an icon that looks like a missing member of {theme_id}, not a newly invented theme.
-Strictly follow the reference package color, stroke, background, composition, material, and detail rules.
+【主题一致性目标】
+生成的图标应像 {theme_id} 中原本缺少的一员，而不是新创造的另一套主题。
+严格遵循参考主题包的颜色、描边、背景、构图、材质和细节规则。
 
-[Qwen Theme Analysis]
+【Qwen 主题分析】
 {analysis.get("theme_style_analysis", "")}
 
-[Generation Direction]
+【生成方向】
 {analysis.get("generation_prompt", "")}
 
-[Target Preservation]
+【目标保留要求】
 {analysis.get("target_preservation", "")}
 
-[Negative Constraints]
+【负面约束】
 {analysis.get("negative_prompt", "")}
 """
     output_path.write_text(prompt, encoding="utf-8")
@@ -42,44 +42,44 @@ def build_generation_base_prompt(analysis, theme_id, output_path, root_dir=None,
     output.parent.mkdir(parents=True, exist_ok=True)
     theme_design = theme_design_analysis or {}
 
-    prompt = f"""[THEME STYLE CONTRACT]
+    prompt = f"""【主题风格契约】
 theme_id: {theme_id}
 
-The style-reference images are evidence for visual treatment only.
-They may contribute color, material, texture, lighting, shadow, background treatment, edge rendering, subject scale, and detail density.
-They must contribute zero identity content: no logo, text, symbol, subject silhouette, object category, brand identity, or internal layout.
+风格参考图只能作为视觉处理方式的依据。
+它们可以提供颜色、材质、纹理、光照、阴影、背景处理、边缘渲染、主体比例和细节密度。
+它们不得提供任何身份内容，包括 logo、文字、符号、主体轮廓、对象类别、品牌身份或内部布局。
 
-[Theme summary]
+【主题概述】
 {analysis.get("theme_style_analysis", "")}
 
-[Shared original-to-style transform]
+【共享的原图到主题图转换规则】
 {analysis.get("common_original_to_style_transform", "")}
 
-[Color]
+【颜色】
 {theme_design.get("color_transform_rule", analysis.get("color_palette", ""))}
 
-[Background]
+【背景】
 {theme_design.get("background_transform_rule", analysis.get("common_background_transform", ""))}
 
-[Edges and strokes]
+【边缘与描边】
 {theme_design.get("stroke_transform_rule", analysis.get("line_style", ""))}
 
-[Composition]
+【构图】
 {theme_design.get("composition_transform_rule", analysis.get("icon_composition_rules", ""))}
 
-[Subject scale]
+【主体比例】
 {theme_design.get("subject_scale_rule", "")}
 
-[Detail complexity]
+【细节复杂度】
 {theme_design.get("detail_complexity_rule", "")}
 
-[Required style properties]
+【必须满足的风格属性】
 {_format_bullets(theme_design.get("theme_fidelity_constraints", []))}
 
-[Forbidden style drift]
+【禁止的风格漂移】
 {_format_bullets(theme_design.get("forbidden_style_drift", []))}
 
-Identity is a hard constraint. Apply this theme only within the target identity; theme fidelity must never replace target identity.
+目标身份是硬约束。只能在目标身份范围内应用主题；主题一致性绝不能取代目标身份。
 """
     output.write_text(prompt, encoding="utf-8")
     return str(output)
@@ -100,83 +100,83 @@ def build_package_target_prompt(
     structure_mode = plan.get("structure_preservation_mode", "preserve_major_structure")
     if structure_mode == "semantic_recompose":
         structure_instruction = (
-            "Semantic recomposition is allowed only when it preserves the target App's specified identity and functional cues. "
-            "No subject or geometry may be borrowed from a style reference."
+            "只有在保留目标 App 指定身份线索和功能线索的前提下，才允许进行语义重构。"
+            "不得从风格参考图借用任何主体或几何结构。"
         )
     else:
         structure_instruction = (
-            "This is a material-and-style transformation. Preserve the target silhouette, topology, major geometry, "
-            "negative space, and internal spatial relationships; do not replace or reinterpret the target subject."
+            "这是材质与风格转换。必须保留目标的轮廓、拓扑、主要几何结构、负空间和内部空间关系；"
+            "不得替换或重新解释目标主体。"
         )
 
     prompt = f"""{base_prompt}
 
-[ABSOLUTE IDENTITY LOCK — HIGHEST PRIORITY]
+【绝对身份锁定——最高优先级】
 
-The first input image, labelled TARGET_IMAGE, is the only allowed source of subject identity.
-Every following image, labelled STYLE_REFERENCE, is style-only evidence.
+第一张输入图片标记为 TARGET_IMAGE，是唯一允许的主体身份来源。
+其后每张图片均标记为 STYLE_REFERENCE，只能作为风格依据。
 
-TARGET_IMAGE is the only allowed source of:
-- logo and text content
-- recognizable symbol and semantic object
-- subject silhouette and object category
-- internal geometry, negative space, and spatial layout
+TARGET_IMAGE 是以下内容的唯一允许来源：
+- logo 与文字内容
+- 可识别符号与语义对象
+- 主体轮廓与对象类别
+- 内部几何结构、负空间与空间布局
 
-STYLE_REFERENCE images may contribute only visual treatment. They must contribute zero logo content, text, recognizable symbol, subject silhouette, object category, internal layout, or brand identity.
-If any identity content from a STYLE_REFERENCE appears in the result, the result is invalid.
+STYLE_REFERENCE 图片只能提供视觉处理方式。它们不得提供任何 logo 内容、文字、可识别符号、主体轮廓、对象类别、内部布局或品牌身份。
+如果结果中出现任何来自 STYLE_REFERENCE 的身份内容，该结果即为无效。
 
-[CURRENT TARGET]
+【当前目标】
 target_app: {target_app}
 display_name: {profile.get("display_name", target_app)}
 category: {profile.get("category", "")}
 core_function: {profile.get("core_function", profile.get("store_description", ""))}
 
-[TARGET SEMANTIC FACTS — FROM TARGET.JSON]
+【来自 target.json 的目标语义事实】
 store_description: {profile.get("store_description", "")}
-These neutral facts explain what CURRENT TARGET does. Derive a visual interpretation only within the frozen theme-specific structure policy below. They do not prescribe an object and do not authorize identity content from STYLE_REFERENCE images.
+这些中立事实用于说明当前目标的功能。只能在下方已冻结的主题专属结构策略范围内推导视觉表达。它们不指定具体对象，也不允许引入 STYLE_REFERENCE 中的身份内容。
 
-[STRUCTURE POLICY]
+【结构策略】
 mode: {structure_mode}
 identity_constraint_level: {plan.get("identity_constraint_level", "strict")}
 {structure_instruction}
 
-[MUST PRESERVE FROM TARGET_IMAGE]
+【必须从 TARGET_IMAGE 保留的内容】
 {_format_bullets(plan.get("must_preserve", []))}
 
-[TARGET IDENTITY APPLICATION]
+【目标身份应用方式】
 {plan.get("identity_application", "")}
 
-[EXECUTION BRIEF]
-{plan.get("generation_brief", plan.get("generation_direction", "Apply the frozen target identity within the theme contract."))}
+【执行简述】
+{plan.get("generation_brief", plan.get("generation_direction", "在主题契约范围内应用已冻结的目标身份。"))}
 
-[ALLOWED TARGET RECOMPOSITION]
+【允许的目标重构】
 {_format_bullets(plan.get("recompose_allowed", []))}
 
-[THEME APPLICATION]
-- Color: {plan.get("color_application", "")}
-- Edges and strokes: {plan.get("stroke_application", "")}
-- Composition: {plan.get("composition_application", "")}
-- Required theme properties: {_format_inline(plan.get("fidelity_constraints", []))}
+【主题应用】
+- 颜色：{plan.get("color_application", "")}
+- 边缘与描边：{plan.get("stroke_application", "")}
+- 构图：{plan.get("composition_application", "")}
+- 必须满足的主题属性：{_format_inline(plan.get("fidelity_constraints", []))}
 
-[INVALID OUTPUT CONDITIONS]
-- Any text, logo, recognizable symbol, subject, silhouette, or internal layout copied from a STYLE_REFERENCE.
-- Any text or symbol absent from TARGET_IMAGE.
-- A result that resembles a STYLE_REFERENCE subject more than TARGET_IMAGE.
-- A changed object category or an unrecognizable target App.
-- Violating these target-specific constraints: {_format_inline(plan.get("negative_constraints", []))}
+【无效输出条件】
+- 从 STYLE_REFERENCE 复制任何文字、logo、可识别符号、主体、轮廓或内部布局。
+- 出现 TARGET_IMAGE 中不存在的文字或符号。
+- 结果与 STYLE_REFERENCE 主体的相似度高于与 TARGET_IMAGE 的相似度。
+- 改变对象类别，或导致目标 App 无法识别。
+- 违反以下目标专属约束：{_format_inline(plan.get("negative_constraints", []))}
 
-[PRIORITY]
-1. Preserve target identity and the required target structure.
-2. Apply theme material and visual treatment without changing identity.
-3. Add decorative detail only when priorities 1 and 2 remain satisfied.
+【优先级】
+1. 保留目标身份和要求保留的目标结构。
+2. 在不改变身份的前提下应用主题材质与视觉处理。
+3. 只有在优先级 1 和 2 仍被满足时，才可增加装饰细节。
 
-If identity and theme styling conflict, preserve identity. Theme fidelity must never replace target identity.
+如果身份与主题风格冲突，优先保留身份。主题一致性绝不能取代目标身份。
 
-[FINAL INTERNAL CHECK]
-Before generating, identify the subject and required geometry in TARGET_IMAGE, separate them from the visual treatment in STYLE_REFERENCE images, and confirm that the output contains zero reference identity.
+【最终内部检查】
+生成前，先识别 TARGET_IMAGE 中的主体和必须保留的几何结构，将其与 STYLE_REFERENCE 图片的视觉处理方式明确分离，并确认输出不包含任何参考图身份。
 
-[OUTPUT]
-Return exactly one complete themed target icon. No captions, comparison layout, input collage, watermark, explanation, or extra logo.
+【输出】
+只返回一个完整的主题化目标图标。不要生成标题、对照布局、输入拼贴、水印、解释或额外 logo。
 """
     prompt = scrub_reference_identity_terms(prompt, forbidden_reference_terms or [])
     leaked_terms = find_reference_identity_terms(prompt, forbidden_reference_terms or [])
@@ -211,12 +211,12 @@ def _term_pattern(term):
 
 def _format_bullets(value):
     items = _as_items(value)
-    return "\n".join(f"- {item}" for item in items) if items else "- Follow the frozen theme contract."
+    return "\n".join(f"- {item}" for item in items) if items else "- 遵循已冻结的主题契约。"
 
 
 def _format_inline(value):
     items = _as_items(value)
-    return "; ".join(items) if items else "none beyond the stated contract"
+    return "；".join(items) if items else "除已说明的契约外无其他要求"
 
 
 def _as_items(value):

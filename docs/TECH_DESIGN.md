@@ -1,5 +1,9 @@
 # Technical design
 
+## 模型提示协议
+
+模型侧自然语言指令统一为中文。结构化接口不做本地化：JSON schema 字段、枚举值、稳定 App ID 和图片角色标识继续使用英文。Qwen 输出提示明确要求自然语言字段值使用中文；Wan 调用在最终提示末尾追加中文图片角色映射，并按 `[TARGET_IMAGE, STYLE_REFERENCE...]` 顺序上传图片。
+
 ## Architecture
 
 ```text
@@ -22,6 +26,12 @@ benchmark/tools/evaluate_current_itte.py
 ```
 
 Generation and evaluation are deliberately separated. Prompt text and generation QC are diagnostic provenance only.
+
+## Standalone application-market metadata extractor
+
+`tools/app_metadata_extractor/` is intentionally outside the architecture above. It does not import `backend` or `scripts`, does not write `dataset` or `data`, and has no automatic handoff into generation or evaluation. It reads crawler subdirectories plus a human-maintained stable-ID map and writes only under its own output directory unless an explicit alternative path is supplied.
+
+The standalone tool owns its Prompt and Qwen client. Qwen may return only `app`, `category` and `core_function`; strict parsing rejects missing, duplicate, unknown or additional fields. Source names and descriptions remain unchanged, checkpoints use atomic replacement, and the report always requires human review. Market descriptions are untrusted data and cannot supply visual objects, Prompt text or generation/structure policy.
 
 ## Wan identity-isolation prompt contract
 

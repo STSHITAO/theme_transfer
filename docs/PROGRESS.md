@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 2026-08-06
+Last updated: 2026-08-24
 
 ## Completed
 
@@ -33,11 +33,13 @@ Last updated: 2026-08-06
 - Replaced first-five alphabetic theme learning with five-pair batched analysis over every valid pair plus aggregate conditional policy. Per-target style references now exclude the target, prefer the selected route and are deterministically distributed; Wan receives the target image first.
 - Completed theme-learning-v2 real generation for theme_003 and theme_004 on the same 40 Apps, with two candidates per App. Both themes produced 80 candidates and 40 final outputs with no API skips. Qwen observed preserve/recompose pair counts of 61/25 and 20/16; generated route counts were 29/11 and 26/14.
 - Completed cached GPU ITTE v1.4 on both new packages. theme_003 scored 89.03 and theme_004 87.27 with 100% coverage, but both correctly remain `failed_hard_gate` because of severe package outliers (`xiaohongshu` and `wechat`). Full evidence and the reconstruction/generalization boundary are recorded in `docs/THEME_LEARNING_V2_EXPERIMENT.md`.
+- Isolated application-market metadata extraction under `tools/app_metadata_extractor/`. It owns its crawler-directory loader, stable-ID map, Chinese Prompt, Qwen client, checkpoints and tests; it imports no project pipeline code and never writes project datasets automatically.
+- Unified all fixed Qwen/Wan natural-language prompts in Chinese while preserving machine-facing JSON fields, enum values and image-role identifiers. Corrected the legacy Wan template so its documented order matches the real request: `TARGET_IMAGE` first, then `STYLE_REFERENCE` images. The 86-test suite includes a regression check for active Prompt language and image order.
 
 ## In progress
 
 - Four-theme real generation/evaluation pipeline started on 2026-08-05. It runs themes sequentially, generates two candidates per App, applies multimodal QC, then launches ITTE v1.4 on `cuda:0` with feature caching.
-- The run is paused by the external Wan API account entitlement: theme_001 produced 90 usable Apps and one recorded content-inspection rejection; theme_002 produced 48 Apps before `AccessDenied.Unpurchased`; themes 003 and 004 have not started. No cross-theme ITTE summary is claimed from this partial run.
+- The original 91-App `package_full_structure_v1` run is paused by the external Wan API account entitlement: theme_001 produced 90 usable Apps and one recorded content-inspection rejection; theme_002 produced 48 case outputs before `AccessDenied.Unpurchased`; its theme_003/theme_004 legs have not started. The separate 40-App theme-learning-v2 experiments for theme_003/theme_004 are complete, but they do not complete this four-theme 91-App run.
 
 ## Pending
 
@@ -49,4 +51,4 @@ Last updated: 2026-08-06
 
 ## Deployment status
 
-No hosted service is deployed. The project runs locally through Python CLI entry points. The previously delivered ITTE v1.3 state is available at `https://github.com/STSHITAO/theme_transfer`; the current data-preparation changes have not been pushed.
+No hosted service is deployed. The project runs locally through Python CLI entry points. The project state through commit `4f15f2f` is available at `https://github.com/STSHITAO/theme_transfer`; the current application-market metadata extraction changes are local until explicitly committed and pushed.

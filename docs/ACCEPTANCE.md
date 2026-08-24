@@ -39,7 +39,7 @@
 - [x] `transfer_plan.json` freezes mode, applicability and rationale; inconsistent fields are rejected by evaluation.
 - [x] Recomposition cases retain a DINO structure diagnostic but do not contribute it to the primary score.
 - [x] Legacy packages continue to use structural identity by default.
-- [x] Full automated suite passes with conditional identity coverage (80 tests).
+- [x] Full automated suite passes with conditional identity coverage, metadata extraction and Prompt language checks (86 tests).
 - [ ] Four real 91-App theme packages complete with non-mock API calls.
 - [ ] ITTE v1.4 reports complete for all four generated packages and are summarized together.
 - [x] A single Wan `DataInspectionFailed` response is recorded and skipped without stopping the remaining batch.
@@ -57,9 +57,24 @@
 - [x] The report states that target/reference overlap makes this an in-package reconstruction experiment rather than unseen-App generalization.
 - [ ] Replace the current fallback behavior so an App with no identity-passing candidate is not published to `final/` (observed for `crossfire_mobile` in prompt-v2 validation).
 
+## Standalone App metadata extraction
+
+- [x] The extractor lives under its own tool directory and imports no project `backend` or generation scripts.
+- [x] Crawler folders require a human-maintained stable App ID and a verbatim UTF-8 description.
+- [x] Qwen output is restricted to App ID, category and core function; unknown, duplicate, missing or policy/visual fields are rejected.
+- [x] Generated metadata preserves the caller-owned display name and store description exactly.
+- [x] Batch checkpoints are atomic and a matching completed output resumes without another model call.
+- [x] Default output remains inside the standalone tool, never writes `dataset/apps.json`, and carries a human-review report.
+
+## Prompt language and image roles
+
+- [x] Qwen/Wan 固定自然语言提示全部使用中文，JSON 字段名、枚举值和协议标识保持兼容。
+- [x] Qwen 结构化输出提示要求自然语言字段值使用中文。
+- [x] Wan 提示与实际上传顺序一致：第一张为 `TARGET_IMAGE`，后续为 `STYLE_REFERENCE`。
+
 ## Repository and delivery
 
-- [x] Full test suite passes in the selected environment (80 tests).
+- [x] Main project and standalone tool test suites pass in the selected environment.
 - [ ] `.env`, caches, temporary downloads and machine-specific artifacts are excluded.
 - [ ] Large model weights are handled by Git LFS or excluded with reproducible download instructions.
 - [ ] GitHub repository/branch and visibility are confirmed before the first push.

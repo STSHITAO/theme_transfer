@@ -244,9 +244,9 @@ class PackageWorkflowTests(unittest.TestCase):
                     transfer_plan["structure_identity_metric_applicable"],
                     identity_strategy["structure_identity_metric_applicable"],
                 )
-                self.assertIn("ABSOLUTE IDENTITY LOCK", generation_prompt)
-                self.assertIn("STYLE_REFERENCE images may contribute only visual treatment", generation_prompt)
-                self.assertIn("theme fidelity", generation_prompt.lower())
+                self.assertIn("绝对身份锁定——最高优先级", generation_prompt)
+                self.assertIn("STYLE_REFERENCE 图片只能提供视觉处理方式", generation_prompt)
+                self.assertIn("主题一致性", generation_prompt)
 
             with Image.open(package_dir / "contact_sheet.png") as sheet:
                 self.assertEqual(sheet.mode, "RGBA")

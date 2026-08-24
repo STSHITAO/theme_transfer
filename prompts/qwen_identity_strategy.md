@@ -29,6 +29,7 @@ strategy_type 可选：
 - semantic_recompose：基于 App 功能语义和品牌线索重新组织主体。
 - symbolic_scene：用符号、道具或小场景表达 App 功能，同时保留身份线索。
 
+除 JSON 字段名、App ID 和规定的枚举值外，所有自然语言字段值必须使用中文。
 只输出 JSON，不要输出 Markdown。
 
 JSON 字段：

@@ -13,6 +13,9 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Standalone App metadata extractor output
+tools/app_metadata_extractor/output/
+
 # Virtual environments
 .venv/
 venv/

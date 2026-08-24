@@ -1,167 +1,284 @@
-# Theme Transfer
+# Theme Transfer & ITTE
 
-一个面向移动 App 图标的主题风格迁移与纯图像评测项目。生成链路从真实主题示例中分析共享设计规则，通过 Qwen 规划、Wan 生图和候选 QC 生成整包图标；ITTE 独立评估可观察的风格迁移、身份保持、整包一致性和技术缺陷。
+面向移动 App 图标的真实主题学习、整包风格迁移与客观图像评测系统。
 
-ITTE = Icon Theme Transfer Evaluation。当前 v1.4 的四个主维度是 Style Fidelity、Identity Preservation、Package Coherence 和 Visual Quality。所有分值仍来自图像；风格诊断包含 VGG16 多层 Gram 特征。每个 App 在生图前冻结 `preserve_major_structure` 或 `semantic_recompose`，只用于决定 DINOv3 几何身份分进入主分还是仅保留为诊断。Package Coherence 同时衡量整包统一性与参考主题归属，因此整包内部统一但远离参考主题，不能得到高分。评测只输出诊断与报告，不把评测文字反馈接回生图链路。
+项目从设计师制作的 `original → style_ref` 配对中学习主题包的共享设计语言，由 Qwen 为每个目标 App 制定受约束的迁移策略，使用 Wan 生成多个候选并完成多模态质量筛选；独立的 ITTE（Icon Theme Transfer Evaluation）随后从图像层面评估风格忠实度、身份保持、整包一致性与视觉质量。
 
-## 项目状态
+ITTE = Icon Theme Transfer Evaluation。
 
-- 生成工作流：已实现。
-- ITTE v1.3：图像指标已在真实设计师 Benchmark 上完成五折验证。v1.4 新增生成前结构适用性策略，正在通过四主题全量生图验证；DISTS/LPIPS 仍保留为诊断，不进入身份主分。
-- Benchmark：`evaluation_set_v1` 已通过独立完整性校验。
-- GPU：使用 Conda 环境 `pytorch`，支持 CUDA 与磁盘特征缓存；保留 CPU 接口。
-- Web UI / 部署：尚未实现。
+整个工作流强调三件事：主题规则来自真实设计样例，目标身份不会被参考 App 污染，评测证据不回灌生图链路。
 
-最新的 theme-learning-v2 实验已完成：Qwen 分批学习主题内全部真实 `original -> style_ref` 配对，再结合现有 `target.json` 和目标原图为每个主题/App 动态冻结结构保留或用途语义重构路线。theme_003、theme_004 使用同一组 40 个 App，每 App 生成两个候选，生成与 ITTE 覆盖均为 100%。
+## 核心能力
 
-| 主题 | 学习配对 | 候选 / Final | 结构保留 / 语义重构 | ITTE | 风格 | 身份 | 整包一致性 | 视觉质量 | 结论 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| theme_003 | 86 | 80 / 40 | 29 / 11 | 89.03 | 90.19 | 94.34 | 70.96 | 99.81 | `failed_hard_gate`：`xiaohongshu` 整包离群 |
-| theme_004 | 36 | 80 / 40 | 26 / 14 | 87.27 | 86.08 | 89.90 | 76.69 | 98.88 | `failed_hard_gate`：`wechat` 整包离群 |
+- **真实主题学习**：分析主题内全部有效 `original → style_ref` 配对，通过分批多模态分析与整包聚合提取色彩、描边、材质、构图、主体比例和结构变化规律。
+- **逐 App 迁移决策**：结合主题规律、目标原图和中性应用语义，在生图前冻结 `preserve_major_structure` 或 `semantic_recompose` 路线。
+- **身份隔离生图**：Wan 始终接收 `TARGET_IMAGE` 在前、`STYLE_REFERENCE` 在后；参考图只提供视觉处理，不提供 logo、文字、主体或内部结构。
+- **多候选质量控制**：支持每个 App 生成多个候选，由 Qwen QC 综合主题匹配、身份识别、语义合理性、过度重构风险和画面缺陷选择结果。
+- **断点续跑与故障隔离**：完整 case 可复用；单个输入被平台拒绝时记录原因并继续，避免整包任务因一个 App 中断。
+- **ITTE 客观评测**：使用 DINOv3、VGG16 Gram、DISTS、LPIPS 及图像质量诊断，在 GPU/CPU 上运行并复用确定性磁盘特征缓存。
+- **真实 Benchmark**：提供 91 张原图、231 张主题图和 158 组验证配对，用于在调整指标前后执行同划分对照实验。
 
-高平均分不代表实验通过：两个包都保留了真实硬门失败。当前实验允许目标 App 同时出现在主题学习配对中，因此衡量的是主题包内重建，而不是未见 App 泛化；详细边界、QC 失败列表和客观评测证据见实验报告。
-
-进度与待办见 [docs/PROGRESS.md](docs/PROGRESS.md)，产品和技术说明见 [docs/PRODUCT_SPEC.md](docs/PRODUCT_SPEC.md) 与 [docs/TECH_DESIGN.md](docs/TECH_DESIGN.md)。
-最新的 theme_003/theme_004 40-App 全配对学习、生图和 ITTE 结果见 [docs/THEME_LEARNING_V2_EXPERIMENT.md](docs/THEME_LEARNING_V2_EXPERIMENT.md)。
-
-## 环境
-
-当前机器推荐直接使用已配置的 GPU 环境：
-
-```powershell
-conda activate pytorch
-$env:TPQS_DEVICE='cuda:0'
-$env:TPQS_BATCH_SIZE='2'
-```
-
-CPU 兼容运行：
-
-```powershell
-conda activate pytorch
-$env:TPQS_DEVICE='cpu'
-$env:TPQS_BATCH_SIZE='1'
-```
-
-如需新建环境，先按照本机驱动安装匹配的 CUDA PyTorch/TorchVision，再安装 `requirements.txt`，避免通用安装覆盖 GPU 构建。
-
-## 生成主题包
-
-在 `.env` 中配置本地 API 参数后运行：
-
-```powershell
-conda activate pytorch
-python backend/run_package.py
-```
-
-输入位于：
+## 系统架构
 
 ```text
-data/styles/<theme_id>/<reference_app>/
-data/targets/<target_app>/
+dataset/                         规范化原图、主题图与 App 元数据
+    │
+    ├── scripts/prepare_generation_data.py
+    ▼
+data/styles + data/targets       生图入口数据
+    │
+    ├── Qwen 全主题配对分析
+    ├── 逐 App 身份与结构策略
+    ├── Wan 多候选生成
+    └── Qwen 候选 QC
+    ▼
+data/packages/<package_id>/      候选、最终图、接触表与完整溯源
+    │
+    └── ITTE v1.4（图像证据 + 特征缓存）
+    ▼
+data/evaluations/<eval_id>/      分项分数、硬门、覆盖率与离群报告
 ```
 
-每个 `data/targets/<target_app>/target.json` 提供 App 名称、类别、商店描述和核心功能等中性事实，不预先指定钱包、准星等视觉对象，也不写死结构保留模式。Qwen 先结合 `theme.json` 分批分析主题内全部 `original -> style_ref` 配对，归纳设计师在什么条件下保留主体结构、什么条件下按软件用途重构，再结合目标原图和 `target.json` 为当前“主题 × App”冻结生成路线。最终 Wan Prompt 会直接使用这些元数据及 Qwen 生成的执行 brief。
+生成阶段与评测阶段严格分离。Prompt、应用描述和 Qwen QC 只参与生成或诊断，不进入 ITTE 主分。
 
-输出位于 `data/packages/<package_id>/`。`.env` 包含密钥，严禁提交。
+## ITTE 评测框架
 
-规范化 `dataset/` 转换为生图入口，并显式清除旧入口数据：
+ITTE v1.4 包含四个主维度：
+
+| 维度 | 关注问题 | 主要证据 |
+|---|---|---|
+| Style Fidelity | 结果是否属于指定主题，而非自创风格 | VGG16 多层 Gram、主题参考分布 |
+| Identity Preservation | 目标 App 是否仍然可识别 | DINOv3 身份检索与条件结构诊断 |
+| Package Coherence | 整包是否统一且仍归属于参考主题 | 包内一致性与参考主题归属 |
+| Visual Quality | 是否存在空图、曝光、边界、伪影等技术问题 | 可观察图像质量规则 |
+
+结构身份指标的适用性在生成前确定：保留主要结构时进入身份主分；语义重构时仍记录结构诊断，但不会因未复刻原始几何而直接扣除主分。高平均分不能覆盖严重单图失败，报告会保留硬门与整包离群结论。
+
+Package Coherence 同时衡量包内视觉统一性和参考主题归属，因此整包内部统一但远离参考主题，不能得到高分。
+
+## 已验证实验
+
+theme-learning-v2 使用同一组 40 个 App，每个 App 生成两个候选。两个主题均完成 100% 生成与 ITTE 覆盖：
+
+| 主题 | 真实学习配对 | 候选 / Final | 结构保留 / 语义重构 | ITTE | 风格 | 身份 | 整包一致性 | 视觉质量 | 客观结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| theme_003 | 86 | 80 / 40 | 29 / 11 | 89.03 | 90.19 | 94.34 | 70.96 | 99.81 | `failed_hard_gate`：`xiaohongshu` 为整包离群点 |
+| theme_004 | 36 | 80 / 40 | 26 / 14 | 87.27 | 86.08 | 89.90 | 76.69 | 98.88 | `failed_hard_gate`：`wechat` 为整包离群点 |
+
+实验保留了硬门失败，没有用高均分掩盖严重离群。当前设置允许目标 App 出现在主题学习配对中，因此这些结果衡量的是**主题包内重建**，不等价于未见 App 泛化。完整实验协议、候选 QC 与逐 App 证据见 [Theme Learning v2 实验报告](docs/THEME_LEARNING_V2_EXPERIMENT.md)。
+
+## 快速开始
+
+### 1. 获取项目与模型文件
+
+```powershell
+git clone https://github.com/STSHITAO/theme_transfer.git
+Set-Location theme_transfer
+git lfs pull
+```
+
+仓库中的大型公开模型权重通过 Git LFS 管理。若只克隆到指针文件，ITTE 模型将无法加载。
+
+### 2. 配置 Python 环境
+
+推荐 Python 3.11。GPU 环境应先按照显卡驱动安装匹配的 PyTorch/TorchVision，再安装项目依赖，避免通用安装覆盖 CUDA 构建。
+
+```powershell
+conda create -n theme_transfer python=3.11 -y
+conda activate theme_transfer
+
+# 先从 https://pytorch.org/get-started/locally/ 安装匹配的 CUDA PyTorch
+python -m pip install -r requirements.txt
+```
+
+当前开发验证环境为 Conda `pytorch`、PyTorch `2.5.0+cu118` 和 NVIDIA GTX 1650。CPU 接口保持可用。
+
+### 3. 配置模型 API
+
+在项目根目录创建本地 `.env`，填写以下变量；不要提交密钥：
+
+```dotenv
+MOCK_MODE=false
+
+ALI_PLAN_BASE_URL=<Qwen API 地址>
+ALI_PLAN_MODEL=<Qwen 模型 ID>
+ALI_PLAN_API_KEY=<Qwen API Key>
+
+ALI_IMAGE_BASE_URL=<Wan API 地址>
+ALI_IMAGE_MODEL=<Wan 模型 ID>
+ALI_IMAGE_API_KEY=<Wan API Key>
+```
+
+所有固定自然语言 Prompt 均使用中文。JSON 字段名、枚举值、App ID 以及 `TARGET_IMAGE`、`STYLE_REFERENCE` 等协议标识保持英文，以保证现有解析和图片角色绑定稳定。
+
+### 4. 准备生图数据
+
+规范化源数据结构：
+
+```text
+dataset/
+├── originals/<app_id>.<ext>
+├── themes/<theme_id>/<app_id>.<ext>
+└── apps.json
+```
+
+生成入口结构：
 
 ```powershell
 python scripts/prepare_generation_data.py --clean
 ```
 
-当前四主题全量真实验证为每个 App 生成两个候选、再由多模态 QC 选择最终图，并按完整 case 断点续跑：
+脚本只读取 `dataset/`，将匹配成功的原图与主题图转换为：
 
-```powershell
-python scripts/run_full_generation.py --candidate-count 2
+```text
+data/
+├── styles/<theme_id>/
+│   ├── theme.json
+│   └── <app_id>/
+│       ├── <app_id>.<ext>
+│       └── <app_id>_style_ref.<ext>
+└── targets/<app_id>/
+    ├── target.json
+    └── <original_file>
 ```
 
-若单个输入被 Wan 以 `DataInspectionFailed` 拒绝，批处理会保存 `case_failure.json` 和包级 `package_failures.json` 后继续下一 App。ITTE 对实际成功输出评分，并在报告中记录请求数、评测数、跳过 App 和覆盖率；四主题横向比较同时记录共同成功 App 交集。
+`target.json` 和 `theme.json` 只保存名称、分类、应用市场描述和核心功能等中性事实，不写死钱包、准星等视觉对象，也不预设结构保留路线。
 
-只运行一个主题：
+### 5. 生成主题包
 
-```powershell
-python scripts/run_full_generation.py --theme-id theme_001 --candidate-count 2
-```
-
-固定抽取覆盖完整 App 列表的 40 个目标进行两候选实验：
+单主题、每个 App 两个候选：
 
 ```powershell
-python scripts/run_full_generation.py --theme-id theme_003 --theme-id theme_004 --target-limit 40 --candidate-count 2 --package-prefix package_theme_learning_v2
+conda activate theme_transfer
+python scripts/run_full_generation.py --theme-id theme_003 --candidate-count 2
 ```
 
-生成完成后在 GPU 上批量评测：
+多个主题可重复传入 `--theme-id`；省略该参数时依次处理四个主题。任务默认按完整 case 断点续跑，使用 `--no-resume` 可显式重新生成。
+
+固定抽取覆盖完整列表的 40 个目标进行实验：
+
+```powershell
+python scripts/run_full_generation.py `
+  --theme-id theme_003 `
+  --theme-id theme_004 `
+  --target-limit 40 `
+  --candidate-count 2 `
+  --package-prefix package_theme_learning_v2
+```
+
+生成结果写入 `data/packages/<package_id>/`，包括主题分析、逐 App 迁移计划、候选图、QC 报告、最终图、接触表、失败记录和元数据。
+
+### 6. 运行 ITTE
+
+GPU：
 
 ```powershell
 $env:TPQS_DEVICE='cuda:0'
 $env:TPQS_BATCH_SIZE='2'
-python scripts/evaluate_full_packages.py
+python scripts/evaluate_full_packages.py --theme-id theme_003
 ```
 
-后台监控全量任务（默认只读，每 10 分钟记录一次状态）：
+CPU：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/monitor_full_pipeline.ps1
+$env:TPQS_DEVICE='cpu'
+$env:TPQS_BATCH_SIZE='1'
+python scripts/evaluate_full_packages.py --theme-id theme_003
 ```
 
-监控记录位于 `data/packages/_full_generation_logs/monitor_status.jsonl`；自动重启会再次调用外部生图 API，需明确确认后才使用 `-AutoRestart`。
+评测结果写入 `data/evaluations/`。跨主题比较会额外记录共同成功 App 交集，避免因平台拒绝或缺图造成不公平比较。
 
-实验结束后生成可复现上传清单（包含 SHA-256，排除可重建的特征缓存）：
+## Benchmark 复现
+
+真实评测集位于 [benchmark/evaluation_set_v1](benchmark/evaluation_set_v1)。先验证资产与映射：
 
 ```powershell
-python scripts/build_experiment_manifest.py
+conda activate theme_transfer
+python benchmark/tools/validate_evaluation_set.py
 ```
 
-## 运行已有包的 ITTE
-
-在 `evaluation/evaluate_package.py` 中设置主题、包和评测 ID，然后运行：
+在身份不重叠的参考/查询划分上运行设计师正样本与未迁移原图控制对照：
 
 ```powershell
-conda activate pytorch
-$env:TPQS_DEVICE='cuda:0'
-$env:TPQS_BATCH_SIZE='2'
-python evaluation/evaluate_package.py
-```
-
-## 验证当前 ITTE 方案
-
-真实 Benchmark 位于 [benchmark/evaluation_set_v1](benchmark/evaluation_set_v1)。当前版本基线 Runner 不修改 ITTE 算法：
-
-```powershell
-conda activate pytorch
 $env:TPQS_DEVICE='cuda:0'
 $env:TPQS_BATCH_SIZE='2'
 python benchmark/tools/evaluate_current_itte.py --references 8 --queries 4
 ```
 
-Runner 使用身份不重叠的参考/查询划分，对比设计师真实主题图与未迁移原图控制，并把报告写入 Benchmark 的 `results/`。冻结 v1.2、最终 v1.3 以及逐折对照分别位于：
+仓库保留以下可复现实验证据：
 
 - `benchmark/evaluation_set_v1/results/itte_v12_baseline_gpu_cv/`
 - `benchmark/evaluation_set_v1/results/itte_v13_final_gpu_cv/`
 - `benchmark/evaluation_set_v1/results/itte_v13_final_gpu_cv/comparison_to_v12/`
+- `benchmark/evaluation_set_v1/results/identity_retrieval_dinov3/`
+- `benchmark/evaluation_set_v1/results/identity_retrieval_perceptual/`
 
-真实标签身份检索证据位于 `identity_retrieval_dinov3/` 与 `identity_retrieval_perceptual/`。
-
-设备接口冒烟：
+设备冒烟测试：
 
 ```powershell
 python benchmark/tools/smoke_itte_device.py --device cuda:0
 python benchmark/tools/smoke_itte_device.py --device cpu
 ```
 
+## 独立应用元数据提取工具
+
+[tools/app_metadata_extractor](tools/app_metadata_extractor) 用于验证“从爬虫应用描述中提取中性 schema”的可行性。它拥有自己的中文 Prompt、Qwen 客户端、稳定 ID 映射、断点文件和测试：
+
+- 不导入 `backend` 或生图脚本；
+- 不读取或发送主题图标；
+- 不修改 `dataset`、`data` 或 ITTE 结果；
+- 默认只写入工具自己的忽略目录；
+- 输出必须经过人工审核，不会自动进入项目主流程。
+
+详见 [独立工具说明](tools/app_metadata_extractor/README.md)。
+
 ## 测试
 
+主项目测试：
+
 ```powershell
-conda activate pytorch
-python -m pytest -q
-python benchmark/tools/validate_evaluation_set.py
+conda activate theme_transfer
+python -m unittest discover -v
 ```
 
-## 重要边界
+独立元数据工具测试：
 
-- ITTE 主分只使用图像证据。
-- OpenCLIP、Prompt 文图匹配和生成阶段 Qwen QC 不进入主分。
+```powershell
+python -m unittest tools.app_metadata_extractor.tests.test_extractor -v
+```
+
+当前验证结果为主项目 `81/81`、独立工具 `5/5`。
+
+## 目录结构
+
+```text
+backend/                         主题分析、生图编排、QC 与产物管理
+benchmark/evaluation_set_v1/    真实 Benchmark、冻结划分和实验报告
+data/                            生图入口、主题包、评测结果与特征缓存
+dataset/                         规范化只读源数据
+docs/                            产品、技术、验收、实验和进度文档
+evaluation/                      ITTE 指标与包级评测工作流
+models/                          官方模型权重与本地模型缓存
+prompts/                         Qwen/Wan 中文 Prompt 契约
+scripts/                         数据转换、批量生成、评测和实验清单工具
+tests/                           主项目回归测试
+tools/app_metadata_extractor/   与主流程隔离的应用描述提取工具
+```
+
+## 评测边界
+
+- ITTE 主分只使用图像证据；Prompt 文图匹配、OpenCLIP 和生成阶段 Qwen QC 不进入主分。
 - 评测结果不回灌生成链路，不再生成 `generation_feedback_prompt.md`。
-- Benchmark 主题描述只用于解释，不参与评分。
-- 修改指标前必须保存相同数据划分下的原版本基线，修改后使用同一划分复测。
-- 模型缓存位于 `models/`，特征缓存位于 `data/evaluations/_cache/`；不要提交临时或不完整下载文件。
+- Benchmark 主题描述用于解释数据，不参与评分。
+- 当前真实数据主要提供设计师正样本与自然未迁移控制，不包含大规模人工主观评分或主观合成退化标签。
+- 指标变更必须先保存同一数据划分下的冻结基线，再用相同输入、随机种子和 split 复测。
+- DISTS 与 LPIPS 保留为诊断证据，不替代已经过真实标签检索验证的身份主指标。
+- 特征缓存键包含输入身份、预处理视图、模型 ID 与相关配置；CPU/GPU 选择不改变数值缓存身份。
+
+## 文档
+
+- [产品说明](docs/PRODUCT_SPEC.md)
+- [技术设计](docs/TECH_DESIGN.md)
+- [验收清单](docs/ACCEPTANCE.md)
+- [Theme Learning v2 实验](docs/THEME_LEARNING_V2_EXPERIMENT.md)
+- [当前进度与复现状态](docs/PROGRESS.md)
